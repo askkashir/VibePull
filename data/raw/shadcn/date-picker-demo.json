@@ -1,0 +1,22 @@
+{
+  "id": "date-picker-demo",
+  "name": "date-picker-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "date-picker-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## date-picker-demo\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** date-fns"
+  }
+}

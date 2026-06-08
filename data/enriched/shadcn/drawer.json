@@ -1,0 +1,42 @@
+{
+  "id": "drawer",
+  "name": "drawer",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "settings",
+    "configuration",
+    "overlay",
+    "panel"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "drawer",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## drawer\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** vaul"
+  },
+  "visual_summary": "A drawer is a sliding panel that overlays the main content, offering a way to display secondary information or options. Typically used on desktop and mobile devices. It's an essential component for navigation or configuration in an application.",
+  "style_tags": [
+    "glassmorphism",
+    "dark"
+  ],
+  "interaction_tags": [
+    "animated",
+    "slide",
+    "toggle"
+  ],
+  "component_type": "drawer",
+  "generation_prompt": "Create a production-ready drawer component with the following characteristics:\n\nName: drawer\nDescription: A drawer is a sliding panel that overlays the main content, offering a way to display secondary information or options. Typically used on desktop and mobile devices. It's an essential component for navigation or configuration in an application.\nStyle: glassmorphism, dark\nInteractions: animated, slide, toggle\nTags: navigation, settings, configuration, overlay, panel\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "drawer",
+  "display_name": "Drawer",
+  "preview_url": "/previews/shadcn/drawer.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "elements_table-of-contents",
+  "name": "table-of-contents",
+  "source_code": "// elements/table-of-contents.html\n<div\n    x-data\n    x-init=\"\n        function generateTableOfContents() {\n            // Get all the headings in the document\n            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');\n            \n            // If there are no headings, exit the function\n            if (headings.length === 0) {\n                return;\n            }\n            \n            // Create an unordered list to hold the table of contents\n            const tocList = document.createElement('ul');\n            \n            // Keep track of the previous heading level to determine if we need to create sub-lists\n            let previousLevel = parseInt(headings[0].tagName.substring(1));\n            let currentList = tocList;\n            \n            // Loop through each heading and create a table of contents entry\n            for (let i = 0; i < headings.length; i++) {\n                const heading = headings[i];\n                const level = parseInt(heading.tagName.substring(1));\n                \n                // Create a link to the heading\n                const link = document.createElement('a');\n                link.href = '#' + heading.id;\n                link.textContent = heading.textContent;\n                \n                // Create a list item to hold the link\n                const listItem = document.createElement('li');\n                listItem.appendChild(link);\n                \n                // Determine if we need to create a sub-list\n                if (level > previousLevel) {\n                const sublist = document.createElement('ul');\n                currentList.lastChild.appendChild(sublist);\n                currentList = sublist;\n                } else if (level < previousLevel) {\n                currentList = currentList.parentNode.parentNode;\n                }\n                \n                currentList.appendChild(listItem);\n                previousLevel = level;\n            }\n            \n            // Add the table of contents to the page\n            const tocContainer = document.querySelector('#toc');\n            tocContainer.appendChild(tocList);\n        }\n    \"    \nclass=\"relative flex flex-col\">\n\n    <div class=\"relative\">\n        <p class=\"mb-2 font-semibold tracking-tight\">Table of Contents</p>\n    \n        <ul>\n            <li class=\"text-sm transition-colors hover:text-text-neutral-700 text-neutral-500\"><a href=\"#_\">asdf</a></li>\n            <li class=\"text-sm transition-colors hover:text-text-neutral-700 text-neutral-500\"><a href=\"#_\">asdf</a></li>\n        </ul>\n    </div>\n\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "table-of-contents",
+      "name": "table-of-contents",
+      "path": "elements/table-of-contents.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_table-of-contents",
+      "name": "table-of-contents",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/table-of-contents.html",
+          "content": "<div\n    x-data\n    x-init=\"\n        function generateTableOfContents() {\n            // Get all the headings in the document\n            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');\n            \n            // If there are no headings, exit the function\n            if (headings.length === 0) {\n                return;\n            }\n            \n            // Create an unordered list to hold the table of contents\n            const tocList = document.createElement('ul');\n            \n            // Keep track of the previous heading level to determine if we need to create sub-lists\n            let previousLevel = parseInt(headings[0].tagName.substring(1));\n            let currentList = tocList;\n            \n            // Loop through each heading and create a table of contents entry\n            for (let i = 0; i < headings.length; i++) {\n                const heading = headings[i];\n                const level = parseInt(heading.tagName.substring(1));\n                \n                // Create a link to the heading\n                const link = document.createElement('a');\n                link.href = '#' + heading.id;\n                link.textContent = heading.textContent;\n                \n                // Create a list item to hold the link\n                const listItem = document.createElement('li');\n                listItem.appendChild(link);\n                \n                // Determine if we need to create a sub-list\n                if (level > previousLevel) {\n                const sublist = document.createElement('ul');\n                currentList.lastChild.appendChild(sublist);\n                currentList = sublist;\n                } else if (level < previousLevel) {\n                currentList = currentList.parentNode.parentNode;\n                }\n                \n                currentList.appendChild(listItem);\n                previousLevel = level;\n            }\n            \n            // Add the table of contents to the page\n            const tocContainer = document.querySelector('#toc');\n            tocContainer.appendChild(tocList);\n        }\n    \"    \nclass=\"relative flex flex-col\">\n\n    <div class=\"relative\">\n        <p class=\"mb-2 font-semibold tracking-tight\">Table of Contents</p>\n    \n        <ul>\n            <li class=\"text-sm transition-colors hover:text-text-neutral-700 text-neutral-500\"><a href=\"#_\">asdf</a></li>\n            <li class=\"text-sm transition-colors hover:text-text-neutral-700 text-neutral-500\"><a href=\"#_\">asdf</a></li>\n        </ul>\n    </div>\n\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

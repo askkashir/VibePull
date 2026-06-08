@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Textarea_index",
+  "name": "Textarea",
+  "source_code": "// packages/@mantine/core/src/components/Textarea/index.ts\nimport type { TextareaFactory, TextareaProps } from './Textarea';\n\nexport { Textarea } from './Textarea';\n\nexport type { TextareaProps, TextareaFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Textarea_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Textarea/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Textarea_index",
+      "name": "Textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Textarea/index.ts",
+          "content": "import type { TextareaFactory, TextareaProps } from './Textarea';\n\nexport { Textarea } from './Textarea';\n\nexport type { TextareaProps, TextareaFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

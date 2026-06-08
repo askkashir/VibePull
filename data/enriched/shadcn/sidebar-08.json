@@ -1,0 +1,40 @@
+{
+  "id": "sidebar-08",
+  "name": "sidebar-08",
+  "source_code": "",
+  "description": "An inset sidebar with secondary navigation.",
+  "tags": [
+    "sidebar",
+    "navigation",
+    "secondary"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-08",
+      "type": "registry:block",
+      "description": "An inset sidebar with secondary navigation.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-08\n\nAn inset sidebar with secondary navigation.\n\n**Type:** registry:block\n**Files:** 6 file(s)"
+  },
+  "visual_summary": "A compact, inset sidebar with secondary navigation. It provides a secondary menu for navigation in applications. This component can be used to offer an additional layer of organization and accessibility to users.",
+  "style_tags": [
+    "inset",
+    "compact"
+  ],
+  "interaction_tags": [
+    "collapsible",
+    "expandable"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-08\nDescription: A compact, inset sidebar with secondary navigation. It provides a secondary menu for navigation in applications. This component can be used to offer an additional layer of organization and accessibility to users.\nStyle: inset, compact\nInteractions: collapsible, expandable\nTags: sidebar, navigation, secondary\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-08",
+  "display_name": "Sidebar 08",
+  "preview_url": "/previews/shadcn/sidebar-08.png"
+}

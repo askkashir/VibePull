@@ -1,0 +1,41 @@
+{
+  "id": "chart-pie-donut-text",
+  "name": "chart-pie-donut-text",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dashboard",
+    "reporting",
+    "chart",
+    "data visualization",
+    "metric"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-donut-text",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-donut-text\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A donut pie chart component displaying a text-based value, suitable for showcasing small, single-number statistics within a dashboard or report. It's ideal for use cases where a concise and visually engaging way to represent a single value is required.",
+  "style_tags": [
+    "modern",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "draggable",
+    "resizable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-pie-donut-text\nDescription: A donut pie chart component displaying a text-based value, suitable for showcasing small, single-number statistics within a dashboard or report. It's ideal for use cases where a concise and visually engaging way to represent a single value is required.\nStyle: modern, minimal\nInteractions: draggable, resizable\nTags: dashboard, reporting, chart, data visualization, metric\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-pie-donut-text",
+  "display_name": "Chart Pie Donut Text",
+  "preview_url": "/previews/shadcn/chart-pie-donut-text.png"
+}

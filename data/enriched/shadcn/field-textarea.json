@@ -1,0 +1,41 @@
+{
+  "id": "field-textarea",
+  "name": "field-textarea",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form control",
+    "input field",
+    " textarea"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-textarea",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-textarea\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A field-textarea is a multi-line text input component. It is used when users need to enter a longer text, such as a description or a comment. It is often used in forms or when user input is not limited to a single line of text.",
+  "style_tags": [
+    "e.g. minimal",
+    "flat",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "e.g. readonly",
+    "disabled",
+    "focusable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: field-textarea\nDescription: A field-textarea is a multi-line text input component. It is used when users need to enter a longer text, such as a description or a comment. It is often used in forms or when user input is not limited to a single line of text.\nStyle: e.g. minimal, flat, responsive\nInteractions: e.g. readonly, disabled, focusable\nTags: form control, input field, textarea\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-textarea",
+  "display_name": "Field Textarea",
+  "preview_url": "/previews/shadcn/field-textarea.png"
+}

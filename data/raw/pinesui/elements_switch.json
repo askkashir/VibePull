@@ -1,0 +1,31 @@
+{
+  "id": "elements_switch",
+  "name": "switch",
+  "source_code": "// elements/switch.html\n<div x-data=\"{ switchOn: false }\" class=\"flex items-center justify-center space-x-2\">\n    <input id=\"thisId\" type=\"checkbox\" name=\"switch\" class=\"hidden\" :checked=\"switchOn\">\n\n    <button \n        x-ref=\"switchButton\"\n        type=\"button\" \n        @click=\"switchOn = ! switchOn\"\n        :class=\"switchOn ? 'bg-blue-600' : 'bg-neutral-200'\" \n        class=\"relative inline-flex h-6 py-0.5 ml-4 focus:outline-none rounded-full w-10\"\n        x-cloak>\n        <span :class=\"switchOn ? 'translate-x-[18px]' : 'translate-x-0.5'\" class=\"w-5 h-5 duration-200 ease-in-out bg-white rounded-full shadow-md\"></span>\n    </button>\n\n    <label @click=\"$refs.switchButton.click(); $refs.switchButton.focus()\" :id=\"$id('switch')\" \n        :class=\"{ 'text-blue-600': switchOn, 'text-gray-400': ! switchOn }\"\n        class=\"text-sm select-none\"\n        x-cloak>\n        Enable Feature\n    </label>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "switch",
+      "name": "switch",
+      "path": "elements/switch.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_switch",
+      "name": "switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/switch.html",
+          "content": "<div x-data=\"{ switchOn: false }\" class=\"flex items-center justify-center space-x-2\">\n    <input id=\"thisId\" type=\"checkbox\" name=\"switch\" class=\"hidden\" :checked=\"switchOn\">\n\n    <button \n        x-ref=\"switchButton\"\n        type=\"button\" \n        @click=\"switchOn = ! switchOn\"\n        :class=\"switchOn ? 'bg-blue-600' : 'bg-neutral-200'\" \n        class=\"relative inline-flex h-6 py-0.5 ml-4 focus:outline-none rounded-full w-10\"\n        x-cloak>\n        <span :class=\"switchOn ? 'translate-x-[18px]' : 'translate-x-0.5'\" class=\"w-5 h-5 duration-200 ease-in-out bg-white rounded-full shadow-md\"></span>\n    </button>\n\n    <label @click=\"$refs.switchButton.click(); $refs.switchButton.focus()\" :id=\"$id('switch')\" \n        :class=\"{ 'text-blue-600': switchOn, 'text-gray-400': ! switchOn }\"\n        class=\"text-sm select-none\"\n        x-cloak>\n        Enable Feature\n    </label>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

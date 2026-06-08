@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_index",
+  "name": "ColorPicker",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/index.ts\nimport type { AlphaSliderFactory, AlphaSliderProps } from './AlphaSlider/AlphaSlider';\nimport type {\n  __ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerProps,\n  ColorPickerStylesNames,\n} from './ColorPicker';\nimport type { ColorSliderFactory } from './ColorSlider/ColorSlider';\nimport type { HueSliderFactory, HueSliderProps } from './HueSlider/HueSlider';\n\nexport { ColorPicker } from './ColorPicker';\nexport { AlphaSlider } from './AlphaSlider/AlphaSlider';\nexport { HueSlider } from './HueSlider/HueSlider';\nexport * from './converters';\n\nexport type {\n  ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerStylesNames,\n  __ColorPickerProps,\n  ColorSliderFactory,\n  HueSliderFactory,\n  HueSliderProps,\n  AlphaSliderFactory,\n  AlphaSliderProps,\n};\n",
+  "description": "",
+  "tags": [
+    "color",
+    "mantine",
+    "other",
+    "picker"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ColorPicker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_index",
+      "name": "ColorPicker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/index.ts",
+          "content": "import type { AlphaSliderFactory, AlphaSliderProps } from './AlphaSlider/AlphaSlider';\nimport type {\n  __ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerProps,\n  ColorPickerStylesNames,\n} from './ColorPicker';\nimport type { ColorSliderFactory } from './ColorSlider/ColorSlider';\nimport type { HueSliderFactory, HueSliderProps } from './HueSlider/HueSlider';\n\nexport { ColorPicker } from './ColorPicker';\nexport { AlphaSlider } from './AlphaSlider/AlphaSlider';\nexport { HueSlider } from './HueSlider/HueSlider';\nexport * from './converters';\n\nexport type {\n  ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerStylesNames,\n  __ColorPickerProps,\n  ColorSliderFactory,\n  HueSliderFactory,\n  HueSliderProps,\n  AlphaSliderFactory,\n  AlphaSliderProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ColorPicker is a color picker UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ColorPicker\nDescription: ColorPicker is a color picker UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: color, mantine, other, picker\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ColorPicker/index.ts\nimport type { AlphaSliderFactory, AlphaSliderProps } from './AlphaSlider/AlphaSlider';\nimport type {\n  __ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerProps,\n  ColorPickerStylesNames,\n} from './ColorPicker';\nimport type { ColorSliderFactory } from './ColorSlider/ColorSlider';\nimport type { HueSliderFactory, HueSliderProps } from './HueSlider/HueSlider';\n\nexport { ColorPicker } from './ColorPicker';\nex",
+  "prompt_version": 2,
+  "clean_id": "color-picker",
+  "display_name": "Color Picker",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-colorpicker-index.png"
+}

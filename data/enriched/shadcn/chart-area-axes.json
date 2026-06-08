@@ -1,0 +1,40 @@
+{
+  "id": "chart-area-axes",
+  "name": "chart-area-axes",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "visualization",
+    "data-displays"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-axes",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-axes\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart area with visible axes is a reusable visualization component used to display numerical data in a graphical format, particularly suitable for technical or analytical applications. It's ideal for when you need to visualize and compare data sets with precise axis labels and tick marks. This component is commonly used in data-heavy dashboards or financial reports.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "static"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-axes\nDescription: A chart area with visible axes is a reusable visualization component used to display numerical data in a graphical format, particularly suitable for technical or analytical applications. It's ideal for when you need to visualize and compare data sets with precise axis labels and tick marks. This component is commonly used in data-heavy dashboards or financial reports.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, static\nTags: chart, visualization, data-displays\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-axes",
+  "display_name": "Chart Area Axes",
+  "preview_url": "/previews/shadcn/chart-area-axes.png"
+}

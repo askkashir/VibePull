@@ -1,0 +1,41 @@
+{
+  "id": "checkbox-with-text",
+  "name": "checkbox-with-text",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "text",
+    "form",
+    "toggle",
+    "settings"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "checkbox-with-text",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## checkbox-with-text\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A checkbox with accompanying static text is a simple UI element used to present a yes/no option to the user. It's typically used in forms, settings pages, or surveys where the user needs to make a binary choice. This component is ideal for situations where the choice is not complex or nuanced.",
+  "style_tags": [
+    "default",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggle"
+  ],
+  "component_type": "checkbox",
+  "generation_prompt": "Create a production-ready checkbox component with the following characteristics:\n\nName: checkbox-with-text\nDescription: A checkbox with accompanying static text is a simple UI element used to present a yes/no option to the user. It's typically used in forms, settings pages, or surveys where the user needs to make a binary choice. This component is ideal for situations where the choice is not complex or nuanced.\nStyle: default, minimal\nInteractions: clickable, toggle\nTags: checkbox, text, form, toggle, settings\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "checkbox-with-text",
+  "display_name": "Checkbox With Text",
+  "preview_url": "/previews/shadcn/checkbox-with-text.png"
+}

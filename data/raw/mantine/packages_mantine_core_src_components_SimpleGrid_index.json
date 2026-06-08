@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_SimpleGrid_index",
+  "name": "SimpleGrid",
+  "source_code": "// packages/@mantine/core/src/components/SimpleGrid/index.ts\nimport type { SimpleGridFactory, SimpleGridProps, SimpleGridStylesNames } from './SimpleGrid';\n\nexport { SimpleGrid } from './SimpleGrid';\n\nexport type { SimpleGridProps, SimpleGridStylesNames, SimpleGridFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "SimpleGrid_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/SimpleGrid/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_SimpleGrid_index",
+      "name": "SimpleGrid",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/SimpleGrid/index.ts",
+          "content": "import type { SimpleGridFactory, SimpleGridProps, SimpleGridStylesNames } from './SimpleGrid';\n\nexport { SimpleGrid } from './SimpleGrid';\n\nexport type { SimpleGridProps, SimpleGridStylesNames, SimpleGridFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "packages_radix-ui-themes_src_components_blockquote",
+  "name": "blockquote",
+  "source_code": "// packages/radix-ui-themes/src/components/blockquote.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { Text } from './text.js';\n\nimport type { blockquotePropDefs } from './blockquote.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype BlockquoteElement = React.ElementRef<'blockquote'>;\ntype BlockQuoteOwnProps = GetPropDefTypes<typeof blockquotePropDefs>;\ninterface BlockquoteProps\n  extends ComponentPropsWithout<'blockquote', RemovedProps>, MarginProps, BlockQuoteOwnProps {}\nconst Blockquote = React.forwardRef<BlockquoteElement, BlockquoteProps>((props, forwardedRef) => {\n  const { asChild, children, className, ...blockquoteProps } = props;\n  const Comp = asChild ? Slot.Root : 'blockquote';\n  return (\n    <Text\n      asChild\n      {...blockquoteProps}\n      ref={forwardedRef}\n      className={classNames('rt-Blockquote', className)}\n    >\n      <Comp>{children}</Comp>\n    </Text>\n  );\n});\nBlockquote.displayName = 'Blockquote';\n\nexport { Blockquote };\nexport type { BlockquoteProps };\n",
+  "description": "",
+  "tags": [
+    "blockquote",
+    "text",
+    "quote"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_blockquote",
+      "name": "blockquote.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/blockquote.tsx",
+      "sha": "e1e6b3c67766ab5c8d6eae0c9b05b77968c59531",
+      "size": 1182,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/blockquote.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/blockquote.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/e1e6b3c67766ab5c8d6eae0c9b05b77968c59531",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/blockquote.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/blockquote.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/e1e6b3c67766ab5c8d6eae0c9b05b77968c59531",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/blockquote.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_blockquote",
+      "name": "blockquote",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/blockquote.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { Text } from './text.js';\n\nimport type { blockquotePropDefs } from './blockquote.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype BlockquoteElement = React.ElementRef<'blockquote'>;\ntype BlockQuoteOwnProps = GetPropDefTypes<typeof blockquotePropDefs>;\ninterface BlockquoteProps\n  extends ComponentPropsWithout<'blockquote', RemovedProps>, MarginProps, BlockQuoteOwnProps {}\nconst Blockquote = React.forwardRef<BlockquoteElement, BlockquoteProps>((props, forwardedRef) => {\n  const { asChild, children, className, ...blockquoteProps } = props;\n  const Comp = asChild ? Slot.Root : 'blockquote';\n  return (\n    <Text\n      asChild\n      {...blockquoteProps}\n      ref={forwardedRef}\n      className={classNames('rt-Blockquote', className)}\n    >\n      <Comp>{children}</Comp>\n    </Text>\n  );\n});\nBlockquote.displayName = 'Blockquote';\n\nexport { Blockquote };\nexport type { BlockquoteProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A reusable blockquote element used to display content as a quote. Developers would use this component to render a quote or a piece of text as a block element. It can be customized with various props to fit the design needs.",
+  "style_tags": [
+    "plain"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: blockquote\nDescription: A reusable blockquote element used to display content as a quote. Developers would use this component to render a quote or a piece of text as a block element. It can be customized with various props to fit the design needs.\nStyle: plain\nInteractions: \nTags: blockquote, text, quote\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/blockquote.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { Text } from './text.js';\n\nimport type { blockquotePropDefs } from './blockquote.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype BlockquoteElement = R",
+  "prompt_version": 2,
+  "clean_id": "blockquote",
+  "display_name": "Blockquote",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-blockquote.png"
+}

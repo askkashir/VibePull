@@ -1,0 +1,52 @@
+{
+  "id": "input-group",
+  "name": "input-group",
+  "source_code": "// src/components/ui/input-group.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { type ComponentProps, forwardRef, type ReactNode } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { inputGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(inputGroup)\n\ntype RootProps = ComponentProps<typeof Root>\nconst Root = withProvider(ark.div, 'root')\nconst Element = withContext(ark.div, 'element')\n\nexport interface InputGroupProps extends RootProps {\n  startElement?: ReactNode | undefined\n  endElement?: ReactNode | undefined\n}\n\nexport const InputGroup = forwardRef<HTMLDivElement, InputGroupProps>(\n  function InputGroup(props, ref) {\n    const { startElement, endElement, children, ...rest } = props\n\n    return (\n      <Root ref={ref} {...rest}>\n        {startElement && (\n          <Element insetInlineStart=\"0\" top=\"0\">\n            {startElement}\n          </Element>\n        )}\n        {children}\n        {endElement && (\n          <Element insetInlineEnd=\"0\" top=\"0\">\n            {endElement}\n          </Element>\n        )}\n      </Root>\n    )\n  },\n)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/input-group.tsx",
+          "type": "registry:ui",
+          "exports": "export { InputGroup, type InputGroupProps } from './input-group'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { type ComponentProps, forwardRef, type ReactNode } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { inputGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(inputGroup)\n\ntype RootProps = ComponentProps<typeof Root>\nconst Root = withProvider(ark.div, 'root')\nconst Element = withContext(ark.div, 'element')\n\nexport interface InputGroupProps extends RootProps {\n  startElement?: ReactNode | undefined\n  endElement?: ReactNode | undefined\n}\n\nexport const InputGroup = forwardRef<HTMLDivElement, InputGroupProps>(\n  function InputGroup(props, ref) {\n    const { startElement, endElement, children, ...rest } = props\n\n    return (\n      <Root ref={ref} {...rest}>\n        {startElement && (\n          <Element insetInlineStart=\"0\" top=\"0\">\n            {startElement}\n          </Element>\n        )}\n        {children}\n        {endElement && (\n          <Element insetInlineEnd=\"0\" top=\"0\">\n            {endElement}\n          </Element>\n        )}\n      </Root>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-group-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "input-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/input-group.tsx",
+          "type": "registry:ui",
+          "exports": "export { InputGroup, type InputGroupProps } from './input-group'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { type ComponentProps, forwardRef, type ReactNode } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { inputGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(inputGroup)\n\ntype RootProps = ComponentProps<typeof Root>\nconst Root = withProvider(ark.div, 'root')\nconst Element = withContext(ark.div, 'element')\n\nexport interface InputGroupProps extends RootProps {\n  startElement?: ReactNode | undefined\n  endElement?: ReactNode | undefined\n}\n\nexport const InputGroup = forwardRef<HTMLDivElement, InputGroupProps>(\n  function InputGroup(props, ref) {\n    const { startElement, endElement, children, ...rest } = props\n\n    return (\n      <Root ref={ref} {...rest}>\n        {startElement && (\n          <Element insetInlineStart=\"0\" top=\"0\">\n            {startElement}\n          </Element>\n        )}\n        {children}\n        {endElement && (\n          <Element insetInlineEnd=\"0\" top=\"0\">\n            {endElement}\n          </Element>\n        )}\n      </Root>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-group-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

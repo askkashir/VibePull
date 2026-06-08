@@ -1,0 +1,41 @@
+{
+  "id": "alert-destructive",
+  "name": "alert-destructive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "alert",
+    "destructive",
+    "warning"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "alert-destructive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## alert-destructive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "An alert-destructive component is a red alert box that warns users of a destructive action, typically displayed on hover or on click. It is used to draw attention and caution users before they make irreversible changes. This component is often used in forms and workflows where users need explicit confirmation.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "compact"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "modal"
+  ],
+  "component_type": "alert",
+  "generation_prompt": "Create a production-ready alert component with the following characteristics:\n\nName: alert-destructive\nDescription: An alert-destructive component is a red alert box that warns users of a destructive action, typically displayed on hover or on click. It is used to draw attention and caution users before they make irreversible changes. This component is often used in forms and workflows where users need explicit confirmation.\nStyle: e.g. dark, minimal, compact\nInteractions: e.g. hover, clickable, modal\nTags: alert, destructive, warning\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "alert-destructive",
+  "display_name": "Alert Destructive",
+  "preview_url": "/previews/shadcn/alert-destructive.png"
+}

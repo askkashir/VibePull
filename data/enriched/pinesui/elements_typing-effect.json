@@ -1,0 +1,46 @@
+{
+  "id": "elements_typing-effect",
+  "name": "typing-effect",
+  "source_code": "// elements/typing-effect.html\n<div \n    x-data=\"{\n        text: '',\n        textArray : ['Alpine JS is Amazing', 'It is Truly Awesome!', 'You Have to Try It!'],\n        textIndex: 0,\n        charIndex: 0,\n        typeSpeed: 110,\n        cursorSpeed: 550,\n        pauseEnd: 1500,\n        pauseStart: 20,\n        direction: 'forward',\n    }\" \n    x-init=\"$nextTick(() => {\n        let typingInterval = setInterval(startTyping, $data.typeSpeed);\n    \n        function startTyping(){\n            let current = $data.textArray[ $data.textIndex ];\n            \n            // check to see if we hit the end of the string\n            if($data.charIndex > current.length){\n                    $data.direction = 'backward';\n                    clearInterval(typingInterval);\n                    \n                    setTimeout(function(){\n                        typingInterval = setInterval(startTyping, $data.typeSpeed);\n                    }, $data.pauseEnd);\n            }   \n                \n            $data.text = current.substring(0, $data.charIndex);\n            \n            if($data.direction == 'forward')\n            {\n                $data.charIndex += 1;\n            } \n            else \n            {\n                if($data.charIndex == 0)\n                {\n                    $data.direction = 'forward';\n                    clearInterval(typingInterval);\n                    setTimeout(function(){\n                        $data.textIndex += 1;\n                        if($data.textIndex >= $data.textArray.length)\n                        {\n                            $data.textIndex = 0;\n                        }\n                        typingInterval = setInterval(startTyping, $data.typeSpeed);\n                    }, $data.pauseStart);\n                }\n                $data.charIndex -= 1;\n            }\n        }\n                    \n        setInterval(function(){\n            if($refs.cursor.classList.contains('hidden'))\n            {\n                $refs.cursor.classList.remove('hidden');\n            } \n            else \n            {\n                $refs.cursor.classList.add('hidden');\n            }\n        }, $data.cursorSpeed);\n\n    })\"\n    class=\"flex items-center justify-center mx-auto text-center max-w-7xl\">\n    <div class=\"relative flex items-center justify-center h-auto\">\n        <p class=\"text-2xl font-black leading-tight\" x-text=\"text\"></p>\n        <span class=\"absolute right-0 w-2 -mr-2 bg-black h-3/4\" x-ref=\"cursor\"></span>\n    </div>\n</div>",
+  "description": "",
+  "tags": [
+    "animation",
+    "component",
+    "display"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "typing-effect",
+      "name": "typing-effect",
+      "path": "elements/typing-effect.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_typing-effect",
+      "name": "typing-effect",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/typing-effect.html",
+          "content": "<div \n    x-data=\"{\n        text: '',\n        textArray : ['Alpine JS is Amazing', 'It is Truly Awesome!', 'You Have to Try It!'],\n        textIndex: 0,\n        charIndex: 0,\n        typeSpeed: 110,\n        cursorSpeed: 550,\n        pauseEnd: 1500,\n        pauseStart: 20,\n        direction: 'forward',\n    }\" \n    x-init=\"$nextTick(() => {\n        let typingInterval = setInterval(startTyping, $data.typeSpeed);\n    \n        function startTyping(){\n            let current = $data.textArray[ $data.textIndex ];\n            \n            // check to see if we hit the end of the string\n            if($data.charIndex > current.length){\n                    $data.direction = 'backward';\n                    clearInterval(typingInterval);\n                    \n                    setTimeout(function(){\n                        typingInterval = setInterval(startTyping, $data.typeSpeed);\n                    }, $data.pauseEnd);\n            }   \n                \n            $data.text = current.substring(0, $data.charIndex);\n            \n            if($data.direction == 'forward')\n            {\n                $data.charIndex += 1;\n            } \n            else \n            {\n                if($data.charIndex == 0)\n                {\n                    $data.direction = 'forward';\n                    clearInterval(typingInterval);\n                    setTimeout(function(){\n                        $data.textIndex += 1;\n                        if($data.textIndex >= $data.textArray.length)\n                        {\n                            $data.textIndex = 0;\n                        }\n                        typingInterval = setInterval(startTyping, $data.typeSpeed);\n                    }, $data.pauseStart);\n                }\n                $data.charIndex -= 1;\n            }\n        }\n                    \n        setInterval(function(){\n            if($refs.cursor.classList.contains('hidden'))\n            {\n                $refs.cursor.classList.remove('hidden');\n            } \n            else \n            {\n                $refs.cursor.classList.add('hidden');\n            }\n        }, $data.cursorSpeed);\n\n    })\"\n    class=\"flex items-center justify-center mx-auto text-center max-w-7xl\">\n    <div class=\"relative flex items-center justify-center h-auto\">\n        <p class=\"text-2xl font-black leading-tight\" x-text=\"text\"></p>\n        <span class=\"absolute right-0 w-2 -mr-2 bg-black h-3/4\" x-ref=\"cursor\"></span>\n    </div>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Typing Effect is a display component that shows a text typing effect on the screen, typically used to grab user attention or showcase a dynamic message.",
+  "style_tags": [
+    "minimal",
+    "dark"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typing-effect\nDescription: Typing Effect is a display component that shows a text typing effect on the screen, typically used to grab user attention or showcase a dynamic message.\nStyle: minimal, dark\nInteractions: animated\nTags: animation, component, display\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/typing-effect.html\n<div \n    x-data=\"{\n        text: '',\n        textArray : ['Alpine JS is Amazing', 'It is Truly Awesome!', 'You Have to Try It!'],\n        textIndex: 0,\n        charIndex: 0,\n        typeSpeed: 110,\n        cursorSpeed: 550,\n        pauseEnd: 1500,\n        pauseStart: 20,\n        direction: 'forward',\n    }\" \n    x-init=\"$nextTick(() => {\n        let typingInterval = setInterval(startTyping, $data.typeSpeed);\n    \n        function startTyping(){\n            let cur",
+  "prompt_version": 2,
+  "clean_id": "typing-effect",
+  "display_name": "Typing Effect",
+  "preview_url": "/previews/pinesui/elements-typing-effect.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spinner",
+  "name": "spinner",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** class-variance-authority"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called spinner. It should be: . Component type: registry:ui. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "spinner",
+  "display_name": "Spinner",
+  "preview_url": "/previews/parkui/spinner.png"
+}

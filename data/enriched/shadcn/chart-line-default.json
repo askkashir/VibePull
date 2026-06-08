@@ -1,0 +1,36 @@
+{
+  "id": "chart-line-default",
+  "name": "chart-line-default",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "line-chart",
+    "data-visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-default",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-default\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-line-default component is a basic line chart that displays trends over time. It consists of a static line graph with clear labels and can be used as a simple data visualization tool to show progress over a specific period. This component is useful for developers looking to add a straightforward line graph to their application.",
+  "style_tags": [
+    "minimal",
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-default\nDescription: The chart-line-default component is a basic line chart that displays trends over time. It consists of a static line graph with clear labels and can be used as a simple data visualization tool to show progress over a specific period. This component is useful for developers looking to add a straightforward line graph to their application.\nStyle: minimal, default\nInteractions: \nTags: chart, line-chart, data-visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-default",
+  "display_name": "Chart Line Default",
+  "preview_url": "/previews/shadcn/chart-line-default.png"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "toggle-outline",
+  "name": "toggle-outline",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "checkbox",
+    "switch",
+    "settings",
+    "preferences"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-outline",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-outline\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Toggle Outline component is a visually simple checkbox alternative that displays a toggle slider with a subtle outline. Use it to provide users with an intuitive way to toggle between different states, ideal for settings or preferences pages. It's versatile and suitable for a variety of use cases.",
+  "style_tags": [
+    "clean",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-outline\nDescription: The Toggle Outline component is a visually simple checkbox alternative that displays a toggle slider with a subtle outline. Use it to provide users with an intuitive way to toggle between different states, ideal for settings or preferences pages. It's versatile and suitable for a variety of use cases.\nStyle: clean, minimal\nInteractions: clickable, toggable\nTags: toggle, checkbox, switch, settings, preferences\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-outline",
+  "display_name": "Toggle Outline",
+  "preview_url": "/previews/shadcn/toggle-outline.png"
+}

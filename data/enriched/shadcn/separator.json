@@ -1,0 +1,33 @@
+{
+  "id": "separator",
+  "name": "separator",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "layout",
+    "spacing",
+    "ux"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "separator",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## separator\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The separator component is a horizontal line used to visually separate content within a layout. It is a simple yet effective way to create a clear divide between sections. Typically used to create white space and improve readability.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: separator\nDescription: The separator component is a horizontal line used to visually separate content within a layout. It is a simple yet effective way to create a clear divide between sections. Typically used to create white space and improve readability.\nStyle: \nInteractions: \nTags: layout, spacing, ux\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "separator",
+  "display_name": "Separator",
+  "preview_url": "/previews/shadcn/separator.png"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "form-rhf-input",
+  "name": "form-rhf-input",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "forms",
+    "input-text",
+    "input-email",
+    "input-date",
+    "input-checkbox"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-input",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-input\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "A basic input field used in forms, often used to collect user data. It's commonly placed inside a <Form> element and can be customized with its type, size, and additional features such as auto-focus, disabled state, and validation status.",
+  "style_tags": [
+    "material-design",
+    "flat-design"
+  ],
+  "interaction_tags": [
+    "fillable",
+    "focusable",
+    "errorable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: form-rhf-input\nDescription: A basic input field used in forms, often used to collect user data. It's commonly placed inside a <Form> element and can be customized with its type, size, and additional features such as auto-focus, disabled state, and validation status.\nStyle: material-design, flat-design\nInteractions: fillable, focusable, errorable\nTags: forms, input-text, input-email, input-date, input-checkbox\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-input",
+  "display_name": "Form Rhf Input",
+  "preview_url": "/previews/shadcn/form-rhf-input.png"
+}

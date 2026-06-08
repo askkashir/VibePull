@@ -1,0 +1,60 @@
+{
+  "id": "bg-animate-button-demo",
+  "name": "bg-animate-button-demo",
+  "source_code": "// registry/default/example/bg-animate-button-demo.tsx\nimport { BgAnimateButton } from \"../ui/bg-animate-button\"\n\ntype Gradients =\n  | \"sunrise\"\n  | \"ocean\"\n  | \"candy\"\n  | \"default\"\n  | \"forest\"\n  | \"sunset\"\n  | \"nebula\"\n\ntype Radius = \"full\" | \"xl\" | \"2xl\" | \"3xl\" | \"sm\"\ntype Animations = \"spin\" | \"pulse\" | \"spin-slow\" | \"spin-fast\"\n\nconst gradients: Gradients[] = [\n  \"sunrise\",\n  \"ocean\",\n  \"candy\",\n  \"forest\",\n  \"sunset\",\n  \"default\",\n  \"nebula\",\n]\nconst roundings: Radius[] = [\"full\", \"xl\", \"2xl\", \"3xl\", \"sm\"]\nconst animations: Animations[] = [\"spin\", \"pulse\", \"spin-slow\", \"spin-fast\"]\n\nexport const BgAnimateButtonsDemo = () => {\n  return (\n    <div className=\"w-full max-w-4xl\">\n      <div className=\" sm:px-12 md:px-24 flex flex-col justify-center  rounded-lg space-y-4\">\n        {/* Roundings Grid */}\n\n        <div className=\"grid grid-cols-3 gap-4\">\n          {roundings.slice(0, 2).map((rounding, i) => (\n            <BgAnimateButton\n              gradient={gradients[i + 1]}\n              key={rounding}\n              rounded={rounding}\n            >\n              {rounding}\n            </BgAnimateButton>\n          ))}\n        </div>\n        <div className=\"grid grid-cols-3 gap-4\">\n          {roundings.slice(2, 5).map((rounding, i) => (\n            <BgAnimateButton\n              gradient={gradients[i + 1]}\n              key={rounding}\n              rounded={rounding}\n            >\n              {rounding}\n            </BgAnimateButton>\n          ))}\n        </div>\n\n        {/* animations Grid */}\n        <div className=\"grid grid-cols-2 gap-4\">\n          {animations.map((animations, i) => (\n            <BgAnimateButton\n              key={animations}\n              gradient={gradients[i + 2]}\n              variant=\"ghost\"\n              animation={animations}\n            >\n              {animations}\n            </BgAnimateButton>\n          ))}\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport default BgAnimateButtonsDemo\n",
+  "description": "",
+  "tags": [
+    "button",
+    "animation",
+    "component-demo"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "bg-animate-button-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/bg-animate-button-demo.json",
+      "sha": "429ea5b8948a13585093292a69f72f7b1ff507b4",
+      "size": 2401,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-animate-button-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-animate-button-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/429ea5b8948a13585093292a69f72f7b1ff507b4",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/bg-animate-button-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-animate-button-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/429ea5b8948a13585093292a69f72f7b1ff507b4",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-animate-button-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bg-animate-button-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "bg-animate-button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/bg-animate-button-demo.tsx",
+          "content": "import { BgAnimateButton } from \"../ui/bg-animate-button\"\n\ntype Gradients =\n  | \"sunrise\"\n  | \"ocean\"\n  | \"candy\"\n  | \"default\"\n  | \"forest\"\n  | \"sunset\"\n  | \"nebula\"\n\ntype Radius = \"full\" | \"xl\" | \"2xl\" | \"3xl\" | \"sm\"\ntype Animations = \"spin\" | \"pulse\" | \"spin-slow\" | \"spin-fast\"\n\nconst gradients: Gradients[] = [\n  \"sunrise\",\n  \"ocean\",\n  \"candy\",\n  \"forest\",\n  \"sunset\",\n  \"default\",\n  \"nebula\",\n]\nconst roundings: Radius[] = [\"full\", \"xl\", \"2xl\", \"3xl\", \"sm\"]\nconst animations: Animations[] = [\"spin\", \"pulse\", \"spin-slow\", \"spin-fast\"]\n\nexport const BgAnimateButtonsDemo = () => {\n  return (\n    <div className=\"w-full max-w-4xl\">\n      <div className=\" sm:px-12 md:px-24 flex flex-col justify-center  rounded-lg space-y-4\">\n        {/* Roundings Grid */}\n\n        <div className=\"grid grid-cols-3 gap-4\">\n          {roundings.slice(0, 2).map((rounding, i) => (\n            <BgAnimateButton\n              gradient={gradients[i + 1]}\n              key={rounding}\n              rounded={rounding}\n            >\n              {rounding}\n            </BgAnimateButton>\n          ))}\n        </div>\n        <div className=\"grid grid-cols-3 gap-4\">\n          {roundings.slice(2, 5).map((rounding, i) => (\n            <BgAnimateButton\n              gradient={gradients[i + 1]}\n              key={rounding}\n              rounded={rounding}\n            >\n              {rounding}\n            </BgAnimateButton>\n          ))}\n        </div>\n\n        {/* animations Grid */}\n        <div className=\"grid grid-cols-2 gap-4\">\n          {animations.map((animations, i) => (\n            <BgAnimateButton\n              key={animations}\n              gradient={gradients[i + 2]}\n              variant=\"ghost\"\n              animation={animations}\n            >\n              {animations}\n            </BgAnimateButton>\n          ))}\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport default BgAnimateButtonsDemo\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "This component is a collection of animated background buttons, which can be customized with various gradients, roundings, and animations. It is typically used to showcase button variations in a demo or documentation context.",
+  "style_tags": [
+    "customizable"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "component-demo",
+  "generation_prompt": "Create a production-ready component-demo component with the following characteristics:\n\nName: bg-animate-button-demo\nDescription: This component is a collection of animated background buttons, which can be customized with various gradients, roundings, and animations. It is typically used to showcase button variations in a demo or documentation context.\nStyle: customizable\nInteractions: animated\nTags: button, animation, component-demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/bg-animate-button-demo.tsx\nimport { BgAnimateButton } from \"../ui/bg-animate-button\"\n\ntype Gradients =\n  | \"sunrise\"\n  | \"ocean\"\n  | \"candy\"\n  | \"default\"\n  | \"forest\"\n  | \"sunset\"\n  | \"nebula\"\n\ntype Radius = \"full\" | \"xl\" | \"2xl\" | \"3xl\" | \"sm\"\ntype Animations = \"spin\" | \"pulse\" | \"spin-slow\" | \"spin-fast\"\n\nconst gradients: Gradients[] = [\n  \"sunrise\",\n  \"ocean\",\n  \"candy\",\n  \"forest\",\n  \"sunset\",\n  \"default\",\n  \"nebula\",\n]\nconst roundings: Radius[] = [\"full\", \"xl\", ",
+  "prompt_version": 2,
+  "clean_id": "bg-animate-button-demo",
+  "display_name": "Bg Animate Button Demo",
+  "preview_url": "/previews/cultui/bg-animate-button-demo.png"
+}

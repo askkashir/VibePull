@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_calendar-year-picker_year-picker-context",
+  "name": "year-picker-context",
+  "source_code": "// packages/react/src/components/calendar-year-picker/year-picker-context.ts\n\"use client\";\n\nimport type {DateValue} from \"react-aria-components/Calendar\";\n\nimport {createContext, useContext} from \"react\";\n\n/* -------------------------------------------------------------------------------------------------\n * YearPickerContext\n *\n * Context provided by Calendar (and RangeCalendar) to control year-picker visibility.\n * Internal child components consume this to toggle the year-picker open/close state,\n * keeping the public API clean and wrapper-free.\n * -----------------------------------------------------------------------------------------------*/\ninterface YearPickerContextValue {\n  isYearPickerOpen: boolean;\n  setIsYearPickerOpen: (open: boolean) => void;\n  calendarRef: React.RefObject<HTMLDivElement | null>;\n  calendarGridSlot: \"calendar-grid\" | \"range-calendar-grid\";\n}\n\ninterface YearPickerStateContextValue {\n  focusedDate: DateValue;\n  setFocusedDate: (value: DateValue) => void;\n  timeZone: string;\n  minValue?: DateValue | null;\n  maxValue?: DateValue | null;\n}\n\nconst YearPickerContext = createContext<YearPickerContextValue | null>(null);\nconst YearPickerStateContext = createContext<YearPickerStateContextValue | null>(null);\n\n/**\n * Hook to consume YearPickerContext.\n * Must be used inside Calendar or RangeCalendar.\n */\nfunction useYearPicker(): YearPickerContextValue {\n  const context = useContext(YearPickerContext);\n\n  if (!context) {\n    throw new Error(\"useYearPicker must be used within a <Calendar> or <RangeCalendar> component.\");\n  }\n\n  return context;\n}\n\n/**\n * Hook to consume normalized calendar state used by YearPicker.\n * Must be provided by Calendar or RangeCalendar root via adapter bridge.\n */\nfunction useYearPickerState(): YearPickerStateContextValue {\n  const context = useContext(YearPickerStateContext);\n\n  if (!context) {\n    throw new Error(\n      \"useYearPickerState must be used within a <Calendar> or <RangeCalendar> component.\",\n    );\n  }\n\n  return context;\n}\n\nexport {YearPickerContext, YearPickerStateContext, useYearPicker, useYearPickerState};\nexport type {YearPickerContextValue, YearPickerStateContextValue};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "calendar-year-picker_year-picker-context",
+      "name": "year-picker-context",
+      "path": "packages/react/src/components/calendar-year-picker/year-picker-context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_calendar-year-picker_year-picker-context",
+      "name": "year-picker-context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/calendar-year-picker/year-picker-context.ts",
+          "content": "\"use client\";\n\nimport type {DateValue} from \"react-aria-components/Calendar\";\n\nimport {createContext, useContext} from \"react\";\n\n/* -------------------------------------------------------------------------------------------------\n * YearPickerContext\n *\n * Context provided by Calendar (and RangeCalendar) to control year-picker visibility.\n * Internal child components consume this to toggle the year-picker open/close state,\n * keeping the public API clean and wrapper-free.\n * -----------------------------------------------------------------------------------------------*/\ninterface YearPickerContextValue {\n  isYearPickerOpen: boolean;\n  setIsYearPickerOpen: (open: boolean) => void;\n  calendarRef: React.RefObject<HTMLDivElement | null>;\n  calendarGridSlot: \"calendar-grid\" | \"range-calendar-grid\";\n}\n\ninterface YearPickerStateContextValue {\n  focusedDate: DateValue;\n  setFocusedDate: (value: DateValue) => void;\n  timeZone: string;\n  minValue?: DateValue | null;\n  maxValue?: DateValue | null;\n}\n\nconst YearPickerContext = createContext<YearPickerContextValue | null>(null);\nconst YearPickerStateContext = createContext<YearPickerStateContextValue | null>(null);\n\n/**\n * Hook to consume YearPickerContext.\n * Must be used inside Calendar or RangeCalendar.\n */\nfunction useYearPicker(): YearPickerContextValue {\n  const context = useContext(YearPickerContext);\n\n  if (!context) {\n    throw new Error(\"useYearPicker must be used within a <Calendar> or <RangeCalendar> component.\");\n  }\n\n  return context;\n}\n\n/**\n * Hook to consume normalized calendar state used by YearPicker.\n * Must be provided by Calendar or RangeCalendar root via adapter bridge.\n */\nfunction useYearPickerState(): YearPickerStateContextValue {\n  const context = useContext(YearPickerStateContext);\n\n  if (!context) {\n    throw new Error(\n      \"useYearPickerState must be used within a <Calendar> or <RangeCalendar> component.\",\n    );\n  }\n\n  return context;\n}\n\nexport {YearPickerContext, YearPickerStateContext, useYearPicker, useYearPickerState};\nexport type {YearPickerContextValue, YearPickerStateContextValue};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

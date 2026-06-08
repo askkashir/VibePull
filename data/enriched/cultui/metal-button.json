@@ -1,0 +1,72 @@
+{
+  "id": "metal-button",
+  "name": "metal-button",
+  "source_code": "// registry/default/ui/metal-button.tsx\n\"use client\"\n\n/**\n * `metal-fx` around `Button` — liquid metal ring for controls.\n * `className` styles the button; `metalFxClassName` styles the MetalFx wrapper.\n *\n * With `normalizeHostStyles` (default), variant fills live on the MetalFx wrapper\n * and the button stays transparent so the shader ring stays visible. Pass\n * `normalizeHostStyles={false}` to keep all shadcn chrome on the button (filled\n * variants will cover most of the metal).\n */\nimport type { ComponentProps, CSSProperties } from \"react\"\nimport { forwardRef } from \"react\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\nimport { MetalFx, type MetalFxProps, type MetalFxVariant } from \"metal-fx\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/components/ui/button\"\n\nconst metalSurfaceVariants = cva(\"transition-colors\", {\n  variants: {\n    variant: {\n      default: \"bg-primary! text-primary-foreground! hover:bg-primary/80!\",\n      outline:\n        \"bg-background! text-foreground! hover:bg-input/50! dark:bg-input/30!\",\n      secondary:\n        \"bg-secondary! text-secondary-foreground! hover:bg-secondary/80!\",\n      ghost:\n        \"bg-transparent! text-foreground! hover:bg-muted/50! dark:hover:bg-muted/50!\",\n      destructive:\n        \"bg-destructive/10! text-destructive! hover:bg-destructive/20! dark:bg-destructive/20! dark:hover:bg-destructive/30!\",\n      link: \"bg-transparent! text-primary!\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n})\n\n/** Strip outer chrome on the host; MetalFx punches the ring around the interior. */\nconst metalHostChromeReset =\n  \"border-0! bg-transparent! shadow-none! hover:bg-transparent! aria-expanded:bg-transparent!\"\n\n/** Keep a stable edge above the animated shader so bright frames cannot erase it. */\nconst metalStableEdge =\n  \"relative isolate before:pointer-events-none before:absolute before:inset-0 before:z-10 before:rounded-[inherit] before:ring-1 before:ring-border/70 before:ring-inset dark:before:ring-border/80\"\n\ntype MetalSurfaceVariant = NonNullable<\n  VariantProps<typeof metalSurfaceVariants>[\"variant\"]\n>\n\ntype MetalShellProps = Pick<\n  MetalFxProps,\n  | \"preset\"\n  | \"theme\"\n  | \"strength\"\n  | \"paused\"\n  | \"borderRadius\"\n  | \"disableGlow\"\n  | \"reflectionTargets\"\n  | \"shaderScale\"\n  | \"ringCssPx\"\n  | \"scale\"\n  | \"normalizeHostStyles\"\n> & {\n  metalVariant?: MetalFxVariant\n  metalFxClassName?: string\n  metalFxStyle?: CSSProperties\n}\n\nexport type MetalButtonProps = ComponentProps<typeof Button> & MetalShellProps\n\nexport type MetalIconButtonProps = MetalButtonProps\n\nexport const MetalButton = forwardRef<HTMLDivElement, MetalButtonProps>(\n  function MetalButton(\n    {\n      metalVariant = \"button\",\n      metalFxClassName,\n      metalFxStyle,\n      preset = \"chromatic\",\n      theme = \"auto\",\n      strength = 0.9,\n      paused,\n      borderRadius,\n      disableGlow,\n      reflectionTargets,\n      shaderScale,\n      ringCssPx,\n      scale,\n      normalizeHostStyles = true,\n      variant = \"default\",\n      className,\n      ...buttonProps\n    },\n    ref\n  ) {\n    const surfaceVariant = variant as MetalSurfaceVariant\n\n    return (\n      <MetalFx\n        borderRadius={borderRadius}\n        className={cn(\n          \"overflow-visible! inline-flex w-fit min-w-0 flex-col items-stretch leading-none\",\n          metalStableEdge,\n          normalizeHostStyles &&\n            metalSurfaceVariants({ variant: surfaceVariant }),\n          metalFxClassName\n        )}\n        disableGlow={disableGlow}\n        normalizeHostStyles={normalizeHostStyles}\n        paused={paused}\n        preset={preset}\n        ref={ref}\n        reflectionTargets={reflectionTargets}\n        ringCssPx={ringCssPx}\n        scale={scale}\n        shaderScale={shaderScale}\n        strength={strength}\n        style={metalFxStyle}\n        theme={theme}\n        variant={metalVariant}\n      >\n        <Button\n          className={cn(normalizeHostStyles && metalHostChromeReset, className)}\n          variant={variant}\n          {...buttonProps}\n        />\n      </MetalFx>\n    )\n  }\n)\n\nMetalButton.displayName = \"MetalButton\"\n\nexport const MetalIconButton = forwardRef<HTMLDivElement, MetalIconButtonProps>(\n  function MetalIconButton(\n    { size = \"icon-sm\", metalVariant = \"circle\", className, ...props },\n    ref\n  ) {\n    return (\n      <MetalButton\n        className={cn(\n          \"leading-none! [&_svg]:block [&_svg]:shrink-0\",\n          className\n        )}\n        metalVariant={metalVariant}\n        ref={ref}\n        size={size}\n        {...props}\n      />\n    )\n  }\n)\n\nMetalIconButton.displayName = \"MetalIconButton\"\n",
+  "description": "Shadcn Button wrapped in MetalFx: animated liquid metal ring with text and icon variants",
+  "tags": [
+    "ui",
+    "button",
+    "metal",
+    "liquid",
+    "futuristic"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "metal-button.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/metal-button.json",
+      "sha": "a22b5727f06f7276e982746308e3cfa7dd4dae77",
+      "size": 5269,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/metal-button.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/metal-button.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/a22b5727f06f7276e982746308e3cfa7dd4dae77",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/metal-button.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/metal-button.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/a22b5727f06f7276e982746308e3cfa7dd4dae77",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/metal-button.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "metal-button",
+      "type": "registry:ui",
+      "description": "Shadcn Button wrapped in MetalFx: animated liquid metal ring with text and icon variants",
+      "dependencies": [
+        "metal-fx"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/metal-button.tsx",
+          "content": "\"use client\"\n\n/**\n * `metal-fx` around `Button` — liquid metal ring for controls.\n * `className` styles the button; `metalFxClassName` styles the MetalFx wrapper.\n *\n * With `normalizeHostStyles` (default), variant fills live on the MetalFx wrapper\n * and the button stays transparent so the shader ring stays visible. Pass\n * `normalizeHostStyles={false}` to keep all shadcn chrome on the button (filled\n * variants will cover most of the metal).\n */\nimport type { ComponentProps, CSSProperties } from \"react\"\nimport { forwardRef } from \"react\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\nimport { MetalFx, type MetalFxProps, type MetalFxVariant } from \"metal-fx\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/components/ui/button\"\n\nconst metalSurfaceVariants = cva(\"transition-colors\", {\n  variants: {\n    variant: {\n      default: \"bg-primary! text-primary-foreground! hover:bg-primary/80!\",\n      outline:\n        \"bg-background! text-foreground! hover:bg-input/50! dark:bg-input/30!\",\n      secondary:\n        \"bg-secondary! text-secondary-foreground! hover:bg-secondary/80!\",\n      ghost:\n        \"bg-transparent! text-foreground! hover:bg-muted/50! dark:hover:bg-muted/50!\",\n      destructive:\n        \"bg-destructive/10! text-destructive! hover:bg-destructive/20! dark:bg-destructive/20! dark:hover:bg-destructive/30!\",\n      link: \"bg-transparent! text-primary!\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n})\n\n/** Strip outer chrome on the host; MetalFx punches the ring around the interior. */\nconst metalHostChromeReset =\n  \"border-0! bg-transparent! shadow-none! hover:bg-transparent! aria-expanded:bg-transparent!\"\n\n/** Keep a stable edge above the animated shader so bright frames cannot erase it. */\nconst metalStableEdge =\n  \"relative isolate before:pointer-events-none before:absolute before:inset-0 before:z-10 before:rounded-[inherit] before:ring-1 before:ring-border/70 before:ring-inset dark:before:ring-border/80\"\n\ntype MetalSurfaceVariant = NonNullable<\n  VariantProps<typeof metalSurfaceVariants>[\"variant\"]\n>\n\ntype MetalShellProps = Pick<\n  MetalFxProps,\n  | \"preset\"\n  | \"theme\"\n  | \"strength\"\n  | \"paused\"\n  | \"borderRadius\"\n  | \"disableGlow\"\n  | \"reflectionTargets\"\n  | \"shaderScale\"\n  | \"ringCssPx\"\n  | \"scale\"\n  | \"normalizeHostStyles\"\n> & {\n  metalVariant?: MetalFxVariant\n  metalFxClassName?: string\n  metalFxStyle?: CSSProperties\n}\n\nexport type MetalButtonProps = ComponentProps<typeof Button> & MetalShellProps\n\nexport type MetalIconButtonProps = MetalButtonProps\n\nexport const MetalButton = forwardRef<HTMLDivElement, MetalButtonProps>(\n  function MetalButton(\n    {\n      metalVariant = \"button\",\n      metalFxClassName,\n      metalFxStyle,\n      preset = \"chromatic\",\n      theme = \"auto\",\n      strength = 0.9,\n      paused,\n      borderRadius,\n      disableGlow,\n      reflectionTargets,\n      shaderScale,\n      ringCssPx,\n      scale,\n      normalizeHostStyles = true,\n      variant = \"default\",\n      className,\n      ...buttonProps\n    },\n    ref\n  ) {\n    const surfaceVariant = variant as MetalSurfaceVariant\n\n    return (\n      <MetalFx\n        borderRadius={borderRadius}\n        className={cn(\n          \"overflow-visible! inline-flex w-fit min-w-0 flex-col items-stretch leading-none\",\n          metalStableEdge,\n          normalizeHostStyles &&\n            metalSurfaceVariants({ variant: surfaceVariant }),\n          metalFxClassName\n        )}\n        disableGlow={disableGlow}\n        normalizeHostStyles={normalizeHostStyles}\n        paused={paused}\n        preset={preset}\n        ref={ref}\n        reflectionTargets={reflectionTargets}\n        ringCssPx={ringCssPx}\n        scale={scale}\n        shaderScale={shaderScale}\n        strength={strength}\n        style={metalFxStyle}\n        theme={theme}\n        variant={metalVariant}\n      >\n        <Button\n          className={cn(normalizeHostStyles && metalHostChromeReset, className)}\n          variant={variant}\n          {...buttonProps}\n        />\n      </MetalFx>\n    )\n  }\n)\n\nMetalButton.displayName = \"MetalButton\"\n\nexport const MetalIconButton = forwardRef<HTMLDivElement, MetalIconButtonProps>(\n  function MetalIconButton(\n    { size = \"icon-sm\", metalVariant = \"circle\", className, ...props },\n    ref\n  ) {\n    return (\n      <MetalButton\n        className={cn(\n          \"leading-none! [&_svg]:block [&_svg]:shrink-0\",\n          className\n        )}\n        metalVariant={metalVariant}\n        ref={ref}\n        size={size}\n        {...props}\n      />\n    )\n  }\n)\n\nMetalIconButton.displayName = \"MetalIconButton\"\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The metal-button is a component with a liquid metal ring, used for controls. It is suitable when you want to create a futuristic or tech-inspired UI element.",
+  "style_tags": [
+    "dark",
+    "transparent",
+    "shiny",
+    "chromatic",
+    "auto"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: metal-button\nDescription: The metal-button is a component with a liquid metal ring, used for controls. It is suitable when you want to create a futuristic or tech-inspired UI element.\nStyle: dark, transparent, shiny, chromatic, auto\nInteractions: hover, clickable, animated\nTags: ui, button, metal, liquid, futuristic\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/metal-button.tsx\n\"use client\"\n\n/**\n * `metal-fx` around `Button` — liquid metal ring for controls.\n * `className` styles the button; `metalFxClassName` styles the MetalFx wrapper.\n *\n * With `normalizeHostStyles` (default), variant fills live on the MetalFx wrapper\n * and the button stays transparent so the shader ring stays visible. Pass\n * `normalizeHostStyles={false}` to keep all shadcn chrome on the button (filled\n * variants will cover most of the metal).\n */\nimport t",
+  "prompt_version": 2,
+  "clean_id": "metal-button",
+  "display_name": "Metal Button",
+  "preview_url": "/previews/cultui/metal-button.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_OverflowList_use-dimensions",
+  "name": "use-dimensions",
+  "source_code": "// packages/@mantine/core/src/components/OverflowList/use-dimensions.tsx\nimport React, { useEffect, useRef, useState } from 'react';\nimport { flushSync } from 'react-dom';\n\ninterface ResizeObserverDimensions {\n  width: number;\n  height: number;\n  contentWidth: number;\n  contentHeight: number;\n}\nexport function useDimensions<T extends HTMLElement | null>(\n  elementRef: React.RefObject<T>\n): ResizeObserverDimensions | null {\n  const resizeObserverRef = useRef<ResizeObserver | null>(null);\n  const [dimensions, setDimensions] = useState<ResizeObserverDimensions | null>(null);\n\n  useEffect(() => {\n    if (!elementRef.current) {\n      return;\n    }\n\n    resizeObserverRef.current = new ResizeObserver((entries) => {\n      if (entries[0]) {\n        const entry = entries[0];\n        const updateDimensions = () => {\n          setDimensions({\n            width: entry.borderBoxSize[0]?.inlineSize ?? entry.target.clientWidth,\n            height: entry.borderBoxSize[0]?.blockSize ?? entry.target.clientHeight,\n            contentWidth: entry.contentRect.width,\n            contentHeight: entry.contentRect.height,\n          });\n        };\n\n        flushSync(updateDimensions);\n      }\n    });\n\n    resizeObserverRef.current.observe(elementRef.current);\n\n    return () => {\n      if (resizeObserverRef.current) {\n        resizeObserverRef.current.disconnect();\n        resizeObserverRef.current = null;\n      }\n    };\n  }, [elementRef.current]);\n\n  return dimensions;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "OverflowList_use-dimensions",
+      "name": "use-dimensions",
+      "path": "packages/@mantine/core/src/components/OverflowList/use-dimensions.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_OverflowList_use-dimensions",
+      "name": "use-dimensions",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/OverflowList/use-dimensions.tsx",
+          "content": "import React, { useEffect, useRef, useState } from 'react';\nimport { flushSync } from 'react-dom';\n\ninterface ResizeObserverDimensions {\n  width: number;\n  height: number;\n  contentWidth: number;\n  contentHeight: number;\n}\nexport function useDimensions<T extends HTMLElement | null>(\n  elementRef: React.RefObject<T>\n): ResizeObserverDimensions | null {\n  const resizeObserverRef = useRef<ResizeObserver | null>(null);\n  const [dimensions, setDimensions] = useState<ResizeObserverDimensions | null>(null);\n\n  useEffect(() => {\n    if (!elementRef.current) {\n      return;\n    }\n\n    resizeObserverRef.current = new ResizeObserver((entries) => {\n      if (entries[0]) {\n        const entry = entries[0];\n        const updateDimensions = () => {\n          setDimensions({\n            width: entry.borderBoxSize[0]?.inlineSize ?? entry.target.clientWidth,\n            height: entry.borderBoxSize[0]?.blockSize ?? entry.target.clientHeight,\n            contentWidth: entry.contentRect.width,\n            contentHeight: entry.contentRect.height,\n          });\n        };\n\n        flushSync(updateDimensions);\n      }\n    });\n\n    resizeObserverRef.current.observe(elementRef.current);\n\n    return () => {\n      if (resizeObserverRef.current) {\n        resizeObserverRef.current.disconnect();\n        resizeObserverRef.current = null;\n      }\n    };\n  }, [elementRef.current]);\n\n  return dimensions;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

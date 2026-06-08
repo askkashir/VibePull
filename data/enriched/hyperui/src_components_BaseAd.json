@@ -1,0 +1,45 @@
+{
+  "id": "src_components_BaseAd",
+  "name": "BaseAd",
+  "source_code": "// src/components/BaseAd.astro\n<div class=\"not-prose min-h-32 max-w-sm\">\n  <div\n    id={Astro.originPathname}\n    data-ea-publisher=\"hyperuidev\"\n    data-ea-type=\"image\"\n    data-ea-keywords=\"tailwind-css|nextjs|reactjs|ai-development|devops|cloud-infrastructure|serverless\"\n    class=\"horizontal [&_.ea-body]:text-gray-700! [&_.ea-callout]:mx-0! [&_.ea-callout]:-mt-px! [&_.ea-callout]:mb-0! [&_.ea-callout]:max-w-none! [&_.ea-callout]:rounded-b-lg! [&_.ea-callout]:border [&_.ea-callout]:border-gray-200 [&_.ea-callout]:bg-gray-50! [&_.ea-callout]:px-4! [&_.ea-callout]:py-2! [&_.ea-callout]:text-gray-500! [&_.ea-callout]:not-italic! [&_.ea-content]:m-0! [&_.ea-content]:max-w-none! [&_.ea-content]:rounded-t-lg! [&_.ea-content]:rounded-b-none! [&_.ea-content]:border! [&_.ea-content]:border-gray-200! [&_.ea-content]:bg-white! [&_.ea-content]:p-4! [&_.ea-content]:shadow-none! [&_.ea-content>a>img]:rounded-lg! [&_.ea-cta]:text-sky-500! [&_.ea-domain]:text-right! [&_.ea-domain]:text-gray-500! [&_.ea-headline]:text-sky-500! [&_.ea-placement]:rounded-lg [&_.ea-placement]:shadow-sm\"\n  >\n  </div>\n</div>\n",
+  "description": "",
+  "tags": [
+    "Ad",
+    "Advertisement",
+    "Image"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "BaseAd",
+      "name": "BaseAd",
+      "path": "src/components/BaseAd.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_BaseAd",
+      "name": "BaseAd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/BaseAd.astro",
+          "content": "<div class=\"not-prose min-h-32 max-w-sm\">\n  <div\n    id={Astro.originPathname}\n    data-ea-publisher=\"hyperuidev\"\n    data-ea-type=\"image\"\n    data-ea-keywords=\"tailwind-css|nextjs|reactjs|ai-development|devops|cloud-infrastructure|serverless\"\n    class=\"horizontal [&_.ea-body]:text-gray-700! [&_.ea-callout]:mx-0! [&_.ea-callout]:-mt-px! [&_.ea-callout]:mb-0! [&_.ea-callout]:max-w-none! [&_.ea-callout]:rounded-b-lg! [&_.ea-callout]:border [&_.ea-callout]:border-gray-200 [&_.ea-callout]:bg-gray-50! [&_.ea-callout]:px-4! [&_.ea-callout]:py-2! [&_.ea-callout]:text-gray-500! [&_.ea-callout]:not-italic! [&_.ea-content]:m-0! [&_.ea-content]:max-w-none! [&_.ea-content]:rounded-t-lg! [&_.ea-content]:rounded-b-none! [&_.ea-content]:border! [&_.ea-content]:border-gray-200! [&_.ea-content]:bg-white! [&_.ea-content]:p-4! [&_.ea-content]:shadow-none! [&_.ea-content>a>img]:rounded-lg! [&_.ea-cta]:text-sky-500! [&_.ea-domain]:text-right! [&_.ea-domain]:text-gray-500! [&_.ea-headline]:text-sky-500! [&_.ea-placement]:rounded-lg [&_.ea-placement]:shadow-sm\"\n  >\n  </div>\n</div>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A horizontal advertisement component with image, callout, headline, and domain information. It is used to display advertisements on a webpage.",
+  "style_tags": [
+    "horizontal"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BaseAd\nDescription: A horizontal advertisement component with image, callout, headline, and domain information. It is used to display advertisements on a webpage.\nStyle: horizontal\nInteractions: none\nTags: Ad, Advertisement, Image\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/BaseAd.astro\n<div class=\"not-prose min-h-32 max-w-sm\">\n  <div\n    id={Astro.originPathname}\n    data-ea-publisher=\"hyperuidev\"\n    data-ea-type=\"image\"\n    data-ea-keywords=\"tailwind-css|nextjs|reactjs|ai-development|devops|cloud-infrastructure|serverless\"\n    class=\"horizontal [&_.ea-body]:text-gray-700! [&_.ea-callout]:mx-0! [&_.ea-callout]:-mt-px! [&_.ea-callout]:mb-0! [&_.ea-callout]:max-w-none! [&_.ea-callout]:rounded-b-lg! [&_.ea-callout]:border [&_.ea-callout]:border-gra",
+  "prompt_version": 2,
+  "clean_id": "base-ad",
+  "display_name": "Base Ad",
+  "preview_url": "/previews/hyperui/src-components-basead.png"
+}

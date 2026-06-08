@@ -1,0 +1,63 @@
+{
+  "id": "stripe-bg-guides-demo",
+  "name": "stripe-bg-guides-demo",
+  "source_code": "// registry/default/example/stripe-bg-guides-demo.tsx\n\"use client\"\n\nimport { StripeBgGuides } from \"../ui/stripe-bg-guides\"\n\nexport default function StripeBgGuidesDemo() {\n  return (\n    <div className=\"relative w-full h-[400px] overflow-hidden rounded-lg border bg-background\">\n      {/* Modified StripeBgGuides to work within a container */}\n      <StripeBgGuides\n        columnCount={6}\n        animated={true}\n        animationDuration={8}\n        glowColor=\"hsl(var(--primary))\"\n        randomize={true}\n        randomInterval={3000}\n        contained={true}\n      />\n\n      {/* Content to demonstrate the background effect */}\n      <div className=\"relative z-10 flex h-full items-center justify-center\">\n        <div className=\"max-w-md text-center\">\n          <h3 className=\"text-2xl font-bold mb-2\">Stripe Background Guides</h3>\n          <p className=\"text-muted-foreground\">\n            Animated background guides with glowing effects, inspired by\n            Stripe's design system.\n          </p>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "stripe",
+    "animation",
+    "background",
+    "dynamic"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "stripe-bg-guides-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/stripe-bg-guides-demo.json",
+      "sha": "07e630f4dea54fd1a6cdb9dcfe03332981e9e988",
+      "size": 1391,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/stripe-bg-guides-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/stripe-bg-guides-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/07e630f4dea54fd1a6cdb9dcfe03332981e9e988",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/stripe-bg-guides-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/stripe-bg-guides-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/07e630f4dea54fd1a6cdb9dcfe03332981e9e988",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/stripe-bg-guides-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "stripe-bg-guides-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "stripe-bg-guides"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/stripe-bg-guides-demo.tsx",
+          "content": "\"use client\"\n\nimport { StripeBgGuides } from \"../ui/stripe-bg-guides\"\n\nexport default function StripeBgGuidesDemo() {\n  return (\n    <div className=\"relative w-full h-[400px] overflow-hidden rounded-lg border bg-background\">\n      {/* Modified StripeBgGuides to work within a container */}\n      <StripeBgGuides\n        columnCount={6}\n        animated={true}\n        animationDuration={8}\n        glowColor=\"hsl(var(--primary))\"\n        randomize={true}\n        randomInterval={3000}\n        contained={true}\n      />\n\n      {/* Content to demonstrate the background effect */}\n      <div className=\"relative z-10 flex h-full items-center justify-center\">\n        <div className=\"max-w-md text-center\">\n          <h3 className=\"text-2xl font-bold mb-2\">Stripe Background Guides</h3>\n          <p className=\"text-muted-foreground\">\n            Animated background guides with glowing effects, inspired by\n            Stripe's design system.\n          </p>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A Stripe-like animated background component. This component is useful when you want to add a visually engaging and dynamic background effect to your application, inspired by Stripe's design system.",
+  "style_tags": [
+    "dark",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: stripe-bg-guides-demo\nDescription: A Stripe-like animated background component. This component is useful when you want to add a visually engaging and dynamic background effect to your application, inspired by Stripe's design system.\nStyle: dark, glassmorphism\nInteractions: animated, hover\nTags: stripe, animation, background, dynamic\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/stripe-bg-guides-demo.tsx\n\"use client\"\n\nimport { StripeBgGuides } from \"../ui/stripe-bg-guides\"\n\nexport default function StripeBgGuidesDemo() {\n  return (\n    <div className=\"relative w-full h-[400px] overflow-hidden rounded-lg border bg-background\">\n      {/* Modified StripeBgGuides to work within a container */}\n      <StripeBgGuides\n        columnCount={6}\n        animated={true}\n        animationDuration={8}\n        glowColor=\"hsl(var(--primary))\"\n        randomiz",
+  "prompt_version": 2,
+  "clean_id": "stripe-bg-guides-demo",
+  "display_name": "Stripe Bg Guides Demo",
+  "preview_url": "/previews/cultui/stripe-bg-guides-demo.png"
+}

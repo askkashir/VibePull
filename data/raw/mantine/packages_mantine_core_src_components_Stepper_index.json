@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Stepper_index",
+  "name": "Stepper",
+  "source_code": "// packages/@mantine/core/src/components/Stepper/index.ts\nimport type {\n  StepFragmentComponent,\n  StepperCssVariables,\n  StepperFactory,\n  StepperProps,\n  StepperStylesNames,\n} from './Stepper';\nimport type { StepperContextValue } from './Stepper.context';\nimport type { StepperCompletedProps } from './StepperCompleted/StepperCompleted';\nimport type { StepperStepProps } from './StepperStep/StepperStep';\n\nexport { Stepper } from './Stepper';\nexport { StepperStep } from './StepperStep/StepperStep';\nexport { StepperCompleted } from './StepperCompleted/StepperCompleted';\nexport { useStepperContext } from './Stepper.context';\n\nexport type {\n  StepperProps,\n  StepperStylesNames,\n  StepperCssVariables,\n  StepperFactory,\n  StepFragmentComponent,\n  StepperStepProps,\n  StepperCompletedProps,\n  StepperContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Stepper_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Stepper/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Stepper_index",
+      "name": "Stepper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Stepper/index.ts",
+          "content": "import type {\n  StepFragmentComponent,\n  StepperCssVariables,\n  StepperFactory,\n  StepperProps,\n  StepperStylesNames,\n} from './Stepper';\nimport type { StepperContextValue } from './Stepper.context';\nimport type { StepperCompletedProps } from './StepperCompleted/StepperCompleted';\nimport type { StepperStepProps } from './StepperStep/StepperStep';\n\nexport { Stepper } from './Stepper';\nexport { StepperStep } from './StepperStep/StepperStep';\nexport { StepperCompleted } from './StepperCompleted/StepperCompleted';\nexport { useStepperContext } from './Stepper.context';\n\nexport type {\n  StepperProps,\n  StepperStylesNames,\n  StepperCssVariables,\n  StepperFactory,\n  StepFragmentComponent,\n  StepperStepProps,\n  StepperCompletedProps,\n  StepperContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

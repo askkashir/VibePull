@@ -1,0 +1,26 @@
+{
+  "id": "avatar-demo",
+  "name": "avatar-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "avatar-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## avatar-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called avatar-demo. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "avatar-demo",
+  "display_name": "Avatar Demo"
+}

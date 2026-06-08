@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_MultiSelect_index",
+  "name": "MultiSelect",
+  "source_code": "// packages/@mantine/core/src/components/MultiSelect/index.ts\nimport type { MultiSelectFactory, MultiSelectProps, MultiSelectStylesNames } from './MultiSelect';\n\nexport { MultiSelect } from './MultiSelect';\n\nexport type { MultiSelectProps, MultiSelectStylesNames, MultiSelectFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "MultiSelect_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/MultiSelect/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_MultiSelect_index",
+      "name": "MultiSelect",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/MultiSelect/index.ts",
+          "content": "import type { MultiSelectFactory, MultiSelectProps, MultiSelectStylesNames } from './MultiSelect';\n\nexport { MultiSelect } from './MultiSelect';\n\nexport type { MultiSelectProps, MultiSelectStylesNames, MultiSelectFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "chart-line-label-custom",
+  "name": "chart-line-label-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data visualization",
+    "graphing",
+    "charts",
+    "labels"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-label-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-label-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Chart Line Label Custom is a versatile chart component that displays custom line labels on a line chart. It's ideal for dashboards or visualizing data trends. Developers can use this component to present complex data in an intuitive and easy-to-understand format.",
+  "style_tags": [
+    "modern",
+    "material design",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "hover effects",
+    "interactive",
+    "draggable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-label-custom\nDescription: Chart Line Label Custom is a versatile chart component that displays custom line labels on a line chart. It's ideal for dashboards or visualizing data trends. Developers can use this component to present complex data in an intuitive and easy-to-understand format.\nStyle: modern, material design, responsive\nInteractions: hover effects, interactive, draggable\nTags: data visualization, graphing, charts, labels\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-label-custom",
+  "display_name": "Chart Line Label Custom",
+  "preview_url": "/previews/shadcn/chart-line-label-custom.png"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-client-position_get-client-position",
+  "name": "get-client-position",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts\nexport function getClientPosition(event: any, orientation?: 'horizontal' | 'vertical') {\n  if ('TouchEvent' in window && event instanceof window.TouchEvent) {\n    const touch = event.touches[0];\n    return orientation === 'vertical' ? touch.clientY : touch.clientX;\n  }\n\n  return orientation === 'vertical' ? event.clientY : event.clientX;\n}\n",
+  "description": "",
+  "tags": [
+    "client",
+    "get",
+    "mantine",
+    "other",
+    "position"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-client-position_get-client-position",
+      "name": "get-client-position",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-client-position_get-client-position",
+      "name": "get-client-position",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts",
+          "content": "export function getClientPosition(event: any, orientation?: 'horizontal' | 'vertical') {\n  if ('TouchEvent' in window && event instanceof window.TouchEvent) {\n    const touch = event.touches[0];\n    return orientation === 'vertical' ? touch.clientY : touch.clientX;\n  }\n\n  return orientation === 'vertical' ? event.clientY : event.clientX;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-client-position is a get client position UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-client-position\nDescription: get-client-position is a get client position UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: client, get, mantine, other, position\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts\nexport function getClientPosition(event: any, orientation?: 'horizontal' | 'vertical') {\n  if ('TouchEvent' in window && event instanceof window.TouchEvent) {\n    const touch = event.touches[0];\n    return orientation === 'vertical' ? touch.clientY : touch.clientX;\n  }\n\n  return orientation === 'vertical' ? event.clientY : event.clientX;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "get-client-position",
+  "display_name": "Get Client Position",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-utils-get-client-position-get-client-position.png"
+}

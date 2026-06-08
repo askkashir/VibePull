@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.types",
+  "name": "ScrollArea.types",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollArea.types.ts\nexport type Sizes = {\n  content: number;\n  viewport: number;\n  scrollbar: {\n    size: number;\n    paddingStart: number;\n    paddingEnd: number;\n  };\n};\n\nexport interface ScrollAreaScrollbarAxisPrivateProps {\n  hasThumb: boolean;\n  sizes: Sizes;\n  onSizesChange: (sizes: Sizes) => void;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerDown: (pointerPos: number) => void;\n  onThumbPointerUp: () => void;\n  onThumbPositionChange: () => void;\n  onWheelScroll: (scrollPos: number) => void;\n  onDragScroll: (pointerPos: number) => void;\n}\n\nexport interface ScrollAreaScrollbarAxisProps\n  extends ScrollAreaScrollbarAxisPrivateProps, React.ComponentProps<'div'> {}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollArea.types",
+      "name": "ScrollArea.types",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.types",
+      "name": "ScrollArea.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.types.ts",
+          "content": "export type Sizes = {\n  content: number;\n  viewport: number;\n  scrollbar: {\n    size: number;\n    paddingStart: number;\n    paddingEnd: number;\n  };\n};\n\nexport interface ScrollAreaScrollbarAxisPrivateProps {\n  hasThumb: boolean;\n  sizes: Sizes;\n  onSizesChange: (sizes: Sizes) => void;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerDown: (pointerPos: number) => void;\n  onThumbPointerUp: () => void;\n  onThumbPositionChange: () => void;\n  onWheelScroll: (scrollPos: number) => void;\n  onDragScroll: (pointerPos: number) => void;\n}\n\nexport interface ScrollAreaScrollbarAxisProps\n  extends ScrollAreaScrollbarAxisPrivateProps, React.ComponentProps<'div'> {}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

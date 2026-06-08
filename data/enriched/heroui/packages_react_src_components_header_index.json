@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_header_index",
+  "name": "header",
+  "source_code": "// packages/react/src/components/header/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {HeaderRoot} from \"./header\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Header = HeaderRoot;\n\nexport type Header = {\n  Props: ComponentProps<typeof HeaderRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {HeaderRoot};\n\nexport type {HeaderRootProps, HeaderRootProps as HeaderProps} from \"./header\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {headerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "header",
+    "navigation",
+    "top_level"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "header_index",
+      "name": "index",
+      "path": "packages/react/src/components/header/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_header_index",
+      "name": "header",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/header/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {HeaderRoot} from \"./header\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Header = HeaderRoot;\n\nexport type Header = {\n  Props: ComponentProps<typeof HeaderRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {HeaderRoot};\n\nexport type {HeaderRootProps, HeaderRootProps as HeaderProps} from \"./header\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {headerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Header is a component used to display top-level navigation, typically containing the application's logo and major navigation items. It provides a way to introduce the application and provide users with easy access to the main features of the application. Developers would use a header when they need to display a prominent navigation bar at the top of their application.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: header\nDescription: Header is a component used to display top-level navigation, typically containing the application's logo and major navigation items. It provides a way to introduce the application and provide users with easy access to the main features of the application. Developers would use a header when they need to display a prominent navigation bar at the top of their application.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: header, navigation, top_level\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/header/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {HeaderRoot} from \"./header\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Header = HeaderRoot;\n\nexport type Header = {\n  Props: ComponentProps<typeof HeaderRoot>;\n};\n\n/* ------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "header",
+  "display_name": "Header",
+  "preview_url": "/previews/heroui/packages-react-src-components-header-index.png"
+}

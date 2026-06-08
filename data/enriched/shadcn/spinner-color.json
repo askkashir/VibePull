@@ -1,0 +1,40 @@
+{
+  "id": "spinner-color",
+  "name": "spinner-color",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "loading",
+    "indicator",
+    "colorful",
+    "animation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-color",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-color\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The spinner-color component is a circular loading indicator that changes color as it animates. It is typically used on forms or pages that take a significant amount of time to load. Developers can use it to provide a visual cue to users about the status of their requests.",
+  "style_tags": [
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "animated",
+    "rotating"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner-color\nDescription: The spinner-color component is a circular loading indicator that changes color as it animates. It is typically used on forms or pages that take a significant amount of time to load. Developers can use it to provide a visual cue to users about the status of their requests.\nStyle: minimal, flat\nInteractions: animated, rotating\nTags: loading, indicator, colorful, animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-color",
+  "display_name": "Spinner Color",
+  "preview_url": "/previews/shadcn/spinner-color.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tree_is-node-checked_is-node-checked",
+  "name": "is-node-checked",
+  "source_code": "// packages/@mantine/core/src/components/Tree/is-node-checked/is-node-checked.ts\nimport { memoize } from '../../../core';\nimport { getAllCheckedNodes } from '../get-all-checked-nodes/get-all-checked-nodes';\nimport type { TreeNodeData } from '../Tree';\n\nexport function isNodeChecked(\n  value: string,\n  data: TreeNodeData[],\n  checkedState: string[]\n): boolean {\n  if (checkedState.length === 0) {\n    return false;\n  }\n\n  if (checkedState.includes(value)) {\n    return true;\n  }\n\n  const checkedNodes = getAllCheckedNodes(data, checkedState).result;\n  return checkedNodes.some((node) => node.value === value && node.checked);\n}\n\nexport const memoizedIsNodeChecked = memoize(isNodeChecked);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tree_is-node-checked_is-node-checked",
+      "name": "is-node-checked",
+      "path": "packages/@mantine/core/src/components/Tree/is-node-checked/is-node-checked.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tree_is-node-checked_is-node-checked",
+      "name": "is-node-checked",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tree/is-node-checked/is-node-checked.ts",
+          "content": "import { memoize } from '../../../core';\nimport { getAllCheckedNodes } from '../get-all-checked-nodes/get-all-checked-nodes';\nimport type { TreeNodeData } from '../Tree';\n\nexport function isNodeChecked(\n  value: string,\n  data: TreeNodeData[],\n  checkedState: string[]\n): boolean {\n  if (checkedState.length === 0) {\n    return false;\n  }\n\n  if (checkedState.includes(value)) {\n    return true;\n  }\n\n  const checkedNodes = getAllCheckedNodes(data, checkedState).result;\n  return checkedNodes.some((node) => node.value === value && node.checked);\n}\n\nexport const memoizedIsNodeChecked = memoize(isNodeChecked);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

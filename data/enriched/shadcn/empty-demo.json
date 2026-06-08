@@ -1,0 +1,34 @@
+{
+  "id": "empty-demo",
+  "name": "empty-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry",
+    "example",
+    "minimal",
+    "unstyled"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "empty-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## empty-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The empty-demo component is a minimal, unstyled HTML element container, often used as a placeholder in design systems. It's typically used when a developer wants to reserve space in a layout without rendering any UI elements. The empty-demo component can be used in any part of a web application, but it's most commonly found in UI kits and design systems.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: empty-demo\nDescription: The empty-demo component is a minimal, unstyled HTML element container, often used as a placeholder in design systems. It's typically used when a developer wants to reserve space in a layout without rendering any UI elements. The empty-demo component can be used in any part of a web application, but it's most commonly found in UI kits and design systems.\nStyle: \nInteractions: \nTags: registry, example, minimal, unstyled\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "empty-demo",
+  "display_name": "Empty Demo",
+  "preview_url": "/previews/shadcn/empty-demo.png"
+}

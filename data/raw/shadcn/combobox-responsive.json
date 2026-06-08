@@ -1,0 +1,22 @@
+{
+  "id": "combobox-responsive",
+  "name": "combobox-responsive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "combobox-responsive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## combobox-responsive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

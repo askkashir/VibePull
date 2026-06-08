@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+  "name": "get-padding-value",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts\nimport { getSpacing } from '../../../../core';\n\nexport function getPaddingValue(padding: string | number | undefined) {\n  return Number(padding) === 0 ? '0px' : getSpacing(padding);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+      "name": "get-padding-value",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+      "name": "get-padding-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts",
+          "content": "import { getSpacing } from '../../../../core';\n\nexport function getPaddingValue(padding: string | number | undefined) {\n  return Number(padding) === 0 ? '0px' : getSpacing(padding);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "textarea-disabled",
+  "name": "textarea-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example",
+    "form-control",
+    "disabled"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A disableable textarea is a text input component that cannot be edited by the user, often used in forms or data entry applications when input is required but cannot be modified.",
+  "style_tags": [
+    "e.g. minimal",
+    "standard"
+  ],
+  "interaction_tags": [
+    "e.g. none"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: textarea-disabled\nDescription: A disableable textarea is a text input component that cannot be edited by the user, often used in forms or data entry applications when input is required but cannot be modified.\nStyle: e.g. minimal, standard\nInteractions: e.g. none\nTags: registry:example, form-control, disabled\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "textarea-disabled",
+  "display_name": "Textarea Disabled",
+  "preview_url": "/previews/shadcn/textarea-disabled.png"
+}

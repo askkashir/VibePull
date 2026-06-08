@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuContextMenu_MenuContextMenu",
+  "name": "MenuContextMenu",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuContextMenu/MenuContextMenu.tsx\nimport { cloneElement } from 'react';\nimport { getSingleElementChild, useProps } from '../../../core';\nimport { useContextMenuHandlers } from '../../../utils/Floating/use-context-menu-handlers';\nimport { usePopoverContext } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuContextMenuProps {\n  /** Element that opens the menu when right-clicked. Menu dropdown is positioned at the cursor. The trigger element must not call `event.preventDefault()` in its own `onContextMenu` handler, otherwise the native context menu is not suppressed. */\n  children: React.ReactNode;\n\n  /** If set, the right-click trigger is disabled and the browser's default context menu is shown */\n  disabled?: boolean;\n\n  /** Delay in ms before a touch long-press opens the dropdown on touch devices, `500` by default */\n  longPressDelay?: number;\n}\n\nexport function MenuContextMenu(props: MenuContextMenuProps) {\n  const { children, disabled, longPressDelay } = useProps('MenuContextMenu', null, props);\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    throw new Error(\n      'Menu.ContextMenu component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  const ctx = useMenuContext();\n  const popoverCtx = usePopoverContext();\n\n  const handlers = useContextMenuHandlers({\n    childProps: child.props as any,\n    disabled: disabled || popoverCtx.disabled,\n    opened: ctx.opened,\n    longPressDelay,\n    setReference: popoverCtx.reference as unknown as (node: object) => void,\n    open: () => ctx.openDropdown(),\n  });\n\n  return cloneElement(child, handlers as any);\n}\n\nMenuContextMenu.displayName = '@mantine/core/MenuContextMenu';\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "menu",
+    "navbar"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuContextMenu_MenuContextMenu",
+      "name": "MenuContextMenu",
+      "path": "packages/@mantine/core/src/components/Menu/MenuContextMenu/MenuContextMenu.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuContextMenu_MenuContextMenu",
+      "name": "MenuContextMenu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuContextMenu/MenuContextMenu.tsx",
+          "content": "import { cloneElement } from 'react';\nimport { getSingleElementChild, useProps } from '../../../core';\nimport { useContextMenuHandlers } from '../../../utils/Floating/use-context-menu-handlers';\nimport { usePopoverContext } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuContextMenuProps {\n  /** Element that opens the menu when right-clicked. Menu dropdown is positioned at the cursor. The trigger element must not call `event.preventDefault()` in its own `onContextMenu` handler, otherwise the native context menu is not suppressed. */\n  children: React.ReactNode;\n\n  /** If set, the right-click trigger is disabled and the browser's default context menu is shown */\n  disabled?: boolean;\n\n  /** Delay in ms before a touch long-press opens the dropdown on touch devices, `500` by default */\n  longPressDelay?: number;\n}\n\nexport function MenuContextMenu(props: MenuContextMenuProps) {\n  const { children, disabled, longPressDelay } = useProps('MenuContextMenu', null, props);\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    throw new Error(\n      'Menu.ContextMenu component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  const ctx = useMenuContext();\n  const popoverCtx = usePopoverContext();\n\n  const handlers = useContextMenuHandlers({\n    childProps: child.props as any,\n    disabled: disabled || popoverCtx.disabled,\n    opened: ctx.opened,\n    longPressDelay,\n    setReference: popoverCtx.reference as unknown as (node: object) => void,\n    open: () => ctx.openDropdown(),\n  });\n\n  return cloneElement(child, handlers as any);\n}\n\nMenuContextMenu.displayName = '@mantine/core/MenuContextMenu';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuContextMenu is a menu context menu UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuContextMenu\nDescription: MenuContextMenu is a menu context menu UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: context, mantine, menu, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuContextMenu/MenuContextMenu.tsx\nimport { cloneElement } from 'react';\nimport { getSingleElementChild, useProps } from '../../../core';\nimport { useContextMenuHandlers } from '../../../utils/Floating/use-context-menu-handlers';\nimport { usePopoverContext } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuContextMenuProps {\n  /** Element that opens the menu when right-clicked. Menu dropdown is positioned",
+  "prompt_version": 2,
+  "clean_id": "menu-context-menu",
+  "display_name": "Menu Context Menu",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menucontextmenu-menucontextmenu.png"
+}

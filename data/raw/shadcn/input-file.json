@@ -1,0 +1,22 @@
+{
+  "id": "input-file",
+  "name": "input-file",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-file",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-file\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

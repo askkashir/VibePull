@@ -1,0 +1,23 @@
+{
+  "id": "calendar-hijri",
+  "name": "calendar-hijri",
+  "source_code": "",
+  "description": "A Persian calendar.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "calendar-hijri",
+      "type": "registry:example",
+      "description": "A Persian calendar.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## calendar-hijri\n\nA Persian calendar.\n\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

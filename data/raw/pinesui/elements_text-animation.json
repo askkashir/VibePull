@@ -1,0 +1,31 @@
+{
+  "id": "elements_text-animation",
+  "name": "text-animation",
+  "source_code": "// elements/text-animation.html\n<h1 x-data=\"{\n    startingAnimation: { opacity: 0, scale: 4 },\n    endingAnimation: { opacity: 1, scale: 1, stagger: 0.07, duration: 1, ease: 'expo.out' },\n    addCNDScript: true,\n    animateText() {\n        $el.classList.remove('invisible');\n        gsap.fromTo($el.children, this.startingAnimation, this.endingAnimation);\n    },\n    splitCharactersIntoSpans(element) {\n        text = element.innerHTML;\n        modifiedHTML = [];\n        for (var i = 0; i < text.length; i++) {\n            attributes = '';\n            if(text[i].trim()){ attributes = 'class=\\'inline-block\\''; }\n            modifiedHTML.push('<span ' + attributes + '>' + text[i] + '</span>');\n        }\n        element.innerHTML = modifiedHTML.join('');\n    },\n    addScriptToHead(url) {\n        script = document.createElement('script');\n        script.src = url;\n        document.head.appendChild(script);\n    }\n}\"\nx-init=\"\n    splitCharactersIntoSpans($el);\n    if(addCNDScript){\n        addScriptToHead('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js');\n    }\n    gsapInterval = setInterval(function(){\n        if(typeof gsap !== 'undefined'){\n            animateText();\n            clearInterval(gsapInterval);\n        }\n    }, 5);\n\"\nclass=\"invisible block text-3xl font-bold custom-font\"\n>\nPines UI Library\n</h1>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "text-animation",
+      "name": "text-animation",
+      "path": "elements/text-animation.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_text-animation",
+      "name": "text-animation",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/text-animation.html",
+          "content": "<h1 x-data=\"{\n    startingAnimation: { opacity: 0, scale: 4 },\n    endingAnimation: { opacity: 1, scale: 1, stagger: 0.07, duration: 1, ease: 'expo.out' },\n    addCNDScript: true,\n    animateText() {\n        $el.classList.remove('invisible');\n        gsap.fromTo($el.children, this.startingAnimation, this.endingAnimation);\n    },\n    splitCharactersIntoSpans(element) {\n        text = element.innerHTML;\n        modifiedHTML = [];\n        for (var i = 0; i < text.length; i++) {\n            attributes = '';\n            if(text[i].trim()){ attributes = 'class=\\'inline-block\\''; }\n            modifiedHTML.push('<span ' + attributes + '>' + text[i] + '</span>');\n        }\n        element.innerHTML = modifiedHTML.join('');\n    },\n    addScriptToHead(url) {\n        script = document.createElement('script');\n        script.src = url;\n        document.head.appendChild(script);\n    }\n}\"\nx-init=\"\n    splitCharactersIntoSpans($el);\n    if(addCNDScript){\n        addScriptToHead('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js');\n    }\n    gsapInterval = setInterval(function(){\n        if(typeof gsap !== 'undefined'){\n            animateText();\n            clearInterval(gsapInterval);\n        }\n    }, 5);\n\"\nclass=\"invisible block text-3xl font-bold custom-font\"\n>\nPines UI Library\n</h1>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

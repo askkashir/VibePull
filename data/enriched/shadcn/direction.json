@@ -1,0 +1,42 @@
+{
+  "id": "direction",
+  "name": "direction",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "travel",
+    "map",
+    "widget",
+    "indicative"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "direction",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## direction\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The direction component is an interactive widget that displays the current direction of travel, typically in a navigation or travel-related application. It can be used to indicate the user's current direction or direction of travel. The component is designed to be highly customizable and can be placed in various locations within an application.",
+  "style_tags": [
+    "glassmorphism",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated",
+    "hover"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: direction\nDescription: The direction component is an interactive widget that displays the current direction of travel, typically in a navigation or travel-related application. It can be used to indicate the user's current direction or direction of travel. The component is designed to be highly customizable and can be placed in various locations within an application.\nStyle: glassmorphism, minimal\nInteractions: clickable, animated, hover\nTags: navigation, travel, map, widget, indicative\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "direction",
+  "display_name": "Direction",
+  "preview_url": "/previews/shadcn/direction.png"
+}

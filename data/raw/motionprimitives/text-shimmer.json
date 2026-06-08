@@ -1,0 +1,42 @@
+{
+  "id": "text-shimmer",
+  "name": "text-shimmer",
+  "source_code": "// components/core/text-shimmer.tsx\n'use client';\nimport React, { useMemo, type JSX } from 'react';\nimport { motion } from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TextShimmerProps = {\n  children: string;\n  as?: React.ElementType;\n  className?: string;\n  duration?: number;\n  spread?: number;\n};\n\nfunction TextShimmerComponent({\n  children,\n  as: Component = 'p',\n  className,\n  duration = 2,\n  spread = 2,\n}: TextShimmerProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n\n  const dynamicSpread = useMemo(() => {\n    return children.length * spread;\n  }, [children, spread]);\n\n  return (\n    <MotionComponent\n      className={cn(\n        'relative inline-block bg-[length:250%_100%,auto] bg-clip-text',\n        'text-transparent [--base-color:#a1a1aa] [--base-gradient-color:#000]',\n        '[background-repeat:no-repeat,padding-box] [--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]',\n        'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff] dark:[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]',\n        className\n      )}\n      initial={{ backgroundPosition: '100% center' }}\n      animate={{ backgroundPosition: '0% center' }}\n      transition={{\n        repeat: Infinity,\n        duration,\n        ease: 'linear',\n      }}\n      style={\n        {\n          '--spread': `${dynamicSpread}px`,\n          backgroundImage: `var(--bg), linear-gradient(var(--base-color), var(--base-color))`,\n        } as React.CSSProperties\n      }\n    >\n      {children}\n    </MotionComponent>\n  );\n}\n\nexport const TextShimmer = React.memo(TextShimmerComponent);\n",
+  "description": "",
+  "tags": [
+    "file",
+    "motionprimitives",
+    "registry:ui"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-shimmer.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-shimmer.tsx",
+      "sha": "8a91eae1d73ecbc48a264214475e05db61db796e",
+      "size": 1735,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-shimmer.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-shimmer.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/8a91eae1d73ecbc48a264214475e05db61db796e",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-shimmer.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-shimmer.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/8a91eae1d73ecbc48a264214475e05db61db796e",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-shimmer.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-shimmer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-shimmer.tsx",
+          "content": "'use client';\nimport React, { useMemo, type JSX } from 'react';\nimport { motion } from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TextShimmerProps = {\n  children: string;\n  as?: React.ElementType;\n  className?: string;\n  duration?: number;\n  spread?: number;\n};\n\nfunction TextShimmerComponent({\n  children,\n  as: Component = 'p',\n  className,\n  duration = 2,\n  spread = 2,\n}: TextShimmerProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n\n  const dynamicSpread = useMemo(() => {\n    return children.length * spread;\n  }, [children, spread]);\n\n  return (\n    <MotionComponent\n      className={cn(\n        'relative inline-block bg-[length:250%_100%,auto] bg-clip-text',\n        'text-transparent [--base-color:#a1a1aa] [--base-gradient-color:#000]',\n        '[background-repeat:no-repeat,padding-box] [--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]',\n        'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff] dark:[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]',\n        className\n      )}\n      initial={{ backgroundPosition: '100% center' }}\n      animate={{ backgroundPosition: '0% center' }}\n      transition={{\n        repeat: Infinity,\n        duration,\n        ease: 'linear',\n      }}\n      style={\n        {\n          '--spread': `${dynamicSpread}px`,\n          backgroundImage: `var(--bg), linear-gradient(var(--base-color), var(--base-color))`,\n        } as React.CSSProperties\n      }\n    >\n      {children}\n    </MotionComponent>\n  );\n}\n\nexport const TextShimmer = React.memo(TextShimmerComponent);\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

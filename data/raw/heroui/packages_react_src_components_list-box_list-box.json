@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_list-box_list-box",
+  "name": "list-box",
+  "source_code": "// packages/react/src/components/list-box/list-box.tsx\n\"use client\";\n\nimport type {ListBoxVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {listboxVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ListBox as ListBoxPrimitive} from \"react-aria-components/ListBox\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * ListBox Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ListBoxRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof ListBoxPrimitive<T>>, ListBoxVariants {\n  className?: string;\n}\n\nfunction ListBoxRoot<T extends object>({className, variant, ...props}: ListBoxRootProps<T>) {\n  const styles = React.useMemo(() => listboxVariants({variant}), [variant]);\n\n  return (\n    <ListBoxPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"list-box\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxRoot};\n\nexport type {ListBoxRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "list-box_list-box",
+      "name": "list-box",
+      "path": "packages/react/src/components/list-box/list-box.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_list-box_list-box",
+      "name": "list-box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/list-box/list-box.tsx",
+          "content": "\"use client\";\n\nimport type {ListBoxVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {listboxVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ListBox as ListBoxPrimitive} from \"react-aria-components/ListBox\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * ListBox Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ListBoxRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof ListBoxPrimitive<T>>, ListBoxVariants {\n  className?: string;\n}\n\nfunction ListBoxRoot<T extends object>({className, variant, ...props}: ListBoxRootProps<T>) {\n  const styles = React.useMemo(() => listboxVariants({variant}), [variant]);\n\n  return (\n    <ListBoxPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"list-box\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxRoot};\n\nexport type {ListBoxRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

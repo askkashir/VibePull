@@ -1,0 +1,41 @@
+{
+  "id": "button-default",
+  "name": "button-default",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "form element",
+    "call-to-action"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-default",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-default\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The default button is a flat, rectangular element with a solid fill that indicates a primary action. It is commonly used where a clear call-to-action is necessary, such as in forms or on a hero section. The button is responsive and can be used on various screen sizes.",
+  "style_tags": [
+    "flat",
+    "solid",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "accessible",
+    "tappable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-default\nDescription: The default button is a flat, rectangular element with a solid fill that indicates a primary action. It is commonly used where a clear call-to-action is necessary, such as in forms or on a hero section. The button is responsive and can be used on various screen sizes.\nStyle: flat, solid, responsive\nInteractions: clickable, accessible, tappable\nTags: button, form element, call-to-action\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-default",
+  "display_name": "Button Default",
+  "preview_url": "/previews/shadcn/button-default.png"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "field-radio",
+  "name": "field-radio",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "radio-buttons",
+    "group-selection",
+    "single-select"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-radio",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-radio\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The field-radio component is a radio button group used for selecting one option from multiple choices. It typically consists of a set of labeled buttons, where only one button can be selected at a time. This component is useful for multiple-choice scenarios.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: field-radio\nDescription: The field-radio component is a radio button group used for selecting one option from multiple choices. It typically consists of a set of labeled buttons, where only one button can be selected at a time. This component is useful for multiple-choice scenarios.\nStyle: e.g. minimal\nInteractions: e.g. clickable, hover\nTags: radio-buttons, group-selection, single-select\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-radio",
+  "display_name": "Field Radio",
+  "preview_url": "/previews/shadcn/field-radio.png"
+}

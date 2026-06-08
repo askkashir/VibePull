@@ -1,0 +1,44 @@
+{
+  "id": "code-recipe",
+  "name": "code-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/code.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const code = defineRecipe({\n  className: 'code',\n  base: {\n    alignItems: 'center',\n    borderRadius: 'l2',\n    display: 'inline-flex',\n    fontVariantNumeric: 'tabular-nums',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    gap: '1',\n    lineHeight: '1',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "code-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/code.ts",
+          "type": "registry:recipe",
+          "imports": "import { code } from './code'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const code = defineRecipe({\n  className: 'code',\n  base: {\n    alignItems: 'center',\n    borderRadius: 'l2',\n    display: 'inline-flex',\n    fontVariantNumeric: 'tabular-nums',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    gap: '1',\n    lineHeight: '1',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "code-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/code.ts",
+          "type": "registry:recipe",
+          "imports": "import { code } from './code'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const code = defineRecipe({\n  className: 'code',\n  base: {\n    alignItems: 'center',\n    borderRadius: 'l2',\n    display: 'inline-flex',\n    fontVariantNumeric: 'tabular-nums',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    gap: '1',\n    lineHeight: '1',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

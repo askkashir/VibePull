@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_assign-footer-variables_assign-footer-variables",
+  "name": "assign-footer-variables",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-footer-variables/assign-footer-variables.ts\nimport { keys, rem } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { getBaseSize } from '../get-base-size/get-base-size';\nimport type { CSSVariables, MediaQueryVariables } from '../get-variables/get-variables';\nimport { isPrimitiveSize } from '../is-primitive-size/is-primitive-size';\nimport { isResponsiveSize } from '../is-responsive-size/is-responsive-size';\n\ninterface AssignFooterVariablesInput {\n  baseStyles: CSSVariables;\n  minMediaStyles: MediaQueryVariables;\n  footer: AppShellProps['footer'] | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport function assignFooterVariables({\n  baseStyles,\n  minMediaStyles,\n  footer,\n  mode,\n}: AssignFooterVariablesInput) {\n  const footerHeight = footer?.height;\n  const collapsedFooterTransform = 'translateY(var(--app-shell-footer-height))';\n  const shouldOffset = mode === 'static' ? true : (footer?.offset ?? true);\n\n  if (mode === 'static' && footer) {\n    baseStyles['--app-shell-footer-position'] = 'sticky';\n    baseStyles['--app-shell-footer-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-footer-grid-row'] = '3';\n  }\n\n  if (isPrimitiveSize(footerHeight)) {\n    const baseSize = rem(getBaseSize(footerHeight));\n    baseStyles['--app-shell-footer-height'] = baseSize;\n    if (shouldOffset) {\n      baseStyles['--app-shell-footer-offset'] = baseSize;\n    }\n  }\n\n  if (isResponsiveSize(footerHeight)) {\n    if (typeof footerHeight.base !== 'undefined') {\n      baseStyles['--app-shell-footer-height'] = rem(footerHeight.base);\n\n      if (shouldOffset) {\n        baseStyles['--app-shell-footer-offset'] = rem(footerHeight.base);\n      }\n    }\n\n    keys(footerHeight).forEach((key) => {\n      if (key !== 'base') {\n        minMediaStyles[key] = minMediaStyles[key] || {};\n        minMediaStyles[key]['--app-shell-footer-height'] = rem(footerHeight[key]);\n\n        if (shouldOffset) {\n          minMediaStyles[key]['--app-shell-footer-offset'] = rem(footerHeight[key]);\n        }\n      }\n    });\n  }\n\n  if (footer?.collapsed) {\n    baseStyles['--app-shell-footer-transform'] = collapsedFooterTransform;\n    if (mode === 'fixed') {\n      baseStyles['--app-shell-footer-offset'] = '0px !important';\n    }\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_assign-footer-variables_assign-footer-variables",
+      "name": "assign-footer-variables",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-footer-variables/assign-footer-variables.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_assign-footer-variables_assign-footer-variables",
+      "name": "assign-footer-variables",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-footer-variables/assign-footer-variables.ts",
+          "content": "import { keys, rem } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { getBaseSize } from '../get-base-size/get-base-size';\nimport type { CSSVariables, MediaQueryVariables } from '../get-variables/get-variables';\nimport { isPrimitiveSize } from '../is-primitive-size/is-primitive-size';\nimport { isResponsiveSize } from '../is-responsive-size/is-responsive-size';\n\ninterface AssignFooterVariablesInput {\n  baseStyles: CSSVariables;\n  minMediaStyles: MediaQueryVariables;\n  footer: AppShellProps['footer'] | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport function assignFooterVariables({\n  baseStyles,\n  minMediaStyles,\n  footer,\n  mode,\n}: AssignFooterVariablesInput) {\n  const footerHeight = footer?.height;\n  const collapsedFooterTransform = 'translateY(var(--app-shell-footer-height))';\n  const shouldOffset = mode === 'static' ? true : (footer?.offset ?? true);\n\n  if (mode === 'static' && footer) {\n    baseStyles['--app-shell-footer-position'] = 'sticky';\n    baseStyles['--app-shell-footer-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-footer-grid-row'] = '3';\n  }\n\n  if (isPrimitiveSize(footerHeight)) {\n    const baseSize = rem(getBaseSize(footerHeight));\n    baseStyles['--app-shell-footer-height'] = baseSize;\n    if (shouldOffset) {\n      baseStyles['--app-shell-footer-offset'] = baseSize;\n    }\n  }\n\n  if (isResponsiveSize(footerHeight)) {\n    if (typeof footerHeight.base !== 'undefined') {\n      baseStyles['--app-shell-footer-height'] = rem(footerHeight.base);\n\n      if (shouldOffset) {\n        baseStyles['--app-shell-footer-offset'] = rem(footerHeight.base);\n      }\n    }\n\n    keys(footerHeight).forEach((key) => {\n      if (key !== 'base') {\n        minMediaStyles[key] = minMediaStyles[key] || {};\n        minMediaStyles[key]['--app-shell-footer-height'] = rem(footerHeight[key]);\n\n        if (shouldOffset) {\n          minMediaStyles[key]['--app-shell-footer-offset'] = rem(footerHeight[key]);\n        }\n      }\n    });\n  }\n\n  if (footer?.collapsed) {\n    baseStyles['--app-shell-footer-transform'] = collapsedFooterTransform;\n    if (mode === 'fixed') {\n      baseStyles['--app-shell-footer-offset'] = '0px !important';\n    }\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

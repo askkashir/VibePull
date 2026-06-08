@@ -1,0 +1,31 @@
+{
+  "id": "elements_textarea-auto-resize",
+  "name": "textarea-auto-resize",
+  "source_code": "// elements/textarea-auto-resize.html\n<div class=\"w-full max-w-xs mx-auto\">\n    <textarea x-data=\"{ \n                resize () { \n                    $el.style.height = '0px'; \n                    $el.style.height = $el.scrollHeight + 'px' \n                } \n            }\"\n            x-init=\"resize()\"\n            @input=\"resize()\"\n            type=\"text\" \n            placeholder=\"Type your message here. I will resize based on the height content.\" \n            class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"\n    ></textarea>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "textarea-auto-resize",
+      "name": "textarea-auto-resize",
+      "path": "elements/textarea-auto-resize.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_textarea-auto-resize",
+      "name": "textarea-auto-resize",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/textarea-auto-resize.html",
+          "content": "<div class=\"w-full max-w-xs mx-auto\">\n    <textarea x-data=\"{ \n                resize () { \n                    $el.style.height = '0px'; \n                    $el.style.height = $el.scrollHeight + 'px' \n                } \n            }\"\n            x-init=\"resize()\"\n            @input=\"resize()\"\n            type=\"text\" \n            placeholder=\"Type your message here. I will resize based on the height content.\" \n            class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"\n    ></textarea>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollbarY",
+  "name": "ScrollbarY",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollbarY.tsx\nimport { useEffect, useRef, useState } from 'react';\nimport { useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { ScrollAreaScrollbarAxisProps } from '../ScrollArea.types';\nimport { getThumbSize, isScrollingWithinScrollbarBounds, toInt } from '../utils';\nimport { Scrollbar } from './Scrollbar';\n\nexport function ScrollAreaScrollbarY(props: ScrollAreaScrollbarAxisProps) {\n  const { sizes, onSizesChange, style, ref: forwardedRef, ...others } = props;\n  const context = useScrollAreaContext();\n  const [computedStyle, setComputedStyle] = useState<CSSStyleDeclaration>();\n  const ref = useRef<HTMLDivElement>(null);\n  const composeRefs = useMergedRef(forwardedRef, ref, context.onScrollbarYChange);\n\n  useEffect(() => {\n    if (ref.current) {\n      setComputedStyle(window.getComputedStyle(ref.current));\n    }\n  }, []);\n\n  return (\n    <Scrollbar\n      {...others}\n      data-orientation=\"vertical\"\n      ref={composeRefs}\n      sizes={sizes}\n      style={{\n        ['--sa-thumb-height' as any]: `${getThumbSize(sizes)}px`,\n        ...style,\n      }}\n      onThumbPointerDown={(pointerPos) => props.onThumbPointerDown(pointerPos.y)}\n      onDragScroll={(pointerPos) => props.onDragScroll(pointerPos.y)}\n      onWheelScroll={(event, maxScrollPos) => {\n        if (context.viewport) {\n          const scrollPos = context.viewport.scrollTop + event.deltaY;\n          props.onWheelScroll(scrollPos);\n          if (isScrollingWithinScrollbarBounds(scrollPos, maxScrollPos)) {\n            event.preventDefault();\n          }\n        }\n      }}\n      onResize={() => {\n        if (ref.current && context.viewport && computedStyle) {\n          onSizesChange({\n            content: context.viewport.scrollHeight,\n            viewport: context.viewport.offsetHeight,\n            scrollbar: {\n              size: ref.current.clientHeight,\n              paddingStart: toInt(computedStyle.paddingTop),\n              paddingEnd: toInt(computedStyle.paddingBottom),\n            },\n          });\n        }\n      }}\n    />\n  );\n}\n\nScrollAreaScrollbarY.displayName = '@mantine/core/ScrollAreaScrollbarY';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "scrollbar",
+    "y"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaScrollbar_ScrollbarY",
+      "name": "ScrollbarY",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollbarY.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollbarY",
+      "name": "ScrollbarY",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollbarY.tsx",
+          "content": "import { useEffect, useRef, useState } from 'react';\nimport { useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { ScrollAreaScrollbarAxisProps } from '../ScrollArea.types';\nimport { getThumbSize, isScrollingWithinScrollbarBounds, toInt } from '../utils';\nimport { Scrollbar } from './Scrollbar';\n\nexport function ScrollAreaScrollbarY(props: ScrollAreaScrollbarAxisProps) {\n  const { sizes, onSizesChange, style, ref: forwardedRef, ...others } = props;\n  const context = useScrollAreaContext();\n  const [computedStyle, setComputedStyle] = useState<CSSStyleDeclaration>();\n  const ref = useRef<HTMLDivElement>(null);\n  const composeRefs = useMergedRef(forwardedRef, ref, context.onScrollbarYChange);\n\n  useEffect(() => {\n    if (ref.current) {\n      setComputedStyle(window.getComputedStyle(ref.current));\n    }\n  }, []);\n\n  return (\n    <Scrollbar\n      {...others}\n      data-orientation=\"vertical\"\n      ref={composeRefs}\n      sizes={sizes}\n      style={{\n        ['--sa-thumb-height' as any]: `${getThumbSize(sizes)}px`,\n        ...style,\n      }}\n      onThumbPointerDown={(pointerPos) => props.onThumbPointerDown(pointerPos.y)}\n      onDragScroll={(pointerPos) => props.onDragScroll(pointerPos.y)}\n      onWheelScroll={(event, maxScrollPos) => {\n        if (context.viewport) {\n          const scrollPos = context.viewport.scrollTop + event.deltaY;\n          props.onWheelScroll(scrollPos);\n          if (isScrollingWithinScrollbarBounds(scrollPos, maxScrollPos)) {\n            event.preventDefault();\n          }\n        }\n      }}\n      onResize={() => {\n        if (ref.current && context.viewport && computedStyle) {\n          onSizesChange({\n            content: context.viewport.scrollHeight,\n            viewport: context.viewport.offsetHeight,\n            scrollbar: {\n              size: ref.current.clientHeight,\n              paddingStart: toInt(computedStyle.paddingTop),\n              paddingEnd: toInt(computedStyle.paddingBottom),\n            },\n          });\n        }\n      }}\n    />\n  );\n}\n\nScrollAreaScrollbarY.displayName = '@mantine/core/ScrollAreaScrollbarY';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ScrollbarY is a scrollbar y UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ScrollbarY\nDescription: ScrollbarY is a scrollbar y UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, scrollbar, y\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollbarY.tsx\nimport { useEffect, useRef, useState } from 'react';\nimport { useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { ScrollAreaScrollbarAxisProps } from '../ScrollArea.types';\nimport { getThumbSize, isScrollingWithinScrollbarBounds, toInt } from '../utils';\nimport { Scrollbar } from './Scrollbar';\n\nexport function ScrollAreaScrollbarY(props: ScrollAreaScrol",
+  "prompt_version": 2,
+  "clean_id": "scrollbar-y",
+  "display_name": "Scrollbar Y",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-scrollareascrollbar-scrollbary.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_SliderRoot_SliderRoot",
+  "name": "SliderRoot",
+  "source_code": "// packages/@mantine/core/src/components/Slider/SliderRoot/SliderRoot.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  MantineColor,\n  MantineRadius,\n  MantineSize,\n} from '../../../core';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface SliderRootProps extends BoxProps, ElementProps<'div'> {\n  size: MantineSize | (string & {}) | number;\n  children: React.ReactNode;\n  color?: MantineColor;\n  disabled: boolean | undefined;\n  variant?: string;\n  thumbSize?: string | number;\n  radius?: MantineRadius;\n  orientation?: 'horizontal' | 'vertical';\n}\n\nexport function SliderRoot({\n  size,\n  disabled,\n  variant,\n  color,\n  thumbSize,\n  radius,\n  orientation,\n  ...others\n}: SliderRootProps) {\n  const { getStyles } = useSliderContext();\n  return (\n    <Box\n      tabIndex={-1}\n      variant={variant}\n      size={size}\n      {...getStyles('root')}\n      mod={{ orientation }}\n      {...others}\n    />\n  );\n}\n\nSliderRoot.displayName = '@mantine/core/SliderRoot';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "root",
+    "slider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_SliderRoot_SliderRoot",
+      "name": "SliderRoot",
+      "path": "packages/@mantine/core/src/components/Slider/SliderRoot/SliderRoot.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_SliderRoot_SliderRoot",
+      "name": "SliderRoot",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/SliderRoot/SliderRoot.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  ElementProps,\n  MantineColor,\n  MantineRadius,\n  MantineSize,\n} from '../../../core';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface SliderRootProps extends BoxProps, ElementProps<'div'> {\n  size: MantineSize | (string & {}) | number;\n  children: React.ReactNode;\n  color?: MantineColor;\n  disabled: boolean | undefined;\n  variant?: string;\n  thumbSize?: string | number;\n  radius?: MantineRadius;\n  orientation?: 'horizontal' | 'vertical';\n}\n\nexport function SliderRoot({\n  size,\n  disabled,\n  variant,\n  color,\n  thumbSize,\n  radius,\n  orientation,\n  ...others\n}: SliderRootProps) {\n  const { getStyles } = useSliderContext();\n  return (\n    <Box\n      tabIndex={-1}\n      variant={variant}\n      size={size}\n      {...getStyles('root')}\n      mod={{ orientation }}\n      {...others}\n    />\n  );\n}\n\nSliderRoot.displayName = '@mantine/core/SliderRoot';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "SliderRoot is a slider root UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SliderRoot\nDescription: SliderRoot is a slider root UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, root, slider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/SliderRoot/SliderRoot.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  MantineColor,\n  MantineRadius,\n  MantineSize,\n} from '../../../core';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface SliderRootProps extends BoxProps, ElementProps<'div'> {\n  size: MantineSize | (string & {}) | number;\n  children: React.ReactNode;\n  color?: MantineColor;\n  disabled: boolean | undefined;\n  variant?: string;\n  thumbSize?: string | number;",
+  "prompt_version": 2,
+  "clean_id": "slider-root",
+  "display_name": "Slider Root",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-sliderroot-sliderroot.png"
+}

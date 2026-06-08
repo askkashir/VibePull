@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalHeader",
+  "name": "ModalHeader",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalHeader.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalHeaderStylesNames = 'header';\n\nexport interface ModalHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<ModalHeaderFactory> {}\n\nexport type ModalHeaderFactory = Factory<{\n  props: ModalHeaderProps;\n  ref: HTMLElement;\n  stylesNames: ModalHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const ModalHeader = factory<ModalHeaderFactory>((_props) => {\n  const props = useProps('ModalHeader', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseHeader\n      {...ctx.getStyles('header', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalHeader.classes = classes;\nModalHeader.displayName = '@mantine/core/ModalHeader';\n",
+  "description": "",
+  "tags": [
+    "header",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalHeader",
+      "name": "ModalHeader",
+      "path": "packages/@mantine/core/src/components/Modal/ModalHeader.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalHeader",
+      "name": "ModalHeader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalHeader.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalHeaderStylesNames = 'header';\n\nexport interface ModalHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<ModalHeaderFactory> {}\n\nexport type ModalHeaderFactory = Factory<{\n  props: ModalHeaderProps;\n  ref: HTMLElement;\n  stylesNames: ModalHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const ModalHeader = factory<ModalHeaderFactory>((_props) => {\n  const props = useProps('ModalHeader', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseHeader\n      {...ctx.getStyles('header', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalHeader.classes = classes;\nModalHeader.displayName = '@mantine/core/ModalHeader';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalHeader is a modal header UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalHeader\nDescription: ModalHeader is a modal header UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: header, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/ModalHeader.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalHeaderStylesNames = 'header';\n\nexport interface ModalHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<ModalHeaderFactory> {}\n\nexport type ModalHeaderFactory ",
+  "prompt_version": 2,
+  "clean_id": "modal-header",
+  "display_name": "Modal Header",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modalheader.png"
+}

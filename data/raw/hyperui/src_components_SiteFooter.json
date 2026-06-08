@@ -1,0 +1,31 @@
+{
+  "id": "src_components_SiteFooter",
+  "name": "SiteFooter",
+  "source_code": "// src/components/SiteFooter.astro\n<footer class=\"mt-8 border-t border-gray-200 md:mt-16\">\n  <div\n    class=\"mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 md:flex-row md:py-12\"\n  >\n    <p class=\"text-sm text-gray-700\">\n      Built by <a\n        href=\"https://github.com/markmead\"\n        target=\"_blank\"\n        rel=\"noreferrer\"\n        class=\"underline transition-colors hover:text-gray-900\">Mark Mead</a\n      >\n    </p>\n\n    <p class=\"text-sm text-gray-700\">\n      Released under the\n      <a\n        href=\"https://github.com/markmead/hyperui/blob/main/LICENSE\"\n        target=\"_blank\"\n        rel=\"noreferrer\"\n        class=\"underline transition-colors hover:text-gray-900\"\n      >\n        MIT License\n      </a>\n    </p>\n  </div>\n</footer>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "SiteFooter",
+      "name": "SiteFooter",
+      "path": "src/components/SiteFooter.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_SiteFooter",
+      "name": "SiteFooter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/SiteFooter.astro",
+          "content": "<footer class=\"mt-8 border-t border-gray-200 md:mt-16\">\n  <div\n    class=\"mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 md:flex-row md:py-12\"\n  >\n    <p class=\"text-sm text-gray-700\">\n      Built by <a\n        href=\"https://github.com/markmead\"\n        target=\"_blank\"\n        rel=\"noreferrer\"\n        class=\"underline transition-colors hover:text-gray-900\">Mark Mead</a\n      >\n    </p>\n\n    <p class=\"text-sm text-gray-700\">\n      Released under the\n      <a\n        href=\"https://github.com/markmead/hyperui/blob/main/LICENSE\"\n        target=\"_blank\"\n        rel=\"noreferrer\"\n        class=\"underline transition-colors hover:text-gray-900\"\n      >\n        MIT License\n      </a>\n    </p>\n  </div>\n</footer>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

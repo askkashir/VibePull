@@ -1,0 +1,31 @@
+{
+  "id": "src_components_FormattedDate",
+  "name": "FormattedDate",
+  "source_code": "// src/components/FormattedDate.astro\n---\ninterface Props {\n  date: Date\n  class?: string\n}\n\nconst { date, class: className = '' } = Astro.props\n---\n\n<time datetime={date.toISOString()} class={className}>\n  {\n    date.toLocaleDateString('en-us', {\n      day: 'numeric',\n      month: 'short',\n      year: 'numeric',\n    })\n  }\n</time>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "FormattedDate",
+      "name": "FormattedDate",
+      "path": "src/components/FormattedDate.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_FormattedDate",
+      "name": "FormattedDate",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/FormattedDate.astro",
+          "content": "---\ninterface Props {\n  date: Date\n  class?: string\n}\n\nconst { date, class: className = '' } = Astro.props\n---\n\n<time datetime={date.toISOString()} class={className}>\n  {\n    date.toLocaleDateString('en-us', {\n      day: 'numeric',\n      month: 'short',\n      year: 'numeric',\n    })\n  }\n</time>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

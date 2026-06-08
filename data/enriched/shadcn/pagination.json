@@ -1,0 +1,41 @@
+{
+  "id": "pagination",
+  "name": "pagination",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "pagination",
+    "scrolling"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "pagination",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## pagination\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The pagination component is a widget used to navigate through a series of pages. It consists of a navigation menu with buttons for previous, next, first, and last pages. Typically, pagination is used when there are a large number of items to display, making it easier for users to traverse the content.",
+  "style_tags": [
+    "flat",
+    "bordered",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "scroll"
+  ],
+  "component_type": "pagination",
+  "generation_prompt": "Create a production-ready pagination component with the following characteristics:\n\nName: pagination\nDescription: The pagination component is a widget used to navigate through a series of pages. It consists of a navigation menu with buttons for previous, next, first, and last pages. Typically, pagination is used when there are a large number of items to display, making it easier for users to traverse the content.\nStyle: flat, bordered, rounded\nInteractions: clickable, hover, scroll\nTags: navigation, pagination, scrolling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "pagination",
+  "display_name": "Pagination",
+  "preview_url": "/previews/shadcn/pagination.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-lock-scroll",
+  "name": "use-lock-scroll",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts\nimport { useEffect, useRef, useState } from 'react';\nimport { useReducedMotion } from '@mantine/hooks';\n\ninterface UseScrollLock {\n  opened: boolean;\n  transitionDuration: number;\n}\n\nexport function useLockScroll({ opened, transitionDuration }: UseScrollLock) {\n  const [shouldLockScroll, setShouldLockScroll] = useState(opened);\n  const timeout = useRef<number>(-1);\n  const reduceMotion = useReducedMotion();\n  const _transitionDuration = reduceMotion ? 0 : transitionDuration;\n\n  useEffect(() => {\n    if (opened) {\n      setShouldLockScroll(true);\n      window.clearTimeout(timeout.current);\n    } else if (_transitionDuration === 0) {\n      setShouldLockScroll(false);\n    } else {\n      timeout.current = window.setTimeout(() => setShouldLockScroll(false), _transitionDuration);\n    }\n\n    return () => window.clearTimeout(timeout.current);\n  }, [opened, _transitionDuration]);\n\n  return shouldLockScroll;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-lock-scroll",
+      "name": "use-lock-scroll",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-lock-scroll",
+      "name": "use-lock-scroll",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts",
+          "content": "import { useEffect, useRef, useState } from 'react';\nimport { useReducedMotion } from '@mantine/hooks';\n\ninterface UseScrollLock {\n  opened: boolean;\n  transitionDuration: number;\n}\n\nexport function useLockScroll({ opened, transitionDuration }: UseScrollLock) {\n  const [shouldLockScroll, setShouldLockScroll] = useState(opened);\n  const timeout = useRef<number>(-1);\n  const reduceMotion = useReducedMotion();\n  const _transitionDuration = reduceMotion ? 0 : transitionDuration;\n\n  useEffect(() => {\n    if (opened) {\n      setShouldLockScroll(true);\n      window.clearTimeout(timeout.current);\n    } else if (_transitionDuration === 0) {\n      setShouldLockScroll(false);\n    } else {\n      timeout.current = window.setTimeout(() => setShouldLockScroll(false), _transitionDuration);\n    }\n\n    return () => window.clearTimeout(timeout.current);\n  }, [opened, _transitionDuration]);\n\n  return shouldLockScroll;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBaseTitle",
+  "name": "ModalBaseTitle",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBaseTitle.tsx\nimport cx from 'clsx';\nimport { Box, BoxProps, ElementProps } from '../../core';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalTitle } from './use-modal-title-id';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseTitleProps extends BoxProps, ElementProps<'h2'> {}\n\nexport function ModalBaseTitle({ className, ...others }: ModalBaseTitleProps) {\n  const id = useModalTitle();\n  const ctx = useModalBaseContext();\n  return (\n    <Box\n      component=\"h2\"\n      className={cx({ [classes.title]: !ctx.unstyled }, className)}\n      id={id}\n      {...others}\n    />\n  );\n}\n\nModalBaseTitle.displayName = '@mantine/core/ModalBaseTitle';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBaseTitle",
+      "name": "ModalBaseTitle",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseTitle.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBaseTitle",
+      "name": "ModalBaseTitle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseTitle.tsx",
+          "content": "import cx from 'clsx';\nimport { Box, BoxProps, ElementProps } from '../../core';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalTitle } from './use-modal-title-id';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseTitleProps extends BoxProps, ElementProps<'h2'> {}\n\nexport function ModalBaseTitle({ className, ...others }: ModalBaseTitleProps) {\n  const id = useModalTitle();\n  const ctx = useModalBaseContext();\n  return (\n    <Box\n      component=\"h2\"\n      className={cx({ [classes.title]: !ctx.unstyled }, className)}\n      id={id}\n      {...others}\n    />\n  );\n}\n\nModalBaseTitle.displayName = '@mantine/core/ModalBaseTitle';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

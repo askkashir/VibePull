@@ -1,0 +1,41 @@
+{
+  "id": "sidebar-menu-collapsible",
+  "name": "sidebar-menu-collapsible",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "sidebar",
+    "menu",
+    "collapsible"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-menu-collapsible",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-menu-collapsible\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sidebar-menu-collapsible component is a collapsible menu that appears within a sidebar. It typically contains a list of menu items with icons and labels. This component is commonly used to navigate through different sections of an application, such as dashboard or settings, by providing an overview of available options in a compact and organized manner.",
+  "style_tags": [
+    "e.g. material",
+    "dark",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover",
+    "animatable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: sidebar-menu-collapsible\nDescription: The sidebar-menu-collapsible component is a collapsible menu that appears within a sidebar. It typically contains a list of menu items with icons and labels. This component is commonly used to navigate through different sections of an application, such as dashboard or settings, by providing an overview of available options in a compact and organized manner.\nStyle: e.g. material, dark, glassmorphism\nInteractions: e.g. clickable, hover, animatable\nTags: sidebar, menu, collapsible\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-menu-collapsible",
+  "display_name": "Sidebar Menu Collapsible",
+  "preview_url": "/previews/shadcn/sidebar-menu-collapsible.png"
+}

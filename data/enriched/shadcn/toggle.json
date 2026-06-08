@@ -1,0 +1,40 @@
+{
+  "id": "toggle",
+  "name": "toggle",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "switch",
+    "checkbox",
+    "toggle button"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The toggle component is a simple on/off switch that can be used to toggle a state. It consists of two states: an 'on' state with a filled color and an 'off' state with an empty circle. This component is often used to allow users to quickly switch between different settings.",
+  "style_tags": [
+    "flat",
+    "material-style",
+    "material-design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle\nDescription: The toggle component is a simple on/off switch that can be used to toggle a state. It consists of two states: an 'on' state with a filled color and an 'off' state with an empty circle. This component is often used to allow users to quickly switch between different settings.\nStyle: flat, material-style, material-design\nInteractions: clickable, tappable\nTags: switch, checkbox, toggle button\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle",
+  "display_name": "Toggle",
+  "preview_url": "/previews/shadcn/toggle.png"
+}

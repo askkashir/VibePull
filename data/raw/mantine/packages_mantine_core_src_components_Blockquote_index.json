@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Blockquote_index",
+  "name": "Blockquote",
+  "source_code": "// packages/@mantine/core/src/components/Blockquote/index.ts\nimport type {\n  BlockquoteCssVariables,\n  BlockquoteFactory,\n  BlockquoteProps,\n  BlockquoteStylesNames,\n} from './Blockquote';\n\nexport { Blockquote } from './Blockquote';\n\nexport type { BlockquoteProps, BlockquoteStylesNames, BlockquoteCssVariables, BlockquoteFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Blockquote_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Blockquote/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Blockquote_index",
+      "name": "Blockquote",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Blockquote/index.ts",
+          "content": "import type {\n  BlockquoteCssVariables,\n  BlockquoteFactory,\n  BlockquoteProps,\n  BlockquoteStylesNames,\n} from './Blockquote';\n\nexport { Blockquote } from './Blockquote';\n\nexport type { BlockquoteProps, BlockquoteStylesNames, BlockquoteCssVariables, BlockquoteFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

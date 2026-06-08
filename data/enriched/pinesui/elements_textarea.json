@@ -1,0 +1,43 @@
+{
+  "id": "elements_textarea",
+  "name": "textarea",
+  "source_code": "// elements/textarea.html\n<div class=\"w-full max-w-xs mx-auto\">\n    <textarea type=\"text\" placeholder=\"Type your message here.\" class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"></textarea>\n</div>",
+  "description": "",
+  "tags": [
+    "input",
+    "form"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "textarea",
+      "name": "textarea",
+      "path": "elements/textarea.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_textarea",
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/textarea.html",
+          "content": "<div class=\"w-full max-w-xs mx-auto\">\n    <textarea type=\"text\" placeholder=\"Type your message here.\" class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"></textarea>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A textarea is a multi-line input field where users can type a block of text. It is typically used in forms where users need to enter a paragraph of text, such as a message or description. The textarea is a rectangular box with a resize handle in the bottom-right corner.",
+  "style_tags": [
+    "rounded",
+    "boxed"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: textarea\nDescription: A textarea is a multi-line input field where users can type a block of text. It is typically used in forms where users need to enter a paragraph of text, such as a message or description. The textarea is a rectangular box with a resize handle in the bottom-right corner.\nStyle: rounded, boxed\nInteractions: \nTags: input, form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/textarea.html\n<div class=\"w-full max-w-xs mx-auto\">\n    <textarea type=\"text\" placeholder=\"Type your message here.\" class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"></textarea>\n</div>",
+  "prompt_version": 2,
+  "clean_id": "textarea",
+  "display_name": "Textarea",
+  "preview_url": "/previews/pinesui/elements-textarea.png"
+}

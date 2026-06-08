@@ -1,0 +1,49 @@
+{
+  "id": "components_ui_TemplateCTA_TemplatesOverview",
+  "name": "TemplatesOverview",
+  "source_code": "// components/ui/TemplateCTA/TemplatesOverview.tsx\n\"use client\";\n\nimport Image from \"next/image\";\nimport preview1 from \"public/preview-1.svg\";\nimport preview2 from \"public/preview-2.svg\";\nimport preview3 from \"public/preview-3.svg\";\n\nexport default () => {\n  return (\n    <div className=\"flex-1 relative overflow-hidden border border-zinc-800 rounded-2xl p-8 bg-[linear-gradient(180deg,_rgba(15,_23,_42,_0.65)_0%,_rgba(24,_24,_27,_0.00)_100%)]\">\n      <h3 className=\"text-zinc-100 font-semibold\">Ready to use templates</h3>\n      <p className=\"text-zinc-300 max-w-md mt-3\">\n        Explore pre-designed templates to quickly begin building your\n        application or website.\n      </p>\n      <div className=\"flex mt-8 group h-52 sm:h-64 md:h-auto\">\n        <Image\n          src={preview3}\n          className=\"flex-1 absolute group-hover:right-60 right-24 -bottom-6 duration-500\"\n          alt=\"\"\n        />\n        <Image\n          src={preview2}\n          className=\"flex-1 absolute group-hover:right-32 right-12 bottom-0 duration-500\"\n          alt=\"\"\n        />\n        <Image\n          src={preview1}\n          className=\"flex-1 absolute group-hover:-right-12 -right-20 bottom-0 duration-500\"\n          alt=\"\"\n        />\n      </div>\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "other",
+    "overview",
+    "templates"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_TemplateCTA_TemplatesOverview",
+      "name": "TemplatesOverview",
+      "path": "components/ui/TemplateCTA/TemplatesOverview.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_TemplateCTA_TemplatesOverview",
+      "name": "TemplatesOverview",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/TemplateCTA/TemplatesOverview.tsx",
+          "content": "\"use client\";\n\nimport Image from \"next/image\";\nimport preview1 from \"public/preview-1.svg\";\nimport preview2 from \"public/preview-2.svg\";\nimport preview3 from \"public/preview-3.svg\";\n\nexport default () => {\n  return (\n    <div className=\"flex-1 relative overflow-hidden border border-zinc-800 rounded-2xl p-8 bg-[linear-gradient(180deg,_rgba(15,_23,_42,_0.65)_0%,_rgba(24,_24,_27,_0.00)_100%)]\">\n      <h3 className=\"text-zinc-100 font-semibold\">Ready to use templates</h3>\n      <p className=\"text-zinc-300 max-w-md mt-3\">\n        Explore pre-designed templates to quickly begin building your\n        application or website.\n      </p>\n      <div className=\"flex mt-8 group h-52 sm:h-64 md:h-auto\">\n        <Image\n          src={preview3}\n          className=\"flex-1 absolute group-hover:right-60 right-24 -bottom-6 duration-500\"\n          alt=\"\"\n        />\n        <Image\n          src={preview2}\n          className=\"flex-1 absolute group-hover:right-32 right-12 bottom-0 duration-500\"\n          alt=\"\"\n        />\n        <Image\n          src={preview1}\n          className=\"flex-1 absolute group-hover:-right-12 -right-20 bottom-0 duration-500\"\n          alt=\"\"\n        />\n      </div>\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TemplatesOverview is a templates overview UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: TemplatesOverview\nDescription: TemplatesOverview is a templates overview UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, rounded, utility-styled\nInteractions: hover\nTags: floatui, other, overview, templates\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/TemplateCTA/TemplatesOverview.tsx\n\"use client\";\n\nimport Image from \"next/image\";\nimport preview1 from \"public/preview-1.svg\";\nimport preview2 from \"public/preview-2.svg\";\nimport preview3 from \"public/preview-3.svg\";\n\nexport default () => {\n  return (\n    <div className=\"flex-1 relative overflow-hidden border border-zinc-800 rounded-2xl p-8 bg-[linear-gradient(180deg,_rgba(15,_23,_42,_0.65)_0%,_rgba(24,_24,_27,_0.00)_100%)]\">\n      <h3 className=\"text-zinc-100 font-semibold\">Read",
+  "prompt_version": 2,
+  "clean_id": "templates-overview",
+  "display_name": "Templates Overview",
+  "preview_url": "/previews/floatui/components-ui-templatecta-templatesoverview.png"
+}

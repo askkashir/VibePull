@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_menu_menu",
+  "name": "menu",
+  "source_code": "// packages/react/src/components/menu/menu.tsx\n\"use client\";\n\nimport type {MenuVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {Menu as MenuPrimitive} from \"react-aria-components/Menu\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof MenuPrimitive<T>>, MenuVariants {\n  className?: string;\n}\n\nfunction MenuRoot<T extends object>({className, ...props}: MenuRootProps<T>) {\n  const styles = React.useMemo(() => menuVariants(), []);\n\n  return (\n    <MenuPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"menu\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuRoot};\n\nexport type {MenuRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "menu_menu",
+      "name": "menu",
+      "path": "packages/react/src/components/menu/menu.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_menu_menu",
+      "name": "menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/menu/menu.tsx",
+          "content": "\"use client\";\n\nimport type {MenuVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {Menu as MenuPrimitive} from \"react-aria-components/Menu\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof MenuPrimitive<T>>, MenuVariants {\n  className?: string;\n}\n\nfunction MenuRoot<T extends object>({className, ...props}: MenuRootProps<T>) {\n  const styles = React.useMemo(() => menuVariants(), []);\n\n  return (\n    <MenuPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"menu\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuRoot};\n\nexport type {MenuRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

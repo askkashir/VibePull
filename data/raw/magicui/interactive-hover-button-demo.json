@@ -1,0 +1,45 @@
+{
+  "id": "interactive-hover-button-demo",
+  "name": "Interactive Hover Button Demo",
+  "source_code": "import { InteractiveHoverButton } from \"@/registry/magicui/interactive-hover-button\"\n\nexport default function InteractiveHoverButtonDemo() {\n  return <InteractiveHoverButton>Hover Me</InteractiveHoverButton>\n}\n",
+  "description": "Example showing an interactive button with hover effects.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "interactive-hover-button-demo",
+      "type": "registry:example",
+      "title": "Interactive Hover Button Demo",
+      "description": "Example showing an interactive button with hover effects.",
+      "registryDependencies": [
+        "https://magicui.design/r/interactive-hover-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-hover-button-demo.tsx",
+          "type": "registry:example",
+          "target": "components/interactive-hover-button-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "interactive-hover-button-demo",
+      "type": "registry:example",
+      "title": "Interactive Hover Button Demo",
+      "description": "Example showing an interactive button with hover effects.",
+      "registryDependencies": [
+        "@magicui/interactive-hover-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-hover-button-demo.tsx",
+          "content": "import { InteractiveHoverButton } from \"@/registry/magicui/interactive-hover-button\"\n\nexport default function InteractiveHoverButtonDemo() {\n  return <InteractiveHoverButton>Hover Me</InteractiveHoverButton>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_use-resizing_use-resizing",
+  "name": "use-resizing",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/use-resizing/use-resizing.tsx\nimport { startTransition, useRef, useState } from 'react';\nimport { useIsomorphicEffect, useWindowEvent } from '@mantine/hooks';\n\ninterface UseResizingInput {\n  transitionDuration: number | undefined;\n  disabled: boolean | undefined;\n}\n\nexport function useResizing({ transitionDuration, disabled }: UseResizingInput) {\n  const [resizing, setResizing] = useState(true);\n  const resizingTimeout = useRef<number>(-1);\n  const disabledTimeout = useRef<number>(-1);\n\n  useWindowEvent('resize', () => {\n    setResizing(true);\n    clearTimeout(resizingTimeout.current);\n    resizingTimeout.current = window.setTimeout(\n      () =>\n        startTransition(() => {\n          setResizing(false);\n        }),\n      200\n    );\n  });\n\n  useIsomorphicEffect(() => {\n    setResizing(true);\n    clearTimeout(disabledTimeout.current);\n    disabledTimeout.current = window.setTimeout(\n      () =>\n        startTransition(() => {\n          setResizing(false);\n        }),\n      transitionDuration || 0\n    );\n  }, [disabled, transitionDuration]);\n\n  return resizing;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "resizing",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_use-resizing_use-resizing",
+      "name": "use-resizing",
+      "path": "packages/@mantine/core/src/components/AppShell/use-resizing/use-resizing.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_use-resizing_use-resizing",
+      "name": "use-resizing",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/use-resizing/use-resizing.tsx",
+          "content": "import { startTransition, useRef, useState } from 'react';\nimport { useIsomorphicEffect, useWindowEvent } from '@mantine/hooks';\n\ninterface UseResizingInput {\n  transitionDuration: number | undefined;\n  disabled: boolean | undefined;\n}\n\nexport function useResizing({ transitionDuration, disabled }: UseResizingInput) {\n  const [resizing, setResizing] = useState(true);\n  const resizingTimeout = useRef<number>(-1);\n  const disabledTimeout = useRef<number>(-1);\n\n  useWindowEvent('resize', () => {\n    setResizing(true);\n    clearTimeout(resizingTimeout.current);\n    resizingTimeout.current = window.setTimeout(\n      () =>\n        startTransition(() => {\n          setResizing(false);\n        }),\n      200\n    );\n  });\n\n  useIsomorphicEffect(() => {\n    setResizing(true);\n    clearTimeout(disabledTimeout.current);\n    disabledTimeout.current = window.setTimeout(\n      () =>\n        startTransition(() => {\n          setResizing(false);\n        }),\n      transitionDuration || 0\n    );\n  }, [disabled, transitionDuration]);\n\n  return resizing;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-resizing is a use resizing UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: use-resizing\nDescription: use-resizing is a use resizing UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated\nTags: mantine, other, resizing, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/use-resizing/use-resizing.tsx\nimport { startTransition, useRef, useState } from 'react';\nimport { useIsomorphicEffect, useWindowEvent } from '@mantine/hooks';\n\ninterface UseResizingInput {\n  transitionDuration: number | undefined;\n  disabled: boolean | undefined;\n}\n\nexport function useResizing({ transitionDuration, disabled }: UseResizingInput) {\n  const [resizing, setResizing] = useState(true);\n  const resizingTimeout = useRef<number>(-1);\n  con",
+  "prompt_version": 2,
+  "clean_id": "use-resizing",
+  "display_name": "Use Resizing",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-use-resizing-use-resizing.png"
+}

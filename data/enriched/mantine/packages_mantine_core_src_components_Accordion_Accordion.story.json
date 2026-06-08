@@ -1,0 +1,48 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_Accordion.story",
+  "name": "Accordion.story",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/Accordion.story.tsx\nimport { TextInput } from '../TextInput';\nimport { Accordion } from './Accordion';\n\nexport default { title: 'Accordion' };\n\nconst _items = (\n  <>\n    <Accordion.Item value=\"customize\">\n      <Accordion.Control>Customization</Accordion.Control>\n      <Accordion.Panel>\n        Colors, fonts, shadows and many other parts are customizable to fit your design needs\n      </Accordion.Panel>\n    </Accordion.Item>\n\n    <Accordion.Item value=\"flex\">\n      <Accordion.Control>Flexibility</Accordion.Control>\n      <Accordion.Panel>\n        Configure components appearance and behavior with vast amount of settings or overwrite any\n        part of component styles\n      </Accordion.Panel>\n    </Accordion.Item>\n\n    <Accordion.Item value=\"focus\">\n      <Accordion.Control>No annoying focus ring</Accordion.Control>\n      <Accordion.Panel>\n        With new :focus-visible pseudo-class focus ring appears only when user navigates with\n        keyboard\n      </Accordion.Panel>\n    </Accordion.Item>\n  </>\n);\n\nexport function Variants() {\n  return (\n    <>\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt=\"xl\"\n        variant=\"default\"\n        keepMounted={false}\n      >\n        {_items}\n      </Accordion>\n\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt={50}\n        variant=\"contained\"\n      >\n        {_items}\n      </Accordion>\n\n      <Accordion defaultValue=\"flex\" style={{ maxWidth: 400 }} mx=\"auto\" mt={50} variant=\"filled\">\n        {_items}\n      </Accordion>\n\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt={50}\n        variant=\"separated\"\n      >\n        {_items}\n      </Accordion>\n    </>\n  );\n}\n\nexport function NestedAccordions() {\n  return (\n    <Accordion multiple style={{ maxWidth: 400 }} mx=\"auto\">\n      <Accordion.Item value=\"item-1\">\n        <Accordion.Control>Nested 1</Accordion.Control>\n        <Accordion.Panel>\n          <Accordion>{_items}</Accordion>\n        </Accordion.Panel>\n      </Accordion.Item>\n\n      <Accordion.Item value=\"item-2\">\n        <Accordion.Control>Nested 2</Accordion.Control>\n        <Accordion.Panel>\n          <Accordion>{_items}</Accordion>\n        </Accordion.Panel>\n      </Accordion.Item>\n    </Accordion>\n  );\n}\n\nexport function WithInputs() {\n  return (\n    <div style={{ maxWidth: 400, padding: 40 }}>\n      <Accordion multiple>\n        <Accordion.Item value=\"item-1\">\n          <Accordion.Control>First item</Accordion.Control>\n          <Accordion.Panel>\n            <TextInput label=\"Text input\" placeholder=\"Text input\" />\n          </Accordion.Panel>\n        </Accordion.Item>\n        <Accordion.Item value=\"item-2\">\n          <Accordion.Control>Second item</Accordion.Control>\n          <Accordion.Panel>\n            <TextInput label=\"Text input\" placeholder=\"Text input\" />\n          </Accordion.Panel>\n        </Accordion.Item>\n      </Accordion>\n\n      <TextInput label=\"Text input\" />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "accordion",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_Accordion.story",
+      "name": "Accordion.story",
+      "path": "packages/@mantine/core/src/components/Accordion/Accordion.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_Accordion.story",
+      "name": "Accordion.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/Accordion.story.tsx",
+          "content": "import { TextInput } from '../TextInput';\nimport { Accordion } from './Accordion';\n\nexport default { title: 'Accordion' };\n\nconst _items = (\n  <>\n    <Accordion.Item value=\"customize\">\n      <Accordion.Control>Customization</Accordion.Control>\n      <Accordion.Panel>\n        Colors, fonts, shadows and many other parts are customizable to fit your design needs\n      </Accordion.Panel>\n    </Accordion.Item>\n\n    <Accordion.Item value=\"flex\">\n      <Accordion.Control>Flexibility</Accordion.Control>\n      <Accordion.Panel>\n        Configure components appearance and behavior with vast amount of settings or overwrite any\n        part of component styles\n      </Accordion.Panel>\n    </Accordion.Item>\n\n    <Accordion.Item value=\"focus\">\n      <Accordion.Control>No annoying focus ring</Accordion.Control>\n      <Accordion.Panel>\n        With new :focus-visible pseudo-class focus ring appears only when user navigates with\n        keyboard\n      </Accordion.Panel>\n    </Accordion.Item>\n  </>\n);\n\nexport function Variants() {\n  return (\n    <>\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt=\"xl\"\n        variant=\"default\"\n        keepMounted={false}\n      >\n        {_items}\n      </Accordion>\n\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt={50}\n        variant=\"contained\"\n      >\n        {_items}\n      </Accordion>\n\n      <Accordion defaultValue=\"flex\" style={{ maxWidth: 400 }} mx=\"auto\" mt={50} variant=\"filled\">\n        {_items}\n      </Accordion>\n\n      <Accordion\n        defaultValue=\"flex\"\n        style={{ maxWidth: 400 }}\n        mx=\"auto\"\n        mt={50}\n        variant=\"separated\"\n      >\n        {_items}\n      </Accordion>\n    </>\n  );\n}\n\nexport function NestedAccordions() {\n  return (\n    <Accordion multiple style={{ maxWidth: 400 }} mx=\"auto\">\n      <Accordion.Item value=\"item-1\">\n        <Accordion.Control>Nested 1</Accordion.Control>\n        <Accordion.Panel>\n          <Accordion>{_items}</Accordion>\n        </Accordion.Panel>\n      </Accordion.Item>\n\n      <Accordion.Item value=\"item-2\">\n        <Accordion.Control>Nested 2</Accordion.Control>\n        <Accordion.Panel>\n          <Accordion>{_items}</Accordion>\n        </Accordion.Panel>\n      </Accordion.Item>\n    </Accordion>\n  );\n}\n\nexport function WithInputs() {\n  return (\n    <div style={{ maxWidth: 400, padding: 40 }}>\n      <Accordion multiple>\n        <Accordion.Item value=\"item-1\">\n          <Accordion.Control>First item</Accordion.Control>\n          <Accordion.Panel>\n            <TextInput label=\"Text input\" placeholder=\"Text input\" />\n          </Accordion.Panel>\n        </Accordion.Item>\n        <Accordion.Item value=\"item-2\">\n          <Accordion.Control>Second item</Accordion.Control>\n          <Accordion.Panel>\n            <TextInput label=\"Text input\" placeholder=\"Text input\" />\n          </Accordion.Panel>\n        </Accordion.Item>\n      </Accordion>\n\n      <TextInput label=\"Text input\" />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Accordion.story is a accordion story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "keyboard-focus"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Accordion.story\nDescription: Accordion.story is a accordion story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: keyboard-focus\nTags: accordion, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Accordion/Accordion.story.tsx\nimport { TextInput } from '../TextInput';\nimport { Accordion } from './Accordion';\n\nexport default { title: 'Accordion' };\n\nconst _items = (\n  <>\n    <Accordion.Item value=\"customize\">\n      <Accordion.Control>Customization</Accordion.Control>\n      <Accordion.Panel>\n        Colors, fonts, shadows and many other parts are customizable to fit your design needs\n      </Accordion.Panel>\n    </Accordion.Item>\n\n    <Accordion.Item",
+  "prompt_version": 2,
+  "clean_id": "accordion",
+  "display_name": "Accordion",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-accordion-accordion-story.png"
+}

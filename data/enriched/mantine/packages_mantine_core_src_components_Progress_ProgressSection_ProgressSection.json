@@ -1,0 +1,48 @@
+{
+  "id": "packages_mantine_core_src_components_Progress_ProgressSection_ProgressSection",
+  "name": "ProgressSection",
+  "source_code": "// packages/@mantine/core/src/components/Progress/ProgressSection/ProgressSection.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  getAutoContrastValue,\n  getContrastColor,\n  getThemeColor,\n  MantineColor,\n  useMantineTheme,\n  useProps,\n} from '../../../core';\nimport { useProgressContext } from '../Progress.context';\nimport classes from '../Progress.module.css';\n\nexport type ProgressSectionStylesNames = 'section';\n\nexport interface ProgressSectionProps\n  extends BoxProps, CompoundStylesApiProps<ProgressSectionFactory>, ElementProps<'div'> {\n  /** Value of the section in 0–100 range */\n  value: number;\n\n  /** Determines whether `aria-*` props should be added to the root element @default true */\n  withAria?: boolean;\n\n  /** Key of `theme.colors` or any valid CSS value @default theme.primaryColor */\n  color?: MantineColor;\n\n  /** If set, the section has stripes @default false */\n  striped?: boolean;\n\n  /** If set, the sections stripes are animated, `striped` prop is ignored @default false */\n  animated?: boolean;\n}\n\nexport type ProgressSectionFactory = Factory<{\n  props: ProgressSectionProps;\n  ref: HTMLDivElement;\n  stylesNames: ProgressSectionStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  withAria: true,\n} satisfies Partial<ProgressSectionProps>;\n\nexport const ProgressSection = factory<ProgressSectionFactory>((props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    vars,\n    value,\n    withAria,\n    color,\n    striped,\n    animated,\n    mod,\n    ...others\n  } = useProps('ProgressSection', defaultProps, props);\n\n  const ctx = useProgressContext();\n  const theme = useMantineTheme();\n\n  const ariaAttributes = withAria\n    ? {\n        role: 'progressbar',\n        'aria-valuemax': 100,\n        'aria-valuemin': 0,\n        'aria-valuenow': value,\n        'aria-valuetext': `${value}%`,\n      }\n    : {};\n\n  return (\n    <Box\n      {...ctx.getStyles('section', { className, classNames, styles, style })}\n      {...others}\n      {...ariaAttributes}\n      mod={[{ striped: striped || animated, animated }, mod]}\n      __vars={{\n        '--progress-section-size': `${value}%`,\n        '--progress-section-color': getThemeColor(color, theme),\n        '--progress-label-color': getAutoContrastValue(ctx.autoContrast, theme)\n          ? getContrastColor({ color, theme, autoContrast: ctx.autoContrast })\n          : undefined,\n      }}\n    />\n  );\n});\n\nProgressSection.classes = classes;\nProgressSection.displayName = '@mantine/core/ProgressSection';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "progress",
+    "section"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Progress_ProgressSection_ProgressSection",
+      "name": "ProgressSection",
+      "path": "packages/@mantine/core/src/components/Progress/ProgressSection/ProgressSection.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Progress_ProgressSection_ProgressSection",
+      "name": "ProgressSection",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Progress/ProgressSection/ProgressSection.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  getAutoContrastValue,\n  getContrastColor,\n  getThemeColor,\n  MantineColor,\n  useMantineTheme,\n  useProps,\n} from '../../../core';\nimport { useProgressContext } from '../Progress.context';\nimport classes from '../Progress.module.css';\n\nexport type ProgressSectionStylesNames = 'section';\n\nexport interface ProgressSectionProps\n  extends BoxProps, CompoundStylesApiProps<ProgressSectionFactory>, ElementProps<'div'> {\n  /** Value of the section in 0–100 range */\n  value: number;\n\n  /** Determines whether `aria-*` props should be added to the root element @default true */\n  withAria?: boolean;\n\n  /** Key of `theme.colors` or any valid CSS value @default theme.primaryColor */\n  color?: MantineColor;\n\n  /** If set, the section has stripes @default false */\n  striped?: boolean;\n\n  /** If set, the sections stripes are animated, `striped` prop is ignored @default false */\n  animated?: boolean;\n}\n\nexport type ProgressSectionFactory = Factory<{\n  props: ProgressSectionProps;\n  ref: HTMLDivElement;\n  stylesNames: ProgressSectionStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  withAria: true,\n} satisfies Partial<ProgressSectionProps>;\n\nexport const ProgressSection = factory<ProgressSectionFactory>((props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    vars,\n    value,\n    withAria,\n    color,\n    striped,\n    animated,\n    mod,\n    ...others\n  } = useProps('ProgressSection', defaultProps, props);\n\n  const ctx = useProgressContext();\n  const theme = useMantineTheme();\n\n  const ariaAttributes = withAria\n    ? {\n        role: 'progressbar',\n        'aria-valuemax': 100,\n        'aria-valuemin': 0,\n        'aria-valuenow': value,\n        'aria-valuetext': `${value}%`,\n      }\n    : {};\n\n  return (\n    <Box\n      {...ctx.getStyles('section', { className, classNames, styles, style })}\n      {...others}\n      {...ariaAttributes}\n      mod={[{ striped: striped || animated, animated }, mod]}\n      __vars={{\n        '--progress-section-size': `${value}%`,\n        '--progress-section-color': getThemeColor(color, theme),\n        '--progress-label-color': getAutoContrastValue(ctx.autoContrast, theme)\n          ? getContrastColor({ color, theme, autoContrast: ctx.autoContrast })\n          : undefined,\n      }}\n    />\n  );\n});\n\nProgressSection.classes = classes;\nProgressSection.displayName = '@mantine/core/ProgressSection';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ProgressSection is a progress section UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ProgressSection\nDescription: ProgressSection is a progress section UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: animated\nTags: mantine, other, progress, section\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Progress/ProgressSection/ProgressSection.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  getAutoContrastValue,\n  getContrastColor,\n  getThemeColor,\n  MantineColor,\n  useMantineTheme,\n  useProps,\n} from '../../../core';\nimport { useProgressContext } from '../Progress.context';\nimport classes from '../Progress.module.css';\n\nexport type ProgressSectionStylesNames = 'section';\n\nexport interface ProgressSection",
+  "prompt_version": 2,
+  "clean_id": "progress-section",
+  "display_name": "Progress Section",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-progress-progresssection-progresssection.png"
+}

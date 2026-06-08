@@ -1,0 +1,42 @@
+{
+  "id": "item-group",
+  "name": "item-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "item-group",
+    "collection",
+    "list",
+    "grid",
+    "related-items"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Item-group is a UI component that displays a collection of related items as a list or grid. It is typically used when a user needs to view multiple items at once, such as product options or settings. This component is often accompanied by checkboxes or select menus for user input.",
+  "style_tags": [
+    "e.g. default",
+    "compact",
+    "boxed"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "draggable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: item-group\nDescription: Item-group is a UI component that displays a collection of related items as a list or grid. It is typically used when a user needs to view multiple items at once, such as product options or settings. This component is often accompanied by checkboxes or select menus for user input.\nStyle: e.g. default, compact, boxed\nInteractions: e.g. clickable, draggable\nTags: item-group, collection, list, grid, related-items\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-group",
+  "display_name": "Item Group",
+  "preview_url": "/previews/shadcn/item-group.png"
+}

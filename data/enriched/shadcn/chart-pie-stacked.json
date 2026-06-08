@@ -1,0 +1,40 @@
+{
+  "id": "chart-pie-stacked",
+  "name": "chart-pie-stacked",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data-analysis",
+    "visualization",
+    "pie-chart",
+    "dashboard"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-stacked",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-stacked\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "ChartPieStacked is a component used to display a stacked pie chart, suitable for data analysis and visualization needs. It can be used in financial or market dashboards to showcase the composition of pie chart. The component typically consists of a circular shape with multiple segments, each representing a value of the data.",
+  "style_tags": [
+    "material",
+    "modern"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-pie-stacked\nDescription: ChartPieStacked is a component used to display a stacked pie chart, suitable for data analysis and visualization needs. It can be used in financial or market dashboards to showcase the composition of pie chart. The component typically consists of a circular shape with multiple segments, each representing a value of the data.\nStyle: material, modern\nInteractions: hover, clickable\nTags: data-analysis, visualization, pie-chart, dashboard\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-pie-stacked",
+  "display_name": "Chart Pie Stacked",
+  "preview_url": "/previews/shadcn/chart-pie-stacked.png"
+}

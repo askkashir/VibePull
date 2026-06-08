@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_chip_index",
+  "name": "chip",
+  "source_code": "// packages/react/src/components/chip/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ChipLabel, ChipRoot} from \"./chip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Chip = Object.assign(ChipRoot, {\n  Root: ChipRoot,\n  Label: ChipLabel,\n});\n\nexport type Chip = {\n  Props: ComponentProps<typeof ChipRoot>;\n  RootProps: ComponentProps<typeof ChipRoot>;\n  LabelProps: ComponentProps<typeof ChipLabel>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ChipRoot, ChipLabel};\n\nexport type {ChipRootProps, ChipRootProps as ChipProps, ChipLabelProps} from \"./chip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {chipVariants} from \"@heroui/styles\";\n\nexport type {ChipVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "chip",
+    "label",
+    "tag"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "chip_index",
+      "name": "index",
+      "path": "packages/react/src/components/chip/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_chip_index",
+      "name": "chip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/chip/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {ChipLabel, ChipRoot} from \"./chip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Chip = Object.assign(ChipRoot, {\n  Root: ChipRoot,\n  Label: ChipLabel,\n});\n\nexport type Chip = {\n  Props: ComponentProps<typeof ChipRoot>;\n  RootProps: ComponentProps<typeof ChipRoot>;\n  LabelProps: ComponentProps<typeof ChipLabel>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ChipRoot, ChipLabel};\n\nexport type {ChipRootProps, ChipRootProps as ChipProps, ChipLabelProps} from \"./chip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {chipVariants} from \"@heroui/styles\";\n\nexport type {ChipVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A chip component displays a small, rectangular text fragment, often used for labelling or categorizing. A developer would use this to display a small piece of text, such as a tag or a label. The chip can be used as a standalone component or as part of a more complex interface.",
+  "style_tags": [
+    "compact",
+    "rounded"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chip\nDescription: A chip component displays a small, rectangular text fragment, often used for labelling or categorizing. A developer would use this to display a small piece of text, such as a tag or a label. The chip can be used as a standalone component or as part of a more complex interface.\nStyle: compact, rounded\nInteractions: \nTags: chip, label, tag\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/chip/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ChipLabel, ChipRoot} from \"./chip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Chip = Object.assign(ChipRoot, {\n  Root: ChipRoot,\n  Label: ChipLabel,\n});\n\nexport type Chip = {\n  Props: ComponentProps<typeof",
+  "prompt_version": 2,
+  "clean_id": "chip",
+  "display_name": "Chip",
+  "preview_url": "/previews/heroui/packages-react-src-components-chip-index.png"
+}

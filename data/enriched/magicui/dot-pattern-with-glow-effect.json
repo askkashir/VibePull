@@ -1,0 +1,60 @@
+{
+  "id": "dot-pattern-with-glow-effect",
+  "name": "Dot Pattern with glow effect",
+  "source_code": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternWithGlowEffectDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden\">\n      <DotPattern\n        glow={true}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing a dot pattern with glow effect",
+  "tags": [
+    "dot pattern",
+    "glow effect",
+    "background",
+    "highlight"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "dot-pattern-with-glow-effect",
+      "type": "registry:example",
+      "title": "Dot Pattern with glow effect",
+      "description": "Example showing a dot pattern with glow effect",
+      "registryDependencies": [
+        "https://magicui.design/r/dot-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/dot-pattern-with-glow-effect.tsx",
+          "type": "registry:example",
+          "target": "components/dot-pattern-with-glow-effect.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dot-pattern-with-glow-effect",
+      "type": "registry:example",
+      "title": "Dot Pattern with glow effect",
+      "description": "Example showing a dot pattern with glow effect",
+      "registryDependencies": [
+        "@magicui/dot-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/dot-pattern-with-glow-effect.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternWithGlowEffectDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden\">\n      <DotPattern\n        glow={true}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A circular, radial pattern with a glow effect. It's a visually appealing component suitable for backgrounds or highlights. Use it to add a unique texture to your designs.",
+  "style_tags": [
+    "retro",
+    "glow"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Dot Pattern with glow effect\nDescription: A circular, radial pattern with a glow effect. It's a visually appealing component suitable for backgrounds or highlights. Use it to add a unique texture to your designs.\nStyle: retro, glow\nInteractions: \nTags: dot pattern, glow effect, background, highlight\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternWithGlowEffectDemo() {\n  return (\n    <div className=\"relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden\">\n      <DotPattern\n        glow={true}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "dot-pattern-with-glow-effect",
+  "display_name": "Dot Pattern With Glow Effect",
+  "preview_url": "/previews/magicui/dot-pattern-with-glow-effect.png"
+}

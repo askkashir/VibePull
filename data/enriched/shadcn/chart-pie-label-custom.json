@@ -1,0 +1,41 @@
+{
+  "id": "chart-pie-label-custom",
+  "name": "chart-pie-label-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "pie-chart",
+    "label",
+    "customization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-label-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-label-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Pie chart label component for customizing pie chart labels. Typically used when showcasing detailed data breakdown in a dashboard or chart. Developers can leverage this component for advanced data visualization projects.",
+  "style_tags": [
+    "material",
+    "flat",
+    "colorful"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: chart-pie-label-custom\nDescription: Pie chart label component for customizing pie chart labels. Typically used when showcasing detailed data breakdown in a dashboard or chart. Developers can leverage this component for advanced data visualization projects.\nStyle: material, flat, colorful\nInteractions: clickable, hover\nTags: chart, pie-chart, label, customization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-pie-label-custom",
+  "display_name": "Chart Pie Label Custom",
+  "preview_url": "/previews/shadcn/chart-pie-label-custom.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_index",
+  "name": "ModalBase",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/index.ts\nexport { ModalBase } from './ModalBase';\nexport { ModalBaseBody } from './ModalBaseBody';\nexport { ModalBaseCloseButton } from './ModalBaseCloseButton';\nexport { ModalBaseContent } from './ModalBaseContent';\nexport { ModalBaseHeader } from './ModalBaseHeader';\nexport { ModalBaseOverlay } from './ModalBaseOverlay';\nexport { ModalBaseTitle } from './ModalBaseTitle';\nexport { NativeScrollArea } from './NativeScrollArea';\n\nexport type { ModalBaseProps } from './ModalBase';\nexport type { ModalBaseBodyProps } from './ModalBaseBody';\nexport type { ModalBaseCloseButtonProps } from './ModalBaseCloseButton';\nexport type { ModalBaseContentProps } from './ModalBaseContent';\nexport type { ModalBaseHeaderProps } from './ModalBaseHeader';\nexport type { ModalBaseOverlayProps } from './ModalBaseOverlay';\nexport type { ModalBaseTitleProps } from './ModalBaseTitle';\n\nexport type ModalBaseStylesNames =\n  | 'body'\n  | 'header'\n  | 'title'\n  | 'overlay'\n  | 'root'\n  | 'content'\n  | 'close'\n  | 'inner';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ModalBase/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_index",
+      "name": "ModalBase",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/index.ts",
+          "content": "export { ModalBase } from './ModalBase';\nexport { ModalBaseBody } from './ModalBaseBody';\nexport { ModalBaseCloseButton } from './ModalBaseCloseButton';\nexport { ModalBaseContent } from './ModalBaseContent';\nexport { ModalBaseHeader } from './ModalBaseHeader';\nexport { ModalBaseOverlay } from './ModalBaseOverlay';\nexport { ModalBaseTitle } from './ModalBaseTitle';\nexport { NativeScrollArea } from './NativeScrollArea';\n\nexport type { ModalBaseProps } from './ModalBase';\nexport type { ModalBaseBodyProps } from './ModalBaseBody';\nexport type { ModalBaseCloseButtonProps } from './ModalBaseCloseButton';\nexport type { ModalBaseContentProps } from './ModalBaseContent';\nexport type { ModalBaseHeaderProps } from './ModalBaseHeader';\nexport type { ModalBaseOverlayProps } from './ModalBaseOverlay';\nexport type { ModalBaseTitleProps } from './ModalBaseTitle';\n\nexport type ModalBaseStylesNames =\n  | 'body'\n  | 'header'\n  | 'title'\n  | 'overlay'\n  | 'root'\n  | 'content'\n  | 'close'\n  | 'inner';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

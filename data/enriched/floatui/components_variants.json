@@ -1,0 +1,48 @@
+{
+  "id": "components_variants",
+  "name": "variants",
+  "source_code": "// components/variants.ts\nconst buttonNormalize =\n  \"py-2.5 px-4 rounded-full duration-150 font-medium text-center text-sm\";\nexport const buttonVariants = {\n  default: \"bg-zinc-50 hover:bg-zinc-200 \" + buttonNormalize,\n  shiny: \"bg-shiny text-zinc-300 \" + buttonNormalize,\n};\n",
+  "description": "",
+  "tags": [
+    "button",
+    "style",
+    "interaction"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "variants",
+      "name": "variants",
+      "path": "components/variants.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_variants",
+      "name": "variants",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/variants.ts",
+          "content": "const buttonNormalize =\n  \"py-2.5 px-4 rounded-full duration-150 font-medium text-center text-sm\";\nexport const buttonVariants = {\n  default: \"bg-zinc-50 hover:bg-zinc-200 \" + buttonNormalize,\n  shiny: \"bg-shiny text-zinc-300 \" + buttonNormalize,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The variants component is a customizable button with two styles: default and shiny. It has a rounded full shape and is interactive when hovered. Developers can use this component as a standard button in their applications.",
+  "style_tags": [
+    "rounded",
+    "full",
+    "interactive"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: variants\nDescription: The variants component is a customizable button with two styles: default and shiny. It has a rounded full shape and is interactive when hovered. Developers can use this component as a standard button in their applications.\nStyle: rounded, full, interactive\nInteractions: hover, clickable\nTags: button, style, interaction\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/variants.ts\nconst buttonNormalize =\n  \"py-2.5 px-4 rounded-full duration-150 font-medium text-center text-sm\";\nexport const buttonVariants = {\n  default: \"bg-zinc-50 hover:bg-zinc-200 \" + buttonNormalize,\n  shiny: \"bg-shiny text-zinc-300 \" + buttonNormalize,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "variants",
+  "display_name": "Variants",
+  "preview_url": "/previews/floatui/components-variants.png"
+}

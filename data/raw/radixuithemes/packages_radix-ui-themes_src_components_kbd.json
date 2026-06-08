@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_kbd",
+  "name": "kbd",
+  "source_code": "// packages/radix-ui-themes/src/components/kbd.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { kbdPropDefs } from './kbd.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype KbdElement = React.ElementRef<'kbd'>;\ntype KbdOwnProps = GetPropDefTypes<typeof kbdPropDefs>;\ninterface KbdProps extends ComponentPropsWithout<'kbd', RemovedProps>, MarginProps, KbdOwnProps {}\nconst Kbd = React.forwardRef<KbdElement, KbdProps>((props, forwardedRef) => {\n  const { asChild, className, ...kbdProps } = extractProps(props, kbdPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot.Root : 'kbd';\n  return (\n    <Comp\n      {...kbdProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Kbd', className)}\n    />\n  );\n});\nKbd.displayName = 'Kbd';\n\nexport { Kbd };\nexport type { KbdProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_kbd",
+      "name": "kbd.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/kbd.tsx",
+      "sha": "ad28719b521c94bf865fc5368ec41a4a3aec8bf1",
+      "size": 1110,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/kbd.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/kbd.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/ad28719b521c94bf865fc5368ec41a4a3aec8bf1",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/kbd.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/kbd.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/ad28719b521c94bf865fc5368ec41a4a3aec8bf1",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/kbd.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_kbd",
+      "name": "kbd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/kbd.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { kbdPropDefs } from './kbd.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype KbdElement = React.ElementRef<'kbd'>;\ntype KbdOwnProps = GetPropDefTypes<typeof kbdPropDefs>;\ninterface KbdProps extends ComponentPropsWithout<'kbd', RemovedProps>, MarginProps, KbdOwnProps {}\nconst Kbd = React.forwardRef<KbdElement, KbdProps>((props, forwardedRef) => {\n  const { asChild, className, ...kbdProps } = extractProps(props, kbdPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot.Root : 'kbd';\n  return (\n    <Comp\n      {...kbdProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Kbd', className)}\n    />\n  );\n});\nKbd.displayName = 'Kbd';\n\nexport { Kbd };\nexport type { KbdProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

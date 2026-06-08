@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Input_Input.context",
+  "name": "Input.context",
+  "source_code": "// packages/@mantine/core/src/components/Input/Input.context.ts\nimport { createContext } from 'react';\nimport { MantineSize } from '../../core';\n\ninterface InputContextValue {\n  size: MantineSize | (string & {});\n}\n\nexport const InputContext = createContext<InputContextValue>({ size: 'sm' });\n",
+  "description": "",
+  "tags": [
+    "input",
+    "context",
+    "state management"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_Input.context",
+      "name": "Input.context",
+      "path": "packages/@mantine/core/src/components/Input/Input.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_Input.context",
+      "name": "Input.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/Input.context.ts",
+          "content": "import { createContext } from 'react';\nimport { MantineSize } from '../../core';\n\ninterface InputContextValue {\n  size: MantineSize | (string & {});\n}\n\nexport const InputContext = createContext<InputContextValue>({ size: 'sm' });\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Input component context. Used when sharing input state and props across a component hierarchy.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "context",
+  "generation_prompt": "Create a production-ready context component with the following characteristics:\n\nName: Input.context\nDescription: Input component context. Used when sharing input state and props across a component hierarchy.\nStyle: \nInteractions: \nTags: input, context, state management\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/Input.context.ts\nimport { createContext } from 'react';\nimport { MantineSize } from '../../core';\n\ninterface InputContextValue {\n  size: MantineSize | (string & {});\n}\n\nexport const InputContext = createContext<InputContextValue>({ size: 'sm' });\n",
+  "prompt_version": 2,
+  "clean_id": "input",
+  "display_name": "Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-input-context.png"
+}

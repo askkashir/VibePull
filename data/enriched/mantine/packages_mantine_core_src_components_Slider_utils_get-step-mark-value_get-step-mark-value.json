@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-step-mark-value_get-step-mark-value",
+  "name": "get-step-mark-value",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-step-mark-value/get-step-mark-value.ts\nexport function getNextMarkValue(\n  currentValue: number,\n  marks: { value: number; label?: React.ReactNode }[]\n) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  const nextMark = sortedMarks.find((mark) => mark.value > currentValue);\n  return nextMark ? nextMark.value : currentValue;\n}\n\nexport function getPreviousMarkValue(\n  currentValue: number,\n  marks: { value: number; label?: React.ReactNode }[]\n) {\n  const sortedMarks = [...marks].sort((a, b) => b.value - a.value);\n  const previousMark = sortedMarks.find((mark) => mark.value < currentValue);\n  return previousMark ? previousMark.value : currentValue;\n}\n\nexport function getFirstMarkValue(marks: { value: number; label?: React.ReactNode }[]) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  return sortedMarks.length > 0 ? sortedMarks[0].value : 0;\n}\n\nexport function getLastMarkValue(marks: { value: number; label?: React.ReactNode }[]) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  return sortedMarks.length > 0 ? sortedMarks[sortedMarks.length - 1].value : 100;\n}\n",
+  "description": "",
+  "tags": [
+    "get",
+    "mantine",
+    "mark",
+    "other",
+    "step",
+    "value"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-step-mark-value_get-step-mark-value",
+      "name": "get-step-mark-value",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-step-mark-value/get-step-mark-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-step-mark-value_get-step-mark-value",
+      "name": "get-step-mark-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-step-mark-value/get-step-mark-value.ts",
+          "content": "export function getNextMarkValue(\n  currentValue: number,\n  marks: { value: number; label?: React.ReactNode }[]\n) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  const nextMark = sortedMarks.find((mark) => mark.value > currentValue);\n  return nextMark ? nextMark.value : currentValue;\n}\n\nexport function getPreviousMarkValue(\n  currentValue: number,\n  marks: { value: number; label?: React.ReactNode }[]\n) {\n  const sortedMarks = [...marks].sort((a, b) => b.value - a.value);\n  const previousMark = sortedMarks.find((mark) => mark.value < currentValue);\n  return previousMark ? previousMark.value : currentValue;\n}\n\nexport function getFirstMarkValue(marks: { value: number; label?: React.ReactNode }[]) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  return sortedMarks.length > 0 ? sortedMarks[0].value : 0;\n}\n\nexport function getLastMarkValue(marks: { value: number; label?: React.ReactNode }[]) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  return sortedMarks.length > 0 ? sortedMarks[sortedMarks.length - 1].value : 100;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-step-mark-value is a get step mark value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-step-mark-value\nDescription: get-step-mark-value is a get step mark value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: get, mantine, mark, other, step, value\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/utils/get-step-mark-value/get-step-mark-value.ts\nexport function getNextMarkValue(\n  currentValue: number,\n  marks: { value: number; label?: React.ReactNode }[]\n) {\n  const sortedMarks = [...marks].sort((a, b) => a.value - b.value);\n  const nextMark = sortedMarks.find((mark) => mark.value > currentValue);\n  return nextMark ? nextMark.value : currentValue;\n}\n\nexport function getPreviousMarkValue(\n  currentValue: number,\n  marks: { value: number; lab",
+  "prompt_version": 2,
+  "clean_id": "get-step-mark-value",
+  "display_name": "Get Step Mark Value",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-utils-get-step-mark-value-get-step-mark-value.png"
+}

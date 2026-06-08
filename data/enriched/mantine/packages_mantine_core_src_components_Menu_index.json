@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_index",
+  "name": "Menu",
+  "source_code": "// packages/@mantine/core/src/components/Menu/index.ts\nimport type { MenuFactory, MenuProps, MenuStylesNames } from './Menu';\nimport type { MenuContextValue } from './Menu.context';\nimport type { MenuCheckboxGroupProps } from './MenuCheckboxGroup/MenuCheckboxGroup';\nimport type { MenuCheckboxItemProps } from './MenuCheckboxItem/MenuCheckboxItem';\nimport type { MenuContextMenuProps } from './MenuContextMenu/MenuContextMenu';\nimport type { MenuDividerProps } from './MenuDivider/MenuDivider';\nimport type { MenuDropdownProps } from './MenuDropdown/MenuDropdown';\nimport type { MenuItemProps } from './MenuItem/MenuItem';\nimport type { MenuLabelProps } from './MenuLabel/MenuLabel';\nimport type { MenuRadioGroupProps } from './MenuRadioGroup/MenuRadioGroup';\nimport type { MenuRadioItemProps } from './MenuRadioItem/MenuRadioItem';\nimport type { MenuSearchProps } from './MenuSearch/MenuSearch';\nimport type { MenuSubProps } from './MenuSub/MenuSub';\nimport type { MenuSubDropdownProps } from './MenuSubDropdown/MenuSubDropdown';\nimport type { MenuSubItemProps } from './MenuSubItem/MenuSubItem';\nimport type { MenuSubTargetProps } from './MenuSubTarget/MenuSubTarget';\nimport type { MenuTargetProps } from './MenuTarget/MenuTarget';\n\nexport { Menu } from './Menu';\nexport { MenuDivider } from './MenuDivider/MenuDivider';\nexport { MenuItem } from './MenuItem/MenuItem';\nexport { MenuLabel } from './MenuLabel/MenuLabel';\nexport { MenuDropdown } from './MenuDropdown/MenuDropdown';\nexport { MenuTarget } from './MenuTarget/MenuTarget';\nexport { MenuSearch } from './MenuSearch/MenuSearch';\nexport { MenuCheckboxItem } from './MenuCheckboxItem/MenuCheckboxItem';\nexport { MenuCheckboxGroup } from './MenuCheckboxGroup/MenuCheckboxGroup';\nexport { MenuRadioItem } from './MenuRadioItem/MenuRadioItem';\nexport { MenuRadioGroup } from './MenuRadioGroup/MenuRadioGroup';\nexport { MenuContextMenu } from './MenuContextMenu/MenuContextMenu';\nexport { useMenuContext } from './Menu.context';\nexport { MenuSub } from './MenuSub/MenuSub';\nexport { MenuSubDropdown } from './MenuSubDropdown/MenuSubDropdown';\nexport { MenuSubItem } from './MenuSubItem/MenuSubItem';\nexport { MenuSubTarget } from './MenuSubTarget/MenuSubTarget';\n\nexport type {\n  MenuProps,\n  MenuStylesNames,\n  MenuFactory,\n  MenuDividerProps,\n  MenuItemProps,\n  MenuLabelProps,\n  MenuDropdownProps,\n  MenuTargetProps,\n  MenuSearchProps,\n  MenuCheckboxItemProps,\n  MenuCheckboxGroupProps,\n  MenuRadioItemProps,\n  MenuRadioGroupProps,\n  MenuContextMenuProps,\n  MenuContextValue,\n  MenuSubProps,\n  MenuSubDropdownProps,\n  MenuSubItemProps,\n  MenuSubTargetProps,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "menu",
+    "navbar"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Menu/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_index",
+      "name": "Menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/index.ts",
+          "content": "import type { MenuFactory, MenuProps, MenuStylesNames } from './Menu';\nimport type { MenuContextValue } from './Menu.context';\nimport type { MenuCheckboxGroupProps } from './MenuCheckboxGroup/MenuCheckboxGroup';\nimport type { MenuCheckboxItemProps } from './MenuCheckboxItem/MenuCheckboxItem';\nimport type { MenuContextMenuProps } from './MenuContextMenu/MenuContextMenu';\nimport type { MenuDividerProps } from './MenuDivider/MenuDivider';\nimport type { MenuDropdownProps } from './MenuDropdown/MenuDropdown';\nimport type { MenuItemProps } from './MenuItem/MenuItem';\nimport type { MenuLabelProps } from './MenuLabel/MenuLabel';\nimport type { MenuRadioGroupProps } from './MenuRadioGroup/MenuRadioGroup';\nimport type { MenuRadioItemProps } from './MenuRadioItem/MenuRadioItem';\nimport type { MenuSearchProps } from './MenuSearch/MenuSearch';\nimport type { MenuSubProps } from './MenuSub/MenuSub';\nimport type { MenuSubDropdownProps } from './MenuSubDropdown/MenuSubDropdown';\nimport type { MenuSubItemProps } from './MenuSubItem/MenuSubItem';\nimport type { MenuSubTargetProps } from './MenuSubTarget/MenuSubTarget';\nimport type { MenuTargetProps } from './MenuTarget/MenuTarget';\n\nexport { Menu } from './Menu';\nexport { MenuDivider } from './MenuDivider/MenuDivider';\nexport { MenuItem } from './MenuItem/MenuItem';\nexport { MenuLabel } from './MenuLabel/MenuLabel';\nexport { MenuDropdown } from './MenuDropdown/MenuDropdown';\nexport { MenuTarget } from './MenuTarget/MenuTarget';\nexport { MenuSearch } from './MenuSearch/MenuSearch';\nexport { MenuCheckboxItem } from './MenuCheckboxItem/MenuCheckboxItem';\nexport { MenuCheckboxGroup } from './MenuCheckboxGroup/MenuCheckboxGroup';\nexport { MenuRadioItem } from './MenuRadioItem/MenuRadioItem';\nexport { MenuRadioGroup } from './MenuRadioGroup/MenuRadioGroup';\nexport { MenuContextMenu } from './MenuContextMenu/MenuContextMenu';\nexport { useMenuContext } from './Menu.context';\nexport { MenuSub } from './MenuSub/MenuSub';\nexport { MenuSubDropdown } from './MenuSubDropdown/MenuSubDropdown';\nexport { MenuSubItem } from './MenuSubItem/MenuSubItem';\nexport { MenuSubTarget } from './MenuSubTarget/MenuSubTarget';\n\nexport type {\n  MenuProps,\n  MenuStylesNames,\n  MenuFactory,\n  MenuDividerProps,\n  MenuItemProps,\n  MenuLabelProps,\n  MenuDropdownProps,\n  MenuTargetProps,\n  MenuSearchProps,\n  MenuCheckboxItemProps,\n  MenuCheckboxGroupProps,\n  MenuRadioItemProps,\n  MenuRadioGroupProps,\n  MenuContextMenuProps,\n  MenuContextValue,\n  MenuSubProps,\n  MenuSubDropdownProps,\n  MenuSubItemProps,\n  MenuSubTargetProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Menu is a menu UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: Menu\nDescription: Menu is a menu UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, menu, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/index.ts\nimport type { MenuFactory, MenuProps, MenuStylesNames } from './Menu';\nimport type { MenuContextValue } from './Menu.context';\nimport type { MenuCheckboxGroupProps } from './MenuCheckboxGroup/MenuCheckboxGroup';\nimport type { MenuCheckboxItemProps } from './MenuCheckboxItem/MenuCheckboxItem';\nimport type { MenuContextMenuProps } from './MenuContextMenu/MenuContextMenu';\nimport type { MenuDividerProps } from './MenuDivider/MenuDivider';\nimpor",
+  "prompt_version": 2,
+  "clean_id": "menu",
+  "display_name": "Menu",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-index.png"
+}

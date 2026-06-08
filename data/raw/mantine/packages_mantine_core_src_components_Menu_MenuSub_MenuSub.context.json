@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuSub_MenuSub.context",
+  "name": "MenuSub.context",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx\nimport { createContext } from 'react';\nimport type { ReferenceType } from '@floating-ui/react';\n\nexport interface SubMenuContextValue {\n  opened: boolean;\n  close: () => void;\n  open: () => void;\n  focusFirstItem: () => void;\n  focusParentItem: () => void;\n  parentContext: SubMenuContextValue | null;\n  setReference: (node: ReferenceType | null) => void;\n  setFloating: (node: HTMLElement | null) => void;\n  getReferenceProps: (userProps?: React.HTMLProps<Element>) => Record<string, unknown>;\n  getFloatingProps: (userProps?: React.HTMLProps<HTMLElement>) => Record<string, unknown>;\n  registerOpenSub: (closeFn: () => void) => () => void;\n}\n\nexport const SubMenuContext = createContext<SubMenuContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuSub_MenuSub.context",
+      "name": "MenuSub.context",
+      "path": "packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuSub_MenuSub.context",
+      "name": "MenuSub.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx",
+          "content": "import { createContext } from 'react';\nimport type { ReferenceType } from '@floating-ui/react';\n\nexport interface SubMenuContextValue {\n  opened: boolean;\n  close: () => void;\n  open: () => void;\n  focusFirstItem: () => void;\n  focusParentItem: () => void;\n  parentContext: SubMenuContextValue | null;\n  setReference: (node: ReferenceType | null) => void;\n  setFloating: (node: HTMLElement | null) => void;\n  getReferenceProps: (userProps?: React.HTMLProps<Element>) => Record<string, unknown>;\n  getFloatingProps: (userProps?: React.HTMLProps<HTMLElement>) => Record<string, unknown>;\n  registerOpenSub: (closeFn: () => void) => () => void;\n}\n\nexport const SubMenuContext = createContext<SubMenuContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

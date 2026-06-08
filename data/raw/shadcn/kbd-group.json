@@ -1,0 +1,22 @@
+{
+  "id": "kbd-group",
+  "name": "kbd-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## kbd-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Tooltip_TooltipFloating_use-floating-tooltip",
+  "name": "use-floating-tooltip",
+  "source_code": "// packages/@mantine/core/src/components/Tooltip/TooltipFloating/use-floating-tooltip.ts\nimport { useCallback, useEffect, useRef, useState } from 'react';\nimport { getOverflowAncestors, shift, useFloating } from '@floating-ui/react';\nimport { FloatingPosition } from '../../../utils/Floating';\n\ninterface UseFloatingTooltip {\n  offset: number;\n  position: FloatingPosition;\n  defaultOpened?: boolean;\n}\n\nexport function useFloatingTooltip<T extends HTMLElement = any>({\n  offset,\n  position,\n  defaultOpened,\n}: UseFloatingTooltip) {\n  const [opened, setOpened] = useState(defaultOpened);\n  const boundaryRef = useRef<T>(null);\n  const { x, y, elements, refs, update, placement } = useFloating({\n    placement: position,\n    middleware: [\n      shift({\n        crossAxis: true,\n        padding: 5,\n        rootBoundary: 'document',\n      }),\n    ],\n  });\n\n  const horizontalOffset = placement.includes('right')\n    ? offset\n    : position.includes('left')\n      ? offset * -1\n      : 0;\n\n  const verticalOffset = placement.includes('bottom')\n    ? offset\n    : position.includes('top')\n      ? offset * -1\n      : 0;\n\n  const handleMouseMove = useCallback(\n    ({ clientX, clientY }: MouseEvent | React.MouseEvent<T, MouseEvent>) => {\n      refs.setPositionReference({\n        getBoundingClientRect() {\n          return {\n            width: 0,\n            height: 0,\n            x: clientX,\n            y: clientY,\n            left: clientX + horizontalOffset,\n            top: clientY + verticalOffset,\n            right: clientX,\n            bottom: clientY,\n          };\n        },\n      });\n    },\n    [elements.reference]\n  );\n\n  useEffect(() => {\n    if (refs.floating.current) {\n      const boundary = boundaryRef.current!;\n      boundary.addEventListener('mousemove', handleMouseMove);\n\n      const parents = getOverflowAncestors(refs.floating.current);\n      parents.forEach((parent) => {\n        parent.addEventListener('scroll', update);\n      });\n\n      return () => {\n        boundary.removeEventListener('mousemove', handleMouseMove);\n        parents.forEach((parent) => {\n          parent.removeEventListener('scroll', update);\n        });\n      };\n    }\n\n    return undefined;\n  }, [elements.reference, refs.floating.current, update, handleMouseMove, opened]);\n\n  return { handleMouseMove, x, y, opened, setOpened, boundaryRef, floating: refs.setFloating };\n}\n",
+  "description": "",
+  "tags": [
+    "floating",
+    "mantine",
+    "other",
+    "tooltip",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tooltip_TooltipFloating_use-floating-tooltip",
+      "name": "use-floating-tooltip",
+      "path": "packages/@mantine/core/src/components/Tooltip/TooltipFloating/use-floating-tooltip.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tooltip_TooltipFloating_use-floating-tooltip",
+      "name": "use-floating-tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tooltip/TooltipFloating/use-floating-tooltip.ts",
+          "content": "import { useCallback, useEffect, useRef, useState } from 'react';\nimport { getOverflowAncestors, shift, useFloating } from '@floating-ui/react';\nimport { FloatingPosition } from '../../../utils/Floating';\n\ninterface UseFloatingTooltip {\n  offset: number;\n  position: FloatingPosition;\n  defaultOpened?: boolean;\n}\n\nexport function useFloatingTooltip<T extends HTMLElement = any>({\n  offset,\n  position,\n  defaultOpened,\n}: UseFloatingTooltip) {\n  const [opened, setOpened] = useState(defaultOpened);\n  const boundaryRef = useRef<T>(null);\n  const { x, y, elements, refs, update, placement } = useFloating({\n    placement: position,\n    middleware: [\n      shift({\n        crossAxis: true,\n        padding: 5,\n        rootBoundary: 'document',\n      }),\n    ],\n  });\n\n  const horizontalOffset = placement.includes('right')\n    ? offset\n    : position.includes('left')\n      ? offset * -1\n      : 0;\n\n  const verticalOffset = placement.includes('bottom')\n    ? offset\n    : position.includes('top')\n      ? offset * -1\n      : 0;\n\n  const handleMouseMove = useCallback(\n    ({ clientX, clientY }: MouseEvent | React.MouseEvent<T, MouseEvent>) => {\n      refs.setPositionReference({\n        getBoundingClientRect() {\n          return {\n            width: 0,\n            height: 0,\n            x: clientX,\n            y: clientY,\n            left: clientX + horizontalOffset,\n            top: clientY + verticalOffset,\n            right: clientX,\n            bottom: clientY,\n          };\n        },\n      });\n    },\n    [elements.reference]\n  );\n\n  useEffect(() => {\n    if (refs.floating.current) {\n      const boundary = boundaryRef.current!;\n      boundary.addEventListener('mousemove', handleMouseMove);\n\n      const parents = getOverflowAncestors(refs.floating.current);\n      parents.forEach((parent) => {\n        parent.addEventListener('scroll', update);\n      });\n\n      return () => {\n        boundary.removeEventListener('mousemove', handleMouseMove);\n        parents.forEach((parent) => {\n          parent.removeEventListener('scroll', update);\n        });\n      };\n    }\n\n    return undefined;\n  }, [elements.reference, refs.floating.current, update, handleMouseMove, opened]);\n\n  return { handleMouseMove, x, y, opened, setOpened, boundaryRef, floating: refs.setFloating };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-floating-tooltip is a use floating tooltip UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: use-floating-tooltip\nDescription: use-floating-tooltip is a use floating tooltip UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: floating, mantine, other, tooltip, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Tooltip/TooltipFloating/use-floating-tooltip.ts\nimport { useCallback, useEffect, useRef, useState } from 'react';\nimport { getOverflowAncestors, shift, useFloating } from '@floating-ui/react';\nimport { FloatingPosition } from '../../../utils/Floating';\n\ninterface UseFloatingTooltip {\n  offset: number;\n  position: FloatingPosition;\n  defaultOpened?: boolean;\n}\n\nexport function useFloatingTooltip<T extends HTMLElement = any>({\n  offset,\n  position,\n  defaul",
+  "prompt_version": 2,
+  "clean_id": "use-floating-tooltip",
+  "display_name": "Use Floating Tooltip",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tooltip-tooltipfloating-use-floating-tooltip.png"
+}

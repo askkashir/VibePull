@@ -1,0 +1,27 @@
+{
+  "id": "sidebar-04",
+  "name": "sidebar-04",
+  "source_code": "",
+  "description": "A floating sidebar with submenus.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-04",
+      "type": "registry:block",
+      "description": "A floating sidebar with submenus.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-04\n\nA floating sidebar with submenus.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called sidebar-04. It should be: A floating sidebar with submenus.. Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "sidebar-04",
+  "display_name": "Sidebar 04"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_textfield_textfield",
+  "name": "textfield",
+  "source_code": "// packages/react/src/components/textfield/textfield.tsx\n\"use client\";\n\nimport type {TextFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {textFieldVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {TextField as TextFieldPrimitive} from \"react-aria-components/TextField\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* ------------------------------------------------------------------------------------------------\n * TextField Context\n * --------------------------------------------------------------------------------------------- */\ntype TextFieldContext = {\n  variant?: \"primary\" | \"secondary\";\n};\n\nconst TextFieldContext = createContext<TextFieldContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * TextField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TextFieldRootProps\n  extends ComponentPropsWithRef<typeof TextFieldPrimitive>, TextFieldVariants {\n  /**\n   * The variant of the text field.\n   * @default \"primary\"\n   */\n  variant?: \"primary\" | \"secondary\";\n}\n\nconst TextFieldRoot = ({children, className, fullWidth, variant, ...props}: TextFieldRootProps) => {\n  const styles = React.useMemo(() => textFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TextFieldPrimitive\n      data-slot=\"textfield\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => (\n        <TextFieldContext value={{variant}}>\n          <>{typeof children === \"function\" ? children(values) : children}</>\n        </TextFieldContext>\n      )}\n    </TextFieldPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TextFieldRoot, TextFieldContext};\n\nexport type {TextFieldRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "textfield_textfield",
+      "name": "textfield",
+      "path": "packages/react/src/components/textfield/textfield.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_textfield_textfield",
+      "name": "textfield",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/textfield/textfield.tsx",
+          "content": "\"use client\";\n\nimport type {TextFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {textFieldVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {TextField as TextFieldPrimitive} from \"react-aria-components/TextField\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* ------------------------------------------------------------------------------------------------\n * TextField Context\n * --------------------------------------------------------------------------------------------- */\ntype TextFieldContext = {\n  variant?: \"primary\" | \"secondary\";\n};\n\nconst TextFieldContext = createContext<TextFieldContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * TextField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TextFieldRootProps\n  extends ComponentPropsWithRef<typeof TextFieldPrimitive>, TextFieldVariants {\n  /**\n   * The variant of the text field.\n   * @default \"primary\"\n   */\n  variant?: \"primary\" | \"secondary\";\n}\n\nconst TextFieldRoot = ({children, className, fullWidth, variant, ...props}: TextFieldRootProps) => {\n  const styles = React.useMemo(() => textFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TextFieldPrimitive\n      data-slot=\"textfield\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => (\n        <TextFieldContext value={{variant}}>\n          <>{typeof children === \"function\" ? children(values) : children}</>\n        </TextFieldContext>\n      )}\n    </TextFieldPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TextFieldRoot, TextFieldContext};\n\nexport type {TextFieldRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

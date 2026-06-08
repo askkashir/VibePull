@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_toolbar_toolbar",
+  "name": "toolbar",
+  "source_code": "// packages/react/src/components/toolbar/toolbar.tsx\n\"use client\";\n\nimport type {ToolbarVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {toolbarVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {SeparatorContext} from \"react-aria-components/Separator\";\nimport {ToggleButtonGroupContext} from \"react-aria-components/ToggleButtonGroup\";\nimport {Toolbar as ToolbarPrimitive} from \"react-aria-components/Toolbar\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Toolbar Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ToolbarRootProps\n  extends ComponentPropsWithRef<typeof ToolbarPrimitive>, ToolbarVariants {}\n\nconst ToolbarRoot = ({\n  children,\n  className,\n  isAttached,\n  orientation = \"horizontal\",\n  ...props\n}: ToolbarRootProps) => {\n  const styles = React.useMemo(\n    () => toolbarVariants({isAttached, orientation}),\n    [isAttached, orientation],\n  );\n\n  return (\n    <ToggleButtonGroupContext.Provider value={{orientation}}>\n      <SeparatorContext.Provider\n        value={{orientation: orientation === \"horizontal\" ? \"vertical\" : \"horizontal\"}}\n      >\n        <ToolbarPrimitive\n          className={composeTwRenderProps(className, styles)}\n          data-slot=\"toolbar\"\n          orientation={orientation}\n          {...props}\n        >\n          {children}\n        </ToolbarPrimitive>\n      </SeparatorContext.Provider>\n    </ToggleButtonGroupContext.Provider>\n  );\n};\n\nToolbarRoot.displayName = \"HeroUI.Toolbar\";\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ToolbarRoot};\nexport type {ToolbarRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "toolbar"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "toolbar_toolbar",
+      "name": "toolbar",
+      "path": "packages/react/src/components/toolbar/toolbar.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_toolbar_toolbar",
+      "name": "toolbar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/toolbar/toolbar.tsx",
+          "content": "\"use client\";\n\nimport type {ToolbarVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {toolbarVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {SeparatorContext} from \"react-aria-components/Separator\";\nimport {ToggleButtonGroupContext} from \"react-aria-components/ToggleButtonGroup\";\nimport {Toolbar as ToolbarPrimitive} from \"react-aria-components/Toolbar\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Toolbar Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ToolbarRootProps\n  extends ComponentPropsWithRef<typeof ToolbarPrimitive>, ToolbarVariants {}\n\nconst ToolbarRoot = ({\n  children,\n  className,\n  isAttached,\n  orientation = \"horizontal\",\n  ...props\n}: ToolbarRootProps) => {\n  const styles = React.useMemo(\n    () => toolbarVariants({isAttached, orientation}),\n    [isAttached, orientation],\n  );\n\n  return (\n    <ToggleButtonGroupContext.Provider value={{orientation}}>\n      <SeparatorContext.Provider\n        value={{orientation: orientation === \"horizontal\" ? \"vertical\" : \"horizontal\"}}\n      >\n        <ToolbarPrimitive\n          className={composeTwRenderProps(className, styles)}\n          data-slot=\"toolbar\"\n          orientation={orientation}\n          {...props}\n        >\n          {children}\n        </ToolbarPrimitive>\n      </SeparatorContext.Provider>\n    </ToggleButtonGroupContext.Provider>\n  );\n};\n\nToolbarRoot.displayName = \"HeroUI.Toolbar\";\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ToolbarRoot};\nexport type {ToolbarRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "toolbar is a toolbar UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: toolbar\nDescription: toolbar is a toolbar UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: heroui, other, toolbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/toolbar/toolbar.tsx\n\"use client\";\n\nimport type {ToolbarVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {toolbarVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {SeparatorContext} from \"react-aria-components/Separator\";\nimport {ToggleButtonGroupContext} from \"react-aria-components/ToggleButtonGroup\";\nimport {Toolbar as ToolbarPrimitive} from \"react-aria-components/Toolbar\";\n\nimport {composeTwRenderProps}",
+  "prompt_version": 2,
+  "clean_id": "toolbar",
+  "display_name": "Toolbar",
+  "preview_url": "/previews/heroui/packages-react-src-components-toolbar-toolbar.png"
+}

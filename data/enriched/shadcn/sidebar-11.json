@@ -1,0 +1,43 @@
+{
+  "id": "sidebar-11",
+  "name": "sidebar-11",
+  "source_code": "",
+  "description": "A sidebar with a collapsible file tree.",
+  "tags": [
+    "sidebar",
+    "file-tree",
+    "collapsible",
+    "navigation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-11",
+      "type": "registry:block",
+      "description": "A sidebar with a collapsible file tree.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-11\n\nA sidebar with a collapsible file tree.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A collapsible sidebar featuring a file tree, ideal for navigation and organization in applications requiring directory management. Used in scenarios where users need to access and manage various files and folders, such as in editor or IDE environments. Suitable for desktop applications, especially those in the development or design space.",
+  "style_tags": [
+    "Material-UI style",
+    "Dark Mode support",
+    "Responsive Design"
+  ],
+  "interaction_tags": [
+    "Collapsible",
+    "Hover effects",
+    "Click-to-expand"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-11\nDescription: A collapsible sidebar featuring a file tree, ideal for navigation and organization in applications requiring directory management. Used in scenarios where users need to access and manage various files and folders, such as in editor or IDE environments. Suitable for desktop applications, especially those in the development or design space.\nStyle: Material-UI style, Dark Mode support, Responsive Design\nInteractions: Collapsible, Hover effects, Click-to-expand\nTags: sidebar, file-tree, collapsible, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-11",
+  "display_name": "Sidebar 11",
+  "preview_url": "/previews/shadcn/sidebar-11.png"
+}

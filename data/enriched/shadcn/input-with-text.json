@@ -1,0 +1,39 @@
+{
+  "id": "input-with-text",
+  "name": "input-with-text",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "text"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-with-text",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-with-text\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The input-with-text component is a basic form control consisting of a text box and an optional label. It is commonly used for general text input, such as usernames, passwords, or search queries. This component is typically used when a user needs to enter a piece of information.",
+  "style_tags": [
+    "default",
+    "compact"
+  ],
+  "interaction_tags": [
+    "focus",
+    "hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-with-text\nDescription: The input-with-text component is a basic form control consisting of a text box and an optional label. It is commonly used for general text input, such as usernames, passwords, or search queries. This component is typically used when a user needs to enter a piece of information.\nStyle: default, compact\nInteractions: focus, hover\nTags: form, input, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-with-text",
+  "display_name": "Input With Text",
+  "preview_url": "/previews/shadcn/input-with-text.png"
+}

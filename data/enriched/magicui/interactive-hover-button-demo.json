@@ -1,0 +1,65 @@
+{
+  "id": "interactive-hover-button-demo",
+  "name": "Interactive Hover Button Demo",
+  "source_code": "import { InteractiveHoverButton } from \"@/registry/magicui/interactive-hover-button\"\n\nexport default function InteractiveHoverButtonDemo() {\n  return <InteractiveHoverButton>Hover Me</InteractiveHoverButton>\n}\n",
+  "description": "Example showing an interactive button with hover effects.",
+  "tags": [
+    "button",
+    "hover",
+    "interactivelayer",
+    "demo"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "interactive-hover-button-demo",
+      "type": "registry:example",
+      "title": "Interactive Hover Button Demo",
+      "description": "Example showing an interactive button with hover effects.",
+      "registryDependencies": [
+        "https://magicui.design/r/interactive-hover-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-hover-button-demo.tsx",
+          "type": "registry:example",
+          "target": "components/interactive-hover-button-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "interactive-hover-button-demo",
+      "type": "registry:example",
+      "title": "Interactive Hover Button Demo",
+      "description": "Example showing an interactive button with hover effects.",
+      "registryDependencies": [
+        "@magicui/interactive-hover-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-hover-button-demo.tsx",
+          "content": "import { InteractiveHoverButton } from \"@/registry/magicui/interactive-hover-button\"\n\nexport default function InteractiveHoverButtonDemo() {\n  return <InteractiveHoverButton>Hover Me</InteractiveHoverButton>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A small, interactive button that changes its appearance on hover. Used when the developer needs a small button that responds to hover events.",
+  "style_tags": [
+    "flat",
+    "borderless",
+    "small"
+  ],
+  "interaction_tags": [
+    "responsive",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Interactive Hover Button Demo\nDescription: A small, interactive button that changes its appearance on hover. Used when the developer needs a small button that responds to hover events.\nStyle: flat, borderless, small\nInteractions: responsive, hover, clickable\nTags: button, hover, interactivelayer, demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { InteractiveHoverButton } from \"@/registry/magicui/interactive-hover-button\"\n\nexport default function InteractiveHoverButtonDemo() {\n  return <InteractiveHoverButton>Hover Me</InteractiveHoverButton>\n}\n",
+  "prompt_version": 2,
+  "clean_id": "interactive-hover-button-demo",
+  "display_name": "Interactive Hover Button Demo",
+  "preview_url": "/previews/magicui/interactive-hover-button-demo.png"
+}

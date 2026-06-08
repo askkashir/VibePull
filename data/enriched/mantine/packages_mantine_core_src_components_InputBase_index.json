@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_InputBase_index",
+  "name": "InputBase",
+  "source_code": "// packages/@mantine/core/src/components/InputBase/index.ts\nimport type { InputBaseFactory, InputBaseProps } from './InputBase';\n\nexport { InputBase } from './InputBase';\n\nexport type { InputBaseProps, InputBaseFactory };\n",
+  "description": "",
+  "tags": [
+    "input",
+    "form",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "InputBase_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/InputBase/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_InputBase_index",
+      "name": "InputBase",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/InputBase/index.ts",
+          "content": "import type { InputBaseFactory, InputBaseProps } from './InputBase';\n\nexport { InputBase } from './InputBase';\n\nexport type { InputBaseProps, InputBaseFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The InputBase is a basic input field component from Mantine, suitable for when a developer needs to create a form input. It can be used as a standalone input or as part of a more complex form.",
+  "style_tags": [
+    "light"
+  ],
+  "interaction_tags": [
+    "hover",
+    "focusing"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: InputBase\nDescription: The InputBase is a basic input field component from Mantine, suitable for when a developer needs to create a form input. It can be used as a standalone input or as part of a more complex form.\nStyle: light\nInteractions: hover, focusing\nTags: input, form, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/InputBase/index.ts\nimport type { InputBaseFactory, InputBaseProps } from './InputBase';\n\nexport { InputBase } from './InputBase';\n\nexport type { InputBaseProps, InputBaseFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "input-base",
+  "display_name": "Input Base",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-inputbase-index.png"
+}

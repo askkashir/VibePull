@@ -1,0 +1,57 @@
+{
+  "id": "text-shimmer-wave",
+  "name": "text-shimmer-wave",
+  "source_code": "// components/core/text-shimmer-wave.tsx\n'use client';\nimport { type JSX } from 'react';\nimport { motion, Transition } from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TextShimmerWaveProps = {\n  children: string;\n  as?: React.ElementType;\n  className?: string;\n  duration?: number;\n  zDistance?: number;\n  xDistance?: number;\n  yDistance?: number;\n  spread?: number;\n  scaleDistance?: number;\n  rotateYDistance?: number;\n  transition?: Transition;\n};\n\nexport function TextShimmerWave({\n  children,\n  as: Component = 'p',\n  className,\n  duration = 1,\n  zDistance = 10,\n  xDistance = 2,\n  yDistance = -2,\n  spread = 1,\n  scaleDistance = 1.1,\n  rotateYDistance = 10,\n  transition,\n}: TextShimmerWaveProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n\n  return (\n    <MotionComponent\n      className={cn(\n        'relative inline-block [perspective:500px]',\n        '[--base-color:#a1a1aa] [--base-gradient-color:#000]',\n        'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff]',\n        className\n      )}\n      style={{ color: 'var(--base-color)' }}\n    >\n      {children.split('').map((char, i) => {\n        const delay = (i * duration * (1 / spread)) / children.length;\n\n        return (\n          <motion.span\n            key={i}\n            className={cn(\n              'inline-block whitespace-pre [transform-style:preserve-3d]'\n            )}\n            initial={{\n              translateZ: 0,\n              scale: 1,\n              rotateY: 0,\n              color: 'var(--base-color)',\n            }}\n            animate={{\n              translateZ: [0, zDistance, 0],\n              translateX: [0, xDistance, 0],\n              translateY: [0, yDistance, 0],\n              scale: [1, scaleDistance, 1],\n              rotateY: [0, rotateYDistance, 0],\n              color: [\n                'var(--base-color)',\n                'var(--base-gradient-color)',\n                'var(--base-color)',\n              ],\n            }}\n            transition={{\n              duration: duration,\n              repeat: Infinity,\n              repeatDelay: (children.length * 0.05) / spread,\n              delay,\n              ease: 'easeInOut',\n              ...transition,\n            }}\n          >\n            {char}\n          </motion.span>\n        );\n      })}\n    </MotionComponent>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "animation",
+    "text",
+    "loading"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-shimmer-wave.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-shimmer-wave.tsx",
+      "sha": "5a6ec1a3ed0fa1817d5f008e99de2997bf0ff62e",
+      "size": 2334,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-shimmer-wave.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-shimmer-wave.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/5a6ec1a3ed0fa1817d5f008e99de2997bf0ff62e",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-shimmer-wave.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-shimmer-wave.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/5a6ec1a3ed0fa1817d5f008e99de2997bf0ff62e",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-shimmer-wave.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-shimmer-wave",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-shimmer-wave.tsx",
+          "content": "'use client';\nimport { type JSX } from 'react';\nimport { motion, Transition } from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TextShimmerWaveProps = {\n  children: string;\n  as?: React.ElementType;\n  className?: string;\n  duration?: number;\n  zDistance?: number;\n  xDistance?: number;\n  yDistance?: number;\n  spread?: number;\n  scaleDistance?: number;\n  rotateYDistance?: number;\n  transition?: Transition;\n};\n\nexport function TextShimmerWave({\n  children,\n  as: Component = 'p',\n  className,\n  duration = 1,\n  zDistance = 10,\n  xDistance = 2,\n  yDistance = -2,\n  spread = 1,\n  scaleDistance = 1.1,\n  rotateYDistance = 10,\n  transition,\n}: TextShimmerWaveProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n\n  return (\n    <MotionComponent\n      className={cn(\n        'relative inline-block [perspective:500px]',\n        '[--base-color:#a1a1aa] [--base-gradient-color:#000]',\n        'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff]',\n        className\n      )}\n      style={{ color: 'var(--base-color)' }}\n    >\n      {children.split('').map((char, i) => {\n        const delay = (i * duration * (1 / spread)) / children.length;\n\n        return (\n          <motion.span\n            key={i}\n            className={cn(\n              'inline-block whitespace-pre [transform-style:preserve-3d]'\n            )}\n            initial={{\n              translateZ: 0,\n              scale: 1,\n              rotateY: 0,\n              color: 'var(--base-color)',\n            }}\n            animate={{\n              translateZ: [0, zDistance, 0],\n              translateX: [0, xDistance, 0],\n              translateY: [0, yDistance, 0],\n              scale: [1, scaleDistance, 1],\n              rotateY: [0, rotateYDistance, 0],\n              color: [\n                'var(--base-color)',\n                'var(--base-gradient-color)',\n                'var(--base-color)',\n              ],\n            }}\n            transition={{\n              duration: duration,\n              repeat: Infinity,\n              repeatDelay: (children.length * 0.05) / spread,\n              delay,\n              ease: 'easeInOut',\n              ...transition,\n            }}\n          >\n            {char}\n          </motion.span>\n        );\n      })}\n    </MotionComponent>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A shimmering text effect that creates a wave-like animation to resemble loading or fading in text. A developer would use this component to add visual interest to text content, such as in loading states or on hover effects.",
+  "style_tags": [
+    "material-like",
+    "gradient"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: text-shimmer-wave\nDescription: A shimmering text effect that creates a wave-like animation to resemble loading or fading in text. A developer would use this component to add visual interest to text content, such as in loading states or on hover effects.\nStyle: material-like, gradient\nInteractions: animated, hover\nTags: animation, text, loading\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/text-shimmer-wave.tsx\n'use client';\nimport { type JSX } from 'react';\nimport { motion, Transition } from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TextShimmerWaveProps = {\n  children: string;\n  as?: React.ElementType;\n  className?: string;\n  duration?: number;\n  zDistance?: number;\n  xDistance?: number;\n  yDistance?: number;\n  spread?: number;\n  scaleDistance?: number;\n  rotateYDistance?: number;\n  transition?: Transition;\n};\n\nexport function TextShimmerWa",
+  "prompt_version": 2,
+  "clean_id": "text-shimmer-wave",
+  "display_name": "Text Shimmer Wave",
+  "preview_url": "/previews/motionprimitives/text-shimmer-wave.png"
+}

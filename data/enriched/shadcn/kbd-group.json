@@ -1,0 +1,43 @@
+{
+  "id": "kbd-group",
+  "name": "kbd-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "keyboard-shortcuts",
+    "tutorial",
+    "documentation",
+    "guides",
+    "user-manual"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## kbd-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "kbd-group is a container component designed to group keyboard shortcuts together, often used in documentation or help pages where users need to learn a set of keyboard commands. It typically consists of a horizontally aligned list of key combinations, making it easy for users to scan and understand the shortcuts. This component is particularly useful in interactive guides, tutorials, or user manuals.",
+  "style_tags": [
+    "e.g. light",
+    "e.g. neutral",
+    "dark"
+  ],
+  "interaction_tags": [
+    "e.g. click-to-copy",
+    "hover",
+    "draggable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: kbd-group\nDescription: kbd-group is a container component designed to group keyboard shortcuts together, often used in documentation or help pages where users need to learn a set of keyboard commands. It typically consists of a horizontally aligned list of key combinations, making it easy for users to scan and understand the shortcuts. This component is particularly useful in interactive guides, tutorials, or user manuals.\nStyle: e.g. light, e.g. neutral, dark\nInteractions: e.g. click-to-copy, hover, draggable\nTags: keyboard-shortcuts, tutorial, documentation, guides, user-manual\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "kbd-group",
+  "display_name": "Kbd Group",
+  "preview_url": "/previews/shadcn/kbd-group.png"
+}

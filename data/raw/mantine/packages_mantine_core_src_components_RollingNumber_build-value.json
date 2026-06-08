@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_RollingNumber_build-value",
+  "name": "build-value",
+  "source_code": "// packages/@mantine/core/src/components/RollingNumber/build-value.ts\nimport { getDigitParts } from './get-digit-parts';\n\nexport interface BuildValueInput {\n  value: number;\n  prefix?: string;\n  suffix?: string;\n  decimalSeparator?: string;\n  thousandSeparator?: string | boolean;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nexport function buildValue({\n  value,\n  prefix,\n  suffix,\n  decimalSeparator = '.',\n  thousandSeparator,\n  decimalScale,\n  fixedDecimalScale,\n}: BuildValueInput): string {\n  const parts = getDigitParts({ value, decimalScale, fixedDecimalScale });\n  let intStr = parts.intDigits.join('');\n\n  if (thousandSeparator) {\n    const sep = typeof thousandSeparator === 'string' ? thousandSeparator : ',';\n    intStr = intStr.replace(/\\B(?=(\\d{3})+(?!\\d))/g, sep);\n  }\n\n  let result = parts.negative ? `-${intStr}` : intStr;\n  if (parts.fracDigits.length > 0) {\n    result += `${decimalSeparator}${parts.fracDigits.join('')}`;\n  }\n\n  return `${prefix || ''}${result}${suffix || ''}`;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RollingNumber_build-value",
+      "name": "build-value",
+      "path": "packages/@mantine/core/src/components/RollingNumber/build-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RollingNumber_build-value",
+      "name": "build-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RollingNumber/build-value.ts",
+          "content": "import { getDigitParts } from './get-digit-parts';\n\nexport interface BuildValueInput {\n  value: number;\n  prefix?: string;\n  suffix?: string;\n  decimalSeparator?: string;\n  thousandSeparator?: string | boolean;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nexport function buildValue({\n  value,\n  prefix,\n  suffix,\n  decimalSeparator = '.',\n  thousandSeparator,\n  decimalScale,\n  fixedDecimalScale,\n}: BuildValueInput): string {\n  const parts = getDigitParts({ value, decimalScale, fixedDecimalScale });\n  let intStr = parts.intDigits.join('');\n\n  if (thousandSeparator) {\n    const sep = typeof thousandSeparator === 'string' ? thousandSeparator : ',';\n    intStr = intStr.replace(/\\B(?=(\\d{3})+(?!\\d))/g, sep);\n  }\n\n  let result = parts.negative ? `-${intStr}` : intStr;\n  if (parts.fracDigits.length > 0) {\n    result += `${decimalSeparator}${parts.fracDigits.join('')}`;\n  }\n\n  return `${prefix || ''}${result}${suffix || ''}`;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

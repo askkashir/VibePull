@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Transition_index",
+  "name": "Transition",
+  "source_code": "// packages/@mantine/core/src/components/Transition/index.ts\nexport { transitions as MANTINE_TRANSITIONS } from './transitions';\nexport { Transition } from './Transition';\nexport { getTransitionProps } from './get-transition-props/get-transition-props';\nexport type { TransitionProps, TransitionOverride } from './Transition';\nexport type { MantineTransition } from './transitions';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Transition_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Transition/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Transition_index",
+      "name": "Transition",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Transition/index.ts",
+          "content": "export { transitions as MANTINE_TRANSITIONS } from './transitions';\nexport { Transition } from './Transition';\nexport { getTransitionProps } from './get-transition-props/get-transition-props';\nexport type { TransitionProps, TransitionOverride } from './Transition';\nexport type { MantineTransition } from './transitions';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

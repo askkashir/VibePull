@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_FileButton_FileButton",
+  "name": "FileButton",
+  "source_code": "// packages/@mantine/core/src/components/FileButton/FileButton.tsx\nimport React, { useRef } from 'react';\nimport { assignRef, useMergedRef } from '@mantine/hooks';\nimport { Factory, genericFactory, useProps } from '../../core';\n\nexport interface FileButtonProps<Multiple extends boolean = false> {\n  ref?: React.Ref<HTMLInputElement>;\n\n  /** Called when files are picked */\n  onChange: (payload: Multiple extends true ? File[] : File | null) => void;\n\n  /** Function that receives button props and returns react node that should be rendered */\n  children: (props: { onClick: () => void }) => React.ReactNode;\n\n  /** If set, user can pick more than one file */\n  multiple?: Multiple;\n\n  /** File input accept attribute, for example, `\"image/png,image/jpeg\"` */\n  accept?: string;\n\n  /** Input name attribute */\n  name?: string;\n\n  /** Input form attribute */\n  form?: string;\n\n  /** Reference of the function that should be called when value changes to null or empty array */\n  resetRef?: React.Ref<() => void>;\n\n  /** Disables file picker */\n  disabled?: boolean;\n\n  /** Specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute. */\n  capture?: boolean | 'user' | 'environment';\n\n  /** Passes down props to the input element used to capture files */\n  inputProps?: React.ComponentProps<'input'>;\n}\n\nexport type FileButtonFactory = Factory<{\n  props: FileButtonProps;\n  signature: <Multiple extends boolean = false>(\n    props: FileButtonProps<Multiple>\n  ) => React.JSX.Element;\n}>;\n\nexport const FileButton = genericFactory<FileButtonFactory>((props) => {\n  const {\n    onChange,\n    children,\n    multiple,\n    accept,\n    name,\n    form,\n    resetRef,\n    disabled,\n    capture,\n    inputProps,\n    ref,\n    ...others\n  } = useProps('FileButton', null, props);\n\n  const inputRef = useRef<HTMLInputElement>(null);\n\n  const onClick = () => {\n    !disabled && inputRef.current?.click();\n  };\n\n  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {\n    if (event.currentTarget.files === null) {\n      return onChange(multiple ? ([] as any) : null);\n    }\n\n    if (multiple) {\n      onChange(Array.from(event.currentTarget.files) as any);\n    } else {\n      onChange((event.currentTarget.files[0] as any) || null);\n    }\n  };\n\n  const reset = () => {\n    if (inputRef.current) {\n      inputRef.current.value = '';\n    }\n  };\n\n  assignRef(resetRef, reset);\n\n  return (\n    <>\n      <input\n        style={{ display: 'none' }}\n        type=\"file\"\n        accept={accept}\n        multiple={multiple}\n        onChange={handleChange}\n        ref={useMergedRef(ref, inputRef)}\n        name={name}\n        form={form}\n        capture={capture}\n        {...inputProps}\n      />\n\n      {children({ onClick, ...others })}\n    </>\n  );\n});\n\nFileButton.displayName = '@mantine/core/FileButton';\n\nexport namespace FileButton {\n  export type Props<Multiple extends boolean = false> = FileButtonProps<Multiple>;\n  export type Factory = FileButtonFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "button",
+    "file",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FileButton_FileButton",
+      "name": "FileButton",
+      "path": "packages/@mantine/core/src/components/FileButton/FileButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FileButton_FileButton",
+      "name": "FileButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FileButton/FileButton.tsx",
+          "content": "import React, { useRef } from 'react';\nimport { assignRef, useMergedRef } from '@mantine/hooks';\nimport { Factory, genericFactory, useProps } from '../../core';\n\nexport interface FileButtonProps<Multiple extends boolean = false> {\n  ref?: React.Ref<HTMLInputElement>;\n\n  /** Called when files are picked */\n  onChange: (payload: Multiple extends true ? File[] : File | null) => void;\n\n  /** Function that receives button props and returns react node that should be rendered */\n  children: (props: { onClick: () => void }) => React.ReactNode;\n\n  /** If set, user can pick more than one file */\n  multiple?: Multiple;\n\n  /** File input accept attribute, for example, `\"image/png,image/jpeg\"` */\n  accept?: string;\n\n  /** Input name attribute */\n  name?: string;\n\n  /** Input form attribute */\n  form?: string;\n\n  /** Reference of the function that should be called when value changes to null or empty array */\n  resetRef?: React.Ref<() => void>;\n\n  /** Disables file picker */\n  disabled?: boolean;\n\n  /** Specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute. */\n  capture?: boolean | 'user' | 'environment';\n\n  /** Passes down props to the input element used to capture files */\n  inputProps?: React.ComponentProps<'input'>;\n}\n\nexport type FileButtonFactory = Factory<{\n  props: FileButtonProps;\n  signature: <Multiple extends boolean = false>(\n    props: FileButtonProps<Multiple>\n  ) => React.JSX.Element;\n}>;\n\nexport const FileButton = genericFactory<FileButtonFactory>((props) => {\n  const {\n    onChange,\n    children,\n    multiple,\n    accept,\n    name,\n    form,\n    resetRef,\n    disabled,\n    capture,\n    inputProps,\n    ref,\n    ...others\n  } = useProps('FileButton', null, props);\n\n  const inputRef = useRef<HTMLInputElement>(null);\n\n  const onClick = () => {\n    !disabled && inputRef.current?.click();\n  };\n\n  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {\n    if (event.currentTarget.files === null) {\n      return onChange(multiple ? ([] as any) : null);\n    }\n\n    if (multiple) {\n      onChange(Array.from(event.currentTarget.files) as any);\n    } else {\n      onChange((event.currentTarget.files[0] as any) || null);\n    }\n  };\n\n  const reset = () => {\n    if (inputRef.current) {\n      inputRef.current.value = '';\n    }\n  };\n\n  assignRef(resetRef, reset);\n\n  return (\n    <>\n      <input\n        style={{ display: 'none' }}\n        type=\"file\"\n        accept={accept}\n        multiple={multiple}\n        onChange={handleChange}\n        ref={useMergedRef(ref, inputRef)}\n        name={name}\n        form={form}\n        capture={capture}\n        {...inputProps}\n      />\n\n      {children({ onClick, ...others })}\n    </>\n  );\n});\n\nFileButton.displayName = '@mantine/core/FileButton';\n\nexport namespace FileButton {\n  export type Props<Multiple extends boolean = false> = FileButtonProps<Multiple>;\n  export type Factory = FileButtonFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "FileButton is a file button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: FileButton\nDescription: FileButton is a file button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: button, file, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/FileButton/FileButton.tsx\nimport React, { useRef } from 'react';\nimport { assignRef, useMergedRef } from '@mantine/hooks';\nimport { Factory, genericFactory, useProps } from '../../core';\n\nexport interface FileButtonProps<Multiple extends boolean = false> {\n  ref?: React.Ref<HTMLInputElement>;\n\n  /** Called when files are picked */\n  onChange: (payload: Multiple extends true ? File[] : File | null) => void;\n\n  /** Function that receives button props and re",
+  "prompt_version": 2,
+  "clean_id": "file-button",
+  "display_name": "File Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-filebutton-filebutton.png"
+}

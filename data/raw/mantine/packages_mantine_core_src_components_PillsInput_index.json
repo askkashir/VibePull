@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_PillsInput_index",
+  "name": "PillsInput",
+  "source_code": "// packages/@mantine/core/src/components/PillsInput/index.ts\nimport type { PillsInputFactory, PillsInputProps } from './PillsInput';\nimport type { PillsInputContextValue } from './PillsInput.context';\nimport type {\n  PillsInputFieldFactory,\n  PillsInputFieldProps,\n  PillsInputFieldStylesNames,\n} from './PillsInputField/PillsInputField';\n\nexport { PillsInput } from './PillsInput';\nexport { PillsInputField } from './PillsInputField/PillsInputField';\nexport { PillsInputContext } from './PillsInput.context';\n\nexport type {\n  PillsInputProps,\n  PillsInputFactory,\n  PillsInputFieldProps,\n  PillsInputFieldFactory,\n  PillsInputFieldStylesNames,\n  PillsInputContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "PillsInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/PillsInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_PillsInput_index",
+      "name": "PillsInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/PillsInput/index.ts",
+          "content": "import type { PillsInputFactory, PillsInputProps } from './PillsInput';\nimport type { PillsInputContextValue } from './PillsInput.context';\nimport type {\n  PillsInputFieldFactory,\n  PillsInputFieldProps,\n  PillsInputFieldStylesNames,\n} from './PillsInputField/PillsInputField';\n\nexport { PillsInput } from './PillsInput';\nexport { PillsInputField } from './PillsInputField/PillsInputField';\nexport { PillsInputContext } from './PillsInput.context';\n\nexport type {\n  PillsInputProps,\n  PillsInputFactory,\n  PillsInputFieldProps,\n  PillsInputFieldFactory,\n  PillsInputFieldStylesNames,\n  PillsInputContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

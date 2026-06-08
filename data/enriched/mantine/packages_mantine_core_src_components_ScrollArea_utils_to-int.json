@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_to-int",
+  "name": "to-int",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/to-int.ts\nexport function toInt(value?: string) {\n  return value ? parseInt(value, 10) : 0;\n}\n",
+  "description": "",
+  "tags": [
+    "int",
+    "mantine",
+    "other",
+    "to"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_to-int",
+      "name": "to-int",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/to-int.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_to-int",
+      "name": "to-int",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/to-int.ts",
+          "content": "export function toInt(value?: string) {\n  return value ? parseInt(value, 10) : 0;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "to-int is a to int UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: to-int\nDescription: to-int is a to int UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: int, mantine, other, to\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/utils/to-int.ts\nexport function toInt(value?: string) {\n  return value ? parseInt(value, 10) : 0;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "to-int",
+  "display_name": "To Int",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-utils-to-int.png"
+}

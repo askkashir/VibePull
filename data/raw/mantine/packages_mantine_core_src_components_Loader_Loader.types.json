@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_Loader.types",
+  "name": "Loader.types",
+  "source_code": "// packages/@mantine/core/src/components/Loader/Loader.types.ts\nexport interface SvgLoaderProps extends React.ComponentProps<any> {}\n\nexport type MantineLoaderComponent = React.FC<React.HTMLAttributes<any> & React.RefAttributes<any>>;\n\nexport type MantineLoadersRecord = Partial<\n  Record<'bars' | 'dots' | 'oval' | (string & {}), MantineLoaderComponent>\n>;\nexport type MantineLoader = keyof MantineLoadersRecord;\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_Loader.types",
+      "name": "Loader.types",
+      "path": "packages/@mantine/core/src/components/Loader/Loader.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_Loader.types",
+      "name": "Loader.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/Loader.types.ts",
+          "content": "export interface SvgLoaderProps extends React.ComponentProps<any> {}\n\nexport type MantineLoaderComponent = React.FC<React.HTMLAttributes<any> & React.RefAttributes<any>>;\n\nexport type MantineLoadersRecord = Partial<\n  Record<'bars' | 'dots' | 'oval' | (string & {}), MantineLoaderComponent>\n>;\nexport type MantineLoader = keyof MantineLoadersRecord;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

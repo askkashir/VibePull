@@ -1,0 +1,26 @@
+{
+  "id": "kbd-input-group",
+  "name": "kbd-input-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd-input-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## kbd-input-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called kbd-input-group. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "kbd-input-group",
+  "display_name": "Kbd Input Group"
+}

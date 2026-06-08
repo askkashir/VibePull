@@ -1,0 +1,39 @@
+{
+  "id": "components_ui_DemoHeader_index",
+  "name": "DemoHeader",
+  "source_code": "// components/ui/DemoHeader/index.ts\nexport { default } from \"./DemoHeader\"",
+  "description": "",
+  "tags": [
+    "header"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_DemoHeader_index",
+      "name": "index",
+      "path": "components/ui/DemoHeader/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_DemoHeader_index",
+      "name": "DemoHeader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/DemoHeader/index.ts",
+          "content": "export { default } from \"./DemoHeader\""
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A basic header that can be customized with a logo, title, and subtitle. Developers would use this component to display a primary title on their website or application.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: DemoHeader\nDescription: A basic header that can be customized with a logo, title, and subtitle. Developers would use this component to display a primary title on their website or application.\nStyle: \nInteractions: \nTags: header\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/DemoHeader/index.ts\nexport { default } from \"./DemoHeader\"",
+  "prompt_version": 2,
+  "clean_id": "demo-header",
+  "display_name": "Demo Header",
+  "preview_url": "/previews/floatui/components-ui-demoheader-index.png"
+}

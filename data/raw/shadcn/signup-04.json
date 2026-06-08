@@ -1,0 +1,23 @@
+{
+  "id": "signup-04",
+  "name": "signup-04",
+  "source_code": "",
+  "description": "A signup page with form and image.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-04",
+      "type": "registry:block",
+      "description": "A signup page with form and image.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-04\n\nA signup page with form and image.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

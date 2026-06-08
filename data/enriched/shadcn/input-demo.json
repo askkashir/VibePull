@@ -1,0 +1,41 @@
+{
+  "id": "input-demo",
+  "name": "input-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "demo",
+    "example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "An input-demo component is a visually represented input field that showcases various properties and behaviors. It is suitable for testing and demonstrating different input field formats. Typically, developers would use input-demo when implementing and debugging input components in their application.",
+  "style_tags": [
+    "default",
+    "filled",
+    "outlined"
+  ],
+  "interaction_tags": [
+    "change",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-demo\nDescription: An input-demo component is a visually represented input field that showcases various properties and behaviors. It is suitable for testing and demonstrating different input field formats. Typically, developers would use input-demo when implementing and debugging input components in their application.\nStyle: default, filled, outlined\nInteractions: change, hover, clickable\nTags: input, demo, example\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-demo",
+  "display_name": "Input Demo",
+  "preview_url": "/previews/shadcn/input-demo.png"
+}

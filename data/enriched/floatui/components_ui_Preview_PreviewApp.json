@@ -1,0 +1,43 @@
+{
+  "id": "components_ui_Preview_PreviewApp",
+  "name": "PreviewApp",
+  "source_code": "// components/ui/Preview/PreviewApp.tsx\n\"use client\";\nimport { MDXRemoteSerializeResult } from \"next-mdx-remote\";\nimport { usePathname } from \"next/navigation\";\nimport { useState } from \"react\";\nimport {\n  CodeBlock,\n  Component,\n  ComponentCards,\n  ComponentDetails,\n} from \"types/types\";\nimport Preview from \".\";\n\ninterface ComponentData extends Component, ComponentDetails, CodeBlock {\n  mdxSource: MDXRemoteSerializeResult;\n}\n\ninterface Props {\n  components: ComponentData[];\n}\n\nexport default ({ components }: Props) => {\n  const pathname = usePathname();\n\n  return (\n    <>\n      {components?.map((item: ComponentData, idx: number) =>\n        item.isActive ? (\n          <div key={idx}>\n            <Preview item={item} mdxSource={item.mdxSource} slug={pathname} />\n          </div>\n        ) : (\n          \"\"\n        )\n      )}\n    </>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "app",
+    "floatui",
+    "other",
+    "preview"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Preview_PreviewApp",
+      "name": "PreviewApp",
+      "path": "components/ui/Preview/PreviewApp.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Preview_PreviewApp",
+      "name": "PreviewApp",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Preview/PreviewApp.tsx",
+          "content": "\"use client\";\nimport { MDXRemoteSerializeResult } from \"next-mdx-remote\";\nimport { usePathname } from \"next/navigation\";\nimport { useState } from \"react\";\nimport {\n  CodeBlock,\n  Component,\n  ComponentCards,\n  ComponentDetails,\n} from \"types/types\";\nimport Preview from \".\";\n\ninterface ComponentData extends Component, ComponentDetails, CodeBlock {\n  mdxSource: MDXRemoteSerializeResult;\n}\n\ninterface Props {\n  components: ComponentData[];\n}\n\nexport default ({ components }: Props) => {\n  const pathname = usePathname();\n\n  return (\n    <>\n      {components?.map((item: ComponentData, idx: number) =>\n        item.isActive ? (\n          <div key={idx}>\n            <Preview item={item} mdxSource={item.mdxSource} slug={pathname} />\n          </div>\n        ) : (\n          \"\"\n        )\n      )}\n    </>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "PreviewApp is a preview app UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: PreviewApp\nDescription: PreviewApp is a preview app UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: app, floatui, other, preview\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Preview/PreviewApp.tsx\n\"use client\";\nimport { MDXRemoteSerializeResult } from \"next-mdx-remote\";\nimport { usePathname } from \"next/navigation\";\nimport { useState } from \"react\";\nimport {\n  CodeBlock,\n  Component,\n  ComponentCards,\n  ComponentDetails,\n} from \"types/types\";\nimport Preview from \".\";\n\ninterface ComponentData extends Component, ComponentDetails, CodeBlock {\n  mdxSource: MDXRemoteSerializeResult;\n}\n\ninterface Props {\n  components: ComponentData[];\n}\n\nexport default ({",
+  "prompt_version": 2,
+  "clean_id": "preview-app",
+  "display_name": "Preview App",
+  "preview_url": "/previews/floatui/components-ui-preview-previewapp.png"
+}

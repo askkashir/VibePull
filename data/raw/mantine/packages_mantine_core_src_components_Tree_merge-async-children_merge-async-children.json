@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tree_merge-async-children_merge-async-children",
+  "name": "merge-async-children",
+  "source_code": "// packages/@mantine/core/src/components/Tree/merge-async-children/merge-async-children.ts\nimport type { TreeNodeData } from '../Tree';\n\nexport function mergeAsyncChildren(\n  data: TreeNodeData[],\n  parentValue: string,\n  children: TreeNodeData[]\n): TreeNodeData[] {\n  let changed = false;\n\n  const result = data.map((node) => {\n    if (node.value === parentValue) {\n      changed = true;\n      const merged: TreeNodeData = { ...node, children };\n      delete merged.hasChildren;\n      return merged;\n    }\n\n    if (Array.isArray(node.children)) {\n      const updatedChildren = mergeAsyncChildren(node.children, parentValue, children);\n      if (updatedChildren !== node.children) {\n        changed = true;\n        return { ...node, children: updatedChildren };\n      }\n    }\n\n    return node;\n  });\n\n  return changed ? result : data;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tree_merge-async-children_merge-async-children",
+      "name": "merge-async-children",
+      "path": "packages/@mantine/core/src/components/Tree/merge-async-children/merge-async-children.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tree_merge-async-children_merge-async-children",
+      "name": "merge-async-children",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tree/merge-async-children/merge-async-children.ts",
+          "content": "import type { TreeNodeData } from '../Tree';\n\nexport function mergeAsyncChildren(\n  data: TreeNodeData[],\n  parentValue: string,\n  children: TreeNodeData[]\n): TreeNodeData[] {\n  let changed = false;\n\n  const result = data.map((node) => {\n    if (node.value === parentValue) {\n      changed = true;\n      const merged: TreeNodeData = { ...node, children };\n      delete merged.hasChildren;\n      return merged;\n    }\n\n    if (Array.isArray(node.children)) {\n      const updatedChildren = mergeAsyncChildren(node.children, parentValue, children);\n      if (updatedChildren !== node.children) {\n        changed = true;\n        return { ...node, children: updatedChildren };\n      }\n    }\n\n    return node;\n  });\n\n  return changed ? result : data;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

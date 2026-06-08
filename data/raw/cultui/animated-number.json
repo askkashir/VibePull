@@ -1,0 +1,48 @@
+{
+  "id": "animated-number",
+  "name": "animated-number",
+  "source_code": "// registry/default/ui/animated-number.tsx\n\"use client\"\n\nimport { useEffect } from \"react\"\nimport { motion, MotionValue, useSpring, useTransform } from \"motion/react\"\n\ninterface AnimatedNumberProps {\n  value: number\n  mass?: number\n  stiffness?: number\n  damping?: number\n  precision?: number\n  format?: (value: number) => string\n  onAnimationStart?: () => void\n  onAnimationComplete?: () => void\n}\n\nexport function AnimatedNumber({\n  value,\n  mass = 0.8,\n  stiffness = 75,\n  damping = 15,\n  precision = 0,\n  format = (num) => num.toLocaleString(),\n  onAnimationStart,\n  onAnimationComplete,\n}: AnimatedNumberProps) {\n  const spring = useSpring(value, { mass, stiffness, damping })\n  const display: MotionValue<string> = useTransform(spring, (current) =>\n    format(parseFloat(current.toFixed(precision)))\n  )\n\n  useEffect(() => {\n    spring.set(value)\n    if (onAnimationStart) onAnimationStart()\n    const unsubscribe = spring.on(\"change\", () => {\n      if (spring.get() === value && onAnimationComplete) onAnimationComplete()\n    })\n    return () => unsubscribe()\n  }, [spring, value, onAnimationStart, onAnimationComplete])\n\n  return <motion.span>{display}</motion.span>\n}\n",
+  "description": "Number component with smooth counting animations and customizable formatting",
+  "tags": [
+    "cultui",
+    "file",
+    "registry:ui"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-number.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/animated-number.json",
+      "sha": "c0df1d5ed466e69706f25baf75214986ad9af1ab",
+      "size": 1575,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/animated-number.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/animated-number.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/c0df1d5ed466e69706f25baf75214986ad9af1ab",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/animated-number.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/animated-number.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/c0df1d5ed466e69706f25baf75214986ad9af1ab",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/animated-number.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-number",
+      "type": "registry:ui",
+      "description": "Number component with smooth counting animations and customizable formatting",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/animated-number.tsx",
+          "content": "\"use client\"\n\nimport { useEffect } from \"react\"\nimport { motion, MotionValue, useSpring, useTransform } from \"motion/react\"\n\ninterface AnimatedNumberProps {\n  value: number\n  mass?: number\n  stiffness?: number\n  damping?: number\n  precision?: number\n  format?: (value: number) => string\n  onAnimationStart?: () => void\n  onAnimationComplete?: () => void\n}\n\nexport function AnimatedNumber({\n  value,\n  mass = 0.8,\n  stiffness = 75,\n  damping = 15,\n  precision = 0,\n  format = (num) => num.toLocaleString(),\n  onAnimationStart,\n  onAnimationComplete,\n}: AnimatedNumberProps) {\n  const spring = useSpring(value, { mass, stiffness, damping })\n  const display: MotionValue<string> = useTransform(spring, (current) =>\n    format(parseFloat(current.toFixed(precision)))\n  )\n\n  useEffect(() => {\n    spring.set(value)\n    if (onAnimationStart) onAnimationStart()\n    const unsubscribe = spring.on(\"change\", () => {\n      if (spring.get() === value && onAnimationComplete) onAnimationComplete()\n    })\n    return () => unsubscribe()\n  }, [spring, value, onAnimationStart, onAnimationComplete])\n\n  return <motion.span>{display}</motion.span>\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "badge",
+  "name": "badge",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "notifiable",
+    "status-indicator",
+    "alert"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "badge",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## badge\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A badge is a small, simple notification that indicates a status or alert level. It's often used to convey importance or priority. A developer would use a badge when they want to draw attention to a key piece of information, such as the number of unread messages or new updates.",
+  "style_tags": [
+    "e.g. colored",
+    "iconic",
+    "rounded",
+    "rectangle",
+    "badge-style-b"
+  ],
+  "interaction_tags": [
+    "e.g. click-disabled",
+    "hover-visibility",
+    "animation"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: badge\nDescription: A badge is a small, simple notification that indicates a status or alert level. It's often used to convey importance or priority. A developer would use a badge when they want to draw attention to a key piece of information, such as the number of unread messages or new updates.\nStyle: e.g. colored, iconic, rounded, rectangle, badge-style-b\nInteractions: e.g. click-disabled, hover-visibility, animation\nTags: notifiable, status-indicator, alert\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "badge",
+  "display_name": "Badge",
+  "preview_url": "/previews/shadcn/badge.png"
+}

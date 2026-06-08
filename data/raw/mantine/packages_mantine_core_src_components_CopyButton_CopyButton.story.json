@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_CopyButton_CopyButton.story",
+  "name": "CopyButton.story",
+  "source_code": "// packages/@mantine/core/src/components/CopyButton/CopyButton.story.tsx\nimport { CopyButton } from './CopyButton';\n\nexport default { title: 'CopyButton' };\n\nexport function Usage() {\n  return (\n    <CopyButton value=\"mantine.dev\" timeout={1000}>\n      {({ copied, copy }) => (\n        <button type=\"button\" style={{ color: copied ? 'teal' : 'blue' }} onClick={copy}>\n          {copied ? 'Copied to clipboard' : 'Copy to clipboard'}\n        </button>\n      )}\n    </CopyButton>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "CopyButton_CopyButton.story",
+      "name": "CopyButton.story",
+      "path": "packages/@mantine/core/src/components/CopyButton/CopyButton.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_CopyButton_CopyButton.story",
+      "name": "CopyButton.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/CopyButton/CopyButton.story.tsx",
+          "content": "import { CopyButton } from './CopyButton';\n\nexport default { title: 'CopyButton' };\n\nexport function Usage() {\n  return (\n    <CopyButton value=\"mantine.dev\" timeout={1000}>\n      {({ copied, copy }) => (\n        <button type=\"button\" style={{ color: copied ? 'teal' : 'blue' }} onClick={copy}>\n          {copied ? 'Copied to clipboard' : 'Copy to clipboard'}\n        </button>\n      )}\n    </CopyButton>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

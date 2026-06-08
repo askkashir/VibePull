@@ -1,0 +1,39 @@
+{
+  "id": "item-icon",
+  "name": "item-icon",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "list-item",
+    "icon",
+    "item-metadata"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-icon",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-icon\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The item-icon component is a reusable UI element that displays an icon associated with an item, commonly used in applications that organize items into categories, such as e-commerce websites, app dashboards, or navigation menus.",
+  "style_tags": [
+    "e.g. material",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: item-icon\nDescription: The item-icon component is a reusable UI element that displays an icon associated with an item, commonly used in applications that organize items into categories, such as e-commerce websites, app dashboards, or navigation menus.\nStyle: e.g. material, flat\nInteractions: e.g. clickable, hover\nTags: list-item, icon, item-metadata\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-icon",
+  "display_name": "Item Icon",
+  "preview_url": "/previews/shadcn/item-icon.png"
+}

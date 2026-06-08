@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-ratio",
+  "name": "get-thumb-ratio",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-ratio.tsx\nexport function getThumbRatio(viewportSize: number, contentSize: number) {\n  const ratio = viewportSize / contentSize;\n  return Number.isNaN(ratio) ? 0 : ratio;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_get-thumb-ratio",
+      "name": "get-thumb-ratio",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-ratio.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-ratio",
+      "name": "get-thumb-ratio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-ratio.tsx",
+          "content": "export function getThumbRatio(viewportSize: number, contentSize: number) {\n  const ratio = viewportSize / contentSize;\n  return Number.isNaN(ratio) ? 0 : ratio;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

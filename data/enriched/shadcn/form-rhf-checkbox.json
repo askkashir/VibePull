@@ -1,0 +1,41 @@
+{
+  "id": "form-rhf-checkbox",
+  "name": "form-rhf-checkbox",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "forms",
+    "checkbox",
+    "selection",
+    "preferences",
+    "data-collection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-checkbox",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-checkbox\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "The form-rhf-checkbox component is a customizable form checkbox that allows users to select from a variety of options. It is typically used within a form to collect user preferences or data. This component can be styled to fit different design themes and can be used in both desktop and mobile applications.",
+  "style_tags": [
+    "material-ui",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-checkbox\nDescription: The form-rhf-checkbox component is a customizable form checkbox that allows users to select from a variety of options. It is typically used within a form to collect user preferences or data. This component can be styled to fit different design themes and can be used in both desktop and mobile applications.\nStyle: material-ui, customizable\nInteractions: clickable, hover\nTags: forms, checkbox, selection, preferences, data-collection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-checkbox",
+  "display_name": "Form Rhf Checkbox",
+  "preview_url": "/previews/shadcn/form-rhf-checkbox.png"
+}

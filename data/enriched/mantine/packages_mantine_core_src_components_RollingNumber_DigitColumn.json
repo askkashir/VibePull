@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_RollingNumber_DigitColumn",
+  "name": "DigitColumn",
+  "source_code": "// packages/@mantine/core/src/components/RollingNumber/DigitColumn.tsx\nimport { useStyles } from '../../core';\nimport type { RollingNumberFactory } from './RollingNumber';\n\nconst STRIP_CELLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1'];\n\ninterface DigitColumnProps {\n  digit: string;\n  getStyles: ReturnType<typeof useStyles<RollingNumberFactory>>;\n  previousDigit: string | null;\n  empty?: boolean;\n  valueDirection: 'up' | 'down';\n}\n\nexport function DigitColumn({\n  digit,\n  getStyles,\n  previousDigit,\n  empty,\n  valueDirection,\n}: DigitColumnProps) {\n  const digitIndex = parseInt(digit, 10);\n  const previousDigitIndex = previousDigit !== null ? parseInt(previousDigit, 10) : digitIndex;\n\n  const wrapsForward =\n    valueDirection === 'up' &&\n    previousDigit !== null &&\n    digitIndex < previousDigitIndex &&\n    digitIndex <= 1;\n\n  const animateToIndex = wrapsForward ? digitIndex + 10 : digitIndex;\n  const direction = digitIndex >= previousDigitIndex ? 'up' : 'down';\n\n  const digitStyles = getStyles('digit');\n  const columnStyles = getStyles('digitColumn');\n\n  return (\n    <span {...digitStyles} data-empty={empty || undefined} aria-hidden=\"true\">\n      <span\n        key={digit}\n        {...columnStyles}\n        style={{\n          ...columnStyles.style,\n          transform: `translateY(${-digitIndex}em)`,\n          ['--rn-roll-from' as any]: `translateY(${-previousDigitIndex}em)`,\n          ['--rn-roll-to' as any]: `translateY(${-animateToIndex}em)`,\n        }}\n        data-direction={direction}\n      >\n        {STRIP_CELLS.map((d, i) => (\n          <span key={i}>{d}</span>\n        ))}\n      </span>\n    </span>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "column",
+    "digit",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RollingNumber_DigitColumn",
+      "name": "DigitColumn",
+      "path": "packages/@mantine/core/src/components/RollingNumber/DigitColumn.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RollingNumber_DigitColumn",
+      "name": "DigitColumn",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RollingNumber/DigitColumn.tsx",
+          "content": "import { useStyles } from '../../core';\nimport type { RollingNumberFactory } from './RollingNumber';\n\nconst STRIP_CELLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1'];\n\ninterface DigitColumnProps {\n  digit: string;\n  getStyles: ReturnType<typeof useStyles<RollingNumberFactory>>;\n  previousDigit: string | null;\n  empty?: boolean;\n  valueDirection: 'up' | 'down';\n}\n\nexport function DigitColumn({\n  digit,\n  getStyles,\n  previousDigit,\n  empty,\n  valueDirection,\n}: DigitColumnProps) {\n  const digitIndex = parseInt(digit, 10);\n  const previousDigitIndex = previousDigit !== null ? parseInt(previousDigit, 10) : digitIndex;\n\n  const wrapsForward =\n    valueDirection === 'up' &&\n    previousDigit !== null &&\n    digitIndex < previousDigitIndex &&\n    digitIndex <= 1;\n\n  const animateToIndex = wrapsForward ? digitIndex + 10 : digitIndex;\n  const direction = digitIndex >= previousDigitIndex ? 'up' : 'down';\n\n  const digitStyles = getStyles('digit');\n  const columnStyles = getStyles('digitColumn');\n\n  return (\n    <span {...digitStyles} data-empty={empty || undefined} aria-hidden=\"true\">\n      <span\n        key={digit}\n        {...columnStyles}\n        style={{\n          ...columnStyles.style,\n          transform: `translateY(${-digitIndex}em)`,\n          ['--rn-roll-from' as any]: `translateY(${-previousDigitIndex}em)`,\n          ['--rn-roll-to' as any]: `translateY(${-animateToIndex}em)`,\n        }}\n        data-direction={direction}\n      >\n        {STRIP_CELLS.map((d, i) => (\n          <span key={i}>{d}</span>\n        ))}\n      </span>\n    </span>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DigitColumn is a digit column UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: DigitColumn\nDescription: DigitColumn is a digit column UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated\nTags: column, digit, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/RollingNumber/DigitColumn.tsx\nimport { useStyles } from '../../core';\nimport type { RollingNumberFactory } from './RollingNumber';\n\nconst STRIP_CELLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1'];\n\ninterface DigitColumnProps {\n  digit: string;\n  getStyles: ReturnType<typeof useStyles<RollingNumberFactory>>;\n  previousDigit: string | null;\n  empty?: boolean;\n  valueDirection: 'up' | 'down';\n}\n\nexport function DigitColumn({\n  digit,\n  getSt",
+  "prompt_version": 2,
+  "clean_id": "digit-column",
+  "display_name": "Digit Column",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-rollingnumber-digitcolumn.png"
+}

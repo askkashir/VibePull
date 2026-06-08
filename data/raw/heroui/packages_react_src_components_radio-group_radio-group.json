@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_radio-group_radio-group",
+  "name": "radio-group",
+  "source_code": "// packages/react/src/components/radio-group/radio-group.tsx\n\"use client\";\n\nimport type {RadioGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {radioGroupVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {RadioGroup as RadioGroupPrimitive} from \"react-aria-components/RadioGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Radio Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface RadioGroupRootProps\n  extends ComponentPropsWithRef<typeof RadioGroupPrimitive>, RadioGroupVariants {}\n\nconst RadioGroupRoot = ({children, className, variant, ...props}: RadioGroupRootProps) => {\n  const styles = React.useMemo(() => radioGroupVariants({variant}), [variant]);\n\n  return (\n    <RadioGroupPrimitive\n      data-slot=\"radio-group\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </RadioGroupPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {RadioGroupRoot};\n\nexport type {RadioGroupRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "radio-group_radio-group",
+      "name": "radio-group",
+      "path": "packages/react/src/components/radio-group/radio-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_radio-group_radio-group",
+      "name": "radio-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/radio-group/radio-group.tsx",
+          "content": "\"use client\";\n\nimport type {RadioGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {radioGroupVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {RadioGroup as RadioGroupPrimitive} from \"react-aria-components/RadioGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Radio Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface RadioGroupRootProps\n  extends ComponentPropsWithRef<typeof RadioGroupPrimitive>, RadioGroupVariants {}\n\nconst RadioGroupRoot = ({children, className, variant, ...props}: RadioGroupRootProps) => {\n  const styles = React.useMemo(() => radioGroupVariants({variant}), [variant]);\n\n  return (\n    <RadioGroupPrimitive\n      data-slot=\"radio-group\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </RadioGroupPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {RadioGroupRoot};\n\nexport type {RadioGroupRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

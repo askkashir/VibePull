@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_button_button",
+  "name": "button",
+  "source_code": "// packages/react/src/components/button/button.tsx\n\"use client\";\n\nimport type {ButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {buttonVariants} from \"@heroui/styles\";\nimport {useContext} from \"react\";\nimport {Button as ButtonPrimitive} from \"react-aria-components/Button\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {BUTTON_GROUP_CHILD, ButtonGroupContext} from \"../button-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Button Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ButtonRootProps extends ComponentPropsWithRef<typeof ButtonPrimitive>, ButtonVariants {\n  [BUTTON_GROUP_CHILD]?: boolean;\n}\n\nconst ButtonRoot = ({\n  children,\n  className,\n  fullWidth,\n  isDisabled,\n  isIconOnly,\n  size,\n  slot,\n  style,\n  variant,\n  [BUTTON_GROUP_CHILD]: isButtonGroupChild,\n  ...rest\n}: ButtonRootProps) => {\n  const buttonGroupContext = useContext(ButtonGroupContext);\n\n  // Only use context if this button is a direct child of ButtonGroup\n  const shouldUseContext = isButtonGroupChild === true;\n\n  // Merge props with precedence: direct props > context props\n  const finalSize = size ?? (shouldUseContext ? buttonGroupContext?.size : undefined);\n  const finalVariant = variant ?? (shouldUseContext ? buttonGroupContext?.variant : undefined);\n  const finalIsDisabled =\n    isDisabled ?? (shouldUseContext ? buttonGroupContext?.isDisabled : undefined);\n  const finalFullWidth =\n    fullWidth ?? (shouldUseContext ? buttonGroupContext?.fullWidth : undefined);\n\n  const styles = buttonVariants({\n    fullWidth: finalFullWidth,\n    isIconOnly,\n    size: finalSize,\n    variant: finalVariant,\n  });\n\n  return (\n    <ButtonPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"button\"\n      isDisabled={finalIsDisabled}\n      slot={slot}\n      style={style}\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </ButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ButtonRoot};\n\nexport type {ButtonRootProps};\n",
+  "description": "",
+  "tags": [
+    "interactive",
+    "clickable",
+    "ui-control"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "button_button",
+      "name": "button",
+      "path": "packages/react/src/components/button/button.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_button_button",
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/button/button.tsx",
+          "content": "\"use client\";\n\nimport type {ButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {buttonVariants} from \"@heroui/styles\";\nimport {useContext} from \"react\";\nimport {Button as ButtonPrimitive} from \"react-aria-components/Button\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {BUTTON_GROUP_CHILD, ButtonGroupContext} from \"../button-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Button Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ButtonRootProps extends ComponentPropsWithRef<typeof ButtonPrimitive>, ButtonVariants {\n  [BUTTON_GROUP_CHILD]?: boolean;\n}\n\nconst ButtonRoot = ({\n  children,\n  className,\n  fullWidth,\n  isDisabled,\n  isIconOnly,\n  size,\n  slot,\n  style,\n  variant,\n  [BUTTON_GROUP_CHILD]: isButtonGroupChild,\n  ...rest\n}: ButtonRootProps) => {\n  const buttonGroupContext = useContext(ButtonGroupContext);\n\n  // Only use context if this button is a direct child of ButtonGroup\n  const shouldUseContext = isButtonGroupChild === true;\n\n  // Merge props with precedence: direct props > context props\n  const finalSize = size ?? (shouldUseContext ? buttonGroupContext?.size : undefined);\n  const finalVariant = variant ?? (shouldUseContext ? buttonGroupContext?.variant : undefined);\n  const finalIsDisabled =\n    isDisabled ?? (shouldUseContext ? buttonGroupContext?.isDisabled : undefined);\n  const finalFullWidth =\n    fullWidth ?? (shouldUseContext ? buttonGroupContext?.fullWidth : undefined);\n\n  const styles = buttonVariants({\n    fullWidth: finalFullWidth,\n    isIconOnly,\n    size: finalSize,\n    variant: finalVariant,\n  });\n\n  return (\n    <ButtonPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"button\"\n      isDisabled={finalIsDisabled}\n      slot={slot}\n      style={style}\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </ButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ButtonRoot};\n\nexport type {ButtonRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A button is a widget with text or other content that is clickable. Use a button when you want a user to trigger an action or submit data. It can be styled as a primary, secondary, or ghost button.",
+  "style_tags": [
+    "primary",
+    "secondary",
+    "ghost"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button\nDescription: A button is a widget with text or other content that is clickable. Use a button when you want a user to trigger an action or submit data. It can be styled as a primary, secondary, or ghost button.\nStyle: primary, secondary, ghost\nInteractions: animated\nTags: interactive, clickable, ui-control\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/button/button.tsx\n\"use client\";\n\nimport type {ButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {buttonVariants} from \"@heroui/styles\";\nimport {useContext} from \"react\";\nimport {Button as ButtonPrimitive} from \"react-aria-components/Button\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {BUTTON_GROUP_CHILD, ButtonGroupContext} from \"../button-group\";\n\n/* ---------------------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "button",
+  "display_name": "Button",
+  "preview_url": "/previews/heroui/packages-react-src-components-button-button.png"
+}

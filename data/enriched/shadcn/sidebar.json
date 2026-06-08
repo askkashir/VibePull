@@ -1,0 +1,41 @@
+{
+  "id": "sidebar",
+  "name": "sidebar",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "settings",
+    "configuration"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui, class-variance-authority, lucide-react"
+  },
+  "visual_summary": "A sidebar is a vertical component that occupies a significant portion of the screen, typically displayed on the left-hand side. It's often used to store settings, navigation, or frequently accessed links. A well-crafted sidebar enhances the overall user experience by providing easy access to important features.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "compact"
+  ],
+  "interaction_tags": [
+    "e.g. click-to-close",
+    "expandable",
+    "responsive"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: sidebar\nDescription: A sidebar is a vertical component that occupies a significant portion of the screen, typically displayed on the left-hand side. It's often used to store settings, navigation, or frequently accessed links. A well-crafted sidebar enhances the overall user experience by providing easy access to important features.\nStyle: e.g. dark, minimal, compact\nInteractions: e.g. click-to-close, expandable, responsive\nTags: navigation, settings, configuration\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar",
+  "display_name": "Sidebar",
+  "preview_url": "/previews/shadcn/sidebar.png"
+}

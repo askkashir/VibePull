@@ -1,0 +1,22 @@
+{
+  "id": "skeleton",
+  "name": "skeleton",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## skeleton\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  }
+}

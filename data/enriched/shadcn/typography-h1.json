@@ -1,0 +1,38 @@
+{
+  "id": "typography-h1",
+  "name": "typography-h1",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "heading",
+    "typography",
+    "h1",
+    "title",
+    "main heading"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-h1",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-h1\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Typography-h1 is a high-contrast, large heading element used to draw attention to a title or main heading on a page. It should be used for the primary title of a web page or section. This component is ideal for emphasizing key content and creating a clear visual hierarchy.",
+  "style_tags": [
+    "default",
+    "high-contrast"
+  ],
+  "interaction_tags": [],
+  "component_type": "typography",
+  "generation_prompt": "Create a production-ready typography component with the following characteristics:\n\nName: typography-h1\nDescription: Typography-h1 is a high-contrast, large heading element used to draw attention to a title or main heading on a page. It should be used for the primary title of a web page or section. This component is ideal for emphasizing key content and creating a clear visual hierarchy.\nStyle: default, high-contrast\nInteractions: \nTags: heading, typography, h1, title, main heading\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-h1",
+  "display_name": "Typography H1",
+  "preview_url": "/previews/shadcn/typography-h1.png"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "packages_radix-ui-themes_src_components_portal",
+  "name": "portal",
+  "source_code": "// packages/radix-ui-themes/src/components/portal.tsx\nimport { Portal as PortalPrimitive } from 'radix-ui';\nexport const Portal = PortalPrimitive.Root;\nexport const Root = PortalPrimitive.Root;\nexport type PortalProps = PortalPrimitive.PortalProps;\n",
+  "description": "",
+  "tags": [
+    "overlay",
+    "dialog",
+    "positioning"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_portal",
+      "name": "portal.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/portal.tsx",
+      "sha": "b8aaae143aa5db9607d840abd2055067196b7ce6",
+      "size": 195,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/portal.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/portal.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/b8aaae143aa5db9607d840abd2055067196b7ce6",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/portal.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/portal.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/b8aaae143aa5db9607d840abd2055067196b7ce6",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/portal.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_portal",
+      "name": "portal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/portal.tsx",
+          "content": "import { Portal as PortalPrimitive } from 'radix-ui';\nexport const Portal = PortalPrimitive.Root;\nexport const Root = PortalPrimitive.Root;\nexport type PortalProps = PortalPrimitive.PortalProps;\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The portal component provides a container for rendering children outside a DOM element. It is used for scenarios such as dialogs and tooltips where a custom positioning is required. A developer would use it for creating overlays with custom positioning.",
+  "style_tags": [],
+  "interaction_tags": [
+    "custom-positionable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: portal\nDescription: The portal component provides a container for rendering children outside a DOM element. It is used for scenarios such as dialogs and tooltips where a custom positioning is required. A developer would use it for creating overlays with custom positioning.\nStyle: \nInteractions: custom-positionable\nTags: overlay, dialog, positioning\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/portal.tsx\nimport { Portal as PortalPrimitive } from 'radix-ui';\nexport const Portal = PortalPrimitive.Root;\nexport const Root = PortalPrimitive.Root;\nexport type PortalProps = PortalPrimitive.PortalProps;\n",
+  "prompt_version": 2,
+  "clean_id": "portal",
+  "display_name": "Portal",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-portal.png"
+}

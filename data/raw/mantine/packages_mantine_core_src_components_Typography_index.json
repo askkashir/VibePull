@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Typography_index",
+  "name": "Typography",
+  "source_code": "// packages/@mantine/core/src/components/Typography/index.ts\nimport type { TypographyFactory, TypographyProps, TypographyStylesNames } from './Typography';\n\nexport { Typography } from './Typography';\n\nexport type { TypographyProps, TypographyStylesNames, TypographyFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Typography_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Typography/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Typography_index",
+      "name": "Typography",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Typography/index.ts",
+          "content": "import type { TypographyFactory, TypographyProps, TypographyStylesNames } from './Typography';\n\nexport { Typography } from './Typography';\n\nexport type { TypographyProps, TypographyStylesNames, TypographyFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "confetti-basic-cannon",
+  "name": "Confetti Basic Cannon",
+  "source_code": "import { ConfettiButton } from \"@/registry/magicui/confetti\"\n\nexport default function ConfettiButtonDemo() {\n  return (\n    <div className=\"relative\">\n      <ConfettiButton>Confetti 🎉</ConfettiButton>\n    </div>\n  )\n}\n",
+  "description": "Example showing basic confetti cannon animation.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "confetti-basic-cannon",
+      "type": "registry:example",
+      "title": "Confetti Basic Cannon",
+      "description": "Example showing basic confetti cannon animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-basic-cannon.tsx",
+          "type": "registry:example",
+          "target": "components/confetti-basic-cannon.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "confetti-basic-cannon",
+      "type": "registry:example",
+      "title": "Confetti Basic Cannon",
+      "description": "Example showing basic confetti cannon animation.",
+      "registryDependencies": [
+        "@magicui/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-basic-cannon.tsx",
+          "content": "import { ConfettiButton } from \"@/registry/magicui/confetti\"\n\nexport default function ConfettiButtonDemo() {\n  return (\n    <div className=\"relative\">\n      <ConfettiButton>Confetti 🎉</ConfettiButton>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

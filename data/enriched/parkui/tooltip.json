@@ -1,0 +1,63 @@
+{
+  "id": "tooltip",
+  "name": "tooltip",
+  "source_code": "// src/components/ui/tooltip.tsx\n'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Tooltip as ArkTooltip } from '@ark-ui/react/tooltip'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tooltip } from 'styled-system/recipes'\n\nconst { withRootProvider, withContext } = createStyleContext(tooltip)\n\ntype RootProps = ComponentProps<typeof Root>\ntype ContentProps = ComponentProps<typeof Content>\nconst Root = withRootProvider(ArkTooltip.Root, {\n  defaultProps: { unmountOnExit: true, lazyMount: true },\n})\nconst Arrow = withContext(ArkTooltip.Arrow, 'arrow')\nconst ArrowTip = withContext(ArkTooltip.ArrowTip, 'arrowTip')\nconst Content = withContext(ArkTooltip.Content, 'content')\nconst Positioner = withContext(ArkTooltip.Positioner, 'positioner')\nconst Trigger = withContext(ArkTooltip.Trigger, 'trigger')\n\nexport { TooltipContext as Context } from '@ark-ui/react/tooltip'\n\nexport interface TooltipProps extends Omit<RootProps, 'content'> {\n  showArrow?: boolean\n  portalled?: boolean\n  portalRef?: React.RefObject<HTMLElement | null>\n  children: React.ReactNode | undefined\n  content: React.ReactNode | string\n  contentProps?: ContentProps\n  disabled?: boolean\n}\n\nexport const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(function Tooltip(props, ref) {\n  const {\n    showArrow,\n    children,\n    disabled,\n    portalled = true,\n    content,\n    contentProps,\n    portalRef,\n    ...rootProps\n  } = props\n\n  if (disabled) return children\n\n  return (\n    <Root {...rootProps}>\n      <Trigger asChild>{children}</Trigger>\n      <Portal disabled={!portalled} container={portalRef}>\n        <Positioner>\n          <Content ref={ref} {...contentProps}>\n            {showArrow && (\n              <Arrow>\n                <ArrowTip />\n              </Arrow>\n            )}\n            {content}\n          </Content>\n        </Positioner>\n      </Portal>\n    </Root>\n  )\n})\n",
+  "description": "",
+  "tags": [
+    "other",
+    "parkui",
+    "tooltip"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "exports": "export { Tooltip, type TooltipProps } from './tooltip'",
+          "content": "'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Tooltip as ArkTooltip } from '@ark-ui/react/tooltip'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tooltip } from 'styled-system/recipes'\n\nconst { withRootProvider, withContext } = createStyleContext(tooltip)\n\ntype RootProps = ComponentProps<typeof Root>\ntype ContentProps = ComponentProps<typeof Content>\nconst Root = withRootProvider(ArkTooltip.Root, {\n  defaultProps: { unmountOnExit: true, lazyMount: true },\n})\nconst Arrow = withContext(ArkTooltip.Arrow, 'arrow')\nconst ArrowTip = withContext(ArkTooltip.ArrowTip, 'arrowTip')\nconst Content = withContext(ArkTooltip.Content, 'content')\nconst Positioner = withContext(ArkTooltip.Positioner, 'positioner')\nconst Trigger = withContext(ArkTooltip.Trigger, 'trigger')\n\nexport { TooltipContext as Context } from '@ark-ui/react/tooltip'\n\nexport interface TooltipProps extends Omit<RootProps, 'content'> {\n  showArrow?: boolean\n  portalled?: boolean\n  portalRef?: React.RefObject<HTMLElement | null>\n  children: React.ReactNode | undefined\n  content: React.ReactNode | string\n  contentProps?: ContentProps\n  disabled?: boolean\n}\n\nexport const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(function Tooltip(props, ref) {\n  const {\n    showArrow,\n    children,\n    disabled,\n    portalled = true,\n    content,\n    contentProps,\n    portalRef,\n    ...rootProps\n  } = props\n\n  if (disabled) return children\n\n  return (\n    <Root {...rootProps}>\n      <Trigger asChild>{children}</Trigger>\n      <Portal disabled={!portalled} container={portalRef}>\n        <Positioner>\n          <Content ref={ref} {...contentProps}>\n            {showArrow && (\n              <Arrow>\n                <ArrowTip />\n              </Arrow>\n            )}\n            {content}\n          </Content>\n        </Positioner>\n      </Portal>\n    </Root>\n  )\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "tooltip-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "exports": "export { Tooltip, type TooltipProps } from './tooltip'",
+          "content": "'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Tooltip as ArkTooltip } from '@ark-ui/react/tooltip'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tooltip } from 'styled-system/recipes'\n\nconst { withRootProvider, withContext } = createStyleContext(tooltip)\n\ntype RootProps = ComponentProps<typeof Root>\ntype ContentProps = ComponentProps<typeof Content>\nconst Root = withRootProvider(ArkTooltip.Root, {\n  defaultProps: { unmountOnExit: true, lazyMount: true },\n})\nconst Arrow = withContext(ArkTooltip.Arrow, 'arrow')\nconst ArrowTip = withContext(ArkTooltip.ArrowTip, 'arrowTip')\nconst Content = withContext(ArkTooltip.Content, 'content')\nconst Positioner = withContext(ArkTooltip.Positioner, 'positioner')\nconst Trigger = withContext(ArkTooltip.Trigger, 'trigger')\n\nexport { TooltipContext as Context } from '@ark-ui/react/tooltip'\n\nexport interface TooltipProps extends Omit<RootProps, 'content'> {\n  showArrow?: boolean\n  portalled?: boolean\n  portalRef?: React.RefObject<HTMLElement | null>\n  children: React.ReactNode | undefined\n  content: React.ReactNode | string\n  contentProps?: ContentProps\n  disabled?: boolean\n}\n\nexport const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(function Tooltip(props, ref) {\n  const {\n    showArrow,\n    children,\n    disabled,\n    portalled = true,\n    content,\n    contentProps,\n    portalRef,\n    ...rootProps\n  } = props\n\n  if (disabled) return children\n\n  return (\n    <Root {...rootProps}>\n      <Trigger asChild>{children}</Trigger>\n      <Portal disabled={!portalled} container={portalRef}>\n        <Positioner>\n          <Content ref={ref} {...contentProps}>\n            {showArrow && (\n              <Arrow>\n                <ArrowTip />\n              </Arrow>\n            )}\n            {content}\n          </Content>\n        </Positioner>\n      </Portal>\n    </Root>\n  )\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "tooltip-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "tooltip is a tooltip UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: tooltip\nDescription: tooltip is a tooltip UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: other, parkui, tooltip\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/tooltip.tsx\n'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Tooltip as ArkTooltip } from '@ark-ui/react/tooltip'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tooltip } from 'styled-system/recipes'\n\nconst { withRootProvider, withContext } = createStyleContext(tooltip)\n\ntype RootProps = ComponentProps<typeof Root>\ntype ContentProps = ComponentProps<typeof Content>\nconst Root = withRo",
+  "prompt_version": 2,
+  "clean_id": "tooltip",
+  "display_name": "Tooltip",
+  "preview_url": "/previews/parkui/tooltip.png"
+}

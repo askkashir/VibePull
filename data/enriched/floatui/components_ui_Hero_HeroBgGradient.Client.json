@@ -1,0 +1,49 @@
+{
+  "id": "components_ui_Hero_HeroBgGradient.Client",
+  "name": "HeroBgGradient.Client",
+  "source_code": "// components/ui/Hero/HeroBgGradient.Client.tsx\n\"use client\";\n\nimport { useInView } from \"framer-motion\";\nimport { useRef } from \"react\";\nimport HeroBgGradient from \"components/HeroBgGradient\";\n\nexport default () => {\n  const ref = useRef(null);\n  const isInView = useInView(ref, { once: true });\n  return (\n    <div ref={ref}>\n      <HeroBgGradient\n        height={isInView ? 444 : 0}\n        className=\"absolute inset-x-0 mx-auto duration-500 top-0 -translate-x-32 sm:-translate-x-10\"\n      />\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "bg",
+    "client",
+    "floatui",
+    "gradient",
+    "hero"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Hero_HeroBgGradient.Client",
+      "name": "HeroBgGradient.Client",
+      "path": "components/ui/Hero/HeroBgGradient.Client.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Hero_HeroBgGradient.Client",
+      "name": "HeroBgGradient.Client",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Hero/HeroBgGradient.Client.tsx",
+          "content": "\"use client\";\n\nimport { useInView } from \"framer-motion\";\nimport { useRef } from \"react\";\nimport HeroBgGradient from \"components/HeroBgGradient\";\n\nexport default () => {\n  const ref = useRef(null);\n  const isInView = useInView(ref, { once: true });\n  return (\n    <div ref={ref}>\n      <HeroBgGradient\n        height={isInView ? 444 : 0}\n        className=\"absolute inset-x-0 mx-auto duration-500 top-0 -translate-x-32 sm:-translate-x-10\"\n      />\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "HeroBgGradient.Client is a hero bg gradient client UI component from the floatui corpus. It provides reusable hero behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "hero",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready hero component with the following characteristics:\n\nName: HeroBgGradient.Client\nDescription: HeroBgGradient.Client is a hero bg gradient client UI component from the floatui corpus. It provides reusable hero behavior and styling for React or web UI screens.\nStyle: gradient, utility-styled\nInteractions: animated\nTags: bg, client, floatui, gradient, hero\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Hero/HeroBgGradient.Client.tsx\n\"use client\";\n\nimport { useInView } from \"framer-motion\";\nimport { useRef } from \"react\";\nimport HeroBgGradient from \"components/HeroBgGradient\";\n\nexport default () => {\n  const ref = useRef(null);\n  const isInView = useInView(ref, { once: true });\n  return (\n    <div ref={ref}>\n      <HeroBgGradient\n        height={isInView ? 444 : 0}\n        className=\"absolute inset-x-0 mx-auto duration-500 top-0 -translate-x-32 sm:-translate-x-10\"\n      />\n    ",
+  "prompt_version": 2,
+  "clean_id": "hero-bg-gradient-client",
+  "display_name": "Hero Bg Gradient Client",
+  "preview_url": "/previews/floatui/components-ui-hero-herobggradient-client.png"
+}

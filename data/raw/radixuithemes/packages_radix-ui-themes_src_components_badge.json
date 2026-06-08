@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_badge",
+  "name": "badge",
+  "source_code": "// packages/radix-ui-themes/src/components/badge.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { badgePropDefs } from './badge.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype BadgeElement = React.ElementRef<'span'>;\ntype BadgeOwnProps = GetPropDefTypes<typeof badgePropDefs>;\ninterface BadgeProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, BadgeOwnProps {}\nconst Badge = React.forwardRef<BadgeElement, BadgeProps>((props, forwardedRef) => {\n  const { asChild, className, color, radius, ...badgeProps } = extractProps(\n    props,\n    badgePropDefs,\n    marginPropDefs,\n  );\n  const Comp = asChild ? Slot.Root : 'span';\n  return (\n    <Comp\n      data-accent-color={color}\n      data-radius={radius}\n      {...badgeProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Badge', className)}\n    />\n  );\n});\nBadge.displayName = 'Badge';\n\nexport { Badge };\nexport type { BadgeProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_badge",
+      "name": "badge.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/badge.tsx",
+      "sha": "9697ef55d2dcc1c05043a23564e50990e7ea3ed9",
+      "size": 1242,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/badge.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/badge.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/9697ef55d2dcc1c05043a23564e50990e7ea3ed9",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/badge.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/badge.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/9697ef55d2dcc1c05043a23564e50990e7ea3ed9",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/badge.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_badge",
+      "name": "badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/badge.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { badgePropDefs } from './badge.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype BadgeElement = React.ElementRef<'span'>;\ntype BadgeOwnProps = GetPropDefTypes<typeof badgePropDefs>;\ninterface BadgeProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, BadgeOwnProps {}\nconst Badge = React.forwardRef<BadgeElement, BadgeProps>((props, forwardedRef) => {\n  const { asChild, className, color, radius, ...badgeProps } = extractProps(\n    props,\n    badgePropDefs,\n    marginPropDefs,\n  );\n  const Comp = asChild ? Slot.Root : 'span';\n  return (\n    <Comp\n      data-accent-color={color}\n      data-radius={radius}\n      {...badgeProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Badge', className)}\n    />\n  );\n});\nBadge.displayName = 'Badge';\n\nexport { Badge };\nexport type { BadgeProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

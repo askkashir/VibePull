@@ -1,0 +1,27 @@
+{
+  "id": "login-04",
+  "name": "login-04",
+  "source_code": "",
+  "description": "A login page with form and image.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-04",
+      "type": "registry:block",
+      "description": "A login page with form and image.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-04\n\nA login page with form and image.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called login-04. It should be: A login page with form and image.. Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "login-04",
+  "display_name": "Login 04"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Switch_index",
+  "name": "Switch",
+  "source_code": "// packages/@mantine/core/src/components/Switch/index.ts\nimport type { SwitchCssVariables, SwitchFactory, SwitchProps, SwitchStylesNames } from './Switch';\nimport type {\n  SwitchGroupContextValue,\n  SwitchGroupFactory,\n  SwitchGroupProps,\n  SwitchGroupStylesNames,\n} from './SwitchGroup/SwitchGroup';\n\nexport { Switch } from './Switch';\nexport { SwitchGroup, SwitchGroupContext } from './SwitchGroup/SwitchGroup';\n\nexport type {\n  SwitchProps,\n  SwitchStylesNames,\n  SwitchCssVariables,\n  SwitchFactory,\n  SwitchGroupProps,\n  SwitchGroupStylesNames,\n  SwitchGroupFactory,\n  SwitchGroupContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Switch_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Switch/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Switch_index",
+      "name": "Switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Switch/index.ts",
+          "content": "import type { SwitchCssVariables, SwitchFactory, SwitchProps, SwitchStylesNames } from './Switch';\nimport type {\n  SwitchGroupContextValue,\n  SwitchGroupFactory,\n  SwitchGroupProps,\n  SwitchGroupStylesNames,\n} from './SwitchGroup/SwitchGroup';\n\nexport { Switch } from './Switch';\nexport { SwitchGroup, SwitchGroupContext } from './SwitchGroup/SwitchGroup';\n\nexport type {\n  SwitchProps,\n  SwitchStylesNames,\n  SwitchCssVariables,\n  SwitchFactory,\n  SwitchGroupProps,\n  SwitchGroupStylesNames,\n  SwitchGroupFactory,\n  SwitchGroupContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

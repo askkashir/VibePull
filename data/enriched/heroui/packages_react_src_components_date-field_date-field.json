@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_date-field_date-field",
+  "name": "date-field",
+  "source_code": "// packages/react/src/components/date-field/date-field.tsx\n\"use client\";\n\nimport type {DateFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {DateValue} from \"react-aria-components/Calendar\";\n\nimport {dateFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {DateField as DateFieldPrimitive} from \"react-aria-components/DateField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * DateField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DateFieldRootProps<T extends DateValue>\n  extends ComponentPropsWithRef<typeof DateFieldPrimitive<T>>, DateFieldVariants {}\n\nfunction DateFieldRoot<T extends DateValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: DateFieldRootProps<T>) {\n  const styles = React.useMemo(() => dateFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <DateFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"date-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </DateFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DateFieldRoot};\n\nexport type {DateFieldRootProps};\n",
+  "description": "",
+  "tags": [
+    "input",
+    "date"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "date-field_date-field",
+      "name": "date-field",
+      "path": "packages/react/src/components/date-field/date-field.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_date-field_date-field",
+      "name": "date-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/date-field/date-field.tsx",
+          "content": "\"use client\";\n\nimport type {DateFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {DateValue} from \"react-aria-components/Calendar\";\n\nimport {dateFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {DateField as DateFieldPrimitive} from \"react-aria-components/DateField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * DateField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DateFieldRootProps<T extends DateValue>\n  extends ComponentPropsWithRef<typeof DateFieldPrimitive<T>>, DateFieldVariants {}\n\nfunction DateFieldRoot<T extends DateValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: DateFieldRootProps<T>) {\n  const styles = React.useMemo(() => dateFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <DateFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"date-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </DateFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DateFieldRoot};\n\nexport type {DateFieldRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "component_type": "other",
+  "visual_summary": "A customizable input field for dates. This component is used when a user needs to select a date within an application.",
+  "style_tags": [
+    "customizable"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: date-field\nDescription: A customizable input field for dates. This component is used when a user needs to select a date within an application.\nStyle: customizable\nInteractions: clickable\nTags: input, date\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/date-field/date-field.tsx\n\"use client\";\n\nimport type {DateFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {DateValue} from \"react-aria-components/Calendar\";\n\nimport {dateFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {DateField as DateFieldPrimitive} from \"react-aria-components/DateField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/co",
+  "prompt_version": 2,
+  "clean_id": "date-field",
+  "display_name": "Date Field",
+  "preview_url": "/previews/heroui/packages-react-src-components-date-field-date-field.png"
+}

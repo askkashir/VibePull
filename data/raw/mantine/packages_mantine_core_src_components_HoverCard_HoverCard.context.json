@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_HoverCard_HoverCard.context",
+  "name": "HoverCard.context",
+  "source_code": "// packages/@mantine/core/src/components/HoverCard/HoverCard.context.ts\nimport { createSafeContext } from '../../core';\n\nexport interface HoverCardContextValue {\n  openDropdown: () => void;\n  closeDropdown: () => void;\n  getReferenceProps?: () => any;\n  getFloatingProps?: () => any;\n  reference?: (node: HTMLElement | null) => void;\n  floating?: (node: HTMLElement | null) => void;\n}\n\nexport const [HoverCardContext, useHoverCardContext] = createSafeContext<HoverCardContextValue>(\n  'HoverCard component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "HoverCard_HoverCard.context",
+      "name": "HoverCard.context",
+      "path": "packages/@mantine/core/src/components/HoverCard/HoverCard.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_HoverCard_HoverCard.context",
+      "name": "HoverCard.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/HoverCard/HoverCard.context.ts",
+          "content": "import { createSafeContext } from '../../core';\n\nexport interface HoverCardContextValue {\n  openDropdown: () => void;\n  closeDropdown: () => void;\n  getReferenceProps?: () => any;\n  getFloatingProps?: () => any;\n  reference?: (node: HTMLElement | null) => void;\n  floating?: (node: HTMLElement | null) => void;\n}\n\nexport const [HoverCardContext, useHoverCardContext] = createSafeContext<HoverCardContextValue>(\n  'HoverCard component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

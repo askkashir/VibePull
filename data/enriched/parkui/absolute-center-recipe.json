@@ -1,0 +1,59 @@
+{
+  "id": "absolute-center-recipe",
+  "name": "absolute-center-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/absolute-center.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const absoluteCenter = defineRecipe({\n  className: 'absolute-center',\n  base: {\n    position: 'absolute',\n    display: 'flex',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  defaultVariants: {\n    axis: 'both',\n  },\n  variants: {\n    axis: {\n      horizontal: {\n        insetStart: '50%',\n        translate: '-50%',\n        _rtl: {\n          translate: '50%',\n        },\n      },\n      vertical: {\n        top: '50%',\n        translate: '0 -50%',\n      },\n      both: {\n        insetStart: '50%',\n        top: '50%',\n        translate: '-50% -50%',\n        _rtl: {\n          translate: '50% -50%',\n        },\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "absolute",
+    "center",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "absolute-center-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/absolute-center.ts",
+          "type": "registry:recipe",
+          "imports": "import { absoluteCenter } from './absolute-center'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const absoluteCenter = defineRecipe({\n  className: 'absolute-center',\n  base: {\n    position: 'absolute',\n    display: 'flex',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  defaultVariants: {\n    axis: 'both',\n  },\n  variants: {\n    axis: {\n      horizontal: {\n        insetStart: '50%',\n        translate: '-50%',\n        _rtl: {\n          translate: '50%',\n        },\n      },\n      vertical: {\n        top: '50%',\n        translate: '0 -50%',\n      },\n      both: {\n        insetStart: '50%',\n        top: '50%',\n        translate: '-50% -50%',\n        _rtl: {\n          translate: '50% -50%',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "absolute-center-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/absolute-center.ts",
+          "type": "registry:recipe",
+          "imports": "import { absoluteCenter } from './absolute-center'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const absoluteCenter = defineRecipe({\n  className: 'absolute-center',\n  base: {\n    position: 'absolute',\n    display: 'flex',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  defaultVariants: {\n    axis: 'both',\n  },\n  variants: {\n    axis: {\n      horizontal: {\n        insetStart: '50%',\n        translate: '-50%',\n        _rtl: {\n          translate: '50%',\n        },\n      },\n      vertical: {\n        top: '50%',\n        translate: '0 -50%',\n      },\n      both: {\n        insetStart: '50%',\n        top: '50%',\n        translate: '-50% -50%',\n        _rtl: {\n          translate: '50% -50%',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "absolute-center-recipe is a absolute center recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: absolute-center-recipe\nDescription: absolute-center-recipe is a absolute center recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: absolute, center, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/absolute-center.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const absoluteCenter = defineRecipe({\n  className: 'absolute-center',\n  base: {\n    position: 'absolute',\n    display: 'flex',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n  defaultVariants: {\n    axis: 'both',\n  },\n  variants: {\n    axis: {\n      horizontal: {\n        insetStart: '50%',\n        translate: '-50%',\n        _rtl: {\n          translate: '50%',\n        },\n    ",
+  "prompt_version": 2,
+  "clean_id": "absolute-center-recipe",
+  "display_name": "Absolute Center Recipe",
+  "preview_url": "/previews/parkui/absolute-center-recipe.png"
+}

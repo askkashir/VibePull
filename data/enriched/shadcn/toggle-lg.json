@@ -1,0 +1,40 @@
+{
+  "id": "toggle-lg",
+  "name": "toggle-lg",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "switch",
+    "toggle",
+    "settings",
+    "preferences"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-lg",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-lg\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A Toggle-Large component is a large, toggleable switch that can be used to turn on or off a feature or setting within an application. It is typically placed near related settings or preferences. This component is suitable for applications with complex settings that require a visual indication of the state.",
+  "style_tags": [
+    "e.g. material design"
+  ],
+  "interaction_tags": [
+    "e.g. clicked",
+    "hovered",
+    "pressed"
+  ],
+  "component_type": "toggle",
+  "generation_prompt": "Create a production-ready toggle component with the following characteristics:\n\nName: toggle-lg\nDescription: A Toggle-Large component is a large, toggleable switch that can be used to turn on or off a feature or setting within an application. It is typically placed near related settings or preferences. This component is suitable for applications with complex settings that require a visual indication of the state.\nStyle: e.g. material design\nInteractions: e.g. clicked, hovered, pressed\nTags: switch, toggle, settings, preferences\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-lg",
+  "display_name": "Toggle Lg",
+  "preview_url": "/previews/shadcn/toggle-lg.png"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_Notification_index",
+  "name": "Notification",
+  "source_code": "// packages/@mantine/core/src/components/Notification/index.ts\nimport type {\n  NotificationCssVariables,\n  NotificationFactory,\n  NotificationProps,\n  NotificationStylesNames,\n} from './Notification';\n\nexport { Notification } from './Notification';\n\nexport type {\n  NotificationProps,\n  NotificationStylesNames,\n  NotificationFactory,\n  NotificationCssVariables,\n};\n",
+  "description": "",
+  "tags": [
+    "notification",
+    "popup",
+    "alert"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Notification_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Notification/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Notification_index",
+      "name": "Notification",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Notification/index.ts",
+          "content": "import type {\n  NotificationCssVariables,\n  NotificationFactory,\n  NotificationProps,\n  NotificationStylesNames,\n} from './Notification';\n\nexport { Notification } from './Notification';\n\nexport type {\n  NotificationProps,\n  NotificationStylesNames,\n  NotificationFactory,\n  NotificationCssVariables,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A pop-up notification can be displayed to inform the user about a specific action or event. It can have a variety of icons, messages, and alert types. This component is typically used to grab the user's attention and notify them of something important.",
+  "style_tags": [
+    "flat",
+    "rounded",
+    "animated"
+  ],
+  "interaction_tags": [
+    "dismissable",
+    "auto-hiding",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Notification\nDescription: A pop-up notification can be displayed to inform the user about a specific action or event. It can have a variety of icons, messages, and alert types. This component is typically used to grab the user's attention and notify them of something important.\nStyle: flat, rounded, animated\nInteractions: dismissable, auto-hiding, clickable\nTags: notification, popup, alert\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Notification/index.ts\nimport type {\n  NotificationCssVariables,\n  NotificationFactory,\n  NotificationProps,\n  NotificationStylesNames,\n} from './Notification';\n\nexport { Notification } from './Notification';\n\nexport type {\n  NotificationProps,\n  NotificationStylesNames,\n  NotificationFactory,\n  NotificationCssVariables,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "notification",
+  "display_name": "Notification",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-notification-index.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "form-rhf-radiogroup",
+  "name": "form-rhf-radiogroup",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "radio-buttons",
+    "controlled-component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-radiogroup",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-radiogroup\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "The form-rhf-radiogroup component is a controlled RadioGroup component from the react-hook-form library. It is used to create radio buttons where only one option can be selected at a time. This is suitable for when you need a simple selection of options within a form.",
+  "style_tags": [],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-radiogroup\nDescription: The form-rhf-radiogroup component is a controlled RadioGroup component from the react-hook-form library. It is used to create radio buttons where only one option can be selected at a time. This is suitable for when you need a simple selection of options within a form.\nStyle: \nInteractions: clickable\nTags: form, radio-buttons, controlled-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-radiogroup",
+  "display_name": "Form Rhf Radiogroup",
+  "preview_url": "/previews/shadcn/form-rhf-radiogroup.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-precision_get-precision",
+  "name": "get-precision",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-precision/get-precision.ts\nexport function getPrecision(step: number) {\n  if (!step) {\n    return 0;\n  }\n  const split = step.toString().split('.');\n  return split.length > 1 ? split[1].length : 0;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-precision_get-precision",
+      "name": "get-precision",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-precision/get-precision.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-precision_get-precision",
+      "name": "get-precision",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-precision/get-precision.ts",
+          "content": "export function getPrecision(step: number) {\n  if (!step) {\n    return 0;\n  }\n  const split = step.toString().split('.');\n  return split.length > 1 ? split[1].length : 0;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

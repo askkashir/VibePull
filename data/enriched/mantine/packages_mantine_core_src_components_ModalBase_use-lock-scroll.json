@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-lock-scroll",
+  "name": "use-lock-scroll",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts\nimport { useEffect, useRef, useState } from 'react';\nimport { useReducedMotion } from '@mantine/hooks';\n\ninterface UseScrollLock {\n  opened: boolean;\n  transitionDuration: number;\n}\n\nexport function useLockScroll({ opened, transitionDuration }: UseScrollLock) {\n  const [shouldLockScroll, setShouldLockScroll] = useState(opened);\n  const timeout = useRef<number>(-1);\n  const reduceMotion = useReducedMotion();\n  const _transitionDuration = reduceMotion ? 0 : transitionDuration;\n\n  useEffect(() => {\n    if (opened) {\n      setShouldLockScroll(true);\n      window.clearTimeout(timeout.current);\n    } else if (_transitionDuration === 0) {\n      setShouldLockScroll(false);\n    } else {\n      timeout.current = window.setTimeout(() => setShouldLockScroll(false), _transitionDuration);\n    }\n\n    return () => window.clearTimeout(timeout.current);\n  }, [opened, _transitionDuration]);\n\n  return shouldLockScroll;\n}\n",
+  "description": "",
+  "tags": [
+    "lock",
+    "mantine",
+    "other",
+    "scroll",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-lock-scroll",
+      "name": "use-lock-scroll",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-lock-scroll",
+      "name": "use-lock-scroll",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts",
+          "content": "import { useEffect, useRef, useState } from 'react';\nimport { useReducedMotion } from '@mantine/hooks';\n\ninterface UseScrollLock {\n  opened: boolean;\n  transitionDuration: number;\n}\n\nexport function useLockScroll({ opened, transitionDuration }: UseScrollLock) {\n  const [shouldLockScroll, setShouldLockScroll] = useState(opened);\n  const timeout = useRef<number>(-1);\n  const reduceMotion = useReducedMotion();\n  const _transitionDuration = reduceMotion ? 0 : transitionDuration;\n\n  useEffect(() => {\n    if (opened) {\n      setShouldLockScroll(true);\n      window.clearTimeout(timeout.current);\n    } else if (_transitionDuration === 0) {\n      setShouldLockScroll(false);\n    } else {\n      timeout.current = window.setTimeout(() => setShouldLockScroll(false), _transitionDuration);\n    }\n\n    return () => window.clearTimeout(timeout.current);\n  }, [opened, _transitionDuration]);\n\n  return shouldLockScroll;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-lock-scroll is a use lock scroll UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: use-lock-scroll\nDescription: use-lock-scroll is a use lock scroll UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated\nTags: lock, mantine, other, scroll, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/use-lock-scroll.ts\nimport { useEffect, useRef, useState } from 'react';\nimport { useReducedMotion } from '@mantine/hooks';\n\ninterface UseScrollLock {\n  opened: boolean;\n  transitionDuration: number;\n}\n\nexport function useLockScroll({ opened, transitionDuration }: UseScrollLock) {\n  const [shouldLockScroll, setShouldLockScroll] = useState(opened);\n  const timeout = useRef<number>(-1);\n  const reduceMotion = useReducedMotion();\n  const _transition",
+  "prompt_version": 2,
+  "clean_id": "use-lock-scroll",
+  "display_name": "Use Lock Scroll",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-use-lock-scroll.png"
+}

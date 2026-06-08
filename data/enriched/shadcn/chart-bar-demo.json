@@ -1,0 +1,41 @@
+{
+  "id": "chart-bar-demo",
+  "name": "chart-bar-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "data-visualization",
+    "categorical-data"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Chart Bar Demo is a chart component that represents data as bars, ideal for visualizing categorical data and comparing different values. It's a simple and easy-to-use component, perfect for adding a touch of interactivity to your charts. Developers can use this component when they need to display complex data in an intuitive way, making it easy for users to understand.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "material-ui"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "responsive"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-bar-demo\nDescription: Chart Bar Demo is a chart component that represents data as bars, ideal for visualizing categorical data and comparing different values. It's a simple and easy-to-use component, perfect for adding a touch of interactivity to your charts. Developers can use this component when they need to display complex data in an intuitive way, making it easy for users to understand.\nStyle: modern, flat, material-ui\nInteractions: hover, clickable, responsive\nTags: chart, data-visualization, categorical-data\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-bar-demo",
+  "display_name": "Chart Bar Demo",
+  "preview_url": "/previews/shadcn/chart-bar-demo.png"
+}

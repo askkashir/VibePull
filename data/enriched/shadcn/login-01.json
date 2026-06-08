@@ -1,0 +1,42 @@
+{
+  "id": "login-01",
+  "name": "login-01",
+  "source_code": "",
+  "description": "A simple login form.",
+  "tags": [
+    "form",
+    "login",
+    "authentication",
+    "registry"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-01",
+      "type": "registry:block",
+      "description": "A simple login form.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-01\n\nA simple login form.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A basic login form with input fields for username and password, accompanied by a submit button. It is commonly used in applications requiring user authentication and authorization. Developers would use this component as part of a registration, login, or forgot password flow.",
+  "style_tags": [
+    "default",
+    "white",
+    "clean"
+  ],
+  "interaction_tags": [
+    "enabled only when form is visible",
+    "submittable on click"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: login-01\nDescription: A basic login form with input fields for username and password, accompanied by a submit button. It is commonly used in applications requiring user authentication and authorization. Developers would use this component as part of a registration, login, or forgot password flow.\nStyle: default, white, clean\nInteractions: enabled only when form is visible, submittable on click\nTags: form, login, authentication, registry\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "login-01",
+  "display_name": "Login 01",
+  "preview_url": "/previews/shadcn/login-01.png"
+}

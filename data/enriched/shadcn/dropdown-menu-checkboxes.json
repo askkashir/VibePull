@@ -1,0 +1,38 @@
+{
+  "id": "dropdown-menu-checkboxes",
+  "name": "dropdown-menu-checkboxes",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "checkboxes",
+    "multiple-selection",
+    "settings"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dropdown-menu-checkboxes",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dropdown-menu-checkboxes\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A dropdown menu containing checkbox options, useful for selecting multiple items. Developers can use it when users need to choose multiple options from a list, such as preferences or settings.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "dropdown",
+  "generation_prompt": "Create a production-ready dropdown component with the following characteristics:\n\nName: dropdown-menu-checkboxes\nDescription: A dropdown menu containing checkbox options, useful for selecting multiple items. Developers can use it when users need to choose multiple options from a list, such as preferences or settings.\nStyle: default\nInteractions: clickable\nTags: dropdown, checkboxes, multiple-selection, settings\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "dropdown-menu-checkboxes",
+  "display_name": "Dropdown Menu Checkboxes",
+  "preview_url": "/previews/shadcn/dropdown-menu-checkboxes.png"
+}

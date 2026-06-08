@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_RingProgress_get-curves_get-curves",
+  "name": "get-curves",
+  "source_code": "// packages/@mantine/core/src/components/RingProgress/get-curves/get-curves.ts\nimport type { DataAttributes, MantineColor } from '../../../core';\n\ninterface CurveData extends React.ComponentProps<'circle'>, DataAttributes {\n  value: number;\n  color: MantineColor;\n  tooltip?: React.ReactNode;\n}\n\ninterface RootCurveData extends React.ComponentProps<'circle'>, DataAttributes {\n  value?: never;\n  color?: MantineColor;\n}\n\ninterface GetCurves {\n  sections: CurveData[];\n  size: number;\n  thickness: number;\n  renderRoundedLineCaps: boolean | undefined;\n  rootColor?: MantineColor;\n  sectionGap?: number;\n}\n\ninterface Curve {\n  sum: number;\n  offset: number;\n  root: boolean;\n  data: CurveData | RootCurveData;\n  lineRoundCaps?: boolean;\n}\n\nexport function getCurves({\n  size,\n  thickness,\n  sections,\n  renderRoundedLineCaps,\n  rootColor,\n  sectionGap = 0,\n}: GetCurves) {\n  const sum = sections.reduce((acc, current) => acc + current.value, 0);\n  const accumulated = Math.PI * ((size * 0.9 - thickness * 2) / 2) * 2;\n  let offset = accumulated;\n  const curves: Curve[] = [];\n  const curvesInOrder: Curve[] = [];\n\n  // Convert gap from degrees to percentage of the circle\n  const gapPercentage = (sectionGap / 360) * 100;\n\n  for (let i = 0; i < sections.length; i += 1) {\n    // Reduce section value by gap amount to create visual separation\n    const adjustedValue = Math.max(0, sections[i].value - gapPercentage);\n    curves.push({ sum, offset, data: { ...sections[i], value: adjustedValue }, root: false });\n    offset -= (sections[i].value / 100) * accumulated;\n  }\n\n  curves.push({ sum, offset, data: { color: rootColor }, root: true });\n\n  // Reorder curves to layer appropriately and selectively set caps to round\n\n  curvesInOrder.push({ ...curves[curves.length - 1], lineRoundCaps: false });\n  if (curves.length > 2) {\n    curvesInOrder.push({ ...curves[0], lineRoundCaps: renderRoundedLineCaps });\n    curvesInOrder.push({ ...curves[curves.length - 2], lineRoundCaps: renderRoundedLineCaps });\n    for (let i = 1; i <= curves.length - 3; i += 1) {\n      curvesInOrder.push({ ...curves[i], lineRoundCaps: false });\n    }\n  } else {\n    curvesInOrder.push({ ...curves[0], lineRoundCaps: renderRoundedLineCaps });\n  }\n\n  return curvesInOrder;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RingProgress_get-curves_get-curves",
+      "name": "get-curves",
+      "path": "packages/@mantine/core/src/components/RingProgress/get-curves/get-curves.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RingProgress_get-curves_get-curves",
+      "name": "get-curves",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RingProgress/get-curves/get-curves.ts",
+          "content": "import type { DataAttributes, MantineColor } from '../../../core';\n\ninterface CurveData extends React.ComponentProps<'circle'>, DataAttributes {\n  value: number;\n  color: MantineColor;\n  tooltip?: React.ReactNode;\n}\n\ninterface RootCurveData extends React.ComponentProps<'circle'>, DataAttributes {\n  value?: never;\n  color?: MantineColor;\n}\n\ninterface GetCurves {\n  sections: CurveData[];\n  size: number;\n  thickness: number;\n  renderRoundedLineCaps: boolean | undefined;\n  rootColor?: MantineColor;\n  sectionGap?: number;\n}\n\ninterface Curve {\n  sum: number;\n  offset: number;\n  root: boolean;\n  data: CurveData | RootCurveData;\n  lineRoundCaps?: boolean;\n}\n\nexport function getCurves({\n  size,\n  thickness,\n  sections,\n  renderRoundedLineCaps,\n  rootColor,\n  sectionGap = 0,\n}: GetCurves) {\n  const sum = sections.reduce((acc, current) => acc + current.value, 0);\n  const accumulated = Math.PI * ((size * 0.9 - thickness * 2) / 2) * 2;\n  let offset = accumulated;\n  const curves: Curve[] = [];\n  const curvesInOrder: Curve[] = [];\n\n  // Convert gap from degrees to percentage of the circle\n  const gapPercentage = (sectionGap / 360) * 100;\n\n  for (let i = 0; i < sections.length; i += 1) {\n    // Reduce section value by gap amount to create visual separation\n    const adjustedValue = Math.max(0, sections[i].value - gapPercentage);\n    curves.push({ sum, offset, data: { ...sections[i], value: adjustedValue }, root: false });\n    offset -= (sections[i].value / 100) * accumulated;\n  }\n\n  curves.push({ sum, offset, data: { color: rootColor }, root: true });\n\n  // Reorder curves to layer appropriately and selectively set caps to round\n\n  curvesInOrder.push({ ...curves[curves.length - 1], lineRoundCaps: false });\n  if (curves.length > 2) {\n    curvesInOrder.push({ ...curves[0], lineRoundCaps: renderRoundedLineCaps });\n    curvesInOrder.push({ ...curves[curves.length - 2], lineRoundCaps: renderRoundedLineCaps });\n    for (let i = 1; i <= curves.length - 3; i += 1) {\n      curvesInOrder.push({ ...curves[i], lineRoundCaps: false });\n    }\n  } else {\n    curvesInOrder.push({ ...curves[0], lineRoundCaps: renderRoundedLineCaps });\n  }\n\n  return curvesInOrder;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

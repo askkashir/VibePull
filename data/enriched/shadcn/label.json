@@ -1,0 +1,37 @@
+{
+  "id": "label",
+  "name": "label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "text-based",
+    "description",
+    "prompt"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "label",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## label\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A label is a text-based UI component that provides a short description or prompt to users. It can be used to add context to other interactive elements, such as input fields or buttons. Typically, a label is displayed in a plain text format with an optional decorative icon.",
+  "style_tags": [
+    "standard",
+    "simple",
+    "inline"
+  ],
+  "interaction_tags": [],
+  "component_type": "label",
+  "generation_prompt": "Create a production-ready label component with the following characteristics:\n\nName: label\nDescription: A label is a text-based UI component that provides a short description or prompt to users. It can be used to add context to other interactive elements, such as input fields or buttons. Typically, a label is displayed in a plain text format with an optional decorative icon.\nStyle: standard, simple, inline\nInteractions: \nTags: text-based, description, prompt\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "label",
+  "display_name": "Label",
+  "preview_url": "/previews/shadcn/label.png"
+}

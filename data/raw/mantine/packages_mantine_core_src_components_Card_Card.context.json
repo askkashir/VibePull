@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Card_Card.context",
+  "name": "Card.context",
+  "source_code": "// packages/@mantine/core/src/components/Card/Card.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { CardFactory } from './Card';\n\nexport interface CardContextValue {\n  getStyles: GetStylesApi<CardFactory>;\n}\n\nexport const [CardProvider, useCardContext] = createSafeContext<CardContextValue>(\n  'Card component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Card_Card.context",
+      "name": "Card.context",
+      "path": "packages/@mantine/core/src/components/Card/Card.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Card_Card.context",
+      "name": "Card.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Card/Card.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { CardFactory } from './Card';\n\nexport interface CardContextValue {\n  getStyles: GetStylesApi<CardFactory>;\n}\n\nexport const [CardProvider, useCardContext] = createSafeContext<CardContextValue>(\n  'Card component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

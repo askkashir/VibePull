@@ -1,0 +1,22 @@
+{
+  "id": "input-with-label",
+  "name": "input-with-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-with-label",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-with-label\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

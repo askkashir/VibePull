@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tree_filter-tree-data_filter-tree-data",
+  "name": "filter-tree-data",
+  "source_code": "// packages/@mantine/core/src/components/Tree/filter-tree-data/filter-tree-data.ts\nimport type { TreeNodeData } from '../Tree';\n\nexport type TreeNodeFilter = (query: string, node: TreeNodeData) => boolean;\n\nexport function defaultTreeNodeFilter(query: string, node: TreeNodeData): boolean {\n  const label = typeof node.label === 'string' ? node.label : node.value;\n  return label.toLowerCase().includes(query.toLowerCase().trim());\n}\n\nexport function filterTreeData(\n  data: TreeNodeData[],\n  query: string,\n  filter: TreeNodeFilter = defaultTreeNodeFilter\n): TreeNodeData[] {\n  if (!query.trim()) {\n    return data;\n  }\n\n  const result: TreeNodeData[] = [];\n\n  for (const node of data) {\n    const nodeMatches = filter(query, node);\n    const filteredChildren =\n      Array.isArray(node.children) && node.children.length > 0\n        ? filterTreeData(node.children, query, filter)\n        : [];\n\n    if (nodeMatches || filteredChildren.length > 0) {\n      result.push(\n        filteredChildren.length > 0 ? { ...node, children: filteredChildren } : { ...node }\n      );\n    }\n  }\n\n  return result;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tree_filter-tree-data_filter-tree-data",
+      "name": "filter-tree-data",
+      "path": "packages/@mantine/core/src/components/Tree/filter-tree-data/filter-tree-data.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tree_filter-tree-data_filter-tree-data",
+      "name": "filter-tree-data",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tree/filter-tree-data/filter-tree-data.ts",
+          "content": "import type { TreeNodeData } from '../Tree';\n\nexport type TreeNodeFilter = (query: string, node: TreeNodeData) => boolean;\n\nexport function defaultTreeNodeFilter(query: string, node: TreeNodeData): boolean {\n  const label = typeof node.label === 'string' ? node.label : node.value;\n  return label.toLowerCase().includes(query.toLowerCase().trim());\n}\n\nexport function filterTreeData(\n  data: TreeNodeData[],\n  query: string,\n  filter: TreeNodeFilter = defaultTreeNodeFilter\n): TreeNodeData[] {\n  if (!query.trim()) {\n    return data;\n  }\n\n  const result: TreeNodeData[] = [];\n\n  for (const node of data) {\n    const nodeMatches = filter(query, node);\n    const filteredChildren =\n      Array.isArray(node.children) && node.children.length > 0\n        ? filterTreeData(node.children, query, filter)\n        : [];\n\n    if (nodeMatches || filteredChildren.length > 0) {\n      result.push(\n        filteredChildren.length > 0 ? { ...node, children: filteredChildren } : { ...node }\n      );\n    }\n  }\n\n  return result;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

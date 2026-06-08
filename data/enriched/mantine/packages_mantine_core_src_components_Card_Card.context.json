@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Card_Card.context",
+  "name": "Card.context",
+  "source_code": "// packages/@mantine/core/src/components/Card/Card.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { CardFactory } from './Card';\n\nexport interface CardContextValue {\n  getStyles: GetStylesApi<CardFactory>;\n}\n\nexport const [CardProvider, useCardContext] = createSafeContext<CardContextValue>(\n  'Card component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "Card",
+    "wrapper",
+    "styles"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Card_Card.context",
+      "name": "Card.context",
+      "path": "packages/@mantine/core/src/components/Card/Card.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Card_Card.context",
+      "name": "Card.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Card/Card.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { CardFactory } from './Card';\n\nexport interface CardContextValue {\n  getStyles: GetStylesApi<CardFactory>;\n}\n\nexport const [CardProvider, useCardContext] = createSafeContext<CardContextValue>(\n  'Card component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A wrapper component that provides Card styles and utilities. Use Card.context when you need to access Card's styles or context in your application. Developers would use it to avoid repetitive styling for Card components.",
+  "style_tags": [
+    "e.g. Material inspired"
+  ],
+  "interaction_tags": [],
+  "component_type": "wrapper",
+  "generation_prompt": "Create a production-ready wrapper component with the following characteristics:\n\nName: Card.context\nDescription: A wrapper component that provides Card styles and utilities. Use Card.context when you need to access Card's styles or context in your application. Developers would use it to avoid repetitive styling for Card components.\nStyle: e.g. Material inspired\nInteractions: \nTags: Card, wrapper, styles\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Card/Card.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { CardFactory } from './Card';\n\nexport interface CardContextValue {\n  getStyles: GetStylesApi<CardFactory>;\n}\n\nexport const [CardProvider, useCardContext] = createSafeContext<CardContextValue>(\n  'Card component was not found in tree'\n);\n",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-card-card-context.png"
+}

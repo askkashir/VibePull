@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_PaginationDots_PaginationDots",
+  "name": "PaginationDots",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/PaginationDots/PaginationDots.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport { PaginationDotsIcon, PaginationIconProps } from '../Pagination.icons';\nimport classes from '../Pagination.module.css';\n\nexport type PaginationDotsStylesNames = 'dots';\n\nexport interface PaginationDotsProps\n  extends BoxProps, CompoundStylesApiProps<PaginationDotsFactory>, ElementProps<'div'> {\n  /** Custom dots icon component, must accept svg element props and size prop */\n  icon?: React.FC<PaginationIconProps>;\n}\n\nexport type PaginationDotsFactory = Factory<{\n  props: PaginationDotsProps;\n  ref: HTMLDivElement;\n  stylesNames: PaginationDotsStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  icon: PaginationDotsIcon,\n} satisfies Partial<PaginationDotsProps>;\n\nexport const PaginationDots = factory<PaginationDotsFactory>((_props) => {\n  const props = useProps('PaginationDots', defaultProps, _props);\n  const { classNames, className, style, styles, vars, icon: Icon, ...others } = props;\n  const ctx = usePaginationContext();\n\n  return (\n    <Box {...ctx.getStyles('dots', { className, style, styles, classNames })} {...others}>\n      <Icon\n        style={{\n          width: 'calc(var(--pagination-control-size) / 1.8)',\n          height: 'calc(var(--pagination-control-size) / 1.8)',\n        }}\n      />\n    </Box>\n  );\n});\n\nPaginationDots.classes = classes;\nPaginationDots.displayName = '@mantine/core/PaginationDots';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_PaginationDots_PaginationDots",
+      "name": "PaginationDots",
+      "path": "packages/@mantine/core/src/components/Pagination/PaginationDots/PaginationDots.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_PaginationDots_PaginationDots",
+      "name": "PaginationDots",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/PaginationDots/PaginationDots.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport { PaginationDotsIcon, PaginationIconProps } from '../Pagination.icons';\nimport classes from '../Pagination.module.css';\n\nexport type PaginationDotsStylesNames = 'dots';\n\nexport interface PaginationDotsProps\n  extends BoxProps, CompoundStylesApiProps<PaginationDotsFactory>, ElementProps<'div'> {\n  /** Custom dots icon component, must accept svg element props and size prop */\n  icon?: React.FC<PaginationIconProps>;\n}\n\nexport type PaginationDotsFactory = Factory<{\n  props: PaginationDotsProps;\n  ref: HTMLDivElement;\n  stylesNames: PaginationDotsStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  icon: PaginationDotsIcon,\n} satisfies Partial<PaginationDotsProps>;\n\nexport const PaginationDots = factory<PaginationDotsFactory>((_props) => {\n  const props = useProps('PaginationDots', defaultProps, _props);\n  const { classNames, className, style, styles, vars, icon: Icon, ...others } = props;\n  const ctx = usePaginationContext();\n\n  return (\n    <Box {...ctx.getStyles('dots', { className, style, styles, classNames })} {...others}>\n      <Icon\n        style={{\n          width: 'calc(var(--pagination-control-size) / 1.8)',\n          height: 'calc(var(--pagination-control-size) / 1.8)',\n        }}\n      />\n    </Box>\n  );\n});\n\nPaginationDots.classes = classes;\nPaginationDots.displayName = '@mantine/core/PaginationDots';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

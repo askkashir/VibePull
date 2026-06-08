@@ -1,0 +1,22 @@
+{
+  "id": "carousel-orientation",
+  "name": "carousel-orientation",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-orientation",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-orientation\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

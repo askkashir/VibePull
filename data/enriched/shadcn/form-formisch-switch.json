@@ -1,0 +1,41 @@
+{
+  "id": "form-formisch-switch",
+  "name": "form-formisch-switch",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form component",
+    "toggle switch",
+    "settings menu"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-switch",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-switch\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "visual_summary": "The Formisch Switch is a visually appealing toggle switch component that can be used to let users choose between two distinct options. It's often found in forms or settings menus where users need to select a binary choice. Developers would typically use it in a user profile settings page or a preference panel.",
+  "style_tags": [
+    "e.g., material",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g., animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-formisch-switch\nDescription: The Formisch Switch is a visually appealing toggle switch component that can be used to let users choose between two distinct options. It's often found in forms or settings menus where users need to select a binary choice. Developers would typically use it in a user profile settings page or a preference panel.\nStyle: e.g., material, minimal, glassmorphism\nInteractions: e.g., animated, hover, clickable\nTags: form component, toggle switch, settings menu\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-formisch-switch",
+  "display_name": "Form Formisch Switch",
+  "preview_url": "/previews/shadcn/form-formisch-switch.png"
+}

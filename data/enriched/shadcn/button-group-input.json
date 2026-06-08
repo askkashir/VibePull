@@ -1,0 +1,43 @@
+{
+  "id": "button-group-input",
+  "name": "button-group-input",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button_group",
+    "input",
+    "form_element",
+    "selection",
+    "multiple_options"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-input",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-input\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Button Group Input is a horizontal collection of input buttons, typically used in forms, that allow the user to select or interact with multiple options. It is commonly used when a single button is not sufficient to convey a action or selection. This component is ideal for scenarios requiring multiple options such as filtering or categorizing.",
+  "style_tags": [
+    "flat",
+    "bordered",
+    "rounded",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-input\nDescription: The Button Group Input is a horizontal collection of input buttons, typically used in forms, that allow the user to select or interact with multiple options. It is commonly used when a single button is not sufficient to convey a action or selection. This component is ideal for scenarios requiring multiple options such as filtering or categorizing.\nStyle: flat, bordered, rounded, customizable\nInteractions: clickable, hover\nTags: button_group, input, form_element, selection, multiple_options\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-input",
+  "display_name": "Button Group Input",
+  "preview_url": "/previews/shadcn/button-group-input.png"
+}

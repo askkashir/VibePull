@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Collapse_Collapse.story",
+  "name": "Collapse.story",
+  "source_code": "// packages/@mantine/core/src/components/Collapse/Collapse.story.tsx\nimport { useEffect, useRef, useState } from 'react';\nimport { Button, NumberInput, Stack } from '../..';\nimport { Text } from '../Text';\nimport { Collapse } from './Collapse';\n\nexport default { title: 'Collapse' };\n\nfunction Component() {\n  const random = useRef(Math.random());\n  useEffect(() => {\n    console.log('mounted');\n    return () => {\n      console.log('unmounted');\n    };\n  }, []);\n\n  return (\n    <Text>\n      {random.current}: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\n      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\n      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint\n      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\n      laborum.\n    </Text>\n  );\n}\n\nexport function Usage() {\n  const [opened, setOpened] = useState(false);\n\n  return (\n    <div style={{ maxWidth: 400, background: 'pink' }}>\n      <Button onClick={() => setOpened((o) => !o)} mb=\"md\">\n        Toggle content\n      </Button>\n\n      <Collapse expanded={opened} keepMounted={false}>\n        <Component />\n      </Collapse>\n    </div>\n  );\n}\n\nexport function WithActivityStatePreservation() {\n  const [opened, setOpened] = useState(true);\n  const [value, setValue] = useState(42);\n\n  return (\n    <Stack maw={400} p=\"md\">\n      <Text size=\"sm\" c=\"dimmed\">\n        <strong>keepMounted + Activity</strong>: the NumberInput value is preserved when the panel\n        collapses and re-expands. Compare to the unmounted variant below where state resets.\n      </Text>\n\n      <Button onClick={() => setOpened((o) => !o)}>{opened ? 'Collapse' : 'Expand'}</Button>\n\n      <Collapse expanded={opened} keepMounted>\n        <Stack gap=\"xs\" p=\"md\" style={{ background: '#f0f4ff', borderRadius: 8 }}>\n          <Text fw={600}>keepMounted (Activity)</Text>\n          <NumberInput\n            label=\"Value survives collapse\"\n            value={value}\n            onChange={(v) => setValue(typeof v === 'number' ? v : 0)}\n          />\n        </Stack>\n      </Collapse>\n\n      <Text size=\"xs\" c=\"dimmed\">\n        Value reported outside panel: <strong>{value}</strong>\n      </Text>\n    </Stack>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "collapse",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Collapse_Collapse.story",
+      "name": "Collapse.story",
+      "path": "packages/@mantine/core/src/components/Collapse/Collapse.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Collapse_Collapse.story",
+      "name": "Collapse.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Collapse/Collapse.story.tsx",
+          "content": "import { useEffect, useRef, useState } from 'react';\nimport { Button, NumberInput, Stack } from '../..';\nimport { Text } from '../Text';\nimport { Collapse } from './Collapse';\n\nexport default { title: 'Collapse' };\n\nfunction Component() {\n  const random = useRef(Math.random());\n  useEffect(() => {\n    console.log('mounted');\n    return () => {\n      console.log('unmounted');\n    };\n  }, []);\n\n  return (\n    <Text>\n      {random.current}: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\n      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\n      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint\n      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\n      laborum.\n    </Text>\n  );\n}\n\nexport function Usage() {\n  const [opened, setOpened] = useState(false);\n\n  return (\n    <div style={{ maxWidth: 400, background: 'pink' }}>\n      <Button onClick={() => setOpened((o) => !o)} mb=\"md\">\n        Toggle content\n      </Button>\n\n      <Collapse expanded={opened} keepMounted={false}>\n        <Component />\n      </Collapse>\n    </div>\n  );\n}\n\nexport function WithActivityStatePreservation() {\n  const [opened, setOpened] = useState(true);\n  const [value, setValue] = useState(42);\n\n  return (\n    <Stack maw={400} p=\"md\">\n      <Text size=\"sm\" c=\"dimmed\">\n        <strong>keepMounted + Activity</strong>: the NumberInput value is preserved when the panel\n        collapses and re-expands. Compare to the unmounted variant below where state resets.\n      </Text>\n\n      <Button onClick={() => setOpened((o) => !o)}>{opened ? 'Collapse' : 'Expand'}</Button>\n\n      <Collapse expanded={opened} keepMounted>\n        <Stack gap=\"xs\" p=\"md\" style={{ background: '#f0f4ff', borderRadius: 8 }}>\n          <Text fw={600}>keepMounted (Activity)</Text>\n          <NumberInput\n            label=\"Value survives collapse\"\n            value={value}\n            onChange={(v) => setValue(typeof v === 'number' ? v : 0)}\n          />\n        </Stack>\n      </Collapse>\n\n      <Text size=\"xs\" c=\"dimmed\">\n        Value reported outside panel: <strong>{value}</strong>\n      </Text>\n    </Stack>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Collapse.story is a collapse story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Collapse.story\nDescription: Collapse.story is a collapse story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: collapse, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Collapse/Collapse.story.tsx\nimport { useEffect, useRef, useState } from 'react';\nimport { Button, NumberInput, Stack } from '../..';\nimport { Text } from '../Text';\nimport { Collapse } from './Collapse';\n\nexport default { title: 'Collapse' };\n\nfunction Component() {\n  const random = useRef(Math.random());\n  useEffect(() => {\n    console.log('mounted');\n    return () => {\n      console.log('unmounted');\n    };\n  }, []);\n\n  return (\n    <Text>\n      {random",
+  "prompt_version": 2,
+  "clean_id": "collapse",
+  "display_name": "Collapse",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-collapse-collapse-story.png"
+}

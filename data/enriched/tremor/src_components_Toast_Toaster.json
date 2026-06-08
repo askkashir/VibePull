@@ -1,0 +1,48 @@
+{
+  "id": "src_components_Toast_Toaster",
+  "name": "Toaster",
+  "source_code": "// src/components/Toast/Toaster.tsx\n// Tremor Toaster [v0.0.0]\n\n\"use client\"\n\nimport { useToast } from \"../../hooks/useToast\"\nimport { Toast, ToastProvider, ToastViewport } from \"./Toast.tsx\"\n\nconst Toaster = () => {\n  const { toasts } = useToast()\n\n  return (\n    <ToastProvider swipeDirection=\"right\">\n      {toasts.map(({ id, ...props }) => {\n        return <Toast key={id} {...props} />\n      })}\n      <ToastViewport />\n    </ToastProvider>\n  )\n}\n\nexport { Toaster }\n",
+  "description": "",
+  "tags": [
+    "toaster",
+    "toast-notification",
+    "status-updates",
+    "message-displays"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "Toast_Toaster",
+      "name": "Toaster",
+      "path": "src/components/Toast/Toaster.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_Toast_Toaster",
+      "name": "Toaster",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Toast/Toaster.tsx",
+          "content": "// Tremor Toaster [v0.0.0]\n\n\"use client\"\n\nimport { useToast } from \"../../hooks/useToast\"\nimport { Toast, ToastProvider, ToastViewport } from \"./Toast.tsx\"\n\nconst Toaster = () => {\n  const { toasts } = useToast()\n\n  return (\n    <ToastProvider swipeDirection=\"right\">\n      {toasts.map(({ id, ...props }) => {\n        return <Toast key={id} {...props} />\n      })}\n      <ToastViewport />\n    </ToastProvider>\n  )\n}\n\nexport { Toaster }\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Toaster component displays a series of toast notifications in a viewport, swiping from right to left. Developers would use it to handle various status updates, success messages, and errors in their application. The toasts can have various styles and interactions.",
+  "style_tags": [
+    "default",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Toaster\nDescription: The Toaster component displays a series of toast notifications in a viewport, swiping from right to left. Developers would use it to handle various status updates, success messages, and errors in their application. The toasts can have various styles and interactions.\nStyle: default, customizable\nInteractions: animated, clickable\nTags: toaster, toast-notification, status-updates, message-displays\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/Toast/Toaster.tsx\n// Tremor Toaster [v0.0.0]\n\n\"use client\"\n\nimport { useToast } from \"../../hooks/useToast\"\nimport { Toast, ToastProvider, ToastViewport } from \"./Toast.tsx\"\n\nconst Toaster = () => {\n  const { toasts } = useToast()\n\n  return (\n    <ToastProvider swipeDirection=\"right\">\n      {toasts.map(({ id, ...props }) => {\n        return <Toast key={id} {...props} />\n      })}\n      <ToastViewport />\n    </ToastProvider>\n  )\n}\n\nexport { Toaster }\n",
+  "prompt_version": 2,
+  "clean_id": "toaster",
+  "display_name": "Toaster",
+  "preview_url": "/previews/tremor/src-components-toast-toaster.png"
+}

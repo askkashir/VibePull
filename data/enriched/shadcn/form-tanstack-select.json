@@ -1,0 +1,26 @@
+{
+  "id": "form-tanstack-select",
+  "name": "form-tanstack-select",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-select",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-select\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called form-tanstack-select. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "form-tanstack-select",
+  "display_name": "Form Tanstack Select"
+}

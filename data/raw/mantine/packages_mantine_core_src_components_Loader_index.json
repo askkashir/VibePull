@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_index",
+  "name": "Loader",
+  "source_code": "// packages/@mantine/core/src/components/Loader/index.ts\nimport type { LoaderCssVariables, LoaderFactory, LoaderProps, LoaderStylesNames } from './Loader';\nimport type {\n  MantineLoader,\n  MantineLoaderComponent,\n  MantineLoadersRecord,\n  SvgLoaderProps,\n} from './Loader.types';\n\nexport { Loader, defaultLoaders } from './Loader';\n\nexport type {\n  LoaderProps,\n  LoaderStylesNames,\n  LoaderCssVariables,\n  LoaderFactory,\n  MantineLoader,\n  SvgLoaderProps,\n  MantineLoadersRecord,\n  MantineLoaderComponent,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Loader/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_index",
+      "name": "Loader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/index.ts",
+          "content": "import type { LoaderCssVariables, LoaderFactory, LoaderProps, LoaderStylesNames } from './Loader';\nimport type {\n  MantineLoader,\n  MantineLoaderComponent,\n  MantineLoadersRecord,\n  SvgLoaderProps,\n} from './Loader.types';\n\nexport { Loader, defaultLoaders } from './Loader';\n\nexport type {\n  LoaderProps,\n  LoaderStylesNames,\n  LoaderCssVariables,\n  LoaderFactory,\n  MantineLoader,\n  SvgLoaderProps,\n  MantineLoadersRecord,\n  MantineLoaderComponent,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

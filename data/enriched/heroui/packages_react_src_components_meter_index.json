@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_meter_index",
+  "name": "meter",
+  "source_code": "// packages/react/src/components/meter/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {MeterFill, MeterOutput, MeterRoot, MeterTrack} from \"./meter\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Meter = Object.assign(MeterRoot, {\n  Root: MeterRoot,\n  Output: MeterOutput,\n  Track: MeterTrack,\n  Fill: MeterFill,\n});\n\nexport type Meter = {\n  Props: ComponentProps<typeof MeterRoot>;\n  RootProps: ComponentProps<typeof MeterRoot>;\n  OutputProps: ComponentProps<typeof MeterOutput>;\n  TrackProps: ComponentProps<typeof MeterTrack>;\n  FillProps: ComponentProps<typeof MeterFill>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MeterRoot, MeterOutput, MeterTrack, MeterFill};\n\nexport type {\n  MeterRootProps,\n  MeterRootProps as MeterProps,\n  MeterOutputProps,\n  MeterTrackProps,\n  MeterFillProps,\n} from \"./meter\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {meterVariants} from \"@heroui/styles\";\n\nexport type {MeterVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "progress",
+    "visualization",
+    "tracking"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "meter_index",
+      "name": "index",
+      "path": "packages/react/src/components/meter/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_meter_index",
+      "name": "meter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/meter/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {MeterFill, MeterOutput, MeterRoot, MeterTrack} from \"./meter\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Meter = Object.assign(MeterRoot, {\n  Root: MeterRoot,\n  Output: MeterOutput,\n  Track: MeterTrack,\n  Fill: MeterFill,\n});\n\nexport type Meter = {\n  Props: ComponentProps<typeof MeterRoot>;\n  RootProps: ComponentProps<typeof MeterRoot>;\n  OutputProps: ComponentProps<typeof MeterOutput>;\n  TrackProps: ComponentProps<typeof MeterTrack>;\n  FillProps: ComponentProps<typeof MeterFill>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MeterRoot, MeterOutput, MeterTrack, MeterFill};\n\nexport type {\n  MeterRootProps,\n  MeterRootProps as MeterProps,\n  MeterOutputProps,\n  MeterTrackProps,\n  MeterFillProps,\n} from \"./meter\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {meterVariants} from \"@heroui/styles\";\n\nexport type {MeterVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A meter component is used to display progress or a value within a track. It is typically used to visualize data, track progress, or display statistics. Developers would use a meter when they need to communicate a specific value, progress, or status to the user.",
+  "style_tags": [
+    "default",
+    "customizable"
+  ],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: meter\nDescription: A meter component is used to display progress or a value within a track. It is typically used to visualize data, track progress, or display statistics. Developers would use a meter when they need to communicate a specific value, progress, or status to the user.\nStyle: default, customizable\nInteractions: \nTags: progress, visualization, tracking\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/meter/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {MeterFill, MeterOutput, MeterRoot, MeterTrack} from \"./meter\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Meter = Object.assign(MeterRoot, {\n  Root: MeterRoot,\n  Output: MeterOutput,\n  Track: MeterTrack,\n ",
+  "prompt_version": 2,
+  "clean_id": "meter",
+  "display_name": "Meter",
+  "preview_url": "/previews/heroui/packages-react-src-components-meter-index.png"
+}

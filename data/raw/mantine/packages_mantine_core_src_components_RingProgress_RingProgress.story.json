@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_RingProgress_RingProgress.story",
+  "name": "RingProgress.story",
+  "source_code": "// packages/@mantine/core/src/components/RingProgress/RingProgress.story.tsx\nimport { RingProgress } from './RingProgress';\n\nexport default { title: 'RingProgress' };\n\nexport function ColorsIndex() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        label=\"Hello\"\n        sectionGap={2}\n        startAngle={45}\n        sections={[\n          {\n            value: 10,\n            color: 'blue.4',\n          },\n          {\n            value: 10,\n            color: 'red.1',\n          },\n          {\n            value: 10,\n            color: 'orange.9',\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function ThicknessOverlap() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        size={60}\n        thickness={22}\n        sections={[\n          {\n            value: 10,\n            color: 'blue.4',\n          },\n          {\n            value: 40,\n            color: 'red.1',\n          },\n          {\n            value: 30,\n            color: 'orange.9',\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithTooltips() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan', tooltip: 'Hello' },\n          { value: 20, color: 'blue', tooltip: 'There' },\n          { value: 15, color: 'indigo', tooltip: 'You' },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        unstyled\n        sections={[\n          { value: 40, color: 'cyan', tooltip: 'Hello' },\n          { value: 20, color: 'blue', tooltip: 'There' },\n          { value: 15, color: 'indigo', tooltip: 'You' },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithSectionProps() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan', onClick: () => console.log('1') },\n          { value: 20, color: 'blue', onClick: () => console.log('2') },\n          { value: 15, color: 'indigo', onClick: () => console.log('3') },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithRootColor() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan' },\n          { value: 20, color: 'blue' },\n          { value: 15, color: 'indigo' },\n        ]}\n        rootColor=\"red\"\n      />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RingProgress_RingProgress.story",
+      "name": "RingProgress.story",
+      "path": "packages/@mantine/core/src/components/RingProgress/RingProgress.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RingProgress_RingProgress.story",
+      "name": "RingProgress.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RingProgress/RingProgress.story.tsx",
+          "content": "import { RingProgress } from './RingProgress';\n\nexport default { title: 'RingProgress' };\n\nexport function ColorsIndex() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        label=\"Hello\"\n        sectionGap={2}\n        startAngle={45}\n        sections={[\n          {\n            value: 10,\n            color: 'blue.4',\n          },\n          {\n            value: 10,\n            color: 'red.1',\n          },\n          {\n            value: 10,\n            color: 'orange.9',\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function ThicknessOverlap() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        size={60}\n        thickness={22}\n        sections={[\n          {\n            value: 10,\n            color: 'blue.4',\n          },\n          {\n            value: 40,\n            color: 'red.1',\n          },\n          {\n            value: 30,\n            color: 'orange.9',\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithTooltips() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan', tooltip: 'Hello' },\n          { value: 20, color: 'blue', tooltip: 'There' },\n          { value: 15, color: 'indigo', tooltip: 'You' },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        unstyled\n        sections={[\n          { value: 40, color: 'cyan', tooltip: 'Hello' },\n          { value: 20, color: 'blue', tooltip: 'There' },\n          { value: 15, color: 'indigo', tooltip: 'You' },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithSectionProps() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan', onClick: () => console.log('1') },\n          { value: 20, color: 'blue', onClick: () => console.log('2') },\n          { value: 15, color: 'indigo', onClick: () => console.log('3') },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function WithRootColor() {\n  return (\n    <div style={{ padding: 40 }}>\n      <RingProgress\n        sections={[\n          { value: 40, color: 'cyan' },\n          { value: 20, color: 'blue' },\n          { value: 15, color: 'indigo' },\n        ]}\n        rootColor=\"red\"\n      />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorInput_ColorInput.story",
+  "name": "ColorInput.story",
+  "source_code": "// packages/@mantine/core/src/components/ColorInput/ColorInput.story.tsx\nimport { ColorInput } from './ColorInput';\n\nexport default { title: 'ColorInput' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorInput\n        wrapperProps={{ 'data-test': 'hello' }}\n        size=\"xl\"\n        popoverProps={{ opened: true }}\n      />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorInput unstyled label=\"Unstyled\" />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorInput_ColorInput.story",
+      "name": "ColorInput.story",
+      "path": "packages/@mantine/core/src/components/ColorInput/ColorInput.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorInput_ColorInput.story",
+      "name": "ColorInput.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorInput/ColorInput.story.tsx",
+          "content": "import { ColorInput } from './ColorInput';\n\nexport default { title: 'ColorInput' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorInput\n        wrapperProps={{ 'data-test': 'hello' }}\n        size=\"xl\"\n        popoverProps={{ opened: true }}\n      />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorInput unstyled label=\"Unstyled\" />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

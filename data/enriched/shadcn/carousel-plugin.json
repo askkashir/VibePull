@@ -1,0 +1,42 @@
+{
+  "id": "carousel-plugin",
+  "name": "carousel-plugin",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "UI element",
+    "navigation",
+    "slider",
+    "gallery"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-plugin",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-plugin\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The carousel-plugin is a flexible, horizontal scrolling layout component used to showcase or navigate through multiple pieces of content, featuring multiple slides or cards that can be controlled via navigation buttons, often used in portfolio sections or product showcases.",
+  "style_tags": [
+    "materialistic",
+    "customizable",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: carousel-plugin\nDescription: The carousel-plugin is a flexible, horizontal scrolling layout component used to showcase or navigate through multiple pieces of content, featuring multiple slides or cards that can be controlled via navigation buttons, often used in portfolio sections or product showcases.\nStyle: materialistic, customizable, responsive\nInteractions: animated, clickable, draggable\nTags: UI element, navigation, slider, gallery\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "carousel-plugin",
+  "display_name": "Carousel Plugin",
+  "preview_url": "/previews/shadcn/carousel-plugin.png"
+}

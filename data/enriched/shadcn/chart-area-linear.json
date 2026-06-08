@@ -1,0 +1,43 @@
+{
+  "id": "chart-area-linear",
+  "name": "chart-area-linear",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "linear",
+    "progress",
+    "metric",
+    "visualisation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-linear",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-linear\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Chart Area Linear component is a reusable UI block that displays a linear chart with a defined area. Developers would use this component to showcase progress, sales data, or other metric-based information on a website or application. It typically consists of a bar or line chart with interactive functionality.",
+  "style_tags": [
+    "e.g. material",
+    "modern",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-linear\nDescription: The Chart Area Linear component is a reusable UI block that displays a linear chart with a defined area. Developers would use this component to showcase progress, sales data, or other metric-based information on a website or application. It typically consists of a bar or line chart with interactive functionality.\nStyle: e.g. material, modern, flat\nInteractions: e.g. hover, clickable, animated\nTags: chart, linear, progress, metric, visualisation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-linear",
+  "display_name": "Chart Area Linear",
+  "preview_url": "/previews/shadcn/chart-area-linear.png"
+}

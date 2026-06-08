@@ -1,0 +1,39 @@
+{
+  "id": "spinner-basic",
+  "name": "spinner-basic",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "Loading Indicator",
+    "Waiting State",
+    "Animation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-basic",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-basic\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A basic spinner component is a simple circular or oval-shaped animation used to indicate waiting or loading states. It is commonly used on buttons, forms, and other interactive elements for a short duration to prevent users from clicking repeatedly while the application processes something. This component typically blends in with its surrounding environment without drawing attention.",
+  "style_tags": [
+    "Simple",
+    "Material"
+  ],
+  "interaction_tags": [
+    "Animated",
+    "None (passive)"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner-basic\nDescription: A basic spinner component is a simple circular or oval-shaped animation used to indicate waiting or loading states. It is commonly used on buttons, forms, and other interactive elements for a short duration to prevent users from clicking repeatedly while the application processes something. This component typically blends in with its surrounding environment without drawing attention.\nStyle: Simple, Material\nInteractions: Animated, None (passive)\nTags: Loading Indicator, Waiting State, Animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-basic",
+  "display_name": "Spinner Basic",
+  "preview_url": "/previews/shadcn/spinner-basic.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_menu_menu",
+  "name": "menu",
+  "source_code": "// packages/react/src/components/menu/menu.tsx\n\"use client\";\n\nimport type {MenuVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {Menu as MenuPrimitive} from \"react-aria-components/Menu\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof MenuPrimitive<T>>, MenuVariants {\n  className?: string;\n}\n\nfunction MenuRoot<T extends object>({className, ...props}: MenuRootProps<T>) {\n  const styles = React.useMemo(() => menuVariants(), []);\n\n  return (\n    <MenuPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"menu\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuRoot};\n\nexport type {MenuRootProps};\n",
+  "description": "",
+  "tags": [
+    "menu",
+    "navbar",
+    "navigation"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "menu_menu",
+      "name": "menu",
+      "path": "packages/react/src/components/menu/menu.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_menu_menu",
+      "name": "menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/menu/menu.tsx",
+          "content": "\"use client\";\n\nimport type {MenuVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {Menu as MenuPrimitive} from \"react-aria-components/Menu\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof MenuPrimitive<T>>, MenuVariants {\n  className?: string;\n}\n\nfunction MenuRoot<T extends object>({className, ...props}: MenuRootProps<T>) {\n  const styles = React.useMemo(() => menuVariants(), []);\n\n  return (\n    <MenuPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"menu\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuRoot};\n\nexport type {MenuRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Menu component is a navigation toolbar that provides access to multiple items or options. It is used when developers want to offer various choices to users.",
+  "style_tags": [
+    "default",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: menu\nDescription: Menu component is a navigation toolbar that provides access to multiple items or options. It is used when developers want to offer various choices to users.\nStyle: default, minimal, glassmorphism\nInteractions: \nTags: menu, navbar, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/menu/menu.tsx\n\"use client\";\n\nimport type {MenuVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {Menu as MenuPrimitive} from \"react-aria-components/Menu\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Root\n * ------------------------------",
+  "prompt_version": 2,
+  "clean_id": "menu",
+  "display_name": "Menu",
+  "preview_url": "/previews/heroui/packages-react-src-components-menu-menu.png"
+}

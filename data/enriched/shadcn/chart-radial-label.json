@@ -1,0 +1,39 @@
+{
+  "id": "chart-radial-label",
+  "name": "chart-radial-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radial",
+    "progress",
+    "ratio"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radial-label",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radial-label\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-radial-label component displays a circular chart with a central label. It is typically used to visualize progress or ratio values. Developers would use this component in contexts where a simple, data-driven design is required.",
+  "style_tags": [
+    "material",
+    "compact"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radial-label\nDescription: The chart-radial-label component displays a circular chart with a central label. It is typically used to visualize progress or ratio values. Developers would use this component in contexts where a simple, data-driven design is required.\nStyle: material, compact\nInteractions: clickable\nTags: chart, radial, progress, ratio\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radial-label",
+  "display_name": "Chart Radial Label",
+  "preview_url": "/previews/shadcn/chart-radial-label.png"
+}

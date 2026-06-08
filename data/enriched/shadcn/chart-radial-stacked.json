@@ -1,0 +1,38 @@
+{
+  "id": "chart-radial-stacked",
+  "name": "chart-radial-stacked",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radial",
+    "stacked",
+    "data visualization",
+    "dashboard component",
+    "analytics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radial-stacked",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radial-stacked\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A radial chart displaying stacked data, typically used to visualize progress, metrics, or hierarchical data in an application, such as a dashboard or analytics page",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radial-stacked\nDescription: A radial chart displaying stacked data, typically used to visualize progress, metrics, or hierarchical data in an application, such as a dashboard or analytics page\nStyle: modern\nInteractions: \nTags: chart, radial, stacked, data visualization, dashboard component, analytics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radial-stacked",
+  "display_name": "Chart Radial Stacked",
+  "preview_url": "/previews/shadcn/chart-radial-stacked.png"
+}

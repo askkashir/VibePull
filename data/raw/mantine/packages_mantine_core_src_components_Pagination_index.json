@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_index",
+  "name": "Pagination",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/index.ts\nimport type {\n  PaginationCssVariables,\n  PaginationFactory,\n  PaginationProps,\n  PaginationStylesNames,\n} from './Pagination';\nimport type { PaginationContextValue } from './Pagination.context';\nimport type { PaginationControlProps } from './PaginationControl/PaginationControl';\nimport type { PaginationDotsProps } from './PaginationDots/PaginationDots';\nimport type { PaginationEdgeProps } from './PaginationEdges/PaginationEdges';\nimport type { PaginationItemsProps } from './PaginationItems/PaginationItems';\nimport type {\n  PaginationFormatLabel,\n  PaginationLabelProps,\n} from './PaginationLabel/PaginationLabel';\nimport type { PaginationRootProps } from './PaginationRoot/PaginationRoot';\n\nexport { Pagination } from './Pagination';\nexport { PaginationControl } from './PaginationControl/PaginationControl';\nexport { PaginationDots } from './PaginationDots/PaginationDots';\nexport {\n  PaginationFirst,\n  PaginationLast,\n  PaginationNext,\n  PaginationPrevious,\n} from './PaginationEdges/PaginationEdges';\nexport { PaginationItems } from './PaginationItems/PaginationItems';\nexport { PaginationLabel } from './PaginationLabel/PaginationLabel';\nexport { PaginationRoot } from './PaginationRoot/PaginationRoot';\nexport { usePaginationContext } from './Pagination.context';\n\nexport type {\n  PaginationProps,\n  PaginationStylesNames,\n  PaginationCssVariables,\n  PaginationFactory,\n  PaginationRootProps,\n  PaginationControlProps,\n  PaginationDotsProps,\n  PaginationEdgeProps,\n  PaginationItemsProps,\n  PaginationLabelProps,\n  PaginationFormatLabel,\n  PaginationContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Pagination/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_index",
+      "name": "Pagination",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/index.ts",
+          "content": "import type {\n  PaginationCssVariables,\n  PaginationFactory,\n  PaginationProps,\n  PaginationStylesNames,\n} from './Pagination';\nimport type { PaginationContextValue } from './Pagination.context';\nimport type { PaginationControlProps } from './PaginationControl/PaginationControl';\nimport type { PaginationDotsProps } from './PaginationDots/PaginationDots';\nimport type { PaginationEdgeProps } from './PaginationEdges/PaginationEdges';\nimport type { PaginationItemsProps } from './PaginationItems/PaginationItems';\nimport type {\n  PaginationFormatLabel,\n  PaginationLabelProps,\n} from './PaginationLabel/PaginationLabel';\nimport type { PaginationRootProps } from './PaginationRoot/PaginationRoot';\n\nexport { Pagination } from './Pagination';\nexport { PaginationControl } from './PaginationControl/PaginationControl';\nexport { PaginationDots } from './PaginationDots/PaginationDots';\nexport {\n  PaginationFirst,\n  PaginationLast,\n  PaginationNext,\n  PaginationPrevious,\n} from './PaginationEdges/PaginationEdges';\nexport { PaginationItems } from './PaginationItems/PaginationItems';\nexport { PaginationLabel } from './PaginationLabel/PaginationLabel';\nexport { PaginationRoot } from './PaginationRoot/PaginationRoot';\nexport { usePaginationContext } from './Pagination.context';\n\nexport type {\n  PaginationProps,\n  PaginationStylesNames,\n  PaginationCssVariables,\n  PaginationFactory,\n  PaginationRootProps,\n  PaginationControlProps,\n  PaginationDotsProps,\n  PaginationEdgeProps,\n  PaginationItemsProps,\n  PaginationLabelProps,\n  PaginationFormatLabel,\n  PaginationContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "button-group-dropdown",
+  "name": "button-group-dropdown",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "dropdown",
+    "navigation",
+    "filter"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-dropdown",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-dropdown\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The button-group-dropdown is a component that combines a button group and a dropdown menu. It allows users to select from multiple options and is commonly used in navigation or as a way to filter data. This component is useful for applications where multiple actions or options need to be displayed in a compact and accessible way.",
+  "style_tags": [
+    "e.g. rounded",
+    "flat",
+    "inverse"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-dropdown\nDescription: The button-group-dropdown is a component that combines a button group and a dropdown menu. It allows users to select from multiple options and is commonly used in navigation or as a way to filter data. This component is useful for applications where multiple actions or options need to be displayed in a compact and accessible way.\nStyle: e.g. rounded, flat, inverse\nInteractions: e.g. animated, hover, clickable\nTags: button, dropdown, navigation, filter\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-dropdown",
+  "display_name": "Button Group Dropdown",
+  "preview_url": "/previews/shadcn/button-group-dropdown.png"
+}

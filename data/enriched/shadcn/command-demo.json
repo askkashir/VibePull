@@ -1,0 +1,46 @@
+{
+  "id": "command-demo",
+  "name": "command-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "interactive",
+    "utility",
+    "scenarios",
+    "commands",
+    "guidelines",
+    "icons",
+    "action-oriented"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "command-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## command-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Command Demo component, a versatile utility, typically employed in interactive scenarios. It facilitates the presentation of command prompts, instructions, or guidelines, often accompanied by icons and action-oriented elements. Developers would utilize this component to improve user experience and streamline navigation.",
+  "style_tags": [
+    "material-design",
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable",
+    "draggable",
+    "scrollable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: command-demo\nDescription: The Command Demo component, a versatile utility, typically employed in interactive scenarios. It facilitates the presentation of command prompts, instructions, or guidelines, often accompanied by icons and action-oriented elements. Developers would utilize this component to improve user experience and streamline navigation.\nStyle: material-design, minimal, flat\nInteractions: clickable, tappable, draggable, scrollable\nTags: interactive, utility, scenarios, commands, guidelines, icons, action-oriented\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "command-demo",
+  "display_name": "Command Demo",
+  "preview_url": "/previews/shadcn/command-demo.png"
+}

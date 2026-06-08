@@ -1,0 +1,45 @@
+{
+  "id": "src_components_PreviewRefs",
+  "name": "PreviewRefs",
+  "source_code": "// src/components/PreviewRefs.astro\n---\ninterface Props {\n  refs: string[]\n  url: string\n  prefix?: string\n}\n\nconst { refs, url, prefix } = Astro.props\n---\n\n{\n  refs.length ? (\n    <p class=\"text-sm text-gray-500\">\n      {prefix ? `${prefix} ` : null}\n      {refs\n        .map((ref) => (\n          <a\n            href={`${url}${ref}`}\n            target=\"_blank\"\n            rel=\"noreferrer\"\n            class=\"font-medium transition-colors hover:text-gray-900\"\n          >\n            {ref}\n          </a>\n        ))\n        .reduce((prev, current) => [prev, ', ', current])}\n    </p>\n  ) : null\n}\n",
+  "description": "",
+  "tags": [
+    "reference",
+    "external link",
+    "list"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewRefs",
+      "name": "PreviewRefs",
+      "path": "src/components/PreviewRefs.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewRefs",
+      "name": "PreviewRefs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewRefs.astro",
+          "content": "---\ninterface Props {\n  refs: string[]\n  url: string\n  prefix?: string\n}\n\nconst { refs, url, prefix } = Astro.props\n---\n\n{\n  refs.length ? (\n    <p class=\"text-sm text-gray-500\">\n      {prefix ? `${prefix} ` : null}\n      {refs\n        .map((ref) => (\n          <a\n            href={`${url}${ref}`}\n            target=\"_blank\"\n            rel=\"noreferrer\"\n            class=\"font-medium transition-colors hover:text-gray-900\"\n          >\n            {ref}\n          </a>\n        ))\n        .reduce((prev, current) => [prev, ', ', current])}\n    </p>\n  ) : null\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "PreviewRefs displays a list of external references in a paragraph when provided a list of refs and a URL prefix. It's used when listing external resources, similar content, or references from other sources.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: PreviewRefs\nDescription: PreviewRefs displays a list of external references in a paragraph when provided a list of refs and a URL prefix. It's used when listing external resources, similar content, or references from other sources.\nStyle: minimal\nInteractions: hover\nTags: reference, external link, list\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/PreviewRefs.astro\n---\ninterface Props {\n  refs: string[]\n  url: string\n  prefix?: string\n}\n\nconst { refs, url, prefix } = Astro.props\n---\n\n{\n  refs.length ? (\n    <p class=\"text-sm text-gray-500\">\n      {prefix ? `${prefix} ` : null}\n      {refs\n        .map((ref) => (\n          <a\n            href={`${url}${ref}`}\n            target=\"_blank\"\n            rel=\"noreferrer\"\n            class=\"font-medium transition-colors hover:text-gray-900\"\n          >\n            {ref}\n        ",
+  "prompt_version": 2,
+  "clean_id": "preview-refs",
+  "display_name": "Preview Refs",
+  "preview_url": "/previews/hyperui/src-components-previewrefs.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Radio_index",
+  "name": "Radio",
+  "source_code": "// packages/@mantine/core/src/components/Radio/index.ts\nimport type {\n  RadioCssVariables,\n  RadioFactory,\n  RadioProps,\n  RadioStylesNames,\n  RadioVariant,\n} from './Radio';\nimport type {\n  RadioCardContextValue,\n  RadioCardCssVariables,\n  RadioCardFactory,\n  RadioCardProps,\n  RadioCardStylesNames,\n} from './RadioCard/RadioCard';\nimport type {\n  RadioGroupContextValue,\n  RadioGroupFactory,\n  RadioGroupProps,\n  RadioGroupStylesNames,\n} from './RadioGroup/RadioGroup';\nimport type { RadioIconProps } from './RadioIcon';\nimport type {\n  RadioIndicatorCssVariables,\n  RadioIndicatorFactory,\n  RadioIndicatorProps,\n  RadioIndicatorStylesNames,\n  RadioIndicatorVariant,\n} from './RadioIndicator/RadioIndicator';\n\nexport { Radio } from './Radio';\nexport { RadioGroup, RadioGroupContext } from './RadioGroup/RadioGroup';\nexport { RadioIcon } from './RadioIcon';\nexport { RadioCard, RadioCardContext } from './RadioCard/RadioCard';\nexport { RadioIndicator } from './RadioIndicator/RadioIndicator';\n\nexport type {\n  RadioProps,\n  RadioStylesNames,\n  RadioFactory,\n  RadioCssVariables,\n  RadioVariant,\n  RadioIconProps,\n  RadioGroupProps,\n  RadioGroupStylesNames,\n  RadioGroupFactory,\n  RadioGroupContextValue,\n  RadioCardProps,\n  RadioCardStylesNames,\n  RadioCardFactory,\n  RadioCardCssVariables,\n  RadioCardContextValue,\n  RadioIndicatorProps,\n  RadioIndicatorStylesNames,\n  RadioIndicatorFactory,\n  RadioIndicatorCssVariables,\n  RadioIndicatorVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Radio_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Radio/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Radio_index",
+      "name": "Radio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Radio/index.ts",
+          "content": "import type {\n  RadioCssVariables,\n  RadioFactory,\n  RadioProps,\n  RadioStylesNames,\n  RadioVariant,\n} from './Radio';\nimport type {\n  RadioCardContextValue,\n  RadioCardCssVariables,\n  RadioCardFactory,\n  RadioCardProps,\n  RadioCardStylesNames,\n} from './RadioCard/RadioCard';\nimport type {\n  RadioGroupContextValue,\n  RadioGroupFactory,\n  RadioGroupProps,\n  RadioGroupStylesNames,\n} from './RadioGroup/RadioGroup';\nimport type { RadioIconProps } from './RadioIcon';\nimport type {\n  RadioIndicatorCssVariables,\n  RadioIndicatorFactory,\n  RadioIndicatorProps,\n  RadioIndicatorStylesNames,\n  RadioIndicatorVariant,\n} from './RadioIndicator/RadioIndicator';\n\nexport { Radio } from './Radio';\nexport { RadioGroup, RadioGroupContext } from './RadioGroup/RadioGroup';\nexport { RadioIcon } from './RadioIcon';\nexport { RadioCard, RadioCardContext } from './RadioCard/RadioCard';\nexport { RadioIndicator } from './RadioIndicator/RadioIndicator';\n\nexport type {\n  RadioProps,\n  RadioStylesNames,\n  RadioFactory,\n  RadioCssVariables,\n  RadioVariant,\n  RadioIconProps,\n  RadioGroupProps,\n  RadioGroupStylesNames,\n  RadioGroupFactory,\n  RadioGroupContextValue,\n  RadioCardProps,\n  RadioCardStylesNames,\n  RadioCardFactory,\n  RadioCardCssVariables,\n  RadioCardContextValue,\n  RadioIndicatorProps,\n  RadioIndicatorStylesNames,\n  RadioIndicatorFactory,\n  RadioIndicatorCssVariables,\n  RadioIndicatorVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

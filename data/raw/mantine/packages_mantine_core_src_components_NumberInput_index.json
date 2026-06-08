@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_NumberInput_index",
+  "name": "NumberInput",
+  "source_code": "// packages/@mantine/core/src/components/NumberInput/index.ts\nimport type {\n  NumberInputCssVariables,\n  NumberInputFactory,\n  NumberInputHandlers,\n  NumberInputMode,\n  NumberInputNumericType,\n  NumberInputProps,\n  NumberInputStylesNames,\n} from './NumberInput';\n\nexport { NumberInput } from './NumberInput';\n\nexport type {\n  NumberInputProps,\n  NumberInputStylesNames,\n  NumberInputFactory,\n  NumberInputCssVariables,\n  NumberInputHandlers,\n  NumberInputMode,\n  NumberInputNumericType,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NumberInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/NumberInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NumberInput_index",
+      "name": "NumberInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NumberInput/index.ts",
+          "content": "import type {\n  NumberInputCssVariables,\n  NumberInputFactory,\n  NumberInputHandlers,\n  NumberInputMode,\n  NumberInputNumericType,\n  NumberInputProps,\n  NumberInputStylesNames,\n} from './NumberInput';\n\nexport { NumberInput } from './NumberInput';\n\nexport type {\n  NumberInputProps,\n  NumberInputStylesNames,\n  NumberInputFactory,\n  NumberInputCssVariables,\n  NumberInputHandlers,\n  NumberInputMode,\n  NumberInputNumericType,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

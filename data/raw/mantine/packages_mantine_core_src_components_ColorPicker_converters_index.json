@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_converters_index",
+  "name": "converters",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/converters/index.ts\nexport { convertHsvaTo } from './converters';\nexport { parseColor, isColorValid } from './parsers';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_converters_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ColorPicker/converters/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_converters_index",
+      "name": "converters",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/converters/index.ts",
+          "content": "export { convertHsvaTo } from './converters';\nexport { parseColor, isColorValid } from './parsers';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

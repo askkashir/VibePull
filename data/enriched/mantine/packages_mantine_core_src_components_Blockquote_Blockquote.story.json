@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Blockquote_Blockquote.story",
+  "name": "Blockquote.story",
+  "source_code": "// packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx\nimport { InfoIcon } from '@phosphor-icons/react';\nimport { rem } from '../../core';\nimport { Blockquote } from './Blockquote';\n\nexport default { title: 'Blockquote' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}>\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote\n        unstyled\n        icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}\n        color=\"#F0000E\"\n      >\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "blockquote",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Blockquote_Blockquote.story",
+      "name": "Blockquote.story",
+      "path": "packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Blockquote_Blockquote.story",
+      "name": "Blockquote.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx",
+          "content": "import { InfoIcon } from '@phosphor-icons/react';\nimport { rem } from '../../core';\nimport { Blockquote } from './Blockquote';\n\nexport default { title: 'Blockquote' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}>\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote\n        unstyled\n        icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}\n        color=\"#F0000E\"\n      >\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Blockquote.story is a blockquote story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Blockquote.story\nDescription: Blockquote.story is a blockquote story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: blockquote, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx\nimport { InfoIcon } from '@phosphor-icons/react';\nimport { rem } from '../../core';\nimport { Blockquote } from './Blockquote';\n\nexport default { title: 'Blockquote' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}>\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur a",
+  "prompt_version": 2,
+  "clean_id": "blockquote",
+  "display_name": "Blockquote",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-blockquote-blockquote-story.png"
+}

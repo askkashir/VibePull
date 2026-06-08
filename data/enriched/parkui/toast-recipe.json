@@ -1,0 +1,63 @@
+{
+  "id": "toast-recipe",
+  "name": "toast-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/toast.ts\nimport { toastAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toast = defineSlotRecipe({\n  className: 'toast',\n  slots: toastAnatomy.keys(),\n  base: {\n    root: {\n      alignItems: 'start',\n      background: 'gray.surface.bg',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      gap: '4',\n      height: 'var(--height)',\n      minWidth: 'sm',\n      opacity: 'var(--opacity)',\n      overflowWrap: 'anywhere',\n      p: '4',\n      position: 'relative',\n      scale: 'var(--scale)',\n      transitionDuration: 'slow',\n      transitionProperty: 'translate, scale, opacity, height',\n      transitionTimingFunction: 'default',\n      translate: 'var(--x) var(--y)',\n      width: 'full',\n      willChange: 'translate, opacity, scale',\n      zIndex: 'var(--z-index)',\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'sm',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    actionTrigger: {\n      color: 'colorPalette.plain.fg',\n      cursor: 'pointer',\n      fontWeight: 'semibold',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '2',\n      insetEnd: '2',\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "other",
+    "parkui",
+    "recipe",
+    "toast"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "toast-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/toast.ts",
+          "type": "registry:recipe",
+          "imports": "import { toast } from './toast'",
+          "content": "import { toastAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toast = defineSlotRecipe({\n  className: 'toast',\n  slots: toastAnatomy.keys(),\n  base: {\n    root: {\n      alignItems: 'start',\n      background: 'gray.surface.bg',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      gap: '4',\n      height: 'var(--height)',\n      minWidth: 'sm',\n      opacity: 'var(--opacity)',\n      overflowWrap: 'anywhere',\n      p: '4',\n      position: 'relative',\n      scale: 'var(--scale)',\n      transitionDuration: 'slow',\n      transitionProperty: 'translate, scale, opacity, height',\n      transitionTimingFunction: 'default',\n      translate: 'var(--x) var(--y)',\n      width: 'full',\n      willChange: 'translate, opacity, scale',\n      zIndex: 'var(--z-index)',\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'sm',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    actionTrigger: {\n      color: 'colorPalette.plain.fg',\n      cursor: 'pointer',\n      fontWeight: 'semibold',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '2',\n      insetEnd: '2',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "toast-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/toast.ts",
+          "type": "registry:recipe",
+          "imports": "import { toast } from './toast'",
+          "content": "import { toastAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toast = defineSlotRecipe({\n  className: 'toast',\n  slots: toastAnatomy.keys(),\n  base: {\n    root: {\n      alignItems: 'start',\n      background: 'gray.surface.bg',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      gap: '4',\n      height: 'var(--height)',\n      minWidth: 'sm',\n      opacity: 'var(--opacity)',\n      overflowWrap: 'anywhere',\n      p: '4',\n      position: 'relative',\n      scale: 'var(--scale)',\n      transitionDuration: 'slow',\n      transitionProperty: 'translate, scale, opacity, height',\n      transitionTimingFunction: 'default',\n      translate: 'var(--x) var(--y)',\n      width: 'full',\n      willChange: 'translate, opacity, scale',\n      zIndex: 'var(--z-index)',\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'sm',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    actionTrigger: {\n      color: 'colorPalette.plain.fg',\n      cursor: 'pointer',\n      fontWeight: 'semibold',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '2',\n      insetEnd: '2',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "toast-recipe is a toast recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: toast-recipe\nDescription: toast-recipe is a toast recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: animated\nTags: other, parkui, recipe, toast\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/toast.ts\nimport { toastAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toast = defineSlotRecipe({\n  className: 'toast',\n  slots: toastAnatomy.keys(),\n  base: {\n    root: {\n      alignItems: 'start',\n      background: 'gray.surface.bg',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      gap: '4',\n      height: 'var(--height)',\n      minWidth: 'sm',\n      opacity: 'var(--opacity)',",
+  "prompt_version": 2,
+  "clean_id": "toast-recipe",
+  "display_name": "Toast Recipe",
+  "preview_url": "/previews/parkui/toast-recipe.png"
+}

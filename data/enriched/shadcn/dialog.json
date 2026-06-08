@@ -1,0 +1,42 @@
+{
+  "id": "dialog",
+  "name": "dialog",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dialog",
+    "popup",
+    "modal",
+    "confirm",
+    "notification"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dialog",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dialog\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A dialog component is a lightweight overlay window used to display information or to request action from the user. It is commonly used when you need to provide additional context or get confirmation from the user. The dialog can be modal or non-modal, and it can be used in a variety of scenarios.",
+  "style_tags": [
+    "minimal",
+    "material-design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "dismissable",
+    "cancelable"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: dialog\nDescription: A dialog component is a lightweight overlay window used to display information or to request action from the user. It is commonly used when you need to provide additional context or get confirmation from the user. The dialog can be modal or non-modal, and it can be used in a variety of scenarios.\nStyle: minimal, material-design\nInteractions: clickable, dismissable, cancelable\nTags: dialog, popup, modal, confirm, notification\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "dialog",
+  "display_name": "Dialog",
+  "preview_url": "/previews/shadcn/dialog.png"
+}

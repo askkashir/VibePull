@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Affix_index",
+  "name": "Affix",
+  "source_code": "// packages/@mantine/core/src/components/Affix/index.ts\nimport type {\n  AffixBaseProps,\n  AffixCssVariables,\n  AffixFactory,\n  AffixPosition,\n  AffixProps,\n  AffixStylesNames,\n} from './Affix';\n\nexport { Affix } from './Affix';\n\nexport type {\n  AffixCssVariables,\n  AffixFactory,\n  AffixProps,\n  AffixStylesNames,\n  AffixBaseProps,\n  AffixPosition,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Affix_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Affix/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Affix_index",
+      "name": "Affix",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Affix/index.ts",
+          "content": "import type {\n  AffixBaseProps,\n  AffixCssVariables,\n  AffixFactory,\n  AffixPosition,\n  AffixProps,\n  AffixStylesNames,\n} from './Affix';\n\nexport { Affix } from './Affix';\n\nexport type {\n  AffixCssVariables,\n  AffixFactory,\n  AffixProps,\n  AffixStylesNames,\n  AffixBaseProps,\n  AffixPosition,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

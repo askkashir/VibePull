@@ -1,0 +1,42 @@
+{
+  "id": "item-image",
+  "name": "item-image",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "item",
+    "image",
+    "product",
+    "catalog",
+    "inventory"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-image",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-image\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The item-image component is a rectangular container that displays an item's main image, typically used within catalogs, inventory lists, or on product detail pages.",
+  "style_tags": [
+    "e.g. rounded",
+    "shadowed",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "tappable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: item-image\nDescription: The item-image component is a rectangular container that displays an item's main image, typically used within catalogs, inventory lists, or on product detail pages.\nStyle: e.g. rounded, shadowed, responsive\nInteractions: e.g. clickable, tappable\nTags: item, image, product, catalog, inventory\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-image",
+  "display_name": "Item Image",
+  "preview_url": "/previews/shadcn/item-image.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Stack_Stack.story",
+  "name": "Stack.story",
+  "source_code": "// packages/@mantine/core/src/components/Stack/Stack.story.tsx\nimport { Stack } from './Stack';\n\nexport default { title: 'Stack' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Stack>\n        <button type=\"button\">First</button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Stack>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "stack",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Stack_Stack.story",
+      "name": "Stack.story",
+      "path": "packages/@mantine/core/src/components/Stack/Stack.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Stack_Stack.story",
+      "name": "Stack.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Stack/Stack.story.tsx",
+          "content": "import { Stack } from './Stack';\n\nexport default { title: 'Stack' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Stack>\n        <button type=\"button\">First</button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Stack>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Stack.story is a stack story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Stack.story\nDescription: Stack.story is a stack story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, stack, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Stack/Stack.story.tsx\nimport { Stack } from './Stack';\n\nexport default { title: 'Stack' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Stack>\n        <button type=\"button\">First</button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Stack>\n    </div>\n  );\n}\n",
+  "prompt_version": 2,
+  "clean_id": "stack",
+  "display_name": "Stack",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-stack-stack-story.png"
+}

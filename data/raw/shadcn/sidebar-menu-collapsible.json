@@ -1,0 +1,22 @@
+{
+  "id": "sidebar-menu-collapsible",
+  "name": "sidebar-menu-collapsible",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:internal"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-menu-collapsible",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-menu-collapsible\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  }
+}

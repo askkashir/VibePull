@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellFooter_AppShellFooter",
+  "name": "AppShellFooter",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellFooter/AppShellFooter.tsx\nimport cx from 'clsx';\nimport { RemoveScroll } from 'react-remove-scroll';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellFooterStylesNames = 'footer';\n\nexport interface AppShellFooterProps\n  extends\n    BoxProps,\n    AppShellCompoundProps,\n    StylesApiProps<AppShellFooterFactory>,\n    ElementProps<'footer'> {}\n\nexport type AppShellFooterFactory = Factory<{\n  props: AppShellFooterProps;\n  ref: HTMLElement;\n  stylesNames: AppShellFooterStylesNames;\n}>;\n\nexport const AppShellFooter = factory<AppShellFooterFactory>((_props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    withBorder,\n    zIndex,\n    mod,\n    ...others\n  } = useProps('AppShellFooter', null, _props);\n\n  const ctx = useAppShellContext();\n\n  if (ctx.disabled) {\n    return null;\n  }\n\n  return (\n    <Box\n      component=\"footer\"\n      mod={[{ 'with-border': withBorder ?? ctx.withBorder }, mod]}\n      {...ctx.getStyles('footer', {\n        className: cx({ [RemoveScroll.classNames.zeroRight]: ctx.offsetScrollbars }, className),\n        classNames,\n        styles,\n        style,\n      })}\n      {...others}\n      __vars={{ '--app-shell-footer-z-index': (zIndex ?? ctx.zIndex)?.toString() }}\n    />\n  );\n});\n\nAppShellFooter.classes = classes;\nAppShellFooter.displayName = '@mantine/core/AppShellFooter';\n",
+  "description": "",
+  "tags": [
+    "app",
+    "footer",
+    "mantine",
+    "other",
+    "shell"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellFooter_AppShellFooter",
+      "name": "AppShellFooter",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellFooter/AppShellFooter.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellFooter_AppShellFooter",
+      "name": "AppShellFooter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellFooter/AppShellFooter.tsx",
+          "content": "import cx from 'clsx';\nimport { RemoveScroll } from 'react-remove-scroll';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellFooterStylesNames = 'footer';\n\nexport interface AppShellFooterProps\n  extends\n    BoxProps,\n    AppShellCompoundProps,\n    StylesApiProps<AppShellFooterFactory>,\n    ElementProps<'footer'> {}\n\nexport type AppShellFooterFactory = Factory<{\n  props: AppShellFooterProps;\n  ref: HTMLElement;\n  stylesNames: AppShellFooterStylesNames;\n}>;\n\nexport const AppShellFooter = factory<AppShellFooterFactory>((_props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    withBorder,\n    zIndex,\n    mod,\n    ...others\n  } = useProps('AppShellFooter', null, _props);\n\n  const ctx = useAppShellContext();\n\n  if (ctx.disabled) {\n    return null;\n  }\n\n  return (\n    <Box\n      component=\"footer\"\n      mod={[{ 'with-border': withBorder ?? ctx.withBorder }, mod]}\n      {...ctx.getStyles('footer', {\n        className: cx({ [RemoveScroll.classNames.zeroRight]: ctx.offsetScrollbars }, className),\n        classNames,\n        styles,\n        style,\n      })}\n      {...others}\n      __vars={{ '--app-shell-footer-z-index': (zIndex ?? ctx.zIndex)?.toString() }}\n    />\n  );\n});\n\nAppShellFooter.classes = classes;\nAppShellFooter.displayName = '@mantine/core/AppShellFooter';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShellFooter is a app shell footer UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShellFooter\nDescription: AppShellFooter is a app shell footer UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: app, footer, mantine, other, shell\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellFooter/AppShellFooter.tsx\nimport cx from 'clsx';\nimport { RemoveScroll } from 'react-remove-scroll';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellFooterStylesNames = 'footer';\n\nexport",
+  "prompt_version": 2,
+  "clean_id": "app-shell-footer",
+  "display_name": "App Shell Footer",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellfooter-appshellfooter.png"
+}

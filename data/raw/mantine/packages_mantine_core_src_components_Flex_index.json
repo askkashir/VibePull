@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Flex_index",
+  "name": "Flex",
+  "source_code": "// packages/@mantine/core/src/components/Flex/index.ts\nimport type { FlexFactory, FlexProps, FlexStylesNames } from './Flex';\n\nexport { FLEX_STYLE_PROPS_DATA } from './flex-props';\nexport { Flex } from './Flex';\n\nexport type { FlexProps, FlexStylesNames, FlexFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Flex_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Flex/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Flex_index",
+      "name": "Flex",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Flex/index.ts",
+          "content": "import type { FlexFactory, FlexProps, FlexStylesNames } from './Flex';\n\nexport { FLEX_STYLE_PROPS_DATA } from './flex-props';\nexport { Flex } from './Flex';\n\nexport type { FlexProps, FlexStylesNames, FlexFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

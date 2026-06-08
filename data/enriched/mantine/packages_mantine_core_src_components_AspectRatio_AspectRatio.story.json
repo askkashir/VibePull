@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_AspectRatio_AspectRatio.story",
+  "name": "AspectRatio.story",
+  "source_code": "// packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx\nimport { AspectRatio } from './AspectRatio';\n\nexport default { title: 'AspectRatio' };\n\nconst WithProps = AspectRatio.withProps({ ratio: 112 / 9 });\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <WithProps>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </WithProps>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AspectRatio ratio={1} unstyled>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n\nexport function WithinFlexContainer() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 20 }}>\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "aspect",
+    "mantine",
+    "other",
+    "ratio",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AspectRatio_AspectRatio.story",
+      "name": "AspectRatio.story",
+      "path": "packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AspectRatio_AspectRatio.story",
+      "name": "AspectRatio.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx",
+          "content": "import { AspectRatio } from './AspectRatio';\n\nexport default { title: 'AspectRatio' };\n\nconst WithProps = AspectRatio.withProps({ ratio: 112 / 9 });\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <WithProps>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </WithProps>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AspectRatio ratio={1} unstyled>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n\nexport function WithinFlexContainer() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 20 }}>\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AspectRatio.story is a aspect ratio story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AspectRatio.story\nDescription: AspectRatio.story is a aspect ratio story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: aspect, mantine, other, ratio, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx\nimport { AspectRatio } from './AspectRatio';\n\nexport default { title: 'AspectRatio' };\n\nconst WithProps = AspectRatio.withProps({ ratio: 112 / 9 });\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <WithProps>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </WithProps>\n    </div>\n  );\n}\n\nexport",
+  "prompt_version": 2,
+  "clean_id": "aspect-ratio",
+  "display_name": "Aspect Ratio",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-aspectratio-aspectratio-story.png"
+}

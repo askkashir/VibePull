@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_TableOfContents_TableOfContents.story",
+  "name": "TableOfContents.story",
+  "source_code": "// packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx\nimport { TableOfContents } from './TableOfContents';\n\nexport default { title: 'TableOfContents' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 350 }}>\n      <TableOfContents\n        size=\"sm\"\n        initialData={[\n          { id: '1', value: 'Heading 1', depth: 1 },\n          { id: '2', value: 'Heading 2', depth: 2 },\n          { id: '3', value: 'Heading 3', depth: 3 },\n        ]}\n      />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TableOfContents_TableOfContents.story",
+      "name": "TableOfContents.story",
+      "path": "packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TableOfContents_TableOfContents.story",
+      "name": "TableOfContents.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx",
+          "content": "import { TableOfContents } from './TableOfContents';\n\nexport default { title: 'TableOfContents' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 350 }}>\n      <TableOfContents\n        size=\"sm\"\n        initialData={[\n          { id: '1', value: 'Heading 1', depth: 1 },\n          { id: '2', value: 'Heading 2', depth: 2 },\n          { id: '3', value: 'Heading 3', depth: 3 },\n        ]}\n      />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

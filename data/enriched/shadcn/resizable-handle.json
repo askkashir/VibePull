@@ -1,0 +1,37 @@
+{
+  "id": "resizable-handle",
+  "name": "resizable-handle",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "handle",
+    "resize",
+    "utility",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "resizable-handle",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## resizable-handle\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The resizable-handle is a compact UI element that provides a small handle to resize objects. It is typically used in scenarios where the user needs to adjust the size of an object on screen, such as a grid layout or a responsive container. This component is ideal for users who require fine-grained control over the size of elements in their applications.",
+  "style_tags": [
+    "e.g. modern",
+    "flat"
+  ],
+  "interaction_tags": [],
+  "component_type": "utility",
+  "generation_prompt": "Create a production-ready utility component with the following characteristics:\n\nName: resizable-handle\nDescription: The resizable-handle is a compact UI element that provides a small handle to resize objects. It is typically used in scenarios where the user needs to adjust the size of an object on screen, such as a grid layout or a responsive container. This component is ideal for users who require fine-grained control over the size of elements in their applications.\nStyle: e.g. modern, flat\nInteractions: \nTags: handle, resize, utility, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "resizable-handle",
+  "display_name": "Resizable Handle",
+  "preview_url": "/previews/shadcn/resizable-handle.png"
+}

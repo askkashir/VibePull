@@ -1,0 +1,31 @@
+{
+  "id": "src_components_TooltipWrapper",
+  "name": "TooltipWrapper",
+  "source_code": "// src/components/TooltipWrapper.astro\n---\ninterface Props {\n  text: string\n  class?: string\n}\n\nconst { text, class: className } = Astro.props\n---\n\n<span class:list={['group/tooltip relative inline-flex items-center', className]}>\n  <slot />\n\n  <span\n    aria-hidden=\"true\"\n    class=\"pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-focus-within/tooltip:opacity-100 group-hover/tooltip:opacity-100\"\n  >\n    {text}\n    <span\n      class=\"absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900\"\n    ></span>\n  </span>\n</span>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "TooltipWrapper",
+      "name": "TooltipWrapper",
+      "path": "src/components/TooltipWrapper.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_TooltipWrapper",
+      "name": "TooltipWrapper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/TooltipWrapper.astro",
+          "content": "---\ninterface Props {\n  text: string\n  class?: string\n}\n\nconst { text, class: className } = Astro.props\n---\n\n<span class:list={['group/tooltip relative inline-flex items-center', className]}>\n  <slot />\n\n  <span\n    aria-hidden=\"true\"\n    class=\"pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-focus-within/tooltip:opacity-100 group-hover/tooltip:opacity-100\"\n  >\n    {text}\n    <span\n      class=\"absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900\"\n    ></span>\n  </span>\n</span>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

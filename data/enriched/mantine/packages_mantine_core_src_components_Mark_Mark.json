@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Mark_Mark",
+  "name": "Mark",
+  "source_code": "// packages/@mantine/core/src/components/Mark/Mark.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { getMarkColor } from './get-mark-color';\nimport classes from './Mark.module.css';\n\nexport type MarkStylesNames = 'root';\nexport type MarkCssVariables = {\n  root: '--mark-bg-dark' | '--mark-bg-light';\n};\n\nexport interface MarkProps extends BoxProps, StylesApiProps<MarkFactory>, ElementProps<'mark'> {\n  /** Key of `theme.colors` or any valid CSS color @default yellow */\n  color?: MantineColor;\n}\n\nexport type MarkFactory = Factory<{\n  props: MarkProps;\n  ref: HTMLElement;\n  stylesNames: MarkStylesNames;\n  vars: MarkCssVariables;\n}>;\n\nconst defaultProps = {\n  color: 'yellow',\n} satisfies Partial<MarkProps>;\n\nconst varsResolver = createVarsResolver<MarkFactory>((theme, { color }) => ({\n  root: {\n    '--mark-bg-dark': getMarkColor({ color, theme, defaultShade: 5 }),\n    '--mark-bg-light': getMarkColor({ color, theme, defaultShade: 2 }),\n  },\n}));\n\nexport const Mark = factory<MarkFactory>((_props) => {\n  const props = useProps('Mark', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    color,\n    variant,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<MarkFactory>({\n    name: 'Mark',\n    props,\n    className,\n    style,\n    classes,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return <Box component=\"mark\" variant={variant} {...getStyles('root')} {...others} />;\n});\n\nMark.classes = classes;\nMark.varsResolver = varsResolver;\nMark.displayName = '@mantine/core/Mark';\n\nexport namespace Mark {\n  export type Props = MarkProps;\n  export type StylesNames = MarkStylesNames;\n  export type CssVariables = MarkCssVariables;\n  export type Factory = MarkFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "mark",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Mark_Mark",
+      "name": "Mark",
+      "path": "packages/@mantine/core/src/components/Mark/Mark.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Mark_Mark",
+      "name": "Mark",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Mark/Mark.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { getMarkColor } from './get-mark-color';\nimport classes from './Mark.module.css';\n\nexport type MarkStylesNames = 'root';\nexport type MarkCssVariables = {\n  root: '--mark-bg-dark' | '--mark-bg-light';\n};\n\nexport interface MarkProps extends BoxProps, StylesApiProps<MarkFactory>, ElementProps<'mark'> {\n  /** Key of `theme.colors` or any valid CSS color @default yellow */\n  color?: MantineColor;\n}\n\nexport type MarkFactory = Factory<{\n  props: MarkProps;\n  ref: HTMLElement;\n  stylesNames: MarkStylesNames;\n  vars: MarkCssVariables;\n}>;\n\nconst defaultProps = {\n  color: 'yellow',\n} satisfies Partial<MarkProps>;\n\nconst varsResolver = createVarsResolver<MarkFactory>((theme, { color }) => ({\n  root: {\n    '--mark-bg-dark': getMarkColor({ color, theme, defaultShade: 5 }),\n    '--mark-bg-light': getMarkColor({ color, theme, defaultShade: 2 }),\n  },\n}));\n\nexport const Mark = factory<MarkFactory>((_props) => {\n  const props = useProps('Mark', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    color,\n    variant,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<MarkFactory>({\n    name: 'Mark',\n    props,\n    className,\n    style,\n    classes,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return <Box component=\"mark\" variant={variant} {...getStyles('root')} {...others} />;\n});\n\nMark.classes = classes;\nMark.varsResolver = varsResolver;\nMark.displayName = '@mantine/core/Mark';\n\nexport namespace Mark {\n  export type Props = MarkProps;\n  export type StylesNames = MarkStylesNames;\n  export type CssVariables = MarkCssVariables;\n  export type Factory = MarkFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Mark is a mark UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Mark\nDescription: Mark is a mark UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: \nTags: mantine, mark, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Mark/Mark.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { getMarkColor } from './get-mark-color';\nimport classes from './Mark.module.css';\n\nexport type MarkStylesNames = 'root';\nexport type MarkCssVariables = {\n  root: '--mark-bg-dark' | '--mark-bg-light';\n};\n\nexport interface MarkProps extends BoxProps, StylesApiProps<MarkF",
+  "prompt_version": 2,
+  "clean_id": "mark",
+  "display_name": "Mark",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-mark-mark.png"
+}

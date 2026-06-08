@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Dialog_index",
+  "name": "Dialog",
+  "source_code": "// packages/@mantine/core/src/components/Dialog/index.ts\nimport type { DialogCssVariables, DialogFactory, DialogProps, DialogStylesNames } from './Dialog';\n\nexport { Dialog } from './Dialog';\n\nexport type { DialogProps, DialogStylesNames, DialogCssVariables, DialogFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Dialog_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Dialog/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Dialog_index",
+      "name": "Dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Dialog/index.ts",
+          "content": "import type { DialogCssVariables, DialogFactory, DialogProps, DialogStylesNames } from './Dialog';\n\nexport { Dialog } from './Dialog';\n\nexport type { DialogProps, DialogStylesNames, DialogCssVariables, DialogFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-change-value_get-change-value",
+  "name": "get-change-value",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-change-value/get-change-value.ts\ninterface GetChangeValue {\n  value: number;\n  containerWidth?: number;\n  min: number;\n  max: number;\n  step: number;\n  precision?: number;\n}\n\nexport function getChangeValue({\n  value,\n  containerWidth,\n  min,\n  max,\n  step,\n  precision,\n}: GetChangeValue) {\n  const left = !containerWidth\n    ? value\n    : Math.min(Math.max(value, 0), containerWidth) / containerWidth;\n  const dx = left * (max - min);\n  const nextValue = (dx !== 0 ? Math.round(dx / step) * step : 0) + min;\n\n  const nextValueWithinStep = Math.max(nextValue, min);\n\n  if (precision !== undefined) {\n    return Number(nextValueWithinStep.toFixed(precision));\n  }\n\n  return nextValueWithinStep;\n}\n",
+  "description": "",
+  "tags": [
+    "change",
+    "get",
+    "mantine",
+    "other",
+    "value"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-change-value_get-change-value",
+      "name": "get-change-value",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-change-value/get-change-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-change-value_get-change-value",
+      "name": "get-change-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-change-value/get-change-value.ts",
+          "content": "interface GetChangeValue {\n  value: number;\n  containerWidth?: number;\n  min: number;\n  max: number;\n  step: number;\n  precision?: number;\n}\n\nexport function getChangeValue({\n  value,\n  containerWidth,\n  min,\n  max,\n  step,\n  precision,\n}: GetChangeValue) {\n  const left = !containerWidth\n    ? value\n    : Math.min(Math.max(value, 0), containerWidth) / containerWidth;\n  const dx = left * (max - min);\n  const nextValue = (dx !== 0 ? Math.round(dx / step) * step : 0) + min;\n\n  const nextValueWithinStep = Math.max(nextValue, min);\n\n  if (precision !== undefined) {\n    return Number(nextValueWithinStep.toFixed(precision));\n  }\n\n  return nextValueWithinStep;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-change-value is a get change value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-change-value\nDescription: get-change-value is a get change value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: change, get, mantine, other, value\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/utils/get-change-value/get-change-value.ts\ninterface GetChangeValue {\n  value: number;\n  containerWidth?: number;\n  min: number;\n  max: number;\n  step: number;\n  precision?: number;\n}\n\nexport function getChangeValue({\n  value,\n  containerWidth,\n  min,\n  max,\n  step,\n  precision,\n}: GetChangeValue) {\n  const left = !containerWidth\n    ? value\n    : Math.min(Math.max(value, 0), containerWidth) / containerWidth;\n  const dx = left * (max - min);\n  cons",
+  "prompt_version": 2,
+  "clean_id": "get-change-value",
+  "display_name": "Get Change Value",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-utils-get-change-value-get-change-value.png"
+}

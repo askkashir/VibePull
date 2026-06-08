@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Splitter_GripIcon",
+  "name": "GripIcon",
+  "source_code": "// packages/@mantine/core/src/components/Splitter/GripIcon.tsx\nimport React from 'react';\n\nexport function GripVerticalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M8 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M8 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n    </svg>\n  );\n}\n\nexport function GripHorizontalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path d=\"M4 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M4 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M11 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M11 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M18 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M18 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n    </svg>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "grip",
+    "icon",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Splitter_GripIcon",
+      "name": "GripIcon",
+      "path": "packages/@mantine/core/src/components/Splitter/GripIcon.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Splitter_GripIcon",
+      "name": "GripIcon",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Splitter/GripIcon.tsx",
+          "content": "import React from 'react';\n\nexport function GripVerticalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M8 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M8 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M14 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n    </svg>\n  );\n}\n\nexport function GripHorizontalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path d=\"M4 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M4 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M11 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M11 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M18 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n      <path d=\"M18 15a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n    </svg>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "GripIcon is a grip icon UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: GripIcon\nDescription: GripIcon is a grip icon UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: grip, icon, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Splitter/GripIcon.tsx\nimport React from 'react';\n\nexport function GripVerticalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path d=\"M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" />\n     ",
+  "prompt_version": 2,
+  "clean_id": "grip-icon",
+  "display_name": "Grip Icon",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-splitter-gripicon.png"
+}

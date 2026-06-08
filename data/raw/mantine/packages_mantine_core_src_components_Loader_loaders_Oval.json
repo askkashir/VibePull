@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_loaders_Oval",
+  "name": "Oval",
+  "source_code": "// packages/@mantine/core/src/components/Loader/loaders/Oval.tsx\nimport cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Oval: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.ovalLoader, className)} {...others} />\n);\n\nOval.displayName = '@mantine/core/Oval';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_loaders_Oval",
+      "name": "Oval",
+      "path": "packages/@mantine/core/src/components/Loader/loaders/Oval.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_loaders_Oval",
+      "name": "Oval",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/loaders/Oval.tsx",
+          "content": "import cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Oval: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.ovalLoader, className)} {...others} />\n);\n\nOval.displayName = '@mantine/core/Oval';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

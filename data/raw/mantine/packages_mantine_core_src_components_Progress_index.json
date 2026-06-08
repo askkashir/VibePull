@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Progress_index",
+  "name": "Progress",
+  "source_code": "// packages/@mantine/core/src/components/Progress/index.ts\nimport type { ProgressFactory, ProgressProps, ProgressStylesNames } from './Progress';\nimport type { ProgressContextValue } from './Progress.context';\nimport type { ProgressLabelProps } from './ProgressLabel/ProgressLabel';\nimport type { ProgressRootProps } from './ProgressRoot/ProgressRoot';\nimport type { ProgressSectionProps } from './ProgressSection/ProgressSection';\n\nexport { Progress } from './Progress';\nexport { ProgressLabel } from './ProgressLabel/ProgressLabel';\nexport { ProgressRoot } from './ProgressRoot/ProgressRoot';\nexport { ProgressSection } from './ProgressSection/ProgressSection';\nexport { useProgressContext } from './Progress.context';\n\nexport type {\n  ProgressProps,\n  ProgressFactory,\n  ProgressStylesNames,\n  ProgressLabelProps,\n  ProgressRootProps,\n  ProgressSectionProps,\n  ProgressContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Progress_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Progress/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Progress_index",
+      "name": "Progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Progress/index.ts",
+          "content": "import type { ProgressFactory, ProgressProps, ProgressStylesNames } from './Progress';\nimport type { ProgressContextValue } from './Progress.context';\nimport type { ProgressLabelProps } from './ProgressLabel/ProgressLabel';\nimport type { ProgressRootProps } from './ProgressRoot/ProgressRoot';\nimport type { ProgressSectionProps } from './ProgressSection/ProgressSection';\n\nexport { Progress } from './Progress';\nexport { ProgressLabel } from './ProgressLabel/ProgressLabel';\nexport { ProgressRoot } from './ProgressRoot/ProgressRoot';\nexport { ProgressSection } from './ProgressSection/ProgressSection';\nexport { useProgressContext } from './Progress.context';\n\nexport type {\n  ProgressProps,\n  ProgressFactory,\n  ProgressStylesNames,\n  ProgressLabelProps,\n  ProgressRootProps,\n  ProgressSectionProps,\n  ProgressContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

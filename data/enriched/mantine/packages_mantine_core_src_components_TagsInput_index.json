@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_TagsInput_index",
+  "name": "TagsInput",
+  "source_code": "// packages/@mantine/core/src/components/TagsInput/index.ts\nimport type { TagsInputFactory, TagsInputProps, TagsInputStylesNames } from './TagsInput';\n\nexport { TagsInput } from './TagsInput';\n\nexport type { TagsInputProps, TagsInputStylesNames, TagsInputFactory };\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "tags"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TagsInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/TagsInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TagsInput_index",
+      "name": "TagsInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TagsInput/index.ts",
+          "content": "import type { TagsInputFactory, TagsInputProps, TagsInputStylesNames } from './TagsInput';\n\nexport { TagsInput } from './TagsInput';\n\nexport type { TagsInputProps, TagsInputStylesNames, TagsInputFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TagsInput is a tags input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: TagsInput\nDescription: TagsInput is a tags input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: input, mantine, tags\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/TagsInput/index.ts\nimport type { TagsInputFactory, TagsInputProps, TagsInputStylesNames } from './TagsInput';\n\nexport { TagsInput } from './TagsInput';\n\nexport type { TagsInputProps, TagsInputStylesNames, TagsInputFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "tags-input",
+  "display_name": "Tags Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tagsinput-index.png"
+}

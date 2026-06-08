@@ -1,0 +1,61 @@
+{
+  "id": "packages_radix-ui-themes_src_components_tooltip",
+  "name": "tooltip",
+  "source_code": "// packages/radix-ui-themes/src/components/tooltip.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Tooltip as TooltipPrimitive } from 'radix-ui';\n\nimport { Text } from './text.js';\nimport { Theme } from './theme.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { tooltipPropDefs } from './tooltip.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TooltipElement = React.ElementRef<typeof TooltipPrimitive.Content>;\ntype TooltipOwnProps = GetPropDefTypes<typeof tooltipPropDefs>;\ninterface TooltipProps\n  extends\n    React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Root>,\n    ComponentPropsWithout<typeof TooltipPrimitive.Content, RemovedProps | 'content'>,\n    TooltipOwnProps {\n  content: React.ReactNode;\n  container?: React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Portal>['container'];\n}\nconst Tooltip = React.forwardRef<TooltipElement, TooltipProps>((props, forwardedRef) => {\n  const {\n    children,\n    className,\n    open,\n    defaultOpen,\n    onOpenChange,\n    delayDuration,\n    disableHoverableContent,\n    content,\n    container,\n    forceMount,\n    ...tooltipContentProps\n  } = extractProps(props, tooltipPropDefs);\n  const rootProps = { open, defaultOpen, onOpenChange, delayDuration, disableHoverableContent };\n  return (\n    <TooltipPrimitive.Root {...rootProps}>\n      <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>\n      <TooltipPrimitive.Portal container={container} forceMount={forceMount}>\n        <Theme asChild>\n          <TooltipPrimitive.Content\n            sideOffset={4}\n            collisionPadding={10}\n            {...tooltipContentProps}\n            asChild={false}\n            ref={forwardedRef}\n            className={classNames('rt-TooltipContent', className)}\n          >\n            <Text as=\"p\" className=\"rt-TooltipText\" size=\"1\">\n              {content}\n            </Text>\n            <TooltipPrimitive.Arrow className=\"rt-TooltipArrow\" />\n          </TooltipPrimitive.Content>\n        </Theme>\n      </TooltipPrimitive.Portal>\n    </TooltipPrimitive.Root>\n  );\n});\nTooltip.displayName = 'Tooltip';\n\nexport { Tooltip };\nexport type { TooltipProps };\n",
+  "description": "",
+  "tags": [
+    "popup",
+    "hint",
+    "info",
+    "hint"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_tooltip",
+      "name": "tooltip.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/tooltip.tsx",
+      "sha": "80d26bdf8e151b85c288383ca8fb920dcce7bb76",
+      "size": 2251,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/tooltip.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/tooltip.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/80d26bdf8e151b85c288383ca8fb920dcce7bb76",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/tooltip.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/tooltip.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/80d26bdf8e151b85c288383ca8fb920dcce7bb76",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/tooltip.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_tooltip",
+      "name": "tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/tooltip.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Tooltip as TooltipPrimitive } from 'radix-ui';\n\nimport { Text } from './text.js';\nimport { Theme } from './theme.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { tooltipPropDefs } from './tooltip.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TooltipElement = React.ElementRef<typeof TooltipPrimitive.Content>;\ntype TooltipOwnProps = GetPropDefTypes<typeof tooltipPropDefs>;\ninterface TooltipProps\n  extends\n    React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Root>,\n    ComponentPropsWithout<typeof TooltipPrimitive.Content, RemovedProps | 'content'>,\n    TooltipOwnProps {\n  content: React.ReactNode;\n  container?: React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Portal>['container'];\n}\nconst Tooltip = React.forwardRef<TooltipElement, TooltipProps>((props, forwardedRef) => {\n  const {\n    children,\n    className,\n    open,\n    defaultOpen,\n    onOpenChange,\n    delayDuration,\n    disableHoverableContent,\n    content,\n    container,\n    forceMount,\n    ...tooltipContentProps\n  } = extractProps(props, tooltipPropDefs);\n  const rootProps = { open, defaultOpen, onOpenChange, delayDuration, disableHoverableContent };\n  return (\n    <TooltipPrimitive.Root {...rootProps}>\n      <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>\n      <TooltipPrimitive.Portal container={container} forceMount={forceMount}>\n        <Theme asChild>\n          <TooltipPrimitive.Content\n            sideOffset={4}\n            collisionPadding={10}\n            {...tooltipContentProps}\n            asChild={false}\n            ref={forwardedRef}\n            className={classNames('rt-TooltipContent', className)}\n          >\n            <Text as=\"p\" className=\"rt-TooltipText\" size=\"1\">\n              {content}\n            </Text>\n            <TooltipPrimitive.Arrow className=\"rt-TooltipArrow\" />\n          </TooltipPrimitive.Content>\n        </Theme>\n      </TooltipPrimitive.Portal>\n    </TooltipPrimitive.Root>\n  );\n});\nTooltip.displayName = 'Tooltip';\n\nexport { Tooltip };\nexport type { TooltipProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A tooltip component displays a small popup text next to an element, useful when a user hovers or interacts with another component in order to see additional context or information.",
+  "style_tags": [
+    "minimal",
+    "glassmorphism",
+    "light"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: tooltip\nDescription: A tooltip component displays a small popup text next to an element, useful when a user hovers or interacts with another component in order to see additional context or information.\nStyle: minimal, glassmorphism, light\nInteractions: hover, clickable\nTags: popup, hint, info, hint\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/tooltip.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Tooltip as TooltipPrimitive } from 'radix-ui';\n\nimport { Text } from './text.js';\nimport { Theme } from './theme.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { tooltipPropDefs } from './tooltip.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../pro",
+  "prompt_version": 2,
+  "clean_id": "tooltip",
+  "display_name": "Tooltip",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-tooltip.png"
+}

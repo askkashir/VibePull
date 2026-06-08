@@ -1,0 +1,31 @@
+{
+  "id": "components_icons_index",
+  "name": "icons",
+  "source_code": "// components/icons/index.ts\nexport * from \"./IconGithub\";\nexport * from \"./IconPennibLine\";\nexport * from \"./IconArrowsexpandLeft\";\nexport * from \"./IconBxCustomize\";\nexport * from \"./IconHTML\";\nexport * from \"./IconReact\";\nexport * from \"./IconVue\";\nexport * from \"./IconSvelte\";\nexport * from \"./IconRadix\";\nexport * from \"./IconRadixVue\";\nexport * from \"./IconAlpinejs\";\nexport * from \"./IconLoading\";\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_index",
+      "name": "index",
+      "path": "components/icons/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_index",
+      "name": "icons",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/index.ts",
+          "content": "export * from \"./IconGithub\";\nexport * from \"./IconPennibLine\";\nexport * from \"./IconArrowsexpandLeft\";\nexport * from \"./IconBxCustomize\";\nexport * from \"./IconHTML\";\nexport * from \"./IconReact\";\nexport * from \"./IconVue\";\nexport * from \"./IconSvelte\";\nexport * from \"./IconRadix\";\nexport * from \"./IconRadixVue\";\nexport * from \"./IconAlpinejs\";\nexport * from \"./IconLoading\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

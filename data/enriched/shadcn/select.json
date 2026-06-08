@@ -1,0 +1,43 @@
+{
+  "id": "select",
+  "name": "select",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "picker",
+    "chooser",
+    "selector",
+    "option"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "select",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## select\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The select component is an interactive dropdown element that allows users to make a single choice from a list of options. It is typically used when a user needs to pick one item from a set of available choices, such as selecting a country or a language. The component is often used in forms or as a data filter.",
+  "style_tags": [
+    "flat",
+    "elevated",
+    "prominent"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "focusable"
+  ],
+  "component_type": "select",
+  "generation_prompt": "Create a production-ready select component with the following characteristics:\n\nName: select\nDescription: The select component is an interactive dropdown element that allows users to make a single choice from a list of options. It is typically used when a user needs to pick one item from a set of available choices, such as selecting a country or a language. The component is often used in forms or as a data filter.\nStyle: flat, elevated, prominent\nInteractions: hover, clickable, focusable\nTags: dropdown, picker, chooser, selector, option\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "select",
+  "display_name": "Select",
+  "preview_url": "/previews/shadcn/select.png"
+}

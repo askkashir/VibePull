@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_JsonInput_JsonInput.story",
+  "name": "JsonInput.story",
+  "source_code": "// packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx\nimport { useState } from 'react';\nimport { JsonInput } from './JsonInput';\n\nexport default { title: 'JsonInput' };\n\nexport function Usage() {\n  return (\n    <>\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" formatOnBlur />\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" size=\"sm\" />\n    </>\n  );\n}\n\nexport function ReadOnly() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      readOnly\n    />\n  );\n}\n\nexport function Controlled() {\n  const [value, onChange] = useState('');\n  return (\n    <JsonInput\n      value={value}\n      onChange={onChange}\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n    />\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      unstyled\n    />\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "json",
+    "mantine",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "JsonInput_JsonInput.story",
+      "name": "JsonInput.story",
+      "path": "packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_JsonInput_JsonInput.story",
+      "name": "JsonInput.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx",
+          "content": "import { useState } from 'react';\nimport { JsonInput } from './JsonInput';\n\nexport default { title: 'JsonInput' };\n\nexport function Usage() {\n  return (\n    <>\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" formatOnBlur />\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" size=\"sm\" />\n    </>\n  );\n}\n\nexport function ReadOnly() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      readOnly\n    />\n  );\n}\n\nexport function Controlled() {\n  const [value, onChange] = useState('');\n  return (\n    <JsonInput\n      value={value}\n      onChange={onChange}\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n    />\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      unstyled\n    />\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "JsonInput.story is a json input story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: JsonInput.story\nDescription: JsonInput.story is a json input story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: input, json, mantine, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx\nimport { useState } from 'react';\nimport { JsonInput } from './JsonInput';\n\nexport default { title: 'JsonInput' };\n\nexport function Usage() {\n  return (\n    <>\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" formatOnBlur />\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" size=\"sm\" />\n    </>\n  );\n}\n\nexport function ReadOnly() {\n  return (\n    <JsonInput",
+  "prompt_version": 2,
+  "clean_id": "json-input",
+  "display_name": "Json Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-jsoninput-jsoninput-story.png"
+}

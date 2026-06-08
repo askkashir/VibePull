@@ -1,0 +1,50 @@
+{
+  "id": "heading",
+  "name": "heading",
+  "source_code": "// src/components/ui/heading.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "heading",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/heading.tsx",
+          "type": "registry:ui",
+          "exports": "export { Heading, type HeadingProps } from './heading'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "heading-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "heading",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/heading.tsx",
+          "type": "registry:ui",
+          "exports": "export { Heading, type HeadingProps } from './heading'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "heading-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

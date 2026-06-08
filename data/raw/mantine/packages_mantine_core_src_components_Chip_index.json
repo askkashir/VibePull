@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Chip_index",
+  "name": "Chip",
+  "source_code": "// packages/@mantine/core/src/components/Chip/index.ts\nimport type {\n  ChipCssVariables,\n  ChipFactory,\n  ChipProps,\n  ChipStylesNames,\n  ChipVariant,\n} from './Chip';\nimport type { ChipGroupContextValue, ChipGroupProps } from './ChipGroup/ChipGroup';\n\nexport { Chip } from './Chip';\nexport { ChipGroup, ChipGroupContext } from './ChipGroup/ChipGroup';\n\nexport type {\n  ChipProps,\n  ChipStylesNames,\n  ChipCssVariables,\n  ChipFactory,\n  ChipVariant,\n  ChipGroupProps,\n  ChipGroupContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Chip_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Chip/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Chip_index",
+      "name": "Chip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Chip/index.ts",
+          "content": "import type {\n  ChipCssVariables,\n  ChipFactory,\n  ChipProps,\n  ChipStylesNames,\n  ChipVariant,\n} from './Chip';\nimport type { ChipGroupContextValue, ChipGroupProps } from './ChipGroup/ChipGroup';\n\nexport { Chip } from './Chip';\nexport { ChipGroup, ChipGroupContext } from './ChipGroup/ChipGroup';\n\nexport type {\n  ChipProps,\n  ChipStylesNames,\n  ChipCssVariables,\n  ChipFactory,\n  ChipVariant,\n  ChipGroupProps,\n  ChipGroupContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

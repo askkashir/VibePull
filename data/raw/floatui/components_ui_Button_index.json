@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_Button_index",
+  "name": "Button",
+  "source_code": "// components/ui/Button/index.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends HTMLAttributes<HTMLButtonElement> {\n  children: ReactNode;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <button\n    {...props}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </button>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Button_index",
+      "name": "index",
+      "path": "components/ui/Button/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Button_index",
+      "name": "Button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Button/index.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\nimport { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends HTMLAttributes<HTMLButtonElement> {\n  children: ReactNode;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <button\n    {...props}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </button>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

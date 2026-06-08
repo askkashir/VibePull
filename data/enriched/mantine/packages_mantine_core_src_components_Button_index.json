@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Button_index",
+  "name": "Button",
+  "source_code": "// packages/@mantine/core/src/components/Button/index.ts\nimport type {\n  ButtonCssVariables,\n  ButtonFactory,\n  ButtonProps,\n  ButtonSize,\n  ButtonStylesNames,\n  ButtonVariant,\n} from './Button';\nimport type {\n  ButtonGroupCssVariables,\n  ButtonGroupFactory,\n  ButtonGroupProps,\n  ButtonGroupStylesNames,\n} from './ButtonGroup/ButtonGroup';\nimport type {\n  ButtonGroupSectionCssVariables,\n  ButtonGroupSectionFactory,\n  ButtonGroupSectionProps,\n  ButtonGroupSectionStylesNames,\n} from './ButtonGroupSection/ButtonGroupSection';\n\nexport { Button } from './Button';\nexport { ButtonGroup } from './ButtonGroup/ButtonGroup';\nexport { ButtonGroupSection } from './ButtonGroupSection/ButtonGroupSection';\n\nexport type {\n  ButtonProps,\n  ButtonStylesNames,\n  ButtonFactory,\n  ButtonCssVariables,\n  ButtonVariant,\n  ButtonSize,\n  ButtonGroupProps,\n  ButtonGroupCssVariables,\n  ButtonGroupStylesNames,\n  ButtonGroupFactory,\n  ButtonGroupSectionProps,\n  ButtonGroupSectionCssVariables,\n  ButtonGroupSectionStylesNames,\n  ButtonGroupSectionFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "button",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Button_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Button/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Button_index",
+      "name": "Button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Button/index.ts",
+          "content": "import type {\n  ButtonCssVariables,\n  ButtonFactory,\n  ButtonProps,\n  ButtonSize,\n  ButtonStylesNames,\n  ButtonVariant,\n} from './Button';\nimport type {\n  ButtonGroupCssVariables,\n  ButtonGroupFactory,\n  ButtonGroupProps,\n  ButtonGroupStylesNames,\n} from './ButtonGroup/ButtonGroup';\nimport type {\n  ButtonGroupSectionCssVariables,\n  ButtonGroupSectionFactory,\n  ButtonGroupSectionProps,\n  ButtonGroupSectionStylesNames,\n} from './ButtonGroupSection/ButtonGroupSection';\n\nexport { Button } from './Button';\nexport { ButtonGroup } from './ButtonGroup/ButtonGroup';\nexport { ButtonGroupSection } from './ButtonGroupSection/ButtonGroupSection';\n\nexport type {\n  ButtonProps,\n  ButtonStylesNames,\n  ButtonFactory,\n  ButtonCssVariables,\n  ButtonVariant,\n  ButtonSize,\n  ButtonGroupProps,\n  ButtonGroupCssVariables,\n  ButtonGroupStylesNames,\n  ButtonGroupFactory,\n  ButtonGroupSectionProps,\n  ButtonGroupSectionCssVariables,\n  ButtonGroupSectionStylesNames,\n  ButtonGroupSectionFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Button is a button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Button\nDescription: Button is a button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: button, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Button/index.ts\nimport type {\n  ButtonCssVariables,\n  ButtonFactory,\n  ButtonProps,\n  ButtonSize,\n  ButtonStylesNames,\n  ButtonVariant,\n} from './Button';\nimport type {\n  ButtonGroupCssVariables,\n  ButtonGroupFactory,\n  ButtonGroupProps,\n  ButtonGroupStylesNames,\n} from './ButtonGroup/ButtonGroup';\nimport type {\n  ButtonGroupSectionCssVariables,\n  ButtonGroupSectionFactory,\n  ButtonGroupSectionProps,\n  ButtonGroupSectionStylesNames,\n} from './ButtonGroupS",
+  "prompt_version": 2,
+  "clean_id": "button",
+  "display_name": "Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-button-index.png"
+}

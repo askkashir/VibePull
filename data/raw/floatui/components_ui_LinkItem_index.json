@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_LinkItem_index",
+  "name": "LinkItem",
+  "source_code": "// components/ui/LinkItem/index.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport Link from \"next/link\";\nimport { AnchorHTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {\n  children: ReactNode;\n  href: string;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  href,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <Link\n    {...props}\n    href={href}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </Link>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_LinkItem_index",
+      "name": "index",
+      "path": "components/ui/LinkItem/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_LinkItem_index",
+      "name": "LinkItem",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/LinkItem/index.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\nimport Link from \"next/link\";\nimport { AnchorHTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {\n  children: ReactNode;\n  href: string;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  href,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <Link\n    {...props}\n    href={href}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </Link>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

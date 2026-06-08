@@ -1,0 +1,43 @@
+{
+  "id": "table-demo",
+  "name": "table-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data-grid",
+    "table",
+    "pagination",
+    "sorting",
+    "filtering"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "table-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## table-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "This is a customizable table component that allows developers to render data in a tabular format. It features sorting, pagination, and filtering capabilities. Developers can use this component to display large datasets in a clear and organized manner.",
+  "style_tags": [
+    "responsive",
+    "dark",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "sortable",
+    "paginated",
+    "filterable"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: table-demo\nDescription: This is a customizable table component that allows developers to render data in a tabular format. It features sorting, pagination, and filtering capabilities. Developers can use this component to display large datasets in a clear and organized manner.\nStyle: responsive, dark, customizable\nInteractions: sortable, paginated, filterable\nTags: data-grid, table, pagination, sorting, filtering\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "table-demo",
+  "display_name": "Table Demo",
+  "preview_url": "/previews/shadcn/table-demo.png"
+}

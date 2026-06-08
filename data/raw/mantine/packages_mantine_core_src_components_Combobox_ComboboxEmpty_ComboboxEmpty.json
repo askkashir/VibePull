@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxEmpty_ComboboxEmpty",
+  "name": "ComboboxEmpty",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxEmpty/ComboboxEmpty.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxEmptyStylesNames = 'empty';\n\nexport interface ComboboxEmptyProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxEmptyFactory>, ElementProps<'div'> {}\n\nexport type ComboboxEmptyFactory = Factory<{\n  props: ComboboxEmptyProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxEmptyStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxEmpty = factory<ComboboxEmptyFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'ComboboxEmpty',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return <Box {...ctx.getStyles('empty', { className, classNames, styles, style })} {...others} />;\n});\n\nComboboxEmpty.classes = classes;\nComboboxEmpty.displayName = '@mantine/core/ComboboxEmpty';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxEmpty_ComboboxEmpty",
+      "name": "ComboboxEmpty",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxEmpty/ComboboxEmpty.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxEmpty_ComboboxEmpty",
+      "name": "ComboboxEmpty",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxEmpty/ComboboxEmpty.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxEmptyStylesNames = 'empty';\n\nexport interface ComboboxEmptyProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxEmptyFactory>, ElementProps<'div'> {}\n\nexport type ComboboxEmptyFactory = Factory<{\n  props: ComboboxEmptyProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxEmptyStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxEmpty = factory<ComboboxEmptyFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'ComboboxEmpty',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return <Box {...ctx.getStyles('empty', { className, classNames, styles, style })} {...others} />;\n});\n\nComboboxEmpty.classes = classes;\nComboboxEmpty.displayName = '@mantine/core/ComboboxEmpty';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

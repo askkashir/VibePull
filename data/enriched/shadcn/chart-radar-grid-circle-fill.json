@@ -1,0 +1,44 @@
+{
+  "id": "chart-radar-grid-circle-fill",
+  "name": "chart-radar-grid-circle-fill",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radar",
+    "grid",
+    "dashboard",
+    "metrics",
+    "data-visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-grid-circle-fill",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-grid-circle-fill\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A radar chart visualization type, specifically grid-circle-fill, which represents complex data points within a circular grid, often used to display multi-dimensional performance metrics in a dashboard or report.",
+  "style_tags": [
+    "e.g. light",
+    "dark",
+    "material"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radar-grid-circle-fill\nDescription: A radar chart visualization type, specifically grid-circle-fill, which represents complex data points within a circular grid, often used to display multi-dimensional performance metrics in a dashboard or report.\nStyle: e.g. light, dark, material\nInteractions: e.g. hover, clickable, draggable\nTags: chart, radar, grid, dashboard, metrics, data-visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-grid-circle-fill",
+  "display_name": "Chart Radar Grid Circle Fill",
+  "preview_url": "/previews/shadcn/chart-radar-grid-circle-fill.png"
+}

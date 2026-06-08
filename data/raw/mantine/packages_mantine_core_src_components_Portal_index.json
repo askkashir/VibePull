@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Portal_index",
+  "name": "Portal",
+  "source_code": "// packages/@mantine/core/src/components/Portal/index.ts\nimport type { OptionalPortalProps } from './OptionalPortal';\nimport type { BasePortalProps, PortalProps } from './Portal';\n\nexport { Portal } from './Portal';\nexport { OptionalPortal } from './OptionalPortal';\n\nexport type { PortalProps, BasePortalProps, OptionalPortalProps };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Portal_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Portal/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Portal_index",
+      "name": "Portal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Portal/index.ts",
+          "content": "import type { OptionalPortalProps } from './OptionalPortal';\nimport type { BasePortalProps, PortalProps } from './Portal';\n\nexport { Portal } from './Portal';\nexport { OptionalPortal } from './OptionalPortal';\n\nexport type { PortalProps, BasePortalProps, OptionalPortalProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

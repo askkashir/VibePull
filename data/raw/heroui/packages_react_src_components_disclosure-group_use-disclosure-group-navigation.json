@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_disclosure-group_use-disclosure-group-navigation",
+  "name": "use-disclosure-group-navigation",
+  "source_code": "// packages/react/src/components/disclosure-group/use-disclosure-group-navigation.ts\nimport {useCallback, useMemo} from \"react\";\n\nexport interface UseDisclosureGroupNavigationProps {\n  expandedKeys: Set<string | number>;\n  itemIds: string[];\n  onExpandedChange: (keys: Set<string | number>) => void;\n  allowsMultipleExpanded?: boolean;\n}\n\nexport interface UseDisclosureGroupNavigationReturn {\n  currentIndex: number;\n  isPrevDisabled: boolean;\n  isNextDisabled: boolean;\n  onPrevious: () => void;\n  onNext: () => void;\n}\n\nexport function useDisclosureGroupNavigation({\n  allowsMultipleExpanded = false,\n  expandedKeys,\n  itemIds = [],\n  onExpandedChange,\n}: UseDisclosureGroupNavigationProps): UseDisclosureGroupNavigationReturn {\n  const currentIndex = useMemo(() => {\n    const expandedItems = itemIds.filter((id) => expandedKeys.has(id));\n    const currentItem = expandedItems.length > 0 ? expandedItems[0] : itemIds[0];\n\n    if (!currentItem) return -1;\n\n    return itemIds.indexOf(currentItem);\n  }, [expandedKeys, itemIds]);\n\n  const handlePrevious = useCallback(() => {\n    if (currentIndex <= 0) return;\n\n    const prevItem = itemIds[currentIndex - 1];\n\n    if (!prevItem) return;\n\n    if (allowsMultipleExpanded) {\n      const newKeys = new Set(expandedKeys);\n\n      newKeys.add(prevItem);\n      onExpandedChange(newKeys);\n    } else {\n      onExpandedChange(new Set([prevItem]));\n    }\n  }, [currentIndex, itemIds, expandedKeys, onExpandedChange, allowsMultipleExpanded]);\n\n  const handleNext = useCallback(() => {\n    if (currentIndex >= itemIds.length - 1) return;\n\n    const nextItem = itemIds[currentIndex + 1];\n\n    if (!nextItem) return;\n\n    if (allowsMultipleExpanded) {\n      const newKeys = new Set(expandedKeys);\n\n      newKeys.add(nextItem);\n      onExpandedChange(newKeys);\n    } else {\n      onExpandedChange(new Set([nextItem]));\n    }\n  }, [\n    currentIndex,\n    itemIds.length,\n    itemIds,\n    expandedKeys,\n    onExpandedChange,\n    allowsMultipleExpanded,\n  ]);\n\n  const isPrevDisabled = currentIndex <= 0;\n  const isNextDisabled = currentIndex >= itemIds.length - 1;\n\n  return {\n    currentIndex,\n    isPrevDisabled,\n    isNextDisabled,\n    onPrevious: handlePrevious,\n    onNext: handleNext,\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "disclosure-group_use-disclosure-group-navigation",
+      "name": "use-disclosure-group-navigation",
+      "path": "packages/react/src/components/disclosure-group/use-disclosure-group-navigation.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_disclosure-group_use-disclosure-group-navigation",
+      "name": "use-disclosure-group-navigation",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/disclosure-group/use-disclosure-group-navigation.ts",
+          "content": "import {useCallback, useMemo} from \"react\";\n\nexport interface UseDisclosureGroupNavigationProps {\n  expandedKeys: Set<string | number>;\n  itemIds: string[];\n  onExpandedChange: (keys: Set<string | number>) => void;\n  allowsMultipleExpanded?: boolean;\n}\n\nexport interface UseDisclosureGroupNavigationReturn {\n  currentIndex: number;\n  isPrevDisabled: boolean;\n  isNextDisabled: boolean;\n  onPrevious: () => void;\n  onNext: () => void;\n}\n\nexport function useDisclosureGroupNavigation({\n  allowsMultipleExpanded = false,\n  expandedKeys,\n  itemIds = [],\n  onExpandedChange,\n}: UseDisclosureGroupNavigationProps): UseDisclosureGroupNavigationReturn {\n  const currentIndex = useMemo(() => {\n    const expandedItems = itemIds.filter((id) => expandedKeys.has(id));\n    const currentItem = expandedItems.length > 0 ? expandedItems[0] : itemIds[0];\n\n    if (!currentItem) return -1;\n\n    return itemIds.indexOf(currentItem);\n  }, [expandedKeys, itemIds]);\n\n  const handlePrevious = useCallback(() => {\n    if (currentIndex <= 0) return;\n\n    const prevItem = itemIds[currentIndex - 1];\n\n    if (!prevItem) return;\n\n    if (allowsMultipleExpanded) {\n      const newKeys = new Set(expandedKeys);\n\n      newKeys.add(prevItem);\n      onExpandedChange(newKeys);\n    } else {\n      onExpandedChange(new Set([prevItem]));\n    }\n  }, [currentIndex, itemIds, expandedKeys, onExpandedChange, allowsMultipleExpanded]);\n\n  const handleNext = useCallback(() => {\n    if (currentIndex >= itemIds.length - 1) return;\n\n    const nextItem = itemIds[currentIndex + 1];\n\n    if (!nextItem) return;\n\n    if (allowsMultipleExpanded) {\n      const newKeys = new Set(expandedKeys);\n\n      newKeys.add(nextItem);\n      onExpandedChange(newKeys);\n    } else {\n      onExpandedChange(new Set([nextItem]));\n    }\n  }, [\n    currentIndex,\n    itemIds.length,\n    itemIds,\n    expandedKeys,\n    onExpandedChange,\n    allowsMultipleExpanded,\n  ]);\n\n  const isPrevDisabled = currentIndex <= 0;\n  const isNextDisabled = currentIndex >= itemIds.length - 1;\n\n  return {\n    currentIndex,\n    isPrevDisabled,\n    isNextDisabled,\n    onPrevious: handlePrevious,\n    onNext: handleNext,\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

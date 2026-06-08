@@ -1,0 +1,42 @@
+{
+  "id": "context-menu",
+  "name": "context-menu",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "menu",
+    "options",
+    "actions",
+    "interface"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## context-menu\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A context menu is a dropdown list that appears when a user interacts with an element to provide additional options. It is commonly used in applications with complex interfaces to offer context-specific actions. Developers can use this component to provide users with a list of relevant actions at the right moment.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. dropdown animation",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: context-menu\nDescription: A context menu is a dropdown list that appears when a user interacts with an element to provide additional options. It is commonly used in applications with complex interfaces to offer context-specific actions. Developers can use this component to provide users with a list of relevant actions at the right moment.\nStyle: e.g. dark, minimal\nInteractions: e.g. dropdown animation, hover, clickable\nTags: dropdown, menu, options, actions, interface\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "context-menu",
+  "display_name": "Context Menu",
+  "preview_url": "/previews/shadcn/context-menu.png"
+}

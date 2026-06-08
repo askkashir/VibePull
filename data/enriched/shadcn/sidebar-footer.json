@@ -1,0 +1,40 @@
+{
+  "id": "sidebar-footer",
+  "name": "sidebar-footer",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "footer",
+    "sidebar",
+    "content",
+    "supplementary"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-footer",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-footer\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sidebar-footer component is a UI element that is typically positioned at the bottom of a sidebar. It is used to display supplementary information, actions, or links that are related to the main content of the sidebar. This component is usually placed in a horizontal layout and has a fixed height to ensure consistency across different devices.",
+  "style_tags": [
+    "minimal",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "responsive"
+  ],
+  "component_type": "footer",
+  "generation_prompt": "Create a production-ready footer component with the following characteristics:\n\nName: sidebar-footer\nDescription: The sidebar-footer component is a UI element that is typically positioned at the bottom of a sidebar. It is used to display supplementary information, actions, or links that are related to the main content of the sidebar. This component is usually placed in a horizontal layout and has a fixed height to ensure consistency across different devices.\nStyle: minimal, responsive\nInteractions: clickable, responsive\nTags: footer, sidebar, content, supplementary\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-footer",
+  "display_name": "Sidebar Footer",
+  "preview_url": "/previews/shadcn/sidebar-footer.png"
+}

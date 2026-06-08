@@ -1,0 +1,22 @@
+{
+  "id": "chart-pie-donut",
+  "name": "chart-pie-donut",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-donut",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-donut\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

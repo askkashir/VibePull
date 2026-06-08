@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_PaginationLabel_PaginationLabel",
+  "name": "PaginationLabel",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/PaginationLabel/PaginationLabel.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport classes from '../Pagination.module.css';\n\nexport type PaginationFormatLabel = (input: { page: number; totalPages: number }) => string;\nexport type PaginationLabelStylesNames = 'label';\n\nexport interface PaginationLabelProps\n  extends BoxProps, CompoundStylesApiProps<PaginationLabelFactory>, ElementProps<'div'> {\n  /** Function to format the label text */\n  formatLabel?: PaginationFormatLabel;\n}\n\nexport type PaginationLabelFactory = Factory<{\n  props: PaginationLabelProps;\n  ref: HTMLDivElement;\n  stylesNames: PaginationLabelStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  formatLabel: ({ page, totalPages }) => `Page ${page} of ${totalPages}`,\n} satisfies Partial<PaginationLabelProps>;\n\nexport const PaginationLabel = factory<PaginationLabelFactory>((_props) => {\n  const props = useProps('PaginationLabel', defaultProps, _props);\n  const { classNames, className, style, styles, vars, formatLabel, ...others } = props;\n  const ctx = usePaginationContext();\n\n  return (\n    <Box {...ctx.getStyles('label', { className, style, styles, classNames })} {...others}>\n      {formatLabel({ page: ctx.active, totalPages: ctx.total })}\n    </Box>\n  );\n});\n\nPaginationLabel.classes = classes;\nPaginationLabel.displayName = '@mantine/core/PaginationLabel';\n",
+  "description": "",
+  "tags": [
+    "label",
+    "mantine",
+    "other",
+    "pagination"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_PaginationLabel_PaginationLabel",
+      "name": "PaginationLabel",
+      "path": "packages/@mantine/core/src/components/Pagination/PaginationLabel/PaginationLabel.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_PaginationLabel_PaginationLabel",
+      "name": "PaginationLabel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/PaginationLabel/PaginationLabel.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport classes from '../Pagination.module.css';\n\nexport type PaginationFormatLabel = (input: { page: number; totalPages: number }) => string;\nexport type PaginationLabelStylesNames = 'label';\n\nexport interface PaginationLabelProps\n  extends BoxProps, CompoundStylesApiProps<PaginationLabelFactory>, ElementProps<'div'> {\n  /** Function to format the label text */\n  formatLabel?: PaginationFormatLabel;\n}\n\nexport type PaginationLabelFactory = Factory<{\n  props: PaginationLabelProps;\n  ref: HTMLDivElement;\n  stylesNames: PaginationLabelStylesNames;\n  compound: true;\n}>;\n\nconst defaultProps = {\n  formatLabel: ({ page, totalPages }) => `Page ${page} of ${totalPages}`,\n} satisfies Partial<PaginationLabelProps>;\n\nexport const PaginationLabel = factory<PaginationLabelFactory>((_props) => {\n  const props = useProps('PaginationLabel', defaultProps, _props);\n  const { classNames, className, style, styles, vars, formatLabel, ...others } = props;\n  const ctx = usePaginationContext();\n\n  return (\n    <Box {...ctx.getStyles('label', { className, style, styles, classNames })} {...others}>\n      {formatLabel({ page: ctx.active, totalPages: ctx.total })}\n    </Box>\n  );\n});\n\nPaginationLabel.classes = classes;\nPaginationLabel.displayName = '@mantine/core/PaginationLabel';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "PaginationLabel is a pagination label UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: PaginationLabel\nDescription: PaginationLabel is a pagination label UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: label, mantine, other, pagination\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Pagination/PaginationLabel/PaginationLabel.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport classes from '../Pagination.module.css';\n\nexport type PaginationFormatLabel = (input: { page: number; totalPages: number }) => string;\nexport type PaginationLabelStylesNames = 'label';\n\nexport interface PaginationLa",
+  "prompt_version": 2,
+  "clean_id": "pagination-label",
+  "display_name": "Pagination Label",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pagination-paginationlabel-paginationlabel.png"
+}

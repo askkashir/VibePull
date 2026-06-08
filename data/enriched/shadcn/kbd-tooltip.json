@@ -1,0 +1,35 @@
+{
+  "id": "kbd-tooltip",
+  "name": "kbd-tooltip",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "accessibility",
+    "keyboard",
+    "assistive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd-tooltip",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## kbd-tooltip\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The kbd-tooltip is a lightweight, easily accessible UI component that visually indicates keyboard accessibility, typically used to highlight the current keyboard focus or provide instructions for keyboard navigation.",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: kbd-tooltip\nDescription: The kbd-tooltip is a lightweight, easily accessible UI component that visually indicates keyboard accessibility, typically used to highlight the current keyboard focus or provide instructions for keyboard navigation.\nStyle: modern\nInteractions: \nTags: accessibility, keyboard, assistive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "kbd-tooltip",
+  "display_name": "Kbd Tooltip",
+  "preview_url": "/previews/shadcn/kbd-tooltip.png"
+}

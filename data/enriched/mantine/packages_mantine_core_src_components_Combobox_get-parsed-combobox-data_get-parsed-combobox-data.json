@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_get-parsed-combobox-data_get-parsed-combobox-data",
+  "name": "get-parsed-combobox-data",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/get-parsed-combobox-data/get-parsed-combobox-data.ts\nimport { Primitive } from '../../../core';\nimport {\n  ComboboxData,\n  ComboboxGenericData,\n  ComboboxGenericItem,\n  ComboboxItem,\n  ComboboxItemGroup,\n  ComboboxParsedItem,\n  ComboboxParsedItemGroup,\n} from '../Combobox.types';\n\nfunction parseItem<Value extends Primitive = string>(\n  item:\n    | Primitive\n    | ComboboxItem<Value>\n    | ComboboxGenericItem<Value>\n    | ComboboxItemGroup<Value | ComboboxGenericItem<Value> | ComboboxItem<Value>>\n): ComboboxItem<Value> | ComboboxParsedItemGroup<Value> {\n  if (typeof item === 'string') {\n    return { value: item as Value, label: item };\n  }\n\n  if (typeof item === 'object' && 'value' in item && !('label' in item)) {\n    return { value: item.value, label: `${item.value}`, disabled: item.disabled };\n  }\n\n  if (typeof item === 'object' && 'group' in item) {\n    return {\n      group: item.group,\n      items: item.items.map((i) => parseItem<Value>(i) as ComboboxItem<Value>),\n    };\n  }\n\n  if (typeof item === 'number' || typeof item === 'bigint' || typeof item === 'boolean') {\n    return { value: item as Value, label: `${item}` };\n  }\n\n  return item;\n}\n\nexport function getParsedComboboxData<Value extends Primitive = string>(\n  data: ComboboxData<Value> | ComboboxGenericData<Value> | undefined\n): ComboboxParsedItem<Value>[] {\n  if (!data) {\n    return [];\n  }\n\n  return data.map((item) => parseItem<Value>(item));\n}\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "data",
+    "get",
+    "mantine",
+    "other",
+    "parsed"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_get-parsed-combobox-data_get-parsed-combobox-data",
+      "name": "get-parsed-combobox-data",
+      "path": "packages/@mantine/core/src/components/Combobox/get-parsed-combobox-data/get-parsed-combobox-data.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_get-parsed-combobox-data_get-parsed-combobox-data",
+      "name": "get-parsed-combobox-data",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/get-parsed-combobox-data/get-parsed-combobox-data.ts",
+          "content": "import { Primitive } from '../../../core';\nimport {\n  ComboboxData,\n  ComboboxGenericData,\n  ComboboxGenericItem,\n  ComboboxItem,\n  ComboboxItemGroup,\n  ComboboxParsedItem,\n  ComboboxParsedItemGroup,\n} from '../Combobox.types';\n\nfunction parseItem<Value extends Primitive = string>(\n  item:\n    | Primitive\n    | ComboboxItem<Value>\n    | ComboboxGenericItem<Value>\n    | ComboboxItemGroup<Value | ComboboxGenericItem<Value> | ComboboxItem<Value>>\n): ComboboxItem<Value> | ComboboxParsedItemGroup<Value> {\n  if (typeof item === 'string') {\n    return { value: item as Value, label: item };\n  }\n\n  if (typeof item === 'object' && 'value' in item && !('label' in item)) {\n    return { value: item.value, label: `${item.value}`, disabled: item.disabled };\n  }\n\n  if (typeof item === 'object' && 'group' in item) {\n    return {\n      group: item.group,\n      items: item.items.map((i) => parseItem<Value>(i) as ComboboxItem<Value>),\n    };\n  }\n\n  if (typeof item === 'number' || typeof item === 'bigint' || typeof item === 'boolean') {\n    return { value: item as Value, label: `${item}` };\n  }\n\n  return item;\n}\n\nexport function getParsedComboboxData<Value extends Primitive = string>(\n  data: ComboboxData<Value> | ComboboxGenericData<Value> | undefined\n): ComboboxParsedItem<Value>[] {\n  if (!data) {\n    return [];\n  }\n\n  return data.map((item) => parseItem<Value>(item));\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-parsed-combobox-data is a get parsed combobox data UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-parsed-combobox-data\nDescription: get-parsed-combobox-data is a get parsed combobox data UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: combobox, data, get, mantine, other, parsed\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/get-parsed-combobox-data/get-parsed-combobox-data.ts\nimport { Primitive } from '../../../core';\nimport {\n  ComboboxData,\n  ComboboxGenericData,\n  ComboboxGenericItem,\n  ComboboxItem,\n  ComboboxItemGroup,\n  ComboboxParsedItem,\n  ComboboxParsedItemGroup,\n} from '../Combobox.types';\n\nfunction parseItem<Value extends Primitive = string>(\n  item:\n    | Primitive\n    | ComboboxItem<Value>\n    | ComboboxGenericItem<Value>\n    | ComboboxItemGroup<Value |",
+  "prompt_version": 2,
+  "clean_id": "get-parsed-combobox-data",
+  "display_name": "Get Parsed Combobox Data",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-get-parsed-combobox-data-get-parsed-combobox-data.png"
+}

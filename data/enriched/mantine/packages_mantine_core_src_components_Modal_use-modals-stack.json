@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_use-modals-stack",
+  "name": "use-modals-stack",
+  "source_code": "// packages/@mantine/core/src/components/Modal/use-modals-stack.ts\nimport { useCallback, useState } from 'react';\n\ninterface ModalStackReturnType<T extends string> {\n  state: Record<T, boolean>;\n  open: (id: T) => void;\n  close: (id: T) => void;\n  toggle: (id: T) => void;\n  closeAll: () => void;\n  register: (id: T) => { opened: boolean; onClose: () => void; stackId: T };\n}\n\nexport function useModalsStack<const T extends string>(modals: T[]): ModalStackReturnType<T> {\n  const initialState = modals.reduce(\n    (acc, modal) => ({ ...acc, [modal]: false }),\n    {} as Record<T, boolean>\n  );\n\n  const [state, setState] = useState(initialState);\n\n  const open = useCallback((modal: T) => {\n    setState((current) => ({ ...current, [modal]: true }));\n  }, []);\n\n  const close = useCallback(\n    (modal: T) => setState((current) => ({ ...current, [modal]: false })),\n    []\n  );\n\n  const toggle = useCallback(\n    (modal: T) => setState((current) => ({ ...current, [modal]: !current[modal] })),\n    []\n  );\n\n  const closeAll = useCallback(() => setState(initialState), []);\n\n  const register = useCallback(\n    (modal: T) => ({\n      opened: state[modal],\n      onClose: () => close(modal),\n      stackId: modal,\n    }),\n    [state]\n  );\n\n  return { state, open, close, closeAll, toggle, register };\n}\n\nexport const useDrawersStack = useModalsStack;\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "modals",
+    "stack",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_use-modals-stack",
+      "name": "use-modals-stack",
+      "path": "packages/@mantine/core/src/components/Modal/use-modals-stack.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_use-modals-stack",
+      "name": "use-modals-stack",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/use-modals-stack.ts",
+          "content": "import { useCallback, useState } from 'react';\n\ninterface ModalStackReturnType<T extends string> {\n  state: Record<T, boolean>;\n  open: (id: T) => void;\n  close: (id: T) => void;\n  toggle: (id: T) => void;\n  closeAll: () => void;\n  register: (id: T) => { opened: boolean; onClose: () => void; stackId: T };\n}\n\nexport function useModalsStack<const T extends string>(modals: T[]): ModalStackReturnType<T> {\n  const initialState = modals.reduce(\n    (acc, modal) => ({ ...acc, [modal]: false }),\n    {} as Record<T, boolean>\n  );\n\n  const [state, setState] = useState(initialState);\n\n  const open = useCallback((modal: T) => {\n    setState((current) => ({ ...current, [modal]: true }));\n  }, []);\n\n  const close = useCallback(\n    (modal: T) => setState((current) => ({ ...current, [modal]: false })),\n    []\n  );\n\n  const toggle = useCallback(\n    (modal: T) => setState((current) => ({ ...current, [modal]: !current[modal] })),\n    []\n  );\n\n  const closeAll = useCallback(() => setState(initialState), []);\n\n  const register = useCallback(\n    (modal: T) => ({\n      opened: state[modal],\n      onClose: () => close(modal),\n      stackId: modal,\n    }),\n    [state]\n  );\n\n  return { state, open, close, closeAll, toggle, register };\n}\n\nexport const useDrawersStack = useModalsStack;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-modals-stack is a use modals stack UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: use-modals-stack\nDescription: use-modals-stack is a use modals stack UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, modal, modals, stack, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/use-modals-stack.ts\nimport { useCallback, useState } from 'react';\n\ninterface ModalStackReturnType<T extends string> {\n  state: Record<T, boolean>;\n  open: (id: T) => void;\n  close: (id: T) => void;\n  toggle: (id: T) => void;\n  closeAll: () => void;\n  register: (id: T) => { opened: boolean; onClose: () => void; stackId: T };\n}\n\nexport function useModalsStack<const T extends string>(modals: T[]): ModalStackReturnType<T> {\n  const initialState = modal",
+  "prompt_version": 2,
+  "clean_id": "use-modals-stack",
+  "display_name": "Use Modals Stack",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-use-modals-stack.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "components_icons_IconArrowsexpandLeft",
+  "name": "IconArrowsexpandLeft",
+  "source_code": "// components/icons/IconArrowsexpandLeft.tsx\nexport const IconArrowsexpandLeft = () => (\n  <svg\n    width=\"20\"\n    height=\"20\"\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M8.41707 3.41715V1.75049H1.75037V8.41714H3.41703V4.59565L8.23228 9.41089L9.41082 8.23237L4.59557 3.41715H8.41707Z\"\n      fill=\"url(#paint0_linear_3267_7865)\"\n    />\n    <path\n      d=\"M16.5829 11.5831H18.2496V18.2498H11.5829V16.5831H15.4044L10.5892 11.7679L11.7677 10.5894L16.5829 15.4046V11.5831Z\"\n      fill=\"url(#paint1_linear_3267_7865)\"\n    />\n    <defs>\n      <linearGradient\n        id=\"paint0_linear_3267_7865\"\n        x1=\"5.58059\"\n        y1=\"1.75049\"\n        x2=\"5.66515\"\n        y2=\"13.474\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F9FAFB\" />\n        <stop offset=\"1\" stop-color=\"#F9FAFB\" stop-opacity=\"0\" />\n      </linearGradient>\n      <linearGradient\n        id=\"paint1_linear_3267_7865\"\n        x1=\"14.4194\"\n        y1=\"10.5894\"\n        x2=\"14.504\"\n        y2=\"22.3129\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F9FAFB\" />\n        <stop offset=\"1\" stop-color=\"#F9FAFB\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_IconArrowsexpandLeft",
+      "name": "IconArrowsexpandLeft",
+      "path": "components/icons/IconArrowsexpandLeft.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_IconArrowsexpandLeft",
+      "name": "IconArrowsexpandLeft",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/IconArrowsexpandLeft.tsx",
+          "content": "export const IconArrowsexpandLeft = () => (\n  <svg\n    width=\"20\"\n    height=\"20\"\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <path\n      d=\"M8.41707 3.41715V1.75049H1.75037V8.41714H3.41703V4.59565L8.23228 9.41089L9.41082 8.23237L4.59557 3.41715H8.41707Z\"\n      fill=\"url(#paint0_linear_3267_7865)\"\n    />\n    <path\n      d=\"M16.5829 11.5831H18.2496V18.2498H11.5829V16.5831H15.4044L10.5892 11.7679L11.7677 10.5894L16.5829 15.4046V11.5831Z\"\n      fill=\"url(#paint1_linear_3267_7865)\"\n    />\n    <defs>\n      <linearGradient\n        id=\"paint0_linear_3267_7865\"\n        x1=\"5.58059\"\n        y1=\"1.75049\"\n        x2=\"5.66515\"\n        y2=\"13.474\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F9FAFB\" />\n        <stop offset=\"1\" stop-color=\"#F9FAFB\" stop-opacity=\"0\" />\n      </linearGradient>\n      <linearGradient\n        id=\"paint1_linear_3267_7865\"\n        x1=\"14.4194\"\n        y1=\"10.5894\"\n        x2=\"14.504\"\n        y2=\"22.3129\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F9FAFB\" />\n        <stop offset=\"1\" stop-color=\"#F9FAFB\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

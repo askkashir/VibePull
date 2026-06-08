@@ -1,0 +1,26 @@
+{
+  "id": "command-dialog",
+  "name": "command-dialog",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "command-dialog",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## command-dialog\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called command-dialog. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "command-dialog",
+  "display_name": "Command Dialog"
+}

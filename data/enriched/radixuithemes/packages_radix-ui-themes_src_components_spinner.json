@@ -1,0 +1,56 @@
+{
+  "id": "packages_radix-ui-themes_src_components_spinner",
+  "name": "spinner",
+  "source_code": "// packages/radix-ui-themes/src/components/spinner.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Flex } from './flex.js';\nimport { spinnerPropDefs } from './spinner.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype SpinnerElement = React.ElementRef<'span'>;\ntype SpinnerOwnProps = GetPropDefTypes<typeof spinnerPropDefs>;\ninterface SpinnerProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SpinnerOwnProps {}\nconst Spinner = React.forwardRef<SpinnerElement, SpinnerProps>((props, forwardedRef) => {\n  const { className, children, loading, ...spinnerProps } = extractProps(\n    props,\n    spinnerPropDefs,\n    marginPropDefs,\n  );\n\n  if (!loading) return children;\n\n  const spinner = (\n    <span {...spinnerProps} ref={forwardedRef} className={classNames('rt-Spinner', className)}>\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n    </span>\n  );\n\n  if (children === undefined) return spinner;\n\n  return (\n    <Flex asChild position=\"relative\" align=\"center\" justify=\"center\">\n      <span>\n        {/**\n         * `display: contents` removes the content from the accessibility tree in some browsers,\n         * so we force remove it with `aria-hidden`\n         */}\n        <span aria-hidden style={{ display: 'contents', visibility: 'hidden' }} inert={undefined}>\n          {children}\n        </span>\n\n        <Flex asChild align=\"center\" justify=\"center\" position=\"absolute\" inset=\"0\">\n          <span>{spinner}</span>\n        </Flex>\n      </span>\n    </Flex>\n  );\n});\nSpinner.displayName = 'Spinner';\n\nexport { Spinner };\nexport type { SpinnerProps };\n",
+  "description": "",
+  "tags": [
+    "loader",
+    "animation"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_spinner",
+      "name": "spinner.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/spinner.tsx",
+      "sha": "3f70bab7edb5986e97a2402d73968a81db11732f",
+      "size": 2146,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/spinner.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/spinner.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/3f70bab7edb5986e97a2402d73968a81db11732f",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/spinner.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/spinner.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/3f70bab7edb5986e97a2402d73968a81db11732f",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/spinner.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_spinner",
+      "name": "spinner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/spinner.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Flex } from './flex.js';\nimport { spinnerPropDefs } from './spinner.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype SpinnerElement = React.ElementRef<'span'>;\ntype SpinnerOwnProps = GetPropDefTypes<typeof spinnerPropDefs>;\ninterface SpinnerProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SpinnerOwnProps {}\nconst Spinner = React.forwardRef<SpinnerElement, SpinnerProps>((props, forwardedRef) => {\n  const { className, children, loading, ...spinnerProps } = extractProps(\n    props,\n    spinnerPropDefs,\n    marginPropDefs,\n  );\n\n  if (!loading) return children;\n\n  const spinner = (\n    <span {...spinnerProps} ref={forwardedRef} className={classNames('rt-Spinner', className)}>\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n      <span className=\"rt-SpinnerLeaf\" />\n    </span>\n  );\n\n  if (children === undefined) return spinner;\n\n  return (\n    <Flex asChild position=\"relative\" align=\"center\" justify=\"center\">\n      <span>\n        {/**\n         * `display: contents` removes the content from the accessibility tree in some browsers,\n         * so we force remove it with `aria-hidden`\n         */}\n        <span aria-hidden style={{ display: 'contents', visibility: 'hidden' }} inert={undefined}>\n          {children}\n        </span>\n\n        <Flex asChild align=\"center\" justify=\"center\" position=\"absolute\" inset=\"0\">\n          <span>{spinner}</span>\n        </Flex>\n      </span>\n    </Flex>\n  );\n});\nSpinner.displayName = 'Spinner';\n\nexport { Spinner };\nexport type { SpinnerProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The spinner component is a loading animation that replaces the children component when loading is enabled. It is used to display a visually appealing loading state.",
+  "style_tags": [
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner\nDescription: The spinner component is a loading animation that replaces the children component when loading is enabled. It is used to display a visually appealing loading state.\nStyle: glassmorphism\nInteractions: animated\nTags: loader, animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/spinner.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Flex } from './flex.js';\nimport { spinnerPropDefs } from './spinner.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { Ge",
+  "prompt_version": 2,
+  "clean_id": "spinner",
+  "display_name": "Spinner",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-spinner.png"
+}

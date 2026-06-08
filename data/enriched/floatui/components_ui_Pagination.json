@@ -1,0 +1,47 @@
+{
+  "id": "components_ui_Pagination",
+  "name": "Pagination",
+  "source_code": "// components/ui/Pagination.tsx\nimport {\n  ArrowLongRightIcon,\n  ArrowLongLeftIcon,\n} from \"@heroicons/react/24/solid\";\n\ninterface PaginationProps {\n  slug: string;\n  pageNumber: number;\n  lastPage: number;\n}\n\nconst Pagination: React.FC<PaginationProps> = ({\n  slug,\n  pageNumber,\n  lastPage,\n}) => {\n  return (\n    <div className=\"flex mt-12 items-center justify-center text-sm text-zinc-300\">\n      <a\n        className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${\n          pageNumber ? \"\" : \"pointer-events-none opacity-50\"\n        }`}\n        href={pageNumber ? `${slug}?page=${pageNumber}` : \"#\"}\n      >\n        <ArrowLongLeftIcon className=\"w-4 h-4\" />\n        Prev\n      </a>\n      <div className=\"px-6 font-bold\">\n        {pageNumber + 1} / {lastPage}\n      </div>\n      <a\n        className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${\n          pageNumber >= lastPage - 1 ? \"pointer-events-none opacity-30\" : \"\"\n        }`}\n        href={\n          pageNumber >= lastPage - 1 ? \"#\" : `${slug}?page=${pageNumber + 2}`\n        }\n      >\n        Next\n        <ArrowLongRightIcon className=\"w-4 h-4\" />\n      </a>\n    </div>\n  );\n};\n\nexport default Pagination;\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "other",
+    "pagination"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Pagination",
+      "name": "Pagination",
+      "path": "components/ui/Pagination.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Pagination",
+      "name": "Pagination",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Pagination.tsx",
+          "content": "import {\n  ArrowLongRightIcon,\n  ArrowLongLeftIcon,\n} from \"@heroicons/react/24/solid\";\n\ninterface PaginationProps {\n  slug: string;\n  pageNumber: number;\n  lastPage: number;\n}\n\nconst Pagination: React.FC<PaginationProps> = ({\n  slug,\n  pageNumber,\n  lastPage,\n}) => {\n  return (\n    <div className=\"flex mt-12 items-center justify-center text-sm text-zinc-300\">\n      <a\n        className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${\n          pageNumber ? \"\" : \"pointer-events-none opacity-50\"\n        }`}\n        href={pageNumber ? `${slug}?page=${pageNumber}` : \"#\"}\n      >\n        <ArrowLongLeftIcon className=\"w-4 h-4\" />\n        Prev\n      </a>\n      <div className=\"px-6 font-bold\">\n        {pageNumber + 1} / {lastPage}\n      </div>\n      <a\n        className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 duration-200 rounded-md px-2 py-1 w-[90px] text-center ${\n          pageNumber >= lastPage - 1 ? \"pointer-events-none opacity-30\" : \"\"\n        }`}\n        href={\n          pageNumber >= lastPage - 1 ? \"#\" : `${slug}?page=${pageNumber + 2}`\n        }\n      >\n        Next\n        <ArrowLongRightIcon className=\"w-4 h-4\" />\n      </a>\n    </div>\n  );\n};\n\nexport default Pagination;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Pagination is a pagination UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Pagination\nDescription: Pagination is a pagination UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: hover\nTags: floatui, other, pagination\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Pagination.tsx\nimport {\n  ArrowLongRightIcon,\n  ArrowLongLeftIcon,\n} from \"@heroicons/react/24/solid\";\n\ninterface PaginationProps {\n  slug: string;\n  pageNumber: number;\n  lastPage: number;\n}\n\nconst Pagination: React.FC<PaginationProps> = ({\n  slug,\n  pageNumber,\n  lastPage,\n}) => {\n  return (\n    <div className=\"flex mt-12 items-center justify-center text-sm text-zinc-300\">\n      <a\n        className={`flex items-center justify-center gap-x-2 bg-zinc-800 hover:bg-zinc-700 durat",
+  "prompt_version": 2,
+  "clean_id": "pagination",
+  "display_name": "Pagination",
+  "preview_url": "/previews/floatui/components-ui-pagination.png"
+}

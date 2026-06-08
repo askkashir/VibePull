@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Checkbox_index",
+  "name": "Checkbox",
+  "source_code": "// packages/@mantine/core/src/components/Checkbox/index.ts\nimport type {\n  CheckboxCssVariables,\n  CheckboxFactory,\n  CheckboxIconComponent,\n  CheckboxProps,\n  CheckboxStylesNames,\n  CheckboxVariant,\n} from './Checkbox';\nimport type {\n  CheckboxCardCssVariables,\n  CheckboxCardFactory,\n  CheckboxCardProps,\n  CheckboxCardStylesNames,\n} from './CheckboxCard/CheckboxCard';\nimport type {\n  CheckboxGroupFactory,\n  CheckboxGroupProps,\n  CheckboxGroupStylesNames,\n} from './CheckboxGroup/CheckboxGroup';\nimport type {\n  CheckboxIndicatorCssVariables,\n  CheckboxIndicatorFactory,\n  CheckboxIndicatorProps,\n  CheckboxIndicatorStylesNames,\n  CheckboxIndicatorVariant,\n} from './CheckboxIndicator/CheckboxIndicator';\nimport type { CheckboxIconProps, CheckIconProps } from './CheckIcon';\n\nexport { Checkbox } from './Checkbox';\nexport { CheckboxGroup, CheckboxGroupContext } from './CheckboxGroup/CheckboxGroup';\nexport { CheckIcon } from './CheckIcon';\nexport { CheckboxIndicator } from './CheckboxIndicator/CheckboxIndicator';\nexport { CheckboxCard, CheckboxCardContext } from './CheckboxCard/CheckboxCard';\n\nexport type {\n  CheckboxProps,\n  CheckboxStylesNames,\n  CheckboxCssVariables,\n  CheckboxFactory,\n  CheckboxVariant,\n  CheckboxIconComponent,\n  CheckboxGroupProps,\n  CheckboxGroupStylesNames,\n  CheckboxGroupFactory,\n  CheckboxIndicatorProps,\n  CheckboxIndicatorStylesNames,\n  CheckboxIndicatorCssVariables,\n  CheckboxIndicatorFactory,\n  CheckboxIndicatorVariant,\n  CheckboxCardProps,\n  CheckboxCardStylesNames,\n  CheckboxCardCssVariables,\n  CheckboxCardFactory,\n  CheckboxIconProps,\n  CheckIconProps,\n};\n",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Checkbox_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Checkbox/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Checkbox_index",
+      "name": "Checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Checkbox/index.ts",
+          "content": "import type {\n  CheckboxCssVariables,\n  CheckboxFactory,\n  CheckboxIconComponent,\n  CheckboxProps,\n  CheckboxStylesNames,\n  CheckboxVariant,\n} from './Checkbox';\nimport type {\n  CheckboxCardCssVariables,\n  CheckboxCardFactory,\n  CheckboxCardProps,\n  CheckboxCardStylesNames,\n} from './CheckboxCard/CheckboxCard';\nimport type {\n  CheckboxGroupFactory,\n  CheckboxGroupProps,\n  CheckboxGroupStylesNames,\n} from './CheckboxGroup/CheckboxGroup';\nimport type {\n  CheckboxIndicatorCssVariables,\n  CheckboxIndicatorFactory,\n  CheckboxIndicatorProps,\n  CheckboxIndicatorStylesNames,\n  CheckboxIndicatorVariant,\n} from './CheckboxIndicator/CheckboxIndicator';\nimport type { CheckboxIconProps, CheckIconProps } from './CheckIcon';\n\nexport { Checkbox } from './Checkbox';\nexport { CheckboxGroup, CheckboxGroupContext } from './CheckboxGroup/CheckboxGroup';\nexport { CheckIcon } from './CheckIcon';\nexport { CheckboxIndicator } from './CheckboxIndicator/CheckboxIndicator';\nexport { CheckboxCard, CheckboxCardContext } from './CheckboxCard/CheckboxCard';\n\nexport type {\n  CheckboxProps,\n  CheckboxStylesNames,\n  CheckboxCssVariables,\n  CheckboxFactory,\n  CheckboxVariant,\n  CheckboxIconComponent,\n  CheckboxGroupProps,\n  CheckboxGroupStylesNames,\n  CheckboxGroupFactory,\n  CheckboxIndicatorProps,\n  CheckboxIndicatorStylesNames,\n  CheckboxIndicatorCssVariables,\n  CheckboxIndicatorFactory,\n  CheckboxIndicatorVariant,\n  CheckboxCardProps,\n  CheckboxCardStylesNames,\n  CheckboxCardCssVariables,\n  CheckboxCardFactory,\n  CheckboxIconProps,\n  CheckIconProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Checkbox is a checkbox UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Checkbox\nDescription: Checkbox is a checkbox UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: checkbox, input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Checkbox/index.ts\nimport type {\n  CheckboxCssVariables,\n  CheckboxFactory,\n  CheckboxIconComponent,\n  CheckboxProps,\n  CheckboxStylesNames,\n  CheckboxVariant,\n} from './Checkbox';\nimport type {\n  CheckboxCardCssVariables,\n  CheckboxCardFactory,\n  CheckboxCardProps,\n  CheckboxCardStylesNames,\n} from './CheckboxCard/CheckboxCard';\nimport type {\n  CheckboxGroupFactory,\n  CheckboxGroupProps,\n  CheckboxGroupStylesNames,\n} from './CheckboxGroup/CheckboxGroup';\n",
+  "prompt_version": 2,
+  "clean_id": "checkbox",
+  "display_name": "Checkbox",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-checkbox-index.png"
+}

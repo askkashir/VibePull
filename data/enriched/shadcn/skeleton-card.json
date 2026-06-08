@@ -1,0 +1,42 @@
+{
+  "id": "skeleton-card",
+  "name": "skeleton-card",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "loading state",
+    "feedback",
+    "ux",
+    "ui components",
+    "loading animation",
+    "placeholders"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "skeleton-card",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## skeleton-card\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A skeleton card is a loading state UI component that mimics the appearance of a card. It displays a placeholder content, giving users a visual cue that the data is being fetched or processed. Use a skeleton card to indicate loading or delayed content in your applications.",
+  "style_tags": [
+    "minimal",
+    "light"
+  ],
+  "interaction_tags": [
+    "animate on load",
+    "static"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: skeleton-card\nDescription: A skeleton card is a loading state UI component that mimics the appearance of a card. It displays a placeholder content, giving users a visual cue that the data is being fetched or processed. Use a skeleton card to indicate loading or delayed content in your applications.\nStyle: minimal, light\nInteractions: animate on load, static\nTags: loading state, feedback, ux, ui components, loading animation, placeholders\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "skeleton-card",
+  "display_name": "Skeleton Card",
+  "preview_url": "/previews/shadcn/skeleton-card.png"
+}

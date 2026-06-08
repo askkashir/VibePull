@@ -1,0 +1,49 @@
+{
+  "id": "src_components_PreviewDirection",
+  "name": "PreviewDirection",
+  "source_code": "// src/components/PreviewDirection.astro\n---\nimport { ArrowLeftRight } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-direction data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Toggle direction\"\n    aria-pressed=\"true\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <ArrowLeftRight class=\"size-4\" />\n\n    <span data-text>LTR</span>\n  </button>\n</preview-direction>\n\n<script>\n  class PreviewDirection extends HTMLElement {\n    private contentSrc: string | null = null\n    private isProcessing = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        if (this.isProcessing) {\n          return\n        }\n\n        this.isProcessing = true\n\n        const isLtr = buttonEl.getAttribute('aria-pressed') === 'true'\n        const newState = !isLtr\n\n        const iframeEl = document.querySelector<HTMLIFrameElement>(\n          `component-preview[data-src=\"${this.contentSrc}\"] iframe`,\n        )\n\n        if (iframeEl?.contentWindow) {\n          const iframeOrigin = new URL(iframeEl.src, globalThis.location.href).origin\n\n          iframeEl.contentWindow.postMessage(\n            {\n              type: 'hyperui:preview-direction',\n              ltr: newState,\n            },\n            iframeOrigin,\n          )\n        }\n\n        buttonEl.setAttribute('aria-pressed', String(newState))\n\n        buttonText.textContent = newState ? 'LTR' : 'RTL'\n\n        this.isProcessing = false\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('preview-direction', PreviewDirection)\n</script>\n",
+  "description": "",
+  "tags": [
+    "direction",
+    "toggle",
+    "button",
+    "LTR",
+    "RTL"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewDirection",
+      "name": "PreviewDirection",
+      "path": "src/components/PreviewDirection.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewDirection",
+      "name": "PreviewDirection",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewDirection.astro",
+          "content": "---\nimport { ArrowLeftRight } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-direction data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Toggle direction\"\n    aria-pressed=\"true\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <ArrowLeftRight class=\"size-4\" />\n\n    <span data-text>LTR</span>\n  </button>\n</preview-direction>\n\n<script>\n  class PreviewDirection extends HTMLElement {\n    private contentSrc: string | null = null\n    private isProcessing = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        if (this.isProcessing) {\n          return\n        }\n\n        this.isProcessing = true\n\n        const isLtr = buttonEl.getAttribute('aria-pressed') === 'true'\n        const newState = !isLtr\n\n        const iframeEl = document.querySelector<HTMLIFrameElement>(\n          `component-preview[data-src=\"${this.contentSrc}\"] iframe`,\n        )\n\n        if (iframeEl?.contentWindow) {\n          const iframeOrigin = new URL(iframeEl.src, globalThis.location.href).origin\n\n          iframeEl.contentWindow.postMessage(\n            {\n              type: 'hyperui:preview-direction',\n              ltr: newState,\n            },\n            iframeOrigin,\n          )\n        }\n\n        buttonEl.setAttribute('aria-pressed', String(newState))\n\n        buttonText.textContent = newState ? 'LTR' : 'RTL'\n\n        this.isProcessing = false\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('preview-direction', PreviewDirection)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The PreviewDirection component is a toggle button with directional arrow that switches text between LTR and RTL directions. Use it when displaying multilingual text for user testing purposes.",
+  "style_tags": [
+    "default",
+    "plain"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggleable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: PreviewDirection\nDescription: The PreviewDirection component is a toggle button with directional arrow that switches text between LTR and RTL directions. Use it when displaying multilingual text for user testing purposes.\nStyle: default, plain\nInteractions: clickable, toggleable\nTags: direction, toggle, button, LTR, RTL\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/PreviewDirection.astro\n---\nimport { ArrowLeftRight } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-direction data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Toggle direction\"\n    aria-pressed=\"true\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 disabled:pointer-events-none disabled",
+  "prompt_version": 2,
+  "clean_id": "preview-direction",
+  "display_name": "Preview Direction",
+  "preview_url": "/previews/hyperui/src-components-previewdirection.png"
+}

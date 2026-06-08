@@ -1,0 +1,67 @@
+{
+  "id": "pagination",
+  "name": "pagination",
+  "source_code": "// src/components/ui/pagination.tsx\n'use client'\nimport { Pagination, usePaginationContext } from '@ark-ui/react/pagination'\nimport { EllipsisIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { pagination } from 'styled-system/recipes'\nimport { IconButton } from './icon-button'\n\nconst { withProvider, withContext } = createStyleContext(pagination)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Pagination.Root, 'root')\nexport const RootProvider = withProvider(Pagination.RootProvider, 'root')\nexport const Item = withContext(Pagination.Item, 'item')\nexport const Ellipsis = withContext(Pagination.Ellipsis, 'ellipsis')\nexport const PrevTrigger = withContext(Pagination.PrevTrigger, 'prevTrigger')\nexport const NextTrigger = withContext(Pagination.NextTrigger, 'nextTrigger')\n\nexport { PaginationContext as Context } from '@ark-ui/react/pagination'\n\nexport interface PaginationItemsProps extends React.HTMLAttributes<HTMLElement> {\n  render: (page: { type: 'page'; value: number; selected: boolean }) => React.ReactNode\n  ellipsis?: React.ReactElement | undefined\n}\n\nexport const Items = (props: PaginationItemsProps) => {\n  const ctx = usePaginationContext()\n  const { render, ellipsis, ...rest } = props\n\n  return ctx.pages.map((page, index) => {\n    if (page.type === 'ellipsis') {\n      return (\n        <Ellipsis asChild key={index} index={index} {...rest}>\n          {ellipsis || (\n            <IconButton as=\"span\" colorPalette=\"gray\">\n              <EllipsisIcon />\n            </IconButton>\n          )}\n        </Ellipsis>\n      )\n    }\n\n    return (\n      <Item asChild key={index} type=\"page\" value={page.value} {...rest}>\n        {render({ ...page, selected: ctx.page === page.value })}\n      </Item>\n    )\n  })\n}\n",
+  "description": "",
+  "tags": [
+    "other",
+    "pagination",
+    "parkui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "pagination",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/pagination.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Pagination from './pagination'",
+          "content": "'use client'\nimport { Pagination, usePaginationContext } from '@ark-ui/react/pagination'\nimport { EllipsisIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { pagination } from 'styled-system/recipes'\nimport { IconButton } from './icon-button'\n\nconst { withProvider, withContext } = createStyleContext(pagination)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Pagination.Root, 'root')\nexport const RootProvider = withProvider(Pagination.RootProvider, 'root')\nexport const Item = withContext(Pagination.Item, 'item')\nexport const Ellipsis = withContext(Pagination.Ellipsis, 'ellipsis')\nexport const PrevTrigger = withContext(Pagination.PrevTrigger, 'prevTrigger')\nexport const NextTrigger = withContext(Pagination.NextTrigger, 'nextTrigger')\n\nexport { PaginationContext as Context } from '@ark-ui/react/pagination'\n\nexport interface PaginationItemsProps extends React.HTMLAttributes<HTMLElement> {\n  render: (page: { type: 'page'; value: number; selected: boolean }) => React.ReactNode\n  ellipsis?: React.ReactElement | undefined\n}\n\nexport const Items = (props: PaginationItemsProps) => {\n  const ctx = usePaginationContext()\n  const { render, ellipsis, ...rest } = props\n\n  return ctx.pages.map((page, index) => {\n    if (page.type === 'ellipsis') {\n      return (\n        <Ellipsis asChild key={index} index={index} {...rest}>\n          {ellipsis || (\n            <IconButton as=\"span\" colorPalette=\"gray\">\n              <EllipsisIcon />\n            </IconButton>\n          )}\n        </Ellipsis>\n      )\n    }\n\n    return (\n      <Item asChild key={index} type=\"page\" value={page.value} {...rest}>\n        {render({ ...page, selected: ctx.page === page.value })}\n      </Item>\n    )\n  })\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-button",
+        "pagination-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "pagination",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/pagination.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Pagination from './pagination'",
+          "content": "'use client'\nimport { Pagination, usePaginationContext } from '@ark-ui/react/pagination'\nimport { EllipsisIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { pagination } from 'styled-system/recipes'\nimport { IconButton } from './icon-button'\n\nconst { withProvider, withContext } = createStyleContext(pagination)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Pagination.Root, 'root')\nexport const RootProvider = withProvider(Pagination.RootProvider, 'root')\nexport const Item = withContext(Pagination.Item, 'item')\nexport const Ellipsis = withContext(Pagination.Ellipsis, 'ellipsis')\nexport const PrevTrigger = withContext(Pagination.PrevTrigger, 'prevTrigger')\nexport const NextTrigger = withContext(Pagination.NextTrigger, 'nextTrigger')\n\nexport { PaginationContext as Context } from '@ark-ui/react/pagination'\n\nexport interface PaginationItemsProps extends React.HTMLAttributes<HTMLElement> {\n  render: (page: { type: 'page'; value: number; selected: boolean }) => React.ReactNode\n  ellipsis?: React.ReactElement | undefined\n}\n\nexport const Items = (props: PaginationItemsProps) => {\n  const ctx = usePaginationContext()\n  const { render, ellipsis, ...rest } = props\n\n  return ctx.pages.map((page, index) => {\n    if (page.type === 'ellipsis') {\n      return (\n        <Ellipsis asChild key={index} index={index} {...rest}>\n          {ellipsis || (\n            <IconButton as=\"span\" colorPalette=\"gray\">\n              <EllipsisIcon />\n            </IconButton>\n          )}\n        </Ellipsis>\n      )\n    }\n\n    return (\n      <Item asChild key={index} type=\"page\" value={page.value} {...rest}>\n        {render({ ...page, selected: ctx.page === page.value })}\n      </Item>\n    )\n  })\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-button",
+        "pagination-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "pagination is a pagination UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: pagination\nDescription: pagination is a pagination UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: other, pagination, parkui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/pagination.tsx\n'use client'\nimport { Pagination, usePaginationContext } from '@ark-ui/react/pagination'\nimport { EllipsisIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { pagination } from 'styled-system/recipes'\nimport { IconButton } from './icon-button'\n\nconst { withProvider, withContext } = createStyleContext(pagination)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Ro",
+  "prompt_version": 2,
+  "clean_id": "pagination",
+  "display_name": "Pagination",
+  "preview_url": "/previews/parkui/pagination.png"
+}

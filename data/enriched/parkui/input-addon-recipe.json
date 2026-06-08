@@ -1,0 +1,58 @@
+{
+  "id": "input-addon-recipe",
+  "name": "input-addon-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/input-addon.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const inputAddon = defineRecipe({\n  className: 'input-addon',\n  base: {\n    alignItems: 'center',\n    alignSelf: 'stretch',\n    borderRadius: 'l2',\n    color: 'fg.muted',\n    display: 'flex',\n    flex: '0 0 auto',\n    whiteSpace: 'nowrap',\n    width: 'auto',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    variant: {\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'gray.outline.border',\n      },\n      surface: {\n        bg: 'gray.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'gray.surface.border',\n      },\n      subtle: {\n        bg: 'gray.subtle.bg',\n      },\n    },\n    size: {\n      xs: { textStyle: 'sm', px: '2', _icon: { boxSize: '4' } },\n      sm: { textStyle: 'sm', px: '2.5', _icon: { boxSize: '4.5' } },\n      md: { textStyle: 'md', px: '3', _icon: { boxSize: '5' } },\n      lg: { textStyle: 'md', px: '3.5', _icon: { boxSize: '5' } },\n      xl: { textStyle: 'lg', px: '4', _icon: { boxSize: '5.5' } },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "addon",
+    "input",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "input-addon-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/input-addon.ts",
+          "type": "registry:recipe",
+          "imports": "import { inputAddon } from './input-addon'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const inputAddon = defineRecipe({\n  className: 'input-addon',\n  base: {\n    alignItems: 'center',\n    alignSelf: 'stretch',\n    borderRadius: 'l2',\n    color: 'fg.muted',\n    display: 'flex',\n    flex: '0 0 auto',\n    whiteSpace: 'nowrap',\n    width: 'auto',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    variant: {\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'gray.outline.border',\n      },\n      surface: {\n        bg: 'gray.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'gray.surface.border',\n      },\n      subtle: {\n        bg: 'gray.subtle.bg',\n      },\n    },\n    size: {\n      xs: { textStyle: 'sm', px: '2', _icon: { boxSize: '4' } },\n      sm: { textStyle: 'sm', px: '2.5', _icon: { boxSize: '4.5' } },\n      md: { textStyle: 'md', px: '3', _icon: { boxSize: '5' } },\n      lg: { textStyle: 'md', px: '3.5', _icon: { boxSize: '5' } },\n      xl: { textStyle: 'lg', px: '4', _icon: { boxSize: '5.5' } },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "input-addon-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/input-addon.ts",
+          "type": "registry:recipe",
+          "imports": "import { inputAddon } from './input-addon'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const inputAddon = defineRecipe({\n  className: 'input-addon',\n  base: {\n    alignItems: 'center',\n    alignSelf: 'stretch',\n    borderRadius: 'l2',\n    color: 'fg.muted',\n    display: 'flex',\n    flex: '0 0 auto',\n    whiteSpace: 'nowrap',\n    width: 'auto',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    variant: {\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'gray.outline.border',\n      },\n      surface: {\n        bg: 'gray.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'gray.surface.border',\n      },\n      subtle: {\n        bg: 'gray.subtle.bg',\n      },\n    },\n    size: {\n      xs: { textStyle: 'sm', px: '2', _icon: { boxSize: '4' } },\n      sm: { textStyle: 'sm', px: '2.5', _icon: { boxSize: '4.5' } },\n      md: { textStyle: 'md', px: '3', _icon: { boxSize: '5' } },\n      lg: { textStyle: 'md', px: '3.5', _icon: { boxSize: '5' } },\n      xl: { textStyle: 'lg', px: '4', _icon: { boxSize: '5.5' } },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "input-addon-recipe is a input addon recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-addon-recipe\nDescription: input-addon-recipe is a input addon recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: addon, input, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/input-addon.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const inputAddon = defineRecipe({\n  className: 'input-addon',\n  base: {\n    alignItems: 'center',\n    alignSelf: 'stretch',\n    borderRadius: 'l2',\n    color: 'fg.muted',\n    display: 'flex',\n    flex: '0 0 auto',\n    whiteSpace: 'nowrap',\n    width: 'auto',\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    variant: {\n      outline: {\n        borderWidth",
+  "prompt_version": 2,
+  "clean_id": "input-addon-recipe",
+  "display_name": "Input Addon Recipe",
+  "preview_url": "/previews/parkui/input-addon-recipe.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Group_index",
+  "name": "Group",
+  "source_code": "// packages/@mantine/core/src/components/Group/index.ts\nimport type {\n  GroupCssVariables,\n  GroupFactory,\n  GroupProps,\n  GroupStylesCtx,\n  GroupStylesNames,\n} from './Group';\n\nexport { Group } from './Group';\n\nexport type { GroupCssVariables, GroupFactory, GroupProps, GroupStylesCtx, GroupStylesNames };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Group_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Group/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Group_index",
+      "name": "Group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Group/index.ts",
+          "content": "import type {\n  GroupCssVariables,\n  GroupFactory,\n  GroupProps,\n  GroupStylesCtx,\n  GroupStylesNames,\n} from './Group';\n\nexport { Group } from './Group';\n\nexport type { GroupCssVariables, GroupFactory, GroupProps, GroupStylesCtx, GroupStylesNames };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuDivider_MenuDivider",
+  "name": "MenuDivider",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuDivider/MenuDivider.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuDividerStylesNames = 'divider';\n\nexport interface MenuDividerProps\n  extends BoxProps, CompoundStylesApiProps<MenuDividerFactory>, ElementProps<'div'> {}\n\nexport type MenuDividerFactory = Factory<{\n  props: MenuDividerProps;\n  ref: HTMLDivElement;\n  stylesNames: MenuDividerStylesNames;\n  compound: true;\n}>;\n\nexport const MenuDivider = factory<MenuDividerFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'MenuDivider',\n    null,\n    props\n  );\n  const ctx = useMenuContext();\n\n  return (\n    <Box {...ctx.getStyles('divider', { className, style, styles, classNames })} {...others} />\n  );\n});\n\nMenuDivider.classes = classes;\nMenuDivider.displayName = '@mantine/core/MenuDivider';\n",
+  "description": "",
+  "tags": [
+    "divider",
+    "mantine",
+    "menu",
+    "navbar"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuDivider_MenuDivider",
+      "name": "MenuDivider",
+      "path": "packages/@mantine/core/src/components/Menu/MenuDivider/MenuDivider.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuDivider_MenuDivider",
+      "name": "MenuDivider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuDivider/MenuDivider.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuDividerStylesNames = 'divider';\n\nexport interface MenuDividerProps\n  extends BoxProps, CompoundStylesApiProps<MenuDividerFactory>, ElementProps<'div'> {}\n\nexport type MenuDividerFactory = Factory<{\n  props: MenuDividerProps;\n  ref: HTMLDivElement;\n  stylesNames: MenuDividerStylesNames;\n  compound: true;\n}>;\n\nexport const MenuDivider = factory<MenuDividerFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'MenuDivider',\n    null,\n    props\n  );\n  const ctx = useMenuContext();\n\n  return (\n    <Box {...ctx.getStyles('divider', { className, style, styles, classNames })} {...others} />\n  );\n});\n\nMenuDivider.classes = classes;\nMenuDivider.displayName = '@mantine/core/MenuDivider';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuDivider is a menu divider UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuDivider\nDescription: MenuDivider is a menu divider UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: divider, mantine, menu, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuDivider/MenuDivider.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuDividerStylesNames = 'divider';\n\nexport interface MenuDividerProps\n  extends BoxProps, CompoundStylesApiProps<MenuDividerFactory>, ElementProps<'div'> {}\n\nexport type MenuDividerFactory = F",
+  "prompt_version": 2,
+  "clean_id": "menu-divider",
+  "display_name": "Menu Divider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menudivider-menudivider.png"
+}

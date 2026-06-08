@@ -1,0 +1,40 @@
+{
+  "id": "hover-card",
+  "name": "hover-card",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "card",
+    "hover",
+    "informational"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## hover-card\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The hover-card is an interactive UI component that displays a card with a hover effect, highlighting important information or media. It is commonly used in scenarios where users need to see more details or hover interactions. This component adds a touch of elegance to any layout, making it suitable for various applications, including dashboards and product showcases.",
+  "style_tags": [
+    "e.g., material",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g., hover",
+    "transition"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: hover-card\nDescription: The hover-card is an interactive UI component that displays a card with a hover effect, highlighting important information or media. It is commonly used in scenarios where users need to see more details or hover interactions. This component adds a touch of elegance to any layout, making it suitable for various applications, including dashboards and product showcases.\nStyle: e.g., material, minimal, glassmorphism\nInteractions: e.g., hover, transition\nTags: card, hover, informational\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "hover-card",
+  "display_name": "Hover Card",
+  "preview_url": "/previews/shadcn/hover-card.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "progress-demo",
+  "name": "progress-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "progress",
+    "bar",
+    "loading",
+    "indicator",
+    "task",
+    "completion",
+    "animation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "progress-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## progress-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Progress Demo UI component is a visually appealing progress bar used to track task completion or loading progress. It can be applied to a wide range of use cases, from simple task tracking to complex loading indicators. This component is ideal for designers and developers who need to showcase progress in their applications.",
+  "style_tags": [
+    "e.g. material",
+    "flat",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "progressive",
+    "responsive"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: progress-demo\nDescription: The Progress Demo UI component is a visually appealing progress bar used to track task completion or loading progress. It can be applied to a wide range of use cases, from simple task tracking to complex loading indicators. This component is ideal for designers and developers who need to showcase progress in their applications.\nStyle: e.g. material, flat, minimal\nInteractions: e.g. animated, progressive, responsive\nTags: progress, bar, loading, indicator, task, completion, animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "progress-demo",
+  "display_name": "Progress Demo",
+  "preview_url": "/previews/shadcn/progress-demo.png"
+}

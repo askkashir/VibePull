@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-16",
+  "name": "sidebar-16",
+  "source_code": "",
+  "description": "A sidebar with a sticky site header.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-16",
+      "type": "registry:block",
+      "description": "A sidebar with a sticky site header.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-16\n\nA sidebar with a sticky site header.\n\n**Type:** registry:block\n**Files:** 8 file(s)"
+  }
+}

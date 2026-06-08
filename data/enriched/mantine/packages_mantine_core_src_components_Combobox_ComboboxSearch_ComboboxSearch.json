@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxSearch_ComboboxSearch",
+  "name": "ComboboxSearch",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxSearch/ComboboxSearch.tsx\nimport { useMergedRef } from '@mantine/hooks';\nimport { ElementProps, factory, Factory, useProps } from '../../../core';\nimport { Input, InputProps, InputStylesNames } from '../../Input/Input';\nimport { useComboboxContext } from '../Combobox.context';\nimport { useComboboxTargetProps } from '../use-combobox-target-props/use-combobox-target-props';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxSearchStylesNames = InputStylesNames;\n\nexport interface ComboboxSearchProps extends InputProps, ElementProps<'input', 'size'> {\n  /** if set, the search input has `aria-` attribute @default true */\n  withAriaAttributes?: boolean;\n\n  /** if set, the search input handles keyboard navigation @default true */\n  withKeyboardNavigation?: boolean;\n}\n\nexport type ComboboxSearchFactory = Factory<{\n  props: ComboboxSearchProps;\n  ref: HTMLInputElement;\n  stylesNames: ComboboxSearchStylesNames;\n}>;\n\nconst defaultProps = {\n  withAriaAttributes: true,\n  withKeyboardNavigation: true,\n} satisfies Partial<ComboboxSearchProps>;\n\nexport const ComboboxSearch = factory<ComboboxSearchFactory>((_props) => {\n  const props = useProps('ComboboxSearch', defaultProps, _props);\n  const {\n    classNames,\n    styles,\n    unstyled,\n    vars,\n    withAriaAttributes,\n    onKeyDown,\n    onClick,\n    withKeyboardNavigation,\n    size,\n    ref,\n    ...others\n  } = props;\n\n  const ctx = useComboboxContext();\n  const _styles = ctx.getStyles('search');\n\n  const targetProps = useComboboxTargetProps({\n    targetType: 'input',\n    withAriaAttributes,\n    withKeyboardNavigation,\n    withExpandedAttribute: false,\n    onKeyDown,\n    onClick,\n    autoComplete: 'off',\n  });\n\n  return (\n    <Input\n      ref={useMergedRef(ref, ctx.store.searchRef)}\n      classNames={[{ input: _styles.className }, classNames] as any}\n      styles={[{ input: _styles.style }, styles] as any}\n      size={size || ctx.size}\n      {...targetProps}\n      {...others}\n      __staticSelector=\"Combobox\"\n    />\n  );\n});\n\nComboboxSearch.classes = classes;\nComboboxSearch.displayName = '@mantine/core/ComboboxSearch';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "mantine",
+    "other",
+    "search"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxSearch_ComboboxSearch",
+      "name": "ComboboxSearch",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxSearch/ComboboxSearch.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxSearch_ComboboxSearch",
+      "name": "ComboboxSearch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxSearch/ComboboxSearch.tsx",
+          "content": "import { useMergedRef } from '@mantine/hooks';\nimport { ElementProps, factory, Factory, useProps } from '../../../core';\nimport { Input, InputProps, InputStylesNames } from '../../Input/Input';\nimport { useComboboxContext } from '../Combobox.context';\nimport { useComboboxTargetProps } from '../use-combobox-target-props/use-combobox-target-props';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxSearchStylesNames = InputStylesNames;\n\nexport interface ComboboxSearchProps extends InputProps, ElementProps<'input', 'size'> {\n  /** if set, the search input has `aria-` attribute @default true */\n  withAriaAttributes?: boolean;\n\n  /** if set, the search input handles keyboard navigation @default true */\n  withKeyboardNavigation?: boolean;\n}\n\nexport type ComboboxSearchFactory = Factory<{\n  props: ComboboxSearchProps;\n  ref: HTMLInputElement;\n  stylesNames: ComboboxSearchStylesNames;\n}>;\n\nconst defaultProps = {\n  withAriaAttributes: true,\n  withKeyboardNavigation: true,\n} satisfies Partial<ComboboxSearchProps>;\n\nexport const ComboboxSearch = factory<ComboboxSearchFactory>((_props) => {\n  const props = useProps('ComboboxSearch', defaultProps, _props);\n  const {\n    classNames,\n    styles,\n    unstyled,\n    vars,\n    withAriaAttributes,\n    onKeyDown,\n    onClick,\n    withKeyboardNavigation,\n    size,\n    ref,\n    ...others\n  } = props;\n\n  const ctx = useComboboxContext();\n  const _styles = ctx.getStyles('search');\n\n  const targetProps = useComboboxTargetProps({\n    targetType: 'input',\n    withAriaAttributes,\n    withKeyboardNavigation,\n    withExpandedAttribute: false,\n    onKeyDown,\n    onClick,\n    autoComplete: 'off',\n  });\n\n  return (\n    <Input\n      ref={useMergedRef(ref, ctx.store.searchRef)}\n      classNames={[{ input: _styles.className }, classNames] as any}\n      styles={[{ input: _styles.style }, styles] as any}\n      size={size || ctx.size}\n      {...targetProps}\n      {...others}\n      __staticSelector=\"Combobox\"\n    />\n  );\n});\n\nComboboxSearch.classes = classes;\nComboboxSearch.displayName = '@mantine/core/ComboboxSearch';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxSearch is a combobox search UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ComboboxSearch\nDescription: ComboboxSearch is a combobox search UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: interactive\nTags: combobox, mantine, other, search\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxSearch/ComboboxSearch.tsx\nimport { useMergedRef } from '@mantine/hooks';\nimport { ElementProps, factory, Factory, useProps } from '../../../core';\nimport { Input, InputProps, InputStylesNames } from '../../Input/Input';\nimport { useComboboxContext } from '../Combobox.context';\nimport { useComboboxTargetProps } from '../use-combobox-target-props/use-combobox-target-props';\nimport classes from '../Combobox.module.css';\n\nexport type Combobox",
+  "prompt_version": 2,
+  "clean_id": "combobox-search",
+  "display_name": "Combobox Search",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxsearch-comboboxsearch.png"
+}

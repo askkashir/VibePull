@@ -1,0 +1,23 @@
+{
+  "id": "login-01",
+  "name": "login-01",
+  "source_code": "",
+  "description": "A simple login form.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-01",
+      "type": "registry:block",
+      "description": "A simple login form.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-01\n\nA simple login form.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

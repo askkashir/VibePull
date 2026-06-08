@@ -1,0 +1,42 @@
+{
+  "id": "button-group-nested",
+  "name": "button-group-nested",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "group",
+    "nested",
+    "complex actions",
+    "options"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-nested",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-nested\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button group consisting of multiple buttons arranged in a nested layout, ideal for complex actions or to emphasize specific options.",
+  "style_tags": [
+    "material design",
+    "flat design",
+    "modern"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated transitions"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-nested\nDescription: A button group consisting of multiple buttons arranged in a nested layout, ideal for complex actions or to emphasize specific options.\nStyle: material design, flat design, modern\nInteractions: clickable, animated transitions\nTags: button, group, nested, complex actions, options\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-nested",
+  "display_name": "Button Group Nested",
+  "preview_url": "/previews/shadcn/button-group-nested.png"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "sonner-types",
+  "name": "sonner-types",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sonner-types",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sonner-types\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "native-select-groups",
+  "name": "native-select-groups",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "menu",
+    "multiselect",
+    "option",
+    "settings",
+    "user-profile"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "native-select-groups",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## native-select-groups\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The native-select-groups component is a visually appealing and interactive dropdown menu that allows users to select one or multiple options. It is ideal for scenarios where a user needs to select a category, filter results, or configure settings. This component can be used in a variety of contexts, from user profiles to product filtering.",
+  "style_tags": [
+    "e.g. dark",
+    "material-ui"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "select",
+  "generation_prompt": "Create a production-ready select component with the following characteristics:\n\nName: native-select-groups\nDescription: The native-select-groups component is a visually appealing and interactive dropdown menu that allows users to select one or multiple options. It is ideal for scenarios where a user needs to select a category, filter results, or configure settings. This component can be used in a variety of contexts, from user profiles to product filtering.\nStyle: e.g. dark, material-ui\nInteractions: e.g. hover, clickable\nTags: dropdown, menu, multiselect, option, settings, user-profile\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "native-select-groups",
+  "display_name": "Native Select Groups",
+  "preview_url": "/previews/shadcn/native-select-groups.png"
+}

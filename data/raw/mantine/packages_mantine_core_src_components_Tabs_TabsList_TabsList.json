@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tabs_TabsList_TabsList",
+  "name": "TabsList",
+  "source_code": "// packages/@mantine/core/src/components/Tabs/TabsList/TabsList.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useTabsContext } from '../Tabs.context';\nimport classes from '../Tabs.module.css';\n\nexport type TabsListStylesNames = 'list';\n\nexport interface TabsListProps\n  extends BoxProps, CompoundStylesApiProps<TabsListFactory>, ElementProps<'div'> {\n  /** `Tabs.Tab` components */\n  children: React.ReactNode;\n\n  /** Determines whether tabs should take all available space @default false */\n  grow?: boolean;\n\n  /** Tabs alignment @default flex-start */\n  justify?: React.CSSProperties['justifyContent'];\n}\n\nexport type TabsListFactory = Factory<{\n  props: TabsListProps;\n  ref: HTMLDivElement;\n  stylesNames: TabsListStylesNames;\n  compound: true;\n}>;\n\nexport const TabsList = factory<TabsListFactory>((_props) => {\n  const props = useProps('TabsList', null, _props);\n  const { children, className, grow, justify, classNames, styles, style, mod, ...others } = props;\n\n  const ctx = useTabsContext();\n\n  return (\n    <Box\n      {...ctx.getStyles('list', {\n        className,\n        style,\n        classNames,\n        styles,\n        props,\n        variant: ctx.variant,\n      })}\n      role=\"tablist\"\n      variant={ctx.variant}\n      mod={[\n        {\n          grow,\n          orientation: ctx.orientation,\n          placement: ctx.orientation === 'vertical' && ctx.placement,\n          inverted: ctx.inverted,\n        },\n        mod,\n      ]}\n      aria-orientation={ctx.orientation}\n      __vars={{ '--tabs-justify': justify }}\n      {...others}\n    >\n      {children}\n    </Box>\n  );\n});\n\nTabsList.classes = classes;\nTabsList.displayName = '@mantine/core/TabsList';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tabs_TabsList_TabsList",
+      "name": "TabsList",
+      "path": "packages/@mantine/core/src/components/Tabs/TabsList/TabsList.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tabs_TabsList_TabsList",
+      "name": "TabsList",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tabs/TabsList/TabsList.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useTabsContext } from '../Tabs.context';\nimport classes from '../Tabs.module.css';\n\nexport type TabsListStylesNames = 'list';\n\nexport interface TabsListProps\n  extends BoxProps, CompoundStylesApiProps<TabsListFactory>, ElementProps<'div'> {\n  /** `Tabs.Tab` components */\n  children: React.ReactNode;\n\n  /** Determines whether tabs should take all available space @default false */\n  grow?: boolean;\n\n  /** Tabs alignment @default flex-start */\n  justify?: React.CSSProperties['justifyContent'];\n}\n\nexport type TabsListFactory = Factory<{\n  props: TabsListProps;\n  ref: HTMLDivElement;\n  stylesNames: TabsListStylesNames;\n  compound: true;\n}>;\n\nexport const TabsList = factory<TabsListFactory>((_props) => {\n  const props = useProps('TabsList', null, _props);\n  const { children, className, grow, justify, classNames, styles, style, mod, ...others } = props;\n\n  const ctx = useTabsContext();\n\n  return (\n    <Box\n      {...ctx.getStyles('list', {\n        className,\n        style,\n        classNames,\n        styles,\n        props,\n        variant: ctx.variant,\n      })}\n      role=\"tablist\"\n      variant={ctx.variant}\n      mod={[\n        {\n          grow,\n          orientation: ctx.orientation,\n          placement: ctx.orientation === 'vertical' && ctx.placement,\n          inverted: ctx.inverted,\n        },\n        mod,\n      ]}\n      aria-orientation={ctx.orientation}\n      __vars={{ '--tabs-justify': justify }}\n      {...others}\n    >\n      {children}\n    </Box>\n  );\n});\n\nTabsList.classes = classes;\nTabsList.displayName = '@mantine/core/TabsList';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

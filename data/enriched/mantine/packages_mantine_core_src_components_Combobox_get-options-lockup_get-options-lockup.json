@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_get-options-lockup_get-options-lockup",
+  "name": "get-options-lockup",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/get-options-lockup/get-options-lockup.ts\nimport { Primitive } from '../../../core';\nimport { ComboboxItem, ComboboxParsedItem } from '../Combobox.types';\n\nexport function getOptionsLockup<Value extends Primitive = string>(\n  options: ComboboxParsedItem<Value>[]\n): Record<PropertyKey, ComboboxItem<Value>> {\n  return options.reduce<Record<string, ComboboxItem<Value>>>((acc, item) => {\n    if ('group' in item) {\n      return { ...acc, ...getOptionsLockup(item.items) };\n    }\n\n    acc[`${item.value}`] = item;\n\n    return acc;\n  }, {});\n}\n",
+  "description": "",
+  "tags": [
+    "get",
+    "lockup",
+    "mantine",
+    "options",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_get-options-lockup_get-options-lockup",
+      "name": "get-options-lockup",
+      "path": "packages/@mantine/core/src/components/Combobox/get-options-lockup/get-options-lockup.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_get-options-lockup_get-options-lockup",
+      "name": "get-options-lockup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/get-options-lockup/get-options-lockup.ts",
+          "content": "import { Primitive } from '../../../core';\nimport { ComboboxItem, ComboboxParsedItem } from '../Combobox.types';\n\nexport function getOptionsLockup<Value extends Primitive = string>(\n  options: ComboboxParsedItem<Value>[]\n): Record<PropertyKey, ComboboxItem<Value>> {\n  return options.reduce<Record<string, ComboboxItem<Value>>>((acc, item) => {\n    if ('group' in item) {\n      return { ...acc, ...getOptionsLockup(item.items) };\n    }\n\n    acc[`${item.value}`] = item;\n\n    return acc;\n  }, {});\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-options-lockup is a get options lockup UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-options-lockup\nDescription: get-options-lockup is a get options lockup UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: get, lockup, mantine, options, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/get-options-lockup/get-options-lockup.ts\nimport { Primitive } from '../../../core';\nimport { ComboboxItem, ComboboxParsedItem } from '../Combobox.types';\n\nexport function getOptionsLockup<Value extends Primitive = string>(\n  options: ComboboxParsedItem<Value>[]\n): Record<PropertyKey, ComboboxItem<Value>> {\n  return options.reduce<Record<string, ComboboxItem<Value>>>((acc, item) => {\n    if ('group' in item) {\n      return { ...acc, ...getOptionsL",
+  "prompt_version": 2,
+  "clean_id": "get-options-lockup",
+  "display_name": "Get Options Lockup",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-get-options-lockup-get-options-lockup.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_SliderMark",
+  "name": "SliderMark",
+  "source_code": "// packages/@mantine/core/src/components/Slider/SliderMark.ts\nimport React from 'react';\n\nexport interface SliderMark {\n  /** The value at which the mark is positioned */\n  value: number;\n\n  /** Optional label displayed below the mark */\n  label?: React.ReactNode;\n\n  /** If true, the mark will not be displayed on the track but can still be used with restrictToMarks for snapping */\n  hidden?: boolean;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "mark",
+    "other",
+    "slider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_SliderMark",
+      "name": "SliderMark",
+      "path": "packages/@mantine/core/src/components/Slider/SliderMark.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_SliderMark",
+      "name": "SliderMark",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/SliderMark.ts",
+          "content": "import React from 'react';\n\nexport interface SliderMark {\n  /** The value at which the mark is positioned */\n  value: number;\n\n  /** Optional label displayed below the mark */\n  label?: React.ReactNode;\n\n  /** If true, the mark will not be displayed on the track but can still be used with restrictToMarks for snapping */\n  hidden?: boolean;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "SliderMark is a slider mark UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SliderMark\nDescription: SliderMark is a slider mark UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, mark, other, slider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/SliderMark.ts\nimport React from 'react';\n\nexport interface SliderMark {\n  /** The value at which the mark is positioned */\n  value: number;\n\n  /** Optional label displayed below the mark */\n  label?: React.ReactNode;\n\n  /** If true, the mark will not be displayed on the track but can still be used with restrictToMarks for snapping */\n  hidden?: boolean;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "slider-mark",
+  "display_name": "Slider Mark",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-slidermark.png"
+}

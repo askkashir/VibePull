@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.types",
+  "name": "ColorPicker.types",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts\nexport type ColorFormat = 'hex' | 'hexa' | 'rgba' | 'rgb' | 'hsl' | 'hsla';\n\nexport interface HsvaColor {\n  h: number;\n  s: number;\n  v: number;\n  a: number;\n}\n\nexport interface RgbaColor {\n  r: number;\n  g: number;\n  b: number;\n  a: number;\n}\n\nexport interface HslaColor {\n  h: number;\n  s: number;\n  l: number;\n  a: number;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_ColorPicker.types",
+      "name": "ColorPicker.types",
+      "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.types",
+      "name": "ColorPicker.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts",
+          "content": "export type ColorFormat = 'hex' | 'hexa' | 'rgba' | 'rgb' | 'hsl' | 'hsla';\n\nexport interface HsvaColor {\n  h: number;\n  s: number;\n  v: number;\n  a: number;\n}\n\nexport interface RgbaColor {\n  r: number;\n  g: number;\n  b: number;\n  a: number;\n}\n\nexport interface HslaColor {\n  h: number;\n  s: number;\n  l: number;\n  a: number;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

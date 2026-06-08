@@ -1,0 +1,26 @@
+{
+  "id": "dropdown-menu-demo",
+  "name": "dropdown-menu-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dropdown-menu-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dropdown-menu-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called dropdown-menu-demo. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "dropdown-menu-demo",
+  "display_name": "Dropdown Menu Demo"
+}

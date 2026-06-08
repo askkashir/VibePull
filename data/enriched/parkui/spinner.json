@@ -1,0 +1,63 @@
+{
+  "id": "spinner",
+  "name": "spinner",
+  "source_code": "// src/components/ui/spinner.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { spinner } from 'styled-system/recipes'\n\nexport type SpinnerProps = ComponentProps<typeof Spinner>\nexport const Spinner = styled(ark.span, spinner)\n",
+  "description": "",
+  "tags": [
+    "loader",
+    "parkui",
+    "spinner"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/spinner.tsx",
+          "type": "registry:ui",
+          "exports": "export { Spinner, type SpinnerProps } from './spinner'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { spinner } from 'styled-system/recipes'\n\nexport type SpinnerProps = ComponentProps<typeof Spinner>\nexport const Spinner = styled(ark.span, spinner)\n"
+        }
+      ],
+      "registryDependencies": [
+        "spinner-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "spinner",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/spinner.tsx",
+          "type": "registry:ui",
+          "exports": "export { Spinner, type SpinnerProps } from './spinner'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { spinner } from 'styled-system/recipes'\n\nexport type SpinnerProps = ComponentProps<typeof Spinner>\nexport const Spinner = styled(ark.span, spinner)\n"
+        }
+      ],
+      "registryDependencies": [
+        "spinner-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "spinner is a spinner UI component from the parkui corpus. It provides reusable loader behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner\nDescription: spinner is a spinner UI component from the parkui corpus. It provides reusable loader behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: loader, parkui, spinner\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/spinner.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { spinner } from 'styled-system/recipes'\n\nexport type SpinnerProps = ComponentProps<typeof Spinner>\nexport const Spinner = styled(ark.span, spinner)\n",
+  "prompt_version": 2,
+  "clean_id": "spinner",
+  "display_name": "Spinner",
+  "preview_url": "/previews/parkui/spinner.png"
+}

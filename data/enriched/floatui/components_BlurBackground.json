@@ -1,0 +1,47 @@
+{
+  "id": "components_BlurBackground",
+  "name": "BlurBackground",
+  "source_code": "// components/BlurBackground.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  className = \"\",\n  isActive,\n  setActive = () => null,\n  ...props\n}: {\n  isActive: boolean;\n  setActive?: (bool: boolean) => void;\n  className?: string;\n}) => (\n  <div\n    {...props}\n    className={mergeTW(\n      `${\n        isActive ? \"opacity-100\" : \"opacity-0 pointer-events-none\"\n      } transform duration-200 z-10 fixed inset-0 w-full h-full bg-black/20 backdrop-blur-sm ${className}`\n    )}\n    onClick={() => setActive(false)}\n  ></div>\n);\n",
+  "description": "",
+  "tags": [
+    "background",
+    "blur",
+    "floatui",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "BlurBackground",
+      "name": "BlurBackground",
+      "path": "components/BlurBackground.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_BlurBackground",
+      "name": "BlurBackground",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/BlurBackground.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  className = \"\",\n  isActive,\n  setActive = () => null,\n  ...props\n}: {\n  isActive: boolean;\n  setActive?: (bool: boolean) => void;\n  className?: string;\n}) => (\n  <div\n    {...props}\n    className={mergeTW(\n      `${\n        isActive ? \"opacity-100\" : \"opacity-0 pointer-events-none\"\n      } transform duration-200 z-10 fixed inset-0 w-full h-full bg-black/20 backdrop-blur-sm ${className}`\n    )}\n    onClick={() => setActive(false)}\n  ></div>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BlurBackground is a blur background UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BlurBackground\nDescription: BlurBackground is a blur background UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: interactive\nTags: background, blur, floatui, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/BlurBackground.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  className = \"\",\n  isActive,\n  setActive = () => null,\n  ...props\n}: {\n  isActive: boolean;\n  setActive?: (bool: boolean) => void;\n  className?: string;\n}) => (\n  <div\n    {...props}\n    className={mergeTW(\n      `${\n        isActive ? \"opacity-100\" : \"opacity-0 pointer-events-none\"\n      } transform duration-200 z-10 fixed inset-0 w-full h-full bg-black/20 backdrop-blur-sm ${className}`\n    )}\n    onClick=",
+  "prompt_version": 2,
+  "clean_id": "blur-background",
+  "display_name": "Blur Background",
+  "preview_url": "/previews/floatui/components-blurbackground.png"
+}

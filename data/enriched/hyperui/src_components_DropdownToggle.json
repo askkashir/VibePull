@@ -1,0 +1,48 @@
+{
+  "id": "src_components_DropdownToggle",
+  "name": "DropdownToggle",
+  "source_code": "// src/components/DropdownToggle.astro\n---\nimport { Menu, X } from '@lucide/astro'\n---\n\n<dropdown-button>\n  <button\n    type=\"button\"\n    aria-haspopup=\"true\"\n    aria-expanded=\"false\"\n    aria-controls=\"dropdown-menu\"\n    aria-label=\"Open navigation\"\n    class=\"inline-flex rounded-lg border border-gray-100 bg-gray-100 px-4 py-2 md:hidden\"\n  >\n    <Menu data-open=\"false\" class=\"size-4 data-[open=false]:inline data-[open=true]:hidden\" />\n\n    <X data-open=\"false\" class=\"size-4 data-[open=false]:hidden data-[open=true]:inline\" />\n  </button>\n</dropdown-button>\n\n<script>\n  class DropdownButton extends HTMLElement {\n    private isOpen = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonSVGs = [...buttonEl.querySelectorAll('svg')]\n\n      this.clickHandler = () => {\n        this.isOpen = !this.isOpen\n\n        buttonEl.setAttribute('aria-expanded', String(this.isOpen))\n        buttonEl.setAttribute('aria-label', this.isOpen ? 'Close navigation' : 'Open navigation')\n\n        buttonSVGs.forEach((svgEl) => svgEl.setAttribute('data-open', String(this.isOpen)))\n\n        document.dispatchEvent(\n          new CustomEvent('dropdown:toggle', {\n            bubbles: true,\n            detail: { open: this.isOpen },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-button', DropdownButton)\n</script>\n",
+  "description": "",
+  "tags": [
+    "button",
+    "toggle",
+    "dropdown",
+    "responsive"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "DropdownToggle",
+      "name": "DropdownToggle",
+      "path": "src/components/DropdownToggle.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_DropdownToggle",
+      "name": "DropdownToggle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/DropdownToggle.astro",
+          "content": "---\nimport { Menu, X } from '@lucide/astro'\n---\n\n<dropdown-button>\n  <button\n    type=\"button\"\n    aria-haspopup=\"true\"\n    aria-expanded=\"false\"\n    aria-controls=\"dropdown-menu\"\n    aria-label=\"Open navigation\"\n    class=\"inline-flex rounded-lg border border-gray-100 bg-gray-100 px-4 py-2 md:hidden\"\n  >\n    <Menu data-open=\"false\" class=\"size-4 data-[open=false]:inline data-[open=true]:hidden\" />\n\n    <X data-open=\"false\" class=\"size-4 data-[open=false]:hidden data-[open=true]:inline\" />\n  </button>\n</dropdown-button>\n\n<script>\n  class DropdownButton extends HTMLElement {\n    private isOpen = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonSVGs = [...buttonEl.querySelectorAll('svg')]\n\n      this.clickHandler = () => {\n        this.isOpen = !this.isOpen\n\n        buttonEl.setAttribute('aria-expanded', String(this.isOpen))\n        buttonEl.setAttribute('aria-label', this.isOpen ? 'Close navigation' : 'Open navigation')\n\n        buttonSVGs.forEach((svgEl) => svgEl.setAttribute('data-open', String(this.isOpen)))\n\n        document.dispatchEvent(\n          new CustomEvent('dropdown:toggle', {\n            bubbles: true,\n            detail: { open: this.isOpen },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-button', DropdownButton)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The DropdownToggle component is an interactive toggle button used to open and close navigation menus, typically used in responsive designs for smaller screen sizes.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: DropdownToggle\nDescription: The DropdownToggle component is an interactive toggle button used to open and close navigation menus, typically used in responsive designs for smaller screen sizes.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: button, toggle, dropdown, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/DropdownToggle.astro\n---\nimport { Menu, X } from '@lucide/astro'\n---\n\n<dropdown-button>\n  <button\n    type=\"button\"\n    aria-haspopup=\"true\"\n    aria-expanded=\"false\"\n    aria-controls=\"dropdown-menu\"\n    aria-label=\"Open navigation\"\n    class=\"inline-flex rounded-lg border border-gray-100 bg-gray-100 px-4 py-2 md:hidden\"\n  >\n    <Menu data-open=\"false\" class=\"size-4 data-[open=false]:inline data-[open=true]:hidden\" />\n\n    <X data-open=\"false\" class=\"size-4 data-[open=false]:h",
+  "prompt_version": 2,
+  "clean_id": "dropdown-toggle",
+  "display_name": "Dropdown Toggle",
+  "preview_url": "/previews/hyperui/src-components-dropdowntoggle.png"
+}

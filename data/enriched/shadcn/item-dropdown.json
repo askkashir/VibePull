@@ -1,0 +1,41 @@
+{
+  "id": "item-dropdown",
+  "name": "item-dropdown",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "trigger",
+    "options"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-dropdown",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-dropdown\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "An item-dropdown is a component typically consisting of a trigger button or icon and a dropdown list. It appears on a page when the trigger is clicked and disappears when the user interacts with other components. Developers use an item-dropdown to provide users with a concise list of actions or options related to a specific item.",
+  "style_tags": [
+    "e.g. outlined",
+    "filled",
+    "hover-effect"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "clickable",
+    "responsive"
+  ],
+  "component_type": "dropdown",
+  "generation_prompt": "Create a production-ready dropdown component with the following characteristics:\n\nName: item-dropdown\nDescription: An item-dropdown is a component typically consisting of a trigger button or icon and a dropdown list. It appears on a page when the trigger is clicked and disappears when the user interacts with other components. Developers use an item-dropdown to provide users with a concise list of actions or options related to a specific item.\nStyle: e.g. outlined, filled, hover-effect\nInteractions: e.g. animated, clickable, responsive\nTags: dropdown, trigger, options\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-dropdown",
+  "display_name": "Item Dropdown",
+  "preview_url": "/previews/shadcn/item-dropdown.png"
+}

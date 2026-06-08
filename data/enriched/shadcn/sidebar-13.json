@@ -1,0 +1,45 @@
+{
+  "id": "sidebar-13",
+  "name": "sidebar-13",
+  "source_code": "",
+  "description": "A sidebar in a dialog.",
+  "tags": [
+    "sidebar",
+    "dialog",
+    "collapsible",
+    "options",
+    "navigation",
+    "control"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-13",
+      "type": "registry:block",
+      "description": "A sidebar in a dialog.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-13\n\nA sidebar in a dialog.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A reusable, collapsible sidebar component suitable for use within a dialog, providing an organized layout for additional features or options. This component is particularly useful when presenting detailed information or providing additional actions in a controlled manner. It can be easily hidden or shown when needed, streamlining the user interface.",
+  "style_tags": [
+    "e.g. modern",
+    "flat",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. collapsible",
+    "responsive",
+    "on-click"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-13\nDescription: A reusable, collapsible sidebar component suitable for use within a dialog, providing an organized layout for additional features or options. This component is particularly useful when presenting detailed information or providing additional actions in a controlled manner. It can be easily hidden or shown when needed, streamlining the user interface.\nStyle: e.g. modern, flat, glassmorphism\nInteractions: e.g. collapsible, responsive, on-click\nTags: sidebar, dialog, collapsible, options, navigation, control\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-13",
+  "display_name": "Sidebar 13",
+  "preview_url": "/previews/shadcn/sidebar-13.png"
+}

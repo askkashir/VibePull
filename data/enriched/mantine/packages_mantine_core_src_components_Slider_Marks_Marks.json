@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_Marks_Marks",
+  "name": "Marks",
+  "source_code": "// packages/@mantine/core/src/components/Slider/Marks/Marks.tsx\nimport { Box } from '../../../core';\nimport { useSliderContext } from '../Slider.context';\nimport { SliderMark } from '../SliderMark';\nimport { getPosition } from '../utils/get-position/get-position';\nimport { isMarkFilled } from './is-mark-filled';\n\nexport interface MarksProps {\n  marks: SliderMark[] | undefined;\n  min: number;\n  max: number;\n  value: number;\n  offset: number | undefined;\n  disabled: boolean | undefined;\n  inverted: boolean | undefined;\n  startPointValue?: number;\n}\n\nexport function Marks({\n  marks,\n  min,\n  max,\n  disabled,\n  value,\n  offset,\n  inverted,\n  startPointValue,\n}: MarksProps) {\n  const { getStyles } = useSliderContext();\n\n  if (!marks) {\n    return null;\n  }\n\n  const items = marks.map((mark, index) => {\n    if (mark.hidden) {\n      return null;\n    }\n\n    return (\n      <Box\n        {...getStyles('markWrapper')}\n        __vars={{ '--mark-offset': `${getPosition({ value: mark.value, min, max })}%` }}\n        key={index}\n      >\n        <Box\n          {...getStyles('mark')}\n          mod={{\n            filled: isMarkFilled({ mark, value, offset, inverted, startPointValue }),\n            disabled,\n          }}\n        />\n        {mark.label && <div {...getStyles('markLabel')}>{mark.label}</div>}\n      </Box>\n    );\n  });\n\n  return <div>{items}</div>;\n}\n\nMarks.displayName = '@mantine/core/SliderMarks';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "marks",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_Marks_Marks",
+      "name": "Marks",
+      "path": "packages/@mantine/core/src/components/Slider/Marks/Marks.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_Marks_Marks",
+      "name": "Marks",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/Marks/Marks.tsx",
+          "content": "import { Box } from '../../../core';\nimport { useSliderContext } from '../Slider.context';\nimport { SliderMark } from '../SliderMark';\nimport { getPosition } from '../utils/get-position/get-position';\nimport { isMarkFilled } from './is-mark-filled';\n\nexport interface MarksProps {\n  marks: SliderMark[] | undefined;\n  min: number;\n  max: number;\n  value: number;\n  offset: number | undefined;\n  disabled: boolean | undefined;\n  inverted: boolean | undefined;\n  startPointValue?: number;\n}\n\nexport function Marks({\n  marks,\n  min,\n  max,\n  disabled,\n  value,\n  offset,\n  inverted,\n  startPointValue,\n}: MarksProps) {\n  const { getStyles } = useSliderContext();\n\n  if (!marks) {\n    return null;\n  }\n\n  const items = marks.map((mark, index) => {\n    if (mark.hidden) {\n      return null;\n    }\n\n    return (\n      <Box\n        {...getStyles('markWrapper')}\n        __vars={{ '--mark-offset': `${getPosition({ value: mark.value, min, max })}%` }}\n        key={index}\n      >\n        <Box\n          {...getStyles('mark')}\n          mod={{\n            filled: isMarkFilled({ mark, value, offset, inverted, startPointValue }),\n            disabled,\n          }}\n        />\n        {mark.label && <div {...getStyles('markLabel')}>{mark.label}</div>}\n      </Box>\n    );\n  });\n\n  return <div>{items}</div>;\n}\n\nMarks.displayName = '@mantine/core/SliderMarks';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Marks is a marks UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Marks\nDescription: Marks is a marks UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, marks, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/Marks/Marks.tsx\nimport { Box } from '../../../core';\nimport { useSliderContext } from '../Slider.context';\nimport { SliderMark } from '../SliderMark';\nimport { getPosition } from '../utils/get-position/get-position';\nimport { isMarkFilled } from './is-mark-filled';\n\nexport interface MarksProps {\n  marks: SliderMark[] | undefined;\n  min: number;\n  max: number;\n  value: number;\n  offset: number | undefined;\n  disabled: boolean | undefined;\n  inverted",
+  "prompt_version": 2,
+  "clean_id": "marks",
+  "display_name": "Marks",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-marks-marks.png"
+}

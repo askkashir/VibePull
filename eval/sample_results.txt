@@ -1,0 +1,131 @@
+﻿
+QUERY: animated loading spinner
+===============================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1561.19it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1645.13it/s]
+Rank | Component           | Server     | Type   | Visual summary                                                                                       | Score 
+-----+---------------------+------------+--------+------------------------------------------------------------------------------------------------------+-------
+1    | spinner             | radixuithe | loader | The spinner component is a loading animation that replaces the children component when loading is en | 8.3424
+2    | spinner-input-group | shadcn     | input  | The Spinner Input Group is a visually appealing input field that includes an animated spinning icon, | 7.0659
+3    | spinner-basic       | shadcn     | loader | A basic spinner component is a simple circular or oval-shaped animation used to indicate waiting or  | 7.0303
+4    | spinner-item        | shadcn     | loader | A spinner-item is a small circular or oval component used to show progress or loading animation in a | 6.9551
+5    | spinner-size        | shadcn     | loader | This is a customizable spinner component, used to represent loading progress. It's a simple and circ | 6.6287
+
+
+QUERY: dark glassmorphism card
+==============================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1146.86it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1221.09it/s]
+Rank | Component          | Server     | Type | Visual summary                                                                                       | Score 
+-----+--------------------+------------+------+------------------------------------------------------------------------------------------------------+-------
+1    | Text Reveal Card   | aceternity | card | A reveal card component where the reveal text animates in as the user interacts with it, with option | 5.9419
+2    | Neon Gradient Card | magicui    | card | Neon Gradient Card is a customizable card component with a neon gradient effect. Use it for highligh | 4.8966
+3    | Magic Card         | magicui    | card | A dynamic Magic Card React component that supports gradient or orb mode, with customizable colors an | 4.6895
+4    | Glare Card         | aceternity | card | Glare Card is a visually striking card component that creates a reflective, shiny effect. It is comm | 2.0730
+5    | card               | radixuithe | card | A card is a self-contained block of content, similar to a UI element in the Material Design specific | 1.8040
+
+
+QUERY: sidebar navigation with icons
+====================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  76%|#######5  | 78/103 [00:00<00:00, 765.69it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 805.28it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1522.72it/s]
+Rank | Component                | Server | Type    | Visual summary                                                                                       | Score 
+-----+--------------------------+--------+---------+------------------------------------------------------------------------------------------------------+-------
+1    | sidebar-07               | shadcn | sidebar | A collapsible sidebar that displays icons when minimized, useful for navigation in applications requ | 6.9155
+2    | sidebar-menu-collapsible | shadcn | card    | The sidebar-menu-collapsible component is a collapsible menu that appears within a sidebar. It typic | 5.4883
+3    | sidebar-01               | shadcn | navbar  | A simple, collapsible sidebar that displays navigation grouped by sections, ideal for dashboards and | 4.6992
+4    | sidebar                  | shadcn | navbar  | A sidebar is a vertical component that occupies a significant portion of the screen, typically displ | 4.5673
+5    | sidebar-menu             | shadcn | navbar  | The sidebar-menu component is a horizontal menu placed on the side of a screen, typically within a s | 4.4449
+
+
+QUERY: button with loading state
+================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  83%|########2 | 85/103 [00:00<00:00, 834.57it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 824.52it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1599.00it/s]
+Rank | Component            | Server     | Type   | Visual summary                                                                                       | Score 
+-----+----------------------+------------+--------+------------------------------------------------------------------------------------------------------+-------
+1    | Shimmer Button       | magicui    | button | A button component with shimmer effect, indicating a loading state. It can be used when a user inter | 6.6049
+2    | Stateful Button      | aceternity | button | A stateful button that displays a loading animation and a checkmark animation upon successful comple | 6.2774
+3    | Button               | tremor     | button | A customizable button component with various styles and loading states.                              | 5.9568
+4    | button-loading       | shadcn     | button | A button with a circular progress indicator, indicating the process of loading data. It is suitable  | 4.2594
+5    | neumorph-button-demo | cultui     | button | A reusable button component with various styles and effects, including hover, active, and loading st | 4.1045
+
+
+QUERY: hero section with animated background
+============================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 3269.93it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 2100.92it/s]
+Rank | Component                    | Server     | Type | Visual summary                                                                                       | Score 
+-----+------------------------------+------------+------+------------------------------------------------------------------------------------------------------+-------
+1    | hero-liquid-metal            | cultui     | hero | HeroLiquidMetal is a section-level component featuring a LiquidMetal shader as a background. It incl | 7.9811
+2    | hero-dithering-demo          | cultui     | hero | HeroDitheringDemo is a demo component that showcases a hero section with animated visuals and badges | 6.0599
+3    | hero-color-panel             | cultui     | hero | A hero color panel component that displays a colorful background panel with an optional title, subti | 5.1776
+4    | Hero Video Dialog Top In Bot | magicui    | card | Hero Video Dialog component with a light background for light mode and a dark background for dark mo | 4.8065
+5    | Hero Parallax                | aceternity | hero | A scrolling hero section with parallax effect and grid layout, suitable for showcasing products or c | 4.0233
+
+
+QUERY: data table with sorting
+==============================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1579.39it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1449.05it/s]
+Rank | Component       | Server     | Type  | Visual summary                                                                                       | Score  
+-----+-----------------+------------+-------+------------------------------------------------------------------------------------------------------+--------
+1    | data-table-demo | shadcn     | table | A data table component is a grid-based UI element for displaying a list of data, ideal for data-heav | 5.7256 
+2    | table-demo      | shadcn     | table | This is a customizable table component that allows developers to render data in a tabular format. It | 5.0043 
+3    | table           | shadcn     | table | A table component is a container for structured data, consisting of rows and columns that can be sor | 3.9875 
+4    | data-list       | radixuithe | table | DataList is a visually-structured component used to display multiple data points in a list format, s | -2.0571
+5    | table           | pinesui    | table | A table component that displays data in a tabular format, suitable for displaying data in a grid-lik | -2.1396
+
+
+QUERY: date picker calendar
+===========================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1566.32it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1622.26it/s]
+Rank | Component                | Server  | Type        | Visual summary                                                                                       | Score 
+-----+--------------------------+---------+-------------+------------------------------------------------------------------------------------------------------+-------
+1    | calendar-year-picker     | heroui  | other       | A calendar year picker is a date range picker component that displays a calendar grid with years. It | 8.6162
+2    | date-picker              | pinesui | form        | A date-picker component that allows developers to select a date from a calendar interface. It includ | 8.4735
+3    | date-picker-with-presets | shadcn  | date-picker | This date-picker-with-presets component is a form input field with a calendar icon that allows users | 8.1458
+4    | DatePicker               | tremor  | date picker | A Date Picker component that allows users to select a date from a calendar. It can be used when the  | 8.1208
+5    | calendar-demo            | shadcn  | date picker | The Calendar Demo component is a date picker UI element that allows users to select dates from a vis | 8.0391
+
+
+QUERY: modal dialog with overlay
+================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1126.64it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1245.33it/s]
+Rank | Component   | Server     | Type  | Visual summary                                                                                       | Score 
+-----+-------------+------------+-------+------------------------------------------------------------------------------------------------------+-------
+1    | modal       | pinesui    | modal | A modal window with a close button and a dismissable background, typically displayed on top of the m | 7.2025
+2    | dialog      | shadcn     | modal | A dialog component is a lightweight overlay window used to display information or to request action  | 7.1326
+3    | modal       | heroui     | modal | A modal is a dialog box that pops up to display additional information or require user interaction.  | 6.8982
+4    | dialog-demo | shadcn     | modal | The DialogDemo component is a customizable modal window that can be used to display important inform | 6.8457
+5    | dialog      | radixuithe | modal | A dialog box that can be triggered by a user, typically for providing additional information or prom | 5.6699
+
+
+QUERY: notification toast message
+=================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2085.40it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 2087.47it/s]
+Rank | Component    | Server  | Type  | Visual summary                                                                                       | Score  
+-----+--------------+---------+-------+------------------------------------------------------------------------------------------------------+--------
+1    | toast        | pinesui | toast | A toast notification component, usually displayed at the top of the screen. It shows a title and des | 6.9526 
+2    | Toaster      | tremor  | other | The Toaster component displays a series of toast notifications in a viewport, swiping from right to  | 6.3489 
+3    | Notification | mantine | other | Notification is a notification UI component from the mantine corpus. It provides reusable other beha | -1.3702
+4    | alert        | shadcn  | alert | The alert component is a notification box that draws attention to an issue, warning, or success mess | -1.6095
+5    | Notification | mantine | other | A pop-up notification can be displayed to inform the user about a specific action or event. It can h | -2.0215
+
+
+QUERY: chart bar graph dashboard
+================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1303.39it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1408.28it/s]
+Rank | Component              | Server | Type  | Visual summary                                                                                       | Score 
+-----+------------------------+--------+-------+------------------------------------------------------------------------------------------------------+-------
+1    | chart-bar-mixed        | shadcn | graph | Bar chart component with mixed series, suitable for displaying combined data in a visual and easy-to | 6.7490
+2    | chart-bar-demo-grid    | shadcn | chart | A reusable chart component that showcases bar graph data in a grid layout, ideal for displaying fina | 6.3234
+3    | chart-bar-multiple     | shadcn | chart | A chart-bar-multiple component displays a multi-series bar chart, ideal for visualizing and comparin | 5.9802
+4    | chart-bar-label-custom | shadcn | chart | A customizable bar chart component for visualizing categorical data. Developers use it to create int | 5.8506
+5    | chart-bar-demo-tooltip | shadcn | chart | A chart bar demonstration with a tooltip provides a way to visualize and compare data points, ideal  | 5.6144
+
+

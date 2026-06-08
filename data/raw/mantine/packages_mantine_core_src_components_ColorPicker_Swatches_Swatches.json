@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_Swatches_Swatches",
+  "name": "Swatches",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/Swatches/Swatches.tsx\nimport { use } from 'react';\nimport { Box, ElementProps, luminance } from '../../../core';\nimport { CheckIcon } from '../../Checkbox';\nimport { ColorSwatch } from '../../ColorSwatch';\nimport { ColorPickerContext } from '../ColorPicker.context';\n\nexport interface SwatchesProps extends ElementProps<'div'> {\n  size?: string | number;\n  data: string[];\n  swatchesPerRow?: number;\n  focusable?: boolean;\n  value?: string;\n  onChangeEnd?: (color: string) => void;\n  setValue: (value: string) => void;\n}\n\nexport function Swatches({\n  className,\n  datatype,\n  setValue,\n  onChangeEnd,\n  size,\n  focusable,\n  data,\n  swatchesPerRow,\n  value,\n  ...others\n}: SwatchesProps) {\n  const ctx = use(ColorPickerContext)!;\n\n  const colors = data.map((color, index) => (\n    <ColorSwatch\n      {...ctx.getStyles('swatch')}\n      unstyled={ctx.unstyled}\n      component=\"button\"\n      type=\"button\"\n      color={color}\n      key={index}\n      radius=\"sm\"\n      onClick={() => {\n        setValue(color);\n        onChangeEnd?.(color);\n      }}\n      aria-label={color}\n      tabIndex={focusable ? 0 : -1}\n      data-swatch\n    >\n      {value === color && (\n        <CheckIcon size=\"35%\" color={luminance(color) < 0.5 ? 'white' : 'black'} />\n      )}\n    </ColorSwatch>\n  ));\n\n  return (\n    <Box {...ctx.getStyles('swatches')} {...others}>\n      {colors}\n    </Box>\n  );\n}\n\nSwatches.displayName = '@mantine/core/Swatches';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_Swatches_Swatches",
+      "name": "Swatches",
+      "path": "packages/@mantine/core/src/components/ColorPicker/Swatches/Swatches.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_Swatches_Swatches",
+      "name": "Swatches",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/Swatches/Swatches.tsx",
+          "content": "import { use } from 'react';\nimport { Box, ElementProps, luminance } from '../../../core';\nimport { CheckIcon } from '../../Checkbox';\nimport { ColorSwatch } from '../../ColorSwatch';\nimport { ColorPickerContext } from '../ColorPicker.context';\n\nexport interface SwatchesProps extends ElementProps<'div'> {\n  size?: string | number;\n  data: string[];\n  swatchesPerRow?: number;\n  focusable?: boolean;\n  value?: string;\n  onChangeEnd?: (color: string) => void;\n  setValue: (value: string) => void;\n}\n\nexport function Swatches({\n  className,\n  datatype,\n  setValue,\n  onChangeEnd,\n  size,\n  focusable,\n  data,\n  swatchesPerRow,\n  value,\n  ...others\n}: SwatchesProps) {\n  const ctx = use(ColorPickerContext)!;\n\n  const colors = data.map((color, index) => (\n    <ColorSwatch\n      {...ctx.getStyles('swatch')}\n      unstyled={ctx.unstyled}\n      component=\"button\"\n      type=\"button\"\n      color={color}\n      key={index}\n      radius=\"sm\"\n      onClick={() => {\n        setValue(color);\n        onChangeEnd?.(color);\n      }}\n      aria-label={color}\n      tabIndex={focusable ? 0 : -1}\n      data-swatch\n    >\n      {value === color && (\n        <CheckIcon size=\"35%\" color={luminance(color) < 0.5 ? 'white' : 'black'} />\n      )}\n    </ColorSwatch>\n  ));\n\n  return (\n    <Box {...ctx.getStyles('swatches')} {...others}>\n      {colors}\n    </Box>\n  );\n}\n\nSwatches.displayName = '@mantine/core/Swatches';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

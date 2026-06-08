@@ -1,0 +1,22 @@
+{
+  "id": "dropdown-menu",
+  "name": "dropdown-menu",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dropdown-menu\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  }
+}

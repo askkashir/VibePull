@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Textarea_index",
+  "name": "Textarea",
+  "source_code": "// packages/@mantine/core/src/components/Textarea/index.ts\nimport type { TextareaFactory, TextareaProps } from './Textarea';\n\nexport { Textarea } from './Textarea';\n\nexport type { TextareaProps, TextareaFactory };\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "textarea"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Textarea_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Textarea/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Textarea_index",
+      "name": "Textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Textarea/index.ts",
+          "content": "import type { TextareaFactory, TextareaProps } from './Textarea';\n\nexport { Textarea } from './Textarea';\n\nexport type { TextareaProps, TextareaFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Textarea is a textarea UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Textarea\nDescription: Textarea is a textarea UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: input, mantine, textarea\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Textarea/index.ts\nimport type { TextareaFactory, TextareaProps } from './Textarea';\n\nexport { Textarea } from './Textarea';\n\nexport type { TextareaProps, TextareaFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "textarea",
+  "display_name": "Textarea",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-textarea-index.png"
+}

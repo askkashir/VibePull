@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tree_is-node-indeterminate_is-node-indeterminate",
+  "name": "is-node-indeterminate",
+  "source_code": "// packages/@mantine/core/src/components/Tree/is-node-indeterminate/is-node-indeterminate.ts\nimport { memoize } from '../../../core';\nimport { getAllCheckedNodes } from '../get-all-checked-nodes/get-all-checked-nodes';\nimport type { TreeNodeData } from '../Tree';\n\nexport function isNodeIndeterminate(\n  value: string,\n  data: TreeNodeData[],\n  checkedState: string[]\n): boolean {\n  if (checkedState.length === 0) {\n    return false;\n  }\n\n  const checkedNodes = getAllCheckedNodes(data, checkedState).result;\n  return checkedNodes.some((node) => node.value === value && node.indeterminate);\n}\n\nexport const memoizedIsNodeIndeterminate = memoize(isNodeIndeterminate);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tree_is-node-indeterminate_is-node-indeterminate",
+      "name": "is-node-indeterminate",
+      "path": "packages/@mantine/core/src/components/Tree/is-node-indeterminate/is-node-indeterminate.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tree_is-node-indeterminate_is-node-indeterminate",
+      "name": "is-node-indeterminate",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tree/is-node-indeterminate/is-node-indeterminate.ts",
+          "content": "import { memoize } from '../../../core';\nimport { getAllCheckedNodes } from '../get-all-checked-nodes/get-all-checked-nodes';\nimport type { TreeNodeData } from '../Tree';\n\nexport function isNodeIndeterminate(\n  value: string,\n  data: TreeNodeData[],\n  checkedState: string[]\n): boolean {\n  if (checkedState.length === 0) {\n    return false;\n  }\n\n  const checkedNodes = getAllCheckedNodes(data, checkedState).result;\n  return checkedNodes.some((node) => node.value === value && node.indeterminate);\n}\n\nexport const memoizedIsNodeIndeterminate = memoize(isNodeIndeterminate);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

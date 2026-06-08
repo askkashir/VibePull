@@ -1,0 +1,43 @@
+{
+  "id": "button-with-icon",
+  "name": "button-with-icon",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "ui",
+    "icon",
+    "call-to-action",
+    "navigation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-with-icon",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-with-icon\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button component that displays an icon, often used to trigger an action or navigate between screens. It's commonly used in applications where a straightforward call-to-action is needed.",
+  "style_tags": [
+    "material-design",
+    "flat",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "disabled",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-with-icon\nDescription: A button component that displays an icon, often used to trigger an action or navigate between screens. It's commonly used in applications where a straightforward call-to-action is needed.\nStyle: material-design, flat, rounded\nInteractions: clickable, disabled, hover\nTags: button, ui, icon, call-to-action, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-with-icon",
+  "display_name": "Button With Icon",
+  "preview_url": "/previews/shadcn/button-with-icon.png"
+}

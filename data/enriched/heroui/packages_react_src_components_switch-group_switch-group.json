@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_switch-group_switch-group",
+  "name": "switch-group",
+  "source_code": "// packages/react/src/components/switch-group/switch-group.tsx\n\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SwitchGroupVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {switchGroupVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * Switch Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SwitchGroupRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children?: ReactNode;\n  className?: string;\n  /** Layout orientation. */\n  orientation?: SwitchGroupVariants[\"orientation\"];\n}\n\nconst SwitchGroupRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  orientation,\n  ...props\n}: SwitchGroupRootProps<E> &\n  Omit<React.JSX.IntrinsicElements[E], keyof SwitchGroupRootProps<E>>) => {\n  const slots = React.useMemo(() => switchGroupVariants({orientation}), [orientation]);\n\n  return (\n    <dom.div data-slot=\"switch-group\" {...(props as any)} className={slots.base({className})}>\n      {children}\n    </dom.div>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SwitchGroupRoot};\n\nexport type {SwitchGroupRootProps};\n",
+  "description": "",
+  "tags": [
+    "group",
+    "heroui",
+    "other",
+    "switch"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "switch-group_switch-group",
+      "name": "switch-group",
+      "path": "packages/react/src/components/switch-group/switch-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_switch-group_switch-group",
+      "name": "switch-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/switch-group/switch-group.tsx",
+          "content": "\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SwitchGroupVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {switchGroupVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * Switch Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SwitchGroupRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children?: ReactNode;\n  className?: string;\n  /** Layout orientation. */\n  orientation?: SwitchGroupVariants[\"orientation\"];\n}\n\nconst SwitchGroupRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  orientation,\n  ...props\n}: SwitchGroupRootProps<E> &\n  Omit<React.JSX.IntrinsicElements[E], keyof SwitchGroupRootProps<E>>) => {\n  const slots = React.useMemo(() => switchGroupVariants({orientation}), [orientation]);\n\n  return (\n    <dom.div data-slot=\"switch-group\" {...(props as any)} className={slots.base({className})}>\n      {children}\n    </dom.div>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SwitchGroupRoot};\n\nexport type {SwitchGroupRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "switch-group is a switch group UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: switch-group\nDescription: switch-group is a switch group UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: group, heroui, other, switch\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/switch-group/switch-group.tsx\n\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SwitchGroupVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {switchGroupVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * Switch Group Root\n * ------------------------------",
+  "prompt_version": 2,
+  "clean_id": "switch-group",
+  "display_name": "Switch Group",
+  "preview_url": "/previews/heroui/packages-react-src-components-switch-group-switch-group.png"
+}

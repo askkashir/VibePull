@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Breadcrumbs_index",
+  "name": "Breadcrumbs",
+  "source_code": "// packages/@mantine/core/src/components/Breadcrumbs/index.ts\nexport { Breadcrumbs } from './Breadcrumbs';\nexport type {\n  BreadcrumbsCssVariables,\n  BreadcrumbsFactory,\n  BreadcrumbsProps,\n  BreadcrumbsStylesNames,\n} from './Breadcrumbs';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Breadcrumbs_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Breadcrumbs/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Breadcrumbs_index",
+      "name": "Breadcrumbs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Breadcrumbs/index.ts",
+          "content": "export { Breadcrumbs } from './Breadcrumbs';\nexport type {\n  BreadcrumbsCssVariables,\n  BreadcrumbsFactory,\n  BreadcrumbsProps,\n  BreadcrumbsStylesNames,\n} from './Breadcrumbs';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

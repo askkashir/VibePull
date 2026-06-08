@@ -1,0 +1,52 @@
+{
+  "id": "close-button",
+  "name": "close-button",
+  "source_code": "// src/components/ui/close-button.tsx\nimport { XIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { IconButton, type IconButtonProps } from './icon-button'\n\nexport type CloseButtonProps = IconButtonProps\n\nexport const CloseButton = forwardRef<HTMLButtonElement, CloseButtonProps>(\n  function CloseButton(props, ref) {\n    return (\n      <IconButton variant=\"plain\" colorPalette=\"gray\" aria-label=\"Close\" ref={ref} {...props}>\n        {props.children ?? <XIcon />}\n      </IconButton>\n    )\n  },\n)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "close-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/close-button.tsx",
+          "type": "registry:ui",
+          "exports": "export { CloseButton, type CloseButtonProps } from './close-button'",
+          "content": "import { XIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { IconButton, type IconButtonProps } from './icon-button'\n\nexport type CloseButtonProps = IconButtonProps\n\nexport const CloseButton = forwardRef<HTMLButtonElement, CloseButtonProps>(\n  function CloseButton(props, ref) {\n    return (\n      <IconButton variant=\"plain\" colorPalette=\"gray\" aria-label=\"Close\" ref={ref} {...props}>\n        {props.children ?? <XIcon />}\n      </IconButton>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-button"
+      ]
+    },
+    "registry_item": {
+      "name": "close-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/close-button.tsx",
+          "type": "registry:ui",
+          "exports": "export { CloseButton, type CloseButtonProps } from './close-button'",
+          "content": "import { XIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { IconButton, type IconButtonProps } from './icon-button'\n\nexport type CloseButtonProps = IconButtonProps\n\nexport const CloseButton = forwardRef<HTMLButtonElement, CloseButtonProps>(\n  function CloseButton(props, ref) {\n    return (\n      <IconButton variant=\"plain\" colorPalette=\"gray\" aria-label=\"Close\" ref={ref} {...props}>\n        {props.children ?? <XIcon />}\n      </IconButton>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-button"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

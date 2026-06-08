@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Breadcrumbs_Breadcrumbs.story",
+  "name": "Breadcrumbs.story",
+  "source_code": "// packages/@mantine/core/src/components/Breadcrumbs/Breadcrumbs.story.tsx\nimport { Anchor } from '../Anchor';\nimport { Breadcrumbs } from './Breadcrumbs';\n\nexport default { title: 'Breadcrumbs' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Breadcrumbs>\n        <Anchor>Link 1</Anchor>\n        <Anchor>Link 2</Anchor>\n        <Anchor>Link 3</Anchor>\n      </Breadcrumbs>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Breadcrumbs unstyled>\n        <a href=\"#\">Link 1</a>\n        <a href=\"#\">Link 2</a>\n        <a href=\"#\">Link 3</a>\n      </Breadcrumbs>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Breadcrumbs_Breadcrumbs.story",
+      "name": "Breadcrumbs.story",
+      "path": "packages/@mantine/core/src/components/Breadcrumbs/Breadcrumbs.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Breadcrumbs_Breadcrumbs.story",
+      "name": "Breadcrumbs.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Breadcrumbs/Breadcrumbs.story.tsx",
+          "content": "import { Anchor } from '../Anchor';\nimport { Breadcrumbs } from './Breadcrumbs';\n\nexport default { title: 'Breadcrumbs' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Breadcrumbs>\n        <Anchor>Link 1</Anchor>\n        <Anchor>Link 2</Anchor>\n        <Anchor>Link 3</Anchor>\n      </Breadcrumbs>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Breadcrumbs unstyled>\n        <a href=\"#\">Link 1</a>\n        <a href=\"#\">Link 2</a>\n        <a href=\"#\">Link 3</a>\n      </Breadcrumbs>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

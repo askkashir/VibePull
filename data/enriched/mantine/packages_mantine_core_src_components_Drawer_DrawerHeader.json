@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerHeader",
+  "name": "DrawerHeader",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerHeader.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerHeaderStylesNames = 'header';\n\nexport interface DrawerHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<DrawerHeaderFactory> {}\n\nexport type DrawerHeaderFactory = Factory<{\n  props: DrawerHeaderProps;\n  ref: HTMLElement;\n  stylesNames: DrawerHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerHeader = factory<DrawerHeaderFactory>((_props) => {\n  const props = useProps('DrawerHeader', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseHeader\n      {...ctx.getStyles('header', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerHeader.classes = classes;\nDrawerHeader.displayName = '@mantine/core/DrawerHeader';\n",
+  "description": "",
+  "tags": [
+    "drawer",
+    "header",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerHeader",
+      "name": "DrawerHeader",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerHeader.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerHeader",
+      "name": "DrawerHeader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerHeader.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerHeaderStylesNames = 'header';\n\nexport interface DrawerHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<DrawerHeaderFactory> {}\n\nexport type DrawerHeaderFactory = Factory<{\n  props: DrawerHeaderProps;\n  ref: HTMLElement;\n  stylesNames: DrawerHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerHeader = factory<DrawerHeaderFactory>((_props) => {\n  const props = useProps('DrawerHeader', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseHeader\n      {...ctx.getStyles('header', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerHeader.classes = classes;\nDrawerHeader.displayName = '@mantine/core/DrawerHeader';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DrawerHeader is a drawer header UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: DrawerHeader\nDescription: DrawerHeader is a drawer header UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: drawer, header, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Drawer/DrawerHeader.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseHeader, ModalBaseHeaderProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerHeaderStylesNames = 'header';\n\nexport interface DrawerHeaderProps\n  extends ModalBaseHeaderProps, CompoundStylesApiProps<DrawerHeaderFactory> {}\n\nexport type DrawerHeade",
+  "prompt_version": 2,
+  "clean_id": "drawer-header",
+  "display_name": "Drawer Header",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-drawer-drawerheader.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "form-formisch-select",
+  "name": "form-formisch-select",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-select",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-select\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called form-formisch-select. It should be: . Component type: registry:example. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "form-formisch-select",
+  "display_name": "Form Formisch Select"
+}

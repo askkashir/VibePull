@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_default-options-filter",
+  "name": "default-options-filter",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/OptionsDropdown/default-options-filter.ts\nimport { Primitive } from '../../../core';\nimport { ComboboxItem, ComboboxParsedItem } from '../Combobox.types';\nimport { isOptionsGroup } from './is-options-group';\n\nexport interface FilterOptionsInput<Value extends Primitive = Primitive> {\n  options: ComboboxParsedItem<Value>[];\n  search: string;\n  limit: number;\n}\n\nexport function defaultOptionsFilter({\n  options,\n  search,\n  limit,\n}: FilterOptionsInput): ComboboxParsedItem<Primitive>[] {\n  const parsedSearch = search.trim().toLowerCase();\n  const result: ComboboxParsedItem<Primitive>[] = [];\n\n  for (let i = 0; i < options.length; i += 1) {\n    const item = options[i];\n\n    if (result.length === limit) {\n      return result;\n    }\n\n    if (isOptionsGroup(item)) {\n      result.push({\n        group: item.group,\n        items: defaultOptionsFilter({\n          options: item.items,\n          search,\n          limit: limit - result.length,\n        }) as ComboboxItem[],\n      });\n    }\n\n    if (!isOptionsGroup(item)) {\n      if (item.label.toLowerCase().includes(parsedSearch)) {\n        result.push(item);\n      }\n    }\n  }\n\n  return result;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_OptionsDropdown_default-options-filter",
+      "name": "default-options-filter",
+      "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/default-options-filter.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_default-options-filter",
+      "name": "default-options-filter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/default-options-filter.ts",
+          "content": "import { Primitive } from '../../../core';\nimport { ComboboxItem, ComboboxParsedItem } from '../Combobox.types';\nimport { isOptionsGroup } from './is-options-group';\n\nexport interface FilterOptionsInput<Value extends Primitive = Primitive> {\n  options: ComboboxParsedItem<Value>[];\n  search: string;\n  limit: number;\n}\n\nexport function defaultOptionsFilter({\n  options,\n  search,\n  limit,\n}: FilterOptionsInput): ComboboxParsedItem<Primitive>[] {\n  const parsedSearch = search.trim().toLowerCase();\n  const result: ComboboxParsedItem<Primitive>[] = [];\n\n  for (let i = 0; i < options.length; i += 1) {\n    const item = options[i];\n\n    if (result.length === limit) {\n      return result;\n    }\n\n    if (isOptionsGroup(item)) {\n      result.push({\n        group: item.group,\n        items: defaultOptionsFilter({\n          options: item.items,\n          search,\n          limit: limit - result.length,\n        }) as ComboboxItem[],\n      });\n    }\n\n    if (!isOptionsGroup(item)) {\n      if (item.label.toLowerCase().includes(parsedSearch)) {\n        result.push(item);\n      }\n    }\n  }\n\n  return result;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

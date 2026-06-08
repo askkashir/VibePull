@@ -1,0 +1,61 @@
+{
+  "id": "striped-pattern-right",
+  "name": "Striped Pattern (Right)",
+  "source_code": "import { StripedPattern } from \"@/registry/magicui/striped-pattern\"\n\nexport default function StripedPatternRight() {\n  return (\n    <div className=\"relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <StripedPattern direction=\"right\" />\n    </div>\n  )\n}\n",
+  "description": "Example showing a background striped pattern slanting to the right using SVG.",
+  "tags": [
+    "layout",
+    "design",
+    "background",
+    "overlay"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "striped-pattern-right",
+      "type": "registry:example",
+      "title": "Striped Pattern (Right)",
+      "description": "Example showing a background striped pattern slanting to the right using SVG.",
+      "registryDependencies": [
+        "https://magicui.design/r/striped-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/striped-pattern-right.tsx",
+          "type": "registry:example",
+          "target": "components/striped-pattern-right.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "striped-pattern-right",
+      "type": "registry:example",
+      "title": "Striped Pattern (Right)",
+      "description": "Example showing a background striped pattern slanting to the right using SVG.",
+      "registryDependencies": [
+        "@magicui/striped-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/striped-pattern-right.tsx",
+          "content": "import { StripedPattern } from \"@/registry/magicui/striped-pattern\"\n\nexport default function StripedPatternRight() {\n  return (\n    <div className=\"relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <StripedPattern direction=\"right\" />\n    </div>\n  )\n}\n",
+          "type": "registry:example",
+          "target": "components/striped-pattern-right.tsx"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A rectangular container with a striped pattern that fills its horizontal space from the right side. This component would be used to add a visual interest to a right-aligned layout. It's ideal for backgrounds or overlays.",
+  "style_tags": [
+    "e.g. striped",
+    "patterned"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Striped Pattern (Right)\nDescription: A rectangular container with a striped pattern that fills its horizontal space from the right side. This component would be used to add a visual interest to a right-aligned layout. It's ideal for backgrounds or overlays.\nStyle: e.g. striped, patterned\nInteractions: \nTags: layout, design, background, overlay\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { StripedPattern } from \"@/registry/magicui/striped-pattern\"\n\nexport default function StripedPatternRight() {\n  return (\n    <div className=\"relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <StripedPattern direction=\"right\" />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "striped-pattern-right",
+  "display_name": "Striped Pattern Right",
+  "preview_url": "/previews/magicui/striped-pattern-right.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "signup-03",
+  "name": "signup-03",
+  "source_code": "",
+  "description": "A signup page with a muted background color.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-03",
+      "type": "registry:block",
+      "description": "A signup page with a muted background color.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-03\n\nA signup page with a muted background color.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called signup-03. It should be: A signup page with a muted background color.. Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "signup-03",
+  "display_name": "Signup 03"
+}

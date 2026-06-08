@@ -1,0 +1,69 @@
+{
+  "id": "number-input-recipe",
+  "name": "number-input-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/number-input.ts\nimport { numberInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nconst trigger = {\n  alignItems: 'center',\n  color: 'fg.muted',\n  cursor: 'pointer',\n  display: 'flex',\n  flex: '1',\n  justifyContent: 'center',\n  lineHeight: '1',\n  transition: 'common',\n  userSelect: 'none',\n  _icon: {\n    boxSize: '1em',\n  },\n  _hover: {\n    bg: 'gray.surface.bg.hover',\n  },\n  _active: {\n    bg: 'gray.surface.bg.active',\n  },\n}\n\nexport const numberInput = defineSlotRecipe({\n  className: 'number-input',\n  slots: numberInputAnatomy.keys(),\n  base: {\n    root: {\n      isolation: 'isolate',\n      position: 'relative',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    control: {\n      borderStartWidth: '1px',\n      display: 'flex',\n      divideY: '1px',\n      flexDirection: 'column',\n      height: 'calc(100% - 2px)',\n      insetEnd: '0px',\n      margin: '1px',\n      position: 'absolute',\n      top: '0',\n      width: 'var(--stepper-width)',\n      zIndex: '1',\n    },\n    input: {\n      ...input.base,\n      verticalAlign: 'top',\n      pe: 'calc(var(--stepper-width) + 0.5rem)',\n    },\n    label: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n    },\n    incrementTrigger: {\n      ...trigger,\n      borderTopRightRadius: 'l2',\n    },\n    decrementTrigger: {\n      ...trigger,\n      borderBottomRightRadius: 'l2',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    size: {\n      sm: {\n        control: {\n          '--stepper-width': 'sizes.4.5',\n        },\n        input: input.variants.size.sm,\n      },\n      md: {\n        control: {\n          '--stepper-width': 'sizes.5',\n        },\n        input: input.variants.size.md,\n      },\n      lg: {\n        control: {\n          '--stepper-width': 'sizes.5.5',\n        },\n        input: input.variants.size.lg,\n      },\n      xl: {\n        control: {\n          '--stepper-width': 'sizes.6',\n        },\n        input: input.variants.size.xl,\n      },\n    },\n    variant: {\n      outline: {\n        input: input.variants.variant.outline,\n      },\n      surface: {\n        input: input.variants.variant.surface,\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "input",
+    "number",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "number-input-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/number-input.ts",
+          "type": "registry:recipe",
+          "imports": "import { numberInput } from './number-input'",
+          "content": "import { numberInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nconst trigger = {\n  alignItems: 'center',\n  color: 'fg.muted',\n  cursor: 'pointer',\n  display: 'flex',\n  flex: '1',\n  justifyContent: 'center',\n  lineHeight: '1',\n  transition: 'common',\n  userSelect: 'none',\n  _icon: {\n    boxSize: '1em',\n  },\n  _hover: {\n    bg: 'gray.surface.bg.hover',\n  },\n  _active: {\n    bg: 'gray.surface.bg.active',\n  },\n}\n\nexport const numberInput = defineSlotRecipe({\n  className: 'number-input',\n  slots: numberInputAnatomy.keys(),\n  base: {\n    root: {\n      isolation: 'isolate',\n      position: 'relative',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    control: {\n      borderStartWidth: '1px',\n      display: 'flex',\n      divideY: '1px',\n      flexDirection: 'column',\n      height: 'calc(100% - 2px)',\n      insetEnd: '0px',\n      margin: '1px',\n      position: 'absolute',\n      top: '0',\n      width: 'var(--stepper-width)',\n      zIndex: '1',\n    },\n    input: {\n      ...input.base,\n      verticalAlign: 'top',\n      pe: 'calc(var(--stepper-width) + 0.5rem)',\n    },\n    label: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n    },\n    incrementTrigger: {\n      ...trigger,\n      borderTopRightRadius: 'l2',\n    },\n    decrementTrigger: {\n      ...trigger,\n      borderBottomRightRadius: 'l2',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    size: {\n      sm: {\n        control: {\n          '--stepper-width': 'sizes.4.5',\n        },\n        input: input.variants.size.sm,\n      },\n      md: {\n        control: {\n          '--stepper-width': 'sizes.5',\n        },\n        input: input.variants.size.md,\n      },\n      lg: {\n        control: {\n          '--stepper-width': 'sizes.5.5',\n        },\n        input: input.variants.size.lg,\n      },\n      xl: {\n        control: {\n          '--stepper-width': 'sizes.6',\n        },\n        input: input.variants.size.xl,\n      },\n    },\n    variant: {\n      outline: {\n        input: input.variants.variant.outline,\n      },\n      surface: {\n        input: input.variants.variant.surface,\n      },\n    },\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "number-input-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/number-input.ts",
+          "type": "registry:recipe",
+          "imports": "import { numberInput } from './number-input'",
+          "content": "import { numberInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nconst trigger = {\n  alignItems: 'center',\n  color: 'fg.muted',\n  cursor: 'pointer',\n  display: 'flex',\n  flex: '1',\n  justifyContent: 'center',\n  lineHeight: '1',\n  transition: 'common',\n  userSelect: 'none',\n  _icon: {\n    boxSize: '1em',\n  },\n  _hover: {\n    bg: 'gray.surface.bg.hover',\n  },\n  _active: {\n    bg: 'gray.surface.bg.active',\n  },\n}\n\nexport const numberInput = defineSlotRecipe({\n  className: 'number-input',\n  slots: numberInputAnatomy.keys(),\n  base: {\n    root: {\n      isolation: 'isolate',\n      position: 'relative',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    control: {\n      borderStartWidth: '1px',\n      display: 'flex',\n      divideY: '1px',\n      flexDirection: 'column',\n      height: 'calc(100% - 2px)',\n      insetEnd: '0px',\n      margin: '1px',\n      position: 'absolute',\n      top: '0',\n      width: 'var(--stepper-width)',\n      zIndex: '1',\n    },\n    input: {\n      ...input.base,\n      verticalAlign: 'top',\n      pe: 'calc(var(--stepper-width) + 0.5rem)',\n    },\n    label: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n    },\n    incrementTrigger: {\n      ...trigger,\n      borderTopRightRadius: 'l2',\n    },\n    decrementTrigger: {\n      ...trigger,\n      borderBottomRightRadius: 'l2',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n  variants: {\n    size: {\n      sm: {\n        control: {\n          '--stepper-width': 'sizes.4.5',\n        },\n        input: input.variants.size.sm,\n      },\n      md: {\n        control: {\n          '--stepper-width': 'sizes.5',\n        },\n        input: input.variants.size.md,\n      },\n      lg: {\n        control: {\n          '--stepper-width': 'sizes.5.5',\n        },\n        input: input.variants.size.lg,\n      },\n      xl: {\n        control: {\n          '--stepper-width': 'sizes.6',\n        },\n        input: input.variants.size.xl,\n      },\n    },\n    variant: {\n      outline: {\n        input: input.variants.variant.outline,\n      },\n      surface: {\n        input: input.variants.variant.surface,\n      },\n    },\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "number-input-recipe is a number input recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: number-input-recipe\nDescription: number-input-recipe is a number input recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: animated, hover\nTags: input, number, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/number-input.ts\nimport { numberInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nconst trigger = {\n  alignItems: 'center',\n  color: 'fg.muted',\n  cursor: 'pointer',\n  display: 'flex',\n  flex: '1',\n  justifyContent: 'center',\n  lineHeight: '1',\n  transition: 'common',\n  userSelect: 'none',\n  _icon: {\n    boxSize: '1em',\n  },\n  _hover: {\n    bg: 'gray.surface.bg.hover',\n  },\n  _active: ",
+  "prompt_version": 2,
+  "clean_id": "number-input-recipe",
+  "display_name": "Number Input Recipe",
+  "preview_url": "/previews/parkui/number-input-recipe.png"
+}

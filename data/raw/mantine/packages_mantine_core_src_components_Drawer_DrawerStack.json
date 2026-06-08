@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerStack",
+  "name": "DrawerStack",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerStack.tsx\nimport { createContext, useState } from 'react';\nimport { getDefaultZIndex } from '../../core';\n\ninterface DrawerStackContext {\n  stack: string[];\n  addModal: (id: string, zIndex: number | string) => void;\n  removeModal: (id: string) => void;\n  getZIndex: (id: string) => string;\n  currentId: string;\n  maxZIndex: string | number;\n}\n\nexport const DrawerStackContext = createContext<DrawerStackContext | null>(null);\n\nexport interface DrawerStackProps {\n  children: React.ReactNode;\n}\n\nexport function DrawerStack({ children }: DrawerStackProps) {\n  const [stack, setStack] = useState<string[]>([]);\n  const [maxZIndex, setMaxZIndex] = useState<number | string>(getDefaultZIndex('modal'));\n\n  return (\n    <DrawerStackContext\n      value={{\n        stack,\n        addModal: (id, zIndex) => {\n          setStack((current) => [...new Set([...current, id])]);\n          setMaxZIndex((current) =>\n            typeof zIndex === 'number' && typeof current === 'number'\n              ? Math.max(current, zIndex)\n              : current\n          );\n        },\n        removeModal: (id) => setStack((current) => current.filter((currentId) => currentId !== id)),\n        getZIndex: (id) => `calc(${maxZIndex} + ${stack.indexOf(id)} + 1)`,\n        currentId: stack[stack.length - 1],\n        maxZIndex,\n      }}\n    >\n      {children}\n    </DrawerStackContext>\n  );\n}\n\nDrawerStack.displayName = '@mantine/core/DrawerStack';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerStack",
+      "name": "DrawerStack",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerStack.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerStack",
+      "name": "DrawerStack",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerStack.tsx",
+          "content": "import { createContext, useState } from 'react';\nimport { getDefaultZIndex } from '../../core';\n\ninterface DrawerStackContext {\n  stack: string[];\n  addModal: (id: string, zIndex: number | string) => void;\n  removeModal: (id: string) => void;\n  getZIndex: (id: string) => string;\n  currentId: string;\n  maxZIndex: string | number;\n}\n\nexport const DrawerStackContext = createContext<DrawerStackContext | null>(null);\n\nexport interface DrawerStackProps {\n  children: React.ReactNode;\n}\n\nexport function DrawerStack({ children }: DrawerStackProps) {\n  const [stack, setStack] = useState<string[]>([]);\n  const [maxZIndex, setMaxZIndex] = useState<number | string>(getDefaultZIndex('modal'));\n\n  return (\n    <DrawerStackContext\n      value={{\n        stack,\n        addModal: (id, zIndex) => {\n          setStack((current) => [...new Set([...current, id])]);\n          setMaxZIndex((current) =>\n            typeof zIndex === 'number' && typeof current === 'number'\n              ? Math.max(current, zIndex)\n              : current\n          );\n        },\n        removeModal: (id) => setStack((current) => current.filter((currentId) => currentId !== id)),\n        getZIndex: (id) => `calc(${maxZIndex} + ${stack.indexOf(id)} + 1)`,\n        currentId: stack[stack.length - 1],\n        maxZIndex,\n      }}\n    >\n      {children}\n    </DrawerStackContext>\n  );\n}\n\nDrawerStack.displayName = '@mantine/core/DrawerStack';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

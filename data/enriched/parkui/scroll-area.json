@@ -1,0 +1,64 @@
+{
+  "id": "scroll-area",
+  "name": "scroll-area",
+  "source_code": "// src/components/ui/scroll-area.tsx\n'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n",
+  "description": "",
+  "tags": [
+    "area",
+    "other",
+    "parkui",
+    "scroll"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ScrollArea from './scroll-area'",
+          "content": "'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n"
+        }
+      ],
+      "registryDependencies": [
+        "scroll-area-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ScrollArea from './scroll-area'",
+          "content": "'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n"
+        }
+      ],
+      "registryDependencies": [
+        "scroll-area-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "scroll-area is a scroll area UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: scroll-area\nDescription: scroll-area is a scroll area UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: area, other, parkui, scroll\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/scroll-area.tsx\n'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexpor",
+  "prompt_version": 2,
+  "clean_id": "scroll-area",
+  "display_name": "Scroll Area",
+  "preview_url": "/previews/parkui/scroll-area.png"
+}

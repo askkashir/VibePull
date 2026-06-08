@@ -1,0 +1,39 @@
+{
+  "id": "input-group-text",
+  "name": "input-group-text",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "form",
+    "group",
+    "helper"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-text",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-group-text\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "input-group-text is a utility component used within input groups to provide a text or icon within the group, often used for labels or additional info in forms and data entry interfaces",
+  "style_tags": [
+    "e.g. minimal",
+    "modern"
+  ],
+  "interaction_tags": [
+    "e.g. static"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-group-text\nDescription: input-group-text is a utility component used within input groups to provide a text or icon within the group, often used for labels or additional info in forms and data entry interfaces\nStyle: e.g. minimal, modern\nInteractions: e.g. static\nTags: input, form, group, helper\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-group-text",
+  "display_name": "Input Group Text",
+  "preview_url": "/previews/shadcn/input-group-text.png"
+}

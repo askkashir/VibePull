@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_data-list",
+  "name": "data-list",
+  "source_code": "// packages/radix-ui-themes/src/components/data-list.tsx\nimport classNames from 'classnames';\nimport * as React from 'react';\n\nimport { Text } from './text.js';\nimport {\n  dataListRootPropDefs,\n  dataListItemPropDefs,\n  dataListLabelPropDefs,\n} from './data-list.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype DataListRootElement = HTMLDListElement;\ntype DataListRootOwnProps = GetPropDefTypes<typeof dataListRootPropDefs>;\ninterface DataListRootProps\n  extends ComponentPropsWithout<'dl', RemovedProps>, MarginProps, DataListRootOwnProps {}\nconst DataListRoot = React.forwardRef<DataListRootElement, DataListRootProps>(\n  (props, forwardedRef) => {\n    const { className, ...dataListProps } = extractProps(\n      props,\n      dataListRootPropDefs,\n      marginPropDefs,\n    );\n    return (\n      <Text asChild>\n        <dl\n          {...dataListProps}\n          ref={forwardedRef}\n          className={classNames('rt-DataListRoot', className)}\n        />\n      </Text>\n    );\n  },\n);\nDataListRoot.displayName = 'DataList.Root';\n\ntype DataListItemElement = HTMLDivElement;\ntype DataListItemOwnProps = GetPropDefTypes<typeof dataListItemPropDefs>;\ninterface DataListItemProps\n  extends ComponentPropsWithout<'div', RemovedProps>, DataListItemOwnProps {}\nconst DataListItem = React.forwardRef<DataListItemElement, DataListItemProps>(\n  (props, forwardedRef) => {\n    const { className, ...itemProps } = extractProps(props, dataListItemPropDefs);\n    return (\n      <div {...itemProps} ref={forwardedRef} className={classNames('rt-DataListItem', className)} />\n    );\n  },\n);\nDataListItem.displayName = 'DataList.Item';\n\ntype DataListLabelElement = React.ElementRef<'dt'>;\ntype DataListLabelOwnProps = GetPropDefTypes<typeof dataListLabelPropDefs>;\ninterface DataListLabelProps\n  extends ComponentPropsWithout<'dt', RemovedProps>, DataListLabelOwnProps {}\nconst DataListLabel = React.forwardRef<DataListLabelElement, DataListLabelProps>(\n  (props, forwardedRef) => {\n    const { className, color, ...labelProps } = extractProps(props, dataListLabelPropDefs);\n    return (\n      <dt\n        {...labelProps}\n        data-accent-color={color}\n        ref={forwardedRef}\n        className={classNames('rt-DataListLabel', className)}\n      />\n    );\n  },\n);\nDataListLabel.displayName = 'DataList.Label';\n\ntype DataListValueElement = React.ElementRef<'dd'>;\ninterface DataListValueProps extends ComponentPropsWithout<'dd', RemovedProps> {}\nconst DataListValue = React.forwardRef<DataListValueElement, DataListValueProps>(\n  ({ children, className, ...props }, forwardedRef) => (\n    <dd {...props} ref={forwardedRef} className={classNames(className, 'rt-DataListValue')}>\n      {children}\n    </dd>\n  ),\n);\nDataListValue.displayName = 'DataList.Value';\n\nexport {\n  DataListRoot as Root,\n  DataListItem as Item,\n  DataListLabel as Label,\n  DataListValue as Value,\n};\nexport type {\n  DataListRootProps as RootProps,\n  DataListItemProps as ItemProps,\n  DataListLabelProps as LabelProps,\n  DataListValueProps as ValueProps,\n};\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_data-list",
+      "name": "data-list.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+      "sha": "d804aacb3ad54c6370f7312739c87d8a1fc85703",
+      "size": 3259,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/data-list.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/data-list.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/d804aacb3ad54c6370f7312739c87d8a1fc85703",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/data-list.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/data-list.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/d804aacb3ad54c6370f7312739c87d8a1fc85703",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/data-list.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_data-list",
+      "name": "data-list",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+          "content": "import classNames from 'classnames';\nimport * as React from 'react';\n\nimport { Text } from './text.js';\nimport {\n  dataListRootPropDefs,\n  dataListItemPropDefs,\n  dataListLabelPropDefs,\n} from './data-list.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype DataListRootElement = HTMLDListElement;\ntype DataListRootOwnProps = GetPropDefTypes<typeof dataListRootPropDefs>;\ninterface DataListRootProps\n  extends ComponentPropsWithout<'dl', RemovedProps>, MarginProps, DataListRootOwnProps {}\nconst DataListRoot = React.forwardRef<DataListRootElement, DataListRootProps>(\n  (props, forwardedRef) => {\n    const { className, ...dataListProps } = extractProps(\n      props,\n      dataListRootPropDefs,\n      marginPropDefs,\n    );\n    return (\n      <Text asChild>\n        <dl\n          {...dataListProps}\n          ref={forwardedRef}\n          className={classNames('rt-DataListRoot', className)}\n        />\n      </Text>\n    );\n  },\n);\nDataListRoot.displayName = 'DataList.Root';\n\ntype DataListItemElement = HTMLDivElement;\ntype DataListItemOwnProps = GetPropDefTypes<typeof dataListItemPropDefs>;\ninterface DataListItemProps\n  extends ComponentPropsWithout<'div', RemovedProps>, DataListItemOwnProps {}\nconst DataListItem = React.forwardRef<DataListItemElement, DataListItemProps>(\n  (props, forwardedRef) => {\n    const { className, ...itemProps } = extractProps(props, dataListItemPropDefs);\n    return (\n      <div {...itemProps} ref={forwardedRef} className={classNames('rt-DataListItem', className)} />\n    );\n  },\n);\nDataListItem.displayName = 'DataList.Item';\n\ntype DataListLabelElement = React.ElementRef<'dt'>;\ntype DataListLabelOwnProps = GetPropDefTypes<typeof dataListLabelPropDefs>;\ninterface DataListLabelProps\n  extends ComponentPropsWithout<'dt', RemovedProps>, DataListLabelOwnProps {}\nconst DataListLabel = React.forwardRef<DataListLabelElement, DataListLabelProps>(\n  (props, forwardedRef) => {\n    const { className, color, ...labelProps } = extractProps(props, dataListLabelPropDefs);\n    return (\n      <dt\n        {...labelProps}\n        data-accent-color={color}\n        ref={forwardedRef}\n        className={classNames('rt-DataListLabel', className)}\n      />\n    );\n  },\n);\nDataListLabel.displayName = 'DataList.Label';\n\ntype DataListValueElement = React.ElementRef<'dd'>;\ninterface DataListValueProps extends ComponentPropsWithout<'dd', RemovedProps> {}\nconst DataListValue = React.forwardRef<DataListValueElement, DataListValueProps>(\n  ({ children, className, ...props }, forwardedRef) => (\n    <dd {...props} ref={forwardedRef} className={classNames(className, 'rt-DataListValue')}>\n      {children}\n    </dd>\n  ),\n);\nDataListValue.displayName = 'DataList.Value';\n\nexport {\n  DataListRoot as Root,\n  DataListItem as Item,\n  DataListLabel as Label,\n  DataListValue as Value,\n};\nexport type {\n  DataListRootProps as RootProps,\n  DataListItemProps as ItemProps,\n  DataListLabelProps as LabelProps,\n  DataListValueProps as ValueProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

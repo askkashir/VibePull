@@ -1,0 +1,61 @@
+{
+  "id": "hero-dithering-demo",
+  "name": "hero-dithering-demo",
+  "source_code": "// registry/default/example/hero-dithering-demo.tsx\n\"use client\"\n\nimport {\n  AISDKIcon,\n  HeroDithering,\n  HeroDitheringActions,\n  HeroDitheringBadges,\n  HeroDitheringContainer,\n  HeroDitheringContent,\n  HeroDitheringDescription,\n  HeroDitheringHeading,\n  HeroDitheringMobileVisual,\n  HeroDitheringRoot,\n  HeroDitheringVisual,\n  NextjsIcon,\n} from \"../ui/hero-dithering\"\n\nexport default function HeroDitheringDemo() {\n  return (\n    <div className=\"space-y-16\">\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg\">Default</h3>\n        <HeroDithering />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg\">Configured Via Props</h3>\n        <HeroDitheringRoot\n          ctaProps={{\n            href: \"#\",\n            label: \"Try NewCopy for marketing\",\n          }}\n          description=\"Human-in-the-loop marketing copy software that helps teams draft, review, and ship high-converting campaigns with confidence.\"\n          desktopShaderProps={{\n            colorFront: \"#8b5cf6\",\n            scale: 0.8,\n            speed: 0.7,\n          }}\n          mobileShaderProps={{\n            colorFront: \"#8b5cf6\",\n            speed: 0.65,\n          }}\n          srTitle=\"Composable hero\"\n          subtitle=\"Marketing\"\n          techStack={[\n            { name: \"Next.js\", version: \"v16\" },\n            { name: \"AI SDK\", version: \"v6\" },\n            { name: \"Tailwind\", version: \"v4\" },\n          ]}\n          title=\"Cursor for\"\n        >\n          <HeroDitheringContainer>\n            <HeroDitheringContent>\n              <HeroDitheringHeading />\n              <HeroDitheringDescription />\n              <HeroDitheringActions />\n              <div\n                className=\"flex justify-center lg:justify-start\"\n                data-slot=\"hero-dithering-badges-wrap\"\n              >\n                <HeroDitheringBadges\n                  techStack={[\n                    { name: \"Next.js\", version: \"v16\", icon: NextjsIcon },\n                    { name: \"AI SDK\", version: \"v6\", icon: AISDKIcon },\n                  ]}\n                />\n              </div>\n            </HeroDitheringContent>\n            <HeroDitheringVisual />\n          </HeroDitheringContainer>\n          <HeroDitheringMobileVisual />\n        </HeroDitheringRoot>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "hero",
+    "dithering",
+    "animated",
+    "badges"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "hero-dithering-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/hero-dithering-demo.json",
+      "sha": "ea3f9497048e93e906fe8c71231b2c6f41050c7a",
+      "size": 2743,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hero-dithering-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hero-dithering-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/ea3f9497048e93e906fe8c71231b2c6f41050c7a",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/hero-dithering-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hero-dithering-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/ea3f9497048e93e906fe8c71231b2c6f41050c7a",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hero-dithering-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hero-dithering-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "hero-dithering"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/hero-dithering-demo.tsx",
+          "content": "\"use client\"\n\nimport {\n  AISDKIcon,\n  HeroDithering,\n  HeroDitheringActions,\n  HeroDitheringBadges,\n  HeroDitheringContainer,\n  HeroDitheringContent,\n  HeroDitheringDescription,\n  HeroDitheringHeading,\n  HeroDitheringMobileVisual,\n  HeroDitheringRoot,\n  HeroDitheringVisual,\n  NextjsIcon,\n} from \"../ui/hero-dithering\"\n\nexport default function HeroDitheringDemo() {\n  return (\n    <div className=\"space-y-16\">\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg\">Default</h3>\n        <HeroDithering />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg\">Configured Via Props</h3>\n        <HeroDitheringRoot\n          ctaProps={{\n            href: \"#\",\n            label: \"Try NewCopy for marketing\",\n          }}\n          description=\"Human-in-the-loop marketing copy software that helps teams draft, review, and ship high-converting campaigns with confidence.\"\n          desktopShaderProps={{\n            colorFront: \"#8b5cf6\",\n            scale: 0.8,\n            speed: 0.7,\n          }}\n          mobileShaderProps={{\n            colorFront: \"#8b5cf6\",\n            speed: 0.65,\n          }}\n          srTitle=\"Composable hero\"\n          subtitle=\"Marketing\"\n          techStack={[\n            { name: \"Next.js\", version: \"v16\" },\n            { name: \"AI SDK\", version: \"v6\" },\n            { name: \"Tailwind\", version: \"v4\" },\n          ]}\n          title=\"Cursor for\"\n        >\n          <HeroDitheringContainer>\n            <HeroDitheringContent>\n              <HeroDitheringHeading />\n              <HeroDitheringDescription />\n              <HeroDitheringActions />\n              <div\n                className=\"flex justify-center lg:justify-start\"\n                data-slot=\"hero-dithering-badges-wrap\"\n              >\n                <HeroDitheringBadges\n                  techStack={[\n                    { name: \"Next.js\", version: \"v16\", icon: NextjsIcon },\n                    { name: \"AI SDK\", version: \"v6\", icon: AISDKIcon },\n                  ]}\n                />\n              </div>\n            </HeroDitheringContent>\n            <HeroDitheringVisual />\n          </HeroDitheringContainer>\n          <HeroDitheringMobileVisual />\n        </HeroDitheringRoot>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "HeroDitheringDemo is a demo component that showcases a hero section with animated visuals and badges. It is used to demonstrate the HeroDithering component and its various props. Developers would use this component when building a hero section with interactive visuals and badges.",
+  "style_tags": [
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "hero",
+  "generation_prompt": "Create a production-ready hero component with the following characteristics:\n\nName: hero-dithering-demo\nDescription: HeroDitheringDemo is a demo component that showcases a hero section with animated visuals and badges. It is used to demonstrate the HeroDithering component and its various props. Developers would use this component when building a hero section with interactive visuals and badges.\nStyle: glassmorphism\nInteractions: animated\nTags: hero, dithering, animated, badges\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/hero-dithering-demo.tsx\n\"use client\"\n\nimport {\n  AISDKIcon,\n  HeroDithering,\n  HeroDitheringActions,\n  HeroDitheringBadges,\n  HeroDitheringContainer,\n  HeroDitheringContent,\n  HeroDitheringDescription,\n  HeroDitheringHeading,\n  HeroDitheringMobileVisual,\n  HeroDitheringRoot,\n  HeroDitheringVisual,\n  NextjsIcon,\n} from \"../ui/hero-dithering\"\n\nexport default function HeroDitheringDemo() {\n  return (\n    <div className=\"space-y-16\">\n      <div className=\"space-y-4\">\n    ",
+  "prompt_version": 2,
+  "clean_id": "hero-dithering-demo",
+  "display_name": "Hero Dithering Demo",
+  "preview_url": "/previews/cultui/hero-dithering-demo.png"
+}

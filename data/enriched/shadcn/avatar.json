@@ -1,0 +1,39 @@
+{
+  "id": "avatar",
+  "name": "avatar",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "profile",
+    "identity",
+    "image",
+    "notification",
+    "user"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "avatar",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## avatar\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "Avatar is a circular image container used to display user profiles, allowing users to personalize their appearance and represent themselves within the application. It can be used in various contexts such as user profiles, notifications, and social media feed. With adjustable size and shape, avatar is a versatile component for showcasing identities.",
+  "style_tags": [
+    "glassmorphism",
+    "neumorphism",
+    "iconic"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: avatar\nDescription: Avatar is a circular image container used to display user profiles, allowing users to personalize their appearance and represent themselves within the application. It can be used in various contexts such as user profiles, notifications, and social media feed. With adjustable size and shape, avatar is a versatile component for showcasing identities.\nStyle: glassmorphism, neumorphism, iconic\nInteractions: \nTags: profile, identity, image, notification, user\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "avatar",
+  "display_name": "Avatar",
+  "preview_url": "/previews/shadcn/avatar.png"
+}

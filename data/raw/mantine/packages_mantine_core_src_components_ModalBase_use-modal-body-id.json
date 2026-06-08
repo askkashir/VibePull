@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal-body-id",
+  "name": "use-modal-body-id",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts\nimport { useEffect } from 'react';\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalBodyId() {\n  const ctx = useModalBaseContext();\n\n  useEffect(() => {\n    ctx.setBodyMounted(true);\n    return () => ctx.setBodyMounted(false);\n  }, []);\n\n  return ctx.getBodyId();\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal-body-id",
+      "name": "use-modal-body-id",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal-body-id",
+      "name": "use-modal-body-id",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts",
+          "content": "import { useEffect } from 'react';\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalBodyId() {\n  const ctx = useModalBaseContext();\n\n  useEffect(() => {\n    ctx.setBodyMounted(true);\n    return () => ctx.setBodyMounted(false);\n  }, []);\n\n  return ctx.getBodyId();\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

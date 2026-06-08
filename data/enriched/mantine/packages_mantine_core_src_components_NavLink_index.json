@@ -1,0 +1,50 @@
+{
+  "id": "packages_mantine_core_src_components_NavLink_index",
+  "name": "NavLink",
+  "source_code": "// packages/@mantine/core/src/components/NavLink/index.ts\nimport type {\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkVariant,\n} from './NavLink';\n\nexport { NavLink } from './NavLink';\n\nexport type {\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "link",
+    "navigation",
+    "react",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NavLink_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/NavLink/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NavLink_index",
+      "name": "NavLink",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NavLink/index.ts",
+          "content": "import type {\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkVariant,\n} from './NavLink';\n\nexport { NavLink } from './NavLink';\n\nexport type {\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A visually customizable link element that typically changes state or style when active. It's used for navigation in user interfaces, often used in conjunction with a Navbar or other navigation components. Developers can use the NavLink component to create visually appealing and functional links.",
+  "style_tags": [
+    "flat",
+    "outlined",
+    "filled"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "mouse-hover",
+    "active-state"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: NavLink\nDescription: A visually customizable link element that typically changes state or style when active. It's used for navigation in user interfaces, often used in conjunction with a Navbar or other navigation components. Developers can use the NavLink component to create visually appealing and functional links.\nStyle: flat, outlined, filled\nInteractions: clickable, mouse-hover, active-state\nTags: link, navigation, react, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/NavLink/index.ts\nimport type {\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkVariant,\n} from './NavLink';\n\nexport { NavLink } from './NavLink';\n\nexport type {\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkVariant,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "nav-link",
+  "display_name": "Nav Link",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-navlink-index.png"
+}

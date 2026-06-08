@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_InputBase_InputBase.story",
+  "name": "InputBase.story",
+  "source_code": "// packages/@mantine/core/src/components/InputBase/InputBase.story.tsx\nimport { InputBase } from './InputBase';\n\nexport default { title: 'InputBase' };\n\nexport function WithinDisabledFieldset() {\n  return (\n    <fieldset disabled style={{ padding: 40 }}>\n      <legend>Disabled fieldset</legend>\n      <InputBase label=\"Disabled by fieldset\" placeholder=\"Disabled by fieldset\" />\n      <InputBase label=\"Disabled by prop\" placeholder=\"Disabled by prop\" disabled mt=\"md\" />\n    </fieldset>\n  );\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase\n        label=\"This is input base\"\n        error=\"test-error\"\n        placeholder=\"test-placeholder\"\n        data-test=\"orange\"\n      />\n    </div>\n  );\n}\n\nexport function WithoutAria() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase label=\"This is input base\" placeholder=\"test-placeholder\" withAria={false} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase label=\"This is input base\" placeholder=\"test-placeholder\" unstyled />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "InputBase_InputBase.story",
+      "name": "InputBase.story",
+      "path": "packages/@mantine/core/src/components/InputBase/InputBase.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_InputBase_InputBase.story",
+      "name": "InputBase.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/InputBase/InputBase.story.tsx",
+          "content": "import { InputBase } from './InputBase';\n\nexport default { title: 'InputBase' };\n\nexport function WithinDisabledFieldset() {\n  return (\n    <fieldset disabled style={{ padding: 40 }}>\n      <legend>Disabled fieldset</legend>\n      <InputBase label=\"Disabled by fieldset\" placeholder=\"Disabled by fieldset\" />\n      <InputBase label=\"Disabled by prop\" placeholder=\"Disabled by prop\" disabled mt=\"md\" />\n    </fieldset>\n  );\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase\n        label=\"This is input base\"\n        error=\"test-error\"\n        placeholder=\"test-placeholder\"\n        data-test=\"orange\"\n      />\n    </div>\n  );\n}\n\nexport function WithoutAria() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase label=\"This is input base\" placeholder=\"test-placeholder\" withAria={false} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <InputBase label=\"This is input base\" placeholder=\"test-placeholder\" unstyled />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

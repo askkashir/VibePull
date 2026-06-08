@@ -1,0 +1,22 @@
+{
+  "id": "style",
+  "name": "style",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:style"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "style",
+      "type": "registry:style",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:style"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## style\n**Type:** registry:style\n**Dependencies:** class-variance-authority, lucide-react, radix-ui\n**Dev Dependencies:** tw-animate-css, shadcn"
+  }
+}

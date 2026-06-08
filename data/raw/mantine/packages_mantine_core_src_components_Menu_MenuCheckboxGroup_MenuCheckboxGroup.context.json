@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuCheckboxGroup_MenuCheckboxGroup.context",
+  "name": "MenuCheckboxGroup.context",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuCheckboxGroup/MenuCheckboxGroup.context.tsx\nimport { createContext } from 'react';\n\nexport interface MenuCheckboxGroupContextValue {\n  values: string[];\n  onChange: (value: string) => void;\n}\n\nexport const MenuCheckboxGroupContext = createContext<MenuCheckboxGroupContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuCheckboxGroup_MenuCheckboxGroup.context",
+      "name": "MenuCheckboxGroup.context",
+      "path": "packages/@mantine/core/src/components/Menu/MenuCheckboxGroup/MenuCheckboxGroup.context.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuCheckboxGroup_MenuCheckboxGroup.context",
+      "name": "MenuCheckboxGroup.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuCheckboxGroup/MenuCheckboxGroup.context.tsx",
+          "content": "import { createContext } from 'react';\n\nexport interface MenuCheckboxGroupContextValue {\n  values: string[];\n  onChange: (value: string) => void;\n}\n\nexport const MenuCheckboxGroupContext = createContext<MenuCheckboxGroupContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

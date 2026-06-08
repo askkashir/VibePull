@@ -1,0 +1,58 @@
+{
+  "id": "kbd-recipe",
+  "name": "kbd-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/kbd.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const kbd = defineRecipe({\n  className: 'kbd',\n  base: {\n    display: 'inline-flex',\n    alignItems: 'center',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    flexShrink: '0',\n    whiteSpace: 'nowrap',\n    wordSpacing: '-0.5em',\n    userSelect: 'none',\n    borderRadius: 'l2',\n    justifyContent: 'center',\n  },\n\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "kbd",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/kbd.ts",
+          "type": "registry:recipe",
+          "imports": "import { kbd } from './kbd'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const kbd = defineRecipe({\n  className: 'kbd',\n  base: {\n    display: 'inline-flex',\n    alignItems: 'center',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    flexShrink: '0',\n    whiteSpace: 'nowrap',\n    wordSpacing: '-0.5em',\n    userSelect: 'none',\n    borderRadius: 'l2',\n    justifyContent: 'center',\n  },\n\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "kbd-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/kbd.ts",
+          "type": "registry:recipe",
+          "imports": "import { kbd } from './kbd'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const kbd = defineRecipe({\n  className: 'kbd',\n  base: {\n    display: 'inline-flex',\n    alignItems: 'center',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    flexShrink: '0',\n    whiteSpace: 'nowrap',\n    wordSpacing: '-0.5em',\n    userSelect: 'none',\n    borderRadius: 'l2',\n    justifyContent: 'center',\n  },\n\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n        color: 'colorPalette.solid.fg',\n      },\n      surface: {\n        bg: 'colorPalette.surface.bg',\n        borderWidth: '1px',\n        borderColor: 'colorPalette.surface.border',\n        color: 'colorPalette.surface.fg',\n      },\n      outline: {\n        borderWidth: '1px',\n        borderColor: 'colorPalette.outline.border',\n        color: 'colorPalette.outline.fg',\n      },\n      subtle: {\n        bg: 'colorPalette.subtle.bg',\n        color: 'colorPalette.subtle.fg',\n      },\n      plain: {\n        color: 'colorPalette.plain.fg',\n      },\n    },\n    size: {\n      sm: { textStyle: 'xs', height: '4.5', minWidth: '4.5', px: '1' },\n      md: { textStyle: 'sm', height: '5', minWidth: '5', px: '1' },\n      lg: { textStyle: 'sm', height: '5.5', minWidth: '5.5', px: '1' },\n      xl: { textStyle: 'md', height: '6', minWidth: '6', px: '1' },\n    },\n  },\n\n  defaultVariants: {\n    size: 'md',\n    variant: 'subtle',\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "kbd-recipe is a kbd recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: kbd-recipe\nDescription: kbd-recipe is a kbd recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: kbd, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/kbd.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const kbd = defineRecipe({\n  className: 'kbd',\n  base: {\n    display: 'inline-flex',\n    alignItems: 'center',\n    fontWeight: 'medium',\n    fontFamily: 'code',\n    flexShrink: '0',\n    whiteSpace: 'nowrap',\n    wordSpacing: '-0.5em',\n    userSelect: 'none',\n    borderRadius: 'l2',\n    justifyContent: 'center',\n  },\n\n  variants: {\n    variant: {\n      solid: {\n        bg: 'colorPalette.solid.bg',\n   ",
+  "prompt_version": 2,
+  "clean_id": "kbd-recipe",
+  "display_name": "Kbd Recipe",
+  "preview_url": "/previews/parkui/kbd-recipe.png"
+}

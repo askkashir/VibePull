@@ -1,0 +1,31 @@
+{
+  "id": "elements_textarea",
+  "name": "textarea",
+  "source_code": "// elements/textarea.html\n<div class=\"w-full max-w-xs mx-auto\">\n    <textarea type=\"text\" placeholder=\"Type your message here.\" class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"></textarea>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "textarea",
+      "name": "textarea",
+      "path": "elements/textarea.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_textarea",
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/textarea.html",
+          "content": "<div class=\"w-full max-w-xs mx-auto\">\n    <textarea type=\"text\" placeholder=\"Type your message here.\" class=\"flex w-full h-auto min-h-[80px] px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 placeholder:text-neutral-400 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50\"></textarea>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

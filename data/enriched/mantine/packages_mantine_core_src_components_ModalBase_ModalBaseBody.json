@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBaseBody",
+  "name": "ModalBaseBody",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBaseBody.tsx\nimport cx from 'clsx';\nimport { Box, BoxProps, ElementProps } from '../../core';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalBodyId } from './use-modal-body-id';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseBodyProps extends BoxProps, ElementProps<'div'> {}\n\nexport function ModalBaseBody({ className, ...others }: ModalBaseBodyProps) {\n  const bodyId = useModalBodyId();\n  const ctx = useModalBaseContext();\n  return (\n    <Box id={bodyId} className={cx({ [classes.body]: !ctx.unstyled }, className)} {...others} />\n  );\n}\n\nModalBaseBody.displayName = '@mantine/core/ModalBaseBody';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "container"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBaseBody",
+      "name": "ModalBaseBody",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseBody.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBaseBody",
+      "name": "ModalBaseBody",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseBody.tsx",
+          "content": "import cx from 'clsx';\nimport { Box, BoxProps, ElementProps } from '../../core';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalBodyId } from './use-modal-body-id';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseBodyProps extends BoxProps, ElementProps<'div'> {}\n\nexport function ModalBaseBody({ className, ...others }: ModalBaseBodyProps) {\n  const bodyId = useModalBodyId();\n  const ctx = useModalBaseContext();\n  return (\n    <Box id={bodyId} className={cx({ [classes.body]: !ctx.unstyled }, className)} {...others} />\n  );\n}\n\nModalBaseBody.displayName = '@mantine/core/ModalBaseBody';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalBaseBody is a container component for the main content of a modal. It renders a Box element with the modal body ID, and it is typically used in conjunction with other modal components.",
+  "style_tags": [
+    "unstyled",
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: ModalBaseBody\nDescription: ModalBaseBody is a container component for the main content of a modal. It renders a Box element with the modal body ID, and it is typically used in conjunction with other modal components.\nStyle: unstyled, default\nInteractions: \nTags: mantine, modal, container\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/ModalBaseBody.tsx\nimport cx from 'clsx';\nimport { Box, BoxProps, ElementProps } from '../../core';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalBodyId } from './use-modal-body-id';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseBodyProps extends BoxProps, ElementProps<'div'> {}\n\nexport function ModalBaseBody({ className, ...others }: ModalBaseBodyProps) {\n  const bodyId = useModalBodyId();",
+  "prompt_version": 2,
+  "clean_id": "modal-base-body",
+  "display_name": "Modal Base Body",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-modalbasebody.png"
+}

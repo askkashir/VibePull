@@ -1,0 +1,57 @@
+{
+  "id": "packages_radix-ui-themes_src_components_container",
+  "name": "container",
+  "source_code": "// packages/radix-ui-themes/src/components/container.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { containerPropDefs } from './container.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { heightPropDefs } from '../props/height.props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { widthPropDefs } from '../props/width.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ContainerOwnProps } from './container.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype ContainerElement = React.ElementRef<'div'>;\ninterface ContainerProps\n  extends ComponentPropsWithout<'div', RemovedProps>, MarginProps, LayoutProps, ContainerOwnProps {}\nconst Container = React.forwardRef<ContainerElement, ContainerProps>(\n  ({ width, minWidth, maxWidth, height, minHeight, maxHeight, ...props }, forwardedRef) => {\n    const { asChild, children, className, ...containerProps } = extractProps(\n      props,\n      containerPropDefs,\n      layoutPropDefs,\n      marginPropDefs,\n    );\n\n    const { className: innerClassName, style: innerStyle } = extractProps(\n      { width, minWidth, maxWidth, height, minHeight, maxHeight },\n      widthPropDefs,\n      heightPropDefs,\n    );\n\n    const Comp = asChild ? Slot.Root : 'div';\n\n    return (\n      <Comp\n        {...containerProps}\n        ref={forwardedRef}\n        className={classNames('rt-Container', className)}\n      >\n        {getSubtree({ asChild, children }, (children) => (\n          <div className={classNames('rt-ContainerInner', innerClassName)} style={innerStyle}>\n            {children}\n          </div>\n        ))}\n      </Comp>\n    );\n  },\n);\nContainer.displayName = 'Container';\n\nexport { Container };\nexport type { ContainerProps };\n",
+  "description": "",
+  "tags": [
+    "container",
+    "file",
+    "radixuithemes"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_container",
+      "name": "container.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/container.tsx",
+      "sha": "f56202fdae79603fa1b25df3c91cd9650c19c08c",
+      "size": 2007,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/container.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/container.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/f56202fdae79603fa1b25df3c91cd9650c19c08c",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/container.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/container.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/f56202fdae79603fa1b25df3c91cd9650c19c08c",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/container.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_container",
+      "name": "container",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/container.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { containerPropDefs } from './container.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { heightPropDefs } from '../props/height.props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { widthPropDefs } from '../props/width.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ContainerOwnProps } from './container.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype ContainerElement = React.ElementRef<'div'>;\ninterface ContainerProps\n  extends ComponentPropsWithout<'div', RemovedProps>, MarginProps, LayoutProps, ContainerOwnProps {}\nconst Container = React.forwardRef<ContainerElement, ContainerProps>(\n  ({ width, minWidth, maxWidth, height, minHeight, maxHeight, ...props }, forwardedRef) => {\n    const { asChild, children, className, ...containerProps } = extractProps(\n      props,\n      containerPropDefs,\n      layoutPropDefs,\n      marginPropDefs,\n    );\n\n    const { className: innerClassName, style: innerStyle } = extractProps(\n      { width, minWidth, maxWidth, height, minHeight, maxHeight },\n      widthPropDefs,\n      heightPropDefs,\n    );\n\n    const Comp = asChild ? Slot.Root : 'div';\n\n    return (\n      <Comp\n        {...containerProps}\n        ref={forwardedRef}\n        className={classNames('rt-Container', className)}\n      >\n        {getSubtree({ asChild, children }, (children) => (\n          <div className={classNames('rt-ContainerInner', innerClassName)} style={innerStyle}>\n            {children}\n          </div>\n        ))}\n      </Comp>\n    );\n  },\n);\nContainer.displayName = 'Container';\n\nexport { Container };\nexport type { ContainerProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "container is a container UI component from the radixuithemes corpus. It provides reusable file behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "file",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready file component with the following characteristics:\n\nName: container\nDescription: container is a container UI component from the radixuithemes corpus. It provides reusable file behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: \nTags: container, file, radixuithemes\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/container.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { containerPropDefs } from './container.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { heightPropDefs } from '../props/height.props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.",
+  "prompt_version": 2,
+  "clean_id": "container",
+  "display_name": "Container",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-container.png"
+}

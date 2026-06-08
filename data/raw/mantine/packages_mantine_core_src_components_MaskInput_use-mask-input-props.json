@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_MaskInput_use-mask-input-props",
+  "name": "use-mask-input-props",
+  "source_code": "// packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts\nimport { assignRef, useMask, useMergedRef } from '@mantine/hooks';\nimport type { MaskInputProps } from './MaskInput';\n\nexport function useMaskInputProps(props: MaskInputProps & { ref?: React.Ref<HTMLInputElement> }) {\n  const {\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n    resetRef,\n    ref,\n    ...elementProps\n  } = props;\n\n  const { ref: maskCallbackRef, reset } = useMask({\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n  });\n\n  assignRef(resetRef, reset);\n\n  const maskRef = useMergedRef(ref, maskCallbackRef);\n\n  return { maskRef, elementProps };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "MaskInput_use-mask-input-props",
+      "name": "use-mask-input-props",
+      "path": "packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_MaskInput_use-mask-input-props",
+      "name": "use-mask-input-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts",
+          "content": "import { assignRef, useMask, useMergedRef } from '@mantine/hooks';\nimport type { MaskInputProps } from './MaskInput';\n\nexport function useMaskInputProps(props: MaskInputProps & { ref?: React.Ref<HTMLInputElement> }) {\n  const {\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n    resetRef,\n    ref,\n    ...elementProps\n  } = props;\n\n  const { ref: maskCallbackRef, reset } = useMask({\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n  });\n\n  assignRef(resetRef, reset);\n\n  const maskRef = useMergedRef(ref, maskCallbackRef);\n\n  return { maskRef, elementProps };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

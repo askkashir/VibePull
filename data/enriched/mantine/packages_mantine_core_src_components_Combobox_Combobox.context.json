@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_Combobox.context",
+  "name": "Combobox.context",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/Combobox.context.ts\nimport { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { ComboboxFactory } from './Combobox';\nimport type { ComboboxOptionProps } from './ComboboxOption/ComboboxOption';\nimport type { ComboboxStore } from './use-combobox/use-combobox';\n\nexport interface ComboboxContextValue {\n  getStyles: GetStylesApi<ComboboxFactory>;\n  store: ComboboxStore;\n  onOptionSubmit?: (value: string, optionProps: ComboboxOptionProps) => void;\n  size: MantineSize | (string & {});\n  resetSelectionOnOptionHover: boolean | undefined;\n  readOnly: boolean | undefined;\n  floatingHeight: 'viewport' | undefined;\n}\n\nexport const [ComboboxProvider, useComboboxContext] = createSafeContext<ComboboxContextValue>(\n  'Combobox component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "context",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_Combobox.context",
+      "name": "Combobox.context",
+      "path": "packages/@mantine/core/src/components/Combobox/Combobox.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_Combobox.context",
+      "name": "Combobox.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/Combobox.context.ts",
+          "content": "import { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { ComboboxFactory } from './Combobox';\nimport type { ComboboxOptionProps } from './ComboboxOption/ComboboxOption';\nimport type { ComboboxStore } from './use-combobox/use-combobox';\n\nexport interface ComboboxContextValue {\n  getStyles: GetStylesApi<ComboboxFactory>;\n  store: ComboboxStore;\n  onOptionSubmit?: (value: string, optionProps: ComboboxOptionProps) => void;\n  size: MantineSize | (string & {});\n  resetSelectionOnOptionHover: boolean | undefined;\n  readOnly: boolean | undefined;\n  floatingHeight: 'viewport' | undefined;\n}\n\nexport const [ComboboxProvider, useComboboxContext] = createSafeContext<ComboboxContextValue>(\n  'Combobox component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Combobox.context is a combobox context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Combobox.context\nDescription: Combobox.context is a combobox context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: hover\nTags: combobox, context, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/Combobox.context.ts\nimport { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { ComboboxFactory } from './Combobox';\nimport type { ComboboxOptionProps } from './ComboboxOption/ComboboxOption';\nimport type { ComboboxStore } from './use-combobox/use-combobox';\n\nexport interface ComboboxContextValue {\n  getStyles: GetStylesApi<ComboboxFactory>;\n  store: ComboboxStore;\n  onOptionSubmit?: (value: string, optionProps: Combo",
+  "prompt_version": 2,
+  "clean_id": "combobox",
+  "display_name": "Combobox",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-combobox-context.png"
+}

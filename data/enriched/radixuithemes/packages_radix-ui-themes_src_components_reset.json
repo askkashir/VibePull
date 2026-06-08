@@ -1,0 +1,54 @@
+{
+  "id": "packages_radix-ui-themes_src_components_reset",
+  "name": "reset",
+  "source_code": "// packages/radix-ui-themes/src/components/reset.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { requireReactElement } from '../helpers/require-react-element.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ninterface ResetProps extends ComponentPropsWithout<typeof Slot.Root, RemovedProps> {}\nconst Reset = React.forwardRef<HTMLElement, ResetProps>(\n  ({ className, children, ...props }, forwardedRef) => {\n    return (\n      <Slot.Root {...props} ref={forwardedRef} className={classNames('rt-reset', className)}>\n        {requireReactElement(children)}\n      </Slot.Root>\n    );\n  },\n);\nReset.displayName = 'Reset';\n\nexport { Reset };\nexport type { ResetProps };\n",
+  "description": "",
+  "tags": [
+    "reset",
+    "minimal"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_reset",
+      "name": "reset.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/reset.tsx",
+      "sha": "f793bb0fecedc0f93f7fad153ec6d8424d443447",
+      "size": 727,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/reset.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/reset.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/f793bb0fecedc0f93f7fad153ec6d8424d443447",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/reset.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/reset.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/f793bb0fecedc0f93f7fad153ec6d8424d443447",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/reset.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_reset",
+      "name": "reset",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/reset.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { requireReactElement } from '../helpers/require-react-element.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ninterface ResetProps extends ComponentPropsWithout<typeof Slot.Root, RemovedProps> {}\nconst Reset = React.forwardRef<HTMLElement, ResetProps>(\n  ({ className, children, ...props }, forwardedRef) => {\n    return (\n      <Slot.Root {...props} ref={forwardedRef} className={classNames('rt-reset', className)}>\n        {requireReactElement(children)}\n      </Slot.Root>\n    );\n  },\n);\nReset.displayName = 'Reset';\n\nexport { Reset };\nexport type { ResetProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "Reset is a basic component for resetting content, likely used when a minimal, yet functional approach is required.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: reset\nDescription: Reset is a basic component for resetting content, likely used when a minimal, yet functional approach is required.\nStyle: minimal\nInteractions: \nTags: reset, minimal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/reset.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { requireReactElement } from '../helpers/require-react-element.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ninterface ResetProps extends ComponentPropsWithout<typeof Slot.Root, RemovedProps> {}\nconst Reset = React.forwardRef<HTMLElement, ResetProps>(\n  ({ className, children, ...props",
+  "prompt_version": 2,
+  "clean_id": "reset",
+  "display_name": "Reset",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-reset.png"
+}

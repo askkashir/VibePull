@@ -1,0 +1,42 @@
+{
+  "id": "input-otp-separator",
+  "name": "input-otp-separator",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "otp",
+    "verification",
+    "form",
+    "component",
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-otp-separator",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-otp-separator\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The input-otp-separator is a UI component used to separate Input-One-Time-Pin (OTP) fields, providing a clear and organized layout for users to input verification codes. It is commonly used in login or registration forms where OTP verification is required. This component is ideal for scenarios where a clear separation between OTP fields is needed.",
+  "style_tags": [
+    "minimal",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "hover-effect",
+    "focus-state"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-otp-separator\nDescription: The input-otp-separator is a UI component used to separate Input-One-Time-Pin (OTP) fields, providing a clear and organized layout for users to input verification codes. It is commonly used in login or registration forms where OTP verification is required. This component is ideal for scenarios where a clear separation between OTP fields is needed.\nStyle: minimal, responsive\nInteractions: hover-effect, focus-state\nTags: input, otp, verification, form, component, registry:example\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-otp-separator",
+  "display_name": "Input Otp Separator",
+  "preview_url": "/previews/shadcn/input-otp-separator.png"
+}

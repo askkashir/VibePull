@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_HoverCard_index",
+  "name": "HoverCard",
+  "source_code": "// packages/@mantine/core/src/components/HoverCard/index.ts\nexport { HoverCard } from './HoverCard';\nexport { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';\nexport { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';\nexport { HoverCardGroup, HoverCardGroupContext } from './HoverCardGroup/HoverCardGroup';\nexport { useHoverCardContext } from './HoverCard.context';\n\nexport type { HoverCardContextValue } from './HoverCard.context';\nexport type { HoverCardProps } from './HoverCard';\nexport type { HoverCardDropdownProps } from './HoverCardDropdown/HoverCardDropdown';\nexport type { HoverCardTargetProps } from './HoverCardTarget/HoverCardTarget';\nexport type {\n  HoverCardGroupProps,\n  HoverCardGroupContextValue,\n} from './HoverCardGroup/HoverCardGroup';\n",
+  "description": "",
+  "tags": [
+    "card",
+    "hover",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "HoverCard_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/HoverCard/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_HoverCard_index",
+      "name": "HoverCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/HoverCard/index.ts",
+          "content": "export { HoverCard } from './HoverCard';\nexport { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';\nexport { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';\nexport { HoverCardGroup, HoverCardGroupContext } from './HoverCardGroup/HoverCardGroup';\nexport { useHoverCardContext } from './HoverCard.context';\n\nexport type { HoverCardContextValue } from './HoverCard.context';\nexport type { HoverCardProps } from './HoverCard';\nexport type { HoverCardDropdownProps } from './HoverCardDropdown/HoverCardDropdown';\nexport type { HoverCardTargetProps } from './HoverCardTarget/HoverCardTarget';\nexport type {\n  HoverCardGroupProps,\n  HoverCardGroupContextValue,\n} from './HoverCardGroup/HoverCardGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "HoverCard is a hover card UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: HoverCard\nDescription: HoverCard is a hover card UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: card, hover, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/HoverCard/index.ts\nexport { HoverCard } from './HoverCard';\nexport { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';\nexport { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';\nexport { HoverCardGroup, HoverCardGroupContext } from './HoverCardGroup/HoverCardGroup';\nexport { useHoverCardContext } from './HoverCard.context';\n\nexport type { HoverCardContextValue } from './HoverCard.context';\nexport type { HoverCardProps } from './H",
+  "prompt_version": 2,
+  "clean_id": "hover-card",
+  "display_name": "Hover Card",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-hovercard-index.png"
+}

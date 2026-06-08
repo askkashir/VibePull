@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Kbd_index",
+  "name": "Kbd",
+  "source_code": "// packages/@mantine/core/src/components/Kbd/index.ts\nimport type { KbdCssVariables, KbdFactory, KbdProps, KbdStylesNames } from './Kbd';\n\nexport { Kbd } from './Kbd';\n\nexport type { KbdProps, KbdStylesNames, KbdCssVariables, KbdFactory };\n",
+  "description": "",
+  "tags": [
+    "accessibility",
+    "font",
+    "text"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Kbd_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Kbd/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Kbd_index",
+      "name": "Kbd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Kbd/index.ts",
+          "content": "import type { KbdCssVariables, KbdFactory, KbdProps, KbdStylesNames } from './Kbd';\n\nexport { Kbd } from './Kbd';\n\nexport type { KbdProps, KbdStylesNames, KbdCssVariables, KbdFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Kbd component displays text in a keyboard font, which is typically used for denoting keyboard keys or other on-screen keyboard-like input methods. It is commonly used when the value of a variable or function argument should be visually emphasized as a key. This can be useful in interactive documentation and tutorials.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: Kbd\nDescription: The Kbd component displays text in a keyboard font, which is typically used for denoting keyboard keys or other on-screen keyboard-like input methods. It is commonly used when the value of a variable or function argument should be visually emphasized as a key. This can be useful in interactive documentation and tutorials.\nStyle: \nInteractions: \nTags: accessibility, font, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Kbd/index.ts\nimport type { KbdCssVariables, KbdFactory, KbdProps, KbdStylesNames } from './Kbd';\n\nexport { Kbd } from './Kbd';\n\nexport type { KbdProps, KbdStylesNames, KbdCssVariables, KbdFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "kbd",
+  "display_name": "Kbd",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-kbd-index.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "chart-area-default",
+  "name": "chart-area-default",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "area chart",
+    "bar chart",
+    "dashboard",
+    "report",
+    "analytics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-default",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-default\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-area-default component is a standard area chart for visualizing data. It can be used to display trends or values over time and is often used in dashboards, reports, or analytics pages.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "compact"
+  ],
+  "interaction_tags": [
+    "hover highlights",
+    "clickable data points"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-default\nDescription: The chart-area-default component is a standard area chart for visualizing data. It can be used to display trends or values over time and is often used in dashboards, reports, or analytics pages.\nStyle: modern, flat, compact\nInteractions: hover highlights, clickable data points\nTags: chart, area chart, bar chart, dashboard, report, analytics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-default",
+  "display_name": "Chart Area Default",
+  "preview_url": "/previews/shadcn/chart-area-default.png"
+}

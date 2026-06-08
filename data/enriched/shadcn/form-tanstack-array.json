@@ -1,0 +1,39 @@
+{
+  "id": "form-tanstack-array",
+  "name": "form-tanstack-array",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "array",
+    "dynamic",
+    "form",
+    "management"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-array",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-array\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "Tanstack Array Form is a dynamic form component for managing arrays of data, displaying and editing individual items in a visually clean and intuitive way. Developers typically use it when they need to create form components that allow the creation, deletion, and editing of multiple items, such as lists or collections. The Tanstack Array Form makes it easy to manage complex data structures with minimal code.",
+  "style_tags": [
+    "e.g. minimal",
+    "e.g. responsive"
+  ],
+  "interaction_tags": [
+    "e.g. animated"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-array\nDescription: Tanstack Array Form is a dynamic form component for managing arrays of data, displaying and editing individual items in a visually clean and intuitive way. Developers typically use it when they need to create form components that allow the creation, deletion, and editing of multiple items, such as lists or collections. The Tanstack Array Form makes it easy to manage complex data structures with minimal code.\nStyle: e.g. minimal, e.g. responsive\nInteractions: e.g. animated\nTags: array, dynamic, form, management\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-array",
+  "display_name": "Form Tanstack Array",
+  "preview_url": "/previews/shadcn/form-tanstack-array.png"
+}

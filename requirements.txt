@@ -1,0 +1,13 @@
+faiss-cpu
+sentence-transformers
+transformers
+torch
+groq
+rank-bm25
+numpy
+tqdm
+python-dotenv
+requests
+mcp
+flask
+flask-cors

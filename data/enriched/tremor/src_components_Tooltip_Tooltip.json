@@ -1,0 +1,47 @@
+{
+  "id": "src_components_Tooltip_Tooltip",
+  "name": "Tooltip",
+  "source_code": "// src/components/Tooltip/Tooltip.tsx\n// Tremor Tooltip [v1.0.0]\n\nimport React from \"react\"\nimport * as TooltipPrimitives from \"@radix-ui/react-tooltip\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TooltipProps\n  extends Omit<TooltipPrimitives.TooltipContentProps, \"content\" | \"onClick\">,\n  Pick<\n    TooltipPrimitives.TooltipProps,\n    \"open\" | \"defaultOpen\" | \"onOpenChange\" | \"delayDuration\"\n  > {\n  content: React.ReactNode\n  onClick?: React.MouseEventHandler<HTMLButtonElement>\n  side?: \"bottom\" | \"left\" | \"top\" | \"right\"\n  showArrow?: boolean\n}\n\nconst Tooltip = React.forwardRef<\n  React.ElementRef<typeof TooltipPrimitives.Content>,\n  TooltipProps\n>(\n  (\n    {\n      children,\n      className,\n      content,\n      delayDuration,\n      defaultOpen,\n      open,\n      onClick,\n      onOpenChange,\n      showArrow = true,\n      side,\n      sideOffset = 10,\n      asChild,\n      ...props\n    }: TooltipProps,\n    forwardedRef,\n  ) => {\n    return (\n      <TooltipPrimitives.Provider delayDuration={150}>\n        <TooltipPrimitives.Root\n          open={open}\n          defaultOpen={defaultOpen}\n          onOpenChange={onOpenChange}\n          delayDuration={delayDuration}\n          tremor-id=\"tremor-raw\"\n        >\n          <TooltipPrimitives.Trigger onClick={onClick} asChild={asChild}>\n            {children}\n          </TooltipPrimitives.Trigger>\n          <TooltipPrimitives.Portal>\n            <TooltipPrimitives.Content\n              ref={forwardedRef}\n              side={side}\n              sideOffset={sideOffset}\n              align=\"center\"\n              className={cx(\n                // base\n                \"max-w-60 select-none rounded-md px-2.5 py-1.5 text-sm leading-5 shadow-md\",\n                // text color\n                \"text-gray-50 dark:text-gray-900\",\n                // background color\n                \"bg-gray-900 dark:bg-gray-50\",\n                // transition\n                \"will-change-[transform,opacity]\",\n                \"data-[side=bottom]:animate-slide-down-and-fade data-[side=left]:animate-slide-left-and-fade data-[side=right]:animate-slide-right-and-fade data-[side=top]:animate-slide-up-and-fade data-[state=closed]:animate-hide\",\n                className,\n              )}\n              {...props}\n            >\n              {content}\n              {showArrow ? (\n                <TooltipPrimitives.Arrow\n                  className=\"border-none fill-gray-900 dark:fill-gray-50\"\n                  width={12}\n                  height={7}\n                  aria-hidden=\"true\"\n                />\n              ) : null}\n            </TooltipPrimitives.Content>\n          </TooltipPrimitives.Portal>\n        </TooltipPrimitives.Root>\n      </TooltipPrimitives.Provider>\n    )\n  },\n)\n\nTooltip.displayName = \"Tooltip\"\n\nexport { Tooltip, type TooltipProps }\n",
+  "description": "",
+  "tags": [
+    "icon",
+    "button",
+    "informational"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "Tooltip_Tooltip",
+      "name": "Tooltip",
+      "path": "src/components/Tooltip/Tooltip.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_Tooltip_Tooltip",
+      "name": "Tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Tooltip/Tooltip.tsx",
+          "content": "// Tremor Tooltip [v1.0.0]\n\nimport React from \"react\"\nimport * as TooltipPrimitives from \"@radix-ui/react-tooltip\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TooltipProps\n  extends Omit<TooltipPrimitives.TooltipContentProps, \"content\" | \"onClick\">,\n  Pick<\n    TooltipPrimitives.TooltipProps,\n    \"open\" | \"defaultOpen\" | \"onOpenChange\" | \"delayDuration\"\n  > {\n  content: React.ReactNode\n  onClick?: React.MouseEventHandler<HTMLButtonElement>\n  side?: \"bottom\" | \"left\" | \"top\" | \"right\"\n  showArrow?: boolean\n}\n\nconst Tooltip = React.forwardRef<\n  React.ElementRef<typeof TooltipPrimitives.Content>,\n  TooltipProps\n>(\n  (\n    {\n      children,\n      className,\n      content,\n      delayDuration,\n      defaultOpen,\n      open,\n      onClick,\n      onOpenChange,\n      showArrow = true,\n      side,\n      sideOffset = 10,\n      asChild,\n      ...props\n    }: TooltipProps,\n    forwardedRef,\n  ) => {\n    return (\n      <TooltipPrimitives.Provider delayDuration={150}>\n        <TooltipPrimitives.Root\n          open={open}\n          defaultOpen={defaultOpen}\n          onOpenChange={onOpenChange}\n          delayDuration={delayDuration}\n          tremor-id=\"tremor-raw\"\n        >\n          <TooltipPrimitives.Trigger onClick={onClick} asChild={asChild}>\n            {children}\n          </TooltipPrimitives.Trigger>\n          <TooltipPrimitives.Portal>\n            <TooltipPrimitives.Content\n              ref={forwardedRef}\n              side={side}\n              sideOffset={sideOffset}\n              align=\"center\"\n              className={cx(\n                // base\n                \"max-w-60 select-none rounded-md px-2.5 py-1.5 text-sm leading-5 shadow-md\",\n                // text color\n                \"text-gray-50 dark:text-gray-900\",\n                // background color\n                \"bg-gray-900 dark:bg-gray-50\",\n                // transition\n                \"will-change-[transform,opacity]\",\n                \"data-[side=bottom]:animate-slide-down-and-fade data-[side=left]:animate-slide-left-and-fade data-[side=right]:animate-slide-right-and-fade data-[side=top]:animate-slide-up-and-fade data-[state=closed]:animate-hide\",\n                className,\n              )}\n              {...props}\n            >\n              {content}\n              {showArrow ? (\n                <TooltipPrimitives.Arrow\n                  className=\"border-none fill-gray-900 dark:fill-gray-50\"\n                  width={12}\n                  height={7}\n                  aria-hidden=\"true\"\n                />\n              ) : null}\n            </TooltipPrimitives.Content>\n          </TooltipPrimitives.Portal>\n        </TooltipPrimitives.Root>\n      </TooltipPrimitives.Provider>\n    )\n  },\n)\n\nTooltip.displayName = \"Tooltip\"\n\nexport { Tooltip, type TooltipProps }\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A tooltip displays a small text bubble when a user hovers over a trigger element, often used for providing additional information about icons, buttons, or other interactive elements.",
+  "style_tags": [
+    "dark",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Tooltip\nDescription: A tooltip displays a small text bubble when a user hovers over a trigger element, often used for providing additional information about icons, buttons, or other interactive elements.\nStyle: dark, glassmorphism\nInteractions: animated, hover\nTags: icon, button, informational\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/Tooltip/Tooltip.tsx\n// Tremor Tooltip [v1.0.0]\n\nimport React from \"react\"\nimport * as TooltipPrimitives from \"@radix-ui/react-tooltip\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TooltipProps\n  extends Omit<TooltipPrimitives.TooltipContentProps, \"content\" | \"onClick\">,\n  Pick<\n    TooltipPrimitives.TooltipProps,\n    \"open\" | \"defaultOpen\" | \"onOpenChange\" | \"delayDuration\"\n  > {\n  content: React.ReactNode\n  onClick?: React.MouseEventHandler<HTMLButtonElement>\n  side?: \"bott",
+  "prompt_version": 2,
+  "clean_id": "tooltip",
+  "display_name": "Tooltip",
+  "preview_url": "/previews/tremor/src-components-tooltip-tooltip.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "sidebar-07",
+  "name": "sidebar-07",
+  "source_code": "",
+  "description": "A sidebar that collapses to icons.",
+  "tags": [
+    "navigation",
+    "sidebar",
+    "collapsible",
+    "compact"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-07",
+      "type": "registry:block",
+      "description": "A sidebar that collapses to icons.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-07\n\nA sidebar that collapses to icons.\n\n**Type:** registry:block\n**Files:** 6 file(s)"
+  },
+  "visual_summary": "A collapsible sidebar that displays icons when minimized, useful for navigation in applications requiring a compact layout.",
+  "style_tags": [
+    "minimal",
+    "neumorphic",
+    "elegant"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable",
+    "expandable"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-07\nDescription: A collapsible sidebar that displays icons when minimized, useful for navigation in applications requiring a compact layout.\nStyle: minimal, neumorphic, elegant\nInteractions: animated, clickable, expandable\nTags: navigation, sidebar, collapsible, compact\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-07",
+  "display_name": "Sidebar 07",
+  "preview_url": "/previews/shadcn/sidebar-07.png"
+}

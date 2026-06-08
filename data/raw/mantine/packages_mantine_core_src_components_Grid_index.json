@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Grid_index",
+  "name": "Grid",
+  "source_code": "// packages/@mantine/core/src/components/Grid/index.ts\nimport type { GridCssVariables, GridFactory, GridProps, GridStylesNames } from './Grid';\nimport type { GridContextValue } from './Grid.context';\nimport type { GridColProps } from './GridCol/GridCol';\n\nexport { Grid } from './Grid';\nexport { GridCol } from './GridCol/GridCol';\nexport { useGridContext } from './Grid.context';\n\nexport type {\n  GridCssVariables,\n  GridFactory,\n  GridProps,\n  GridStylesNames,\n  GridColProps,\n  GridContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Grid_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Grid/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Grid_index",
+      "name": "Grid",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Grid/index.ts",
+          "content": "import type { GridCssVariables, GridFactory, GridProps, GridStylesNames } from './Grid';\nimport type { GridContextValue } from './Grid.context';\nimport type { GridColProps } from './GridCol/GridCol';\n\nexport { Grid } from './Grid';\nexport { GridCol } from './GridCol/GridCol';\nexport { useGridContext } from './Grid.context';\n\nexport type {\n  GridCssVariables,\n  GridFactory,\n  GridProps,\n  GridStylesNames,\n  GridColProps,\n  GridContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

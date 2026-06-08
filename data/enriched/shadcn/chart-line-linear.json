@@ -1,0 +1,42 @@
+{
+  "id": "chart-line-linear",
+  "name": "chart-line-linear",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "graph",
+    "data-visualization",
+    "line"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-linear",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-linear\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A linear line chart UI component is a graphical representation of data as a series of points connected by straight line segments. It typically displays trends and fluctuations in data over a specific period. Developers would use this component to display historical data, analytics, or financial information in a clear and concise manner.",
+  "style_tags": [
+    "e.g. dark",
+    "material design",
+    "corporate"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover",
+    "responsive"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-linear\nDescription: A linear line chart UI component is a graphical representation of data as a series of points connected by straight line segments. It typically displays trends and fluctuations in data over a specific period. Developers would use this component to display historical data, analytics, or financial information in a clear and concise manner.\nStyle: e.g. dark, material design, corporate\nInteractions: e.g. clickable, hover, responsive\nTags: chart, graph, data-visualization, line\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-linear",
+  "display_name": "Chart Line Linear",
+  "preview_url": "/previews/shadcn/chart-line-linear.png"
+}

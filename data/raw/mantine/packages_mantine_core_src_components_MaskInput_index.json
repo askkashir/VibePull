@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_MaskInput_index",
+  "name": "MaskInput",
+  "source_code": "// packages/@mantine/core/src/components/MaskInput/index.ts\nimport type { MaskInputFactory, MaskInputProps } from './MaskInput';\n\nexport { MaskInput } from './MaskInput';\n\nexport type { MaskInputProps, MaskInputFactory };\n\nexport namespace MaskInput {\n  export type Props = MaskInputProps;\n  export type Factory = MaskInputFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "MaskInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/MaskInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_MaskInput_index",
+      "name": "MaskInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/MaskInput/index.ts",
+          "content": "import type { MaskInputFactory, MaskInputProps } from './MaskInput';\n\nexport { MaskInput } from './MaskInput';\n\nexport type { MaskInputProps, MaskInputFactory };\n\nexport namespace MaskInput {\n  export type Props = MaskInputProps;\n  export type Factory = MaskInputFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

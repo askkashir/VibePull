@@ -1,0 +1,46 @@
+{
+  "id": "elements_card",
+  "name": "card",
+  "source_code": "// elements/card.html\n<div class=\"rounded-lg overflow-hidden border border-neutral-200/60 bg-white text-neutral-700 shadow-sm w-[380px]\">\n    <div class=\"relative\">\n        <img src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80\" class=\"w-full h-auto\" />\n    </div>\n    <div class=\"p-7\">\n        <h2 class=\"mb-2 text-lg font-bold leading-none tracking-tight\">Product Name</h2>\n        <p class=\"mb-5 text-neutral-500\">This card element can be used to display a product, post, or any other type of data.</p>\n        <button class=\"inline-flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium text-white transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-neutral-950 hover:bg-neutral-950/90\">View Product</button>\n    </div>\n</div>",
+  "description": "",
+  "tags": [
+    "card",
+    "image",
+    "button",
+    "text",
+    "container"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "card",
+      "name": "card",
+      "path": "elements/card.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_card",
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/card.html",
+          "content": "<div class=\"rounded-lg overflow-hidden border border-neutral-200/60 bg-white text-neutral-700 shadow-sm w-[380px]\">\n    <div class=\"relative\">\n        <img src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80\" class=\"w-full h-auto\" />\n    </div>\n    <div class=\"p-7\">\n        <h2 class=\"mb-2 text-lg font-bold leading-none tracking-tight\">Product Name</h2>\n        <p class=\"mb-5 text-neutral-500\">This card element can be used to display a product, post, or any other type of data.</p>\n        <button class=\"inline-flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium text-white transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none bg-neutral-950 hover:bg-neutral-950/90\">View Product</button>\n    </div>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A card component with a rounded shape, showcasing an image and containing a title, description, and a 'View Product' button. It is commonly used to display product, post, or other data type details.",
+  "style_tags": [
+    "rounded",
+    "shadow"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card\nDescription: A card component with a rounded shape, showcasing an image and containing a title, description, and a 'View Product' button. It is commonly used to display product, post, or other data type details.\nStyle: rounded, shadow\nInteractions: \nTags: card, image, button, text, container\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/card.html\n<div class=\"rounded-lg overflow-hidden border border-neutral-200/60 bg-white text-neutral-700 shadow-sm w-[380px]\">\n    <div class=\"relative\">\n        <img src=\"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80\" class=\"w-full h-auto\" />\n    </div>\n    <div class=\"p-7\">\n        <h2 class=\"mb-2 text-lg font-bold leading-none tracking-tight\">Product Name</h2>\n        <p cl",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/pinesui/elements-card.png"
+}

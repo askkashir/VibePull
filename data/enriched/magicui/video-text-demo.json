@@ -1,0 +1,60 @@
+{
+  "id": "video-text-demo",
+  "name": "Video Text Demo",
+  "source_code": "import { VideoText } from \"@/registry/magicui/video-text\"\n\nexport default function VideoTextDemo() {\n  return (\n    <div className=\"relative h-[200px] w-full overflow-hidden\">\n      <VideoText src=\"https://cdn.magicui.design/ocean-small.webm\">\n        OCEAN\n      </VideoText>\n    </div>\n  )\n}\n",
+  "description": "Example showing text with a video background.",
+  "tags": [
+    "video",
+    "text-overlay"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "video-text-demo",
+      "type": "registry:example",
+      "title": "Video Text Demo",
+      "description": "Example showing text with a video background.",
+      "registryDependencies": [
+        "https://magicui.design/r/video-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/video-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/video-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "video-text-demo",
+      "type": "registry:example",
+      "title": "Video Text Demo",
+      "description": "Example showing text with a video background.",
+      "registryDependencies": [
+        "@magicui/video-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/video-text-demo.tsx",
+          "content": "import { VideoText } from \"@/registry/magicui/video-text\"\n\nexport default function VideoTextDemo() {\n  return (\n    <div className=\"relative h-[200px] w-full overflow-hidden\">\n      <VideoText src=\"https://cdn.magicui.design/ocean-small.webm\">\n        OCEAN\n      </VideoText>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A video component that overlays text on top of a video background, commonly used for promotional material.",
+  "style_tags": [
+    "card",
+    "media"
+  ],
+  "interaction_tags": [
+    "not interactive"
+  ],
+  "component_type": "hero",
+  "generation_prompt": "Create a production-ready hero component with the following characteristics:\n\nName: Video Text Demo\nDescription: A video component that overlays text on top of a video background, commonly used for promotional material.\nStyle: card, media\nInteractions: not interactive\nTags: video, text-overlay\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { VideoText } from \"@/registry/magicui/video-text\"\n\nexport default function VideoTextDemo() {\n  return (\n    <div className=\"relative h-[200px] w-full overflow-hidden\">\n      <VideoText src=\"https://cdn.magicui.design/ocean-small.webm\">\n        OCEAN\n      </VideoText>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "video-text-demo",
+  "display_name": "Video Text Demo",
+  "preview_url": "/previews/magicui/video-text-demo.png"
+}

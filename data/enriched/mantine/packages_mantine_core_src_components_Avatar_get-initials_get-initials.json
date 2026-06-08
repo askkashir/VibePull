@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Avatar_get-initials_get-initials",
+  "name": "get-initials",
+  "source_code": "// packages/@mantine/core/src/components/Avatar/get-initials/get-initials.ts\nexport function getInitials(name: string, limit = 2) {\n  const splitted = name.split(' ');\n\n  if (splitted.length === 1) {\n    return name.slice(0, limit).toUpperCase();\n  }\n\n  return splitted\n    .map((word) => word[0])\n    .slice(0, limit)\n    .join('')\n    .toUpperCase();\n}\n",
+  "description": "",
+  "tags": [
+    "text",
+    "formatting",
+    "name"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Avatar_get-initials_get-initials",
+      "name": "get-initials",
+      "path": "packages/@mantine/core/src/components/Avatar/get-initials/get-initials.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Avatar_get-initials_get-initials",
+      "name": "get-initials",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Avatar/get-initials/get-initials.ts",
+          "content": "export function getInitials(name: string, limit = 2) {\n  const splitted = name.split(' ');\n\n  if (splitted.length === 1) {\n    return name.slice(0, limit).toUpperCase();\n  }\n\n  return splitted\n    .map((word) => word[0])\n    .slice(0, limit)\n    .join('')\n    .toUpperCase();\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The get-initials component is used to extract the initials from a given name. It typically consists of 2-3 characters and returns them in uppercase. Developers would use this component for displaying names in a compact form.",
+  "style_tags": [
+    "none"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-initials\nDescription: The get-initials component is used to extract the initials from a given name. It typically consists of 2-3 characters and returns them in uppercase. Developers would use this component for displaying names in a compact form.\nStyle: none\nInteractions: none\nTags: text, formatting, name\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Avatar/get-initials/get-initials.ts\nexport function getInitials(name: string, limit = 2) {\n  const splitted = name.split(' ');\n\n  if (splitted.length === 1) {\n    return name.slice(0, limit).toUpperCase();\n  }\n\n  return splitted\n    .map((word) => word[0])\n    .slice(0, limit)\n    .join('')\n    .toUpperCase();\n}\n",
+  "prompt_version": 2,
+  "clean_id": "get-initials",
+  "display_name": "Get Initials",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-avatar-get-initials-get-initials.png"
+}

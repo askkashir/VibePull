@@ -1,0 +1,60 @@
+{
+  "id": "spinning-text-demo",
+  "name": "Spinning Text Demo",
+  "source_code": "import { SpinningText } from \"@/registry/magicui/spinning-text\"\n\nexport default function SpinningTextBasic() {\n  return <SpinningText>learn more • earn more • grow more •</SpinningText>\n}\n",
+  "description": "Example showing spinning text animation.",
+  "tags": [
+    "animation",
+    "text"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "spinning-text-demo",
+      "type": "registry:example",
+      "title": "Spinning Text Demo",
+      "description": "Example showing spinning text animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/spinning-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/spinning-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/spinning-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "spinning-text-demo",
+      "type": "registry:example",
+      "title": "Spinning Text Demo",
+      "description": "Example showing spinning text animation.",
+      "registryDependencies": [
+        "@magicui/spinning-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/spinning-text-demo.tsx",
+          "content": "import { SpinningText } from \"@/registry/magicui/spinning-text\"\n\nexport default function SpinningTextBasic() {\n  return <SpinningText>learn more • earn more • grow more •</SpinningText>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A spinning text component with a dynamic text animation. It is used when showcasing dynamic or interactive content on a page. This component provides a visually appealing way to display text in motion.",
+  "style_tags": [
+    "default",
+    "minimalist"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Spinning Text Demo\nDescription: A spinning text component with a dynamic text animation. It is used when showcasing dynamic or interactive content on a page. This component provides a visually appealing way to display text in motion.\nStyle: default, minimalist\nInteractions: animated\nTags: animation, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { SpinningText } from \"@/registry/magicui/spinning-text\"\n\nexport default function SpinningTextBasic() {\n  return <SpinningText>learn more • earn more • grow more •</SpinningText>\n}\n",
+  "prompt_version": 2,
+  "clean_id": "spinning-text-demo",
+  "display_name": "Spinning Text Demo",
+  "preview_url": "/previews/magicui/spinning-text-demo.png"
+}

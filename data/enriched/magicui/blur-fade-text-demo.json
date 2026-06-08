@@ -1,0 +1,64 @@
+{
+  "id": "blur-fade-text-demo",
+  "name": "Blur Fade Text Demo",
+  "source_code": "import { BlurFade } from \"@/registry/magicui/blur-fade\"\n\nexport default function BlurFadeTextDemo() {\n  return (\n    <section id=\"header\">\n      <BlurFade delay={0.25} inView>\n        <h2 className=\"text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none\">\n          Hello World 👋\n        </h2>\n      </BlurFade>\n      <BlurFade delay={0.25 * 2} inView>\n        <span className=\"text-xl tracking-tighter text-pretty sm:text-3xl xl:text-4xl/none\">\n          Nice to meet you\n        </span>\n      </BlurFade>\n    </section>\n  )\n}\n",
+  "description": "Example showing blur fade animations with text.",
+  "tags": [
+    "magicui",
+    "animation",
+    "loading",
+    "lazy loading",
+    "on page load"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "blur-fade-text-demo",
+      "type": "registry:example",
+      "title": "Blur Fade Text Demo",
+      "description": "Example showing blur fade animations with text.",
+      "registryDependencies": [
+        "https://magicui.design/r/blur-fade"
+      ],
+      "files": [
+        {
+          "path": "registry/example/blur-fade-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/blur-fade-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "blur-fade-text-demo",
+      "type": "registry:example",
+      "title": "Blur Fade Text Demo",
+      "description": "Example showing blur fade animations with text.",
+      "registryDependencies": [
+        "@magicui/blur-fade"
+      ],
+      "files": [
+        {
+          "path": "registry/example/blur-fade-text-demo.tsx",
+          "content": "import { BlurFade } from \"@/registry/magicui/blur-fade\"\n\nexport default function BlurFadeTextDemo() {\n  return (\n    <section id=\"header\">\n      <BlurFade delay={0.25} inView>\n        <h2 className=\"text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none\">\n          Hello World 👋\n        </h2>\n      </BlurFade>\n      <BlurFade delay={0.25 * 2} inView>\n        <span className=\"text-xl tracking-tighter text-pretty sm:text-3xl xl:text-4xl/none\">\n          Nice to meet you\n        </span>\n      </BlurFade>\n    </section>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A demo component showing a text fade animation into view when it comes into the user's vision using the BlurFade component from magicui.",
+  "style_tags": [
+    "e.g. minimal",
+    "smooth"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "lazy"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Blur Fade Text Demo\nDescription: A demo component showing a text fade animation into view when it comes into the user's vision using the BlurFade component from magicui.\nStyle: e.g. minimal, smooth\nInteractions: e.g. animated, lazy\nTags: magicui, animation, loading, lazy loading, on page load\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { BlurFade } from \"@/registry/magicui/blur-fade\"\n\nexport default function BlurFadeTextDemo() {\n  return (\n    <section id=\"header\">\n      <BlurFade delay={0.25} inView>\n        <h2 className=\"text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none\">\n          Hello World 👋\n        </h2>\n      </BlurFade>\n      <BlurFade delay={0.25 * 2} inView>\n        <span className=\"text-xl tracking-tighter text-pretty sm:text-3xl xl:text-4xl/none\">\n          Nice to meet you\n        </span>\n ",
+  "prompt_version": 2,
+  "clean_id": "blur-fade-text-demo",
+  "display_name": "Blur Fade Text Demo",
+  "preview_url": "/previews/magicui/blur-fade-text-demo.png"
+}

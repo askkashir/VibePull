@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Anchor_Anchor.story",
+  "name": "Anchor.story",
+  "source_code": "// packages/@mantine/core/src/components/Anchor/Anchor.story.tsx\nimport { Anchor } from './Anchor';\n\nexport default { title: 'Anchor' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"never\">\n        Mantine website link: never\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\">\n        Mantine website link: hover\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"not-hover\">\n        Mantine website link: not hover\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"always\">\n        Mantine website link: always\n      </Anchor>\n      <br />\n      <Anchor\n        href=\"https://mantine.dev\"\n        target=\"blank\"\n        underline=\"never\"\n        variant=\"gradient\"\n        fz={60}\n        fw=\"bold\"\n      >\n        Mantine website link: never\n      </Anchor>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <Anchor href=\"#\" unstyled>\n      Unstyled\n    </Anchor>\n  );\n}\n\nexport function LineClamp() {\n  return (\n    <Anchor href=\"#\" lineClamp={1}>\n      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam non ipsum aliquid\n      voluptatibus. Repellat, illo cumque a inventore excepturi dolorem? Asperiores quasi numquam\n      natus ipsum rerum architecto cumque quo ut.\n    </Anchor>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "anchor",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Anchor_Anchor.story",
+      "name": "Anchor.story",
+      "path": "packages/@mantine/core/src/components/Anchor/Anchor.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Anchor_Anchor.story",
+      "name": "Anchor.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Anchor/Anchor.story.tsx",
+          "content": "import { Anchor } from './Anchor';\n\nexport default { title: 'Anchor' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"never\">\n        Mantine website link: never\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\">\n        Mantine website link: hover\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"not-hover\">\n        Mantine website link: not hover\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"always\">\n        Mantine website link: always\n      </Anchor>\n      <br />\n      <Anchor\n        href=\"https://mantine.dev\"\n        target=\"blank\"\n        underline=\"never\"\n        variant=\"gradient\"\n        fz={60}\n        fw=\"bold\"\n      >\n        Mantine website link: never\n      </Anchor>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <Anchor href=\"#\" unstyled>\n      Unstyled\n    </Anchor>\n  );\n}\n\nexport function LineClamp() {\n  return (\n    <Anchor href=\"#\" lineClamp={1}>\n      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam non ipsum aliquid\n      voluptatibus. Repellat, illo cumque a inventore excepturi dolorem? Asperiores quasi numquam\n      natus ipsum rerum architecto cumque quo ut.\n    </Anchor>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Anchor.story is a anchor story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Anchor.story\nDescription: Anchor.story is a anchor story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient\nInteractions: \nTags: anchor, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Anchor/Anchor.story.tsx\nimport { Anchor } from './Anchor';\n\nexport default { title: 'Anchor' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Anchor href=\"https://mantine.dev\" target=\"blank\" underline=\"never\">\n        Mantine website link: never\n      </Anchor>\n      <br />\n      <Anchor href=\"https://mantine.dev\" target=\"blank\">\n        Mantine website link: hover\n      </Anchor>\n      <br />\n      <Anchor href=\"https://m",
+  "prompt_version": 2,
+  "clean_id": "anchor",
+  "display_name": "Anchor",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-anchor-anchor-story.png"
+}

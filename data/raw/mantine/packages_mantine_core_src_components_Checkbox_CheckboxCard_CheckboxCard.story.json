@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Checkbox_CheckboxCard_CheckboxCard.story",
+  "name": "CheckboxCard.story",
+  "source_code": "// packages/@mantine/core/src/components/Checkbox/CheckboxCard/CheckboxCard.story.tsx\nimport { useState } from 'react';\nimport { useForm } from '@mantine/form';\nimport { CheckboxGroup } from '../CheckboxGroup/CheckboxGroup';\nimport { CheckboxIndicator } from '../CheckboxIndicator/CheckboxIndicator';\nimport { CheckboxCard } from './CheckboxCard';\n\nexport default { title: 'CheckboxCard' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxCard p=\"md\" checked={checked} onClick={() => setChecked((c) => !c)}>\n        <CheckboxIndicator />\n        Some label\n      </CheckboxCard>\n    </div>\n  );\n}\n\nexport function WithinGroup() {\n  const [value, setValue] = useState<string[]>(['1']);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxGroup value={value} onChange={setValue}>\n        <CheckboxCard\n          value=\"1\"\n          checked={value.includes('1')}\n          onClick={() => setValue((current) => (current.includes('1') ? [] : ['1']))}\n        >\n          <CheckboxIndicator />\n          Option 1\n        </CheckboxCard>\n\n        <CheckboxCard\n          value=\"2\"\n          checked={value.includes('2')}\n          onClick={() => setValue((current) => (current.includes('2') ? [] : ['2']))}\n        >\n          <CheckboxIndicator />\n          Option 2\n        </CheckboxCard>\n      </CheckboxGroup>\n\n      <div>{JSON.stringify(value)}</div>\n    </div>\n  );\n}\n\nexport function WithUseForm() {\n  const form = useForm({ mode: 'uncontrolled', initialValues: { checkbox: true } });\n\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxCard\n        p=\"md\"\n        {...form.getInputProps('checkbox', { type: 'checkbox' })}\n        key={form.key('checkbox')}\n      >\n        <CheckboxIndicator />\n        Some label\n      </CheckboxCard>\n\n      {JSON.stringify(form.values)}\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Checkbox_CheckboxCard_CheckboxCard.story",
+      "name": "CheckboxCard.story",
+      "path": "packages/@mantine/core/src/components/Checkbox/CheckboxCard/CheckboxCard.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Checkbox_CheckboxCard_CheckboxCard.story",
+      "name": "CheckboxCard.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Checkbox/CheckboxCard/CheckboxCard.story.tsx",
+          "content": "import { useState } from 'react';\nimport { useForm } from '@mantine/form';\nimport { CheckboxGroup } from '../CheckboxGroup/CheckboxGroup';\nimport { CheckboxIndicator } from '../CheckboxIndicator/CheckboxIndicator';\nimport { CheckboxCard } from './CheckboxCard';\n\nexport default { title: 'CheckboxCard' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxCard p=\"md\" checked={checked} onClick={() => setChecked((c) => !c)}>\n        <CheckboxIndicator />\n        Some label\n      </CheckboxCard>\n    </div>\n  );\n}\n\nexport function WithinGroup() {\n  const [value, setValue] = useState<string[]>(['1']);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxGroup value={value} onChange={setValue}>\n        <CheckboxCard\n          value=\"1\"\n          checked={value.includes('1')}\n          onClick={() => setValue((current) => (current.includes('1') ? [] : ['1']))}\n        >\n          <CheckboxIndicator />\n          Option 1\n        </CheckboxCard>\n\n        <CheckboxCard\n          value=\"2\"\n          checked={value.includes('2')}\n          onClick={() => setValue((current) => (current.includes('2') ? [] : ['2']))}\n        >\n          <CheckboxIndicator />\n          Option 2\n        </CheckboxCard>\n      </CheckboxGroup>\n\n      <div>{JSON.stringify(value)}</div>\n    </div>\n  );\n}\n\nexport function WithUseForm() {\n  const form = useForm({ mode: 'uncontrolled', initialValues: { checkbox: true } });\n\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxCard\n        p=\"md\"\n        {...form.getInputProps('checkbox', { type: 'checkbox' })}\n        key={form.key('checkbox')}\n      >\n        <CheckboxIndicator />\n        Some label\n      </CheckboxCard>\n\n      {JSON.stringify(form.values)}\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

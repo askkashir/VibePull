@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Code_Code",
+  "name": "Code",
+  "source_code": "// packages/@mantine/core/src/components/Code/Code.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getThemeColor,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Code.module.css';\n\nexport type CodeStylesNames = 'root';\nexport type CodeCssVariables = {\n  root: '--code-bg';\n};\n\nexport interface CodeProps extends BoxProps, StylesApiProps<CodeFactory>, ElementProps<'code'> {\n  /** Key of `theme.colors` or any valid CSS color, controls `background-color` of the code. By default, calculated based on the color scheme. */\n  color?: MantineColor;\n\n  /** If set, code is rendered in `pre` */\n  block?: boolean;\n}\n\nexport type CodeFactory = Factory<{\n  props: CodeProps;\n  ref: HTMLElement;\n  stylesNames: CodeStylesNames;\n  vars: CodeCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<CodeFactory>((theme, { color }) => ({\n  root: {\n    '--code-bg': color ? getThemeColor(color, theme) : undefined,\n  },\n}));\n\nexport const Code = factory<CodeFactory>((_props) => {\n  const props = useProps('Code', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    color,\n    block,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<CodeFactory>({\n    name: 'Code',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <Box<any>\n      component={block ? 'pre' : 'code'}\n      mod={[{ block }, mod]}\n      {...getStyles('root')}\n      {...others}\n      dir=\"ltr\"\n    />\n  );\n});\n\nCode.classes = classes;\nCode.varsResolver = varsResolver;\nCode.displayName = '@mantine/core/Code';\n\nexport namespace Code {\n  export type Props = CodeProps;\n  export type CssVariables = CodeCssVariables;\n  export type Factory = CodeFactory;\n  export type StylesNames = CodeStylesNames;\n}\n",
+  "description": "",
+  "tags": [
+    "code",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Code_Code",
+      "name": "Code",
+      "path": "packages/@mantine/core/src/components/Code/Code.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Code_Code",
+      "name": "Code",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Code/Code.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getThemeColor,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Code.module.css';\n\nexport type CodeStylesNames = 'root';\nexport type CodeCssVariables = {\n  root: '--code-bg';\n};\n\nexport interface CodeProps extends BoxProps, StylesApiProps<CodeFactory>, ElementProps<'code'> {\n  /** Key of `theme.colors` or any valid CSS color, controls `background-color` of the code. By default, calculated based on the color scheme. */\n  color?: MantineColor;\n\n  /** If set, code is rendered in `pre` */\n  block?: boolean;\n}\n\nexport type CodeFactory = Factory<{\n  props: CodeProps;\n  ref: HTMLElement;\n  stylesNames: CodeStylesNames;\n  vars: CodeCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<CodeFactory>((theme, { color }) => ({\n  root: {\n    '--code-bg': color ? getThemeColor(color, theme) : undefined,\n  },\n}));\n\nexport const Code = factory<CodeFactory>((_props) => {\n  const props = useProps('Code', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    color,\n    block,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<CodeFactory>({\n    name: 'Code',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <Box<any>\n      component={block ? 'pre' : 'code'}\n      mod={[{ block }, mod]}\n      {...getStyles('root')}\n      {...others}\n      dir=\"ltr\"\n    />\n  );\n});\n\nCode.classes = classes;\nCode.varsResolver = varsResolver;\nCode.displayName = '@mantine/core/Code';\n\nexport namespace Code {\n  export type Props = CodeProps;\n  export type CssVariables = CodeCssVariables;\n  export type Factory = CodeFactory;\n  export type StylesNames = CodeStylesNames;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Code is a code UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Code\nDescription: Code is a code UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: \nTags: code, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Code/Code.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getThemeColor,\n  MantineColor,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Code.module.css';\n\nexport type CodeStylesNames = 'root';\nexport type CodeCssVariables = {\n  root: '--code-bg';\n};\n\nexport interface CodeProps extends BoxProps, StylesApiProps<CodeFactory>, ElementProps<'code'> {\n  /** Key of `theme.color",
+  "prompt_version": 2,
+  "clean_id": "code",
+  "display_name": "Code",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-code-code.png"
+}

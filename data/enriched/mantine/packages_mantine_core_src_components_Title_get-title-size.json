@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Title_get-title-size",
+  "name": "get-title-size",
+  "source_code": "// packages/@mantine/core/src/components/Title/get-title-size.ts\nimport { rem } from '../../core';\nimport type { TitleOrder, TitleSize } from './Title';\n\nconst headings: unknown[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];\nconst sizes: unknown[] = ['xs', 'sm', 'md', 'lg', 'xl'];\n\nexport interface GetTitleSizeResult {\n  fontSize: string;\n  fontWeight: string;\n  lineHeight: string;\n}\n\nexport function getTitleSize(order: TitleOrder, size?: TitleSize): GetTitleSizeResult {\n  const titleSize = size !== undefined ? size : `h${order}`;\n\n  if (headings.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-${titleSize}-font-size)`,\n      fontWeight: `var(--mantine-${titleSize}-font-weight)`,\n      lineHeight: `var(--mantine-${titleSize}-line-height)`,\n    };\n  } else if (sizes.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-font-size-${titleSize})`,\n      fontWeight: `var(--mantine-h${order}-font-weight)`,\n      lineHeight: `var(--mantine-h${order}-line-height)`,\n    };\n  }\n\n  return {\n    fontSize: rem(titleSize),\n    fontWeight: `var(--mantine-h${order}-font-weight)`,\n    lineHeight: `var(--mantine-h${order}-line-height)`,\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "get",
+    "mantine",
+    "other",
+    "size",
+    "title"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Title_get-title-size",
+      "name": "get-title-size",
+      "path": "packages/@mantine/core/src/components/Title/get-title-size.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Title_get-title-size",
+      "name": "get-title-size",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Title/get-title-size.ts",
+          "content": "import { rem } from '../../core';\nimport type { TitleOrder, TitleSize } from './Title';\n\nconst headings: unknown[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];\nconst sizes: unknown[] = ['xs', 'sm', 'md', 'lg', 'xl'];\n\nexport interface GetTitleSizeResult {\n  fontSize: string;\n  fontWeight: string;\n  lineHeight: string;\n}\n\nexport function getTitleSize(order: TitleOrder, size?: TitleSize): GetTitleSizeResult {\n  const titleSize = size !== undefined ? size : `h${order}`;\n\n  if (headings.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-${titleSize}-font-size)`,\n      fontWeight: `var(--mantine-${titleSize}-font-weight)`,\n      lineHeight: `var(--mantine-${titleSize}-line-height)`,\n    };\n  } else if (sizes.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-font-size-${titleSize})`,\n      fontWeight: `var(--mantine-h${order}-font-weight)`,\n      lineHeight: `var(--mantine-h${order}-line-height)`,\n    };\n  }\n\n  return {\n    fontSize: rem(titleSize),\n    fontWeight: `var(--mantine-h${order}-font-weight)`,\n    lineHeight: `var(--mantine-h${order}-line-height)`,\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-title-size is a get title size UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-title-size\nDescription: get-title-size is a get title size UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: get, mantine, other, size, title\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Title/get-title-size.ts\nimport { rem } from '../../core';\nimport type { TitleOrder, TitleSize } from './Title';\n\nconst headings: unknown[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];\nconst sizes: unknown[] = ['xs', 'sm', 'md', 'lg', 'xl'];\n\nexport interface GetTitleSizeResult {\n  fontSize: string;\n  fontWeight: string;\n  lineHeight: string;\n}\n\nexport function getTitleSize(order: TitleOrder, size?: TitleSize): GetTitleSizeResult {\n  const titleSize = size !== ",
+  "prompt_version": 2,
+  "clean_id": "get-title-size",
+  "display_name": "Get Title Size",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-title-get-title-size.png"
+}

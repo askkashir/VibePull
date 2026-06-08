@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShell.context",
+  "name": "AppShell.context",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShell.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { AppShellFactory } from './AppShell';\n\nexport interface AppShellContextValue {\n  getStyles: GetStylesApi<AppShellFactory>;\n  withBorder: boolean | undefined;\n  zIndex: string | number | undefined;\n  disabled: boolean | undefined;\n  offsetScrollbars: boolean | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport const [AppShellProvider, useAppShellContext] = createSafeContext<AppShellContextValue>(\n  'AppShell was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "app",
+    "context",
+    "mantine",
+    "other",
+    "shell"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShell.context",
+      "name": "AppShell.context",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShell.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShell.context",
+      "name": "AppShell.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShell.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { AppShellFactory } from './AppShell';\n\nexport interface AppShellContextValue {\n  getStyles: GetStylesApi<AppShellFactory>;\n  withBorder: boolean | undefined;\n  zIndex: string | number | undefined;\n  disabled: boolean | undefined;\n  offsetScrollbars: boolean | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport const [AppShellProvider, useAppShellContext] = createSafeContext<AppShellContextValue>(\n  'AppShell was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShell.context is a app shell context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShell.context\nDescription: AppShell.context is a app shell context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: app, context, mantine, other, shell\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShell.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { AppShellFactory } from './AppShell';\n\nexport interface AppShellContextValue {\n  getStyles: GetStylesApi<AppShellFactory>;\n  withBorder: boolean | undefined;\n  zIndex: string | number | undefined;\n  disabled: boolean | undefined;\n  offsetScrollbars: boolean | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport const [AppShellProvider, useAppShellContext] =",
+  "prompt_version": 2,
+  "clean_id": "app-shell",
+  "display_name": "App Shell",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshell-context.png"
+}

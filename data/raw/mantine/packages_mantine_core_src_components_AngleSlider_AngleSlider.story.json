@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AngleSlider_AngleSlider.story",
+  "name": "AngleSlider.story",
+  "source_code": "// packages/@mantine/core/src/components/AngleSlider/AngleSlider.story.tsx\nimport { AngleSlider } from './AngleSlider';\n\nexport default { title: 'AngleSlider' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AngleSlider size={100} formatLabel={(value) => `${value}°`} />\n    </div>\n  );\n}\n\nexport function WithFormData() {\n  return (\n    <div style={{ padding: 40 }}>\n      <form\n        onSubmit={(event) => {\n          event.preventDefault();\n          const formData = new FormData(event.currentTarget);\n          console.log('Checkbox group value:', formData.get('angle'));\n        }}\n      >\n        <AngleSlider name=\"angle\" defaultValue={120} />\n        <button type=\"submit\">Submit</button>\n      </form>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AngleSlider_AngleSlider.story",
+      "name": "AngleSlider.story",
+      "path": "packages/@mantine/core/src/components/AngleSlider/AngleSlider.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AngleSlider_AngleSlider.story",
+      "name": "AngleSlider.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AngleSlider/AngleSlider.story.tsx",
+          "content": "import { AngleSlider } from './AngleSlider';\n\nexport default { title: 'AngleSlider' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AngleSlider size={100} formatLabel={(value) => `${value}°`} />\n    </div>\n  );\n}\n\nexport function WithFormData() {\n  return (\n    <div style={{ padding: 40 }}>\n      <form\n        onSubmit={(event) => {\n          event.preventDefault();\n          const formData = new FormData(event.currentTarget);\n          console.log('Checkbox group value:', formData.get('angle'));\n        }}\n      >\n        <AngleSlider name=\"angle\" defaultValue={120} />\n        <button type=\"submit\">Submit</button>\n      </form>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

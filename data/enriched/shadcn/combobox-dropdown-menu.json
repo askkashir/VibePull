@@ -1,0 +1,44 @@
+{
+  "id": "combobox-dropdown-menu",
+  "name": "combobox-dropdown-menu",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "settings",
+    "filter",
+    "dropdown",
+    "list",
+    "selection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "combobox-dropdown-menu",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## combobox-dropdown-menu\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The combobox-dropdown-menu is a dropdown list component that allows users to select an option from a predefined list. It is typically used in forms, settings, or filter selections. This component is often used for user convenience and ease of use.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "focus",
+    "keyboard navigable"
+  ],
+  "component_type": "combobox-dropdown-menu",
+  "generation_prompt": "Create a production-ready combobox-dropdown-menu component with the following characteristics:\n\nName: combobox-dropdown-menu\nDescription: The combobox-dropdown-menu is a dropdown list component that allows users to select an option from a predefined list. It is typically used in forms, settings, or filter selections. This component is often used for user convenience and ease of use.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. hover, focus, keyboard navigable\nTags: form, settings, filter, dropdown, list, selection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "combobox-dropdown-menu",
+  "display_name": "Combobox Dropdown Menu",
+  "preview_url": "/previews/shadcn/combobox-dropdown-menu.png"
+}

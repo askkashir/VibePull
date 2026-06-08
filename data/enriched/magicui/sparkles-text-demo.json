@@ -1,0 +1,60 @@
+{
+  "id": "sparkles-text-demo",
+  "name": "Sparkles Text Demo",
+  "source_code": "import { SparklesText } from \"@/registry/magicui/sparkles-text\"\n\nexport default function SparklesTextDemo() {\n  return <SparklesText>Magic UI</SparklesText>\n}\n",
+  "description": "Example showing text with animated sparkle effects.",
+  "tags": [
+    "text",
+    "animation",
+    "effect"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "sparkles-text-demo",
+      "type": "registry:example",
+      "title": "Sparkles Text Demo",
+      "description": "Example showing text with animated sparkle effects.",
+      "registryDependencies": [
+        "https://magicui.design/r/sparkles-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/sparkles-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/sparkles-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sparkles-text-demo",
+      "type": "registry:example",
+      "title": "Sparkles Text Demo",
+      "description": "Example showing text with animated sparkle effects.",
+      "registryDependencies": [
+        "@magicui/sparkles-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/sparkles-text-demo.tsx",
+          "content": "import { SparklesText } from \"@/registry/magicui/sparkles-text\"\n\nexport default function SparklesTextDemo() {\n  return <SparklesText>Magic UI</SparklesText>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A text component that displays 'Magic UI' with sparkles animation. It is likely used when a developer needs to add visual effects to a text.",
+  "style_tags": [
+    "e.g. none specific, but likely modern and sleek"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Sparkles Text Demo\nDescription: A text component that displays 'Magic UI' with sparkles animation. It is likely used when a developer needs to add visual effects to a text.\nStyle: e.g. none specific, but likely modern and sleek\nInteractions: animated\nTags: text, animation, effect\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { SparklesText } from \"@/registry/magicui/sparkles-text\"\n\nexport default function SparklesTextDemo() {\n  return <SparklesText>Magic UI</SparklesText>\n}\n",
+  "prompt_version": 2,
+  "clean_id": "sparkles-text-demo",
+  "display_name": "Sparkles Text Demo",
+  "preview_url": "/previews/magicui/sparkles-text-demo.png"
+}

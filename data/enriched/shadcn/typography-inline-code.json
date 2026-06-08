@@ -1,0 +1,38 @@
+{
+  "id": "typography-inline-code",
+  "name": "typography-inline-code",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "code",
+    "documentation",
+    "api-reference"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-inline-code",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-inline-code\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "This is a typography component for inline code snippets. It renders a fixed-width code block with a monospaced font, making it ideal for highlighting and readability. This component is useful for documentation, API references, or code snippets within an article.",
+  "style_tags": [
+    "light"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "typography",
+  "generation_prompt": "Create a production-ready typography component with the following characteristics:\n\nName: typography-inline-code\nDescription: This is a typography component for inline code snippets. It renders a fixed-width code block with a monospaced font, making it ideal for highlighting and readability. This component is useful for documentation, API references, or code snippets within an article.\nStyle: light\nInteractions: static\nTags: typography, code, documentation, api-reference\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-inline-code",
+  "display_name": "Typography Inline Code",
+  "preview_url": "/previews/shadcn/typography-inline-code.png"
+}

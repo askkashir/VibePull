@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Card_index",
+  "name": "Card",
+  "source_code": "// packages/@mantine/core/src/components/Card/index.ts\nimport type { CardCssVariables, CardFactory, CardProps, CardStylesNames } from './Card';\nimport type { CardSectionProps } from './CardSection/CardSection';\n\nexport { Card } from './Card';\nexport { CardSection } from './CardSection/CardSection';\n\nexport type { CardProps, CardStylesNames, CardCssVariables, CardFactory, CardSectionProps };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Card_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Card/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Card_index",
+      "name": "Card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Card/index.ts",
+          "content": "import type { CardCssVariables, CardFactory, CardProps, CardStylesNames } from './Card';\nimport type { CardSectionProps } from './CardSection/CardSection';\n\nexport { Card } from './Card';\nexport { CardSection } from './CardSection/CardSection';\n\nexport type { CardProps, CardStylesNames, CardCssVariables, CardFactory, CardSectionProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

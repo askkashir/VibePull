@@ -1,0 +1,42 @@
+{
+  "id": "sidebar-10",
+  "name": "sidebar-10",
+  "source_code": "",
+  "description": "A sidebar in a popover.",
+  "tags": [
+    "sidebar",
+    "popover",
+    "secondary information",
+    "actions"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-10",
+      "type": "registry:block",
+      "description": "A sidebar in a popover.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-10\n\nA sidebar in a popover.\n\n**Type:** registry:block\n**Files:** 8 file(s)"
+  },
+  "visual_summary": "A sidebar component in a popover, used for displaying secondary information or actions.",
+  "style_tags": [
+    "glassmorphism",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: sidebar-10\nDescription: A sidebar component in a popover, used for displaying secondary information or actions.\nStyle: glassmorphism, minimal\nInteractions: hover, clickable, draggable\nTags: sidebar, popover, secondary information, actions\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-10",
+  "display_name": "Sidebar 10",
+  "preview_url": "/previews/shadcn/sidebar-10.png"
+}

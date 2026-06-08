@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_Pagination.story",
+  "name": "Pagination.story",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/Pagination.story.tsx\nimport { useState } from 'react';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { TextInput } from '../TextInput';\nimport { Pagination } from './Pagination';\n\nexport default { title: 'Pagination' };\n\nexport function DynamicTotal() {\n  const [total, setTotal] = useState(20);\n  return (\n    <div style={{ padding: 40 }}>\n      <Pagination total={total} mb=\"xl\" />\n      <Group>\n        <Button onClick={() => setTotal(30)}>Set 30</Button>\n        <Button onClick={() => setTotal(10)}>Set 10</Button>\n      </Group>\n    </div>\n  );\n}\n\nexport function Size() {\n  return (\n    <Group align=\"flex-start\">\n      <Pagination total={45} size=\"input-md\" />\n      <Button size=\"md\">Button</Button>\n      <TextInput size=\"md\" placeholder=\"TextInput\" />\n    </Group>\n  );\n}\n\nexport function AutoContrast() {\n  return <Pagination total={45} color=\"lime.3\" autoContrast />;\n}\n\nexport function SimpleType() {\n  return <Pagination total={45} withPages={false} />;\n}\n\nexport function Controlled() {\n  const [value, setValue] = useState(1);\n  return (\n    <>\n      Current page: {value}\n      <Pagination total={20} value={value} onChange={setValue} withEdges />\n    </>\n  );\n}\n\nexport function Unstyled() {\n  const [value, setValue] = useState(1);\n  return (\n    <>\n      Current page: {value}\n      <Pagination total={20} value={value} onChange={setValue} withEdges unstyled />\n    </>\n  );\n}\n\nexport function Disabled() {\n  return <Pagination total={45} disabled />;\n}\n\nexport function DecimalTotal() {\n  return <Pagination total={45.331} />;\n}\n\nexport function NegativeTotal() {\n  return <Pagination total={-10} />;\n}\n\nexport function Composed() {\n  return (\n    <Pagination.Root total={10}>\n      <Group gap={5}>\n        <Pagination.First />\n        <Pagination.Previous />\n        <Pagination.Items />\n        <Pagination.Next />\n        <Pagination.Last />\n      </Group>\n    </Pagination.Root>\n  );\n}\n\nexport function SpacingZero() {\n  return <Pagination total={20} gap={0} withEdges />;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "pagination",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_Pagination.story",
+      "name": "Pagination.story",
+      "path": "packages/@mantine/core/src/components/Pagination/Pagination.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_Pagination.story",
+      "name": "Pagination.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/Pagination.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { TextInput } from '../TextInput';\nimport { Pagination } from './Pagination';\n\nexport default { title: 'Pagination' };\n\nexport function DynamicTotal() {\n  const [total, setTotal] = useState(20);\n  return (\n    <div style={{ padding: 40 }}>\n      <Pagination total={total} mb=\"xl\" />\n      <Group>\n        <Button onClick={() => setTotal(30)}>Set 30</Button>\n        <Button onClick={() => setTotal(10)}>Set 10</Button>\n      </Group>\n    </div>\n  );\n}\n\nexport function Size() {\n  return (\n    <Group align=\"flex-start\">\n      <Pagination total={45} size=\"input-md\" />\n      <Button size=\"md\">Button</Button>\n      <TextInput size=\"md\" placeholder=\"TextInput\" />\n    </Group>\n  );\n}\n\nexport function AutoContrast() {\n  return <Pagination total={45} color=\"lime.3\" autoContrast />;\n}\n\nexport function SimpleType() {\n  return <Pagination total={45} withPages={false} />;\n}\n\nexport function Controlled() {\n  const [value, setValue] = useState(1);\n  return (\n    <>\n      Current page: {value}\n      <Pagination total={20} value={value} onChange={setValue} withEdges />\n    </>\n  );\n}\n\nexport function Unstyled() {\n  const [value, setValue] = useState(1);\n  return (\n    <>\n      Current page: {value}\n      <Pagination total={20} value={value} onChange={setValue} withEdges unstyled />\n    </>\n  );\n}\n\nexport function Disabled() {\n  return <Pagination total={45} disabled />;\n}\n\nexport function DecimalTotal() {\n  return <Pagination total={45.331} />;\n}\n\nexport function NegativeTotal() {\n  return <Pagination total={-10} />;\n}\n\nexport function Composed() {\n  return (\n    <Pagination.Root total={10}>\n      <Group gap={5}>\n        <Pagination.First />\n        <Pagination.Previous />\n        <Pagination.Items />\n        <Pagination.Next />\n        <Pagination.Last />\n      </Group>\n    </Pagination.Root>\n  );\n}\n\nexport function SpacingZero() {\n  return <Pagination total={20} gap={0} withEdges />;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Pagination.story is a pagination story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Pagination.story\nDescription: Pagination.story is a pagination story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: mantine, other, pagination, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Pagination/Pagination.story.tsx\nimport { useState } from 'react';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { TextInput } from '../TextInput';\nimport { Pagination } from './Pagination';\n\nexport default { title: 'Pagination' };\n\nexport function DynamicTotal() {\n  const [total, setTotal] = useState(20);\n  return (\n    <div style={{ padding: 40 }}>\n      <Pagination total={total} mb=\"xl\" />\n      <Group>\n        <Button onC",
+  "prompt_version": 2,
+  "clean_id": "pagination",
+  "display_name": "Pagination",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pagination-pagination-story.png"
+}

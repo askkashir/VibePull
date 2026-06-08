@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBaseContent",
+  "name": "ModalBaseContent",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBaseContent.tsx\nimport cx from 'clsx';\nimport { BoxProps, ElementProps, MantineRadius, MantineShadow } from '../../core';\nimport { FocusTrap } from '../FocusTrap';\nimport { Paper } from '../Paper';\nimport { Transition, TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseContentProps extends BoxProps, ElementProps<'div'> {\n  /** Props passed down to the `Transition` component */\n  transitionProps?: TransitionOverride;\n\n  /** Key of `theme.shadows` or any valid CSS value to set `box-shadow` */\n  shadow?: MantineShadow;\n\n  /** Key of `theme.radius` or any valid CSS value to set border-radius, numbers are converted to rem @default theme.defaultRadius */\n  radius?: MantineRadius;\n}\n\ninterface _ModalBaseContentProps extends ModalBaseContentProps {\n  innerProps: React.ComponentProps<'div'>;\n}\n\nexport function ModalBaseContent({\n  transitionProps,\n  className,\n  innerProps,\n  onKeyDown,\n  style,\n  ref,\n  ...others\n}: _ModalBaseContentProps) {\n  const ctx = useModalBaseContext();\n\n  return (\n    <Transition\n      mounted={ctx.opened}\n      transition=\"pop\"\n      {...ctx.transitionProps}\n      onExited={() => {\n        ctx.onExitTransitionEnd?.();\n        ctx.transitionProps?.onExited?.();\n      }}\n      onEntered={() => {\n        ctx.onEnterTransitionEnd?.();\n        ctx.transitionProps?.onEntered?.();\n      }}\n      {...transitionProps}\n    >\n      {(transitionStyles) => (\n        <div\n          {...innerProps}\n          className={cx({ [classes.inner]: !ctx.unstyled }, innerProps.className)}\n        >\n          <FocusTrap active={ctx.opened && ctx.trapFocus} innerRef={ref}>\n            <Paper\n              {...others}\n              component=\"section\"\n              role=\"dialog\"\n              tabIndex={-1}\n              aria-modal\n              aria-describedby={ctx.bodyMounted ? ctx.getBodyId() : undefined}\n              aria-labelledby={ctx.titleMounted ? ctx.getTitleId() : undefined}\n              style={[style, transitionStyles]}\n              className={cx({ [classes.content]: !ctx.unstyled }, className)}\n              unstyled={ctx.unstyled}\n            >\n              {others.children}\n            </Paper>\n          </FocusTrap>\n        </div>\n      )}\n    </Transition>\n  );\n}\n\nModalBaseContent.displayName = '@mantine/core/ModalBaseContent';\n",
+  "description": "",
+  "tags": [
+    "base",
+    "content",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBaseContent",
+      "name": "ModalBaseContent",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseContent.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBaseContent",
+      "name": "ModalBaseContent",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseContent.tsx",
+          "content": "import cx from 'clsx';\nimport { BoxProps, ElementProps, MantineRadius, MantineShadow } from '../../core';\nimport { FocusTrap } from '../FocusTrap';\nimport { Paper } from '../Paper';\nimport { Transition, TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseContentProps extends BoxProps, ElementProps<'div'> {\n  /** Props passed down to the `Transition` component */\n  transitionProps?: TransitionOverride;\n\n  /** Key of `theme.shadows` or any valid CSS value to set `box-shadow` */\n  shadow?: MantineShadow;\n\n  /** Key of `theme.radius` or any valid CSS value to set border-radius, numbers are converted to rem @default theme.defaultRadius */\n  radius?: MantineRadius;\n}\n\ninterface _ModalBaseContentProps extends ModalBaseContentProps {\n  innerProps: React.ComponentProps<'div'>;\n}\n\nexport function ModalBaseContent({\n  transitionProps,\n  className,\n  innerProps,\n  onKeyDown,\n  style,\n  ref,\n  ...others\n}: _ModalBaseContentProps) {\n  const ctx = useModalBaseContext();\n\n  return (\n    <Transition\n      mounted={ctx.opened}\n      transition=\"pop\"\n      {...ctx.transitionProps}\n      onExited={() => {\n        ctx.onExitTransitionEnd?.();\n        ctx.transitionProps?.onExited?.();\n      }}\n      onEntered={() => {\n        ctx.onEnterTransitionEnd?.();\n        ctx.transitionProps?.onEntered?.();\n      }}\n      {...transitionProps}\n    >\n      {(transitionStyles) => (\n        <div\n          {...innerProps}\n          className={cx({ [classes.inner]: !ctx.unstyled }, innerProps.className)}\n        >\n          <FocusTrap active={ctx.opened && ctx.trapFocus} innerRef={ref}>\n            <Paper\n              {...others}\n              component=\"section\"\n              role=\"dialog\"\n              tabIndex={-1}\n              aria-modal\n              aria-describedby={ctx.bodyMounted ? ctx.getBodyId() : undefined}\n              aria-labelledby={ctx.titleMounted ? ctx.getTitleId() : undefined}\n              style={[style, transitionStyles]}\n              className={cx({ [classes.content]: !ctx.unstyled }, className)}\n              unstyled={ctx.unstyled}\n            >\n              {others.children}\n            </Paper>\n          </FocusTrap>\n        </div>\n      )}\n    </Transition>\n  );\n}\n\nModalBaseContent.displayName = '@mantine/core/ModalBaseContent';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalBaseContent is a modal base content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalBaseContent\nDescription: ModalBaseContent is a modal base content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: shadow, themeable, utility-styled\nInteractions: animated\nTags: base, content, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/ModalBaseContent.tsx\nimport cx from 'clsx';\nimport { BoxProps, ElementProps, MantineRadius, MantineShadow } from '../../core';\nimport { FocusTrap } from '../FocusTrap';\nimport { Paper } from '../Paper';\nimport { Transition, TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseContentProps extends BoxProps, ElementProps<'div'>",
+  "prompt_version": 2,
+  "clean_id": "modal-base-content",
+  "display_name": "Modal Base Content",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-modalbasecontent.png"
+}

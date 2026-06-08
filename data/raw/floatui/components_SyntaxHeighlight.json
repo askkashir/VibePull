@@ -1,0 +1,31 @@
+{
+  "id": "components_SyntaxHeighlight",
+  "name": "SyntaxHeighlight",
+  "source_code": "// components/SyntaxHeighlight.tsx\nimport Prism from \"prismjs\";\nimport \"prismjs/components/prism-jsx\";\nimport { useEffect } from \"react\";\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  code,\n  className = \"\",\n}: {\n  code: string;\n  className?: string;\n}) => {\n  useEffect(() => {\n    Prism.highlightAll();\n  }, [code]);\n\n  return (\n    <pre>\n      <code className={mergeTW(`lang-jsx text-sm ${className}`)}>{code}</code>\n    </pre>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "SyntaxHeighlight",
+      "name": "SyntaxHeighlight",
+      "path": "components/SyntaxHeighlight.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_SyntaxHeighlight",
+      "name": "SyntaxHeighlight",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/SyntaxHeighlight.tsx",
+          "content": "import Prism from \"prismjs\";\nimport \"prismjs/components/prism-jsx\";\nimport { useEffect } from \"react\";\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  code,\n  className = \"\",\n}: {\n  code: string;\n  className?: string;\n}) => {\n  useEffect(() => {\n    Prism.highlightAll();\n  }, [code]);\n\n  return (\n    <pre>\n      <code className={mergeTW(`lang-jsx text-sm ${className}`)}>{code}</code>\n    </pre>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

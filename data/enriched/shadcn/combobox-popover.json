@@ -1,0 +1,43 @@
+{
+  "id": "combobox-popover",
+  "name": "combobox-popover",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "popover",
+    "list",
+    "selection",
+    "option"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "combobox-popover",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## combobox-popover\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The combobox-popover is a graphical user interface (GUI) component that combines a combobox (a dropdown list) with a popover that provides additional information or options. It's typically used in applications where a user needs to select a value from a list, but also want more context or details about the options. This component is useful when the list of options is long or when additional details about each option are necessary for informed decision-making.",
+  "style_tags": [
+    "e.g. modern",
+    "elegant",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "focus",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: combobox-popover\nDescription: The combobox-popover is a graphical user interface (GUI) component that combines a combobox (a dropdown list) with a popover that provides additional information or options. It's typically used in applications where a user needs to select a value from a list, but also want more context or details about the options. This component is useful when the list of options is long or when additional details about each option are necessary for informed decision-making.\nStyle: e.g. modern, elegant, responsive\nInteractions: e.g. hover, focus, clickable\nTags: dropdown, popover, list, selection, option\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "combobox-popover",
+  "display_name": "Combobox Popover",
+  "preview_url": "/previews/shadcn/combobox-popover.png"
+}

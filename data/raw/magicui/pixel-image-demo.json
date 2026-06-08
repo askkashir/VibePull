@@ -1,0 +1,45 @@
+{
+  "id": "pixel-image-demo",
+  "name": "Pixel Image Demo",
+  "source_code": "import { PixelImage } from \"@/registry/magicui/pixel-image\"\n\nexport default function Home() {\n  return (\n    <PixelImage\n      src=\"/pixel-image-demo.jpg\"\n      customGrid={{ rows: 4, cols: 6 }}\n      grayscaleAnimation\n    />\n  )\n}\n",
+  "description": "Example showing a pixelated image effect.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "pixel-image-demo",
+      "type": "registry:example",
+      "title": "Pixel Image Demo",
+      "description": "Example showing a pixelated image effect.",
+      "registryDependencies": [
+        "pixel-image"
+      ],
+      "files": [
+        {
+          "path": "registry/example/pixel-image-demo.tsx",
+          "type": "registry:example",
+          "target": "components/pixel-image-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pixel-image-demo",
+      "type": "registry:example",
+      "title": "Pixel Image Demo",
+      "description": "Example showing a pixelated image effect.",
+      "registryDependencies": [
+        "@magicui/pixel-image"
+      ],
+      "files": [
+        {
+          "path": "registry/example/pixel-image-demo.tsx",
+          "content": "import { PixelImage } from \"@/registry/magicui/pixel-image\"\n\nexport default function Home() {\n  return (\n    <PixelImage\n      src=\"/pixel-image-demo.jpg\"\n      customGrid={{ rows: 4, cols: 6 }}\n      grayscaleAnimation\n    />\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

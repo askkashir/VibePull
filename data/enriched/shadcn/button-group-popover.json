@@ -1,0 +1,41 @@
+{
+  "id": "button-group-popover",
+  "name": "button-group-popover",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "dropdown",
+    "actionable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-popover",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-popover\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button group with a popover containing an action button, used for displaying a dropdown action in a navigation bar or sidebar. It provides quick access to an action and takes up less visual space than a full-screen modal. Typically used when the user needs to initiate a specific action.",
+  "style_tags": [
+    "flat",
+    "rounded",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "dismissable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-popover\nDescription: A button group with a popover containing an action button, used for displaying a dropdown action in a navigation bar or sidebar. It provides quick access to an action and takes up less visual space than a full-screen modal. Typically used when the user needs to initiate a specific action.\nStyle: flat, rounded, minimal\nInteractions: hover, clickable, dismissable\nTags: navigation, dropdown, actionable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-popover",
+  "display_name": "Button Group Popover",
+  "preview_url": "/previews/shadcn/button-group-popover.png"
+}

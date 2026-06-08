@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_menu-section_menu-section",
+  "name": "menu-section",
+  "source_code": "// packages/react/src/components/menu-section/menu-section.tsx\n\"use client\";\n\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuSectionVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {MenuSection as MenuSectionPrimitive} from \"react-aria-components/Menu\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Section Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuSectionRootProps extends ComponentPropsWithRef<typeof MenuSectionPrimitive> {\n  className?: string;\n}\n\nconst MenuSectionRoot = ({children, className, ...props}: MenuSectionRootProps) => {\n  const styles = React.useMemo(\n    () => menuSectionVariants({class: typeof className === \"string\" ? className : undefined}),\n    [className],\n  );\n\n  return (\n    <MenuSectionPrimitive className={styles} {...props}>\n      {children}\n    </MenuSectionPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuSectionRoot};\n\nexport type {MenuSectionRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "menu-section_menu-section",
+      "name": "menu-section",
+      "path": "packages/react/src/components/menu-section/menu-section.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_menu-section_menu-section",
+      "name": "menu-section",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/menu-section/menu-section.tsx",
+          "content": "\"use client\";\n\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {menuSectionVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {MenuSection as MenuSectionPrimitive} from \"react-aria-components/Menu\";\n\n/* -------------------------------------------------------------------------------------------------\n * Menu Section Root\n * -----------------------------------------------------------------------------------------------*/\ninterface MenuSectionRootProps extends ComponentPropsWithRef<typeof MenuSectionPrimitive> {\n  className?: string;\n}\n\nconst MenuSectionRoot = ({children, className, ...props}: MenuSectionRootProps) => {\n  const styles = React.useMemo(\n    () => menuSectionVariants({class: typeof className === \"string\" ? className : undefined}),\n    [className],\n  );\n\n  return (\n    <MenuSectionPrimitive className={styles} {...props}>\n      {children}\n    </MenuSectionPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuSectionRoot};\n\nexport type {MenuSectionRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "aurora-text",
+  "name": "Aurora Text",
+  "source_code": "\"use client\"\n\nimport React, { memo } from \"react\"\n\ninterface AuroraTextProps {\n  children: React.ReactNode\n  className?: string\n  colors?: string[]\n  speed?: number\n}\n\nexport const AuroraText = memo(\n  ({\n    children,\n    className = \"\",\n    colors = [\"#FF0080\", \"#7928CA\", \"#0070F3\", \"#38bdf8\"],\n    speed = 1,\n  }: AuroraTextProps) => {\n    const gradientStyle = {\n      backgroundImage: `linear-gradient(135deg, ${colors.join(\", \")}, ${\n        colors[0]\n      })`,\n      WebkitBackgroundClip: \"text\",\n      WebkitTextFillColor: \"transparent\",\n      animationDuration: `${10 / speed}s`,\n    }\n\n    return (\n      <span className={`relative inline-block ${className}`}>\n        <span className=\"sr-only\">{children}</span>\n        <span\n          className=\"animate-aurora relative bg-size-[200%_auto] bg-clip-text text-transparent\"\n          style={gradientStyle}\n          aria-hidden=\"true\"\n        >\n          {children}\n        </span>\n      </span>\n    )\n  }\n)\n\nAuroraText.displayName = \"AuroraText\"\n",
+  "description": "A beautiful aurora text effect",
+  "tags": [
+    "text",
+    "animation",
+    "gradient"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "aurora-text",
+      "type": "registry:ui",
+      "title": "Aurora Text",
+      "description": "A beautiful aurora text effect",
+      "files": [
+        {
+          "path": "registry/magicui/aurora-text.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/aurora-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-aurora": "aurora 8s ease-in-out infinite alternate"
+        }
+      },
+      "css": {
+        "@keyframes aurora": {
+          "0%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          },
+          "25%": {
+            "background-position": "50% 100%",
+            "transform": "rotate(5deg) scale(1.1)"
+          },
+          "50%": {
+            "background-position": "100% 50%",
+            "transform": "rotate(-3deg) scale(0.95)"
+          },
+          "75%": {
+            "background-position": "50% 0%",
+            "transform": "rotate(3deg) scale(1.05)"
+          },
+          "100%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          }
+        }
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "aurora-text",
+      "type": "registry:ui",
+      "title": "Aurora Text",
+      "description": "A beautiful aurora text effect",
+      "files": [
+        {
+          "path": "registry/magicui/aurora-text.tsx",
+          "content": "\"use client\"\n\nimport React, { memo } from \"react\"\n\ninterface AuroraTextProps {\n  children: React.ReactNode\n  className?: string\n  colors?: string[]\n  speed?: number\n}\n\nexport const AuroraText = memo(\n  ({\n    children,\n    className = \"\",\n    colors = [\"#FF0080\", \"#7928CA\", \"#0070F3\", \"#38bdf8\"],\n    speed = 1,\n  }: AuroraTextProps) => {\n    const gradientStyle = {\n      backgroundImage: `linear-gradient(135deg, ${colors.join(\", \")}, ${\n        colors[0]\n      })`,\n      WebkitBackgroundClip: \"text\",\n      WebkitTextFillColor: \"transparent\",\n      animationDuration: `${10 / speed}s`,\n    }\n\n    return (\n      <span className={`relative inline-block ${className}`}>\n        <span className=\"sr-only\">{children}</span>\n        <span\n          className=\"animate-aurora relative bg-size-[200%_auto] bg-clip-text text-transparent\"\n          style={gradientStyle}\n          aria-hidden=\"true\"\n        >\n          {children}\n        </span>\n      </span>\n    )\n  }\n)\n\nAuroraText.displayName = \"AuroraText\"\n",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-aurora": "aurora 8s ease-in-out infinite alternate"
+        }
+      },
+      "css": {
+        "@keyframes aurora": {
+          "0%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          },
+          "25%": {
+            "background-position": "50% 100%",
+            "transform": "rotate(5deg) scale(1.1)"
+          },
+          "50%": {
+            "background-position": "100% 50%",
+            "transform": "rotate(-3deg) scale(0.95)"
+          },
+          "75%": {
+            "background-position": "50% 0%",
+            "transform": "rotate(3deg) scale(1.05)"
+          },
+          "100%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          }
+        }
+      }
+    }
+  },
+  "visual_summary": "A colorful, animated text component with a gradient effect, typically used to add visual interest to text on the screen.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Aurora Text\nDescription: A colorful, animated text component with a gradient effect, typically used to add visual interest to text on the screen.\nStyle: minimal\nInteractions: animated\nTags: text, animation, gradient\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport React, { memo } from \"react\"\n\ninterface AuroraTextProps {\n  children: React.ReactNode\n  className?: string\n  colors?: string[]\n  speed?: number\n}\n\nexport const AuroraText = memo(\n  ({\n    children,\n    className = \"\",\n    colors = [\"#FF0080\", \"#7928CA\", \"#0070F3\", \"#38bdf8\"],\n    speed = 1,\n  }: AuroraTextProps) => {\n    const gradientStyle = {\n      backgroundImage: `linear-gradient(135deg, ${colors.join(\", \")}, ${\n        colors[0]\n      })`,\n      WebkitBackgroundClip: \"t",
+  "prompt_version": 2,
+  "clean_id": "aurora-text",
+  "display_name": "Aurora Text",
+  "preview_url": "/previews/magicui/aurora-text.png"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "packages_radix-ui-themes_src_components_visually-hidden",
+  "name": "visually-hidden",
+  "source_code": "// packages/radix-ui-themes/src/components/visually-hidden.tsx\nimport { VisuallyHidden as VisuallyHiddenPrimitive } from 'radix-ui';\nexport const VisuallyHidden = VisuallyHiddenPrimitive.Root;\nexport const Root = VisuallyHiddenPrimitive.Root;\nexport type VisuallyHiddenProps = VisuallyHiddenPrimitive.VisuallyHiddenProps;\n",
+  "description": "",
+  "tags": [
+    "visually-hidden",
+    "accessibility"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_visually-hidden",
+      "name": "visually-hidden.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/visually-hidden.tsx",
+      "sha": "1195d11622a32442bf499f6c83f00bcb887dd248",
+      "size": 259,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/visually-hidden.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/visually-hidden.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/1195d11622a32442bf499f6c83f00bcb887dd248",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/visually-hidden.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/visually-hidden.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/1195d11622a32442bf499f6c83f00bcb887dd248",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/visually-hidden.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_visually-hidden",
+      "name": "visually-hidden",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/visually-hidden.tsx",
+          "content": "import { VisuallyHidden as VisuallyHiddenPrimitive } from 'radix-ui';\nexport const VisuallyHidden = VisuallyHiddenPrimitive.Root;\nexport const Root = VisuallyHiddenPrimitive.Root;\nexport type VisuallyHiddenProps = VisuallyHiddenPrimitive.VisuallyHiddenProps;\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A low-level, containerless component to hide content from screen readers. A developer would use this when they want to present content visually to screen-readers but keep it invisible to sighted users. It's typically used with text or other elements that don't fit within the existing layout.",
+  "style_tags": [
+    "utility"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: visually-hidden\nDescription: A low-level, containerless component to hide content from screen readers. A developer would use this when they want to present content visually to screen-readers but keep it invisible to sighted users. It's typically used with text or other elements that don't fit within the existing layout.\nStyle: utility\nInteractions: \nTags: visually-hidden, accessibility\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/visually-hidden.tsx\nimport { VisuallyHidden as VisuallyHiddenPrimitive } from 'radix-ui';\nexport const VisuallyHidden = VisuallyHiddenPrimitive.Root;\nexport const Root = VisuallyHiddenPrimitive.Root;\nexport type VisuallyHiddenProps = VisuallyHiddenPrimitive.VisuallyHiddenProps;\n",
+  "prompt_version": 2,
+  "clean_id": "visually-hidden",
+  "display_name": "Visually Hidden",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-visually-hidden.png"
+}

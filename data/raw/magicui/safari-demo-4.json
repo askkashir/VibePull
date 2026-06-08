@@ -1,0 +1,45 @@
+{
+  "id": "safari-demo-4",
+  "name": "Safari Demo 4",
+  "source_code": "import { Safari } from \"@/registry/magicui/safari\"\n\nexport default function SafariDemo() {\n  return (\n    <div className=\"w-[1203px]\">\n      <Safari url=\"magicui.design\" mode=\"simple\" />\n    </div>\n  )\n}\n",
+  "description": "Fourth example showing a Safari browser mockup.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "safari-demo-4",
+      "type": "registry:example",
+      "title": "Safari Demo 4",
+      "description": "Fourth example showing a Safari browser mockup.",
+      "registryDependencies": [
+        "https://magicui.design/r/safari"
+      ],
+      "files": [
+        {
+          "path": "registry/example/safari-demo-4.tsx",
+          "type": "registry:example",
+          "target": "components/safari-demo-4.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "safari-demo-4",
+      "type": "registry:example",
+      "title": "Safari Demo 4",
+      "description": "Fourth example showing a Safari browser mockup.",
+      "registryDependencies": [
+        "@magicui/safari"
+      ],
+      "files": [
+        {
+          "path": "registry/example/safari-demo-4.tsx",
+          "content": "import { Safari } from \"@/registry/magicui/safari\"\n\nexport default function SafariDemo() {\n  return (\n    <div className=\"w-[1203px]\">\n      <Safari url=\"magicui.design\" mode=\"simple\" />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

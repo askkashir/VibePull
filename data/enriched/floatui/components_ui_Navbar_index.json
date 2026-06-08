@@ -1,0 +1,41 @@
+{
+  "id": "components_ui_Navbar_index",
+  "name": "Navbar",
+  "source_code": "// components/ui/Navbar/index.tsx\n\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Navbar from \"./Navbar\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return (\n    <div\n      className={\n        isInComponentsPage\n          ? \"sticky z-50 top-0 bg-zinc-950 border-zinc-800 xl:border-b\"\n          : \"\"\n      }\n    >\n      <Navbar />\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "navbar",
+    "navigation",
+    "sticky"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Navbar_index",
+      "name": "index",
+      "path": "components/ui/Navbar/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Navbar_index",
+      "name": "Navbar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Navbar/index.tsx",
+          "content": "\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Navbar from \"./Navbar\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return (\n    <div\n      className={\n        isInComponentsPage\n          ? \"sticky z-50 top-0 bg-zinc-950 border-zinc-800 xl:border-b\"\n          : \"\"\n      }\n    >\n      <Navbar />\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A reusable navigation bar component that remains sticky when on the components page.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: Navbar\nDescription: A reusable navigation bar component that remains sticky when on the components page.\nStyle: \nInteractions: \nTags: navbar, navigation, sticky\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Navbar/index.tsx\n\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Navbar from \"./Navbar\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return (\n    <div\n      className={\n        isInComponentsPage\n          ? \"sticky z-50 top-0 bg-zinc-950 border-zinc-800 xl:border-b\"\n          : \"\"\n      }\n    >\n      <Navbar />\n    </div>\n  );\n};\n",
+  "prompt_version": 2,
+  "clean_id": "navbar",
+  "display_name": "Navbar",
+  "preview_url": "/previews/floatui/components-ui-navbar-index.png"
+}

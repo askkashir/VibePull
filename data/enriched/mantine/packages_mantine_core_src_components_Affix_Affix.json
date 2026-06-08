@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Affix_Affix",
+  "name": "Affix",
+  "source_code": "// packages/@mantine/core/src/components/Affix/Affix.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getDefaultZIndex,\n  getSpacing,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { BasePortalProps, OptionalPortal } from '../Portal';\nimport classes from './Affix.module.css';\n\nexport type AffixStylesNames = 'root';\nexport type AffixCssVariables = {\n  root: '--affix-z-index' | '--affix-top' | '--affix-left' | '--affix-bottom' | '--affix-right';\n};\n\nexport interface AffixPosition {\n  top?: MantineSize | (string & {}) | number;\n  left?: MantineSize | (string & {}) | number;\n  bottom?: MantineSize | (string & {}) | number;\n  right?: MantineSize | (string & {}) | number;\n}\n\nexport interface AffixBaseProps {\n  /** Root element `z-index` property @default 200  */\n  zIndex?: React.CSSProperties['zIndex'];\n\n  /** Determines whether the component is rendered within `Portal` @default true */\n  withinPortal?: boolean;\n\n  /** Props passed down to the `Portal` component. Ignored when `withinPortal` is `false`. */\n  portalProps?: BasePortalProps;\n\n  /** Affix position on screen @default { bottom: 0, right: 0 } */\n  position?: AffixPosition;\n}\n\nexport interface AffixProps\n  extends BoxProps, AffixBaseProps, StylesApiProps<AffixFactory>, ElementProps<'div'> {}\n\nexport type AffixFactory = Factory<{\n  props: AffixProps;\n  ref: HTMLDivElement;\n  stylesNames: AffixStylesNames;\n  vars: AffixCssVariables;\n}>;\n\nconst defaultProps = {\n  position: { bottom: 0, right: 0 },\n  zIndex: getDefaultZIndex('modal'),\n  withinPortal: true,\n} satisfies Partial<AffixProps>;\n\nconst varsResolver = createVarsResolver<AffixFactory>((_, { zIndex, position }) => ({\n  root: {\n    '--affix-z-index': zIndex?.toString(),\n    '--affix-top': getSpacing(position?.top),\n    '--affix-left': getSpacing(position?.left),\n    '--affix-bottom': getSpacing(position?.bottom),\n    '--affix-right': getSpacing(position?.right),\n  },\n}));\n\nexport const Affix = factory<AffixFactory>((_props) => {\n  const props = useProps('Affix', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    portalProps,\n    zIndex,\n    withinPortal,\n    position,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<AffixFactory>({\n    name: 'Affix',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <OptionalPortal {...portalProps} withinPortal={withinPortal}>\n      <Box {...getStyles('root')} {...others} />\n    </OptionalPortal>\n  );\n});\n\nAffix.classes = classes;\nAffix.varsResolver = varsResolver;\nAffix.displayName = '@mantine/core/Affix';\n\nexport namespace Affix {\n  export type Props = AffixProps;\n  export type StylesNames = AffixStylesNames;\n  export type CssVariables = AffixCssVariables;\n  export type Factory = AffixFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "affix",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Affix_Affix",
+      "name": "Affix",
+      "path": "packages/@mantine/core/src/components/Affix/Affix.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Affix_Affix",
+      "name": "Affix",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Affix/Affix.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getDefaultZIndex,\n  getSpacing,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { BasePortalProps, OptionalPortal } from '../Portal';\nimport classes from './Affix.module.css';\n\nexport type AffixStylesNames = 'root';\nexport type AffixCssVariables = {\n  root: '--affix-z-index' | '--affix-top' | '--affix-left' | '--affix-bottom' | '--affix-right';\n};\n\nexport interface AffixPosition {\n  top?: MantineSize | (string & {}) | number;\n  left?: MantineSize | (string & {}) | number;\n  bottom?: MantineSize | (string & {}) | number;\n  right?: MantineSize | (string & {}) | number;\n}\n\nexport interface AffixBaseProps {\n  /** Root element `z-index` property @default 200  */\n  zIndex?: React.CSSProperties['zIndex'];\n\n  /** Determines whether the component is rendered within `Portal` @default true */\n  withinPortal?: boolean;\n\n  /** Props passed down to the `Portal` component. Ignored when `withinPortal` is `false`. */\n  portalProps?: BasePortalProps;\n\n  /** Affix position on screen @default { bottom: 0, right: 0 } */\n  position?: AffixPosition;\n}\n\nexport interface AffixProps\n  extends BoxProps, AffixBaseProps, StylesApiProps<AffixFactory>, ElementProps<'div'> {}\n\nexport type AffixFactory = Factory<{\n  props: AffixProps;\n  ref: HTMLDivElement;\n  stylesNames: AffixStylesNames;\n  vars: AffixCssVariables;\n}>;\n\nconst defaultProps = {\n  position: { bottom: 0, right: 0 },\n  zIndex: getDefaultZIndex('modal'),\n  withinPortal: true,\n} satisfies Partial<AffixProps>;\n\nconst varsResolver = createVarsResolver<AffixFactory>((_, { zIndex, position }) => ({\n  root: {\n    '--affix-z-index': zIndex?.toString(),\n    '--affix-top': getSpacing(position?.top),\n    '--affix-left': getSpacing(position?.left),\n    '--affix-bottom': getSpacing(position?.bottom),\n    '--affix-right': getSpacing(position?.right),\n  },\n}));\n\nexport const Affix = factory<AffixFactory>((_props) => {\n  const props = useProps('Affix', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    portalProps,\n    zIndex,\n    withinPortal,\n    position,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<AffixFactory>({\n    name: 'Affix',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <OptionalPortal {...portalProps} withinPortal={withinPortal}>\n      <Box {...getStyles('root')} {...others} />\n    </OptionalPortal>\n  );\n});\n\nAffix.classes = classes;\nAffix.varsResolver = varsResolver;\nAffix.displayName = '@mantine/core/Affix';\n\nexport namespace Affix {\n  export type Props = AffixProps;\n  export type StylesNames = AffixStylesNames;\n  export type CssVariables = AffixCssVariables;\n  export type Factory = AffixFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Affix is a affix UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Affix\nDescription: Affix is a affix UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: affix, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Affix/Affix.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getDefaultZIndex,\n  getSpacing,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport { BasePortalProps, OptionalPortal } from '../Portal';\nimport classes from './Affix.module.css';\n\nexport type AffixStylesNames = 'root';\nexport type AffixCssVariables = {\n  root: '--affix-z-index' | '--affix-top' | '--affix-left' | '--a",
+  "prompt_version": 2,
+  "clean_id": "affix",
+  "display_name": "Affix",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-affix-affix.png"
+}

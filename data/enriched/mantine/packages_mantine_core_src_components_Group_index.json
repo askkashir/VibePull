@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_Group_index",
+  "name": "Group",
+  "source_code": "// packages/@mantine/core/src/components/Group/index.ts\nimport type {\n  GroupCssVariables,\n  GroupFactory,\n  GroupProps,\n  GroupStylesCtx,\n  GroupStylesNames,\n} from './Group';\n\nexport { Group } from './Group';\n\nexport type { GroupCssVariables, GroupFactory, GroupProps, GroupStylesCtx, GroupStylesNames };\n",
+  "description": "",
+  "tags": [
+    "component",
+    "container",
+    "layout"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Group_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Group/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Group_index",
+      "name": "Group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Group/index.ts",
+          "content": "import type {\n  GroupCssVariables,\n  GroupFactory,\n  GroupProps,\n  GroupStylesCtx,\n  GroupStylesNames,\n} from './Group';\n\nexport { Group } from './Group';\n\nexport type { GroupCssVariables, GroupFactory, GroupProps, GroupStylesCtx, GroupStylesNames };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Group component is used to group and align child elements together. It wraps multiple elements with common layout and styling requirements. A developer would use it to arrange related UI elements in a consistent and responsive manner.",
+  "style_tags": [
+    "default",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Group\nDescription: The Group component is used to group and align child elements together. It wraps multiple elements with common layout and styling requirements. A developer would use it to arrange related UI elements in a consistent and responsive manner.\nStyle: default, responsive\nInteractions: none\nTags: component, container, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Group/index.ts\nimport type {\n  GroupCssVariables,\n  GroupFactory,\n  GroupProps,\n  GroupStylesCtx,\n  GroupStylesNames,\n} from './Group';\n\nexport { Group } from './Group';\n\nexport type { GroupCssVariables, GroupFactory, GroupProps, GroupStylesCtx, GroupStylesNames };\n",
+  "prompt_version": 2,
+  "clean_id": "group",
+  "display_name": "Group",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-group-index.png"
+}

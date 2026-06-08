@@ -1,0 +1,39 @@
+{
+  "id": "dialog-demo",
+  "name": "dialog-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "modal",
+    "overlay",
+    "notification"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dialog-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dialog-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The DialogDemo component is a customizable modal window that can be used to display important information or prompt user input. It typically includes a heading, content area, and actions. A developer would use this component when they need to display a temporary overlay on the screen, such as confirmation messages or warning notifications.",
+  "style_tags": [
+    "e.g. flat",
+    "outlined"
+  ],
+  "interaction_tags": [
+    "e.g. dismissable",
+    "scrollable"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: dialog-demo\nDescription: The DialogDemo component is a customizable modal window that can be used to display important information or prompt user input. It typically includes a heading, content area, and actions. A developer would use this component when they need to display a temporary overlay on the screen, such as confirmation messages or warning notifications.\nStyle: e.g. flat, outlined\nInteractions: e.g. dismissable, scrollable\nTags: modal, overlay, notification\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "dialog-demo",
+  "display_name": "Dialog Demo",
+  "preview_url": "/previews/shadcn/dialog-demo.png"
+}

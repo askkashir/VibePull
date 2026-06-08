@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup",
+  "name": "MenuRadioGroup",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx\nimport { useUncontrolled } from '@mantine/hooks';\nimport { useProps } from '../../../core';\nimport { MenuRadioGroupContext } from './MenuRadioGroup.context';\n\nexport interface MenuRadioGroupProps {\n  /** Controlled selected value */\n  value?: string | null;\n\n  /** Uncontrolled default selected value */\n  defaultValue?: string | null;\n\n  /** Called with the new value when a `Menu.RadioItem` is selected */\n  onChange?: (value: string) => void;\n\n  /** `Menu.RadioItem` components and other elements */\n  children?: React.ReactNode;\n}\n\nexport function MenuRadioGroup(_props: MenuRadioGroupProps) {\n  const props = useProps('MenuRadioGroup', null, _props);\n  const { value, defaultValue, onChange, children } = props;\n\n  const [_value, setValue] = useUncontrolled<string | null>({\n    value,\n    defaultValue,\n    finalValue: null,\n    onChange: onChange as (value: string | null) => void,\n  });\n\n  return (\n    <MenuRadioGroupContext value={{ value: _value, onChange: (next) => setValue(next) }}>\n      {children}\n    </MenuRadioGroupContext>\n  );\n}\n\nMenuRadioGroup.displayName = '@mantine/core/MenuRadioGroup';\n",
+  "description": "",
+  "tags": [
+    "group",
+    "mantine",
+    "menu",
+    "navbar",
+    "radio"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuRadioGroup_MenuRadioGroup",
+      "name": "MenuRadioGroup",
+      "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup",
+      "name": "MenuRadioGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx",
+          "content": "import { useUncontrolled } from '@mantine/hooks';\nimport { useProps } from '../../../core';\nimport { MenuRadioGroupContext } from './MenuRadioGroup.context';\n\nexport interface MenuRadioGroupProps {\n  /** Controlled selected value */\n  value?: string | null;\n\n  /** Uncontrolled default selected value */\n  defaultValue?: string | null;\n\n  /** Called with the new value when a `Menu.RadioItem` is selected */\n  onChange?: (value: string) => void;\n\n  /** `Menu.RadioItem` components and other elements */\n  children?: React.ReactNode;\n}\n\nexport function MenuRadioGroup(_props: MenuRadioGroupProps) {\n  const props = useProps('MenuRadioGroup', null, _props);\n  const { value, defaultValue, onChange, children } = props;\n\n  const [_value, setValue] = useUncontrolled<string | null>({\n    value,\n    defaultValue,\n    finalValue: null,\n    onChange: onChange as (value: string | null) => void,\n  });\n\n  return (\n    <MenuRadioGroupContext value={{ value: _value, onChange: (next) => setValue(next) }}>\n      {children}\n    </MenuRadioGroupContext>\n  );\n}\n\nMenuRadioGroup.displayName = '@mantine/core/MenuRadioGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuRadioGroup is a menu radio group UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuRadioGroup\nDescription: MenuRadioGroup is a menu radio group UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: group, mantine, menu, navbar, radio\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx\nimport { useUncontrolled } from '@mantine/hooks';\nimport { useProps } from '../../../core';\nimport { MenuRadioGroupContext } from './MenuRadioGroup.context';\n\nexport interface MenuRadioGroupProps {\n  /** Controlled selected value */\n  value?: string | null;\n\n  /** Uncontrolled default selected value */\n  defaultValue?: string | null;\n\n  /** Called with the new value when a `Menu.RadioItem` is selected */\n  onChange?:",
+  "prompt_version": 2,
+  "clean_id": "menu-radio-group",
+  "display_name": "Menu Radio Group",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menuradiogroup-menuradiogroup.png"
+}

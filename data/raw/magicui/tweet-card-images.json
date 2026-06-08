@@ -1,0 +1,46 @@
+{
+  "id": "tweet-card-images",
+  "name": "Tweet Card Images",
+  "source_code": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\nexport default function TweetImages() {\n  return <ClientTweetCard id=\"1678577280489234432\" className=\"shadow-2xl\" />\n}\n",
+  "description": "Example showing a tweet card with images.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "tweet-card-images",
+      "type": "registry:example",
+      "title": "Tweet Card Images",
+      "description": "Example showing a tweet card with images.",
+      "registryDependencies": [
+        "https://magicui.design/r/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-images.tsx",
+          "type": "registry:example",
+          "target": "components/tweet-card-images.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tweet-card-images",
+      "type": "registry:example",
+      "title": "Tweet Card Images",
+      "description": "Example showing a tweet card with images.",
+      "registryDependencies": [
+        "@magicui/client-tweet-card",
+        "@magicui/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-images.tsx",
+          "content": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\nexport default function TweetImages() {\n  return <ClientTweetCard id=\"1678577280489234432\" className=\"shadow-2xl\" />\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

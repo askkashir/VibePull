@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Group_Group.story",
+  "name": "Group.story",
+  "source_code": "// packages/@mantine/core/src/components/Group/Group.story.tsx\nimport { Group } from './Group';\n\nexport default { title: 'Group' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Group component=\"nav\">\n        <button type=\"button\">First</button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Group>\n    </div>\n  );\n}\n\nexport function Grow() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Group grow>\n        <button type=\"button\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus necessitatibus\n          placeat tenetur error officia vero accusantium? Dolorem commodi quaerat incidunt odit\n          eligendi beatae tempore ducimus, unde obcaecati dolor at?\n        </button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Group>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Group_Group.story",
+      "name": "Group.story",
+      "path": "packages/@mantine/core/src/components/Group/Group.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Group_Group.story",
+      "name": "Group.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Group/Group.story.tsx",
+          "content": "import { Group } from './Group';\n\nexport default { title: 'Group' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Group component=\"nav\">\n        <button type=\"button\">First</button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Group>\n    </div>\n  );\n}\n\nexport function Grow() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Group grow>\n        <button type=\"button\">\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus necessitatibus\n          placeat tenetur error officia vero accusantium? Dolorem commodi quaerat incidunt odit\n          eligendi beatae tempore ducimus, unde obcaecati dolor at?\n        </button>\n        <button type=\"button\">Second</button>\n        <button type=\"button\">Third</button>\n      </Group>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

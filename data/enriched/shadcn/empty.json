@@ -1,0 +1,37 @@
+{
+  "id": "empty",
+  "name": "empty",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "empty",
+    "placeholder",
+    "registry"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "empty",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## empty\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "This UI component is invisible and does not provide any visual feedback. It's used as a placeholder for situations where a component is expected, but no content is available. A developer would use this when dealing with API responses or server-side rendered content that needs a default placeholder.",
+  "style_tags": [
+    "plain"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: empty\nDescription: This UI component is invisible and does not provide any visual feedback. It's used as a placeholder for situations where a component is expected, but no content is available. A developer would use this when dealing with API responses or server-side rendered content that needs a default placeholder.\nStyle: plain\nInteractions: none\nTags: empty, placeholder, registry\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "empty",
+  "display_name": "Empty",
+  "preview_url": "/previews/shadcn/empty.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Collapse_index",
+  "name": "Collapse",
+  "source_code": "// packages/@mantine/core/src/components/Collapse/index.ts\nimport type { CollapseFactory, CollapseProps } from './Collapse';\n\nexport { Collapse } from './Collapse';\n\nexport type { CollapseProps, CollapseFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Collapse_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Collapse/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Collapse_index",
+      "name": "Collapse",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Collapse/index.ts",
+          "content": "import type { CollapseFactory, CollapseProps } from './Collapse';\n\nexport { Collapse } from './Collapse';\n\nexport type { CollapseProps, CollapseFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

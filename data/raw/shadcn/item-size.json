@@ -1,0 +1,22 @@
+{
+  "id": "item-size",
+  "name": "item-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

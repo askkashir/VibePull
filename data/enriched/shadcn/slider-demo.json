@@ -1,0 +1,43 @@
+{
+  "id": "slider-demo",
+  "name": "slider-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "slider",
+    "range-selector",
+    "settings",
+    "configurable",
+    "input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "slider-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## slider-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The slider-demo is a visual slider component used to allow users to select a value from a range, often used in settings, product configurations, or data representations. It features a track with a draggable thumb for smooth and precise value adjustments. The component is suitable for applications requiring a flexible and intuitive way to input data within a specific range.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "rounded-corner"
+  ],
+  "interaction_tags": [
+    "draggable",
+    "animated",
+    "responsive"
+  ],
+  "component_type": "component",
+  "generation_prompt": "Create a production-ready component component with the following characteristics:\n\nName: slider-demo\nDescription: The slider-demo is a visual slider component used to allow users to select a value from a range, often used in settings, product configurations, or data representations. It features a track with a draggable thumb for smooth and precise value adjustments. The component is suitable for applications requiring a flexible and intuitive way to input data within a specific range.\nStyle: modern, flat, rounded-corner\nInteractions: draggable, animated, responsive\nTags: slider, range-selector, settings, configurable, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "slider-demo",
+  "display_name": "Slider Demo",
+  "preview_url": "/previews/shadcn/slider-demo.png"
+}

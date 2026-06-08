@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerCloseButton",
+  "name": "DrawerCloseButton",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerCloseButton.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseCloseButton, ModalBaseCloseButtonProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerCloseButtonStylesNames = 'close';\n\nexport interface DrawerCloseButtonProps\n  extends ModalBaseCloseButtonProps, CompoundStylesApiProps<DrawerCloseButtonFactory> {}\n\nexport type DrawerCloseButtonFactory = Factory<{\n  props: DrawerCloseButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: DrawerCloseButtonStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerCloseButton = factory<DrawerCloseButtonFactory>((_props) => {\n  const props = useProps('DrawerCloseButton', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseCloseButton\n      {...ctx.getStyles('close', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerCloseButton.classes = classes;\nDrawerCloseButton.displayName = '@mantine/core/DrawerCloseButton';\n",
+  "description": "",
+  "tags": [
+    "button",
+    "close",
+    "drawer",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerCloseButton",
+      "name": "DrawerCloseButton",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerCloseButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerCloseButton",
+      "name": "DrawerCloseButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerCloseButton.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseCloseButton, ModalBaseCloseButtonProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerCloseButtonStylesNames = 'close';\n\nexport interface DrawerCloseButtonProps\n  extends ModalBaseCloseButtonProps, CompoundStylesApiProps<DrawerCloseButtonFactory> {}\n\nexport type DrawerCloseButtonFactory = Factory<{\n  props: DrawerCloseButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: DrawerCloseButtonStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerCloseButton = factory<DrawerCloseButtonFactory>((_props) => {\n  const props = useProps('DrawerCloseButton', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseCloseButton\n      {...ctx.getStyles('close', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerCloseButton.classes = classes;\nDrawerCloseButton.displayName = '@mantine/core/DrawerCloseButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DrawerCloseButton is a drawer close button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: DrawerCloseButton\nDescription: DrawerCloseButton is a drawer close button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: button, close, drawer, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Drawer/DrawerCloseButton.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseCloseButton, ModalBaseCloseButtonProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerCloseButtonStylesNames = 'close';\n\nexport interface DrawerCloseButtonProps\n  extends ModalBaseCloseButtonProps, CompoundStylesApiProps<DrawerCloseButtonFa",
+  "prompt_version": 2,
+  "clean_id": "drawer-close-button",
+  "display_name": "Drawer Close Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-drawer-drawerclosebutton.png"
+}

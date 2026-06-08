@@ -1,0 +1,40 @@
+{
+  "id": "navigation-menu",
+  "name": "navigation-menu",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "sidebar",
+    "links",
+    "nested navigation",
+    "mobile-friendly"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## navigation-menu\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A navigation menu is a dropdown or accordion list of navigation links, typically displayed in a sidebar or at the top of the application. It is used to provide easy access to different sections or pages within an application. This component is ideal for complex applications with multiple features or sections.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: navigation-menu\nDescription: A navigation menu is a dropdown or accordion list of navigation links, typically displayed in a sidebar or at the top of the application. It is used to provide easy access to different sections or pages within an application. This component is ideal for complex applications with multiple features or sections.\nStyle: e.g. dark, minimal\nInteractions: e.g. hover, clickable\nTags: sidebar, links, nested navigation, mobile-friendly\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "navigation-menu",
+  "display_name": "Navigation Menu",
+  "preview_url": "/previews/shadcn/navigation-menu.png"
+}

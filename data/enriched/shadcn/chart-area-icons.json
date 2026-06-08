@@ -1,0 +1,41 @@
+{
+  "id": "chart-area-icons",
+  "name": "chart-area-icons",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "analytics",
+    "dashboard",
+    "chart"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-icons",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-icons\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart-area-icons component is a visual representation of data, displaying areas of a chart filled with icons to represent different categories. It is commonly used in dashboards, analytics, and data-driven applications to effectively communicate complex data insights. Suitable for when developers need to present data in a unique and captivating manner.",
+  "style_tags": [
+    "modern",
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: chart-area-icons\nDescription: A chart-area-icons component is a visual representation of data, displaying areas of a chart filled with icons to represent different categories. It is commonly used in dashboards, analytics, and data-driven applications to effectively communicate complex data insights. Suitable for when developers need to present data in a unique and captivating manner.\nStyle: modern, minimal, flat\nInteractions: hover, clickable, animated\nTags: analytics, dashboard, chart\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-icons",
+  "display_name": "Chart Area Icons",
+  "preview_url": "/previews/shadcn/chart-area-icons.png"
+}

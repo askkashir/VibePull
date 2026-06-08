@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_textarea_textarea",
+  "name": "textarea",
+  "source_code": "// packages/react/src/components/textarea/textarea.tsx\n\"use client\";\n\nimport type {TextAreaVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {textAreaVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {TextArea as TextAreaPrimitive} from \"react-aria-components/TextArea\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* -------------------------------------------------------------------------------------------------\n * TextArea Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TextAreaRootProps\n  extends ComponentPropsWithRef<typeof TextAreaPrimitive>, TextAreaVariants {}\n\nconst TextAreaRoot = ({className, fullWidth, variant, ...rest}: TextAreaRootProps) => {\n  const textFieldContext = useContext(TextFieldContext);\n  const resolvedVariant = variant ?? textFieldContext?.variant;\n\n  return (\n    <TextAreaPrimitive\n      data-slot=\"textarea\"\n      className={composeTwRenderProps(\n        className,\n        textAreaVariants({fullWidth, variant: resolvedVariant}),\n      )}\n      {...rest}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TextAreaRoot};\n\nexport type {TextAreaRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "input",
+    "textarea"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "textarea_textarea",
+      "name": "textarea",
+      "path": "packages/react/src/components/textarea/textarea.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_textarea_textarea",
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/textarea/textarea.tsx",
+          "content": "\"use client\";\n\nimport type {TextAreaVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {textAreaVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {TextArea as TextAreaPrimitive} from \"react-aria-components/TextArea\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* -------------------------------------------------------------------------------------------------\n * TextArea Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TextAreaRootProps\n  extends ComponentPropsWithRef<typeof TextAreaPrimitive>, TextAreaVariants {}\n\nconst TextAreaRoot = ({className, fullWidth, variant, ...rest}: TextAreaRootProps) => {\n  const textFieldContext = useContext(TextFieldContext);\n  const resolvedVariant = variant ?? textFieldContext?.variant;\n\n  return (\n    <TextAreaPrimitive\n      data-slot=\"textarea\"\n      className={composeTwRenderProps(\n        className,\n        textAreaVariants({fullWidth, variant: resolvedVariant}),\n      )}\n      {...rest}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TextAreaRoot};\n\nexport type {TextAreaRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "textarea is a textarea UI component from the heroui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: textarea\nDescription: textarea is a textarea UI component from the heroui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: heroui, input, textarea\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/textarea/textarea.tsx\n\"use client\";\n\nimport type {TextAreaVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {textAreaVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {TextArea as TextAreaPrimitive} from \"react-aria-components/TextArea\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* -------------------------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "textarea",
+  "display_name": "Textarea",
+  "preview_url": "/previews/heroui/packages-react-src-components-textarea-textarea.png"
+}

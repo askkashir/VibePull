@@ -1,0 +1,46 @@
+{
+  "id": "tweet-card-demo",
+  "name": "Tweet Card Demo",
+  "source_code": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\n/**\n * <TweetCard /> (Server Side Only)\n * <ClientTweetCard /> (Client Side Only)\n */\nexport default function TweetDemo() {\n  return <ClientTweetCard id=\"1668408059125702661\" />\n}\n",
+  "description": "Example showing a tweet card with author info.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "tweet-card-demo",
+      "type": "registry:example",
+      "title": "Tweet Card Demo",
+      "description": "Example showing a tweet card with author info.",
+      "registryDependencies": [
+        "https://magicui.design/r/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-demo.tsx",
+          "type": "registry:example",
+          "target": "components/tweet-card-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tweet-card-demo",
+      "type": "registry:example",
+      "title": "Tweet Card Demo",
+      "description": "Example showing a tweet card with author info.",
+      "registryDependencies": [
+        "@magicui/client-tweet-card",
+        "@magicui/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-demo.tsx",
+          "content": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\n/**\n * <TweetCard /> (Server Side Only)\n * <ClientTweetCard /> (Client Side Only)\n */\nexport default function TweetDemo() {\n  return <ClientTweetCard id=\"1668408059125702661\" />\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

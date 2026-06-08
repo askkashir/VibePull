@@ -1,0 +1,31 @@
+{
+  "id": "src_components_BlogCard",
+  "name": "BlogCard",
+  "source_code": "// src/components/BlogCard.astro\n---\nimport type { CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport { calculateReadingTime } from '../utils/readingTime'\n\nimport FormattedDate from './FormattedDate.astro'\n\ninterface Props {\n  post: CollectionEntry<'blog'>\n}\n\nconst { post } = Astro.props\n\nconst { data, body } = post\n\nconst { slug, title, description, updatedDate } = data\n\nconst readingTime = calculateReadingTime(body ?? '')\n---\n\n<a href={`/blog/${slug}`} class=\"block\">\n  <article\n    class=\"group flex items-start justify-between gap-8 p-6 transition-colors hover:bg-gray-50\"\n  >\n    <FormattedDate\n      date={updatedDate}\n      class=\"min-w-25 pt-1 text-sm whitespace-nowrap text-gray-500\"\n    />\n\n    <div class=\"flex-1 space-y-2\">\n      <h2 class=\"text-xl font-medium transition-colors group-hover:text-gray-600\">\n        {title}\n      </h2>\n\n      <p class=\"text-sm text-gray-600\">{description}</p>\n\n      <div class=\"inline-flex items-center gap-2 text-gray-700\">\n        <span>Read article</span>\n\n        <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n      </div>\n    </div>\n\n    <div class=\"hidden pt-1 text-sm whitespace-nowrap text-gray-500 sm:block\">\n      {readingTime} min read\n    </div>\n  </article>\n</a>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "BlogCard",
+      "name": "BlogCard",
+      "path": "src/components/BlogCard.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_BlogCard",
+      "name": "BlogCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/BlogCard.astro",
+          "content": "---\nimport type { CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport { calculateReadingTime } from '../utils/readingTime'\n\nimport FormattedDate from './FormattedDate.astro'\n\ninterface Props {\n  post: CollectionEntry<'blog'>\n}\n\nconst { post } = Astro.props\n\nconst { data, body } = post\n\nconst { slug, title, description, updatedDate } = data\n\nconst readingTime = calculateReadingTime(body ?? '')\n---\n\n<a href={`/blog/${slug}`} class=\"block\">\n  <article\n    class=\"group flex items-start justify-between gap-8 p-6 transition-colors hover:bg-gray-50\"\n  >\n    <FormattedDate\n      date={updatedDate}\n      class=\"min-w-25 pt-1 text-sm whitespace-nowrap text-gray-500\"\n    />\n\n    <div class=\"flex-1 space-y-2\">\n      <h2 class=\"text-xl font-medium transition-colors group-hover:text-gray-600\">\n        {title}\n      </h2>\n\n      <p class=\"text-sm text-gray-600\">{description}</p>\n\n      <div class=\"inline-flex items-center gap-2 text-gray-700\">\n        <span>Read article</span>\n\n        <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n      </div>\n    </div>\n\n    <div class=\"hidden pt-1 text-sm whitespace-nowrap text-gray-500 sm:block\">\n      {readingTime} min read\n    </div>\n  </article>\n</a>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

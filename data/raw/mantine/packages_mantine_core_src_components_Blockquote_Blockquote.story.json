@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Blockquote_Blockquote.story",
+  "name": "Blockquote.story",
+  "source_code": "// packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx\nimport { InfoIcon } from '@phosphor-icons/react';\nimport { rem } from '../../core';\nimport { Blockquote } from './Blockquote';\n\nexport default { title: 'Blockquote' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}>\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote\n        unstyled\n        icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}\n        color=\"#F0000E\"\n      >\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Blockquote_Blockquote.story",
+      "name": "Blockquote.story",
+      "path": "packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Blockquote_Blockquote.story",
+      "name": "Blockquote.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Blockquote/Blockquote.story.tsx",
+          "content": "import { InfoIcon } from '@phosphor-icons/react';\nimport { rem } from '../../core';\nimport { Blockquote } from './Blockquote';\n\nexport default { title: 'Blockquote' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}>\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40, maxWidth: 820 }}>\n      <Blockquote\n        unstyled\n        icon={<InfoIcon style={{ width: rem(32), height: rem(32) }} />}\n        color=\"#F0000E\"\n      >\n        <b>Hello there</b>\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n\n        <p>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat rerum officiis,\n          excepturi, illum, aut temporibus id dolor beatae quasi eligendi. Quos qui harum veritatis\n          saepe unde maiores, recusandae consectetur.\n        </p>\n      </Blockquote>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

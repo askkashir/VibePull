@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_disclosure-group_disclosure-group",
+  "name": "disclosure-group",
+  "source_code": "// packages/react/src/components/disclosure-group/disclosure-group.tsx\n\"use client\";\n\nimport type {DisclosureGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {disclosureGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {DisclosureGroup as DisclosureGroupPrimitive} from \"react-aria-components/DisclosureGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Disclosure Group Context\n * -----------------------------------------------------------------------------------------------*/\ntype DisclosureGroupContext = {\n  slots?: ReturnType<typeof disclosureGroupVariants>;\n};\n\nconst DisclosureGroupContext = createContext<DisclosureGroupContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * Disclosure Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DisclosureGroupRootProps\n  extends ComponentPropsWithRef<typeof DisclosureGroupPrimitive>, DisclosureGroupVariants {}\n\nconst DisclosureGroupRoot = ({children, className, ...props}: DisclosureGroupRootProps) => {\n  const slots = React.useMemo(() => disclosureGroupVariants({}), []);\n\n  return (\n    <DisclosureGroupContext value={{slots}}>\n      <DisclosureGroupPrimitive\n        data-slot=\"disclosure-group\"\n        {...props}\n        className={composeTwRenderProps(className, slots.base())}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </DisclosureGroupPrimitive>\n    </DisclosureGroupContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DisclosureGroupRoot};\n\nexport type {DisclosureGroupRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "disclosure-group_disclosure-group",
+      "name": "disclosure-group",
+      "path": "packages/react/src/components/disclosure-group/disclosure-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_disclosure-group_disclosure-group",
+      "name": "disclosure-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/disclosure-group/disclosure-group.tsx",
+          "content": "\"use client\";\n\nimport type {DisclosureGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {disclosureGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {DisclosureGroup as DisclosureGroupPrimitive} from \"react-aria-components/DisclosureGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Disclosure Group Context\n * -----------------------------------------------------------------------------------------------*/\ntype DisclosureGroupContext = {\n  slots?: ReturnType<typeof disclosureGroupVariants>;\n};\n\nconst DisclosureGroupContext = createContext<DisclosureGroupContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * Disclosure Group Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DisclosureGroupRootProps\n  extends ComponentPropsWithRef<typeof DisclosureGroupPrimitive>, DisclosureGroupVariants {}\n\nconst DisclosureGroupRoot = ({children, className, ...props}: DisclosureGroupRootProps) => {\n  const slots = React.useMemo(() => disclosureGroupVariants({}), []);\n\n  return (\n    <DisclosureGroupContext value={{slots}}>\n      <DisclosureGroupPrimitive\n        data-slot=\"disclosure-group\"\n        {...props}\n        className={composeTwRenderProps(className, slots.base())}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </DisclosureGroupPrimitive>\n    </DisclosureGroupContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DisclosureGroupRoot};\n\nexport type {DisclosureGroupRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

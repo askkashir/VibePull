@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_separator",
+  "name": "separator",
+  "source_code": "// packages/radix-ui-themes/src/components/separator.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { separatorPropDefs } from './separator.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype SeparatorElement = React.ElementRef<'span'>;\ntype SeparatorOwnProps = GetPropDefTypes<typeof separatorPropDefs>;\ninterface SeparatorProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SeparatorOwnProps {}\nconst Separator = React.forwardRef<SeparatorElement, SeparatorProps>((props, forwardedRef) => {\n  const { className, color, decorative, ...separatorProps } = extractProps(\n    props,\n    separatorPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <span\n      data-accent-color={color}\n      role={decorative ? undefined : 'separator'}\n      {...separatorProps}\n      ref={forwardedRef}\n      className={classNames('rt-Separator', className)}\n    />\n  );\n});\nSeparator.displayName = 'Separator';\n\nexport { Separator };\nexport type { SeparatorProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_separator",
+      "name": "separator.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/separator.tsx",
+      "sha": "a506c2c8d6f8248085919ee3cfda369f2b377871",
+      "size": 1242,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/separator.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/separator.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/a506c2c8d6f8248085919ee3cfda369f2b377871",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/separator.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/separator.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/a506c2c8d6f8248085919ee3cfda369f2b377871",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/separator.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_separator",
+      "name": "separator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/separator.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { separatorPropDefs } from './separator.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype SeparatorElement = React.ElementRef<'span'>;\ntype SeparatorOwnProps = GetPropDefTypes<typeof separatorPropDefs>;\ninterface SeparatorProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SeparatorOwnProps {}\nconst Separator = React.forwardRef<SeparatorElement, SeparatorProps>((props, forwardedRef) => {\n  const { className, color, decorative, ...separatorProps } = extractProps(\n    props,\n    separatorPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <span\n      data-accent-color={color}\n      role={decorative ? undefined : 'separator'}\n      {...separatorProps}\n      ref={forwardedRef}\n      className={classNames('rt-Separator', className)}\n    />\n  );\n});\nSeparator.displayName = 'Separator';\n\nexport { Separator };\nexport type { SeparatorProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Rating_Rating.context",
+  "name": "Rating.context",
+  "source_code": "// packages/@mantine/core/src/components/Rating/Rating.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { RatingFactory } from './Rating';\n\ninterface RatingContextValue {\n  getStyles: GetStylesApi<RatingFactory>;\n}\n\nexport const [RatingProvider, useRatingContext] = createSafeContext<RatingContextValue>(\n  'Rating was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Rating_Rating.context",
+      "name": "Rating.context",
+      "path": "packages/@mantine/core/src/components/Rating/Rating.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Rating_Rating.context",
+      "name": "Rating.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Rating/Rating.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { RatingFactory } from './Rating';\n\ninterface RatingContextValue {\n  getStyles: GetStylesApi<RatingFactory>;\n}\n\nexport const [RatingProvider, useRatingContext] = createSafeContext<RatingContextValue>(\n  'Rating was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

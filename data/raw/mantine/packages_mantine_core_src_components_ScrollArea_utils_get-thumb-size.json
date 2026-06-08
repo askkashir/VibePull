@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-size",
+  "name": "get-thumb-size",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-size.tsx\nimport type { Sizes } from '../ScrollArea.types';\nimport { getThumbRatio } from './get-thumb-ratio';\n\nexport function getThumbSize(sizes: Sizes) {\n  const ratio = getThumbRatio(sizes.viewport, sizes.content);\n  const scrollbarPadding = sizes.scrollbar.paddingStart + sizes.scrollbar.paddingEnd;\n  const thumbSize = (sizes.scrollbar.size - scrollbarPadding) * ratio;\n  return Math.max(thumbSize, 18);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_get-thumb-size",
+      "name": "get-thumb-size",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-size.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-size",
+      "name": "get-thumb-size",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-size.tsx",
+          "content": "import type { Sizes } from '../ScrollArea.types';\nimport { getThumbRatio } from './get-thumb-ratio';\n\nexport function getThumbSize(sizes: Sizes) {\n  const ratio = getThumbRatio(sizes.viewport, sizes.content);\n  const scrollbarPadding = sizes.scrollbar.paddingStart + sizes.scrollbar.paddingEnd;\n  const thumbSize = (sizes.scrollbar.size - scrollbarPadding) * ratio;\n  return Math.max(thumbSize, 18);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

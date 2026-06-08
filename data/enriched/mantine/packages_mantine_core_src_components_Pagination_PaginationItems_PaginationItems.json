@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_PaginationItems_PaginationItems",
+  "name": "PaginationItems",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/PaginationItems/PaginationItems.tsx\nimport { usePaginationContext } from '../Pagination.context';\nimport { PaginationIcon } from '../Pagination.icons';\nimport { PaginationControl } from '../PaginationControl/PaginationControl';\nimport { PaginationDots } from '../PaginationDots/PaginationDots';\n\nexport interface PaginationItemsProps {\n  /** Dots icon component */\n  dotsIcon?: PaginationIcon;\n}\n\nexport function PaginationItems({ dotsIcon }: PaginationItemsProps) {\n  const ctx = usePaginationContext();\n\n  const items = ctx.range.map((page, index) => {\n    if (page === 'dots') {\n      return <PaginationDots icon={dotsIcon} key={index} />;\n    }\n\n    return (\n      <PaginationControl\n        key={index}\n        active={page === ctx.active}\n        aria-current={page === ctx.active ? 'page' : undefined}\n        onClick={() => ctx.onChange(page)}\n        disabled={ctx.disabled}\n        {...ctx.getItemProps?.(page)}\n      >\n        {ctx.getItemProps?.(page)?.children ?? page}\n      </PaginationControl>\n    );\n  });\n\n  return <>{items}</>;\n}\n\nPaginationItems.displayName = '@mantine/core/PaginationItems';\n",
+  "description": "",
+  "tags": [
+    "items",
+    "mantine",
+    "other",
+    "pagination"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_PaginationItems_PaginationItems",
+      "name": "PaginationItems",
+      "path": "packages/@mantine/core/src/components/Pagination/PaginationItems/PaginationItems.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_PaginationItems_PaginationItems",
+      "name": "PaginationItems",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/PaginationItems/PaginationItems.tsx",
+          "content": "import { usePaginationContext } from '../Pagination.context';\nimport { PaginationIcon } from '../Pagination.icons';\nimport { PaginationControl } from '../PaginationControl/PaginationControl';\nimport { PaginationDots } from '../PaginationDots/PaginationDots';\n\nexport interface PaginationItemsProps {\n  /** Dots icon component */\n  dotsIcon?: PaginationIcon;\n}\n\nexport function PaginationItems({ dotsIcon }: PaginationItemsProps) {\n  const ctx = usePaginationContext();\n\n  const items = ctx.range.map((page, index) => {\n    if (page === 'dots') {\n      return <PaginationDots icon={dotsIcon} key={index} />;\n    }\n\n    return (\n      <PaginationControl\n        key={index}\n        active={page === ctx.active}\n        aria-current={page === ctx.active ? 'page' : undefined}\n        onClick={() => ctx.onChange(page)}\n        disabled={ctx.disabled}\n        {...ctx.getItemProps?.(page)}\n      >\n        {ctx.getItemProps?.(page)?.children ?? page}\n      </PaginationControl>\n    );\n  });\n\n  return <>{items}</>;\n}\n\nPaginationItems.displayName = '@mantine/core/PaginationItems';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "PaginationItems is a pagination items UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: PaginationItems\nDescription: PaginationItems is a pagination items UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: items, mantine, other, pagination\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Pagination/PaginationItems/PaginationItems.tsx\nimport { usePaginationContext } from '../Pagination.context';\nimport { PaginationIcon } from '../Pagination.icons';\nimport { PaginationControl } from '../PaginationControl/PaginationControl';\nimport { PaginationDots } from '../PaginationDots/PaginationDots';\n\nexport interface PaginationItemsProps {\n  /** Dots icon component */\n  dotsIcon?: PaginationIcon;\n}\n\nexport function PaginationItems({ dotsIcon }: Pagin",
+  "prompt_version": 2,
+  "clean_id": "pagination-items",
+  "display_name": "Pagination Items",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pagination-paginationitems-paginationitems.png"
+}

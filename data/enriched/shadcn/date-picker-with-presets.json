@@ -1,0 +1,44 @@
+{
+  "id": "date-picker-with-presets",
+  "name": "date-picker-with-presets",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "date-picker",
+    "calendar",
+    "preset",
+    "form-input",
+    "input-field",
+    "registration"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "date-picker-with-presets",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## date-picker-with-presets\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** date-fns"
+  },
+  "visual_summary": "This date-picker-with-presets component is a form input field with a calendar icon that allows users to select a date from a pre-defined list of presets, such as today, yesterday, and a week from today. It is commonly used in forms and registration flows where a user needs to select a specific date. This component is suitable for desktop and mobile applications.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism",
+    "compact"
+  ],
+  "interaction_tags": [
+    "e.g. click-to-open",
+    "hover-effect",
+    "auto-close"
+  ],
+  "component_type": "date-picker",
+  "generation_prompt": "Create a production-ready date-picker component with the following characteristics:\n\nName: date-picker-with-presets\nDescription: This date-picker-with-presets component is a form input field with a calendar icon that allows users to select a date from a pre-defined list of presets, such as today, yesterday, and a week from today. It is commonly used in forms and registration flows where a user needs to select a specific date. This component is suitable for desktop and mobile applications.\nStyle: e.g. minimal, glassmorphism, compact\nInteractions: e.g. click-to-open, hover-effect, auto-close\nTags: date-picker, calendar, preset, form-input, input-field, registration\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "date-picker-with-presets",
+  "display_name": "Date Picker With Presets",
+  "preview_url": "/previews/shadcn/date-picker-with-presets.png"
+}

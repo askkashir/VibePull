@@ -1,0 +1,42 @@
+{
+  "id": "packages_react_src_components_radio_index",
+  "name": "radio",
+  "source_code": "// packages/react/src/components/radio/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {RadioContent, RadioControl, RadioIndicator, RadioRoot} from \"./radio\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Radio = Object.assign(RadioRoot, {\n  Root: RadioRoot,\n  Control: RadioControl,\n  Indicator: RadioIndicator,\n  Content: RadioContent,\n});\n\nexport type Radio = {\n  Props: ComponentProps<typeof RadioRoot>;\n  RootProps: ComponentProps<typeof RadioRoot>;\n  ControlProps: ComponentProps<typeof RadioControl>;\n  IndicatorProps: ComponentProps<typeof RadioIndicator>;\n  ContentProps: ComponentProps<typeof RadioContent>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {RadioContent, RadioControl, RadioIndicator, RadioRoot};\n\nexport type {\n  RadioRootProps,\n  RadioRootProps as RadioProps,\n  RadioControlProps,\n  RadioIndicatorProps,\n  RadioContentProps,\n} from \"./radio\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {radioVariants} from \"@heroui/styles\";\n\nexport type {RadioVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "input",
+    "radio"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "radio_index",
+      "name": "index",
+      "path": "packages/react/src/components/radio/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_radio_index",
+      "name": "radio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/radio/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {RadioContent, RadioControl, RadioIndicator, RadioRoot} from \"./radio\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Radio = Object.assign(RadioRoot, {\n  Root: RadioRoot,\n  Control: RadioControl,\n  Indicator: RadioIndicator,\n  Content: RadioContent,\n});\n\nexport type Radio = {\n  Props: ComponentProps<typeof RadioRoot>;\n  RootProps: ComponentProps<typeof RadioRoot>;\n  ControlProps: ComponentProps<typeof RadioControl>;\n  IndicatorProps: ComponentProps<typeof RadioIndicator>;\n  ContentProps: ComponentProps<typeof RadioContent>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {RadioContent, RadioControl, RadioIndicator, RadioRoot};\n\nexport type {\n  RadioRootProps,\n  RadioRootProps as RadioProps,\n  RadioControlProps,\n  RadioIndicatorProps,\n  RadioContentProps,\n} from \"./radio\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {radioVariants} from \"@heroui/styles\";\n\nexport type {RadioVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "radio is a radio UI component from the heroui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: radio\nDescription: radio is a radio UI component from the heroui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heroui, input, radio\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/radio/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {RadioContent, RadioControl, RadioIndicator, RadioRoot} from \"./radio\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Radio = Object.assign(RadioRoot, {\n  Root: RadioRoot,\n  Control: RadioControl,\n  Indicator:",
+  "prompt_version": 2,
+  "clean_id": "radio",
+  "display_name": "Radio",
+  "preview_url": "/previews/heroui/packages-react-src-components-radio-index.png"
+}

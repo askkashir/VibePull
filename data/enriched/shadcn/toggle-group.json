@@ -1,0 +1,42 @@
+{
+  "id": "toggle-group",
+  "name": "toggle-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "group",
+    "settings",
+    "configurable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The toggle-group is a horizontal collection of toggle buttons, used for presenting a group of distinct options to the user. It is typically used in scenarios where multiple settings need to be toggled or switched between. Developers use it to create configurable panels.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-group\nDescription: The toggle-group is a horizontal collection of toggle buttons, used for presenting a group of distinct options to the user. It is typically used in scenarios where multiple settings need to be toggled or switched between. Developers use it to create configurable panels.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: toggle, group, settings, configurable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group",
+  "display_name": "Toggle Group",
+  "preview_url": "/previews/shadcn/toggle-group.png"
+}

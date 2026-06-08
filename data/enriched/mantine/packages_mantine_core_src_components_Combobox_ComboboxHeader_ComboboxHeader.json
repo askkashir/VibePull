@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxHeader_ComboboxHeader",
+  "name": "ComboboxHeader",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxHeader/ComboboxHeader.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxHeaderStylesNames = 'header';\n\nexport interface ComboboxHeaderProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxHeaderFactory>, ElementProps<'div'> {}\n\nexport type ComboboxHeaderFactory = Factory<{\n  props: ComboboxHeaderProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxHeader = factory<ComboboxHeaderFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'ComboboxHeader',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return (\n    <Box\n      {...ctx.getStyles('header', { className, classNames, style, styles })}\n      {...others}\n      onMouseDown={(event) => {\n        event.preventDefault();\n      }}\n    />\n  );\n});\n\nComboboxHeader.classes = classes;\nComboboxHeader.displayName = '@mantine/core/ComboboxHeader';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "header",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxHeader_ComboboxHeader",
+      "name": "ComboboxHeader",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxHeader/ComboboxHeader.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxHeader_ComboboxHeader",
+      "name": "ComboboxHeader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxHeader/ComboboxHeader.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxHeaderStylesNames = 'header';\n\nexport interface ComboboxHeaderProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxHeaderFactory>, ElementProps<'div'> {}\n\nexport type ComboboxHeaderFactory = Factory<{\n  props: ComboboxHeaderProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxHeaderStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxHeader = factory<ComboboxHeaderFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'ComboboxHeader',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return (\n    <Box\n      {...ctx.getStyles('header', { className, classNames, style, styles })}\n      {...others}\n      onMouseDown={(event) => {\n        event.preventDefault();\n      }}\n    />\n  );\n});\n\nComboboxHeader.classes = classes;\nComboboxHeader.displayName = '@mantine/core/ComboboxHeader';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxHeader is a combobox header UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ComboboxHeader\nDescription: ComboboxHeader is a combobox header UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: combobox, header, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxHeader/ComboboxHeader.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxHeaderStylesNames = 'header';\n\nexport interface ComboboxHeaderProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxHeaderFactory>, ElementProps<'div'> {}\n\nexpo",
+  "prompt_version": 2,
+  "clean_id": "combobox-header",
+  "display_name": "Combobox Header",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxheader-comboboxheader.png"
+}

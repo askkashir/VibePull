@@ -1,0 +1,42 @@
+{
+  "id": "button-icon",
+  "name": "button-icon",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "icon",
+    "responsive",
+    "clickable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-icon",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-icon\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Button-Icon component is a simple, rectangular button with an icon integrated into it. It's typically used in the UI to draw attention or trigger an action. It can come in different styles and sizes.",
+  "style_tags": [
+    "e.g. default",
+    "outlined",
+    "filled"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "tappable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-icon\nDescription: The Button-Icon component is a simple, rectangular button with an icon integrated into it. It's typically used in the UI to draw attention or trigger an action. It can come in different styles and sizes.\nStyle: e.g. default, outlined, filled\nInteractions: e.g. hover, clickable, tappable\nTags: button, icon, responsive, clickable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-icon",
+  "display_name": "Button Icon",
+  "preview_url": "/previews/shadcn/button-icon.png"
+}

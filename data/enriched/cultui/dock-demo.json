@@ -1,0 +1,63 @@
+{
+  "id": "dock-demo",
+  "name": "dock-demo",
+  "source_code": "// registry/default/example/dock-demo.tsx\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport {\n  BlocksIcon,\n  CircleIcon,\n  HexagonIcon,\n  OctagonIcon,\n  PentagonIcon,\n  SquareIcon,\n  TriangleIcon,\n} from \"lucide-react\"\n\nimport {\n  Dock,\n  DockCard,\n  DockCardInner,\n  DockDivider,\n} from \"@/registry/default/ui/dock\"\n\nfunction useIsMobile() {\n  const [isMobile, setIsMobile] = useState(false)\n\n  useEffect(() => {\n    const userAgent = navigator.userAgent\n    const isSmall = window.matchMedia(\"(max-width: 768px)\").matches\n    const isMobile = Boolean(\n      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.exec(\n        userAgent\n      )\n    )\n\n    const isDev = process.env.NODE_ENV !== \"production\"\n    if (isDev) setIsMobile(isSmall || isMobile)\n\n    setIsMobile(isSmall && isMobile)\n  }, [])\n\n  return isMobile\n}\n\n// Main component to display the dock with cards\nlet gradients = [\n  \"https://products.ls.graphics/mesh-gradients/images/03.-Snowy-Mint_1-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/06.-Wisteria-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/09.-Light-Sky-Blue-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/15.-Perfume_1-p-130x130q80.jpeg\",\n  null,\n  \"https://products.ls.graphics/mesh-gradients/images/36.-Pale-Chestnut-p-130x130q80.jpeg\",\n]\n\nfunction DockAnimation() {\n  let openIcons = [\n    <CircleIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <TriangleIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <SquareIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <PentagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <HexagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <OctagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    null, // skip\n    <BlocksIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n  ]\n\n  const isMobile = useIsMobile()\n\n  const responsiveOpenIcons = isMobile\n    ? openIcons.slice(3, openIcons.length)\n    : openIcons\n  const responsiveGradients = isMobile\n    ? gradients.slice(3, gradients.length)\n    : gradients\n\n  return (\n    <div className=\" w-full  flex items-center justify-center\">\n      <Dock>\n        {responsiveGradients.map((src, index) =>\n          src ? (\n            <DockCard key={src} id={`${index}`}>\n              <DockCardInner src={src} id={`${index}`}>\n                {responsiveOpenIcons[index]}\n              </DockCardInner>\n            </DockCard>\n          ) : (\n            <DockDivider key={index} />\n          )\n        )}\n      </Dock>\n    </div>\n  )\n}\n\nexport default DockAnimation\n",
+  "description": "",
+  "tags": [
+    "dock",
+    "card",
+    "animation",
+    "responsive"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "dock-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/dock-demo.json",
+      "sha": "43186ee7f38a8d23c8e28cf2e29949a27f60c744",
+      "size": 3310,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/dock-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/dock-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/43186ee7f38a8d23c8e28cf2e29949a27f60c744",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/dock-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/dock-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/43186ee7f38a8d23c8e28cf2e29949a27f60c744",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/dock-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dock-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "dock"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/dock-demo.tsx",
+          "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport {\n  BlocksIcon,\n  CircleIcon,\n  HexagonIcon,\n  OctagonIcon,\n  PentagonIcon,\n  SquareIcon,\n  TriangleIcon,\n} from \"lucide-react\"\n\nimport {\n  Dock,\n  DockCard,\n  DockCardInner,\n  DockDivider,\n} from \"@/registry/default/ui/dock\"\n\nfunction useIsMobile() {\n  const [isMobile, setIsMobile] = useState(false)\n\n  useEffect(() => {\n    const userAgent = navigator.userAgent\n    const isSmall = window.matchMedia(\"(max-width: 768px)\").matches\n    const isMobile = Boolean(\n      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.exec(\n        userAgent\n      )\n    )\n\n    const isDev = process.env.NODE_ENV !== \"production\"\n    if (isDev) setIsMobile(isSmall || isMobile)\n\n    setIsMobile(isSmall && isMobile)\n  }, [])\n\n  return isMobile\n}\n\n// Main component to display the dock with cards\nlet gradients = [\n  \"https://products.ls.graphics/mesh-gradients/images/03.-Snowy-Mint_1-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/04.-Hopbush_1-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/06.-Wisteria-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/09.-Light-Sky-Blue-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed-p-130x130q80.jpeg\",\n  \"https://products.ls.graphics/mesh-gradients/images/15.-Perfume_1-p-130x130q80.jpeg\",\n  null,\n  \"https://products.ls.graphics/mesh-gradients/images/36.-Pale-Chestnut-p-130x130q80.jpeg\",\n]\n\nfunction DockAnimation() {\n  let openIcons = [\n    <CircleIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <TriangleIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <SquareIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <PentagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <HexagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    <OctagonIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n    null, // skip\n    <BlocksIcon className=\"h-8 w-8 fill-black stroke-black rounded-full\" />,\n  ]\n\n  const isMobile = useIsMobile()\n\n  const responsiveOpenIcons = isMobile\n    ? openIcons.slice(3, openIcons.length)\n    : openIcons\n  const responsiveGradients = isMobile\n    ? gradients.slice(3, gradients.length)\n    : gradients\n\n  return (\n    <div className=\" w-full  flex items-center justify-center\">\n      <Dock>\n        {responsiveGradients.map((src, index) =>\n          src ? (\n            <DockCard key={src} id={`${index}`}>\n              <DockCardInner src={src} id={`${index}`}>\n                {responsiveOpenIcons[index]}\n              </DockCardInner>\n            </DockCard>\n          ) : (\n            <DockDivider key={index} />\n          )\n        )}\n      </Dock>\n    </div>\n  )\n}\n\nexport default DockAnimation\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "DockAnimation is a React component that displays a dock with customizable cards, gradients, and icons. It responds to mobile viewports by adapting the number and size of cards and gradients. This component is suitable for developers who want to create interactive and mobile-friendly dock experiences.",
+  "style_tags": [
+    "material",
+    "ui-components"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "ui-component",
+  "generation_prompt": "Create a production-ready ui-component component with the following characteristics:\n\nName: dock-demo\nDescription: DockAnimation is a React component that displays a dock with customizable cards, gradients, and icons. It responds to mobile viewports by adapting the number and size of cards and gradients. This component is suitable for developers who want to create interactive and mobile-friendly dock experiences.\nStyle: material, ui-components\nInteractions: clickable, hover\nTags: dock, card, animation, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/dock-demo.tsx\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport {\n  BlocksIcon,\n  CircleIcon,\n  HexagonIcon,\n  OctagonIcon,\n  PentagonIcon,\n  SquareIcon,\n  TriangleIcon,\n} from \"lucide-react\"\n\nimport {\n  Dock,\n  DockCard,\n  DockCardInner,\n  DockDivider,\n} from \"@/registry/default/ui/dock\"\n\nfunction useIsMobile() {\n  const [isMobile, setIsMobile] = useState(false)\n\n  useEffect(() => {\n    const userAgent = navigator.userAgent\n    const isSmall = window.m",
+  "prompt_version": 2,
+  "clean_id": "dock-demo",
+  "display_name": "Dock Demo",
+  "preview_url": "/previews/cultui/dock-demo.png"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "bg-media-demo",
+  "name": "bg-media-demo",
+  "source_code": "// registry/default/example/bg-media-demo.tsx\nimport BackgroundMedia from \"../ui/bg-media\"\n\nexport default function BgMediaDemo() {\n  return (\n    <div className=\"w-full \">\n      <div className=\"md:min-w-[20rem] \">\n        <BackgroundMedia\n          type=\"video\"\n          variant=\"light\"\n          src=\"https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4\"\n        />\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "bg-media",
+    "video",
+    "background"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "bg-media-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/bg-media-demo.json",
+      "sha": "0515764a0df05b72bb600b62d965e434be4e129f",
+      "size": 774,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-media-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-media-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/0515764a0df05b72bb600b62d965e434be4e129f",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/bg-media-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-media-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/0515764a0df05b72bb600b62d965e434be4e129f",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-media-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bg-media-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "bg-media"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/bg-media-demo.tsx",
+          "content": "import BackgroundMedia from \"../ui/bg-media\"\n\nexport default function BgMediaDemo() {\n  return (\n    <div className=\"w-full \">\n      <div className=\"md:min-w-[20rem] \">\n        <BackgroundMedia\n          type=\"video\"\n          variant=\"light\"\n          src=\"https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4\"\n        />\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "Component rendering a media element with a background, suitable for displaying short, self-contained videos or images in a layout.",
+  "style_tags": [
+    "light"
+  ],
+  "interaction_tags": [],
+  "component_type": "bg-media-demo",
+  "generation_prompt": "Create a production-ready bg-media-demo component with the following characteristics:\n\nName: bg-media-demo\nDescription: Component rendering a media element with a background, suitable for displaying short, self-contained videos or images in a layout.\nStyle: light\nInteractions: \nTags: bg-media, video, background\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/bg-media-demo.tsx\nimport BackgroundMedia from \"../ui/bg-media\"\n\nexport default function BgMediaDemo() {\n  return (\n    <div className=\"w-full \">\n      <div className=\"md:min-w-[20rem] \">\n        <BackgroundMedia\n          type=\"video\"\n          variant=\"light\"\n          src=\"https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4\"\n        />\n      </div>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "bg-media-demo",
+  "display_name": "Bg Media Demo",
+  "preview_url": "/previews/cultui/bg-media-demo.png"
+}

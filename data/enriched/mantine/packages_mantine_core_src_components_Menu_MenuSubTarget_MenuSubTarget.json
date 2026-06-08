@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuSubTarget_MenuSubTarget",
+  "name": "MenuSubTarget",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuSubTarget/MenuSubTarget.tsx\nimport { isElement } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuSubTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop used to get element ref @default 'ref' */\n  refProp?: string;\n}\n\nexport function MenuSubTarget({ children, refProp }: MenuSubTargetProps) {\n  if (!isElement(children)) {\n    throw new Error(\n      'Menu.Sub.Target component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  useMenuContext();\n\n  return (\n    <Popover.Target refProp={refProp} popupType=\"menu\">\n      {children}\n    </Popover.Target>\n  );\n}\n\nMenuSubTarget.displayName = '@mantine/core/MenuSubTarget';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "menu",
+    "navbar",
+    "sub",
+    "target"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuSubTarget_MenuSubTarget",
+      "name": "MenuSubTarget",
+      "path": "packages/@mantine/core/src/components/Menu/MenuSubTarget/MenuSubTarget.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuSubTarget_MenuSubTarget",
+      "name": "MenuSubTarget",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuSubTarget/MenuSubTarget.tsx",
+          "content": "import { isElement } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuSubTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop used to get element ref @default 'ref' */\n  refProp?: string;\n}\n\nexport function MenuSubTarget({ children, refProp }: MenuSubTargetProps) {\n  if (!isElement(children)) {\n    throw new Error(\n      'Menu.Sub.Target component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  useMenuContext();\n\n  return (\n    <Popover.Target refProp={refProp} popupType=\"menu\">\n      {children}\n    </Popover.Target>\n  );\n}\n\nMenuSubTarget.displayName = '@mantine/core/MenuSubTarget';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuSubTarget is a menu sub target UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuSubTarget\nDescription: MenuSubTarget is a menu sub target UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, menu, navbar, sub, target\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuSubTarget/MenuSubTarget.tsx\nimport { isElement } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useMenuContext } from '../Menu.context';\n\nexport interface MenuSubTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop used to get element ref @default 'ref' */\n  refProp?: string;\n}\n\nexport function MenuSubTarget({ children, refProp }: MenuSubTargetProps) {\n  if (!isElement(children)) {\n   ",
+  "prompt_version": 2,
+  "clean_id": "menu-sub-target",
+  "display_name": "Menu Sub Target",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menusubtarget-menusubtarget.png"
+}

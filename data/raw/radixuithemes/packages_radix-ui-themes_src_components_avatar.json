@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_avatar",
+  "name": "avatar",
+  "source_code": "// packages/radix-ui-themes/src/components/avatar.tsx\n'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Avatar as AvatarPrimitive } from 'radix-ui';\n\nimport { avatarPropDefs } from './avatar.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ninterface AvatarProps extends MarginProps, AvatarImplProps {}\nconst Avatar = React.forwardRef<AvatarImplElement, AvatarProps>((props, forwardedRef) => {\n  const { asChild, children, className, style, color, radius, ...imageProps } = extractProps(\n    props,\n    avatarPropDefs,\n    marginPropDefs,\n  );\n\n  return (\n    // TODO as a rule, should we rather spread the props on root?\n    <AvatarPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      className={classNames('rt-reset', 'rt-AvatarRoot', className)}\n      style={style}\n      asChild={asChild}\n    >\n      {getSubtree({ asChild, children }, <AvatarImpl ref={forwardedRef} {...imageProps} />)}\n    </AvatarPrimitive.Root>\n  );\n});\nAvatar.displayName = 'Avatar';\n\ntype AvatarImplElement = React.ElementRef<typeof AvatarPrimitive.Image>;\ntype AvatarOwnProps = GetPropDefTypes<typeof avatarPropDefs>;\n\ninterface AvatarImplProps\n  extends ComponentPropsWithout<typeof AvatarPrimitive.Image, RemovedProps>, AvatarOwnProps {\n  // TODO: See if we can automate making prop defs with `required: true` non nullable\n  fallback: NonNullable<AvatarOwnProps['fallback']>;\n}\n\nconst AvatarImpl = React.forwardRef<AvatarImplElement, AvatarImplProps>(\n  ({ fallback, ...imageProps }, forwardedRef) => {\n    const [status, setStatus] = React.useState<'idle' | 'loading' | 'loaded' | 'error'>('idle');\n    return (\n      <>\n        {status === 'idle' || status === 'loading' ? <span className=\"rt-AvatarFallback\" /> : null}\n\n        {status === 'error' ? (\n          <AvatarPrimitive.Fallback\n            className={classNames('rt-AvatarFallback', {\n              'rt-one-letter': typeof fallback === 'string' && fallback.length === 1,\n              'rt-two-letters': typeof fallback === 'string' && fallback.length === 2,\n            })}\n            delayMs={0}\n          >\n            {fallback}\n          </AvatarPrimitive.Fallback>\n        ) : null}\n\n        <AvatarPrimitive.Image\n          ref={forwardedRef}\n          className=\"rt-AvatarImage\"\n          {...imageProps}\n          onLoadingStatusChange={(status) => {\n            imageProps.onLoadingStatusChange?.(status);\n            setStatus(status);\n          }}\n        />\n      </>\n    );\n  },\n);\n\nAvatarImpl.displayName = 'AvatarImpl';\n\nexport { Avatar };\nexport type { AvatarProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_avatar",
+      "name": "avatar.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/avatar.tsx",
+      "sha": "3cc3225e2bd466af477c01eb360ce3ec849cd8d9",
+      "size": 2894,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/avatar.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/avatar.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/3cc3225e2bd466af477c01eb360ce3ec849cd8d9",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/avatar.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/avatar.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/3cc3225e2bd466af477c01eb360ce3ec849cd8d9",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/avatar.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_avatar",
+      "name": "avatar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/avatar.tsx",
+          "content": "'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Avatar as AvatarPrimitive } from 'radix-ui';\n\nimport { avatarPropDefs } from './avatar.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ninterface AvatarProps extends MarginProps, AvatarImplProps {}\nconst Avatar = React.forwardRef<AvatarImplElement, AvatarProps>((props, forwardedRef) => {\n  const { asChild, children, className, style, color, radius, ...imageProps } = extractProps(\n    props,\n    avatarPropDefs,\n    marginPropDefs,\n  );\n\n  return (\n    // TODO as a rule, should we rather spread the props on root?\n    <AvatarPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      className={classNames('rt-reset', 'rt-AvatarRoot', className)}\n      style={style}\n      asChild={asChild}\n    >\n      {getSubtree({ asChild, children }, <AvatarImpl ref={forwardedRef} {...imageProps} />)}\n    </AvatarPrimitive.Root>\n  );\n});\nAvatar.displayName = 'Avatar';\n\ntype AvatarImplElement = React.ElementRef<typeof AvatarPrimitive.Image>;\ntype AvatarOwnProps = GetPropDefTypes<typeof avatarPropDefs>;\n\ninterface AvatarImplProps\n  extends ComponentPropsWithout<typeof AvatarPrimitive.Image, RemovedProps>, AvatarOwnProps {\n  // TODO: See if we can automate making prop defs with `required: true` non nullable\n  fallback: NonNullable<AvatarOwnProps['fallback']>;\n}\n\nconst AvatarImpl = React.forwardRef<AvatarImplElement, AvatarImplProps>(\n  ({ fallback, ...imageProps }, forwardedRef) => {\n    const [status, setStatus] = React.useState<'idle' | 'loading' | 'loaded' | 'error'>('idle');\n    return (\n      <>\n        {status === 'idle' || status === 'loading' ? <span className=\"rt-AvatarFallback\" /> : null}\n\n        {status === 'error' ? (\n          <AvatarPrimitive.Fallback\n            className={classNames('rt-AvatarFallback', {\n              'rt-one-letter': typeof fallback === 'string' && fallback.length === 1,\n              'rt-two-letters': typeof fallback === 'string' && fallback.length === 2,\n            })}\n            delayMs={0}\n          >\n            {fallback}\n          </AvatarPrimitive.Fallback>\n        ) : null}\n\n        <AvatarPrimitive.Image\n          ref={forwardedRef}\n          className=\"rt-AvatarImage\"\n          {...imageProps}\n          onLoadingStatusChange={(status) => {\n            imageProps.onLoadingStatusChange?.(status);\n            setStatus(status);\n          }}\n        />\n      </>\n    );\n  },\n);\n\nAvatarImpl.displayName = 'AvatarImpl';\n\nexport { Avatar };\nexport type { AvatarProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

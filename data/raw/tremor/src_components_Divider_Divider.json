@@ -1,0 +1,44 @@
+{
+  "id": "src_components_Divider_Divider",
+  "name": "Divider",
+  "source_code": "// src/components/Divider/Divider.tsx\n// Tremor Divider [v1.0.0]\n\nimport React from \"react\"\n\nimport { cx } from \"../../utils/cx\"\n\ntype DividerProps = React.ComponentPropsWithoutRef<\"div\">\n\nconst Divider = React.forwardRef<HTMLDivElement, DividerProps>(\n  ({ className, children, ...props }, forwardedRef) => (\n    <div\n      ref={forwardedRef}\n      className={cx(\n        // base\n        \"mx-auto my-6 flex w-full items-center justify-between gap-3 text-sm\",\n        // text color\n        \"text-gray-500 dark:text-gray-500\",\n        className,\n      )}\n      tremor-id=\"tremor-raw\"\n      {...props}\n    >\n      {children ? (\n        <>\n          <div\n            className={cx(\n              // base\n              \"h-[1px] w-full\",\n              // background color\n              \"bg-gray-200 dark:bg-gray-800\",\n            )}\n          />\n          <div className=\"whitespace-nowrap text-inherit\">{children}</div>\n          <div\n            className={cx(\n              // base\n              \"h-[1px] w-full\",\n              // background color\n              \"bg-gray-200 dark:bg-gray-800\",\n            )}\n          />\n        </>\n      ) : (\n        <div\n          className={cx(\n            // base\n            \"h-[1px] w-full\",\n            // background color\n            \"bg-gray-200 dark:bg-gray-800\",\n          )}\n        />\n      )}\n    </div>\n  ),\n)\n\nDivider.displayName = \"Divider\"\n\nexport { Divider }\n",
+  "description": "",
+  "tags": [
+    "file",
+    "registry:ui",
+    "tremor"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "src_components_Divider_Divider",
+      "name": "Divider.tsx",
+      "source": "github_contents",
+      "path": "src/components/Divider/Divider.tsx",
+      "sha": "453697c4ccfada01295069fca235c6bc8f7df9b1",
+      "size": 1374,
+      "url": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Divider/Divider.tsx?ref=main",
+      "html_url": "https://github.com/tremorlabs/tremor/blob/main/src/components/Divider/Divider.tsx",
+      "git_url": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/453697c4ccfada01295069fca235c6bc8f7df9b1",
+      "download_url": "https://raw.githubusercontent.com/tremorlabs/tremor/main/src/components/Divider/Divider.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Divider/Divider.tsx?ref=main",
+        "git": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/453697c4ccfada01295069fca235c6bc8f7df9b1",
+        "html": "https://github.com/tremorlabs/tremor/blob/main/src/components/Divider/Divider.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "src_components_Divider_Divider",
+      "name": "Divider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Divider/Divider.tsx",
+          "content": "// Tremor Divider [v1.0.0]\n\nimport React from \"react\"\n\nimport { cx } from \"../../utils/cx\"\n\ntype DividerProps = React.ComponentPropsWithoutRef<\"div\">\n\nconst Divider = React.forwardRef<HTMLDivElement, DividerProps>(\n  ({ className, children, ...props }, forwardedRef) => (\n    <div\n      ref={forwardedRef}\n      className={cx(\n        // base\n        \"mx-auto my-6 flex w-full items-center justify-between gap-3 text-sm\",\n        // text color\n        \"text-gray-500 dark:text-gray-500\",\n        className,\n      )}\n      tremor-id=\"tremor-raw\"\n      {...props}\n    >\n      {children ? (\n        <>\n          <div\n            className={cx(\n              // base\n              \"h-[1px] w-full\",\n              // background color\n              \"bg-gray-200 dark:bg-gray-800\",\n            )}\n          />\n          <div className=\"whitespace-nowrap text-inherit\">{children}</div>\n          <div\n            className={cx(\n              // base\n              \"h-[1px] w-full\",\n              // background color\n              \"bg-gray-200 dark:bg-gray-800\",\n            )}\n          />\n        </>\n      ) : (\n        <div\n          className={cx(\n            // base\n            \"h-[1px] w-full\",\n            // background color\n            \"bg-gray-200 dark:bg-gray-800\",\n          )}\n        />\n      )}\n    </div>\n  ),\n)\n\nDivider.displayName = \"Divider\"\n\nexport { Divider }\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

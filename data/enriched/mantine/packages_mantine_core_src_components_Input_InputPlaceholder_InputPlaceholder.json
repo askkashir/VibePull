@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputPlaceholder_InputPlaceholder",
+  "name": "InputPlaceholder",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputPlaceholder/InputPlaceholder.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Input.module.css';\n\nexport type InputPlaceholderStylesNames = 'placeholder';\n\nexport interface InputPlaceholderProps\n  extends BoxProps, StylesApiProps<InputPlaceholderFactory>, ElementProps<'span'> {\n  __staticSelector?: string;\n\n  /** If set, the placeholder has error styles @default false */\n  error?: React.ReactNode;\n}\n\nexport type InputPlaceholderFactory = Factory<{\n  props: InputPlaceholderProps;\n  ref: HTMLSpanElement;\n  stylesNames: InputPlaceholderStylesNames;\n}>;\n\nexport const InputPlaceholder = factory<InputPlaceholderFactory>((_props) => {\n  const props = useProps('InputPlaceholder', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    __staticSelector,\n    error,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<InputPlaceholderFactory>({\n    name: ['InputPlaceholder', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'placeholder',\n  });\n\n  return (\n    <Box\n      {...getStyles('placeholder')}\n      mod={[{ error: !!error }, mod]}\n      component=\"span\"\n      {...others}\n    />\n  );\n});\n\nInputPlaceholder.classes = classes;\nInputPlaceholder.displayName = '@mantine/core/InputPlaceholder';\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "placeholder"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputPlaceholder_InputPlaceholder",
+      "name": "InputPlaceholder",
+      "path": "packages/@mantine/core/src/components/Input/InputPlaceholder/InputPlaceholder.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputPlaceholder_InputPlaceholder",
+      "name": "InputPlaceholder",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputPlaceholder/InputPlaceholder.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Input.module.css';\n\nexport type InputPlaceholderStylesNames = 'placeholder';\n\nexport interface InputPlaceholderProps\n  extends BoxProps, StylesApiProps<InputPlaceholderFactory>, ElementProps<'span'> {\n  __staticSelector?: string;\n\n  /** If set, the placeholder has error styles @default false */\n  error?: React.ReactNode;\n}\n\nexport type InputPlaceholderFactory = Factory<{\n  props: InputPlaceholderProps;\n  ref: HTMLSpanElement;\n  stylesNames: InputPlaceholderStylesNames;\n}>;\n\nexport const InputPlaceholder = factory<InputPlaceholderFactory>((_props) => {\n  const props = useProps('InputPlaceholder', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    __staticSelector,\n    error,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<InputPlaceholderFactory>({\n    name: ['InputPlaceholder', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'placeholder',\n  });\n\n  return (\n    <Box\n      {...getStyles('placeholder')}\n      mod={[{ error: !!error }, mod]}\n      component=\"span\"\n      {...others}\n    />\n  );\n});\n\nInputPlaceholder.classes = classes;\nInputPlaceholder.displayName = '@mantine/core/InputPlaceholder';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "InputPlaceholder is a input placeholder UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: InputPlaceholder\nDescription: InputPlaceholder is a input placeholder UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: input, mantine, placeholder\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/InputPlaceholder/InputPlaceholder.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Input.module.css';\n\nexport type InputPlaceholderStylesNames = 'placeholder';\n\nexport interface InputPlaceholderProps\n  extends BoxProps, StylesApiProps<InputPlaceholderFactory>, ElementProps<'span'> {\n  __staticSelector?: string;\n\n  /** If set, the placehold",
+  "prompt_version": 2,
+  "clean_id": "input-placeholder",
+  "display_name": "Input Placeholder",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-inputplaceholder-inputplaceholder.png"
+}

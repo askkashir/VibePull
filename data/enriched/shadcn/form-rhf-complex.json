@@ -1,0 +1,41 @@
+{
+  "id": "form-rhf-complex",
+  "name": "form-rhf-complex",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "validation",
+    "dynamic",
+    "complex"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-complex",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-complex\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "A reusable form component that utilizes React Hook Form for complex, dynamic data collection. It can be used to create forms within applications, making it easier to collect and validate user input. The component comes pre-packaged with error handling, conditional rendering, and customizable validation rules.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "focus",
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-complex\nDescription: A reusable form component that utilizes React Hook Form for complex, dynamic data collection. It can be used to create forms within applications, making it easier to collect and validate user input. The component comes pre-packaged with error handling, conditional rendering, and customizable validation rules.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. animated, focus, clickable\nTags: form, validation, dynamic, complex\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-complex",
+  "display_name": "Form Rhf Complex",
+  "preview_url": "/previews/shadcn/form-rhf-complex.png"
+}

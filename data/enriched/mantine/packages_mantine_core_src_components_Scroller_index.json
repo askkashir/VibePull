@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Scroller_index",
+  "name": "Scroller",
+  "source_code": "// packages/@mantine/core/src/components/Scroller/index.ts\nimport type {\n  ScrollerCssVariables,\n  ScrollerFactory,\n  ScrollerProps,\n  ScrollerStylesNames,\n} from './Scroller';\n\nexport { Scroller } from './Scroller';\n\nexport type { ScrollerProps, ScrollerStylesNames, ScrollerCssVariables, ScrollerFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "scroller"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Scroller_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Scroller/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Scroller_index",
+      "name": "Scroller",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Scroller/index.ts",
+          "content": "import type {\n  ScrollerCssVariables,\n  ScrollerFactory,\n  ScrollerProps,\n  ScrollerStylesNames,\n} from './Scroller';\n\nexport { Scroller } from './Scroller';\n\nexport type { ScrollerProps, ScrollerStylesNames, ScrollerCssVariables, ScrollerFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Scroller is a scroller UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Scroller\nDescription: Scroller is a scroller UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, scroller\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Scroller/index.ts\nimport type {\n  ScrollerCssVariables,\n  ScrollerFactory,\n  ScrollerProps,\n  ScrollerStylesNames,\n} from './Scroller';\n\nexport { Scroller } from './Scroller';\n\nexport type { ScrollerProps, ScrollerStylesNames, ScrollerCssVariables, ScrollerFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "scroller",
+  "display_name": "Scroller",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scroller-index.png"
+}

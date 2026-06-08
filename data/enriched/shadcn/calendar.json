@@ -1,0 +1,42 @@
+{
+  "id": "calendar",
+  "name": "calendar",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "date",
+    "scheduling",
+    "calendar",
+    "events"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "calendar",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## calendar\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** react-day-picker@latest, date-fns"
+  },
+  "visual_summary": "A calendar UI component displays a monthly or yearly view of dates. It is typically used to allow users to select dates, view upcoming events, or track holidays. Developers often use this component in applications related to event planning, scheduling, or travel booking.",
+  "style_tags": [
+    "modern",
+    "material",
+    "flat"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "selectable"
+  ],
+  "component_type": "calendar",
+  "generation_prompt": "Create a production-ready calendar component with the following characteristics:\n\nName: calendar\nDescription: A calendar UI component displays a monthly or yearly view of dates. It is typically used to allow users to select dates, view upcoming events, or track holidays. Developers often use this component in applications related to event planning, scheduling, or travel booking.\nStyle: modern, material, flat\nInteractions: clickable, hover, selectable\nTags: date, scheduling, calendar, events\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "calendar",
+  "display_name": "Calendar",
+  "preview_url": "/previews/shadcn/calendar.png"
+}

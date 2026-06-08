@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Checkbox_CheckboxIndicator_CheckboxIndicator.story",
+  "name": "CheckboxIndicator.story",
+  "source_code": "// packages/@mantine/core/src/components/Checkbox/CheckboxIndicator/CheckboxIndicator.story.tsx\nimport { useState } from 'react';\nimport { Checkbox } from '../Checkbox';\nimport { CheckboxIndicator } from './CheckboxIndicator';\n\nexport default { title: 'CheckboxIndicator' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxIndicator checked={checked} onClick={() => setChecked((c) => !c)} />\n      <CheckboxIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n      />\n      <CheckboxIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n        disabled\n      />\n      <CheckboxIndicator checked={checked} onClick={() => setChecked((c) => !c)} disabled />\n    </div>\n  );\n}\n\nexport function Sizes() {\n  const [checked, setChecked] = useState(false);\n  const sizes = ['xs', 'sm', 'md', 'lg', 'xl'];\n  const indicators = sizes.map((size) => (\n    <CheckboxIndicator\n      key={size}\n      size={size}\n      checked={checked}\n      onClick={() => setChecked((c) => !c)}\n    />\n  ));\n\n  const checkboxes = sizes.map((size) => (\n    <Checkbox key={size} size={size} checked={checked} onChange={() => setChecked((c) => !c)} />\n  ));\n\n  return (\n    <div style={{ padding: 40 }}>\n      <div style={{ display: 'flex' }}>{indicators}</div>\n      <div style={{ display: 'flex' }}>{checkboxes}</div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Checkbox_CheckboxIndicator_CheckboxIndicator.story",
+      "name": "CheckboxIndicator.story",
+      "path": "packages/@mantine/core/src/components/Checkbox/CheckboxIndicator/CheckboxIndicator.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Checkbox_CheckboxIndicator_CheckboxIndicator.story",
+      "name": "CheckboxIndicator.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Checkbox/CheckboxIndicator/CheckboxIndicator.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Checkbox } from '../Checkbox';\nimport { CheckboxIndicator } from './CheckboxIndicator';\n\nexport default { title: 'CheckboxIndicator' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <CheckboxIndicator checked={checked} onClick={() => setChecked((c) => !c)} />\n      <CheckboxIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n      />\n      <CheckboxIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n        disabled\n      />\n      <CheckboxIndicator checked={checked} onClick={() => setChecked((c) => !c)} disabled />\n    </div>\n  );\n}\n\nexport function Sizes() {\n  const [checked, setChecked] = useState(false);\n  const sizes = ['xs', 'sm', 'md', 'lg', 'xl'];\n  const indicators = sizes.map((size) => (\n    <CheckboxIndicator\n      key={size}\n      size={size}\n      checked={checked}\n      onClick={() => setChecked((c) => !c)}\n    />\n  ));\n\n  const checkboxes = sizes.map((size) => (\n    <Checkbox key={size} size={size} checked={checked} onChange={() => setChecked((c) => !c)} />\n  ));\n\n  return (\n    <div style={{ padding: 40 }}>\n      <div style={{ display: 'flex' }}>{indicators}</div>\n      <div style={{ display: 'flex' }}>{checkboxes}</div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

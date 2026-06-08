@@ -1,0 +1,58 @@
+{
+  "id": "text-loop",
+  "name": "text-loop",
+  "source_code": "// components/core/text-loop.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport {\n  motion,\n  AnimatePresence,\n  Transition,\n  Variants,\n  AnimatePresenceProps,\n} from 'motion/react';\nimport { useState, useEffect, Children } from 'react';\n\nexport type TextLoopProps = {\n  children: React.ReactNode[];\n  className?: string;\n  interval?: number;\n  transition?: Transition;\n  variants?: Variants;\n  onIndexChange?: (index: number) => void;\n  trigger?: boolean;\n  mode?: AnimatePresenceProps['mode'];\n};\n\nexport function TextLoop({\n  children,\n  className,\n  interval = 2,\n  transition = { duration: 0.3 },\n  variants,\n  onIndexChange,\n  trigger = true,\n  mode = 'popLayout',\n}: TextLoopProps) {\n  const [currentIndex, setCurrentIndex] = useState(0);\n  const items = Children.toArray(children);\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    const intervalMs = interval * 1000;\n    const timer = setInterval(() => {\n      setCurrentIndex((current) => {\n        const next = (current + 1) % items.length;\n        onIndexChange?.(next);\n        return next;\n      });\n    }, intervalMs);\n    return () => clearInterval(timer);\n  }, [items.length, interval, onIndexChange, trigger]);\n\n  const motionVariants: Variants = {\n    initial: { y: 20, opacity: 0 },\n    animate: { y: 0, opacity: 1 },\n    exit: { y: -20, opacity: 0 },\n  };\n\n  return (\n    <div className={cn('relative inline-block whitespace-nowrap', className)}>\n      <AnimatePresence mode={mode} initial={false}>\n        <motion.div\n          key={currentIndex}\n          initial='initial'\n          animate='animate'\n          exit='exit'\n          transition={transition}\n          variants={variants || motionVariants}\n        >\n          {items[currentIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "text",
+    "loop",
+    "animated",
+    "carousel",
+    "scrolling"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-loop.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-loop.tsx",
+      "sha": "0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+      "size": 1764,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-loop.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-loop.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-loop.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-loop.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-loop.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-loop",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-loop.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport {\n  motion,\n  AnimatePresence,\n  Transition,\n  Variants,\n  AnimatePresenceProps,\n} from 'motion/react';\nimport { useState, useEffect, Children } from 'react';\n\nexport type TextLoopProps = {\n  children: React.ReactNode[];\n  className?: string;\n  interval?: number;\n  transition?: Transition;\n  variants?: Variants;\n  onIndexChange?: (index: number) => void;\n  trigger?: boolean;\n  mode?: AnimatePresenceProps['mode'];\n};\n\nexport function TextLoop({\n  children,\n  className,\n  interval = 2,\n  transition = { duration: 0.3 },\n  variants,\n  onIndexChange,\n  trigger = true,\n  mode = 'popLayout',\n}: TextLoopProps) {\n  const [currentIndex, setCurrentIndex] = useState(0);\n  const items = Children.toArray(children);\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    const intervalMs = interval * 1000;\n    const timer = setInterval(() => {\n      setCurrentIndex((current) => {\n        const next = (current + 1) % items.length;\n        onIndexChange?.(next);\n        return next;\n      });\n    }, intervalMs);\n    return () => clearInterval(timer);\n  }, [items.length, interval, onIndexChange, trigger]);\n\n  const motionVariants: Variants = {\n    initial: { y: 20, opacity: 0 },\n    animate: { y: 0, opacity: 1 },\n    exit: { y: -20, opacity: 0 },\n  };\n\n  return (\n    <div className={cn('relative inline-block whitespace-nowrap', className)}>\n      <AnimatePresence mode={mode} initial={false}>\n        <motion.div\n          key={currentIndex}\n          initial='initial'\n          animate='animate'\n          exit='exit'\n          transition={transition}\n          variants={variants || motionVariants}\n        >\n          {items[currentIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "Text Loop is an animated component that displays a list of children, cycling through them at a specified interval. It's suitable for showcasing multiple text-based items in a single view, making it ideal for use in marketing pages, product demos, or any other scenario where a scrolling text carousel is needed.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated",
+    "scrolling"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: text-loop\nDescription: Text Loop is an animated component that displays a list of children, cycling through them at a specified interval. It's suitable for showcasing multiple text-based items in a single view, making it ideal for use in marketing pages, product demos, or any other scenario where a scrolling text carousel is needed.\nStyle: minimal\nInteractions: animated, scrolling\nTags: text, loop, animated, carousel, scrolling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/text-loop.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport {\n  motion,\n  AnimatePresence,\n  Transition,\n  Variants,\n  AnimatePresenceProps,\n} from 'motion/react';\nimport { useState, useEffect, Children } from 'react';\n\nexport type TextLoopProps = {\n  children: React.ReactNode[];\n  className?: string;\n  interval?: number;\n  transition?: Transition;\n  variants?: Variants;\n  onIndexChange?: (index: number) => void;\n  trigger?: boolean;\n  mode?: AnimatePresenceProps['mod",
+  "prompt_version": 2,
+  "clean_id": "text-loop",
+  "display_name": "Text Loop",
+  "preview_url": "/previews/motionprimitives/text-loop.png"
+}

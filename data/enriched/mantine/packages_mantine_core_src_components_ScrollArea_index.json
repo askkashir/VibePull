@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_index",
+  "name": "ScrollArea",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/index.ts\nimport type {\n  ScrollAreaAutosizeProps,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n  ScrollAreaProps,\n  ScrollAreaStylesNames,\n} from './ScrollArea';\n\nexport { ScrollArea, ScrollAreaAutosize } from './ScrollArea';\nexport { useScrollAreaContext } from './ScrollArea.context';\n\nexport type {\n  ScrollAreaProps,\n  ScrollAreaAutosizeProps,\n  ScrollAreaStylesNames,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "area",
+    "mantine",
+    "other",
+    "scroll"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ScrollArea/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_index",
+      "name": "ScrollArea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/index.ts",
+          "content": "import type {\n  ScrollAreaAutosizeProps,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n  ScrollAreaProps,\n  ScrollAreaStylesNames,\n} from './ScrollArea';\n\nexport { ScrollArea, ScrollAreaAutosize } from './ScrollArea';\nexport { useScrollAreaContext } from './ScrollArea.context';\n\nexport type {\n  ScrollAreaProps,\n  ScrollAreaAutosizeProps,\n  ScrollAreaStylesNames,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ScrollArea is a scroll area UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ScrollArea\nDescription: ScrollArea is a scroll area UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: area, mantine, other, scroll\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/index.ts\nimport type {\n  ScrollAreaAutosizeProps,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n  ScrollAreaProps,\n  ScrollAreaStylesNames,\n} from './ScrollArea';\n\nexport { ScrollArea, ScrollAreaAutosize } from './ScrollArea';\nexport { useScrollAreaContext } from './ScrollArea.context';\n\nexport type {\n  ScrollAreaProps,\n  ScrollAreaAutosizeProps,\n  ScrollAreaStylesNames,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "scroll-area",
+  "display_name": "Scroll Area",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-index.png"
+}

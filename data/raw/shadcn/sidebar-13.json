@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-13",
+  "name": "sidebar-13",
+  "source_code": "",
+  "description": "A sidebar in a dialog.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-13",
+      "type": "registry:block",
+      "description": "A sidebar in a dialog.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-13\n\nA sidebar in a dialog.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

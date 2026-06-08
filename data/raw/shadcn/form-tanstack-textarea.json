@@ -1,0 +1,22 @@
+{
+  "id": "form-tanstack-textarea",
+  "name": "form-tanstack-textarea",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-textarea",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-textarea\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  }
+}

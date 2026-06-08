@@ -1,0 +1,62 @@
+{
+  "id": "border-beam-demo",
+  "name": "Border Beam Demo",
+  "source_code": "import { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function Component() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Login</CardTitle>\n        <CardDescription>\n          Enter your credentials to access your account.\n        </CardDescription>\n      </CardHeader>\n      <CardContent>\n        <form>\n          <div className=\"grid w-full items-center gap-4\">\n            <div className=\"flex flex-col space-y-1.5\">\n              <Label htmlFor=\"email\">Email</Label>\n              <Input id=\"email\" type=\"email\" placeholder=\"Enter your email\" />\n            </div>\n            <div className=\"flex flex-col space-y-1.5\">\n              <Label htmlFor=\"password\">Password</Label>\n              <Input\n                id=\"password\"\n                type=\"password\"\n                placeholder=\"Enter your password\"\n              />\n            </div>\n          </div>\n        </form>\n      </CardContent>\n      <CardFooter className=\"flex justify-between\">\n        <Button variant=\"outline\">Register</Button>\n        <Button>Login</Button>\n      </CardFooter>\n      <BorderBeam duration={8} size={100} />\n    </Card>\n  )\n}\n",
+  "description": "Example showing an animated border beam effect.",
+  "tags": [
+    "form",
+    "input",
+    "button",
+    "login",
+    "registration"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "border-beam-demo",
+      "type": "registry:example",
+      "title": "Border Beam Demo",
+      "description": "Example showing an animated border beam effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/example/border-beam-demo.tsx",
+          "type": "registry:example",
+          "target": "components/border-beam-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "border-beam-demo",
+      "type": "registry:example",
+      "title": "Border Beam Demo",
+      "description": "Example showing an animated border beam effect.",
+      "registryDependencies": [
+        "@magicui/border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/example/border-beam-demo.tsx",
+          "content": "import { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function Component() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Login</CardTitle>\n        <CardDescription>\n          Enter your credentials to access your account.\n        </CardDescription>\n      </CardHeader>\n      <CardContent>\n        <form>\n          <div className=\"grid w-full items-center gap-4\">\n            <div className=\"flex flex-col space-y-1.5\">\n              <Label htmlFor=\"email\">Email</Label>\n              <Input id=\"email\" type=\"email\" placeholder=\"Enter your email\" />\n            </div>\n            <div className=\"flex flex-col space-y-1.5\">\n              <Label htmlFor=\"password\">Password</Label>\n              <Input\n                id=\"password\"\n                type=\"password\"\n                placeholder=\"Enter your password\"\n              />\n            </div>\n          </div>\n        </form>\n      </CardContent>\n      <CardFooter className=\"flex justify-between\">\n        <Button variant=\"outline\">Register</Button>\n        <Button>Login</Button>\n      </CardFooter>\n      <BorderBeam duration={8} size={100} />\n    </Card>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A UI component that demonstrates the usage of border beam effects, typically used in login or registration forms to draw attention to form inputs.",
+  "style_tags": [
+    "dark"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Border Beam Demo\nDescription: A UI component that demonstrates the usage of border beam effects, typically used in login or registration forms to draw attention to form inputs.\nStyle: dark\nInteractions: animated\nTags: form, input, button, login, registration\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function Component() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Login</CardTitle>\n        <CardD",
+  "prompt_version": 2,
+  "clean_id": "border-beam-demo",
+  "display_name": "Border Beam Demo",
+  "preview_url": "/previews/magicui/border-beam-demo.png"
+}

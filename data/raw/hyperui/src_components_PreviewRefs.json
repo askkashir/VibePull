@@ -1,0 +1,31 @@
+{
+  "id": "src_components_PreviewRefs",
+  "name": "PreviewRefs",
+  "source_code": "// src/components/PreviewRefs.astro\n---\ninterface Props {\n  refs: string[]\n  url: string\n  prefix?: string\n}\n\nconst { refs, url, prefix } = Astro.props\n---\n\n{\n  refs.length ? (\n    <p class=\"text-sm text-gray-500\">\n      {prefix ? `${prefix} ` : null}\n      {refs\n        .map((ref) => (\n          <a\n            href={`${url}${ref}`}\n            target=\"_blank\"\n            rel=\"noreferrer\"\n            class=\"font-medium transition-colors hover:text-gray-900\"\n          >\n            {ref}\n          </a>\n        ))\n        .reduce((prev, current) => [prev, ', ', current])}\n    </p>\n  ) : null\n}\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewRefs",
+      "name": "PreviewRefs",
+      "path": "src/components/PreviewRefs.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewRefs",
+      "name": "PreviewRefs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewRefs.astro",
+          "content": "---\ninterface Props {\n  refs: string[]\n  url: string\n  prefix?: string\n}\n\nconst { refs, url, prefix } = Astro.props\n---\n\n{\n  refs.length ? (\n    <p class=\"text-sm text-gray-500\">\n      {prefix ? `${prefix} ` : null}\n      {refs\n        .map((ref) => (\n          <a\n            href={`${url}${ref}`}\n            target=\"_blank\"\n            rel=\"noreferrer\"\n            class=\"font-medium transition-colors hover:text-gray-900\"\n          >\n            {ref}\n          </a>\n        ))\n        .reduce((prev, current) => [prev, ', ', current])}\n    </p>\n  ) : null\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

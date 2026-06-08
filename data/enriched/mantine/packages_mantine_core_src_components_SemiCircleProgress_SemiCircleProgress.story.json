@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_SemiCircleProgress_SemiCircleProgress.story",
+  "name": "SemiCircleProgress.story",
+  "source_code": "// packages/@mantine/core/src/components/SemiCircleProgress/SemiCircleProgress.story.tsx\nimport { SemiCircleProgress } from './SemiCircleProgress';\n\nexport default { title: 'SemiCircleProgress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <SemiCircleProgress value={40} label=\"40%\" labelPosition=\"bottom\" />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "circle",
+    "mantine",
+    "other",
+    "progress",
+    "semi",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "SemiCircleProgress_SemiCircleProgress.story",
+      "name": "SemiCircleProgress.story",
+      "path": "packages/@mantine/core/src/components/SemiCircleProgress/SemiCircleProgress.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_SemiCircleProgress_SemiCircleProgress.story",
+      "name": "SemiCircleProgress.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/SemiCircleProgress/SemiCircleProgress.story.tsx",
+          "content": "import { SemiCircleProgress } from './SemiCircleProgress';\n\nexport default { title: 'SemiCircleProgress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <SemiCircleProgress value={40} label=\"40%\" labelPosition=\"bottom\" />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "SemiCircleProgress.story is a semi circle progress story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SemiCircleProgress.story\nDescription: SemiCircleProgress.story is a semi circle progress story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: circle, mantine, other, progress, semi, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/SemiCircleProgress/SemiCircleProgress.story.tsx\nimport { SemiCircleProgress } from './SemiCircleProgress';\n\nexport default { title: 'SemiCircleProgress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <SemiCircleProgress value={40} label=\"40%\" labelPosition=\"bottom\" />\n    </div>\n  );\n}\n",
+  "prompt_version": 2,
+  "clean_id": "semi-circle-progress",
+  "display_name": "Semi Circle Progress",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-semicircleprogress-semicircleprogress-story.png"
+}

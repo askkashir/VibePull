@@ -1,0 +1,57 @@
+{
+  "id": "comic-text-demo",
+  "name": "Comic Text Demo",
+  "source_code": "import { ComicText } from \"@/registry/magicui/comic-text\"\n\nexport default function ComicTextDemo() {\n  return (\n    <div className=\"space-y-8 text-center\">\n      <ComicText fontSize={5}>BOOM!</ComicText>\n    </div>\n  )\n}\n",
+  "description": "Example showing comic text animation.",
+  "tags": [
+    "comic-text",
+    "text-component"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "comic-text-demo",
+      "type": "registry:example",
+      "title": "Comic Text Demo",
+      "description": "Example showing comic text animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/comic-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/comic-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/comic-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "comic-text-demo",
+      "type": "registry:example",
+      "title": "Comic Text Demo",
+      "description": "Example showing comic text animation.",
+      "registryDependencies": [
+        "@magicui/comic-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/comic-text-demo.tsx",
+          "content": "import { ComicText } from \"@/registry/magicui/comic-text\"\n\nexport default function ComicTextDemo() {\n  return (\n    <div className=\"space-y-8 text-center\">\n      <ComicText fontSize={5}>BOOM!</ComicText>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A text component displaying a single line of text with a comic font style, useful for highlighting a point in a hero section or a call to action",
+  "style_tags": [
+    "comic"
+  ],
+  "interaction_tags": [],
+  "component_type": "text_component",
+  "generation_prompt": "Create a production-ready text_component component with the following characteristics:\n\nName: Comic Text Demo\nDescription: A text component displaying a single line of text with a comic font style, useful for highlighting a point in a hero section or a call to action\nStyle: comic\nInteractions: \nTags: comic-text, text-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ComicText } from \"@/registry/magicui/comic-text\"\n\nexport default function ComicTextDemo() {\n  return (\n    <div className=\"space-y-8 text-center\">\n      <ComicText fontSize={5}>BOOM!</ComicText>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "comic-text-demo",
+  "display_name": "Comic Text Demo",
+  "preview_url": "/previews/magicui/comic-text-demo.png"
+}

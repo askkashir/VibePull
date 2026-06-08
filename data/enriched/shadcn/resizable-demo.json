@@ -1,0 +1,40 @@
+{
+  "id": "resizable-demo",
+  "name": "resizable-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "settings",
+    "preferences",
+    "drag-and-drop",
+    "resize"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "resizable-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## resizable-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The resizable-demo component is a widget that showcases how to implement resizable functionality. It is used when a developer needs to display a content that requires adjustable size. It is typically used in scenarios where content needs to be resized dynamically, such as in a settings or preferences panel.",
+  "style_tags": [
+    "default",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: resizable-demo\nDescription: The resizable-demo component is a widget that showcases how to implement resizable functionality. It is used when a developer needs to display a content that requires adjustable size. It is typically used in scenarios where content needs to be resized dynamically, such as in a settings or preferences panel.\nStyle: default, customizable\nInteractions: clickable, draggable\nTags: settings, preferences, drag-and-drop, resize\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "resizable-demo",
+  "display_name": "Resizable Demo",
+  "preview_url": "/previews/shadcn/resizable-demo.png"
+}

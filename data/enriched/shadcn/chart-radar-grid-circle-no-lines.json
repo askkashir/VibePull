@@ -1,0 +1,42 @@
+{
+  "id": "chart-radar-grid-circle-no-lines",
+  "name": "chart-radar-grid-circle-no-lines",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radar",
+    "grid",
+    "circle",
+    "data-visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-grid-circle-no-lines",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-grid-circle-no-lines\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Chart Radar Grid Circle No Lines component is a high-contrast radar chart with a grid-based layout and circular markers. It is ideal for displaying multiple data points in a clear and concise manner, particularly in reports, dashboards, or analysis tools.",
+  "style_tags": [
+    "high-contrast",
+    "modern",
+    "clean"
+  ],
+  "interaction_tags": [
+    "hover-enabled",
+    "responsive"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radar-grid-circle-no-lines\nDescription: The Chart Radar Grid Circle No Lines component is a high-contrast radar chart with a grid-based layout and circular markers. It is ideal for displaying multiple data points in a clear and concise manner, particularly in reports, dashboards, or analysis tools.\nStyle: high-contrast, modern, clean\nInteractions: hover-enabled, responsive\nTags: chart, radar, grid, circle, data-visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-grid-circle-no-lines",
+  "display_name": "Chart Radar Grid Circle No Lines",
+  "preview_url": "/previews/shadcn/chart-radar-grid-circle-no-lines.png"
+}

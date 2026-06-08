@@ -1,0 +1,39 @@
+{
+  "id": "typography-blockquote",
+  "name": "typography-blockquote",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "text",
+    "content",
+    "blockquote",
+    "blockquote",
+    "quote"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-blockquote",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-blockquote\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The typography-blockquote component is a styled blockquote element that is used to display quotes or large blocks of text in a visually appealing way, typically used in blog posts, articles, and other content-rich pages. It is often used to draw attention to important text or to highlight a quote from a notable figure. It is usually larger in size and darker in color than regular text.",
+  "style_tags": [
+    "typographic",
+    "dark",
+    "monochromatic"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typography-blockquote\nDescription: The typography-blockquote component is a styled blockquote element that is used to display quotes or large blocks of text in a visually appealing way, typically used in blog posts, articles, and other content-rich pages. It is often used to draw attention to important text or to highlight a quote from a notable figure. It is usually larger in size and darker in color than regular text.\nStyle: typographic, dark, monochromatic\nInteractions: \nTags: text, content, blockquote, blockquote, quote\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-blockquote",
+  "display_name": "Typography Blockquote",
+  "preview_url": "/previews/shadcn/typography-blockquote.png"
+}

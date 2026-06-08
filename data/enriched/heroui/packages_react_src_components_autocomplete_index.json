@@ -1,0 +1,49 @@
+{
+  "id": "packages_react_src_components_autocomplete_index",
+  "name": "autocomplete",
+  "source_code": "// packages/react/src/components/autocomplete/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  AutocompleteClearButton,\n  AutocompleteFilter,\n  AutocompleteIndicator,\n  AutocompletePopover,\n  AutocompleteRoot,\n  AutocompleteTrigger,\n  AutocompleteValue,\n} from \"./autocomplete\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Autocomplete = Object.assign(AutocompleteRoot, {\n  Root: AutocompleteRoot,\n  Trigger: AutocompleteTrigger,\n  Value: AutocompleteValue,\n  Indicator: AutocompleteIndicator,\n  Popover: AutocompletePopover,\n  Filter: AutocompleteFilter,\n  ClearButton: AutocompleteClearButton,\n});\n\nexport type Autocomplete<T extends object = object, M extends \"single\" | \"multiple\" = \"single\"> = {\n  Props: ComponentProps<typeof AutocompleteRoot<T, M>>;\n  RootProps: ComponentProps<typeof AutocompleteRoot<T, M>>;\n  TriggerProps: ComponentProps<typeof AutocompleteTrigger>;\n  ValueProps: ComponentProps<typeof AutocompleteValue>;\n  IndicatorProps: ComponentProps<typeof AutocompleteIndicator>;\n  PopoverProps: ComponentProps<typeof AutocompletePopover>;\n  FilterProps: ComponentProps<typeof AutocompleteFilter>;\n  ClearButtonProps: ComponentProps<typeof AutocompleteClearButton>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  AutocompleteClearButton,\n  AutocompleteFilter,\n  AutocompleteTrigger,\n  AutocompleteIndicator,\n  AutocompletePopover,\n  AutocompleteRoot,\n  AutocompleteValue,\n};\n\nexport type {\n  AutocompleteRootProps,\n  AutocompleteRootProps as AutocompleteProps,\n  AutocompleteTriggerProps,\n  AutocompleteValueProps,\n  AutocompleteIndicatorProps,\n  AutocompletePopoverProps,\n  AutocompleteFilterProps,\n  AutocompleteClearButtonProps,\n} from \"./autocomplete\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {autocompleteVariants} from \"@heroui/styles\";\n\nexport type {AutocompleteVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "filter",
+    "select"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "autocomplete_index",
+      "name": "index",
+      "path": "packages/react/src/components/autocomplete/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_autocomplete_index",
+      "name": "autocomplete",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/autocomplete/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  AutocompleteClearButton,\n  AutocompleteFilter,\n  AutocompleteIndicator,\n  AutocompletePopover,\n  AutocompleteRoot,\n  AutocompleteTrigger,\n  AutocompleteValue,\n} from \"./autocomplete\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Autocomplete = Object.assign(AutocompleteRoot, {\n  Root: AutocompleteRoot,\n  Trigger: AutocompleteTrigger,\n  Value: AutocompleteValue,\n  Indicator: AutocompleteIndicator,\n  Popover: AutocompletePopover,\n  Filter: AutocompleteFilter,\n  ClearButton: AutocompleteClearButton,\n});\n\nexport type Autocomplete<T extends object = object, M extends \"single\" | \"multiple\" = \"single\"> = {\n  Props: ComponentProps<typeof AutocompleteRoot<T, M>>;\n  RootProps: ComponentProps<typeof AutocompleteRoot<T, M>>;\n  TriggerProps: ComponentProps<typeof AutocompleteTrigger>;\n  ValueProps: ComponentProps<typeof AutocompleteValue>;\n  IndicatorProps: ComponentProps<typeof AutocompleteIndicator>;\n  PopoverProps: ComponentProps<typeof AutocompletePopover>;\n  FilterProps: ComponentProps<typeof AutocompleteFilter>;\n  ClearButtonProps: ComponentProps<typeof AutocompleteClearButton>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  AutocompleteClearButton,\n  AutocompleteFilter,\n  AutocompleteTrigger,\n  AutocompleteIndicator,\n  AutocompletePopover,\n  AutocompleteRoot,\n  AutocompleteValue,\n};\n\nexport type {\n  AutocompleteRootProps,\n  AutocompleteRootProps as AutocompleteProps,\n  AutocompleteTriggerProps,\n  AutocompleteValueProps,\n  AutocompleteIndicatorProps,\n  AutocompletePopoverProps,\n  AutocompleteFilterProps,\n  AutocompleteClearButtonProps,\n} from \"./autocomplete\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {autocompleteVariants} from \"@heroui/styles\";\n\nexport type {AutocompleteVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A drop-down menu for filtering and selecting options. Useful for long lists of items where users need to quickly search and select an item. Use when you have a list of options and want to simplify the user's selection process.",
+  "style_tags": [
+    "flat",
+    "shadow",
+    "bordered"
+  ],
+  "interaction_tags": [
+    "searchable",
+    "selectable",
+    "draggable"
+  ],
+  "component_type": "autocomplet",
+  "generation_prompt": "Create a production-ready autocomplet component with the following characteristics:\n\nName: autocomplete\nDescription: A drop-down menu for filtering and selecting options. Useful for long lists of items where users need to quickly search and select an item. Use when you have a list of options and want to simplify the user's selection process.\nStyle: flat, shadow, bordered\nInteractions: searchable, selectable, draggable\nTags: dropdown, filter, select\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/autocomplete/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  AutocompleteClearButton,\n  AutocompleteFilter,\n  AutocompleteIndicator,\n  AutocompletePopover,\n  AutocompleteRoot,\n  AutocompleteTrigger,\n  AutocompleteValue,\n} from \"./autocomplete\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -------------------------------------------------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "autocomplete",
+  "display_name": "Autocomplete",
+  "preview_url": "/previews/heroui/packages-react-src-components-autocomplete-index.png"
+}

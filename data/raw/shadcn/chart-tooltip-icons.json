@@ -1,0 +1,22 @@
+{
+  "id": "chart-tooltip-icons",
+  "name": "chart-tooltip-icons",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-icons",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-icons\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

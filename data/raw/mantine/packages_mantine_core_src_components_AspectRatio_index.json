@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AspectRatio_index",
+  "name": "AspectRatio",
+  "source_code": "// packages/@mantine/core/src/components/AspectRatio/index.ts\nimport type {\n  AspectRatioCssVariables,\n  AspectRatioFactory,\n  AspectRatioProps,\n  AspectRatioStylesNames,\n} from './AspectRatio';\n\nexport { AspectRatio } from './AspectRatio';\n\nexport type {\n  AspectRatioProps,\n  AspectRatioStylesNames,\n  AspectRatioCssVariables,\n  AspectRatioFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AspectRatio_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/AspectRatio/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AspectRatio_index",
+      "name": "AspectRatio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AspectRatio/index.ts",
+          "content": "import type {\n  AspectRatioCssVariables,\n  AspectRatioFactory,\n  AspectRatioProps,\n  AspectRatioStylesNames,\n} from './AspectRatio';\n\nexport { AspectRatio } from './AspectRatio';\n\nexport type {\n  AspectRatioProps,\n  AspectRatioStylesNames,\n  AspectRatioCssVariables,\n  AspectRatioFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

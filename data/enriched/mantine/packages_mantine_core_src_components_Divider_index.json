@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Divider_index",
+  "name": "Divider",
+  "source_code": "// packages/@mantine/core/src/components/Divider/index.ts\nimport type {\n  DividerCssVariables,\n  DividerFactory,\n  DividerProps,\n  DividerStylesNames,\n  DividerVariant,\n} from './Divider';\n\nexport { Divider } from './Divider';\n\nexport type {\n  DividerProps,\n  DividerStylesNames,\n  DividerCssVariables,\n  DividerFactory,\n  DividerVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "component",
+    "layout",
+    "ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Divider_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Divider/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Divider_index",
+      "name": "Divider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Divider/index.ts",
+          "content": "import type {\n  DividerCssVariables,\n  DividerFactory,\n  DividerProps,\n  DividerStylesNames,\n  DividerVariant,\n} from './Divider';\n\nexport { Divider } from './Divider';\n\nexport type {\n  DividerProps,\n  DividerStylesNames,\n  DividerCssVariables,\n  DividerFactory,\n  DividerVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A Divider is a horizontal or vertical line used to separate content. Use it to create visual separation between elements in your application. Typically used in lists, headers, or footers.",
+  "style_tags": [
+    "e.g. minimal",
+    "bare"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Divider\nDescription: A Divider is a horizontal or vertical line used to separate content. Use it to create visual separation between elements in your application. Typically used in lists, headers, or footers.\nStyle: e.g. minimal, bare\nInteractions: \nTags: component, layout, ui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Divider/index.ts\nimport type {\n  DividerCssVariables,\n  DividerFactory,\n  DividerProps,\n  DividerStylesNames,\n  DividerVariant,\n} from './Divider';\n\nexport { Divider } from './Divider';\n\nexport type {\n  DividerProps,\n  DividerStylesNames,\n  DividerCssVariables,\n  DividerFactory,\n  DividerVariant,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "divider",
+  "display_name": "Divider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-divider-index.png"
+}

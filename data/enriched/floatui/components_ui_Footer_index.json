@@ -1,0 +1,44 @@
+{
+  "id": "components_ui_Footer_index",
+  "name": "Footer",
+  "source_code": "// components/ui/Footer/index.tsx\n\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Footer from \"./Footer\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return !isInComponentsPage ? <Footer /> : <></>;\n};\n",
+  "description": "",
+  "tags": [
+    "footer",
+    "website"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Footer_index",
+      "name": "index",
+      "path": "components/ui/Footer/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Footer_index",
+      "name": "Footer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Footer/index.tsx",
+          "content": "\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Footer from \"./Footer\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return !isInComponentsPage ? <Footer /> : <></>;\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "This component displays footer content on a webpage. It can be used in most web applications to display website links, social media links, or copyright information. Developers would typically use this in conjunction with a Navbar or other Header components.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "footer",
+  "generation_prompt": "Create a production-ready footer component with the following characteristics:\n\nName: Footer\nDescription: This component displays footer content on a webpage. It can be used in most web applications to display website links, social media links, or copyright information. Developers would typically use this in conjunction with a Navbar or other Header components.\nStyle: default\nInteractions: static\nTags: footer, website\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Footer/index.tsx\n\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Footer from \"./Footer\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return !isInComponentsPage ? <Footer /> : <></>;\n};\n",
+  "prompt_version": 2,
+  "clean_id": "footer",
+  "display_name": "Footer",
+  "preview_url": "/previews/floatui/components-ui-footer-index.png"
+}

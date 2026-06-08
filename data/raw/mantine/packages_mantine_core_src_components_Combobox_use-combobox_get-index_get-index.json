@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_use-combobox_get-index_get-index",
+  "name": "get-index",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-index.ts\nexport function getPreviousIndex(\n  currentIndex: number,\n  elements: NodeListOf<HTMLDivElement> | HTMLDivElement[],\n  loop: boolean\n) {\n  for (let i = currentIndex - 1; i >= 0; i -= 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = elements.length - 1; i > -1; i -= 1) {\n      if (!elements[i].hasAttribute('data-combobox-disabled')) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getNextIndex(\n  currentIndex: number,\n  elements: NodeListOf<HTMLDivElement> | HTMLDivElement[],\n  loop: boolean\n) {\n  for (let i = currentIndex + 1; i < elements.length; i += 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = 0; i < elements.length; i += 1) {\n      if (!elements[i].hasAttribute('data-combobox-disabled')) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getFirstIndex(elements: NodeListOf<HTMLDivElement> | HTMLDivElement[]) {\n  for (let i = 0; i < elements.length; i += 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  return -1;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_use-combobox_get-index_get-index",
+      "name": "get-index",
+      "path": "packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_use-combobox_get-index_get-index",
+      "name": "get-index",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-index.ts",
+          "content": "export function getPreviousIndex(\n  currentIndex: number,\n  elements: NodeListOf<HTMLDivElement> | HTMLDivElement[],\n  loop: boolean\n) {\n  for (let i = currentIndex - 1; i >= 0; i -= 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = elements.length - 1; i > -1; i -= 1) {\n      if (!elements[i].hasAttribute('data-combobox-disabled')) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getNextIndex(\n  currentIndex: number,\n  elements: NodeListOf<HTMLDivElement> | HTMLDivElement[],\n  loop: boolean\n) {\n  for (let i = currentIndex + 1; i < elements.length; i += 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = 0; i < elements.length; i += 1) {\n      if (!elements[i].hasAttribute('data-combobox-disabled')) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getFirstIndex(elements: NodeListOf<HTMLDivElement> | HTMLDivElement[]) {\n  for (let i = 0; i < elements.length; i += 1) {\n    if (!elements[i].hasAttribute('data-combobox-disabled')) {\n      return i;\n    }\n  }\n\n  return -1;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "packages_radix-ui-themes_src_components_strong",
+  "name": "strong",
+  "source_code": "// packages/radix-ui-themes/src/components/strong.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { extractProps } from '../helpers/extract-props.js';\nimport { strongPropDefs } from './strong.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype StrongElement = React.ElementRef<'strong'>;\ntype StrongOwnProps = GetPropDefTypes<typeof strongPropDefs>;\ninterface StrongProps extends ComponentPropsWithout<'strong', RemovedProps>, StrongOwnProps {}\nconst Strong = React.forwardRef<StrongElement, StrongProps>((props, forwardedRef) => {\n  const { asChild, className, ...strongProps } = extractProps(props, strongPropDefs);\n  const Comp = asChild ? Slot.Root : 'strong';\n  return (\n    <Comp {...strongProps} ref={forwardedRef} className={classNames('rt-Strong', className)} />\n  );\n});\nStrong.displayName = 'Strong';\n\nexport { Strong };\nexport type { StrongProps };\n",
+  "description": "",
+  "tags": [
+    "wrapper",
+    "text",
+    "styling"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_strong",
+      "name": "strong.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/strong.tsx",
+      "sha": "59eeab39d422de0c2492ed81edcf4fa0b62b11c8",
+      "size": 990,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/strong.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/strong.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/59eeab39d422de0c2492ed81edcf4fa0b62b11c8",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/strong.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/strong.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/59eeab39d422de0c2492ed81edcf4fa0b62b11c8",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/strong.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_strong",
+      "name": "strong",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/strong.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { extractProps } from '../helpers/extract-props.js';\nimport { strongPropDefs } from './strong.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype StrongElement = React.ElementRef<'strong'>;\ntype StrongOwnProps = GetPropDefTypes<typeof strongPropDefs>;\ninterface StrongProps extends ComponentPropsWithout<'strong', RemovedProps>, StrongOwnProps {}\nconst Strong = React.forwardRef<StrongElement, StrongProps>((props, forwardedRef) => {\n  const { asChild, className, ...strongProps } = extractProps(props, strongPropDefs);\n  const Comp = asChild ? Slot.Root : 'strong';\n  return (\n    <Comp {...strongProps} ref={forwardedRef} className={classNames('rt-Strong', className)} />\n  );\n});\nStrong.displayName = 'Strong';\n\nexport { Strong };\nexport type { StrongProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "Strong is a wrapper component that displays its children in bold text. It can be used to emphasize important text on a page. The Strong component can accept an optional className and/or asChild prop to customize its behavior.",
+  "style_tags": [
+    "minimal",
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: strong\nDescription: Strong is a wrapper component that displays its children in bold text. It can be used to emphasize important text on a page. The Strong component can accept an optional className and/or asChild prop to customize its behavior.\nStyle: minimal, default\nInteractions: \nTags: wrapper, text, styling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/strong.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { extractProps } from '../helpers/extract-props.js';\nimport { strongPropDefs } from './strong.props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype StrongElement = React.ElementRef<'strong'>;\ntype StrongOwnProps = GetProp",
+  "prompt_version": 2,
+  "clean_id": "strong",
+  "display_name": "Strong",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-strong.png"
+}

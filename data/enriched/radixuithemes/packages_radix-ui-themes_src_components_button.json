@@ -1,0 +1,58 @@
+{
+  "id": "packages_radix-ui-themes_src_components_button",
+  "name": "button",
+  "source_code": "// packages/radix-ui-themes/src/components/button.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { BaseButton } from './_internal/base-button.js';\n\ntype ButtonElement = React.ElementRef<typeof BaseButton>;\ninterface ButtonProps extends React.ComponentPropsWithoutRef<typeof BaseButton> {}\nconst Button = React.forwardRef<ButtonElement, ButtonProps>(\n  ({ className, ...props }, forwardedRef) => (\n    <BaseButton {...props} ref={forwardedRef} className={classNames('rt-Button', className)} />\n  ),\n);\nButton.displayName = 'Button';\n\nexport { Button };\nexport type { ButtonProps };\n",
+  "description": "",
+  "tags": [
+    "basic",
+    "button",
+    "ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_button",
+      "name": "button.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/button.tsx",
+      "sha": "efc696fd27709930aaae7b05ae6041c46cb9f064",
+      "size": 561,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/button.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/button.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/efc696fd27709930aaae7b05ae6041c46cb9f064",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/button.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/button.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/efc696fd27709930aaae7b05ae6041c46cb9f064",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/button.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_button",
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/button.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { BaseButton } from './_internal/base-button.js';\n\ntype ButtonElement = React.ElementRef<typeof BaseButton>;\ninterface ButtonProps extends React.ComponentPropsWithoutRef<typeof BaseButton> {}\nconst Button = React.forwardRef<ButtonElement, ButtonProps>(\n  ({ className, ...props }, forwardedRef) => (\n    <BaseButton {...props} ref={forwardedRef} className={classNames('rt-Button', className)} />\n  ),\n);\nButton.displayName = 'Button';\n\nexport { Button };\nexport type { ButtonProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A basic button component with customizable design and interaction. A developer would use it to trigger an action or navigate to another page.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button\nDescription: A basic button component with customizable design and interaction. A developer would use it to trigger an action or navigate to another page.\nStyle: e.g. minimal\nInteractions: e.g. clickable, hover\nTags: basic, button, ui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/button.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { BaseButton } from './_internal/base-button.js';\n\ntype ButtonElement = React.ElementRef<typeof BaseButton>;\ninterface ButtonProps extends React.ComponentPropsWithoutRef<typeof BaseButton> {}\nconst Button = React.forwardRef<ButtonElement, ButtonProps>(\n  ({ className, ...props }, forwardedRef) => (\n    <BaseButton {...props} ref={forwardedRef} className={classNames('",
+  "prompt_version": 2,
+  "clean_id": "button",
+  "display_name": "Button",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-button.png"
+}

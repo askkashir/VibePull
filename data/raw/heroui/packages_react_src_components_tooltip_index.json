@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_tooltip_index",
+  "name": "tooltip",
+  "source_code": "// packages/react/src/components/tooltip/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {TooltipArrow, TooltipContent, TooltipRoot, TooltipTrigger} from \"./tooltip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Tooltip = Object.assign(TooltipRoot, {\n  Root: TooltipRoot,\n  Trigger: TooltipTrigger,\n  Content: TooltipContent,\n  Arrow: TooltipArrow,\n});\n\nexport type Tooltip = {\n  Props: ComponentProps<typeof TooltipRoot>;\n  RootProps: ComponentProps<typeof TooltipRoot>;\n  TriggerProps: ComponentProps<typeof TooltipTrigger>;\n  ContentProps: ComponentProps<typeof TooltipContent>;\n  ArrowProps: ComponentProps<typeof TooltipArrow>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {TooltipRoot, TooltipTrigger, TooltipContent, TooltipArrow};\n\nexport type {\n  TooltipRootProps,\n  TooltipRootProps as TooltipProps,\n  TooltipArrowProps,\n  TooltipContentProps,\n  TooltipTriggerProps,\n} from \"./tooltip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {tooltipVariants} from \"@heroui/styles\";\n\nexport type {TooltipVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "tooltip_index",
+      "name": "index",
+      "path": "packages/react/src/components/tooltip/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_tooltip_index",
+      "name": "tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/tooltip/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {TooltipArrow, TooltipContent, TooltipRoot, TooltipTrigger} from \"./tooltip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Tooltip = Object.assign(TooltipRoot, {\n  Root: TooltipRoot,\n  Trigger: TooltipTrigger,\n  Content: TooltipContent,\n  Arrow: TooltipArrow,\n});\n\nexport type Tooltip = {\n  Props: ComponentProps<typeof TooltipRoot>;\n  RootProps: ComponentProps<typeof TooltipRoot>;\n  TriggerProps: ComponentProps<typeof TooltipTrigger>;\n  ContentProps: ComponentProps<typeof TooltipContent>;\n  ArrowProps: ComponentProps<typeof TooltipArrow>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {TooltipRoot, TooltipTrigger, TooltipContent, TooltipArrow};\n\nexport type {\n  TooltipRootProps,\n  TooltipRootProps as TooltipProps,\n  TooltipArrowProps,\n  TooltipContentProps,\n  TooltipTriggerProps,\n} from \"./tooltip\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {tooltipVariants} from \"@heroui/styles\";\n\nexport type {TooltipVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

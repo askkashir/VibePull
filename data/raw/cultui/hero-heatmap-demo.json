@@ -1,0 +1,47 @@
+{
+  "id": "hero-heatmap-demo",
+  "name": "hero-heatmap-demo",
+  "source_code": "// registry/default/example/hero-heatmap-demo.tsx\n\"use client\"\n\nimport {\n  AISDKIcon,\n  HeroHeatmap,\n  HeroHeatmapActions,\n  HeroHeatmapBadges,\n  HeroHeatmapContainer,\n  HeroHeatmapContent,\n  HeroHeatmapDescription,\n  HeroHeatmapHeading,\n  HeroHeatmapMobileVisual,\n  HeroHeatmapRoot,\n  HeroHeatmapVisual,\n  NextjsIcon,\n} from \"../ui/hero-heatmap\"\n\nexport default function HeroHeatmapDemo() {\n  return (\n    <div className=\"space-y-16\">\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Default\n        </h3>\n        <HeroHeatmap />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Root-level shader props\n        </h3>\n        <HeroHeatmap\n          angle={45}\n          colorBack=\"#0a0a0a\"\n          colors={[\n            \"#112069\",\n            \"#1f3ca3\",\n            \"#367c66\",\n            \"#adfa1e\",\n            \"#ffe77a\",\n            \"#ff9a1f\",\n            \"#ed40b3\",\n          ]}\n          contour={0.6}\n          image=\"https://shaders.paper.design/images/logos/diamond.svg\"\n          innerGlow={0.6}\n          noise={0.1}\n          outerGlow={0.4}\n          scale={0.8}\n          speed={1.2}\n          width={1280}\n          height={720}\n        />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Configured via props\n        </h3>\n        <HeroHeatmapRoot\n          ctaProps={{\n            href: \"#\",\n            label: \"Try NewCopy for marketing\",\n          }}\n          description=\"Human-in-the-loop marketing copy software that helps teams draft, review, and ship high-converting campaigns with confidence.\"\n          desktopShaderProps={{\n            scale: 0.8,\n            speed: 0.7,\n            innerGlow: 0.6,\n            outerGlow: 0.4,\n          }}\n          image=\"https://shaders.paper.design/images/logos/diamond.svg\"\n          mobileShaderProps={{\n            speed: 0.65,\n          }}\n          srTitle=\"Composable hero\"\n          subtitle=\"Marketing\"\n          techStack={[\n            { name: \"Next.js\", version: \"v16\" },\n            { name: \"AI SDK\", version: \"v6\" },\n            { name: \"Tailwind\", version: \"v4\" },\n          ]}\n          title=\"Cursor for\"\n        >\n          <HeroHeatmapContainer>\n            <HeroHeatmapContent>\n              <HeroHeatmapHeading />\n              <HeroHeatmapDescription />\n              <HeroHeatmapActions />\n              <div\n                className=\"hidden lg:flex justify-center lg:justify-start\"\n                data-slot=\"hero-heatmap-badges-wrap\"\n              >\n                <HeroHeatmapBadges\n                  techStack={[\n                    { name: \"Next.js\", version: \"v16\", icon: NextjsIcon },\n                    { name: \"AI SDK\", version: \"v6\", icon: AISDKIcon },\n                  ]}\n                />\n              </div>\n            </HeroHeatmapContent>\n            <HeroHeatmapVisual />\n          </HeroHeatmapContainer>\n          <HeroHeatmapMobileVisual />\n        </HeroHeatmapRoot>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "cultui",
+    "file",
+    "registry:component"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "hero-heatmap-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/hero-heatmap-demo.json",
+      "sha": "0a173cb8c26c0719b696ac27ff3796add45a01ab",
+      "size": 3623,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hero-heatmap-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hero-heatmap-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/0a173cb8c26c0719b696ac27ff3796add45a01ab",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/hero-heatmap-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hero-heatmap-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/0a173cb8c26c0719b696ac27ff3796add45a01ab",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hero-heatmap-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hero-heatmap-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "hero-heatmap"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/hero-heatmap-demo.tsx",
+          "content": "\"use client\"\n\nimport {\n  AISDKIcon,\n  HeroHeatmap,\n  HeroHeatmapActions,\n  HeroHeatmapBadges,\n  HeroHeatmapContainer,\n  HeroHeatmapContent,\n  HeroHeatmapDescription,\n  HeroHeatmapHeading,\n  HeroHeatmapMobileVisual,\n  HeroHeatmapRoot,\n  HeroHeatmapVisual,\n  NextjsIcon,\n} from \"../ui/hero-heatmap\"\n\nexport default function HeroHeatmapDemo() {\n  return (\n    <div className=\"space-y-16\">\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Default\n        </h3>\n        <HeroHeatmap />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Root-level shader props\n        </h3>\n        <HeroHeatmap\n          angle={45}\n          colorBack=\"#0a0a0a\"\n          colors={[\n            \"#112069\",\n            \"#1f3ca3\",\n            \"#367c66\",\n            \"#adfa1e\",\n            \"#ffe77a\",\n            \"#ff9a1f\",\n            \"#ed40b3\",\n          ]}\n          contour={0.6}\n          image=\"https://shaders.paper.design/images/logos/diamond.svg\"\n          innerGlow={0.6}\n          noise={0.1}\n          outerGlow={0.4}\n          scale={0.8}\n          speed={1.2}\n          width={1280}\n          height={720}\n        />\n      </div>\n\n      <div className=\"space-y-4\">\n        <h3 className=\"font-medium text-lg flex items-center justify-center\">\n          Configured via props\n        </h3>\n        <HeroHeatmapRoot\n          ctaProps={{\n            href: \"#\",\n            label: \"Try NewCopy for marketing\",\n          }}\n          description=\"Human-in-the-loop marketing copy software that helps teams draft, review, and ship high-converting campaigns with confidence.\"\n          desktopShaderProps={{\n            scale: 0.8,\n            speed: 0.7,\n            innerGlow: 0.6,\n            outerGlow: 0.4,\n          }}\n          image=\"https://shaders.paper.design/images/logos/diamond.svg\"\n          mobileShaderProps={{\n            speed: 0.65,\n          }}\n          srTitle=\"Composable hero\"\n          subtitle=\"Marketing\"\n          techStack={[\n            { name: \"Next.js\", version: \"v16\" },\n            { name: \"AI SDK\", version: \"v6\" },\n            { name: \"Tailwind\", version: \"v4\" },\n          ]}\n          title=\"Cursor for\"\n        >\n          <HeroHeatmapContainer>\n            <HeroHeatmapContent>\n              <HeroHeatmapHeading />\n              <HeroHeatmapDescription />\n              <HeroHeatmapActions />\n              <div\n                className=\"hidden lg:flex justify-center lg:justify-start\"\n                data-slot=\"hero-heatmap-badges-wrap\"\n              >\n                <HeroHeatmapBadges\n                  techStack={[\n                    { name: \"Next.js\", version: \"v16\", icon: NextjsIcon },\n                    { name: \"AI SDK\", version: \"v6\", icon: AISDKIcon },\n                  ]}\n                />\n              </div>\n            </HeroHeatmapContent>\n            <HeroHeatmapVisual />\n          </HeroHeatmapContainer>\n          <HeroHeatmapMobileVisual />\n        </HeroHeatmapRoot>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

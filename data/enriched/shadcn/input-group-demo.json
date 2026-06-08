@@ -1,0 +1,34 @@
+{
+  "id": "input-group-demo",
+  "name": "input-group-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "container",
+    "grouping"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-group-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Input Group is a container component used to combine an input element with a label or other content. It's commonly used in forms to group related fields and enhance the user experience. Typically includes a preprend, append, or both to wrap around the input.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "container",
+  "generation_prompt": "Create a production-ready container component with the following characteristics:\n\nName: input-group-demo\nDescription: Input Group is a container component used to combine an input element with a label or other content. It's commonly used in forms to group related fields and enhance the user experience. Typically includes a preprend, append, or both to wrap around the input.\nStyle: \nInteractions: \nTags: form, input, container, grouping\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-group-demo",
+  "display_name": "Input Group Demo",
+  "preview_url": "/previews/shadcn/input-group-demo.png"
+}

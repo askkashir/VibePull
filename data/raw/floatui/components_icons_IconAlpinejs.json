@@ -1,0 +1,31 @@
+{
+  "id": "components_icons_IconAlpinejs",
+  "name": "IconAlpinejs",
+  "source_code": "// components/icons/IconAlpinejs.tsx\nexport default () => (\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\">\n    <path\n      fill=\"#77c1d2\"\n      fill-rule=\"evenodd\"\n      d=\"M98.444 35.562 126 62.997 98.444 90.432 70.889 62.997z\"\n      clip-rule=\"evenodd\"\n    />\n    <path\n      fill=\"#2d3441\"\n      fill-rule=\"evenodd\"\n      d=\"m29.556 35.562 57.126 56.876H31.571L2 62.997z\"\n      clip-rule=\"evenodd\"\n    />\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_IconAlpinejs",
+      "name": "IconAlpinejs",
+      "path": "components/icons/IconAlpinejs.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_IconAlpinejs",
+      "name": "IconAlpinejs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/IconAlpinejs.tsx",
+          "content": "export default () => (\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\">\n    <path\n      fill=\"#77c1d2\"\n      fill-rule=\"evenodd\"\n      d=\"M98.444 35.562 126 62.997 98.444 90.432 70.889 62.997z\"\n      clip-rule=\"evenodd\"\n    />\n    <path\n      fill=\"#2d3441\"\n      fill-rule=\"evenodd\"\n      d=\"m29.556 35.562 57.126 56.876H31.571L2 62.997z\"\n      clip-rule=\"evenodd\"\n    />\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

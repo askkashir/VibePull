@@ -1,0 +1,68 @@
+{
+  "id": "animated-shiny-text-demo",
+  "name": "Animated Shiny Text Demo",
+  "source_code": "import { ArrowRightIcon } from \"@radix-ui/react-icons\"\n\nimport { cn } from \"@/lib/utils\"\nimport { AnimatedShinyText } from \"@/registry/magicui/animated-shiny-text\"\n\nexport default function AnimatedShinyTextDemo() {\n  return (\n    <div className=\"z-10 flex min-h-64 items-center justify-center\">\n      <div\n        className={cn(\n          \"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800\"\n        )}\n      >\n        <AnimatedShinyText className=\"inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400\">\n          <span>✨ Introducing Magic UI</span>\n          <ArrowRightIcon className=\"ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5\" />\n        </AnimatedShinyText>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "Example showing text with a shimmering light effect.",
+  "tags": [
+    "animation",
+    "text",
+    "effects"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-shiny-text-demo",
+      "type": "registry:example",
+      "title": "Animated Shiny Text Demo",
+      "description": "Example showing text with a shimmering light effect.",
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "registryDependencies": [
+        "https://magicui.design/r/animated-shiny-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-shiny-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/animated-shiny-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-shiny-text-demo",
+      "type": "registry:example",
+      "title": "Animated Shiny Text Demo",
+      "description": "Example showing text with a shimmering light effect.",
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "registryDependencies": [
+        "@magicui/animated-shiny-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-shiny-text-demo.tsx",
+          "content": "import { ArrowRightIcon } from \"@radix-ui/react-icons\"\n\nimport { cn } from \"@/lib/utils\"\nimport { AnimatedShinyText } from \"@/registry/magicui/animated-shiny-text\"\n\nexport default function AnimatedShinyTextDemo() {\n  return (\n    <div className=\"z-10 flex min-h-64 items-center justify-center\">\n      <div\n        className={cn(\n          \"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800\"\n        )}\n      >\n        <AnimatedShinyText className=\"inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400\">\n          <span>✨ Introducing Magic UI</span>\n          <ArrowRightIcon className=\"ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5\" />\n        </AnimatedShinyText>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Animated Shiny Text Demo displays a shiny text component with animation when hovered. It's likely used for highlighting and adding visual effects to important UI elements. Developers would use this component for showcasing special features or promotions.",
+  "style_tags": [
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Animated Shiny Text Demo\nDescription: Animated Shiny Text Demo displays a shiny text component with animation when hovered. It's likely used for highlighting and adding visual effects to important UI elements. Developers would use this component for showcasing special features or promotions.\nStyle: minimal, glassmorphism\nInteractions: hover, clickable\nTags: animation, text, effects\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ArrowRightIcon } from \"@radix-ui/react-icons\"\n\nimport { cn } from \"@/lib/utils\"\nimport { AnimatedShinyText } from \"@/registry/magicui/animated-shiny-text\"\n\nexport default function AnimatedShinyTextDemo() {\n  return (\n    <div className=\"z-10 flex min-h-64 items-center justify-center\">\n      <div\n        className={cn(\n          \"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/",
+  "prompt_version": 2,
+  "clean_id": "animated-shiny-text-demo",
+  "display_name": "Animated Shiny Text Demo",
+  "preview_url": "/previews/magicui/animated-shiny-text-demo.png"
+}

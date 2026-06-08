@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_RollingNumber_get-digit-parts",
+  "name": "get-digit-parts",
+  "source_code": "// packages/@mantine/core/src/components/RollingNumber/get-digit-parts.ts\nexport interface DigitParts {\n  negative: boolean;\n  intDigits: string[];\n  fracDigits: string[];\n  hasDecimal: boolean;\n}\n\nexport interface GetDigitPartsInput {\n  value: number;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nconst PLAIN_FORMAT = new Intl.NumberFormat('en-US', {\n  useGrouping: false,\n  maximumFractionDigits: 20,\n});\n\nfunction toPlainString(num: number, decimalScale?: number): string {\n  if (!Number.isFinite(num)) {\n    return '0';\n  }\n\n  if (decimalScale !== undefined) {\n    return new Intl.NumberFormat('en-US', {\n      useGrouping: false,\n      minimumFractionDigits: decimalScale,\n      maximumFractionDigits: decimalScale,\n    }).format(num);\n  }\n\n  const str = String(num);\n  if (!str.includes('e') && !str.includes('E')) {\n    return str;\n  }\n\n  return PLAIN_FORMAT.format(num);\n}\n\nexport function getDigitParts({\n  value,\n  decimalScale,\n  fixedDecimalScale,\n}: GetDigitPartsInput): DigitParts {\n  const abs = Math.abs(value);\n  let str = toPlainString(abs, decimalScale);\n\n  if (!fixedDecimalScale && decimalScale !== undefined) {\n    const parts = str.split('.');\n    if (parts[1]) {\n      const trimmed = parts[1].replace(/0+$/, '');\n      str = trimmed ? `${parts[0]}.${trimmed}` : parts[0];\n    }\n  }\n\n  const dotIdx = str.indexOf('.');\n  const intStr = dotIdx >= 0 ? str.slice(0, dotIdx) : str;\n  const fracStr = dotIdx >= 0 ? str.slice(dotIdx + 1) : '';\n\n  return {\n    negative: value < 0,\n    intDigits: intStr.split(''),\n    fracDigits: fracStr ? fracStr.split('') : [],\n    hasDecimal: dotIdx >= 0,\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "digit",
+    "get",
+    "mantine",
+    "other",
+    "parts"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RollingNumber_get-digit-parts",
+      "name": "get-digit-parts",
+      "path": "packages/@mantine/core/src/components/RollingNumber/get-digit-parts.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RollingNumber_get-digit-parts",
+      "name": "get-digit-parts",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RollingNumber/get-digit-parts.ts",
+          "content": "export interface DigitParts {\n  negative: boolean;\n  intDigits: string[];\n  fracDigits: string[];\n  hasDecimal: boolean;\n}\n\nexport interface GetDigitPartsInput {\n  value: number;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nconst PLAIN_FORMAT = new Intl.NumberFormat('en-US', {\n  useGrouping: false,\n  maximumFractionDigits: 20,\n});\n\nfunction toPlainString(num: number, decimalScale?: number): string {\n  if (!Number.isFinite(num)) {\n    return '0';\n  }\n\n  if (decimalScale !== undefined) {\n    return new Intl.NumberFormat('en-US', {\n      useGrouping: false,\n      minimumFractionDigits: decimalScale,\n      maximumFractionDigits: decimalScale,\n    }).format(num);\n  }\n\n  const str = String(num);\n  if (!str.includes('e') && !str.includes('E')) {\n    return str;\n  }\n\n  return PLAIN_FORMAT.format(num);\n}\n\nexport function getDigitParts({\n  value,\n  decimalScale,\n  fixedDecimalScale,\n}: GetDigitPartsInput): DigitParts {\n  const abs = Math.abs(value);\n  let str = toPlainString(abs, decimalScale);\n\n  if (!fixedDecimalScale && decimalScale !== undefined) {\n    const parts = str.split('.');\n    if (parts[1]) {\n      const trimmed = parts[1].replace(/0+$/, '');\n      str = trimmed ? `${parts[0]}.${trimmed}` : parts[0];\n    }\n  }\n\n  const dotIdx = str.indexOf('.');\n  const intStr = dotIdx >= 0 ? str.slice(0, dotIdx) : str;\n  const fracStr = dotIdx >= 0 ? str.slice(dotIdx + 1) : '';\n\n  return {\n    negative: value < 0,\n    intDigits: intStr.split(''),\n    fracDigits: fracStr ? fracStr.split('') : [],\n    hasDecimal: dotIdx >= 0,\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-digit-parts is a get digit parts UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-digit-parts\nDescription: get-digit-parts is a get digit parts UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: digit, get, mantine, other, parts\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/RollingNumber/get-digit-parts.ts\nexport interface DigitParts {\n  negative: boolean;\n  intDigits: string[];\n  fracDigits: string[];\n  hasDecimal: boolean;\n}\n\nexport interface GetDigitPartsInput {\n  value: number;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nconst PLAIN_FORMAT = new Intl.NumberFormat('en-US', {\n  useGrouping: false,\n  maximumFractionDigits: 20,\n});\n\nfunction toPlainString(num: number, decimalScale?: number): string {\n  if (!Nu",
+  "prompt_version": 2,
+  "clean_id": "get-digit-parts",
+  "display_name": "Get Digit Parts",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-rollingnumber-get-digit-parts.png"
+}

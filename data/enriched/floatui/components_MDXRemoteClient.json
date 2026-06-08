@@ -1,0 +1,45 @@
+{
+  "id": "components_MDXRemoteClient",
+  "name": "MDXRemoteClient",
+  "source_code": "// components/MDXRemoteClient.tsx\n\"use client\";\n\nimport { MDXRemote, MDXRemoteSerializeResult } from \"next-mdx-remote\";\n\nexport default ({\n  mdxSource,\n  components,\n}: {\n  mdxSource: MDXRemoteSerializeResult;\n  components?: any;\n}) => <MDXRemote {...mdxSource} components={components} />;\n",
+  "description": "",
+  "tags": [
+    "mdx",
+    "dynamic-content",
+    "client-side-rendering"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "MDXRemoteClient",
+      "name": "MDXRemoteClient",
+      "path": "components/MDXRemoteClient.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_MDXRemoteClient",
+      "name": "MDXRemoteClient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/MDXRemoteClient.tsx",
+          "content": "\"use client\";\n\nimport { MDXRemote, MDXRemoteSerializeResult } from \"next-mdx-remote\";\n\nexport default ({\n  mdxSource,\n  components,\n}: {\n  mdxSource: MDXRemoteSerializeResult;\n  components?: any;\n}) => <MDXRemote {...mdxSource} components={components} />;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Dynamic MDX content client-side rendered using next-mdx-remote. Typically used to render pre-built MDX components.",
+  "style_tags": [
+    "normal"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: MDXRemoteClient\nDescription: Dynamic MDX content client-side rendered using next-mdx-remote. Typically used to render pre-built MDX components.\nStyle: normal\nInteractions: none\nTags: mdx, dynamic-content, client-side-rendering\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/MDXRemoteClient.tsx\n\"use client\";\n\nimport { MDXRemote, MDXRemoteSerializeResult } from \"next-mdx-remote\";\n\nexport default ({\n  mdxSource,\n  components,\n}: {\n  mdxSource: MDXRemoteSerializeResult;\n  components?: any;\n}) => <MDXRemote {...mdxSource} components={components} />;\n",
+  "prompt_version": 2,
+  "clean_id": "mdxremote-client",
+  "display_name": "Mdxremote Client",
+  "preview_url": "/previews/floatui/components-mdxremoteclient.png"
+}

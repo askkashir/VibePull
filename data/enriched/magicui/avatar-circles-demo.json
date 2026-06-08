@@ -1,0 +1,60 @@
+{
+  "id": "avatar-circles-demo",
+  "name": "Avatar Circles Demo",
+  "source_code": "import { AvatarCircles } from \"@/registry/magicui/avatar-circles\"\n\nconst avatars = [\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/16860528\",\n    profileUrl: \"https://github.com/dillionverma\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/20110627\",\n    profileUrl: \"https://github.com/tomonarifeehan\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/106103625\",\n    profileUrl: \"https://github.com/BankkRoll\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/59228569\",\n    profileUrl: \"https://github.com/safethecode\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/59442788\",\n    profileUrl: \"https://github.com/sanjay-mali\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/89768406\",\n    profileUrl: \"https://github.com/itsarghyadas\",\n  },\n]\n\nexport default function AvatarCirclesDemo() {\n  return <AvatarCircles numPeople={99} avatarUrls={avatars} />\n}\n",
+  "description": "Example showing overlapping avatar circles.",
+  "tags": [
+    "avatar",
+    "circles",
+    "profiles"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "avatar-circles-demo",
+      "type": "registry:example",
+      "title": "Avatar Circles Demo",
+      "description": "Example showing overlapping avatar circles.",
+      "registryDependencies": [
+        "https://magicui.design/r/avatar-circles"
+      ],
+      "files": [
+        {
+          "path": "registry/example/avatar-circles-demo.tsx",
+          "type": "registry:example",
+          "target": "components/avatar-circles-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "avatar-circles-demo",
+      "type": "registry:example",
+      "title": "Avatar Circles Demo",
+      "description": "Example showing overlapping avatar circles.",
+      "registryDependencies": [
+        "@magicui/avatar-circles"
+      ],
+      "files": [
+        {
+          "path": "registry/example/avatar-circles-demo.tsx",
+          "content": "import { AvatarCircles } from \"@/registry/magicui/avatar-circles\"\n\nconst avatars = [\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/16860528\",\n    profileUrl: \"https://github.com/dillionverma\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/20110627\",\n    profileUrl: \"https://github.com/tomonarifeehan\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/106103625\",\n    profileUrl: \"https://github.com/BankkRoll\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/59228569\",\n    profileUrl: \"https://github.com/safethecode\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/59442788\",\n    profileUrl: \"https://github.com/sanjay-mali\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/89768406\",\n    profileUrl: \"https://github.com/itsarghyadas\",\n  },\n]\n\nexport default function AvatarCirclesDemo() {\n  return <AvatarCircles numPeople={99} avatarUrls={avatars} />\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Avatar Circles Demo is a visually appealing component that displays multiple avatars in a circular formation, suitable for displaying a large number of profiles or characters.",
+  "style_tags": [
+    "modern",
+    "neomorphism",
+    "rounded"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Avatar Circles Demo\nDescription: Avatar Circles Demo is a visually appealing component that displays multiple avatars in a circular formation, suitable for displaying a large number of profiles or characters.\nStyle: modern, neomorphism, rounded\nInteractions: \nTags: avatar, circles, profiles\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { AvatarCircles } from \"@/registry/magicui/avatar-circles\"\n\nconst avatars = [\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/16860528\",\n    profileUrl: \"https://github.com/dillionverma\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/20110627\",\n    profileUrl: \"https://github.com/tomonarifeehan\",\n  },\n  {\n    imageUrl: \"https://avatars.githubusercontent.com/u/106103625\",\n    profileUrl: \"https://github.com/BankkRoll\",\n  },\n  {\n    imageUrl: \"https://avatars.gi",
+  "prompt_version": 2,
+  "clean_id": "avatar-circles-demo",
+  "display_name": "Avatar Circles Demo",
+  "preview_url": "/previews/magicui/avatar-circles-demo.png"
+}

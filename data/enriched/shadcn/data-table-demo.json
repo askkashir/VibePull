@@ -1,0 +1,44 @@
+{
+  "id": "data-table-demo",
+  "name": "data-table-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data",
+    "table",
+    "list",
+    "grid",
+    "info",
+    "statistics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "data-table-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## data-table-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A data table component is a grid-based UI element for displaying a list of data, ideal for data-heavy content management, analysis, or comparison. Use it in your application when you need to present large amounts of data in an organized manner. The layout of the table typically consists of rows and columns, often with customizable headers, filter options, and sorting functionality.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: data-table-demo\nDescription: A data table component is a grid-based UI element for displaying a list of data, ideal for data-heavy content management, analysis, or comparison. Use it in your application when you need to present large amounts of data in an organized manner. The layout of the table typically consists of rows and columns, often with customizable headers, filter options, and sorting functionality.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: data, table, list, grid, info, statistics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "data-table-demo",
+  "display_name": "Data Table Demo",
+  "preview_url": "/previews/shadcn/data-table-demo.png"
+}

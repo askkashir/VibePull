@@ -1,0 +1,54 @@
+{
+  "id": "breadcrumb",
+  "name": "breadcrumb",
+  "source_code": "// src/components/ui/breadcrumb.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { ChevronRightIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { breadcrumb } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(breadcrumb)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(ark.nav, 'root', { defaultProps: { 'aria-label': 'breadcrumb' } })\nexport const List = withContext(ark.ol, 'list')\nexport const Item = withContext(ark.li, 'item')\nexport const Link = withContext(ark.a, 'link')\nexport const Ellipsis = withContext(ark.li, 'ellipsis', {\n  defaultProps: {\n    role: 'presentation',\n    'aria-hidden': true,\n    children: '...',\n  },\n})\n\nexport const Separator = withContext(ark.li, 'separator', {\n  defaultProps: {\n    'aria-hidden': true,\n    children: <ChevronRightIcon />,\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Breadcrumb from './breadcrumb'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { ChevronRightIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { breadcrumb } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(breadcrumb)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(ark.nav, 'root', { defaultProps: { 'aria-label': 'breadcrumb' } })\nexport const List = withContext(ark.ol, 'list')\nexport const Item = withContext(ark.li, 'item')\nexport const Link = withContext(ark.a, 'link')\nexport const Ellipsis = withContext(ark.li, 'ellipsis', {\n  defaultProps: {\n    role: 'presentation',\n    'aria-hidden': true,\n    children: '...',\n  },\n})\n\nexport const Separator = withContext(ark.li, 'separator', {\n  defaultProps: {\n    'aria-hidden': true,\n    children: <ChevronRightIcon />,\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "breadcrumb-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Breadcrumb from './breadcrumb'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { ChevronRightIcon } from 'lucide-react'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { breadcrumb } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(breadcrumb)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(ark.nav, 'root', { defaultProps: { 'aria-label': 'breadcrumb' } })\nexport const List = withContext(ark.ol, 'list')\nexport const Item = withContext(ark.li, 'item')\nexport const Link = withContext(ark.a, 'link')\nexport const Ellipsis = withContext(ark.li, 'ellipsis', {\n  defaultProps: {\n    role: 'presentation',\n    'aria-hidden': true,\n    children: '...',\n  },\n})\n\nexport const Separator = withContext(ark.li, 'separator', {\n  defaultProps: {\n    'aria-hidden': true,\n    children: <ChevronRightIcon />,\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "breadcrumb-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

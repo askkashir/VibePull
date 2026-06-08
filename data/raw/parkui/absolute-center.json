@@ -1,0 +1,52 @@
+{
+  "id": "absolute-center",
+  "name": "absolute-center",
+  "source_code": "// src/components/ui/absolute-center.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { absoluteCenter } from 'styled-system/recipes'\n\nexport type AbsoluteCenterProps = ComponentProps<typeof AbsoluteCenter>\nexport const AbsoluteCenter = styled(ark.div, absoluteCenter)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "absolute-center",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/absolute-center.tsx",
+          "type": "registry:ui",
+          "exports": "export { AbsoluteCenter, type AbsoluteCenterProps } from './absolute-center'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { absoluteCenter } from 'styled-system/recipes'\n\nexport type AbsoluteCenterProps = ComponentProps<typeof AbsoluteCenter>\nexport const AbsoluteCenter = styled(ark.div, absoluteCenter)\n"
+        }
+      ],
+      "registryDependencies": [
+        "absolute-center-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "absolute-center",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/absolute-center.tsx",
+          "type": "registry:ui",
+          "exports": "export { AbsoluteCenter, type AbsoluteCenterProps } from './absolute-center'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { absoluteCenter } from 'styled-system/recipes'\n\nexport type AbsoluteCenterProps = ComponentProps<typeof AbsoluteCenter>\nexport const AbsoluteCenter = styled(ark.div, absoluteCenter)\n"
+        }
+      ],
+      "registryDependencies": [
+        "absolute-center-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

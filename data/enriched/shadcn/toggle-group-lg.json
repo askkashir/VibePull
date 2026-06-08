@@ -1,0 +1,40 @@
+{
+  "id": "toggle-group-lg",
+  "name": "toggle-group-lg",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "button_group",
+    "selection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-lg",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-lg\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A toggle group is a large, horizontally laid out group of toggle buttons, allowing users to select one or multiple options at a time. The component is often used when multiple related or exclusive options need to be presented to the user. It can be found in various UI applications where customizability and option selection are key.",
+  "style_tags": [
+    "clean",
+    "flat",
+    "modern"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggleable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-group-lg\nDescription: A toggle group is a large, horizontally laid out group of toggle buttons, allowing users to select one or multiple options at a time. The component is often used when multiple related or exclusive options need to be presented to the user. It can be found in various UI applications where customizability and option selection are key.\nStyle: clean, flat, modern\nInteractions: clickable, toggleable\nTags: toggle, button_group, selection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-lg",
+  "display_name": "Toggle Group Lg",
+  "preview_url": "/previews/shadcn/toggle-group-lg.png"
+}

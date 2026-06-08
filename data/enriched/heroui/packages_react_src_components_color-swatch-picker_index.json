@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_color-swatch-picker_index",
+  "name": "color-swatch-picker",
+  "source_code": "// packages/react/src/components/color-swatch-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  ColorSwatchPickerIndicator,\n  ColorSwatchPickerItem,\n  ColorSwatchPickerRoot,\n  ColorSwatchPickerSwatch,\n} from \"./color-swatch-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n| * Compound Component\n| * -----------------------------------------------------------------------------------------------*/\nexport const ColorSwatchPicker = Object.assign(ColorSwatchPickerRoot, {\n  Root: ColorSwatchPickerRoot,\n  Item: ColorSwatchPickerItem,\n  Swatch: ColorSwatchPickerSwatch,\n  Indicator: ColorSwatchPickerIndicator,\n});\n\nexport type ColorSwatchPicker = {\n  Props: ComponentProps<typeof ColorSwatchPickerRoot>;\n  RootProps: ComponentProps<typeof ColorSwatchPickerRoot>;\n  ItemProps: ComponentProps<typeof ColorSwatchPickerItem>;\n  SwatchProps: ComponentProps<typeof ColorSwatchPickerSwatch>;\n  IndicatorProps: ComponentProps<typeof ColorSwatchPickerIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n| * Named Component\n| * -----------------------------------------------------------------------------------------------*/\nexport {\n  ColorSwatchPickerRoot,\n  ColorSwatchPickerItem,\n  ColorSwatchPickerSwatch,\n  ColorSwatchPickerIndicator,\n};\n\nexport type {\n  ColorSwatchPickerRootProps,\n  ColorSwatchPickerRootProps as ColorSwatchPickerProps,\n  ColorSwatchPickerItemProps,\n  ColorSwatchPickerSwatchProps,\n  ColorSwatchPickerIndicatorProps,\n} from \"./color-swatch-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n| * Variants\n| * -----------------------------------------------------------------------------------------------*/\nexport {colorSwatchPickerVariants} from \"@heroui/styles\";\n\nexport type {ColorSwatchPickerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "color-picker",
+    "swatch",
+    "color-selector"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-swatch-picker_index",
+      "name": "index",
+      "path": "packages/react/src/components/color-swatch-picker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-swatch-picker_index",
+      "name": "color-swatch-picker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-swatch-picker/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  ColorSwatchPickerIndicator,\n  ColorSwatchPickerItem,\n  ColorSwatchPickerRoot,\n  ColorSwatchPickerSwatch,\n} from \"./color-swatch-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n| * Compound Component\n| * -----------------------------------------------------------------------------------------------*/\nexport const ColorSwatchPicker = Object.assign(ColorSwatchPickerRoot, {\n  Root: ColorSwatchPickerRoot,\n  Item: ColorSwatchPickerItem,\n  Swatch: ColorSwatchPickerSwatch,\n  Indicator: ColorSwatchPickerIndicator,\n});\n\nexport type ColorSwatchPicker = {\n  Props: ComponentProps<typeof ColorSwatchPickerRoot>;\n  RootProps: ComponentProps<typeof ColorSwatchPickerRoot>;\n  ItemProps: ComponentProps<typeof ColorSwatchPickerItem>;\n  SwatchProps: ComponentProps<typeof ColorSwatchPickerSwatch>;\n  IndicatorProps: ComponentProps<typeof ColorSwatchPickerIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n| * Named Component\n| * -----------------------------------------------------------------------------------------------*/\nexport {\n  ColorSwatchPickerRoot,\n  ColorSwatchPickerItem,\n  ColorSwatchPickerSwatch,\n  ColorSwatchPickerIndicator,\n};\n\nexport type {\n  ColorSwatchPickerRootProps,\n  ColorSwatchPickerRootProps as ColorSwatchPickerProps,\n  ColorSwatchPickerItemProps,\n  ColorSwatchPickerSwatchProps,\n  ColorSwatchPickerIndicatorProps,\n} from \"./color-swatch-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n| * Variants\n| * -----------------------------------------------------------------------------------------------*/\nexport {colorSwatchPickerVariants} from \"@heroui/styles\";\n\nexport type {ColorSwatchPickerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A color swatch picker component is a visual representation of colors, allowing users to select a color from a range of options. Developers would use this component in applications where users need to choose specific colors. The color swatch picker typically displays a palette of colors and allows users to select one or more colors.",
+  "style_tags": [
+    "flat",
+    "material-ui"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: color-swatch-picker\nDescription: A color swatch picker component is a visual representation of colors, allowing users to select a color from a range of options. Developers would use this component in applications where users need to choose specific colors. The color swatch picker typically displays a palette of colors and allows users to select one or more colors.\nStyle: flat, material-ui\nInteractions: clickable, animated\nTags: color-picker, swatch, color-selector\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/color-swatch-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  ColorSwatchPickerIndicator,\n  ColorSwatchPickerItem,\n  ColorSwatchPickerRoot,\n  ColorSwatchPickerSwatch,\n} from \"./color-swatch-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n| * Compound Component\n| * -----------------------------------------------------------------------------------------------*/\nexport const ColorS",
+  "prompt_version": 2,
+  "clean_id": "color-swatch-picker",
+  "display_name": "Color Swatch Picker",
+  "preview_url": "/previews/heroui/packages-react-src-components-color-swatch-picker-index.png"
+}

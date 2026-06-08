@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_List_ListItem_ListItem",
+  "name": "ListItem",
+  "source_code": "// packages/@mantine/core/src/components/List/ListItem/ListItem.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useListContext } from '../List.context';\nimport classes from '../List.module.css';\n\nexport type ListItemStylesNames = 'item' | 'itemWrapper' | 'itemIcon' | 'itemLabel';\n\nexport interface ListItemProps\n  extends BoxProps, CompoundStylesApiProps<ListItemFactory>, ElementProps<'li'> {\n  /** Icon to replace item bullet */\n  icon?: React.ReactNode;\n\n  /** Item content */\n  children?: React.ReactNode;\n}\n\nexport type ListItemFactory = Factory<{\n  props: ListItemProps;\n  ref: HTMLLIElement;\n  stylesNames: ListItemStylesNames;\n  compound: true;\n}>;\n\nexport const ListItem = factory<ListItemFactory>((_props) => {\n  const props = useProps('ListItem', null, _props);\n  const { classNames, className, style, styles, vars, icon, children, mod, ...others } = props;\n\n  const ctx = useListContext();\n  const _icon = icon || ctx.icon;\n  const stylesApiProps = { classNames, styles };\n\n  return (\n    <Box\n      {...ctx.getStyles('item', { ...stylesApiProps, className, style })}\n      component=\"li\"\n      mod={[{ 'with-icon': !!_icon, centered: ctx.center }, mod]}\n      {...others}\n    >\n      <div {...ctx.getStyles('itemWrapper', stylesApiProps)}>\n        {_icon && <span {...ctx.getStyles('itemIcon', stylesApiProps)}>{_icon}</span>}\n        <span {...ctx.getStyles('itemLabel', stylesApiProps)}>{children}</span>\n      </div>\n    </Box>\n  );\n});\n\nListItem.classes = classes;\nListItem.displayName = '@mantine/core/ListItem';\n",
+  "description": "",
+  "tags": [
+    "item",
+    "list",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "List_ListItem_ListItem",
+      "name": "ListItem",
+      "path": "packages/@mantine/core/src/components/List/ListItem/ListItem.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_List_ListItem_ListItem",
+      "name": "ListItem",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/List/ListItem/ListItem.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useListContext } from '../List.context';\nimport classes from '../List.module.css';\n\nexport type ListItemStylesNames = 'item' | 'itemWrapper' | 'itemIcon' | 'itemLabel';\n\nexport interface ListItemProps\n  extends BoxProps, CompoundStylesApiProps<ListItemFactory>, ElementProps<'li'> {\n  /** Icon to replace item bullet */\n  icon?: React.ReactNode;\n\n  /** Item content */\n  children?: React.ReactNode;\n}\n\nexport type ListItemFactory = Factory<{\n  props: ListItemProps;\n  ref: HTMLLIElement;\n  stylesNames: ListItemStylesNames;\n  compound: true;\n}>;\n\nexport const ListItem = factory<ListItemFactory>((_props) => {\n  const props = useProps('ListItem', null, _props);\n  const { classNames, className, style, styles, vars, icon, children, mod, ...others } = props;\n\n  const ctx = useListContext();\n  const _icon = icon || ctx.icon;\n  const stylesApiProps = { classNames, styles };\n\n  return (\n    <Box\n      {...ctx.getStyles('item', { ...stylesApiProps, className, style })}\n      component=\"li\"\n      mod={[{ 'with-icon': !!_icon, centered: ctx.center }, mod]}\n      {...others}\n    >\n      <div {...ctx.getStyles('itemWrapper', stylesApiProps)}>\n        {_icon && <span {...ctx.getStyles('itemIcon', stylesApiProps)}>{_icon}</span>}\n        <span {...ctx.getStyles('itemLabel', stylesApiProps)}>{children}</span>\n      </div>\n    </Box>\n  );\n});\n\nListItem.classes = classes;\nListItem.displayName = '@mantine/core/ListItem';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ListItem is a list item UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ListItem\nDescription: ListItem is a list item UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: item, list, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/List/ListItem/ListItem.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useListContext } from '../List.context';\nimport classes from '../List.module.css';\n\nexport type ListItemStylesNames = 'item' | 'itemWrapper' | 'itemIcon' | 'itemLabel';\n\nexport interface ListItemProps\n  extends BoxProps, CompoundStylesApiProps<ListItemFactory>, ElementProps<'li'> {\n  /** Icon t",
+  "prompt_version": 2,
+  "clean_id": "list-item",
+  "display_name": "List Item",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-list-listitem-listitem.png"
+}

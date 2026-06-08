@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_VisuallyHidden_index",
+  "name": "VisuallyHidden",
+  "source_code": "// packages/@mantine/core/src/components/VisuallyHidden/index.ts\nimport type { VisuallyHiddenProps } from './VisuallyHidden';\n\nexport { VisuallyHidden } from './VisuallyHidden';\n\nexport type { VisuallyHiddenProps };\n",
+  "description": "",
+  "tags": [
+    "hidden",
+    "mantine",
+    "other",
+    "visually"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "VisuallyHidden_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/VisuallyHidden/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_VisuallyHidden_index",
+      "name": "VisuallyHidden",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/VisuallyHidden/index.ts",
+          "content": "import type { VisuallyHiddenProps } from './VisuallyHidden';\n\nexport { VisuallyHidden } from './VisuallyHidden';\n\nexport type { VisuallyHiddenProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "VisuallyHidden is a visually hidden UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: VisuallyHidden\nDescription: VisuallyHidden is a visually hidden UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: hidden, mantine, other, visually\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/VisuallyHidden/index.ts\nimport type { VisuallyHiddenProps } from './VisuallyHidden';\n\nexport { VisuallyHidden } from './VisuallyHidden';\n\nexport type { VisuallyHiddenProps };\n",
+  "prompt_version": 2,
+  "clean_id": "visually-hidden",
+  "display_name": "Visually Hidden",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-visuallyhidden-index.png"
+}

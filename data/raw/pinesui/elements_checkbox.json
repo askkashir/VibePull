@@ -1,0 +1,31 @@
+{
+  "id": "elements_checkbox",
+  "name": "checkbox",
+  "source_code": "// elements/checkbox.html\n<div class=\"flex items-center mb-4\">\n    <input id=\"checkbox-id\" type=\"checkbox\" class=\"w-4 h-4 bg-gray-100 border-gray-300 rounded text-neutral-900 focus:ring-neutral-900\">\n    <label for=\"checkbox-id\" class=\"ml-2 text-sm font-medium text-gray-900\">Checkbox</label>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "checkbox",
+      "name": "checkbox",
+      "path": "elements/checkbox.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_checkbox",
+      "name": "checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/checkbox.html",
+          "content": "<div class=\"flex items-center mb-4\">\n    <input id=\"checkbox-id\" type=\"checkbox\" class=\"w-4 h-4 bg-gray-100 border-gray-300 rounded text-neutral-900 focus:ring-neutral-900\">\n    <label for=\"checkbox-id\" class=\"ml-2 text-sm font-medium text-gray-900\">Checkbox</label>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "typography-h3",
+  "name": "typography-h3",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-h3",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-h3\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

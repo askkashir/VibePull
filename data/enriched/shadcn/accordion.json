@@ -1,0 +1,40 @@
+{
+  "id": "accordion",
+  "name": "accordion",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "accordion",
+    "layout",
+    "interactive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "accordion",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## accordion\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The accordion component is an interactive layout element that can be expanded or collapsed to display content. It typically consists of a header with a title and an icon, which can be clicked to toggle the visibility of the content. Accordion components are often used in navigation, settings, and information-rich applications.",
+  "style_tags": [
+    "light",
+    "material"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated",
+    "expandable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: accordion\nDescription: The accordion component is an interactive layout element that can be expanded or collapsed to display content. It typically consists of a header with a title and an icon, which can be clicked to toggle the visibility of the content. Accordion components are often used in navigation, settings, and information-rich applications.\nStyle: light, material\nInteractions: clickable, animated, expandable\nTags: accordion, layout, interactive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "accordion",
+  "display_name": "Accordion",
+  "preview_url": "/previews/shadcn/accordion.png"
+}

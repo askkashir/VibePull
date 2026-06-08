@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_NativeSelect_index",
+  "name": "NativeSelect",
+  "source_code": "// packages/@mantine/core/src/components/NativeSelect/index.ts\nimport type { NativeSelectFactory, NativeSelectProps } from './NativeSelect';\n\nexport { NativeSelect } from './NativeSelect';\n\nexport type { NativeSelectProps, NativeSelectFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NativeSelect_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/NativeSelect/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NativeSelect_index",
+      "name": "NativeSelect",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NativeSelect/index.ts",
+          "content": "import type { NativeSelectFactory, NativeSelectProps } from './NativeSelect';\n\nexport { NativeSelect } from './NativeSelect';\n\nexport type { NativeSelectProps, NativeSelectFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_ColorSwatch_index",
+  "name": "ColorSwatch",
+  "source_code": "// packages/@mantine/core/src/components/ColorSwatch/index.ts\nimport type {\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchProps,\n  ColorSwatchStylesNames,\n} from './ColorSwatch';\n\nexport { ColorSwatch } from './ColorSwatch';\n\nexport type {\n  ColorSwatchProps,\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchStylesNames,\n};\n",
+  "description": "",
+  "tags": [
+    "color",
+    "picker",
+    "swatch"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorSwatch_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ColorSwatch/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorSwatch_index",
+      "name": "ColorSwatch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorSwatch/index.ts",
+          "content": "import type {\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchProps,\n  ColorSwatchStylesNames,\n} from './ColorSwatch';\n\nexport { ColorSwatch } from './ColorSwatch';\n\nexport type {\n  ColorSwatchProps,\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchStylesNames,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ColorSwatch is a component used to display and pick colors. It is commonly used when a user needs to select a specific color or when multiple colors need to be showcased.",
+  "style_tags": [
+    "flat",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ColorSwatch\nDescription: ColorSwatch is a component used to display and pick colors. It is commonly used when a user needs to select a specific color or when multiple colors need to be showcased.\nStyle: flat, minimal\nInteractions: clickable\nTags: color, picker, swatch\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ColorSwatch/index.ts\nimport type {\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchProps,\n  ColorSwatchStylesNames,\n} from './ColorSwatch';\n\nexport { ColorSwatch } from './ColorSwatch';\n\nexport type {\n  ColorSwatchProps,\n  ColorSwatchCssVariables,\n  ColorSwatchFactory,\n  ColorSwatchStylesNames,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "color-swatch",
+  "display_name": "Color Swatch",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-colorswatch-index.png"
+}

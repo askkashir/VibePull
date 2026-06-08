@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_TreeSelect_flatten-tree-select-data",
+  "name": "flatten-tree-select-data",
+  "source_code": "// packages/@mantine/core/src/components/TreeSelect/flatten-tree-select-data.ts\nimport type { TreeNodeData } from '../Tree';\nimport type { TreeExpandedState } from '../Tree/use-tree';\n\nexport interface TreeSelectFlatNode {\n  node: TreeNodeData;\n  level: number;\n  parent: string | null;\n  hasChildren: boolean;\n  expanded: boolean;\n  isLastChild: boolean;\n  lineGuides: boolean[];\n}\n\nfunction flattenTo(\n  acc: TreeSelectFlatNode[],\n  data: TreeNodeData[],\n  expandedState: TreeExpandedState,\n  parent: string | null,\n  level: number,\n  parentGuides: boolean[]\n): void {\n  for (let i = 0; i < data.length; i++) {\n    const node = data[i];\n    const isLast = i === data.length - 1;\n    const hasLoadedChildren = Array.isArray(node.children);\n    const hasAsyncChildren = !!node.hasChildren && !hasLoadedChildren;\n    const hasChildren = hasLoadedChildren || hasAsyncChildren;\n    const expanded = expandedState[node.value] || false;\n\n    acc.push({\n      node,\n      level,\n      parent,\n      hasChildren,\n      expanded,\n      isLastChild: isLast,\n      lineGuides: parentGuides,\n    });\n\n    if (expanded && hasLoadedChildren) {\n      const childGuides = level >= 2 ? [...parentGuides, !isLast] : [];\n      flattenTo(acc, node.children!, expandedState, node.value, level + 1, childGuides);\n    }\n  }\n}\n\nexport function flattenTreeSelectData(\n  data: TreeNodeData[],\n  expandedState: TreeExpandedState\n): TreeSelectFlatNode[] {\n  const result: TreeSelectFlatNode[] = [];\n  flattenTo(result, data, expandedState, null, 1, []);\n  return result;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TreeSelect_flatten-tree-select-data",
+      "name": "flatten-tree-select-data",
+      "path": "packages/@mantine/core/src/components/TreeSelect/flatten-tree-select-data.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TreeSelect_flatten-tree-select-data",
+      "name": "flatten-tree-select-data",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TreeSelect/flatten-tree-select-data.ts",
+          "content": "import type { TreeNodeData } from '../Tree';\nimport type { TreeExpandedState } from '../Tree/use-tree';\n\nexport interface TreeSelectFlatNode {\n  node: TreeNodeData;\n  level: number;\n  parent: string | null;\n  hasChildren: boolean;\n  expanded: boolean;\n  isLastChild: boolean;\n  lineGuides: boolean[];\n}\n\nfunction flattenTo(\n  acc: TreeSelectFlatNode[],\n  data: TreeNodeData[],\n  expandedState: TreeExpandedState,\n  parent: string | null,\n  level: number,\n  parentGuides: boolean[]\n): void {\n  for (let i = 0; i < data.length; i++) {\n    const node = data[i];\n    const isLast = i === data.length - 1;\n    const hasLoadedChildren = Array.isArray(node.children);\n    const hasAsyncChildren = !!node.hasChildren && !hasLoadedChildren;\n    const hasChildren = hasLoadedChildren || hasAsyncChildren;\n    const expanded = expandedState[node.value] || false;\n\n    acc.push({\n      node,\n      level,\n      parent,\n      hasChildren,\n      expanded,\n      isLastChild: isLast,\n      lineGuides: parentGuides,\n    });\n\n    if (expanded && hasLoadedChildren) {\n      const childGuides = level >= 2 ? [...parentGuides, !isLast] : [];\n      flattenTo(acc, node.children!, expandedState, node.value, level + 1, childGuides);\n    }\n  }\n}\n\nexport function flattenTreeSelectData(\n  data: TreeNodeData[],\n  expandedState: TreeExpandedState\n): TreeSelectFlatNode[] {\n  const result: TreeSelectFlatNode[] = [];\n  flattenTo(result, data, expandedState, null, 1, []);\n  return result;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

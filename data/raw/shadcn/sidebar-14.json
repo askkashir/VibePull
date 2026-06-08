@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-14",
+  "name": "sidebar-14",
+  "source_code": "",
+  "description": "A sidebar on the right.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-14",
+      "type": "registry:block",
+      "description": "A sidebar on the right.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-14\n\nA sidebar on the right.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

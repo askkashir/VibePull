@@ -1,0 +1,40 @@
+{
+  "id": "toggle-group-single",
+  "name": "toggle-group-single",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "button",
+    "settings",
+    "preferences",
+    "configuration"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-single",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-single\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A toggle-group-single is a compact group of toggle buttons that can be used in settings, preferences or configuration pages. It's a suitable choice when 2-4 options need to be presented to the user. The user can interact with it by clicking on the individual toggle buttons to select or deselect the option.",
+  "style_tags": [
+    "e.g. material"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "toggable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-group-single\nDescription: A toggle-group-single is a compact group of toggle buttons that can be used in settings, preferences or configuration pages. It's a suitable choice when 2-4 options need to be presented to the user. The user can interact with it by clicking on the individual toggle buttons to select or deselect the option.\nStyle: e.g. material\nInteractions: e.g. clickable, toggable\nTags: toggle, button, settings, preferences, configuration\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-single",
+  "display_name": "Toggle Group Single",
+  "preview_url": "/previews/shadcn/toggle-group-single.png"
+}

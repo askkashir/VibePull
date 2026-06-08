@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_drawer_index",
+  "name": "drawer",
+  "source_code": "// packages/react/src/components/drawer/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DrawerBackdrop,\n  DrawerBody,\n  DrawerCloseTrigger,\n  DrawerContent,\n  DrawerDialog,\n  DrawerFooter,\n  DrawerHandle,\n  DrawerHeader,\n  DrawerHeading,\n  DrawerRoot,\n  DrawerTrigger,\n} from \"./drawer\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Drawer = Object.assign(DrawerRoot, {\n  Root: DrawerRoot,\n  Trigger: DrawerTrigger,\n  Backdrop: DrawerBackdrop,\n  Content: DrawerContent,\n  Dialog: DrawerDialog,\n  Header: DrawerHeader,\n  Heading: DrawerHeading,\n  Body: DrawerBody,\n  Footer: DrawerFooter,\n  Handle: DrawerHandle,\n  CloseTrigger: DrawerCloseTrigger,\n});\n\nexport type Drawer = {\n  Props: ComponentProps<typeof DrawerRoot>;\n  RootProps: ComponentProps<typeof DrawerRoot>;\n  TriggerProps: ComponentProps<typeof DrawerTrigger>;\n  BackdropProps: ComponentProps<typeof DrawerBackdrop>;\n  ContentProps: ComponentProps<typeof DrawerContent>;\n  DialogProps: ComponentProps<typeof DrawerDialog>;\n  HeaderProps: ComponentProps<typeof DrawerHeader>;\n  HeadingProps: ComponentProps<typeof DrawerHeading>;\n  BodyProps: ComponentProps<typeof DrawerBody>;\n  FooterProps: ComponentProps<typeof DrawerFooter>;\n  HandleProps: ComponentProps<typeof DrawerHandle>;\n  CloseTriggerProps: ComponentProps<typeof DrawerCloseTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DrawerRoot,\n  DrawerTrigger,\n  DrawerBackdrop,\n  DrawerContent,\n  DrawerDialog,\n  DrawerHeader,\n  DrawerHeading,\n  DrawerBody,\n  DrawerFooter,\n  DrawerHandle,\n  DrawerCloseTrigger,\n};\n\nexport type {\n  DrawerRootProps,\n  DrawerRootProps as DrawerProps,\n  DrawerTriggerProps,\n  DrawerBackdropProps,\n  DrawerContentProps,\n  DrawerDialogProps,\n  DrawerHeaderProps,\n  DrawerHeadingProps,\n  DrawerBodyProps,\n  DrawerFooterProps,\n  DrawerHandleProps,\n  DrawerCloseTriggerProps,\n} from \"./drawer\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {drawerVariants} from \"@heroui/styles\";\n\nexport type {DrawerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "drawer_index",
+      "name": "index",
+      "path": "packages/react/src/components/drawer/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_drawer_index",
+      "name": "drawer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/drawer/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  DrawerBackdrop,\n  DrawerBody,\n  DrawerCloseTrigger,\n  DrawerContent,\n  DrawerDialog,\n  DrawerFooter,\n  DrawerHandle,\n  DrawerHeader,\n  DrawerHeading,\n  DrawerRoot,\n  DrawerTrigger,\n} from \"./drawer\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Drawer = Object.assign(DrawerRoot, {\n  Root: DrawerRoot,\n  Trigger: DrawerTrigger,\n  Backdrop: DrawerBackdrop,\n  Content: DrawerContent,\n  Dialog: DrawerDialog,\n  Header: DrawerHeader,\n  Heading: DrawerHeading,\n  Body: DrawerBody,\n  Footer: DrawerFooter,\n  Handle: DrawerHandle,\n  CloseTrigger: DrawerCloseTrigger,\n});\n\nexport type Drawer = {\n  Props: ComponentProps<typeof DrawerRoot>;\n  RootProps: ComponentProps<typeof DrawerRoot>;\n  TriggerProps: ComponentProps<typeof DrawerTrigger>;\n  BackdropProps: ComponentProps<typeof DrawerBackdrop>;\n  ContentProps: ComponentProps<typeof DrawerContent>;\n  DialogProps: ComponentProps<typeof DrawerDialog>;\n  HeaderProps: ComponentProps<typeof DrawerHeader>;\n  HeadingProps: ComponentProps<typeof DrawerHeading>;\n  BodyProps: ComponentProps<typeof DrawerBody>;\n  FooterProps: ComponentProps<typeof DrawerFooter>;\n  HandleProps: ComponentProps<typeof DrawerHandle>;\n  CloseTriggerProps: ComponentProps<typeof DrawerCloseTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DrawerRoot,\n  DrawerTrigger,\n  DrawerBackdrop,\n  DrawerContent,\n  DrawerDialog,\n  DrawerHeader,\n  DrawerHeading,\n  DrawerBody,\n  DrawerFooter,\n  DrawerHandle,\n  DrawerCloseTrigger,\n};\n\nexport type {\n  DrawerRootProps,\n  DrawerRootProps as DrawerProps,\n  DrawerTriggerProps,\n  DrawerBackdropProps,\n  DrawerContentProps,\n  DrawerDialogProps,\n  DrawerHeaderProps,\n  DrawerHeadingProps,\n  DrawerBodyProps,\n  DrawerFooterProps,\n  DrawerHandleProps,\n  DrawerCloseTriggerProps,\n} from \"./drawer\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {drawerVariants} from \"@heroui/styles\";\n\nexport type {DrawerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

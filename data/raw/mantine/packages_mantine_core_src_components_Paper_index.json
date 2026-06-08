@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Paper_index",
+  "name": "Paper",
+  "source_code": "// packages/@mantine/core/src/components/Paper/index.ts\nimport type {\n  PaperBaseProps,\n  PaperCssVariables,\n  PaperFactory,\n  PaperProps,\n  PaperStylesNames,\n} from './Paper';\n\nexport { Paper } from './Paper';\n\nexport type { PaperProps, PaperStylesNames, PaperCssVariables, PaperFactory, PaperBaseProps };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Paper_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Paper/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Paper_index",
+      "name": "Paper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Paper/index.ts",
+          "content": "import type {\n  PaperBaseProps,\n  PaperCssVariables,\n  PaperFactory,\n  PaperProps,\n  PaperStylesNames,\n} from './Paper';\n\nexport { Paper } from './Paper';\n\nexport type { PaperProps, PaperStylesNames, PaperCssVariables, PaperFactory, PaperBaseProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

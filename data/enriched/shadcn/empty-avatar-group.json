@@ -1,0 +1,42 @@
+{
+  "id": "empty-avatar-group",
+  "name": "empty-avatar-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "avatars",
+    "groups",
+    "team-members",
+    "social-media",
+    "chat-applications"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "empty-avatar-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## empty-avatar-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The empty-avatar-group component is a container element that can hold a group of avatars, typically displaying the number of members in a team or group without showing the actual avatars. This component is often used in social media platforms, group chats, or community forums. When a developer would choose to use this component, they are looking for a space-saving way to represent a group of users with a dynamic count.",
+  "style_tags": [
+    "flat",
+    "responsive",
+    "compact"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: empty-avatar-group\nDescription: The empty-avatar-group component is a container element that can hold a group of avatars, typically displaying the number of members in a team or group without showing the actual avatars. This component is often used in social media platforms, group chats, or community forums. When a developer would choose to use this component, they are looking for a space-saving way to represent a group of users with a dynamic count.\nStyle: flat, responsive, compact\nInteractions: clickable, hover\nTags: avatars, groups, team-members, social-media, chat-applications\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "empty-avatar-group",
+  "display_name": "Empty Avatar Group",
+  "preview_url": "/previews/shadcn/empty-avatar-group.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Rating_StarSymbol_StarSymbol",
+  "name": "StarSymbol",
+  "source_code": "// packages/@mantine/core/src/components/Rating/StarSymbol/StarSymbol.tsx\nimport { useRatingContext } from '../Rating.context';\nimport { StarIcon } from './StarIcon';\n\nexport interface StarSymbolProps {\n  type: 'empty' | 'full';\n}\n\nexport function StarSymbol({ type }: StarSymbolProps) {\n  const ctx = useRatingContext();\n  return <StarIcon {...ctx.getStyles('starSymbol')} data-filled={type === 'full' || undefined} />;\n}\n\nStarSymbol.displayName = '@mantine/core/StarSymbol';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Rating_StarSymbol_StarSymbol",
+      "name": "StarSymbol",
+      "path": "packages/@mantine/core/src/components/Rating/StarSymbol/StarSymbol.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Rating_StarSymbol_StarSymbol",
+      "name": "StarSymbol",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Rating/StarSymbol/StarSymbol.tsx",
+          "content": "import { useRatingContext } from '../Rating.context';\nimport { StarIcon } from './StarIcon';\n\nexport interface StarSymbolProps {\n  type: 'empty' | 'full';\n}\n\nexport function StarSymbol({ type }: StarSymbolProps) {\n  const ctx = useRatingContext();\n  return <StarIcon {...ctx.getStyles('starSymbol')} data-filled={type === 'full' || undefined} />;\n}\n\nStarSymbol.displayName = '@mantine/core/StarSymbol';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

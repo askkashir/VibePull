@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_index",
+  "name": "Modal",
+  "source_code": "// packages/@mantine/core/src/components/Modal/index.ts\nimport type { ModalCssVariables, ModalFactory, ModalProps, ModalStylesNames } from './Modal';\nimport type { ModalContextValue } from './Modal.context';\nimport type { ModalBodyProps } from './ModalBody';\nimport type { ModalCloseButtonProps } from './ModalCloseButton';\nimport type { ModalContentProps } from './ModalContent';\nimport type { ModalHeaderProps } from './ModalHeader';\nimport type { ModalOverlayProps } from './ModalOverlay';\nimport type { ModalRootProps } from './ModalRoot';\nimport type { ModalStackProps } from './ModalStack';\nimport type { ModalTitleProps } from './ModalTitle';\n\nexport { Modal } from './Modal';\nexport { ModalRoot } from './ModalRoot';\nexport { ModalBody } from './ModalBody';\nexport { ModalCloseButton } from './ModalCloseButton';\nexport { ModalContent } from './ModalContent';\nexport { ModalHeader } from './ModalHeader';\nexport { ModalOverlay } from './ModalOverlay';\nexport { ModalTitle } from './ModalTitle';\nexport { ModalStack, ModalStackContext } from './ModalStack';\nexport { useModalsStack, useDrawersStack } from './use-modals-stack';\nexport { useModalContext } from './Modal.context';\n\nexport type {\n  ModalProps,\n  ModalStylesNames,\n  ModalCssVariables,\n  ModalFactory,\n  ModalRootProps,\n  ModalBodyProps,\n  ModalCloseButtonProps,\n  ModalContentProps,\n  ModalHeaderProps,\n  ModalOverlayProps,\n  ModalTitleProps,\n  ModalStackProps,\n  ModalContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Modal/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_index",
+      "name": "Modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/index.ts",
+          "content": "import type { ModalCssVariables, ModalFactory, ModalProps, ModalStylesNames } from './Modal';\nimport type { ModalContextValue } from './Modal.context';\nimport type { ModalBodyProps } from './ModalBody';\nimport type { ModalCloseButtonProps } from './ModalCloseButton';\nimport type { ModalContentProps } from './ModalContent';\nimport type { ModalHeaderProps } from './ModalHeader';\nimport type { ModalOverlayProps } from './ModalOverlay';\nimport type { ModalRootProps } from './ModalRoot';\nimport type { ModalStackProps } from './ModalStack';\nimport type { ModalTitleProps } from './ModalTitle';\n\nexport { Modal } from './Modal';\nexport { ModalRoot } from './ModalRoot';\nexport { ModalBody } from './ModalBody';\nexport { ModalCloseButton } from './ModalCloseButton';\nexport { ModalContent } from './ModalContent';\nexport { ModalHeader } from './ModalHeader';\nexport { ModalOverlay } from './ModalOverlay';\nexport { ModalTitle } from './ModalTitle';\nexport { ModalStack, ModalStackContext } from './ModalStack';\nexport { useModalsStack, useDrawersStack } from './use-modals-stack';\nexport { useModalContext } from './Modal.context';\n\nexport type {\n  ModalProps,\n  ModalStylesNames,\n  ModalCssVariables,\n  ModalFactory,\n  ModalRootProps,\n  ModalBodyProps,\n  ModalCloseButtonProps,\n  ModalContentProps,\n  ModalHeaderProps,\n  ModalOverlayProps,\n  ModalTitleProps,\n  ModalStackProps,\n  ModalContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

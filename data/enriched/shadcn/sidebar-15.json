@@ -1,0 +1,41 @@
+{
+  "id": "sidebar-15",
+  "name": "sidebar-15",
+  "source_code": "",
+  "description": "A left and right sidebar.",
+  "tags": [
+    "layout",
+    "navigation",
+    "sidebar"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-15",
+      "type": "registry:block",
+      "description": "A left and right sidebar.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-15\n\nA left and right sidebar.\n\n**Type:** registry:block\n**Files:** 11 file(s)"
+  },
+  "visual_summary": "The sidebar component is a horizontal layout with a left and right sidebar design. It can be used to provide navigation or additional information that complements the main content. Developers would use this component to create a split-screen layout in their application.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "animated"
+  ],
+  "component_type": "registry:block",
+  "generation_prompt": "Create a production-ready registry:block component with the following characteristics:\n\nName: sidebar-15\nDescription: The sidebar component is a horizontal layout with a left and right sidebar design. It can be used to provide navigation or additional information that complements the main content. Developers would use this component to create a split-screen layout in their application.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. hover, animated\nTags: layout, navigation, sidebar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-15",
+  "display_name": "Sidebar 15",
+  "preview_url": "/previews/shadcn/sidebar-15.png"
+}

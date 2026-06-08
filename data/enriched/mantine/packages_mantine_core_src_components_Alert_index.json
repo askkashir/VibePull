@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Alert_index",
+  "name": "Alert",
+  "source_code": "// packages/@mantine/core/src/components/Alert/index.ts\nimport type {\n  AlertCssVariables,\n  AlertFactory,\n  AlertProps,\n  AlertStylesNames,\n  AlertVariant,\n} from './Alert';\n\nexport { Alert } from './Alert';\n\nexport type { AlertProps, AlertStylesNames, AlertCssVariables, AlertFactory, AlertVariant };\n",
+  "description": "",
+  "tags": [
+    "alert",
+    "message",
+    "notification"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Alert_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Alert/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Alert_index",
+      "name": "Alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Alert/index.ts",
+          "content": "import type {\n  AlertCssVariables,\n  AlertFactory,\n  AlertProps,\n  AlertStylesNames,\n  AlertVariant,\n} from './Alert';\n\nexport { Alert } from './Alert';\n\nexport type { AlertProps, AlertStylesNames, AlertCssVariables, AlertFactory, AlertVariant };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Alert is a component used to display a message to the user. It is typically used when a developer needs to draw attention to something.",
+  "style_tags": [
+    "e.g. bordered",
+    "filled",
+    "outline"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Alert\nDescription: Alert is a component used to display a message to the user. It is typically used when a developer needs to draw attention to something.\nStyle: e.g. bordered, filled, outline\nInteractions: \nTags: alert, message, notification\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Alert/index.ts\nimport type {\n  AlertCssVariables,\n  AlertFactory,\n  AlertProps,\n  AlertStylesNames,\n  AlertVariant,\n} from './Alert';\n\nexport { Alert } from './Alert';\n\nexport type { AlertProps, AlertStylesNames, AlertCssVariables, AlertFactory, AlertVariant };\n",
+  "prompt_version": 2,
+  "clean_id": "alert",
+  "display_name": "Alert",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-alert-index.png"
+}

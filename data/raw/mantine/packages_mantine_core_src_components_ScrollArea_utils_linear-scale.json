@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_linear-scale",
+  "name": "linear-scale",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/linear-scale.ts\nexport function linearScale(input: readonly [number, number], output: readonly [number, number]) {\n  return (value: number) => {\n    if (input[0] === input[1] || output[0] === output[1]) {\n      return output[0];\n    }\n    const ratio = (output[1] - output[0]) / (input[1] - input[0]);\n    return output[0] + ratio * (value - input[0]);\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_linear-scale",
+      "name": "linear-scale",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/linear-scale.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_linear-scale",
+      "name": "linear-scale",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/linear-scale.ts",
+          "content": "export function linearScale(input: readonly [number, number], output: readonly [number, number]) {\n  return (value: number) => {\n    if (input[0] === input[1] || output[0] === output[1]) {\n      return output[0];\n    }\n    const ratio = (output[1] - output[0]) / (input[1] - input[0]);\n    return output[0] + ratio * (value - input[0]);\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

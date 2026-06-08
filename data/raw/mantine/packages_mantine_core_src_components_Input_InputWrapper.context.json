@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputWrapper.context",
+  "name": "InputWrapper.context",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputWrapper.context.ts\nimport { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { InputWrapperFactory } from './InputWrapper/InputWrapper';\n\ninterface InputWrapperContextValue {\n  offsetTop: boolean;\n  offsetBottom: boolean;\n  describedBy: string | undefined;\n  inputId: string | undefined;\n  labelId: string | undefined;\n  getStyles: GetStylesApi<InputWrapperFactory> | null;\n}\n\nexport const InputWrapperContext = createContext<InputWrapperContextValue>({\n  offsetBottom: false,\n  offsetTop: false,\n  describedBy: undefined,\n  getStyles: null,\n  inputId: undefined,\n  labelId: undefined,\n});\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputWrapper.context",
+      "name": "InputWrapper.context",
+      "path": "packages/@mantine/core/src/components/Input/InputWrapper.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputWrapper.context",
+      "name": "InputWrapper.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputWrapper.context.ts",
+          "content": "import { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { InputWrapperFactory } from './InputWrapper/InputWrapper';\n\ninterface InputWrapperContextValue {\n  offsetTop: boolean;\n  offsetBottom: boolean;\n  describedBy: string | undefined;\n  inputId: string | undefined;\n  labelId: string | undefined;\n  getStyles: GetStylesApi<InputWrapperFactory> | null;\n}\n\nexport const InputWrapperContext = createContext<InputWrapperContextValue>({\n  offsetBottom: false,\n  offsetTop: false,\n  describedBy: undefined,\n  getStyles: null,\n  inputId: undefined,\n  labelId: undefined,\n});\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

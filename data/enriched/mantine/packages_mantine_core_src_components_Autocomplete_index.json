@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Autocomplete_index",
+  "name": "Autocomplete",
+  "source_code": "// packages/@mantine/core/src/components/Autocomplete/index.ts\nimport type {\n  AutocompleteFactory,\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n} from './Autocomplete';\n\nexport { Autocomplete } from './Autocomplete';\n\nexport type {\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n  AutocompleteFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "autocomplete",
+    "search",
+    "input"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Autocomplete_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Autocomplete/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Autocomplete_index",
+      "name": "Autocomplete",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Autocomplete/index.ts",
+          "content": "import type {\n  AutocompleteFactory,\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n} from './Autocomplete';\n\nexport { Autocomplete } from './Autocomplete';\n\nexport type {\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n  AutocompleteFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "An input field that completes user input with available choices as the user types, often used for search functionality.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Autocomplete\nDescription: An input field that completes user input with available choices as the user types, often used for search functionality.\nStyle: \nInteractions: \nTags: autocomplete, search, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Autocomplete/index.ts\nimport type {\n  AutocompleteFactory,\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n} from './Autocomplete';\n\nexport { Autocomplete } from './Autocomplete';\n\nexport type {\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n  AutocompleteFactory,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "autocomplete",
+  "display_name": "Autocomplete",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-autocomplete-index.png"
+}

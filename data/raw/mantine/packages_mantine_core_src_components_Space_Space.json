@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Space_Space",
+  "name": "Space",
+  "source_code": "// packages/@mantine/core/src/components/Space/Space.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../core';\n\nexport interface SpaceProps extends BoxProps, StylesApiProps<SpaceFactory>, ElementProps<'div'> {}\n\nexport type SpaceFactory = Factory<{\n  props: SpaceProps;\n  ref: HTMLDivElement;\n}>;\n\nexport const Space = factory<SpaceFactory>((props) => {\n  const { w, h, miw, mih, ...others } = useProps('Space', null, props);\n  return <Box {...others} w={w} miw={miw ?? w} h={h} mih={mih ?? h} />;\n});\n\nSpace.displayName = '@mantine/core/Space';\n\nexport namespace Space {\n  export type Props = SpaceProps;\n  export type Factory = SpaceFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Space_Space",
+      "name": "Space",
+      "path": "packages/@mantine/core/src/components/Space/Space.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Space_Space",
+      "name": "Space",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Space/Space.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../core';\n\nexport interface SpaceProps extends BoxProps, StylesApiProps<SpaceFactory>, ElementProps<'div'> {}\n\nexport type SpaceFactory = Factory<{\n  props: SpaceProps;\n  ref: HTMLDivElement;\n}>;\n\nexport const Space = factory<SpaceFactory>((props) => {\n  const { w, h, miw, mih, ...others } = useProps('Space', null, props);\n  return <Box {...others} w={w} miw={miw ?? w} h={h} mih={mih ?? h} />;\n});\n\nSpace.displayName = '@mantine/core/Space';\n\nexport namespace Space {\n  export type Props = SpaceProps;\n  export type Factory = SpaceFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

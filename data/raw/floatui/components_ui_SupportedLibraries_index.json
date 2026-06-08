@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_SupportedLibraries_index",
+  "name": "SupportedLibraries",
+  "source_code": "// components/ui/SupportedLibraries/index.tsx\n\"use client\";\n\nimport {\n  IconArrowsexpandLeft,\n  IconBxCustomize,\n  IconPennibLine,\n} from \"components/icons\";\nimport { ReactNode } from \"react\";\nimport Image from \"next/image\";\nimport Link from \"next/link\";\nimport IconRadix from \"components/icons/IconRadix\";\nimport IconRadixVue from \"components/icons/IconRadixVue\";\nimport IconAlpinejs from \"components/icons/IconAlpinejs\";\n\ntype Feature = {\n  title: string;\n  desc: string;\n  icon: ReactNode | string;\n  href: string;\n};\n\nconst SupportedLibraries = () => {\n  const features: Feature[] = [\n    {\n      title: \"Radix UI\",\n      desc: \"Unstyled, accessible, open source React primitives for high-quality web apps and design systems.\",\n      icon: <IconRadix />,\n      href: \"https://www.radix-ui.com/\",\n    },\n    {\n      title: \"Radix Vue\",\n      desc: \"Unstyled, accessible components for building high‑quality design systems and web apps in Vue.\",\n      icon: <IconRadixVue />,\n      href: \"https://www.radix-vue.com/\",\n    },\n    {\n      title: \"Radix Svelte\",\n      desc: \"An open-source Svelte library for building high-quality, accessible design systems and web apps.\",\n      icon: <MeltUILogo />,\n      href: \"https://www.melt-ui.com/\",\n    },\n    {\n      title: \"Alpine.js\",\n      desc: \"Alpine is a rugged, minimal tool for composing behavior directly in your markup.\",\n      icon: <IconAlpinejs />,\n      href: \"https://alpinejs.dev/\",\n    },\n  ];\n\n  return (\n    <div className=\"space-y-6 gap-6 mt-8 max-w-7xl mx-auto grid-cols-2 sm:grid lg:grid-cols-3 sm:space-y-0\">\n      {features.map((item: Feature, key: number) => (\n        <Link\n          href={item.href}\n          key={key}\n          target=\"_blank\"\n          className=\"no-underline relative space-y-3 w-full border border-zinc-800 rounded-lg p-5 bg-[linear-gradient(180deg,_rgba(24,_24,_27,_0.60)_0%,_rgba(24,_24,_27,_0.00)_100%)] hover:bg-zinc-900 duration-200\"\n        >\n          <div className=\"text-gray-500 w-14 h-14 rounded-full bg-[linear-gradient(180deg,_rgba(39,_39,_42,_0.68)_100%,_rgba(39,_39,_42,_0.00)_100%)] flex items-center justify-center border border-zinc-700\">\n            {item.icon}\n          </div>\n          <h3 className=\"text-base text-zinc-100 font-semibold\">\n            {item.title}\n          </h3>\n          <p className=\"text-sm text-zinc-300\">{item.desc}</p>\n        </Link>\n      ))}\n    </div>\n  );\n};\n\nfunction MeltUILogo() {\n  return (\n    <Image\n      src=\"https://avatars.githubusercontent.com/u/134972826?s=200&v=4\"\n      width={50}\n      height={50}\n      alt=\"Melt UI\"\n      className=\"rounded-full\"\n    />\n  );\n}\n\nexport default SupportedLibraries;\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_SupportedLibraries_index",
+      "name": "index",
+      "path": "components/ui/SupportedLibraries/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_SupportedLibraries_index",
+      "name": "SupportedLibraries",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/SupportedLibraries/index.tsx",
+          "content": "\"use client\";\n\nimport {\n  IconArrowsexpandLeft,\n  IconBxCustomize,\n  IconPennibLine,\n} from \"components/icons\";\nimport { ReactNode } from \"react\";\nimport Image from \"next/image\";\nimport Link from \"next/link\";\nimport IconRadix from \"components/icons/IconRadix\";\nimport IconRadixVue from \"components/icons/IconRadixVue\";\nimport IconAlpinejs from \"components/icons/IconAlpinejs\";\n\ntype Feature = {\n  title: string;\n  desc: string;\n  icon: ReactNode | string;\n  href: string;\n};\n\nconst SupportedLibraries = () => {\n  const features: Feature[] = [\n    {\n      title: \"Radix UI\",\n      desc: \"Unstyled, accessible, open source React primitives for high-quality web apps and design systems.\",\n      icon: <IconRadix />,\n      href: \"https://www.radix-ui.com/\",\n    },\n    {\n      title: \"Radix Vue\",\n      desc: \"Unstyled, accessible components for building high‑quality design systems and web apps in Vue.\",\n      icon: <IconRadixVue />,\n      href: \"https://www.radix-vue.com/\",\n    },\n    {\n      title: \"Radix Svelte\",\n      desc: \"An open-source Svelte library for building high-quality, accessible design systems and web apps.\",\n      icon: <MeltUILogo />,\n      href: \"https://www.melt-ui.com/\",\n    },\n    {\n      title: \"Alpine.js\",\n      desc: \"Alpine is a rugged, minimal tool for composing behavior directly in your markup.\",\n      icon: <IconAlpinejs />,\n      href: \"https://alpinejs.dev/\",\n    },\n  ];\n\n  return (\n    <div className=\"space-y-6 gap-6 mt-8 max-w-7xl mx-auto grid-cols-2 sm:grid lg:grid-cols-3 sm:space-y-0\">\n      {features.map((item: Feature, key: number) => (\n        <Link\n          href={item.href}\n          key={key}\n          target=\"_blank\"\n          className=\"no-underline relative space-y-3 w-full border border-zinc-800 rounded-lg p-5 bg-[linear-gradient(180deg,_rgba(24,_24,_27,_0.60)_0%,_rgba(24,_24,_27,_0.00)_100%)] hover:bg-zinc-900 duration-200\"\n        >\n          <div className=\"text-gray-500 w-14 h-14 rounded-full bg-[linear-gradient(180deg,_rgba(39,_39,_42,_0.68)_100%,_rgba(39,_39,_42,_0.00)_100%)] flex items-center justify-center border border-zinc-700\">\n            {item.icon}\n          </div>\n          <h3 className=\"text-base text-zinc-100 font-semibold\">\n            {item.title}\n          </h3>\n          <p className=\"text-sm text-zinc-300\">{item.desc}</p>\n        </Link>\n      ))}\n    </div>\n  );\n};\n\nfunction MeltUILogo() {\n  return (\n    <Image\n      src=\"https://avatars.githubusercontent.com/u/134972826?s=200&v=4\"\n      width={50}\n      height={50}\n      alt=\"Melt UI\"\n      className=\"rounded-full\"\n    />\n  );\n}\n\nexport default SupportedLibraries;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_FileInput_FileInput.story",
+  "name": "FileInput.story",
+  "source_code": "// packages/@mantine/core/src/components/FileInput/FileInput.story.tsx\nimport { useState } from 'react';\nimport { FileInput } from './FileInput';\n\nexport default { title: 'FileInput' };\n\nexport function Usage() {\n  const [value, setValue] = useState<File | null>(null);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Pick file\" value={value} onChange={setValue} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  const [value, setValue] = useState<File | null>(null);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Pick file\" value={value} onChange={setValue} unstyled />\n    </div>\n  );\n}\n\nexport function Multiple() {\n  const [value, setValue] = useState<File[]>([]);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Multiple\" multiple value={value} onChange={setValue} clearable />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "file",
+    "input",
+    "mantine",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FileInput_FileInput.story",
+      "name": "FileInput.story",
+      "path": "packages/@mantine/core/src/components/FileInput/FileInput.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FileInput_FileInput.story",
+      "name": "FileInput.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FileInput/FileInput.story.tsx",
+          "content": "import { useState } from 'react';\nimport { FileInput } from './FileInput';\n\nexport default { title: 'FileInput' };\n\nexport function Usage() {\n  const [value, setValue] = useState<File | null>(null);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Pick file\" value={value} onChange={setValue} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  const [value, setValue] = useState<File | null>(null);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Pick file\" value={value} onChange={setValue} unstyled />\n    </div>\n  );\n}\n\nexport function Multiple() {\n  const [value, setValue] = useState<File[]>([]);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Multiple\" multiple value={value} onChange={setValue} clearable />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "FileInput.story is a file input story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: FileInput.story\nDescription: FileInput.story is a file input story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: file, input, mantine, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/FileInput/FileInput.story.tsx\nimport { useState } from 'react';\nimport { FileInput } from './FileInput';\n\nexport default { title: 'FileInput' };\n\nexport function Usage() {\n  const [value, setValue] = useState<File | null>(null);\n  return (\n    <div style={{ padding: 40 }}>\n      <FileInput placeholder=\"Pick file\" value={value} onChange={setValue} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  const [value, setValue] = useState<File | null>(null);\n  ",
+  "prompt_version": 2,
+  "clean_id": "file-input",
+  "display_name": "File Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-fileinput-fileinput-story.png"
+}

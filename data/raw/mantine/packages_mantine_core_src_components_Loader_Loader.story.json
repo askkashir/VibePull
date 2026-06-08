@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_Loader.story",
+  "name": "Loader.story",
+  "source_code": "// packages/@mantine/core/src/components/Loader/Loader.story.tsx\nimport { Loader } from './Loader';\n\nexport default { title: 'Loader' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Loader />\n      <Loader type=\"bars\" mt=\"xl\" />\n      <Loader type=\"dots\" mt=\"xl\" />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_Loader.story",
+      "name": "Loader.story",
+      "path": "packages/@mantine/core/src/components/Loader/Loader.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_Loader.story",
+      "name": "Loader.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/Loader.story.tsx",
+          "content": "import { Loader } from './Loader';\n\nexport default { title: 'Loader' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Loader />\n      <Loader type=\"bars\" mt=\"xl\" />\n      <Loader type=\"dots\" mt=\"xl\" />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

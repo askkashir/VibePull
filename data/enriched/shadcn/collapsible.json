@@ -1,0 +1,41 @@
+{
+  "id": "collapsible",
+  "name": "collapsible",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "accordion",
+    "expandable",
+    "mobile-optimized"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## collapsible\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A collapsible component is a container that can be toggled open and closed to reveal or hide its contents. It is commonly used on mobile or desktop to save space and improve user experience. It can be applied to various data types such as FAQs, settings, or additional information panels.",
+  "style_tags": [
+    "light",
+    "flat",
+    "material"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: collapsible\nDescription: A collapsible component is a container that can be toggled open and closed to reveal or hide its contents. It is commonly used on mobile or desktop to save space and improve user experience. It can be applied to various data types such as FAQs, settings, or additional information panels.\nStyle: light, flat, material\nInteractions: animated, hover, clickable\nTags: accordion, expandable, mobile-optimized\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "collapsible",
+  "display_name": "Collapsible",
+  "preview_url": "/previews/shadcn/collapsible.png"
+}

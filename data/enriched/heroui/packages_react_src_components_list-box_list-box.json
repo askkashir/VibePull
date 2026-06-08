@@ -1,0 +1,46 @@
+{
+  "id": "packages_react_src_components_list-box_list-box",
+  "name": "list-box",
+  "source_code": "// packages/react/src/components/list-box/list-box.tsx\n\"use client\";\n\nimport type {ListBoxVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {listboxVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ListBox as ListBoxPrimitive} from \"react-aria-components/ListBox\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * ListBox Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ListBoxRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof ListBoxPrimitive<T>>, ListBoxVariants {\n  className?: string;\n}\n\nfunction ListBoxRoot<T extends object>({className, variant, ...props}: ListBoxRootProps<T>) {\n  const styles = React.useMemo(() => listboxVariants({variant}), [variant]);\n\n  return (\n    <ListBoxPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"list-box\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxRoot};\n\nexport type {ListBoxRootProps};\n",
+  "description": "",
+  "tags": [
+    "list",
+    "selectable",
+    "customizable"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "list-box_list-box",
+      "name": "list-box",
+      "path": "packages/react/src/components/list-box/list-box.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_list-box_list-box",
+      "name": "list-box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/list-box/list-box.tsx",
+          "content": "\"use client\";\n\nimport type {ListBoxVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {listboxVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ListBox as ListBoxPrimitive} from \"react-aria-components/ListBox\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * ListBox Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ListBoxRootProps<T extends object>\n  extends ComponentPropsWithRef<typeof ListBoxPrimitive<T>>, ListBoxVariants {\n  className?: string;\n}\n\nfunction ListBoxRoot<T extends object>({className, variant, ...props}: ListBoxRootProps<T>) {\n  const styles = React.useMemo(() => listboxVariants({variant}), [variant]);\n\n  return (\n    <ListBoxPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"list-box\"\n      {...props}\n    />\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxRoot};\n\nexport type {ListBoxRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A customizable list with a user-selectable item.",
+  "style_tags": [
+    "e.g. minimal",
+    "e.g. default"
+  ],
+  "interaction_tags": [
+    "e.g. clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: list-box\nDescription: A customizable list with a user-selectable item.\nStyle: e.g. minimal, e.g. default\nInteractions: e.g. clickable\nTags: list, selectable, customizable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/list-box/list-box.tsx\n\"use client\";\n\nimport type {ListBoxVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {listboxVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ListBox as ListBoxPrimitive} from \"react-aria-components/ListBox\";\n\nimport {composeTwRenderProps} from \"../../utils\";\n\n/* -------------------------------------------------------------------------------------------------\n * ListBox Root\n * ----",
+  "prompt_version": 2,
+  "clean_id": "list-box",
+  "display_name": "List Box",
+  "preview_url": "/previews/heroui/packages-react-src-components-list-box-list-box.png"
+}

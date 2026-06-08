@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalContent",
+  "name": "ModalContent",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalContent.tsx\nimport { CompoundStylesApiProps, factory, Factory, rem, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalContentStylesNames = 'content' | 'inner';\n\nexport interface ModalContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<ModalContentFactory> {\n  __hidden?: boolean;\n}\n\nexport type ModalContentFactory = Factory<{\n  props: ModalContentProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalContentStylesNames;\n  compound: true;\n}>;\n\nexport const ModalContent = factory<ModalContentFactory>((_props) => {\n  const props = useProps('ModalContent', null, _props);\n  const { classNames, className, style, styles, vars, children, __hidden, ...others } = props;\n\n  const ctx = useModalContext();\n  const Scroll: React.FC<any> = ctx.scrollAreaComponent || NativeScrollArea;\n\n  return (\n    <ModalBaseContent\n      {...ctx.getStyles('content', { className, style, styles, classNames })}\n      innerProps={ctx.getStyles('inner', { className, style, styles, classNames })}\n      data-full-screen={ctx.fullScreen || undefined}\n      data-modal-content\n      data-hidden={__hidden || undefined}\n      {...others}\n    >\n      <Scroll\n        style={{\n          maxHeight: ctx.fullScreen ? '100dvh' : `calc(100dvh - (${rem(ctx.yOffset)} * 2))`,\n        }}\n      >\n        {children}\n      </Scroll>\n    </ModalBaseContent>\n  );\n});\n\nModalContent.classes = classes;\nModalContent.displayName = '@mantine/core/ModalContent';\n",
+  "description": "",
+  "tags": [
+    "content",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalContent",
+      "name": "ModalContent",
+      "path": "packages/@mantine/core/src/components/Modal/ModalContent.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalContent",
+      "name": "ModalContent",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalContent.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, rem, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalContentStylesNames = 'content' | 'inner';\n\nexport interface ModalContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<ModalContentFactory> {\n  __hidden?: boolean;\n}\n\nexport type ModalContentFactory = Factory<{\n  props: ModalContentProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalContentStylesNames;\n  compound: true;\n}>;\n\nexport const ModalContent = factory<ModalContentFactory>((_props) => {\n  const props = useProps('ModalContent', null, _props);\n  const { classNames, className, style, styles, vars, children, __hidden, ...others } = props;\n\n  const ctx = useModalContext();\n  const Scroll: React.FC<any> = ctx.scrollAreaComponent || NativeScrollArea;\n\n  return (\n    <ModalBaseContent\n      {...ctx.getStyles('content', { className, style, styles, classNames })}\n      innerProps={ctx.getStyles('inner', { className, style, styles, classNames })}\n      data-full-screen={ctx.fullScreen || undefined}\n      data-modal-content\n      data-hidden={__hidden || undefined}\n      {...others}\n    >\n      <Scroll\n        style={{\n          maxHeight: ctx.fullScreen ? '100dvh' : `calc(100dvh - (${rem(ctx.yOffset)} * 2))`,\n        }}\n      >\n        {children}\n      </Scroll>\n    </ModalBaseContent>\n  );\n});\n\nModalContent.classes = classes;\nModalContent.displayName = '@mantine/core/ModalContent';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalContent is a modal content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalContent\nDescription: ModalContent is a modal content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: content, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/ModalContent.tsx\nimport { CompoundStylesApiProps, factory, Factory, rem, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalContentStylesNames = 'content' | 'inner';\n\nexport interface ModalContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<ModalContentFac",
+  "prompt_version": 2,
+  "clean_id": "modal-content",
+  "display_name": "Modal Content",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modalcontent.png"
+}

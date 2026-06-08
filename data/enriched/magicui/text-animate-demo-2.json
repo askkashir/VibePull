@@ -1,0 +1,60 @@
+{
+  "id": "text-animate-demo-2",
+  "name": "Text Animate Demo 2",
+  "source_code": "import { TextAnimate } from \"@/registry/magicui/text-animate\"\n\nexport default function TextAnimateDemo2() {\n  return (\n    <TextAnimate animation=\"blurIn\" as=\"h1\">\n      Blur in text\n    </TextAnimate>\n  )\n}\n",
+  "description": "Second example showing various text animations.",
+  "tags": [
+    "text",
+    "animation",
+    "animation-demo"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "text-animate-demo-2",
+      "type": "registry:example",
+      "title": "Text Animate Demo 2",
+      "description": "Second example showing various text animations.",
+      "registryDependencies": [
+        "https://magicui.design/r/text-animate"
+      ],
+      "files": [
+        {
+          "path": "registry/example/text-animate-demo-2.tsx",
+          "type": "registry:example",
+          "target": "components/text-animate-demo-2.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "text-animate-demo-2",
+      "type": "registry:example",
+      "title": "Text Animate Demo 2",
+      "description": "Second example showing various text animations.",
+      "registryDependencies": [
+        "@magicui/text-animate"
+      ],
+      "files": [
+        {
+          "path": "registry/example/text-animate-demo-2.tsx",
+          "content": "import { TextAnimate } from \"@/registry/magicui/text-animate\"\n\nexport default function TextAnimateDemo2() {\n  return (\n    <TextAnimate animation=\"blurIn\" as=\"h1\">\n      Blur in text\n    </TextAnimate>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A customizable text animation component that can be used to draw attention to key text elements on a webpage, ideal for creating visually appealing headlines or titles.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Text Animate Demo 2\nDescription: A customizable text animation component that can be used to draw attention to key text elements on a webpage, ideal for creating visually appealing headlines or titles.\nStyle: minimal\nInteractions: animated\nTags: text, animation, animation-demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { TextAnimate } from \"@/registry/magicui/text-animate\"\n\nexport default function TextAnimateDemo2() {\n  return (\n    <TextAnimate animation=\"blurIn\" as=\"h1\">\n      Blur in text\n    </TextAnimate>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "text-animate-demo-2",
+  "display_name": "Text Animate Demo 2",
+  "preview_url": "/previews/magicui/text-animate-demo-2.png"
+}

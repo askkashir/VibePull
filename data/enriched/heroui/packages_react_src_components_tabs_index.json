@@ -1,0 +1,42 @@
+{
+  "id": "packages_react_src_components_tabs_index",
+  "name": "tabs",
+  "source_code": "// packages/react/src/components/tabs/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  Tab,\n  TabIndicator,\n  TabList,\n  TabListContainer,\n  TabPanel,\n  TabSeparator,\n  TabsRoot,\n} from \"./tabs\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Tabs = Object.assign(TabsRoot, {\n  Root: TabsRoot,\n  ListContainer: TabListContainer,\n  List: TabList,\n  Tab,\n  Indicator: TabIndicator,\n  Separator: TabSeparator,\n  Panel: TabPanel,\n});\n\nexport type Tabs = {\n  Props: ComponentProps<typeof TabsRoot>;\n  RootProps: ComponentProps<typeof TabsRoot>;\n  ListContainer: ComponentProps<typeof TabListContainer>;\n  ListProps: ComponentProps<typeof TabList>;\n  TabProps: ComponentProps<typeof Tab>;\n  IndicatorProps: ComponentProps<typeof TabIndicator>;\n  SeparatorProps: ComponentProps<typeof TabSeparator>;\n  PanelProps: ComponentProps<typeof TabPanel>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {TabsRoot, TabListContainer, TabList, Tab, TabIndicator, TabSeparator, TabPanel};\n\nexport type {\n  TabsRootProps,\n  TabsRootProps as TabsProps,\n  TabListContainerProps,\n  TabListProps,\n  TabProps,\n  TabIndicatorProps,\n  TabSeparatorProps,\n  TabPanelProps,\n} from \"./tabs\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {tabsVariants} from \"@heroui/styles\";\n\nexport type {TabsVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "tabs"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "tabs_index",
+      "name": "index",
+      "path": "packages/react/src/components/tabs/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_tabs_index",
+      "name": "tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/tabs/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  Tab,\n  TabIndicator,\n  TabList,\n  TabListContainer,\n  TabPanel,\n  TabSeparator,\n  TabsRoot,\n} from \"./tabs\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Tabs = Object.assign(TabsRoot, {\n  Root: TabsRoot,\n  ListContainer: TabListContainer,\n  List: TabList,\n  Tab,\n  Indicator: TabIndicator,\n  Separator: TabSeparator,\n  Panel: TabPanel,\n});\n\nexport type Tabs = {\n  Props: ComponentProps<typeof TabsRoot>;\n  RootProps: ComponentProps<typeof TabsRoot>;\n  ListContainer: ComponentProps<typeof TabListContainer>;\n  ListProps: ComponentProps<typeof TabList>;\n  TabProps: ComponentProps<typeof Tab>;\n  IndicatorProps: ComponentProps<typeof TabIndicator>;\n  SeparatorProps: ComponentProps<typeof TabSeparator>;\n  PanelProps: ComponentProps<typeof TabPanel>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {TabsRoot, TabListContainer, TabList, Tab, TabIndicator, TabSeparator, TabPanel};\n\nexport type {\n  TabsRootProps,\n  TabsRootProps as TabsProps,\n  TabListContainerProps,\n  TabListProps,\n  TabProps,\n  TabIndicatorProps,\n  TabSeparatorProps,\n  TabPanelProps,\n} from \"./tabs\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {tabsVariants} from \"@heroui/styles\";\n\nexport type {TabsVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "tabs is a tabs UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: tabs\nDescription: tabs is a tabs UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heroui, other, tabs\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/tabs/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  Tab,\n  TabIndicator,\n  TabList,\n  TabListContainer,\n  TabPanel,\n  TabSeparator,\n  TabsRoot,\n} from \"./tabs\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Tabs = Object.assign(TabsRoot, {\n  Root: TabsRoot,\n",
+  "prompt_version": 2,
+  "clean_id": "tabs",
+  "display_name": "Tabs",
+  "preview_url": "/previews/heroui/packages-react-src-components-tabs-index.png"
+}

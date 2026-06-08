@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AngleSlider_index",
+  "name": "AngleSlider",
+  "source_code": "// packages/@mantine/core/src/components/AngleSlider/index.ts\nimport type {\n  AngleSliderCssVariables,\n  AngleSliderFactory,\n  AngleSliderProps,\n  AngleSliderStylesNames,\n} from './AngleSlider';\n\nexport { AngleSlider } from './AngleSlider';\nexport type {\n  AngleSliderCssVariables,\n  AngleSliderFactory,\n  AngleSliderProps,\n  AngleSliderStylesNames,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AngleSlider_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/AngleSlider/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AngleSlider_index",
+      "name": "AngleSlider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AngleSlider/index.ts",
+          "content": "import type {\n  AngleSliderCssVariables,\n  AngleSliderFactory,\n  AngleSliderProps,\n  AngleSliderStylesNames,\n} from './AngleSlider';\n\nexport { AngleSlider } from './AngleSlider';\nexport type {\n  AngleSliderCssVariables,\n  AngleSliderFactory,\n  AngleSliderProps,\n  AngleSliderStylesNames,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

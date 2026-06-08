@@ -1,0 +1,55 @@
+{
+  "id": "packages_radix-ui-themes_src_components_em",
+  "name": "em",
+  "source_code": "// packages/radix-ui-themes/src/components/em.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { emPropDefs } from './em.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype EmElement = React.ElementRef<'em'>;\ntype EmOwnProps = GetPropDefTypes<typeof emPropDefs>;\ninterface EmProps extends ComponentPropsWithout<'em', RemovedProps>, EmOwnProps {}\nconst Em = React.forwardRef<EmElement, EmProps>((props, forwardedRef) => {\n  const { asChild, className, ...emProps } = extractProps(props, emPropDefs);\n  const Comp = asChild ? Slot.Root : 'em';\n  return <Comp {...emProps} ref={forwardedRef} className={classNames('rt-Em', className)} />;\n});\nEm.displayName = 'Em';\n\nexport { Em };\nexport type { EmProps };\n",
+  "description": "",
+  "tags": [
+    "font",
+    "styling",
+    "typography"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_em",
+      "name": "em.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/em.tsx",
+      "sha": "bb1ca083d3c3940b115a9f05f585bdeb2c485d68",
+      "size": 896,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/em.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/em.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/bb1ca083d3c3940b115a9f05f585bdeb2c485d68",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/em.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/em.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/bb1ca083d3c3940b115a9f05f585bdeb2c485d68",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/em.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_em",
+      "name": "em",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/em.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { emPropDefs } from './em.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype EmElement = React.ElementRef<'em'>;\ntype EmOwnProps = GetPropDefTypes<typeof emPropDefs>;\ninterface EmProps extends ComponentPropsWithout<'em', RemovedProps>, EmOwnProps {}\nconst Em = React.forwardRef<EmElement, EmProps>((props, forwardedRef) => {\n  const { asChild, className, ...emProps } = extractProps(props, emPropDefs);\n  const Comp = asChild ? Slot.Root : 'em';\n  return <Comp {...emProps} ref={forwardedRef} className={classNames('rt-Em', className)} />;\n});\nEm.displayName = 'Em';\n\nexport { Em };\nexport type { EmProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A React component wrapping the HTML element <em> for emphasis. It's typically used to indicate a change in font style, such as italics. Developers can use it when they need to emphasize text or phrases in their UI.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: em\nDescription: A React component wrapping the HTML element <em> for emphasis. It's typically used to indicate a change in font style, such as italics. Developers can use it when they need to emphasize text or phrases in their UI.\nStyle: minimal\nInteractions: \nTags: font, styling, typography\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/em.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { emPropDefs } from './em.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype EmElement = React.ElementRef<'em'>;\ntype EmOwnProps = GetPropDefTypes<typeof emPropDe",
+  "prompt_version": 2,
+  "clean_id": "em",
+  "display_name": "Em",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-em.png"
+}

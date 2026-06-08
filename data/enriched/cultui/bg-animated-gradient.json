@@ -1,0 +1,62 @@
+{
+  "id": "bg-animated-gradient",
+  "name": "bg-animated-gradient",
+  "source_code": "// registry/default/ui/bg-animated-gradient.tsx\n\"use client\"\n\nimport React, { useEffect } from \"react\"\nimport { motion, useAnimation } from \"motion/react\"\n\ninterface GradientStop {\n  color: string\n  position: number\n}\n\ninterface GradientType {\n  stops: GradientStop[]\n  centerX: number\n  centerY: number\n}\n\ninterface GradientAnimationProps {\n  gradients: GradientType[]\n  animationDuration: number\n  className?: string\n}\n\nexport const GradientAnimation: React.FC<GradientAnimationProps> = ({\n  gradients,\n  animationDuration,\n  className = \"\",\n}) => {\n  const controls = useAnimation()\n\n  useEffect(() => {\n    controls.start({\n      background: gradients.map(\n        (g) =>\n          `radial-gradient(circle at ${g.centerX}% ${g.centerY}%, ${g.stops\n            .map((s) => `${s.color} ${s.position}%`)\n            .join(\", \")})`\n      ),\n      transition: {\n        duration: animationDuration,\n        repeat: Infinity,\n        repeatType: \"reverse\",\n        ease: \"linear\",\n      },\n    })\n  }, [controls, gradients, animationDuration])\n\n  return (\n    <motion.div\n      className={`absolute inset-0 h-full w-full ${className}`}\n      animate={controls}\n    />\n  )\n}\n\nexport default React.memo(GradientAnimation)\n",
+  "description": "Animated gradient background component with customizable color transitions",
+  "tags": [
+    "background",
+    "animation",
+    "responsive"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "bg-animated-gradient.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/bg-animated-gradient.json",
+      "sha": "88990e33958ecc6d91a131b83d7f95b5ba45bd27",
+      "size": 1638,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-animated-gradient.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-animated-gradient.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/88990e33958ecc6d91a131b83d7f95b5ba45bd27",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/bg-animated-gradient.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-animated-gradient.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/88990e33958ecc6d91a131b83d7f95b5ba45bd27",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-animated-gradient.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bg-animated-gradient",
+      "type": "registry:ui",
+      "description": "Animated gradient background component with customizable color transitions",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/bg-animated-gradient.tsx",
+          "content": "\"use client\"\n\nimport React, { useEffect } from \"react\"\nimport { motion, useAnimation } from \"motion/react\"\n\ninterface GradientStop {\n  color: string\n  position: number\n}\n\ninterface GradientType {\n  stops: GradientStop[]\n  centerX: number\n  centerY: number\n}\n\ninterface GradientAnimationProps {\n  gradients: GradientType[]\n  animationDuration: number\n  className?: string\n}\n\nexport const GradientAnimation: React.FC<GradientAnimationProps> = ({\n  gradients,\n  animationDuration,\n  className = \"\",\n}) => {\n  const controls = useAnimation()\n\n  useEffect(() => {\n    controls.start({\n      background: gradients.map(\n        (g) =>\n          `radial-gradient(circle at ${g.centerX}% ${g.centerY}%, ${g.stops\n            .map((s) => `${s.color} ${s.position}%`)\n            .join(\", \")})`\n      ),\n      transition: {\n        duration: animationDuration,\n        repeat: Infinity,\n        repeatType: \"reverse\",\n        ease: \"linear\",\n      },\n    })\n  }, [controls, gradients, animationDuration])\n\n  return (\n    <motion.div\n      className={`absolute inset-0 h-full w-full ${className}`}\n      animate={controls}\n    />\n  )\n}\n\nexport default React.memo(GradientAnimation)\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "bg-animated-gradient is a full-size, full-width animated background component that can be used for dynamic and interactive website backgrounds or for creating attention-grabbing effects.",
+  "style_tags": [
+    "dynamic",
+    "interactive"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: bg-animated-gradient\nDescription: bg-animated-gradient is a full-size, full-width animated background component that can be used for dynamic and interactive website backgrounds or for creating attention-grabbing effects.\nStyle: dynamic, interactive\nInteractions: animated\nTags: background, animation, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/bg-animated-gradient.tsx\n\"use client\"\n\nimport React, { useEffect } from \"react\"\nimport { motion, useAnimation } from \"motion/react\"\n\ninterface GradientStop {\n  color: string\n  position: number\n}\n\ninterface GradientType {\n  stops: GradientStop[]\n  centerX: number\n  centerY: number\n}\n\ninterface GradientAnimationProps {\n  gradients: GradientType[]\n  animationDuration: number\n  className?: string\n}\n\nexport const GradientAnimation: React.FC<GradientAnimationProps> = ({\n  gradie",
+  "prompt_version": 2,
+  "clean_id": "bg-animated-gradient",
+  "display_name": "Bg Animated Gradient",
+  "preview_url": "/previews/cultui/bg-animated-gradient.png"
+}

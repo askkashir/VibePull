@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Affix_Affix.story",
+  "name": "Affix.story",
+  "source_code": "// packages/@mantine/core/src/components/Affix/Affix.story.tsx\nimport { Box } from '../../core';\nimport { Affix } from './Affix';\n\nexport default { title: 'Affix' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Affix position={{ bottom: 'xl', right: 90 }}>\n        <Box bg=\"blue\" p=\"xl\">\n          Affix box\n        </Box>\n      </Affix>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "affix",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Affix_Affix.story",
+      "name": "Affix.story",
+      "path": "packages/@mantine/core/src/components/Affix/Affix.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Affix_Affix.story",
+      "name": "Affix.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Affix/Affix.story.tsx",
+          "content": "import { Box } from '../../core';\nimport { Affix } from './Affix';\n\nexport default { title: 'Affix' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Affix position={{ bottom: 'xl', right: 90 }}>\n        <Box bg=\"blue\" p=\"xl\">\n          Affix box\n        </Box>\n      </Affix>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Affix.story is a affix story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Affix.story\nDescription: Affix.story is a affix story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: affix, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Affix/Affix.story.tsx\nimport { Box } from '../../core';\nimport { Affix } from './Affix';\n\nexport default { title: 'Affix' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Affix position={{ bottom: 'xl', right: 90 }}>\n        <Box bg=\"blue\" p=\"xl\">\n          Affix box\n        </Box>\n      </Affix>\n    </div>\n  );\n}\n",
+  "prompt_version": 2,
+  "clean_id": "affix",
+  "display_name": "Affix",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-affix-affix-story.png"
+}

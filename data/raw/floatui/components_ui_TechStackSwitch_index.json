@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_TechStackSwitch_index",
+  "name": "TechStackSwitch",
+  "source_code": "// components/ui/TechStackSwitch/index.tsx\nimport { ChangeEventHandler } from \"react\";\n\nexport default ({\n  setTechStack,\n  framework,\n}: {\n  setTechStack: (type: any) => void;\n  framework: string;\n}) => {\n  // Select menu items\n  const techStack =\n    framework == \"react\"\n      ? [\n          {\n            label: \"React and Tailwind\",\n            key: \"jsxTail\",\n          },\n          {\n            label: \"React and CSS\",\n            key: \"jsxCss\",\n          },\n        ]\n      : [\n          {\n            label: \"Vue and Tailwind\",\n            key: \"vueTail\",\n          },\n          {\n            label: \"Vue and CSS\",\n            key: \"vueCss\",\n          },\n        ];\n\n  return (\n    <div className=\"flex items-center gap-1.5 text-gray-500 dark:text-gray-300 border dark:border-gray-700 p-2 rounded-md\">\n      <select\n        className=\"outline-none bg-transparent appearance-none text-sm\"\n        onChange={(e) => setTechStack(e.target.value)}\n      >\n        {techStack.map((item, idx) => (\n          <option key={idx} value={item.key}>\n            {item.label}\n          </option>\n        ))}\n      </select>\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        className=\"h-5 w-5\"\n        viewBox=\"0 0 20 20\"\n        fill=\"currentColor\"\n      >\n        <path\n          fillRule=\"evenodd\"\n          d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\"\n          clipRule=\"evenodd\"\n        />\n      </svg>\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_TechStackSwitch_index",
+      "name": "index",
+      "path": "components/ui/TechStackSwitch/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_TechStackSwitch_index",
+      "name": "TechStackSwitch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/TechStackSwitch/index.tsx",
+          "content": "import { ChangeEventHandler } from \"react\";\n\nexport default ({\n  setTechStack,\n  framework,\n}: {\n  setTechStack: (type: any) => void;\n  framework: string;\n}) => {\n  // Select menu items\n  const techStack =\n    framework == \"react\"\n      ? [\n          {\n            label: \"React and Tailwind\",\n            key: \"jsxTail\",\n          },\n          {\n            label: \"React and CSS\",\n            key: \"jsxCss\",\n          },\n        ]\n      : [\n          {\n            label: \"Vue and Tailwind\",\n            key: \"vueTail\",\n          },\n          {\n            label: \"Vue and CSS\",\n            key: \"vueCss\",\n          },\n        ];\n\n  return (\n    <div className=\"flex items-center gap-1.5 text-gray-500 dark:text-gray-300 border dark:border-gray-700 p-2 rounded-md\">\n      <select\n        className=\"outline-none bg-transparent appearance-none text-sm\"\n        onChange={(e) => setTechStack(e.target.value)}\n      >\n        {techStack.map((item, idx) => (\n          <option key={idx} value={item.key}>\n            {item.label}\n          </option>\n        ))}\n      </select>\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        className=\"h-5 w-5\"\n        viewBox=\"0 0 20 20\"\n        fill=\"currentColor\"\n      >\n        <path\n          fillRule=\"evenodd\"\n          d=\"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z\"\n          clipRule=\"evenodd\"\n        />\n      </svg>\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

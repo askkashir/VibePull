@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Paper_Paper.story",
+  "name": "Paper.story",
+  "source_code": "// packages/@mantine/core/src/components/Paper/Paper.story.tsx\nimport { Paper } from './Paper';\n\nexport default { title: 'Paper' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 600 }}>\n      <Paper shadow=\"md\" withBorder p=\"xl\">\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et illo? Dolores\n        mollitia, maiores est totam ab libero itaque fuga, dolorum hic nesciunt quibusdam, esse amet\n        magni quia voluptatibus molestias!\n      </Paper>\n    </div>\n  );\n}\n\nexport function SpaceSeparatedRadius() {\n  return (\n    <div style={{ padding: 40, maxWidth: 600 }}>\n      <Paper radius=\"0 0 1rem 1rem\" shadow=\"md\" withBorder p=\"xl\">\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et illo? Dolores\n        mollitia, maiores est totam ab libero itaque fuga, dolorum hic nesciunt quibusdam, esse amet\n        magni quia voluptatibus molestias!\n      </Paper>\n    </div>\n  );\n}\n\nexport function NestedPapers() {\n  return (\n    <Paper p=\"md\" withBorder shadow=\"md\">\n      Parent\n      <Paper p=\"md\" shadow=\"none\">\n        Child\n      </Paper>\n    </Paper>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Paper_Paper.story",
+      "name": "Paper.story",
+      "path": "packages/@mantine/core/src/components/Paper/Paper.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Paper_Paper.story",
+      "name": "Paper.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Paper/Paper.story.tsx",
+          "content": "import { Paper } from './Paper';\n\nexport default { title: 'Paper' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 600 }}>\n      <Paper shadow=\"md\" withBorder p=\"xl\">\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et illo? Dolores\n        mollitia, maiores est totam ab libero itaque fuga, dolorum hic nesciunt quibusdam, esse amet\n        magni quia voluptatibus molestias!\n      </Paper>\n    </div>\n  );\n}\n\nexport function SpaceSeparatedRadius() {\n  return (\n    <div style={{ padding: 40, maxWidth: 600 }}>\n      <Paper radius=\"0 0 1rem 1rem\" shadow=\"md\" withBorder p=\"xl\">\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, et illo? Dolores\n        mollitia, maiores est totam ab libero itaque fuga, dolorum hic nesciunt quibusdam, esse amet\n        magni quia voluptatibus molestias!\n      </Paper>\n    </div>\n  );\n}\n\nexport function NestedPapers() {\n  return (\n    <Paper p=\"md\" withBorder shadow=\"md\">\n      Parent\n      <Paper p=\"md\" shadow=\"none\">\n        Child\n      </Paper>\n    </Paper>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

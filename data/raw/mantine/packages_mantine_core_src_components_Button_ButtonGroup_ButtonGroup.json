@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Button_ButtonGroup_ButtonGroup",
+  "name": "ButtonGroup",
+  "source_code": "// packages/@mantine/core/src/components/Button/ButtonGroup/ButtonGroup.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  factory,\n  Factory,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Button.module.css';\n\nexport type ButtonGroupStylesNames = 'group';\nexport type ButtonGroupCssVariables = {\n  group: '--button-border-width';\n};\n\nexport interface ButtonGroupProps extends BoxProps, StylesApiProps<ButtonGroupFactory> {\n  /** `Button` components */\n  children?: React.ReactNode;\n\n  /** Orientation of the group @default horizontal */\n  orientation?: 'horizontal' | 'vertical';\n\n  /** `border-width` of the child `Button` components. Numbers are converted to rem. @default 1 */\n  borderWidth?: number | string;\n}\n\nexport type ButtonGroupFactory = Factory<{\n  props: ButtonGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ButtonGroupStylesNames;\n  vars: ButtonGroupCssVariables;\n}>;\n\nconst defaultProps = {\n  orientation: 'horizontal',\n} satisfies Partial<ButtonGroupProps>;\n\nconst varsResolver = createVarsResolver<ButtonGroupFactory>((_, { borderWidth }) => ({\n  group: { '--button-border-width': rem(borderWidth) },\n}));\n\nexport const ButtonGroup = factory<ButtonGroupFactory>((_props) => {\n  const props = useProps('ButtonGroup', defaultProps, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    orientation,\n    vars,\n    borderWidth,\n    mod,\n    attributes,\n    ...others\n  } = useProps('ButtonGroup', defaultProps, _props);\n\n  const getStyles = useStyles<ButtonGroupFactory>({\n    name: 'ButtonGroup',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <Box\n      {...getStyles('group')}\n      mod={[{ 'data-orientation': orientation }, mod]}\n      role=\"group\"\n      {...others}\n    />\n  );\n});\n\nButtonGroup.classes = classes;\nButtonGroup.varsResolver = varsResolver;\nButtonGroup.displayName = '@mantine/core/ButtonGroup';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Button_ButtonGroup_ButtonGroup",
+      "name": "ButtonGroup",
+      "path": "packages/@mantine/core/src/components/Button/ButtonGroup/ButtonGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Button_ButtonGroup_ButtonGroup",
+      "name": "ButtonGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Button/ButtonGroup/ButtonGroup.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  factory,\n  Factory,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Button.module.css';\n\nexport type ButtonGroupStylesNames = 'group';\nexport type ButtonGroupCssVariables = {\n  group: '--button-border-width';\n};\n\nexport interface ButtonGroupProps extends BoxProps, StylesApiProps<ButtonGroupFactory> {\n  /** `Button` components */\n  children?: React.ReactNode;\n\n  /** Orientation of the group @default horizontal */\n  orientation?: 'horizontal' | 'vertical';\n\n  /** `border-width` of the child `Button` components. Numbers are converted to rem. @default 1 */\n  borderWidth?: number | string;\n}\n\nexport type ButtonGroupFactory = Factory<{\n  props: ButtonGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ButtonGroupStylesNames;\n  vars: ButtonGroupCssVariables;\n}>;\n\nconst defaultProps = {\n  orientation: 'horizontal',\n} satisfies Partial<ButtonGroupProps>;\n\nconst varsResolver = createVarsResolver<ButtonGroupFactory>((_, { borderWidth }) => ({\n  group: { '--button-border-width': rem(borderWidth) },\n}));\n\nexport const ButtonGroup = factory<ButtonGroupFactory>((_props) => {\n  const props = useProps('ButtonGroup', defaultProps, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    orientation,\n    vars,\n    borderWidth,\n    mod,\n    attributes,\n    ...others\n  } = useProps('ButtonGroup', defaultProps, _props);\n\n  const getStyles = useStyles<ButtonGroupFactory>({\n    name: 'ButtonGroup',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <Box\n      {...getStyles('group')}\n      mod={[{ 'data-orientation': orientation }, mod]}\n      role=\"group\"\n      {...others}\n    />\n  );\n});\n\nButtonGroup.classes = classes;\nButtonGroup.varsResolver = varsResolver;\nButtonGroup.displayName = '@mantine/core/ButtonGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

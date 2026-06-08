@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Portal_Portal.story",
+  "name": "Portal.story",
+  "source_code": "// packages/@mantine/core/src/components/Portal/Portal.story.tsx\nimport { Portal } from './Portal';\n\nexport default { title: 'Portal' };\n\nexport function Usage() {\n  return (\n    <>\n      <div id=\"portal-target\" />\n      <Portal style={{ background: 'pink' }} className=\"class1 class2\">\n        <p>First</p>\n      </Portal>\n      <Portal style={{ background: 'pink' }}>\n        <p>Second</p>\n      </Portal>\n    </>\n  );\n}\n\nexport function ReuseDomNode() {\n  return (\n    <div>\n      <Portal reuseTargetNode>\n        <p>First</p>\n      </Portal>\n      <Portal reuseTargetNode>\n        <p>Second</p>\n      </Portal>\n      <Portal reuseTargetNode>\n        <p>Third</p>\n      </Portal>\n    </div>\n  );\n}\n\nexport function ElementTarget() {\n  const target = document.createElement('div');\n  document.body.appendChild(target);\n  return (\n    <>\n      <Portal style={{ background: 'pink' }} target={target}>\n        <p>First</p>\n      </Portal>\n      <Portal style={{ background: 'pink' }} target={target}>\n        <p>Second</p>\n      </Portal>\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "portal",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Portal_Portal.story",
+      "name": "Portal.story",
+      "path": "packages/@mantine/core/src/components/Portal/Portal.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Portal_Portal.story",
+      "name": "Portal.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Portal/Portal.story.tsx",
+          "content": "import { Portal } from './Portal';\n\nexport default { title: 'Portal' };\n\nexport function Usage() {\n  return (\n    <>\n      <div id=\"portal-target\" />\n      <Portal style={{ background: 'pink' }} className=\"class1 class2\">\n        <p>First</p>\n      </Portal>\n      <Portal style={{ background: 'pink' }}>\n        <p>Second</p>\n      </Portal>\n    </>\n  );\n}\n\nexport function ReuseDomNode() {\n  return (\n    <div>\n      <Portal reuseTargetNode>\n        <p>First</p>\n      </Portal>\n      <Portal reuseTargetNode>\n        <p>Second</p>\n      </Portal>\n      <Portal reuseTargetNode>\n        <p>Third</p>\n      </Portal>\n    </div>\n  );\n}\n\nexport function ElementTarget() {\n  const target = document.createElement('div');\n  document.body.appendChild(target);\n  return (\n    <>\n      <Portal style={{ background: 'pink' }} target={target}>\n        <p>First</p>\n      </Portal>\n      <Portal style={{ background: 'pink' }} target={target}>\n        <p>Second</p>\n      </Portal>\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Portal.story is a portal story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Portal.story\nDescription: Portal.story is a portal story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: mantine, other, portal, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Portal/Portal.story.tsx\nimport { Portal } from './Portal';\n\nexport default { title: 'Portal' };\n\nexport function Usage() {\n  return (\n    <>\n      <div id=\"portal-target\" />\n      <Portal style={{ background: 'pink' }} className=\"class1 class2\">\n        <p>First</p>\n      </Portal>\n      <Portal style={{ background: 'pink' }}>\n        <p>Second</p>\n      </Portal>\n    </>\n  );\n}\n\nexport function ReuseDomNode() {\n  return (\n    <div>\n      <Portal reuseTar",
+  "prompt_version": 2,
+  "clean_id": "portal",
+  "display_name": "Portal",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-portal-portal-story.png"
+}

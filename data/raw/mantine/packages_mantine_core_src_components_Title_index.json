@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Title_index",
+  "name": "Title",
+  "source_code": "// packages/@mantine/core/src/components/Title/index.ts\nimport type {\n  TitleCssVariables,\n  TitleFactory,\n  TitleOrder,\n  TitleProps,\n  TitleSize,\n  TitleStylesNames,\n} from './Title';\n\nexport { Title } from './Title';\n\nexport type {\n  TitleProps,\n  TitleOrder,\n  TitleSize,\n  TitleStylesNames,\n  TitleCssVariables,\n  TitleFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Title_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Title/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Title_index",
+      "name": "Title",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Title/index.ts",
+          "content": "import type {\n  TitleCssVariables,\n  TitleFactory,\n  TitleOrder,\n  TitleProps,\n  TitleSize,\n  TitleStylesNames,\n} from './Title';\n\nexport { Title } from './Title';\n\nexport type {\n  TitleProps,\n  TitleOrder,\n  TitleSize,\n  TitleStylesNames,\n  TitleCssVariables,\n  TitleFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

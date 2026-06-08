@@ -1,0 +1,39 @@
+{
+  "id": "field-group",
+  "name": "field-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "grouping",
+    "input-organization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The field-group component is a container element that groups related form fields together. It is commonly used in registration or login forms to keep inputs organized. Developers can use this component when they need to present a set of fields with a clear label and clear separation.",
+  "style_tags": [
+    "default",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "not-animated",
+    "not-hover"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: field-group\nDescription: The field-group component is a container element that groups related form fields together. It is commonly used in registration or login forms to keep inputs organized. Developers can use this component when they need to present a set of fields with a clear label and clear separation.\nStyle: default, minimal\nInteractions: not-animated, not-hover\nTags: form, grouping, input-organization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-group",
+  "display_name": "Field Group",
+  "preview_url": "/previews/shadcn/field-group.png"
+}

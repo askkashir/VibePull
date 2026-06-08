@@ -1,0 +1,61 @@
+{
+  "id": "neumorph-eyebrow-demo",
+  "name": "neumorph-eyebrow-demo",
+  "source_code": "// registry/default/example/neumorph-eyebrow-demo.tsx\nimport { NeumorphEyebrow } from \"../ui/neumorph-eyebrow\"\n\nexport default function NeumorphEyebrowDemo() {\n  return (\n    <div className=\"space-y-4 flex flex-col items-center justify-center w-full\">\n      <NeumorphEyebrow>A milestone in scraping</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"primary\">Primary variant</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"secondary\">Secondary variant</NeumorphEyebrow>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "neumorph-eyebrow",
+    "demo",
+    "example"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "neumorph-eyebrow-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/neumorph-eyebrow-demo.json",
+      "sha": "a0bbaaf104e5c3d4a9b4665217aca45abffc9dc1",
+      "size": 794,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/neumorph-eyebrow-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/neumorph-eyebrow-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/a0bbaaf104e5c3d4a9b4665217aca45abffc9dc1",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/neumorph-eyebrow-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/neumorph-eyebrow-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/a0bbaaf104e5c3d4a9b4665217aca45abffc9dc1",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/neumorph-eyebrow-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "neumorph-eyebrow-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "neumorph-eyebrow"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/neumorph-eyebrow-demo.tsx",
+          "content": "import { NeumorphEyebrow } from \"../ui/neumorph-eyebrow\"\n\nexport default function NeumorphEyebrowDemo() {\n  return (\n    <div className=\"space-y-4 flex flex-col items-center justify-center w-full\">\n      <NeumorphEyebrow>A milestone in scraping</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"primary\">Primary variant</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"secondary\">Secondary variant</NeumorphEyebrow>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A Neumorph Eyebrow is a small, rounded text component used to highlight and provide context to information. It can be used to draw attention to a specific milestone or achievement, or to indicate the importance of a particular piece of information. It is typically used as a secondary call-out to emphasize specific data points.",
+  "style_tags": [
+    "neumorphic",
+    "eyebrow"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: neumorph-eyebrow-demo\nDescription: A Neumorph Eyebrow is a small, rounded text component used to highlight and provide context to information. It can be used to draw attention to a specific milestone or achievement, or to indicate the importance of a particular piece of information. It is typically used as a secondary call-out to emphasize specific data points.\nStyle: neumorphic, eyebrow\nInteractions: hover\nTags: neumorph-eyebrow, demo, example\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/neumorph-eyebrow-demo.tsx\nimport { NeumorphEyebrow } from \"../ui/neumorph-eyebrow\"\n\nexport default function NeumorphEyebrowDemo() {\n  return (\n    <div className=\"space-y-4 flex flex-col items-center justify-center w-full\">\n      <NeumorphEyebrow>A milestone in scraping</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"primary\">Primary variant</NeumorphEyebrow>\n      <NeumorphEyebrow intent=\"secondary\">Secondary variant</NeumorphEyebrow>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "neumorph-eyebrow-demo",
+  "display_name": "Neumorph Eyebrow Demo",
+  "preview_url": "/previews/cultui/neumorph-eyebrow-demo.png"
+}

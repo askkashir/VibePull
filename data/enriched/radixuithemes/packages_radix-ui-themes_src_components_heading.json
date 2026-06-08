@@ -1,0 +1,54 @@
+{
+  "id": "packages_radix-ui-themes_src_components_heading",
+  "name": "heading",
+  "source_code": "// packages/radix-ui-themes/src/components/heading.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { headingPropDefs } from './heading.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype HeadingElement = React.ElementRef<'h1'>;\ntype HeadingOwnProps = GetPropDefTypes<typeof headingPropDefs>;\ninterface HeadingProps\n  extends ComponentPropsWithout<'h1', RemovedProps>, MarginProps, HeadingOwnProps {}\n\nconst Heading = React.forwardRef<HeadingElement, HeadingProps>((props, forwardedRef) => {\n  const {\n    children,\n    className,\n    asChild,\n    as: Tag = 'h1',\n    color,\n    ...headingProps\n  } = extractProps(props, headingPropDefs, marginPropDefs);\n  return (\n    <Slot.Root\n      data-accent-color={color}\n      {...headingProps}\n      ref={forwardedRef}\n      className={classNames('rt-Heading', className)}\n    >\n      {asChild ? children : <Tag>{children}</Tag>}\n    </Slot.Root>\n  );\n});\nHeading.displayName = 'Heading';\n\nexport { Heading };\nexport type { HeadingProps };\n",
+  "description": "",
+  "tags": [
+    "heading",
+    "text"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_heading",
+      "name": "heading.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/heading.tsx",
+      "sha": "30be71232ab8874296cffcc3734a30f36ce83d89",
+      "size": 1290,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/heading.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/heading.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/30be71232ab8874296cffcc3734a30f36ce83d89",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/heading.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/heading.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/30be71232ab8874296cffcc3734a30f36ce83d89",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/heading.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_heading",
+      "name": "heading",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/heading.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { headingPropDefs } from './heading.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype HeadingElement = React.ElementRef<'h1'>;\ntype HeadingOwnProps = GetPropDefTypes<typeof headingPropDefs>;\ninterface HeadingProps\n  extends ComponentPropsWithout<'h1', RemovedProps>, MarginProps, HeadingOwnProps {}\n\nconst Heading = React.forwardRef<HeadingElement, HeadingProps>((props, forwardedRef) => {\n  const {\n    children,\n    className,\n    asChild,\n    as: Tag = 'h1',\n    color,\n    ...headingProps\n  } = extractProps(props, headingPropDefs, marginPropDefs);\n  return (\n    <Slot.Root\n      data-accent-color={color}\n      {...headingProps}\n      ref={forwardedRef}\n      className={classNames('rt-Heading', className)}\n    >\n      {asChild ? children : <Tag>{children}</Tag>}\n    </Slot.Root>\n  );\n});\nHeading.displayName = 'Heading';\n\nexport { Heading };\nexport type { HeadingProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Heading component is a customizable heading element that can be styled with color and margin props. It can be used to render headings with different levels (h1, h2, etc.) and can also be used as a child of other components with the asChild prop. Developers would use this component when they need a styled heading element.",
+  "style_tags": [
+    "customizable"
+  ],
+  "interaction_tags": [],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: heading\nDescription: The Heading component is a customizable heading element that can be styled with color and margin props. It can be used to render headings with different levels (h1, h2, etc.) and can also be used as a child of other components with the asChild prop. Developers would use this component when they need a styled heading element.\nStyle: customizable\nInteractions: \nTags: heading, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/heading.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { headingPropDefs } from './heading.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { Get",
+  "prompt_version": 2,
+  "clean_id": "heading",
+  "display_name": "Heading",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-heading.png"
+}

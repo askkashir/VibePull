@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbarScroll",
+  "name": "ScrollAreaScrollbarScroll",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbarScroll.tsx\nimport { useEffect, useState } from 'react';\nimport { useDebouncedCallback } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { composeEventHandlers } from '../utils';\nimport {\n  ScrollAreaScrollbarVisible,\n  ScrollAreaScrollbarVisibleProps,\n} from './ScrollAreaScrollbarVisible';\n\ninterface ScrollAreaScrollbarScrollProps extends ScrollAreaScrollbarVisibleProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaScrollbarScroll(props: ScrollAreaScrollbarScrollProps) {\n  const { forceMount, ...scrollbarProps } = props;\n  const context = useScrollAreaContext();\n  const isHorizontal = props.orientation === 'horizontal';\n  const [state, setState] = useState<'hidden' | 'idle' | 'interacting' | 'scrolling'>('hidden');\n  const debounceScrollEnd = useDebouncedCallback(() => setState('idle'), 100);\n\n  useEffect(() => {\n    if (state === 'idle') {\n      const hideTimer = window.setTimeout(() => setState('hidden'), context.scrollHideDelay);\n      return () => window.clearTimeout(hideTimer);\n    }\n\n    return undefined;\n  }, [state, context.scrollHideDelay]);\n\n  useEffect(() => {\n    const { viewport } = context;\n    const scrollDirection = isHorizontal ? 'scrollLeft' : 'scrollTop';\n\n    if (viewport) {\n      let prevScrollPos = viewport[scrollDirection];\n      const handleScroll = () => {\n        const scrollPos = viewport[scrollDirection];\n        const hasScrollInDirectionChanged = prevScrollPos !== scrollPos;\n        if (hasScrollInDirectionChanged) {\n          setState('scrolling');\n          debounceScrollEnd();\n        }\n        prevScrollPos = scrollPos;\n      };\n      viewport.addEventListener('scroll', handleScroll);\n      return () => viewport.removeEventListener('scroll', handleScroll);\n    }\n\n    return undefined;\n  }, [context.viewport, isHorizontal, debounceScrollEnd]);\n\n  if (forceMount || state !== 'hidden') {\n    return (\n      <ScrollAreaScrollbarVisible\n        data-state={state === 'hidden' ? 'hidden' : 'visible'}\n        {...scrollbarProps}\n        onPointerEnter={composeEventHandlers(props.onPointerEnter, () => setState('interacting'))}\n        onPointerLeave={composeEventHandlers(props.onPointerLeave, () => setState('idle'))}\n      />\n    );\n  }\n\n  return null;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbarScroll",
+      "name": "ScrollAreaScrollbarScroll",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbarScroll.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbarScroll",
+      "name": "ScrollAreaScrollbarScroll",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbarScroll.tsx",
+          "content": "import { useEffect, useState } from 'react';\nimport { useDebouncedCallback } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { composeEventHandlers } from '../utils';\nimport {\n  ScrollAreaScrollbarVisible,\n  ScrollAreaScrollbarVisibleProps,\n} from './ScrollAreaScrollbarVisible';\n\ninterface ScrollAreaScrollbarScrollProps extends ScrollAreaScrollbarVisibleProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaScrollbarScroll(props: ScrollAreaScrollbarScrollProps) {\n  const { forceMount, ...scrollbarProps } = props;\n  const context = useScrollAreaContext();\n  const isHorizontal = props.orientation === 'horizontal';\n  const [state, setState] = useState<'hidden' | 'idle' | 'interacting' | 'scrolling'>('hidden');\n  const debounceScrollEnd = useDebouncedCallback(() => setState('idle'), 100);\n\n  useEffect(() => {\n    if (state === 'idle') {\n      const hideTimer = window.setTimeout(() => setState('hidden'), context.scrollHideDelay);\n      return () => window.clearTimeout(hideTimer);\n    }\n\n    return undefined;\n  }, [state, context.scrollHideDelay]);\n\n  useEffect(() => {\n    const { viewport } = context;\n    const scrollDirection = isHorizontal ? 'scrollLeft' : 'scrollTop';\n\n    if (viewport) {\n      let prevScrollPos = viewport[scrollDirection];\n      const handleScroll = () => {\n        const scrollPos = viewport[scrollDirection];\n        const hasScrollInDirectionChanged = prevScrollPos !== scrollPos;\n        if (hasScrollInDirectionChanged) {\n          setState('scrolling');\n          debounceScrollEnd();\n        }\n        prevScrollPos = scrollPos;\n      };\n      viewport.addEventListener('scroll', handleScroll);\n      return () => viewport.removeEventListener('scroll', handleScroll);\n    }\n\n    return undefined;\n  }, [context.viewport, isHorizontal, debounceScrollEnd]);\n\n  if (forceMount || state !== 'hidden') {\n    return (\n      <ScrollAreaScrollbarVisible\n        data-state={state === 'hidden' ? 'hidden' : 'visible'}\n        {...scrollbarProps}\n        onPointerEnter={composeEventHandlers(props.onPointerEnter, () => setState('interacting'))}\n        onPointerLeave={composeEventHandlers(props.onPointerLeave, () => setState('idle'))}\n      />\n    );\n  }\n\n  return null;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

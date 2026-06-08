@@ -1,0 +1,40 @@
+{
+  "id": "input-otp-pattern",
+  "name": "input-otp-pattern",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "otp",
+    "text-input",
+    "numeric-input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-otp-pattern",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-otp-pattern\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A 6-digit input field with a pattern of a standard text input for users to enter OTPs. This is commonly used when an app requires the user to provide a 6-digit one-time password sent through SMS for authentication or verification, but doesn't support numeric keyboards or needs an OTP that isn't just numeric.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hovered-outline",
+    "keyboard-support"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-otp-pattern\nDescription: A 6-digit input field with a pattern of a standard text input for users to enter OTPs. This is commonly used when an app requires the user to provide a 6-digit one-time password sent through SMS for authentication or verification, but doesn't support numeric keyboards or needs an OTP that isn't just numeric.\nStyle: e.g. dark, minimal\nInteractions: e.g. hovered-outline, keyboard-support\nTags: input, otp, text-input, numeric-input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-otp-pattern",
+  "display_name": "Input Otp Pattern",
+  "preview_url": "/previews/shadcn/input-otp-pattern.png"
+}

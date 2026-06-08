@@ -1,0 +1,22 @@
+{
+  "id": "sidebar-footer",
+  "name": "sidebar-footer",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:internal"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-footer",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-footer\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  }
+}

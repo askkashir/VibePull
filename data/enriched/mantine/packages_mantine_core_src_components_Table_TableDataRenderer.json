@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Table_TableDataRenderer",
+  "name": "TableDataRenderer",
+  "source_code": "// packages/@mantine/core/src/components/Table/TableDataRenderer.tsx\nimport type { TableData } from './Table';\nimport {\n  TableCaption,\n  TableTbody,\n  TableTd,\n  TableTfoot,\n  TableTh,\n  TableThead,\n  TableTr,\n} from './Table.components';\n\nexport interface TableDataRendererProps {\n  data: TableData;\n}\n\nexport function TableDataRenderer({ data }: TableDataRendererProps) {\n  return (\n    <>\n      {data.caption && <TableCaption>{data.caption}</TableCaption>}\n\n      {data.head && (\n        <TableThead>\n          <TableTr>\n            {data.head.map((item, index) => (\n              <TableTh key={index}>{item}</TableTh>\n            ))}\n          </TableTr>\n        </TableThead>\n      )}\n\n      {data.body && (\n        <TableTbody>\n          {data.body.map((row, rowIndex) => (\n            <TableTr key={rowIndex}>\n              {row.map((item, index) => (\n                <TableTd key={index}>{item}</TableTd>\n              ))}\n            </TableTr>\n          ))}\n        </TableTbody>\n      )}\n\n      {data.foot && (\n        <TableTfoot>\n          <TableTr>\n            {data.foot.map((item, index) => (\n              <TableTh key={index}>{item}</TableTh>\n            ))}\n          </TableTr>\n        </TableTfoot>\n      )}\n    </>\n  );\n}\n\nTableDataRenderer.displayName = '@mantine/core/TableDataRenderer';\n",
+  "description": "",
+  "tags": [
+    "data",
+    "mantine",
+    "renderer",
+    "table"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Table_TableDataRenderer",
+      "name": "TableDataRenderer",
+      "path": "packages/@mantine/core/src/components/Table/TableDataRenderer.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Table_TableDataRenderer",
+      "name": "TableDataRenderer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Table/TableDataRenderer.tsx",
+          "content": "import type { TableData } from './Table';\nimport {\n  TableCaption,\n  TableTbody,\n  TableTd,\n  TableTfoot,\n  TableTh,\n  TableThead,\n  TableTr,\n} from './Table.components';\n\nexport interface TableDataRendererProps {\n  data: TableData;\n}\n\nexport function TableDataRenderer({ data }: TableDataRendererProps) {\n  return (\n    <>\n      {data.caption && <TableCaption>{data.caption}</TableCaption>}\n\n      {data.head && (\n        <TableThead>\n          <TableTr>\n            {data.head.map((item, index) => (\n              <TableTh key={index}>{item}</TableTh>\n            ))}\n          </TableTr>\n        </TableThead>\n      )}\n\n      {data.body && (\n        <TableTbody>\n          {data.body.map((row, rowIndex) => (\n            <TableTr key={rowIndex}>\n              {row.map((item, index) => (\n                <TableTd key={index}>{item}</TableTd>\n              ))}\n            </TableTr>\n          ))}\n        </TableTbody>\n      )}\n\n      {data.foot && (\n        <TableTfoot>\n          <TableTr>\n            {data.foot.map((item, index) => (\n              <TableTh key={index}>{item}</TableTh>\n            ))}\n          </TableTr>\n        </TableTfoot>\n      )}\n    </>\n  );\n}\n\nTableDataRenderer.displayName = '@mantine/core/TableDataRenderer';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TableDataRenderer is a table data renderer UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "table",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: TableDataRenderer\nDescription: TableDataRenderer is a table data renderer UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: data, mantine, renderer, table\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Table/TableDataRenderer.tsx\nimport type { TableData } from './Table';\nimport {\n  TableCaption,\n  TableTbody,\n  TableTd,\n  TableTfoot,\n  TableTh,\n  TableThead,\n  TableTr,\n} from './Table.components';\n\nexport interface TableDataRendererProps {\n  data: TableData;\n}\n\nexport function TableDataRenderer({ data }: TableDataRendererProps) {\n  return (\n    <>\n      {data.caption && <TableCaption>{data.caption}</TableCaption>}\n\n      {data.head && (\n        <TableTh",
+  "prompt_version": 2,
+  "clean_id": "table-data-renderer",
+  "display_name": "Table Data Renderer",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-table-tabledatarenderer.png"
+}

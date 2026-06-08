@@ -1,0 +1,50 @@
+{
+  "id": "components_ui_Tabs_TabsTrigger",
+  "name": "TabsTrigger",
+  "source_code": "// components/ui/Tabs/TabsTrigger.tsx\nimport { ReactNode } from \"react\";\nimport * as Tabs from \"@radix-ui/react-tabs\";\nimport { motion } from \"framer-motion\";\nimport LazyMotionWrapper from \"components/LazyMotionWrapper\";\n\nexport default ({\n  children,\n  value,\n  selectedTab,\n}: {\n  children: ReactNode;\n  value: any;\n  selectedTab: any;\n}) => (\n  <Tabs.Trigger\n    className=\"relative py-2 px-3 rounded-full text-sm text-zinc-400 hover:text-zinc-100 data-[state=active]:text-zinc-100\"\n    value={value}\n  >\n    {children}\n    {selectedTab == value ? (\n      <LazyMotionWrapper>\n        <motion.span\n          className=\"absolute inset-0 rounded-full border border-zinc-700 bg-[linear-gradient(185deg,_rgba(39,_39,_42,_0.95)_70%,_rgba(15,_23,_42,_0.00)_140.23%)]\"\n          layoutId=\"bubble\"\n          transition={{ type: \"spring\", bounce: 0.2, duration: 0.6 }}\n        ></motion.span>\n      </LazyMotionWrapper>\n    ) : (\n      \"\"\n    )}\n  </Tabs.Trigger>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "other",
+    "tabs",
+    "trigger"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Tabs_TabsTrigger",
+      "name": "TabsTrigger",
+      "path": "components/ui/Tabs/TabsTrigger.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Tabs_TabsTrigger",
+      "name": "TabsTrigger",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Tabs/TabsTrigger.tsx",
+          "content": "import { ReactNode } from \"react\";\nimport * as Tabs from \"@radix-ui/react-tabs\";\nimport { motion } from \"framer-motion\";\nimport LazyMotionWrapper from \"components/LazyMotionWrapper\";\n\nexport default ({\n  children,\n  value,\n  selectedTab,\n}: {\n  children: ReactNode;\n  value: any;\n  selectedTab: any;\n}) => (\n  <Tabs.Trigger\n    className=\"relative py-2 px-3 rounded-full text-sm text-zinc-400 hover:text-zinc-100 data-[state=active]:text-zinc-100\"\n    value={value}\n  >\n    {children}\n    {selectedTab == value ? (\n      <LazyMotionWrapper>\n        <motion.span\n          className=\"absolute inset-0 rounded-full border border-zinc-700 bg-[linear-gradient(185deg,_rgba(39,_39,_42,_0.95)_70%,_rgba(15,_23,_42,_0.00)_140.23%)]\"\n          layoutId=\"bubble\"\n          transition={{ type: \"spring\", bounce: 0.2, duration: 0.6 }}\n        ></motion.span>\n      </LazyMotionWrapper>\n    ) : (\n      \"\"\n    )}\n  </Tabs.Trigger>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TabsTrigger is a tabs trigger UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: TabsTrigger\nDescription: TabsTrigger is a tabs trigger UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, rounded, utility-styled\nInteractions: animated, hover\nTags: floatui, other, tabs, trigger\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Tabs/TabsTrigger.tsx\nimport { ReactNode } from \"react\";\nimport * as Tabs from \"@radix-ui/react-tabs\";\nimport { motion } from \"framer-motion\";\nimport LazyMotionWrapper from \"components/LazyMotionWrapper\";\n\nexport default ({\n  children,\n  value,\n  selectedTab,\n}: {\n  children: ReactNode;\n  value: any;\n  selectedTab: any;\n}) => (\n  <Tabs.Trigger\n    className=\"relative py-2 px-3 rounded-full text-sm text-zinc-400 hover:text-zinc-100 data-[state=active]:text-zinc-100\"\n    value={val",
+  "prompt_version": 2,
+  "clean_id": "tabs-trigger",
+  "display_name": "Tabs Trigger",
+  "preview_url": "/previews/floatui/components-ui-tabs-tabstrigger.png"
+}

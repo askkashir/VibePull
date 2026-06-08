@@ -1,0 +1,39 @@
+{
+  "id": "slider",
+  "name": "slider",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input fields",
+    "user interaction",
+    "settings"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "slider",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## slider\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A slider is a graphical user interface element used to select or display a value by moving a handle along a scale. It is commonly used for adjusting settings such as audio volume, image brightness, or font sizes. Slider components can be used to gather input from users in a more engaging and intuitive way.",
+  "style_tags": [
+    "minimalist",
+    "flat"
+  ],
+  "interaction_tags": [
+    "draggable",
+    "animated"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: slider\nDescription: A slider is a graphical user interface element used to select or display a value by moving a handle along a scale. It is commonly used for adjusting settings such as audio volume, image brightness, or font sizes. Slider components can be used to gather input from users in a more engaging and intuitive way.\nStyle: minimalist, flat\nInteractions: draggable, animated\nTags: input fields, user interaction, settings\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "slider",
+  "display_name": "Slider",
+  "preview_url": "/previews/shadcn/slider.png"
+}

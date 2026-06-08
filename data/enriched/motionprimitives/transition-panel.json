@@ -1,0 +1,56 @@
+{
+  "id": "transition-panel",
+  "name": "transition-panel",
+  "source_code": "// components/core/transition-panel.tsx\n'use client';\nimport {\n  AnimatePresence,\n  Transition,\n  Variant,\n  motion,\n  MotionProps,\n} from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TransitionPanelProps = {\n  children: React.ReactNode[];\n  className?: string;\n  transition?: Transition;\n  activeIndex: number;\n  variants?: { enter: Variant; center: Variant; exit: Variant };\n} & MotionProps;\n\nexport function TransitionPanel({\n  children,\n  className,\n  transition,\n  variants,\n  activeIndex,\n  ...motionProps\n}: TransitionPanelProps) {\n  return (\n    <div className={cn('relative', className)}>\n      <AnimatePresence\n        initial={false}\n        mode='popLayout'\n        custom={motionProps.custom}\n      >\n        <motion.div\n          key={activeIndex}\n          variants={variants}\n          transition={transition}\n          initial='enter'\n          animate='center'\n          exit='exit'\n          {...motionProps}\n        >\n          {children[activeIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "customization",
+    "animation",
+    "transition"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "transition-panel.tsx",
+      "source": "github_contents",
+      "path": "components/core/transition-panel.tsx",
+      "sha": "15091cc22fb4ceab8ced13a5e155dd02abe30523",
+      "size": 1015,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/transition-panel.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/transition-panel.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/15091cc22fb4ceab8ced13a5e155dd02abe30523",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/transition-panel.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/transition-panel.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/15091cc22fb4ceab8ced13a5e155dd02abe30523",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/transition-panel.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "transition-panel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/transition-panel.tsx",
+          "content": "'use client';\nimport {\n  AnimatePresence,\n  Transition,\n  Variant,\n  motion,\n  MotionProps,\n} from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TransitionPanelProps = {\n  children: React.ReactNode[];\n  className?: string;\n  transition?: Transition;\n  activeIndex: number;\n  variants?: { enter: Variant; center: Variant; exit: Variant };\n} & MotionProps;\n\nexport function TransitionPanel({\n  children,\n  className,\n  transition,\n  variants,\n  activeIndex,\n  ...motionProps\n}: TransitionPanelProps) {\n  return (\n    <div className={cn('relative', className)}>\n      <AnimatePresence\n        initial={false}\n        mode='popLayout'\n        custom={motionProps.custom}\n      >\n        <motion.div\n          key={activeIndex}\n          variants={variants}\n          transition={transition}\n          initial='enter'\n          animate='center'\n          exit='exit'\n          {...motionProps}\n        >\n          {children[activeIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A customizable transition panel component that shows content in a dynamic, animated manner. Developers would use this when they need a seamless panel transition to show or hide content from the user.",
+  "style_tags": [
+    "glassmorphism",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: transition-panel\nDescription: A customizable transition panel component that shows content in a dynamic, animated manner. Developers would use this when they need a seamless panel transition to show or hide content from the user.\nStyle: glassmorphism, minimal\nInteractions: animated\nTags: customization, animation, transition\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/transition-panel.tsx\n'use client';\nimport {\n  AnimatePresence,\n  Transition,\n  Variant,\n  motion,\n  MotionProps,\n} from 'motion/react';\nimport { cn } from '@/lib/utils';\n\nexport type TransitionPanelProps = {\n  children: React.ReactNode[];\n  className?: string;\n  transition?: Transition;\n  activeIndex: number;\n  variants?: { enter: Variant; center: Variant; exit: Variant };\n} & MotionProps;\n\nexport function TransitionPanel({\n  children,\n  className,\n  transition,\n  variants,\n  ",
+  "prompt_version": 2,
+  "clean_id": "transition-panel",
+  "display_name": "Transition Panel",
+  "preview_url": "/previews/motionprimitives/transition-panel.png"
+}

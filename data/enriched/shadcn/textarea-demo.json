@@ -1,0 +1,41 @@
+{
+  "id": "textarea-demo",
+  "name": "textarea-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "textarea",
+    "demo",
+    "input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A demo textarea component. Developers would use it to showcase the functionality of a textarea input field or for testing purposes.",
+  "style_tags": [
+    "flat",
+    "material",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "fillable",
+    "editable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: textarea-demo\nDescription: A demo textarea component. Developers would use it to showcase the functionality of a textarea input field or for testing purposes.\nStyle: flat, material, rounded\nInteractions: clickable, fillable, editable\nTags: textarea, demo, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "textarea-demo",
+  "display_name": "Textarea Demo",
+  "preview_url": "/previews/shadcn/textarea-demo.png"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "src_components_SelectNative_SelectNative",
+  "name": "SelectNative",
+  "source_code": "// src/components/SelectNative/SelectNative.tsx\n// Tremor SelectNative [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusInput } from \"../../utils/focusInput\"\nimport { hasErrorInput } from \"../../utils/hasErrorInput\"\n\nconst selectNativeStyles = tv({\n  base: [\n    // base\n    \"peer w-full cursor-pointer appearance-none truncate rounded-md border py-2 pl-3 pr-7 shadow-xs outline-hidden transition-all sm:text-sm\",\n    // background color\n    \"bg-white dark:bg-gray-950\",\n    // border color\n    \"border-gray-300 dark:border-gray-800\",\n    // text color\n    \"text-gray-900 dark:text-gray-50\",\n    // placeholder color\n    \"placeholder-gray-400 dark:placeholder-gray-500\",\n    // hover\n    \"hover:bg-gray-50 dark:hover:bg-gray-950/50\",\n    // disabled\n    \"disabled:pointer-events-none\",\n    \"disabled:bg-gray-100 disabled:text-gray-400\",\n    \"dark:disabled:border-gray-700 dark:disabled:bg-gray-800 dark:disabled:text-gray-500\",\n    // focus\n    focusInput,\n    // invalid (optional)\n    // \"dark:aria-invalid:ring-red-400/20 aria-invalid:ring-2 aria-invalid:ring-red-200 aria-invalid:border-red-500 invalid:ring-2 invalid:ring-red-200 invalid:border-red-500\"\n  ],\n  variants: {\n    hasError: {\n      true: hasErrorInput,\n    },\n  },\n})\n\ninterface SelectNativeProps\n  extends React.InputHTMLAttributes<HTMLSelectElement>,\n    VariantProps<typeof selectNativeStyles> {}\n\nconst SelectNative = React.forwardRef<HTMLSelectElement, SelectNativeProps>(\n  ({ className, hasError, ...props }: SelectNativeProps, forwardedRef) => {\n    return (\n      <select\n        ref={forwardedRef}\n        className={cx(selectNativeStyles({ hasError }), className)}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nSelectNative.displayName = \"SelectNative\"\n\nexport { SelectNative, selectNativeStyles, type SelectNativeProps }\n",
+  "description": "",
+  "tags": [
+    "select",
+    "dropdown",
+    "native"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "SelectNative_SelectNative",
+      "name": "SelectNative",
+      "path": "src/components/SelectNative/SelectNative.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_SelectNative_SelectNative",
+      "name": "SelectNative",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/SelectNative/SelectNative.tsx",
+          "content": "// Tremor SelectNative [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusInput } from \"../../utils/focusInput\"\nimport { hasErrorInput } from \"../../utils/hasErrorInput\"\n\nconst selectNativeStyles = tv({\n  base: [\n    // base\n    \"peer w-full cursor-pointer appearance-none truncate rounded-md border py-2 pl-3 pr-7 shadow-xs outline-hidden transition-all sm:text-sm\",\n    // background color\n    \"bg-white dark:bg-gray-950\",\n    // border color\n    \"border-gray-300 dark:border-gray-800\",\n    // text color\n    \"text-gray-900 dark:text-gray-50\",\n    // placeholder color\n    \"placeholder-gray-400 dark:placeholder-gray-500\",\n    // hover\n    \"hover:bg-gray-50 dark:hover:bg-gray-950/50\",\n    // disabled\n    \"disabled:pointer-events-none\",\n    \"disabled:bg-gray-100 disabled:text-gray-400\",\n    \"dark:disabled:border-gray-700 dark:disabled:bg-gray-800 dark:disabled:text-gray-500\",\n    // focus\n    focusInput,\n    // invalid (optional)\n    // \"dark:aria-invalid:ring-red-400/20 aria-invalid:ring-2 aria-invalid:ring-red-200 aria-invalid:border-red-500 invalid:ring-2 invalid:ring-red-200 invalid:border-red-500\"\n  ],\n  variants: {\n    hasError: {\n      true: hasErrorInput,\n    },\n  },\n})\n\ninterface SelectNativeProps\n  extends React.InputHTMLAttributes<HTMLSelectElement>,\n    VariantProps<typeof selectNativeStyles> {}\n\nconst SelectNative = React.forwardRef<HTMLSelectElement, SelectNativeProps>(\n  ({ className, hasError, ...props }: SelectNativeProps, forwardedRef) => {\n    return (\n      <select\n        ref={forwardedRef}\n        className={cx(selectNativeStyles({ hasError }), className)}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nSelectNative.displayName = \"SelectNative\"\n\nexport { SelectNative, selectNativeStyles, type SelectNativeProps }\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The SelectNative component is a native HTML select element with a customizable design using Tailwind CSS. It can be used in situations where a custom dropdown select is necessary, such as when styling is critical or accessibility is a concern. The component supports hover effects, focus styles, and error states.",
+  "style_tags": [
+    "customizable",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "hover",
+    "focus",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SelectNative\nDescription: The SelectNative component is a native HTML select element with a customizable design using Tailwind CSS. It can be used in situations where a custom dropdown select is necessary, such as when styling is critical or accessibility is a concern. The component supports hover effects, focus styles, and error states.\nStyle: customizable, responsive\nInteractions: hover, focus, clickable\nTags: select, dropdown, native\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/SelectNative/SelectNative.tsx\n// Tremor SelectNative [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusInput } from \"../../utils/focusInput\"\nimport { hasErrorInput } from \"../../utils/hasErrorInput\"\n\nconst selectNativeStyles = tv({\n  base: [\n    // base\n    \"peer w-full cursor-pointer appearance-none truncate rounded-md border py-2 pl-3 pr-7 shadow-xs outline-hidden transition-all sm:",
+  "prompt_version": 2,
+  "clean_id": "select-native",
+  "display_name": "Select Native",
+  "preview_url": "/previews/tremor/src-components-selectnative-selectnative.png"
+}

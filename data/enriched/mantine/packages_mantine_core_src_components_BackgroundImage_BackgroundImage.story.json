@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_BackgroundImage_BackgroundImage.story",
+  "name": "BackgroundImage.story",
+  "source_code": "// packages/@mantine/core/src/components/BackgroundImage/BackgroundImage.story.tsx\nimport { BackgroundImage } from './BackgroundImage';\n\nexport default { title: 'BackgroundImage' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <BackgroundImage\n        w={400}\n        h={200}\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      >\n        Content\n      </BackgroundImage>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <BackgroundImage\n        w={400}\n        h={200}\n        radius=\"md\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n        unstyled\n      >\n        Content\n      </BackgroundImage>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "background",
+    "image",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "BackgroundImage_BackgroundImage.story",
+      "name": "BackgroundImage.story",
+      "path": "packages/@mantine/core/src/components/BackgroundImage/BackgroundImage.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_BackgroundImage_BackgroundImage.story",
+      "name": "BackgroundImage.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/BackgroundImage/BackgroundImage.story.tsx",
+          "content": "import { BackgroundImage } from './BackgroundImage';\n\nexport default { title: 'BackgroundImage' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <BackgroundImage\n        w={400}\n        h={200}\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      >\n        Content\n      </BackgroundImage>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <BackgroundImage\n        w={400}\n        h={200}\n        radius=\"md\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n        unstyled\n      >\n        Content\n      </BackgroundImage>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BackgroundImage.story is a background image story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BackgroundImage.story\nDescription: BackgroundImage.story is a background image story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: background, image, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/BackgroundImage/BackgroundImage.story.tsx\nimport { BackgroundImage } from './BackgroundImage';\n\nexport default { title: 'BackgroundImage' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <BackgroundImage\n        w={400}\n        h={200}\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      >\n        Content\n      </BackgroundImage>\n    </div>\n  );\n}\n\nexport function Unstyled() ",
+  "prompt_version": 2,
+  "clean_id": "background-image",
+  "display_name": "Background Image",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-backgroundimage-backgroundimage-story.png"
+}

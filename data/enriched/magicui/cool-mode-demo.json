@@ -1,0 +1,61 @@
+{
+  "id": "cool-mode-demo",
+  "name": "Cool Mode Demo",
+  "source_code": "import { Button } from \"@/components/ui/button\"\nimport { CoolMode } from \"@/registry/magicui/cool-mode\"\n\nexport default function CoolModeDemo() {\n  return (\n    <div className=\"relative justify-center\">\n      <CoolMode>\n        <Button>Click Me!</Button>\n      </CoolMode>\n    </div>\n  )\n}\n",
+  "description": "Example showing cool mode effect for buttons and links.",
+  "tags": [
+    "demo",
+    "button",
+    "magicui"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "cool-mode-demo",
+      "type": "registry:example",
+      "title": "Cool Mode Demo",
+      "description": "Example showing cool mode effect for buttons and links.",
+      "registryDependencies": [
+        "https://magicui.design/r/cool-mode"
+      ],
+      "files": [
+        {
+          "path": "registry/example/cool-mode-demo.tsx",
+          "type": "registry:example",
+          "target": "components/cool-mode-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cool-mode-demo",
+      "type": "registry:example",
+      "title": "Cool Mode Demo",
+      "description": "Example showing cool mode effect for buttons and links.",
+      "registryDependencies": [
+        "@magicui/cool-mode"
+      ],
+      "files": [
+        {
+          "path": "registry/example/cool-mode-demo.tsx",
+          "content": "import { Button } from \"@/components/ui/button\"\nimport { CoolMode } from \"@/registry/magicui/cool-mode\"\n\nexport default function CoolModeDemo() {\n  return (\n    <div className=\"relative justify-center\">\n      <CoolMode>\n        <Button>Click Me!</Button>\n      </CoolMode>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A demo of the Cool Mode feature, consisting of a center-aligned Container with a clickable Button. A developer would use this when showcasing or testing the Cool Mode functionality.",
+  "style_tags": [
+    "centered",
+    "relative"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Cool Mode Demo\nDescription: A demo of the Cool Mode feature, consisting of a center-aligned Container with a clickable Button. A developer would use this when showcasing or testing the Cool Mode functionality.\nStyle: centered, relative\nInteractions: clickable\nTags: demo, button, magicui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Button } from \"@/components/ui/button\"\nimport { CoolMode } from \"@/registry/magicui/cool-mode\"\n\nexport default function CoolModeDemo() {\n  return (\n    <div className=\"relative justify-center\">\n      <CoolMode>\n        <Button>Click Me!</Button>\n      </CoolMode>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "cool-mode-demo",
+  "display_name": "Cool Mode Demo",
+  "preview_url": "/previews/magicui/cool-mode-demo.png"
+}

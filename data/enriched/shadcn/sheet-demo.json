@@ -1,0 +1,40 @@
+{
+  "id": "sheet-demo",
+  "name": "sheet-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "settings",
+    "content-sheet",
+    "modal",
+    "informational"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sheet-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sheet-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sheet-demo is a customizable content sheet that opens from the bottom of the screen, typically used to display detailed information or perform actions within an app, such as a settings or account sheet.",
+  "style_tags": [
+    "flat",
+    "material"
+  ],
+  "interaction_tags": [
+    "hover",
+    "touchable"
+  ],
+  "component_type": "sheet",
+  "generation_prompt": "Create a production-ready sheet component with the following characteristics:\n\nName: sheet-demo\nDescription: The sheet-demo is a customizable content sheet that opens from the bottom of the screen, typically used to display detailed information or perform actions within an app, such as a settings or account sheet.\nStyle: flat, material\nInteractions: hover, touchable\nTags: settings, content-sheet, modal, informational\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sheet-demo",
+  "display_name": "Sheet Demo",
+  "preview_url": "/previews/shadcn/sheet-demo.png"
+}

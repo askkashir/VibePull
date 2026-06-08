@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Timeline_index",
+  "name": "Timeline",
+  "source_code": "// packages/@mantine/core/src/components/Timeline/index.ts\nimport type {\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineProps,\n  TimelineStylesNames,\n} from './Timeline';\nimport type {\n  TimelineItemFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n} from './TimelineItem/TimelineItem';\n\nexport { Timeline } from './Timeline';\nexport { TimelineItem } from './TimelineItem/TimelineItem';\n\nexport type {\n  TimelineProps,\n  TimelineStylesNames,\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n  TimelineItemFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "timeline"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Timeline_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Timeline/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Timeline_index",
+      "name": "Timeline",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Timeline/index.ts",
+          "content": "import type {\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineProps,\n  TimelineStylesNames,\n} from './Timeline';\nimport type {\n  TimelineItemFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n} from './TimelineItem/TimelineItem';\n\nexport { Timeline } from './Timeline';\nexport { TimelineItem } from './TimelineItem/TimelineItem';\n\nexport type {\n  TimelineProps,\n  TimelineStylesNames,\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n  TimelineItemFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Timeline is a timeline UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Timeline\nDescription: Timeline is a timeline UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, timeline\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Timeline/index.ts\nimport type {\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineProps,\n  TimelineStylesNames,\n} from './Timeline';\nimport type {\n  TimelineItemFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n} from './TimelineItem/TimelineItem';\n\nexport { Timeline } from './Timeline';\nexport { TimelineItem } from './TimelineItem/TimelineItem';\n\nexport type {\n  TimelineProps,\n  TimelineStylesNames,\n  TimelineCssVariables,\n  TimelineFactory,\n  ",
+  "prompt_version": 2,
+  "clean_id": "timeline",
+  "display_name": "Timeline",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-timeline-index.png"
+}

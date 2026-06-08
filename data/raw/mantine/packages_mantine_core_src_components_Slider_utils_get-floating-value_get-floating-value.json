@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-floating-value_get-floating-value",
+  "name": "get-floating-value",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-floating-value/get-floating-value.ts\nexport function getFloatingValue(value: number, precision: number) {\n  return parseFloat(value.toFixed(precision));\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-floating-value_get-floating-value",
+      "name": "get-floating-value",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-floating-value/get-floating-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-floating-value_get-floating-value",
+      "name": "get-floating-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-floating-value/get-floating-value.ts",
+          "content": "export function getFloatingValue(value: number, precision: number) {\n  return parseFloat(value.toFixed(precision));\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

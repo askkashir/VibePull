@@ -1,0 +1,45 @@
+{
+  "id": "components_ui_TemplateCard_index",
+  "name": "TemplateCard",
+  "source_code": "// components/ui/TemplateCard/index.tsx\nimport Link from \"next/link\";\nimport { Templates } from \"types/types\";\n\nexport default ({ item }: { item: Templates }) => (\n  <li className=\"pt-10 lg:pt-0\">\n    <Link href={`templates/${item.slug}`} className=\"gap-6 sm:flex\">\n      <div className=\"flex-1\">\n        <img\n          src={item.banner_url}\n          className=\"rounded-lg\"\n          alt=\"Website template\"\n        />\n      </div>\n      <div className=\"flex-1 mt-6 flex flex-col justify-between sm:mt-0\">\n        <div>\n          <div className=\"text-gray-100 text-lg font-semibold flex justify-between items-center\">\n            <h3 className=\"\">{item.template_name}</h3>\n            <div className=\"flex items-center gap-x-2\">\n              <del className=\"text-base\">${item.price}</del>\n              <span>$0</span>\n            </div>\n          </div>\n          <p className=\"mt-6 text-gray-300\">{item.description}</p>\n        </div>\n      </div>\n    </Link>\n  </li>\n);\n",
+  "description": "",
+  "tags": [
+    "card",
+    "floatui",
+    "template"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_TemplateCard_index",
+      "name": "index",
+      "path": "components/ui/TemplateCard/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_TemplateCard_index",
+      "name": "TemplateCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/TemplateCard/index.tsx",
+          "content": "import Link from \"next/link\";\nimport { Templates } from \"types/types\";\n\nexport default ({ item }: { item: Templates }) => (\n  <li className=\"pt-10 lg:pt-0\">\n    <Link href={`templates/${item.slug}`} className=\"gap-6 sm:flex\">\n      <div className=\"flex-1\">\n        <img\n          src={item.banner_url}\n          className=\"rounded-lg\"\n          alt=\"Website template\"\n        />\n      </div>\n      <div className=\"flex-1 mt-6 flex flex-col justify-between sm:mt-0\">\n        <div>\n          <div className=\"text-gray-100 text-lg font-semibold flex justify-between items-center\">\n            <h3 className=\"\">{item.template_name}</h3>\n            <div className=\"flex items-center gap-x-2\">\n              <del className=\"text-base\">${item.price}</del>\n              <span>$0</span>\n            </div>\n          </div>\n          <p className=\"mt-6 text-gray-300\">{item.description}</p>\n        </div>\n      </div>\n    </Link>\n  </li>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TemplateCard is a template card UI component from the floatui corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: TemplateCard\nDescription: TemplateCard is a template card UI component from the floatui corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: \nTags: card, floatui, template\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/TemplateCard/index.tsx\nimport Link from \"next/link\";\nimport { Templates } from \"types/types\";\n\nexport default ({ item }: { item: Templates }) => (\n  <li className=\"pt-10 lg:pt-0\">\n    <Link href={`templates/${item.slug}`} className=\"gap-6 sm:flex\">\n      <div className=\"flex-1\">\n        <img\n          src={item.banner_url}\n          className=\"rounded-lg\"\n          alt=\"Website template\"\n        />\n      </div>\n      <div className=\"flex-1 mt-6 flex flex-col justify-between sm:m",
+  "prompt_version": 2,
+  "clean_id": "template-card",
+  "display_name": "Template Card",
+  "preview_url": "/previews/floatui/components-ui-templatecard-index.png"
+}

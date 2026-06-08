@@ -1,0 +1,52 @@
+{
+  "id": "pin-input-recipe",
+  "name": "pin-input-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/pin-input.ts\nimport { pinInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nexport const pinInput = defineSlotRecipe({\n  className: 'pin-input',\n  slots: pinInputAnatomy.keys(),\n  base: {\n    input: {\n      ...input.base,\n      textAlign: 'center',\n      width: 'var(--input-height)',\n      px: '1!',\n    },\n    control: {\n      display: 'inline-flex',\n      gap: '2',\n      isolation: 'isolate',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n\n  variants: {\n    size: {\n      xs: {\n        input: input.variants?.size?.xs,\n      },\n      sm: {\n        input: input.variants?.size?.sm,\n      },\n      md: {\n        input: input.variants?.size?.md,\n      },\n      lg: {\n        input: input.variants?.size?.lg,\n      },\n      xl: {\n        input: input.variants?.size?.xl,\n      },\n      '2xl': {\n        input: input.variants?.size?.['2xl'],\n      },\n    },\n    variant: {\n      outline: { input: input.variants?.variant?.outline },\n      subtle: { input: input.variants?.variant?.subtle },\n      flushed: { input: input.variants?.variant?.flushed },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "pin-input-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/pin-input.ts",
+          "type": "registry:recipe",
+          "imports": "import { pinInput } from './pin-input'",
+          "content": "import { pinInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nexport const pinInput = defineSlotRecipe({\n  className: 'pin-input',\n  slots: pinInputAnatomy.keys(),\n  base: {\n    input: {\n      ...input.base,\n      textAlign: 'center',\n      width: 'var(--input-height)',\n      px: '1!',\n    },\n    control: {\n      display: 'inline-flex',\n      gap: '2',\n      isolation: 'isolate',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n\n  variants: {\n    size: {\n      xs: {\n        input: input.variants?.size?.xs,\n      },\n      sm: {\n        input: input.variants?.size?.sm,\n      },\n      md: {\n        input: input.variants?.size?.md,\n      },\n      lg: {\n        input: input.variants?.size?.lg,\n      },\n      xl: {\n        input: input.variants?.size?.xl,\n      },\n      '2xl': {\n        input: input.variants?.size?.['2xl'],\n      },\n    },\n    variant: {\n      outline: { input: input.variants?.variant?.outline },\n      subtle: { input: input.variants?.variant?.subtle },\n      flushed: { input: input.variants?.variant?.flushed },\n    },\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "pin-input-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/pin-input.ts",
+          "type": "registry:recipe",
+          "imports": "import { pinInput } from './pin-input'",
+          "content": "import { pinInputAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\nimport { input } from './input'\n\nexport const pinInput = defineSlotRecipe({\n  className: 'pin-input',\n  slots: pinInputAnatomy.keys(),\n  base: {\n    input: {\n      ...input.base,\n      textAlign: 'center',\n      width: 'var(--input-height)',\n      px: '1!',\n    },\n    control: {\n      display: 'inline-flex',\n      gap: '2',\n      isolation: 'isolate',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    variant: 'outline',\n  },\n\n  variants: {\n    size: {\n      xs: {\n        input: input.variants?.size?.xs,\n      },\n      sm: {\n        input: input.variants?.size?.sm,\n      },\n      md: {\n        input: input.variants?.size?.md,\n      },\n      lg: {\n        input: input.variants?.size?.lg,\n      },\n      xl: {\n        input: input.variants?.size?.xl,\n      },\n      '2xl': {\n        input: input.variants?.size?.['2xl'],\n      },\n    },\n    variant: {\n      outline: { input: input.variants?.variant?.outline },\n      subtle: { input: input.variants?.variant?.subtle },\n      flushed: { input: input.variants?.variant?.flushed },\n    },\n  },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "input-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

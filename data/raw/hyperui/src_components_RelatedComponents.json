@@ -1,0 +1,31 @@
+{
+  "id": "src_components_RelatedComponents",
+  "name": "RelatedComponents",
+  "source_code": "// src/components/RelatedComponents.astro\n---\nimport { getCollection } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport ComponentCard from './ComponentCard.astro'\n\ntype Props = {\n  slug: string\n  terms: string[]\n  category: 'application' | 'marketing' | 'neobrutalism'\n}\n\nconst { slug, terms, category } = Astro.props\n\nconst termsSet = new Set(terms)\n\nconst components = (await getCollection(category))\n  .map(({ data }) => data)\n  .filter((item) => item.slug !== slug && item.terms.some((term) => termsSet.has(term)))\n  .slice(0, 5)\n---\n\n<div class=\"mt-16 space-y-8\">\n  {\n    components.length > 0 && (\n      <div>\n        <h2 class=\"text-2xl font-medium\">Related components</h2>\n\n        <ul class=\"mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3\">\n          {components.map((component) => (\n            <ComponentCard {component} />\n          ))}\n        </ul>\n      </div>\n    )\n  }\n\n  <a href={`/components/${category}`} class=\"group inline-flex items-center gap-2 text-gray-700\">\n    <span>View all {category} components</span>\n\n    <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n  </a>\n</div>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "RelatedComponents",
+      "name": "RelatedComponents",
+      "path": "src/components/RelatedComponents.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_RelatedComponents",
+      "name": "RelatedComponents",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/RelatedComponents.astro",
+          "content": "---\nimport { getCollection } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport ComponentCard from './ComponentCard.astro'\n\ntype Props = {\n  slug: string\n  terms: string[]\n  category: 'application' | 'marketing' | 'neobrutalism'\n}\n\nconst { slug, terms, category } = Astro.props\n\nconst termsSet = new Set(terms)\n\nconst components = (await getCollection(category))\n  .map(({ data }) => data)\n  .filter((item) => item.slug !== slug && item.terms.some((term) => termsSet.has(term)))\n  .slice(0, 5)\n---\n\n<div class=\"mt-16 space-y-8\">\n  {\n    components.length > 0 && (\n      <div>\n        <h2 class=\"text-2xl font-medium\">Related components</h2>\n\n        <ul class=\"mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3\">\n          {components.map((component) => (\n            <ComponentCard {component} />\n          ))}\n        </ul>\n      </div>\n    )\n  }\n\n  <a href={`/components/${category}`} class=\"group inline-flex items-center gap-2 text-gray-700\">\n    <span>View all {category} components</span>\n\n    <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n  </a>\n</div>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

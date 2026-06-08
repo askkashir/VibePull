@@ -1,0 +1,43 @@
+{
+  "id": "progress",
+  "name": "progress",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui",
+    "progress-bar",
+    "task-tracking",
+    "completion-status"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "progress",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## progress\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The progress component is a visual representation of an ongoing task's completion percentage. It is typically used to display the progress of a long-running operation, such as a file upload or a data transfer. This component can be used to keep users informed about the status of their task.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "e.g. dark",
+    "e.g. monochromatic"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: progress\nDescription: The progress component is a visual representation of an ongoing task's completion percentage. It is typically used to display the progress of a long-running operation, such as a file upload or a data transfer. This component can be used to keep users informed about the status of their task.\nStyle: modern, flat, e.g. dark, e.g. monochromatic\nInteractions: hover, clickable, animated\nTags: registry:ui, progress-bar, task-tracking, completion-status\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "progress",
+  "display_name": "Progress",
+  "preview_url": "/previews/shadcn/progress.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "breadcrumb-separator",
+  "name": "breadcrumb-separator",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "breadcrumb",
+    "navigation",
+    "ui-element"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "breadcrumb-separator",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## breadcrumb-separator\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A breadcrumb separator is a small UI element used to separate individual items in a breadcrumb trail. It provides clear visual distinction between breadcrumbs, aiding navigation through hierarchical structures. Developers use this component to emphasize breaks between breadcrumb categories.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: breadcrumb-separator\nDescription: A breadcrumb separator is a small UI element used to separate individual items in a breadcrumb trail. It provides clear visual distinction between breadcrumbs, aiding navigation through hierarchical structures. Developers use this component to emphasize breaks between breadcrumb categories.\nStyle: minimal\nInteractions: static\nTags: breadcrumb, navigation, ui-element\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "breadcrumb-separator",
+  "display_name": "Breadcrumb Separator",
+  "preview_url": "/previews/shadcn/breadcrumb-separator.png"
+}

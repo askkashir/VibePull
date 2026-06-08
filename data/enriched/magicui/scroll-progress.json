@@ -1,0 +1,59 @@
+{
+  "id": "scroll-progress",
+  "name": "Scroll Progress",
+  "source_code": "\"use client\"\n\nimport { motion, useScroll, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ScrollProgressProps extends Omit<\n  React.HTMLAttributes<HTMLElement>,\n  keyof MotionProps\n> {\n  ref?: React.Ref<HTMLDivElement>\n}\n\nexport function ScrollProgress({\n  className,\n  ref,\n  ...props\n}: ScrollProgressProps) {\n  const { scrollYProgress } = useScroll()\n\n  return (\n    <motion.div\n      ref={ref}\n      className={cn(\n        \"fixed inset-x-0 top-0 z-50 h-px origin-left bg-linear-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92]\",\n        className\n      )}\n      style={{\n        scaleX: scrollYProgress,\n      }}\n      {...props}\n    />\n  )\n}\n",
+  "description": "Animated Scroll Progress for your pages",
+  "tags": [
+    "progress",
+    "scroll",
+    "loading"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-progress",
+      "type": "registry:ui",
+      "title": "Scroll Progress",
+      "description": "Animated Scroll Progress for your pages",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/scroll-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/scroll-progress.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "scroll-progress",
+      "type": "registry:ui",
+      "title": "Scroll Progress",
+      "description": "Animated Scroll Progress for your pages",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/scroll-progress.tsx",
+          "content": "\"use client\"\n\nimport { motion, useScroll, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ScrollProgressProps extends Omit<\n  React.HTMLAttributes<HTMLElement>,\n  keyof MotionProps\n> {\n  ref?: React.Ref<HTMLDivElement>\n}\n\nexport function ScrollProgress({\n  className,\n  ref,\n  ...props\n}: ScrollProgressProps) {\n  const { scrollYProgress } = useScroll()\n\n  return (\n    <motion.div\n      ref={ref}\n      className={cn(\n        \"fixed inset-x-0 top-0 z-50 h-px origin-left bg-linear-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92]\",\n        className\n      )}\n      style={{\n        scaleX: scrollYProgress,\n      }}\n      {...props}\n    />\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A horizontally-stretch horizontal progress bar that indicates the scroll progress of a page, typically used to create a subtle loading effect.",
+  "style_tags": [
+    "gradient",
+    "animated"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Scroll Progress\nDescription: A horizontally-stretch horizontal progress bar that indicates the scroll progress of a page, typically used to create a subtle loading effect.\nStyle: gradient, animated\nInteractions: \nTags: progress, scroll, loading\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { motion, useScroll, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ScrollProgressProps extends Omit<\n  React.HTMLAttributes<HTMLElement>,\n  keyof MotionProps\n> {\n  ref?: React.Ref<HTMLDivElement>\n}\n\nexport function ScrollProgress({\n  className,\n  ref,\n  ...props\n}: ScrollProgressProps) {\n  const { scrollYProgress } = useScroll()\n\n  return (\n    <motion.div\n      ref={ref}\n      className={cn(\n        \"fixed inset-x-0 top-0 z-50 h-px orig",
+  "prompt_version": 2,
+  "clean_id": "scroll-progress",
+  "display_name": "Scroll Progress",
+  "preview_url": "/previews/magicui/scroll-progress.png"
+}

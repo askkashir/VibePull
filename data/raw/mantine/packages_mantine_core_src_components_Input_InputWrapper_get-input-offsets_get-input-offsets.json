@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputWrapper_get-input-offsets_get-input-offsets",
+  "name": "get-input-offsets",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputWrapper/get-input-offsets/get-input-offsets.ts\nexport function getInputOffsets(\n  inputWrapperOrder: ('label' | 'input' | 'description' | 'error')[],\n  { hasDescription, hasError }: { hasDescription: boolean; hasError: boolean }\n) {\n  const inputIndex = inputWrapperOrder.findIndex((part) => part === 'input');\n  const aboveInput = inputWrapperOrder.slice(0, inputIndex);\n  const belowInput = inputWrapperOrder.slice(inputIndex + 1);\n  const offsetTop =\n    (hasDescription && aboveInput.includes('description')) ||\n    (hasError && aboveInput.includes('error'));\n  const offsetBottom =\n    (hasDescription && belowInput.includes('description')) ||\n    (hasError && belowInput.includes('error'));\n  return { offsetBottom, offsetTop };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputWrapper_get-input-offsets_get-input-offsets",
+      "name": "get-input-offsets",
+      "path": "packages/@mantine/core/src/components/Input/InputWrapper/get-input-offsets/get-input-offsets.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputWrapper_get-input-offsets_get-input-offsets",
+      "name": "get-input-offsets",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputWrapper/get-input-offsets/get-input-offsets.ts",
+          "content": "export function getInputOffsets(\n  inputWrapperOrder: ('label' | 'input' | 'description' | 'error')[],\n  { hasDescription, hasError }: { hasDescription: boolean; hasError: boolean }\n) {\n  const inputIndex = inputWrapperOrder.findIndex((part) => part === 'input');\n  const aboveInput = inputWrapperOrder.slice(0, inputIndex);\n  const belowInput = inputWrapperOrder.slice(inputIndex + 1);\n  const offsetTop =\n    (hasDescription && aboveInput.includes('description')) ||\n    (hasError && aboveInput.includes('error'));\n  const offsetBottom =\n    (hasDescription && belowInput.includes('description')) ||\n    (hasError && belowInput.includes('error'));\n  return { offsetBottom, offsetTop };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

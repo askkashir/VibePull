@@ -1,0 +1,31 @@
+{
+  "id": "elements_radio-group",
+  "name": "radio-group",
+  "source_code": "// elements/radio-group.html\n<div x-data=\"{\n    radioGroupSelectedValue: null,\n    radioGroupOptions: [\n        {\n            title: 'Tailwind CSS',\n            description: 'A utility-first CSS framework for rapid UI development.',\n            value: 'tailwind'\n        },\n        {\n            title: 'Alpine JS',\n            description: 'A rugged and lightweight JavaScript framework.',\n            value: 'alpine'\n        },\n        {\n            title: 'Laravel',\n            description: 'The PHP Framework for Web Artisans.',\n            value: 'laravel'\n        }\n    ]\n}\" class=\"space-y-3\">\n    <template x-for=\"(option, index) in radioGroupOptions\" :key=\"index\">\n        <label @click=\"radioGroupSelectedValue=option.value\" class=\"flex items-start p-5 space-x-3 bg-white border rounded-md shadow-sm hover:bg-gray-50 border-neutral-200/70\">\n            <input type=\"radio\" name=\"radio-group\" :value=\"option.value\" class=\"text-gray-900 translate-y-px focus:ring-gray-700\" />\n            <span class=\"relative flex flex-col text-left space-y-1.5 leading-none\">\n                <span x-text=\"option.title\" class=\"font-semibold\"></span>\n                <span x-text=\"option.description\" class=\"text-sm opacity-50\"></span>\n            </span>\n        </label>\n    </template>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "radio-group",
+      "name": "radio-group",
+      "path": "elements/radio-group.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_radio-group",
+      "name": "radio-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/radio-group.html",
+          "content": "<div x-data=\"{\n    radioGroupSelectedValue: null,\n    radioGroupOptions: [\n        {\n            title: 'Tailwind CSS',\n            description: 'A utility-first CSS framework for rapid UI development.',\n            value: 'tailwind'\n        },\n        {\n            title: 'Alpine JS',\n            description: 'A rugged and lightweight JavaScript framework.',\n            value: 'alpine'\n        },\n        {\n            title: 'Laravel',\n            description: 'The PHP Framework for Web Artisans.',\n            value: 'laravel'\n        }\n    ]\n}\" class=\"space-y-3\">\n    <template x-for=\"(option, index) in radioGroupOptions\" :key=\"index\">\n        <label @click=\"radioGroupSelectedValue=option.value\" class=\"flex items-start p-5 space-x-3 bg-white border rounded-md shadow-sm hover:bg-gray-50 border-neutral-200/70\">\n            <input type=\"radio\" name=\"radio-group\" :value=\"option.value\" class=\"text-gray-900 translate-y-px focus:ring-gray-700\" />\n            <span class=\"relative flex flex-col text-left space-y-1.5 leading-none\">\n                <span x-text=\"option.title\" class=\"font-semibold\"></span>\n                <span x-text=\"option.description\" class=\"text-sm opacity-50\"></span>\n            </span>\n        </label>\n    </template>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

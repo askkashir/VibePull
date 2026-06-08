@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_MaskInput_use-mask-input-props",
+  "name": "use-mask-input-props",
+  "source_code": "// packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts\nimport { assignRef, useMask, useMergedRef } from '@mantine/hooks';\nimport type { MaskInputProps } from './MaskInput';\n\nexport function useMaskInputProps(props: MaskInputProps & { ref?: React.Ref<HTMLInputElement> }) {\n  const {\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n    resetRef,\n    ref,\n    ...elementProps\n  } = props;\n\n  const { ref: maskCallbackRef, reset } = useMask({\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n  });\n\n  assignRef(resetRef, reset);\n\n  const maskRef = useMergedRef(ref, maskCallbackRef);\n\n  return { maskRef, elementProps };\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "mask",
+    "props",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "MaskInput_use-mask-input-props",
+      "name": "use-mask-input-props",
+      "path": "packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_MaskInput_use-mask-input-props",
+      "name": "use-mask-input-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts",
+          "content": "import { assignRef, useMask, useMergedRef } from '@mantine/hooks';\nimport type { MaskInputProps } from './MaskInput';\n\nexport function useMaskInputProps(props: MaskInputProps & { ref?: React.Ref<HTMLInputElement> }) {\n  const {\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n    resetRef,\n    ref,\n    ...elementProps\n  } = props;\n\n  const { ref: maskCallbackRef, reset } = useMask({\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n  });\n\n  assignRef(resetRef, reset);\n\n  const maskRef = useMergedRef(ref, maskCallbackRef);\n\n  return { maskRef, elementProps };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-mask-input-props is a use mask input props UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: use-mask-input-props\nDescription: use-mask-input-props is a use mask input props UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: input, mantine, mask, props, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/MaskInput/use-mask-input-props.ts\nimport { assignRef, useMask, useMergedRef } from '@mantine/hooks';\nimport type { MaskInputProps } from './MaskInput';\n\nexport function useMaskInputProps(props: MaskInputProps & { ref?: React.Ref<HTMLInputElement> }) {\n  const {\n    mask,\n    tokens,\n    modify,\n    separate,\n    slotChar,\n    alwaysShowMask,\n    showMaskOnFocus,\n    transform,\n    autoClear,\n    onChangeRaw,\n    onComplete,\n    beforeMaskedStateChange,\n  ",
+  "prompt_version": 2,
+  "clean_id": "use-mask-input-props",
+  "display_name": "Use Mask Input Props",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-maskinput-use-mask-input-props.png"
+}

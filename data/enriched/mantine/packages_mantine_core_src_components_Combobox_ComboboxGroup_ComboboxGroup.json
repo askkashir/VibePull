@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxGroup_ComboboxGroup",
+  "name": "ComboboxGroup",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxGroup/ComboboxGroup.tsx\nimport { useId } from '@mantine/hooks';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxGroupStylesNames = 'group' | 'groupLabel';\n\nexport interface ComboboxGroupProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxGroupFactory>, ElementProps<'div'> {\n  /** Group label */\n  label?: React.ReactNode;\n}\n\nexport type ComboboxGroupFactory = Factory<{\n  props: ComboboxGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxGroupStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxGroup = factory<ComboboxGroupFactory>((props) => {\n  const { classNames, className, style, styles, vars, children, label, id, ...others } = useProps(\n    'ComboboxGroup',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n  const _id = useId(id);\n\n  return (\n    <Box\n      role=\"group\"\n      aria-labelledby={label ? _id : undefined}\n      {...ctx.getStyles('group', { className, classNames, style, styles })}\n      {...others}\n    >\n      {label && (\n        <div id={_id} {...ctx.getStyles('groupLabel', { classNames, styles })}>\n          {label}\n        </div>\n      )}\n      {children}\n    </Box>\n  );\n});\n\nComboboxGroup.classes = classes;\nComboboxGroup.displayName = '@mantine/core/ComboboxGroup';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "group",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxGroup_ComboboxGroup",
+      "name": "ComboboxGroup",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxGroup/ComboboxGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxGroup_ComboboxGroup",
+      "name": "ComboboxGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxGroup/ComboboxGroup.tsx",
+          "content": "import { useId } from '@mantine/hooks';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxGroupStylesNames = 'group' | 'groupLabel';\n\nexport interface ComboboxGroupProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxGroupFactory>, ElementProps<'div'> {\n  /** Group label */\n  label?: React.ReactNode;\n}\n\nexport type ComboboxGroupFactory = Factory<{\n  props: ComboboxGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxGroupStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxGroup = factory<ComboboxGroupFactory>((props) => {\n  const { classNames, className, style, styles, vars, children, label, id, ...others } = useProps(\n    'ComboboxGroup',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n  const _id = useId(id);\n\n  return (\n    <Box\n      role=\"group\"\n      aria-labelledby={label ? _id : undefined}\n      {...ctx.getStyles('group', { className, classNames, style, styles })}\n      {...others}\n    >\n      {label && (\n        <div id={_id} {...ctx.getStyles('groupLabel', { classNames, styles })}>\n          {label}\n        </div>\n      )}\n      {children}\n    </Box>\n  );\n});\n\nComboboxGroup.classes = classes;\nComboboxGroup.displayName = '@mantine/core/ComboboxGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxGroup is a combobox group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ComboboxGroup\nDescription: ComboboxGroup is a combobox group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: combobox, group, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxGroup/ComboboxGroup.tsx\nimport { useId } from '@mantine/hooks';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxGroupStylesNames = 'group' | 'groupLabel';\n\nexport interface ComboboxGroupProps\n  extends BoxProps, CompoundStylesApiProps<Co",
+  "prompt_version": 2,
+  "clean_id": "combobox-group",
+  "display_name": "Combobox Group",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxgroup-comboboxgroup.png"
+}

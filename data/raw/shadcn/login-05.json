@@ -1,0 +1,23 @@
+{
+  "id": "login-05",
+  "name": "login-05",
+  "source_code": "",
+  "description": "A simple email-only login page.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-05",
+      "type": "registry:block",
+      "description": "A simple email-only login page.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-05\n\nA simple email-only login page.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

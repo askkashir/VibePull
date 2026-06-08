@@ -1,0 +1,22 @@
+{
+  "id": "button-group-input-group",
+  "name": "button-group-input-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-input-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-input-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

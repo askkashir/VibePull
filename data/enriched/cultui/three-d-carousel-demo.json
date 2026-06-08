@@ -1,0 +1,62 @@
+{
+  "id": "three-d-carousel-demo",
+  "name": "three-d-carousel-demo",
+  "source_code": "// registry/default/example/three-d-carousel-demo.tsx\nimport ThreeDPhotoCarousel from \"../ui/three-d-carousel\"\n\nexport default function ThreeDPhotoCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-4xl\">\n      <div className=\"min-h-[500px]  flex flex-col justify-center border border-dashed rounded-lg space-y-4\">\n        <div className=\"p-2\">\n          <ThreeDPhotoCarousel />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "3D",
+    "carousel",
+    "image"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "three-d-carousel-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/three-d-carousel-demo.json",
+      "sha": "e8ecc4c7299d11fb21ffb6490b068117a5ae34da",
+      "size": 743,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/three-d-carousel-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/three-d-carousel-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/e8ecc4c7299d11fb21ffb6490b068117a5ae34da",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/three-d-carousel-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/three-d-carousel-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/e8ecc4c7299d11fb21ffb6490b068117a5ae34da",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/three-d-carousel-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "three-d-carousel-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "three-d-carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/three-d-carousel-demo.tsx",
+          "content": "import ThreeDPhotoCarousel from \"../ui/three-d-carousel\"\n\nexport default function ThreeDPhotoCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-4xl\">\n      <div className=\"min-h-[500px]  flex flex-col justify-center border border-dashed rounded-lg space-y-4\">\n        <div className=\"p-2\">\n          <ThreeDPhotoCarousel />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A 3D photo carousel component that can be used in a webpage to display a series of 3D images. The carousel can be used when the goal is to create an engaging experience for users by showcasing products or content in a visually appealing and interactive way. The component is likely to be used in marketing or sales contexts.",
+  "style_tags": [
+    "rounded",
+    "border-dashed",
+    "container"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "component",
+  "generation_prompt": "Create a production-ready component component with the following characteristics:\n\nName: three-d-carousel-demo\nDescription: A 3D photo carousel component that can be used in a webpage to display a series of 3D images. The carousel can be used when the goal is to create an engaging experience for users by showcasing products or content in a visually appealing and interactive way. The component is likely to be used in marketing or sales contexts.\nStyle: rounded, border-dashed, container\nInteractions: clickable\nTags: 3D, carousel, image\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/three-d-carousel-demo.tsx\nimport ThreeDPhotoCarousel from \"../ui/three-d-carousel\"\n\nexport default function ThreeDPhotoCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-4xl\">\n      <div className=\"min-h-[500px]  flex flex-col justify-center border border-dashed rounded-lg space-y-4\">\n        <div className=\"p-2\">\n          <ThreeDPhotoCarousel />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "three-d-carousel-demo",
+  "display_name": "Three D Carousel Demo",
+  "preview_url": "/previews/cultui/three-d-carousel-demo.png"
+}

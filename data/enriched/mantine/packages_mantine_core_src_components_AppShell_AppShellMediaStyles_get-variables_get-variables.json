@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-variables_get-variables",
+  "name": "get-variables",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-variables/get-variables.ts\nimport { em, getSortedBreakpoints, keys, MantineTheme } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { assignAsideVariables } from '../assign-aside-variables/assign-aside-variables';\nimport { assignFooterVariables } from '../assign-footer-variables/assign-footer-variables';\nimport { assignHeaderVariables } from '../assign-header-variables/assign-header-variables';\nimport { assignNavbarVariables } from '../assign-navbar-variables/assign-navbar-variables';\nimport { assignPaddingVariables } from '../assign-padding-variables/assign-padding-variables';\n\nexport type CSSVariables = Record<`--${string}`, string | undefined>;\nexport type MediaQueryVariables = Record<string, Record<`--${string}`, string | undefined>>;\n\ninterface GetVariablesInput {\n  navbar: AppShellProps['navbar'] | undefined;\n  header: AppShellProps['header'] | undefined;\n  footer: AppShellProps['footer'] | undefined;\n  aside: AppShellProps['aside'] | undefined;\n  padding: AppShellProps['padding'] | undefined;\n  theme: MantineTheme;\n  mode: 'fixed' | 'static';\n}\n\nexport function getVariables({\n  navbar,\n  header,\n  footer,\n  aside,\n  padding,\n  theme,\n  mode,\n}: GetVariablesInput) {\n  const minMediaStyles: MediaQueryVariables = {};\n  const maxMediaStyles: MediaQueryVariables = {};\n  const baseStyles: CSSVariables = {};\n\n  // Set default main grid position in static mode\n  if (mode === 'static') {\n    baseStyles['--app-shell-main-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-main-grid-row'] = '2';\n  }\n\n  assignNavbarVariables({\n    baseStyles,\n    minMediaStyles,\n    maxMediaStyles,\n    navbar,\n    theme,\n    mode,\n  });\n\n  assignAsideVariables({\n    baseStyles,\n    minMediaStyles,\n    maxMediaStyles,\n    aside,\n    theme,\n    mode,\n  });\n\n  assignHeaderVariables({ baseStyles, minMediaStyles, header, mode });\n  assignFooterVariables({ baseStyles, minMediaStyles, footer, mode });\n  assignPaddingVariables({ baseStyles, minMediaStyles, padding });\n\n  const minMedia = getSortedBreakpoints(keys(minMediaStyles), theme.breakpoints).map(\n    (breakpoint) => ({\n      query: `(min-width: ${em(breakpoint.px)})`,\n      styles: minMediaStyles[breakpoint.value],\n    })\n  );\n\n  const maxMedia = getSortedBreakpoints(keys(maxMediaStyles), theme.breakpoints).map(\n    (breakpoint) => ({\n      query: `(max-width: ${em(breakpoint.px)})`,\n      styles: maxMediaStyles[breakpoint.value],\n    })\n  );\n\n  const media = [...minMedia, ...maxMedia];\n\n  return { baseStyles, media };\n}\n",
+  "description": "",
+  "tags": [
+    "get",
+    "mantine",
+    "other",
+    "variables"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_get-variables_get-variables",
+      "name": "get-variables",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-variables/get-variables.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-variables_get-variables",
+      "name": "get-variables",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-variables/get-variables.ts",
+          "content": "import { em, getSortedBreakpoints, keys, MantineTheme } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { assignAsideVariables } from '../assign-aside-variables/assign-aside-variables';\nimport { assignFooterVariables } from '../assign-footer-variables/assign-footer-variables';\nimport { assignHeaderVariables } from '../assign-header-variables/assign-header-variables';\nimport { assignNavbarVariables } from '../assign-navbar-variables/assign-navbar-variables';\nimport { assignPaddingVariables } from '../assign-padding-variables/assign-padding-variables';\n\nexport type CSSVariables = Record<`--${string}`, string | undefined>;\nexport type MediaQueryVariables = Record<string, Record<`--${string}`, string | undefined>>;\n\ninterface GetVariablesInput {\n  navbar: AppShellProps['navbar'] | undefined;\n  header: AppShellProps['header'] | undefined;\n  footer: AppShellProps['footer'] | undefined;\n  aside: AppShellProps['aside'] | undefined;\n  padding: AppShellProps['padding'] | undefined;\n  theme: MantineTheme;\n  mode: 'fixed' | 'static';\n}\n\nexport function getVariables({\n  navbar,\n  header,\n  footer,\n  aside,\n  padding,\n  theme,\n  mode,\n}: GetVariablesInput) {\n  const minMediaStyles: MediaQueryVariables = {};\n  const maxMediaStyles: MediaQueryVariables = {};\n  const baseStyles: CSSVariables = {};\n\n  // Set default main grid position in static mode\n  if (mode === 'static') {\n    baseStyles['--app-shell-main-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-main-grid-row'] = '2';\n  }\n\n  assignNavbarVariables({\n    baseStyles,\n    minMediaStyles,\n    maxMediaStyles,\n    navbar,\n    theme,\n    mode,\n  });\n\n  assignAsideVariables({\n    baseStyles,\n    minMediaStyles,\n    maxMediaStyles,\n    aside,\n    theme,\n    mode,\n  });\n\n  assignHeaderVariables({ baseStyles, minMediaStyles, header, mode });\n  assignFooterVariables({ baseStyles, minMediaStyles, footer, mode });\n  assignPaddingVariables({ baseStyles, minMediaStyles, padding });\n\n  const minMedia = getSortedBreakpoints(keys(minMediaStyles), theme.breakpoints).map(\n    (breakpoint) => ({\n      query: `(min-width: ${em(breakpoint.px)})`,\n      styles: minMediaStyles[breakpoint.value],\n    })\n  );\n\n  const maxMedia = getSortedBreakpoints(keys(maxMediaStyles), theme.breakpoints).map(\n    (breakpoint) => ({\n      query: `(max-width: ${em(breakpoint.px)})`,\n      styles: maxMediaStyles[breakpoint.value],\n    })\n  );\n\n  const media = [...minMedia, ...maxMedia];\n\n  return { baseStyles, media };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-variables is a get variables UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-variables\nDescription: get-variables is a get variables UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable\nInteractions: \nTags: get, mantine, other, variables\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-variables/get-variables.ts\nimport { em, getSortedBreakpoints, keys, MantineTheme } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { assignAsideVariables } from '../assign-aside-variables/assign-aside-variables';\nimport { assignFooterVariables } from '../assign-footer-variables/assign-footer-variables';\nimport { assignHeaderVariables } from '../assign-header-variables/assign-header-vari",
+  "prompt_version": 2,
+  "clean_id": "get-variables",
+  "display_name": "Get Variables",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellmediastyles-get-variables-get-variables.png"
+}

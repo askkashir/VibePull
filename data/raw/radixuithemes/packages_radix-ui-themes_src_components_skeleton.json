@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_skeleton",
+  "name": "skeleton",
+  "source_code": "// packages/radix-ui-themes/src/components/skeleton.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { inert } from '../helpers/inert.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { skeletonPropDefs } from './skeleton.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype SkeletonElement = React.ElementRef<'span'>;\ntype SkeletonOwnProps = GetPropDefTypes<typeof skeletonPropDefs>;\ninterface SkeletonProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SkeletonOwnProps {}\nconst Skeleton = React.forwardRef<SkeletonElement, SkeletonProps>((props, forwardedRef) => {\n  const { children, className, loading, ...skeletonProps } = extractProps(\n    props,\n    skeletonPropDefs,\n    marginPropDefs,\n  );\n\n  if (!loading) return children;\n\n  const Tag = React.isValidElement(children) ? Slot.Root : 'span';\n\n  return (\n    <Tag\n      ref={forwardedRef}\n      aria-hidden\n      className={classNames('rt-Skeleton', className)}\n      data-inline-skeleton={React.isValidElement(children) ? undefined : true}\n      tabIndex={-1}\n      inert={inert}\n      {...skeletonProps}\n    >\n      {children}\n    </Tag>\n  );\n});\nSkeleton.displayName = 'Skeleton';\n\nexport { Skeleton };\nexport type { SkeletonProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_skeleton",
+      "name": "skeleton.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/skeleton.tsx",
+      "sha": "f6458f1b112d33d14e7013b2cc52ed0d8ce9f406",
+      "size": 1486,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/skeleton.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/skeleton.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/f6458f1b112d33d14e7013b2cc52ed0d8ce9f406",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/skeleton.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/skeleton.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/f6458f1b112d33d14e7013b2cc52ed0d8ce9f406",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/skeleton.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_skeleton",
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/skeleton.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { inert } from '../helpers/inert.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { skeletonPropDefs } from './skeleton.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype SkeletonElement = React.ElementRef<'span'>;\ntype SkeletonOwnProps = GetPropDefTypes<typeof skeletonPropDefs>;\ninterface SkeletonProps\n  extends ComponentPropsWithout<'span', RemovedProps>, MarginProps, SkeletonOwnProps {}\nconst Skeleton = React.forwardRef<SkeletonElement, SkeletonProps>((props, forwardedRef) => {\n  const { children, className, loading, ...skeletonProps } = extractProps(\n    props,\n    skeletonPropDefs,\n    marginPropDefs,\n  );\n\n  if (!loading) return children;\n\n  const Tag = React.isValidElement(children) ? Slot.Root : 'span';\n\n  return (\n    <Tag\n      ref={forwardedRef}\n      aria-hidden\n      className={classNames('rt-Skeleton', className)}\n      data-inline-skeleton={React.isValidElement(children) ? undefined : true}\n      tabIndex={-1}\n      inert={inert}\n      {...skeletonProps}\n    >\n      {children}\n    </Tag>\n  );\n});\nSkeleton.displayName = 'Skeleton';\n\nexport { Skeleton };\nexport type { SkeletonProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

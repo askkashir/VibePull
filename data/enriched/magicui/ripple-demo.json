@@ -1,0 +1,62 @@
+{
+  "id": "ripple-demo",
+  "name": "Ripple Demo",
+  "source_code": "import { Ripple } from \"@/registry/magicui/ripple\"\n\nexport default function RippleDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <p className=\"z-10 text-center text-5xl font-medium tracking-tighter whitespace-pre-wrap text-white\">\n        Ripple\n      </p>\n      <Ripple />\n    </div>\n  )\n}\n",
+  "description": "Example showing an animated ripple effect.",
+  "tags": [
+    "ripple",
+    "interaction",
+    "button"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "ripple-demo",
+      "type": "registry:example",
+      "title": "Ripple Demo",
+      "description": "Example showing an animated ripple effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/ripple"
+      ],
+      "files": [
+        {
+          "path": "registry/example/ripple-demo.tsx",
+          "type": "registry:example",
+          "target": "components/ripple-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "ripple-demo",
+      "type": "registry:example",
+      "title": "Ripple Demo",
+      "description": "Example showing an animated ripple effect.",
+      "registryDependencies": [
+        "@magicui/ripple"
+      ],
+      "files": [
+        {
+          "path": "registry/example/ripple-demo.tsx",
+          "content": "import { Ripple } from \"@/registry/magicui/ripple\"\n\nexport default function RippleDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <p className=\"z-10 text-center text-5xl font-medium tracking-tighter whitespace-pre-wrap text-white\">\n        Ripple\n      </p>\n      <Ripple />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A medium-sized, white text 'Ripple' title centered on the page with a rounded background, containing an interactive Ripple component underneath.",
+  "style_tags": [
+    "rounded",
+    "card",
+    "bg-background"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Ripple Demo\nDescription: A medium-sized, white text 'Ripple' title centered on the page with a rounded background, containing an interactive Ripple component underneath.\nStyle: rounded, card, bg-background\nInteractions: clickable\nTags: ripple, interaction, button\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Ripple } from \"@/registry/magicui/ripple\"\n\nexport default function RippleDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <p className=\"z-10 text-center text-5xl font-medium tracking-tighter whitespace-pre-wrap text-white\">\n        Ripple\n      </p>\n      <Ripple />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "ripple-demo",
+  "display_name": "Ripple Demo",
+  "preview_url": "/previews/magicui/ripple-demo.png"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "tabs",
+  "name": "tabs",
+  "source_code": "// src/components/ui/tabs.tsx\n'use client'\nimport { Tabs } from '@ark-ui/react/tabs'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tabs } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(tabs)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Tabs.Root, 'root')\nexport const RootProvider = withProvider(Tabs.RootProvider, 'root')\nexport const List = withContext(Tabs.List, 'list')\nexport const Trigger = withContext(Tabs.Trigger, 'trigger')\nexport const Content = withContext(Tabs.Content, 'content')\nexport const Indicator = withContext(Tabs.Indicator, 'indicator')\n\nexport { TabsContext as Context } from '@ark-ui/react/tabs'\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "tabs",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Tabs from './tabs'",
+          "content": "'use client'\nimport { Tabs } from '@ark-ui/react/tabs'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tabs } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(tabs)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Tabs.Root, 'root')\nexport const RootProvider = withProvider(Tabs.RootProvider, 'root')\nexport const List = withContext(Tabs.List, 'list')\nexport const Trigger = withContext(Tabs.Trigger, 'trigger')\nexport const Content = withContext(Tabs.Content, 'content')\nexport const Indicator = withContext(Tabs.Indicator, 'indicator')\n\nexport { TabsContext as Context } from '@ark-ui/react/tabs'\n"
+        }
+      ],
+      "registryDependencies": [
+        "tabs-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "tabs",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Tabs from './tabs'",
+          "content": "'use client'\nimport { Tabs } from '@ark-ui/react/tabs'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { tabs } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(tabs)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Tabs.Root, 'root')\nexport const RootProvider = withProvider(Tabs.RootProvider, 'root')\nexport const List = withContext(Tabs.List, 'list')\nexport const Trigger = withContext(Tabs.Trigger, 'trigger')\nexport const Content = withContext(Tabs.Content, 'content')\nexport const Indicator = withContext(Tabs.Indicator, 'indicator')\n\nexport { TabsContext as Context } from '@ark-ui/react/tabs'\n"
+        }
+      ],
+      "registryDependencies": [
+        "tabs-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

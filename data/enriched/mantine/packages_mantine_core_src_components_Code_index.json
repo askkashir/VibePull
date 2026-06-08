@@ -1,0 +1,39 @@
+{
+  "id": "packages_mantine_core_src_components_Code_index",
+  "name": "Code",
+  "source_code": "// packages/@mantine/core/src/components/Code/index.ts\nimport type { CodeCssVariables, CodeFactory, CodeProps, CodeStylesNames } from './Code';\n\nexport { Code } from './Code';\n\nexport type { CodeProps, CodeCssVariables, CodeFactory, CodeStylesNames };\n",
+  "description": "",
+  "tags": [
+    "code"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Code_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Code/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Code_index",
+      "name": "Code",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Code/index.ts",
+          "content": "import type { CodeCssVariables, CodeFactory, CodeProps, CodeStylesNames } from './Code';\n\nexport { Code } from './Code';\n\nexport type { CodeProps, CodeCssVariables, CodeFactory, CodeStylesNames };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A UI component to display code within a React application.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Code\nDescription: A UI component to display code within a React application.\nStyle: \nInteractions: \nTags: code\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Code/index.ts\nimport type { CodeCssVariables, CodeFactory, CodeProps, CodeStylesNames } from './Code';\n\nexport { Code } from './Code';\n\nexport type { CodeProps, CodeCssVariables, CodeFactory, CodeStylesNames };\n",
+  "prompt_version": 2,
+  "clean_id": "code",
+  "display_name": "Code",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-code-index.png"
+}

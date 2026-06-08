@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerBody",
+  "name": "DrawerBody",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerBody.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseBody, ModalBaseBodyProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerBodyStylesNames = 'body';\n\nexport interface DrawerBodyProps\n  extends ModalBaseBodyProps, CompoundStylesApiProps<DrawerBodyFactory> {}\n\nexport type DrawerBodyFactory = Factory<{\n  props: DrawerBodyProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerBodyStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerBody = factory<DrawerBodyFactory>((_props) => {\n  const props = useProps('DrawerBody', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseBody\n      {...ctx.getStyles('body', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerBody.classes = classes;\nDrawerBody.displayName = '@mantine/core/DrawerBody';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerBody",
+      "name": "DrawerBody",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerBody.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerBody",
+      "name": "DrawerBody",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerBody.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseBody, ModalBaseBodyProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerBodyStylesNames = 'body';\n\nexport interface DrawerBodyProps\n  extends ModalBaseBodyProps, CompoundStylesApiProps<DrawerBodyFactory> {}\n\nexport type DrawerBodyFactory = Factory<{\n  props: DrawerBodyProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerBodyStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerBody = factory<DrawerBodyFactory>((_props) => {\n  const props = useProps('DrawerBody', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseBody\n      {...ctx.getStyles('body', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerBody.classes = classes;\nDrawerBody.displayName = '@mantine/core/DrawerBody';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

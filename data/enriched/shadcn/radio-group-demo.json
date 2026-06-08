@@ -1,0 +1,40 @@
+{
+  "id": "radio-group-demo",
+  "name": "radio-group-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "radio",
+    "group",
+    "buttons",
+    "selection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "radio-group-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## radio-group-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A radio group, also known as a radio button group, is a collection of radio buttons that allow the user to select one option from a list. It is typically used when there are multiple exclusive options to choose from. This component is useful when a user needs to select one item from a set of options.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "disabled"
+  ],
+  "component_type": "radio",
+  "generation_prompt": "Create a production-ready radio component with the following characteristics:\n\nName: radio-group-demo\nDescription: A radio group, also known as a radio button group, is a collection of radio buttons that allow the user to select one option from a list. It is typically used when there are multiple exclusive options to choose from. This component is useful when a user needs to select one item from a set of options.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. clickable, disabled\nTags: radio, group, buttons, selection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "radio-group-demo",
+  "display_name": "Radio Group Demo",
+  "preview_url": "/previews/shadcn/radio-group-demo.png"
+}

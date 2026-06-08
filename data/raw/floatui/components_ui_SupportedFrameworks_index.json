@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_SupportedFrameworks_index",
+  "name": "SupportedFrameworks",
+  "source_code": "// components/ui/SupportedFrameworks/index.tsx\nimport FrameworksTabs from \"./FrameworksTabs\";\nimport PreviewCard from \"./PreviewCard\";\n\nexport default () => {\n  return (\n    <section className=\"mt-32\">\n      <div className=\"custom-screen\">\n        <div className=\"max-w-xl mx-auto space-y-4 text-center\">\n          <h2 className=\"text-4xl heading\">Use your favorite framework</h2>\n          <p className=\"text-zinc-400\">\n            Copy and paste the components you want with your favorite JS\n            framework\n          </p>\n        </div>\n        <div className=\"mt-10 flex items-center justify-between gap-x-6\">\n          <FrameworksTabs />\n          <PreviewCard />\n        </div>\n      </div>\n    </section>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_SupportedFrameworks_index",
+      "name": "index",
+      "path": "components/ui/SupportedFrameworks/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_SupportedFrameworks_index",
+      "name": "SupportedFrameworks",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/SupportedFrameworks/index.tsx",
+          "content": "import FrameworksTabs from \"./FrameworksTabs\";\nimport PreviewCard from \"./PreviewCard\";\n\nexport default () => {\n  return (\n    <section className=\"mt-32\">\n      <div className=\"custom-screen\">\n        <div className=\"max-w-xl mx-auto space-y-4 text-center\">\n          <h2 className=\"text-4xl heading\">Use your favorite framework</h2>\n          <p className=\"text-zinc-400\">\n            Copy and paste the components you want with your favorite JS\n            framework\n          </p>\n        </div>\n        <div className=\"mt-10 flex items-center justify-between gap-x-6\">\n          <FrameworksTabs />\n          <PreviewCard />\n        </div>\n      </div>\n    </section>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

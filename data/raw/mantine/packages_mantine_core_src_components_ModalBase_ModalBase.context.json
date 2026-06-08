@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBase.context",
+  "name": "ModalBase.context",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts\nimport { createSafeContext } from '../../core';\nimport { TransitionOverride } from '../Transition';\n\ninterface ModalBaseContextValue {\n  unstyled: boolean | undefined;\n  titleMounted: boolean;\n  bodyMounted: boolean;\n  setTitleMounted: (value: boolean) => void;\n  setBodyMounted: (value: boolean) => void;\n  getTitleId: () => string;\n  getBodyId: () => string;\n  transitionProps: Partial<TransitionOverride> | undefined;\n  onExitTransitionEnd: (() => void) | undefined;\n  onEnterTransitionEnd: (() => void) | undefined;\n  zIndex: string | number | undefined;\n\n  opened: boolean;\n  onClose: () => void;\n\n  closeOnEscape: boolean | undefined;\n  trapFocus: boolean | undefined;\n  closeOnClickOutside: boolean | undefined;\n}\n\nexport const [ModalBaseProvider, useModalBaseContext] = createSafeContext<ModalBaseContextValue>(\n  'ModalBase component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBase.context",
+      "name": "ModalBase.context",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBase.context",
+      "name": "ModalBase.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts",
+          "content": "import { createSafeContext } from '../../core';\nimport { TransitionOverride } from '../Transition';\n\ninterface ModalBaseContextValue {\n  unstyled: boolean | undefined;\n  titleMounted: boolean;\n  bodyMounted: boolean;\n  setTitleMounted: (value: boolean) => void;\n  setBodyMounted: (value: boolean) => void;\n  getTitleId: () => string;\n  getBodyId: () => string;\n  transitionProps: Partial<TransitionOverride> | undefined;\n  onExitTransitionEnd: (() => void) | undefined;\n  onEnterTransitionEnd: (() => void) | undefined;\n  zIndex: string | number | undefined;\n\n  opened: boolean;\n  onClose: () => void;\n\n  closeOnEscape: boolean | undefined;\n  trapFocus: boolean | undefined;\n  closeOnClickOutside: boolean | undefined;\n}\n\nexport const [ModalBaseProvider, useModalBaseContext] = createSafeContext<ModalBaseContextValue>(\n  'ModalBase component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

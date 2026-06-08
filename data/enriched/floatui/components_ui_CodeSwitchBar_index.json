@@ -1,0 +1,50 @@
+{
+  "id": "components_ui_CodeSwitchBar_index",
+  "name": "CodeSwitchBar",
+  "source_code": "// components/ui/CodeSwitchBar/index.tsx\nimport Button from \"components/ui/Button\";\nimport { TechStack, Component, Dir, CodeBlock } from \"types/types\";\n\ntype Props = {\n  labels: CodeBlock[];\n  setActivateBlock: (idx: number) => void;\n  activatedBlock: number;\n};\n\nexport default ({ labels, setActivateBlock, activatedBlock }: Props) => (\n  <div className=\"bg-gray-700 rounded-t-lg border-b border-gray-600 text-gray-200 text-sm\">\n    <ul className=\"flex items-center overflow-x-auto\">\n      {labels?.map(\n        (\n          item: {\n            label?: string;\n          },\n          idx\n        ) => (\n          <li\n            key={idx}\n            className={`flex items-center p-1 rounded-tl-lg ${\n              idx == activatedBlock ? \"bg-gray-800 text-teal-400\" : \"\"\n            }`}\n          >\n            <Button\n              onClick={() => setActivateBlock(idx)}\n              className=\"border-none focus:text-teal-400\"\n            >\n              {item.label}\n            </Button>\n          </li>\n        )\n      )}\n    </ul>\n  </div>\n);\n",
+  "description": "",
+  "tags": [
+    "bar",
+    "code",
+    "floatui",
+    "other",
+    "switch"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_CodeSwitchBar_index",
+      "name": "index",
+      "path": "components/ui/CodeSwitchBar/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_CodeSwitchBar_index",
+      "name": "CodeSwitchBar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/CodeSwitchBar/index.tsx",
+          "content": "import Button from \"components/ui/Button\";\nimport { TechStack, Component, Dir, CodeBlock } from \"types/types\";\n\ntype Props = {\n  labels: CodeBlock[];\n  setActivateBlock: (idx: number) => void;\n  activatedBlock: number;\n};\n\nexport default ({ labels, setActivateBlock, activatedBlock }: Props) => (\n  <div className=\"bg-gray-700 rounded-t-lg border-b border-gray-600 text-gray-200 text-sm\">\n    <ul className=\"flex items-center overflow-x-auto\">\n      {labels?.map(\n        (\n          item: {\n            label?: string;\n          },\n          idx\n        ) => (\n          <li\n            key={idx}\n            className={`flex items-center p-1 rounded-tl-lg ${\n              idx == activatedBlock ? \"bg-gray-800 text-teal-400\" : \"\"\n            }`}\n          >\n            <Button\n              onClick={() => setActivateBlock(idx)}\n              className=\"border-none focus:text-teal-400\"\n            >\n              {item.label}\n            </Button>\n          </li>\n        )\n      )}\n    </ul>\n  </div>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "CodeSwitchBar is a code switch bar UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive",
+    "keyboard-focus"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: CodeSwitchBar\nDescription: CodeSwitchBar is a code switch bar UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: interactive, keyboard-focus\nTags: bar, code, floatui, other, switch\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/CodeSwitchBar/index.tsx\nimport Button from \"components/ui/Button\";\nimport { TechStack, Component, Dir, CodeBlock } from \"types/types\";\n\ntype Props = {\n  labels: CodeBlock[];\n  setActivateBlock: (idx: number) => void;\n  activatedBlock: number;\n};\n\nexport default ({ labels, setActivateBlock, activatedBlock }: Props) => (\n  <div className=\"bg-gray-700 rounded-t-lg border-b border-gray-600 text-gray-200 text-sm\">\n    <ul className=\"flex items-center overflow-x-auto\">\n      {labels?.",
+  "prompt_version": 2,
+  "clean_id": "code-switch-bar",
+  "display_name": "Code Switch Bar",
+  "preview_url": "/previews/floatui/components-ui-codeswitchbar-index.png"
+}

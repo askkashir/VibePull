@@ -1,0 +1,38 @@
+{
+  "id": "chart-line-label",
+  "name": "chart-line-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data-visualization",
+    "chart",
+    "line-chart",
+    "label",
+    "trend-analysis"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-label",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-label\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Chart-line-label is a data visualization component that displays a line chart with customizable labels. It's ideal for showing trends over time or displaying large-scale data. Developers can leverage this component to add insightful visualizations to their dashboards or reports.",
+  "style_tags": [
+    "customizable-visuals",
+    "material-design"
+  ],
+  "interaction_tags": [],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-label\nDescription: Chart-line-label is a data visualization component that displays a line chart with customizable labels. It's ideal for showing trends over time or displaying large-scale data. Developers can leverage this component to add insightful visualizations to their dashboards or reports.\nStyle: customizable-visuals, material-design\nInteractions: \nTags: data-visualization, chart, line-chart, label, trend-analysis\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-label",
+  "display_name": "Chart Line Label",
+  "preview_url": "/previews/shadcn/chart-line-label.png"
+}

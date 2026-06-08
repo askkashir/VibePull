@@ -1,0 +1,45 @@
+{
+  "id": "hyper-text-demo",
+  "name": "Hyper Text Demo",
+  "source_code": "import { HyperText } from \"@/registry/magicui/hyper-text\"\n\nexport default function HyperTextDemo() {\n  return <HyperText>Hover Me!</HyperText>\n}\n",
+  "description": "Example showing text with scrambling letter animations.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "hyper-text-demo",
+      "type": "registry:example",
+      "title": "Hyper Text Demo",
+      "description": "Example showing text with scrambling letter animations.",
+      "registryDependencies": [
+        "https://magicui.design/r/hyper-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/hyper-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/hyper-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hyper-text-demo",
+      "type": "registry:example",
+      "title": "Hyper Text Demo",
+      "description": "Example showing text with scrambling letter animations.",
+      "registryDependencies": [
+        "@magicui/hyper-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/hyper-text-demo.tsx",
+          "content": "import { HyperText } from \"@/registry/magicui/hyper-text\"\n\nexport default function HyperTextDemo() {\n  return <HyperText>Hover Me!</HyperText>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

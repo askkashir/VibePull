@@ -1,0 +1,64 @@
+{
+  "id": "color-picker",
+  "name": "color-picker",
+  "source_code": "// src/components/ui/color-picker.tsx\n'use client'\nimport { ColorPicker } from '@ark-ui/react/color-picker'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { colorPicker } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(colorPicker)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ColorPicker.Root, 'root')\nexport const RootProvider = withProvider(ColorPicker.RootProvider, 'root')\nexport const Area = withContext(ColorPicker.Area, 'area')\nexport const AreaBackground = withContext(ColorPicker.AreaBackground, 'areaBackground')\nexport const AreaThumb = withContext(ColorPicker.AreaThumb, 'areaThumb')\nexport const ChannelInput = withContext(ColorPicker.ChannelInput, 'channelInput')\nexport const ChannelSlider = withContext(ColorPicker.ChannelSlider, 'channelSlider')\nexport const ChannelSliderLabel = withContext(ColorPicker.ChannelSliderLabel, 'channelSliderLabel')\nexport const ChannelSliderThumb = withContext(ColorPicker.ChannelSliderThumb, 'channelSliderThumb')\nexport const ChannelSliderTrack = withContext(ColorPicker.ChannelSliderTrack, 'channelSliderTrack')\nexport const ChannelSliderValueText = withContext(\n  ColorPicker.ChannelSliderValueText,\n  'channelSliderValueText',\n)\nexport const Content = withContext(ColorPicker.Content, 'content')\nexport const Control = withContext(ColorPicker.Control, 'control')\nexport const EyeDropperTrigger = withContext(ColorPicker.EyeDropperTrigger, 'eyeDropperTrigger')\nexport const FormatSelect = withContext(ColorPicker.FormatSelect, 'formatSelect')\nexport const FormatTrigger = withContext(ColorPicker.FormatTrigger, 'formatTrigger')\nexport const HiddenInput = ColorPicker.HiddenInput\nexport const Label = withContext(ColorPicker.Label, 'label')\nexport const Positioner = withContext(ColorPicker.Positioner, 'positioner')\nexport const Swatch = withContext(ColorPicker.Swatch, 'swatch')\nexport const SwatchGroup = withContext(ColorPicker.SwatchGroup, 'swatchGroup')\nexport const SwatchIndicator = withContext(ColorPicker.SwatchIndicator, 'swatchIndicator')\nexport const SwatchTrigger = withContext(ColorPicker.SwatchTrigger, 'swatchTrigger')\nexport const TransparencyGrid = withContext(ColorPicker.TransparencyGrid, 'transparencyGrid')\nexport const Trigger = withContext(ColorPicker.Trigger, 'trigger')\nexport const ValueSwatch = ColorPicker.ValueSwatch\nexport const ValueText = withContext(ColorPicker.ValueText, 'valueText')\nexport const View = withContext(ColorPicker.View, 'view')\n\nexport { ColorPickerContext as Context } from '@ark-ui/react/color-picker'\n",
+  "description": "",
+  "tags": [
+    "color",
+    "other",
+    "parkui",
+    "picker"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/color-picker.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ColorPicker from './color-picker'",
+          "content": "'use client'\nimport { ColorPicker } from '@ark-ui/react/color-picker'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { colorPicker } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(colorPicker)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ColorPicker.Root, 'root')\nexport const RootProvider = withProvider(ColorPicker.RootProvider, 'root')\nexport const Area = withContext(ColorPicker.Area, 'area')\nexport const AreaBackground = withContext(ColorPicker.AreaBackground, 'areaBackground')\nexport const AreaThumb = withContext(ColorPicker.AreaThumb, 'areaThumb')\nexport const ChannelInput = withContext(ColorPicker.ChannelInput, 'channelInput')\nexport const ChannelSlider = withContext(ColorPicker.ChannelSlider, 'channelSlider')\nexport const ChannelSliderLabel = withContext(ColorPicker.ChannelSliderLabel, 'channelSliderLabel')\nexport const ChannelSliderThumb = withContext(ColorPicker.ChannelSliderThumb, 'channelSliderThumb')\nexport const ChannelSliderTrack = withContext(ColorPicker.ChannelSliderTrack, 'channelSliderTrack')\nexport const ChannelSliderValueText = withContext(\n  ColorPicker.ChannelSliderValueText,\n  'channelSliderValueText',\n)\nexport const Content = withContext(ColorPicker.Content, 'content')\nexport const Control = withContext(ColorPicker.Control, 'control')\nexport const EyeDropperTrigger = withContext(ColorPicker.EyeDropperTrigger, 'eyeDropperTrigger')\nexport const FormatSelect = withContext(ColorPicker.FormatSelect, 'formatSelect')\nexport const FormatTrigger = withContext(ColorPicker.FormatTrigger, 'formatTrigger')\nexport const HiddenInput = ColorPicker.HiddenInput\nexport const Label = withContext(ColorPicker.Label, 'label')\nexport const Positioner = withContext(ColorPicker.Positioner, 'positioner')\nexport const Swatch = withContext(ColorPicker.Swatch, 'swatch')\nexport const SwatchGroup = withContext(ColorPicker.SwatchGroup, 'swatchGroup')\nexport const SwatchIndicator = withContext(ColorPicker.SwatchIndicator, 'swatchIndicator')\nexport const SwatchTrigger = withContext(ColorPicker.SwatchTrigger, 'swatchTrigger')\nexport const TransparencyGrid = withContext(ColorPicker.TransparencyGrid, 'transparencyGrid')\nexport const Trigger = withContext(ColorPicker.Trigger, 'trigger')\nexport const ValueSwatch = ColorPicker.ValueSwatch\nexport const ValueText = withContext(ColorPicker.ValueText, 'valueText')\nexport const View = withContext(ColorPicker.View, 'view')\n\nexport { ColorPickerContext as Context } from '@ark-ui/react/color-picker'\n"
+        }
+      ],
+      "registryDependencies": [
+        "color-picker-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/color-picker.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ColorPicker from './color-picker'",
+          "content": "'use client'\nimport { ColorPicker } from '@ark-ui/react/color-picker'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { colorPicker } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(colorPicker)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ColorPicker.Root, 'root')\nexport const RootProvider = withProvider(ColorPicker.RootProvider, 'root')\nexport const Area = withContext(ColorPicker.Area, 'area')\nexport const AreaBackground = withContext(ColorPicker.AreaBackground, 'areaBackground')\nexport const AreaThumb = withContext(ColorPicker.AreaThumb, 'areaThumb')\nexport const ChannelInput = withContext(ColorPicker.ChannelInput, 'channelInput')\nexport const ChannelSlider = withContext(ColorPicker.ChannelSlider, 'channelSlider')\nexport const ChannelSliderLabel = withContext(ColorPicker.ChannelSliderLabel, 'channelSliderLabel')\nexport const ChannelSliderThumb = withContext(ColorPicker.ChannelSliderThumb, 'channelSliderThumb')\nexport const ChannelSliderTrack = withContext(ColorPicker.ChannelSliderTrack, 'channelSliderTrack')\nexport const ChannelSliderValueText = withContext(\n  ColorPicker.ChannelSliderValueText,\n  'channelSliderValueText',\n)\nexport const Content = withContext(ColorPicker.Content, 'content')\nexport const Control = withContext(ColorPicker.Control, 'control')\nexport const EyeDropperTrigger = withContext(ColorPicker.EyeDropperTrigger, 'eyeDropperTrigger')\nexport const FormatSelect = withContext(ColorPicker.FormatSelect, 'formatSelect')\nexport const FormatTrigger = withContext(ColorPicker.FormatTrigger, 'formatTrigger')\nexport const HiddenInput = ColorPicker.HiddenInput\nexport const Label = withContext(ColorPicker.Label, 'label')\nexport const Positioner = withContext(ColorPicker.Positioner, 'positioner')\nexport const Swatch = withContext(ColorPicker.Swatch, 'swatch')\nexport const SwatchGroup = withContext(ColorPicker.SwatchGroup, 'swatchGroup')\nexport const SwatchIndicator = withContext(ColorPicker.SwatchIndicator, 'swatchIndicator')\nexport const SwatchTrigger = withContext(ColorPicker.SwatchTrigger, 'swatchTrigger')\nexport const TransparencyGrid = withContext(ColorPicker.TransparencyGrid, 'transparencyGrid')\nexport const Trigger = withContext(ColorPicker.Trigger, 'trigger')\nexport const ValueSwatch = ColorPicker.ValueSwatch\nexport const ValueText = withContext(ColorPicker.ValueText, 'valueText')\nexport const View = withContext(ColorPicker.View, 'view')\n\nexport { ColorPickerContext as Context } from '@ark-ui/react/color-picker'\n"
+        }
+      ],
+      "registryDependencies": [
+        "color-picker-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "color-picker is a color picker UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: color-picker\nDescription: color-picker is a color picker UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: color, other, parkui, picker\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/color-picker.tsx\n'use client'\nimport { ColorPicker } from '@ark-ui/react/color-picker'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { colorPicker } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(colorPicker)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ColorPicker.Root, 'root')\nexport const RootProvider = withProvider(ColorPicker.RootP",
+  "prompt_version": 2,
+  "clean_id": "color-picker",
+  "display_name": "Color Picker",
+  "preview_url": "/previews/parkui/color-picker.png"
+}

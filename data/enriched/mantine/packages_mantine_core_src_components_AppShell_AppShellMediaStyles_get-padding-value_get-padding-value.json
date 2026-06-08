@@ -1,0 +1,40 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+  "name": "get-padding-value",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts\nimport { getSpacing } from '../../../../core';\n\nexport function getPaddingValue(padding: string | number | undefined) {\n  return Number(padding) === 0 ? '0px' : getSpacing(padding);\n}\n",
+  "description": "",
+  "tags": [
+    "utils",
+    "spacing"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+      "name": "get-padding-value",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_get-padding-value_get-padding-value",
+      "name": "get-padding-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts",
+          "content": "import { getSpacing } from '../../../../core';\n\nexport function getPaddingValue(padding: string | number | undefined) {\n  return Number(padding) === 0 ? '0px' : getSpacing(padding);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A utility function that converts padding values to pixels.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-padding-value\nDescription: A utility function that converts padding values to pixels.\nStyle: \nInteractions: \nTags: utils, spacing\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/get-padding-value/get-padding-value.ts\nimport { getSpacing } from '../../../../core';\n\nexport function getPaddingValue(padding: string | number | undefined) {\n  return Number(padding) === 0 ? '0px' : getSpacing(padding);\n}\n",
+  "prompt_version": 2,
+  "clean_id": "get-padding-value",
+  "display_name": "Get Padding Value",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellmediastyles-get-padding-value-get-padding-value.png"
+}

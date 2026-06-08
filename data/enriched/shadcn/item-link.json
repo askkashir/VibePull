@@ -1,0 +1,41 @@
+{
+  "id": "item-link",
+  "name": "item-link",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "item-link",
+    "link",
+    "item",
+    "clickable",
+    "interactive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-link",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-link\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The item-link component is a small, clickable element that displays a brief text description. It is often used to represent a specific item or object in an application, such as a link to a product or a news article. When a user clicks or hovers over the component, it may display additional information or a loading animation.",
+  "style_tags": [
+    "minimal",
+    "inline"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: item-link\nDescription: The item-link component is a small, clickable element that displays a brief text description. It is often used to represent a specific item or object in an application, such as a link to a product or a news article. When a user clicks or hovers over the component, it may display additional information or a loading animation.\nStyle: minimal, inline\nInteractions: clickable, hover\nTags: item-link, link, item, clickable, interactive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-link",
+  "display_name": "Item Link",
+  "preview_url": "/previews/shadcn/item-link.png"
+}

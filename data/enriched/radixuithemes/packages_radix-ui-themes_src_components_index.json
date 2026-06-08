@@ -1,0 +1,66 @@
+{
+  "id": "packages_radix-ui-themes_src_components_index",
+  "name": "components",
+  "source_code": "// packages/radix-ui-themes/src/components/index.tsx\nexport { AccessibleIcon, type AccessibleIconProps } from './accessible-icon.js';\nexport * as AlertDialog from './alert-dialog.js';\nexport { AspectRatio, type AspectRatioProps } from './aspect-ratio.js';\nexport { Avatar, type AvatarProps } from './avatar.js';\nexport { Badge, type BadgeProps } from './badge.js';\nexport { Blockquote, type BlockquoteProps } from './blockquote.js';\nexport { Box, type BoxProps } from './box.js';\nexport { Button, type ButtonProps } from './button.js';\nexport * as Callout from './callout.js';\nexport { Card, type CardProps } from './card.js';\nexport * as CheckboxCards from './checkbox-cards.js';\nexport * as CheckboxGroup from './checkbox-group.js';\nexport { Checkbox, type CheckboxProps } from './checkbox.js';\nexport { Code, type CodeProps } from './code.js';\nexport { Container, type ContainerProps } from './container.js';\nexport * as ContextMenu from './context-menu.js';\nexport * as DataList from './data-list.js';\nexport * as Dialog from './dialog.js';\nexport * as DropdownMenu from './dropdown-menu.js';\nexport { Em, type EmProps } from './em.js';\nexport { Flex, type FlexProps } from './flex.js';\nexport { Grid, type GridProps } from './grid.js';\nexport { Heading, type HeadingProps } from './heading.js';\nexport * as HoverCard from './hover-card.js';\nexport { IconButton, type IconButtonProps } from './icon-button.js';\nexport {\n  type IconProps,\n  ChevronDownIcon,\n  ThickCheckIcon,\n  ThickChevronRightIcon,\n  ThickDividerHorizontalIcon,\n} from './icons.js';\nexport { Inset, type InsetProps } from './inset.js';\nexport { Kbd, type KbdProps } from './kbd.js';\nexport { Link, type LinkProps } from './link.js';\nexport * as Popover from './popover.js';\nexport { Portal, type PortalProps } from './portal.js';\nexport { Progress, type ProgressProps } from './progress.js';\nexport { Quote, type QuoteProps } from './quote.js';\nexport * as RadioCards from './radio-cards.js';\nexport * as RadioGroup from './radio-group.js';\nexport { Radio, type RadioProps } from './radio.js';\nexport { Reset, type ResetProps } from './reset.js';\nexport { ScrollArea, type ScrollAreaProps } from './scroll-area.js';\nexport * as SegmentedControl from './segmented-control.js';\nexport { Section, type SectionProps } from './section.js';\nexport * as Select from './select.js';\nexport { Separator, type SeparatorProps } from './separator.js';\nexport { Skeleton, type SkeletonProps } from './skeleton.js';\nexport { Slider, type SliderProps } from './slider.js';\nexport { Slot, Slottable } from './slot.js';\nexport { Spinner, type SpinnerProps } from './spinner.js';\nexport { Strong, type StrongProps } from './strong.js';\nexport { Switch, type SwitchProps } from './switch.js';\nexport * as TabNav from './tab-nav.js';\nexport * as Table from './table.js';\nexport * as Tabs from './tabs.js';\nexport { TextArea, type TextAreaProps } from './text-area.js';\nexport * as TextField from './text-field.js';\nexport { Text, type TextProps } from './text.js';\nexport {\n  ThemePanel,\n  type ThemePanelProps,\n  ThemePanelContent as unstable_ThemePanelContent,\n  type ThemePanelContentProps as unstable_ThemePanelContentProps,\n} from './theme-panel.js';\nexport { Theme, ThemeContext, type ThemeProps, useThemeContext } from './theme.js';\nexport { Tooltip, type TooltipProps } from './tooltip.js';\nexport { VisuallyHidden, type VisuallyHiddenProps } from './visually-hidden.js';\n",
+  "description": "",
+  "tags": [
+    "button",
+    "icon",
+    "card",
+    "form",
+    "loader",
+    "hero",
+    "input",
+    "badge"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_index",
+      "name": "index.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/index.tsx",
+      "sha": "94d5ec49379fd0e1cc53f7972e4347d29a9b91cf",
+      "size": 3378,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/index.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/index.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/94d5ec49379fd0e1cc53f7972e4347d29a9b91cf",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/index.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/index.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/94d5ec49379fd0e1cc53f7972e4347d29a9b91cf",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/index.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_index",
+      "name": "components",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/index.tsx",
+          "content": "export { AccessibleIcon, type AccessibleIconProps } from './accessible-icon.js';\nexport * as AlertDialog from './alert-dialog.js';\nexport { AspectRatio, type AspectRatioProps } from './aspect-ratio.js';\nexport { Avatar, type AvatarProps } from './avatar.js';\nexport { Badge, type BadgeProps } from './badge.js';\nexport { Blockquote, type BlockquoteProps } from './blockquote.js';\nexport { Box, type BoxProps } from './box.js';\nexport { Button, type ButtonProps } from './button.js';\nexport * as Callout from './callout.js';\nexport { Card, type CardProps } from './card.js';\nexport * as CheckboxCards from './checkbox-cards.js';\nexport * as CheckboxGroup from './checkbox-group.js';\nexport { Checkbox, type CheckboxProps } from './checkbox.js';\nexport { Code, type CodeProps } from './code.js';\nexport { Container, type ContainerProps } from './container.js';\nexport * as ContextMenu from './context-menu.js';\nexport * as DataList from './data-list.js';\nexport * as Dialog from './dialog.js';\nexport * as DropdownMenu from './dropdown-menu.js';\nexport { Em, type EmProps } from './em.js';\nexport { Flex, type FlexProps } from './flex.js';\nexport { Grid, type GridProps } from './grid.js';\nexport { Heading, type HeadingProps } from './heading.js';\nexport * as HoverCard from './hover-card.js';\nexport { IconButton, type IconButtonProps } from './icon-button.js';\nexport {\n  type IconProps,\n  ChevronDownIcon,\n  ThickCheckIcon,\n  ThickChevronRightIcon,\n  ThickDividerHorizontalIcon,\n} from './icons.js';\nexport { Inset, type InsetProps } from './inset.js';\nexport { Kbd, type KbdProps } from './kbd.js';\nexport { Link, type LinkProps } from './link.js';\nexport * as Popover from './popover.js';\nexport { Portal, type PortalProps } from './portal.js';\nexport { Progress, type ProgressProps } from './progress.js';\nexport { Quote, type QuoteProps } from './quote.js';\nexport * as RadioCards from './radio-cards.js';\nexport * as RadioGroup from './radio-group.js';\nexport { Radio, type RadioProps } from './radio.js';\nexport { Reset, type ResetProps } from './reset.js';\nexport { ScrollArea, type ScrollAreaProps } from './scroll-area.js';\nexport * as SegmentedControl from './segmented-control.js';\nexport { Section, type SectionProps } from './section.js';\nexport * as Select from './select.js';\nexport { Separator, type SeparatorProps } from './separator.js';\nexport { Skeleton, type SkeletonProps } from './skeleton.js';\nexport { Slider, type SliderProps } from './slider.js';\nexport { Slot, Slottable } from './slot.js';\nexport { Spinner, type SpinnerProps } from './spinner.js';\nexport { Strong, type StrongProps } from './strong.js';\nexport { Switch, type SwitchProps } from './switch.js';\nexport * as TabNav from './tab-nav.js';\nexport * as Table from './table.js';\nexport * as Tabs from './tabs.js';\nexport { TextArea, type TextAreaProps } from './text-area.js';\nexport * as TextField from './text-field.js';\nexport { Text, type TextProps } from './text.js';\nexport {\n  ThemePanel,\n  type ThemePanelProps,\n  ThemePanelContent as unstable_ThemePanelContent,\n  type ThemePanelContentProps as unstable_ThemePanelContentProps,\n} from './theme-panel.js';\nexport { Theme, ThemeContext, type ThemeProps, useThemeContext } from './theme.js';\nexport { Tooltip, type TooltipProps } from './tooltip.js';\nexport { VisuallyHidden, type VisuallyHiddenProps } from './visually-hidden.js';\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "This component is a collection of various UI elements. It exports multiple components, including buttons, icons, cards, and others. A developer would use this module to include multiple Radix UI components in their application.",
+  "style_tags": [
+    "dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: components\nDescription: This component is a collection of various UI elements. It exports multiple components, including buttons, icons, cards, and others. A developer would use this module to include multiple Radix UI components in their application.\nStyle: dark, minimal, glassmorphism\nInteractions: animated, hover, clickable\nTags: button, icon, card, form, loader, hero, input, badge\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/index.tsx\nexport { AccessibleIcon, type AccessibleIconProps } from './accessible-icon.js';\nexport * as AlertDialog from './alert-dialog.js';\nexport { AspectRatio, type AspectRatioProps } from './aspect-ratio.js';\nexport { Avatar, type AvatarProps } from './avatar.js';\nexport { Badge, type BadgeProps } from './badge.js';\nexport { Blockquote, type BlockquoteProps } from './blockquote.js';\nexport { Box, type BoxProps } from './box.js';\nexport { Button, typ",
+  "prompt_version": 2,
+  "clean_id": "radix-ui-themes",
+  "display_name": "Radix Ui Themes",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-index.png"
+}

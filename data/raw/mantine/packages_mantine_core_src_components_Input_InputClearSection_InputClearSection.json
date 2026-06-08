@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputClearSection_InputClearSection",
+  "name": "InputClearSection",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputClearSection/InputClearSection.tsx\nimport { MantineSize } from '../../../core';\n\nexport type ClearSectionMode =\n  | 'both' // render rightSection + clear button – default\n  | 'rightSection' // render only user-supplied rightSection\n  | 'clear'; // render only clear button\n\nexport interface InputClearSectionProps {\n  __clearable: boolean | undefined;\n  __clearSection: React.ReactNode;\n  rightSection: React.ReactNode;\n  __defaultRightSection: React.ReactNode;\n  size: MantineSize | string | undefined;\n  __clearSectionMode: ClearSectionMode | undefined;\n}\n\nconst clearSectionOffset: Record<string, number> = {\n  xs: 7,\n  sm: 8,\n  md: 10,\n  lg: 12,\n  xl: 15,\n};\n\nexport function InputClearSection({\n  __clearable,\n  __clearSection,\n  rightSection,\n  __defaultRightSection,\n  size = 'sm',\n  __clearSectionMode = 'both',\n}: InputClearSectionProps) {\n  const clearSection = __clearable && __clearSection;\n\n  // Handle 'rightSection' mode - only show rightSection, ignore clear button\n  if (__clearSectionMode === 'rightSection') {\n    return rightSection === null ? null : rightSection || __defaultRightSection;\n  }\n\n  // Handle 'clear' mode - only show clear button, ignore rightSection\n  if (__clearSectionMode === 'clear') {\n    return rightSection === null ? null : clearSection || __defaultRightSection;\n  }\n\n  // Handle 'both' mode (default) - show both clear button and rightSection\n  if (clearSection && (rightSection || __defaultRightSection)) {\n    return (\n      <div\n        data-combined-clear-section\n        style={{\n          display: 'flex',\n          gap: 2,\n          alignItems: 'center',\n          paddingInlineEnd: clearSectionOffset[size],\n        }}\n      >\n        {clearSection}\n        {rightSection || __defaultRightSection}\n      </div>\n    );\n  }\n\n  return rightSection === null ? null : rightSection || clearSection || __defaultRightSection;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputClearSection_InputClearSection",
+      "name": "InputClearSection",
+      "path": "packages/@mantine/core/src/components/Input/InputClearSection/InputClearSection.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputClearSection_InputClearSection",
+      "name": "InputClearSection",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputClearSection/InputClearSection.tsx",
+          "content": "import { MantineSize } from '../../../core';\n\nexport type ClearSectionMode =\n  | 'both' // render rightSection + clear button – default\n  | 'rightSection' // render only user-supplied rightSection\n  | 'clear'; // render only clear button\n\nexport interface InputClearSectionProps {\n  __clearable: boolean | undefined;\n  __clearSection: React.ReactNode;\n  rightSection: React.ReactNode;\n  __defaultRightSection: React.ReactNode;\n  size: MantineSize | string | undefined;\n  __clearSectionMode: ClearSectionMode | undefined;\n}\n\nconst clearSectionOffset: Record<string, number> = {\n  xs: 7,\n  sm: 8,\n  md: 10,\n  lg: 12,\n  xl: 15,\n};\n\nexport function InputClearSection({\n  __clearable,\n  __clearSection,\n  rightSection,\n  __defaultRightSection,\n  size = 'sm',\n  __clearSectionMode = 'both',\n}: InputClearSectionProps) {\n  const clearSection = __clearable && __clearSection;\n\n  // Handle 'rightSection' mode - only show rightSection, ignore clear button\n  if (__clearSectionMode === 'rightSection') {\n    return rightSection === null ? null : rightSection || __defaultRightSection;\n  }\n\n  // Handle 'clear' mode - only show clear button, ignore rightSection\n  if (__clearSectionMode === 'clear') {\n    return rightSection === null ? null : clearSection || __defaultRightSection;\n  }\n\n  // Handle 'both' mode (default) - show both clear button and rightSection\n  if (clearSection && (rightSection || __defaultRightSection)) {\n    return (\n      <div\n        data-combined-clear-section\n        style={{\n          display: 'flex',\n          gap: 2,\n          alignItems: 'center',\n          paddingInlineEnd: clearSectionOffset[size],\n        }}\n      >\n        {clearSection}\n        {rightSection || __defaultRightSection}\n      </div>\n    );\n  }\n\n  return rightSection === null ? null : rightSection || clearSection || __defaultRightSection;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

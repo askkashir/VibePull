@@ -1,0 +1,49 @@
+{
+  "id": "src_components_RadioGroup_RadioGroup",
+  "name": "RadioGroup",
+  "source_code": "// src/components/RadioGroup/RadioGroup.tsx\n// Tremor RadioGroup [v1.0.0]\n\nimport React from \"react\"\nimport * as RadioGroupPrimitives from \"@radix-ui/react-radio-group\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusRing } from \"../../utils/focusRing\"\n\nconst RadioGroup = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Root>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Root>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Root\n      ref={forwardedRef}\n      className={cx(\"grid gap-2\", className)}\n      tremor-id=\"tremor-raw\"\n      {...props}\n    />\n  )\n})\n\nRadioGroup.displayName = \"RadioGroup\"\n\nconst RadioGroupIndicator = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Indicator>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Indicator>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Indicator\n      ref={forwardedRef}\n      className={cx(\"flex items-center justify-center\", className)}\n      {...props}\n    >\n      <div\n        className={cx(\n          // base\n          \"size-1.5 shrink-0 rounded-full\",\n          // indicator\n          \"bg-white\",\n          // disabled\n          \"group-data-disabled:bg-gray-400 dark:group-data-disabled:bg-gray-500\",\n        )}\n      />\n    </RadioGroupPrimitives.Indicator>\n  )\n})\n\nRadioGroupIndicator.displayName = \"RadioGroupIndicator\"\n\nconst RadioGroupItem = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Item>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Item>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Item\n      ref={forwardedRef}\n      className={cx(\n        \"group relative flex size-4 appearance-none items-center justify-center outline-hidden\",\n        className,\n      )}\n      {...props}\n    >\n      <div\n        className={cx(\n          // base\n          \"flex size-4 shrink-0 items-center justify-center rounded-full border shadow-xs\",\n          // border color\n          \"border-gray-300 dark:border-gray-800\",\n          // background color\n          \"bg-white dark:bg-gray-950\",\n          // checked\n          \"group-data-[state=checked]:border-0 group-data-[state=checked]:border-transparent group-data-[state=checked]:bg-blue-500\",\n          // disabled\n          \"group-data-disabled:border\",\n          \"group-data-disabled:border-gray-300 group-data-disabled:bg-gray-100 group-data-disabled:text-gray-400\",\n          \"dark:group-data-disabled:border-gray-700 dark:group-data-disabled:bg-gray-800\",\n          // focus\n          focusRing,\n        )}\n      >\n        <RadioGroupIndicator />\n      </div>\n    </RadioGroupPrimitives.Item>\n  )\n})\n\nRadioGroupItem.displayName = \"RadioGroupItem\"\n\nexport { RadioGroup, RadioGroupItem }\n",
+  "description": "",
+  "tags": [
+    "radioGroup",
+    "radio-button",
+    "input"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "RadioGroup_RadioGroup",
+      "name": "RadioGroup",
+      "path": "src/components/RadioGroup/RadioGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_RadioGroup_RadioGroup",
+      "name": "RadioGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/RadioGroup/RadioGroup.tsx",
+          "content": "// Tremor RadioGroup [v1.0.0]\n\nimport React from \"react\"\nimport * as RadioGroupPrimitives from \"@radix-ui/react-radio-group\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusRing } from \"../../utils/focusRing\"\n\nconst RadioGroup = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Root>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Root>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Root\n      ref={forwardedRef}\n      className={cx(\"grid gap-2\", className)}\n      tremor-id=\"tremor-raw\"\n      {...props}\n    />\n  )\n})\n\nRadioGroup.displayName = \"RadioGroup\"\n\nconst RadioGroupIndicator = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Indicator>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Indicator>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Indicator\n      ref={forwardedRef}\n      className={cx(\"flex items-center justify-center\", className)}\n      {...props}\n    >\n      <div\n        className={cx(\n          // base\n          \"size-1.5 shrink-0 rounded-full\",\n          // indicator\n          \"bg-white\",\n          // disabled\n          \"group-data-disabled:bg-gray-400 dark:group-data-disabled:bg-gray-500\",\n        )}\n      />\n    </RadioGroupPrimitives.Indicator>\n  )\n})\n\nRadioGroupIndicator.displayName = \"RadioGroupIndicator\"\n\nconst RadioGroupItem = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Item>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Item>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.Item\n      ref={forwardedRef}\n      className={cx(\n        \"group relative flex size-4 appearance-none items-center justify-center outline-hidden\",\n        className,\n      )}\n      {...props}\n    >\n      <div\n        className={cx(\n          // base\n          \"flex size-4 shrink-0 items-center justify-center rounded-full border shadow-xs\",\n          // border color\n          \"border-gray-300 dark:border-gray-800\",\n          // background color\n          \"bg-white dark:bg-gray-950\",\n          // checked\n          \"group-data-[state=checked]:border-0 group-data-[state=checked]:border-transparent group-data-[state=checked]:bg-blue-500\",\n          // disabled\n          \"group-data-disabled:border\",\n          \"group-data-disabled:border-gray-300 group-data-disabled:bg-gray-100 group-data-disabled:text-gray-400\",\n          \"dark:group-data-disabled:border-gray-700 dark:group-data-disabled:bg-gray-800\",\n          // focus\n          focusRing,\n        )}\n      >\n        <RadioGroupIndicator />\n      </div>\n    </RadioGroupPrimitives.Item>\n  )\n})\n\nRadioGroupItem.displayName = \"RadioGroupItem\"\n\nexport { RadioGroup, RadioGroupItem }\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A RadioGroup is a component for selecting one option from a set of options. It is commonly used in radio button layouts.",
+  "style_tags": [
+    "neutral",
+    "modern",
+    "ui-component"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "focused"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: RadioGroup\nDescription: A RadioGroup is a component for selecting one option from a set of options. It is commonly used in radio button layouts.\nStyle: neutral, modern, ui-component\nInteractions: clickable, hover, focused\nTags: radioGroup, radio-button, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/RadioGroup/RadioGroup.tsx\n// Tremor RadioGroup [v1.0.0]\n\nimport React from \"react\"\nimport * as RadioGroupPrimitives from \"@radix-ui/react-radio-group\"\n\nimport { cx } from \"../../utils/cx\"\nimport { focusRing } from \"../../utils/focusRing\"\n\nconst RadioGroup = React.forwardRef<\n  React.ElementRef<typeof RadioGroupPrimitives.Root>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitives.Root>\n>(({ className, ...props }, forwardedRef) => {\n  return (\n    <RadioGroupPrimitives.R",
+  "prompt_version": 2,
+  "clean_id": "radio-group",
+  "display_name": "Radio Group",
+  "preview_url": "/previews/tremor/src-components-radiogroup-radiogroup.png"
+}

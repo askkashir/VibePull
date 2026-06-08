@@ -1,0 +1,38 @@
+{
+  "id": "spinner-empty",
+  "name": "spinner-empty",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "loading",
+    "progress",
+    "indeterminate"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-empty",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-empty\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A spinner-empty is a visually empty spinner used to indicate waiting or loading status. It is typically used to show that a process is in progress but does not yet have any content to display. A developer would use this component when they want to convey a sense of waiting without overwhelming the user with unnecessary visual elements.",
+  "style_tags": [
+    "e.g. material",
+    "modern"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner-empty\nDescription: A spinner-empty is a visually empty spinner used to indicate waiting or loading status. It is typically used to show that a process is in progress but does not yet have any content to display. A developer would use this component when they want to convey a sense of waiting without overwhelming the user with unnecessary visual elements.\nStyle: e.g. material, modern\nInteractions: static\nTags: loading, progress, indeterminate\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-empty",
+  "display_name": "Spinner Empty",
+  "preview_url": "/previews/shadcn/spinner-empty.png"
+}

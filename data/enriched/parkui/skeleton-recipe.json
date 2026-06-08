@@ -1,0 +1,62 @@
+{
+  "id": "skeleton-recipe",
+  "name": "skeleton-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/skeleton.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const skeleton = defineRecipe({\n  className: 'skeleton',\n  jsx: ['Skeleton', 'SkeletonCircle', 'SkeletonText'],\n  base: {},\n  variants: {\n    loading: {\n      true: {\n        borderRadius: 'l2',\n        boxShadow: 'none',\n        backgroundClip: 'padding-box',\n        cursor: 'default',\n        color: 'transparent',\n        pointerEvents: 'none',\n        userSelect: 'none',\n        flexShrink: '0',\n        '&::before, &::after, *': {\n          visibility: 'hidden',\n        },\n      },\n      false: {\n        background: 'unset',\n        animation: 'fade-in var(--fade-duration, 0.1s) ease-out !important',\n      },\n    },\n\n    circle: {\n      true: {\n        display: 'flex',\n        alignItems: 'center',\n        justifyContent: 'center',\n        flex: '0 0 auto',\n        borderRadius: '9999px',\n      },\n    },\n\n    variant: {\n      pulse: {\n        background: 'gray.subtle.bg.active',\n        animation: 'pulse',\n        animationDuration: 'var(--duration, 1.2s)',\n      },\n      shine: {\n        '--animate-from': '200%',\n        '--animate-to': '-200%',\n        '--start-color': 'colors.gray.subtle.bg',\n        '--end-color': 'colors.gray.subtle.bg.active',\n        backgroundImage:\n          'linear-gradient(270deg,var(--start-color),var(--end-color),var(--end-color),var(--start-color))',\n        backgroundSize: '400% 100%',\n        animation: 'bg-position var(--duration, 5s) ease-in-out infinite',\n      },\n      none: {\n        animation: 'none',\n      },\n    },\n  },\n\n  defaultVariants: {\n    variant: 'pulse',\n    loading: true,\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "other",
+    "parkui",
+    "recipe",
+    "skeleton"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "skeleton-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/skeleton.ts",
+          "type": "registry:recipe",
+          "imports": "import { skeleton } from './skeleton'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const skeleton = defineRecipe({\n  className: 'skeleton',\n  jsx: ['Skeleton', 'SkeletonCircle', 'SkeletonText'],\n  base: {},\n  variants: {\n    loading: {\n      true: {\n        borderRadius: 'l2',\n        boxShadow: 'none',\n        backgroundClip: 'padding-box',\n        cursor: 'default',\n        color: 'transparent',\n        pointerEvents: 'none',\n        userSelect: 'none',\n        flexShrink: '0',\n        '&::before, &::after, *': {\n          visibility: 'hidden',\n        },\n      },\n      false: {\n        background: 'unset',\n        animation: 'fade-in var(--fade-duration, 0.1s) ease-out !important',\n      },\n    },\n\n    circle: {\n      true: {\n        display: 'flex',\n        alignItems: 'center',\n        justifyContent: 'center',\n        flex: '0 0 auto',\n        borderRadius: '9999px',\n      },\n    },\n\n    variant: {\n      pulse: {\n        background: 'gray.subtle.bg.active',\n        animation: 'pulse',\n        animationDuration: 'var(--duration, 1.2s)',\n      },\n      shine: {\n        '--animate-from': '200%',\n        '--animate-to': '-200%',\n        '--start-color': 'colors.gray.subtle.bg',\n        '--end-color': 'colors.gray.subtle.bg.active',\n        backgroundImage:\n          'linear-gradient(270deg,var(--start-color),var(--end-color),var(--end-color),var(--start-color))',\n        backgroundSize: '400% 100%',\n        animation: 'bg-position var(--duration, 5s) ease-in-out infinite',\n      },\n      none: {\n        animation: 'none',\n      },\n    },\n  },\n\n  defaultVariants: {\n    variant: 'pulse',\n    loading: true,\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "skeleton-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/skeleton.ts",
+          "type": "registry:recipe",
+          "imports": "import { skeleton } from './skeleton'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const skeleton = defineRecipe({\n  className: 'skeleton',\n  jsx: ['Skeleton', 'SkeletonCircle', 'SkeletonText'],\n  base: {},\n  variants: {\n    loading: {\n      true: {\n        borderRadius: 'l2',\n        boxShadow: 'none',\n        backgroundClip: 'padding-box',\n        cursor: 'default',\n        color: 'transparent',\n        pointerEvents: 'none',\n        userSelect: 'none',\n        flexShrink: '0',\n        '&::before, &::after, *': {\n          visibility: 'hidden',\n        },\n      },\n      false: {\n        background: 'unset',\n        animation: 'fade-in var(--fade-duration, 0.1s) ease-out !important',\n      },\n    },\n\n    circle: {\n      true: {\n        display: 'flex',\n        alignItems: 'center',\n        justifyContent: 'center',\n        flex: '0 0 auto',\n        borderRadius: '9999px',\n      },\n    },\n\n    variant: {\n      pulse: {\n        background: 'gray.subtle.bg.active',\n        animation: 'pulse',\n        animationDuration: 'var(--duration, 1.2s)',\n      },\n      shine: {\n        '--animate-from': '200%',\n        '--animate-to': '-200%',\n        '--start-color': 'colors.gray.subtle.bg',\n        '--end-color': 'colors.gray.subtle.bg.active',\n        backgroundImage:\n          'linear-gradient(270deg,var(--start-color),var(--end-color),var(--end-color),var(--start-color))',\n        backgroundSize: '400% 100%',\n        animation: 'bg-position var(--duration, 5s) ease-in-out infinite',\n      },\n      none: {\n        animation: 'none',\n      },\n    },\n  },\n\n  defaultVariants: {\n    variant: 'pulse',\n    loading: true,\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "skeleton-recipe is a skeleton recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: skeleton-recipe\nDescription: skeleton-recipe is a skeleton recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, shadow, utility-styled\nInteractions: animated\nTags: other, parkui, recipe, skeleton\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/skeleton.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const skeleton = defineRecipe({\n  className: 'skeleton',\n  jsx: ['Skeleton', 'SkeletonCircle', 'SkeletonText'],\n  base: {},\n  variants: {\n    loading: {\n      true: {\n        borderRadius: 'l2',\n        boxShadow: 'none',\n        backgroundClip: 'padding-box',\n        cursor: 'default',\n        color: 'transparent',\n        pointerEvents: 'none',\n        userSelect: 'none',\n        flexShrink: '",
+  "prompt_version": 2,
+  "clean_id": "skeleton-recipe",
+  "display_name": "Skeleton Recipe",
+  "preview_url": "/previews/parkui/skeleton-recipe.png"
+}

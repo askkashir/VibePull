@@ -1,0 +1,50 @@
+{
+  "id": "display-value",
+  "name": "display-value",
+  "source_code": "// src/components/ui/display-value.tsx\n'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "display-value",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/display-value.tsx",
+          "type": "registry:ui",
+          "exports": "export { DisplayValue, type DisplayValueProps } from './display-value'",
+          "content": "'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "span"
+      ]
+    },
+    "registry_item": {
+      "name": "display-value",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/display-value.tsx",
+          "type": "registry:ui",
+          "exports": "export { DisplayValue, type DisplayValueProps } from './display-value'",
+          "content": "'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "span"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

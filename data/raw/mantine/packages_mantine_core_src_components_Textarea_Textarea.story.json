@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Textarea_Textarea.story",
+  "name": "Textarea.story",
+  "source_code": "// packages/@mantine/core/src/components/Textarea/Textarea.story.tsx\nimport { useState } from 'react';\nimport { Textarea } from './Textarea';\n\nexport default { title: 'Textarea' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" />\n    </div>\n  );\n}\n\nexport function Resize() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" resize=\"vertical\" />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" unstyled />\n    </div>\n  );\n}\n\nexport function Autosize() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Autosize\" placeholder=\"Autosize\" autosize minRows={4} />\n    </div>\n  );\n}\n\nexport function BottomSectionCharCounter() {\n  const maxLength = 1000;\n  const [value, setValue] = useState('');\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea\n        label=\"With character counter\"\n        placeholder=\"Type something...\"\n        rows={4}\n        value={value}\n        onChange={(event) => setValue(event.currentTarget.value)}\n        bottomSection={\n          <span>\n            {value.length}/{maxLength}\n          </span>\n        }\n      />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Textarea_Textarea.story",
+      "name": "Textarea.story",
+      "path": "packages/@mantine/core/src/components/Textarea/Textarea.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Textarea_Textarea.story",
+      "name": "Textarea.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Textarea/Textarea.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Textarea } from './Textarea';\n\nexport default { title: 'Textarea' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" />\n    </div>\n  );\n}\n\nexport function Resize() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" resize=\"vertical\" />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Default\" placeholder=\"Default textarea\" unstyled />\n    </div>\n  );\n}\n\nexport function Autosize() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea label=\"Autosize\" placeholder=\"Autosize\" autosize minRows={4} />\n    </div>\n  );\n}\n\nexport function BottomSectionCharCounter() {\n  const maxLength = 1000;\n  const [value, setValue] = useState('');\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Textarea\n        label=\"With character counter\"\n        placeholder=\"Type something...\"\n        rows={4}\n        value={value}\n        onChange={(event) => setValue(event.currentTarget.value)}\n        bottomSection={\n          <span>\n            {value.length}/{maxLength}\n          </span>\n        }\n      />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

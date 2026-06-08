@@ -1,0 +1,40 @@
+{
+  "id": "alert",
+  "name": "alert",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "notification",
+    "message",
+    "warning"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "alert",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## alert\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The alert component is a notification box that draws attention to an issue, warning, or success message. It displays a heading, a descriptive message, and an optional close button. Developers can use this component to inform users about important events.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. dismissible",
+    "animated"
+  ],
+  "component_type": "alert",
+  "generation_prompt": "Create a production-ready alert component with the following characteristics:\n\nName: alert\nDescription: The alert component is a notification box that draws attention to an issue, warning, or success message. It displays a heading, a descriptive message, and an optional close button. Developers can use this component to inform users about important events.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. dismissible, animated\nTags: notification, message, warning\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "alert",
+  "display_name": "Alert",
+  "preview_url": "/previews/shadcn/alert.png"
+}

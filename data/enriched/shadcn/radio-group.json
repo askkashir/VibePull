@@ -1,0 +1,27 @@
+{
+  "id": "radio-group",
+  "name": "radio-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## radio-group\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called radio-group. It should be: . Component type: registry:ui. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "radio-group",
+  "display_name": "Radio Group",
+  "preview_url": "/previews/parkui/radio-group.png"
+}

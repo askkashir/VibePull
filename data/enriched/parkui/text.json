@@ -1,0 +1,61 @@
+{
+  "id": "text",
+  "name": "text",
+  "source_code": "// src/components/ui/text.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n",
+  "description": "",
+  "tags": [
+    "other",
+    "parkui",
+    "text"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "text",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/text.tsx",
+          "type": "registry:ui",
+          "exports": "export { Text, type TextProps } from './text'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "text-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "text",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/text.tsx",
+          "type": "registry:ui",
+          "exports": "export { Text, type TextProps } from './text'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "text-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "text is a text UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: text\nDescription: text is a text UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: other, parkui, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/text.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n",
+  "prompt_version": 2,
+  "clean_id": "text",
+  "display_name": "Text",
+  "preview_url": "/previews/parkui/text.png"
+}

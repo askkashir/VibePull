@@ -1,0 +1,42 @@
+{
+  "id": "sidebar-menu-badge",
+  "name": "sidebar-menu-badge",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "sidebar",
+    "menu",
+    "badge",
+    "notification",
+    "unread",
+    "indicator"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-menu-badge",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-menu-badge\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sidebar menu badge is a visually distinguishable indicator on a sidebar menu item. It is used to highlight important notifications or unread counts to draw the user's attention. The badge is commonly used in the application's main navigation to provide a quick glance at the user's activity.",
+  "style_tags": [
+    "e.g. rounded",
+    "pill-shaped"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: sidebar-menu-badge\nDescription: The sidebar menu badge is a visually distinguishable indicator on a sidebar menu item. It is used to highlight important notifications or unread counts to draw the user's attention. The badge is commonly used in the application's main navigation to provide a quick glance at the user's activity.\nStyle: e.g. rounded, pill-shaped\nInteractions: e.g. hover, clickable\nTags: sidebar, menu, badge, notification, unread, indicator\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-menu-badge",
+  "display_name": "Sidebar Menu Badge",
+  "preview_url": "/previews/shadcn/sidebar-menu-badge.png"
+}

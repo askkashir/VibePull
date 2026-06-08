@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_Thumb_Thumb",
+  "name": "Thumb",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/Thumb/Thumb.tsx\nimport { Box } from '../../../core';\n\nexport interface ThumbProps extends React.ComponentProps<'div'> {\n  variant?: string;\n  position: { x: number; y: number };\n}\n\nexport function Thumb({ position, ...others }: ThumbProps) {\n  return (\n    <Box\n      __vars={{\n        '--thumb-y-offset': `${position.y * 100}%`,\n        '--thumb-x-offset': `${position.x * 100}%`,\n      }}\n      {...others}\n    />\n  );\n}\n\nThumb.displayName = '@mantine/core/ColorPickerThumb';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_Thumb_Thumb",
+      "name": "Thumb",
+      "path": "packages/@mantine/core/src/components/ColorPicker/Thumb/Thumb.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_Thumb_Thumb",
+      "name": "Thumb",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/Thumb/Thumb.tsx",
+          "content": "import { Box } from '../../../core';\n\nexport interface ThumbProps extends React.ComponentProps<'div'> {\n  variant?: string;\n  position: { x: number; y: number };\n}\n\nexport function Thumb({ position, ...others }: ThumbProps) {\n  return (\n    <Box\n      __vars={{\n        '--thumb-y-offset': `${position.y * 100}%`,\n        '--thumb-x-offset': `${position.x * 100}%`,\n      }}\n      {...others}\n    />\n  );\n}\n\nThumb.displayName = '@mantine/core/ColorPickerThumb';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

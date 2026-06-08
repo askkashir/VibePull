@@ -1,0 +1,31 @@
+{
+  "id": "src_components_DropdownToggle",
+  "name": "DropdownToggle",
+  "source_code": "// src/components/DropdownToggle.astro\n---\nimport { Menu, X } from '@lucide/astro'\n---\n\n<dropdown-button>\n  <button\n    type=\"button\"\n    aria-haspopup=\"true\"\n    aria-expanded=\"false\"\n    aria-controls=\"dropdown-menu\"\n    aria-label=\"Open navigation\"\n    class=\"inline-flex rounded-lg border border-gray-100 bg-gray-100 px-4 py-2 md:hidden\"\n  >\n    <Menu data-open=\"false\" class=\"size-4 data-[open=false]:inline data-[open=true]:hidden\" />\n\n    <X data-open=\"false\" class=\"size-4 data-[open=false]:hidden data-[open=true]:inline\" />\n  </button>\n</dropdown-button>\n\n<script>\n  class DropdownButton extends HTMLElement {\n    private isOpen = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonSVGs = [...buttonEl.querySelectorAll('svg')]\n\n      this.clickHandler = () => {\n        this.isOpen = !this.isOpen\n\n        buttonEl.setAttribute('aria-expanded', String(this.isOpen))\n        buttonEl.setAttribute('aria-label', this.isOpen ? 'Close navigation' : 'Open navigation')\n\n        buttonSVGs.forEach((svgEl) => svgEl.setAttribute('data-open', String(this.isOpen)))\n\n        document.dispatchEvent(\n          new CustomEvent('dropdown:toggle', {\n            bubbles: true,\n            detail: { open: this.isOpen },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-button', DropdownButton)\n</script>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "DropdownToggle",
+      "name": "DropdownToggle",
+      "path": "src/components/DropdownToggle.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_DropdownToggle",
+      "name": "DropdownToggle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/DropdownToggle.astro",
+          "content": "---\nimport { Menu, X } from '@lucide/astro'\n---\n\n<dropdown-button>\n  <button\n    type=\"button\"\n    aria-haspopup=\"true\"\n    aria-expanded=\"false\"\n    aria-controls=\"dropdown-menu\"\n    aria-label=\"Open navigation\"\n    class=\"inline-flex rounded-lg border border-gray-100 bg-gray-100 px-4 py-2 md:hidden\"\n  >\n    <Menu data-open=\"false\" class=\"size-4 data-[open=false]:inline data-[open=true]:hidden\" />\n\n    <X data-open=\"false\" class=\"size-4 data-[open=false]:hidden data-[open=true]:inline\" />\n  </button>\n</dropdown-button>\n\n<script>\n  class DropdownButton extends HTMLElement {\n    private isOpen = false\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const buttonSVGs = [...buttonEl.querySelectorAll('svg')]\n\n      this.clickHandler = () => {\n        this.isOpen = !this.isOpen\n\n        buttonEl.setAttribute('aria-expanded', String(this.isOpen))\n        buttonEl.setAttribute('aria-label', this.isOpen ? 'Close navigation' : 'Open navigation')\n\n        buttonSVGs.forEach((svgEl) => svgEl.setAttribute('data-open', String(this.isOpen)))\n\n        document.dispatchEvent(\n          new CustomEvent('dropdown:toggle', {\n            bubbles: true,\n            detail: { open: this.isOpen },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-button', DropdownButton)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

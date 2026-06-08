@@ -1,0 +1,35 @@
+# Local secrets
+.env
+*.env
+pipeline/.env
+backend/.env
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime logs and local process output
+*.log
+backend/*.out
+backend/*.err
+
+# Local backups and packaged submissions
+local-backups/
+*.zip
+*.7z
+*.rar
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

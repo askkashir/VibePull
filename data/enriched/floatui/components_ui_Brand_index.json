@@ -1,0 +1,40 @@
+{
+  "id": "components_ui_Brand_index",
+  "name": "Brand",
+  "source_code": "// components/ui/Brand/index.tsx\nimport Image from \"next/image\";\nimport logoDark from \"public/logo-dark.svg\";\n\nexport default () => (\n  <>\n    <div>\n      <Image src={logoDark} alt=\"Float UI logo\" />\n    </div>\n  </>\n);\n",
+  "description": "",
+  "tags": [
+    "logo",
+    "brand"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Brand_index",
+      "name": "index",
+      "path": "components/ui/Brand/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Brand_index",
+      "name": "Brand",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Brand/index.tsx",
+          "content": "import Image from \"next/image\";\nimport logoDark from \"public/logo-dark.svg\";\n\nexport default () => (\n  <>\n    <div>\n      <Image src={logoDark} alt=\"Float UI logo\" />\n    </div>\n  </>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A simple logo component. Use it to showcase your brand logo in a UI. This component can be used in the header or footer of a website.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Brand\nDescription: A simple logo component. Use it to showcase your brand logo in a UI. This component can be used in the header or footer of a website.\nStyle: \nInteractions: \nTags: logo, brand\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Brand/index.tsx\nimport Image from \"next/image\";\nimport logoDark from \"public/logo-dark.svg\";\n\nexport default () => (\n  <>\n    <div>\n      <Image src={logoDark} alt=\"Float UI logo\" />\n    </div>\n  </>\n);\n",
+  "prompt_version": 2,
+  "clean_id": "brand",
+  "display_name": "Brand",
+  "preview_url": "/previews/floatui/components-ui-brand-index.png"
+}

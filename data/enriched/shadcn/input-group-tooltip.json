@@ -1,0 +1,42 @@
+{
+  "id": "input-group-tooltip",
+  "name": "input-group-tooltip",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input-group",
+    "tooltip",
+    "customizable",
+    "interactive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-tooltip",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-group-tooltip\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A customizable input group with a tooltip, allowing users to receive extra information when focusing on input fields. It can be used in forms, search bars, or any scenario requiring additional context. This component is ideal for applications that want flexibility and interactivity.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "input-group",
+  "generation_prompt": "Create a production-ready input-group component with the following characteristics:\n\nName: input-group-tooltip\nDescription: A customizable input group with a tooltip, allowing users to receive extra information when focusing on input fields. It can be used in forms, search bars, or any scenario requiring additional context. This component is ideal for applications that want flexibility and interactivity.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: input-group, tooltip, customizable, interactive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-group-tooltip",
+  "display_name": "Input Group Tooltip",
+  "preview_url": "/previews/shadcn/input-group-tooltip.png"
+}

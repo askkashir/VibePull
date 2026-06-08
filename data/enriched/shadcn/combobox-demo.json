@@ -1,0 +1,39 @@
+{
+  "id": "combobox-demo",
+  "name": "combobox-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "select",
+    "input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "combobox-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## combobox-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The combobox-demo is a dropdown menu with a text input field. It allows users to select a value from a list or type a value manually. This component is useful when a user needs to select one option from a long list, but also wants to be able to manually enter a custom value.",
+  "style_tags": [
+    "default",
+    "boxed"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: combobox-demo\nDescription: The combobox-demo is a dropdown menu with a text input field. It allows users to select a value from a list or type a value manually. This component is useful when a user needs to select one option from a long list, but also wants to be able to manually enter a custom value.\nStyle: default, boxed\nInteractions: clickable, hover\nTags: dropdown, select, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "combobox-demo",
+  "display_name": "Combobox Demo",
+  "preview_url": "/previews/shadcn/combobox-demo.png"
+}

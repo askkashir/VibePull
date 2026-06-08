@@ -1,0 +1,27 @@
+{
+  "id": "tooltip",
+  "name": "tooltip",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## tooltip\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called tooltip. It should be: . Component type: registry:ui. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "tooltip",
+  "display_name": "Tooltip",
+  "preview_url": "/previews/parkui/tooltip.png"
+}

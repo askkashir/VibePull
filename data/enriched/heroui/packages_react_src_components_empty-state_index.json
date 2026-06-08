@@ -1,0 +1,48 @@
+{
+  "id": "packages_react_src_components_empty-state_index",
+  "name": "empty-state",
+  "source_code": "// packages/react/src/components/empty-state/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {EmptyStateRoot} from \"./empty-state\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const EmptyState = Object.assign(EmptyStateRoot, {\n  Root: EmptyStateRoot,\n});\n\nexport type EmptyState = {\n  Props: ComponentProps<typeof EmptyStateRoot>;\n  RootProps: ComponentProps<typeof EmptyStateRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {EmptyStateRoot};\n\nexport type {EmptyStateRootProps, EmptyStateRootProps as EmptyStateProps} from \"./empty-state\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {emptyStateVariants} from \"@heroui/styles\";\n\nexport type {EmptyStateVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "error",
+    "warning",
+    "informational",
+    "empty",
+    "ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "empty-state_index",
+      "name": "index",
+      "path": "packages/react/src/components/empty-state/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_empty-state_index",
+      "name": "empty-state",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/empty-state/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {EmptyStateRoot} from \"./empty-state\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const EmptyState = Object.assign(EmptyStateRoot, {\n  Root: EmptyStateRoot,\n});\n\nexport type EmptyState = {\n  Props: ComponentProps<typeof EmptyStateRoot>;\n  RootProps: ComponentProps<typeof EmptyStateRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {EmptyStateRoot};\n\nexport type {EmptyStateRootProps, EmptyStateRootProps as EmptyStateProps} from \"./empty-state\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {emptyStateVariants} from \"@heroui/styles\";\n\nexport type {EmptyStateVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The EmptyState component displays a visually appealing state indicating a lack of content, providing a prominent call-to-action to the user.",
+  "style_tags": [
+    "neutral",
+    "material"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: empty-state\nDescription: The EmptyState component displays a visually appealing state indicating a lack of content, providing a prominent call-to-action to the user.\nStyle: neutral, material\nInteractions: clickable\nTags: error, warning, informational, empty, ui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/empty-state/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {EmptyStateRoot} from \"./empty-state\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const EmptyState = Object.assign(EmptyStateRoot, {\n  Root: EmptyStateRoot,\n});\n\nexport type EmptyState = {\n  Props: Componen",
+  "prompt_version": 2,
+  "clean_id": "empty-state",
+  "display_name": "Empty State",
+  "preview_url": "/previews/heroui/packages-react-src-components-empty-state-index.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "components_MDXRemoteClient",
+  "name": "MDXRemoteClient",
+  "source_code": "// components/MDXRemoteClient.tsx\n\"use client\";\n\nimport { MDXRemote, MDXRemoteSerializeResult } from \"next-mdx-remote\";\n\nexport default ({\n  mdxSource,\n  components,\n}: {\n  mdxSource: MDXRemoteSerializeResult;\n  components?: any;\n}) => <MDXRemote {...mdxSource} components={components} />;\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "MDXRemoteClient",
+      "name": "MDXRemoteClient",
+      "path": "components/MDXRemoteClient.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_MDXRemoteClient",
+      "name": "MDXRemoteClient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/MDXRemoteClient.tsx",
+          "content": "\"use client\";\n\nimport { MDXRemote, MDXRemoteSerializeResult } from \"next-mdx-remote\";\n\nexport default ({\n  mdxSource,\n  components,\n}: {\n  mdxSource: MDXRemoteSerializeResult;\n  components?: any;\n}) => <MDXRemote {...mdxSource} components={components} />;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

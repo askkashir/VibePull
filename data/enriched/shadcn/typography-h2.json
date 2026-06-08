@@ -1,0 +1,35 @@
+{
+  "id": "typography-h2",
+  "name": "typography-h2",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "header",
+    "large-text"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-h2",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-h2\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The typography-h2 component is a high-level, large font size and line height header typically used in headings and titles to draw user attention. It's ideal for page titles, articles, or section headers. Use it for emphasizing key content on the page.",
+  "style_tags": [
+    "material-design"
+  ],
+  "interaction_tags": [],
+  "component_type": "text",
+  "generation_prompt": "Create a production-ready text component with the following characteristics:\n\nName: typography-h2\nDescription: The typography-h2 component is a high-level, large font size and line height header typically used in headings and titles to draw user attention. It's ideal for page titles, articles, or section headers. Use it for emphasizing key content on the page.\nStyle: material-design\nInteractions: \nTags: typography, header, large-text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-h2",
+  "display_name": "Typography H2",
+  "preview_url": "/previews/shadcn/typography-h2.png"
+}

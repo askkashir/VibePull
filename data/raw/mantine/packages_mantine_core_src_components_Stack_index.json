@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Stack_index",
+  "name": "Stack",
+  "source_code": "// packages/@mantine/core/src/components/Stack/index.ts\nimport type { StackCssVariables, StackFactory, StackProps, StackStylesNames } from './Stack';\n\nexport { Stack } from './Stack';\n\nexport type { StackProps, StackStylesNames, StackCssVariables, StackFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Stack_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Stack/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Stack_index",
+      "name": "Stack",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Stack/index.ts",
+          "content": "import type { StackCssVariables, StackFactory, StackProps, StackStylesNames } from './Stack';\n\nexport { Stack } from './Stack';\n\nexport type { StackProps, StackStylesNames, StackCssVariables, StackFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

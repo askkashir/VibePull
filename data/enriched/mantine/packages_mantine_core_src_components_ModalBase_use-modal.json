@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal",
+  "name": "use-modal",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal.ts\nimport { useState } from 'react';\nimport { useFocusReturn, useId, useWindowEvent } from '@mantine/hooks';\nimport { TransitionOverride } from '../Transition';\nimport { useLockScroll } from './use-lock-scroll';\n\ninterface UseModalInput {\n  opened: boolean;\n  onClose: () => void;\n  id: string | undefined;\n  transitionProps: TransitionOverride | undefined;\n  trapFocus: boolean | undefined;\n  closeOnEscape: boolean | undefined;\n  returnFocus: boolean | undefined;\n}\n\nexport function useModal({\n  id,\n  transitionProps,\n  opened,\n  trapFocus,\n  closeOnEscape,\n  onClose,\n  returnFocus,\n}: UseModalInput) {\n  const _id = useId(id);\n  const [titleMounted, setTitleMounted] = useState(false);\n  const [bodyMounted, setBodyMounted] = useState(false);\n\n  const transitionDuration =\n    typeof transitionProps?.duration === 'number' ? transitionProps?.duration : 200;\n\n  const shouldLockScroll = useLockScroll({ opened, transitionDuration });\n\n  useWindowEvent(\n    'keydown',\n    (event) => {\n      if (event.key === 'Escape' && closeOnEscape && !event.isComposing && opened) {\n        const shouldTrigger =\n          (event.target as HTMLElement)?.getAttribute('data-mantine-stop-propagation') !== 'true';\n        shouldTrigger && onClose();\n      }\n    },\n    { capture: true }\n  );\n\n  useFocusReturn({ opened, shouldReturnFocus: trapFocus && returnFocus });\n\n  return {\n    _id,\n    titleMounted,\n    bodyMounted,\n    shouldLockScroll,\n    setTitleMounted,\n    setBodyMounted,\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal",
+      "name": "use-modal",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal",
+      "name": "use-modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal.ts",
+          "content": "import { useState } from 'react';\nimport { useFocusReturn, useId, useWindowEvent } from '@mantine/hooks';\nimport { TransitionOverride } from '../Transition';\nimport { useLockScroll } from './use-lock-scroll';\n\ninterface UseModalInput {\n  opened: boolean;\n  onClose: () => void;\n  id: string | undefined;\n  transitionProps: TransitionOverride | undefined;\n  trapFocus: boolean | undefined;\n  closeOnEscape: boolean | undefined;\n  returnFocus: boolean | undefined;\n}\n\nexport function useModal({\n  id,\n  transitionProps,\n  opened,\n  trapFocus,\n  closeOnEscape,\n  onClose,\n  returnFocus,\n}: UseModalInput) {\n  const _id = useId(id);\n  const [titleMounted, setTitleMounted] = useState(false);\n  const [bodyMounted, setBodyMounted] = useState(false);\n\n  const transitionDuration =\n    typeof transitionProps?.duration === 'number' ? transitionProps?.duration : 200;\n\n  const shouldLockScroll = useLockScroll({ opened, transitionDuration });\n\n  useWindowEvent(\n    'keydown',\n    (event) => {\n      if (event.key === 'Escape' && closeOnEscape && !event.isComposing && opened) {\n        const shouldTrigger =\n          (event.target as HTMLElement)?.getAttribute('data-mantine-stop-propagation') !== 'true';\n        shouldTrigger && onClose();\n      }\n    },\n    { capture: true }\n  );\n\n  useFocusReturn({ opened, shouldReturnFocus: trapFocus && returnFocus });\n\n  return {\n    _id,\n    titleMounted,\n    bodyMounted,\n    shouldLockScroll,\n    setTitleMounted,\n    setBodyMounted,\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-modal is a use modal UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated",
+    "keyboard-focus"
+  ],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: use-modal\nDescription: use-modal is a use modal UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated, keyboard-focus\nTags: mantine, modal, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/use-modal.ts\nimport { useState } from 'react';\nimport { useFocusReturn, useId, useWindowEvent } from '@mantine/hooks';\nimport { TransitionOverride } from '../Transition';\nimport { useLockScroll } from './use-lock-scroll';\n\ninterface UseModalInput {\n  opened: boolean;\n  onClose: () => void;\n  id: string | undefined;\n  transitionProps: TransitionOverride | undefined;\n  trapFocus: boolean | undefined;\n  closeOnEscape: boolean | undefined;\n  returnF",
+  "prompt_version": 2,
+  "clean_id": "use-modal",
+  "display_name": "Use Modal",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-use-modal.png"
+}

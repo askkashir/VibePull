@@ -1,0 +1,41 @@
+{
+  "id": "button-loading",
+  "name": "button-loading",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "loading",
+    "spinner",
+    "progress"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-loading",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-loading\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button with a circular progress indicator, indicating the process of loading data. It is suitable for use cases where the user needs to initiate an action and then waits for the result. Typically used in forms submission, login or file upload scenarios.",
+  "style_tags": [
+    "material",
+    "flat",
+    "compact"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "disabled"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-loading\nDescription: A button with a circular progress indicator, indicating the process of loading data. It is suitable for use cases where the user needs to initiate an action and then waits for the result. Typically used in forms submission, login or file upload scenarios.\nStyle: material, flat, compact\nInteractions: clickable, disabled\nTags: button, loading, spinner, progress\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-loading",
+  "display_name": "Button Loading",
+  "preview_url": "/previews/shadcn/button-loading.png"
+}

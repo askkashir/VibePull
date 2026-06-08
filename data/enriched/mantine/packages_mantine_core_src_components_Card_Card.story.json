@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Card_Card.story",
+  "name": "Card.story",
+  "source_code": "// packages/@mantine/core/src/components/Card/Card.story.tsx\nimport { Card } from './Card';\n\nexport default { title: 'Card' };\n\nexport function Usage() {\n  return (\n    <div style={{ maxWidth: 400, padding: 40, margin: 'auto' }}>\n      <Card withBorder>\n        <Card.Section inheritPadding py=\"md\" withBorder>\n          Card section 1\n        </Card.Section>\n        <div>Content 1</div>\n        <Card.Section inheritPadding withBorder>\n          Card section 2\n        </Card.Section>\n        <div>Content 2</div>\n        <Card.Section inheritPadding withBorder>\n          Card section 3\n        </Card.Section>\n\n        <Card.Section inheritPadding withBorder>\n          Card section 4\n        </Card.Section>\n      </Card>\n    </div>\n  );\n}\n\nexport function HorizontalOrientation() {\n  return (\n    <div style={{ maxWidth: 800, padding: 40, margin: 'auto' }}>\n      <Card withBorder orientation=\"horizontal\">\n        <Card.Section bg=\"blue\">Card section 1</Card.Section>\n        <Card.Section bg=\"orange\">Card section 2</Card.Section>\n        <div>Content</div>\n        <Card.Section bg=\"red\" flex={1}>\n          Card section 3\n        </Card.Section>\n      </Card>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "card",
+    "mantine",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Card_Card.story",
+      "name": "Card.story",
+      "path": "packages/@mantine/core/src/components/Card/Card.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Card_Card.story",
+      "name": "Card.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Card/Card.story.tsx",
+          "content": "import { Card } from './Card';\n\nexport default { title: 'Card' };\n\nexport function Usage() {\n  return (\n    <div style={{ maxWidth: 400, padding: 40, margin: 'auto' }}>\n      <Card withBorder>\n        <Card.Section inheritPadding py=\"md\" withBorder>\n          Card section 1\n        </Card.Section>\n        <div>Content 1</div>\n        <Card.Section inheritPadding withBorder>\n          Card section 2\n        </Card.Section>\n        <div>Content 2</div>\n        <Card.Section inheritPadding withBorder>\n          Card section 3\n        </Card.Section>\n\n        <Card.Section inheritPadding withBorder>\n          Card section 4\n        </Card.Section>\n      </Card>\n    </div>\n  );\n}\n\nexport function HorizontalOrientation() {\n  return (\n    <div style={{ maxWidth: 800, padding: 40, margin: 'auto' }}>\n      <Card withBorder orientation=\"horizontal\">\n        <Card.Section bg=\"blue\">Card section 1</Card.Section>\n        <Card.Section bg=\"orange\">Card section 2</Card.Section>\n        <div>Content</div>\n        <Card.Section bg=\"red\" flex={1}>\n          Card section 3\n        </Card.Section>\n      </Card>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Card.story is a card story UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Card.story\nDescription: Card.story is a card story UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: card, mantine, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Card/Card.story.tsx\nimport { Card } from './Card';\n\nexport default { title: 'Card' };\n\nexport function Usage() {\n  return (\n    <div style={{ maxWidth: 400, padding: 40, margin: 'auto' }}>\n      <Card withBorder>\n        <Card.Section inheritPadding py=\"md\" withBorder>\n          Card section 1\n        </Card.Section>\n        <div>Content 1</div>\n        <Card.Section inheritPadding withBorder>\n          Card section 2\n        </Card.Section>\n        <div>",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-card-card-story.png"
+}

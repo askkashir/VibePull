@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_PaginationEdges_PaginationEdges",
+  "name": "PaginationEdges",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/PaginationEdges/PaginationEdges.tsx\nimport { BoxProps, polymorphic, useProps } from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport {\n  PaginationFirstIcon,\n  PaginationIconProps,\n  PaginationLastIcon,\n  PaginationNextIcon,\n  PaginationPreviousIcon,\n} from '../Pagination.icons';\nimport { PaginationControl } from '../PaginationControl/PaginationControl';\n\nexport interface CreateEdgeComponent {\n  icon: React.FC<PaginationIconProps>;\n  name: string;\n  action: 'onNext' | 'onPrevious' | 'onFirst' | 'onLast';\n  type: 'next' | 'previous';\n}\n\nexport interface PaginationEdgeProps extends BoxProps {\n  /** An icon component to replace the default icon */\n  icon?: React.FC<PaginationIconProps>;\n}\n\nexport function createEdgeComponent({ icon, name, action, type }: CreateEdgeComponent) {\n  const defaultProps = { icon } satisfies Partial<PaginationEdgeProps>;\n\n  const Component = (props: PaginationEdgeProps) => {\n    const { icon: Icon, ...others } = useProps(name, defaultProps, props);\n    const ctx = usePaginationContext();\n    const disabled = type === 'next' ? ctx.active === ctx.total : ctx.active === 1;\n\n    return (\n      <PaginationControl\n        disabled={ctx.disabled || disabled}\n        onClick={ctx[action]}\n        withPadding={false}\n        {...others}\n      >\n        <Icon\n          className=\"mantine-rotate-rtl\"\n          style={{\n            width: 'calc(var(--pagination-control-size) / 1.8)',\n            height: 'calc(var(--pagination-control-size) / 1.8)',\n          }}\n        />\n      </PaginationControl>\n    );\n  };\n\n  Component.displayName = `@mantine/core/${name}`;\n  return polymorphic<'button', PaginationEdgeProps>(Component);\n}\n\nexport const PaginationNext = createEdgeComponent({\n  icon: PaginationNextIcon,\n  name: 'PaginationNext',\n  action: 'onNext',\n  type: 'next',\n});\n\nexport const PaginationPrevious = createEdgeComponent({\n  icon: PaginationPreviousIcon,\n  name: 'PaginationPrevious',\n  action: 'onPrevious',\n  type: 'previous',\n});\n\nexport const PaginationFirst = createEdgeComponent({\n  icon: PaginationFirstIcon,\n  name: 'PaginationFirst',\n  action: 'onFirst',\n  type: 'previous',\n});\n\nexport const PaginationLast = createEdgeComponent({\n  icon: PaginationLastIcon,\n  name: 'PaginationLast',\n  action: 'onLast',\n  type: 'next',\n});\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_PaginationEdges_PaginationEdges",
+      "name": "PaginationEdges",
+      "path": "packages/@mantine/core/src/components/Pagination/PaginationEdges/PaginationEdges.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_PaginationEdges_PaginationEdges",
+      "name": "PaginationEdges",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/PaginationEdges/PaginationEdges.tsx",
+          "content": "import { BoxProps, polymorphic, useProps } from '../../../core';\nimport { usePaginationContext } from '../Pagination.context';\nimport {\n  PaginationFirstIcon,\n  PaginationIconProps,\n  PaginationLastIcon,\n  PaginationNextIcon,\n  PaginationPreviousIcon,\n} from '../Pagination.icons';\nimport { PaginationControl } from '../PaginationControl/PaginationControl';\n\nexport interface CreateEdgeComponent {\n  icon: React.FC<PaginationIconProps>;\n  name: string;\n  action: 'onNext' | 'onPrevious' | 'onFirst' | 'onLast';\n  type: 'next' | 'previous';\n}\n\nexport interface PaginationEdgeProps extends BoxProps {\n  /** An icon component to replace the default icon */\n  icon?: React.FC<PaginationIconProps>;\n}\n\nexport function createEdgeComponent({ icon, name, action, type }: CreateEdgeComponent) {\n  const defaultProps = { icon } satisfies Partial<PaginationEdgeProps>;\n\n  const Component = (props: PaginationEdgeProps) => {\n    const { icon: Icon, ...others } = useProps(name, defaultProps, props);\n    const ctx = usePaginationContext();\n    const disabled = type === 'next' ? ctx.active === ctx.total : ctx.active === 1;\n\n    return (\n      <PaginationControl\n        disabled={ctx.disabled || disabled}\n        onClick={ctx[action]}\n        withPadding={false}\n        {...others}\n      >\n        <Icon\n          className=\"mantine-rotate-rtl\"\n          style={{\n            width: 'calc(var(--pagination-control-size) / 1.8)',\n            height: 'calc(var(--pagination-control-size) / 1.8)',\n          }}\n        />\n      </PaginationControl>\n    );\n  };\n\n  Component.displayName = `@mantine/core/${name}`;\n  return polymorphic<'button', PaginationEdgeProps>(Component);\n}\n\nexport const PaginationNext = createEdgeComponent({\n  icon: PaginationNextIcon,\n  name: 'PaginationNext',\n  action: 'onNext',\n  type: 'next',\n});\n\nexport const PaginationPrevious = createEdgeComponent({\n  icon: PaginationPreviousIcon,\n  name: 'PaginationPrevious',\n  action: 'onPrevious',\n  type: 'previous',\n});\n\nexport const PaginationFirst = createEdgeComponent({\n  icon: PaginationFirstIcon,\n  name: 'PaginationFirst',\n  action: 'onFirst',\n  type: 'previous',\n});\n\nexport const PaginationLast = createEdgeComponent({\n  icon: PaginationLastIcon,\n  name: 'PaginationLast',\n  action: 'onLast',\n  type: 'next',\n});\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

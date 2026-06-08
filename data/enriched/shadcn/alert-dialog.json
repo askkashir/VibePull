@@ -1,0 +1,45 @@
+{
+  "id": "alert-dialog",
+  "name": "alert-dialog",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "alert",
+    "dialog",
+    "notification",
+    "modal",
+    "confirm"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## alert-dialog\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "An alert dialog is a visual container used to inform users of important information or actions, often containing a title, content, and multiple action options. It typically appears in a modal overlay on top of other content and may include a close button or icon. A developer would use an alert dialog to notify users of a significant change or action that requires a response.",
+  "style_tags": [
+    "e.g. primary",
+    "secondary",
+    "success",
+    "error",
+    "warning"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "dismissable",
+    "responsive"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: alert-dialog\nDescription: An alert dialog is a visual container used to inform users of important information or actions, often containing a title, content, and multiple action options. It typically appears in a modal overlay on top of other content and may include a close button or icon. A developer would use an alert dialog to notify users of a significant change or action that requires a response.\nStyle: e.g. primary, secondary, success, error, warning\nInteractions: e.g. clickable, dismissable, responsive\nTags: alert, dialog, notification, modal, confirm\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "alert-dialog",
+  "display_name": "Alert Dialog",
+  "preview_url": "/previews/shadcn/alert-dialog.png"
+}

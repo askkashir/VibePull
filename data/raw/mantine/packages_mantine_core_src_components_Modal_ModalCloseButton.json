@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalCloseButton",
+  "name": "ModalCloseButton",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalCloseButton.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseCloseButton, ModalBaseCloseButtonProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalCloseButtonStylesNames = 'close';\n\nexport interface ModalCloseButtonProps\n  extends ModalBaseCloseButtonProps, CompoundStylesApiProps<ModalCloseButtonFactory> {}\n\nexport type ModalCloseButtonFactory = Factory<{\n  props: ModalCloseButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: ModalCloseButtonStylesNames;\n  compound: true;\n}>;\n\nexport const ModalCloseButton = factory<ModalCloseButtonFactory>((_props) => {\n  const props = useProps('ModalCloseButton', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseCloseButton\n      {...ctx.getStyles('close', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalCloseButton.classes = classes;\nModalCloseButton.displayName = '@mantine/core/ModalCloseButton';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalCloseButton",
+      "name": "ModalCloseButton",
+      "path": "packages/@mantine/core/src/components/Modal/ModalCloseButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalCloseButton",
+      "name": "ModalCloseButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalCloseButton.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseCloseButton, ModalBaseCloseButtonProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalCloseButtonStylesNames = 'close';\n\nexport interface ModalCloseButtonProps\n  extends ModalBaseCloseButtonProps, CompoundStylesApiProps<ModalCloseButtonFactory> {}\n\nexport type ModalCloseButtonFactory = Factory<{\n  props: ModalCloseButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: ModalCloseButtonStylesNames;\n  compound: true;\n}>;\n\nexport const ModalCloseButton = factory<ModalCloseButtonFactory>((_props) => {\n  const props = useProps('ModalCloseButton', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseCloseButton\n      {...ctx.getStyles('close', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalCloseButton.classes = classes;\nModalCloseButton.displayName = '@mantine/core/ModalCloseButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

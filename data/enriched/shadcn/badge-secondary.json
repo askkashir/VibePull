@@ -1,0 +1,39 @@
+{
+  "id": "badge-secondary",
+  "name": "badge-secondary",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "badge",
+    "notification",
+    "feedback"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "badge-secondary",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## badge-secondary\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The badge-secondary component is a small, secondary-level notification badge that can be used to display important information or updates. It is typically a rectangle with a background color and text or icon inside. A developer would use the badge-secondary component in situations where they need to provide additional context or information to the user, such as showing the number of unread messages.",
+  "style_tags": [
+    "e.g. colorful",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "e.g. static",
+    "non-interactive"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: badge-secondary\nDescription: The badge-secondary component is a small, secondary-level notification badge that can be used to display important information or updates. It is typically a rectangle with a background color and text or icon inside. A developer would use the badge-secondary component in situations where they need to provide additional context or information to the user, such as showing the number of unread messages.\nStyle: e.g. colorful, rounded\nInteractions: e.g. static, non-interactive\nTags: badge, notification, feedback\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "badge-secondary",
+  "display_name": "Badge Secondary",
+  "preview_url": "/previews/shadcn/badge-secondary.png"
+}

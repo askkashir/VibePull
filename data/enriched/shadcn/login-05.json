@@ -1,0 +1,42 @@
+{
+  "id": "login-05",
+  "name": "login-05",
+  "source_code": "",
+  "description": "A simple email-only login page.",
+  "tags": [
+    "login",
+    "email login",
+    "auth",
+    "auth-flow"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-05",
+      "type": "registry:block",
+      "description": "A simple email-only login page.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-05\n\nA simple email-only login page.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A simple login page with a centered email input field, a submit button, and a background that adapts to the user's theme. This component would be used to create a straightforward email-based login process for users. Its simplicity and minimal design make it suitable for applications with a focus on ease of use or accessibility.",
+  "style_tags": [
+    "minimal",
+    "flat",
+    "light"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: login-05\nDescription: A simple login page with a centered email input field, a submit button, and a background that adapts to the user's theme. This component would be used to create a straightforward email-based login process for users. Its simplicity and minimal design make it suitable for applications with a focus on ease of use or accessibility.\nStyle: minimal, flat, light\nInteractions: clickable, tappable\nTags: login, email login, auth, auth-flow\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "login-05",
+  "display_name": "Login 05",
+  "preview_url": "/previews/shadcn/login-05.png"
+}

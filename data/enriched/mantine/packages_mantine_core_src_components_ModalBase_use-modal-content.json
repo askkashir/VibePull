@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal-content",
+  "name": "use-modal-content",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal-content.ts\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalContentProps() {\n  const ctx = useModalBaseContext();\n\n  const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {\n    const shouldTrigger =\n      (event.target as HTMLElement)?.getAttribute('data-mantine-stop-propagation') !== 'true';\n    shouldTrigger && event.key === 'Escape' && ctx.closeOnEscape && ctx.onClose();\n  };\n\n  return {\n    focusTrapActive: ctx.opened && ctx.trapFocus,\n\n    contentProps: {\n      component: 'section' as const,\n      onKeyDown: handleKeyDown,\n      role: 'dialog' as const,\n      tabIndex: -1,\n      'aria-modal': true,\n      'aria-describedby': ctx.bodyMounted ? ctx.getBodyId() : undefined,\n      'aria-labelledby': ctx.titleMounted ? ctx.getTitleId() : undefined,\n    },\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "content",
+    "mantine",
+    "modal",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal-content",
+      "name": "use-modal-content",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal-content.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal-content",
+      "name": "use-modal-content",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal-content.ts",
+          "content": "import { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalContentProps() {\n  const ctx = useModalBaseContext();\n\n  const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {\n    const shouldTrigger =\n      (event.target as HTMLElement)?.getAttribute('data-mantine-stop-propagation') !== 'true';\n    shouldTrigger && event.key === 'Escape' && ctx.closeOnEscape && ctx.onClose();\n  };\n\n  return {\n    focusTrapActive: ctx.opened && ctx.trapFocus,\n\n    contentProps: {\n      component: 'section' as const,\n      onKeyDown: handleKeyDown,\n      role: 'dialog' as const,\n      tabIndex: -1,\n      'aria-modal': true,\n      'aria-describedby': ctx.bodyMounted ? ctx.getBodyId() : undefined,\n      'aria-labelledby': ctx.titleMounted ? ctx.getTitleId() : undefined,\n    },\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-modal-content is a use modal content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: use-modal-content\nDescription: use-modal-content is a use modal content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: content, mantine, modal, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/use-modal-content.ts\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalContentProps() {\n  const ctx = useModalBaseContext();\n\n  const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {\n    const shouldTrigger =\n      (event.target as HTMLElement)?.getAttribute('data-mantine-stop-propagation') !== 'true';\n    shouldTrigger && event.key === 'Escape' && ctx.closeOnEscape && ctx.onClose();\n  };\n\n  return",
+  "prompt_version": 2,
+  "clean_id": "use-modal-content",
+  "display_name": "Use Modal Content",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-use-modal-content.png"
+}

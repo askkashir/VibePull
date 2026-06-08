@@ -1,0 +1,31 @@
+{
+  "id": "components_variants",
+  "name": "variants",
+  "source_code": "// components/variants.ts\nconst buttonNormalize =\n  \"py-2.5 px-4 rounded-full duration-150 font-medium text-center text-sm\";\nexport const buttonVariants = {\n  default: \"bg-zinc-50 hover:bg-zinc-200 \" + buttonNormalize,\n  shiny: \"bg-shiny text-zinc-300 \" + buttonNormalize,\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "variants",
+      "name": "variants",
+      "path": "components/variants.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_variants",
+      "name": "variants",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/variants.ts",
+          "content": "const buttonNormalize =\n  \"py-2.5 px-4 rounded-full duration-150 font-medium text-center text-sm\";\nexport const buttonVariants = {\n  default: \"bg-zinc-50 hover:bg-zinc-200 \" + buttonNormalize,\n  shiny: \"bg-shiny text-zinc-300 \" + buttonNormalize,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

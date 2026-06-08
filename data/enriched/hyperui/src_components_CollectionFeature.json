@@ -1,0 +1,43 @@
+{
+  "id": "src_components_CollectionFeature",
+  "name": "CollectionFeature",
+  "source_code": "// src/components/CollectionFeature.astro\n---\nimport { type CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport ComponentCard from './ComponentCard.astro'\n\ninterface Props {\n  title: string\n  description: string\n  slug: string\n  components: (\n    | CollectionEntry<'application'>['data']\n    | CollectionEntry<'marketing'>['data']\n    | CollectionEntry<'neobrutalism'>['data']\n  )[]\n}\n\nconst { title, description, slug, components } = Astro.props\n---\n\n<section class=\"py-16\">\n  <h2 class=\"text-3xl font-medium\">{title}</h2>\n\n  <p class=\"mt-2 text-gray-600\">{description}</p>\n\n  <ul class=\"mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3\">\n    {components.map((component) => <ComponentCard {component} />)}\n  </ul>\n\n  <a href={`/components/${slug}`} class=\"group mt-8 inline-flex items-center gap-2 text-gray-700\">\n    <span>View all {slug} components</span>\n\n    <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n  </a>\n</section>\n",
+  "description": "",
+  "tags": [
+    "collection",
+    "components",
+    "grid"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "CollectionFeature",
+      "name": "CollectionFeature",
+      "path": "src/components/CollectionFeature.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_CollectionFeature",
+      "name": "CollectionFeature",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/CollectionFeature.astro",
+          "content": "---\nimport { type CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport ComponentCard from './ComponentCard.astro'\n\ninterface Props {\n  title: string\n  description: string\n  slug: string\n  components: (\n    | CollectionEntry<'application'>['data']\n    | CollectionEntry<'marketing'>['data']\n    | CollectionEntry<'neobrutalism'>['data']\n  )[]\n}\n\nconst { title, description, slug, components } = Astro.props\n---\n\n<section class=\"py-16\">\n  <h2 class=\"text-3xl font-medium\">{title}</h2>\n\n  <p class=\"mt-2 text-gray-600\">{description}</p>\n\n  <ul class=\"mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3\">\n    {components.map((component) => <ComponentCard {component} />)}\n  </ul>\n\n  <a href={`/components/${slug}`} class=\"group mt-8 inline-flex items-center gap-2 text-gray-700\">\n    <span>View all {slug} components</span>\n\n    <ArrowRight class=\"size-5 transition-transform group-hover:translate-x-1\" />\n  </a>\n</section>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "CollectionFeature is a component that displays a collection of features or components. It is used when a developer wants to showcase a set of related components. It features a title, description, and a grid of components.",
+  "style_tags": [],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: CollectionFeature\nDescription: CollectionFeature is a component that displays a collection of features or components. It is used when a developer wants to showcase a set of related components. It features a title, description, and a grid of components.\nStyle: \nInteractions: none\nTags: collection, components, grid\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/CollectionFeature.astro\n---\nimport { type CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\nimport ComponentCard from './ComponentCard.astro'\n\ninterface Props {\n  title: string\n  description: string\n  slug: string\n  components: (\n    | CollectionEntry<'application'>['data']\n    | CollectionEntry<'marketing'>['data']\n    | CollectionEntry<'neobrutalism'>['data']\n  )[]\n}\n\nconst { title, description, slug, components } = Astro.props\n---\n\n<section ",
+  "prompt_version": 2,
+  "clean_id": "collection-feature",
+  "display_name": "Collection Feature",
+  "preview_url": "/previews/hyperui/src-components-collectionfeature.png"
+}

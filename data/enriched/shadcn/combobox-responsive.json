@@ -1,0 +1,42 @@
+{
+  "id": "combobox-responsive",
+  "name": "combobox-responsive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "select",
+    "dropdown",
+    "responsive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "combobox-responsive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## combobox-responsive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The combobox-responsive component is a form of dropdown menu that adapts to the size of its container. When expanded, it displays a list of options that can be selected. This component is suitable for when a user needs to select from a long list of options in a limited space, such as a mobile app.",
+  "style_tags": [
+    "material design",
+    "light"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "expanded"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: combobox-responsive\nDescription: The combobox-responsive component is a form of dropdown menu that adapts to the size of its container. When expanded, it displays a list of options that can be selected. This component is suitable for when a user needs to select from a long list of options in a limited space, such as a mobile app.\nStyle: material design, light\nInteractions: clickable, hover, expanded\nTags: form, input, select, dropdown, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "combobox-responsive",
+  "display_name": "Combobox Responsive",
+  "preview_url": "/previews/shadcn/combobox-responsive.png"
+}

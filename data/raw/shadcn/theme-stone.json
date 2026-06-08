@@ -1,0 +1,22 @@
+{
+  "id": "theme-stone",
+  "name": "theme-stone",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:theme"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-stone",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-stone\n**Type:** registry:theme"
+  }
+}

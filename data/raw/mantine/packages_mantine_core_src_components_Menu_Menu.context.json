@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_Menu.context",
+  "name": "Menu.context",
+  "source_code": "// packages/@mantine/core/src/components/Menu/Menu.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { MenuFactory } from './Menu';\n\nexport interface MenuContextValue {\n  toggleDropdown: () => void;\n  closeDropdownImmediately: () => void;\n  closeDropdown: () => void;\n  openDropdown: () => void;\n  getItemIndex: (node: HTMLButtonElement) => number | null;\n  closeOnItemClick: boolean | undefined;\n  loop: boolean | undefined;\n  trigger: 'click' | 'hover' | 'click-hover' | undefined;\n  opened: boolean;\n  unstyled: boolean | undefined;\n  getStyles: GetStylesApi<MenuFactory>;\n  menuItemTabIndex: -1 | 0 | undefined;\n  openedViaClick: boolean;\n  setOpenedViaClick: (value: boolean) => void;\n  withInitialFocusPlaceholder: boolean | undefined;\n  registerOpenSub: (closeFn: () => void) => () => void;\n  hasSearch: boolean;\n  registerSearch: () => () => void;\n  searchExitClearRef: React.RefObject<(() => void) | null>;\n  alignItemsLabels: 'all' | 'with-indicators' | 'none';\n  checkIcon: React.ReactNode;\n}\n\nexport const [MenuContextProvider, useMenuContext] = createSafeContext<MenuContextValue>(\n  'Menu component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_Menu.context",
+      "name": "Menu.context",
+      "path": "packages/@mantine/core/src/components/Menu/Menu.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_Menu.context",
+      "name": "Menu.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/Menu.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { MenuFactory } from './Menu';\n\nexport interface MenuContextValue {\n  toggleDropdown: () => void;\n  closeDropdownImmediately: () => void;\n  closeDropdown: () => void;\n  openDropdown: () => void;\n  getItemIndex: (node: HTMLButtonElement) => number | null;\n  closeOnItemClick: boolean | undefined;\n  loop: boolean | undefined;\n  trigger: 'click' | 'hover' | 'click-hover' | undefined;\n  opened: boolean;\n  unstyled: boolean | undefined;\n  getStyles: GetStylesApi<MenuFactory>;\n  menuItemTabIndex: -1 | 0 | undefined;\n  openedViaClick: boolean;\n  setOpenedViaClick: (value: boolean) => void;\n  withInitialFocusPlaceholder: boolean | undefined;\n  registerOpenSub: (closeFn: () => void) => () => void;\n  hasSearch: boolean;\n  registerSearch: () => () => void;\n  searchExitClearRef: React.RefObject<(() => void) | null>;\n  alignItemsLabels: 'all' | 'with-indicators' | 'none';\n  checkIcon: React.ReactNode;\n}\n\nexport const [MenuContextProvider, useMenuContext] = createSafeContext<MenuContextValue>(\n  'Menu component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

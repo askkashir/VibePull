@@ -1,0 +1,43 @@
+{
+  "id": "toggle-group-disabled",
+  "name": "toggle-group-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "group",
+    "disabled",
+    "ui",
+    "component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The toggle-group-disabled component is a visual representation of a toggle group when it's disabled. It's used to inform users that a toggle group is not active and should not be interacted with. This component is typically displayed in a gray or faded state, providing a clear indication of its disabled status.",
+  "style_tags": [
+    "material design",
+    "flat",
+    "faded"
+  ],
+  "interaction_tags": [
+    "non-interactive",
+    "hover",
+    "focusable"
+  ],
+  "component_type": "toggle",
+  "generation_prompt": "Create a production-ready toggle component with the following characteristics:\n\nName: toggle-group-disabled\nDescription: The toggle-group-disabled component is a visual representation of a toggle group when it's disabled. It's used to inform users that a toggle group is not active and should not be interacted with. This component is typically displayed in a gray or faded state, providing a clear indication of its disabled status.\nStyle: material design, flat, faded\nInteractions: non-interactive, hover, focusable\nTags: toggle, group, disabled, ui, component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-disabled",
+  "display_name": "Toggle Group Disabled",
+  "preview_url": "/previews/shadcn/toggle-group-disabled.png"
+}

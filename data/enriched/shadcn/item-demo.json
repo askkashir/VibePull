@@ -1,0 +1,37 @@
+{
+  "id": "item-demo",
+  "name": "item-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "grid",
+    "item",
+    "layout",
+    "minimal",
+    "ui-component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "item-demo is a simple, minimal UI component that displays a grid of items. Developers would use item-demo in e-commerce applications to showcase products or in social media to feature posts. It's a straightforward component to add a grid layout to an application.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: item-demo\nDescription: item-demo is a simple, minimal UI component that displays a grid of items. Developers would use item-demo in e-commerce applications to showcase products or in social media to feature posts. It's a straightforward component to add a grid layout to an application.\nStyle: e.g. minimal\nInteractions: \nTags: grid, item, layout, minimal, ui-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-demo",
+  "display_name": "Item Demo",
+  "preview_url": "/previews/shadcn/item-demo.png"
+}

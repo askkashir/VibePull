@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Timeline_index",
+  "name": "Timeline",
+  "source_code": "// packages/@mantine/core/src/components/Timeline/index.ts\nimport type {\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineProps,\n  TimelineStylesNames,\n} from './Timeline';\nimport type {\n  TimelineItemFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n} from './TimelineItem/TimelineItem';\n\nexport { Timeline } from './Timeline';\nexport { TimelineItem } from './TimelineItem/TimelineItem';\n\nexport type {\n  TimelineProps,\n  TimelineStylesNames,\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n  TimelineItemFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Timeline_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Timeline/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Timeline_index",
+      "name": "Timeline",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Timeline/index.ts",
+          "content": "import type {\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineProps,\n  TimelineStylesNames,\n} from './Timeline';\nimport type {\n  TimelineItemFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n} from './TimelineItem/TimelineItem';\n\nexport { Timeline } from './Timeline';\nexport { TimelineItem } from './TimelineItem/TimelineItem';\n\nexport type {\n  TimelineProps,\n  TimelineStylesNames,\n  TimelineCssVariables,\n  TimelineFactory,\n  TimelineItemProps,\n  TimelineItemStylesNames,\n  TimelineItemFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

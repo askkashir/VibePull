@@ -1,0 +1,31 @@
+{
+  "id": "elements_progress",
+  "name": "progress",
+  "source_code": "// elements/progress.html\n<div x-data=\"{\n        progress: 0,\n        progressInterval: null,\n    }\"\n    x-init=\"\n        progressInterval = setInterval(() => {\n            progress = progress + 1;\n            if (progress >= 100) {\n                clearInterval(progressInterval);\n            }\n        }, 100);\n    \"\n    class=\"relative w-full h-3 overflow-hidden rounded-full bg-neutral-100\">\n    <span :style=\"'width:' + progress + '%'\" class=\"absolute w-24 h-full duration-300 ease-linear bg-neutral-900\" x-cloak></span>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "progress",
+      "name": "progress",
+      "path": "elements/progress.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_progress",
+      "name": "progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/progress.html",
+          "content": "<div x-data=\"{\n        progress: 0,\n        progressInterval: null,\n    }\"\n    x-init=\"\n        progressInterval = setInterval(() => {\n            progress = progress + 1;\n            if (progress >= 100) {\n                clearInterval(progressInterval);\n            }\n        }, 100);\n    \"\n    class=\"relative w-full h-3 overflow-hidden rounded-full bg-neutral-100\">\n    <span :style=\"'width:' + progress + '%'\" class=\"absolute w-24 h-full duration-300 ease-linear bg-neutral-900\" x-cloak></span>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

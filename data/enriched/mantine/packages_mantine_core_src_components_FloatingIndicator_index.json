@@ -1,0 +1,48 @@
+{
+  "id": "packages_mantine_core_src_components_FloatingIndicator_index",
+  "name": "FloatingIndicator",
+  "source_code": "// packages/@mantine/core/src/components/FloatingIndicator/index.ts\nimport type {\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n} from './FloatingIndicator';\n\nexport { FloatingIndicator } from './FloatingIndicator';\n\nexport type {\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "button",
+    "loader",
+    "indication"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FloatingIndicator_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/FloatingIndicator/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FloatingIndicator_index",
+      "name": "FloatingIndicator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FloatingIndicator/index.ts",
+          "content": "import type {\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n} from './FloatingIndicator';\n\nexport { FloatingIndicator } from './FloatingIndicator';\n\nexport type {\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A circular loading indicator that floats at the top right of the page. This component would be used to visually depict a loading or in progress state. It can be easily customized with different styles and themes.",
+  "style_tags": [
+    "circle",
+    "float",
+    "loading"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: FloatingIndicator\nDescription: A circular loading indicator that floats at the top right of the page. This component would be used to visually depict a loading or in progress state. It can be easily customized with different styles and themes.\nStyle: circle, float, loading\nInteractions: animated, clickable\nTags: button, loader, indication\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/FloatingIndicator/index.ts\nimport type {\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n} from './FloatingIndicator';\n\nexport { FloatingIndicator } from './FloatingIndicator';\n\nexport type {\n  FloatingIndicatorProps,\n  FloatingIndicatorStylesNames,\n  FloatingIndicatorCssVariables,\n  FloatingIndicatorFactory,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "floating-indicator",
+  "display_name": "Floating Indicator",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-floatingindicator-index.png"
+}

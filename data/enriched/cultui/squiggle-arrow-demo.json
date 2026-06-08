@@ -1,0 +1,65 @@
+{
+  "id": "squiggle-arrow-demo",
+  "name": "squiggle-arrow-demo",
+  "source_code": "// registry/default/example/squiggle-arrow-demo.tsx\nimport SquigglyArrow from \"@/registry/default/ui/squiggle-arrow\"\n\nfunction SquigglyArrowDemo() {\n  return (\n    <main className=\"flex min-h-screen flex-col items-center justify-center gap-12 \">\n      <div className=\"flex flex-col gap-12 items-center\">\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Variants</h2>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Wavy</span>\n              <SquigglyArrow variant=\"wavy\" />\n            </div>\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Bouncy</span>\n              <SquigglyArrow variant=\"bouncy\" className=\"text-blue-500\" />\n            </div>\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Smooth</span>\n              <SquigglyArrow variant=\"smooth\" className=\"text-purple-600\" />\n            </div>\n          </div>\n        </div>\n\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Directions</h2>\n          <div className=\"flex flex-wrap gap-8 justify-center p-4\">\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Right</span>\n              <SquigglyArrow direction=\"right\" className=\"text-green-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Left</span>\n              <SquigglyArrow direction=\"left\" className=\"text-orange-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Down</span>\n              <SquigglyArrow direction=\"down\" className=\"text-pink-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Up</span>\n              <SquigglyArrow direction=\"up\" className=\"text-cyan-600\" />\n            </div>\n          </div>\n        </div>\n\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Sizes</h2>\n          <div className=\"flex items-center gap-8 overflow-x-auto p-4\">\n            <SquigglyArrow width={150} height={75} strokeWidth={2} />\n            <SquigglyArrow\n              width={250}\n              height={125}\n              strokeWidth={3}\n              className=\"text-blue-500\"\n            />\n            <SquigglyArrow\n              width={300}\n              height={150}\n              strokeWidth={4}\n              className=\"text-purple-600\"\n            />\n          </div>\n        </div>\n      </div>\n    </main>\n  )\n}\n\nexport default SquigglyArrowDemo\n",
+  "description": "",
+  "tags": [
+    "demo",
+    "squiggly arrow",
+    "variant",
+    "direction",
+    "size"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "squiggle-arrow-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/styles/default/squiggle-arrow-demo.json",
+      "sha": "46d2fe0af82a17ea8a0becbc995b9ba3eadfcbf3",
+      "size": 3342,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/styles/default/squiggle-arrow-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/styles/default/squiggle-arrow-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/46d2fe0af82a17ea8a0becbc995b9ba3eadfcbf3",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/styles/default/squiggle-arrow-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/styles/default/squiggle-arrow-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/46d2fe0af82a17ea8a0becbc995b9ba3eadfcbf3",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/styles/default/squiggle-arrow-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "squiggle-arrow-demo",
+      "registryDependencies": [
+        "squiggle-arrow"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/squiggle-arrow-demo.tsx",
+          "content": "import SquigglyArrow from \"@/registry/default/ui/squiggle-arrow\"\n\nfunction SquigglyArrowDemo() {\n  return (\n    <main className=\"flex min-h-screen flex-col items-center justify-center gap-12 \">\n      <div className=\"flex flex-col gap-12 items-center\">\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Variants</h2>\n          <div className=\"flex flex-col gap-4\">\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Wavy</span>\n              <SquigglyArrow variant=\"wavy\" />\n            </div>\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Bouncy</span>\n              <SquigglyArrow variant=\"bouncy\" className=\"text-blue-500\" />\n            </div>\n            <div className=\"flex items-center gap-4\">\n              <span className=\"w-24 text-foreground\">Smooth</span>\n              <SquigglyArrow variant=\"smooth\" className=\"text-purple-600\" />\n            </div>\n          </div>\n        </div>\n\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Directions</h2>\n          <div className=\"flex flex-wrap gap-8 justify-center p-4\">\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Right</span>\n              <SquigglyArrow direction=\"right\" className=\"text-green-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Left</span>\n              <SquigglyArrow direction=\"left\" className=\"text-orange-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Down</span>\n              <SquigglyArrow direction=\"down\" className=\"text-pink-600\" />\n            </div>\n            <div className=\"flex flex-col items-center gap-2\">\n              <span className=\"text-foreground\">Up</span>\n              <SquigglyArrow direction=\"up\" className=\"text-cyan-600\" />\n            </div>\n          </div>\n        </div>\n\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Sizes</h2>\n          <div className=\"flex items-center gap-8 overflow-x-auto p-4\">\n            <SquigglyArrow width={150} height={75} strokeWidth={2} />\n            <SquigglyArrow\n              width={250}\n              height={125}\n              strokeWidth={3}\n              className=\"text-blue-500\"\n            />\n            <SquigglyArrow\n              width={300}\n              height={150}\n              strokeWidth={4}\n              className=\"text-purple-600\"\n            />\n          </div>\n        </div>\n      </div>\n    </main>\n  )\n}\n\nexport default SquigglyArrowDemo\n",
+          "type": "registry:component"
+        }
+      ],
+      "type": "registry:component"
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Squiggle Arrow Demo component is a visual demo of the Squiggly Arrow component in various styles and configurations. It showcases different variants, directions, and sizes of the Squiggly Arrow. A developer would use this component to understand the design options available for the Squiggly Arrow component.",
+  "style_tags": [
+    "colorful",
+    "animated",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: squiggle-arrow-demo\nDescription: The Squiggle Arrow Demo component is a visual demo of the Squiggly Arrow component in various styles and configurations. It showcases different variants, directions, and sizes of the Squiggly Arrow. A developer would use this component to understand the design options available for the Squiggly Arrow component.\nStyle: colorful, animated, responsive\nInteractions: hover, clickable\nTags: demo, squiggly arrow, variant, direction, size\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/squiggle-arrow-demo.tsx\nimport SquigglyArrow from \"@/registry/default/ui/squiggle-arrow\"\n\nfunction SquigglyArrowDemo() {\n  return (\n    <main className=\"flex min-h-screen flex-col items-center justify-center gap-12 \">\n      <div className=\"flex flex-col gap-12 items-center\">\n        <div className=\"flex flex-col gap-6\">\n          <h2 className=\"text-2xl font-semibold text-center\">Variants</h2>\n          <div className=\"flex flex-col gap-4\">\n            <div className=",
+  "prompt_version": 2,
+  "clean_id": "squiggle-arrow-demo",
+  "display_name": "Squiggle Arrow Demo",
+  "preview_url": "/previews/cultui/squiggle-arrow-demo.png"
+}

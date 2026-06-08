@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_UnstyledButton_index",
+  "name": "UnstyledButton",
+  "source_code": "// packages/@mantine/core/src/components/UnstyledButton/index.ts\nimport type {\n  UnstyledButtonFactory,\n  UnstyledButtonProps,\n  UnstyledButtonStylesNames,\n} from './UnstyledButton';\n\nexport { UnstyledButton } from './UnstyledButton';\n\nexport type { UnstyledButtonProps, UnstyledButtonStylesNames, UnstyledButtonFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "UnstyledButton_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/UnstyledButton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_UnstyledButton_index",
+      "name": "UnstyledButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/UnstyledButton/index.ts",
+          "content": "import type {\n  UnstyledButtonFactory,\n  UnstyledButtonProps,\n  UnstyledButtonStylesNames,\n} from './UnstyledButton';\n\nexport { UnstyledButton } from './UnstyledButton';\n\nexport type { UnstyledButtonProps, UnstyledButtonStylesNames, UnstyledButtonFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "theme-gray",
+  "name": "theme-gray",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:theme"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-gray",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-gray\n**Type:** registry:theme"
+  }
+}

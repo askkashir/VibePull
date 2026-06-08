@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+  "name": "ComboboxHiddenInput",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx\nimport { Primitive } from '../../../core';\n\nexport interface ComboboxHiddenInputProps extends Omit<React.ComponentProps<'input'>, 'value'> {\n  /** Input value */\n  value: Primitive | Primitive[] | null;\n\n  /** Divider character to join array values into string @default ',' */\n  valuesDivider?: string;\n}\n\nexport function ComboboxHiddenInput({\n  value,\n  valuesDivider = ',',\n  ...others\n}: ComboboxHiddenInputProps) {\n  return (\n    <input\n      type=\"hidden\"\n      value={Array.isArray(value) ? value.join(valuesDivider) : value ? `${value}` : ''}\n      {...others}\n    />\n  );\n}\n\nComboboxHiddenInput.displayName = '@mantine/core/ComboboxHiddenInput';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "hidden",
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+      "name": "ComboboxHiddenInput",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+      "name": "ComboboxHiddenInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx",
+          "content": "import { Primitive } from '../../../core';\n\nexport interface ComboboxHiddenInputProps extends Omit<React.ComponentProps<'input'>, 'value'> {\n  /** Input value */\n  value: Primitive | Primitive[] | null;\n\n  /** Divider character to join array values into string @default ',' */\n  valuesDivider?: string;\n}\n\nexport function ComboboxHiddenInput({\n  value,\n  valuesDivider = ',',\n  ...others\n}: ComboboxHiddenInputProps) {\n  return (\n    <input\n      type=\"hidden\"\n      value={Array.isArray(value) ? value.join(valuesDivider) : value ? `${value}` : ''}\n      {...others}\n    />\n  );\n}\n\nComboboxHiddenInput.displayName = '@mantine/core/ComboboxHiddenInput';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxHiddenInput is a combobox hidden input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: ComboboxHiddenInput\nDescription: ComboboxHiddenInput is a combobox hidden input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: combobox, hidden, input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx\nimport { Primitive } from '../../../core';\n\nexport interface ComboboxHiddenInputProps extends Omit<React.ComponentProps<'input'>, 'value'> {\n  /** Input value */\n  value: Primitive | Primitive[] | null;\n\n  /** Divider character to join array values into string @default ',' */\n  valuesDivider?: string;\n}\n\nexport function ComboboxHiddenInput({\n  value,\n  valuesDivider = ',',\n  ...others\n}: ComboboxHiddenI",
+  "prompt_version": 2,
+  "clean_id": "combobox-hidden-input",
+  "display_name": "Combobox Hidden Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxhiddeninput-comboboxhiddeninput.png"
+}

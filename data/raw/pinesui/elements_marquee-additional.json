@@ -1,0 +1,31 @@
+{
+  "id": "elements_marquee-additional",
+  "name": "marquee-additional",
+  "source_code": "// elements/marquee-additional.html\n<div class=\"mt-5 text-sm\">\n    <h3 class=\"mt-2 mb-2 text-2xl font-bold tracking-tight select-none custom-font\">Tailwind Config</h3>\n    <p class=\"text-gray-600\">To implement the `animate-marquee` class from your tailwind config, add the code below to your tailwind.config.js</p>\n    <pre class=\"!p-5 text-xs mt-3 border border-gray-200 rounded-lg \" style=\"padding:15px\"><code>module.exports = {\n    theme: {\n        extend: {\n            // Add custom keyframes\n            keyframes: {\n                marquee: {\n                    '0%': {\n                        transform: 'translateX(0)'\n                    },\n                    '100%': {\n                        transform: 'translateX(-100%)'\n                    },\n                },\n            },\n            // Add custom animations\n            animation: {\n                'marquee': 'marquee 20s linear infinite',\n            },\n        },\n    },\n    plugins: [],\n}</code></pre>\n</div>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "marquee-additional",
+      "name": "marquee-additional",
+      "path": "elements/marquee-additional.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_marquee-additional",
+      "name": "marquee-additional",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/marquee-additional.html",
+          "content": "<div class=\"mt-5 text-sm\">\n    <h3 class=\"mt-2 mb-2 text-2xl font-bold tracking-tight select-none custom-font\">Tailwind Config</h3>\n    <p class=\"text-gray-600\">To implement the `animate-marquee` class from your tailwind config, add the code below to your tailwind.config.js</p>\n    <pre class=\"!p-5 text-xs mt-3 border border-gray-200 rounded-lg \" style=\"padding:15px\"><code>module.exports = {\n    theme: {\n        extend: {\n            // Add custom keyframes\n            keyframes: {\n                marquee: {\n                    '0%': {\n                        transform: 'translateX(0)'\n                    },\n                    '100%': {\n                        transform: 'translateX(-100%)'\n                    },\n                },\n            },\n            // Add custom animations\n            animation: {\n                'marquee': 'marquee 20s linear infinite',\n            },\n        },\n    },\n    plugins: [],\n}</code></pre>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

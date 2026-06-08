@@ -1,0 +1,23 @@
+{
+  "id": "login-02",
+  "name": "login-02",
+  "source_code": "",
+  "description": "A two column login page with a cover image.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-02",
+      "type": "registry:block",
+      "description": "A two column login page with a cover image.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-02\n\nA two column login page with a cover image.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

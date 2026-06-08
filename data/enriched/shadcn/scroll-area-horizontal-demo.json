@@ -1,0 +1,38 @@
+{
+  "id": "scroll-area-horizontal-demo",
+  "name": "scroll-area-horizontal-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "scrollable",
+    "horizontal",
+    "navigation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area-horizontal-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## scroll-area-horizontal-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A scrollable area with a horizontal bar that displays a horizontal scroll bar when the content exceeds the available width, often used in applications with lists or information that spans across the screen.",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [
+    "smooth",
+    "animated"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: scroll-area-horizontal-demo\nDescription: A scrollable area with a horizontal bar that displays a horizontal scroll bar when the content exceeds the available width, often used in applications with lists or information that spans across the screen.\nStyle: modern\nInteractions: smooth, animated\nTags: scrollable, horizontal, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "scroll-area-horizontal-demo",
+  "display_name": "Scroll Area Horizontal Demo",
+  "preview_url": "/previews/shadcn/scroll-area-horizontal-demo.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "sidebar-group-collapsible",
+  "name": "sidebar-group-collapsible",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "sidebar",
+    "collapsible",
+    "group",
+    "navigation",
+    "menus"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-group-collapsible",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-group-collapsible\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A collapsible sidebar group component allowing developers to create expandable content sections in their applications. This component is useful when implementing navigations, menus, or additional context within a sidebar. It enhances user experience by providing a compact and space-saving way to disclose and display supplementary information.",
+  "style_tags": [
+    "modular",
+    "responsive",
+    "material-design-inspired"
+  ],
+  "interaction_tags": [
+    "click",
+    "expand",
+    "collapse"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: sidebar-group-collapsible\nDescription: A collapsible sidebar group component allowing developers to create expandable content sections in their applications. This component is useful when implementing navigations, menus, or additional context within a sidebar. It enhances user experience by providing a compact and space-saving way to disclose and display supplementary information.\nStyle: modular, responsive, material-design-inspired\nInteractions: click, expand, collapse\nTags: sidebar, collapsible, group, navigation, menus\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-group-collapsible",
+  "display_name": "Sidebar Group Collapsible",
+  "preview_url": "/previews/shadcn/sidebar-group-collapsible.png"
+}

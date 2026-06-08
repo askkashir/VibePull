@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalTitle",
+  "name": "ModalTitle",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalTitle.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseTitle, ModalBaseTitleProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalTitleStylesNames = 'title';\n\nexport interface ModalTitleProps\n  extends ModalBaseTitleProps, CompoundStylesApiProps<ModalTitleFactory> {}\n\nexport type ModalTitleFactory = Factory<{\n  props: ModalTitleProps;\n  ref: HTMLHeadingElement;\n  stylesNames: ModalTitleStylesNames;\n  compound: true;\n}>;\n\nexport const ModalTitle = factory<ModalTitleFactory>((_props) => {\n  const props = useProps('ModalTitle', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseTitle\n      {...ctx.getStyles('title', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalTitle.classes = classes;\nModalTitle.displayName = '@mantine/core/ModalTitle';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "title"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalTitle",
+      "name": "ModalTitle",
+      "path": "packages/@mantine/core/src/components/Modal/ModalTitle.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalTitle",
+      "name": "ModalTitle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalTitle.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseTitle, ModalBaseTitleProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalTitleStylesNames = 'title';\n\nexport interface ModalTitleProps\n  extends ModalBaseTitleProps, CompoundStylesApiProps<ModalTitleFactory> {}\n\nexport type ModalTitleFactory = Factory<{\n  props: ModalTitleProps;\n  ref: HTMLHeadingElement;\n  stylesNames: ModalTitleStylesNames;\n  compound: true;\n}>;\n\nexport const ModalTitle = factory<ModalTitleFactory>((_props) => {\n  const props = useProps('ModalTitle', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseTitle\n      {...ctx.getStyles('title', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalTitle.classes = classes;\nModalTitle.displayName = '@mantine/core/ModalTitle';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalTitle is a modal title UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalTitle\nDescription: ModalTitle is a modal title UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: mantine, modal, title\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/ModalTitle.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseTitle, ModalBaseTitleProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalTitleStylesNames = 'title';\n\nexport interface ModalTitleProps\n  extends ModalBaseTitleProps, CompoundStylesApiProps<ModalTitleFactory> {}\n\nexport type ModalTitleFactory = Factory",
+  "prompt_version": 2,
+  "clean_id": "modal-title",
+  "display_name": "Modal Title",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modaltitle.png"
+}

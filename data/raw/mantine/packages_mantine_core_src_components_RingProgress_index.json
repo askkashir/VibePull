@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_RingProgress_index",
+  "name": "RingProgress",
+  "source_code": "// packages/@mantine/core/src/components/RingProgress/index.ts\nimport type {\n  RingProgressCssVariables,\n  RingProgressFactory,\n  RingProgressProps,\n  RingProgressSection,\n  RingProgressStylesNames,\n} from './RingProgress';\n\nexport { RingProgress } from './RingProgress';\n\nexport type {\n  RingProgressProps,\n  RingProgressStylesNames,\n  RingProgressFactory,\n  RingProgressCssVariables,\n  RingProgressSection,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RingProgress_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/RingProgress/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RingProgress_index",
+      "name": "RingProgress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RingProgress/index.ts",
+          "content": "import type {\n  RingProgressCssVariables,\n  RingProgressFactory,\n  RingProgressProps,\n  RingProgressSection,\n  RingProgressStylesNames,\n} from './RingProgress';\n\nexport { RingProgress } from './RingProgress';\n\nexport type {\n  RingProgressProps,\n  RingProgressStylesNames,\n  RingProgressFactory,\n  RingProgressCssVariables,\n  RingProgressSection,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

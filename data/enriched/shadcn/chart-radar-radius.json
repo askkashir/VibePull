@@ -1,0 +1,41 @@
+{
+  "id": "chart-radar-radius",
+  "name": "chart-radar-radius",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "Data Visualization",
+    "Radar Chart",
+    "Performance Metrics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-radius",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-radius\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Radar Radius Chart is a reusable UI component that displays radar chart data with customizable radius for highlighting key performance indicators. It is typically used to visualize complex data sets in a compact and engaging way. This component is ideal for presenting data in a non-traditional and interactive manner, making it a great choice for data-driven applications.",
+  "style_tags": [
+    "Dark Mode",
+    "Minimalist Design",
+    "HighContrast"
+  ],
+  "interaction_tags": [
+    "Animated Traversal",
+    "Hover Effects",
+    "Responsive Design"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: chart-radar-radius\nDescription: Radar Radius Chart is a reusable UI component that displays radar chart data with customizable radius for highlighting key performance indicators. It is typically used to visualize complex data sets in a compact and engaging way. This component is ideal for presenting data in a non-traditional and interactive manner, making it a great choice for data-driven applications.\nStyle: Dark Mode, Minimalist Design, HighContrast\nInteractions: Animated Traversal, Hover Effects, Responsive Design\nTags: Data Visualization, Radar Chart, Performance Metrics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-radius",
+  "display_name": "Chart Radar Radius",
+  "preview_url": "/previews/shadcn/chart-radar-radius.png"
+}

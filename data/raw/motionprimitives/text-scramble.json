@@ -1,0 +1,42 @@
+{
+  "id": "text-scramble",
+  "name": "text-scramble",
+  "source_code": "// components/core/text-scramble.tsx\n'use client';\nimport { type JSX, useEffect, useState } from 'react';\nimport { motion, MotionProps } from 'motion/react';\n\nexport type TextScrambleProps = {\n  children: string;\n  duration?: number;\n  speed?: number;\n  characterSet?: string;\n  as?: React.ElementType;\n  className?: string;\n  trigger?: boolean;\n  onScrambleComplete?: () => void;\n} & MotionProps;\n\nconst defaultChars =\n  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\nexport function TextScramble({\n  children,\n  duration = 0.8,\n  speed = 0.04,\n  characterSet = defaultChars,\n  className,\n  as: Component = 'p',\n  trigger = true,\n  onScrambleComplete,\n  ...props\n}: TextScrambleProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n  const [scrambledText, setScrambledText] = useState<string | null>(null);\n  const [isAnimating, setIsAnimating] = useState(false);\n  const text = children;\n  const displayText = scrambledText ?? children;\n\n  const scramble = async () => {\n    if (isAnimating) return;\n    setIsAnimating(true);\n\n    const steps = duration / speed;\n    let step = 0;\n\n    const interval = setInterval(() => {\n      let scrambled = '';\n      const progress = step / steps;\n\n      for (let i = 0; i < text.length; i++) {\n        if (text[i] === ' ') {\n          scrambled += ' ';\n          continue;\n        }\n\n        if (progress * text.length > i) {\n          scrambled += text[i];\n        } else {\n          scrambled +=\n            characterSet[Math.floor(Math.random() * characterSet.length)];\n        }\n      }\n\n      setScrambledText(scrambled);\n      step++;\n\n      if (step > steps) {\n        clearInterval(interval);\n        setScrambledText(null);\n        setIsAnimating(false);\n        onScrambleComplete?.();\n      }\n    }, speed * 1000);\n  };\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    scramble();\n  }, [trigger]);\n\n  return (\n    <MotionComponent className={className} {...props}>\n      {displayText}\n    </MotionComponent>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "file",
+    "motionprimitives",
+    "registry:ui"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-scramble.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-scramble.tsx",
+      "sha": "93104ead82aa9cb7961bc52dc1a13d092d1ec965",
+      "size": 1999,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-scramble.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-scramble.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/93104ead82aa9cb7961bc52dc1a13d092d1ec965",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-scramble.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-scramble.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/93104ead82aa9cb7961bc52dc1a13d092d1ec965",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-scramble.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-scramble",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-scramble.tsx",
+          "content": "'use client';\nimport { type JSX, useEffect, useState } from 'react';\nimport { motion, MotionProps } from 'motion/react';\n\nexport type TextScrambleProps = {\n  children: string;\n  duration?: number;\n  speed?: number;\n  characterSet?: string;\n  as?: React.ElementType;\n  className?: string;\n  trigger?: boolean;\n  onScrambleComplete?: () => void;\n} & MotionProps;\n\nconst defaultChars =\n  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\nexport function TextScramble({\n  children,\n  duration = 0.8,\n  speed = 0.04,\n  characterSet = defaultChars,\n  className,\n  as: Component = 'p',\n  trigger = true,\n  onScrambleComplete,\n  ...props\n}: TextScrambleProps) {\n  const MotionComponent = motion.create(\n    Component as keyof JSX.IntrinsicElements\n  );\n  const [scrambledText, setScrambledText] = useState<string | null>(null);\n  const [isAnimating, setIsAnimating] = useState(false);\n  const text = children;\n  const displayText = scrambledText ?? children;\n\n  const scramble = async () => {\n    if (isAnimating) return;\n    setIsAnimating(true);\n\n    const steps = duration / speed;\n    let step = 0;\n\n    const interval = setInterval(() => {\n      let scrambled = '';\n      const progress = step / steps;\n\n      for (let i = 0; i < text.length; i++) {\n        if (text[i] === ' ') {\n          scrambled += ' ';\n          continue;\n        }\n\n        if (progress * text.length > i) {\n          scrambled += text[i];\n        } else {\n          scrambled +=\n            characterSet[Math.floor(Math.random() * characterSet.length)];\n        }\n      }\n\n      setScrambledText(scrambled);\n      step++;\n\n      if (step > steps) {\n        clearInterval(interval);\n        setScrambledText(null);\n        setIsAnimating(false);\n        onScrambleComplete?.();\n      }\n    }, speed * 1000);\n  };\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    scramble();\n  }, [trigger]);\n\n  return (\n    <MotionComponent className={className} {...props}>\n      {displayText}\n    </MotionComponent>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

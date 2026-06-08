@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_Transition_Transition.story",
+  "name": "Transition.story",
+  "source_code": "// packages/@mantine/core/src/components/Transition/Transition.story.tsx\nimport { useState } from 'react';\nimport { Button, NumberInput } from '../..';\nimport { Transition } from './Transition';\n\nexport default { title: 'Transition' };\n\nexport function Usage() {\n  const [mounted, setMounted] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\">\n        {(styles) => (\n          <div style={{ ...styles, background: 'pink', padding: 40 }}>Transition me</div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function ExitDuration() {\n  const [mounted, setMounted] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\" duration={100} exitDuration={1000}>\n        {(styles) => (\n          <div\n            style={{\n              ...styles,\n              background: 'pink',\n              padding: 40,\n              position: 'absolute',\n              bottom: 100,\n            }}\n          >\n            Transition me\n          </div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function WithDelay() {\n  const [mounted, setMounted] = useState(false);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\" enterDelay={500} exitDelay={100}>\n        {(styles) => (\n          <div style={{ ...styles, background: 'pink', padding: 40 }}>Transition me</div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function WithActivityStatePreservation() {\n  const [mounted, setMounted] = useState(true);\n  const [value, setValue] = useState(42);\n\n  return (\n    <div style={{ padding: 40, display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 400 }}>\n      <p style={{ margin: 0, fontSize: 14, color: '#666' }}>\n        <strong>keepMounted + Activity</strong>: state inside the transition is preserved when\n        hidden. Toggle the panel and notice the NumberInput value stays intact.\n      </p>\n\n      <Transition mounted={mounted} transition=\"fade\" keepMounted>\n        {(styles) => (\n          <div style={{ ...styles, background: '#f0f4ff', borderRadius: 8, padding: 20 }}>\n            <p style={{ margin: '0 0 12px', fontWeight: 600 }}>Hidden but state-preserved panel</p>\n            <NumberInput\n              label=\"Value (survives hide/show)\"\n              value={value}\n              onChange={(v) => setValue(typeof v === 'number' ? v : 0)}\n            />\n          </div>\n        )}\n      </Transition>\n\n      <Button onClick={() => setMounted((m) => !m)}>{mounted ? 'Hide panel' : 'Show panel'}</Button>\n\n      <p style={{ margin: 0, fontSize: 13, color: '#888' }}>\n        Current value reported outside the panel: <strong>{value}</strong>\n      </p>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "story",
+    "transition"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Transition_Transition.story",
+      "name": "Transition.story",
+      "path": "packages/@mantine/core/src/components/Transition/Transition.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Transition_Transition.story",
+      "name": "Transition.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Transition/Transition.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Button, NumberInput } from '../..';\nimport { Transition } from './Transition';\n\nexport default { title: 'Transition' };\n\nexport function Usage() {\n  const [mounted, setMounted] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\">\n        {(styles) => (\n          <div style={{ ...styles, background: 'pink', padding: 40 }}>Transition me</div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function ExitDuration() {\n  const [mounted, setMounted] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\" duration={100} exitDuration={1000}>\n        {(styles) => (\n          <div\n            style={{\n              ...styles,\n              background: 'pink',\n              padding: 40,\n              position: 'absolute',\n              bottom: 100,\n            }}\n          >\n            Transition me\n          </div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function WithDelay() {\n  const [mounted, setMounted] = useState(false);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\" enterDelay={500} exitDelay={100}>\n        {(styles) => (\n          <div style={{ ...styles, background: 'pink', padding: 40 }}>Transition me</div>\n        )}\n      </Transition>\n\n      <button type=\"button\" onClick={() => setMounted((m) => !m)}>\n        toggle\n      </button>\n    </div>\n  );\n}\n\nexport function WithActivityStatePreservation() {\n  const [mounted, setMounted] = useState(true);\n  const [value, setValue] = useState(42);\n\n  return (\n    <div style={{ padding: 40, display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 400 }}>\n      <p style={{ margin: 0, fontSize: 14, color: '#666' }}>\n        <strong>keepMounted + Activity</strong>: state inside the transition is preserved when\n        hidden. Toggle the panel and notice the NumberInput value stays intact.\n      </p>\n\n      <Transition mounted={mounted} transition=\"fade\" keepMounted>\n        {(styles) => (\n          <div style={{ ...styles, background: '#f0f4ff', borderRadius: 8, padding: 20 }}>\n            <p style={{ margin: '0 0 12px', fontWeight: 600 }}>Hidden but state-preserved panel</p>\n            <NumberInput\n              label=\"Value (survives hide/show)\"\n              value={value}\n              onChange={(v) => setValue(typeof v === 'number' ? v : 0)}\n            />\n          </div>\n        )}\n      </Transition>\n\n      <Button onClick={() => setMounted((m) => !m)}>{mounted ? 'Hide panel' : 'Show panel'}</Button>\n\n      <p style={{ margin: 0, fontSize: 13, color: '#888' }}>\n        Current value reported outside the panel: <strong>{value}</strong>\n      </p>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Transition.story is a transition story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated",
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Transition.story\nDescription: Transition.story is a transition story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated, interactive\nTags: mantine, other, story, transition\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Transition/Transition.story.tsx\nimport { useState } from 'react';\nimport { Button, NumberInput } from '../..';\nimport { Transition } from './Transition';\n\nexport default { title: 'Transition' };\n\nexport function Usage() {\n  const [mounted, setMounted] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <Transition mounted={mounted} transition=\"pop\">\n        {(styles) => (\n          <div style={{ ...styles, background: 'pink', padding: 40",
+  "prompt_version": 2,
+  "clean_id": "transition",
+  "display_name": "Transition",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-transition-transition-story.png"
+}

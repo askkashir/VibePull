@@ -1,0 +1,59 @@
+{
+  "id": "packages_radix-ui-themes_src_components_tab-nav",
+  "name": "tab-nav",
+  "source_code": "// packages/radix-ui-themes/src/components/tab-nav.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { NavigationMenu } from 'radix-ui';\n\nimport { tabNavRootPropDefs } from './tab-nav.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { tabNavLinkPropDefs } from './tab-nav.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TabNavRootElement = React.ElementRef<typeof NavigationMenu.Root>;\ntype TabNavRootElementProps = ComponentPropsWithout<'nav', RemovedProps>;\ntype TabNavOwnProps = GetPropDefTypes<typeof tabNavRootPropDefs>;\ninterface TabNavRootProps\n  extends\n    Omit<TabNavRootElementProps, 'defaultValue' | 'dir' | 'color'>,\n    MarginProps,\n    TabNavOwnProps {}\nconst TabNavRoot = React.forwardRef<TabNavRootElement, TabNavRootProps>((props, forwardedRef) => {\n  const { children, className, color, ...rootProps } = extractProps(\n    props,\n    tabNavRootPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <NavigationMenu.Root\n      className=\"rt-TabNavRoot\"\n      data-accent-color={color}\n      {...rootProps}\n      asChild={false}\n      ref={forwardedRef}\n    >\n      <NavigationMenu.List\n        className={classNames('rt-reset', 'rt-BaseTabList', 'rt-TabNavList', className)}\n      >\n        {children}\n      </NavigationMenu.List>\n    </NavigationMenu.Root>\n  );\n});\nTabNavRoot.displayName = 'TabNav.Root';\n\ntype TabNavLinkElement = React.ElementRef<typeof NavigationMenu.Link>;\ntype TabNavLinkOwnProps = GetPropDefTypes<typeof tabNavLinkPropDefs>;\ninterface TabNavLinkProps\n  extends\n    ComponentPropsWithout<typeof NavigationMenu.Link, RemovedProps | 'onSelect'>,\n    TabNavLinkOwnProps {}\nconst TabNavLink = React.forwardRef<TabNavLinkElement, TabNavLinkProps>((props, forwardedRef) => {\n  const { asChild, children, className, ...linkProps } = props;\n\n  return (\n    <NavigationMenu.Item className=\"rt-TabNavItem\">\n      <NavigationMenu.Link\n        {...linkProps}\n        ref={forwardedRef}\n        className={classNames('rt-reset', 'rt-BaseTabListTrigger', 'rt-TabNavLink', className)}\n        onSelect={undefined}\n        asChild={asChild}\n      >\n        {getSubtree({ asChild, children }, (children) => (\n          <>\n            <span className=\"rt-BaseTabListTriggerInner rt-TabNavLinkInner\">{children}</span>\n            <span className=\"rt-BaseTabListTriggerInnerHidden rt-TabNavLinkInnerHidden\">\n              {children}\n            </span>\n          </>\n        ))}\n      </NavigationMenu.Link>\n    </NavigationMenu.Item>\n  );\n});\nTabNavLink.displayName = 'TabNav.Link';\n\nexport { TabNavRoot as Root, TabNavLink as Link };\nexport type { TabNavRootProps as RootProps, TabNavLinkProps as LinkProps };\n",
+  "description": "",
+  "tags": [
+    "tab",
+    "navigation",
+    "components"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_tab-nav",
+      "name": "tab-nav.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/tab-nav.tsx",
+      "sha": "4556487c7b7d2615bca0a0814185961c999ce6b3",
+      "size": 2933,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/tab-nav.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/tab-nav.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/4556487c7b7d2615bca0a0814185961c999ce6b3",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/tab-nav.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/tab-nav.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/4556487c7b7d2615bca0a0814185961c999ce6b3",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/tab-nav.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_tab-nav",
+      "name": "tab-nav",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/tab-nav.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { NavigationMenu } from 'radix-ui';\n\nimport { tabNavRootPropDefs } from './tab-nav.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { tabNavLinkPropDefs } from './tab-nav.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TabNavRootElement = React.ElementRef<typeof NavigationMenu.Root>;\ntype TabNavRootElementProps = ComponentPropsWithout<'nav', RemovedProps>;\ntype TabNavOwnProps = GetPropDefTypes<typeof tabNavRootPropDefs>;\ninterface TabNavRootProps\n  extends\n    Omit<TabNavRootElementProps, 'defaultValue' | 'dir' | 'color'>,\n    MarginProps,\n    TabNavOwnProps {}\nconst TabNavRoot = React.forwardRef<TabNavRootElement, TabNavRootProps>((props, forwardedRef) => {\n  const { children, className, color, ...rootProps } = extractProps(\n    props,\n    tabNavRootPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <NavigationMenu.Root\n      className=\"rt-TabNavRoot\"\n      data-accent-color={color}\n      {...rootProps}\n      asChild={false}\n      ref={forwardedRef}\n    >\n      <NavigationMenu.List\n        className={classNames('rt-reset', 'rt-BaseTabList', 'rt-TabNavList', className)}\n      >\n        {children}\n      </NavigationMenu.List>\n    </NavigationMenu.Root>\n  );\n});\nTabNavRoot.displayName = 'TabNav.Root';\n\ntype TabNavLinkElement = React.ElementRef<typeof NavigationMenu.Link>;\ntype TabNavLinkOwnProps = GetPropDefTypes<typeof tabNavLinkPropDefs>;\ninterface TabNavLinkProps\n  extends\n    ComponentPropsWithout<typeof NavigationMenu.Link, RemovedProps | 'onSelect'>,\n    TabNavLinkOwnProps {}\nconst TabNavLink = React.forwardRef<TabNavLinkElement, TabNavLinkProps>((props, forwardedRef) => {\n  const { asChild, children, className, ...linkProps } = props;\n\n  return (\n    <NavigationMenu.Item className=\"rt-TabNavItem\">\n      <NavigationMenu.Link\n        {...linkProps}\n        ref={forwardedRef}\n        className={classNames('rt-reset', 'rt-BaseTabListTrigger', 'rt-TabNavLink', className)}\n        onSelect={undefined}\n        asChild={asChild}\n      >\n        {getSubtree({ asChild, children }, (children) => (\n          <>\n            <span className=\"rt-BaseTabListTriggerInner rt-TabNavLinkInner\">{children}</span>\n            <span className=\"rt-BaseTabListTriggerInnerHidden rt-TabNavLinkInnerHidden\">\n              {children}\n            </span>\n          </>\n        ))}\n      </NavigationMenu.Link>\n    </NavigationMenu.Item>\n  );\n});\nTabNavLink.displayName = 'TabNav.Link';\n\nexport { TabNavRoot as Root, TabNavLink as Link };\nexport type { TabNavRootProps as RootProps, TabNavLinkProps as LinkProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A navigation tab component used to display a list of tabs, typically at the top or bottom of a page. Developers would use this component when they need to implement tab navigation for their users.",
+  "style_tags": [
+    "clean",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: tab-nav\nDescription: A navigation tab component used to display a list of tabs, typically at the top or bottom of a page. Developers would use this component when they need to implement tab navigation for their users.\nStyle: clean, minimal\nInteractions: clickable, animated\nTags: tab, navigation, components\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/tab-nav.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { NavigationMenu } from 'radix-ui';\n\nimport { tabNavRootPropDefs } from './tab-nav.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { getSubtree } from '../helpers/get-subtree.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { tabNavLinkPropDefs } from './tab-nav.props.js';\nimport type { MarginProps } from '../",
+  "prompt_version": 2,
+  "clean_id": "tab-nav",
+  "display_name": "Tab Nav",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-tab-nav.png"
+}

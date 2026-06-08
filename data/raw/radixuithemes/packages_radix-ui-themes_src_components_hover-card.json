@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_hover-card",
+  "name": "hover-card",
+  "source_code": "// packages/radix-ui-themes/src/components/hover-card.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { HoverCard as HoverCardPrimitive } from 'radix-ui';\n\nimport { hoverCardContentPropDefs } from './hover-card.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { requireReactElement } from '../helpers/require-react-element.js';\nimport { Theme } from './theme.js';\n\nimport type { HoverCardContentOwnProps } from './hover-card.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ninterface HoverCardRootProps extends React.ComponentPropsWithoutRef<\n  typeof HoverCardPrimitive.Root\n> {}\nconst HoverCardRoot: React.FC<HoverCardRootProps> = (props) => (\n  <HoverCardPrimitive.Root closeDelay={150} openDelay={200} {...props} />\n);\nHoverCardRoot.displayName = 'HoverCard.Root';\n\ntype HoverCardTriggerElement = React.ElementRef<typeof HoverCardPrimitive.Trigger>;\ninterface HoverCardTriggerProps extends ComponentPropsWithout<\n  typeof HoverCardPrimitive.Trigger,\n  RemovedProps\n> {}\nconst HoverCardTrigger = React.forwardRef<HoverCardTriggerElement, HoverCardTriggerProps>(\n  ({ children, className, ...props }, forwardedRef) => (\n    <HoverCardPrimitive.Trigger\n      ref={forwardedRef}\n      className={classNames('rt-HoverCardTrigger', className)}\n      {...props}\n      asChild\n    >\n      {requireReactElement(children)}\n    </HoverCardPrimitive.Trigger>\n  ),\n);\nHoverCardTrigger.displayName = 'HoverCard.Trigger';\n\ntype HoverCardContentElement = React.ElementRef<typeof HoverCardPrimitive.Content>;\ninterface HoverCardContentProps\n  extends\n    ComponentPropsWithout<typeof HoverCardPrimitive.Content, RemovedProps>,\n    HoverCardContentOwnProps {\n  container?: React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Portal>['container'];\n}\nconst HoverCardContent = React.forwardRef<HoverCardContentElement, HoverCardContentProps>(\n  (props, forwardedRef) => {\n    const { className, forceMount, container, ...contentProps } = extractProps(\n      props,\n      hoverCardContentPropDefs,\n    );\n    return (\n      <HoverCardPrimitive.Portal container={container} forceMount={forceMount}>\n        <Theme asChild>\n          <HoverCardPrimitive.Content\n            align=\"start\"\n            sideOffset={8}\n            collisionPadding={10}\n            {...contentProps}\n            ref={forwardedRef}\n            className={classNames('rt-PopperContent', 'rt-HoverCardContent', className)}\n          />\n        </Theme>\n      </HoverCardPrimitive.Portal>\n    );\n  },\n);\nHoverCardContent.displayName = 'HoverCard.Content';\n\nexport { HoverCardRoot as Root, HoverCardTrigger as Trigger, HoverCardContent as Content };\nexport type {\n  HoverCardRootProps as RootProps,\n  HoverCardTriggerProps as TriggerProps,\n  HoverCardContentProps as ContentProps,\n};\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_hover-card",
+      "name": "hover-card.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/hover-card.tsx",
+      "sha": "998bfab147503f77bde7f4a7e9d7a3ce38dc7d2b",
+      "size": 2799,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/hover-card.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/hover-card.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/998bfab147503f77bde7f4a7e9d7a3ce38dc7d2b",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/hover-card.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/hover-card.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/998bfab147503f77bde7f4a7e9d7a3ce38dc7d2b",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/hover-card.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_hover-card",
+      "name": "hover-card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/hover-card.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { HoverCard as HoverCardPrimitive } from 'radix-ui';\n\nimport { hoverCardContentPropDefs } from './hover-card.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { requireReactElement } from '../helpers/require-react-element.js';\nimport { Theme } from './theme.js';\n\nimport type { HoverCardContentOwnProps } from './hover-card.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ninterface HoverCardRootProps extends React.ComponentPropsWithoutRef<\n  typeof HoverCardPrimitive.Root\n> {}\nconst HoverCardRoot: React.FC<HoverCardRootProps> = (props) => (\n  <HoverCardPrimitive.Root closeDelay={150} openDelay={200} {...props} />\n);\nHoverCardRoot.displayName = 'HoverCard.Root';\n\ntype HoverCardTriggerElement = React.ElementRef<typeof HoverCardPrimitive.Trigger>;\ninterface HoverCardTriggerProps extends ComponentPropsWithout<\n  typeof HoverCardPrimitive.Trigger,\n  RemovedProps\n> {}\nconst HoverCardTrigger = React.forwardRef<HoverCardTriggerElement, HoverCardTriggerProps>(\n  ({ children, className, ...props }, forwardedRef) => (\n    <HoverCardPrimitive.Trigger\n      ref={forwardedRef}\n      className={classNames('rt-HoverCardTrigger', className)}\n      {...props}\n      asChild\n    >\n      {requireReactElement(children)}\n    </HoverCardPrimitive.Trigger>\n  ),\n);\nHoverCardTrigger.displayName = 'HoverCard.Trigger';\n\ntype HoverCardContentElement = React.ElementRef<typeof HoverCardPrimitive.Content>;\ninterface HoverCardContentProps\n  extends\n    ComponentPropsWithout<typeof HoverCardPrimitive.Content, RemovedProps>,\n    HoverCardContentOwnProps {\n  container?: React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Portal>['container'];\n}\nconst HoverCardContent = React.forwardRef<HoverCardContentElement, HoverCardContentProps>(\n  (props, forwardedRef) => {\n    const { className, forceMount, container, ...contentProps } = extractProps(\n      props,\n      hoverCardContentPropDefs,\n    );\n    return (\n      <HoverCardPrimitive.Portal container={container} forceMount={forceMount}>\n        <Theme asChild>\n          <HoverCardPrimitive.Content\n            align=\"start\"\n            sideOffset={8}\n            collisionPadding={10}\n            {...contentProps}\n            ref={forwardedRef}\n            className={classNames('rt-PopperContent', 'rt-HoverCardContent', className)}\n          />\n        </Theme>\n      </HoverCardPrimitive.Portal>\n    );\n  },\n);\nHoverCardContent.displayName = 'HoverCard.Content';\n\nexport { HoverCardRoot as Root, HoverCardTrigger as Trigger, HoverCardContent as Content };\nexport type {\n  HoverCardRootProps as RootProps,\n  HoverCardTriggerProps as TriggerProps,\n  HoverCardContentProps as ContentProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

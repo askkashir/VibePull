@@ -1,0 +1,23 @@
+{
+  "id": "signup-01",
+  "name": "signup-01",
+  "source_code": "",
+  "description": "A simple signup form.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-01",
+      "type": "registry:block",
+      "description": "A simple signup form.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-01\n\nA simple signup form.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_Footer_BorderGradient",
+  "name": "BorderGradient",
+  "source_code": "// components/ui/Footer/BorderGradient.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"755\"\n    height=\"3\"\n    viewBox=\"0 0 755 3\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <rect width=\"755\" height=\"3\" fill=\"url(#paint0_radial_3324_13394)\" />\n    <defs>\n      <radialGradient\n        id=\"paint0_radial_3324_13394\"\n        cx=\"0\"\n        cy=\"0\"\n        r=\"1\"\n        gradientUnits=\"userSpaceOnUse\"\n        gradientTransform=\"translate(377.5 1.5) rotate(90) scale(1.5 377.5)\"\n      >\n        <stop stop-color=\"#3F3F46\" />\n        <stop offset=\"1\" stop-color=\"#3F3F46\" stop-opacity=\"0\" />\n      </radialGradient>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "border",
+    "floatui",
+    "gradient",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Footer_BorderGradient",
+      "name": "BorderGradient",
+      "path": "components/ui/Footer/BorderGradient.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Footer_BorderGradient",
+      "name": "BorderGradient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Footer/BorderGradient.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"755\"\n    height=\"3\"\n    viewBox=\"0 0 755 3\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <rect width=\"755\" height=\"3\" fill=\"url(#paint0_radial_3324_13394)\" />\n    <defs>\n      <radialGradient\n        id=\"paint0_radial_3324_13394\"\n        cx=\"0\"\n        cy=\"0\"\n        r=\"1\"\n        gradientUnits=\"userSpaceOnUse\"\n        gradientTransform=\"translate(377.5 1.5) rotate(90) scale(1.5 377.5)\"\n      >\n        <stop stop-color=\"#3F3F46\" />\n        <stop offset=\"1\" stop-color=\"#3F3F46\" stop-opacity=\"0\" />\n      </radialGradient>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BorderGradient is a border gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BorderGradient\nDescription: BorderGradient is a border gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, utility-styled\nInteractions: \nTags: border, floatui, gradient, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Footer/BorderGradient.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"755\"\n    height=\"3\"\n    viewBox=\"0 0 755 3\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <rect width=\"755\" height=\"3\" fill=\"url(#paint0_radial_3324_13394)\" />\n    <defs>\n      <radialGradient\n        id=\"paint0_radial_3324_13394\"\n        cx=\"0\"\n        cy=\"0\"\n        r=\"1\"\n        gr",
+  "prompt_version": 2,
+  "clean_id": "border-gradient",
+  "display_name": "Border Gradient",
+  "preview_url": "/previews/floatui/components-ui-footer-bordergradient.png"
+}

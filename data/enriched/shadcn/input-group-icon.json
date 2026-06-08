@@ -1,0 +1,41 @@
+{
+  "id": "input-group-icon",
+  "name": "input-group-icon",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "icon",
+    "search",
+    "settings"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-icon",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-group-icon\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The input-group-icon component is a compact UI element that combines an input field with an icon, used for search, settings, or any form-related applications where instant feedback is essential. It typically consists of a text input box, an icon, and a subtle border, making it easily recognizable and accessible. A developer would use this component when requiring a concise way to collect user input while providing additional context through a corresponding icon.",
+  "style_tags": [
+    "flat",
+    "modern"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-group-icon\nDescription: The input-group-icon component is a compact UI element that combines an input field with an icon, used for search, settings, or any form-related applications where instant feedback is essential. It typically consists of a text input box, an icon, and a subtle border, making it easily recognizable and accessible. A developer would use this component when requiring a concise way to collect user input while providing additional context through a corresponding icon.\nStyle: flat, modern\nInteractions: hover, clickable\nTags: form, input, icon, search, settings\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-group-icon",
+  "display_name": "Input Group Icon",
+  "preview_url": "/previews/shadcn/input-group-icon.png"
+}

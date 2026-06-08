@@ -1,0 +1,45 @@
+{
+  "id": "elements_alert",
+  "name": "alert",
+  "source_code": "// elements/alert.html\n<div class=\"relative w-full rounded-lg border bg-white p-4 [&>svg]:absolute [&>svg]:text-foreground [&>svg]:left-4 [&>svg]:top-4 [&>svg+div]:translate-y-[-3px] [&:has(svg)]:pl-11 text-neutral-900\">\n    <svg class=\"w-4 h-4\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" x2=\"20\" y1=\"19\" y2=\"19\"></line></svg>\n    <h5 class=\"mb-1 font-medium leading-none tracking-tight\">Alert Message Headline</h5>\n    <div class=\"text-sm opacity-70\">This is the subtext for your alert message, providing important information or instructions.</div>\n</div>\n",
+  "description": "",
+  "tags": [
+    "alert",
+    "message",
+    "notification"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "alert",
+      "name": "alert",
+      "path": "elements/alert.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_alert",
+      "name": "alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/alert.html",
+          "content": "<div class=\"relative w-full rounded-lg border bg-white p-4 [&>svg]:absolute [&>svg]:text-foreground [&>svg]:left-4 [&>svg]:top-4 [&>svg+div]:translate-y-[-3px] [&:has(svg)]:pl-11 text-neutral-900\">\n    <svg class=\"w-4 h-4\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" x2=\"20\" y1=\"19\" y2=\"19\"></line></svg>\n    <h5 class=\"mb-1 font-medium leading-none tracking-tight\">Alert Message Headline</h5>\n    <div class=\"text-sm opacity-70\">This is the subtext for your alert message, providing important information or instructions.</div>\n</div>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A rectangle with rounded corners, containing an icon and two lines of text. Useful for displaying important information or actions.",
+  "style_tags": [
+    "rounded",
+    "bordered",
+    "white-bg"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: alert\nDescription: A rectangle with rounded corners, containing an icon and two lines of text. Useful for displaying important information or actions.\nStyle: rounded, bordered, white-bg\nInteractions: \nTags: alert, message, notification\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/alert.html\n<div class=\"relative w-full rounded-lg border bg-white p-4 [&>svg]:absolute [&>svg]:text-foreground [&>svg]:left-4 [&>svg]:top-4 [&>svg+div]:translate-y-[-3px] [&:has(svg)]:pl-11 text-neutral-900\">\n    <svg class=\"w-4 h-4\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" x2=\"20\" y1=\"19\" y2=",
+  "prompt_version": 2,
+  "clean_id": "alert",
+  "display_name": "Alert",
+  "preview_url": "/previews/pinesui/elements-alert.png"
+}

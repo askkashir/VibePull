@@ -1,0 +1,40 @@
+{
+  "id": "signup-05",
+  "name": "signup-05",
+  "source_code": "",
+  "description": "A simple signup form with social providers.",
+  "tags": [
+    "form",
+    "signup",
+    "social media"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-05",
+      "type": "registry:block",
+      "description": "A simple signup form with social providers.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-05\n\nA simple signup form with social providers.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A horizontal block displaying a social signup form with options to sign up via Facebook, Google, or Email. It is typically used on a login or signup page, providing a simplified and accessible way to create an account.",
+  "style_tags": [
+    "light",
+    "flat"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "block",
+  "generation_prompt": "Create a production-ready block component with the following characteristics:\n\nName: signup-05\nDescription: A horizontal block displaying a social signup form with options to sign up via Facebook, Google, or Email. It is typically used on a login or signup page, providing a simplified and accessible way to create an account.\nStyle: light, flat\nInteractions: clickable, hover\nTags: form, signup, social media\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "signup-05",
+  "display_name": "Signup 05",
+  "preview_url": "/previews/shadcn/signup-05.png"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "textarea",
+  "name": "textarea",
+  "source_code": "// src/components/ui/textarea.tsx\nimport { Field } from '@ark-ui/react/field'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { textarea } from 'styled-system/recipes'\n\nexport type TextareaProps = ComponentProps<typeof Textarea>\nexport const Textarea = styled(Field.Textarea, textarea)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "exports": "export { Textarea, type TextareaProps } from './textarea'",
+          "content": "import { Field } from '@ark-ui/react/field'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { textarea } from 'styled-system/recipes'\n\nexport type TextareaProps = ComponentProps<typeof Textarea>\nexport const Textarea = styled(Field.Textarea, textarea)\n"
+        }
+      ],
+      "registryDependencies": [
+        "textarea-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "textarea",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "exports": "export { Textarea, type TextareaProps } from './textarea'",
+          "content": "import { Field } from '@ark-ui/react/field'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { textarea } from 'styled-system/recipes'\n\nexport type TextareaProps = ComponentProps<typeof Textarea>\nexport const Textarea = styled(Field.Textarea, textarea)\n"
+        }
+      ],
+      "registryDependencies": [
+        "textarea-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

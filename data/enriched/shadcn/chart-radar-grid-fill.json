@@ -1,0 +1,39 @@
+{
+  "id": "chart-radar-grid-fill",
+  "name": "chart-radar-grid-fill",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data-visualization",
+    "business",
+    "analytics",
+    "performance-metrics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-grid-fill",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-grid-fill\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart radar grid fill is a data visualization component used to display complex data in a radar chart format. It is typically used in business and analytics contexts to showcase performance metrics or data sets with multiple variables. This component would be suitable for developers looking to display intricate data relationships.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radar-grid-fill\nDescription: A chart radar grid fill is a data visualization component used to display complex data in a radar chart format. It is typically used in business and analytics contexts to showcase performance metrics or data sets with multiple variables. This component would be suitable for developers looking to display intricate data relationships.\nStyle: e.g. dark, minimal\nInteractions: e.g. hover\nTags: data-visualization, business, analytics, performance-metrics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-grid-fill",
+  "display_name": "Chart Radar Grid Fill",
+  "preview_url": "/previews/shadcn/chart-radar-grid-fill.png"
+}

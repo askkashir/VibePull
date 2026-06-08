@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_kbd_kbd.constants",
+  "name": "kbd.constants",
+  "source_code": "// packages/react/src/components/kbd/kbd.constants.ts\nexport type KbdKey =\n  | \"command\"\n  | \"shift\"\n  | \"ctrl\"\n  | \"option\"\n  | \"enter\"\n  | \"delete\"\n  | \"escape\"\n  | \"tab\"\n  | \"capslock\"\n  | \"up\"\n  | \"right\"\n  | \"down\"\n  | \"left\"\n  | \"pageup\"\n  | \"pagedown\"\n  | \"home\"\n  | \"end\"\n  | \"help\"\n  | \"space\"\n  | \"fn\"\n  | \"win\"\n  | \"alt\";\n\nexport const kbdKeysMap: Record<KbdKey, string> = {\n  command: \"⌘\",\n  shift: \"⇧\",\n  ctrl: \"⌃\",\n  option: \"⌥\",\n  enter: \"↵\",\n  delete: \"⌫\",\n  escape: \"⎋\",\n  tab: \"⇥\",\n  capslock: \"⇪\",\n  up: \"↑\",\n  right: \"→\",\n  down: \"↓\",\n  left: \"←\",\n  pageup: \"⇞\",\n  pagedown: \"⇟\",\n  home: \"↖\",\n  end: \"↘\",\n  help: \"?\",\n  space: \"␣\",\n  fn: \"Fn\",\n  win: \"⌘\",\n  alt: \"⌥\",\n};\n\nexport const kbdKeysLabelMap: Record<KbdKey, string> = {\n  command: \"Command\",\n  shift: \"Shift\",\n  ctrl: \"Control\",\n  option: \"Option\",\n  enter: \"Enter\",\n  delete: \"Delete\",\n  escape: \"Escape\",\n  tab: \"Tab\",\n  capslock: \"Caps Lock\",\n  up: \"Up\",\n  right: \"Right\",\n  down: \"Down\",\n  left: \"Left\",\n  pageup: \"Page Up\",\n  pagedown: \"Page Down\",\n  home: \"Home\",\n  end: \"End\",\n  help: \"Help\",\n  space: \"Space\",\n  fn: \"Fn\",\n  win: \"Win\",\n  alt: \"Alt\",\n};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "kbd_kbd.constants",
+      "name": "kbd.constants",
+      "path": "packages/react/src/components/kbd/kbd.constants.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_kbd_kbd.constants",
+      "name": "kbd.constants",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/kbd/kbd.constants.ts",
+          "content": "export type KbdKey =\n  | \"command\"\n  | \"shift\"\n  | \"ctrl\"\n  | \"option\"\n  | \"enter\"\n  | \"delete\"\n  | \"escape\"\n  | \"tab\"\n  | \"capslock\"\n  | \"up\"\n  | \"right\"\n  | \"down\"\n  | \"left\"\n  | \"pageup\"\n  | \"pagedown\"\n  | \"home\"\n  | \"end\"\n  | \"help\"\n  | \"space\"\n  | \"fn\"\n  | \"win\"\n  | \"alt\";\n\nexport const kbdKeysMap: Record<KbdKey, string> = {\n  command: \"⌘\",\n  shift: \"⇧\",\n  ctrl: \"⌃\",\n  option: \"⌥\",\n  enter: \"↵\",\n  delete: \"⌫\",\n  escape: \"⎋\",\n  tab: \"⇥\",\n  capslock: \"⇪\",\n  up: \"↑\",\n  right: \"→\",\n  down: \"↓\",\n  left: \"←\",\n  pageup: \"⇞\",\n  pagedown: \"⇟\",\n  home: \"↖\",\n  end: \"↘\",\n  help: \"?\",\n  space: \"␣\",\n  fn: \"Fn\",\n  win: \"⌘\",\n  alt: \"⌥\",\n};\n\nexport const kbdKeysLabelMap: Record<KbdKey, string> = {\n  command: \"Command\",\n  shift: \"Shift\",\n  ctrl: \"Control\",\n  option: \"Option\",\n  enter: \"Enter\",\n  delete: \"Delete\",\n  escape: \"Escape\",\n  tab: \"Tab\",\n  capslock: \"Caps Lock\",\n  up: \"Up\",\n  right: \"Right\",\n  down: \"Down\",\n  left: \"Left\",\n  pageup: \"Page Up\",\n  pagedown: \"Page Down\",\n  home: \"Home\",\n  end: \"End\",\n  help: \"Help\",\n  space: \"Space\",\n  fn: \"Fn\",\n  win: \"Win\",\n  alt: \"Alt\",\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

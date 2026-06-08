@@ -1,0 +1,43 @@
+{
+  "id": "form-tanstack-switch",
+  "name": "form-tanstack-switch",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "Tanstack Switch",
+    "boolean",
+    "select"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-switch",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-switch\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "A customizable form component that includes a Tanstack Switch. It's typically used when a boolean value needs to be selected and can serve as a replacement for traditional checkboxes. Developers can integrate it into their forms to enhance user input and improve overall usability.",
+  "style_tags": [
+    "e.g. default",
+    "primary",
+    "success",
+    "danger"
+  ],
+  "interaction_tags": [
+    "e.g. controlled",
+    "uncontrolled",
+    "disabled"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-switch\nDescription: A customizable form component that includes a Tanstack Switch. It's typically used when a boolean value needs to be selected and can serve as a replacement for traditional checkboxes. Developers can integrate it into their forms to enhance user input and improve overall usability.\nStyle: e.g. default, primary, success, danger\nInteractions: e.g. controlled, uncontrolled, disabled\nTags: form, Tanstack Switch, boolean, select\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-switch",
+  "display_name": "Form Tanstack Switch",
+  "preview_url": "/previews/shadcn/form-tanstack-switch.png"
+}

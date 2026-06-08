@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_CopyButton_index",
+  "name": "CopyButton",
+  "source_code": "// packages/@mantine/core/src/components/CopyButton/index.ts\nexport { CopyButton } from './CopyButton';\nexport type { CopyButtonProps } from './CopyButton';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "CopyButton_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/CopyButton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_CopyButton_index",
+      "name": "CopyButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/CopyButton/index.ts",
+          "content": "export { CopyButton } from './CopyButton';\nexport type { CopyButtonProps } from './CopyButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

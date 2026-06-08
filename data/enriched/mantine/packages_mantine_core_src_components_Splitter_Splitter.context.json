@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Splitter_Splitter.context",
+  "name": "Splitter.context",
+  "source_code": "// packages/@mantine/core/src/components/Splitter/Splitter.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { SplitterFactory } from './Splitter';\n\nexport interface SplitterContextValue {\n  getStyles: GetStylesApi<SplitterFactory>;\n  sizes: number[];\n  collapsed: boolean[];\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport const [SplitterProvider, useSplitterContext] = createSafeContext<SplitterContextValue>(\n  'Splitter component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "other",
+    "splitter"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Splitter_Splitter.context",
+      "name": "Splitter.context",
+      "path": "packages/@mantine/core/src/components/Splitter/Splitter.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Splitter_Splitter.context",
+      "name": "Splitter.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Splitter/Splitter.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { SplitterFactory } from './Splitter';\n\nexport interface SplitterContextValue {\n  getStyles: GetStylesApi<SplitterFactory>;\n  sizes: number[];\n  collapsed: boolean[];\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport const [SplitterProvider, useSplitterContext] = createSafeContext<SplitterContextValue>(\n  'Splitter component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Splitter.context is a splitter context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Splitter.context\nDescription: Splitter.context is a splitter context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: context, mantine, other, splitter\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Splitter/Splitter.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { SplitterFactory } from './Splitter';\n\nexport interface SplitterContextValue {\n  getStyles: GetStylesApi<SplitterFactory>;\n  sizes: number[];\n  collapsed: boolean[];\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport const [SplitterProvider, useSplitterContext] = createSafeContext<SplitterContextValue>(\n  'Splitter component was not found in the tree'\n",
+  "prompt_version": 2,
+  "clean_id": "splitter",
+  "display_name": "Splitter",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-splitter-splitter-context.png"
+}

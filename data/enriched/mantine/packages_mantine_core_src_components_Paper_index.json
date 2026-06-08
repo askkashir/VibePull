@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Paper_index",
+  "name": "Paper",
+  "source_code": "// packages/@mantine/core/src/components/Paper/index.ts\nimport type {\n  PaperBaseProps,\n  PaperCssVariables,\n  PaperFactory,\n  PaperProps,\n  PaperStylesNames,\n} from './Paper';\n\nexport { Paper } from './Paper';\n\nexport type { PaperProps, PaperStylesNames, PaperCssVariables, PaperFactory, PaperBaseProps };\n",
+  "description": "",
+  "tags": [
+    "container",
+    "layout",
+    "box"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Paper_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Paper/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Paper_index",
+      "name": "Paper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Paper/index.ts",
+          "content": "import type {\n  PaperBaseProps,\n  PaperCssVariables,\n  PaperFactory,\n  PaperProps,\n  PaperStylesNames,\n} from './Paper';\n\nexport { Paper } from './Paper';\n\nexport type { PaperProps, PaperStylesNames, PaperCssVariables, PaperFactory, PaperBaseProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A container component that can be used to group and display other content. It can be used when you need to add a border and some padding to a section of your UI. It's similar to a div, but with more styling options.",
+  "style_tags": [
+    "e.g. minimal",
+    "bordered"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Paper\nDescription: A container component that can be used to group and display other content. It can be used when you need to add a border and some padding to a section of your UI. It's similar to a div, but with more styling options.\nStyle: e.g. minimal, bordered\nInteractions: \nTags: container, layout, box\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Paper/index.ts\nimport type {\n  PaperBaseProps,\n  PaperCssVariables,\n  PaperFactory,\n  PaperProps,\n  PaperStylesNames,\n} from './Paper';\n\nexport { Paper } from './Paper';\n\nexport type { PaperProps, PaperStylesNames, PaperCssVariables, PaperFactory, PaperBaseProps };\n",
+  "prompt_version": 2,
+  "clean_id": "paper",
+  "display_name": "Paper",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-paper-index.png"
+}

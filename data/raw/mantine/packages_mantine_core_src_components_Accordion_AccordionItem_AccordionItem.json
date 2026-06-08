@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_AccordionItem_AccordionItem",
+  "name": "AccordionItem",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/AccordionItem/AccordionItem.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useAccordionContext } from '../Accordion.context';\nimport { AccordionItemProvider } from '../AccordionItem.context';\nimport classes from '../Accordion.module.css';\n\nexport type AccordionItemStylesNames = 'item';\n\nexport interface AccordionItemProps\n  extends BoxProps, CompoundStylesApiProps<AccordionItemFactory>, ElementProps<'div'> {\n  /** Value that is used to manage the accordion state */\n  value: string;\n}\n\nexport type AccordionItemFactory = Factory<{\n  props: AccordionItemProps;\n  ref: HTMLDivElement;\n  stylesNames: AccordionItemStylesNames;\n  compound: true;\n}>;\n\nexport const AccordionItem = factory<AccordionItemFactory>((props) => {\n  const { classNames, className, style, styles, vars, value, mod, ...others } = useProps(\n    'AccordionItem',\n    null,\n    props\n  );\n\n  const ctx = useAccordionContext();\n\n  return (\n    <AccordionItemProvider value={{ value }}>\n      <Box\n        mod={[{ active: ctx.isItemActive(value) }, mod]}\n        {...ctx.getStyles('item', { className, classNames, styles, style, variant: ctx.variant })}\n        {...others}\n      />\n    </AccordionItemProvider>\n  );\n});\n\nAccordionItem.displayName = '@mantine/core/AccordionItem';\nAccordionItem.classes = classes;\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_AccordionItem_AccordionItem",
+      "name": "AccordionItem",
+      "path": "packages/@mantine/core/src/components/Accordion/AccordionItem/AccordionItem.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_AccordionItem_AccordionItem",
+      "name": "AccordionItem",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/AccordionItem/AccordionItem.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useAccordionContext } from '../Accordion.context';\nimport { AccordionItemProvider } from '../AccordionItem.context';\nimport classes from '../Accordion.module.css';\n\nexport type AccordionItemStylesNames = 'item';\n\nexport interface AccordionItemProps\n  extends BoxProps, CompoundStylesApiProps<AccordionItemFactory>, ElementProps<'div'> {\n  /** Value that is used to manage the accordion state */\n  value: string;\n}\n\nexport type AccordionItemFactory = Factory<{\n  props: AccordionItemProps;\n  ref: HTMLDivElement;\n  stylesNames: AccordionItemStylesNames;\n  compound: true;\n}>;\n\nexport const AccordionItem = factory<AccordionItemFactory>((props) => {\n  const { classNames, className, style, styles, vars, value, mod, ...others } = useProps(\n    'AccordionItem',\n    null,\n    props\n  );\n\n  const ctx = useAccordionContext();\n\n  return (\n    <AccordionItemProvider value={{ value }}>\n      <Box\n        mod={[{ active: ctx.isItemActive(value) }, mod]}\n        {...ctx.getStyles('item', { className, classNames, styles, style, variant: ctx.variant })}\n        {...others}\n      />\n    </AccordionItemProvider>\n  );\n});\n\nAccordionItem.displayName = '@mantine/core/AccordionItem';\nAccordionItem.classes = classes;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

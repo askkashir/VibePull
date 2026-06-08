@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Marquee_index",
+  "name": "Marquee",
+  "source_code": "// packages/@mantine/core/src/components/Marquee/index.ts\nimport type {\n  MarqueeCssVariables,\n  MarqueeFactory,\n  MarqueeProps,\n  MarqueeStylesNames,\n} from './Marquee';\n\nexport { Marquee } from './Marquee';\n\nexport type { MarqueeProps, MarqueeStylesNames, MarqueeCssVariables, MarqueeFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Marquee_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Marquee/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Marquee_index",
+      "name": "Marquee",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Marquee/index.ts",
+          "content": "import type {\n  MarqueeCssVariables,\n  MarqueeFactory,\n  MarqueeProps,\n  MarqueeStylesNames,\n} from './Marquee';\n\nexport { Marquee } from './Marquee';\n\nexport type { MarqueeProps, MarqueeStylesNames, MarqueeCssVariables, MarqueeFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

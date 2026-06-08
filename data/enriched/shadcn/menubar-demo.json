@@ -1,0 +1,42 @@
+{
+  "id": "menubar-demo",
+  "name": "menubar-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "component",
+    "navigation",
+    "ui",
+    "menu",
+    "dropdown",
+    "submenu"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "menubar-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## menubar-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The menubar-demo is a horizontal navigation component used to display dropdown menus, ideal for applications requiring easy access to secondary menu options.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: menubar-demo\nDescription: The menubar-demo is a horizontal navigation component used to display dropdown menus, ideal for applications requiring easy access to secondary menu options.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: component, navigation, ui, menu, dropdown, submenu\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "menubar-demo",
+  "display_name": "Menubar Demo",
+  "preview_url": "/previews/shadcn/menubar-demo.png"
+}

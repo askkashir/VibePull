@@ -1,0 +1,59 @@
+{
+  "id": "gradient-button-group-demo",
+  "name": "gradient-button-group-demo",
+  "source_code": "// registry/default/example/gradient-button-group-demo.tsx\n\"use client\"\n\nimport { GradientButtonGroup } from \"@/registry/default/ui/gradient-button-group\"\n\nexport default function GradientButtonGroupDemo() {\n  return (\n    <div className=\"flex min-h-[320px] mx-auto items-center justify-center overflow-hidden rounded-md w-full \">\n      <GradientButtonGroup />\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "gradient-button-group",
+    "button",
+    "group"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "gradient-button-group-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/gradient-button-group-demo.json",
+      "sha": "3be2573f02c53ffa59c9e9abc99b138f2213a60f",
+      "size": 694,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/gradient-button-group-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/gradient-button-group-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/3be2573f02c53ffa59c9e9abc99b138f2213a60f",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/gradient-button-group-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/gradient-button-group-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/3be2573f02c53ffa59c9e9abc99b138f2213a60f",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/gradient-button-group-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gradient-button-group-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "gradient-button-group"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/gradient-button-group-demo.tsx",
+          "content": "\"use client\"\n\nimport { GradientButtonGroup } from \"@/registry/default/ui/gradient-button-group\"\n\nexport default function GradientButtonGroupDemo() {\n  return (\n    <div className=\"flex min-h-[320px] mx-auto items-center justify-center overflow-hidden rounded-md w-full \">\n      <GradientButtonGroup />\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A GradientButtonGroupDemo is a component that showcases a group of gradient colored buttons with varying backgrounds and colors. This component can be used when the developer wants to visualize how to implement a gradient button group with customizable buttons in their application. It is typically used to demonstrate design concepts or as an example in an application UI.",
+  "style_tags": [
+    "gradient",
+    "customizable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: gradient-button-group-demo\nDescription: A GradientButtonGroupDemo is a component that showcases a group of gradient colored buttons with varying backgrounds and colors. This component can be used when the developer wants to visualize how to implement a gradient button group with customizable buttons in their application. It is typically used to demonstrate design concepts or as an example in an application UI.\nStyle: gradient, customizable\nInteractions: \nTags: gradient-button-group, button, group\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/gradient-button-group-demo.tsx\n\"use client\"\n\nimport { GradientButtonGroup } from \"@/registry/default/ui/gradient-button-group\"\n\nexport default function GradientButtonGroupDemo() {\n  return (\n    <div className=\"flex min-h-[320px] mx-auto items-center justify-center overflow-hidden rounded-md w-full \">\n      <GradientButtonGroup />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "gradient-button-group-demo",
+  "display_name": "Gradient Button Group Demo",
+  "preview_url": "/previews/cultui/gradient-button-group-demo.png"
+}

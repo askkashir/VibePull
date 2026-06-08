@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Title_get-title-size",
+  "name": "get-title-size",
+  "source_code": "// packages/@mantine/core/src/components/Title/get-title-size.ts\nimport { rem } from '../../core';\nimport type { TitleOrder, TitleSize } from './Title';\n\nconst headings: unknown[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];\nconst sizes: unknown[] = ['xs', 'sm', 'md', 'lg', 'xl'];\n\nexport interface GetTitleSizeResult {\n  fontSize: string;\n  fontWeight: string;\n  lineHeight: string;\n}\n\nexport function getTitleSize(order: TitleOrder, size?: TitleSize): GetTitleSizeResult {\n  const titleSize = size !== undefined ? size : `h${order}`;\n\n  if (headings.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-${titleSize}-font-size)`,\n      fontWeight: `var(--mantine-${titleSize}-font-weight)`,\n      lineHeight: `var(--mantine-${titleSize}-line-height)`,\n    };\n  } else if (sizes.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-font-size-${titleSize})`,\n      fontWeight: `var(--mantine-h${order}-font-weight)`,\n      lineHeight: `var(--mantine-h${order}-line-height)`,\n    };\n  }\n\n  return {\n    fontSize: rem(titleSize),\n    fontWeight: `var(--mantine-h${order}-font-weight)`,\n    lineHeight: `var(--mantine-h${order}-line-height)`,\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Title_get-title-size",
+      "name": "get-title-size",
+      "path": "packages/@mantine/core/src/components/Title/get-title-size.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Title_get-title-size",
+      "name": "get-title-size",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Title/get-title-size.ts",
+          "content": "import { rem } from '../../core';\nimport type { TitleOrder, TitleSize } from './Title';\n\nconst headings: unknown[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];\nconst sizes: unknown[] = ['xs', 'sm', 'md', 'lg', 'xl'];\n\nexport interface GetTitleSizeResult {\n  fontSize: string;\n  fontWeight: string;\n  lineHeight: string;\n}\n\nexport function getTitleSize(order: TitleOrder, size?: TitleSize): GetTitleSizeResult {\n  const titleSize = size !== undefined ? size : `h${order}`;\n\n  if (headings.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-${titleSize}-font-size)`,\n      fontWeight: `var(--mantine-${titleSize}-font-weight)`,\n      lineHeight: `var(--mantine-${titleSize}-line-height)`,\n    };\n  } else if (sizes.includes(titleSize)) {\n    return {\n      fontSize: `var(--mantine-font-size-${titleSize})`,\n      fontWeight: `var(--mantine-h${order}-font-weight)`,\n      lineHeight: `var(--mantine-h${order}-line-height)`,\n    };\n  }\n\n  return {\n    fontSize: rem(titleSize),\n    fontWeight: `var(--mantine-h${order}-font-weight)`,\n    lineHeight: `var(--mantine-h${order}-line-height)`,\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

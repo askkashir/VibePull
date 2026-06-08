@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_LoadingOverlay_index",
+  "name": "LoadingOverlay",
+  "source_code": "// packages/@mantine/core/src/components/LoadingOverlay/index.ts\nimport type {\n  LoadingOverlayCssVariables,\n  LoadingOverlayFactory,\n  LoadingOverlayProps,\n  LoadingOverlayStylesNames,\n} from './LoadingOverlay';\n\nexport { LoadingOverlay } from './LoadingOverlay';\n\nexport type {\n  LoadingOverlayProps,\n  LoadingOverlayStylesNames,\n  LoadingOverlayCssVariables,\n  LoadingOverlayFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "LoadingOverlay_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/LoadingOverlay/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_LoadingOverlay_index",
+      "name": "LoadingOverlay",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/LoadingOverlay/index.ts",
+          "content": "import type {\n  LoadingOverlayCssVariables,\n  LoadingOverlayFactory,\n  LoadingOverlayProps,\n  LoadingOverlayStylesNames,\n} from './LoadingOverlay';\n\nexport { LoadingOverlay } from './LoadingOverlay';\n\nexport type {\n  LoadingOverlayProps,\n  LoadingOverlayStylesNames,\n  LoadingOverlayCssVariables,\n  LoadingOverlayFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

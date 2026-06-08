@@ -1,0 +1,42 @@
+{
+  "id": "chart-radial-grid",
+  "name": "chart-radial-grid",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data visualization",
+    "radial layout",
+    "hierarchical data",
+    "interactive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radial-grid",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radial-grid\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The radial grid chart is an interactive data visualization component that displays hierarchical data in a radial layout, useful for showing relationships and categories. It is ideal for applications that require a clear and concise visualization of complex data sets, such as market analysis, organizational structures, or product information. This component is particularly useful when you need to display a large amount of data in a limited space.",
+  "style_tags": [
+    "e.g. light",
+    "elegant",
+    "modern"
+  ],
+  "interaction_tags": [
+    "e.g. hover tooltip",
+    "responsive",
+    "draggable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radial-grid\nDescription: The radial grid chart is an interactive data visualization component that displays hierarchical data in a radial layout, useful for showing relationships and categories. It is ideal for applications that require a clear and concise visualization of complex data sets, such as market analysis, organizational structures, or product information. This component is particularly useful when you need to display a large amount of data in a limited space.\nStyle: e.g. light, elegant, modern\nInteractions: e.g. hover tooltip, responsive, draggable\nTags: data visualization, radial layout, hierarchical data, interactive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radial-grid",
+  "display_name": "Chart Radial Grid",
+  "preview_url": "/previews/shadcn/chart-radial-grid.png"
+}

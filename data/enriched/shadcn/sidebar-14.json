@@ -1,0 +1,42 @@
+{
+  "id": "sidebar-14",
+  "name": "sidebar-14",
+  "source_code": "",
+  "description": "A sidebar on the right.",
+  "tags": [
+    "sidebar",
+    "block",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-14",
+      "type": "registry:block",
+      "description": "A sidebar on the right.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-14\n\nA sidebar on the right.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "This is a right-aligned sidebar component typically used to hold supplementary information or navigation items. It usually takes the rightmost portion of a screen and provides easy access to secondary content. A developer would use this component to create a well-structured and visually appealing layout for their application.",
+  "style_tags": [
+    "boxed",
+    "scrollable",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "responsive",
+    "draggable",
+    "resizable"
+  ],
+  "component_type": "block",
+  "generation_prompt": "Create a production-ready block component with the following characteristics:\n\nName: sidebar-14\nDescription: This is a right-aligned sidebar component typically used to hold supplementary information or navigation items. It usually takes the rightmost portion of a screen and provides easy access to secondary content. A developer would use this component to create a well-structured and visually appealing layout for their application.\nStyle: boxed, scrollable, responsive\nInteractions: responsive, draggable, resizable\nTags: sidebar, block, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-14",
+  "display_name": "Sidebar 14",
+  "preview_url": "/previews/shadcn/sidebar-14.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Popover_index",
+  "name": "Popover",
+  "source_code": "// packages/@mantine/core/src/components/Popover/index.ts\nimport type { __PopoverProps, PopoverFactory, PopoverProps, PopoverStylesNames } from './Popover';\nimport type { PopoverContextValue } from './Popover.context';\nimport type { PopoverWidth } from './Popover.types';\nimport type { PopoverContextMenuProps } from './PopoverContextMenu/PopoverContextMenu';\nimport type { PopoverDropdownProps } from './PopoverDropdown/PopoverDropdown';\nimport type { PopoverTargetProps } from './PopoverTarget/PopoverTarget';\n\nexport { Popover } from './Popover';\nexport { PopoverDropdown } from './PopoverDropdown/PopoverDropdown';\nexport { PopoverTarget } from './PopoverTarget/PopoverTarget';\nexport { PopoverContextMenu } from './PopoverContextMenu/PopoverContextMenu';\nexport { usePopoverContext } from './Popover.context';\n\nexport type {\n  PopoverProps,\n  __PopoverProps,\n  PopoverFactory,\n  PopoverStylesNames,\n  PopoverTargetProps,\n  PopoverDropdownProps,\n  PopoverContextMenuProps,\n  PopoverWidth,\n  PopoverContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Popover_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Popover/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Popover_index",
+      "name": "Popover",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Popover/index.ts",
+          "content": "import type { __PopoverProps, PopoverFactory, PopoverProps, PopoverStylesNames } from './Popover';\nimport type { PopoverContextValue } from './Popover.context';\nimport type { PopoverWidth } from './Popover.types';\nimport type { PopoverContextMenuProps } from './PopoverContextMenu/PopoverContextMenu';\nimport type { PopoverDropdownProps } from './PopoverDropdown/PopoverDropdown';\nimport type { PopoverTargetProps } from './PopoverTarget/PopoverTarget';\n\nexport { Popover } from './Popover';\nexport { PopoverDropdown } from './PopoverDropdown/PopoverDropdown';\nexport { PopoverTarget } from './PopoverTarget/PopoverTarget';\nexport { PopoverContextMenu } from './PopoverContextMenu/PopoverContextMenu';\nexport { usePopoverContext } from './Popover.context';\n\nexport type {\n  PopoverProps,\n  __PopoverProps,\n  PopoverFactory,\n  PopoverStylesNames,\n  PopoverTargetProps,\n  PopoverDropdownProps,\n  PopoverContextMenuProps,\n  PopoverWidth,\n  PopoverContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

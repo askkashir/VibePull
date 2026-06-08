@@ -1,0 +1,60 @@
+{
+  "id": "neon-gradient-card-demo",
+  "name": "Neon Gradient Card Demo",
+  "source_code": "import { NeonGradientCard } from \"@/registry/magicui/neon-gradient-card\"\n\nexport default function NeonGradientCardDemo() {\n  return (\n    <NeonGradientCard className=\"max-w-sm items-center justify-center text-center\">\n      <span className=\"pointer-events-none z-10 h-full bg-linear-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-3xl leading-none font-bold tracking-tighter text-balance whitespace-pre-wrap text-transparent md:text-5xl xl:text-6xl dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]\">\n        Neon Gradient Card\n      </span>\n    </NeonGradientCard>\n  )\n}\n",
+  "description": "Example showing a beautiful neon card effect.",
+  "tags": [
+    "card",
+    "gradient"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "neon-gradient-card-demo",
+      "type": "registry:example",
+      "title": "Neon Gradient Card Demo",
+      "description": "Example showing a beautiful neon card effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/neon-gradient-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/neon-gradient-card-demo.tsx",
+          "type": "registry:example",
+          "target": "components/neon-gradient-card-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "neon-gradient-card-demo",
+      "type": "registry:example",
+      "title": "Neon Gradient Card Demo",
+      "description": "Example showing a beautiful neon card effect.",
+      "registryDependencies": [
+        "@magicui/neon-gradient-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/neon-gradient-card-demo.tsx",
+          "content": "import { NeonGradientCard } from \"@/registry/magicui/neon-gradient-card\"\n\nexport default function NeonGradientCardDemo() {\n  return (\n    <NeonGradientCard className=\"max-w-sm items-center justify-center text-center\">\n      <span className=\"pointer-events-none z-10 h-full bg-linear-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-3xl leading-none font-bold tracking-tighter text-balance whitespace-pre-wrap text-transparent md:text-5xl xl:text-6xl dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]\">\n        Neon Gradient Card\n      </span>\n    </NeonGradientCard>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A colorful, gradient-effect card component. Typically used for highlighting important information or adding visual flair to an application.",
+  "style_tags": [
+    "colorful",
+    "gradient-effect"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Neon Gradient Card Demo\nDescription: A colorful, gradient-effect card component. Typically used for highlighting important information or adding visual flair to an application.\nStyle: colorful, gradient-effect\nInteractions: none\nTags: card, gradient\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { NeonGradientCard } from \"@/registry/magicui/neon-gradient-card\"\n\nexport default function NeonGradientCardDemo() {\n  return (\n    <NeonGradientCard className=\"max-w-sm items-center justify-center text-center\">\n      <span className=\"pointer-events-none z-10 h-full bg-linear-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-3xl leading-none font-bold tracking-tighter text-balance whitespace-pre-wrap text-transparent md:text-5xl xl:text-6xl dark:drop-shadow-[0_5px_5p",
+  "prompt_version": 2,
+  "clean_id": "neon-gradient-card-demo",
+  "display_name": "Neon Gradient Card Demo",
+  "preview_url": "/previews/magicui/neon-gradient-card-demo.png"
+}

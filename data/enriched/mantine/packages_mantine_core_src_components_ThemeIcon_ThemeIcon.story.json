@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_ThemeIcon_ThemeIcon.story",
+  "name": "ThemeIcon.story",
+  "source_code": "// packages/@mantine/core/src/components/ThemeIcon/ThemeIcon.story.tsx\nimport { DEFAULT_THEME } from '../../core';\nimport { ThemeIcon, ThemeIconProps } from './ThemeIcon';\n\nexport default { title: 'ThemeIcon' };\n\nfunction Colors({ index, ...others }: ThemeIconProps & { index?: number }) {\n  const colors = Object.keys(DEFAULT_THEME.colors).map((color) => (\n    <ThemeIcon\n      color={`${color}${typeof index === 'number' ? `.${index}` : ''}`}\n      key={color}\n      {...others}\n      size=\"lg\"\n    >\n      $$\n    </ThemeIcon>\n  ));\n  return <div style={{ display: 'flex', gap: 20, padding: 40 }}>{colors}</div>;\n}\n\nexport function SingleElement() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ThemeIcon>$$</ThemeIcon>\n    </div>\n  );\n}\n\nexport function Usage() {\n  return (\n    <>\n      Default variant:\n      <Colors variant=\"default\" />\n      Filled variant:\n      <Colors />\n      Filled variant index\n      <Colors index={4} />\n      Light variant:\n      <Colors variant=\"light\" />\n      Light variant index:\n      <Colors variant=\"light\" index={5} />\n      Subtle variant:\n      <Colors variant=\"subtle\" />\n      Subtle variant index:\n      <Colors variant=\"subtle\" index={5} />\n      Outline variant:\n      <Colors variant=\"outline\" />\n      Outline variant index:\n      <Colors variant=\"outline\" index={4} />\n      Transparent variant:\n      <Colors variant=\"transparent\" />\n      Transparent variant index:\n      <Colors variant=\"transparent\" index={4} />\n      <div style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>\n        White variant:\n        <Colors variant=\"white\" />\n        White variant index:\n        <Colors variant=\"white\" index={4} />\n      </div>\n    </>\n  );\n}\n\nexport function CssColor() {\n  return (\n    <div style={{ padding: 40 }}>\n      Filled variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\">\n          $$\n        </ThemeIcon>\n      </div>\n      Light variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"light\">\n          $$\n        </ThemeIcon>\n      </div>\n      Outline variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"outline\">\n          $$\n        </ThemeIcon>\n      </div>\n      Subtle variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"subtle\">\n          $$\n        </ThemeIcon>\n      </div>\n      Transparent variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"transparent\">\n          $$\n        </ThemeIcon>\n      </div>\n      White variant\n      <div style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"white\">\n          $$\n        </ThemeIcon>\n      </div>\n    </div>\n  );\n}\n\nexport function GradientVariant() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 40 }}>\n      <ThemeIcon size=\"lg\" variant=\"gradient\">\n        $$\n      </ThemeIcon>\n      <ThemeIcon size=\"lg\" variant=\"gradient\" gradient={{ from: 'red', to: 'cyan' }}>\n        $$\n      </ThemeIcon>\n      <ThemeIcon size=\"lg\" variant=\"gradient\" gradient={{ from: '#FF00FF', to: '#00FF00' }}>\n        $$\n      </ThemeIcon>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "icon",
+    "mantine",
+    "other",
+    "story",
+    "theme"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ThemeIcon_ThemeIcon.story",
+      "name": "ThemeIcon.story",
+      "path": "packages/@mantine/core/src/components/ThemeIcon/ThemeIcon.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ThemeIcon_ThemeIcon.story",
+      "name": "ThemeIcon.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ThemeIcon/ThemeIcon.story.tsx",
+          "content": "import { DEFAULT_THEME } from '../../core';\nimport { ThemeIcon, ThemeIconProps } from './ThemeIcon';\n\nexport default { title: 'ThemeIcon' };\n\nfunction Colors({ index, ...others }: ThemeIconProps & { index?: number }) {\n  const colors = Object.keys(DEFAULT_THEME.colors).map((color) => (\n    <ThemeIcon\n      color={`${color}${typeof index === 'number' ? `.${index}` : ''}`}\n      key={color}\n      {...others}\n      size=\"lg\"\n    >\n      $$\n    </ThemeIcon>\n  ));\n  return <div style={{ display: 'flex', gap: 20, padding: 40 }}>{colors}</div>;\n}\n\nexport function SingleElement() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ThemeIcon>$$</ThemeIcon>\n    </div>\n  );\n}\n\nexport function Usage() {\n  return (\n    <>\n      Default variant:\n      <Colors variant=\"default\" />\n      Filled variant:\n      <Colors />\n      Filled variant index\n      <Colors index={4} />\n      Light variant:\n      <Colors variant=\"light\" />\n      Light variant index:\n      <Colors variant=\"light\" index={5} />\n      Subtle variant:\n      <Colors variant=\"subtle\" />\n      Subtle variant index:\n      <Colors variant=\"subtle\" index={5} />\n      Outline variant:\n      <Colors variant=\"outline\" />\n      Outline variant index:\n      <Colors variant=\"outline\" index={4} />\n      Transparent variant:\n      <Colors variant=\"transparent\" />\n      Transparent variant index:\n      <Colors variant=\"transparent\" index={4} />\n      <div style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>\n        White variant:\n        <Colors variant=\"white\" />\n        White variant index:\n        <Colors variant=\"white\" index={4} />\n      </div>\n    </>\n  );\n}\n\nexport function CssColor() {\n  return (\n    <div style={{ padding: 40 }}>\n      Filled variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\">\n          $$\n        </ThemeIcon>\n      </div>\n      Light variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"light\">\n          $$\n        </ThemeIcon>\n      </div>\n      Outline variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"outline\">\n          $$\n        </ThemeIcon>\n      </div>\n      Subtle variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"subtle\">\n          $$\n        </ThemeIcon>\n      </div>\n      Transparent variant\n      <div>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"transparent\">\n          $$\n        </ThemeIcon>\n      </div>\n      White variant\n      <div style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>\n        <ThemeIcon size=\"xl\" radius=\"xl\" color=\"#ff00ff\" variant=\"white\">\n          $$\n        </ThemeIcon>\n      </div>\n    </div>\n  );\n}\n\nexport function GradientVariant() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 40 }}>\n      <ThemeIcon size=\"lg\" variant=\"gradient\">\n        $$\n      </ThemeIcon>\n      <ThemeIcon size=\"lg\" variant=\"gradient\" gradient={{ from: 'red', to: 'cyan' }}>\n        $$\n      </ThemeIcon>\n      <ThemeIcon size=\"lg\" variant=\"gradient\" gradient={{ from: '#FF00FF', to: '#00FF00' }}>\n        $$\n      </ThemeIcon>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ThemeIcon.story is a theme icon story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ThemeIcon.story\nDescription: ThemeIcon.story is a theme icon story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, themeable\nInteractions: \nTags: icon, mantine, other, story, theme\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ThemeIcon/ThemeIcon.story.tsx\nimport { DEFAULT_THEME } from '../../core';\nimport { ThemeIcon, ThemeIconProps } from './ThemeIcon';\n\nexport default { title: 'ThemeIcon' };\n\nfunction Colors({ index, ...others }: ThemeIconProps & { index?: number }) {\n  const colors = Object.keys(DEFAULT_THEME.colors).map((color) => (\n    <ThemeIcon\n      color={`${color}${typeof index === 'number' ? `.${index}` : ''}`}\n      key={color}\n      {...others}\n      size=\"lg\"\n   ",
+  "prompt_version": 2,
+  "clean_id": "theme-icon",
+  "display_name": "Theme Icon",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-themeicon-themeicon-story.png"
+}

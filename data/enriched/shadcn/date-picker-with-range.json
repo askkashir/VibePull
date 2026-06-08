@@ -1,0 +1,41 @@
+{
+  "id": "date-picker-with-range",
+  "name": "date-picker-with-range",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "date picker",
+    "range selection",
+    "booking",
+    "scheduling"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "date-picker-with-range",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## date-picker-with-range\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** date-fns"
+  },
+  "visual_summary": "A date-picker-with-range component allows users to select a date range, typically presented as two date picker fields side-by-side. This component is commonly used in applications that require booking, scheduling, or travel information. Developers use it when a user needs to select a specific start and end date.",
+  "style_tags": [
+    "e.g. material design",
+    "material you"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "date picker",
+  "generation_prompt": "Create a production-ready date picker component with the following characteristics:\n\nName: date-picker-with-range\nDescription: A date-picker-with-range component allows users to select a date range, typically presented as two date picker fields side-by-side. This component is commonly used in applications that require booking, scheduling, or travel information. Developers use it when a user needs to select a specific start and end date.\nStyle: e.g. material design, material you\nInteractions: e.g. animated, hover, clickable\nTags: date picker, range selection, booking, scheduling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "date-picker-with-range",
+  "display_name": "Date Picker With Range",
+  "preview_url": "/previews/shadcn/date-picker-with-range.png"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_Transition_get-transition-props_get-transition-props",
+  "name": "get-transition-props",
+  "source_code": "// packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts\nimport type { SetRequired } from 'type-fest';\nimport type { TransitionOverride } from '../Transition';\n\ntype MinimalTransitionOverride = SetRequired<TransitionOverride, 'duration' | 'transition'>;\n\nconst defaultTransition: MinimalTransitionOverride = {\n  duration: 100,\n  transition: 'fade',\n};\n\nexport function getTransitionProps(\n  transitionProps: TransitionOverride | undefined,\n  componentTransition: TransitionOverride | undefined\n): MinimalTransitionOverride {\n  return { ...defaultTransition, ...componentTransition, ...transitionProps };\n}\n",
+  "description": "",
+  "tags": [
+    "get",
+    "mantine",
+    "other",
+    "props",
+    "transition"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Transition_get-transition-props_get-transition-props",
+      "name": "get-transition-props",
+      "path": "packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Transition_get-transition-props_get-transition-props",
+      "name": "get-transition-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts",
+          "content": "import type { SetRequired } from 'type-fest';\nimport type { TransitionOverride } from '../Transition';\n\ntype MinimalTransitionOverride = SetRequired<TransitionOverride, 'duration' | 'transition'>;\n\nconst defaultTransition: MinimalTransitionOverride = {\n  duration: 100,\n  transition: 'fade',\n};\n\nexport function getTransitionProps(\n  transitionProps: TransitionOverride | undefined,\n  componentTransition: TransitionOverride | undefined\n): MinimalTransitionOverride {\n  return { ...defaultTransition, ...componentTransition, ...transitionProps };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "get-transition-props is a get transition props UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: get-transition-props\nDescription: get-transition-props is a get transition props UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated\nTags: get, mantine, other, props, transition\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts\nimport type { SetRequired } from 'type-fest';\nimport type { TransitionOverride } from '../Transition';\n\ntype MinimalTransitionOverride = SetRequired<TransitionOverride, 'duration' | 'transition'>;\n\nconst defaultTransition: MinimalTransitionOverride = {\n  duration: 100,\n  transition: 'fade',\n};\n\nexport function getTransitionProps(\n  transitionProps: TransitionOverride | undefined,\n  componentTransitio",
+  "prompt_version": 2,
+  "clean_id": "get-transition-props",
+  "display_name": "Get Transition Props",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-transition-get-transition-props-get-transition-props.png"
+}

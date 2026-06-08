@@ -1,0 +1,64 @@
+{
+  "id": "segment-group",
+  "name": "segment-group",
+  "source_code": "// src/components/ui/segment-group.tsx\n'use client'\nimport { SegmentGroup } from '@ark-ui/react/segment-group'\nimport { type ComponentProps, type ReactNode, useMemo } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { segmentGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(segmentGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(SegmentGroup.Root, 'root', {\n  defaultProps: { orientation: 'horizontal' },\n  forwardProps: ['orientation'],\n})\nexport const RootProvider = withProvider(SegmentGroup.RootProvider, 'root')\nexport const Indicator = withContext(SegmentGroup.Indicator, 'indicator')\nexport const Item = withContext(SegmentGroup.Item, 'item')\nexport const ItemControl = withContext(SegmentGroup.ItemControl, 'itemControl')\nexport const ItemHiddenInput = SegmentGroup.ItemHiddenInput\nexport const ItemText = withContext(SegmentGroup.ItemText, 'itemText')\nexport const Label = withContext(SegmentGroup.Label, 'label')\n\nexport { SegmentGroupContext as Context } from '@ark-ui/react/segment-group'\n\ninterface Item {\n  value: string\n  label: ReactNode\n  disabled?: boolean | undefined\n}\n\ntype ItemProps = ComponentProps<typeof Item>\n\nexport interface ItemsProps extends Omit<ItemProps, 'value'> {\n  items: Array<string | Item>\n}\n\nexport const Items = (props: ItemsProps) => {\n  const { items, ...itemProps } = props\n  const data = useMemo(() => normalize(items), [items])\n\n  return data.map((item) => (\n    <Item key={item.value} value={item.value} disabled={item.disabled} {...itemProps}>\n      <ItemText>{item.label}</ItemText>\n      <ItemHiddenInput />\n    </Item>\n  ))\n}\n\nconst normalize = (items: Array<string | Item>): Item[] =>\n  items.map((item) => (typeof item === 'string' ? { value: item, label: item } : item))\n",
+  "description": "",
+  "tags": [
+    "group",
+    "other",
+    "parkui",
+    "segment"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "segment-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/segment-group.tsx",
+          "type": "registry:ui",
+          "exports": "export * as SegmentGroup from './segment-group'",
+          "content": "'use client'\nimport { SegmentGroup } from '@ark-ui/react/segment-group'\nimport { type ComponentProps, type ReactNode, useMemo } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { segmentGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(segmentGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(SegmentGroup.Root, 'root', {\n  defaultProps: { orientation: 'horizontal' },\n  forwardProps: ['orientation'],\n})\nexport const RootProvider = withProvider(SegmentGroup.RootProvider, 'root')\nexport const Indicator = withContext(SegmentGroup.Indicator, 'indicator')\nexport const Item = withContext(SegmentGroup.Item, 'item')\nexport const ItemControl = withContext(SegmentGroup.ItemControl, 'itemControl')\nexport const ItemHiddenInput = SegmentGroup.ItemHiddenInput\nexport const ItemText = withContext(SegmentGroup.ItemText, 'itemText')\nexport const Label = withContext(SegmentGroup.Label, 'label')\n\nexport { SegmentGroupContext as Context } from '@ark-ui/react/segment-group'\n\ninterface Item {\n  value: string\n  label: ReactNode\n  disabled?: boolean | undefined\n}\n\ntype ItemProps = ComponentProps<typeof Item>\n\nexport interface ItemsProps extends Omit<ItemProps, 'value'> {\n  items: Array<string | Item>\n}\n\nexport const Items = (props: ItemsProps) => {\n  const { items, ...itemProps } = props\n  const data = useMemo(() => normalize(items), [items])\n\n  return data.map((item) => (\n    <Item key={item.value} value={item.value} disabled={item.disabled} {...itemProps}>\n      <ItemText>{item.label}</ItemText>\n      <ItemHiddenInput />\n    </Item>\n  ))\n}\n\nconst normalize = (items: Array<string | Item>): Item[] =>\n  items.map((item) => (typeof item === 'string' ? { value: item, label: item } : item))\n"
+        }
+      ],
+      "registryDependencies": [
+        "segment-group-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "segment-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/segment-group.tsx",
+          "type": "registry:ui",
+          "exports": "export * as SegmentGroup from './segment-group'",
+          "content": "'use client'\nimport { SegmentGroup } from '@ark-ui/react/segment-group'\nimport { type ComponentProps, type ReactNode, useMemo } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { segmentGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(segmentGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(SegmentGroup.Root, 'root', {\n  defaultProps: { orientation: 'horizontal' },\n  forwardProps: ['orientation'],\n})\nexport const RootProvider = withProvider(SegmentGroup.RootProvider, 'root')\nexport const Indicator = withContext(SegmentGroup.Indicator, 'indicator')\nexport const Item = withContext(SegmentGroup.Item, 'item')\nexport const ItemControl = withContext(SegmentGroup.ItemControl, 'itemControl')\nexport const ItemHiddenInput = SegmentGroup.ItemHiddenInput\nexport const ItemText = withContext(SegmentGroup.ItemText, 'itemText')\nexport const Label = withContext(SegmentGroup.Label, 'label')\n\nexport { SegmentGroupContext as Context } from '@ark-ui/react/segment-group'\n\ninterface Item {\n  value: string\n  label: ReactNode\n  disabled?: boolean | undefined\n}\n\ntype ItemProps = ComponentProps<typeof Item>\n\nexport interface ItemsProps extends Omit<ItemProps, 'value'> {\n  items: Array<string | Item>\n}\n\nexport const Items = (props: ItemsProps) => {\n  const { items, ...itemProps } = props\n  const data = useMemo(() => normalize(items), [items])\n\n  return data.map((item) => (\n    <Item key={item.value} value={item.value} disabled={item.disabled} {...itemProps}>\n      <ItemText>{item.label}</ItemText>\n      <ItemHiddenInput />\n    </Item>\n  ))\n}\n\nconst normalize = (items: Array<string | Item>): Item[] =>\n  items.map((item) => (typeof item === 'string' ? { value: item, label: item } : item))\n"
+        }
+      ],
+      "registryDependencies": [
+        "segment-group-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "segment-group is a segment group UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: segment-group\nDescription: segment-group is a segment group UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: group, other, parkui, segment\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/segment-group.tsx\n'use client'\nimport { SegmentGroup } from '@ark-ui/react/segment-group'\nimport { type ComponentProps, type ReactNode, useMemo } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { segmentGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(segmentGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\n\nexport const Root = withProvider(SegmentGroup.Root, 'root', {\n  defaultProps: { orient",
+  "prompt_version": 2,
+  "clean_id": "segment-group",
+  "display_name": "Segment Group",
+  "preview_url": "/previews/parkui/segment-group.png"
+}

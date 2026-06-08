@@ -1,0 +1,38 @@
+{
+  "id": "sidebar-16",
+  "name": "sidebar-16",
+  "source_code": "",
+  "description": "A sidebar with a sticky site header.",
+  "tags": [
+    "sidebar",
+    "component",
+    "navigation",
+    "desktop",
+    "sticky"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-16",
+      "type": "registry:block",
+      "description": "A sidebar with a sticky site header.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-16\n\nA sidebar with a sticky site header.\n\n**Type:** registry:block\n**Files:** 8 file(s)"
+  },
+  "visual_summary": "A sticky sidebar with a site header, ideal for applications where a consistent navigation is required, such as in dashboard or settings pages. The sidebar can be customized to include various types of content and is commonly used in desktop applications. It provides a clear separation between navigation and content.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-16\nDescription: A sticky sidebar with a site header, ideal for applications where a consistent navigation is required, such as in dashboard or settings pages. The sidebar can be customized to include various types of content and is commonly used in desktop applications. It provides a clear separation between navigation and content.\nStyle: e.g. minimal\nInteractions: \nTags: sidebar, component, navigation, desktop, sticky\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-16",
+  "display_name": "Sidebar 16",
+  "preview_url": "/previews/shadcn/sidebar-16.png"
+}

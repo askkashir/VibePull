@@ -1,0 +1,61 @@
+{
+  "id": "animated-gradient-text-demo-2",
+  "name": "Animated Gradient Text Demo 2",
+  "source_code": "import { AnimatedGradientText } from \"@/registry/magicui/animated-gradient-text\"\n\nexport default function AnimatedGradientTextDemo() {\n  return (\n    <AnimatedGradientText\n      speed={2}\n      colorFrom=\"#4ade80\"\n      colorTo=\"#06b6d4\"\n      className=\"text-4xl font-semibold tracking-tight\"\n    >\n      Fast Gradient\n    </AnimatedGradientText>\n  )\n}\n",
+  "description": "Second example showing text with animated gradient backgrounds.",
+  "tags": [
+    "animated",
+    "gradient",
+    "text"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-gradient-text-demo-2",
+      "type": "registry:example",
+      "title": "Animated Gradient Text Demo 2",
+      "description": "Second example showing text with animated gradient backgrounds.",
+      "registryDependencies": [
+        "https://magicui.design/r/animated-gradient-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-gradient-text-demo-2.tsx",
+          "type": "registry:example",
+          "target": "components/animated-gradient-text-demo-2.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-gradient-text-demo-2",
+      "type": "registry:example",
+      "title": "Animated Gradient Text Demo 2",
+      "description": "Second example showing text with animated gradient backgrounds.",
+      "registryDependencies": [
+        "@magicui/animated-gradient-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-gradient-text-demo-2.tsx",
+          "content": "import { AnimatedGradientText } from \"@/registry/magicui/animated-gradient-text\"\n\nexport default function AnimatedGradientTextDemo() {\n  return (\n    <AnimatedGradientText\n      speed={2}\n      colorFrom=\"#4ade80\"\n      colorTo=\"#06b6d4\"\n      className=\"text-4xl font-semibold tracking-tight\"\n    >\n      Fast Gradient\n    </AnimatedGradientText>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Animated text component with gradient effect. Use this component to create visually appealing titles with a dynamic gradient effect. Suitable for highlighting important information or creating a sense of movement.",
+  "style_tags": [
+    "modern",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "dynamic"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Animated Gradient Text Demo 2\nDescription: Animated text component with gradient effect. Use this component to create visually appealing titles with a dynamic gradient effect. Suitable for highlighting important information or creating a sense of movement.\nStyle: modern, responsive\nInteractions: dynamic\nTags: animated, gradient, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { AnimatedGradientText } from \"@/registry/magicui/animated-gradient-text\"\n\nexport default function AnimatedGradientTextDemo() {\n  return (\n    <AnimatedGradientText\n      speed={2}\n      colorFrom=\"#4ade80\"\n      colorTo=\"#06b6d4\"\n      className=\"text-4xl font-semibold tracking-tight\"\n    >\n      Fast Gradient\n    </AnimatedGradientText>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "animated-gradient-text-demo-2",
+  "display_name": "Animated Gradient Text Demo 2",
+  "preview_url": "/previews/magicui/animated-gradient-text-demo-2.png"
+}

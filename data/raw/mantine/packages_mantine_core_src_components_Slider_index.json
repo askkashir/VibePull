@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_index",
+  "name": "Slider",
+  "source_code": "// packages/@mantine/core/src/components/Slider/index.ts\nimport type {\n  RangeSliderFactory,\n  RangeSliderProps,\n  RangeSliderValue,\n} from './RangeSlider/RangeSlider';\nimport type { SliderCssVariables, SliderStylesNames } from './Slider.context';\nimport type { SliderFactory, SliderProps } from './Slider/Slider';\nimport type { SliderMark } from './SliderMark';\n\nexport { Slider } from './Slider/Slider';\nexport { RangeSlider } from './RangeSlider/RangeSlider';\n\nexport type {\n  SliderProps,\n  SliderStylesNames,\n  SliderCssVariables,\n  SliderFactory,\n  RangeSliderProps,\n  RangeSliderValue,\n  RangeSliderFactory,\n  SliderMark,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Slider/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_index",
+      "name": "Slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/index.ts",
+          "content": "import type {\n  RangeSliderFactory,\n  RangeSliderProps,\n  RangeSliderValue,\n} from './RangeSlider/RangeSlider';\nimport type { SliderCssVariables, SliderStylesNames } from './Slider.context';\nimport type { SliderFactory, SliderProps } from './Slider/Slider';\nimport type { SliderMark } from './SliderMark';\n\nexport { Slider } from './Slider/Slider';\nexport { RangeSlider } from './RangeSlider/RangeSlider';\n\nexport type {\n  SliderProps,\n  SliderStylesNames,\n  SliderCssVariables,\n  SliderFactory,\n  RangeSliderProps,\n  RangeSliderValue,\n  RangeSliderFactory,\n  SliderMark,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

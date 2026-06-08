@@ -1,0 +1,49 @@
+{
+  "id": "src_components_TooltipWrapper",
+  "name": "TooltipWrapper",
+  "source_code": "// src/components/TooltipWrapper.astro\n---\ninterface Props {\n  text: string\n  class?: string\n}\n\nconst { text, class: className } = Astro.props\n---\n\n<span class:list={['group/tooltip relative inline-flex items-center', className]}>\n  <slot />\n\n  <span\n    aria-hidden=\"true\"\n    class=\"pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-focus-within/tooltip:opacity-100 group-hover/tooltip:opacity-100\"\n  >\n    {text}\n    <span\n      class=\"absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900\"\n    ></span>\n  </span>\n</span>\n",
+  "description": "",
+  "tags": [
+    "tooltip",
+    "responsive",
+    "interactive",
+    "accessible"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "TooltipWrapper",
+      "name": "TooltipWrapper",
+      "path": "src/components/TooltipWrapper.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_TooltipWrapper",
+      "name": "TooltipWrapper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/TooltipWrapper.astro",
+          "content": "---\ninterface Props {\n  text: string\n  class?: string\n}\n\nconst { text, class: className } = Astro.props\n---\n\n<span class:list={['group/tooltip relative inline-flex items-center', className]}>\n  <slot />\n\n  <span\n    aria-hidden=\"true\"\n    class=\"pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-focus-within/tooltip:opacity-100 group-hover/tooltip:opacity-100\"\n  >\n    {text}\n    <span\n      class=\"absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900\"\n    ></span>\n  </span>\n</span>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A responsive tooltip component for displaying text when hovering or focusing over an element. Use it to add context to interactive elements or provide additional information. The component has a rounded background, is accessible, and follows a modern design aesthetic.",
+  "style_tags": [
+    "modern",
+    "dark",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "hover",
+    "focus"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: TooltipWrapper\nDescription: A responsive tooltip component for displaying text when hovering or focusing over an element. Use it to add context to interactive elements or provide additional information. The component has a rounded background, is accessible, and follows a modern design aesthetic.\nStyle: modern, dark, rounded\nInteractions: hover, focus\nTags: tooltip, responsive, interactive, accessible\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/TooltipWrapper.astro\n---\ninterface Props {\n  text: string\n  class?: string\n}\n\nconst { text, class: className } = Astro.props\n---\n\n<span class:list={['group/tooltip relative inline-flex items-center', className]}>\n  <slot />\n\n  <span\n    aria-hidden=\"true\"\n    class=\"pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-focus-within/tooltip:opacity-100 gro",
+  "prompt_version": 2,
+  "clean_id": "tooltip-wrapper",
+  "display_name": "Tooltip Wrapper",
+  "preview_url": "/previews/hyperui/src-components-tooltipwrapper.png"
+}

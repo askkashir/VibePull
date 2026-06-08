@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_loaders_Bars",
+  "name": "Bars",
+  "source_code": "// packages/@mantine/core/src/components/Loader/loaders/Bars.tsx\nimport cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Bars: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.barsLoader, className)} {...others}>\n    <span className={classes.bar} />\n    <span className={classes.bar} />\n    <span className={classes.bar} />\n  </Box>\n);\n\nBars.displayName = '@mantine/core/Bars';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_loaders_Bars",
+      "name": "Bars",
+      "path": "packages/@mantine/core/src/components/Loader/loaders/Bars.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_loaders_Bars",
+      "name": "Bars",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/loaders/Bars.tsx",
+          "content": "import cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Bars: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.barsLoader, className)} {...others}>\n    <span className={classes.bar} />\n    <span className={classes.bar} />\n    <span className={classes.bar} />\n  </Box>\n);\n\nBars.displayName = '@mantine/core/Bars';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Image_index",
+  "name": "Image",
+  "source_code": "// packages/@mantine/core/src/components/Image/index.ts\nimport type { ImageCssVariables, ImageFactory, ImageProps, ImageStylesNames } from './Image';\n\nexport { Image } from './Image';\n\nexport type { ImageProps, ImageStylesNames, ImageCssVariables, ImageFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Image_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Image/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Image_index",
+      "name": "Image",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Image/index.ts",
+          "content": "import type { ImageCssVariables, ImageFactory, ImageProps, ImageStylesNames } from './Image';\n\nexport { Image } from './Image';\n\nexport type { ImageProps, ImageStylesNames, ImageCssVariables, ImageFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

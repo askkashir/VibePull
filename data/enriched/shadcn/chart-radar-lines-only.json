@@ -1,0 +1,26 @@
+{
+  "id": "chart-radar-lines-only",
+  "name": "chart-radar-lines-only",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-lines-only",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-lines-only\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called chart-radar-lines-only. It should be: . Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "chart-radar-lines-only",
+  "display_name": "Chart Radar Lines Only"
+}

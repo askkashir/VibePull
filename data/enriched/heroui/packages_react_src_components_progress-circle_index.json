@@ -1,0 +1,43 @@
+{
+  "id": "packages_react_src_components_progress-circle_index",
+  "name": "progress-circle",
+  "source_code": "// packages/react/src/components/progress-circle/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  ProgressCircleFillCircle,\n  ProgressCircleRoot,\n  ProgressCircleTrack,\n  ProgressCircleTrackCircle,\n} from \"./progress-circle\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ProgressCircle = Object.assign(ProgressCircleRoot, {\n  Root: ProgressCircleRoot,\n  Track: ProgressCircleTrack,\n  TrackCircle: ProgressCircleTrackCircle,\n  FillCircle: ProgressCircleFillCircle,\n});\n\nexport type ProgressCircle = {\n  Props: ComponentProps<typeof ProgressCircleRoot>;\n  RootProps: ComponentProps<typeof ProgressCircleRoot>;\n  TrackProps: ComponentProps<typeof ProgressCircleTrack>;\n  TrackCircleProps: ComponentProps<typeof ProgressCircleTrackCircle>;\n  FillCircleProps: ComponentProps<typeof ProgressCircleFillCircle>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  ProgressCircleRoot,\n  ProgressCircleTrack,\n  ProgressCircleTrackCircle,\n  ProgressCircleFillCircle,\n};\n\nexport type {\n  ProgressCircleRootProps,\n  ProgressCircleRootProps as ProgressCircleProps,\n  ProgressCircleTrackProps,\n  ProgressCircleTrackCircleProps,\n  ProgressCircleFillCircleProps,\n} from \"./progress-circle\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {progressCircleVariants} from \"@heroui/styles\";\n\nexport type {ProgressCircleVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "circle",
+    "heroui",
+    "other",
+    "progress"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "progress-circle_index",
+      "name": "index",
+      "path": "packages/react/src/components/progress-circle/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_progress-circle_index",
+      "name": "progress-circle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/progress-circle/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  ProgressCircleFillCircle,\n  ProgressCircleRoot,\n  ProgressCircleTrack,\n  ProgressCircleTrackCircle,\n} from \"./progress-circle\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ProgressCircle = Object.assign(ProgressCircleRoot, {\n  Root: ProgressCircleRoot,\n  Track: ProgressCircleTrack,\n  TrackCircle: ProgressCircleTrackCircle,\n  FillCircle: ProgressCircleFillCircle,\n});\n\nexport type ProgressCircle = {\n  Props: ComponentProps<typeof ProgressCircleRoot>;\n  RootProps: ComponentProps<typeof ProgressCircleRoot>;\n  TrackProps: ComponentProps<typeof ProgressCircleTrack>;\n  TrackCircleProps: ComponentProps<typeof ProgressCircleTrackCircle>;\n  FillCircleProps: ComponentProps<typeof ProgressCircleFillCircle>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  ProgressCircleRoot,\n  ProgressCircleTrack,\n  ProgressCircleTrackCircle,\n  ProgressCircleFillCircle,\n};\n\nexport type {\n  ProgressCircleRootProps,\n  ProgressCircleRootProps as ProgressCircleProps,\n  ProgressCircleTrackProps,\n  ProgressCircleTrackCircleProps,\n  ProgressCircleFillCircleProps,\n} from \"./progress-circle\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {progressCircleVariants} from \"@heroui/styles\";\n\nexport type {ProgressCircleVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "progress-circle is a progress circle UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: progress-circle\nDescription: progress-circle is a progress circle UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: circle, heroui, other, progress\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/progress-circle/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  ProgressCircleFillCircle,\n  ProgressCircleRoot,\n  ProgressCircleTrack,\n  ProgressCircleTrackCircle,\n} from \"./progress-circle\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ProgressCircle = Obje",
+  "prompt_version": 2,
+  "clean_id": "progress-circle",
+  "display_name": "Progress Circle",
+  "preview_url": "/previews/heroui/packages-react-src-components-progress-circle-index.png"
+}

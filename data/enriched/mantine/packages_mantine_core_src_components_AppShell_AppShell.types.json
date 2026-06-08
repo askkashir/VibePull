@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShell.types",
+  "name": "AppShell.types",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShell.types.ts\nimport type { MantineBreakpoint } from '../../core';\n\n// Shared props of for Navbar, Aside, Header and Footer components\nexport interface AppShellCompoundProps {\n  /** If set, component haves a border, overrides `withBorder` prop on `AppShell` component */\n  withBorder?: boolean;\n\n  /** Sets `z-index`. Inherited from the `AppShell` by default. */\n  zIndex?: React.CSSProperties['zIndex'];\n}\n\nexport type AppShellSize = number | (string & {});\n\nexport interface AppShellResponsiveSize {\n  base?: AppShellSize;\n  xs?: AppShellSize;\n  sm?: AppShellSize;\n  md?: AppShellSize;\n  lg?: AppShellSize;\n  xl?: AppShellSize;\n  [key: string]: AppShellSize | undefined;\n}\n\nexport type AppShellMode = 'fixed' | 'static';\n\nexport interface AppShellNavbarConfiguration {\n  width: AppShellSize | AppShellResponsiveSize;\n  breakpoint: MantineBreakpoint | (string & {}) | number;\n  collapsed?: { desktop?: boolean; mobile?: boolean };\n}\n\nexport interface AppShellAsideConfiguration {\n  width: AppShellSize | AppShellResponsiveSize;\n  breakpoint: MantineBreakpoint | (string & {}) | number;\n  collapsed?: { desktop?: boolean; mobile?: boolean };\n}\n\nexport interface AppShellHeaderConfiguration {\n  height: AppShellSize | AppShellResponsiveSize;\n  collapsed?: boolean;\n  offset?: boolean;\n}\n\nexport interface AppShellFooterConfiguration {\n  height: AppShellSize | AppShellResponsiveSize;\n  collapsed?: boolean;\n  offset?: boolean;\n}\n",
+  "description": "",
+  "tags": [
+    "app",
+    "mantine",
+    "other",
+    "shell",
+    "types"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShell.types",
+      "name": "AppShell.types",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShell.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShell.types",
+      "name": "AppShell.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShell.types.ts",
+          "content": "import type { MantineBreakpoint } from '../../core';\n\n// Shared props of for Navbar, Aside, Header and Footer components\nexport interface AppShellCompoundProps {\n  /** If set, component haves a border, overrides `withBorder` prop on `AppShell` component */\n  withBorder?: boolean;\n\n  /** Sets `z-index`. Inherited from the `AppShell` by default. */\n  zIndex?: React.CSSProperties['zIndex'];\n}\n\nexport type AppShellSize = number | (string & {});\n\nexport interface AppShellResponsiveSize {\n  base?: AppShellSize;\n  xs?: AppShellSize;\n  sm?: AppShellSize;\n  md?: AppShellSize;\n  lg?: AppShellSize;\n  xl?: AppShellSize;\n  [key: string]: AppShellSize | undefined;\n}\n\nexport type AppShellMode = 'fixed' | 'static';\n\nexport interface AppShellNavbarConfiguration {\n  width: AppShellSize | AppShellResponsiveSize;\n  breakpoint: MantineBreakpoint | (string & {}) | number;\n  collapsed?: { desktop?: boolean; mobile?: boolean };\n}\n\nexport interface AppShellAsideConfiguration {\n  width: AppShellSize | AppShellResponsiveSize;\n  breakpoint: MantineBreakpoint | (string & {}) | number;\n  collapsed?: { desktop?: boolean; mobile?: boolean };\n}\n\nexport interface AppShellHeaderConfiguration {\n  height: AppShellSize | AppShellResponsiveSize;\n  collapsed?: boolean;\n  offset?: boolean;\n}\n\nexport interface AppShellFooterConfiguration {\n  height: AppShellSize | AppShellResponsiveSize;\n  collapsed?: boolean;\n  offset?: boolean;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShell.types is a app shell types UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShell.types\nDescription: AppShell.types is a app shell types UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: app, mantine, other, shell, types\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShell.types.ts\nimport type { MantineBreakpoint } from '../../core';\n\n// Shared props of for Navbar, Aside, Header and Footer components\nexport interface AppShellCompoundProps {\n  /** If set, component haves a border, overrides `withBorder` prop on `AppShell` component */\n  withBorder?: boolean;\n\n  /** Sets `z-index`. Inherited from the `AppShell` by default. */\n  zIndex?: React.CSSProperties['zIndex'];\n}\n\nexport type AppShellSize = number | (s",
+  "prompt_version": 2,
+  "clean_id": "app-shell",
+  "display_name": "App Shell",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshell-types.png"
+}

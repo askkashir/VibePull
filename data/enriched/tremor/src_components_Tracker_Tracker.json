@@ -1,0 +1,49 @@
+{
+  "id": "src_components_Tracker_Tracker",
+  "name": "Tracker",
+  "source_code": "// src/components/Tracker/Tracker.tsx\n// Tremor Tracker [v1.0.0]\n\nimport React from \"react\"\nimport * as HoverCardPrimitives from \"@radix-ui/react-hover-card\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TrackerBlockProps {\n  key?: string | number\n  color?: string\n  tooltip?: string\n  hoverEffect?: boolean\n  defaultBackgroundColor?: string\n}\n\nconst Block = ({\n  color,\n  tooltip,\n  defaultBackgroundColor,\n  hoverEffect,\n}: TrackerBlockProps) => {\n  const [open, setOpen] = React.useState(false)\n  return (\n    <HoverCardPrimitives.Root\n      open={open}\n      onOpenChange={setOpen}\n      openDelay={0}\n      closeDelay={0}\n      tremor-id=\"tremor-raw\"\n    >\n      <HoverCardPrimitives.Trigger onClick={() => setOpen(true)} asChild>\n        <div className=\"size-full overflow-hidden px-[0.5px] transition first:rounded-l-[4px] first:pl-0 last:rounded-r-[4px] last:pr-0 sm:px-px\">\n          <div\n            className={cx(\n              \"size-full rounded-[1px]\",\n              color || defaultBackgroundColor,\n              hoverEffect ? \"hover:opacity-50\" : \"\",\n            )}\n          />\n        </div>\n      </HoverCardPrimitives.Trigger>\n      <HoverCardPrimitives.Portal>\n        <HoverCardPrimitives.Content\n          sideOffset={10}\n          side=\"top\"\n          align=\"center\"\n          avoidCollisions\n          className={cx(\n            // base\n            \"w-auto rounded-md px-2 py-1 text-sm shadow-md\",\n            // text color\n            \"text-white dark:text-gray-900\",\n            // background color\n            \"bg-gray-900 dark:bg-gray-50\",\n          )}\n        >\n          {tooltip}\n        </HoverCardPrimitives.Content>\n      </HoverCardPrimitives.Portal>\n    </HoverCardPrimitives.Root>\n  )\n}\n\nBlock.displayName = \"Block\"\n\ninterface TrackerProps extends React.HTMLAttributes<HTMLDivElement> {\n  data: TrackerBlockProps[]\n  defaultBackgroundColor?: string\n  hoverEffect?: boolean\n}\n\nconst Tracker = React.forwardRef<HTMLDivElement, TrackerProps>(\n  (\n    {\n      data = [],\n      defaultBackgroundColor = \"bg-gray-400 dark:bg-gray-400\",\n      className,\n      hoverEffect,\n      ...props\n    },\n    forwardedRef,\n  ) => {\n    return (\n      <div\n        ref={forwardedRef}\n        className={cx(\"group flex h-8 w-full items-center\", className)}\n        {...props}\n      >\n        {data.map((props, index) => (\n          <Block\n            key={props.key ?? index}\n            defaultBackgroundColor={defaultBackgroundColor}\n            hoverEffect={hoverEffect}\n            {...props}\n          />\n        ))}\n      </div>\n    )\n  },\n)\n\nTracker.displayName = \"Tracker\"\n\nexport { Tracker, type TrackerBlockProps }\n",
+  "description": "",
+  "tags": [
+    "tooltip",
+    "hover",
+    "compact",
+    "container",
+    "data"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "Tracker_Tracker",
+      "name": "Tracker",
+      "path": "src/components/Tracker/Tracker.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_Tracker_Tracker",
+      "name": "Tracker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Tracker/Tracker.tsx",
+          "content": "// Tremor Tracker [v1.0.0]\n\nimport React from \"react\"\nimport * as HoverCardPrimitives from \"@radix-ui/react-hover-card\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TrackerBlockProps {\n  key?: string | number\n  color?: string\n  tooltip?: string\n  hoverEffect?: boolean\n  defaultBackgroundColor?: string\n}\n\nconst Block = ({\n  color,\n  tooltip,\n  defaultBackgroundColor,\n  hoverEffect,\n}: TrackerBlockProps) => {\n  const [open, setOpen] = React.useState(false)\n  return (\n    <HoverCardPrimitives.Root\n      open={open}\n      onOpenChange={setOpen}\n      openDelay={0}\n      closeDelay={0}\n      tremor-id=\"tremor-raw\"\n    >\n      <HoverCardPrimitives.Trigger onClick={() => setOpen(true)} asChild>\n        <div className=\"size-full overflow-hidden px-[0.5px] transition first:rounded-l-[4px] first:pl-0 last:rounded-r-[4px] last:pr-0 sm:px-px\">\n          <div\n            className={cx(\n              \"size-full rounded-[1px]\",\n              color || defaultBackgroundColor,\n              hoverEffect ? \"hover:opacity-50\" : \"\",\n            )}\n          />\n        </div>\n      </HoverCardPrimitives.Trigger>\n      <HoverCardPrimitives.Portal>\n        <HoverCardPrimitives.Content\n          sideOffset={10}\n          side=\"top\"\n          align=\"center\"\n          avoidCollisions\n          className={cx(\n            // base\n            \"w-auto rounded-md px-2 py-1 text-sm shadow-md\",\n            // text color\n            \"text-white dark:text-gray-900\",\n            // background color\n            \"bg-gray-900 dark:bg-gray-50\",\n          )}\n        >\n          {tooltip}\n        </HoverCardPrimitives.Content>\n      </HoverCardPrimitives.Portal>\n    </HoverCardPrimitives.Root>\n  )\n}\n\nBlock.displayName = \"Block\"\n\ninterface TrackerProps extends React.HTMLAttributes<HTMLDivElement> {\n  data: TrackerBlockProps[]\n  defaultBackgroundColor?: string\n  hoverEffect?: boolean\n}\n\nconst Tracker = React.forwardRef<HTMLDivElement, TrackerProps>(\n  (\n    {\n      data = [],\n      defaultBackgroundColor = \"bg-gray-400 dark:bg-gray-400\",\n      className,\n      hoverEffect,\n      ...props\n    },\n    forwardedRef,\n  ) => {\n    return (\n      <div\n        ref={forwardedRef}\n        className={cx(\"group flex h-8 w-full items-center\", className)}\n        {...props}\n      >\n        {data.map((props, index) => (\n          <Block\n            key={props.key ?? index}\n            defaultBackgroundColor={defaultBackgroundColor}\n            hoverEffect={hoverEffect}\n            {...props}\n          />\n        ))}\n      </div>\n    )\n  },\n)\n\nTracker.displayName = \"Tracker\"\n\nexport { Tracker, type TrackerBlockProps }\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Tracker component is a container for tracking small units of information that hover when clicked, revealing a tooltip with an additional line of text. Use this component when you have a small piece of data that's worth displaying in a compact format with a clear call-to-action.",
+  "style_tags": [
+    "dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Tracker\nDescription: The Tracker component is a container for tracking small units of information that hover when clicked, revealing a tooltip with an additional line of text. Use this component when you have a small piece of data that's worth displaying in a compact format with a clear call-to-action.\nStyle: dark, minimal\nInteractions: hover, clickable\nTags: tooltip, hover, compact, container, data\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/Tracker/Tracker.tsx\n// Tremor Tracker [v1.0.0]\n\nimport React from \"react\"\nimport * as HoverCardPrimitives from \"@radix-ui/react-hover-card\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface TrackerBlockProps {\n  key?: string | number\n  color?: string\n  tooltip?: string\n  hoverEffect?: boolean\n  defaultBackgroundColor?: string\n}\n\nconst Block = ({\n  color,\n  tooltip,\n  defaultBackgroundColor,\n  hoverEffect,\n}: TrackerBlockProps) => {\n  const [open, setOpen] = React.useState(false)\n",
+  "prompt_version": 2,
+  "clean_id": "tracker",
+  "display_name": "Tracker",
+  "preview_url": "/previews/tremor/src-components-tracker-tracker.png"
+}

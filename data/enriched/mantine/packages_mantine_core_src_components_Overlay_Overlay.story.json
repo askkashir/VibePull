@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Overlay_Overlay.story",
+  "name": "Overlay.story",
+  "source_code": "// packages/@mantine/core/src/components/Overlay/Overlay.story.tsx\nimport { Overlay } from './Overlay';\n\nexport default { title: 'Overlay' };\n\nconst lorem =\n  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione expedita voluptatibus aperiam cum, consectetur, tenetur consequuntur error qui eum eligendi, ea illum! Sit, sint totam dicta rem deleniti perspiciatis!';\nconst content = Array(20)\n  .fill(0)\n  .map((_, index) => <p key={index}>{lorem}</p>);\n\nexport function Usage() {\n  return (\n    <>\n      <Overlay blur={3} radius=\"xl\">\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Gradient() {\n  return (\n    <>\n      <Overlay gradient=\"linear-gradient(145deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%)\">\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Center() {\n  return (\n    <>\n      <Overlay center c=\"#fff\" opacity={0.9}>\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Fixed() {\n  return (\n    <>\n      <Overlay fixed>Some content</Overlay>\n      {content}\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "overlay",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Overlay_Overlay.story",
+      "name": "Overlay.story",
+      "path": "packages/@mantine/core/src/components/Overlay/Overlay.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Overlay_Overlay.story",
+      "name": "Overlay.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Overlay/Overlay.story.tsx",
+          "content": "import { Overlay } from './Overlay';\n\nexport default { title: 'Overlay' };\n\nconst lorem =\n  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione expedita voluptatibus aperiam cum, consectetur, tenetur consequuntur error qui eum eligendi, ea illum! Sit, sint totam dicta rem deleniti perspiciatis!';\nconst content = Array(20)\n  .fill(0)\n  .map((_, index) => <p key={index}>{lorem}</p>);\n\nexport function Usage() {\n  return (\n    <>\n      <Overlay blur={3} radius=\"xl\">\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Gradient() {\n  return (\n    <>\n      <Overlay gradient=\"linear-gradient(145deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%)\">\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Center() {\n  return (\n    <>\n      <Overlay center c=\"#fff\" opacity={0.9}>\n        Some content\n      </Overlay>\n      {content}\n    </>\n  );\n}\n\nexport function Fixed() {\n  return (\n    <>\n      <Overlay fixed>Some content</Overlay>\n      {content}\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Overlay.story is a overlay story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Overlay.story\nDescription: Overlay.story is a overlay story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient\nInteractions: \nTags: mantine, other, overlay, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Overlay/Overlay.story.tsx\nimport { Overlay } from './Overlay';\n\nexport default { title: 'Overlay' };\n\nconst lorem =\n  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione expedita voluptatibus aperiam cum, consectetur, tenetur consequuntur error qui eum eligendi, ea illum! Sit, sint totam dicta rem deleniti perspiciatis!';\nconst content = Array(20)\n  .fill(0)\n  .map((_, index) => <p key={index}>{lorem}</p>);\n\nexport function Usage() ",
+  "prompt_version": 2,
+  "clean_id": "overlay",
+  "display_name": "Overlay",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-overlay-overlay-story.png"
+}

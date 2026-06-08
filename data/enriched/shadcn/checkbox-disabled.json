@@ -1,0 +1,36 @@
+{
+  "id": "checkbox-disabled",
+  "name": "checkbox-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "disabled",
+    "form",
+    "feedback"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "checkbox-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## checkbox-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A disabled checkbox is a visually impaired checkbox that prevents users from interacting with it. Developers would use this component to provide feedback to the user that a checkbox is not functional or not applicable. It is commonly used in forms or in situations where users don't need to interact with the checkbox.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: checkbox-disabled\nDescription: A disabled checkbox is a visually impaired checkbox that prevents users from interacting with it. Developers would use this component to provide feedback to the user that a checkbox is not functional or not applicable. It is commonly used in forms or in situations where users don't need to interact with the checkbox.\nStyle: default\nInteractions: \nTags: checkbox, disabled, form, feedback\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "checkbox-disabled",
+  "display_name": "Checkbox Disabled",
+  "preview_url": "/previews/shadcn/checkbox-disabled.png"
+}

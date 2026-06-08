@@ -1,0 +1,41 @@
+{
+  "id": "aspect-ratio",
+  "name": "aspect-ratio",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "container",
+    "responsive",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## aspect-ratio\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "The aspect-ratio component is a versatile container that maintains a consistent aspect ratio, useful for creating image galleries, banners, or responsive videos. It adapts to its content, ensuring a harmonious visual experience. Developers can easily integrate aspect-sensitive layouts in their applications.",
+  "style_tags": [
+    "e.g. grid",
+    "responsive design",
+    "container"
+  ],
+  "interaction_tags": [
+    "e.g. scalable",
+    "responsive",
+    "adaptive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: aspect-ratio\nDescription: The aspect-ratio component is a versatile container that maintains a consistent aspect ratio, useful for creating image galleries, banners, or responsive videos. It adapts to its content, ensuring a harmonious visual experience. Developers can easily integrate aspect-sensitive layouts in their applications.\nStyle: e.g. grid, responsive design, container\nInteractions: e.g. scalable, responsive, adaptive\nTags: container, responsive, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "aspect-ratio",
+  "display_name": "Aspect Ratio",
+  "preview_url": "/previews/shadcn/aspect-ratio.png"
+}

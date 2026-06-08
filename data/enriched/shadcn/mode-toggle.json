@@ -1,0 +1,40 @@
+{
+  "id": "mode-toggle",
+  "name": "mode-toggle",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "mode-toggle",
+    "switch",
+    "style-switcher",
+    "theme-toggle"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "mode-toggle",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## mode-toggle\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The mode-toggle component is a small, toggle-like button that switches between light and dark modes in an application. It is typically used as a header element to change the color scheme of an app. This component is ideal for applications that require frequent changes in mode.",
+  "style_tags": [
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "toggle",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: mode-toggle\nDescription: The mode-toggle component is a small, toggle-like button that switches between light and dark modes in an application. It is typically used as a header element to change the color scheme of an app. This component is ideal for applications that require frequent changes in mode.\nStyle: minimal, flat\nInteractions: toggle, clickable\nTags: mode-toggle, switch, style-switcher, theme-toggle\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "mode-toggle",
+  "display_name": "Mode Toggle",
+  "preview_url": "/previews/shadcn/mode-toggle.png"
+}

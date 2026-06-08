@@ -1,0 +1,47 @@
+{
+  "id": "components_icons_IconLoading",
+  "name": "IconLoading",
+  "source_code": "// components/icons/IconLoading.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport const IconLoading = ({ className = \"\" }: { className?: string }) => (\n  <svg\n    className={mergeTW(`animate-spin h-5 w-5 -ml-1 mr-3 ${className}`)}\n    xmlns=\"http://www.w3.org/2000/svg\"\n    fill=\"none\"\n    viewBox=\"0 0 24 24\"\n  >\n    <circle\n      className=\"opacity-25\"\n      cx=\"12\"\n      cy=\"12\"\n      r=\"10\"\n      stroke=\"currentColor\"\n      strokeWidth=\"4\"\n    ></circle>\n    <path\n      className=\"opacity-75\"\n      fill=\"currentColor\"\n      d=\"M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z\"\n    ></path>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "icon",
+    "loading",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_IconLoading",
+      "name": "IconLoading",
+      "path": "components/icons/IconLoading.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_IconLoading",
+      "name": "IconLoading",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/IconLoading.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\n\nexport const IconLoading = ({ className = \"\" }: { className?: string }) => (\n  <svg\n    className={mergeTW(`animate-spin h-5 w-5 -ml-1 mr-3 ${className}`)}\n    xmlns=\"http://www.w3.org/2000/svg\"\n    fill=\"none\"\n    viewBox=\"0 0 24 24\"\n  >\n    <circle\n      className=\"opacity-25\"\n      cx=\"12\"\n      cy=\"12\"\n      r=\"10\"\n      stroke=\"currentColor\"\n      strokeWidth=\"4\"\n    ></circle>\n    <path\n      className=\"opacity-75\"\n      fill=\"currentColor\"\n      d=\"M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z\"\n    ></path>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "IconLoading is a icon loading UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: IconLoading\nDescription: IconLoading is a icon loading UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: animated\nTags: floatui, icon, loading, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/icons/IconLoading.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport const IconLoading = ({ className = \"\" }: { className?: string }) => (\n  <svg\n    className={mergeTW(`animate-spin h-5 w-5 -ml-1 mr-3 ${className}`)}\n    xmlns=\"http://www.w3.org/2000/svg\"\n    fill=\"none\"\n    viewBox=\"0 0 24 24\"\n  >\n    <circle\n      className=\"opacity-25\"\n      cx=\"12\"\n      cy=\"12\"\n      r=\"10\"\n      stroke=\"currentColor\"\n      strokeWidth=\"4\"\n    ></circle>\n    <path\n      className=\"opacity-75\"\n ",
+  "prompt_version": 2,
+  "clean_id": "icon-loading",
+  "display_name": "Icon Loading",
+  "preview_url": "/previews/floatui/components-icons-iconloading.png"
+}

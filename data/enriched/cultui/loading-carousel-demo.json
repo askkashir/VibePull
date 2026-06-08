@@ -1,0 +1,65 @@
+{
+  "id": "loading-carousel-demo",
+  "name": "loading-carousel-demo",
+  "source_code": "// registry/default/example/loading-carousel-demo.tsx\n\"use client\"\n\nimport React from \"react\"\n\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\"\n\nimport { LoadingCarousel } from \"../ui/loading-carousel\"\n\nexport default function LoadingCarouselDemo() {\n  return (\n    <div className=\"space-y-8 p-4 w-full\">\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Default LoadingCarousel</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Wide Aspect Ratio with Top Text</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"wide\"\n            textPosition=\"top\"\n            showIndicators={false}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Background Tips + Gradient</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"wide\"\n            backgroundTips={true}\n            backgroundGradient={true}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Custom Interval and Navigation</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel autoplayInterval={2000} showNavigation={true} />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Shuffled Tips with Custom Interval</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            shuffleTips={true}\n            autoplayInterval={3000}\n            showProgress={false}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Square Aspect Ratio with Background Tips</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"square\"\n            backgroundTips={true}\n            backgroundGradient={true}\n          />\n        </CardContent>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "loading",
+    "carousel",
+    "demo",
+    "ui"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "loading-carousel-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/loading-carousel-demo.json",
+      "sha": "7c72ed6fd80b5f2c1a84865770e7400d65871ba9",
+      "size": 2611,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/loading-carousel-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/loading-carousel-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/7c72ed6fd80b5f2c1a84865770e7400d65871ba9",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/loading-carousel-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/loading-carousel-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/7c72ed6fd80b5f2c1a84865770e7400d65871ba9",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/loading-carousel-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "loading-carousel-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "loading-carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/loading-carousel-demo.tsx",
+          "content": "\"use client\"\n\nimport React from \"react\"\n\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\"\n\nimport { LoadingCarousel } from \"../ui/loading-carousel\"\n\nexport default function LoadingCarouselDemo() {\n  return (\n    <div className=\"space-y-8 p-4 w-full\">\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Default LoadingCarousel</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Wide Aspect Ratio with Top Text</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"wide\"\n            textPosition=\"top\"\n            showIndicators={false}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Background Tips + Gradient</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"wide\"\n            backgroundTips={true}\n            backgroundGradient={true}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Custom Interval and Navigation</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel autoplayInterval={2000} showNavigation={true} />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Shuffled Tips with Custom Interval</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            shuffleTips={true}\n            autoplayInterval={3000}\n            showProgress={false}\n          />\n        </CardContent>\n      </div>\n\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Square Aspect Ratio with Background Tips</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <LoadingCarousel\n            aspectRatio=\"square\"\n            backgroundTips={true}\n            backgroundGradient={true}\n          />\n        </CardContent>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A demo component showcasing different variants of a loading carousel. It includes examples of various configurations for a loading carousel component.",
+  "style_tags": [
+    "square",
+    "wide",
+    "gradient"
+  ],
+  "interaction_tags": [
+    "autoplay",
+    "shuffle",
+    "indicators"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: loading-carousel-demo\nDescription: A demo component showcasing different variants of a loading carousel. It includes examples of various configurations for a loading carousel component.\nStyle: square, wide, gradient\nInteractions: autoplay, shuffle, indicators\nTags: loading, carousel, demo, ui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/loading-carousel-demo.tsx\n\"use client\"\n\nimport React from \"react\"\n\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\"\n\nimport { LoadingCarousel } from \"../ui/loading-carousel\"\n\nexport default function LoadingCarouselDemo() {\n  return (\n    <div className=\"space-y-8 p-4 w-full\">\n      <div className=\"w-full\">\n        <CardHeader>\n          <CardTitle>Default LoadingCarousel</CardTitle>\n        </CardHeader>\n        <CardContent>\n          <",
+  "prompt_version": 2,
+  "clean_id": "loading-carousel-demo",
+  "display_name": "Loading Carousel Demo",
+  "preview_url": "/previews/cultui/loading-carousel-demo.png"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "packages_radix-ui-themes_src_components_checkbox",
+  "name": "checkbox",
+  "source_code": "// packages/radix-ui-themes/src/components/checkbox.tsx\n'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Checkbox as CheckboxPrimitive } from 'radix-ui';\nimport { useControllableState } from 'radix-ui/internal';\n\nimport { checkboxPropDefs } from './checkbox.props.js';\nimport { ThickCheckIcon, ThickDividerHorizontalIcon } from './icons.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CheckboxElement = React.ElementRef<typeof CheckboxPrimitive.Root>;\ntype CheckboxOwnProps = GetPropDefTypes<typeof checkboxPropDefs>;\ninterface CheckboxProps\n  extends\n    ComponentPropsWithout<\n      typeof CheckboxPrimitive.Root,\n      'asChild' | 'color' | 'defaultValue' | 'children'\n    >,\n    MarginProps,\n    CheckboxOwnProps {}\nconst Checkbox = React.forwardRef<CheckboxElement, CheckboxProps>((props, forwardedRef) => {\n  const {\n    className,\n    color,\n    checked: checkedProp,\n    defaultChecked: defaultCheckedProp,\n    onCheckedChange,\n    ...checkboxProps\n  } = extractProps(props, checkboxPropDefs, marginPropDefs);\n\n  const [checked, setChecked] = useControllableState({\n    prop: checkedProp,\n    defaultProp: defaultCheckedProp,\n    onChange: onCheckedChange,\n  });\n\n  return (\n    <CheckboxPrimitive.Root\n      data-accent-color={color}\n      {...checkboxProps}\n      defaultChecked={defaultCheckedProp}\n      checked={checked}\n      onCheckedChange={setChecked}\n      asChild={false}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-BaseCheckboxRoot', 'rt-CheckboxRoot', className)}\n    >\n      <CheckboxPrimitive.Indicator\n        asChild\n        className=\"rt-BaseCheckboxIndicator rt-CheckboxIndicator\"\n      >\n        {checked === 'indeterminate' ? <ThickDividerHorizontalIcon /> : <ThickCheckIcon />}\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  );\n});\nCheckbox.displayName = 'Checkbox';\n\nexport { Checkbox };\nexport type { CheckboxProps };\n",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "selection",
+    "binary"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_checkbox",
+      "name": "checkbox.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/checkbox.tsx",
+      "sha": "422235635a9cd1293357e39f8897fe7edc799d31",
+      "size": 2166,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/checkbox.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/checkbox.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/422235635a9cd1293357e39f8897fe7edc799d31",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/checkbox.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/checkbox.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/422235635a9cd1293357e39f8897fe7edc799d31",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/checkbox.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_checkbox",
+      "name": "checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/checkbox.tsx",
+          "content": "'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Checkbox as CheckboxPrimitive } from 'radix-ui';\nimport { useControllableState } from 'radix-ui/internal';\n\nimport { checkboxPropDefs } from './checkbox.props.js';\nimport { ThickCheckIcon, ThickDividerHorizontalIcon } from './icons.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CheckboxElement = React.ElementRef<typeof CheckboxPrimitive.Root>;\ntype CheckboxOwnProps = GetPropDefTypes<typeof checkboxPropDefs>;\ninterface CheckboxProps\n  extends\n    ComponentPropsWithout<\n      typeof CheckboxPrimitive.Root,\n      'asChild' | 'color' | 'defaultValue' | 'children'\n    >,\n    MarginProps,\n    CheckboxOwnProps {}\nconst Checkbox = React.forwardRef<CheckboxElement, CheckboxProps>((props, forwardedRef) => {\n  const {\n    className,\n    color,\n    checked: checkedProp,\n    defaultChecked: defaultCheckedProp,\n    onCheckedChange,\n    ...checkboxProps\n  } = extractProps(props, checkboxPropDefs, marginPropDefs);\n\n  const [checked, setChecked] = useControllableState({\n    prop: checkedProp,\n    defaultProp: defaultCheckedProp,\n    onChange: onCheckedChange,\n  });\n\n  return (\n    <CheckboxPrimitive.Root\n      data-accent-color={color}\n      {...checkboxProps}\n      defaultChecked={defaultCheckedProp}\n      checked={checked}\n      onCheckedChange={setChecked}\n      asChild={false}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-BaseCheckboxRoot', 'rt-CheckboxRoot', className)}\n    >\n      <CheckboxPrimitive.Indicator\n        asChild\n        className=\"rt-BaseCheckboxIndicator rt-CheckboxIndicator\"\n      >\n        {checked === 'indeterminate' ? <ThickDividerHorizontalIcon /> : <ThickCheckIcon />}\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  );\n});\nCheckbox.displayName = 'Checkbox';\n\nexport { Checkbox };\nexport type { CheckboxProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A checkbox is a UI component used for binary selection, used for displaying a checkmark or a tick to indicate selection. Developers would use it when needing user selection.",
+  "style_tags": [
+    "Material Design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: checkbox\nDescription: A checkbox is a UI component used for binary selection, used for displaying a checkmark or a tick to indicate selection. Developers would use it when needing user selection.\nStyle: Material Design\nInteractions: clickable, hover\nTags: checkbox, selection, binary\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/checkbox.tsx\n'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Checkbox as CheckboxPrimitive } from 'radix-ui';\nimport { useControllableState } from 'radix-ui/internal';\n\nimport { checkboxPropDefs } from './checkbox.props.js';\nimport { ThickCheckIcon, ThickDividerHorizontalIcon } from './icons.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.",
+  "prompt_version": 2,
+  "clean_id": "checkbox",
+  "display_name": "Checkbox",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-checkbox.png"
+}

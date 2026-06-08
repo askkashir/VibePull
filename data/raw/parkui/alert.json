@@ -1,0 +1,54 @@
+{
+  "id": "alert",
+  "name": "alert",
+  "source_code": "// src/components/ui/alert.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { InfoIcon } from 'lucide-react'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { alert } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(alert)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\nexport const Content = withContext(ark.div, 'content')\n\ntype IndicatorProps = ComponentProps<typeof StyledIndicator>\nconst StyledIndicator = withContext(ark.span, 'indicator')\n\nexport const Indicator = forwardRef<HTMLSpanElement, IndicatorProps>(\n  function Indicator(props, ref) {\n    return (\n      <StyledIndicator ref={ref} {...props}>\n        <InfoIcon />\n      </StyledIndicator>\n    )\n  },\n)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "alert",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Alert from './alert'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { InfoIcon } from 'lucide-react'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { alert } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(alert)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\nexport const Content = withContext(ark.div, 'content')\n\ntype IndicatorProps = ComponentProps<typeof StyledIndicator>\nconst StyledIndicator = withContext(ark.span, 'indicator')\n\nexport const Indicator = forwardRef<HTMLSpanElement, IndicatorProps>(\n  function Indicator(props, ref) {\n    return (\n      <StyledIndicator ref={ref} {...props}>\n        <InfoIcon />\n      </StyledIndicator>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "alert-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "alert",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Alert from './alert'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport { InfoIcon } from 'lucide-react'\nimport { type ComponentProps, forwardRef } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { alert } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(alert)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\nexport const Content = withContext(ark.div, 'content')\n\ntype IndicatorProps = ComponentProps<typeof StyledIndicator>\nconst StyledIndicator = withContext(ark.span, 'indicator')\n\nexport const Indicator = forwardRef<HTMLSpanElement, IndicatorProps>(\n  function Indicator(props, ref) {\n    return (\n      <StyledIndicator ref={ref} {...props}>\n        <InfoIcon />\n      </StyledIndicator>\n    )\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "alert-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_description_description",
+  "name": "description",
+  "source_code": "// packages/react/src/components/description/description.tsx\n\"use client\";\n\nimport type {DescriptionVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TextProps} from \"react-aria-components/Text\";\n\nimport {descriptionVariants} from \"@heroui/styles\";\nimport {Text} from \"react-aria-components/Text\";\n\n/* -------------------------------------------------------------------------------------------------\n * Description Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DescriptionRootProps\n  extends ComponentPropsWithRef<typeof Text>, TextProps, DescriptionVariants {}\n\nconst DescriptionRoot = ({children, className, ...rest}: DescriptionRootProps) => {\n  return (\n    <Text\n      className={descriptionVariants({className})}\n      data-slot=\"description\"\n      slot=\"description\"\n      {...rest}\n    >\n      {children}\n    </Text>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DescriptionRoot};\n\nexport type {DescriptionRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "description_description",
+      "name": "description",
+      "path": "packages/react/src/components/description/description.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_description_description",
+      "name": "description",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/description/description.tsx",
+          "content": "\"use client\";\n\nimport type {DescriptionVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TextProps} from \"react-aria-components/Text\";\n\nimport {descriptionVariants} from \"@heroui/styles\";\nimport {Text} from \"react-aria-components/Text\";\n\n/* -------------------------------------------------------------------------------------------------\n * Description Root\n * -----------------------------------------------------------------------------------------------*/\ninterface DescriptionRootProps\n  extends ComponentPropsWithRef<typeof Text>, TextProps, DescriptionVariants {}\n\nconst DescriptionRoot = ({children, className, ...rest}: DescriptionRootProps) => {\n  return (\n    <Text\n      className={descriptionVariants({className})}\n      data-slot=\"description\"\n      slot=\"description\"\n      {...rest}\n    >\n      {children}\n    </Text>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {DescriptionRoot};\n\nexport type {DescriptionRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

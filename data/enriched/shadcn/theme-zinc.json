@@ -1,0 +1,39 @@
+{
+  "id": "theme-zinc",
+  "name": "theme-zinc",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "stylish",
+    "modern",
+    "customizable",
+    "responsive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-zinc",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-zinc\n**Type:** registry:theme"
+  },
+  "visual_summary": "Theme Zinc is a customizable theme component that provides a stylish and modern look for web applications. It can be used when you want to apply a consistent design across your application. This theme can be further customized to fit your brand's identity.",
+  "style_tags": [
+    "material",
+    "zinc",
+    "dark",
+    "light"
+  ],
+  "interaction_tags": [],
+  "component_type": "theme",
+  "generation_prompt": "Create a production-ready theme component with the following characteristics:\n\nName: theme-zinc\nDescription: Theme Zinc is a customizable theme component that provides a stylish and modern look for web applications. It can be used when you want to apply a consistent design across your application. This theme can be further customized to fit your brand's identity.\nStyle: material, zinc, dark, light\nInteractions: \nTags: stylish, modern, customizable, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "theme-zinc",
+  "display_name": "Theme Zinc",
+  "preview_url": "/previews/shadcn/theme-zinc.png"
+}

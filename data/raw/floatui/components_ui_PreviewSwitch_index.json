@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_PreviewSwitch_index",
+  "name": "PreviewSwitch",
+  "source_code": "// components/ui/PreviewSwitch/index.tsx\n\"use client\";\n\nimport { CodeBracketIcon, TvIcon } from \"@heroicons/react/24/outline\";\nimport Button from \"../Button\";\n\ntype Props = {\n  preview: boolean;\n  setPreview: (type: boolean) => void;\n};\n\nconst SwitchBtn = ({ preview, setPreview }: Props) => (\n  <Button\n    onClick={() => setPreview(!preview)}\n    className=\"flex gap-x-3 text-sm text-zinc-50 bg-zinc-800 hover:bg-zinc-700 rounded-lg w-50 py-2 shadow-sm\"\n  >\n    Code\n    {preview ? (\n      <CodeBracketIcon className=\"w-5 h-5\" />\n    ) : (\n      <TvIcon className=\"w-5 h-5\" />\n    )}\n  </Button>\n);\n\nexport default ({ preview, setPreview }: Props) => {\n  return (\n    <div className=\"text-sm\">\n      <SwitchBtn preview={preview} setPreview={setPreview} />\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_PreviewSwitch_index",
+      "name": "index",
+      "path": "components/ui/PreviewSwitch/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_PreviewSwitch_index",
+      "name": "PreviewSwitch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/PreviewSwitch/index.tsx",
+          "content": "\"use client\";\n\nimport { CodeBracketIcon, TvIcon } from \"@heroicons/react/24/outline\";\nimport Button from \"../Button\";\n\ntype Props = {\n  preview: boolean;\n  setPreview: (type: boolean) => void;\n};\n\nconst SwitchBtn = ({ preview, setPreview }: Props) => (\n  <Button\n    onClick={() => setPreview(!preview)}\n    className=\"flex gap-x-3 text-sm text-zinc-50 bg-zinc-800 hover:bg-zinc-700 rounded-lg w-50 py-2 shadow-sm\"\n  >\n    Code\n    {preview ? (\n      <CodeBracketIcon className=\"w-5 h-5\" />\n    ) : (\n      <TvIcon className=\"w-5 h-5\" />\n    )}\n  </Button>\n);\n\nexport default ({ preview, setPreview }: Props) => {\n  return (\n    <div className=\"text-sm\">\n      <SwitchBtn preview={preview} setPreview={setPreview} />\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

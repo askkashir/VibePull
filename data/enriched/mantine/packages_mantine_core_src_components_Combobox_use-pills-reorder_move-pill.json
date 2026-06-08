@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_use-pills-reorder_move-pill",
+  "name": "move-pill",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/use-pills-reorder/move-pill.ts\nexport type PillReorderPosition = 'before' | 'after';\n\nexport function movePill<T>(\n  value: T[],\n  from: number,\n  to: number,\n  position: PillReorderPosition\n): T[] {\n  if (from === to) {\n    return value;\n  }\n\n  if (position === 'before' && to === from + 1) {\n    return value;\n  }\n\n  if (position === 'after' && to === from - 1) {\n    return value;\n  }\n\n  const result = value.slice();\n  const [item] = result.splice(from, 1);\n\n  let targetIndex = from < to ? to - 1 : to;\n  if (position === 'after') {\n    targetIndex += 1;\n  }\n\n  result.splice(targetIndex, 0, item);\n  return result;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "move",
+    "other",
+    "pill"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_use-pills-reorder_move-pill",
+      "name": "move-pill",
+      "path": "packages/@mantine/core/src/components/Combobox/use-pills-reorder/move-pill.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_use-pills-reorder_move-pill",
+      "name": "move-pill",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/use-pills-reorder/move-pill.ts",
+          "content": "export type PillReorderPosition = 'before' | 'after';\n\nexport function movePill<T>(\n  value: T[],\n  from: number,\n  to: number,\n  position: PillReorderPosition\n): T[] {\n  if (from === to) {\n    return value;\n  }\n\n  if (position === 'before' && to === from + 1) {\n    return value;\n  }\n\n  if (position === 'after' && to === from - 1) {\n    return value;\n  }\n\n  const result = value.slice();\n  const [item] = result.splice(from, 1);\n\n  let targetIndex = from < to ? to - 1 : to;\n  if (position === 'after') {\n    targetIndex += 1;\n  }\n\n  result.splice(targetIndex, 0, item);\n  return result;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "move-pill is a move pill UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: move-pill\nDescription: move-pill is a move pill UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, move, other, pill\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/use-pills-reorder/move-pill.ts\nexport type PillReorderPosition = 'before' | 'after';\n\nexport function movePill<T>(\n  value: T[],\n  from: number,\n  to: number,\n  position: PillReorderPosition\n): T[] {\n  if (from === to) {\n    return value;\n  }\n\n  if (position === 'before' && to === from + 1) {\n    return value;\n  }\n\n  if (position === 'after' && to === from - 1) {\n    return value;\n  }\n\n  const result = value.slice();\n  const [item] = result.splic",
+  "prompt_version": 2,
+  "clean_id": "move-pill",
+  "display_name": "Move Pill",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-use-pills-reorder-move-pill.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_PillsInput_PillsInput.context",
+  "name": "PillsInput.context",
+  "source_code": "// packages/@mantine/core/src/components/PillsInput/PillsInput.context.ts\nimport { createContext } from 'react';\nimport { MantineSize } from '../../core';\nimport { InputVariant } from '../Input';\n\nexport interface PillsInputContextValue {\n  fieldRef: React.RefObject<HTMLInputElement | null>;\n  size: MantineSize | (string & {});\n  disabled: boolean | undefined;\n  hasError: boolean | undefined;\n  variant: InputVariant | (string & {}) | undefined;\n}\n\nexport const PillsInputContext = createContext<PillsInputContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "PillsInput_PillsInput.context",
+      "name": "PillsInput.context",
+      "path": "packages/@mantine/core/src/components/PillsInput/PillsInput.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_PillsInput_PillsInput.context",
+      "name": "PillsInput.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/PillsInput/PillsInput.context.ts",
+          "content": "import { createContext } from 'react';\nimport { MantineSize } from '../../core';\nimport { InputVariant } from '../Input';\n\nexport interface PillsInputContextValue {\n  fieldRef: React.RefObject<HTMLInputElement | null>;\n  size: MantineSize | (string & {});\n  disabled: boolean | undefined;\n  hasError: boolean | undefined;\n  variant: InputVariant | (string & {}) | undefined;\n}\n\nexport const PillsInputContext = createContext<PillsInputContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

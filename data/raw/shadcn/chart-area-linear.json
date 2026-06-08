@@ -1,0 +1,22 @@
+{
+  "id": "chart-area-linear",
+  "name": "chart-area-linear",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-linear",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-linear\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "tooltip-demo",
+  "name": "tooltip-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "tooltip",
+    "hover",
+    "popup",
+    "info"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "tooltip-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## tooltip-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The tooltip-demo is a visual representation of how to use a tooltip in your application. It consists of a trigger element that displays a tooltip on hover or click, providing additional information to the user. Developers can use this demo to test and customize tooltip behavior.",
+  "style_tags": [
+    "e.g. light",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: tooltip-demo\nDescription: The tooltip-demo is a visual representation of how to use a tooltip in your application. It consists of a trigger element that displays a tooltip on hover or click, providing additional information to the user. Developers can use this demo to test and customize tooltip behavior.\nStyle: e.g. light, minimal\nInteractions: e.g. hover, clickable\nTags: tooltip, hover, popup, info\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "tooltip-demo",
+  "display_name": "Tooltip Demo",
+  "preview_url": "/previews/shadcn/tooltip-demo.png"
+}

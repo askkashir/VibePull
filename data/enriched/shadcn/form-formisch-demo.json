@@ -1,0 +1,39 @@
+{
+  "id": "form-formisch-demo",
+  "name": "form-formisch-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "forms",
+    "input",
+    "fields"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-demo\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "visual_summary": "Form Formish Demo is a versatile form component that can be used to create various form layouts. It's suitable for registration, contact, or application forms. This component is ideal for developers who want to build complex forms quickly.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-formisch-demo\nDescription: Form Formish Demo is a versatile form component that can be used to create various form layouts. It's suitable for registration, contact, or application forms. This component is ideal for developers who want to build complex forms quickly.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: forms, input, fields\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-formisch-demo",
+  "display_name": "Form Formisch Demo",
+  "preview_url": "/previews/shadcn/form-formisch-demo.png"
+}

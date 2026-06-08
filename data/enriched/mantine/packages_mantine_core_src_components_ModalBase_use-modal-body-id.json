@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal-body-id",
+  "name": "use-modal-body-id",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts\nimport { useEffect } from 'react';\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalBodyId() {\n  const ctx = useModalBaseContext();\n\n  useEffect(() => {\n    ctx.setBodyMounted(true);\n    return () => ctx.setBodyMounted(false);\n  }, []);\n\n  return ctx.getBodyId();\n}\n",
+  "description": "",
+  "tags": [
+    "body",
+    "id",
+    "mantine",
+    "modal",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal-body-id",
+      "name": "use-modal-body-id",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal-body-id",
+      "name": "use-modal-body-id",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts",
+          "content": "import { useEffect } from 'react';\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalBodyId() {\n  const ctx = useModalBaseContext();\n\n  useEffect(() => {\n    ctx.setBodyMounted(true);\n    return () => ctx.setBodyMounted(false);\n  }, []);\n\n  return ctx.getBodyId();\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-modal-body-id is a use modal body id UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: use-modal-body-id\nDescription: use-modal-body-id is a use modal body id UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: body, id, mantine, modal, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/use-modal-body-id.ts\nimport { useEffect } from 'react';\nimport { useModalBaseContext } from './ModalBase.context';\n\nexport function useModalBodyId() {\n  const ctx = useModalBaseContext();\n\n  useEffect(() => {\n    ctx.setBodyMounted(true);\n    return () => ctx.setBodyMounted(false);\n  }, []);\n\n  return ctx.getBodyId();\n}\n",
+  "prompt_version": 2,
+  "clean_id": "use-modal-body-id",
+  "display_name": "Use Modal Body Id",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-use-modal-body-id.png"
+}

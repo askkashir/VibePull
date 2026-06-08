@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Divider_Divider.story",
+  "name": "Divider.story",
+  "source_code": "// packages/@mantine/core/src/components/Divider/Divider.story.tsx\nimport { Divider } from './Divider';\n\nexport default { title: 'Divider' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <div>First</div>\n      <Divider label=\"Divider label\" labelPosition=\"right\" />\n      <div>Second</div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "divider",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Divider_Divider.story",
+      "name": "Divider.story",
+      "path": "packages/@mantine/core/src/components/Divider/Divider.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Divider_Divider.story",
+      "name": "Divider.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Divider/Divider.story.tsx",
+          "content": "import { Divider } from './Divider';\n\nexport default { title: 'Divider' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <div>First</div>\n      <Divider label=\"Divider label\" labelPosition=\"right\" />\n      <div>Second</div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Divider.story is a divider story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Divider.story\nDescription: Divider.story is a divider story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: divider, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Divider/Divider.story.tsx\nimport { Divider } from './Divider';\n\nexport default { title: 'Divider' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <div>First</div>\n      <Divider label=\"Divider label\" labelPosition=\"right\" />\n      <div>Second</div>\n    </div>\n  );\n}\n",
+  "prompt_version": 2,
+  "clean_id": "divider",
+  "display_name": "Divider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-divider-divider-story.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Portal_OptionalPortal",
+  "name": "OptionalPortal",
+  "source_code": "// packages/@mantine/core/src/components/Portal/OptionalPortal.tsx\nimport { factory, Factory, useMantineEnv } from '../../core';\nimport { Portal, PortalProps } from './Portal';\n\nexport interface OptionalPortalProps extends PortalProps {\n  /**\n   * Determines whether children should be rendered inside Portal.\n   * When false, children are rendered as regular React children.\n   *\n   * Note: In test environment, Portal is always disabled regardless of this value.\n   *\n   * @default true\n   */\n  withinPortal?: boolean;\n}\n\nexport type OptionalPortalFactory = Factory<{\n  props: OptionalPortalProps;\n  ref: HTMLDivElement;\n}>;\n\nexport const OptionalPortal = factory<OptionalPortalFactory>(\n  ({ withinPortal = true, children, ...others }) => {\n    const env = useMantineEnv();\n\n    if (env === 'test' || !withinPortal) {\n      return <>{children}</>;\n    }\n\n    return <Portal {...others}>{children}</Portal>;\n  }\n);\n\nOptionalPortal.displayName = '@mantine/core/OptionalPortal';\n\nexport namespace OptionalPortal {\n  export type Props = OptionalPortalProps;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "optional",
+    "other",
+    "portal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Portal_OptionalPortal",
+      "name": "OptionalPortal",
+      "path": "packages/@mantine/core/src/components/Portal/OptionalPortal.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Portal_OptionalPortal",
+      "name": "OptionalPortal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Portal/OptionalPortal.tsx",
+          "content": "import { factory, Factory, useMantineEnv } from '../../core';\nimport { Portal, PortalProps } from './Portal';\n\nexport interface OptionalPortalProps extends PortalProps {\n  /**\n   * Determines whether children should be rendered inside Portal.\n   * When false, children are rendered as regular React children.\n   *\n   * Note: In test environment, Portal is always disabled regardless of this value.\n   *\n   * @default true\n   */\n  withinPortal?: boolean;\n}\n\nexport type OptionalPortalFactory = Factory<{\n  props: OptionalPortalProps;\n  ref: HTMLDivElement;\n}>;\n\nexport const OptionalPortal = factory<OptionalPortalFactory>(\n  ({ withinPortal = true, children, ...others }) => {\n    const env = useMantineEnv();\n\n    if (env === 'test' || !withinPortal) {\n      return <>{children}</>;\n    }\n\n    return <Portal {...others}>{children}</Portal>;\n  }\n);\n\nOptionalPortal.displayName = '@mantine/core/OptionalPortal';\n\nexport namespace OptionalPortal {\n  export type Props = OptionalPortalProps;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "OptionalPortal is a optional portal UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: OptionalPortal\nDescription: OptionalPortal is a optional portal UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, optional, other, portal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Portal/OptionalPortal.tsx\nimport { factory, Factory, useMantineEnv } from '../../core';\nimport { Portal, PortalProps } from './Portal';\n\nexport interface OptionalPortalProps extends PortalProps {\n  /**\n   * Determines whether children should be rendered inside Portal.\n   * When false, children are rendered as regular React children.\n   *\n   * Note: In test environment, Portal is always disabled regardless of this value.\n   *\n   * @default true\n   */\n  wit",
+  "prompt_version": 2,
+  "clean_id": "optional-portal",
+  "display_name": "Optional Portal",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-portal-optionalportal.png"
+}

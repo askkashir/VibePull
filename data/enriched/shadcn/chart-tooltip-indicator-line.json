@@ -1,0 +1,39 @@
+{
+  "id": "chart-tooltip-indicator-line",
+  "name": "chart-tooltip-indicator-line",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry-block",
+    "interactive",
+    "datavisualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-indicator-line",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-indicator-line\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A low-contrast line that appears under a chart tooltip to provide additional context or data, used to enhance the overall user experience when hovering over data points or series in interactive charts.",
+  "style_tags": [
+    "flat",
+    "low-contrast"
+  ],
+  "interaction_tags": [
+    "responsive",
+    "hover-dependent"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chart-tooltip-indicator-line\nDescription: A low-contrast line that appears under a chart tooltip to provide additional context or data, used to enhance the overall user experience when hovering over data points or series in interactive charts.\nStyle: flat, low-contrast\nInteractions: responsive, hover-dependent\nTags: registry-block, interactive, datavisualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-indicator-line",
+  "display_name": "Chart Tooltip Indicator Line",
+  "preview_url": "/previews/shadcn/chart-tooltip-indicator-line.png"
+}

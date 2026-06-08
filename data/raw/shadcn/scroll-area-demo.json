@@ -1,0 +1,22 @@
+{
+  "id": "scroll-area-demo",
+  "name": "scroll-area-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## scroll-area-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

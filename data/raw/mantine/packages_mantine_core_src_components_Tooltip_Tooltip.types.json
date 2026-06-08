@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tooltip_Tooltip.types",
+  "name": "Tooltip.types",
+  "source_code": "// packages/@mantine/core/src/components/Tooltip/Tooltip.types.ts\nimport type { FlipOptions, InlineOptions, ShiftOptions, SizeOptions } from '@floating-ui/react';\nimport { BoxProps, ElementProps, MantineColor, MantineRadius, StylesApiProps } from '../../core';\nimport { FloatingPosition } from '../../utils/Floating';\nimport { BasePortalProps } from '../Portal';\nimport type { TooltipFactory } from './Tooltip';\n\nexport type TooltipStylesNames = 'tooltip' | 'arrow';\nexport type TooltipCssVariables = {\n  tooltip: '--tooltip-radius' | '--tooltip-bg' | '--tooltip-color';\n};\n\nexport interface TooltipMiddlewares {\n  shift?: boolean | ShiftOptions;\n  flip?: boolean | FlipOptions;\n  inline?: boolean | InlineOptions;\n  size?: boolean | SizeOptions;\n}\n\nexport interface TooltipBaseProps\n  extends BoxProps, StylesApiProps<TooltipFactory>, ElementProps<'div'> {\n  /** Target element, must support `ref` prop and `...others` */\n  children?: React.ReactNode;\n\n  /** Tooltip position relative to target element (`Tooltip` component) or mouse (`Tooltip.Floating` component) */\n  position?: FloatingPosition;\n\n  /** Key of the prop that can be used to access element ref, `ref` by default */\n  refProp?: string;\n\n  /** Tooltip content */\n  label: React.ReactNode;\n\n  /** Determines whether tooltip should be rendered within `Portal`, `true` by default */\n  withinPortal?: boolean;\n\n  /** Key of `theme.radius` or any valid CSS value to set border-radius, numbers are converted to rem@default theme.defaultRadius */\n  radius?: MantineRadius;\n\n  /** Key of `theme.colors` or any valid CSS color, controls tooltip background, by default set based on current color scheme */\n  color?: MantineColor;\n\n  /** Determines whether content should be wrapped on to the next line, `false` by default */\n  multiline?: boolean;\n\n  /** Tooltip z-index, `300` by default */\n  zIndex?: string | number;\n\n  /** If set, tooltip element will not be rendered */\n  disabled?: boolean;\n\n  /** Props to pass down to the portal when withinPortal is true */\n  portalProps?: Omit<BasePortalProps, 'withinPortal'>;\n\n  /** Floating ui middlewares to configure position handling, `{ flip: true, shift: true, inline: false }` by default */\n  middlewares?: TooltipMiddlewares;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tooltip_Tooltip.types",
+      "name": "Tooltip.types",
+      "path": "packages/@mantine/core/src/components/Tooltip/Tooltip.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tooltip_Tooltip.types",
+      "name": "Tooltip.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tooltip/Tooltip.types.ts",
+          "content": "import type { FlipOptions, InlineOptions, ShiftOptions, SizeOptions } from '@floating-ui/react';\nimport { BoxProps, ElementProps, MantineColor, MantineRadius, StylesApiProps } from '../../core';\nimport { FloatingPosition } from '../../utils/Floating';\nimport { BasePortalProps } from '../Portal';\nimport type { TooltipFactory } from './Tooltip';\n\nexport type TooltipStylesNames = 'tooltip' | 'arrow';\nexport type TooltipCssVariables = {\n  tooltip: '--tooltip-radius' | '--tooltip-bg' | '--tooltip-color';\n};\n\nexport interface TooltipMiddlewares {\n  shift?: boolean | ShiftOptions;\n  flip?: boolean | FlipOptions;\n  inline?: boolean | InlineOptions;\n  size?: boolean | SizeOptions;\n}\n\nexport interface TooltipBaseProps\n  extends BoxProps, StylesApiProps<TooltipFactory>, ElementProps<'div'> {\n  /** Target element, must support `ref` prop and `...others` */\n  children?: React.ReactNode;\n\n  /** Tooltip position relative to target element (`Tooltip` component) or mouse (`Tooltip.Floating` component) */\n  position?: FloatingPosition;\n\n  /** Key of the prop that can be used to access element ref, `ref` by default */\n  refProp?: string;\n\n  /** Tooltip content */\n  label: React.ReactNode;\n\n  /** Determines whether tooltip should be rendered within `Portal`, `true` by default */\n  withinPortal?: boolean;\n\n  /** Key of `theme.radius` or any valid CSS value to set border-radius, numbers are converted to rem@default theme.defaultRadius */\n  radius?: MantineRadius;\n\n  /** Key of `theme.colors` or any valid CSS color, controls tooltip background, by default set based on current color scheme */\n  color?: MantineColor;\n\n  /** Determines whether content should be wrapped on to the next line, `false` by default */\n  multiline?: boolean;\n\n  /** Tooltip z-index, `300` by default */\n  zIndex?: string | number;\n\n  /** If set, tooltip element will not be rendered */\n  disabled?: boolean;\n\n  /** Props to pass down to the portal when withinPortal is true */\n  portalProps?: Omit<BasePortalProps, 'withinPortal'>;\n\n  /** Floating ui middlewares to configure position handling, `{ flip: true, shift: true, inline: false }` by default */\n  middlewares?: TooltipMiddlewares;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

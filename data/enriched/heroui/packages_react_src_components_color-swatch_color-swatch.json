@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_color-swatch_color-swatch",
+  "name": "color-swatch",
+  "source_code": "// packages/react/src/components/color-swatch/color-swatch.tsx\n\"use client\";\n\nimport type {ColorSwatchVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorSwatchVariants} from \"@heroui/styles\";\nimport {ColorSwatch as ColorSwatchPrimitive} from \"react-aria-components/ColorSwatch\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorSwatch Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorSwatchRootProps\n  extends ComponentPropsWithRef<typeof ColorSwatchPrimitive>, ColorSwatchVariants {}\n\nconst ColorSwatchRoot = ({className, shape, size, style, ...props}: ColorSwatchRootProps) => {\n  return (\n    <ColorSwatchPrimitive\n      {...props}\n      className={composeTwRenderProps(className, colorSwatchVariants({shape, size}))}\n      data-slot=\"color-swatch\"\n      style={(renderProps) => {\n        const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n        return {\n          \"--color-swatch-current\": renderProps.color.toString(\"css\"),\n          ...userStyle,\n        } as CSSProperties;\n      }}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorSwatchRoot};\n\nexport type {ColorSwatchRootProps};\n",
+  "description": "",
+  "tags": [
+    "color",
+    "swatch",
+    "picker"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-swatch_color-swatch",
+      "name": "color-swatch",
+      "path": "packages/react/src/components/color-swatch/color-swatch.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-swatch_color-swatch",
+      "name": "color-swatch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-swatch/color-swatch.tsx",
+          "content": "\"use client\";\n\nimport type {ColorSwatchVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorSwatchVariants} from \"@heroui/styles\";\nimport {ColorSwatch as ColorSwatchPrimitive} from \"react-aria-components/ColorSwatch\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorSwatch Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorSwatchRootProps\n  extends ComponentPropsWithRef<typeof ColorSwatchPrimitive>, ColorSwatchVariants {}\n\nconst ColorSwatchRoot = ({className, shape, size, style, ...props}: ColorSwatchRootProps) => {\n  return (\n    <ColorSwatchPrimitive\n      {...props}\n      className={composeTwRenderProps(className, colorSwatchVariants({shape, size}))}\n      data-slot=\"color-swatch\"\n      style={(renderProps) => {\n        const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n        return {\n          \"--color-swatch-current\": renderProps.color.toString(\"css\"),\n          ...userStyle,\n        } as CSSProperties;\n      }}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorSwatchRoot};\n\nexport type {ColorSwatchRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The ColorSwatch component is a customizable color selection tool that allows users to choose from various color swatches. It is used when a specific color needs to be picked by the user, like choosing a background color or a font color. The component can be customized in terms of shape and size.",
+  "style_tags": [
+    "material"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: color-swatch\nDescription: The ColorSwatch component is a customizable color selection tool that allows users to choose from various color swatches. It is used when a specific color needs to be picked by the user, like choosing a background color or a font color. The component can be customized in terms of shape and size.\nStyle: material\nInteractions: none\nTags: color, swatch, picker\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/color-swatch/color-swatch.tsx\n\"use client\";\n\nimport type {ColorSwatchVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorSwatchVariants} from \"@heroui/styles\";\nimport {ColorSwatch as ColorSwatchPrimitive} from \"react-aria-components/ColorSwatch\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "color-swatch",
+  "display_name": "Color Swatch",
+  "preview_url": "/previews/heroui/packages-react-src-components-color-swatch-color-swatch.png"
+}

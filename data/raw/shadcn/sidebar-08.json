@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-08",
+  "name": "sidebar-08",
+  "source_code": "",
+  "description": "An inset sidebar with secondary navigation.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-08",
+      "type": "registry:block",
+      "description": "An inset sidebar with secondary navigation.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-08\n\nAn inset sidebar with secondary navigation.\n\n**Type:** registry:block\n**Files:** 6 file(s)"
+  }
+}

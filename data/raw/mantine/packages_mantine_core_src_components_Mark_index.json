@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Mark_index",
+  "name": "Mark",
+  "source_code": "// packages/@mantine/core/src/components/Mark/index.ts\nimport type { MarkCssVariables, MarkFactory, MarkProps, MarkStylesNames } from './Mark';\n\nexport { Mark } from './Mark';\n\nexport type { MarkProps, MarkStylesNames, MarkCssVariables, MarkFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Mark_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Mark/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Mark_index",
+      "name": "Mark",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Mark/index.ts",
+          "content": "import type { MarkCssVariables, MarkFactory, MarkProps, MarkStylesNames } from './Mark';\n\nexport { Mark } from './Mark';\n\nexport type { MarkProps, MarkStylesNames, MarkCssVariables, MarkFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

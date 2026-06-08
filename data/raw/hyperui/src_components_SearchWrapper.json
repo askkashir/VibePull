@@ -1,0 +1,31 @@
+{
+  "id": "src_components_SearchWrapper",
+  "name": "SearchWrapper",
+  "source_code": "// src/components/SearchWrapper.astro\n---\nimport { getCollection } from 'astro:content'\n\nimport SearchInput from './SearchInput.astro'\nimport SearchResults from './SearchResults.astro'\n\ninterface Result {\n  category: string\n  components?: number\n  description?: string\n  slug: string\n  terms: string[]\n  title: string\n}\n\nconst [application, marketing, neobrutalism, blog] = await Promise.all([\n  getCollection('application'),\n  getCollection('marketing'),\n  getCollection('neobrutalism'),\n  getCollection('blog'),\n])\n\nconst allCollections = [...application, ...marketing, ...neobrutalism]\n  .map(({ data }) => data)\n  .sort((a, b) => a.title.localeCompare(b.title))\n\nconst collections: Result[] = allCollections.map(\n  ({ category, components, description, slug, terms, title }) => {\n    const componentCount = components.length + components.filter(({ dark }) => !!dark).length\n\n    return {\n      category,\n      components: componentCount,\n      description,\n      slug: `/components/${category}/${slug}`,\n      terms,\n      title,\n    }\n  },\n)\n\nconst posts: Result[] = blog.map(({ data }) => {\n  return {\n    category: '',\n    description: data.description,\n    slug: `/blog/${data.slug}`,\n    terms: data.terms,\n    title: data.title,\n  }\n})\n---\n\n<div class=\"relative\">\n  <SearchInput />\n  <SearchResults {collections} {posts} />\n</div>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "SearchWrapper",
+      "name": "SearchWrapper",
+      "path": "src/components/SearchWrapper.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_SearchWrapper",
+      "name": "SearchWrapper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/SearchWrapper.astro",
+          "content": "---\nimport { getCollection } from 'astro:content'\n\nimport SearchInput from './SearchInput.astro'\nimport SearchResults from './SearchResults.astro'\n\ninterface Result {\n  category: string\n  components?: number\n  description?: string\n  slug: string\n  terms: string[]\n  title: string\n}\n\nconst [application, marketing, neobrutalism, blog] = await Promise.all([\n  getCollection('application'),\n  getCollection('marketing'),\n  getCollection('neobrutalism'),\n  getCollection('blog'),\n])\n\nconst allCollections = [...application, ...marketing, ...neobrutalism]\n  .map(({ data }) => data)\n  .sort((a, b) => a.title.localeCompare(b.title))\n\nconst collections: Result[] = allCollections.map(\n  ({ category, components, description, slug, terms, title }) => {\n    const componentCount = components.length + components.filter(({ dark }) => !!dark).length\n\n    return {\n      category,\n      components: componentCount,\n      description,\n      slug: `/components/${category}/${slug}`,\n      terms,\n      title,\n    }\n  },\n)\n\nconst posts: Result[] = blog.map(({ data }) => {\n  return {\n    category: '',\n    description: data.description,\n    slug: `/blog/${data.slug}`,\n    terms: data.terms,\n    title: data.title,\n  }\n})\n---\n\n<div class=\"relative\">\n  <SearchInput />\n  <SearchResults {collections} {posts} />\n</div>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

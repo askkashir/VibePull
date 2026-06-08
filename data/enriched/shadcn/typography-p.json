@@ -1,0 +1,36 @@
+{
+  "id": "typography-p",
+  "name": "typography-p",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "paragraph",
+    "text",
+    "content"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-p",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-p\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Typography-p is a utility component that generates paragraph-level text with a standard font size and styling from the example registry. It can be used for large paragraphs of text in articles, landing pages, or documentation. A developer would use this component when a standard font size is required for readability.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typography-p\nDescription: Typography-p is a utility component that generates paragraph-level text with a standard font size and styling from the example registry. It can be used for large paragraphs of text in articles, landing pages, or documentation. A developer would use this component when a standard font size is required for readability.\nStyle: default\nInteractions: \nTags: typography, paragraph, text, content\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-p",
+  "display_name": "Typography P",
+  "preview_url": "/previews/shadcn/typography-p.png"
+}

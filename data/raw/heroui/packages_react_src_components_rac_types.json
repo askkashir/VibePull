@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_rac_types",
+  "name": "types",
+  "source_code": "// packages/react/src/components/rac/types.ts\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  RangeValue,\n  ValidationResult,\n  RouterConfig,\n} from \"@react-types/shared\";\nexport type {TimeValue, DateValue, DateRange, SortDescriptor} from \"react-aria-components\";\nexport type {\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n} from \"@react-types/color\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "rac_types",
+      "name": "types",
+      "path": "packages/react/src/components/rac/types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_rac_types",
+      "name": "types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/rac/types.ts",
+          "content": "export type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  RangeValue,\n  ValidationResult,\n  RouterConfig,\n} from \"@react-types/shared\";\nexport type {TimeValue, DateValue, DateRange, SortDescriptor} from \"react-aria-components\";\nexport type {\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n} from \"@react-types/color\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

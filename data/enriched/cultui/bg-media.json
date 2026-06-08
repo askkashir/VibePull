@@ -1,0 +1,64 @@
+{
+  "id": "bg-media",
+  "name": "bg-media",
+  "source_code": "// registry/default/ui/bg-media.tsx\n\"use client\"\n\nimport React, { useRef, useState } from \"react\"\nimport { cva } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\n// Make sure this utility exists in your project for combining class names\n\n// Define the type for the variant and type props\ntype OverlayVariant = \"none\" | \"light\" | \"dark\"\ntype MediaType = \"image\" | \"video\"\n\n// Update the cva call with these types\nconst backgroundVariants = cva(\n  \"relative h-screen max-h-[1000px] w-full min-h-[500px] lg:min-h-[600px]\",\n  {\n    variants: {\n      overlay: {\n        none: \"\",\n        light:\n          \"before:absolute before:inset-0 before:bg-white before:opacity-30\",\n        dark: \"before:absolute before:inset-0 before:bg-black before:opacity-30\",\n      },\n      type: {\n        image: \"\",\n        video: \"z-10\",\n      },\n    },\n    defaultVariants: {\n      overlay: \"none\",\n      type: \"image\",\n    },\n  }\n)\n\ninterface BackgroundMediaProps {\n  variant?: OverlayVariant\n  type?: MediaType\n  src: string\n  alt?: string\n}\n\nexport const BackgroundMedia: React.FC<BackgroundMediaProps> = ({\n  variant = \"light\",\n  type = \"image\",\n  src,\n  alt = \"\",\n}) => {\n  const [isPlaying, setIsPlaying] = useState(true)\n  const mediaRef = useRef<HTMLVideoElement | null>(null)\n\n  const toggleMediaPlay = () => {\n    if (type === \"video\" && mediaRef.current) {\n      if (isPlaying) {\n        mediaRef.current.pause()\n      } else {\n        mediaRef.current.play()\n      }\n      setIsPlaying(!isPlaying)\n    }\n  }\n\n  const mediaClasses = cn(\n    backgroundVariants({ overlay: variant, type }),\n    \"overflow-hidden\"\n  )\n\n  const renderMedia = () => {\n    if (type === \"video\") {\n      return (\n        <video\n          ref={mediaRef}\n          aria-hidden=\"true\"\n          muted\n          className=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-300 pointer-events-none\"\n          autoPlay\n          playsInline\n        >\n          <source src={src} type=\"video/mp4\" />\n          Your browser does not support the video tag.\n        </video>\n      )\n    } else {\n      return (\n        <img\n          src={src}\n          alt={alt}\n          className=\"absolute inset-0 h-full w-full object-cover rounded-br-[88px]\"\n          loading=\"eager\"\n        />\n      )\n    }\n  }\n\n  return (\n    <div className={mediaClasses}>\n      {renderMedia()}\n      {type === \"video\" && (\n        <button\n          aria-label={isPlaying ? \"Pause video\" : \"Play video\"}\n          className=\"absolute bottom-4 right-4 z-50 px-4 py-2 bg-gray-900 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2\"\n          onClick={toggleMediaPlay}\n        >\n          {isPlaying ? \"Pause\" : \"Play\"}\n        </button>\n      )}\n    </div>\n  )\n}\n\nexport default BackgroundMedia\n",
+  "description": "Background media component with video/image support and overlay effects",
+  "tags": [
+    "bg-media",
+    "background-media",
+    "image",
+    "video",
+    "overlay"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "bg-media.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/bg-media.json",
+      "sha": "6d8e7d56acedf0e98bc7d04fc3e6897d412e5c2f",
+      "size": 3293,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-media.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-media.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/6d8e7d56acedf0e98bc7d04fc3e6897d412e5c2f",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/bg-media.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/bg-media.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/6d8e7d56acedf0e98bc7d04fc3e6897d412e5c2f",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/bg-media.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bg-media",
+      "type": "registry:ui",
+      "description": "Background media component with video/image support and overlay effects",
+      "files": [
+        {
+          "path": "registry/default/ui/bg-media.tsx",
+          "content": "\"use client\"\n\nimport React, { useRef, useState } from \"react\"\nimport { cva } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\n// Make sure this utility exists in your project for combining class names\n\n// Define the type for the variant and type props\ntype OverlayVariant = \"none\" | \"light\" | \"dark\"\ntype MediaType = \"image\" | \"video\"\n\n// Update the cva call with these types\nconst backgroundVariants = cva(\n  \"relative h-screen max-h-[1000px] w-full min-h-[500px] lg:min-h-[600px]\",\n  {\n    variants: {\n      overlay: {\n        none: \"\",\n        light:\n          \"before:absolute before:inset-0 before:bg-white before:opacity-30\",\n        dark: \"before:absolute before:inset-0 before:bg-black before:opacity-30\",\n      },\n      type: {\n        image: \"\",\n        video: \"z-10\",\n      },\n    },\n    defaultVariants: {\n      overlay: \"none\",\n      type: \"image\",\n    },\n  }\n)\n\ninterface BackgroundMediaProps {\n  variant?: OverlayVariant\n  type?: MediaType\n  src: string\n  alt?: string\n}\n\nexport const BackgroundMedia: React.FC<BackgroundMediaProps> = ({\n  variant = \"light\",\n  type = \"image\",\n  src,\n  alt = \"\",\n}) => {\n  const [isPlaying, setIsPlaying] = useState(true)\n  const mediaRef = useRef<HTMLVideoElement | null>(null)\n\n  const toggleMediaPlay = () => {\n    if (type === \"video\" && mediaRef.current) {\n      if (isPlaying) {\n        mediaRef.current.pause()\n      } else {\n        mediaRef.current.play()\n      }\n      setIsPlaying(!isPlaying)\n    }\n  }\n\n  const mediaClasses = cn(\n    backgroundVariants({ overlay: variant, type }),\n    \"overflow-hidden\"\n  )\n\n  const renderMedia = () => {\n    if (type === \"video\") {\n      return (\n        <video\n          ref={mediaRef}\n          aria-hidden=\"true\"\n          muted\n          className=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-300 pointer-events-none\"\n          autoPlay\n          playsInline\n        >\n          <source src={src} type=\"video/mp4\" />\n          Your browser does not support the video tag.\n        </video>\n      )\n    } else {\n      return (\n        <img\n          src={src}\n          alt={alt}\n          className=\"absolute inset-0 h-full w-full object-cover rounded-br-[88px]\"\n          loading=\"eager\"\n        />\n      )\n    }\n  }\n\n  return (\n    <div className={mediaClasses}>\n      {renderMedia()}\n      {type === \"video\" && (\n        <button\n          aria-label={isPlaying ? \"Pause video\" : \"Play video\"}\n          className=\"absolute bottom-4 right-4 z-50 px-4 py-2 bg-gray-900 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2\"\n          onClick={toggleMediaPlay}\n        >\n          {isPlaying ? \"Pause\" : \"Play\"}\n        </button>\n      )}\n    </div>\n  )\n}\n\nexport default BackgroundMedia\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "BackgroundMedia is a React component that displays a full-screen background media (image or video) with an optional overlay and button to play/pause video. Use it for creating immersive backgrounds.",
+  "style_tags": [
+    "full-screen",
+    "responsive",
+    "minimal",
+    "dark"
+  ],
+  "interaction_tags": [
+    "interactive",
+    "playable-video"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: bg-media\nDescription: BackgroundMedia is a React component that displays a full-screen background media (image or video) with an optional overlay and button to play/pause video. Use it for creating immersive backgrounds.\nStyle: full-screen, responsive, minimal, dark\nInteractions: interactive, playable-video\nTags: bg-media, background-media, image, video, overlay\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/bg-media.tsx\n\"use client\"\n\nimport React, { useRef, useState } from \"react\"\nimport { cva } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\n// Make sure this utility exists in your project for combining class names\n\n// Define the type for the variant and type props\ntype OverlayVariant = \"none\" | \"light\" | \"dark\"\ntype MediaType = \"image\" | \"video\"\n\n// Update the cva call with these types\nconst backgroundVariants = cva(\n  \"relative h-screen max-h-[1000px] w-",
+  "prompt_version": 2,
+  "clean_id": "bg-media",
+  "display_name": "Bg Media",
+  "preview_url": "/previews/cultui/bg-media.png"
+}

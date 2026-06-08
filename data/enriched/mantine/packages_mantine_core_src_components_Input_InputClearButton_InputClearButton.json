@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputClearButton_InputClearButton",
+  "name": "InputClearButton",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputClearButton/InputClearButton.tsx\nimport { use } from 'react';\nimport {\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useResolvedStylesApi,\n} from '../../../core';\nimport { CloseButton, CloseButtonStylesNames } from '../../CloseButton';\nimport { InputContext } from '../Input.context';\n\nexport interface InputClearButtonProps\n  extends BoxProps, StylesApiProps<InputClearButtonFactory>, ElementProps<'button'> {\n  /** Size of the button, by default value is based on input context */\n  size?: MantineSize | (string & {});\n}\n\nexport type InputClearButtonFactory = Factory<{\n  props: InputClearButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: CloseButtonStylesNames;\n}>;\n\nexport const InputClearButton = factory<InputClearButtonFactory>((_props) => {\n  const props = useProps('InputClearButton', null, _props);\n  const { size, variant, vars, classNames, styles, ...others } = props;\n  const ctx = use(InputContext);\n\n  const { resolvedClassNames, resolvedStyles } = useResolvedStylesApi<InputClearButtonFactory>({\n    classNames,\n    styles,\n    props,\n  });\n\n  return (\n    <CloseButton\n      variant={variant || 'transparent'}\n      size={size || ctx?.size || 'sm'}\n      classNames={resolvedClassNames}\n      styles={resolvedStyles}\n      __staticSelector=\"InputClearButton\"\n      style={{ pointerEvents: 'all', background: 'var(--input-bg)', ...others.style }}\n      {...others}\n    />\n  );\n});\n\nInputClearButton.displayName = '@mantine/core/InputClearButton';\n",
+  "description": "",
+  "tags": [
+    "button",
+    "clear",
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputClearButton_InputClearButton",
+      "name": "InputClearButton",
+      "path": "packages/@mantine/core/src/components/Input/InputClearButton/InputClearButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputClearButton_InputClearButton",
+      "name": "InputClearButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputClearButton/InputClearButton.tsx",
+          "content": "import { use } from 'react';\nimport {\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useResolvedStylesApi,\n} from '../../../core';\nimport { CloseButton, CloseButtonStylesNames } from '../../CloseButton';\nimport { InputContext } from '../Input.context';\n\nexport interface InputClearButtonProps\n  extends BoxProps, StylesApiProps<InputClearButtonFactory>, ElementProps<'button'> {\n  /** Size of the button, by default value is based on input context */\n  size?: MantineSize | (string & {});\n}\n\nexport type InputClearButtonFactory = Factory<{\n  props: InputClearButtonProps;\n  ref: HTMLButtonElement;\n  stylesNames: CloseButtonStylesNames;\n}>;\n\nexport const InputClearButton = factory<InputClearButtonFactory>((_props) => {\n  const props = useProps('InputClearButton', null, _props);\n  const { size, variant, vars, classNames, styles, ...others } = props;\n  const ctx = use(InputContext);\n\n  const { resolvedClassNames, resolvedStyles } = useResolvedStylesApi<InputClearButtonFactory>({\n    classNames,\n    styles,\n    props,\n  });\n\n  return (\n    <CloseButton\n      variant={variant || 'transparent'}\n      size={size || ctx?.size || 'sm'}\n      classNames={resolvedClassNames}\n      styles={resolvedStyles}\n      __staticSelector=\"InputClearButton\"\n      style={{ pointerEvents: 'all', background: 'var(--input-bg)', ...others.style }}\n      {...others}\n    />\n  );\n});\n\nInputClearButton.displayName = '@mantine/core/InputClearButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "InputClearButton is a input clear button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: InputClearButton\nDescription: InputClearButton is a input clear button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: button, clear, input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/InputClearButton/InputClearButton.tsx\nimport { use } from 'react';\nimport {\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useResolvedStylesApi,\n} from '../../../core';\nimport { CloseButton, CloseButtonStylesNames } from '../../CloseButton';\nimport { InputContext } from '../Input.context';\n\nexport interface InputClearButtonProps\n  extends BoxProps, StylesApiProps<InputClearButtonFactory>, ElementProp",
+  "prompt_version": 2,
+  "clean_id": "input-clear-button",
+  "display_name": "Input Clear Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-inputclearbutton-inputclearbutton.png"
+}

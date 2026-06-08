@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_utils_get-client-position_get-client-position",
+  "name": "get-client-position",
+  "source_code": "// packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts\nexport function getClientPosition(event: any, orientation?: 'horizontal' | 'vertical') {\n  if ('TouchEvent' in window && event instanceof window.TouchEvent) {\n    const touch = event.touches[0];\n    return orientation === 'vertical' ? touch.clientY : touch.clientX;\n  }\n\n  return orientation === 'vertical' ? event.clientY : event.clientX;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_utils_get-client-position_get-client-position",
+      "name": "get-client-position",
+      "path": "packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_utils_get-client-position_get-client-position",
+      "name": "get-client-position",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/utils/get-client-position/get-client-position.ts",
+          "content": "export function getClientPosition(event: any, orientation?: 'horizontal' | 'vertical') {\n  if ('TouchEvent' in window && event instanceof window.TouchEvent) {\n    const touch = event.touches[0];\n    return orientation === 'vertical' ? touch.clientY : touch.clientX;\n  }\n\n  return orientation === 'vertical' ? event.clientY : event.clientX;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

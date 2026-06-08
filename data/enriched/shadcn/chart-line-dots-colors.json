@@ -1,0 +1,37 @@
+{
+  "id": "chart-line-dots-colors",
+  "name": "chart-line-dots-colors",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "line",
+    "data visualization",
+    "project management"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-dots-colors",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-dots-colors\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A line chart displaying a series of data points with colored dots, useful for showing trends and patterns over time within a specific context or to visualize data evolution in specific projects.",
+  "style_tags": [
+    "bright",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-dots-colors\nDescription: A line chart displaying a series of data points with colored dots, useful for showing trends and patterns over time within a specific context or to visualize data evolution in specific projects.\nStyle: bright, minimal\nInteractions: \nTags: chart, line, data visualization, project management\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-dots-colors",
+  "display_name": "Chart Line Dots Colors",
+  "preview_url": "/previews/shadcn/chart-line-dots-colors.png"
+}

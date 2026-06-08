@@ -1,0 +1,38 @@
+{
+  "id": "resizable-vertical",
+  "name": "resizable-vertical",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "resizable",
+    "flexible",
+    "container"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "resizable-vertical",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## resizable-vertical\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The resizable-vertical component is a versatile vertical element that can be resized horizontally by the user. It provides a flexible container for content and is commonly used in dashboards, tables, or grids. This component is ideal for developers who need to create responsive and customizable layouts.",
+  "style_tags": [
+    "e.g. modern",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "e.g. drag"
+  ],
+  "component_type": "container",
+  "generation_prompt": "Create a production-ready container component with the following characteristics:\n\nName: resizable-vertical\nDescription: The resizable-vertical component is a versatile vertical element that can be resized horizontally by the user. It provides a flexible container for content and is commonly used in dashboards, tables, or grids. This component is ideal for developers who need to create responsive and customizable layouts.\nStyle: e.g. modern, customizable\nInteractions: e.g. drag\nTags: resizable, flexible, container\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "resizable-vertical",
+  "display_name": "Resizable Vertical",
+  "preview_url": "/previews/shadcn/resizable-vertical.png"
+}

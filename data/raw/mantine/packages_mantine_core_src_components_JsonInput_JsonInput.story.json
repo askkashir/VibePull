@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_JsonInput_JsonInput.story",
+  "name": "JsonInput.story",
+  "source_code": "// packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx\nimport { useState } from 'react';\nimport { JsonInput } from './JsonInput';\n\nexport default { title: 'JsonInput' };\n\nexport function Usage() {\n  return (\n    <>\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" formatOnBlur />\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" size=\"sm\" />\n    </>\n  );\n}\n\nexport function ReadOnly() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      readOnly\n    />\n  );\n}\n\nexport function Controlled() {\n  const [value, onChange] = useState('');\n  return (\n    <JsonInput\n      value={value}\n      onChange={onChange}\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n    />\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      unstyled\n    />\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "JsonInput_JsonInput.story",
+      "name": "JsonInput.story",
+      "path": "packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_JsonInput_JsonInput.story",
+      "name": "JsonInput.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/JsonInput/JsonInput.story.tsx",
+          "content": "import { useState } from 'react';\nimport { JsonInput } from './JsonInput';\n\nexport default { title: 'JsonInput' };\n\nexport function Usage() {\n  return (\n    <>\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" formatOnBlur />\n      <JsonInput defaultValue='{ \"a\": 1, \"B\": 2 }' label=\"Usage\" placeholder=\"Usage\" size=\"sm\" />\n    </>\n  );\n}\n\nexport function ReadOnly() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      readOnly\n    />\n  );\n}\n\nexport function Controlled() {\n  const [value, onChange] = useState('');\n  return (\n    <JsonInput\n      value={value}\n      onChange={onChange}\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n    />\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <JsonInput\n      defaultValue='{ \"a\": 1, \"B\": 2 }'\n      label=\"Controlled\"\n      placeholder=\"Controlled\"\n      formatOnBlur\n      unstyled\n    />\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

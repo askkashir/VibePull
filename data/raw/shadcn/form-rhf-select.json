@@ -1,0 +1,22 @@
+{
+  "id": "form-rhf-select",
+  "name": "form-rhf-select",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-select",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-select\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  }
+}

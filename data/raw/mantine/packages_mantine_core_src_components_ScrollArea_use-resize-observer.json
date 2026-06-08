@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_use-resize-observer",
+  "name": "use-resize-observer",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/use-resize-observer.ts\nimport { useEffectEvent } from 'react';\nimport { useIsomorphicEffect } from '@mantine/hooks';\n\nexport function useResizeObserver(element: HTMLElement | null, onResize: () => void) {\n  const handleResize = useEffectEvent(onResize);\n\n  useIsomorphicEffect(() => {\n    let rAF = 0;\n    if (element) {\n      const resizeObserver = new ResizeObserver(() => {\n        cancelAnimationFrame(rAF);\n        rAF = window.requestAnimationFrame(handleResize);\n      });\n\n      resizeObserver.observe(element);\n\n      return () => {\n        window.cancelAnimationFrame(rAF);\n        resizeObserver.unobserve(element);\n      };\n    }\n\n    return undefined;\n  }, [element]);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_use-resize-observer",
+      "name": "use-resize-observer",
+      "path": "packages/@mantine/core/src/components/ScrollArea/use-resize-observer.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_use-resize-observer",
+      "name": "use-resize-observer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/use-resize-observer.ts",
+          "content": "import { useEffectEvent } from 'react';\nimport { useIsomorphicEffect } from '@mantine/hooks';\n\nexport function useResizeObserver(element: HTMLElement | null, onResize: () => void) {\n  const handleResize = useEffectEvent(onResize);\n\n  useIsomorphicEffect(() => {\n    let rAF = 0;\n    if (element) {\n      const resizeObserver = new ResizeObserver(() => {\n        cancelAnimationFrame(rAF);\n        rAF = window.requestAnimationFrame(handleResize);\n      });\n\n      resizeObserver.observe(element);\n\n      return () => {\n        window.cancelAnimationFrame(rAF);\n        resizeObserver.unobserve(element);\n      };\n    }\n\n    return undefined;\n  }, [element]);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

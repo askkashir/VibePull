@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbar",
+  "name": "ScrollAreaScrollbar",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbar.tsx\nimport { useEffect } from 'react';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { ScrollAreaScrollbarAuto } from './ScrollAreaScrollbarAuto';\nimport { ScrollAreaScrollbarHover } from './ScrollAreaScrollbarHover';\nimport { ScrollAreaScrollbarScroll } from './ScrollAreaScrollbarScroll';\nimport {\n  ScrollAreaScrollbarVisible,\n  ScrollAreaScrollbarVisibleProps,\n} from './ScrollAreaScrollbarVisible';\n\ninterface ScrollAreaScrollbarProps extends ScrollAreaScrollbarVisibleProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaScrollbar(props: ScrollAreaScrollbarProps) {\n  const { forceMount, ...scrollbarProps } = props;\n  const context = useScrollAreaContext();\n  const { onScrollbarXEnabledChange, onScrollbarYEnabledChange } = context;\n  const isHorizontal = props.orientation === 'horizontal';\n\n  useEffect(() => {\n    isHorizontal ? onScrollbarXEnabledChange(true) : onScrollbarYEnabledChange(true);\n    return () => {\n      isHorizontal ? onScrollbarXEnabledChange(false) : onScrollbarYEnabledChange(false);\n    };\n  }, [isHorizontal, onScrollbarXEnabledChange, onScrollbarYEnabledChange]);\n\n  return context.type === 'hover' ? (\n    <ScrollAreaScrollbarHover {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'scroll' ? (\n    <ScrollAreaScrollbarScroll {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'auto' ? (\n    <ScrollAreaScrollbarAuto {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'always' ? (\n    <ScrollAreaScrollbarVisible {...scrollbarProps} />\n  ) : null;\n}\n\nScrollAreaScrollbar.displayName = '@mantine/core/ScrollAreaScrollbar';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbar",
+      "name": "ScrollAreaScrollbar",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbar.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_ScrollAreaScrollbar",
+      "name": "ScrollAreaScrollbar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/ScrollAreaScrollbar.tsx",
+          "content": "import { useEffect } from 'react';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { ScrollAreaScrollbarAuto } from './ScrollAreaScrollbarAuto';\nimport { ScrollAreaScrollbarHover } from './ScrollAreaScrollbarHover';\nimport { ScrollAreaScrollbarScroll } from './ScrollAreaScrollbarScroll';\nimport {\n  ScrollAreaScrollbarVisible,\n  ScrollAreaScrollbarVisibleProps,\n} from './ScrollAreaScrollbarVisible';\n\ninterface ScrollAreaScrollbarProps extends ScrollAreaScrollbarVisibleProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaScrollbar(props: ScrollAreaScrollbarProps) {\n  const { forceMount, ...scrollbarProps } = props;\n  const context = useScrollAreaContext();\n  const { onScrollbarXEnabledChange, onScrollbarYEnabledChange } = context;\n  const isHorizontal = props.orientation === 'horizontal';\n\n  useEffect(() => {\n    isHorizontal ? onScrollbarXEnabledChange(true) : onScrollbarYEnabledChange(true);\n    return () => {\n      isHorizontal ? onScrollbarXEnabledChange(false) : onScrollbarYEnabledChange(false);\n    };\n  }, [isHorizontal, onScrollbarXEnabledChange, onScrollbarYEnabledChange]);\n\n  return context.type === 'hover' ? (\n    <ScrollAreaScrollbarHover {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'scroll' ? (\n    <ScrollAreaScrollbarScroll {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'auto' ? (\n    <ScrollAreaScrollbarAuto {...scrollbarProps} forceMount={forceMount} />\n  ) : context.type === 'always' ? (\n    <ScrollAreaScrollbarVisible {...scrollbarProps} />\n  ) : null;\n}\n\nScrollAreaScrollbar.displayName = '@mantine/core/ScrollAreaScrollbar';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

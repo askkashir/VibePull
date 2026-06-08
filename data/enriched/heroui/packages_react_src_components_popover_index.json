@@ -1,0 +1,42 @@
+{
+  "id": "packages_react_src_components_popover_index",
+  "name": "popover",
+  "source_code": "// packages/react/src/components/popover/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  PopoverArrow,\n  PopoverContent,\n  PopoverDialog,\n  PopoverHeading,\n  PopoverRoot,\n  PopoverTrigger,\n} from \"./popover\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Popover = Object.assign(PopoverRoot, {\n  Root: PopoverRoot,\n  Trigger: PopoverTrigger,\n  Dialog: PopoverDialog,\n  Arrow: PopoverArrow,\n  Content: PopoverContent,\n  Heading: PopoverHeading,\n});\n\nexport type Popover = {\n  Props: ComponentProps<typeof PopoverRoot>;\n  RootProps: ComponentProps<typeof PopoverRoot>;\n  TriggerProps: ComponentProps<typeof PopoverTrigger>;\n  DialogProps: ComponentProps<typeof PopoverDialog>;\n  ArrowProps: ComponentProps<typeof PopoverArrow>;\n  ContentProps: ComponentProps<typeof PopoverContent>;\n  HeadingProps: ComponentProps<typeof PopoverHeading>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {PopoverArrow, PopoverContent, PopoverDialog, PopoverHeading, PopoverRoot, PopoverTrigger};\n\nexport type {\n  PopoverRootProps,\n  PopoverRootProps as PopoverProps,\n  PopoverTriggerProps,\n  PopoverDialogProps,\n  PopoverArrowProps,\n  PopoverContentProps,\n  PopoverHeadingProps,\n} from \"./popover\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {popoverVariants} from \"@heroui/styles\";\n\nexport type {PopoverVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "modal",
+    "popover"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "popover_index",
+      "name": "index",
+      "path": "packages/react/src/components/popover/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_popover_index",
+      "name": "popover",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/popover/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  PopoverArrow,\n  PopoverContent,\n  PopoverDialog,\n  PopoverHeading,\n  PopoverRoot,\n  PopoverTrigger,\n} from \"./popover\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Popover = Object.assign(PopoverRoot, {\n  Root: PopoverRoot,\n  Trigger: PopoverTrigger,\n  Dialog: PopoverDialog,\n  Arrow: PopoverArrow,\n  Content: PopoverContent,\n  Heading: PopoverHeading,\n});\n\nexport type Popover = {\n  Props: ComponentProps<typeof PopoverRoot>;\n  RootProps: ComponentProps<typeof PopoverRoot>;\n  TriggerProps: ComponentProps<typeof PopoverTrigger>;\n  DialogProps: ComponentProps<typeof PopoverDialog>;\n  ArrowProps: ComponentProps<typeof PopoverArrow>;\n  ContentProps: ComponentProps<typeof PopoverContent>;\n  HeadingProps: ComponentProps<typeof PopoverHeading>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {PopoverArrow, PopoverContent, PopoverDialog, PopoverHeading, PopoverRoot, PopoverTrigger};\n\nexport type {\n  PopoverRootProps,\n  PopoverRootProps as PopoverProps,\n  PopoverTriggerProps,\n  PopoverDialogProps,\n  PopoverArrowProps,\n  PopoverContentProps,\n  PopoverHeadingProps,\n} from \"./popover\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {popoverVariants} from \"@heroui/styles\";\n\nexport type {PopoverVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "popover is a popover UI component from the heroui corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: popover\nDescription: popover is a popover UI component from the heroui corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heroui, modal, popover\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/popover/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  PopoverArrow,\n  PopoverContent,\n  PopoverDialog,\n  PopoverHeading,\n  PopoverRoot,\n  PopoverTrigger,\n} from \"./popover\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Popover = Object.assign(PopoverRoot, ",
+  "prompt_version": 2,
+  "clean_id": "popover",
+  "display_name": "Popover",
+  "preview_url": "/previews/heroui/packages-react-src-components-popover-index.png"
+}

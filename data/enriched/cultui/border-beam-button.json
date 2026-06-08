@@ -1,0 +1,69 @@
+{
+  "id": "border-beam-button",
+  "name": "border-beam-button",
+  "source_code": "// registry/default/ui/border-beam-button.tsx\n\"use client\"\n\n/**\n * `border-beam` around `Button` — compact `beamSize=\"sm\"` glow for controls.\n * `className` styles the button; `borderBeamClassName` styles the beam wrapper.\n */\nimport type { ComponentProps, CSSProperties } from \"react\"\nimport { forwardRef } from \"react\"\nimport {\n  BorderBeam,\n  type BorderBeamProps,\n  type BorderBeamSize,\n} from \"border-beam\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/components/ui/button\"\n\ntype BeamShellProps = Pick<\n  BorderBeamProps,\n  | \"colorVariant\"\n  | \"theme\"\n  | \"staticColors\"\n  | \"duration\"\n  | \"active\"\n  | \"borderRadius\"\n  | \"brightness\"\n  | \"saturation\"\n  | \"hueRange\"\n  | \"strength\"\n  | \"onActivate\"\n  | \"onDeactivate\"\n> & {\n  beamSize?: BorderBeamSize\n  borderBeamClassName?: string\n  borderBeamStyle?: CSSProperties\n}\n\nexport type BorderBeamButtonProps = ComponentProps<typeof Button> &\n  BeamShellProps\n\nexport type BorderBeamIconButtonProps = BorderBeamButtonProps\n\nexport const BorderBeamButton = forwardRef<\n  HTMLDivElement,\n  BorderBeamButtonProps\n>(function BorderBeamButton(\n  {\n    beamSize = \"sm\",\n    borderBeamClassName,\n    borderBeamStyle,\n    theme = \"auto\",\n    colorVariant,\n    staticColors,\n    duration,\n    active,\n    borderRadius,\n    brightness,\n    saturation,\n    hueRange,\n    strength,\n    onActivate,\n    onDeactivate,\n    className,\n    ...buttonProps\n  },\n  ref\n) {\n  return (\n    <BorderBeam\n      active={active}\n      borderRadius={borderRadius}\n      brightness={brightness}\n      className={cn(\n        \"overflow-visible! inline-flex w-fit min-w-0 flex-col items-stretch leading-none\",\n        borderBeamClassName\n      )}\n      colorVariant={colorVariant}\n      duration={duration}\n      hueRange={hueRange}\n      onActivate={onActivate}\n      onDeactivate={onDeactivate}\n      ref={ref}\n      saturation={saturation}\n      size={beamSize}\n      staticColors={staticColors}\n      strength={strength}\n      style={borderBeamStyle}\n      theme={theme}\n    >\n      <Button className={className} {...buttonProps} />\n    </BorderBeam>\n  )\n})\n\nBorderBeamButton.displayName = \"BorderBeamButton\"\n\nexport const BorderBeamIconButton = forwardRef<\n  HTMLDivElement,\n  BorderBeamIconButtonProps\n>(function BorderBeamIconButton(\n  { size = \"icon-sm\", className, ...props },\n  ref\n) {\n  return (\n    <BorderBeamButton\n      className={cn(\"!leading-none [&_svg]:block [&_svg]:shrink-0\", className)}\n      ref={ref}\n      size={size}\n      {...props}\n    />\n  )\n})\n\nBorderBeamIconButton.displayName = \"BorderBeamIconButton\"\n",
+  "description": "Shadcn Button wrapped in Border Beam: animated border glow with compact icon and text variants",
+  "tags": [
+    "button",
+    "compact",
+    "glow",
+    "control",
+    "navigation"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "border-beam-button.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/border-beam-button.json",
+      "sha": "dbf2819d6c047e9c2e68be1a8d7873702750e6fb",
+      "size": 3155,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/border-beam-button.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/border-beam-button.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/dbf2819d6c047e9c2e68be1a8d7873702750e6fb",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/border-beam-button.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/border-beam-button.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/dbf2819d6c047e9c2e68be1a8d7873702750e6fb",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/border-beam-button.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "border-beam-button",
+      "type": "registry:ui",
+      "description": "Shadcn Button wrapped in Border Beam: animated border glow with compact icon and text variants",
+      "dependencies": [
+        "border-beam"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/border-beam-button.tsx",
+          "content": "\"use client\"\n\n/**\n * `border-beam` around `Button` — compact `beamSize=\"sm\"` glow for controls.\n * `className` styles the button; `borderBeamClassName` styles the beam wrapper.\n */\nimport type { ComponentProps, CSSProperties } from \"react\"\nimport { forwardRef } from \"react\"\nimport {\n  BorderBeam,\n  type BorderBeamProps,\n  type BorderBeamSize,\n} from \"border-beam\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/components/ui/button\"\n\ntype BeamShellProps = Pick<\n  BorderBeamProps,\n  | \"colorVariant\"\n  | \"theme\"\n  | \"staticColors\"\n  | \"duration\"\n  | \"active\"\n  | \"borderRadius\"\n  | \"brightness\"\n  | \"saturation\"\n  | \"hueRange\"\n  | \"strength\"\n  | \"onActivate\"\n  | \"onDeactivate\"\n> & {\n  beamSize?: BorderBeamSize\n  borderBeamClassName?: string\n  borderBeamStyle?: CSSProperties\n}\n\nexport type BorderBeamButtonProps = ComponentProps<typeof Button> &\n  BeamShellProps\n\nexport type BorderBeamIconButtonProps = BorderBeamButtonProps\n\nexport const BorderBeamButton = forwardRef<\n  HTMLDivElement,\n  BorderBeamButtonProps\n>(function BorderBeamButton(\n  {\n    beamSize = \"sm\",\n    borderBeamClassName,\n    borderBeamStyle,\n    theme = \"auto\",\n    colorVariant,\n    staticColors,\n    duration,\n    active,\n    borderRadius,\n    brightness,\n    saturation,\n    hueRange,\n    strength,\n    onActivate,\n    onDeactivate,\n    className,\n    ...buttonProps\n  },\n  ref\n) {\n  return (\n    <BorderBeam\n      active={active}\n      borderRadius={borderRadius}\n      brightness={brightness}\n      className={cn(\n        \"overflow-visible! inline-flex w-fit min-w-0 flex-col items-stretch leading-none\",\n        borderBeamClassName\n      )}\n      colorVariant={colorVariant}\n      duration={duration}\n      hueRange={hueRange}\n      onActivate={onActivate}\n      onDeactivate={onDeactivate}\n      ref={ref}\n      saturation={saturation}\n      size={beamSize}\n      staticColors={staticColors}\n      strength={strength}\n      style={borderBeamStyle}\n      theme={theme}\n    >\n      <Button className={className} {...buttonProps} />\n    </BorderBeam>\n  )\n})\n\nBorderBeamButton.displayName = \"BorderBeamButton\"\n\nexport const BorderBeamIconButton = forwardRef<\n  HTMLDivElement,\n  BorderBeamIconButtonProps\n>(function BorderBeamIconButton(\n  { size = \"icon-sm\", className, ...props },\n  ref\n) {\n  return (\n    <BorderBeamButton\n      className={cn(\"!leading-none [&_svg]:block [&_svg]:shrink-0\", className)}\n      ref={ref}\n      size={size}\n      {...props}\n    />\n  )\n})\n\nBorderBeamIconButton.displayName = \"BorderBeamIconButton\"\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Border Beam Button is a compact button with a glow effect. It can be used as a control button or navigation button, and is suitable for applications where a subtle visual feedback is desired.",
+  "style_tags": [
+    "minimal",
+    "dark"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: border-beam-button\nDescription: The Border Beam Button is a compact button with a glow effect. It can be used as a control button or navigation button, and is suitable for applications where a subtle visual feedback is desired.\nStyle: minimal, dark\nInteractions: animated, hover, clickable\nTags: button, compact, glow, control, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/border-beam-button.tsx\n\"use client\"\n\n/**\n * `border-beam` around `Button` — compact `beamSize=\"sm\"` glow for controls.\n * `className` styles the button; `borderBeamClassName` styles the beam wrapper.\n */\nimport type { ComponentProps, CSSProperties } from \"react\"\nimport { forwardRef } from \"react\"\nimport {\n  BorderBeam,\n  type BorderBeamProps,\n  type BorderBeamSize,\n} from \"border-beam\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/components/ui/button\"\n\ntype ",
+  "prompt_version": 2,
+  "clean_id": "border-beam-button",
+  "display_name": "Border Beam Button",
+  "preview_url": "/previews/cultui/border-beam-button.png"
+}

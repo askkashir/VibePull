@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_modal_index",
+  "name": "modal",
+  "source_code": "// packages/react/src/components/modal/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  ModalBackdrop,\n  ModalBody,\n  ModalCloseTrigger,\n  ModalContainer,\n  ModalDialog,\n  ModalFooter,\n  ModalHeader,\n  ModalHeading,\n  ModalIcon,\n  ModalRoot,\n  ModalTrigger,\n} from \"./modal\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Modal = Object.assign(ModalRoot, {\n  Root: ModalRoot,\n  Trigger: ModalTrigger,\n  Backdrop: ModalBackdrop,\n  Container: ModalContainer,\n  Dialog: ModalDialog,\n  Header: ModalHeader,\n  Icon: ModalIcon,\n  Heading: ModalHeading,\n  Body: ModalBody,\n  Footer: ModalFooter,\n  CloseTrigger: ModalCloseTrigger,\n});\n\nexport type Modal = {\n  Props: ComponentProps<typeof ModalRoot>;\n  RootProps: ComponentProps<typeof ModalRoot>;\n  TriggerProps: ComponentProps<typeof ModalTrigger>;\n  BackdropProps: ComponentProps<typeof ModalBackdrop>;\n  ContainerProps: ComponentProps<typeof ModalContainer>;\n  DialogProps: ComponentProps<typeof ModalDialog>;\n  HeaderProps: ComponentProps<typeof ModalHeader>;\n  IconProps: ComponentProps<typeof ModalIcon>;\n  HeadingProps: ComponentProps<typeof ModalHeading>;\n  BodyProps: ComponentProps<typeof ModalBody>;\n  FooterProps: ComponentProps<typeof ModalFooter>;\n  CloseTriggerProps: ComponentProps<typeof ModalCloseTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  ModalRoot,\n  ModalTrigger,\n  ModalBackdrop,\n  ModalContainer,\n  ModalDialog,\n  ModalHeader,\n  ModalIcon,\n  ModalHeading,\n  ModalBody,\n  ModalFooter,\n  ModalCloseTrigger,\n};\n\nexport type {\n  ModalRootProps,\n  ModalRootProps as ModalProps,\n  ModalTriggerProps,\n  ModalBackdropProps,\n  ModalContainerProps,\n  ModalDialogProps,\n  ModalHeaderProps,\n  ModalIconProps,\n  ModalHeadingProps,\n  ModalBodyProps,\n  ModalFooterProps,\n  ModalCloseTriggerProps,\n} from \"./modal\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {modalVariants} from \"@heroui/styles\";\n\nexport type {ModalVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "modal_index",
+      "name": "index",
+      "path": "packages/react/src/components/modal/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_modal_index",
+      "name": "modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/modal/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  ModalBackdrop,\n  ModalBody,\n  ModalCloseTrigger,\n  ModalContainer,\n  ModalDialog,\n  ModalFooter,\n  ModalHeader,\n  ModalHeading,\n  ModalIcon,\n  ModalRoot,\n  ModalTrigger,\n} from \"./modal\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Modal = Object.assign(ModalRoot, {\n  Root: ModalRoot,\n  Trigger: ModalTrigger,\n  Backdrop: ModalBackdrop,\n  Container: ModalContainer,\n  Dialog: ModalDialog,\n  Header: ModalHeader,\n  Icon: ModalIcon,\n  Heading: ModalHeading,\n  Body: ModalBody,\n  Footer: ModalFooter,\n  CloseTrigger: ModalCloseTrigger,\n});\n\nexport type Modal = {\n  Props: ComponentProps<typeof ModalRoot>;\n  RootProps: ComponentProps<typeof ModalRoot>;\n  TriggerProps: ComponentProps<typeof ModalTrigger>;\n  BackdropProps: ComponentProps<typeof ModalBackdrop>;\n  ContainerProps: ComponentProps<typeof ModalContainer>;\n  DialogProps: ComponentProps<typeof ModalDialog>;\n  HeaderProps: ComponentProps<typeof ModalHeader>;\n  IconProps: ComponentProps<typeof ModalIcon>;\n  HeadingProps: ComponentProps<typeof ModalHeading>;\n  BodyProps: ComponentProps<typeof ModalBody>;\n  FooterProps: ComponentProps<typeof ModalFooter>;\n  CloseTriggerProps: ComponentProps<typeof ModalCloseTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  ModalRoot,\n  ModalTrigger,\n  ModalBackdrop,\n  ModalContainer,\n  ModalDialog,\n  ModalHeader,\n  ModalIcon,\n  ModalHeading,\n  ModalBody,\n  ModalFooter,\n  ModalCloseTrigger,\n};\n\nexport type {\n  ModalRootProps,\n  ModalRootProps as ModalProps,\n  ModalTriggerProps,\n  ModalBackdropProps,\n  ModalContainerProps,\n  ModalDialogProps,\n  ModalHeaderProps,\n  ModalIconProps,\n  ModalHeadingProps,\n  ModalBodyProps,\n  ModalFooterProps,\n  ModalCloseTriggerProps,\n} from \"./modal\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {modalVariants} from \"@heroui/styles\";\n\nexport type {ModalVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

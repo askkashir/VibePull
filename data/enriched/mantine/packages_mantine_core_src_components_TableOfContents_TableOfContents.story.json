@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_TableOfContents_TableOfContents.story",
+  "name": "TableOfContents.story",
+  "source_code": "// packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx\nimport { TableOfContents } from './TableOfContents';\n\nexport default { title: 'TableOfContents' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 350 }}>\n      <TableOfContents\n        size=\"sm\"\n        initialData={[\n          { id: '1', value: 'Heading 1', depth: 1 },\n          { id: '2', value: 'Heading 2', depth: 2 },\n          { id: '3', value: 'Heading 3', depth: 3 },\n        ]}\n      />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "contents",
+    "mantine",
+    "of",
+    "story",
+    "table"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TableOfContents_TableOfContents.story",
+      "name": "TableOfContents.story",
+      "path": "packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TableOfContents_TableOfContents.story",
+      "name": "TableOfContents.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx",
+          "content": "import { TableOfContents } from './TableOfContents';\n\nexport default { title: 'TableOfContents' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 350 }}>\n      <TableOfContents\n        size=\"sm\"\n        initialData={[\n          { id: '1', value: 'Heading 1', depth: 1 },\n          { id: '2', value: 'Heading 2', depth: 2 },\n          { id: '3', value: 'Heading 3', depth: 3 },\n        ]}\n      />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TableOfContents.story is a table of contents story UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "table",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: TableOfContents.story\nDescription: TableOfContents.story is a table of contents story UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: contents, mantine, of, story, table\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/TableOfContents/TableOfContents.story.tsx\nimport { TableOfContents } from './TableOfContents';\n\nexport default { title: 'TableOfContents' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 350 }}>\n      <TableOfContents\n        size=\"sm\"\n        initialData={[\n          { id: '1', value: 'Heading 1', depth: 1 },\n          { id: '2', value: 'Heading 2', depth: 2 },\n          { id: '3', value: 'Heading 3', depth: 3 },\n        ",
+  "prompt_version": 2,
+  "clean_id": "table-of-contents",
+  "display_name": "Table Of Contents",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tableofcontents-tableofcontents-story.png"
+}

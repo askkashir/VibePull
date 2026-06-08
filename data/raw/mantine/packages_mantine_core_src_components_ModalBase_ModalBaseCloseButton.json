@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBaseCloseButton",
+  "name": "ModalBaseCloseButton",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBaseCloseButton.tsx\nimport cx from 'clsx';\nimport { BoxProps, ElementProps } from '../../core';\nimport { __CloseButtonProps, CloseButton } from '../CloseButton';\nimport { useModalBaseContext } from './ModalBase.context';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseCloseButtonProps\n  extends __CloseButtonProps, BoxProps, ElementProps<'button'> {}\n\nexport function ModalBaseCloseButton({ className, onClick, ...others }: ModalBaseCloseButtonProps) {\n  const ctx = useModalBaseContext();\n  return (\n    <CloseButton\n      {...others}\n      onClick={(event) => {\n        ctx.onClose();\n        onClick?.(event);\n      }}\n      className={cx({ [classes.close]: !ctx.unstyled }, className)}\n      unstyled={ctx.unstyled}\n    />\n  );\n}\n\nModalBaseCloseButton.displayName = '@mantine/core/ModalBaseCloseButton';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBaseCloseButton",
+      "name": "ModalBaseCloseButton",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseCloseButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBaseCloseButton",
+      "name": "ModalBaseCloseButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseCloseButton.tsx",
+          "content": "import cx from 'clsx';\nimport { BoxProps, ElementProps } from '../../core';\nimport { __CloseButtonProps, CloseButton } from '../CloseButton';\nimport { useModalBaseContext } from './ModalBase.context';\nimport classes from './ModalBase.module.css';\n\nexport interface ModalBaseCloseButtonProps\n  extends __CloseButtonProps, BoxProps, ElementProps<'button'> {}\n\nexport function ModalBaseCloseButton({ className, onClick, ...others }: ModalBaseCloseButtonProps) {\n  const ctx = useModalBaseContext();\n  return (\n    <CloseButton\n      {...others}\n      onClick={(event) => {\n        ctx.onClose();\n        onClick?.(event);\n      }}\n      className={cx({ [classes.close]: !ctx.unstyled }, className)}\n      unstyled={ctx.unstyled}\n    />\n  );\n}\n\nModalBaseCloseButton.displayName = '@mantine/core/ModalBaseCloseButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

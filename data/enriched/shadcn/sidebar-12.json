@@ -1,0 +1,41 @@
+{
+  "id": "sidebar-12",
+  "name": "sidebar-12",
+  "source_code": "",
+  "description": "A sidebar with a calendar.",
+  "tags": [
+    "calendar",
+    "sidebar",
+    "navigation",
+    "calendar-view"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-12",
+      "type": "registry:block",
+      "description": "A sidebar with a calendar.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-12\n\nA sidebar with a calendar.\n\n**Type:** registry:block\n**Files:** 5 file(s)"
+  },
+  "visual_summary": "A calendar-based sidebar component that can be used in applications requiring a calendar view within a navigable sidebar. It is suitable for applications that manage calendars, scheduling, or events. Developers can use it to provide easy access to a calendar view from within the app.",
+  "style_tags": [
+    "e.g. dark",
+    "material-ui"
+  ],
+  "interaction_tags": [
+    "e.g. hoverable",
+    "expandable"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-12\nDescription: A calendar-based sidebar component that can be used in applications requiring a calendar view within a navigable sidebar. It is suitable for applications that manage calendars, scheduling, or events. Developers can use it to provide easy access to a calendar view from within the app.\nStyle: e.g. dark, material-ui\nInteractions: e.g. hoverable, expandable\nTags: calendar, sidebar, navigation, calendar-view\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-12",
+  "display_name": "Sidebar 12",
+  "preview_url": "/previews/shadcn/sidebar-12.png"
+}

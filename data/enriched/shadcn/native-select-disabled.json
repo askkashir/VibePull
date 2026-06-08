@@ -1,0 +1,40 @@
+{
+  "id": "native-select-disabled",
+  "name": "native-select-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "disabled",
+    "select",
+    "dropdown",
+    "form input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "native-select-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## native-select-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A disabled native select component is a dropdown menu that is unusable and typically displayed in a grey color to indicate that the user cannot interact with it. It is often used in situations where a user's input is not required or when an action cannot be performed at the current time. This component is commonly seen on web applications where form inputs need to be temporarily disabled.",
+  "style_tags": [
+    "e.g. dark",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "not clickable"
+  ],
+  "component_type": "select",
+  "generation_prompt": "Create a production-ready select component with the following characteristics:\n\nName: native-select-disabled\nDescription: A disabled native select component is a dropdown menu that is unusable and typically displayed in a grey color to indicate that the user cannot interact with it. It is often used in situations where a user's input is not required or when an action cannot be performed at the current time. This component is commonly seen on web applications where form inputs need to be temporarily disabled.\nStyle: e.g. dark, flat\nInteractions: e.g. clickable, not clickable\nTags: disabled, select, dropdown, form input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "native-select-disabled",
+  "display_name": "Native Select Disabled",
+  "preview_url": "/previews/shadcn/native-select-disabled.png"
+}

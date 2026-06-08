@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Splitter_index",
+  "name": "Splitter",
+  "source_code": "// packages/@mantine/core/src/components/Splitter/index.ts\nimport type {\n  SplitterCssVariables,\n  SplitterFactory,\n  SplitterProps,\n  SplitterStylesNames,\n} from './Splitter';\nimport type { SplitterContextValue } from './Splitter.context';\nimport type { SplitterPaneProps, SplitterPaneStylesNames } from './SplitterPane/SplitterPane';\n\nexport { Splitter } from './Splitter';\nexport { SplitterPane } from './SplitterPane/SplitterPane';\nexport { useSplitterContext } from './Splitter.context';\n\nexport type {\n  SplitterProps,\n  SplitterStylesNames,\n  SplitterCssVariables,\n  SplitterFactory,\n  SplitterPaneProps,\n  SplitterPaneStylesNames,\n  SplitterContextValue,\n};\n\nexport namespace Splitter {\n  export type Props = SplitterProps;\n  export type StylesNames = SplitterStylesNames;\n  export type CssVariables = SplitterCssVariables;\n  export type Factory = SplitterFactory;\n  export type ContextValue = SplitterContextValue;\n\n  export namespace Pane {\n    export type Props = SplitterPaneProps;\n    export type StylesNames = SplitterPaneStylesNames;\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "splitter"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Splitter_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Splitter/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Splitter_index",
+      "name": "Splitter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Splitter/index.ts",
+          "content": "import type {\n  SplitterCssVariables,\n  SplitterFactory,\n  SplitterProps,\n  SplitterStylesNames,\n} from './Splitter';\nimport type { SplitterContextValue } from './Splitter.context';\nimport type { SplitterPaneProps, SplitterPaneStylesNames } from './SplitterPane/SplitterPane';\n\nexport { Splitter } from './Splitter';\nexport { SplitterPane } from './SplitterPane/SplitterPane';\nexport { useSplitterContext } from './Splitter.context';\n\nexport type {\n  SplitterProps,\n  SplitterStylesNames,\n  SplitterCssVariables,\n  SplitterFactory,\n  SplitterPaneProps,\n  SplitterPaneStylesNames,\n  SplitterContextValue,\n};\n\nexport namespace Splitter {\n  export type Props = SplitterProps;\n  export type StylesNames = SplitterStylesNames;\n  export type CssVariables = SplitterCssVariables;\n  export type Factory = SplitterFactory;\n  export type ContextValue = SplitterContextValue;\n\n  export namespace Pane {\n    export type Props = SplitterPaneProps;\n    export type StylesNames = SplitterPaneStylesNames;\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Splitter is a splitter UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Splitter\nDescription: Splitter is a splitter UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, splitter\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Splitter/index.ts\nimport type {\n  SplitterCssVariables,\n  SplitterFactory,\n  SplitterProps,\n  SplitterStylesNames,\n} from './Splitter';\nimport type { SplitterContextValue } from './Splitter.context';\nimport type { SplitterPaneProps, SplitterPaneStylesNames } from './SplitterPane/SplitterPane';\n\nexport { Splitter } from './Splitter';\nexport { SplitterPane } from './SplitterPane/SplitterPane';\nexport { useSplitterContext } from './Splitter.context';\n\nexport",
+  "prompt_version": 2,
+  "clean_id": "splitter",
+  "display_name": "Splitter",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-splitter-index.png"
+}

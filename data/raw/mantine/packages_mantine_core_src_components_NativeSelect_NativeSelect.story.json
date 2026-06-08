@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_NativeSelect_NativeSelect.story",
+  "name": "NativeSelect.story",
+  "source_code": "// packages/@mantine/core/src/components/NativeSelect/NativeSelect.story.tsx\nimport { rem } from '../../core';\nimport { TextInput } from '../TextInput';\nimport { NativeSelect } from './NativeSelect';\n\nexport default { title: 'NativeSelect' };\n\nexport function WithinDisabledFieldset() {\n  return (\n    <fieldset disabled style={{ padding: 40 }}>\n      <legend>Disabled fieldset</legend>\n      <NativeSelect data={['React']} size=\"lg\" label=\"Disabled input within fieldset\" />\n      <NativeSelect data={['React']} size=\"lg\" label=\"Disabled input\" disabled mt=\"md\" />\n    </fieldset>\n  );\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect data={['React', 'Angular', 'Vue']} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect data={['React', 'Angular', 'Vue']} unstyled />\n    </div>\n  );\n}\n\nexport function Groups() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect\n        data={[\n          {\n            group: 'Frontend',\n            items: ['React', 'Angular', 'Vue'],\n          },\n          {\n            group: 'Backend',\n            items: ['Node', 'PHP', 'Python'],\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function OptionsAsChildren() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect error=\"test-error\" size=\"xl\">\n        <optgroup label=\"Front\">\n          <option>React</option>\n          <option>Angular</option>\n          <option>Vue</option>\n        </optgroup>\n        <optgroup label=\"Back\">\n          <option>Node</option>\n          <option>PHP</option>\n          <option>Python</option>\n        </optgroup>\n      </NativeSelect>\n    </div>\n  );\n}\n\nconst data = [\n  { value: 'eur', label: '🇪🇺 EUR' },\n  { value: 'usd', label: '🇺🇸 USD' },\n  { value: 'cad', label: '🇨🇦 CAD' },\n  { value: 'gbp', label: '🇬🇧 GBP' },\n  { value: 'aud', label: '🇦🇺 AUD' },\n];\n\nexport function WithinRightSection() {\n  const select = (\n    <NativeSelect\n      data={data}\n      rightSectionWidth={28}\n      styles={{\n        input: {\n          fontWeight: 500,\n          borderTopLeftRadius: 0,\n          borderBottomLeftRadius: 0,\n          width: rem(92),\n          marginRight: rem(-2),\n        },\n      }}\n    />\n  );\n\n  return (\n    <TextInput\n      type=\"number\"\n      placeholder=\"1000\"\n      label=\"Transfer amount\"\n      rightSection={select}\n      rightSectionWidth={92}\n    />\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NativeSelect_NativeSelect.story",
+      "name": "NativeSelect.story",
+      "path": "packages/@mantine/core/src/components/NativeSelect/NativeSelect.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NativeSelect_NativeSelect.story",
+      "name": "NativeSelect.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NativeSelect/NativeSelect.story.tsx",
+          "content": "import { rem } from '../../core';\nimport { TextInput } from '../TextInput';\nimport { NativeSelect } from './NativeSelect';\n\nexport default { title: 'NativeSelect' };\n\nexport function WithinDisabledFieldset() {\n  return (\n    <fieldset disabled style={{ padding: 40 }}>\n      <legend>Disabled fieldset</legend>\n      <NativeSelect data={['React']} size=\"lg\" label=\"Disabled input within fieldset\" />\n      <NativeSelect data={['React']} size=\"lg\" label=\"Disabled input\" disabled mt=\"md\" />\n    </fieldset>\n  );\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect data={['React', 'Angular', 'Vue']} />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect data={['React', 'Angular', 'Vue']} unstyled />\n    </div>\n  );\n}\n\nexport function Groups() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect\n        data={[\n          {\n            group: 'Frontend',\n            items: ['React', 'Angular', 'Vue'],\n          },\n          {\n            group: 'Backend',\n            items: ['Node', 'PHP', 'Python'],\n          },\n        ]}\n      />\n    </div>\n  );\n}\n\nexport function OptionsAsChildren() {\n  return (\n    <div style={{ padding: 40 }}>\n      <NativeSelect error=\"test-error\" size=\"xl\">\n        <optgroup label=\"Front\">\n          <option>React</option>\n          <option>Angular</option>\n          <option>Vue</option>\n        </optgroup>\n        <optgroup label=\"Back\">\n          <option>Node</option>\n          <option>PHP</option>\n          <option>Python</option>\n        </optgroup>\n      </NativeSelect>\n    </div>\n  );\n}\n\nconst data = [\n  { value: 'eur', label: '🇪🇺 EUR' },\n  { value: 'usd', label: '🇺🇸 USD' },\n  { value: 'cad', label: '🇨🇦 CAD' },\n  { value: 'gbp', label: '🇬🇧 GBP' },\n  { value: 'aud', label: '🇦🇺 AUD' },\n];\n\nexport function WithinRightSection() {\n  const select = (\n    <NativeSelect\n      data={data}\n      rightSectionWidth={28}\n      styles={{\n        input: {\n          fontWeight: 500,\n          borderTopLeftRadius: 0,\n          borderBottomLeftRadius: 0,\n          width: rem(92),\n          marginRight: rem(-2),\n        },\n      }}\n    />\n  );\n\n  return (\n    <TextInput\n      type=\"number\"\n      placeholder=\"1000\"\n      label=\"Transfer amount\"\n      rightSection={select}\n      rightSectionWidth={92}\n    />\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

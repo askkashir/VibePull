@@ -1,0 +1,41 @@
+{
+  "id": "calendar-hijri",
+  "name": "calendar-hijri",
+  "source_code": "",
+  "description": "A Persian calendar.",
+  "tags": [
+    "date picker",
+    "calendar",
+    "date selection",
+    "Hijri calendar"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "calendar-hijri",
+      "type": "registry:example",
+      "description": "A Persian calendar.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## calendar-hijri\n\nA Persian calendar.\n\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The calendar-hijri component is a visual representation of a Persian calendar date picker. It allows users to select a date on a Hijri calendar layout, providing a unique and cultural-specific way to input dates. This component is suitable for applications targeting users familiar with the Persian calendar system.",
+  "style_tags": [
+    "flat",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "selectable"
+  ],
+  "component_type": "date picker",
+  "generation_prompt": "Create a production-ready date picker component with the following characteristics:\n\nName: calendar-hijri\nDescription: The calendar-hijri component is a visual representation of a Persian calendar date picker. It allows users to select a date on a Hijri calendar layout, providing a unique and cultural-specific way to input dates. This component is suitable for applications targeting users familiar with the Persian calendar system.\nStyle: flat, minimal\nInteractions: clickable, selectable\nTags: date picker, calendar, date selection, Hijri calendar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "calendar-hijri",
+  "display_name": "Calendar Hijri",
+  "preview_url": "/previews/shadcn/calendar-hijri.png"
+}

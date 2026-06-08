@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_HueSlider_HueSlider",
+  "name": "HueSlider",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.tsx\nimport { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\n\nexport interface HueSliderProps extends ColorSliderOptions {}\n\nexport type HueSliderFactory = Factory<{\n  props: HueSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorSliderStylesNames;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'HueSlider',\n} satisfies Partial<HueSliderProps>;\n\nexport const HueSlider = factory<HueSliderFactory>((props: HueSliderProps) => {\n  const { value, onChange, onChangeEnd, color, ...others } = useProps(\n    'HueSlider',\n    defaultProps,\n    props\n  );\n\n  return (\n    <ColorSlider\n      {...others}\n      value={value}\n      onChange={onChange}\n      onChangeEnd={onChangeEnd}\n      maxValue={360}\n      thumbColor={`hsl(${value}, 100%, 50%)`}\n      round\n      data-hue\n      overlays={[\n        {\n          backgroundImage:\n            'linear-gradient(to right,hsl(0,100%,50%),hsl(60,100%,50%),hsl(120,100%,50%),hsl(170,100%,50%),hsl(240,100%,50%),hsl(300,100%,50%),hsl(360,100%,50%))',\n        },\n        {\n          boxShadow: `rgba(0, 0, 0, .1) 0 0 0 ${rem(1)} inset, rgb(0, 0, 0, .15) 0 0 ${rem(\n            4\n          )} inset`,\n        },\n      ]}\n    />\n  );\n});\n\nHueSlider.displayName = '@mantine/core/HueSlider';\nHueSlider.classes = ColorSlider.classes;\n\nexport namespace HueSlider {\n  export type Props = HueSliderProps;\n  export type Factory = HueSliderFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "hue",
+    "mantine",
+    "other",
+    "slider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_HueSlider_HueSlider",
+      "name": "HueSlider",
+      "path": "packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_HueSlider_HueSlider",
+      "name": "HueSlider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.tsx",
+          "content": "import { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\n\nexport interface HueSliderProps extends ColorSliderOptions {}\n\nexport type HueSliderFactory = Factory<{\n  props: HueSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorSliderStylesNames;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'HueSlider',\n} satisfies Partial<HueSliderProps>;\n\nexport const HueSlider = factory<HueSliderFactory>((props: HueSliderProps) => {\n  const { value, onChange, onChangeEnd, color, ...others } = useProps(\n    'HueSlider',\n    defaultProps,\n    props\n  );\n\n  return (\n    <ColorSlider\n      {...others}\n      value={value}\n      onChange={onChange}\n      onChangeEnd={onChangeEnd}\n      maxValue={360}\n      thumbColor={`hsl(${value}, 100%, 50%)`}\n      round\n      data-hue\n      overlays={[\n        {\n          backgroundImage:\n            'linear-gradient(to right,hsl(0,100%,50%),hsl(60,100%,50%),hsl(120,100%,50%),hsl(170,100%,50%),hsl(240,100%,50%),hsl(300,100%,50%),hsl(360,100%,50%))',\n        },\n        {\n          boxShadow: `rgba(0, 0, 0, .1) 0 0 0 ${rem(1)} inset, rgb(0, 0, 0, .15) 0 0 ${rem(\n            4\n          )} inset`,\n        },\n      ]}\n    />\n  );\n});\n\nHueSlider.displayName = '@mantine/core/HueSlider';\nHueSlider.classes = ColorSlider.classes;\n\nexport namespace HueSlider {\n  export type Props = HueSliderProps;\n  export type Factory = HueSliderFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "HueSlider is a hue slider UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: HueSlider\nDescription: HueSlider is a hue slider UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, shadow, utility-styled\nInteractions: interactive\nTags: hue, mantine, other, slider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.tsx\nimport { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\n\nexport interface HueSliderProps extends ColorSliderOptions {}\n\nexport type HueSliderFactory = Factory<{\n  props: HueSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorSliderStylesNames;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'HueSlide",
+  "prompt_version": 2,
+  "clean_id": "hue-slider",
+  "display_name": "Hue Slider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-colorpicker-hueslider-hueslider.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_label_label",
+  "name": "label",
+  "source_code": "// packages/react/src/components/label/label.tsx\n\"use client\";\n\nimport type {LabelVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {labelVariants} from \"@heroui/styles\";\nimport {Label as LabelPrimitive} from \"react-aria-components/Label\";\n\n/* -------------------------------------------------------------------------------------------------\n * Label Root\n * -----------------------------------------------------------------------------------------------*/\ninterface LabelRootProps extends ComponentPropsWithRef<typeof LabelPrimitive>, LabelVariants {}\n\nconst LabelRoot = ({\n  children,\n  className,\n  isDisabled,\n  isInvalid,\n  isRequired,\n  ...rest\n}: LabelRootProps) => {\n  return (\n    <LabelPrimitive\n      className={labelVariants({isRequired, isDisabled, isInvalid, className})}\n      data-slot=\"label\"\n      {...rest}\n    >\n      {children}\n    </LabelPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {LabelRoot};\n\nexport type {LabelRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "label_label",
+      "name": "label",
+      "path": "packages/react/src/components/label/label.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_label_label",
+      "name": "label",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/label/label.tsx",
+          "content": "\"use client\";\n\nimport type {LabelVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {labelVariants} from \"@heroui/styles\";\nimport {Label as LabelPrimitive} from \"react-aria-components/Label\";\n\n/* -------------------------------------------------------------------------------------------------\n * Label Root\n * -----------------------------------------------------------------------------------------------*/\ninterface LabelRootProps extends ComponentPropsWithRef<typeof LabelPrimitive>, LabelVariants {}\n\nconst LabelRoot = ({\n  children,\n  className,\n  isDisabled,\n  isInvalid,\n  isRequired,\n  ...rest\n}: LabelRootProps) => {\n  return (\n    <LabelPrimitive\n      className={labelVariants({isRequired, isDisabled, isInvalid, className})}\n      data-slot=\"label\"\n      {...rest}\n    >\n      {children}\n    </LabelPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {LabelRoot};\n\nexport type {LabelRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

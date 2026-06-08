@@ -1,0 +1,42 @@
+{
+  "id": "infinite-slider",
+  "name": "infinite-slider",
+  "source_code": "// components/core/infinite-slider.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { useMotionValue, animate, motion } from 'motion/react';\nimport { useState, useEffect } from 'react';\nimport useMeasure from 'react-use-measure';\n\nexport type InfiniteSliderProps = {\n  children: React.ReactNode;\n  gap?: number;\n  speed?: number;\n  speedOnHover?: number;\n  direction?: 'horizontal' | 'vertical';\n  reverse?: boolean;\n  className?: string;\n};\n\nexport function InfiniteSlider({\n  children,\n  gap = 16,\n  speed = 100,\n  speedOnHover,\n  direction = 'horizontal',\n  reverse = false,\n  className,\n}: InfiniteSliderProps) {\n  const [isHovering, setIsHovering] = useState(false);\n  const currentSpeed = isHovering && speedOnHover ? speedOnHover : speed;\n  const [ref, { width, height }] = useMeasure();\n  const translation = useMotionValue(0);\n  const [isTransitioning, setIsTransitioning] = useState(false);\n  const [key, setKey] = useState(0);\n\n  useEffect(() => {\n    let controls;\n    const size = direction === 'horizontal' ? width : height;\n    const contentSize = size + gap;\n    const from = reverse ? -contentSize / 2 : 0;\n    const to = reverse ? 0 : -contentSize / 2;\n\n    const distanceToTravel = Math.abs(to - from);\n    const duration = distanceToTravel / currentSpeed;\n\n    if (isTransitioning) {\n      const remainingDistance = Math.abs(translation.get() - to);\n      const transitionDuration = remainingDistance / currentSpeed;\n\n      controls = animate(translation, [translation.get(), to], {\n        ease: 'linear',\n        duration: transitionDuration,\n        onComplete: () => {\n          setIsTransitioning(false);\n          setKey((prevKey) => prevKey + 1);\n        },\n      });\n    } else {\n      controls = animate(translation, [from, to], {\n        ease: 'linear',\n        duration: duration,\n        repeat: Infinity,\n        repeatType: 'loop',\n        repeatDelay: 0,\n        onRepeat: () => {\n          translation.set(from);\n        },\n      });\n    }\n\n    return controls?.stop;\n  }, [\n    key,\n    translation,\n    currentSpeed,\n    width,\n    height,\n    gap,\n    isTransitioning,\n    direction,\n    reverse,\n  ]);\n\n  const hoverProps = speedOnHover\n    ? {\n        onHoverStart: () => {\n          setIsTransitioning(true);\n          setIsHovering(true);\n        },\n        onHoverEnd: () => {\n          setIsTransitioning(true);\n          setIsHovering(false);\n        },\n      }\n    : {};\n\n  return (\n    <div className={cn('overflow-hidden', className)}>\n      <motion.div\n        className='flex w-max'\n        style={{\n          ...(direction === 'horizontal'\n            ? { x: translation }\n            : { y: translation }),\n          gap: `${gap}px`,\n          flexDirection: direction === 'horizontal' ? 'row' : 'column',\n        }}\n        ref={ref}\n        {...hoverProps}\n      >\n        {children}\n        {children}\n      </motion.div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "file",
+    "motionprimitives",
+    "registry:ui"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "infinite-slider.tsx",
+      "source": "github_contents",
+      "path": "components/core/infinite-slider.tsx",
+      "sha": "2c43ec4256764109ef5ef9a8d61ebb63523a6a44",
+      "size": 2867,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/infinite-slider.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/infinite-slider.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/2c43ec4256764109ef5ef9a8d61ebb63523a6a44",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/infinite-slider.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/infinite-slider.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/2c43ec4256764109ef5ef9a8d61ebb63523a6a44",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/infinite-slider.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "infinite-slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/infinite-slider.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport { useMotionValue, animate, motion } from 'motion/react';\nimport { useState, useEffect } from 'react';\nimport useMeasure from 'react-use-measure';\n\nexport type InfiniteSliderProps = {\n  children: React.ReactNode;\n  gap?: number;\n  speed?: number;\n  speedOnHover?: number;\n  direction?: 'horizontal' | 'vertical';\n  reverse?: boolean;\n  className?: string;\n};\n\nexport function InfiniteSlider({\n  children,\n  gap = 16,\n  speed = 100,\n  speedOnHover,\n  direction = 'horizontal',\n  reverse = false,\n  className,\n}: InfiniteSliderProps) {\n  const [isHovering, setIsHovering] = useState(false);\n  const currentSpeed = isHovering && speedOnHover ? speedOnHover : speed;\n  const [ref, { width, height }] = useMeasure();\n  const translation = useMotionValue(0);\n  const [isTransitioning, setIsTransitioning] = useState(false);\n  const [key, setKey] = useState(0);\n\n  useEffect(() => {\n    let controls;\n    const size = direction === 'horizontal' ? width : height;\n    const contentSize = size + gap;\n    const from = reverse ? -contentSize / 2 : 0;\n    const to = reverse ? 0 : -contentSize / 2;\n\n    const distanceToTravel = Math.abs(to - from);\n    const duration = distanceToTravel / currentSpeed;\n\n    if (isTransitioning) {\n      const remainingDistance = Math.abs(translation.get() - to);\n      const transitionDuration = remainingDistance / currentSpeed;\n\n      controls = animate(translation, [translation.get(), to], {\n        ease: 'linear',\n        duration: transitionDuration,\n        onComplete: () => {\n          setIsTransitioning(false);\n          setKey((prevKey) => prevKey + 1);\n        },\n      });\n    } else {\n      controls = animate(translation, [from, to], {\n        ease: 'linear',\n        duration: duration,\n        repeat: Infinity,\n        repeatType: 'loop',\n        repeatDelay: 0,\n        onRepeat: () => {\n          translation.set(from);\n        },\n      });\n    }\n\n    return controls?.stop;\n  }, [\n    key,\n    translation,\n    currentSpeed,\n    width,\n    height,\n    gap,\n    isTransitioning,\n    direction,\n    reverse,\n  ]);\n\n  const hoverProps = speedOnHover\n    ? {\n        onHoverStart: () => {\n          setIsTransitioning(true);\n          setIsHovering(true);\n        },\n        onHoverEnd: () => {\n          setIsTransitioning(true);\n          setIsHovering(false);\n        },\n      }\n    : {};\n\n  return (\n    <div className={cn('overflow-hidden', className)}>\n      <motion.div\n        className='flex w-max'\n        style={{\n          ...(direction === 'horizontal'\n            ? { x: translation }\n            : { y: translation }),\n          gap: `${gap}px`,\n          flexDirection: direction === 'horizontal' ? 'row' : 'column',\n        }}\n        ref={ref}\n        {...hoverProps}\n      >\n        {children}\n        {children}\n      </motion.div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

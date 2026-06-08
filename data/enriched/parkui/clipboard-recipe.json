@@ -1,0 +1,60 @@
+{
+  "id": "clipboard-recipe",
+  "name": "clipboard-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/clipboard.ts\nimport { clipboardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const clipboard = defineSlotRecipe({\n  className: 'clipboard',\n  slots: clipboardAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      alignItems: 'flex-start',\n      gap: '1.5',\n    },\n    label: {\n      fontWeight: 'medium',\n      textStyle: 'sm',\n      color: 'fg.default',\n      gap: '0.5',\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "clipboard",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "clipboard-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/clipboard.ts",
+          "type": "registry:recipe",
+          "imports": "import { clipboard } from './clipboard'",
+          "content": "import { clipboardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const clipboard = defineSlotRecipe({\n  className: 'clipboard',\n  slots: clipboardAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      alignItems: 'flex-start',\n      gap: '1.5',\n    },\n    label: {\n      fontWeight: 'medium',\n      textStyle: 'sm',\n      color: 'fg.default',\n      gap: '0.5',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "clipboard-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/clipboard.ts",
+          "type": "registry:recipe",
+          "imports": "import { clipboard } from './clipboard'",
+          "content": "import { clipboardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const clipboard = defineSlotRecipe({\n  className: 'clipboard',\n  slots: clipboardAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      alignItems: 'flex-start',\n      gap: '1.5',\n    },\n    label: {\n      fontWeight: 'medium',\n      textStyle: 'sm',\n      color: 'fg.default',\n      gap: '0.5',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "clipboard-recipe is a clipboard recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: clipboard-recipe\nDescription: clipboard-recipe is a clipboard recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: clipboard, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/clipboard.ts\nimport { clipboardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const clipboard = defineSlotRecipe({\n  className: 'clipboard',\n  slots: clipboardAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      alignItems: 'flex-start',\n      gap: '1.5',\n    },\n    label: {\n      fontWeight: 'medium',\n      textStyle: 'sm',\n      color: 'fg.default',\n      gap: '0.5",
+  "prompt_version": 2,
+  "clean_id": "clipboard-recipe",
+  "display_name": "Clipboard Recipe",
+  "preview_url": "/previews/parkui/clipboard-recipe.png"
+}

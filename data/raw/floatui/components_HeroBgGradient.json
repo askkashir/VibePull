@@ -1,0 +1,31 @@
+{
+  "id": "components_HeroBgGradient",
+  "name": "HeroBgGradient",
+  "source_code": "// components/HeroBgGradient.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  className = \"\",\n  height = 444,\n}: {\n  className?: string;\n  height?: number;\n}) => (\n  <svg\n    height={height}\n    viewBox=\"0 0 653 444\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className, \"w-full sm:w-[653px]\")}\n  >\n    <g filter=\"url(#filter0_f_3249_6957)\">\n      <path\n        d=\"M229.488 -100.921L557.588 270.669L419.698 348.86L95.3076 17.5558L229.488 -100.921Z\"\n        fill=\"url(#paint0_linear_3249_6957)\"\n        fill-opacity=\"0.5\"\n      />\n    </g>\n    <defs>\n      <filter\n        id=\"filter0_f_3249_6957\"\n        x=\"0.307617\"\n        y=\"-195.92\"\n        width=\"652.28\"\n        height=\"639.78\"\n        filterUnits=\"userSpaceOnUse\"\n        color-interpolation-filters=\"sRGB\"\n      >\n        <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n        <feBlend\n          mode=\"normal\"\n          in=\"SourceGraphic\"\n          in2=\"BackgroundImageFix\"\n          result=\"shape\"\n        />\n        <feGaussianBlur\n          stdDeviation=\"47.5\"\n          result=\"effect1_foregroundBlur_3249_6957\"\n        />\n      </filter>\n      <linearGradient\n        id=\"paint0_linear_3249_6957\"\n        x1=\"390.23\"\n        y1=\"87.7945\"\n        x2=\"259.165\"\n        y2=\"203.521\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#0EA5E9\" />\n        <stop offset=\"0.253305\" stop-color=\"#9333EA\" stop-opacity=\"0.02\" />\n        <stop offset=\"0.470899\" />\n        <stop offset=\"0.704177\" stop-color=\"#064967\" stop-opacity=\"0.559106\" />\n        <stop offset=\"1\" stop-color=\"#0EA5E9\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "HeroBgGradient",
+      "name": "HeroBgGradient",
+      "path": "components/HeroBgGradient.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_HeroBgGradient",
+      "name": "HeroBgGradient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/HeroBgGradient.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\n\nexport default ({\n  className = \"\",\n  height = 444,\n}: {\n  className?: string;\n  height?: number;\n}) => (\n  <svg\n    height={height}\n    viewBox=\"0 0 653 444\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className, \"w-full sm:w-[653px]\")}\n  >\n    <g filter=\"url(#filter0_f_3249_6957)\">\n      <path\n        d=\"M229.488 -100.921L557.588 270.669L419.698 348.86L95.3076 17.5558L229.488 -100.921Z\"\n        fill=\"url(#paint0_linear_3249_6957)\"\n        fill-opacity=\"0.5\"\n      />\n    </g>\n    <defs>\n      <filter\n        id=\"filter0_f_3249_6957\"\n        x=\"0.307617\"\n        y=\"-195.92\"\n        width=\"652.28\"\n        height=\"639.78\"\n        filterUnits=\"userSpaceOnUse\"\n        color-interpolation-filters=\"sRGB\"\n      >\n        <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n        <feBlend\n          mode=\"normal\"\n          in=\"SourceGraphic\"\n          in2=\"BackgroundImageFix\"\n          result=\"shape\"\n        />\n        <feGaussianBlur\n          stdDeviation=\"47.5\"\n          result=\"effect1_foregroundBlur_3249_6957\"\n        />\n      </filter>\n      <linearGradient\n        id=\"paint0_linear_3249_6957\"\n        x1=\"390.23\"\n        y1=\"87.7945\"\n        x2=\"259.165\"\n        y2=\"203.521\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#0EA5E9\" />\n        <stop offset=\"0.253305\" stop-color=\"#9333EA\" stop-opacity=\"0.02\" />\n        <stop offset=\"0.470899\" />\n        <stop offset=\"0.704177\" stop-color=\"#064967\" stop-opacity=\"0.559106\" />\n        <stop offset=\"1\" stop-color=\"#0EA5E9\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

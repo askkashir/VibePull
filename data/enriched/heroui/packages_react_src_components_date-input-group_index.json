@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_date-input-group_index",
+  "name": "date-input-group",
+  "source_code": "// packages/react/src/components/date-input-group/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DateInputGroupInput,\n  DateInputGroupInputContainer,\n  DateInputGroupPrefix,\n  DateInputGroupRoot,\n  DateInputGroupSegment,\n  DateInputGroupSuffix,\n} from \"./date-input-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DateInputGroup = Object.assign(DateInputGroupRoot, {\n  Root: DateInputGroupRoot,\n  Input: DateInputGroupInput,\n  InputContainer: DateInputGroupInputContainer,\n  Segment: DateInputGroupSegment,\n  Prefix: DateInputGroupPrefix,\n  Suffix: DateInputGroupSuffix,\n});\n\nexport type DateInputGroup = {\n  Props: ComponentProps<typeof DateInputGroupRoot>;\n  RootProps: ComponentProps<typeof DateInputGroupRoot>;\n  InputProps: ComponentProps<typeof DateInputGroupInput>;\n  InputContainerProps: ComponentProps<typeof DateInputGroupInputContainer>;\n  SegmentProps: ComponentProps<typeof DateInputGroupSegment>;\n  PrefixProps: ComponentProps<typeof DateInputGroupPrefix>;\n  SuffixProps: ComponentProps<typeof DateInputGroupSuffix>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DateInputGroupInput,\n  DateInputGroupInputContainer,\n  DateInputGroupPrefix,\n  DateInputGroupRoot,\n  DateInputGroupSegment,\n  DateInputGroupSuffix,\n};\n\nexport type {\n  DateInputGroupRootProps,\n  DateInputGroupRootProps as DateInputGroupProps,\n  DateInputGroupInputProps,\n  DateInputGroupInputContainerProps,\n  DateInputGroupSegmentProps,\n  DateInputGroupPrefixProps,\n  DateInputGroupSuffixProps,\n} from \"./date-input-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dateInputGroupVariants} from \"@heroui/styles\";\n\nexport type {DateInputGroupVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "date",
+    "input",
+    "group"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "date-input-group_index",
+      "name": "index",
+      "path": "packages/react/src/components/date-input-group/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_date-input-group_index",
+      "name": "date-input-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/date-input-group/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  DateInputGroupInput,\n  DateInputGroupInputContainer,\n  DateInputGroupPrefix,\n  DateInputGroupRoot,\n  DateInputGroupSegment,\n  DateInputGroupSuffix,\n} from \"./date-input-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DateInputGroup = Object.assign(DateInputGroupRoot, {\n  Root: DateInputGroupRoot,\n  Input: DateInputGroupInput,\n  InputContainer: DateInputGroupInputContainer,\n  Segment: DateInputGroupSegment,\n  Prefix: DateInputGroupPrefix,\n  Suffix: DateInputGroupSuffix,\n});\n\nexport type DateInputGroup = {\n  Props: ComponentProps<typeof DateInputGroupRoot>;\n  RootProps: ComponentProps<typeof DateInputGroupRoot>;\n  InputProps: ComponentProps<typeof DateInputGroupInput>;\n  InputContainerProps: ComponentProps<typeof DateInputGroupInputContainer>;\n  SegmentProps: ComponentProps<typeof DateInputGroupSegment>;\n  PrefixProps: ComponentProps<typeof DateInputGroupPrefix>;\n  SuffixProps: ComponentProps<typeof DateInputGroupSuffix>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DateInputGroupInput,\n  DateInputGroupInputContainer,\n  DateInputGroupPrefix,\n  DateInputGroupRoot,\n  DateInputGroupSegment,\n  DateInputGroupSuffix,\n};\n\nexport type {\n  DateInputGroupRootProps,\n  DateInputGroupRootProps as DateInputGroupProps,\n  DateInputGroupInputProps,\n  DateInputGroupInputContainerProps,\n  DateInputGroupSegmentProps,\n  DateInputGroupPrefixProps,\n  DateInputGroupSuffixProps,\n} from \"./date-input-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dateInputGroupVariants} from \"@heroui/styles\";\n\nexport type {DateInputGroupVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A group of input fields to handle date selection with optional prefix and suffix elements. Use when users need to input a date value.",
+  "style_tags": [
+    "e.g. none",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. none",
+    "hoverable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: date-input-group\nDescription: A group of input fields to handle date selection with optional prefix and suffix elements. Use when users need to input a date value.\nStyle: e.g. none, minimal\nInteractions: e.g. none, hoverable\nTags: date, input, group\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/date-input-group/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DateInputGroupInput,\n  DateInputGroupInputContainer,\n  DateInputGroupPrefix,\n  DateInputGroupRoot,\n  DateInputGroupSegment,\n  DateInputGroupSuffix,\n} from \"./date-input-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * ----------------------------------------------------------------------------------",
+  "prompt_version": 2,
+  "clean_id": "date-input-group",
+  "display_name": "Date Input Group",
+  "preview_url": "/previews/heroui/packages-react-src-components-date-input-group-index.png"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.types",
+  "name": "ColorPicker.types",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts\nexport type ColorFormat = 'hex' | 'hexa' | 'rgba' | 'rgb' | 'hsl' | 'hsla';\n\nexport interface HsvaColor {\n  h: number;\n  s: number;\n  v: number;\n  a: number;\n}\n\nexport interface RgbaColor {\n  r: number;\n  g: number;\n  b: number;\n  a: number;\n}\n\nexport interface HslaColor {\n  h: number;\n  s: number;\n  l: number;\n  a: number;\n}\n",
+  "description": "",
+  "tags": [
+    "color",
+    "picker",
+    "selector"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_ColorPicker.types",
+      "name": "ColorPicker.types",
+      "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.types",
+      "name": "ColorPicker.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts",
+          "content": "export type ColorFormat = 'hex' | 'hexa' | 'rgba' | 'rgb' | 'hsl' | 'hsla';\n\nexport interface HsvaColor {\n  h: number;\n  s: number;\n  v: number;\n  a: number;\n}\n\nexport interface RgbaColor {\n  r: number;\n  g: number;\n  b: number;\n  a: number;\n}\n\nexport interface HslaColor {\n  h: number;\n  s: number;\n  l: number;\n  a: number;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A ColorPicker is a UI component typically used in settings or edit modes where the user selects a color. It can be used for both simple hex color selectors and more complex color formats like RGBA or HSLA. Developers would use it when needing users to input a specific color value.",
+  "style_tags": [
+    "compact",
+    "modal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ColorPicker.types\nDescription: A ColorPicker is a UI component typically used in settings or edit modes where the user selects a color. It can be used for both simple hex color selectors and more complex color formats like RGBA or HSLA. Developers would use it when needing users to input a specific color value.\nStyle: compact, modal\nInteractions: \nTags: color, picker, selector\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ColorPicker/ColorPicker.types.ts\nexport type ColorFormat = 'hex' | 'hexa' | 'rgba' | 'rgb' | 'hsl' | 'hsla';\n\nexport interface HsvaColor {\n  h: number;\n  s: number;\n  v: number;\n  a: number;\n}\n\nexport interface RgbaColor {\n  r: number;\n  g: number;\n  b: number;\n  a: number;\n}\n\nexport interface HslaColor {\n  h: number;\n  s: number;\n  l: number;\n  a: number;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "color-picker",
+  "display_name": "Color Picker",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-colorpicker-colorpicker-types.png"
+}

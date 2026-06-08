@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_OverflowList_OverflowList.story",
+  "name": "OverflowList.story",
+  "source_code": "// packages/@mantine/core/src/components/OverflowList/OverflowList.story.tsx\nimport { useState } from 'react';\nimport { Badge } from '../Badge';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { OverflowList } from './OverflowList';\n\nexport default { title: 'OverflowList' };\n\nconst fruits = [\n  'Apple',\n  'Banana',\n  'Cherry',\n  'Date',\n  'Elderberry',\n  'Fig',\n  'Grape',\n  'Honeydew',\n  'Indian Fig',\n  'Jackfruit',\n  'Kiwi',\n  'Lemon',\n  'Mango',\n  'Nectarine',\n  'Orange',\n  'Papaya',\n];\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 500 }}>\n      <OverflowList\n        data={fruits}\n        maxRows={2}\n        gap={4}\n        renderOverflow={(items) => <Badge>+{items.length} more</Badge>}\n        renderItem={(item, index) => <Badge key={index}>{item}</Badge>}\n      />\n    </div>\n  );\n}\n\nconst short = ['A', 'B', 'C', 'D', 'E', 'VeryLongItemNameThatTakesSpace'];\nconst reordered = ['VeryLongItemNameThatTakesSpace', 'A', 'B', 'C', 'D', 'E'];\n\nexport function ReorderRecompute() {\n  const [data, setData] = useState(short);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Group mb=\"md\">\n        <Button\n          data-testid=\"reorder\"\n          onClick={() => setData((d) => (d === short ? reordered : short))}\n        >\n          Toggle order (same length)\n        </Button>\n      </Group>\n\n      <div data-testid=\"container\" style={{ width: 320, border: '2px solid red', padding: 4 }}>\n        <OverflowList\n          data={data}\n          maxRows={1}\n          gap={4}\n          renderOverflow={(items) => (\n            <Badge color=\"orange\" data-testid=\"overflow\">\n              +{items.length} more\n            </Badge>\n          )}\n          renderItem={(item, index) => (\n            <Badge key={index} data-testid=\"item\">\n              {item}\n            </Badge>\n          )}\n        />\n      </div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "list",
+    "mantine",
+    "other",
+    "overflow",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "OverflowList_OverflowList.story",
+      "name": "OverflowList.story",
+      "path": "packages/@mantine/core/src/components/OverflowList/OverflowList.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_OverflowList_OverflowList.story",
+      "name": "OverflowList.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/OverflowList/OverflowList.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Badge } from '../Badge';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { OverflowList } from './OverflowList';\n\nexport default { title: 'OverflowList' };\n\nconst fruits = [\n  'Apple',\n  'Banana',\n  'Cherry',\n  'Date',\n  'Elderberry',\n  'Fig',\n  'Grape',\n  'Honeydew',\n  'Indian Fig',\n  'Jackfruit',\n  'Kiwi',\n  'Lemon',\n  'Mango',\n  'Nectarine',\n  'Orange',\n  'Papaya',\n];\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 500 }}>\n      <OverflowList\n        data={fruits}\n        maxRows={2}\n        gap={4}\n        renderOverflow={(items) => <Badge>+{items.length} more</Badge>}\n        renderItem={(item, index) => <Badge key={index}>{item}</Badge>}\n      />\n    </div>\n  );\n}\n\nconst short = ['A', 'B', 'C', 'D', 'E', 'VeryLongItemNameThatTakesSpace'];\nconst reordered = ['VeryLongItemNameThatTakesSpace', 'A', 'B', 'C', 'D', 'E'];\n\nexport function ReorderRecompute() {\n  const [data, setData] = useState(short);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Group mb=\"md\">\n        <Button\n          data-testid=\"reorder\"\n          onClick={() => setData((d) => (d === short ? reordered : short))}\n        >\n          Toggle order (same length)\n        </Button>\n      </Group>\n\n      <div data-testid=\"container\" style={{ width: 320, border: '2px solid red', padding: 4 }}>\n        <OverflowList\n          data={data}\n          maxRows={1}\n          gap={4}\n          renderOverflow={(items) => (\n            <Badge color=\"orange\" data-testid=\"overflow\">\n              +{items.length} more\n            </Badge>\n          )}\n          renderItem={(item, index) => (\n            <Badge key={index} data-testid=\"item\">\n              {item}\n            </Badge>\n          )}\n        />\n      </div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "OverflowList.story is a overflow list story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: OverflowList.story\nDescription: OverflowList.story is a overflow list story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: list, mantine, other, overflow, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/OverflowList/OverflowList.story.tsx\nimport { useState } from 'react';\nimport { Badge } from '../Badge';\nimport { Button } from '../Button';\nimport { Group } from '../Group';\nimport { OverflowList } from './OverflowList';\n\nexport default { title: 'OverflowList' };\n\nconst fruits = [\n  'Apple',\n  'Banana',\n  'Cherry',\n  'Date',\n  'Elderberry',\n  'Fig',\n  'Grape',\n  'Honeydew',\n  'Indian Fig',\n  'Jackfruit',\n  'Kiwi',\n  'Lemon',\n  'Mango',\n  'Nectarine',\n  'O",
+  "prompt_version": 2,
+  "clean_id": "overflow-list",
+  "display_name": "Overflow List",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-overflowlist-overflowlist-story.png"
+}

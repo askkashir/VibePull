@@ -1,0 +1,39 @@
+{
+  "id": "accordion-demo",
+  "name": "accordion-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dashboard",
+    "collapsible",
+    "expandable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "accordion-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## accordion-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "AccordionDemo is a collapsible content component that allows users to expand and collapse sections of information. It consists of a title, a button to toggle expansion, and a container for the content. This component is commonly used in dashboards and settings panels.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: accordion-demo\nDescription: AccordionDemo is a collapsible content component that allows users to expand and collapse sections of information. It consists of a title, a button to toggle expansion, and a container for the content. This component is commonly used in dashboards and settings panels.\nStyle: e.g. dark, minimal\nInteractions: e.g. hover, clickable\nTags: dashboard, collapsible, expandable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "accordion-demo",
+  "display_name": "Accordion Demo",
+  "preview_url": "/previews/shadcn/accordion-demo.png"
+}

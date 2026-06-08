@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_TemplateCTA_TemplateScoresCard",
+  "name": "TemplateScoresCard",
+  "source_code": "// components/ui/TemplateCTA/TemplateScoresCard.tsx\n\"use client\";\n\nimport { useEffect, useState } from \"react\";\nimport { useInView } from \"framer-motion\";\nimport { useRef } from \"react\";\n\nexport default () => {\n  const [progressCount, setProgressCount] = useState(5);\n\n  const ref = useRef(null);\n  const isInView = useInView(ref, { once: true });\n\n  useEffect(() => {\n    if (isInView && progressCount < 95) {\n      setTimeout(() => {\n        setProgressCount((count) => count + 1);\n      }, 50);\n    }\n  }, [progressCount, isInView]);\n\n  return (\n    <div className=\"flex-none border border-zinc-800 rounded-2xl p-8 bg-[linear-gradient(180deg,_rgba(15,_23,_42,_0.65)_0%,_rgba(24,_24,_27,_0.00)_100%)] w-full md:max-w-sm lg:max-w-md\">\n      <h3 className=\"text-zinc-100 font-semibold\">Good template scores</h3>\n      <p className=\"text-zinc-300 mt-3 max-w-sm\">\n        Our templates are made to be super fast, easy for everyone to use, and\n        show up well on search engines.\n      </p>\n      <div ref={ref} className=\"mt-8\">\n        <div className=\"relative w-52 h-52 mx-auto rounded-full bg-green-500 flex items-center justify-center\">\n          <svg viewBox=\"0 0 36 36\" className=\"w-44 h-44 absolute\">\n            <path\n              d=\"M18 2.0845\n      a 15.9155 15.9155 0 0 1 0 31.831\n      a 15.9155 15.9155 0 0 1 0 -31.831\"\n              fill=\"none\"\n              stroke=\"#047857\"\n              stroke-width=\"2.5\"\n              stroke-linecap=\"round\"\n              stroke-dasharray=\"100, 100\"\n            />\n          </svg>\n          <svg viewBox=\"0 0 36 36\" className=\"w-44 h-44 relative z-10\">\n            <path\n              d=\"M18 2.0845\n      a 15.9155 15.9155 0 0 1 0 31.831\n      a 15.9155 15.9155 0 0 1 0 -31.831\"\n              fill=\"none\"\n              stroke=\"#FFF\"\n              stroke-width=\"2.5\"\n              stroke-linecap=\"round\"\n              stroke-dasharray={`${progressCount}, 100`}\n            />\n          </svg>\n          <span className=\"absolute font-extrabold text-6xl text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FAFAFA_0%,_rgba(250,_250,_250,_0.00)_332.5%)]\">\n            {progressCount}\n          </span>\n        </div>\n      </div>\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_TemplateCTA_TemplateScoresCard",
+      "name": "TemplateScoresCard",
+      "path": "components/ui/TemplateCTA/TemplateScoresCard.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_TemplateCTA_TemplateScoresCard",
+      "name": "TemplateScoresCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/TemplateCTA/TemplateScoresCard.tsx",
+          "content": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\nimport { useInView } from \"framer-motion\";\nimport { useRef } from \"react\";\n\nexport default () => {\n  const [progressCount, setProgressCount] = useState(5);\n\n  const ref = useRef(null);\n  const isInView = useInView(ref, { once: true });\n\n  useEffect(() => {\n    if (isInView && progressCount < 95) {\n      setTimeout(() => {\n        setProgressCount((count) => count + 1);\n      }, 50);\n    }\n  }, [progressCount, isInView]);\n\n  return (\n    <div className=\"flex-none border border-zinc-800 rounded-2xl p-8 bg-[linear-gradient(180deg,_rgba(15,_23,_42,_0.65)_0%,_rgba(24,_24,_27,_0.00)_100%)] w-full md:max-w-sm lg:max-w-md\">\n      <h3 className=\"text-zinc-100 font-semibold\">Good template scores</h3>\n      <p className=\"text-zinc-300 mt-3 max-w-sm\">\n        Our templates are made to be super fast, easy for everyone to use, and\n        show up well on search engines.\n      </p>\n      <div ref={ref} className=\"mt-8\">\n        <div className=\"relative w-52 h-52 mx-auto rounded-full bg-green-500 flex items-center justify-center\">\n          <svg viewBox=\"0 0 36 36\" className=\"w-44 h-44 absolute\">\n            <path\n              d=\"M18 2.0845\n      a 15.9155 15.9155 0 0 1 0 31.831\n      a 15.9155 15.9155 0 0 1 0 -31.831\"\n              fill=\"none\"\n              stroke=\"#047857\"\n              stroke-width=\"2.5\"\n              stroke-linecap=\"round\"\n              stroke-dasharray=\"100, 100\"\n            />\n          </svg>\n          <svg viewBox=\"0 0 36 36\" className=\"w-44 h-44 relative z-10\">\n            <path\n              d=\"M18 2.0845\n      a 15.9155 15.9155 0 0 1 0 31.831\n      a 15.9155 15.9155 0 0 1 0 -31.831\"\n              fill=\"none\"\n              stroke=\"#FFF\"\n              stroke-width=\"2.5\"\n              stroke-linecap=\"round\"\n              stroke-dasharray={`${progressCount}, 100`}\n            />\n          </svg>\n          <span className=\"absolute font-extrabold text-6xl text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FAFAFA_0%,_rgba(250,_250,_250,_0.00)_332.5%)]\">\n            {progressCount}\n          </span>\n        </div>\n      </div>\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

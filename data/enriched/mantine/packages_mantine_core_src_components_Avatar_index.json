@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Avatar_index",
+  "name": "Avatar",
+  "source_code": "// packages/@mantine/core/src/components/Avatar/index.ts\nimport type {\n  AvatarCssVariables,\n  AvatarFactory,\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarVariant,\n} from './Avatar';\nimport type {\n  AvatarGroupContextValue,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n} from './AvatarGroup/AvatarGroup';\n\nexport { Avatar } from './Avatar';\nexport { AvatarGroup, AvatarGroupContext } from './AvatarGroup/AvatarGroup';\n\nexport type {\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarCssVariables,\n  AvatarVariant,\n  AvatarFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "avatar",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Avatar_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Avatar/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Avatar_index",
+      "name": "Avatar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Avatar/index.ts",
+          "content": "import type {\n  AvatarCssVariables,\n  AvatarFactory,\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarVariant,\n} from './Avatar';\nimport type {\n  AvatarGroupContextValue,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n} from './AvatarGroup/AvatarGroup';\n\nexport { Avatar } from './Avatar';\nexport { AvatarGroup, AvatarGroupContext } from './AvatarGroup/AvatarGroup';\n\nexport type {\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarCssVariables,\n  AvatarVariant,\n  AvatarFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Avatar is a avatar UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Avatar\nDescription: Avatar is a avatar UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: avatar, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Avatar/index.ts\nimport type {\n  AvatarCssVariables,\n  AvatarFactory,\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarVariant,\n} from './Avatar';\nimport type {\n  AvatarGroupContextValue,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n} from './AvatarGroup/AvatarGroup';\n\nexport { Avatar } from './Avatar';\nexport { AvatarGroup, AvatarGroupContext } from './AvatarGroup/AvatarGroup';\n\nexport type {\n  AvatarProps,\n  A",
+  "prompt_version": 2,
+  "clean_id": "avatar",
+  "display_name": "Avatar",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-avatar-index.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_Footer_index",
+  "name": "Footer",
+  "source_code": "// components/ui/Footer/index.tsx\n\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Footer from \"./Footer\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return !isInComponentsPage ? <Footer /> : <></>;\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Footer_index",
+      "name": "index",
+      "path": "components/ui/Footer/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Footer_index",
+      "name": "Footer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Footer/index.tsx",
+          "content": "\"use client\";\n\nimport { usePathname } from \"next/navigation\";\nimport Footer from \"./Footer\";\n\nexport default () => {\n  const pathname = usePathname();\n  const isInComponentsPage = pathname.includes(\"/components\");\n  return !isInComponentsPage ? <Footer /> : <></>;\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

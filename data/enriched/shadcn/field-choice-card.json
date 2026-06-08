@@ -1,0 +1,43 @@
+{
+  "id": "field-choice-card",
+  "name": "field-choice-card",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "field",
+    "choice",
+    "card",
+    "form",
+    "settings",
+    "option"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-choice-card",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-choice-card\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Field Choice Card is a UI component that displays a card containing multiple options. It is typically used in forms or settings pages to allow users to select one option from a list. This component is suitable for mobile and desktop applications.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: field-choice-card\nDescription: The Field Choice Card is a UI component that displays a card containing multiple options. It is typically used in forms or settings pages to allow users to select one option from a list. This component is suitable for mobile and desktop applications.\nStyle: e.g. dark, minimal\nInteractions: e.g. hover, clickable, animated\nTags: field, choice, card, form, settings, option\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-choice-card",
+  "display_name": "Field Choice Card",
+  "preview_url": "/previews/shadcn/field-choice-card.png"
+}

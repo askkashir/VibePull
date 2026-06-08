@@ -1,0 +1,22 @@
+{
+  "id": "form-tanstack-checkbox",
+  "name": "form-tanstack-checkbox",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-checkbox",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-checkbox\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  }
+}

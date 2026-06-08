@@ -1,0 +1,61 @@
+{
+  "id": "heading",
+  "name": "heading",
+  "source_code": "// src/components/ui/heading.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n",
+  "description": "",
+  "tags": [
+    "heading",
+    "other",
+    "parkui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "heading",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/heading.tsx",
+          "type": "registry:ui",
+          "exports": "export { Heading, type HeadingProps } from './heading'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "heading-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "heading",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/heading.tsx",
+          "type": "registry:ui",
+          "exports": "export { Heading, type HeadingProps } from './heading'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "heading-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "heading is a heading UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: heading\nDescription: heading is a heading UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heading, other, parkui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/heading.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type HeadingVariantProps, heading } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = HeadingVariantProps & { as?: React.ElementType }\n\nexport type HeadingProps = ComponentProps<typeof Heading>\nexport const Heading = styled('h2', heading) as StyledComponent<'h2', Props>\n",
+  "prompt_version": 2,
+  "clean_id": "heading",
+  "display_name": "Heading",
+  "preview_url": "/previews/parkui/heading.png"
+}

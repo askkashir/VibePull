@@ -1,0 +1,22 @@
+{
+  "id": "theme-zinc",
+  "name": "theme-zinc",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:theme"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-zinc",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-zinc\n**Type:** registry:theme"
+  }
+}

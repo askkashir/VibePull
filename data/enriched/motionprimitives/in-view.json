@@ -1,0 +1,58 @@
+{
+  "id": "in-view",
+  "name": "in-view",
+  "source_code": "// components/core/in-view.tsx\n'use client';\nimport { ReactNode, useRef, useState } from 'react';\nimport {\n  motion,\n  useInView,\n  Variant,\n  Transition,\n  UseInViewOptions,\n} from 'motion/react';\n\nexport type InViewProps = {\n  children: ReactNode;\n  variants?: {\n    hidden: Variant;\n    visible: Variant;\n  };\n  transition?: Transition;\n  viewOptions?: UseInViewOptions;\n  as?: React.ElementType;\n  once?: boolean\n};\n\nconst defaultVariants = {\n  hidden: { opacity: 0 },\n  visible: { opacity: 1 },\n};\n\nexport function InView({\n  children,\n  variants = defaultVariants,\n  transition,\n  viewOptions,\n  as = 'div',\n  once\n}: InViewProps) {\n  const ref = useRef(null);\n  const isInView = useInView(ref, viewOptions);\n\n  const [isViewed, setIsViewed] = useState(false)\n\n  const MotionComponent = motion[as as keyof typeof motion] as typeof as;\n\n  return (\n    <MotionComponent\n      ref={ref}\n      initial='hidden'\n      onAnimationComplete={() => {\n        if (once) setIsViewed(true)\n      }}\n      animate={(isInView || isViewed) ? \"visible\" : \"hidden\"}\n\n      variants={variants}\n      transition={transition}\n    >\n      {children}\n    </MotionComponent>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "motion",
+    "react",
+    "animation",
+    "on-scroll"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "in-view.tsx",
+      "source": "github_contents",
+      "path": "components/core/in-view.tsx",
+      "sha": "dd8911453cac4457672b5b9781eee2e8843dcd1f",
+      "size": 1134,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/in-view.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/in-view.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/dd8911453cac4457672b5b9781eee2e8843dcd1f",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/in-view.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/in-view.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/dd8911453cac4457672b5b9781eee2e8843dcd1f",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/in-view.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "in-view",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/in-view.tsx",
+          "content": "'use client';\nimport { ReactNode, useRef, useState } from 'react';\nimport {\n  motion,\n  useInView,\n  Variant,\n  Transition,\n  UseInViewOptions,\n} from 'motion/react';\n\nexport type InViewProps = {\n  children: ReactNode;\n  variants?: {\n    hidden: Variant;\n    visible: Variant;\n  };\n  transition?: Transition;\n  viewOptions?: UseInViewOptions;\n  as?: React.ElementType;\n  once?: boolean\n};\n\nconst defaultVariants = {\n  hidden: { opacity: 0 },\n  visible: { opacity: 1 },\n};\n\nexport function InView({\n  children,\n  variants = defaultVariants,\n  transition,\n  viewOptions,\n  as = 'div',\n  once\n}: InViewProps) {\n  const ref = useRef(null);\n  const isInView = useInView(ref, viewOptions);\n\n  const [isViewed, setIsViewed] = useState(false)\n\n  const MotionComponent = motion[as as keyof typeof motion] as typeof as;\n\n  return (\n    <MotionComponent\n      ref={ref}\n      initial='hidden'\n      onAnimationComplete={() => {\n        if (once) setIsViewed(true)\n      }}\n      animate={(isInView || isViewed) ? \"visible\" : \"hidden\"}\n\n      variants={variants}\n      transition={transition}\n    >\n      {children}\n    </MotionComponent>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The in-view component is a reusable React motion component that reveals its children as it comes into view. It's useful when you want to animate the visibility of content as it enters the viewport. You can customize the animation using the 'variants' and 'transition' props.",
+  "style_tags": [
+    "modern",
+    "animated"
+  ],
+  "interaction_tags": [
+    "animated",
+    "on-scroll"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: in-view\nDescription: The in-view component is a reusable React motion component that reveals its children as it comes into view. It's useful when you want to animate the visibility of content as it enters the viewport. You can customize the animation using the 'variants' and 'transition' props.\nStyle: modern, animated\nInteractions: animated, on-scroll\nTags: motion, react, animation, on-scroll\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/in-view.tsx\n'use client';\nimport { ReactNode, useRef, useState } from 'react';\nimport {\n  motion,\n  useInView,\n  Variant,\n  Transition,\n  UseInViewOptions,\n} from 'motion/react';\n\nexport type InViewProps = {\n  children: ReactNode;\n  variants?: {\n    hidden: Variant;\n    visible: Variant;\n  };\n  transition?: Transition;\n  viewOptions?: UseInViewOptions;\n  as?: React.ElementType;\n  once?: boolean\n};\n\nconst defaultVariants = {\n  hidden: { opacity: 0 },\n  visible: { opacity: 1 },\n",
+  "prompt_version": 2,
+  "clean_id": "in-view",
+  "display_name": "In View",
+  "preview_url": "/previews/motionprimitives/in-view.png"
+}

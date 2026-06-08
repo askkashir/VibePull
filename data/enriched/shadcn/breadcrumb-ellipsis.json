@@ -1,0 +1,41 @@
+{
+  "id": "breadcrumb-ellipsis",
+  "name": "breadcrumb-ellipsis",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "breadcrumb",
+    "ellipsis",
+    "interface",
+    "ux"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "breadcrumb-ellipsis",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## breadcrumb-ellipsis\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "BreadcrumbEllipsis is a versatile UI component used to display the current navigation path in applications with a hierarchical structure. It helps users understand their position within the application and navigate through the different levels. Developers use this component to enhance user experience by providing clear and concise information about the current location.",
+  "style_tags": [
+    "modern",
+    "flat"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: breadcrumb-ellipsis\nDescription: BreadcrumbEllipsis is a versatile UI component used to display the current navigation path in applications with a hierarchical structure. It helps users understand their position within the application and navigate through the different levels. Developers use this component to enhance user experience by providing clear and concise information about the current location.\nStyle: modern, flat\nInteractions: hover, clickable\nTags: navigation, breadcrumb, ellipsis, interface, ux\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "breadcrumb-ellipsis",
+  "display_name": "Breadcrumb Ellipsis",
+  "preview_url": "/previews/shadcn/breadcrumb-ellipsis.png"
+}

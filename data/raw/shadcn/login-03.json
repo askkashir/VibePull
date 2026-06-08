@@ -1,0 +1,23 @@
+{
+  "id": "login-03",
+  "name": "login-03",
+  "source_code": "",
+  "description": "A login page with a muted background color.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-03",
+      "type": "registry:block",
+      "description": "A login page with a muted background color.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-03\n\nA login page with a muted background color.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

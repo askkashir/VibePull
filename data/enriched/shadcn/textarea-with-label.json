@@ -1,0 +1,39 @@
+{
+  "id": "textarea-with-label",
+  "name": "textarea-with-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "multiline",
+    "text",
+    "user-input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-with-label",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-with-label\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A textarea component accompanied by a label for user input. This component is typically used for forms, allowing users to enter multiple lines of text. It's a crucial element for data collection and user feedback.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: textarea-with-label\nDescription: A textarea component accompanied by a label for user input. This component is typically used for forms, allowing users to enter multiple lines of text. It's a crucial element for data collection and user feedback.\nStyle: e.g. minimal\nInteractions: e.g. hover\nTags: form, input, multiline, text, user-input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "textarea-with-label",
+  "display_name": "Textarea With Label",
+  "preview_url": "/previews/shadcn/textarea-with-label.png"
+}

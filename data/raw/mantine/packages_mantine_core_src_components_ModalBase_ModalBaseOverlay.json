@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBaseOverlay",
+  "name": "ModalBaseOverlay",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBaseOverlay.tsx\nimport { ElementProps } from '../../core';\nimport { Overlay, OverlayProps } from '../Overlay';\nimport { Transition, TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalTransition } from './use-modal-transition';\n\nexport interface ModalBaseOverlayProps\n  extends\n    Omit<OverlayProps, 'styles' | 'classNames' | 'variant' | 'vars'>,\n    ElementProps<'div', 'color'> {\n  /** Props passed down to the `Transition` component */\n  transitionProps?: TransitionOverride;\n\n  /** Determines whether the overlay should be visible. By default, has the same value as `opened` state. */\n  visible?: boolean;\n}\n\nexport function ModalBaseOverlay({\n  onClick,\n  transitionProps,\n  style,\n  visible,\n  ...others\n}: ModalBaseOverlayProps) {\n  const ctx = useModalBaseContext();\n  const transition = useModalTransition(transitionProps);\n\n  return (\n    <Transition\n      mounted={visible !== undefined ? visible : ctx.opened}\n      {...transition}\n      transition=\"fade\"\n    >\n      {(transitionStyles) => (\n        <Overlay\n          fixed\n          style={[style, transitionStyles]}\n          zIndex={ctx.zIndex}\n          unstyled={ctx.unstyled}\n          onClick={(event) => {\n            onClick?.(event);\n            ctx.closeOnClickOutside && ctx.onClose();\n          }}\n          {...others}\n        />\n      )}\n    </Transition>\n  );\n}\n\nModalBaseOverlay.displayName = '@mantine/core/ModalBaseOverlay';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBaseOverlay",
+      "name": "ModalBaseOverlay",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseOverlay.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBaseOverlay",
+      "name": "ModalBaseOverlay",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBaseOverlay.tsx",
+          "content": "import { ElementProps } from '../../core';\nimport { Overlay, OverlayProps } from '../Overlay';\nimport { Transition, TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\nimport { useModalTransition } from './use-modal-transition';\n\nexport interface ModalBaseOverlayProps\n  extends\n    Omit<OverlayProps, 'styles' | 'classNames' | 'variant' | 'vars'>,\n    ElementProps<'div', 'color'> {\n  /** Props passed down to the `Transition` component */\n  transitionProps?: TransitionOverride;\n\n  /** Determines whether the overlay should be visible. By default, has the same value as `opened` state. */\n  visible?: boolean;\n}\n\nexport function ModalBaseOverlay({\n  onClick,\n  transitionProps,\n  style,\n  visible,\n  ...others\n}: ModalBaseOverlayProps) {\n  const ctx = useModalBaseContext();\n  const transition = useModalTransition(transitionProps);\n\n  return (\n    <Transition\n      mounted={visible !== undefined ? visible : ctx.opened}\n      {...transition}\n      transition=\"fade\"\n    >\n      {(transitionStyles) => (\n        <Overlay\n          fixed\n          style={[style, transitionStyles]}\n          zIndex={ctx.zIndex}\n          unstyled={ctx.unstyled}\n          onClick={(event) => {\n            onClick?.(event);\n            ctx.closeOnClickOutside && ctx.onClose();\n          }}\n          {...others}\n        />\n      )}\n    </Transition>\n  );\n}\n\nModalBaseOverlay.displayName = '@mantine/core/ModalBaseOverlay';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

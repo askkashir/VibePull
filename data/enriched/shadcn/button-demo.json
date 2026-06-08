@@ -1,0 +1,39 @@
+{
+  "id": "button-demo",
+  "name": "button-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "button-demo",
+    "registry"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A basic button component that can be used to call-to-action or trigger an event, suitable for simple and clear design requirements. It can be used to prompt users to sign up, log in, or perform other actions. Typically, this button is displayed on forms, dialogs, and other interactive elements.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. click",
+    "fillable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-demo\nDescription: A basic button component that can be used to call-to-action or trigger an event, suitable for simple and clear design requirements. It can be used to prompt users to sign up, log in, or perform other actions. Typically, this button is displayed on forms, dialogs, and other interactive elements.\nStyle: e.g. dark, minimal\nInteractions: e.g. click, fillable\nTags: button, button-demo, registry\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-demo",
+  "display_name": "Button Demo",
+  "preview_url": "/previews/shadcn/button-demo.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "style",
+  "name": "style",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "style",
+    "preview",
+    "design"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "style",
+      "type": "registry:style",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:style"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## style\n**Type:** registry:style\n**Dependencies:** class-variance-authority, lucide-react, radix-ui\n**Dev Dependencies:** tw-animate-css, shadcn"
+  },
+  "visual_summary": "The Style component is used to display a visual representation of a style. It is commonly used when a developer wants to showcase a specific typography, color palette, or layout. You can use it to demonstrate different design options during the development or design phase.",
+  "style_tags": [
+    "e.g. material",
+    "bootstrap",
+    "custom"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: style\nDescription: The Style component is used to display a visual representation of a style. It is commonly used when a developer wants to showcase a specific typography, color palette, or layout. You can use it to demonstrate different design options during the development or design phase.\nStyle: e.g. material, bootstrap, custom\nInteractions: \nTags: style, preview, design\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "style",
+  "display_name": "Style",
+  "preview_url": "/previews/shadcn/style.png"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "border-trail",
+  "name": "border-trail",
+  "source_code": "// components/core/border-trail.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, Transition } from 'motion/react';\n\nexport type BorderTrailProps = {\n  className?: string;\n  size?: number;\n  transition?: Transition;\n  onAnimationComplete?: () => void;\n  style?: React.CSSProperties;\n};\n\nexport function BorderTrail({\n  className,\n  size = 60,\n  transition,\n  onAnimationComplete,\n  style,\n}: BorderTrailProps) {\n  const defaultTransition: Transition = {\n    repeat: Infinity,\n    duration: 5,\n    ease: 'linear',\n  };\n\n  return (\n    <div className='pointer-events-none absolute inset-0 rounded-[inherit] border border-transparent [mask-clip:padding-box,border-box] [mask-composite:intersect] [mask-image:linear-gradient(transparent,transparent),linear-gradient(#000,#000)]'>\n      <motion.div\n        className={cn('absolute aspect-square bg-zinc-500', className)}\n        style={{\n          width: size,\n          offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n          ...style,\n        }}\n        animate={{\n          offsetDistance: ['0%', '100%'],\n        }}\n        transition={transition || defaultTransition}\n        onAnimationComplete={onAnimationComplete}\n      />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "loading",
+    "animation",
+    "decorative"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "border-trail.tsx",
+      "source": "github_contents",
+      "path": "components/core/border-trail.tsx",
+      "sha": "634b3dcd5867a00250dec7a824bf0891e6c00299",
+      "size": 1183,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/border-trail.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/border-trail.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/634b3dcd5867a00250dec7a824bf0891e6c00299",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/border-trail.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/border-trail.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/634b3dcd5867a00250dec7a824bf0891e6c00299",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/border-trail.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "border-trail",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/border-trail.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, Transition } from 'motion/react';\n\nexport type BorderTrailProps = {\n  className?: string;\n  size?: number;\n  transition?: Transition;\n  onAnimationComplete?: () => void;\n  style?: React.CSSProperties;\n};\n\nexport function BorderTrail({\n  className,\n  size = 60,\n  transition,\n  onAnimationComplete,\n  style,\n}: BorderTrailProps) {\n  const defaultTransition: Transition = {\n    repeat: Infinity,\n    duration: 5,\n    ease: 'linear',\n  };\n\n  return (\n    <div className='pointer-events-none absolute inset-0 rounded-[inherit] border border-transparent [mask-clip:padding-box,border-box] [mask-composite:intersect] [mask-image:linear-gradient(transparent,transparent),linear-gradient(#000,#000)]'>\n      <motion.div\n        className={cn('absolute aspect-square bg-zinc-500', className)}\n        style={{\n          width: size,\n          offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n          ...style,\n        }}\n        animate={{\n          offsetDistance: ['0%', '100%'],\n        }}\n        transition={transition || defaultTransition}\n        onAnimationComplete={onAnimationComplete}\n      />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "BorderTrail is a decorative loading animation component. It displays a square shape with a linear gradient, which moves along its border when a developer applies animation. It is typically used in place of a traditional spinner or loader.",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: border-trail\nDescription: BorderTrail is a decorative loading animation component. It displays a square shape with a linear gradient, which moves along its border when a developer applies animation. It is typically used in place of a traditional spinner or loader.\nStyle: modern\nInteractions: animated\nTags: loading, animation, decorative\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/border-trail.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, Transition } from 'motion/react';\n\nexport type BorderTrailProps = {\n  className?: string;\n  size?: number;\n  transition?: Transition;\n  onAnimationComplete?: () => void;\n  style?: React.CSSProperties;\n};\n\nexport function BorderTrail({\n  className,\n  size = 60,\n  transition,\n  onAnimationComplete,\n  style,\n}: BorderTrailProps) {\n  const defaultTransition: Transition = {\n    repeat: Infinity,\n    d",
+  "prompt_version": 2,
+  "clean_id": "border-trail",
+  "display_name": "Border Trail",
+  "preview_url": "/previews/motionprimitives/border-trail.png"
+}

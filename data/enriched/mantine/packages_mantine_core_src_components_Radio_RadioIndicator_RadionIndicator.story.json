@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_Radio_RadioIndicator_RadionIndicator.story",
+  "name": "RadionIndicator.story",
+  "source_code": "// packages/@mantine/core/src/components/Radio/RadioIndicator/RadionIndicator.story.tsx\nimport { useState } from 'react';\nimport { Radio } from '../Radio';\nimport { RadioIndicator } from './RadioIndicator';\n\nexport default { title: 'RadioIndicator' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} />\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} variant=\"outline\" />\n      <RadioIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n        disabled\n      />\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} disabled />\n    </div>\n  );\n}\n\nexport function Sizes() {\n  const [checked, setChecked] = useState(false);\n  const sizes = ['xs', 'sm', 'md', 'lg', 'xl'];\n  const indicators = sizes.map((size) => (\n    <RadioIndicator\n      key={size}\n      size={size}\n      checked={checked}\n      onClick={() => setChecked((c) => !c)}\n    />\n  ));\n\n  const checkboxes = sizes.map((size) => (\n    <Radio key={size} size={size} checked={checked} onChange={() => setChecked((c) => !c)} />\n  ));\n\n  return (\n    <div style={{ padding: 40 }}>\n      <div style={{ display: 'flex' }}>{indicators}</div>\n      <div style={{ display: 'flex' }}>{checkboxes}</div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "indicator",
+    "input",
+    "mantine",
+    "radion",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Radio_RadioIndicator_RadionIndicator.story",
+      "name": "RadionIndicator.story",
+      "path": "packages/@mantine/core/src/components/Radio/RadioIndicator/RadionIndicator.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Radio_RadioIndicator_RadionIndicator.story",
+      "name": "RadionIndicator.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Radio/RadioIndicator/RadionIndicator.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Radio } from '../Radio';\nimport { RadioIndicator } from './RadioIndicator';\n\nexport default { title: 'RadioIndicator' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} />\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} variant=\"outline\" />\n      <RadioIndicator\n        checked={checked}\n        onClick={() => setChecked((c) => !c)}\n        variant=\"outline\"\n        disabled\n      />\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} disabled />\n    </div>\n  );\n}\n\nexport function Sizes() {\n  const [checked, setChecked] = useState(false);\n  const sizes = ['xs', 'sm', 'md', 'lg', 'xl'];\n  const indicators = sizes.map((size) => (\n    <RadioIndicator\n      key={size}\n      size={size}\n      checked={checked}\n      onClick={() => setChecked((c) => !c)}\n    />\n  ));\n\n  const checkboxes = sizes.map((size) => (\n    <Radio key={size} size={size} checked={checked} onChange={() => setChecked((c) => !c)} />\n  ));\n\n  return (\n    <div style={{ padding: 40 }}>\n      <div style={{ display: 'flex' }}>{indicators}</div>\n      <div style={{ display: 'flex' }}>{checkboxes}</div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "RadionIndicator.story is a radion indicator story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: RadionIndicator.story\nDescription: RadionIndicator.story is a radion indicator story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: indicator, input, mantine, radion, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Radio/RadioIndicator/RadionIndicator.story.tsx\nimport { useState } from 'react';\nimport { Radio } from '../Radio';\nimport { RadioIndicator } from './RadioIndicator';\n\nexport default { title: 'RadioIndicator' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioIndicator checked={checked} onClick={() => setChecked((c) => !c)} />\n      <RadioIndicator checked={checked} onClic",
+  "prompt_version": 2,
+  "clean_id": "radion-indicator",
+  "display_name": "Radion Indicator",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-radio-radioindicator-radionindicator-story.png"
+}

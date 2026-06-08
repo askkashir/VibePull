@@ -1,0 +1,36 @@
+{
+  "id": "field-checkbox",
+  "name": "field-checkbox",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form component",
+    "checkbox",
+    "toggle",
+    "input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-checkbox",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-checkbox\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A field-checkbox component is a two-part UI element commonly used in forms and registration processes. It consists of a checkbox and a label, often used to collect binary or boolean information from users. This component is ideal for adding a toggle option to sign-up forms or as a checkbox to select multiple options in a list.",
+  "style_tags": [],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: field-checkbox\nDescription: A field-checkbox component is a two-part UI element commonly used in forms and registration processes. It consists of a checkbox and a label, often used to collect binary or boolean information from users. This component is ideal for adding a toggle option to sign-up forms or as a checkbox to select multiple options in a list.\nStyle: \nInteractions: clickable\nTags: form component, checkbox, toggle, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-checkbox",
+  "display_name": "Field Checkbox",
+  "preview_url": "/previews/shadcn/field-checkbox.png"
+}

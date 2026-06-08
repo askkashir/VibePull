@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_TextInput_index",
+  "name": "TextInput",
+  "source_code": "// packages/@mantine/core/src/components/TextInput/index.ts\nimport type { TextInputFactory, TextInputProps } from './TextInput';\n\nexport { TextInput } from './TextInput';\n\nexport type { TextInputProps, TextInputFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TextInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/TextInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TextInput_index",
+      "name": "TextInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TextInput/index.ts",
+          "content": "import type { TextInputFactory, TextInputProps } from './TextInput';\n\nexport { TextInput } from './TextInput';\n\nexport type { TextInputProps, TextInputFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

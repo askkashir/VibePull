@@ -1,0 +1,56 @@
+{
+  "id": "packages_radix-ui-themes_src_components_grid",
+  "name": "grid",
+  "source_code": "// packages/radix-ui-themes/src/components/grid.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { gridPropDefs } from './grid.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GridOwnProps } from './grid.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype GridElement = React.ElementRef<'div'>;\ninterface CommonGridProps extends MarginProps, LayoutProps, GridOwnProps {}\ntype GridDivProps = { as?: 'div' } & ComponentPropsWithout<'div', RemovedProps>;\ntype GridSpanProps = { as: 'span' } & ComponentPropsWithout<'span', RemovedProps>;\ntype GridProps = CommonGridProps & (GridSpanProps | GridDivProps);\n\nconst Grid = React.forwardRef<GridElement, GridProps>((props, forwardedRef) => {\n  const {\n    className,\n    asChild,\n    as: Tag = 'div',\n    ...gridProps\n  } = extractProps(props, gridPropDefs, layoutPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot : Tag;\n  return <Comp {...gridProps} ref={forwardedRef} className={classNames('rt-Grid', className)} />;\n});\nGrid.displayName = 'Grid';\n\nexport { Grid };\nexport type { GridProps };\n",
+  "description": "",
+  "tags": [
+    "grid",
+    "layout",
+    "container"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_grid",
+      "name": "grid.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/grid.tsx",
+      "sha": "fce14bc2895bfc1758888eef139fbfbed64b17ef",
+      "size": 1390,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/grid.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/grid.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/fce14bc2895bfc1758888eef139fbfbed64b17ef",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/grid.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/grid.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/fce14bc2895bfc1758888eef139fbfbed64b17ef",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/grid.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_grid",
+      "name": "grid",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/grid.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { gridPropDefs } from './grid.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GridOwnProps } from './grid.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype GridElement = React.ElementRef<'div'>;\ninterface CommonGridProps extends MarginProps, LayoutProps, GridOwnProps {}\ntype GridDivProps = { as?: 'div' } & ComponentPropsWithout<'div', RemovedProps>;\ntype GridSpanProps = { as: 'span' } & ComponentPropsWithout<'span', RemovedProps>;\ntype GridProps = CommonGridProps & (GridSpanProps | GridDivProps);\n\nconst Grid = React.forwardRef<GridElement, GridProps>((props, forwardedRef) => {\n  const {\n    className,\n    asChild,\n    as: Tag = 'div',\n    ...gridProps\n  } = extractProps(props, gridPropDefs, layoutPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot : Tag;\n  return <Comp {...gridProps} ref={forwardedRef} className={classNames('rt-Grid', className)} />;\n});\nGrid.displayName = 'Grid';\n\nexport { Grid };\nexport type { GridProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Grid component is a reusable layout component that can be used to create grid structures. It can be used as a div or a span element. It supports various props from the layout and margin categories.",
+  "style_tags": [
+    "default",
+    "responsive"
+  ],
+  "interaction_tags": [],
+  "component_type": "layout",
+  "generation_prompt": "Create a production-ready layout component with the following characteristics:\n\nName: grid\nDescription: The Grid component is a reusable layout component that can be used to create grid structures. It can be used as a div or a span element. It supports various props from the layout and margin categories.\nStyle: default, responsive\nInteractions: \nTags: grid, layout, container\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/grid.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { gridPropDefs } from './grid.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.",
+  "prompt_version": 2,
+  "clean_id": "grid",
+  "display_name": "Grid",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-grid.png"
+}

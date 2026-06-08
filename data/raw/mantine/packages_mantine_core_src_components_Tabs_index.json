@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tabs_index",
+  "name": "Tabs",
+  "source_code": "// packages/@mantine/core/src/components/Tabs/index.ts\nimport type {\n  TabsCssVariables,\n  TabsFactory,\n  TabsProps,\n  TabsStylesNames,\n  TabsVariant,\n} from './Tabs';\nimport type { TabsContextValue } from './Tabs.context';\nimport type { TabsListProps, TabsListStylesNames } from './TabsList/TabsList';\nimport type { TabsPanelProps, TabsPanelStylesNames } from './TabsPanel/TabsPanel';\nimport type { TabsTabProps, TabsTabStylesNames } from './TabsTab/TabsTab';\n\nexport { Tabs } from './Tabs';\nexport { TabsList } from './TabsList/TabsList';\nexport { TabsTab } from './TabsTab/TabsTab';\nexport { TabsPanel } from './TabsPanel/TabsPanel';\nexport { useTabsContext } from './Tabs.context';\n\nexport type {\n  TabsProps,\n  TabsStylesNames,\n  TabsCssVariables,\n  TabsFactory,\n  TabsVariant,\n  TabsTabProps,\n  TabsTabStylesNames,\n  TabsPanelProps,\n  TabsPanelStylesNames,\n  TabsListProps,\n  TabsListStylesNames,\n  TabsContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tabs_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Tabs/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tabs_index",
+      "name": "Tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tabs/index.ts",
+          "content": "import type {\n  TabsCssVariables,\n  TabsFactory,\n  TabsProps,\n  TabsStylesNames,\n  TabsVariant,\n} from './Tabs';\nimport type { TabsContextValue } from './Tabs.context';\nimport type { TabsListProps, TabsListStylesNames } from './TabsList/TabsList';\nimport type { TabsPanelProps, TabsPanelStylesNames } from './TabsPanel/TabsPanel';\nimport type { TabsTabProps, TabsTabStylesNames } from './TabsTab/TabsTab';\n\nexport { Tabs } from './Tabs';\nexport { TabsList } from './TabsList/TabsList';\nexport { TabsTab } from './TabsTab/TabsTab';\nexport { TabsPanel } from './TabsPanel/TabsPanel';\nexport { useTabsContext } from './Tabs.context';\n\nexport type {\n  TabsProps,\n  TabsStylesNames,\n  TabsCssVariables,\n  TabsFactory,\n  TabsVariant,\n  TabsTabProps,\n  TabsTabStylesNames,\n  TabsPanelProps,\n  TabsPanelStylesNames,\n  TabsListProps,\n  TabsListStylesNames,\n  TabsContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

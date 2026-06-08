@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_InputBase_InputBase",
+  "name": "InputBase",
+  "source_code": "// packages/@mantine/core/src/components/InputBase/InputBase.tsx\nimport {\n  BoxProps,\n  DataAttributes,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n} from '../../core';\nimport { __BaseInputProps, __InputStylesNames, Input, InputVariant, useInputProps } from '../Input';\n\nexport interface InputBaseProps\n  extends BoxProps, __BaseInputProps, StylesApiProps<InputBaseFactory> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n\n  /** Props passed down to the root element (`Input.Wrapper` component) */\n  wrapperProps?: React.ComponentProps<'div'> & DataAttributes;\n\n  /** If set, the input can have multiple lines, for example when `component=\"textarea\"` @default false */\n  multiline?: boolean;\n\n  /** If set, `aria-` and other accessibility attributes are added to the input @default true */\n  withAria?: boolean;\n}\n\nexport type InputBaseFactory = PolymorphicFactory<{\n  props: InputBaseProps;\n  defaultRef: HTMLInputElement;\n  defaultComponent: 'input';\n  stylesNames: __InputStylesNames;\n  variant: InputVariant;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'InputBase',\n  withAria: true,\n  size: 'sm',\n} satisfies Partial<InputBaseProps>;\n\nexport const InputBase = polymorphicFactory<InputBaseFactory>((props) => {\n  const { inputProps, wrapperProps, ...others } = useInputProps('InputBase', defaultProps, props);\n  return (\n    <Input.Wrapper {...wrapperProps}>\n      <Input {...inputProps} {...others} />\n    </Input.Wrapper>\n  );\n});\n\nInputBase.classes = { ...Input.classes, ...Input.Wrapper.classes };\nInputBase.displayName = '@mantine/core/InputBase';\n\nexport namespace InputBase {\n  export type Props = InputBaseProps;\n  export type Factory = InputBaseFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "base",
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "InputBase_InputBase",
+      "name": "InputBase",
+      "path": "packages/@mantine/core/src/components/InputBase/InputBase.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_InputBase_InputBase",
+      "name": "InputBase",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/InputBase/InputBase.tsx",
+          "content": "import {\n  BoxProps,\n  DataAttributes,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n} from '../../core';\nimport { __BaseInputProps, __InputStylesNames, Input, InputVariant, useInputProps } from '../Input';\n\nexport interface InputBaseProps\n  extends BoxProps, __BaseInputProps, StylesApiProps<InputBaseFactory> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n\n  /** Props passed down to the root element (`Input.Wrapper` component) */\n  wrapperProps?: React.ComponentProps<'div'> & DataAttributes;\n\n  /** If set, the input can have multiple lines, for example when `component=\"textarea\"` @default false */\n  multiline?: boolean;\n\n  /** If set, `aria-` and other accessibility attributes are added to the input @default true */\n  withAria?: boolean;\n}\n\nexport type InputBaseFactory = PolymorphicFactory<{\n  props: InputBaseProps;\n  defaultRef: HTMLInputElement;\n  defaultComponent: 'input';\n  stylesNames: __InputStylesNames;\n  variant: InputVariant;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'InputBase',\n  withAria: true,\n  size: 'sm',\n} satisfies Partial<InputBaseProps>;\n\nexport const InputBase = polymorphicFactory<InputBaseFactory>((props) => {\n  const { inputProps, wrapperProps, ...others } = useInputProps('InputBase', defaultProps, props);\n  return (\n    <Input.Wrapper {...wrapperProps}>\n      <Input {...inputProps} {...others} />\n    </Input.Wrapper>\n  );\n});\n\nInputBase.classes = { ...Input.classes, ...Input.Wrapper.classes };\nInputBase.displayName = '@mantine/core/InputBase';\n\nexport namespace InputBase {\n  export type Props = InputBaseProps;\n  export type Factory = InputBaseFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "InputBase is a input base UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: InputBase\nDescription: InputBase is a input base UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: base, input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/InputBase/InputBase.tsx\nimport {\n  BoxProps,\n  DataAttributes,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n} from '../../core';\nimport { __BaseInputProps, __InputStylesNames, Input, InputVariant, useInputProps } from '../Input';\n\nexport interface InputBaseProps\n  extends BoxProps, __BaseInputProps, StylesApiProps<InputBaseFactory> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n\n  /** Props passed down to the roo",
+  "prompt_version": 2,
+  "clean_id": "input-base",
+  "display_name": "Input Base",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-inputbase-inputbase.png"
+}

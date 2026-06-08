@@ -1,0 +1,31 @@
+{
+  "id": "src_components_HeaderLink",
+  "name": "HeaderLink",
+  "source_code": "// src/components/HeaderLink.astro\n---\nimport type { HTMLAttributes } from 'astro/types'\n\ntype Props = HTMLAttributes<'a'>\n\nconst { href, class: className = '', ...props } = Astro.props\n---\n\n<a\n  {href}\n  class:list={[\n    'text-sm font-medium text-gray-600 transition-colors hover:text-gray-900',\n    className,\n  ]}\n  {...props}\n>\n  <slot />\n</a>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "HeaderLink",
+      "name": "HeaderLink",
+      "path": "src/components/HeaderLink.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_HeaderLink",
+      "name": "HeaderLink",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/HeaderLink.astro",
+          "content": "---\nimport type { HTMLAttributes } from 'astro/types'\n\ntype Props = HTMLAttributes<'a'>\n\nconst { href, class: className = '', ...props } = Astro.props\n---\n\n<a\n  {href}\n  class:list={[\n    'text-sm font-medium text-gray-600 transition-colors hover:text-gray-900',\n    className,\n  ]}\n  {...props}\n>\n  <slot />\n</a>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

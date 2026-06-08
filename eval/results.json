@@ -1,0 +1,6027 @@
+{
+  "metrics": {
+    "hit_at_1": 0.7875,
+    "hit_at_5": 0.9625,
+    "mrr": 0.8556250000000001,
+    "ndcg_at_5": 0.9557867243160935,
+    "total_queries": 80
+  },
+  "queries": [
+    {
+      "query": "animated loading spinner",
+      "expected_ids": [
+        "spinner-basic",
+        "spinner-button",
+        "spinner-color"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_radix-ui-themes_src_components_spinner",
+          "clean_id": "spinner",
+          "display_name": "Spinner",
+          "name": "spinner",
+          "server": "radixuithemes",
+          "component_type": "loader",
+          "score": 1.0,
+          "cross_encoder_score": 8.342437744140625,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "spinner-input-group",
+          "clean_id": "spinner-input-group",
+          "display_name": "Spinner Input Group",
+          "name": "spinner-input-group",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.8513410091400146,
+          "cross_encoder_score": 7.0659379959106445,
+          "rrf_score": 0.030158730158730156
+        },
+        {
+          "rank": 3,
+          "id": "spinner-basic",
+          "clean_id": "spinner-basic",
+          "display_name": "Spinner Basic",
+          "name": "spinner-basic",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.8471903204917908,
+          "cross_encoder_score": 7.030296802520752,
+          "rrf_score": 0.029116045245077504
+        },
+        {
+          "rank": 4,
+          "id": "spinner-item",
+          "clean_id": "spinner-item",
+          "display_name": "Spinner Item",
+          "name": "spinner-item",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.8384310007095337,
+          "cross_encoder_score": 6.955082416534424,
+          "rrf_score": 0.030776515151515152
+        },
+        {
+          "rank": 5,
+          "id": "spinner-size",
+          "clean_id": "spinner-size",
+          "display_name": "Spinner Size",
+          "name": "spinner-size",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.8004174828529358,
+          "cross_encoder_score": 6.628669261932373,
+          "rrf_score": 0.030536130536130537
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7039180890341347,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "button with loading state",
+      "expected_ids": [
+        "button-loading",
+        "shimmer-button",
+        "spinner-button"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "shimmer-button",
+          "clean_id": "shimmer-button",
+          "display_name": "Shimmer Button",
+          "name": "Shimmer Button",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 1.0,
+          "cross_encoder_score": 6.604923248291016,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 2,
+          "id": "stateful-button",
+          "clean_id": "stateful-button",
+          "display_name": "Stateful Button",
+          "name": "Stateful Button",
+          "server": "aceternity",
+          "component_type": "button",
+          "score": 0.9780329465866089,
+          "cross_encoder_score": 6.27744197845459,
+          "rrf_score": 0.03021353930031804
+        },
+        {
+          "rank": 3,
+          "id": "src_components_Button_Button",
+          "clean_id": "button",
+          "display_name": "Button",
+          "name": "Button",
+          "server": "tremor",
+          "component_type": "button",
+          "score": 0.9565230011940002,
+          "cross_encoder_score": 5.956776142120361,
+          "rrf_score": 0.031024531024531024
+        },
+        {
+          "rank": 4,
+          "id": "button-loading",
+          "clean_id": "button-loading",
+          "display_name": "Button Loading",
+          "name": "button-loading",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.8426650166511536,
+          "cross_encoder_score": 4.259401321411133,
+          "rrf_score": 0.03009207275993712
+        },
+        {
+          "rank": 5,
+          "id": "shimmer-button-demo",
+          "clean_id": null,
+          "display_name": null,
+          "name": "Shimmer Button Demo",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.8389535546302795,
+          "cross_encoder_score": 4.204071998596191,
+          "rrf_score": 0.015873015873015872
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0875672280720348,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "dark glassmorphism card",
+      "expected_ids": [
+        "magic-card",
+        "magic-card-demo",
+        "neon-gradient-card"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "neon-gradient-card",
+          "clean_id": "neon-gradient-card",
+          "display_name": "Neon Gradient Card",
+          "name": "Neon Gradient Card",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 4.896608352661133,
+          "rrf_score": 0.02877846790890269
+        },
+        {
+          "rank": 2,
+          "id": "magic-card",
+          "clean_id": "magic-card",
+          "display_name": "Magic Card",
+          "name": "Magic Card",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.9871535301208496,
+          "cross_encoder_score": 4.6895294189453125,
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "rank": 3,
+          "id": "glare-card",
+          "clean_id": "glare-card",
+          "display_name": "Glare Card",
+          "name": "Glare Card",
+          "server": "aceternity",
+          "component_type": "card",
+          "score": 0.824834942817688,
+          "cross_encoder_score": 2.0730299949645996,
+          "rrf_score": 0.02651914295749912
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_card_index",
+          "clean_id": "card",
+          "display_name": "Card",
+          "name": "card",
+          "server": "heroui",
+          "component_type": "card",
+          "score": 0.8016786575317383,
+          "cross_encoder_score": 1.6997621059417725,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 5,
+          "id": "src_components_Card_Card",
+          "clean_id": "card",
+          "display_name": "Card",
+          "name": "Card",
+          "server": "tremor",
+          "component_type": "card",
+          "score": 0.6049036979675293,
+          "cross_encoder_score": -1.4721566438674927,
+          "rrf_score": 0.01639344262295082
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1490097760265219,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "glowing border card",
+      "expected_ids": [
+        "border-beam",
+        "neon-gradient-card",
+        "shine-border"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "shine-border-demo-2",
+          "clean_id": "shine-border-demo-2",
+          "display_name": "Shine Border Demo 2",
+          "name": "Shine Border Demo 2",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 4.30927848815918,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "shine-border-demo",
+          "clean_id": "shine-border-demo",
+          "display_name": "Shine Border Demo",
+          "name": "Shine Border Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9891761541366577,
+          "cross_encoder_score": 4.140538215637207,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "border-beam-button",
+          "clean_id": "border-beam-button",
+          "display_name": "Border Beam Button",
+          "name": "border-beam-button",
+          "server": "cultui",
+          "component_type": "button",
+          "score": 0.9482882022857666,
+          "cross_encoder_score": 3.503108263015747,
+          "rrf_score": 0.029206349206349208
+        },
+        {
+          "rank": 4,
+          "id": "shine-border",
+          "clean_id": "shine-border",
+          "display_name": "Shine Border",
+          "name": "Shine Border",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.6949678659439087,
+          "cross_encoder_score": -0.44607651233673096,
+          "rrf_score": 0.029631255487269532
+        },
+        {
+          "rank": 5,
+          "id": "magic-card",
+          "clean_id": "magic-card",
+          "display_name": "Magic Card",
+          "name": "Magic Card",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.6732373237609863,
+          "cross_encoder_score": -0.7848483920097351,
+          "rrf_score": 0.014285714285714285
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "sidebar navigation with icons",
+      "expected_ids": [
+        "sidebar-01",
+        "sidebar-demo",
+        "sidebar-menu"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "sidebar-07",
+          "clean_id": "sidebar-07",
+          "display_name": "Sidebar 07",
+          "name": "sidebar-07",
+          "server": "shadcn",
+          "component_type": "sidebar",
+          "score": 1.0,
+          "cross_encoder_score": 6.91546630859375,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "sidebar-menu-collapsible",
+          "clean_id": "sidebar-menu-collapsible",
+          "display_name": "Sidebar Menu Collapsible",
+          "name": "sidebar-menu-collapsible",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.8174973130226135,
+          "cross_encoder_score": 5.488306045532227,
+          "rrf_score": 0.013888888888888888
+        },
+        {
+          "rank": 3,
+          "id": "sidebar-01",
+          "clean_id": "sidebar-01",
+          "display_name": "Sidebar 01",
+          "name": "sidebar-01",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.7165819406509399,
+          "cross_encoder_score": 4.699153900146484,
+          "rrf_score": 0.028693528693528692
+        },
+        {
+          "rank": 4,
+          "id": "sidebar-menu",
+          "clean_id": "sidebar-menu",
+          "display_name": "Sidebar Menu",
+          "name": "sidebar-menu",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.6840697526931763,
+          "cross_encoder_score": 4.444910526275635,
+          "rrf_score": 0.028125
+        },
+        {
+          "rank": 5,
+          "id": "sidebar",
+          "clean_id": "sidebar",
+          "display_name": "Sidebar",
+          "name": "Sidebar",
+          "server": "aceternity",
+          "component_type": "sidebar",
+          "score": 0.6812505722045898,
+          "cross_encoder_score": 4.4228644371032715,
+          "rrf_score": 0.05628260744930916
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.9143704130151438,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "dashboard sidebar navigation",
+      "expected_ids": [
+        "sidebar-02",
+        "sidebar-05",
+        "sidebar-07"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "sidebar-01",
+          "clean_id": "sidebar-01",
+          "display_name": "Sidebar 01",
+          "name": "sidebar-01",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 1.0,
+          "cross_encoder_score": 7.579435348510742,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "sidebar-16",
+          "clean_id": "sidebar-16",
+          "display_name": "Sidebar 16",
+          "name": "sidebar-16",
+          "server": "shadcn",
+          "component_type": "sidebar",
+          "score": 0.7508153915405273,
+          "cross_encoder_score": 5.9160895347595215,
+          "rrf_score": 0.029551337359792925
+        },
+        {
+          "rank": 3,
+          "id": "sidebar-menu-collapsible",
+          "clean_id": "sidebar-menu-collapsible",
+          "display_name": "Sidebar Menu Collapsible",
+          "name": "sidebar-menu-collapsible",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.5703884363174438,
+          "cross_encoder_score": 4.7117109298706055,
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "rank": 4,
+          "id": "sidebar",
+          "clean_id": "sidebar",
+          "display_name": "Sidebar",
+          "name": "sidebar",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.4728550314903259,
+          "cross_encoder_score": 4.060660362243652,
+          "rrf_score": 0.059088456427846436
+        },
+        {
+          "rank": 5,
+          "id": "sidebar-demo",
+          "clean_id": "sidebar-demo",
+          "display_name": "Sidebar Demo",
+          "name": "sidebar-demo",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.4269118010997772,
+          "cross_encoder_score": 3.7539820671081543,
+          "rrf_score": 0.025
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.20210734650054757,
+      "first_relevant_rank": 4
+    },
+    {
+      "query": "modal dialog component",
+      "expected_ids": [
+        "alert-dialog",
+        "dialog",
+        "dialog-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "dialog-demo",
+          "clean_id": "dialog-demo",
+          "display_name": "Dialog Demo",
+          "name": "dialog-demo",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 1.0,
+          "cross_encoder_score": 8.713136672973633,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "id": "packages_mantine_core_src_components_Dialog_index",
+          "clean_id": "dialog",
+          "display_name": "Dialog",
+          "name": "Dialog",
+          "server": "mantine",
+          "component_type": "modal",
+          "score": 0.9856806993484497,
+          "cross_encoder_score": 8.603175163269043,
+          "rrf_score": 0.030798389007344232
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_Dialog_Dialog",
+          "clean_id": "dialog",
+          "display_name": "Dialog",
+          "name": "Dialog",
+          "server": "mantine",
+          "component_type": "modal",
+          "score": 0.9690744876861572,
+          "cross_encoder_score": 8.475651741027832,
+          "rrf_score": 0.030834914611005692
+        },
+        {
+          "rank": 4,
+          "id": "dropdown-menu-dialog",
+          "clean_id": "dropdown-menu-dialog",
+          "display_name": "Dropdown Menu Dialog",
+          "name": "dropdown-menu-dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.9623749256134033,
+          "cross_encoder_score": 8.424203872680664,
+          "rrf_score": 0.014084507042253521
+        },
+        {
+          "rank": 5,
+          "id": "src_components_Dialog_Dialog",
+          "clean_id": "dialog",
+          "display_name": "Dialog",
+          "name": "Dialog",
+          "server": "tremor",
+          "component_type": "modal",
+          "score": 0.9573440551757812,
+          "cross_encoder_score": 8.385570526123047,
+          "rrf_score": 0.031009615384615385
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "confirmation alert dialog",
+      "expected_ids": [
+        "alert-dialog",
+        "alert-dialog-demo",
+        "dialog-close-button"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_alert-dialog_index",
+          "clean_id": "alert-dialog",
+          "display_name": "Alert Dialog",
+          "name": "alert-dialog",
+          "server": "heroui",
+          "component_type": "modal",
+          "score": 1.0,
+          "cross_encoder_score": 8.24448013305664,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "packages_radix-ui-themes_src_components_alert-dialog",
+          "clean_id": "alert-dialog",
+          "display_name": "Alert Dialog",
+          "name": "alert-dialog",
+          "server": "radixuithemes",
+          "component_type": "modal",
+          "score": 0.907364547252655,
+          "cross_encoder_score": 6.671865463256836,
+          "rrf_score": 0.03036576949620428
+        },
+        {
+          "rank": 3,
+          "id": "alert-dialog",
+          "clean_id": "alert-dialog",
+          "display_name": "Alert Dialog",
+          "name": "alert-dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.9001725316047668,
+          "cross_encoder_score": 6.549770355224609,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 4,
+          "id": "alert-dialog-demo",
+          "clean_id": "alert-dialog-demo",
+          "display_name": "Alert Dialog Demo",
+          "name": "alert-dialog-demo",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.870951771736145,
+          "cross_encoder_score": 6.053708076477051,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 5,
+          "id": "dialog",
+          "clean_id": "dialog",
+          "display_name": "Dialog",
+          "name": "dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.7843432426452637,
+          "cross_encoder_score": 4.583408355712891,
+          "rrf_score": 0.07276471688916507
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "login form with inputs",
+      "expected_ids": [
+        "form-rhf-input",
+        "login-01",
+        "login-03"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "login-01",
+          "clean_id": "login-01",
+          "display_name": "Login 01",
+          "name": "login-01",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 5.715649127960205,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "form-formisch-input",
+          "clean_id": "form-formisch-input",
+          "display_name": "Form Formisch Input",
+          "name": "form-formisch-input",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.8917616605758667,
+          "cross_encoder_score": 4.204125881195068,
+          "rrf_score": 0.02871794871794872
+        },
+        {
+          "rank": 3,
+          "id": "field-group",
+          "clean_id": null,
+          "display_name": null,
+          "name": "field-group",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.7910694479942322,
+          "cross_encoder_score": 2.797980546951294,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_input_index",
+          "clean_id": "input",
+          "display_name": "Input",
+          "name": "input",
+          "server": "heroui",
+          "component_type": "input",
+          "score": 0.7905575037002563,
+          "cross_encoder_score": 2.7908318042755127,
+          "rrf_score": 0.029116045245077504
+        },
+        {
+          "rank": 5,
+          "id": "input-otp-demo",
+          "clean_id": "input-otp-demo",
+          "display_name": "Input Otp Demo",
+          "name": "input-otp-demo",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.7755252122879028,
+          "cross_encoder_score": 2.5809082984924316,
+          "rrf_score": 0.027364110201042444
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6713860725233041,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "signup form card",
+      "expected_ids": [
+        "card-with-form",
+        "signup-01",
+        "signup-02"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "card-with-form",
+          "clean_id": "card-with-form",
+          "display_name": "Card With Form",
+          "name": "card-with-form",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 4.023277282714844,
+          "rrf_score": 0.03057889822595705
+        },
+        {
+          "rank": 2,
+          "id": "signup-05",
+          "clean_id": "signup-05",
+          "display_name": "Signup 05",
+          "name": "signup-05",
+          "server": "shadcn",
+          "component_type": "block",
+          "score": 0.9616615772247314,
+          "cross_encoder_score": 3.5229578018188477,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 3,
+          "id": "signup-01",
+          "clean_id": "signup-01",
+          "display_name": "Signup 01",
+          "name": "signup-01",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.9491643905639648,
+          "cross_encoder_score": 3.359868049621582,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "rank": 4,
+          "id": "signup-04",
+          "clean_id": "signup-04",
+          "display_name": "Signup 04",
+          "name": "signup-04",
+          "server": "shadcn",
+          "component_type": "registry:block",
+          "score": 0.9489061236381531,
+          "cross_encoder_score": 3.3564977645874023,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 5,
+          "id": "popover-form-demo",
+          "clean_id": "popover-form-demo",
+          "display_name": "Popover Form Demo",
+          "name": "popover-form-demo",
+          "server": "cultui",
+          "component_type": "form",
+          "score": 0.7472396492958069,
+          "cross_encoder_score": 0.7247335910797119,
+          "rrf_score": 0.028782894736842105
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7039180890341347,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "data table for dashboard",
+      "expected_ids": [
+        "data-table-demo",
+        "table",
+        "table-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "table",
+          "clean_id": "table",
+          "display_name": "Table",
+          "name": "table",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 1.0,
+          "cross_encoder_score": 5.208921432495117,
+          "rrf_score": 0.06024159663865546
+        },
+        {
+          "rank": 2,
+          "id": "chart-area-icons",
+          "clean_id": "chart-area-icons",
+          "display_name": "Chart Area Icons",
+          "name": "chart-area-icons",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 0.883783221244812,
+          "cross_encoder_score": 3.829777717590332,
+          "rrf_score": 0.014492753623188406
+        },
+        {
+          "rank": 3,
+          "id": "chart-line-multiple",
+          "clean_id": "chart-line-multiple",
+          "display_name": "Chart Line Multiple",
+          "name": "chart-line-multiple",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.878630518913269,
+          "cross_encoder_score": 3.768630266189575,
+          "rrf_score": 0.028665028665028666
+        },
+        {
+          "rank": 4,
+          "id": "data-table-demo",
+          "clean_id": "data-table-demo",
+          "display_name": "Data Table Demo",
+          "name": "data-table-demo",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 0.8666142821311951,
+          "cross_encoder_score": 3.626033306121826,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 5,
+          "id": "chart-radar-grid-custom",
+          "clean_id": "chart-radar-grid-custom",
+          "display_name": "Chart Radar Grid Custom",
+          "name": "chart-radar-grid-custom",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.7456360459327698,
+          "cross_encoder_score": 2.190384864807129,
+          "rrf_score": 0.029857397504456328
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6713860725233041,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "chart for analytics dashboard",
+      "expected_ids": [
+        "chart",
+        "chart-area-default",
+        "chart-bar-default"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "chart-area-icons",
+          "clean_id": "chart-area-icons",
+          "display_name": "Chart Area Icons",
+          "name": "chart-area-icons",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 1.0,
+          "cross_encoder_score": 6.418299198150635,
+          "rrf_score": 0.031024531024531024
+        },
+        {
+          "rank": 2,
+          "id": "chart-line-dots-custom",
+          "clean_id": "chart-line-dots-custom",
+          "display_name": "Chart Line Dots Custom",
+          "name": "chart-line-dots-custom",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9967014789581299,
+          "cross_encoder_score": 6.39091682434082,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 3,
+          "id": "chart-area-default",
+          "clean_id": "chart-area-default",
+          "display_name": "Chart Area Default",
+          "name": "chart-area-default",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9578264951705933,
+          "cross_encoder_score": 6.068202018737793,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 4,
+          "id": "chart-radar-label-custom",
+          "clean_id": "chart-radar-label-custom",
+          "display_name": "Chart Radar Label Custom",
+          "name": "chart-radar-label-custom",
+          "server": "shadcn",
+          "component_type": "component",
+          "score": 0.8967792987823486,
+          "cross_encoder_score": 5.561429023742676,
+          "rrf_score": 0.031009615384615385
+        },
+        {
+          "rank": 5,
+          "id": "chart-radial-stacked",
+          "clean_id": "chart-radial-stacked",
+          "display_name": "Chart Radial Stacked",
+          "name": "chart-radial-stacked",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.8961164355278015,
+          "cross_encoder_score": 5.555926322937012,
+          "rrf_score": 0.0304147465437788
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "pie chart visualization",
+      "expected_ids": [
+        "chart-pie-donut",
+        "chart-pie-interactive",
+        "chart-pie-simple"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "chart-pie-simple",
+          "clean_id": "chart-pie-simple",
+          "display_name": "Chart Pie Simple",
+          "name": "chart-pie-simple",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 1.0,
+          "cross_encoder_score": 8.111323356628418,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "chart-pie-donut",
+          "clean_id": "chart-pie-donut",
+          "display_name": "Chart Pie Donut",
+          "name": "chart-pie-donut",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9636470675468445,
+          "cross_encoder_score": 7.679773807525635,
+          "rrf_score": 0.029211087420042643
+        },
+        {
+          "rank": 3,
+          "id": "src_components_DonutChart_DonutChart",
+          "clean_id": "donut-chart",
+          "display_name": "Donut Chart",
+          "name": "DonutChart",
+          "server": "tremor",
+          "component_type": "table",
+          "score": 0.9543527960777283,
+          "cross_encoder_score": 7.569439888000488,
+          "rrf_score": 0.028814262023217248
+        },
+        {
+          "rank": 4,
+          "id": "chart-pie-donut-active",
+          "clean_id": "chart-pie-donut-active",
+          "display_name": "Chart Pie Donut Active",
+          "name": "chart-pie-donut-active",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9477015733718872,
+          "cross_encoder_score": 7.490482330322266,
+          "rrf_score": 0.030834914611005692
+        },
+        {
+          "rank": 5,
+          "id": "chart-pie-interactive",
+          "clean_id": "chart-pie-interactive",
+          "display_name": "Chart Pie Interactive",
+          "name": "chart-pie-interactive",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9235068559646606,
+          "cross_encoder_score": 7.203264236450195,
+          "rrf_score": 0.03177805800756621
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1490097760265219,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "bar chart with labels",
+      "expected_ids": [
+        "chart-bar-default",
+        "chart-bar-label",
+        "chart-bar-multiple"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "chart-bar-label",
+          "clean_id": "chart-bar-label",
+          "display_name": "Chart Bar Label",
+          "name": "chart-bar-label",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 8.760961532592773,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "chart-bar-label-custom",
+          "clean_id": "chart-bar-label-custom",
+          "display_name": "Chart Bar Label Custom",
+          "name": "chart-bar-label-custom",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.8185330629348755,
+          "cross_encoder_score": 6.940753936767578,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 3,
+          "id": "chart-bar-multiple",
+          "clean_id": "chart-bar-multiple",
+          "display_name": "Chart Bar Multiple",
+          "name": "chart-bar-multiple",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.6916605234146118,
+          "cross_encoder_score": 5.668156623840332,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 4,
+          "id": "sonner",
+          "clean_id": null,
+          "display_name": null,
+          "name": "sonner",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.5975907444953918,
+          "cross_encoder_score": 4.724587440490723,
+          "rrf_score": 0.013888888888888888
+        },
+        {
+          "rank": 5,
+          "id": "chart-bar-demo-legend",
+          "clean_id": "chart-bar-demo-legend",
+          "display_name": "Chart Bar Demo Legend",
+          "name": "chart-bar-demo-legend",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.5693504214286804,
+          "cross_encoder_score": 4.441322326660156,
+          "rrf_score": 0.029957522915269395
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "line chart with dots",
+      "expected_ids": [
+        "chart-line-default",
+        "chart-line-dots",
+        "chart-line-multiple"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "chart-line-dots",
+          "clean_id": "chart-line-dots",
+          "display_name": "Chart Line Dots",
+          "name": "chart-line-dots",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 1.0,
+          "cross_encoder_score": 8.571788787841797,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "chart-line-dots-custom",
+          "clean_id": "chart-line-dots-custom",
+          "display_name": "Chart Line Dots Custom",
+          "name": "chart-line-dots-custom",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.969957172870636,
+          "cross_encoder_score": 8.031750679016113,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "chart-line-dots-colors",
+          "clean_id": "chart-line-dots-colors",
+          "display_name": "Chart Line Dots Colors",
+          "name": "chart-line-dots-colors",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.961876630783081,
+          "cross_encoder_score": 7.88649845123291,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 4,
+          "id": "chart-radar-dots",
+          "clean_id": "chart-radar-dots",
+          "display_name": "Chart Radar Dots",
+          "name": "chart-radar-dots",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.6415891051292419,
+          "cross_encoder_score": 2.1291441917419434,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 5,
+          "id": "chart-line-linear",
+          "clean_id": "chart-line-linear",
+          "display_name": "Chart Line Linear",
+          "name": "chart-line-linear",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.5920591950416565,
+          "cross_encoder_score": 1.2388160228729248,
+          "rrf_score": 0.029437229437229435
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "badge status label",
+      "expected_ids": [
+        "badge",
+        "badge-demo",
+        "badge-secondary"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_badge_index",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "badge",
+          "server": "heroui",
+          "component_type": "badge",
+          "score": 1.0,
+          "cross_encoder_score": 6.875964164733887,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "badge-demo",
+          "clean_id": "badge-demo",
+          "display_name": "Badge Demo",
+          "name": "badge-demo",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.9637427926063538,
+          "cross_encoder_score": 6.218812465667725,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 3,
+          "id": "badge-outline",
+          "clean_id": "badge-outline",
+          "display_name": "Badge Outline",
+          "name": "badge-outline",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.9420413374900818,
+          "cross_encoder_score": 5.825478553771973,
+          "rrf_score": 0.0315136476426799
+        },
+        {
+          "rank": 4,
+          "id": "badge",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "badge",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.8830604553222656,
+          "cross_encoder_score": 4.756464958190918,
+          "rrf_score": 0.05914673647948296
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Badge_index",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "Badge",
+          "server": "mantine",
+          "component_type": "badge",
+          "score": 0.7987496852874756,
+          "cross_encoder_score": 3.228353500366211,
+          "rrf_score": 0.031054405392392875
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "tooltip on hover",
+      "expected_ids": [
+        "input-group-tooltip",
+        "kbd-tooltip",
+        "tooltip-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "pinesui",
+          "component_type": "tooltip",
+          "score": 1.0,
+          "cross_encoder_score": 8.104887008666992,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_tooltip_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "heroui",
+          "component_type": "tooltip",
+          "score": 0.9824510812759399,
+          "cross_encoder_score": 7.894396781921387,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "tooltip-demo",
+          "clean_id": "tooltip-demo",
+          "display_name": "Tooltip Demo",
+          "name": "tooltip-demo",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.9617528319358826,
+          "cross_encoder_score": 7.64613151550293,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 4,
+          "id": "packages_radix-ui-themes_src_components_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "radixuithemes",
+          "component_type": "other",
+          "score": 0.9521682858467102,
+          "cross_encoder_score": 7.531169414520264,
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "rank": 5,
+          "id": "src_components_Tooltip_Tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "Tooltip",
+          "server": "tremor",
+          "component_type": "other",
+          "score": 0.9400177597999573,
+          "cross_encoder_score": 7.385430335998535,
+          "rrf_score": 0.015625
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "dropdown menu action list",
+      "expected_ids": [
+        "dropdown-menu-checkboxes",
+        "dropdown-menu-dialog",
+        "dropdown-menu-radio-group"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "context-menu",
+          "clean_id": "context-menu",
+          "display_name": "Context Menu",
+          "name": "context-menu",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 8.12800121307373,
+          "rrf_score": 0.030621785881252923
+        },
+        {
+          "rank": 2,
+          "id": "elements_dropdown-menu",
+          "clean_id": "dropdown-menu",
+          "display_name": "Dropdown Menu",
+          "name": "dropdown-menu",
+          "server": "pinesui",
+          "component_type": "dropdown",
+          "score": 0.966337263584137,
+          "cross_encoder_score": 7.879863739013672,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 3,
+          "id": "src_components_DropdownMenu_DropdownMenu",
+          "clean_id": "dropdown-menu",
+          "display_name": "Dropdown Menu",
+          "name": "DropdownMenu",
+          "server": "tremor",
+          "component_type": "navbar",
+          "score": 0.9649714231491089,
+          "cross_encoder_score": 7.869795799255371,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 4,
+          "id": "combobox-dropdown-menu",
+          "clean_id": "combobox-dropdown-menu",
+          "display_name": "Combobox Dropdown Menu",
+          "name": "combobox-dropdown-menu",
+          "server": "shadcn",
+          "component_type": "combobox-dropdown-menu",
+          "score": 0.7164997458457947,
+          "cross_encoder_score": 6.038240432739258,
+          "rrf_score": 0.015151515151515152
+        },
+        {
+          "rank": 5,
+          "id": "dropdown-menu-dialog",
+          "clean_id": "dropdown-menu-dialog",
+          "display_name": "Dropdown Menu Dialog",
+          "name": "dropdown-menu-dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.673963725566864,
+          "cross_encoder_score": 5.724695205688477,
+          "rrf_score": 0.014084507042253521
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.7122630665145961,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "carousel for testimonials",
+      "expected_ids": [
+        "carousel-api",
+        "carousel-demo",
+        "marquee"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "animated-testimonials",
+          "clean_id": "animated-testimonials",
+          "display_name": "Animated Testimonials",
+          "name": "Animated Testimonials",
+          "server": "aceternity",
+          "component_type": "loader",
+          "score": 1.0,
+          "cross_encoder_score": 7.225121974945068,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "carousel-demo",
+          "clean_id": "carousel-demo",
+          "display_name": "Carousel Demo",
+          "name": "carousel-demo",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.46729859709739685,
+          "cross_encoder_score": -0.5543767213821411,
+          "rrf_score": 0.015151515151515152
+        },
+        {
+          "rank": 3,
+          "id": "carousel",
+          "clean_id": "carousel",
+          "display_name": "Carousel",
+          "name": "carousel",
+          "server": "parkui",
+          "component_type": "other",
+          "score": 0.44577839970588684,
+          "cross_encoder_score": -0.8686549067497253,
+          "rrf_score": 0.09163371418891518
+        },
+        {
+          "rank": 4,
+          "id": "carousel-plugin",
+          "clean_id": "carousel-plugin",
+          "display_name": "Carousel Plugin",
+          "name": "carousel-plugin",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.44246959686279297,
+          "cross_encoder_score": -0.9169760942459106,
+          "rrf_score": 0.014285714285714285
+        },
+        {
+          "rank": 5,
+          "id": "carousel-api",
+          "clean_id": "carousel-api",
+          "display_name": "Carousel Api",
+          "name": "carousel-api",
+          "server": "shadcn",
+          "component_type": "carousel",
+          "score": 0.43019816279411316,
+          "cross_encoder_score": -1.096186876296997,
+          "rrf_score": 0.014705882352941176
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.7122630665145961,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "calendar date picker",
+      "expected_ids": [
+        "calendar",
+        "calendar-demo",
+        "date-picker-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_calendar-year-picker_index",
+          "clean_id": "calendar-year-picker",
+          "display_name": "Calendar Year Picker",
+          "name": "calendar-year-picker",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 9.510066986083984,
+          "rrf_score": 0.030886196246139225
+        },
+        {
+          "rank": 2,
+          "id": "elements_date-picker",
+          "clean_id": "date-picker",
+          "display_name": "Date Picker",
+          "name": "date-picker",
+          "server": "pinesui",
+          "component_type": "form",
+          "score": 0.935522198677063,
+          "cross_encoder_score": 8.679941177368164,
+          "rrf_score": 0.0304147465437788
+        },
+        {
+          "rank": 3,
+          "id": "src_components_DatePicker_DatePicker",
+          "clean_id": "date-picker",
+          "display_name": "Date Picker",
+          "name": "DatePicker",
+          "server": "tremor",
+          "component_type": "date picker",
+          "score": 0.9225882291793823,
+          "cross_encoder_score": 8.513422012329102,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 4,
+          "id": "date-picker-with-presets",
+          "clean_id": "date-picker-with-presets",
+          "display_name": "Date Picker With Presets",
+          "name": "date-picker-with-presets",
+          "server": "shadcn",
+          "component_type": "date-picker",
+          "score": 0.9208583235740662,
+          "cross_encoder_score": 8.49114990234375,
+          "rrf_score": 0.027692895339954164
+        },
+        {
+          "rank": 5,
+          "id": "calendar-demo",
+          "clean_id": "calendar-demo",
+          "display_name": "Calendar Demo",
+          "name": "calendar-demo",
+          "server": "shadcn",
+          "component_type": "date picker",
+          "score": 0.9180885553359985,
+          "cross_encoder_score": 8.455491065979004,
+          "rrf_score": 0.030536130536130537
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1815417925373526,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "progress bar indicator",
+      "expected_ids": [
+        "animated-circular-progress-bar",
+        "progress",
+        "progress-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "src_components_ProgressBar_ProgressBar",
+          "clean_id": "progress-bar",
+          "display_name": "Progress Bar",
+          "name": "ProgressBar",
+          "server": "tremor",
+          "component_type": "loader",
+          "score": 1.0,
+          "cross_encoder_score": 8.479077339172363,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "progress-demo",
+          "clean_id": "progress-demo",
+          "display_name": "Progress Demo",
+          "name": "progress-demo",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.8938444256782532,
+          "cross_encoder_score": 7.419798851013184,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_progress-bar_progress-bar",
+          "clean_id": "progress-bar",
+          "display_name": "Progress Bar",
+          "name": "progress-bar",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.8266602754592896,
+          "cross_encoder_score": 6.749399185180664,
+          "rrf_score": 0.02976190476190476
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_progress-bar_index",
+          "clean_id": "progress-bar",
+          "display_name": "Progress Bar",
+          "name": "progress-bar",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.8206912279129028,
+          "cross_encoder_score": 6.689836502075195,
+          "rrf_score": 0.02946912242686891
+        },
+        {
+          "rank": 5,
+          "id": "sonner",
+          "clean_id": null,
+          "display_name": null,
+          "name": "sonner",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.7966211438179016,
+          "cross_encoder_score": 6.449652194976807,
+          "rrf_score": 0.015873015873015872
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "hero section with animated background",
+      "expected_ids": [
+        "hero-video-dialog",
+        "particles",
+        "retro-grid"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "hero-liquid-metal",
+          "clean_id": "hero-liquid-metal",
+          "display_name": "Hero Liquid Metal",
+          "name": "hero-liquid-metal",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 1.0,
+          "cross_encoder_score": 7.981114387512207,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "hero-heatmap-demo",
+          "clean_id": null,
+          "display_name": null,
+          "name": "hero-heatmap-demo",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.9439316987991333,
+          "cross_encoder_score": 7.044777870178223,
+          "rrf_score": 0.015151515151515152
+        },
+        {
+          "rank": 3,
+          "id": "hero-dithering-demo",
+          "clean_id": "hero-dithering-demo",
+          "display_name": "Hero Dithering Demo",
+          "name": "hero-dithering-demo",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.8849565982818604,
+          "cross_encoder_score": 6.05989933013916,
+          "rrf_score": 0.030017921146953404
+        },
+        {
+          "rank": 4,
+          "id": "hero-color-panel",
+          "clean_id": "hero-color-panel",
+          "display_name": "Hero Color Panel",
+          "name": "hero-color-panel",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.832123875617981,
+          "cross_encoder_score": 5.1775970458984375,
+          "rrf_score": 0.028577260665441927
+        },
+        {
+          "rank": 5,
+          "id": "hero-video-dialog-demo-top-in-bottom-out",
+          "clean_id": "hero-video-dialog-demo-top-in-bottom-out",
+          "display_name": "Hero Video Dialog Demo Top In Bottom Out",
+          "name": "Hero Video Dialog Top In Bottom Out Demo",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.8098993301391602,
+          "cross_encoder_score": 4.806450366973877,
+          "rrf_score": 0.030158730158730156
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.2,
+      "ndcg_at_5": 0.18154179253735267,
+      "first_relevant_rank": 5
+    },
+    {
+      "query": "animated beam connection",
+      "expected_ids": [
+        "animated-beam",
+        "animated-beam-bidirectional",
+        "animated-beam-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "animated-beam-bidirectional",
+          "clean_id": "animated-beam-bidirectional",
+          "display_name": "Animated Beam Bidirectional",
+          "name": "Animated Beam Bidirectional",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 7.05252742767334,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "animated-beam",
+          "clean_id": "animated-beam",
+          "display_name": "Animated Beam",
+          "name": "Animated Beam",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9503568410873413,
+          "cross_encoder_score": 6.338017463684082,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "animated-beam-demo",
+          "clean_id": "animated-beam-demo",
+          "display_name": "Animated Beam Demo",
+          "name": "Animated Beam Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9368571639060974,
+          "cross_encoder_score": 6.1437177658081055,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 4,
+          "id": "animated-beam-multiple-inputs",
+          "clean_id": "animated-beam-multiple-inputs",
+          "display_name": "Animated Beam Multiple Inputs",
+          "name": "Animated Beam Multiple Inputs",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9355344772338867,
+          "cross_encoder_score": 6.1246795654296875,
+          "rrf_score": 0.029910714285714284
+        },
+        {
+          "rank": 5,
+          "id": "animated-beam-multiple-outputs",
+          "clean_id": "animated-beam-multiple-outputs",
+          "display_name": "Animated Beam Multiple Outputs",
+          "name": "Animated Beam Multiple Outputs",
+          "server": "magicui",
+          "component_type": "loader",
+          "score": 0.8502171039581299,
+          "cross_encoder_score": 4.8967132568359375,
+          "rrf_score": 0.030536130536130537
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "moving gradient text headline",
+      "expected_ids": [
+        "animated-gradient-text",
+        "aurora-text",
+        "sparkles-text"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "animated-gradient-text-demo-2",
+          "clean_id": "animated-gradient-text-demo-2",
+          "display_name": "Animated Gradient Text Demo 2",
+          "name": "Animated Gradient Text Demo 2",
+          "server": "magicui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": 1.0705411434173584,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 2,
+          "id": "animated-gradient-text",
+          "clean_id": "animated-gradient-text",
+          "display_name": "Animated Gradient Text",
+          "name": "Animated Gradient Text",
+          "server": "magicui",
+          "component_type": "badge",
+          "score": 0.9359871745109558,
+          "cross_encoder_score": 0.2684885561466217,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 3,
+          "id": "animated-gradient-text-demo",
+          "clean_id": "animated-gradient-text-demo",
+          "display_name": "Animated Gradient Text Demo",
+          "name": "Animated Gradient Text Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8728109002113342,
+          "cross_encoder_score": -0.5230815410614014,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 4,
+          "id": "gradient-heading",
+          "clean_id": "gradient-heading",
+          "display_name": "Gradient Heading",
+          "name": "gradient-heading",
+          "server": "cultui",
+          "component_type": "heading",
+          "score": 0.8083755970001221,
+          "cross_encoder_score": -1.330428123474121,
+          "rrf_score": 0.030679156908665108
+        },
+        {
+          "rank": 5,
+          "id": "aurora-text",
+          "clean_id": "aurora-text",
+          "display_name": "Aurora Text",
+          "name": "Aurora Text",
+          "server": "magicui",
+          "component_type": "input",
+          "score": 0.7115049958229065,
+          "cross_encoder_score": -2.5441741943359375,
+          "rrf_score": 0.029709507042253523
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1815417925373526,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "typing text animation",
+      "expected_ids": [
+        "text-animate",
+        "typing-animation",
+        "typing-animation-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "typing-animation",
+          "clean_id": "typing-animation",
+          "display_name": "Typing Animation",
+          "name": "Typing Animation",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 9.32081413269043,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "typing-animation-demo",
+          "clean_id": "typing-animation-demo",
+          "display_name": "Typing Animation Demo",
+          "name": "Typing Animation Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8274059295654297,
+          "cross_encoder_score": 7.649545669555664,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "elements_typing-effect",
+          "clean_id": "typing-effect",
+          "display_name": "Typing Effect",
+          "name": "typing-effect",
+          "server": "pinesui",
+          "component_type": "other",
+          "score": 0.7393242120742798,
+          "cross_encoder_score": 6.796629905700684,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 4,
+          "id": "typewriter",
+          "clean_id": "typewriter",
+          "display_name": "Typewriter",
+          "name": "typewriter",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.651552140712738,
+          "cross_encoder_score": 5.946712017059326,
+          "rrf_score": 0.029083245521601686
+        },
+        {
+          "rank": 5,
+          "id": "typewriter-effect",
+          "clean_id": "typewriter-effect",
+          "display_name": "Typewriter Effect",
+          "name": "Typewriter Effect",
+          "server": "aceternity",
+          "component_type": "loader",
+          "score": 0.5625919699668884,
+          "cross_encoder_score": 5.08528995513916,
+          "rrf_score": 0.029513888888888888
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7653606369886217,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "rotating words text effect",
+      "expected_ids": [
+        "morphing-text",
+        "word-rotate",
+        "word-rotate-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "word-rotate",
+          "clean_id": "word-rotate",
+          "display_name": "Word Rotate",
+          "name": "Word Rotate",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 6.449995040893555,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 2,
+          "id": "container-text-flip",
+          "clean_id": "container-text-flip",
+          "display_name": "Container Text Flip",
+          "name": "Container Text Flip",
+          "server": "aceternity",
+          "component_type": "other",
+          "score": 0.831335723400116,
+          "cross_encoder_score": 3.527754783630371,
+          "rrf_score": 0.0304147465437788
+        },
+        {
+          "rank": 3,
+          "id": "word-rotate-demo",
+          "clean_id": "word-rotate-demo",
+          "display_name": "Word Rotate Demo",
+          "name": "Word Rotate Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.7598128914833069,
+          "cross_encoder_score": 2.2885656356811523,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "spinning-text-demo-2",
+          "clean_id": "spinning-text-demo-2",
+          "display_name": "Spinning Text Demo 2",
+          "name": "Spinning Text Demo 2",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.7418928742408752,
+          "cross_encoder_score": 1.9780871868133545,
+          "rrf_score": 0.02964426877470356
+        },
+        {
+          "rank": 5,
+          "id": "spinning-text",
+          "clean_id": "spinning-text",
+          "display_name": "Spinning Text",
+          "name": "Spinning Text",
+          "server": "magicui",
+          "component_type": "badge",
+          "score": 0.7250784039497375,
+          "cross_encoder_score": 1.6867632865905762,
+          "rrf_score": 0.030798389007344232
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7039180890341347,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "animated background particles",
+      "expected_ids": [
+        "meteors",
+        "particles",
+        "particles-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "particles-demo",
+          "clean_id": "particles-demo",
+          "display_name": "Particles Demo",
+          "name": "Particles Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 6.656271457672119,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "sparkles",
+          "clean_id": "sparkles",
+          "display_name": "Sparkles",
+          "name": "Sparkles",
+          "server": "aceternity",
+          "component_type": "loader",
+          "score": 0.9993771910667419,
+          "cross_encoder_score": 6.65040922164917,
+          "rrf_score": 0.015151515151515152
+        },
+        {
+          "rank": 3,
+          "id": "animated-background",
+          "clean_id": "animated-background",
+          "display_name": "Animated Background",
+          "name": "animated-background",
+          "server": "motionprimitives",
+          "component_type": "other",
+          "score": 0.7569600343704224,
+          "cross_encoder_score": 4.3686652183532715,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 4,
+          "id": "meteors",
+          "clean_id": null,
+          "display_name": null,
+          "name": "Meteors",
+          "server": "aceternity",
+          "component_type": "other",
+          "score": 0.6674142479896545,
+          "cross_encoder_score": 3.525818347930908,
+          "rrf_score": 0.029116045245077504
+        },
+        {
+          "rank": 5,
+          "id": "background-beams-with-collision",
+          "clean_id": "background-beams-with-collision",
+          "display_name": "Background Beams With Collision",
+          "name": "Background Beams With Collision",
+          "server": "aceternity",
+          "component_type": "other",
+          "score": 0.5801222920417786,
+          "cross_encoder_score": 2.7041850090026855,
+          "rrf_score": 0.015384615384615385
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6713860725233041,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "grid background pattern",
+      "expected_ids": [
+        "animated-grid-pattern",
+        "grid-pattern",
+        "interactive-grid-pattern"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "grid-pattern",
+          "clean_id": "grid-pattern",
+          "display_name": "Grid Pattern",
+          "name": "Grid Pattern",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 9.476276397705078,
+          "rrf_score": 0.030621785881252923
+        },
+        {
+          "rank": 2,
+          "id": "animated-grid-pattern",
+          "clean_id": "animated-grid-pattern",
+          "display_name": "Animated Grid Pattern",
+          "name": "Animated Grid Pattern",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8645594716072083,
+          "cross_encoder_score": 7.943004608154297,
+          "rrf_score": 0.03125763125763126
+        },
+        {
+          "rank": 3,
+          "id": "grid-pattern-demo",
+          "clean_id": "grid-pattern-demo",
+          "display_name": "Grid Pattern Demo",
+          "name": "Grid Pattern Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8424116969108582,
+          "cross_encoder_score": 7.692277908325195,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 4,
+          "id": "grid-pattern-dashed",
+          "clean_id": "grid-pattern-dashed",
+          "display_name": "Grid Pattern Dashed",
+          "name": "Grid Pattern Dashed",
+          "server": "magicui",
+          "component_type": "background",
+          "score": 0.8307202458381653,
+          "cross_encoder_score": 7.559922695159912,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 5,
+          "id": "interactive-grid-pattern",
+          "clean_id": "interactive-grid-pattern",
+          "display_name": "Interactive Grid Pattern",
+          "name": "Interactive Grid Pattern",
+          "server": "magicui",
+          "component_type": "loader",
+          "score": 0.8230293989181519,
+          "cross_encoder_score": 7.472857475280762,
+          "rrf_score": 0.02919863597612958
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "retro grid landing background",
+      "expected_ids": [
+        "retro-grid",
+        "retro-grid-demo",
+        "warp-background"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_retro-grid",
+          "clean_id": "retro-grid",
+          "display_name": "Retro Grid",
+          "name": "retro-grid",
+          "server": "pinesui",
+          "component_type": "background",
+          "score": 1.0,
+          "cross_encoder_score": 6.219237327575684,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 2,
+          "id": "retro-grid-demo",
+          "clean_id": "retro-grid-demo",
+          "display_name": "Retro Grid Demo",
+          "name": "Retro Grid Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8330774903297424,
+          "cross_encoder_score": 3.4868621826171875,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "retro-grid",
+          "clean_id": "retro-grid",
+          "display_name": "Retro Grid",
+          "name": "Retro Grid",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.734636664390564,
+          "cross_encoder_score": 1.875471591949463,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 4,
+          "id": "warp-background",
+          "clean_id": "warp-background",
+          "display_name": "Warp Background",
+          "name": "Warp Background",
+          "server": "magicui",
+          "component_type": "loader",
+          "score": 0.5003319978713989,
+          "cross_encoder_score": -1.9598920345306396,
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "rank": 5,
+          "id": "grid-pattern",
+          "clean_id": "grid-pattern",
+          "display_name": "Grid Pattern",
+          "name": "Grid Pattern",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.4440951943397522,
+          "cross_encoder_score": -2.880439281463623,
+          "rrf_score": 0.02581612258494337
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "glass frosted blur background",
+      "expected_ids": [
+        "blur-fade",
+        "magic-card",
+        "progressive-blur"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "edge-blur",
+          "clean_id": "edge-blur",
+          "display_name": "Edge Blur",
+          "name": "edge-blur",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": -1.1968543529510498,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 2,
+          "id": "components_BlurBackground",
+          "clean_id": "blur-background",
+          "display_name": "Blur Background",
+          "name": "BlurBackground",
+          "server": "floatui",
+          "component_type": "other",
+          "score": 0.8555734753608704,
+          "cross_encoder_score": -2.6448676586151123,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "edge-blur-demo",
+          "clean_id": "edge-blur-demo",
+          "display_name": "Edge Blur Demo",
+          "name": "edge-blur-demo",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.8350562453269958,
+          "cross_encoder_score": -2.8505725860595703,
+          "rrf_score": 0.030679156908665108
+        },
+        {
+          "rank": 4,
+          "id": "blur-fade",
+          "clean_id": "blur-fade",
+          "display_name": "Blur Fade",
+          "name": "Blur Fade",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8031167387962341,
+          "cross_encoder_score": -3.1707959175109863,
+          "rrf_score": 0.029418126757516764
+        },
+        {
+          "rank": 5,
+          "id": "distorted-glass",
+          "clean_id": "distorted-glass",
+          "display_name": "Distorted Glass",
+          "name": "distorted-glass",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.7806676626205444,
+          "cross_encoder_score": -3.395869731903076,
+          "rrf_score": 0.031544957774465976
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.20210734650054757,
+      "first_relevant_rank": 4
+    },
+    {
+      "query": "dock navigation menu",
+      "expected_ids": [
+        "dock",
+        "dock-demo",
+        "dock-demo-2"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "floating-dock",
+          "clean_id": "floating-dock",
+          "display_name": "Floating Dock",
+          "name": "Floating Dock",
+          "server": "aceternity",
+          "component_type": "navbar",
+          "score": 1.0,
+          "cross_encoder_score": 8.240102767944336,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "dock-demo",
+          "clean_id": "dock-demo",
+          "display_name": "Dock Demo",
+          "name": "Dock Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.7465782165527344,
+          "cross_encoder_score": 4.318336009979248,
+          "rrf_score": 0.043857360295716456
+        },
+        {
+          "rank": 3,
+          "id": "navigation-menu",
+          "clean_id": "navigation-menu",
+          "display_name": "Navigation Menu",
+          "name": "navigation-menu",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.7237261533737183,
+          "cross_encoder_score": 3.9646944999694824,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 4,
+          "id": "dock-demo-3",
+          "clean_id": "dock-demo-3",
+          "display_name": "Dock Demo 3",
+          "name": "Dock Demo 3",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.6707229614257812,
+          "cross_encoder_score": 3.144456148147583,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 5,
+          "id": "navigation-menu-demo",
+          "clean_id": "navigation-menu-demo",
+          "display_name": "Navigation Menu Demo",
+          "name": "navigation-menu-demo",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.6465416550636292,
+          "cross_encoder_score": 2.7702431678771973,
+          "rrf_score": 0.0304147465437788
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.9674679834891693,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "navigation menu navbar",
+      "expected_ids": [
+        "menubar",
+        "navigation-menu",
+        "navigation-menu-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "navbar-menu",
+          "clean_id": "navbar-menu",
+          "display_name": "Navbar Menu",
+          "name": "Navbar Menu",
+          "server": "aceternity",
+          "component_type": "navbar",
+          "score": 1.0,
+          "cross_encoder_score": 9.162899017333984,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_menu_menu",
+          "clean_id": "menu",
+          "display_name": "Menu",
+          "name": "menu",
+          "server": "heroui",
+          "component_type": "navbar",
+          "score": 0.8360303640365601,
+          "cross_encoder_score": 8.067419052124023,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 3,
+          "id": "elements_navigation-menu",
+          "clean_id": "navigation-menu",
+          "display_name": "Navigation Menu",
+          "name": "navigation-menu",
+          "server": "pinesui",
+          "component_type": "navbar",
+          "score": 0.8175274133682251,
+          "cross_encoder_score": 7.943800926208496,
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "rank": 4,
+          "id": "navigation-menu-demo",
+          "clean_id": "navigation-menu-demo",
+          "display_name": "Navigation Menu Demo",
+          "name": "navigation-menu-demo",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.7443057298660278,
+          "cross_encoder_score": 7.454607009887695,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 5,
+          "id": "navigation-menu",
+          "clean_id": "navigation-menu",
+          "display_name": "Navigation Menu",
+          "name": "navigation-menu",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.7213389873504639,
+          "cross_encoder_score": 7.301166534423828,
+          "rrf_score": 0.016129032258064516
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.9143704130151438,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "mobile android device mockup",
+      "expected_ids": [
+        "android",
+        "android-demo",
+        "safari"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "android",
+          "clean_id": "android",
+          "display_name": "Android",
+          "name": "Android",
+          "server": "magicui",
+          "component_type": "icon",
+          "score": 1.0,
+          "cross_encoder_score": 8.086925506591797,
+          "rrf_score": 0.03125
+        },
+        {
+          "rank": 2,
+          "id": "android-demo-2",
+          "clean_id": "android-demo-2",
+          "display_name": "Android Demo 2",
+          "name": "Android Demo 2",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.9389561414718628,
+          "cross_encoder_score": 6.90574836730957,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "android-demo-3",
+          "clean_id": "android-demo-3",
+          "display_name": "Android Demo 3",
+          "name": "Android Demo 3",
+          "server": "magicui",
+          "component_type": "loader",
+          "score": 0.9363097548484802,
+          "cross_encoder_score": 6.854540824890137,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "android-demo",
+          "clean_id": "android-demo",
+          "display_name": "Android Demo",
+          "name": "Android Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9307273626327515,
+          "cross_encoder_score": 6.746523857116699,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 5,
+          "id": "mock-browser-window",
+          "clean_id": "mock-browser-window",
+          "display_name": "Mock Browser Window",
+          "name": "mock-browser-window",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.5932915210723877,
+          "cross_encoder_score": 0.21726363897323608,
+          "rrf_score": 0.015151515151515152
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "browser frame screenshot mockup",
+      "expected_ids": [
+        "safari",
+        "safari-demo",
+        "safari-demo-2"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "mock-browser-window",
+          "clean_id": "mock-browser-window",
+          "display_name": "Mock Browser Window",
+          "name": "mock-browser-window",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 3.8119378089904785,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "safari-demo-2",
+          "clean_id": "safari-demo-2",
+          "display_name": "Safari Demo 2",
+          "name": "Safari Demo 2",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9644403457641602,
+          "cross_encoder_score": 3.2723240852355957,
+          "rrf_score": 0.031009615384615385
+        },
+        {
+          "rank": 3,
+          "id": "safari",
+          "clean_id": "safari",
+          "display_name": "Safari",
+          "name": "Safari",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9118354320526123,
+          "cross_encoder_score": 2.474050998687744,
+          "rrf_score": 0.029437229437229435
+        },
+        {
+          "rank": 4,
+          "id": "safari-demo-3",
+          "clean_id": "safari-demo-3",
+          "display_name": "Safari Demo 3",
+          "name": "Safari Demo 3",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8957130312919617,
+          "cross_encoder_score": 2.2293951511383057,
+          "rrf_score": 0.0315136476426799
+        },
+        {
+          "rank": 5,
+          "id": "mock-browser-window-demo",
+          "clean_id": "mock-browser-window-demo",
+          "display_name": "Mock Browser Window Demo",
+          "name": "mock-browser-window-demo",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.8701835870742798,
+          "cross_encoder_score": 1.841988444328308,
+          "rrf_score": 0.0304147465437788
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.7328286204777911,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "avatar profile images",
+      "expected_ids": [
+        "avatar",
+        "avatar-circles",
+        "avatar-circles-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "avatar",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 1.0,
+          "cross_encoder_score": 7.7677836418151855,
+          "rrf_score": 0.06183092054390803
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_avatar_index",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.9802947044372559,
+          "cross_encoder_score": 7.4029622077941895,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "avatar-circles",
+          "clean_id": "avatar-circles",
+          "display_name": "Avatar Circles",
+          "name": "Avatar Circles",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.8990049958229065,
+          "cross_encoder_score": 5.897977828979492,
+          "rrf_score": 0.031099324975891997
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_avatar_avatar",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "heroui",
+          "component_type": "badge",
+          "score": 0.8542134761810303,
+          "cross_encoder_score": 5.068714141845703,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 5,
+          "id": "packages_radix-ui-themes_src_components_avatar",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "radixuithemes",
+          "component_type": "badge",
+          "score": 0.7588045001029968,
+          "cross_encoder_score": 3.3023269176483154,
+          "rrf_score": 0.029030910609857977
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "notification toast component",
+      "expected_ids": [
+        "sonner",
+        "sonner-demo",
+        "sonner-types"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_toast",
+          "clean_id": "toast",
+          "display_name": "Toast",
+          "name": "toast",
+          "server": "pinesui",
+          "component_type": "toast",
+          "score": 1.0,
+          "cross_encoder_score": 8.763010025024414,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "src_components_Toast_Toaster",
+          "clean_id": "toaster",
+          "display_name": "Toaster",
+          "name": "Toaster",
+          "server": "tremor",
+          "component_type": "other",
+          "score": 0.9465838074684143,
+          "cross_encoder_score": 7.844271183013916,
+          "rrf_score": 0.028629032258064516
+        },
+        {
+          "rank": 3,
+          "id": "toast",
+          "clean_id": "toast",
+          "display_name": "Toast",
+          "name": "toast",
+          "server": "parkui",
+          "component_type": "other",
+          "score": 0.6781719326972961,
+          "cross_encoder_score": 3.227684497833252,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_Notification_Notification",
+          "clean_id": "notification",
+          "display_name": "Notification",
+          "name": "Notification",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.6765102744102478,
+          "cross_encoder_score": 3.1991043090820312,
+          "rrf_score": 0.02919863597612958
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_toast_index",
+          "clean_id": "toast",
+          "display_name": "Toast",
+          "name": "toast",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.6759432554244995,
+          "cross_encoder_score": 3.189352512359619,
+          "rrf_score": 0.031009615384615385
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "first_relevant_rank": null
+    },
+    {
+      "query": "accordion faq collapsible",
+      "expected_ids": [
+        "accordion",
+        "accordion-demo",
+        "collapsible"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "accordion-demo",
+          "clean_id": "accordion-demo",
+          "display_name": "Accordion Demo",
+          "name": "accordion-demo",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 5.973674774169922,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "id": "collapsible",
+          "clean_id": "collapsible",
+          "display_name": "Collapsible",
+          "name": "collapsible",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.9927771687507629,
+          "cross_encoder_score": 5.8923516273498535,
+          "rrf_score": 0.05751517395353012
+        },
+        {
+          "rank": 3,
+          "id": "accordion",
+          "clean_id": "accordion",
+          "display_name": "Accordion",
+          "name": "accordion",
+          "server": "motionprimitives",
+          "component_type": "other",
+          "score": 0.9025790095329285,
+          "cross_encoder_score": 4.876805305480957,
+          "rrf_score": 0.08882089625585766
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_Accordion_Accordion.types",
+          "clean_id": "accordion",
+          "display_name": "Accordion",
+          "name": "Accordion.types",
+          "server": "mantine",
+          "component_type": "accordion",
+          "score": 0.8788772225379944,
+          "cross_encoder_score": 4.609945297241211,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 5,
+          "id": "src_components_Accordion_Accordion",
+          "clean_id": "accordion",
+          "display_name": "Accordion",
+          "name": "Accordion",
+          "server": "tremor",
+          "component_type": "other",
+          "score": 0.8362581729888916,
+          "cross_encoder_score": 4.130094528198242,
+          "rrf_score": 0.0315136476426799
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "tabs switch content panels",
+      "expected_ids": [
+        "tabs",
+        "tabs-demo",
+        "toggle-group"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "tabs-demo",
+          "clean_id": "tabs-demo",
+          "display_name": "Tabs Demo",
+          "name": "tabs-demo",
+          "server": "shadcn",
+          "component_type": "tabs",
+          "score": 1.0,
+          "cross_encoder_score": 5.56705904006958,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 2,
+          "id": "elements_tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "tabs",
+          "server": "pinesui",
+          "component_type": "navbar",
+          "score": 0.9959050416946411,
+          "cross_encoder_score": 5.515995025634766,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 3,
+          "id": "tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "tabs",
+          "server": "shadcn",
+          "component_type": "tabs",
+          "score": 0.9713369011878967,
+          "cross_encoder_score": 5.209630012512207,
+          "rrf_score": 0.09123308170010144
+        },
+        {
+          "rank": 4,
+          "id": "src_components_TabNavigation_TabNavigation",
+          "clean_id": "tab-navigation",
+          "display_name": "Tab Navigation",
+          "name": "TabNavigation",
+          "server": "tremor",
+          "component_type": "navbar",
+          "score": 0.6892018914222717,
+          "cross_encoder_score": 1.6914020776748657,
+          "rrf_score": 0.029273504273504274
+        },
+        {
+          "rank": 5,
+          "id": "packages_radix-ui-themes_src_components_tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "tabs",
+          "server": "radixuithemes",
+          "component_type": "navbar",
+          "score": 0.6482505202293396,
+          "cross_encoder_score": 1.1807385683059692,
+          "rrf_score": 0.03149801587301587
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1815417925373526,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "select dropdown input",
+      "expected_ids": [
+        "native-select",
+        "select",
+        "select-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "form-rhf-select",
+          "clean_id": "form-rhf-select",
+          "display_name": "Form Rhf Select",
+          "name": "form-rhf-select",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 8.628734588623047,
+          "rrf_score": 0.029910714285714284
+        },
+        {
+          "rank": 2,
+          "id": "native-select-invalid",
+          "clean_id": null,
+          "display_name": null,
+          "name": "native-select-invalid",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.9320157170295715,
+          "cross_encoder_score": 8.191514015197754,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 3,
+          "id": "native-select-disabled",
+          "clean_id": null,
+          "display_name": null,
+          "name": "native-select-disabled",
+          "server": "shadcn",
+          "component_type": "select",
+          "score": 0.8577637076377869,
+          "cross_encoder_score": 7.713984489440918,
+          "rrf_score": 0.014285714285714285
+        },
+        {
+          "rank": 4,
+          "id": "input-group-dropdown",
+          "clean_id": "input-group-dropdown",
+          "display_name": "Input Group Dropdown",
+          "name": "input-group-dropdown",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.8213435411453247,
+          "cross_encoder_score": 7.479759216308594,
+          "rrf_score": 0.0136986301369863
+        },
+        {
+          "rank": 5,
+          "id": "packages_radix-ui-themes_src_components_select",
+          "clean_id": "select",
+          "display_name": "Select",
+          "name": "select",
+          "server": "radixuithemes",
+          "component_type": "select",
+          "score": 0.8175414204597473,
+          "cross_encoder_score": 7.4553070068359375,
+          "rrf_score": 0.026171741361614778
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1815417925373526,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "textarea form field",
+      "expected_ids": [
+        "field-textarea",
+        "textarea",
+        "textarea-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "form-formisch-textarea",
+          "clean_id": "form-formisch-textarea",
+          "display_name": "Form Formisch Textarea",
+          "name": "form-formisch-textarea",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 9.556041717529297,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 2,
+          "id": "field-textarea",
+          "clean_id": "field-textarea",
+          "display_name": "Field Textarea",
+          "name": "field-textarea",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.997812807559967,
+          "cross_encoder_score": 9.522771835327148,
+          "rrf_score": 0.03128054740957967
+        },
+        {
+          "rank": 3,
+          "id": "form-rhf-textarea",
+          "clean_id": "form-rhf-textarea",
+          "display_name": "Form Rhf Textarea",
+          "name": "form-rhf-textarea",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.9892899394035339,
+          "cross_encoder_score": 9.393128395080566,
+          "rrf_score": 0.028258706467661692
+        },
+        {
+          "rank": 4,
+          "id": "elements_textarea",
+          "clean_id": "textarea",
+          "display_name": "Textarea",
+          "name": "textarea",
+          "server": "pinesui",
+          "component_type": "input",
+          "score": 0.9798395037651062,
+          "cross_encoder_score": 9.24937629699707,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 5,
+          "id": "textarea",
+          "clean_id": "textarea",
+          "display_name": "Textarea",
+          "name": "textarea",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.9277841448783875,
+          "cross_encoder_score": 8.457551002502441,
+          "rrf_score": 0.05939475235249883
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "checkbox form control",
+      "expected_ids": [
+        "checkbox",
+        "checkbox-demo",
+        "field-checkbox"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_checkbox_checkbox",
+          "clean_id": "checkbox",
+          "display_name": "Checkbox",
+          "name": "checkbox",
+          "server": "heroui",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 7.872905731201172,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 2,
+          "id": "src_components_Checkbox_Checkbox",
+          "clean_id": "checkbox",
+          "display_name": "Checkbox",
+          "name": "Checkbox",
+          "server": "tremor",
+          "component_type": "button",
+          "score": 0.985241174697876,
+          "cross_encoder_score": 7.650888919830322,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_checkbox_index",
+          "clean_id": "checkbox",
+          "display_name": "Checkbox",
+          "name": "checkbox",
+          "server": "heroui",
+          "component_type": "button",
+          "score": 0.9517331123352051,
+          "cross_encoder_score": 7.1468305587768555,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 4,
+          "id": "form-rhf-checkbox",
+          "clean_id": "form-rhf-checkbox",
+          "display_name": "Form Rhf Checkbox",
+          "name": "form-rhf-checkbox",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.9172075390815735,
+          "cross_encoder_score": 6.627464294433594,
+          "rrf_score": 0.029418126757516764
+        },
+        {
+          "rank": 5,
+          "id": "checkbox-demo",
+          "clean_id": "checkbox-demo",
+          "display_name": "Checkbox Demo",
+          "name": "checkbox-demo",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.9134657382965088,
+          "cross_encoder_score": 6.5711774826049805,
+          "rrf_score": 0.02854251012145749
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "radio group options",
+      "expected_ids": [
+        "field-radio",
+        "form-rhf-radiogroup",
+        "radio-group-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_radio-group",
+          "clean_id": "radio-group",
+          "display_name": "Radio Group",
+          "name": "radio-group",
+          "server": "pinesui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": 9.542540550231934,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 2,
+          "id": "dropdown-menu-radio-group",
+          "clean_id": "dropdown-menu-radio-group",
+          "display_name": "Dropdown Menu Radio Group",
+          "name": "dropdown-menu-radio-group",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.9142522811889648,
+          "cross_encoder_score": 8.4232759475708,
+          "rrf_score": 0.028612012987012988
+        },
+        {
+          "rank": 3,
+          "id": "radio-group-demo",
+          "clean_id": "radio-group-demo",
+          "display_name": "Radio Group Demo",
+          "name": "radio-group-demo",
+          "server": "shadcn",
+          "component_type": "radio",
+          "score": 0.9013501405715942,
+          "cross_encoder_score": 8.254863739013672,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 4,
+          "id": "packages_radix-ui-themes_src_components_radio-group",
+          "clean_id": "radio-group",
+          "display_name": "Radio Group",
+          "name": "radio-group",
+          "server": "radixuithemes",
+          "component_type": "button",
+          "score": 0.8983344435691833,
+          "cross_encoder_score": 8.215499877929688,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 5,
+          "id": "src_components_RadioGroup_RadioGroup",
+          "clean_id": "radio-group",
+          "display_name": "Radio Group",
+          "name": "RadioGroup",
+          "server": "tremor",
+          "component_type": "form",
+          "score": 0.8630639314651489,
+          "cross_encoder_score": 7.755114555358887,
+          "rrf_score": 0.027884615384615386
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0875672280720348,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "slider range input",
+      "expected_ids": [
+        "field-slider",
+        "slider",
+        "slider-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_range-slider",
+          "clean_id": "range-slider",
+          "display_name": "Range Slider",
+          "name": "range-slider",
+          "server": "pinesui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": 8.6897554397583,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "src_components_Slider_Slider",
+          "clean_id": "slider",
+          "display_name": "Slider",
+          "name": "Slider",
+          "server": "tremor",
+          "component_type": "input",
+          "score": 0.9462146162986755,
+          "cross_encoder_score": 8.001287460327148,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "packages_radix-ui-themes_src_components_slider",
+          "clean_id": "slider",
+          "display_name": "Slider",
+          "name": "slider",
+          "server": "radixuithemes",
+          "component_type": "slider",
+          "score": 0.8963282704353333,
+          "cross_encoder_score": 7.362729072570801,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "field-slider",
+          "clean_id": "field-slider",
+          "display_name": "Field Slider",
+          "name": "field-slider",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.8747642636299133,
+          "cross_encoder_score": 7.086703300476074,
+          "rrf_score": 0.030536130536130537
+        },
+        {
+          "rank": 5,
+          "id": "slider-demo",
+          "clean_id": "slider-demo",
+          "display_name": "Slider Demo",
+          "name": "slider-demo",
+          "server": "shadcn",
+          "component_type": "component",
+          "score": 0.8610585331916809,
+          "cross_encoder_score": 6.911266326904297,
+          "rrf_score": 0.030536130536130537
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "toggle theme dark mode",
+      "expected_ids": [
+        "animated-theme-toggler",
+        "mode-toggle",
+        "switch"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "mode-toggle",
+          "clean_id": "mode-toggle",
+          "display_name": "Mode Toggle",
+          "name": "mode-toggle",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 1.0,
+          "cross_encoder_score": 7.7106781005859375,
+          "rrf_score": 0.03036576949620428
+        },
+        {
+          "rank": 2,
+          "id": "packages_radix-ui-themes_src_components_theme-panel",
+          "clean_id": "theme-panel",
+          "display_name": "Theme Panel",
+          "name": "theme-panel",
+          "server": "radixuithemes",
+          "component_type": "other",
+          "score": 0.991313099861145,
+          "cross_encoder_score": 7.557768821716309,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "animated-theme-toggler",
+          "clean_id": "animated-theme-toggler",
+          "display_name": "Animated Theme Toggler",
+          "name": "Theme Toggler",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.9586009383201599,
+          "cross_encoder_score": 6.981963634490967,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 4,
+          "id": "toggle-sm",
+          "clean_id": "toggle-sm",
+          "display_name": "Toggle Sm",
+          "name": "toggle-sm",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.8247613906860352,
+          "cross_encoder_score": 4.626095771789551,
+          "rrf_score": 0.028371628371628373
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_toggle-button_index",
+          "clean_id": "toggle-button",
+          "display_name": "Toggle Button",
+          "name": "toggle-button",
+          "server": "heroui",
+          "component_type": "button",
+          "score": 0.7324308156967163,
+          "cross_encoder_score": 3.000875949859619,
+          "rrf_score": 0.014925373134328358
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7039180890341347,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "empty state placeholder",
+      "expected_ids": [
+        "empty",
+        "empty-demo",
+        "empty-icon"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_empty-state_empty-state",
+          "clean_id": "empty-state",
+          "display_name": "Empty State",
+          "name": "empty-state",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 7.906505584716797,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "empty",
+          "clean_id": "empty",
+          "display_name": "Empty",
+          "name": "empty",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.8020324110984802,
+          "cross_encoder_score": 4.069997310638428,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "empty-outline",
+          "clean_id": "empty-outline",
+          "display_name": "Empty Outline",
+          "name": "empty-outline",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.778123676776886,
+          "cross_encoder_score": 3.6066575050354004,
+          "rrf_score": 0.030776515151515152
+        },
+        {
+          "rank": 4,
+          "id": "empty-demo",
+          "clean_id": "empty-demo",
+          "display_name": "Empty Demo",
+          "name": "empty-demo",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.7272274494171143,
+          "cross_encoder_score": 2.620314121246338,
+          "rrf_score": 0.014492753623188406
+        },
+        {
+          "rank": 5,
+          "id": "empty-icon",
+          "clean_id": "empty-icon",
+          "display_name": "Empty Icon",
+          "name": "empty-icon",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.7107113003730774,
+          "cross_encoder_score": 2.300240993499756,
+          "rrf_score": 0.031024531024531024
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "file tree component",
+      "expected_ids": [
+        "file-tree",
+        "file-tree-demo",
+        "item-group"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "file-tree",
+          "clean_id": "file-tree",
+          "display_name": "File Tree",
+          "name": "File Tree",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 8.961872100830078,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "file-tree-demo",
+          "clean_id": "file-tree-demo",
+          "display_name": "File Tree Demo",
+          "name": "File Tree Demo",
+          "server": "magicui",
+          "component_type": "table",
+          "score": 0.8660133481025696,
+          "cross_encoder_score": 7.259506702423096,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_Tree_index",
+          "clean_id": "tree",
+          "display_name": "Tree",
+          "name": "Tree",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.6286980509757996,
+          "cross_encoder_score": 4.24429988861084,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_Tree_Tree",
+          "clean_id": "tree",
+          "display_name": "Tree",
+          "name": "Tree",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.6120344400405884,
+          "cross_encoder_score": 4.032580852508545,
+          "rrf_score": 0.03125
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Tree_use-tree",
+          "clean_id": "use-tree",
+          "display_name": "Use Tree",
+          "name": "use-tree",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.49465054273605347,
+          "cross_encoder_score": 2.541161060333252,
+          "rrf_score": 0.028985507246376812
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "terminal code block",
+      "expected_ids": [
+        "code-comparison",
+        "terminal",
+        "terminal-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "components_ui_CodeBlockContainer_index",
+          "clean_id": "code-block-container",
+          "display_name": "Code Block Container",
+          "name": "CodeBlockContainer",
+          "server": "floatui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 1.9091689586639404,
+          "rrf_score": 0.030158730158730156
+        },
+        {
+          "rank": 2,
+          "id": "code-block",
+          "clean_id": "code-block",
+          "display_name": "Code Block",
+          "name": "Code Block",
+          "server": "aceternity",
+          "component_type": "other",
+          "score": 0.9399113059043884,
+          "cross_encoder_score": 1.1155436038970947,
+          "rrf_score": 0.0637801061386466
+        },
+        {
+          "rank": 3,
+          "id": "code-block-demo",
+          "clean_id": "code-block-demo",
+          "display_name": "Code Block Demo",
+          "name": "code-block-demo",
+          "server": "cultui",
+          "component_type": "card",
+          "score": 0.9276533722877502,
+          "cross_encoder_score": 0.9536452293395996,
+          "rrf_score": 0.030776515151515152
+        },
+        {
+          "rank": 4,
+          "id": "terminal",
+          "clean_id": "terminal",
+          "display_name": "Terminal",
+          "name": "Terminal",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.8934410810470581,
+          "cross_encoder_score": 0.5017845034599304,
+          "rrf_score": 0.06172111085714492
+        },
+        {
+          "rank": 5,
+          "id": "packages_radix-ui-themes_src_components_code",
+          "clean_id": "code",
+          "display_name": "Code",
+          "name": "code",
+          "server": "radixuithemes",
+          "component_type": "other",
+          "score": 0.8255205154418945,
+          "cross_encoder_score": -0.39528149366378784,
+          "rrf_score": 0.030330882352941176
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.38364913903790027,
+      "first_relevant_rank": 4
+    },
+    {
+      "query": "tweet social card",
+      "expected_ids": [
+        "client-tweet-card",
+        "tweet-card",
+        "tweet-card-demo"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "tweet-card",
+          "clean_id": "tweet-card",
+          "display_name": "Tweet Card",
+          "name": "Tweet Card",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 8.418111801147461,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "tweet-card-demo",
+          "clean_id": "tweet-card-demo",
+          "display_name": "Tweet Card Demo",
+          "name": "Tweet Card Demo",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.9176629781723022,
+          "cross_encoder_score": 6.80647087097168,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 3,
+          "id": "client-tweet-card",
+          "clean_id": "client-tweet-card",
+          "display_name": "Client Tweet Card",
+          "name": "Client Tweet Card",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.8172880411148071,
+          "cross_encoder_score": 4.841760635375977,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 4,
+          "id": "tweet-card-images",
+          "clean_id": "tweet-card-images",
+          "display_name": "Tweet Card Images",
+          "name": "Tweet Card Images",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.7522757649421692,
+          "cross_encoder_score": 3.5692298412323,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 5,
+          "id": "tweet-grid",
+          "clean_id": "tweet-grid",
+          "display_name": "Tweet Grid",
+          "name": "tweet-grid",
+          "server": "cultui",
+          "component_type": "card",
+          "score": 0.7316188216209412,
+          "cross_encoder_score": 3.164896011352539,
+          "rrf_score": 0.015384615384615385
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.2021073465005474,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "confetti celebration animation",
+      "expected_ids": [
+        "confetti",
+        "confetti-demo",
+        "confetti-fireworks"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "confetti",
+          "clean_id": "confetti",
+          "display_name": "Confetti",
+          "name": "Confetti",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 9.45887279510498,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "confetti-demo",
+          "clean_id": "confetti-demo",
+          "display_name": "Confetti Demo",
+          "name": "Confetti Demo",
+          "server": "magicui",
+          "component_type": "other",
+          "score": 0.9167645573616028,
+          "cross_encoder_score": 7.7372283935546875,
+          "rrf_score": 0.0315136476426799
+        },
+        {
+          "rank": 3,
+          "id": "confetti-fireworks",
+          "clean_id": "confetti-fireworks",
+          "display_name": "Confetti Fireworks",
+          "name": "Confetti Fireworks",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.777655303478241,
+          "cross_encoder_score": 4.85988712310791,
+          "rrf_score": 0.030776515151515152
+        },
+        {
+          "rank": 4,
+          "id": "confetti-stars",
+          "clean_id": "confetti-stars",
+          "display_name": "Confetti Stars",
+          "name": "Confetti Stars",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.7265076637268066,
+          "cross_encoder_score": 3.8019471168518066,
+          "rrf_score": 0.03057889822595705
+        },
+        {
+          "rank": 5,
+          "id": "confetti-custom-shapes",
+          "clean_id": "confetti-custom-shapes",
+          "display_name": "Confetti Custom Shapes",
+          "name": "Confetti Custom Shapes",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.6803088188171387,
+          "cross_encoder_score": 2.8463664054870605,
+          "rrf_score": 0.029631255487269532
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "pulsating call to action button",
+      "expected_ids": [
+        "pulsating-button",
+        "pulsating-button-demo",
+        "rainbow-button"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "pulsating-button-demo",
+          "clean_id": "pulsating-button-demo",
+          "display_name": "Pulsating Button Demo",
+          "name": "Pulsating Button Demo",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 1.0,
+          "cross_encoder_score": 6.912538528442383,
+          "rrf_score": 0.03128054740957967
+        },
+        {
+          "rank": 2,
+          "id": "pulsating-button",
+          "clean_id": "pulsating-button",
+          "display_name": "Pulsating Button",
+          "name": "Pulsating Button",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.820739209651947,
+          "cross_encoder_score": 3.9655942916870117,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 3,
+          "id": "button-ghost",
+          "clean_id": "button-ghost",
+          "display_name": "Button Ghost",
+          "name": "button-ghost",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.7385094165802002,
+          "cross_encoder_score": 2.6137850284576416,
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "rank": 4,
+          "id": "button-default",
+          "clean_id": "button-default",
+          "display_name": "Button Default",
+          "name": "button-default",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.7081223726272583,
+          "cross_encoder_score": 2.1142382621765137,
+          "rrf_score": 0.014492753623188406
+        },
+        {
+          "rank": 5,
+          "id": "button-with-icon",
+          "clean_id": "button-with-icon",
+          "display_name": "Button With Icon",
+          "name": "button-with-icon",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.606639564037323,
+          "cross_encoder_score": 0.4459201395511627,
+          "rrf_score": 0.027071520029266508
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7653606369886217,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "date picker with range selection",
+      "expected_ids": [
+        "date-picker",
+        "packages_react_src_components_date-range-picker_date-range-picker",
+        "src_components_datepicker_datepicker"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "date-picker-with-range",
+          "clean_id": "date-picker-with-range",
+          "display_name": "Date Picker With Range",
+          "name": "date-picker-with-range",
+          "server": "shadcn",
+          "component_type": "date picker",
+          "score": 1.0,
+          "cross_encoder_score": 10.074259757995605,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_date-range-picker_index",
+          "clean_id": "date-range-picker",
+          "display_name": "Date Range Picker",
+          "name": "date-range-picker",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.9528643488883972,
+          "cross_encoder_score": 9.306228637695312,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_date-range-picker_date-range-picker",
+          "clean_id": "date-range-picker",
+          "display_name": "Date Range Picker",
+          "name": "date-range-picker",
+          "server": "heroui",
+          "component_type": "form",
+          "score": 0.9354415535926819,
+          "cross_encoder_score": 9.02234172821045,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_calendar-year-picker_index",
+          "clean_id": "calendar-year-picker",
+          "display_name": "Calendar Year Picker",
+          "name": "calendar-year-picker",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.8650669455528259,
+          "cross_encoder_score": 7.875654220581055,
+          "rrf_score": 0.03057889822595705
+        },
+        {
+          "rank": 5,
+          "id": "date-picker-with-presets",
+          "clean_id": "date-picker-with-presets",
+          "display_name": "Date Picker With Presets",
+          "name": "date-picker-with-presets",
+          "server": "shadcn",
+          "component_type": "date-picker",
+          "score": 0.7548404335975647,
+          "cross_encoder_score": 6.079618453979492,
+          "rrf_score": 0.014285714285714285
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1815417925373526,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "data table with sorting and pagination",
+      "expected_ids": [
+        "packages_react_src_components_table_table",
+        "src_components_table_table",
+        "table"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "table-demo",
+          "clean_id": "table-demo",
+          "display_name": "Table Demo",
+          "name": "table-demo",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 1.0,
+          "cross_encoder_score": 7.153076171875,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "table",
+          "clean_id": "table",
+          "display_name": "Table",
+          "name": "table",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 0.8423768281936646,
+          "cross_encoder_score": 4.546818256378174,
+          "rrf_score": 0.04596351361057244
+        },
+        {
+          "rank": 3,
+          "id": "data-table-demo",
+          "clean_id": "data-table-demo",
+          "display_name": "Data Table Demo",
+          "name": "data-table-demo",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 0.715656578540802,
+          "cross_encoder_score": 2.4515316486358643,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "rank": 4,
+          "id": "pagination",
+          "clean_id": "pagination",
+          "display_name": "Pagination",
+          "name": "pagination",
+          "server": "shadcn",
+          "component_type": "pagination",
+          "score": 0.5109274983406067,
+          "cross_encoder_score": -0.9336104989051819,
+          "rrf_score": 0.0445231288981289
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_pagination_index",
+          "clean_id": "pagination",
+          "display_name": "Pagination",
+          "name": "pagination",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.3800179362297058,
+          "cross_encoder_score": -3.0981667041778564,
+          "rrf_score": 0.028258706467661692
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "notification toast with progress",
+      "expected_ids": [
+        "elements_toast",
+        "packages_react_src_components_toast_toast",
+        "src_components_toast_toast",
+        "toast"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "src_components_Toast_Toaster",
+          "clean_id": "toaster",
+          "display_name": "Toaster",
+          "name": "Toaster",
+          "server": "tremor",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 2.878432273864746,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 2,
+          "id": "elements_toast",
+          "clean_id": "toast",
+          "display_name": "Toast",
+          "name": "toast",
+          "server": "pinesui",
+          "component_type": "toast",
+          "score": 0.9962629079818726,
+          "cross_encoder_score": 2.828298568725586,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_Notification_Notification",
+          "clean_id": "notification",
+          "display_name": "Notification",
+          "name": "Notification",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.3940863013267517,
+          "cross_encoder_score": -5.250002861022949,
+          "rrf_score": 0.028991596638655463
+        },
+        {
+          "rank": 4,
+          "id": "packages_radix-ui-themes_src_components_progress",
+          "clean_id": "progress",
+          "display_name": "Progress",
+          "name": "progress",
+          "server": "radixuithemes",
+          "component_type": "loader",
+          "score": 0.38761064410209656,
+          "cross_encoder_score": -5.336874961853027,
+          "rrf_score": 0.014492753623188406
+        },
+        {
+          "rank": 5,
+          "id": "toast",
+          "clean_id": "toast",
+          "display_name": "Toast",
+          "name": "toast",
+          "server": "parkui",
+          "component_type": "other",
+          "score": 0.38129907846450806,
+          "cross_encoder_score": -5.421545505523682,
+          "rrf_score": 0.03125763125763126
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.787702056960637,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "number input with increment decrement",
+      "expected_ids": [
+        "number-input",
+        "packages_mantine_core_src_components_numberinput_numberinput",
+        "packages_react_src_components_number-field_number-field"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "number-input",
+          "clean_id": "number-input",
+          "display_name": "Number Input",
+          "name": "number-input",
+          "server": "parkui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": -1.3452671766281128,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "number-ticker-demo-2",
+          "clean_id": "number-ticker-demo-2",
+          "display_name": "Number Ticker Demo 2",
+          "name": "Number Ticker Demo 2",
+          "server": "magicui",
+          "component_type": "button",
+          "score": 0.9411191344261169,
+          "cross_encoder_score": -1.908800482749939,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_NumberInput_index",
+          "clean_id": "number-input",
+          "display_name": "Number Input",
+          "name": "NumberInput",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.8651437163352966,
+          "cross_encoder_score": -2.6359405517578125,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_NumberInput_NumberInput",
+          "clean_id": "number-input",
+          "display_name": "Number Input",
+          "name": "NumberInput",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.849828839302063,
+          "cross_encoder_score": -2.782514810562134,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_NumberInput_NumberInputChevron",
+          "clean_id": "number-input-chevron",
+          "display_name": "Number Input Chevron",
+          "name": "NumberInputChevron",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.7194151878356934,
+          "cross_encoder_score": -4.03066873550415,
+          "rrf_score": 0.030309988518943745
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0875672280720348,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "accordion with animated expand",
+      "expected_ids": [
+        "accordion",
+        "elements_accordion",
+        "packages_mantine_core_src_components_accordion_accordion",
+        "src_components_accordion_accordion"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "expandable",
+          "clean_id": "expandable",
+          "display_name": "Expandable",
+          "name": "expandable",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 6.158914089202881,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 2,
+          "id": "elements_accordion",
+          "clean_id": "accordion",
+          "display_name": "Accordion",
+          "name": "accordion",
+          "server": "pinesui",
+          "component_type": "accordion",
+          "score": 0.9596537947654724,
+          "cross_encoder_score": 5.718847274780273,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 3,
+          "id": "accordion-demo",
+          "clean_id": "accordion-demo",
+          "display_name": "Accordion Demo",
+          "name": "accordion-demo",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.7020724415779114,
+          "cross_encoder_score": 2.909343719482422,
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_Accordion_Accordion",
+          "clean_id": "accordion",
+          "display_name": "Accordion",
+          "name": "Accordion",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.6983316540718079,
+          "cross_encoder_score": 2.868542432785034,
+          "rrf_score": 0.030536130536130537
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Accordion_AccordionPanel_AccordionPanel",
+          "clean_id": "accordion-panel",
+          "display_name": "Accordion Panel",
+          "name": "AccordionPanel",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.6236093640327454,
+          "cross_encoder_score": 2.0535268783569336,
+          "rrf_score": 0.026334026334026334
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.7606395682357036,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "color picker input",
+      "expected_ids": [
+        "color-picker",
+        "packages_mantine_core_src_components_colorinput_colorinput",
+        "packages_mantine_core_src_components_colorpicker_colorpicker",
+        "packages_react_src_components_color-picker_color-picker"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "color-picker",
+          "clean_id": "color-picker",
+          "display_name": "Color Picker",
+          "name": "color-picker",
+          "server": "cultui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": 8.784028053283691,
+          "rrf_score": 0.06327607388058208
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_color-input-group_color-input-group",
+          "clean_id": "color-input-group",
+          "display_name": "Color Input Group",
+          "name": "color-input-group",
+          "server": "heroui",
+          "component_type": "input",
+          "score": 0.9848263263702393,
+          "cross_encoder_score": 8.695165634155273,
+          "rrf_score": 0.03009207275993712
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_color-picker_index",
+          "clean_id": "color-picker",
+          "display_name": "Color Picker",
+          "name": "color-picker",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.9338856935501099,
+          "cross_encoder_score": 8.396839141845703,
+          "rrf_score": 0.02928692699490662
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_color-picker_color-picker",
+          "clean_id": "color-picker",
+          "display_name": "Color Picker",
+          "name": "color-picker",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.7611439228057861,
+          "cross_encoder_score": 7.385201930999756,
+          "rrf_score": 0.014925373134328358
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_color-slider_index",
+          "clean_id": "color-slider",
+          "display_name": "Color Slider",
+          "name": "color-slider",
+          "server": "heroui",
+          "component_type": "input",
+          "score": 0.6780252456665039,
+          "cross_encoder_score": 6.8984293937683105,
+          "rrf_score": 0.02651914295749912
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.75369761125927,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "file upload dropzone",
+      "expected_ids": [
+        "file-upload",
+        "packages_mantine_core_src_components_filebutton_filebutton",
+        "packages_mantine_core_src_components_fileinput_fileinput"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "file-upload",
+          "clean_id": "file-upload",
+          "display_name": "File Upload",
+          "name": "File Upload",
+          "server": "aceternity",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 3.2454307079315186,
+          "rrf_score": 0.06478893337698204
+        },
+        {
+          "rank": 2,
+          "id": "file-upload-recipe",
+          "clean_id": "file-upload-recipe",
+          "display_name": "File Upload Recipe",
+          "name": "file-upload-recipe",
+          "server": "parkui",
+          "component_type": "other",
+          "score": 0.6418401002883911,
+          "cross_encoder_score": -1.8569153547286987,
+          "rrf_score": 0.031009615384615385
+        },
+        {
+          "rank": 3,
+          "id": "dither-image-demo-upload",
+          "clean_id": "dither-image-demo-upload",
+          "display_name": "Dither Image Demo Upload",
+          "name": "dither-image-demo-upload",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.5578765869140625,
+          "cross_encoder_score": -3.0530600547790527,
+          "rrf_score": 0.02964426877470356
+        },
+        {
+          "rank": 4,
+          "id": "cult/ui",
+          "clean_id": "cult",
+          "display_name": "Cult",
+          "name": "cult/ui",
+          "server": "cultui",
+          "component_type": "input",
+          "score": 0.5551568269729614,
+          "cross_encoder_score": -3.0918056964874268,
+          "rrf_score": 0.031054405392392875
+        },
+        {
+          "rank": 5,
+          "id": "input-file",
+          "clean_id": "input-file",
+          "display_name": "Input File",
+          "name": "input-file",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.5319095849990845,
+          "cross_encoder_score": -3.422985792160034,
+          "rrf_score": 0.030776515151515152
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.7653606369886217,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "stepper progress form",
+      "expected_ids": [
+        "packages_mantine_core_src_components_stepper_stepper",
+        "packages_mantine_core_src_components_stepper_stepperstep_stepperstep",
+        "progress"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_mantine_core_src_components_Stepper_Stepper",
+          "clean_id": "stepper",
+          "display_name": "Stepper",
+          "name": "Stepper",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 0.6815746426582336,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 2,
+          "id": "packages_mantine_core_src_components_Stepper_StepperStep_StepperStep",
+          "clean_id": "stepper-step",
+          "display_name": "Stepper Step",
+          "name": "StepperStep",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.9729796648025513,
+          "cross_encoder_score": 0.3770846724510193,
+          "rrf_score": 0.030776515151515152
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted",
+          "clean_id": "stepper-completed",
+          "display_name": "Stepper Completed",
+          "name": "StepperCompleted",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.9667396545410156,
+          "cross_encoder_score": 0.30676621198654175,
+          "rrf_score": 0.03177805800756621
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_Stepper_index",
+          "clean_id": "stepper",
+          "display_name": "Stepper",
+          "name": "Stepper",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.9658836126327515,
+          "cross_encoder_score": 0.29712048172950745,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Stepper_Stepper.story",
+          "clean_id": "stepper",
+          "display_name": "Stepper",
+          "name": "Stepper.story",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.9267817139625549,
+          "cross_encoder_score": -0.1435151845216751,
+          "rrf_score": 0.030776515151515152
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "rating stars component",
+      "expected_ids": [
+        "elements_rating",
+        "rating-group"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_rating",
+          "clean_id": "rating",
+          "display_name": "Rating",
+          "name": "rating",
+          "server": "pinesui",
+          "component_type": "rating",
+          "score": 1.0,
+          "cross_encoder_score": 8.146947860717773,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 2,
+          "id": "packages_mantine_core_src_components_Rating_index",
+          "clean_id": "rating",
+          "display_name": "Rating",
+          "name": "Rating",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.7306570410728455,
+          "cross_encoder_score": 3.2030367851257324,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_Rating_Rating",
+          "clean_id": "rating",
+          "display_name": "Rating",
+          "name": "Rating",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 0.7222102284431458,
+          "cross_encoder_score": 3.0479917526245117,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "shooting-stars",
+          "clean_id": "shooting-stars",
+          "display_name": "Shooting Stars",
+          "name": "Shooting Stars",
+          "server": "aceternity",
+          "component_type": "other",
+          "score": 0.7003432512283325,
+          "cross_encoder_score": 2.646613597869873,
+          "rrf_score": 0.029631255487269532
+        },
+        {
+          "rank": 5,
+          "id": "rating-group",
+          "clean_id": "rating-group",
+          "display_name": "Rating Group",
+          "name": "rating-group",
+          "server": "parkui",
+          "component_type": "other",
+          "score": 0.6826661229133606,
+          "cross_encoder_score": 2.3221423625946045,
+          "rrf_score": 0.029857397504456328
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.5437713091520255,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "tag input with chips",
+      "expected_ids": [
+        "packages_react_src_components_tag-group_tag-group",
+        "packages_react_src_components_tag_tag",
+        "tags-input"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_chip_index",
+          "clean_id": "chip",
+          "display_name": "Chip",
+          "name": "chip",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 3.0944879055023193,
+          "rrf_score": 0.03131881575727918
+        },
+        {
+          "rank": 2,
+          "id": "tags-input",
+          "clean_id": "tags-input",
+          "display_name": "Tags Input",
+          "name": "tags-input",
+          "server": "parkui",
+          "component_type": "input",
+          "score": 0.9646711945533752,
+          "cross_encoder_score": 2.6272618770599365,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 3,
+          "id": "packages_mantine_core_src_components_TagsInput_index",
+          "clean_id": "tags-input",
+          "display_name": "Tags Input",
+          "name": "TagsInput",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.9021948575973511,
+          "cross_encoder_score": 1.8010090589523315,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 4,
+          "id": "packages_mantine_core_src_components_TagsInput_TagsInput",
+          "clean_id": "tags-input",
+          "display_name": "Tags Input",
+          "name": "TagsInput",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.8908984065055847,
+          "cross_encoder_score": 1.6516122817993164,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 5,
+          "id": "tags-input-recipe",
+          "clean_id": "tags-input-recipe",
+          "display_name": "Tags Input Recipe",
+          "name": "tags-input-recipe",
+          "server": "parkui",
+          "component_type": "input",
+          "score": 0.8291416168212891,
+          "cross_encoder_score": 0.8348755836486816,
+          "rrf_score": 0.014705882352941176
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.9143704130151438,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "dashboard bar chart component",
+      "expected_ids": [
+        "src_components_barchart_barchart",
+        "src_components_barlist_barlist"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "chart-bar-label-custom",
+          "clean_id": "chart-bar-label-custom",
+          "display_name": "Chart Bar Label Custom",
+          "name": "chart-bar-label-custom",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 1.0,
+          "cross_encoder_score": 8.264066696166992,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 2,
+          "id": "chart-bar-label",
+          "clean_id": "chart-bar-label",
+          "display_name": "Chart Bar Label",
+          "name": "chart-bar-label",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.9556070566177368,
+          "cross_encoder_score": 7.951949596405029,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 3,
+          "id": "chart-bar-mixed",
+          "clean_id": "chart-bar-mixed",
+          "display_name": "Chart Bar Mixed",
+          "name": "chart-bar-mixed",
+          "server": "shadcn",
+          "component_type": "graph",
+          "score": 0.9286923408508301,
+          "cross_encoder_score": 7.762718200683594,
+          "rrf_score": 0.02871794871794872
+        },
+        {
+          "rank": 4,
+          "id": "chart-bar-demo-legend",
+          "clean_id": "chart-bar-demo-legend",
+          "display_name": "Chart Bar Demo Legend",
+          "name": "chart-bar-demo-legend",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.9175823926925659,
+          "cross_encoder_score": 7.684606552124023,
+          "rrf_score": 0.031009615384615385
+        },
+        {
+          "rank": 5,
+          "id": "chart-bar-multiple",
+          "clean_id": "chart-bar-multiple",
+          "display_name": "Chart Bar Multiple",
+          "name": "chart-bar-multiple",
+          "server": "shadcn",
+          "component_type": "chart",
+          "score": 0.8487003445625305,
+          "cross_encoder_score": 7.200311660766602,
+          "rrf_score": 0.015873015873015872
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "first_relevant_rank": null
+    },
+    {
+      "query": "calendar component for selecting dates",
+      "expected_ids": [
+        "date-picker",
+        "packages_react_src_components_range-calendar_range-calendar",
+        "src_components_calendar_calendar"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "calendar-demo",
+          "clean_id": "calendar-demo",
+          "display_name": "Calendar Demo",
+          "name": "calendar-demo",
+          "server": "shadcn",
+          "component_type": "date picker",
+          "score": 1.0,
+          "cross_encoder_score": 9.15749740600586,
+          "rrf_score": 0.03128054740957967
+        },
+        {
+          "rank": 2,
+          "id": "calendar",
+          "clean_id": "calendar",
+          "display_name": "Calendar",
+          "name": "calendar",
+          "server": "shadcn",
+          "component_type": "calendar",
+          "score": 0.9563371539115906,
+          "cross_encoder_score": 8.723222732543945,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 3,
+          "id": "elements_date-picker",
+          "clean_id": "date-picker",
+          "display_name": "Date Picker",
+          "name": "date-picker",
+          "server": "pinesui",
+          "component_type": "form",
+          "score": 0.9507384300231934,
+          "cross_encoder_score": 8.667537689208984,
+          "rrf_score": 0.02938045560996381
+        },
+        {
+          "rank": 4,
+          "id": "calendar-hijri",
+          "clean_id": null,
+          "display_name": null,
+          "name": "calendar-hijri",
+          "server": "shadcn",
+          "component_type": "date picker",
+          "score": 0.9140360355377197,
+          "cross_encoder_score": 8.302492141723633,
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "rank": 5,
+          "id": "src_components_DatePicker_DatePicker",
+          "clean_id": "date-picker",
+          "display_name": "Date Picker",
+          "name": "DatePicker",
+          "server": "tremor",
+          "component_type": "date picker",
+          "score": 0.9138709902763367,
+          "cross_encoder_score": 8.300850868225098,
+          "rrf_score": 0.027745885954841176
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_5": 0.7122630665145961,
+      "first_relevant_rank": 2
+    },
+    {
+      "query": "modal dialog with overlay and close button",
+      "expected_ids": [
+        "dialog",
+        "packages_mantine_core_src_components_modal_modal",
+        "packages_radix-ui-themes_src_components_dialog",
+        "packages_react_src_components_modal_modal"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_modal",
+          "clean_id": "modal",
+          "display_name": "Modal",
+          "name": "modal",
+          "server": "pinesui",
+          "component_type": "modal",
+          "score": 1.0,
+          "cross_encoder_score": 8.25778579711914,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "alert-dialog",
+          "clean_id": "alert-dialog",
+          "display_name": "Alert Dialog",
+          "name": "alert-dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.8315849900245667,
+          "cross_encoder_score": 6.49245548248291,
+          "rrf_score": 0.02878726010616578
+        },
+        {
+          "rank": 3,
+          "id": "dialog",
+          "clean_id": "dialog",
+          "display_name": "Dialog",
+          "name": "dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.6640360951423645,
+          "cross_encoder_score": 4.736203670501709,
+          "rrf_score": 0.07471862107866739
+        },
+        {
+          "rank": 4,
+          "id": "packages_react_src_components_modal_index",
+          "clean_id": "modal",
+          "display_name": "Modal",
+          "name": "modal",
+          "server": "heroui",
+          "component_type": "modal",
+          "score": 0.6566656827926636,
+          "cross_encoder_score": 4.658946514129639,
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Modal_ModalCloseButton",
+          "clean_id": "modal-close-button",
+          "display_name": "Modal Close Button",
+          "name": "ModalCloseButton",
+          "server": "mantine",
+          "component_type": "button",
+          "score": 0.6522954106330872,
+          "cross_encoder_score": 4.613137245178223,
+          "rrf_score": 0.03055037313432836
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "sidebar navigation links with icons",
+      "expected_ids": [
+        "components_ui_sidebar_index",
+        "components_ui_sidebar_navlink",
+        "packages_mantine_core_src_components_navlink_navlink"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "sidebar-07",
+          "clean_id": "sidebar-07",
+          "display_name": "Sidebar 07",
+          "name": "sidebar-07",
+          "server": "shadcn",
+          "component_type": "sidebar",
+          "score": 1.0,
+          "cross_encoder_score": 5.026204586029053,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "navigation-menu",
+          "clean_id": "navigation-menu",
+          "display_name": "Navigation Menu",
+          "name": "navigation-menu",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.9583613276481628,
+          "cross_encoder_score": 4.67487907409668,
+          "rrf_score": 0.031754032258064516
+        },
+        {
+          "rank": 3,
+          "id": "sidebar-menu-collapsible",
+          "clean_id": "sidebar-menu-collapsible",
+          "display_name": "Sidebar Menu Collapsible",
+          "name": "sidebar-menu-collapsible",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.8010137677192688,
+          "cross_encoder_score": 3.3472652435302734,
+          "rrf_score": 0.0136986301369863
+        },
+        {
+          "rank": 4,
+          "id": "sidebar",
+          "clean_id": "sidebar",
+          "display_name": "Sidebar",
+          "name": "Sidebar",
+          "server": "aceternity",
+          "component_type": "sidebar",
+          "score": 0.6941049098968506,
+          "cross_encoder_score": 2.445225715637207,
+          "rrf_score": 0.05866003366003366
+        },
+        {
+          "rank": 5,
+          "id": "sidebar-menu",
+          "clean_id": "sidebar-menu",
+          "display_name": "Sidebar Menu",
+          "name": "sidebar-menu",
+          "server": "shadcn",
+          "component_type": "navbar",
+          "score": 0.6728925704956055,
+          "cross_encoder_score": 2.266247272491455,
+          "rrf_score": 0.014492753623188406
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.20210734650054757,
+      "first_relevant_rank": 4
+    },
+    {
+      "query": "hero section with gradient background",
+      "expected_ids": [
+        "components_herobggradient",
+        "components_ui_hero_herobggradient.client",
+        "components_ui_hero_index",
+        "src_components_basehero"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "hero-heatmap-demo",
+          "clean_id": "hero-heatmap-demo",
+          "display_name": "Hero Heatmap Demo",
+          "name": "hero-heatmap-demo",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 1.0,
+          "cross_encoder_score": 8.081828117370605,
+          "rrf_score": 0.028814262023217248
+        },
+        {
+          "rank": 2,
+          "id": "hero-static-radial-gradient-demo",
+          "clean_id": "hero-static-radial-gradient-demo",
+          "display_name": "Hero Static Radial Gradient Demo",
+          "name": "hero-static-radial-gradient-demo",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.9070548415184021,
+          "cross_encoder_score": 7.008697509765625,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 3,
+          "id": "aurora-background",
+          "clean_id": "aurora-background",
+          "display_name": "Aurora Background",
+          "name": "Aurora Background",
+          "server": "aceternity",
+          "component_type": "hero",
+          "score": 0.9022392630577087,
+          "cross_encoder_score": 6.953096866607666,
+          "rrf_score": 0.029877369007803793
+        },
+        {
+          "rank": 4,
+          "id": "hero-static-radial-gradient",
+          "clean_id": "hero-static-radial-gradient",
+          "display_name": "Hero Static Radial Gradient",
+          "name": "hero-static-radial-gradient",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.8473216891288757,
+          "cross_encoder_score": 6.319026947021484,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 5,
+          "id": "hero-color-panel",
+          "clean_id": "hero-color-panel",
+          "display_name": "Hero Color Panel",
+          "name": "hero-color-panel",
+          "server": "cultui",
+          "component_type": "hero",
+          "score": 0.8197875618934631,
+          "cross_encoder_score": 6.00112247467041,
+          "rrf_score": 0.02904040404040404
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "first_relevant_rank": null
+    },
+    {
+      "query": "loading spinner indicator",
+      "expected_ids": [
+        "packages_radix-ui-themes_src_components_spinner",
+        "packages_react_src_components_spinner_spinner",
+        "spinner",
+        "src_components_progresscircle_progresscircle"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "spinner-color",
+          "clean_id": "spinner-color",
+          "display_name": "Spinner Color",
+          "name": "spinner-color",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 1.0,
+          "cross_encoder_score": 7.951533317565918,
+          "rrf_score": 0.029709507042253523
+        },
+        {
+          "rank": 2,
+          "id": "spinner-badge",
+          "clean_id": "spinner-badge",
+          "display_name": "Spinner Badge",
+          "name": "spinner-badge",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.9296159148216248,
+          "cross_encoder_score": 7.172373294830322,
+          "rrf_score": 0.03128054740957967
+        },
+        {
+          "rank": 3,
+          "id": "spinner-basic",
+          "clean_id": "spinner-basic",
+          "display_name": "Spinner Basic",
+          "name": "spinner-basic",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.9167177081108093,
+          "cross_encoder_score": 7.02958869934082,
+          "rrf_score": 0.029631255487269532
+        },
+        {
+          "rank": 4,
+          "id": "spinner-size",
+          "clean_id": "spinner-size",
+          "display_name": "Spinner Size",
+          "name": "spinner-size",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.8940494060516357,
+          "cross_encoder_score": 6.7786478996276855,
+          "rrf_score": 0.031746031746031744
+        },
+        {
+          "rank": 5,
+          "id": "button-loading",
+          "clean_id": "button-loading",
+          "display_name": "Button Loading",
+          "name": "button-loading",
+          "server": "shadcn",
+          "component_type": "button",
+          "score": 0.8337706923484802,
+          "cross_encoder_score": 6.111355781555176,
+          "rrf_score": 0.028782894736842105
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "status badge label component",
+      "expected_ids": [
+        "badge",
+        "packages_mantine_core_src_components_badge_badge",
+        "packages_radix-ui-themes_src_components_badge",
+        "src_components_badge_badge"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "badge-demo",
+          "clean_id": "badge-demo",
+          "display_name": "Badge Demo",
+          "name": "badge-demo",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 1.0,
+          "cross_encoder_score": 7.588773727416992,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 2,
+          "id": "badge-outline",
+          "clean_id": "badge-outline",
+          "display_name": "Badge Outline",
+          "name": "badge-outline",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.9762762784957886,
+          "cross_encoder_score": 7.236273765563965,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 3,
+          "id": "packages_radix-ui-themes_src_components_badge",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "badge",
+          "server": "radixuithemes",
+          "component_type": "badge",
+          "score": 0.8610228300094604,
+          "cross_encoder_score": 5.523780822753906,
+          "rrf_score": 0.030158730158730156
+        },
+        {
+          "rank": 4,
+          "id": "src_components_Badge_Badge",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "Badge",
+          "server": "tremor",
+          "component_type": "component",
+          "score": 0.8272833228111267,
+          "cross_encoder_score": 5.022462368011475,
+          "rrf_score": 0.030536130536130537
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_badge_index",
+          "clean_id": "badge",
+          "display_name": "Badge",
+          "name": "badge",
+          "server": "heroui",
+          "component_type": "badge",
+          "score": 0.7843562364578247,
+          "cross_encoder_score": 4.384629249572754,
+          "rrf_score": 0.03225806451612903
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "hover card popover preview",
+      "expected_ids": [
+        "elements_hover-card",
+        "hover-card",
+        "packages_mantine_core_src_components_hovercard_hovercard",
+        "packages_radix-ui-themes_src_components_hover-card"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "components_ui_SupportedFrameworks_PreviewCard",
+          "clean_id": "preview-card",
+          "display_name": "Preview Card",
+          "name": "PreviewCard",
+          "server": "floatui",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 5.558027267456055,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "rank": 2,
+          "id": "popover-demo",
+          "clean_id": "popover-demo",
+          "display_name": "Popover Demo",
+          "name": "popover-demo",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.8390690684318542,
+          "cross_encoder_score": 3.880138874053955,
+          "rrf_score": 0.028991596638655463
+        },
+        {
+          "rank": 3,
+          "id": "link-preview",
+          "clean_id": "link-preview",
+          "display_name": "Link Preview",
+          "name": "Link Preview",
+          "server": "aceternity",
+          "component_type": "card",
+          "score": 0.8314711451530457,
+          "cross_encoder_score": 3.8009214401245117,
+          "rrf_score": 0.029906956136464335
+        },
+        {
+          "rank": 4,
+          "id": "hover-card",
+          "clean_id": "hover-card",
+          "display_name": "Hover Card",
+          "name": "hover-card",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.7179737091064453,
+          "cross_encoder_score": 2.617581605911255,
+          "rrf_score": 0.04570188828584351
+        },
+        {
+          "rank": 5,
+          "id": "hover-card-demo",
+          "clean_id": "hover-card-demo",
+          "display_name": "Hover Card Demo",
+          "name": "hover-card-demo",
+          "server": "shadcn",
+          "component_type": "card",
+          "score": 0.7109098434448242,
+          "cross_encoder_score": 2.5439324378967285,
+          "rrf_score": 0.015384615384615385
+        }
+      ],
+      "hit_at_1": 0.0,
+      "hit_at_5": 1.0,
+      "mrr": 0.25,
+      "ndcg_at_5": 0.3191471544989227,
+      "first_relevant_rank": 4
+    },
+    {
+      "query": "range slider input control",
+      "expected_ids": [
+        "elements_range-slider",
+        "packages_mantine_core_src_components_slider_slider_slider",
+        "packages_radix-ui-themes_src_components_slider",
+        "src_components_slider_slider"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_range-slider",
+          "clean_id": "range-slider",
+          "display_name": "Range Slider",
+          "name": "range-slider",
+          "server": "pinesui",
+          "component_type": "input",
+          "score": 1.0,
+          "cross_encoder_score": 7.052572250366211,
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "rank": 2,
+          "id": "packages_radix-ui-themes_src_components_slider",
+          "clean_id": "slider",
+          "display_name": "Slider",
+          "name": "slider",
+          "server": "radixuithemes",
+          "component_type": "slider",
+          "score": 0.9363831877708435,
+          "cross_encoder_score": 6.1907548904418945,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 3,
+          "id": "src_components_Slider_Slider",
+          "clean_id": "slider",
+          "display_name": "Slider",
+          "name": "Slider",
+          "server": "tremor",
+          "component_type": "input",
+          "score": 0.9319657683372498,
+          "cross_encoder_score": 6.130911827087402,
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "rank": 4,
+          "id": "field-slider",
+          "clean_id": "field-slider",
+          "display_name": "Field Slider",
+          "name": "field-slider",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.875647783279419,
+          "cross_encoder_score": 5.367971420288086,
+          "rrf_score": 0.030536130536130537
+        },
+        {
+          "rank": 5,
+          "id": "slider-demo",
+          "clean_id": "slider-demo",
+          "display_name": "Slider Demo",
+          "name": "slider-demo",
+          "server": "shadcn",
+          "component_type": "component",
+          "score": 0.8734409809112549,
+          "cross_encoder_score": 5.338075637817383,
+          "rrf_score": 0.030536130536130537
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.8318724637288826,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "checkbox card selection group",
+      "expected_ids": [
+        "checkbox",
+        "packages_mantine_core_src_components_checkbox_checkboxcard_checkboxcard",
+        "packages_radix-ui-themes_src_components_checkbox-cards",
+        "packages_react_src_components_checkbox_checkbox"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_checkbox-group_checkbox-group",
+          "clean_id": "checkbox-group",
+          "display_name": "Checkbox Group",
+          "name": "checkbox-group",
+          "server": "heroui",
+          "component_type": "form",
+          "score": 1.0,
+          "cross_encoder_score": 7.673269271850586,
+          "rrf_score": 0.030679156908665108
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_checkbox-group_index",
+          "clean_id": "checkbox-group",
+          "display_name": "Checkbox Group",
+          "name": "checkbox-group",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.9658782482147217,
+          "cross_encoder_score": 7.2510151863098145,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 3,
+          "id": "packages_radix-ui-themes_src_components_checkbox-group",
+          "clean_id": "checkbox-group",
+          "display_name": "Checkbox Group",
+          "name": "checkbox-group",
+          "server": "radixuithemes",
+          "component_type": "checkbox",
+          "score": 0.9122480154037476,
+          "cross_encoder_score": 6.587346076965332,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 4,
+          "id": "packages_radix-ui-themes_src_components_checkbox-group.primitive",
+          "clean_id": "checkbox-group",
+          "display_name": "Checkbox Group",
+          "name": "checkbox-group.primitive",
+          "server": "radixuithemes",
+          "component_type": "form",
+          "score": 0.8829478621482849,
+          "cross_encoder_score": 6.224759101867676,
+          "rrf_score": 0.03007688828584351
+        },
+        {
+          "rank": 5,
+          "id": "src_components_RadioCardGroup_RadioCardGroup",
+          "clean_id": "radio-card-group",
+          "display_name": "Radio Card Group",
+          "name": "RadioCardGroup",
+          "server": "tremor",
+          "component_type": "card",
+          "score": 0.7073355317115784,
+          "cross_encoder_score": 4.051570892333984,
+          "rrf_score": 0.028125
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.0,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "radio card group options",
+      "expected_ids": [
+        "packages_radix-ui-themes_src_components_radio-cards",
+        "radio-card-group",
+        "src_components_radiocardgroup_radiocardgroup"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "src_components_RadioCardGroup_RadioCardGroup",
+          "clean_id": "radio-card-group",
+          "display_name": "Radio Card Group",
+          "name": "RadioCardGroup",
+          "server": "tremor",
+          "component_type": "card",
+          "score": 1.0,
+          "cross_encoder_score": 8.915761947631836,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "elements_radio-group",
+          "clean_id": "radio-group",
+          "display_name": "Radio Group",
+          "name": "radio-group",
+          "server": "pinesui",
+          "component_type": "input",
+          "score": 0.8720051646232605,
+          "cross_encoder_score": 7.197468280792236,
+          "rrf_score": 0.03057889822595705
+        },
+        {
+          "rank": 3,
+          "id": "packages_radix-ui-themes_src_components_radio-group",
+          "clean_id": "radio-group",
+          "display_name": "Radio Group",
+          "name": "radio-group",
+          "server": "radixuithemes",
+          "component_type": "button",
+          "score": 0.762453556060791,
+          "cross_encoder_score": 5.726768493652344,
+          "rrf_score": 0.03076923076923077
+        },
+        {
+          "rank": 4,
+          "id": "radio-group-demo",
+          "clean_id": "radio-group-demo",
+          "display_name": "Radio Group Demo",
+          "name": "radio-group-demo",
+          "server": "shadcn",
+          "component_type": "radio",
+          "score": 0.7555463910102844,
+          "cross_encoder_score": 5.634041786193848,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 5,
+          "id": "radio-card-group",
+          "clean_id": "radio-card-group",
+          "display_name": "Radio Card Group",
+          "name": "radio-card-group",
+          "server": "parkui",
+          "component_type": "card",
+          "score": 0.7523772120475769,
+          "cross_encoder_score": 5.591496467590332,
+          "rrf_score": 0.03252247488101534
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6508205185601091,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "dropdown menu action items",
+      "expected_ids": [
+        "elements_dropdown-menu",
+        "packages_radix-ui-themes_src_components_dropdown-menu",
+        "packages_react_src_components_dropdown_dropdown",
+        "src_components_dropdownmenu_dropdownmenu"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_dropdown-menu",
+          "clean_id": "dropdown-menu",
+          "display_name": "Dropdown Menu",
+          "name": "dropdown-menu",
+          "server": "pinesui",
+          "component_type": "dropdown",
+          "score": 1.0,
+          "cross_encoder_score": 7.320766448974609,
+          "rrf_score": 0.029083245521601686
+        },
+        {
+          "rank": 2,
+          "id": "src_components_DropdownMenu_DropdownMenu",
+          "clean_id": "dropdown-menu",
+          "display_name": "Dropdown Menu",
+          "name": "DropdownMenu",
+          "server": "tremor",
+          "component_type": "navbar",
+          "score": 0.943291962146759,
+          "cross_encoder_score": 6.524724006652832,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 3,
+          "id": "context-menu",
+          "clean_id": "context-menu",
+          "display_name": "Context Menu",
+          "name": "context-menu",
+          "server": "shadcn",
+          "component_type": "other",
+          "score": 0.9419474601745605,
+          "cross_encoder_score": 6.505850315093994,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 4,
+          "id": "item-dropdown",
+          "clean_id": "item-dropdown",
+          "display_name": "Item Dropdown",
+          "name": "item-dropdown",
+          "server": "shadcn",
+          "component_type": "dropdown",
+          "score": 0.9280918836593628,
+          "cross_encoder_score": 6.311351299285889,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 5,
+          "id": "dropdown-menu-dialog",
+          "clean_id": "dropdown-menu-dialog",
+          "display_name": "Dropdown Menu Dialog",
+          "name": "dropdown-menu-dialog",
+          "server": "shadcn",
+          "component_type": "modal",
+          "score": 0.8887608051300049,
+          "cross_encoder_score": 5.7592387199401855,
+          "rrf_score": 0.014285714285714285
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6366824387328317,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "popover floating content panel",
+      "expected_ids": [
+        "packages_radix-ui-themes_src_components_popover",
+        "packages_react_src_components_popover_popover",
+        "popover",
+        "src_components_popover_popover"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_radix-ui-themes_src_components_popover",
+          "clean_id": "popover",
+          "display_name": "Popover",
+          "name": "popover",
+          "server": "radixuithemes",
+          "component_type": "popover",
+          "score": 1.0,
+          "cross_encoder_score": 5.78391170501709,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 2,
+          "id": "src_components_Popover_Popover",
+          "clean_id": "popover",
+          "display_name": "Popover",
+          "name": "Popover",
+          "server": "tremor",
+          "component_type": "popover",
+          "score": 0.9012320041656494,
+          "cross_encoder_score": 4.358864784240723,
+          "rrf_score": 0.030309988518943745
+        },
+        {
+          "rank": 3,
+          "id": "elements_popover",
+          "clean_id": "popover",
+          "display_name": "Popover",
+          "name": "popover",
+          "server": "pinesui",
+          "component_type": "other",
+          "score": 0.8878200054168701,
+          "cross_encoder_score": 4.165353775024414,
+          "rrf_score": 0.03036576949620428
+        },
+        {
+          "rank": 4,
+          "id": "popover",
+          "clean_id": "popover",
+          "display_name": "Popover",
+          "name": "popover",
+          "server": "parkui",
+          "component_type": "modal",
+          "score": 0.8083478808403015,
+          "cross_encoder_score": 3.018712043762207,
+          "rrf_score": 0.05645224193260831
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_popover_index",
+          "clean_id": "popover",
+          "display_name": "Popover",
+          "name": "popover",
+          "server": "heroui",
+          "component_type": "modal",
+          "score": 0.8004223108291626,
+          "cross_encoder_score": 2.904360294342041,
+          "rrf_score": 0.02904040404040404
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "tooltip on hover helper text",
+      "expected_ids": [
+        "elements_tooltip",
+        "packages_radix-ui-themes_src_components_tooltip",
+        "packages_react_src_components_tooltip_tooltip",
+        "tooltip"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "src_components_TooltipWrapper",
+          "clean_id": "tooltip-wrapper",
+          "display_name": "Tooltip Wrapper",
+          "name": "TooltipWrapper",
+          "server": "hyperui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 6.5983381271362305,
+          "rrf_score": 0.015873015873015872
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_tooltip_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "heroui",
+          "component_type": "tooltip",
+          "score": 0.9836390018463135,
+          "cross_encoder_score": 6.403931617736816,
+          "rrf_score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "id": "packages_radix-ui-themes_src_components_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "radixuithemes",
+          "component_type": "other",
+          "score": 0.9778684973716736,
+          "cross_encoder_score": 6.335365295410156,
+          "rrf_score": 0.015625
+        },
+        {
+          "rank": 4,
+          "id": "elements_tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "tooltip",
+          "server": "pinesui",
+          "component_type": "tooltip",
+          "score": 0.9749674201011658,
+          "cross_encoder_score": 6.300893783569336,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 5,
+          "id": "src_components_Tooltip_Tooltip",
+          "clean_id": "tooltip",
+          "display_name": "Tooltip",
+          "name": "Tooltip",
+          "server": "tremor",
+          "component_type": "other",
+          "score": 0.9685149788856506,
+          "cross_encoder_score": 6.224224090576172,
+          "rrf_score": 0.028205128205128206
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "tabs navigation content panels",
+      "expected_ids": [
+        "elements_tabs",
+        "packages_radix-ui-themes_src_components_tabs",
+        "src_components_tabs_tabs",
+        "tabs"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "elements_tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "tabs",
+          "server": "pinesui",
+          "component_type": "navbar",
+          "score": 1.0,
+          "cross_encoder_score": 6.210620880126953,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 2,
+          "id": "packages_radix-ui-themes_src_components_tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "tabs",
+          "server": "radixuithemes",
+          "component_type": "navbar",
+          "score": 0.9700273275375366,
+          "cross_encoder_score": 5.809481620788574,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 3,
+          "id": "tabs",
+          "clean_id": "tabs",
+          "display_name": "Tabs",
+          "name": "Tabs",
+          "server": "aceternity",
+          "component_type": "navbar",
+          "score": 0.9388991594314575,
+          "cross_encoder_score": 5.392879486083984,
+          "rrf_score": 0.09104316597175066
+        },
+        {
+          "rank": 4,
+          "id": "tabs-demo",
+          "clean_id": "tabs-demo",
+          "display_name": "Tabs Demo",
+          "name": "tabs-demo",
+          "server": "shadcn",
+          "component_type": "tabs",
+          "score": 0.9204401969909668,
+          "cross_encoder_score": 5.1458330154418945,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 5,
+          "id": "direction-aware-tabs",
+          "clean_id": "direction-aware-tabs",
+          "display_name": "Direction Aware Tabs",
+          "name": "direction-aware-tabs",
+          "server": "cultui",
+          "component_type": "other",
+          "score": 0.8226370215415955,
+          "cross_encoder_score": 3.8368873596191406,
+          "rrf_score": 0.0288981288981289
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "pagination controls for long table",
+      "expected_ids": [
+        "elements_pagination",
+        "packages_mantine_core_src_components_pagination_pagination",
+        "packages_react_src_components_pagination_pagination",
+        "pagination"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_mantine_core_src_components_Pagination_PaginationControl_PaginationControl",
+          "clean_id": "pagination-control",
+          "display_name": "Pagination Control",
+          "name": "PaginationControl",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 1.882128357887268,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "id": "pagination-demo",
+          "clean_id": "pagination-demo",
+          "display_name": "Pagination Demo",
+          "name": "pagination-demo",
+          "server": "shadcn",
+          "component_type": "loader",
+          "score": 0.9918187856674194,
+          "cross_encoder_score": 1.7816083431243896,
+          "rrf_score": 0.03021353930031804
+        },
+        {
+          "rank": 3,
+          "id": "pagination",
+          "clean_id": "pagination",
+          "display_name": "Pagination",
+          "name": "pagination",
+          "server": "shadcn",
+          "component_type": "pagination",
+          "score": 0.8013917803764343,
+          "cross_encoder_score": -0.5581053495407104,
+          "rrf_score": 0.045327668234194096
+        },
+        {
+          "rank": 4,
+          "id": "table-demo",
+          "clean_id": "table-demo",
+          "display_name": "Table Demo",
+          "name": "table-demo",
+          "server": "shadcn",
+          "component_type": "table",
+          "score": 0.6739566326141357,
+          "cross_encoder_score": -2.1238596439361572,
+          "rrf_score": 0.032266458495966696
+        },
+        {
+          "rank": 5,
+          "id": "components_ui_Pagination",
+          "clean_id": "pagination",
+          "display_name": "Pagination",
+          "name": "Pagination",
+          "server": "floatui",
+          "component_type": "other",
+          "score": 0.6433531045913696,
+          "cross_encoder_score": -2.49987530708313,
+          "rrf_score": 0.02817460317460317
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.9828920819566879,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "multi select dropdown input",
+      "expected_ids": [
+        "packages_mantine_core_src_components_multiselect_multiselect",
+        "packages_mantine_core_src_components_nativeselect_nativeselect",
+        "packages_react_src_components_select_select",
+        "select"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_mantine_core_src_components_MultiSelect_index",
+          "clean_id": "multi-select",
+          "display_name": "Multi Select",
+          "name": "MultiSelect",
+          "server": "mantine",
+          "component_type": "select",
+          "score": 1.0,
+          "cross_encoder_score": 6.7657551765441895,
+          "rrf_score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "id": "form-rhf-select",
+          "clean_id": "form-rhf-select",
+          "display_name": "Form Rhf Select",
+          "name": "form-rhf-select",
+          "server": "shadcn",
+          "component_type": "form",
+          "score": 0.8797243237495422,
+          "cross_encoder_score": 5.725632190704346,
+          "rrf_score": 0.028850145288501453
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_dropdown_index",
+          "clean_id": "dropdown",
+          "display_name": "Dropdown",
+          "name": "dropdown",
+          "server": "heroui",
+          "component_type": "dropdown",
+          "score": 0.7436715364456177,
+          "cross_encoder_score": 4.549072265625,
+          "rrf_score": 0.030330882352941176
+        },
+        {
+          "rank": 4,
+          "id": "select",
+          "clean_id": "select",
+          "display_name": "Select",
+          "name": "select",
+          "server": "shadcn",
+          "component_type": "select",
+          "score": 0.7400277853012085,
+          "cross_encoder_score": 4.517561912536621,
+          "rrf_score": 0.041164161873544027
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_MultiSelect_MultiSelect",
+          "clean_id": "multi-select",
+          "display_name": "Multi Select",
+          "name": "MultiSelect",
+          "server": "mantine",
+          "component_type": "input",
+          "score": 0.7182028293609619,
+          "cross_encoder_score": 4.328823566436768,
+          "rrf_score": 0.03252247488101534
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.9558295932317544,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "avatar group profile stack",
+      "expected_ids": [
+        "avatar",
+        "packages_mantine_core_src_components_avatar_avatargroup_avatargroup",
+        "packages_radix-ui-themes_src_components_avatar"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+          "clean_id": "avatar-group",
+          "display_name": "Avatar Group",
+          "name": "AvatarGroup",
+          "server": "mantine",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 4.772080421447754,
+          "rrf_score": 0.032018442622950824
+        },
+        {
+          "rank": 2,
+          "id": "empty-avatar-group",
+          "clean_id": "empty-avatar-group",
+          "display_name": "Empty Avatar Group",
+          "name": "empty-avatar-group",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.9517147541046143,
+          "cross_encoder_score": 4.1252241134643555,
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "rank": 3,
+          "id": "avatar",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "shadcn",
+          "component_type": "badge",
+          "score": 0.898116946220398,
+          "cross_encoder_score": 3.4071977138519287,
+          "rrf_score": 0.05956690454670985
+        },
+        {
+          "rank": 4,
+          "id": "avatar-circles",
+          "clean_id": "avatar-circles",
+          "display_name": "Avatar Circles",
+          "name": "Avatar Circles",
+          "server": "magicui",
+          "component_type": "card",
+          "score": 0.8573513031005859,
+          "cross_encoder_score": 2.8610782623291016,
+          "rrf_score": 0.03057889822595705
+        },
+        {
+          "rank": 5,
+          "id": "packages_react_src_components_avatar_index",
+          "clean_id": "avatar",
+          "display_name": "Avatar",
+          "name": "avatar",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.7683145999908447,
+          "cross_encoder_score": 1.668292760848999,
+          "rrf_score": 0.032266458495966696
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.3836491390379002,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "drawer slide over panel",
+      "expected_ids": [
+        "drawer",
+        "elements_slide-over",
+        "packages_mantine_core_src_components_drawer_drawer",
+        "packages_react_src_components_drawer_drawer"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "drawer",
+          "clean_id": "drawer",
+          "display_name": "Drawer",
+          "name": "drawer",
+          "server": "shadcn",
+          "component_type": "drawer",
+          "score": 1.0,
+          "cross_encoder_score": 8.411022186279297,
+          "rrf_score": 0.06428490111891752
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_drawer_index",
+          "clean_id": "drawer",
+          "display_name": "Drawer",
+          "name": "drawer",
+          "server": "heroui",
+          "component_type": "drawer",
+          "score": 0.9348397850990295,
+          "cross_encoder_score": 7.272344589233398,
+          "rrf_score": 0.03149801587301587
+        },
+        {
+          "rank": 3,
+          "id": "packages_react_src_components_drawer_drawer",
+          "clean_id": "drawer",
+          "display_name": "Drawer",
+          "name": "drawer",
+          "server": "heroui",
+          "component_type": "drawer",
+          "score": 0.8583600521087646,
+          "cross_encoder_score": 5.935857772827148,
+          "rrf_score": 0.03225806451612903
+        },
+        {
+          "rank": 4,
+          "id": "elements_slide-over",
+          "clean_id": "slide-over",
+          "display_name": "Slide Over",
+          "name": "slide-over",
+          "server": "pinesui",
+          "component_type": "modal",
+          "score": 0.7829066514968872,
+          "cross_encoder_score": 4.617306709289551,
+          "rrf_score": 0.014285714285714285
+        },
+        {
+          "rank": 5,
+          "id": "packages_mantine_core_src_components_Drawer_DrawerOverlay",
+          "clean_id": "drawer-overlay",
+          "display_name": "Drawer Overlay",
+          "name": "DrawerOverlay",
+          "server": "mantine",
+          "component_type": "modal",
+          "score": 0.7637119889259338,
+          "cross_encoder_score": 4.281878471374512,
+          "rrf_score": 0.02854251012145749
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 1.1510196182278052,
+      "first_relevant_rank": 1
+    },
+    {
+      "query": "search input field component",
+      "expected_ids": [
+        "components_ui_input",
+        "packages_mantine_core_src_components_input_input",
+        "packages_react_src_components_search-field_search-field",
+        "src_components_searchinput"
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "id": "packages_react_src_components_search-field_index",
+          "clean_id": "search-field",
+          "display_name": "Search Field",
+          "name": "search-field",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 1.0,
+          "cross_encoder_score": 7.540530204772949,
+          "rrf_score": 0.031544957774465976
+        },
+        {
+          "rank": 2,
+          "id": "packages_react_src_components_search-field_search-field",
+          "clean_id": "search-field",
+          "display_name": "Search Field",
+          "name": "search-field",
+          "server": "heroui",
+          "component_type": "other",
+          "score": 0.9989873170852661,
+          "cross_encoder_score": 7.533100605010986,
+          "rrf_score": 0.031054405392392875
+        },
+        {
+          "rank": 3,
+          "id": "input-group-dropdown",
+          "clean_id": "input-group-dropdown",
+          "display_name": "Input Group Dropdown",
+          "name": "input-group-dropdown",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.9989032745361328,
+          "cross_encoder_score": 7.53248405456543,
+          "rrf_score": 0.028985507246376812
+        },
+        {
+          "rank": 4,
+          "id": "input-group-custom",
+          "clean_id": "input-group-custom",
+          "display_name": "Input Group Custom",
+          "name": "input-group-custom",
+          "server": "shadcn",
+          "component_type": "input",
+          "score": 0.9833431243896484,
+          "cross_encoder_score": 7.418325424194336,
+          "rrf_score": 0.031009615384615385
+        },
+        {
+          "rank": 5,
+          "id": "src_components_SearchWrapper",
+          "clean_id": "search-wrapper",
+          "display_name": "Search Wrapper",
+          "name": "SearchWrapper",
+          "server": "hyperui",
+          "component_type": "other",
+          "score": 0.9768606424331665,
+          "cross_encoder_score": 7.370765686035156,
+          "rrf_score": 0.029116045245077504
+        }
+      ],
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.6366824387328317,
+      "first_relevant_rank": 1
+    }
+  ]
+}

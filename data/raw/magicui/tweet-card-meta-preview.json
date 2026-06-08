@@ -1,0 +1,46 @@
+{
+  "id": "tweet-card-meta-preview",
+  "name": "Tweet Card Meta Preview",
+  "source_code": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\nexport default function TweetMetaPreview() {\n  return <ClientTweetCard id=\"1675849118445436929\" className=\"shadow-2xl\" />\n}\n",
+  "description": "Example showing a tweet card with meta preview.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "tweet-card-meta-preview",
+      "type": "registry:example",
+      "title": "Tweet Card Meta Preview",
+      "description": "Example showing a tweet card with meta preview.",
+      "registryDependencies": [
+        "https://magicui.design/r/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-meta-preview.tsx",
+          "type": "registry:example",
+          "target": "components/tweet-card-meta-preview.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tweet-card-meta-preview",
+      "type": "registry:example",
+      "title": "Tweet Card Meta Preview",
+      "description": "Example showing a tweet card with meta preview.",
+      "registryDependencies": [
+        "@magicui/client-tweet-card",
+        "@magicui/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-meta-preview.tsx",
+          "content": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\nexport default function TweetMetaPreview() {\n  return <ClientTweetCard id=\"1675849118445436929\" className=\"shadow-2xl\" />\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

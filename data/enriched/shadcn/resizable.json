@@ -1,0 +1,39 @@
+{
+  "id": "resizable",
+  "name": "resizable",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "responsive design",
+    "layout management",
+    "flexible interface"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "resizable",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## resizable\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** react-resizable-panels@^4"
+  },
+  "visual_summary": "Resizable is a UI component that allows the user to dynamically adjust the size of its container, typically used in scenarios where the content inside exceeds the available space. It's commonly used in applications like text editors, image viewers, and data visualization tools.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. drag",
+    "resizable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: resizable\nDescription: Resizable is a UI component that allows the user to dynamically adjust the size of its container, typically used in scenarios where the content inside exceeds the available space. It's commonly used in applications like text editors, image viewers, and data visualization tools.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. drag, resizable\nTags: responsive design, layout management, flexible interface\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "resizable",
+  "display_name": "Resizable",
+  "preview_url": "/previews/shadcn/resizable.png"
+}

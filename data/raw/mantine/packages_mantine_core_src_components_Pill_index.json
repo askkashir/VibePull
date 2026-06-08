@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Pill_index",
+  "name": "Pill",
+  "source_code": "// packages/@mantine/core/src/components/Pill/index.ts\nimport type {\n  PillCssVariables,\n  PillFactory,\n  PillProps,\n  PillStylesNames,\n  PillVariant,\n} from './Pill';\nimport type {\n  PillGroupCssVariables,\n  PillGroupFactory,\n  PillGroupProps,\n  PillGroupStylesNames,\n} from './PillGroup/PillGroup';\n\nexport { Pill } from './Pill';\nexport { PillGroup } from './PillGroup/PillGroup';\n\nexport type {\n  PillProps,\n  PillStylesNames,\n  PillCssVariables,\n  PillFactory,\n  PillVariant,\n  PillGroupProps,\n  PillGroupStylesNames,\n  PillGroupCssVariables,\n  PillGroupFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pill_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Pill/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pill_index",
+      "name": "Pill",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pill/index.ts",
+          "content": "import type {\n  PillCssVariables,\n  PillFactory,\n  PillProps,\n  PillStylesNames,\n  PillVariant,\n} from './Pill';\nimport type {\n  PillGroupCssVariables,\n  PillGroupFactory,\n  PillGroupProps,\n  PillGroupStylesNames,\n} from './PillGroup/PillGroup';\n\nexport { Pill } from './Pill';\nexport { PillGroup } from './PillGroup/PillGroup';\n\nexport type {\n  PillProps,\n  PillStylesNames,\n  PillCssVariables,\n  PillFactory,\n  PillVariant,\n  PillGroupProps,\n  PillGroupStylesNames,\n  PillGroupCssVariables,\n  PillGroupFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

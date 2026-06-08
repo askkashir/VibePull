@@ -1,0 +1,22 @@
+{
+  "id": "chart-bar-label-custom",
+  "name": "chart-bar-label-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-label-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-label-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

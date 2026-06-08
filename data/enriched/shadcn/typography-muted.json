@@ -1,0 +1,37 @@
+{
+  "id": "typography-muted",
+  "name": "typography-muted",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "secondary",
+    "labels",
+    "placeholders"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-muted",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-muted\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Typography-muted is a component that provides a subtle muted text effect. It's suitable for displaying secondary information such as labels, placeholder text, or hints. Use it when you want to create a visually appealing contrast without drawing attention away from primary content.",
+  "style_tags": [
+    "monochromatic",
+    "minimalist"
+  ],
+  "interaction_tags": [],
+  "component_type": "typography",
+  "generation_prompt": "Create a production-ready typography component with the following characteristics:\n\nName: typography-muted\nDescription: Typography-muted is a component that provides a subtle muted text effect. It's suitable for displaying secondary information such as labels, placeholder text, or hints. Use it when you want to create a visually appealing contrast without drawing attention away from primary content.\nStyle: monochromatic, minimalist\nInteractions: \nTags: typography, secondary, labels, placeholders\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-muted",
+  "display_name": "Typography Muted",
+  "preview_url": "/previews/shadcn/typography-muted.png"
+}

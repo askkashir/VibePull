@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.context",
+  "name": "ColorPicker.context",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/ColorPicker.context.ts\nimport { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { ColorPickerFactory } from './ColorPicker';\n\ninterface ColorPickerContextValue {\n  getStyles: GetStylesApi<ColorPickerFactory>;\n  unstyled: boolean | undefined;\n}\n\nexport const ColorPickerContext = createContext<ColorPickerContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_ColorPicker.context",
+      "name": "ColorPicker.context",
+      "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_ColorPicker.context",
+      "name": "ColorPicker.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/ColorPicker.context.ts",
+          "content": "import { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { ColorPickerFactory } from './ColorPicker';\n\ninterface ColorPickerContextValue {\n  getStyles: GetStylesApi<ColorPickerFactory>;\n  unstyled: boolean | undefined;\n}\n\nexport const ColorPickerContext = createContext<ColorPickerContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

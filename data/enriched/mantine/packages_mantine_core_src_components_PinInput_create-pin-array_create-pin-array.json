@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_PinInput_create-pin-array_create-pin-array",
+  "name": "create-pin-array",
+  "source_code": "// packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts\nexport function createPinArray(length: number, value: string): string[] {\n  if (length < 1) {\n    return [];\n  }\n\n  const values = new Array<string>(length).fill('');\n\n  if (value) {\n    const splitted = value.trim().split('');\n    for (let i = 0; i < Math.min(length, splitted.length); i += 1) {\n      values[i] = splitted[i] === ' ' ? '' : splitted[i];\n    }\n  }\n\n  return values;\n}\n",
+  "description": "",
+  "tags": [
+    "utility",
+    "pin",
+    "form"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "PinInput_create-pin-array_create-pin-array",
+      "name": "create-pin-array",
+      "path": "packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_PinInput_create-pin-array_create-pin-array",
+      "name": "create-pin-array",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts",
+          "content": "export function createPinArray(length: number, value: string): string[] {\n  if (length < 1) {\n    return [];\n  }\n\n  const values = new Array<string>(length).fill('');\n\n  if (value) {\n    const splitted = value.trim().split('');\n    for (let i = 0; i < Math.min(length, splitted.length); i += 1) {\n      values[i] = splitted[i] === ' ' ? '' : splitted[i];\n    }\n  }\n\n  return values;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A utility function to generate an array of pin fields, useful when creating a PIN input form.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: create-pin-array\nDescription: A utility function to generate an array of pin fields, useful when creating a PIN input form.\nStyle: \nInteractions: \nTags: utility, pin, form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts\nexport function createPinArray(length: number, value: string): string[] {\n  if (length < 1) {\n    return [];\n  }\n\n  const values = new Array<string>(length).fill('');\n\n  if (value) {\n    const splitted = value.trim().split('');\n    for (let i = 0; i < Math.min(length, splitted.length); i += 1) {\n      values[i] = splitted[i] === ' ' ? '' : splitted[i];\n    }\n  }\n\n  return values;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "create-pin-array",
+  "display_name": "Create Pin Array",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pininput-create-pin-array-create-pin-array.png"
+}

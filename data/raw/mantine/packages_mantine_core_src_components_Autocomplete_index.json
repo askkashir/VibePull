@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Autocomplete_index",
+  "name": "Autocomplete",
+  "source_code": "// packages/@mantine/core/src/components/Autocomplete/index.ts\nimport type {\n  AutocompleteFactory,\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n} from './Autocomplete';\n\nexport { Autocomplete } from './Autocomplete';\n\nexport type {\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n  AutocompleteFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Autocomplete_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Autocomplete/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Autocomplete_index",
+      "name": "Autocomplete",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Autocomplete/index.ts",
+          "content": "import type {\n  AutocompleteFactory,\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n} from './Autocomplete';\n\nexport { Autocomplete } from './Autocomplete';\n\nexport type {\n  AutocompleteProps,\n  AutocompleteStylesNames,\n  RenderAutocompleteOption,\n  AutocompleteFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

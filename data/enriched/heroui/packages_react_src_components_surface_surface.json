@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_surface_surface",
+  "name": "surface",
+  "source_code": "// packages/react/src/components/surface/surface.tsx\n\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SurfaceVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {surfaceVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* ------------------------------------------------------------------------------------------------\n * Surface Context\n * --------------------------------------------------------------------------------------------- */\ntype SurfaceContext = {\n  variant?: SurfaceVariants[\"variant\"];\n};\n\nconst SurfaceContext = createContext<SurfaceContext>({});\n\n/* ------------------------------------------------------------------------------------------------\n * Surface Root\n * --------------------------------------------------------------------------------------------- */\ninterface SurfaceRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children: ReactNode;\n  className?: string;\n  /** Visual variant. @default \"default\" */\n  variant?: SurfaceVariants[\"variant\"];\n}\n\nconst SurfaceRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  variant = \"default\",\n  ...rest\n}: SurfaceRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof SurfaceRootProps<E>>) => {\n  return (\n    <SurfaceContext value={{variant}}>\n      <dom.div\n        className={surfaceVariants({variant, className})}\n        data-slot=\"surface\"\n        {...(rest as any)}\n      >\n        {children}\n      </dom.div>\n    </SurfaceContext>\n  );\n};\n\n/* ------------------------------------------------------------------------------------------------\n * Exports\n * --------------------------------------------------------------------------------------------- */\nexport {SurfaceRoot, SurfaceContext};\n\nexport type {SurfaceRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "surface"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "surface_surface",
+      "name": "surface",
+      "path": "packages/react/src/components/surface/surface.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_surface_surface",
+      "name": "surface",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/surface/surface.tsx",
+          "content": "\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SurfaceVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {surfaceVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* ------------------------------------------------------------------------------------------------\n * Surface Context\n * --------------------------------------------------------------------------------------------- */\ntype SurfaceContext = {\n  variant?: SurfaceVariants[\"variant\"];\n};\n\nconst SurfaceContext = createContext<SurfaceContext>({});\n\n/* ------------------------------------------------------------------------------------------------\n * Surface Root\n * --------------------------------------------------------------------------------------------- */\ninterface SurfaceRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children: ReactNode;\n  className?: string;\n  /** Visual variant. @default \"default\" */\n  variant?: SurfaceVariants[\"variant\"];\n}\n\nconst SurfaceRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  variant = \"default\",\n  ...rest\n}: SurfaceRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof SurfaceRootProps<E>>) => {\n  return (\n    <SurfaceContext value={{variant}}>\n      <dom.div\n        className={surfaceVariants({variant, className})}\n        data-slot=\"surface\"\n        {...(rest as any)}\n      >\n        {children}\n      </dom.div>\n    </SurfaceContext>\n  );\n};\n\n/* ------------------------------------------------------------------------------------------------\n * Exports\n * --------------------------------------------------------------------------------------------- */\nexport {SurfaceRoot, SurfaceContext};\n\nexport type {SurfaceRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "surface is a surface UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: surface\nDescription: surface is a surface UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: heroui, other, surface\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/surface/surface.tsx\n\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SurfaceVariants} from \"@heroui/styles\";\nimport type {ReactNode} from \"react\";\n\nimport {surfaceVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* ------------------------------------------------------------------------------------------------\n * Surface Context\n * ----------------------------------",
+  "prompt_version": 2,
+  "clean_id": "surface",
+  "display_name": "Surface",
+  "preview_url": "/previews/heroui/packages-react-src-components-surface-surface.png"
+}

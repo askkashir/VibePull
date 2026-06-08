@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_code",
+  "name": "code",
+  "source_code": "// packages/radix-ui-themes/src/components/code.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { codePropDefs } from './code.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CodeElement = React.ElementRef<'code'>;\ntype CodeOwnProps = GetPropDefTypes<typeof codePropDefs>;\ninterface CodeProps\n  extends ComponentPropsWithout<'code', RemovedProps>, MarginProps, CodeOwnProps {}\nconst Code = React.forwardRef<CodeElement, CodeProps>((props, forwardedRef) => {\n  const { asChild, className, color, ...codeProps } = extractProps(\n    props,\n    codePropDefs,\n    marginPropDefs,\n  );\n  // Code ghost color prop should work as text color by default\n  const resolvedColor = props.variant === 'ghost' ? color || undefined : color;\n  const Comp = asChild ? Slot.Root : 'code';\n  return (\n    <Comp\n      data-accent-color={resolvedColor}\n      {...codeProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Code', className)}\n    />\n  );\n});\nCode.displayName = 'Code';\n\nexport { Code };\nexport type { CodeProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_code",
+      "name": "code.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/code.tsx",
+      "sha": "ccb964039e9554aa23439c31a794fda8baec0aa8",
+      "size": 1341,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/code.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/code.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/ccb964039e9554aa23439c31a794fda8baec0aa8",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/code.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/code.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/ccb964039e9554aa23439c31a794fda8baec0aa8",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/code.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_code",
+      "name": "code",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/code.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { codePropDefs } from './code.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CodeElement = React.ElementRef<'code'>;\ntype CodeOwnProps = GetPropDefTypes<typeof codePropDefs>;\ninterface CodeProps\n  extends ComponentPropsWithout<'code', RemovedProps>, MarginProps, CodeOwnProps {}\nconst Code = React.forwardRef<CodeElement, CodeProps>((props, forwardedRef) => {\n  const { asChild, className, color, ...codeProps } = extractProps(\n    props,\n    codePropDefs,\n    marginPropDefs,\n  );\n  // Code ghost color prop should work as text color by default\n  const resolvedColor = props.variant === 'ghost' ? color || undefined : color;\n  const Comp = asChild ? Slot.Root : 'code';\n  return (\n    <Comp\n      data-accent-color={resolvedColor}\n      {...codeProps}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-Code', className)}\n    />\n  );\n});\nCode.displayName = 'Code';\n\nexport { Code };\nexport type { CodeProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

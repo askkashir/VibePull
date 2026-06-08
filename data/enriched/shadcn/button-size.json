@@ -1,0 +1,40 @@
+{
+  "id": "button-size",
+  "name": "button-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "Button",
+    "UI Control",
+    "Interaction",
+    "Form Element"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Button Size component is a UI control that allows developers to create buttons of varying sizes. It is ideal for use cases where a button needs to stand out or fit a specific design requirements. This component helps maintain a consistent aesthetic across an application by enabling the use of standardized button sizes.",
+  "style_tags": [
+    "material-ui",
+    "flat-design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-size\nDescription: The Button Size component is a UI control that allows developers to create buttons of varying sizes. It is ideal for use cases where a button needs to stand out or fit a specific design requirements. This component helps maintain a consistent aesthetic across an application by enabling the use of standardized button sizes.\nStyle: material-ui, flat-design\nInteractions: clickable, tappable\nTags: Button, UI Control, Interaction, Form Element\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-size",
+  "display_name": "Button Size",
+  "preview_url": "/previews/shadcn/button-size.png"
+}

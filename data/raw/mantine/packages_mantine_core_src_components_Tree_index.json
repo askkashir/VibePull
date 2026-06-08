@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tree_index",
+  "name": "Tree",
+  "source_code": "// packages/@mantine/core/src/components/Tree/index.ts\nimport type { CheckedNodeStatus } from './get-all-checked-nodes/get-all-checked-nodes';\nimport type {\n  RenderTreeNodePayload,\n  TreeCssVariables,\n  TreeFactory,\n  TreeNodeData,\n  TreeProps,\n  TreeStylesNames,\n} from './Tree';\nimport type { UseTreeInput, UseTreeReturnType } from './use-tree';\n\nexport { Tree } from './Tree';\nexport { useTree, getTreeExpandedState } from './use-tree';\nexport { mergeAsyncChildren } from './merge-async-children/merge-async-children';\nexport { moveTreeNode } from './move-tree-node/move-tree-node';\nexport { filterTreeData, defaultTreeNodeFilter } from './filter-tree-data/filter-tree-data';\nexport { flattenTreeData } from './flatten-tree-data/flatten-tree-data';\nexport { FlatTreeNode } from './FlatTreeNode';\n\nexport type {\n  TreeProps,\n  TreeStylesNames,\n  TreeFactory,\n  TreeCssVariables,\n  TreeNodeData,\n  RenderTreeNodePayload,\n  UseTreeInput,\n  UseTreeReturnType,\n  CheckedNodeStatus,\n};\n\nexport type { TreeNodeFilter } from './filter-tree-data/filter-tree-data';\nexport type { TreeDragDropPosition, TreeDragDropPayload } from './move-tree-node/move-tree-node';\nexport type {\n  FlattenedTreeNodeData,\n  FlatTreeLineState,\n} from './flatten-tree-data/flatten-tree-data';\nexport type { FlatTreeNodeProps } from './FlatTreeNode';\nexport type { TreeAllowDrop, TreeDragHandleProps } from './use-tree-node-drag-drop';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tree_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Tree/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tree_index",
+      "name": "Tree",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tree/index.ts",
+          "content": "import type { CheckedNodeStatus } from './get-all-checked-nodes/get-all-checked-nodes';\nimport type {\n  RenderTreeNodePayload,\n  TreeCssVariables,\n  TreeFactory,\n  TreeNodeData,\n  TreeProps,\n  TreeStylesNames,\n} from './Tree';\nimport type { UseTreeInput, UseTreeReturnType } from './use-tree';\n\nexport { Tree } from './Tree';\nexport { useTree, getTreeExpandedState } from './use-tree';\nexport { mergeAsyncChildren } from './merge-async-children/merge-async-children';\nexport { moveTreeNode } from './move-tree-node/move-tree-node';\nexport { filterTreeData, defaultTreeNodeFilter } from './filter-tree-data/filter-tree-data';\nexport { flattenTreeData } from './flatten-tree-data/flatten-tree-data';\nexport { FlatTreeNode } from './FlatTreeNode';\n\nexport type {\n  TreeProps,\n  TreeStylesNames,\n  TreeFactory,\n  TreeCssVariables,\n  TreeNodeData,\n  RenderTreeNodePayload,\n  UseTreeInput,\n  UseTreeReturnType,\n  CheckedNodeStatus,\n};\n\nexport type { TreeNodeFilter } from './filter-tree-data/filter-tree-data';\nexport type { TreeDragDropPosition, TreeDragDropPayload } from './move-tree-node/move-tree-node';\nexport type {\n  FlattenedTreeNodeData,\n  FlatTreeLineState,\n} from './flatten-tree-data/flatten-tree-data';\nexport type { FlatTreeNodeProps } from './FlatTreeNode';\nexport type { TreeAllowDrop, TreeDragHandleProps } from './use-tree-node-drag-drop';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

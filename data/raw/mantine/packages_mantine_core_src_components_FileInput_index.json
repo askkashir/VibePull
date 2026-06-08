@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_FileInput_index",
+  "name": "FileInput",
+  "source_code": "// packages/@mantine/core/src/components/FileInput/index.ts\nimport type { FileInputFactory, FileInputProps } from './FileInput';\n\nexport { FileInput } from './FileInput';\n\nexport type { FileInputProps, FileInputFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FileInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/FileInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FileInput_index",
+      "name": "FileInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FileInput/index.ts",
+          "content": "import type { FileInputFactory, FileInputProps } from './FileInput';\n\nexport { FileInput } from './FileInput';\n\nexport type { FileInputProps, FileInputFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

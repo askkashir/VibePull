@@ -1,0 +1,43 @@
+{
+  "id": "chart-radar-grid-custom",
+  "name": "chart-radar-grid-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radar chart",
+    "grid",
+    "customizable",
+    "dashboard",
+    "data visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-grid-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-grid-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Radar Chart Grid Custom is a customizable chart component that displays a grid-based radar chart. It's ideal for visualizing complex data in a concise and intuitive manner, making it perfect for dashboard builders and data analysts. Use it when needing to compare multiple data sets across multiple categories.",
+  "style_tags": [
+    "dark",
+    "material",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radar-grid-custom\nDescription: Radar Chart Grid Custom is a customizable chart component that displays a grid-based radar chart. It's ideal for visualizing complex data in a concise and intuitive manner, making it perfect for dashboard builders and data analysts. Use it when needing to compare multiple data sets across multiple categories.\nStyle: dark, material, minimal\nInteractions: hover, clickable\nTags: chart, radar chart, grid, customizable, dashboard, data visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-grid-custom",
+  "display_name": "Chart Radar Grid Custom",
+  "preview_url": "/previews/shadcn/chart-radar-grid-custom.png"
+}

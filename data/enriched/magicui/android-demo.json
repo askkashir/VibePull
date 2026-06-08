@@ -1,0 +1,58 @@
+{
+  "id": "android-demo",
+  "name": "Android Demo",
+  "source_code": "import { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android className=\"size-full\" />\n    </div>\n  )\n}\n",
+  "description": "Example showing a mockup of an Android device.",
+  "tags": [
+    "android",
+    "demo",
+    "interface"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "android-demo",
+      "type": "registry:example",
+      "title": "Android Demo",
+      "description": "Example showing a mockup of an Android device.",
+      "registryDependencies": [
+        "https://magicui.design/r/android"
+      ],
+      "files": [
+        {
+          "path": "registry/example/android-demo.tsx",
+          "type": "registry:example",
+          "target": "components/android-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "android-demo",
+      "type": "registry:example",
+      "title": "Android Demo",
+      "description": "Example showing a mockup of an Android device.",
+      "registryDependencies": [
+        "@magicui/android"
+      ],
+      "files": [
+        {
+          "path": "registry/example/android-demo.tsx",
+          "content": "import { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android className=\"size-full\" />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A full-screen Android interface component used to represent the UI of an Android device when a developer needs to display an Android-like interface.",
+  "style_tags": [
+    "full-screen"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Android Demo\nDescription: A full-screen Android interface component used to represent the UI of an Android device when a developer needs to display an Android-like interface.\nStyle: full-screen\nInteractions: \nTags: android, demo, interface\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android className=\"size-full\" />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "android-demo",
+  "display_name": "Android Demo",
+  "preview_url": "/previews/magicui/android-demo.png"
+}

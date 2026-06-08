@@ -1,0 +1,58 @@
+{
+  "id": "sliding-number",
+  "name": "sliding-number",
+  "source_code": "// components/core/sliding-number.tsx\n'use client';\nimport { useEffect, useId } from 'react';\nimport {\n  MotionValue,\n  motion,\n  useSpring,\n  useTransform,\n  motionValue,\n} from 'motion/react';\nimport useMeasure from 'react-use-measure';\n\nconst TRANSITION = {\n  type: 'spring' as const,\n  stiffness: 280,\n  damping: 18,\n  mass: 0.3,\n};\n\nfunction Digit({ value, place }: { value: number; place: number }) {\n  const valueRoundedToPlace = Math.floor(value / place) % 10;\n  const initial = motionValue(valueRoundedToPlace);\n  const animatedValue = useSpring(initial, TRANSITION);\n\n  useEffect(() => {\n    animatedValue.set(valueRoundedToPlace);\n  }, [animatedValue, valueRoundedToPlace]);\n\n  return (\n    <div className='relative inline-block w-[1ch] overflow-x-visible overflow-y-clip leading-none tabular-nums'>\n      <div className='invisible'>0</div>\n      {Array.from({ length: 10 }, (_, i) => (\n        <Number key={i} mv={animatedValue} number={i} />\n      ))}\n    </div>\n  );\n}\n\nfunction Number({ mv, number }: { mv: MotionValue<number>; number: number }) {\n  const uniqueId = useId();\n  const [ref, bounds] = useMeasure();\n\n  const y = useTransform(mv, (latest) => {\n    if (!bounds.height) return 0;\n    const placeValue = latest % 10;\n    const offset = (10 + number - placeValue) % 10;\n    let memo = offset * bounds.height;\n\n    if (offset > 5) {\n      memo -= 10 * bounds.height;\n    }\n\n    return memo;\n  });\n\n  // don't render the animated number until we know the height\n  if (!bounds.height) {\n    return (\n      <span ref={ref} className='invisible absolute'>\n        {number}\n      </span>\n    );\n  }\n\n  return (\n    <motion.span\n      style={{ y }}\n      layoutId={`${uniqueId}-${number}`}\n      className='absolute inset-0 flex items-center justify-center'\n      transition={TRANSITION}\n      ref={ref}\n    >\n      {number}\n    </motion.span>\n  );\n}\n\ntype SlidingNumberProps = {\n  value: number;\n  padStart?: boolean;\n  decimalSeparator?: string;\n};\n\nexport function SlidingNumber({\n  value,\n  padStart = false,\n  decimalSeparator = '.',\n}: SlidingNumberProps) {\n  const absValue = Math.abs(value);\n  const [integerPart, decimalPart] = absValue.toString().split('.');\n  const integerValue = parseInt(integerPart, 10);\n  const paddedInteger =\n    padStart && integerValue < 10 ? `0${integerPart}` : integerPart;\n  const integerDigits = paddedInteger.split('');\n  const integerPlaces = integerDigits.map((_, i) =>\n    Math.pow(10, integerDigits.length - i - 1)\n  );\n\n  return (\n    <div className='flex items-center'>\n      {value < 0 && '-'}\n      {integerDigits.map((_, index) => (\n        <Digit\n          key={`pos-${integerPlaces[index]}`}\n          value={integerValue}\n          place={integerPlaces[index]}\n        />\n      ))}\n      {decimalPart && (\n        <>\n          <span>{decimalSeparator}</span>\n          {decimalPart.split('').map((_, index) => (\n            <Digit\n              key={`decimal-${index}`}\n              value={parseInt(decimalPart, 10)}\n              place={Math.pow(10, decimalPart.length - index - 1)}\n            />\n          ))}\n        </>\n      )}\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "digital-clock",
+    "animated-numbers",
+    "data-visualization"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "sliding-number.tsx",
+      "source": "github_contents",
+      "path": "components/core/sliding-number.tsx",
+      "sha": "e6dd5208d1d4ada5f6daf393e8b47f338352a3a8",
+      "size": 3086,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/sliding-number.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/sliding-number.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/e6dd5208d1d4ada5f6daf393e8b47f338352a3a8",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/sliding-number.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/sliding-number.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/e6dd5208d1d4ada5f6daf393e8b47f338352a3a8",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/sliding-number.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "sliding-number",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/sliding-number.tsx",
+          "content": "'use client';\nimport { useEffect, useId } from 'react';\nimport {\n  MotionValue,\n  motion,\n  useSpring,\n  useTransform,\n  motionValue,\n} from 'motion/react';\nimport useMeasure from 'react-use-measure';\n\nconst TRANSITION = {\n  type: 'spring' as const,\n  stiffness: 280,\n  damping: 18,\n  mass: 0.3,\n};\n\nfunction Digit({ value, place }: { value: number; place: number }) {\n  const valueRoundedToPlace = Math.floor(value / place) % 10;\n  const initial = motionValue(valueRoundedToPlace);\n  const animatedValue = useSpring(initial, TRANSITION);\n\n  useEffect(() => {\n    animatedValue.set(valueRoundedToPlace);\n  }, [animatedValue, valueRoundedToPlace]);\n\n  return (\n    <div className='relative inline-block w-[1ch] overflow-x-visible overflow-y-clip leading-none tabular-nums'>\n      <div className='invisible'>0</div>\n      {Array.from({ length: 10 }, (_, i) => (\n        <Number key={i} mv={animatedValue} number={i} />\n      ))}\n    </div>\n  );\n}\n\nfunction Number({ mv, number }: { mv: MotionValue<number>; number: number }) {\n  const uniqueId = useId();\n  const [ref, bounds] = useMeasure();\n\n  const y = useTransform(mv, (latest) => {\n    if (!bounds.height) return 0;\n    const placeValue = latest % 10;\n    const offset = (10 + number - placeValue) % 10;\n    let memo = offset * bounds.height;\n\n    if (offset > 5) {\n      memo -= 10 * bounds.height;\n    }\n\n    return memo;\n  });\n\n  // don't render the animated number until we know the height\n  if (!bounds.height) {\n    return (\n      <span ref={ref} className='invisible absolute'>\n        {number}\n      </span>\n    );\n  }\n\n  return (\n    <motion.span\n      style={{ y }}\n      layoutId={`${uniqueId}-${number}`}\n      className='absolute inset-0 flex items-center justify-center'\n      transition={TRANSITION}\n      ref={ref}\n    >\n      {number}\n    </motion.span>\n  );\n}\n\ntype SlidingNumberProps = {\n  value: number;\n  padStart?: boolean;\n  decimalSeparator?: string;\n};\n\nexport function SlidingNumber({\n  value,\n  padStart = false,\n  decimalSeparator = '.',\n}: SlidingNumberProps) {\n  const absValue = Math.abs(value);\n  const [integerPart, decimalPart] = absValue.toString().split('.');\n  const integerValue = parseInt(integerPart, 10);\n  const paddedInteger =\n    padStart && integerValue < 10 ? `0${integerPart}` : integerPart;\n  const integerDigits = paddedInteger.split('');\n  const integerPlaces = integerDigits.map((_, i) =>\n    Math.pow(10, integerDigits.length - i - 1)\n  );\n\n  return (\n    <div className='flex items-center'>\n      {value < 0 && '-'}\n      {integerDigits.map((_, index) => (\n        <Digit\n          key={`pos-${integerPlaces[index]}`}\n          value={integerValue}\n          place={integerPlaces[index]}\n        />\n      ))}\n      {decimalPart && (\n        <>\n          <span>{decimalSeparator}</span>\n          {decimalPart.split('').map((_, index) => (\n            <Digit\n              key={`decimal-${index}`}\n              value={parseInt(decimalPart, 10)}\n              place={Math.pow(10, decimalPart.length - index - 1)}\n            />\n          ))}\n        </>\n      )}\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The SlidingNumber component represents a numerical value as a string of changing digits, similar to a traditional analog clock. It is best used for displaying large numbers or visualizing numerical data in a more dynamic way.",
+  "style_tags": [
+    "modern",
+    "interactive"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: sliding-number\nDescription: The SlidingNumber component represents a numerical value as a string of changing digits, similar to a traditional analog clock. It is best used for displaying large numbers or visualizing numerical data in a more dynamic way.\nStyle: modern, interactive\nInteractions: animated, hover, clickable\nTags: digital-clock, animated-numbers, data-visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/sliding-number.tsx\n'use client';\nimport { useEffect, useId } from 'react';\nimport {\n  MotionValue,\n  motion,\n  useSpring,\n  useTransform,\n  motionValue,\n} from 'motion/react';\nimport useMeasure from 'react-use-measure';\n\nconst TRANSITION = {\n  type: 'spring' as const,\n  stiffness: 280,\n  damping: 18,\n  mass: 0.3,\n};\n\nfunction Digit({ value, place }: { value: number; place: number }) {\n  const valueRoundedToPlace = Math.floor(value / place) % 10;\n  const initial = motionValue(v",
+  "prompt_version": 2,
+  "clean_id": "sliding-number",
+  "display_name": "Sliding Number",
+  "preview_url": "/previews/motionprimitives/sliding-number.png"
+}

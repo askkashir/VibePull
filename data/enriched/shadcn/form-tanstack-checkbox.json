@@ -1,0 +1,43 @@
+{
+  "id": "form-tanstack-checkbox",
+  "name": "form-tanstack-checkbox",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "checkbox",
+    "radio-group",
+    "survey",
+    "preferences"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-checkbox",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-checkbox\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "A form with a TanStack Checkbox component allows users to select one or multiple options from a list. This UI component is used when a user needs to agree to terms or select preferences. It is ideal for registration, purchase, or survey forms.",
+  "style_tags": [
+    "e.g. default",
+    "filled",
+    "outline"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hoverable",
+    "responsive"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-checkbox\nDescription: A form with a TanStack Checkbox component allows users to select one or multiple options from a list. This UI component is used when a user needs to agree to terms or select preferences. It is ideal for registration, purchase, or survey forms.\nStyle: e.g. default, filled, outline\nInteractions: e.g. clickable, hoverable, responsive\nTags: form, checkbox, radio-group, survey, preferences\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-checkbox",
+  "display_name": "Form Tanstack Checkbox",
+  "preview_url": "/previews/shadcn/form-tanstack-checkbox.png"
+}

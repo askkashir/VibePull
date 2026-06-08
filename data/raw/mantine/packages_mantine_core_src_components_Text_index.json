@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Text_index",
+  "name": "Text",
+  "source_code": "// packages/@mantine/core/src/components/Text/index.ts\nimport type {\n  TextCssVariables,\n  TextFactory,\n  TextProps,\n  TextStylesNames,\n  TextVariant,\n} from './Text';\n\nexport { Text } from './Text';\n\nexport type { TextProps, TextStylesNames, TextCssVariables, TextFactory, TextVariant };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Text_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Text/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Text_index",
+      "name": "Text",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Text/index.ts",
+          "content": "import type {\n  TextCssVariables,\n  TextFactory,\n  TextProps,\n  TextStylesNames,\n  TextVariant,\n} from './Text';\n\nexport { Text } from './Text';\n\nexport type { TextProps, TextStylesNames, TextCssVariables, TextFactory, TextVariant };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

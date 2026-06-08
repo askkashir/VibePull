@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_card_index",
+  "name": "card",
+  "source_code": "// packages/react/src/components/card/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {CardContent, CardDescription, CardFooter, CardHeader, CardRoot, CardTitle} from \"./card\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Card = Object.assign(CardRoot, {\n  Root: CardRoot,\n  Header: CardHeader,\n  Title: CardTitle,\n  Description: CardDescription,\n  Content: CardContent,\n  Footer: CardFooter,\n});\n\nexport type Card = {\n  Props: ComponentProps<typeof CardRoot>;\n  RootProps: ComponentProps<typeof CardRoot>;\n  HeaderProps: ComponentProps<typeof CardHeader>;\n  TitleProps: ComponentProps<typeof CardTitle>;\n  DescriptionProps: ComponentProps<typeof CardDescription>;\n  ContentProps: ComponentProps<typeof CardContent>;\n  FooterProps: ComponentProps<typeof CardFooter>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {CardRoot, CardHeader, CardTitle, CardDescription, CardContent, CardFooter};\n\nexport type {\n  CardRootProps,\n  CardRootProps as CardProps,\n  CardHeaderProps,\n  CardTitleProps,\n  CardDescriptionProps,\n  CardContentProps,\n  CardFooterProps,\n} from \"./card\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {cardVariants} from \"@heroui/styles\";\n\nexport type {CardVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "card_index",
+      "name": "index",
+      "path": "packages/react/src/components/card/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_card_index",
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/card/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {CardContent, CardDescription, CardFooter, CardHeader, CardRoot, CardTitle} from \"./card\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Card = Object.assign(CardRoot, {\n  Root: CardRoot,\n  Header: CardHeader,\n  Title: CardTitle,\n  Description: CardDescription,\n  Content: CardContent,\n  Footer: CardFooter,\n});\n\nexport type Card = {\n  Props: ComponentProps<typeof CardRoot>;\n  RootProps: ComponentProps<typeof CardRoot>;\n  HeaderProps: ComponentProps<typeof CardHeader>;\n  TitleProps: ComponentProps<typeof CardTitle>;\n  DescriptionProps: ComponentProps<typeof CardDescription>;\n  ContentProps: ComponentProps<typeof CardContent>;\n  FooterProps: ComponentProps<typeof CardFooter>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {CardRoot, CardHeader, CardTitle, CardDescription, CardContent, CardFooter};\n\nexport type {\n  CardRootProps,\n  CardRootProps as CardProps,\n  CardHeaderProps,\n  CardTitleProps,\n  CardDescriptionProps,\n  CardContentProps,\n  CardFooterProps,\n} from \"./card\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {cardVariants} from \"@heroui/styles\";\n\nexport type {CardVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_Accordion.context",
+  "name": "Accordion.context",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/Accordion.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { AccordionFactory } from './Accordion';\nimport { AccordionChevronPosition, AccordionHeadingOrder } from './Accordion.types';\n\nexport interface AccordionContextValue {\n  loop: boolean | undefined;\n  transitionDuration: number | undefined;\n  disableChevronRotation: boolean | undefined;\n  chevronPosition: AccordionChevronPosition | undefined;\n  order: AccordionHeadingOrder | undefined;\n  chevron: React.ReactNode;\n  onChange: (value: string) => void;\n  isItemActive: (value: string) => boolean;\n  getControlId: (value: string) => string;\n  getRegionId: (value: string) => string;\n  getStyles: GetStylesApi<AccordionFactory>;\n  variant: string | undefined;\n  unstyled: boolean | undefined;\n  keepMounted: boolean | undefined;\n}\n\nexport const [AccordionProvider, useAccordionContext] = createSafeContext<AccordionContextValue>(\n  'Accordion component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_Accordion.context",
+      "name": "Accordion.context",
+      "path": "packages/@mantine/core/src/components/Accordion/Accordion.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_Accordion.context",
+      "name": "Accordion.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/Accordion.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { AccordionFactory } from './Accordion';\nimport { AccordionChevronPosition, AccordionHeadingOrder } from './Accordion.types';\n\nexport interface AccordionContextValue {\n  loop: boolean | undefined;\n  transitionDuration: number | undefined;\n  disableChevronRotation: boolean | undefined;\n  chevronPosition: AccordionChevronPosition | undefined;\n  order: AccordionHeadingOrder | undefined;\n  chevron: React.ReactNode;\n  onChange: (value: string) => void;\n  isItemActive: (value: string) => boolean;\n  getControlId: (value: string) => string;\n  getRegionId: (value: string) => string;\n  getStyles: GetStylesApi<AccordionFactory>;\n  variant: string | undefined;\n  unstyled: boolean | undefined;\n  keepMounted: boolean | undefined;\n}\n\nexport const [AccordionProvider, useAccordionContext] = createSafeContext<AccordionContextValue>(\n  'Accordion component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

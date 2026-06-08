@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Group_filter-falsy-children_filter-falsy-children",
+  "name": "filter-falsy-children",
+  "source_code": "// packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts\nimport { Children, ReactElement, ReactNode } from 'react';\n\nexport function filterFalsyChildren(children: ReactNode) {\n  return (Children.toArray(children) as ReactElement[]).filter(Boolean);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Group_filter-falsy-children_filter-falsy-children",
+      "name": "filter-falsy-children",
+      "path": "packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Group_filter-falsy-children_filter-falsy-children",
+      "name": "filter-falsy-children",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts",
+          "content": "import { Children, ReactElement, ReactNode } from 'react';\n\nexport function filterFalsyChildren(children: ReactNode) {\n  return (Children.toArray(children) as ReactElement[]).filter(Boolean);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

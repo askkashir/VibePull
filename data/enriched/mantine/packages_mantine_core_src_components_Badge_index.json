@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Badge_index",
+  "name": "Badge",
+  "source_code": "// packages/@mantine/core/src/components/Badge/index.ts\nimport type {\n  BadgeCssVariables,\n  BadgeFactory,\n  BadgeProps,\n  BadgeStylesNames,\n  BadgeVariant,\n} from './Badge';\n\nexport { Badge } from './Badge';\n\nexport type { BadgeProps, BadgeStylesNames, BadgeCssVariables, BadgeVariant, BadgeFactory };\n",
+  "description": "",
+  "tags": [
+    "alert",
+    "indicator",
+    "label"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Badge_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Badge/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Badge_index",
+      "name": "Badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Badge/index.ts",
+          "content": "import type {\n  BadgeCssVariables,\n  BadgeFactory,\n  BadgeProps,\n  BadgeStylesNames,\n  BadgeVariant,\n} from './Badge';\n\nexport { Badge } from './Badge';\n\nexport type { BadgeProps, BadgeStylesNames, BadgeCssVariables, BadgeVariant, BadgeFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A small overlay typically placed on top or next to an element for displaying informative or indicative text.",
+  "style_tags": [
+    "e.g. colored"
+  ],
+  "interaction_tags": [
+    "e.g. static"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: Badge\nDescription: A small overlay typically placed on top or next to an element for displaying informative or indicative text.\nStyle: e.g. colored\nInteractions: e.g. static\nTags: alert, indicator, label\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Badge/index.ts\nimport type {\n  BadgeCssVariables,\n  BadgeFactory,\n  BadgeProps,\n  BadgeStylesNames,\n  BadgeVariant,\n} from './Badge';\n\nexport { Badge } from './Badge';\n\nexport type { BadgeProps, BadgeStylesNames, BadgeCssVariables, BadgeVariant, BadgeFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "badge",
+  "display_name": "Badge",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-badge-index.png"
+}

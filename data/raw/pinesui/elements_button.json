@@ -1,0 +1,31 @@
+{
+  "id": "elements_button",
+  "name": "button",
+  "source_code": "// elements/button.html\n<button type=\"button\" class=\"inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none\">\n    Button\n</button>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "button",
+      "name": "button",
+      "path": "elements/button.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_button",
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/button.html",
+          "content": "<button type=\"button\" class=\"inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-md bg-neutral-950 hover:bg-neutral-900 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none\">\n    Button\n</button>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

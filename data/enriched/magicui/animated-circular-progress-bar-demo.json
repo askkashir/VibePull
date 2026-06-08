@@ -1,0 +1,63 @@
+{
+  "id": "animated-circular-progress-bar-demo",
+  "name": "Animated Circular Progress Bar Demo",
+  "source_code": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\n\nimport { AnimatedCircularProgressBar } from \"@/registry/magicui/animated-circular-progress-bar\"\n\nexport default function AnimatedCircularProgressBarDemo() {\n  const [value, setValue] = useState(0)\n\n  useEffect(() => {\n    const handleIncrement = (prev: number) => {\n      if (prev === 100) {\n        return 0\n      }\n      return prev + 10\n    }\n    setValue(handleIncrement)\n    const interval = setInterval(() => setValue(handleIncrement), 2000)\n    return () => clearInterval(interval)\n  }, [])\n\n  return (\n    <AnimatedCircularProgressBar\n      value={value}\n      gaugePrimaryColor=\"rgb(79 70 229)\"\n      gaugeSecondaryColor=\"rgba(0, 0, 0, 0.1)\"\n    />\n  )\n}\n",
+  "description": "Example showing an animated circular progress gauge.",
+  "tags": [
+    "progress",
+    "animation",
+    "circular",
+    "bar"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-circular-progress-bar-demo",
+      "type": "registry:example",
+      "title": "Animated Circular Progress Bar Demo",
+      "description": "Example showing an animated circular progress gauge.",
+      "registryDependencies": [
+        "https://magicui.design/r/animated-circular-progress-bar"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-circular-progress-bar-demo.tsx",
+          "type": "registry:example",
+          "target": "components/animated-circular-progress-bar-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-circular-progress-bar-demo",
+      "type": "registry:example",
+      "title": "Animated Circular Progress Bar Demo",
+      "description": "Example showing an animated circular progress gauge.",
+      "registryDependencies": [
+        "@magicui/animated-circular-progress-bar"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-circular-progress-bar-demo.tsx",
+          "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\n\nimport { AnimatedCircularProgressBar } from \"@/registry/magicui/animated-circular-progress-bar\"\n\nexport default function AnimatedCircularProgressBarDemo() {\n  const [value, setValue] = useState(0)\n\n  useEffect(() => {\n    const handleIncrement = (prev: number) => {\n      if (prev === 100) {\n        return 0\n      }\n      return prev + 10\n    }\n    setValue(handleIncrement)\n    const interval = setInterval(() => setValue(handleIncrement), 2000)\n    return () => clearInterval(interval)\n  }, [])\n\n  return (\n    <AnimatedCircularProgressBar\n      value={value}\n      gaugePrimaryColor=\"rgb(79 70 229)\"\n      gaugeSecondaryColor=\"rgba(0, 0, 0, 0.1)\"\n    />\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A rotating circular progress bar animation that displays a value up to 100. This component is used when a developer wants to visually represent progress towards a goal, and add a sense of dynamism to a dashboard or metrics view.",
+  "style_tags": [
+    "animated",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "rotating",
+    "updateable"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: Animated Circular Progress Bar Demo\nDescription: A rotating circular progress bar animation that displays a value up to 100. This component is used when a developer wants to visually represent progress towards a goal, and add a sense of dynamism to a dashboard or metrics view.\nStyle: animated, glassmorphism\nInteractions: rotating, updateable\nTags: progress, animation, circular, bar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\n\nimport { AnimatedCircularProgressBar } from \"@/registry/magicui/animated-circular-progress-bar\"\n\nexport default function AnimatedCircularProgressBarDemo() {\n  const [value, setValue] = useState(0)\n\n  useEffect(() => {\n    const handleIncrement = (prev: number) => {\n      if (prev === 100) {\n        return 0\n      }\n      return prev + 10\n    }\n    setValue(handleIncrement)\n    const interval = setInterval(() => setValue(handleIncrement),",
+  "prompt_version": 2,
+  "clean_id": "animated-circular-progress-bar-demo",
+  "display_name": "Animated Circular Progress Bar Demo",
+  "preview_url": "/previews/magicui/animated-circular-progress-bar-demo.png"
+}

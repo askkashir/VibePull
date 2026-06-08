@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_Popover_Popover.context",
+  "name": "Popover.context",
+  "source_code": "// packages/@mantine/core/src/components/Popover/Popover.context.ts\nimport {\n  ClassNames,\n  createSafeContext,\n  GetStylesApi,\n  MantineRadius,\n  MantineShadow,\n  Styles,\n} from '../../core';\nimport { ArrowPosition, FloatingPosition, FloatingStrategy } from '../../utils/Floating';\nimport { BasePortalProps } from '../Portal';\nimport { TransitionOverride } from '../Transition';\nimport type { PopoverFactory } from './Popover';\nimport { PopoverWidth } from './Popover.types';\n\nexport interface PopoverContextValue {\n  x: number;\n  y: number;\n  arrowX: number | undefined;\n  arrowY: number | undefined;\n  arrowRef: React.RefObject<HTMLDivElement | null>;\n  opened: boolean;\n  transitionProps?: TransitionOverride;\n  reference: (node: HTMLElement) => void;\n  floating: (node: HTMLElement) => void;\n  width?: PopoverWidth;\n  withArrow: boolean | undefined;\n  arrowSize: number;\n  arrowOffset: number;\n  arrowRadius: number;\n  arrowPosition: ArrowPosition;\n  trapFocus: boolean | undefined;\n  placement: FloatingPosition;\n  withinPortal: boolean | undefined;\n  portalProps?: BasePortalProps;\n  closeOnEscape: boolean | undefined;\n  zIndex: string | number | undefined;\n  radius?: MantineRadius | undefined;\n  shadow?: MantineShadow | undefined;\n  onClose?: () => void;\n  onDismiss?: () => void;\n  getDropdownId: () => string;\n  getTargetId: () => string;\n  controlled: boolean;\n  onToggle: () => void;\n  withRoles: boolean | undefined;\n  targetProps: Record<string, any>;\n  disabled: boolean | undefined;\n  returnFocus: boolean | undefined;\n  classNames: ClassNames<PopoverFactory> | undefined;\n  styles: Styles<PopoverFactory> | undefined;\n  unstyled: boolean | undefined;\n  __staticSelector: string;\n  variant: string | undefined;\n  keepMounted: boolean | undefined;\n  getStyles: GetStylesApi<PopoverFactory>;\n  resolvedStyles: Record<string, any> | undefined;\n  floatingStrategy: FloatingStrategy | undefined;\n  referenceHidden: boolean | undefined;\n}\n\nexport const [PopoverContextProvider, usePopoverContext] = createSafeContext<PopoverContextValue>(\n  'Popover component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "modal",
+    "popover"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Popover_Popover.context",
+      "name": "Popover.context",
+      "path": "packages/@mantine/core/src/components/Popover/Popover.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Popover_Popover.context",
+      "name": "Popover.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Popover/Popover.context.ts",
+          "content": "import {\n  ClassNames,\n  createSafeContext,\n  GetStylesApi,\n  MantineRadius,\n  MantineShadow,\n  Styles,\n} from '../../core';\nimport { ArrowPosition, FloatingPosition, FloatingStrategy } from '../../utils/Floating';\nimport { BasePortalProps } from '../Portal';\nimport { TransitionOverride } from '../Transition';\nimport type { PopoverFactory } from './Popover';\nimport { PopoverWidth } from './Popover.types';\n\nexport interface PopoverContextValue {\n  x: number;\n  y: number;\n  arrowX: number | undefined;\n  arrowY: number | undefined;\n  arrowRef: React.RefObject<HTMLDivElement | null>;\n  opened: boolean;\n  transitionProps?: TransitionOverride;\n  reference: (node: HTMLElement) => void;\n  floating: (node: HTMLElement) => void;\n  width?: PopoverWidth;\n  withArrow: boolean | undefined;\n  arrowSize: number;\n  arrowOffset: number;\n  arrowRadius: number;\n  arrowPosition: ArrowPosition;\n  trapFocus: boolean | undefined;\n  placement: FloatingPosition;\n  withinPortal: boolean | undefined;\n  portalProps?: BasePortalProps;\n  closeOnEscape: boolean | undefined;\n  zIndex: string | number | undefined;\n  radius?: MantineRadius | undefined;\n  shadow?: MantineShadow | undefined;\n  onClose?: () => void;\n  onDismiss?: () => void;\n  getDropdownId: () => string;\n  getTargetId: () => string;\n  controlled: boolean;\n  onToggle: () => void;\n  withRoles: boolean | undefined;\n  targetProps: Record<string, any>;\n  disabled: boolean | undefined;\n  returnFocus: boolean | undefined;\n  classNames: ClassNames<PopoverFactory> | undefined;\n  styles: Styles<PopoverFactory> | undefined;\n  unstyled: boolean | undefined;\n  __staticSelector: string;\n  variant: string | undefined;\n  keepMounted: boolean | undefined;\n  getStyles: GetStylesApi<PopoverFactory>;\n  resolvedStyles: Record<string, any> | undefined;\n  floatingStrategy: FloatingStrategy | undefined;\n  referenceHidden: boolean | undefined;\n}\n\nexport const [PopoverContextProvider, usePopoverContext] = createSafeContext<PopoverContextValue>(\n  'Popover component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Popover.context is a popover context UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "keyboard-focus"
+  ],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: Popover.context\nDescription: Popover.context is a popover context UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: animated, keyboard-focus\nTags: context, mantine, modal, popover\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Popover/Popover.context.ts\nimport {\n  ClassNames,\n  createSafeContext,\n  GetStylesApi,\n  MantineRadius,\n  MantineShadow,\n  Styles,\n} from '../../core';\nimport { ArrowPosition, FloatingPosition, FloatingStrategy } from '../../utils/Floating';\nimport { BasePortalProps } from '../Portal';\nimport { TransitionOverride } from '../Transition';\nimport type { PopoverFactory } from './Popover';\nimport { PopoverWidth } from './Popover.types';\n\nexport interface Popov",
+  "prompt_version": 2,
+  "clean_id": "popover",
+  "display_name": "Popover",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-popover-popover-context.png"
+}

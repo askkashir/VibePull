@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Dialog_Dialog.story",
+  "name": "Dialog.story",
+  "source_code": "// packages/@mantine/core/src/components/Dialog/Dialog.story.tsx\nimport { Button, Group, Text, TextInput } from '@mantine/core';\nimport { useDisclosure } from '@mantine/hooks';\nimport { Dialog } from './Dialog';\n\nexport default { title: 'Dialog' };\n\nexport function Usage() {\n  const [opened, { toggle, close }] = useDisclosure(false);\n\n  return (\n    <>\n      <Group justify=\"center\">\n        <Button onClick={toggle}>Toggle dialog</Button>\n      </Group>\n\n      <Dialog opened={opened} withCloseButton onClose={close} size=\"lg\" className=\"testeasdda\">\n        <Text size=\"sm\" mb=\"xs\" fw={500}>\n          Subscribe to email newsletter\n        </Text>\n\n        <Group align=\"flex-end\">\n          <TextInput placeholder=\"hello@gluesticker.com\" style={{ flex: 1 }} />\n          <Button onClick={close}>Subscribe</Button>\n        </Group>\n      </Dialog>\n    </>\n  );\n}\n\nexport function Unstyled() {\n  const [opened, { toggle, close }] = useDisclosure(false);\n\n  return (\n    <>\n      <Group justify=\"center\">\n        <Button onClick={toggle}>Toggle dialog</Button>\n      </Group>\n\n      <Dialog\n        opened={opened}\n        withCloseButton\n        onClose={close}\n        size=\"lg\"\n        className=\"testeasdda\"\n        unstyled\n      >\n        <Text size=\"sm\" mb=\"xs\" fw={500}>\n          Subscribe to email newsletter\n        </Text>\n\n        <Group align=\"flex-end\">\n          <TextInput placeholder=\"hello@gluesticker.com\" style={{ flex: 1 }} />\n          <Button onClick={close}>Subscribe</Button>\n        </Group>\n      </Dialog>\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Dialog_Dialog.story",
+      "name": "Dialog.story",
+      "path": "packages/@mantine/core/src/components/Dialog/Dialog.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Dialog_Dialog.story",
+      "name": "Dialog.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Dialog/Dialog.story.tsx",
+          "content": "import { Button, Group, Text, TextInput } from '@mantine/core';\nimport { useDisclosure } from '@mantine/hooks';\nimport { Dialog } from './Dialog';\n\nexport default { title: 'Dialog' };\n\nexport function Usage() {\n  const [opened, { toggle, close }] = useDisclosure(false);\n\n  return (\n    <>\n      <Group justify=\"center\">\n        <Button onClick={toggle}>Toggle dialog</Button>\n      </Group>\n\n      <Dialog opened={opened} withCloseButton onClose={close} size=\"lg\" className=\"testeasdda\">\n        <Text size=\"sm\" mb=\"xs\" fw={500}>\n          Subscribe to email newsletter\n        </Text>\n\n        <Group align=\"flex-end\">\n          <TextInput placeholder=\"hello@gluesticker.com\" style={{ flex: 1 }} />\n          <Button onClick={close}>Subscribe</Button>\n        </Group>\n      </Dialog>\n    </>\n  );\n}\n\nexport function Unstyled() {\n  const [opened, { toggle, close }] = useDisclosure(false);\n\n  return (\n    <>\n      <Group justify=\"center\">\n        <Button onClick={toggle}>Toggle dialog</Button>\n      </Group>\n\n      <Dialog\n        opened={opened}\n        withCloseButton\n        onClose={close}\n        size=\"lg\"\n        className=\"testeasdda\"\n        unstyled\n      >\n        <Text size=\"sm\" mb=\"xs\" fw={500}>\n          Subscribe to email newsletter\n        </Text>\n\n        <Group align=\"flex-end\">\n          <TextInput placeholder=\"hello@gluesticker.com\" style={{ flex: 1 }} />\n          <Button onClick={close}>Subscribe</Button>\n        </Group>\n      </Dialog>\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

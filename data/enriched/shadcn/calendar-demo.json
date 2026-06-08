@@ -1,0 +1,39 @@
+{
+  "id": "calendar-demo",
+  "name": "calendar-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "date picker",
+    "calendar",
+    "datepicker"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "calendar-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## calendar-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Calendar Demo component is a date picker UI element that allows users to select dates from a visual calendar. It appears as a box with a list of month and year buttons, and a table displaying the days of the month. A developer would use this component for a registration or booking form where users need to choose dates.",
+  "style_tags": [
+    "material",
+    "light"
+  ],
+  "interaction_tags": [
+    "static",
+    "readonly"
+  ],
+  "component_type": "date picker",
+  "generation_prompt": "Create a production-ready date picker component with the following characteristics:\n\nName: calendar-demo\nDescription: The Calendar Demo component is a date picker UI element that allows users to select dates from a visual calendar. It appears as a box with a list of month and year buttons, and a table displaying the days of the month. A developer would use this component for a registration or booking form where users need to choose dates.\nStyle: material, light\nInteractions: static, readonly\nTags: date picker, calendar, datepicker\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "calendar-demo",
+  "display_name": "Calendar Demo",
+  "preview_url": "/previews/shadcn/calendar-demo.png"
+}

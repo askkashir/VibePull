@@ -1,0 +1,62 @@
+{
+  "id": "squiggle-arrow",
+  "name": "squiggle-arrow",
+  "source_code": "// registry/default/ui/squiggle-arrow.tsx\nimport { cn } from \"@/lib/utils\"\n\ninterface SquigglyArrowProps {\n  width?: number\n  height?: number\n  strokeWidth?: number\n  className?: string\n  direction?: \"right\" | \"left\" | \"up\" | \"down\"\n  variant?: \"wavy\" | \"bouncy\" | \"smooth\"\n}\n\nexport default function SquigglyArrow({\n  width = 200,\n  height = 100,\n  strokeWidth = 2.5,\n  className,\n  direction = \"right\",\n  variant = \"wavy\",\n}: SquigglyArrowProps) {\n  const paths = {\n    wavy: {\n      body: \"M 15 50 Q 35 35, 55 48 T 95 52 Q 115 48, 135 50 Q 145 52, 155 48\",\n      head: \"M 155 48 Q 147 44, 143 42 M 155 48 Q 148 53, 144 56\",\n    },\n    bouncy: {\n      body: \"M 15 50 Q 45 32, 65 50 Q 85 68, 105 50 Q 125 32, 145 50 Q 152 54, 158 50\",\n      head: \"M 158 50 Q 149 45, 145 43 M 158 50 Q 150 56, 146 59\",\n    },\n    smooth: {\n      body: \"M 15 50 Q 60 38, 100 48 Q 135 56, 158 50\",\n      head: \"M 158 50 Q 149 45, 145 43 M 158 50 Q 150 56, 146 59\",\n    },\n  }\n\n  const rotations = {\n    right: \"rotate(0)\",\n    left: \"rotate(180 100 50)\",\n    down: \"rotate(90 100 50)\",\n    up: \"rotate(-90 100 50)\",\n  }\n\n  const selectedPath = paths[variant]\n  const rotation = rotations[direction]\n\n  return (\n    <svg\n      width={width}\n      height={height}\n      viewBox=\"-10 -10 220 120\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      className={cn(\"text-foreground\", className)}\n    >\n      <title>Squiggly arrow</title>\n      <g transform={rotation}>\n        {/* Squiggly arrow body */}\n        <path\n          d={selectedPath.body}\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeLinecap=\"round\"\n          fill=\"none\"\n        />\n\n        {/* Arrow head */}\n        <path\n          d={selectedPath.head}\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeLinecap=\"round\"\n        />\n      </g>\n    </svg>\n  )\n}\n",
+  "description": "A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes",
+  "tags": [
+    "svg",
+    "arrow",
+    "directional",
+    "icon",
+    "indicator"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "squiggle-arrow.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/squiggle-arrow.json",
+      "sha": "e087b0501253a19aba7cdbac0bcfc46c57ccdf44",
+      "size": 2349,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/squiggle-arrow.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/squiggle-arrow.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/e087b0501253a19aba7cdbac0bcfc46c57ccdf44",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/squiggle-arrow.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/squiggle-arrow.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/e087b0501253a19aba7cdbac0bcfc46c57ccdf44",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/squiggle-arrow.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "squiggle-arrow",
+      "type": "registry:ui",
+      "description": "A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes",
+      "files": [
+        {
+          "path": "registry/default/ui/squiggle-arrow.tsx",
+          "content": "import { cn } from \"@/lib/utils\"\n\ninterface SquigglyArrowProps {\n  width?: number\n  height?: number\n  strokeWidth?: number\n  className?: string\n  direction?: \"right\" | \"left\" | \"up\" | \"down\"\n  variant?: \"wavy\" | \"bouncy\" | \"smooth\"\n}\n\nexport default function SquigglyArrow({\n  width = 200,\n  height = 100,\n  strokeWidth = 2.5,\n  className,\n  direction = \"right\",\n  variant = \"wavy\",\n}: SquigglyArrowProps) {\n  const paths = {\n    wavy: {\n      body: \"M 15 50 Q 35 35, 55 48 T 95 52 Q 115 48, 135 50 Q 145 52, 155 48\",\n      head: \"M 155 48 Q 147 44, 143 42 M 155 48 Q 148 53, 144 56\",\n    },\n    bouncy: {\n      body: \"M 15 50 Q 45 32, 65 50 Q 85 68, 105 50 Q 125 32, 145 50 Q 152 54, 158 50\",\n      head: \"M 158 50 Q 149 45, 145 43 M 158 50 Q 150 56, 146 59\",\n    },\n    smooth: {\n      body: \"M 15 50 Q 60 38, 100 48 Q 135 56, 158 50\",\n      head: \"M 158 50 Q 149 45, 145 43 M 158 50 Q 150 56, 146 59\",\n    },\n  }\n\n  const rotations = {\n    right: \"rotate(0)\",\n    left: \"rotate(180 100 50)\",\n    down: \"rotate(90 100 50)\",\n    up: \"rotate(-90 100 50)\",\n  }\n\n  const selectedPath = paths[variant]\n  const rotation = rotations[direction]\n\n  return (\n    <svg\n      width={width}\n      height={height}\n      viewBox=\"-10 -10 220 120\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      className={cn(\"text-foreground\", className)}\n    >\n      <title>Squiggly arrow</title>\n      <g transform={rotation}>\n        {/* Squiggly arrow body */}\n        <path\n          d={selectedPath.body}\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeLinecap=\"round\"\n          fill=\"none\"\n        />\n\n        {/* Arrow head */}\n        <path\n          d={selectedPath.head}\n          stroke=\"currentColor\"\n          strokeWidth={strokeWidth}\n          strokeLinecap=\"round\"\n        />\n      </g>\n    </svg>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "Squiggly Arrow is a customizable SVG component that renders a wavy, bouncy, or smooth-shaped arrow. It can be used to draw attention or to represent a directional flow in a user interface.",
+  "style_tags": [
+    "iconic",
+    "vector",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "non-interactive"
+  ],
+  "component_type": "icon",
+  "generation_prompt": "Create a production-ready icon component with the following characteristics:\n\nName: squiggle-arrow\nDescription: Squiggly Arrow is a customizable SVG component that renders a wavy, bouncy, or smooth-shaped arrow. It can be used to draw attention or to represent a directional flow in a user interface.\nStyle: iconic, vector, customizable\nInteractions: non-interactive\nTags: svg, arrow, directional, icon, indicator\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/squiggle-arrow.tsx\nimport { cn } from \"@/lib/utils\"\n\ninterface SquigglyArrowProps {\n  width?: number\n  height?: number\n  strokeWidth?: number\n  className?: string\n  direction?: \"right\" | \"left\" | \"up\" | \"down\"\n  variant?: \"wavy\" | \"bouncy\" | \"smooth\"\n}\n\nexport default function SquigglyArrow({\n  width = 200,\n  height = 100,\n  strokeWidth = 2.5,\n  className,\n  direction = \"right\",\n  variant = \"wavy\",\n}: SquigglyArrowProps) {\n  const paths = {\n    wavy: {\n      body: \"M 15 50",
+  "prompt_version": 2,
+  "clean_id": "squiggle-arrow",
+  "display_name": "Squiggle Arrow",
+  "preview_url": "/previews/cultui/squiggle-arrow.png"
+}

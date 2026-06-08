@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Image_Image",
+  "name": "Image",
+  "source_code": "// packages/@mantine/core/src/components/Image/Image.tsx\nimport { useEffect, useState } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  getRadius,\n  MantineRadius,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Image.module.css';\n\nexport type ImageStylesNames = 'root';\nexport type ImageCssVariables = {\n  root: '--image-radius' | '--image-object-fit';\n};\n\nexport interface ImageProps extends BoxProps, StylesApiProps<ImageFactory> {\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default 0 */\n  radius?: MantineRadius;\n\n  /** Controls `object-fit` style @default 'cover' */\n  fit?: React.CSSProperties['objectFit'];\n\n  /** Image url used as a fallback if the image cannot be loaded */\n  fallbackSrc?: string;\n\n  /** Image url */\n  src?: any;\n\n  /** Called when image fails to load */\n  onError?: (event: React.SyntheticEvent<HTMLImageElement, Event>) => void;\n}\n\nexport type ImageFactory = PolymorphicFactory<{\n  props: ImageProps;\n  defaultRef: HTMLImageElement;\n  defaultComponent: 'img';\n  stylesNames: ImageStylesNames;\n  vars: ImageCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<ImageFactory>((_, { radius, fit }) => ({\n  root: {\n    '--image-radius': radius === undefined ? undefined : getRadius(radius),\n    '--image-object-fit': fit,\n  },\n}));\n\nexport const Image = polymorphicFactory<ImageFactory>((_props) => {\n  const props = useProps('Image', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    onError,\n    src,\n    radius,\n    fit,\n    fallbackSrc,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const [error, setError] = useState(!src);\n\n  useEffect(() => setError(!src), [src]);\n\n  const getStyles = useStyles<ImageFactory>({\n    name: 'Image',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  if (error && fallbackSrc) {\n    return (\n      <Box\n        component=\"img\"\n        src={fallbackSrc}\n        {...getStyles('root')}\n        onError={onError}\n        mod={['fallback', mod]}\n        {...others}\n      />\n    );\n  }\n\n  return (\n    <Box\n      component=\"img\"\n      {...getStyles('root')}\n      src={src}\n      onError={(event) => {\n        onError?.(event);\n        setError(true);\n      }}\n      mod={mod}\n      {...others}\n    />\n  );\n});\n\nImage.classes = classes;\nImage.varsResolver = varsResolver;\nImage.displayName = '@mantine/core/Image';\n\nexport namespace Image {\n  export type Props = ImageProps;\n  export type StylesNames = ImageStylesNames;\n  export type CssVariables = ImageCssVariables;\n  export type Factory = ImageFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "image",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Image_Image",
+      "name": "Image",
+      "path": "packages/@mantine/core/src/components/Image/Image.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Image_Image",
+      "name": "Image",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Image/Image.tsx",
+          "content": "import { useEffect, useState } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  getRadius,\n  MantineRadius,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Image.module.css';\n\nexport type ImageStylesNames = 'root';\nexport type ImageCssVariables = {\n  root: '--image-radius' | '--image-object-fit';\n};\n\nexport interface ImageProps extends BoxProps, StylesApiProps<ImageFactory> {\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default 0 */\n  radius?: MantineRadius;\n\n  /** Controls `object-fit` style @default 'cover' */\n  fit?: React.CSSProperties['objectFit'];\n\n  /** Image url used as a fallback if the image cannot be loaded */\n  fallbackSrc?: string;\n\n  /** Image url */\n  src?: any;\n\n  /** Called when image fails to load */\n  onError?: (event: React.SyntheticEvent<HTMLImageElement, Event>) => void;\n}\n\nexport type ImageFactory = PolymorphicFactory<{\n  props: ImageProps;\n  defaultRef: HTMLImageElement;\n  defaultComponent: 'img';\n  stylesNames: ImageStylesNames;\n  vars: ImageCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<ImageFactory>((_, { radius, fit }) => ({\n  root: {\n    '--image-radius': radius === undefined ? undefined : getRadius(radius),\n    '--image-object-fit': fit,\n  },\n}));\n\nexport const Image = polymorphicFactory<ImageFactory>((_props) => {\n  const props = useProps('Image', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    onError,\n    src,\n    radius,\n    fit,\n    fallbackSrc,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const [error, setError] = useState(!src);\n\n  useEffect(() => setError(!src), [src]);\n\n  const getStyles = useStyles<ImageFactory>({\n    name: 'Image',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  if (error && fallbackSrc) {\n    return (\n      <Box\n        component=\"img\"\n        src={fallbackSrc}\n        {...getStyles('root')}\n        onError={onError}\n        mod={['fallback', mod]}\n        {...others}\n      />\n    );\n  }\n\n  return (\n    <Box\n      component=\"img\"\n      {...getStyles('root')}\n      src={src}\n      onError={(event) => {\n        onError?.(event);\n        setError(true);\n      }}\n      mod={mod}\n      {...others}\n    />\n  );\n});\n\nImage.classes = classes;\nImage.varsResolver = varsResolver;\nImage.displayName = '@mantine/core/Image';\n\nexport namespace Image {\n  export type Props = ImageProps;\n  export type StylesNames = ImageStylesNames;\n  export type CssVariables = ImageCssVariables;\n  export type Factory = ImageFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Image is a image UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Image\nDescription: Image is a image UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: \nTags: image, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Image/Image.tsx\nimport { useEffect, useState } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  getRadius,\n  MantineRadius,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Image.module.css';\n\nexport type ImageStylesNames = 'root';\nexport type ImageCssVariables = {\n  root: '--image-radius' | '--image-object-fit';\n};\n\nexport interface ImageProps extends BoxPr",
+  "prompt_version": 2,
+  "clean_id": "image",
+  "display_name": "Image",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-image-image.png"
+}

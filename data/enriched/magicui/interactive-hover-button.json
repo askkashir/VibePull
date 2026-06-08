@@ -1,0 +1,53 @@
+{
+  "id": "interactive-hover-button",
+  "name": "interactive-hover-button",
+  "source_code": "import { ArrowRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport function InteractiveHoverButton({\n  children,\n  className,\n  ...props\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\n  return (\n    <button\n      className={cn(\n        \"group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold\",\n        className\n      )}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center gap-2\">\n        <div className=\"bg-primary h-2 w-2 rounded-full transition-all duration-300 group-hover:scale-[100.8]\"></div>\n        <span className=\"inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0\">\n          {children}\n        </span>\n      </div>\n      <div className=\"text-primary-foreground absolute top-0 z-10 flex h-full w-full translate-x-12 items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100\">\n        <span>{children}</span>\n        <ArrowRight />\n      </div>\n    </button>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "button",
+    "interactive",
+    "hover",
+    "animated"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "interactive-hover-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/magicui/interactive-hover-button.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/interactive-hover-button.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "interactive-hover-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/magicui/interactive-hover-button.tsx",
+          "content": "import { ArrowRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport function InteractiveHoverButton({\n  children,\n  className,\n  ...props\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\n  return (\n    <button\n      className={cn(\n        \"group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold\",\n        className\n      )}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center gap-2\">\n        <div className=\"bg-primary h-2 w-2 rounded-full transition-all duration-300 group-hover:scale-[100.8]\"></div>\n        <span className=\"inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0\">\n          {children}\n        </span>\n      </div>\n      <div className=\"text-primary-foreground absolute top-0 z-10 flex h-full w-full translate-x-12 items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100\">\n        <span>{children}</span>\n        <ArrowRight />\n      </div>\n    </button>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A visually appealing interactive button that displays a symbol and animated text on hover. Suitable for buttons that require a visual cue when hovered over.",
+  "style_tags": [
+    "glassmorphism",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hoverable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: interactive-hover-button\nDescription: A visually appealing interactive button that displays a symbol and animated text on hover. Suitable for buttons that require a visual cue when hovered over.\nStyle: glassmorphism, rounded\nInteractions: clickable, hoverable\nTags: button, interactive, hover, animated\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ArrowRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport function InteractiveHoverButton({\n  children,\n  className,\n  ...props\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\n  return (\n    <button\n      className={cn(\n        \"group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold\",\n        className\n      )}\n      {...props}\n    >\n      <div className=\"flex items-center justify-center gap-2\">\n    ",
+  "prompt_version": 2,
+  "clean_id": "interactive-hover-button",
+  "display_name": "Interactive Hover Button",
+  "preview_url": "/previews/magicui/interactive-hover-button.png"
+}

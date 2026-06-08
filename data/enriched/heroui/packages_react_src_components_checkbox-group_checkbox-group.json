@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_checkbox-group_checkbox-group",
+  "name": "checkbox-group",
+  "source_code": "// packages/react/src/components/checkbox-group/checkbox-group.tsx\n\"use client\";\n\nimport type {CheckboxVariants} from \"../checkbox\";\nimport type {CheckboxGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {checkboxGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {CheckboxGroup as CheckboxGroupPrimitive} from \"react-aria-components/CheckboxGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * CheckboxGroup Context\n * -----------------------------------------------------------------------------------------------*/\ninterface CheckboxGroupContext {\n  variant?: CheckboxVariants[\"variant\"];\n}\n\nconst CheckboxGroupContext = createContext<CheckboxGroupContext>({});\n\ninterface CheckboxGroupProps\n  extends ComponentPropsWithRef<typeof CheckboxGroupPrimitive>, CheckboxGroupVariants {}\n\nconst CheckboxGroup = ({children, className, variant, ...props}: CheckboxGroupProps) => {\n  const styles = React.useMemo(() => checkboxGroupVariants({variant}), [variant]);\n\n  return (\n    <CheckboxGroupContext.Provider value={{variant}}>\n      <CheckboxGroupPrimitive\n        className={composeTwRenderProps(className, styles)}\n        data-slot=\"checkbox-group\"\n        {...props}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </CheckboxGroupPrimitive>\n    </CheckboxGroupContext.Provider>\n  );\n};\n\nexport {CheckboxGroup, CheckboxGroupContext};\nexport type {CheckboxGroupProps};\n",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "multiple-selection",
+    "form"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "checkbox-group_checkbox-group",
+      "name": "checkbox-group",
+      "path": "packages/react/src/components/checkbox-group/checkbox-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_checkbox-group_checkbox-group",
+      "name": "checkbox-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/checkbox-group/checkbox-group.tsx",
+          "content": "\"use client\";\n\nimport type {CheckboxVariants} from \"../checkbox\";\nimport type {CheckboxGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {checkboxGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {CheckboxGroup as CheckboxGroupPrimitive} from \"react-aria-components/CheckboxGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * CheckboxGroup Context\n * -----------------------------------------------------------------------------------------------*/\ninterface CheckboxGroupContext {\n  variant?: CheckboxVariants[\"variant\"];\n}\n\nconst CheckboxGroupContext = createContext<CheckboxGroupContext>({});\n\ninterface CheckboxGroupProps\n  extends ComponentPropsWithRef<typeof CheckboxGroupPrimitive>, CheckboxGroupVariants {}\n\nconst CheckboxGroup = ({children, className, variant, ...props}: CheckboxGroupProps) => {\n  const styles = React.useMemo(() => checkboxGroupVariants({variant}), [variant]);\n\n  return (\n    <CheckboxGroupContext.Provider value={{variant}}>\n      <CheckboxGroupPrimitive\n        className={composeTwRenderProps(className, styles)}\n        data-slot=\"checkbox-group\"\n        {...props}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </CheckboxGroupPrimitive>\n    </CheckboxGroupContext.Provider>\n  );\n};\n\nexport {CheckboxGroup, CheckboxGroupContext};\nexport type {CheckboxGroupProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A checkbox group is a collection of checkboxes that allows users to select multiple options. It is used when a user needs to select one or more items from a list. Developers would use the checkbox group component to implement features like user preferences, settings, or filters.",
+  "style_tags": [
+    "e.g. checkbox-style-variants",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: checkbox-group\nDescription: A checkbox group is a collection of checkboxes that allows users to select multiple options. It is used when a user needs to select one or more items from a list. Developers would use the checkbox group component to implement features like user preferences, settings, or filters.\nStyle: e.g. checkbox-style-variants, minimal\nInteractions: \nTags: checkbox, multiple-selection, form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/checkbox-group/checkbox-group.tsx\n\"use client\";\n\nimport type {CheckboxVariants} from \"../checkbox\";\nimport type {CheckboxGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {checkboxGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {CheckboxGroup as CheckboxGroupPrimitive} from \"react-aria-components/CheckboxGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* ---",
+  "prompt_version": 2,
+  "clean_id": "checkbox-group",
+  "display_name": "Checkbox Group",
+  "preview_url": "/previews/heroui/packages-react-src-components-checkbox-group-checkbox-group.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "field-switch",
+  "name": "field-switch",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "button",
+    "binary-choice"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-switch",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-switch\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The field-switch component is a toggle button that allows users to switch between two or more states. It is typically used when a user needs to make a binary choice or switch between two different settings. This component is suitable for any scenario where a user needs to toggle between two options.",
+  "style_tags": [
+    "default",
+    "material-design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggle"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: field-switch\nDescription: The field-switch component is a toggle button that allows users to switch between two or more states. It is typically used when a user needs to make a binary choice or switch between two different settings. This component is suitable for any scenario where a user needs to toggle between two options.\nStyle: default, material-design\nInteractions: clickable, toggle\nTags: toggle, button, binary-choice\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-switch",
+  "display_name": "Field Switch",
+  "preview_url": "/previews/shadcn/field-switch.png"
+}

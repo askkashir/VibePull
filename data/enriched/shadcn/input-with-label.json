@@ -1,0 +1,41 @@
+{
+  "id": "input-with-label",
+  "name": "input-with-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "label",
+    "data-entry",
+    "basic"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-with-label",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-with-label\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Input with Label component is a basic text input field accompanied by a descriptive label. It is typically used for form data entry, allowing users to input single-line text. This component provides a straightforward way to collect information from users.",
+  "style_tags": [
+    "material",
+    "modern"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "focusable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-with-label\nDescription: The Input with Label component is a basic text input field accompanied by a descriptive label. It is typically used for form data entry, allowing users to input single-line text. This component provides a straightforward way to collect information from users.\nStyle: material, modern\nInteractions: clickable, focusable\nTags: form, input, label, data-entry, basic\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-with-label",
+  "display_name": "Input With Label",
+  "preview_url": "/previews/shadcn/input-with-label.png"
+}

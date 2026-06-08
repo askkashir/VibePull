@@ -1,0 +1,62 @@
+{
+  "id": "card",
+  "name": "card",
+  "source_code": "// src/components/ui/card.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n",
+  "description": "",
+  "tags": [
+    "card",
+    "parkui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "card",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Card from './card'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n"
+        }
+      ],
+      "registryDependencies": [
+        "card-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "card",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Card from './card'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n"
+        }
+      ],
+      "registryDependencies": [
+        "card-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "card is a card UI component from the parkui corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card\nDescription: card is a card UI component from the parkui corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: card, parkui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/card.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\n",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/parkui/card.png"
+}

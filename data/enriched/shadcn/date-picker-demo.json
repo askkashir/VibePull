@@ -1,0 +1,41 @@
+{
+  "id": "date-picker-demo",
+  "name": "date-picker-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "date",
+    "input",
+    "calendar"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "date-picker-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## date-picker-demo\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** date-fns"
+  },
+  "visual_summary": "A date-picker-demo is a user-friendly input field that allows users to select a date from a calendar. It's commonly used for applications that require users to choose specific dates, such as scheduling appointments, booking events, or entering birthdays. Use this component when the user needs to input a specific date.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: date-picker-demo\nDescription: A date-picker-demo is a user-friendly input field that allows users to select a date from a calendar. It's commonly used for applications that require users to choose specific dates, such as scheduling appointments, booking events, or entering birthdays. Use this component when the user needs to input a specific date.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: date, input, calendar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "date-picker-demo",
+  "display_name": "Date Picker Demo",
+  "preview_url": "/previews/shadcn/date-picker-demo.png"
+}

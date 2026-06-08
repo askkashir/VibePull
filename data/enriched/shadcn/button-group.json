@@ -1,0 +1,44 @@
+{
+  "id": "button-group",
+  "name": "button-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "toolbar",
+    "navigation",
+    "actions",
+    "customizable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button group is a horizontal or vertical collection of buttons that are grouped together for related actions. It's typically used in the toolbar, navigation, or at the bottom of a page and can feature a primary action button alongside secondary buttons for alternative actions. The component can be customized for different themes, colors, and sizes to fit the overall design of the user interface.",
+  "style_tags": [
+    "compact",
+    "boxed",
+    "minimal",
+    "dark"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "responsive",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group\nDescription: A button group is a horizontal or vertical collection of buttons that are grouped together for related actions. It's typically used in the toolbar, navigation, or at the bottom of a page and can feature a primary action button alongside secondary buttons for alternative actions. The component can be customized for different themes, colors, and sizes to fit the overall design of the user interface.\nStyle: compact, boxed, minimal, dark\nInteractions: clickable, responsive, hover\nTags: button, toolbar, navigation, actions, customizable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group",
+  "display_name": "Button Group",
+  "preview_url": "/previews/shadcn/button-group.png"
+}

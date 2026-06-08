@@ -1,0 +1,40 @@
+{
+  "id": "sidebar-header",
+  "name": "sidebar-header",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "sidebar",
+    "header",
+    "navigation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-header",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-header\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A sidebar-header component displays a header title within a sidebar. It typically consists of a visually distinct heading accompanied by a navigation or control element. A developer would use this component to identify and provide access to primary sidebar navigation.",
+  "style_tags": [
+    "typical",
+    "clean",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: sidebar-header\nDescription: A sidebar-header component displays a header title within a sidebar. It typically consists of a visually distinct heading accompanied by a navigation or control element. A developer would use this component to identify and provide access to primary sidebar navigation.\nStyle: typical, clean, minimal\nInteractions: clickable, hover\nTags: sidebar, header, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-header",
+  "display_name": "Sidebar Header",
+  "preview_url": "/previews/shadcn/sidebar-header.png"
+}

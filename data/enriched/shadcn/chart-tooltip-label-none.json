@@ -1,0 +1,43 @@
+{
+  "id": "chart-tooltip-label-none",
+  "name": "chart-tooltip-label-none",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "tooltip",
+    "label",
+    "invisible",
+    "utility"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-label-none",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-label-none\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart tooltip label that is not visible or displayed. This component is used when additional information is required but doesn't need to be displayed directly on the chart.",
+  "style_tags": [
+    "e.g. light",
+    "compact",
+    "modern"
+  ],
+  "interaction_tags": [
+    "e.g. none",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "utility",
+  "generation_prompt": "Create a production-ready utility component with the following characteristics:\n\nName: chart-tooltip-label-none\nDescription: A chart tooltip label that is not visible or displayed. This component is used when additional information is required but doesn't need to be displayed directly on the chart.\nStyle: e.g. light, compact, modern\nInteractions: e.g. none, hover, clickable\nTags: chart, tooltip, label, invisible, utility\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-label-none",
+  "display_name": "Chart Tooltip Label None",
+  "preview_url": "/previews/shadcn/chart-tooltip-label-none.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Alert_index",
+  "name": "Alert",
+  "source_code": "// packages/@mantine/core/src/components/Alert/index.ts\nimport type {\n  AlertCssVariables,\n  AlertFactory,\n  AlertProps,\n  AlertStylesNames,\n  AlertVariant,\n} from './Alert';\n\nexport { Alert } from './Alert';\n\nexport type { AlertProps, AlertStylesNames, AlertCssVariables, AlertFactory, AlertVariant };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Alert_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Alert/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Alert_index",
+      "name": "Alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Alert/index.ts",
+          "content": "import type {\n  AlertCssVariables,\n  AlertFactory,\n  AlertProps,\n  AlertStylesNames,\n  AlertVariant,\n} from './Alert';\n\nexport { Alert } from './Alert';\n\nexport type { AlertProps, AlertStylesNames, AlertCssVariables, AlertFactory, AlertVariant };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "packages_react_src_components_field-error_field-error",
+  "name": "field-error",
+  "source_code": "// packages/react/src/components/field-error/field-error.tsx\n\"use client\";\n\nimport type {FieldErrorVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {fieldErrorVariants} from \"@heroui/styles\";\nimport {FieldError as FieldErrorPrimitive} from \"react-aria-components/FieldError\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Field Error Root\n * -----------------------------------------------------------------------------------------------*/\ninterface FieldErrorRootProps\n  extends ComponentPropsWithRef<typeof FieldErrorPrimitive>, FieldErrorVariants {}\n\nconst FieldErrorRoot = ({children, className, ...rest}: FieldErrorRootProps) => {\n  return (\n    <FieldErrorPrimitive\n      data-visible\n      className={composeTwRenderProps(className, fieldErrorVariants())}\n      data-slot=\"field-error\"\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </FieldErrorPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {FieldErrorRoot};\n\nexport type {FieldErrorRootProps};\n",
+  "description": "",
+  "tags": [
+    "error",
+    "form",
+    "feedback"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "field-error_field-error",
+      "name": "field-error",
+      "path": "packages/react/src/components/field-error/field-error.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_field-error_field-error",
+      "name": "field-error",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/field-error/field-error.tsx",
+          "content": "\"use client\";\n\nimport type {FieldErrorVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {fieldErrorVariants} from \"@heroui/styles\";\nimport {FieldError as FieldErrorPrimitive} from \"react-aria-components/FieldError\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Field Error Root\n * -----------------------------------------------------------------------------------------------*/\ninterface FieldErrorRootProps\n  extends ComponentPropsWithRef<typeof FieldErrorPrimitive>, FieldErrorVariants {}\n\nconst FieldErrorRoot = ({children, className, ...rest}: FieldErrorRootProps) => {\n  return (\n    <FieldErrorPrimitive\n      data-visible\n      className={composeTwRenderProps(className, fieldErrorVariants())}\n      data-slot=\"field-error\"\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </FieldErrorPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {FieldErrorRoot};\n\nexport type {FieldErrorRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A reusable component to display field-level error messages in a visually appealing way.",
+  "style_tags": [
+    "react-component-library",
+    "ui-component",
+    "style-agnostic"
+  ],
+  "interaction_tags": [
+    "rendered-as-needed",
+    "optional"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: field-error\nDescription: A reusable component to display field-level error messages in a visually appealing way.\nStyle: react-component-library, ui-component, style-agnostic\nInteractions: rendered-as-needed, optional\nTags: error, form, feedback\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/field-error/field-error.tsx\n\"use client\";\n\nimport type {FieldErrorVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {fieldErrorVariants} from \"@heroui/styles\";\nimport {FieldError as FieldErrorPrimitive} from \"react-aria-components/FieldError\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * Field Error Root\n ",
+  "prompt_version": 2,
+  "clean_id": "field-error",
+  "display_name": "Field Error",
+  "preview_url": "/previews/heroui/packages-react-src-components-field-error-field-error.png"
+}

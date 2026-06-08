@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_CopyButton_CopyButton",
+  "name": "CopyButton",
+  "source_code": "// packages/@mantine/core/src/components/CopyButton/CopyButton.tsx\nimport { useClipboard } from '@mantine/hooks';\nimport { useProps } from '../../core';\n\nexport interface CopyButtonProps {\n  /** Children callback, provides current status and copy function as an argument */\n  children: (payload: { copied: boolean; copy: () => void }) => React.ReactNode;\n\n  /** Value that is copied to the clipboard when the button is clicked */\n  value: string;\n\n  /** Copied status timeout in ms @default 1000 */\n  timeout?: number;\n}\n\nconst defaultProps = {\n  timeout: 1000,\n} satisfies Partial<CopyButtonProps>;\n\nexport function CopyButton(props: CopyButtonProps) {\n  const { children, timeout, value, ...others } = useProps('CopyButton', defaultProps, props);\n  const clipboard = useClipboard({ timeout });\n  const copy = () => clipboard.copy(value);\n  return <>{children({ copy, copied: clipboard.copied, ...others })}</>;\n}\n\nCopyButton.displayName = '@mantine/core/CopyButton';\n\nexport namespace CopyButton {\n  export type Props = CopyButtonProps;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "CopyButton_CopyButton",
+      "name": "CopyButton",
+      "path": "packages/@mantine/core/src/components/CopyButton/CopyButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_CopyButton_CopyButton",
+      "name": "CopyButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/CopyButton/CopyButton.tsx",
+          "content": "import { useClipboard } from '@mantine/hooks';\nimport { useProps } from '../../core';\n\nexport interface CopyButtonProps {\n  /** Children callback, provides current status and copy function as an argument */\n  children: (payload: { copied: boolean; copy: () => void }) => React.ReactNode;\n\n  /** Value that is copied to the clipboard when the button is clicked */\n  value: string;\n\n  /** Copied status timeout in ms @default 1000 */\n  timeout?: number;\n}\n\nconst defaultProps = {\n  timeout: 1000,\n} satisfies Partial<CopyButtonProps>;\n\nexport function CopyButton(props: CopyButtonProps) {\n  const { children, timeout, value, ...others } = useProps('CopyButton', defaultProps, props);\n  const clipboard = useClipboard({ timeout });\n  const copy = () => clipboard.copy(value);\n  return <>{children({ copy, copied: clipboard.copied, ...others })}</>;\n}\n\nCopyButton.displayName = '@mantine/core/CopyButton';\n\nexport namespace CopyButton {\n  export type Props = CopyButtonProps;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

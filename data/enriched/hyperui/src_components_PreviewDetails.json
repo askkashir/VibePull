@@ -1,0 +1,41 @@
+{
+  "id": "src_components_PreviewDetails",
+  "name": "PreviewDetails",
+  "source_code": "// src/components/PreviewDetails.astro\n---\nimport PreviewRefs from './PreviewRefs.astro'\n\ninterface Props {\n  description?: string\n  plugins?: string[]\n}\n\nconst { description = '', plugins = [] } = Astro.props\n\nconst show = description || plugins.length > 0\n---\n\n{\n  show && (\n    <div class=\"space-y-2 border-t border-gray-200 px-4 py-2\">\n      {description && <p class=\"text-sm text-gray-700\">{description}</p>}\n\n      {plugins.length ? (\n        <PreviewRefs prefix=\"Plugins:\" url=\"https://www.npmjs.com/package/\" refs={plugins} />\n      ) : null}\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "docs",
+    "preview",
+    "plugins"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewDetails",
+      "name": "PreviewDetails",
+      "path": "src/components/PreviewDetails.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewDetails",
+      "name": "PreviewDetails",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewDetails.astro",
+          "content": "---\nimport PreviewRefs from './PreviewRefs.astro'\n\ninterface Props {\n  description?: string\n  plugins?: string[]\n}\n\nconst { description = '', plugins = [] } = Astro.props\n\nconst show = description || plugins.length > 0\n---\n\n{\n  show && (\n    <div class=\"space-y-2 border-t border-gray-200 px-4 py-2\">\n      {description && <p class=\"text-sm text-gray-700\">{description}</p>}\n\n      {plugins.length ? (\n        <PreviewRefs prefix=\"Plugins:\" url=\"https://www.npmjs.com/package/\" refs={plugins} />\n      ) : null}\n    </div>\n  )\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The PreviewDetails component displays a preview of a project with plugin details. It's used when a developer wants to showcase their project with plugin details. This component can be used in documentation or blog posts.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: PreviewDetails\nDescription: The PreviewDetails component displays a preview of a project with plugin details. It's used when a developer wants to showcase their project with plugin details. This component can be used in documentation or blog posts.\nStyle: \nInteractions: \nTags: docs, preview, plugins\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/PreviewDetails.astro\n---\nimport PreviewRefs from './PreviewRefs.astro'\n\ninterface Props {\n  description?: string\n  plugins?: string[]\n}\n\nconst { description = '', plugins = [] } = Astro.props\n\nconst show = description || plugins.length > 0\n---\n\n{\n  show && (\n    <div class=\"space-y-2 border-t border-gray-200 px-4 py-2\">\n      {description && <p class=\"text-sm text-gray-700\">{description}</p>}\n\n      {plugins.length ? (\n        <PreviewRefs prefix=\"Plugins:\" url=\"https://www.npm",
+  "prompt_version": 2,
+  "clean_id": "preview-details",
+  "display_name": "Preview Details",
+  "preview_url": "/previews/hyperui/src-components-previewdetails.png"
+}

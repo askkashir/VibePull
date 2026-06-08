@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Group_filter-falsy-children_filter-falsy-children",
+  "name": "filter-falsy-children",
+  "source_code": "// packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts\nimport { Children, ReactElement, ReactNode } from 'react';\n\nexport function filterFalsyChildren(children: ReactNode) {\n  return (Children.toArray(children) as ReactElement[]).filter(Boolean);\n}\n",
+  "description": "",
+  "tags": [
+    "filter",
+    "children",
+    "React"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Group_filter-falsy-children_filter-falsy-children",
+      "name": "filter-falsy-children",
+      "path": "packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Group_filter-falsy-children_filter-falsy-children",
+      "name": "filter-falsy-children",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts",
+          "content": "import { Children, ReactElement, ReactNode } from 'react';\n\nexport function filterFalsyChildren(children: ReactNode) {\n  return (Children.toArray(children) as ReactElement[]).filter(Boolean);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Removes falsy children from a React component, leaving only truthy children.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "function",
+  "generation_prompt": "Create a production-ready function component with the following characteristics:\n\nName: filter-falsy-children\nDescription: Removes falsy children from a React component, leaving only truthy children.\nStyle: \nInteractions: \nTags: filter, children, React\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Group/filter-falsy-children/filter-falsy-children.ts\nimport { Children, ReactElement, ReactNode } from 'react';\n\nexport function filterFalsyChildren(children: ReactNode) {\n  return (Children.toArray(children) as ReactElement[]).filter(Boolean);\n}\n",
+  "prompt_version": 2,
+  "clean_id": "filter-falsy-children",
+  "display_name": "Filter Falsy Children",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-group-filter-falsy-children-filter-falsy-children.png"
+}

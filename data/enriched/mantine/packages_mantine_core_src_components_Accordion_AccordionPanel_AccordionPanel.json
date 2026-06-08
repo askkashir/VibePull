@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_AccordionPanel_AccordionPanel",
+  "name": "AccordionPanel",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/AccordionPanel/AccordionPanel.tsx\nimport {\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { Collapse } from '../../Collapse';\nimport { useAccordionContext } from '../Accordion.context';\nimport { useAccordionItemContext } from '../AccordionItem.context';\nimport classes from '../Accordion.module.css';\n\nexport type AccordionPanelStylesNames = 'panel' | 'content';\n\nexport interface AccordionPanelProps\n  extends BoxProps, CompoundStylesApiProps<AccordionPanelFactory>, ElementProps<'div'> {\n  /** Called when the panel animation completes */\n  onTransitionEnd?: () => void;\n\n  /** Called when the panel animation starts */\n  onTransitionStart?: () => void;\n\n  /** If set, overrides the Accordion-level `keepMounted` value. When undefined (default), uses Accordion's `keepMounted` setting. */\n  keepMounted?: boolean;\n}\n\nexport type AccordionPanelFactory = Factory<{\n  props: AccordionPanelProps;\n  ref: HTMLDivElement;\n  stylesNames: AccordionPanelStylesNames;\n  compound: true;\n}>;\n\nexport const AccordionPanel = factory<AccordionPanelFactory>((props) => {\n  const { classNames, className, style, styles, vars, children, keepMounted, ...others } = useProps(\n    'AccordionPanel',\n    null,\n    props\n  );\n\n  const { value } = useAccordionItemContext();\n  const ctx = useAccordionContext();\n\n  return (\n    <Collapse\n      {...ctx.getStyles('panel', { className, classNames, style, styles })}\n      expanded={ctx.isItemActive(value)}\n      transitionDuration={ctx.transitionDuration ?? 200}\n      role=\"region\"\n      id={ctx.getRegionId(value)}\n      aria-labelledby={ctx.getControlId(value)}\n      keepMounted={keepMounted ?? ctx.keepMounted}\n      {...others}\n    >\n      <div {...ctx.getStyles('content', { classNames, styles })}>{children}</div>\n    </Collapse>\n  );\n});\n\nAccordionPanel.displayName = '@mantine/core/AccordionPanel';\nAccordionPanel.classes = classes;\n",
+  "description": "",
+  "tags": [
+    "accordion",
+    "mantine",
+    "other",
+    "panel"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_AccordionPanel_AccordionPanel",
+      "name": "AccordionPanel",
+      "path": "packages/@mantine/core/src/components/Accordion/AccordionPanel/AccordionPanel.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_AccordionPanel_AccordionPanel",
+      "name": "AccordionPanel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/AccordionPanel/AccordionPanel.tsx",
+          "content": "import {\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { Collapse } from '../../Collapse';\nimport { useAccordionContext } from '../Accordion.context';\nimport { useAccordionItemContext } from '../AccordionItem.context';\nimport classes from '../Accordion.module.css';\n\nexport type AccordionPanelStylesNames = 'panel' | 'content';\n\nexport interface AccordionPanelProps\n  extends BoxProps, CompoundStylesApiProps<AccordionPanelFactory>, ElementProps<'div'> {\n  /** Called when the panel animation completes */\n  onTransitionEnd?: () => void;\n\n  /** Called when the panel animation starts */\n  onTransitionStart?: () => void;\n\n  /** If set, overrides the Accordion-level `keepMounted` value. When undefined (default), uses Accordion's `keepMounted` setting. */\n  keepMounted?: boolean;\n}\n\nexport type AccordionPanelFactory = Factory<{\n  props: AccordionPanelProps;\n  ref: HTMLDivElement;\n  stylesNames: AccordionPanelStylesNames;\n  compound: true;\n}>;\n\nexport const AccordionPanel = factory<AccordionPanelFactory>((props) => {\n  const { classNames, className, style, styles, vars, children, keepMounted, ...others } = useProps(\n    'AccordionPanel',\n    null,\n    props\n  );\n\n  const { value } = useAccordionItemContext();\n  const ctx = useAccordionContext();\n\n  return (\n    <Collapse\n      {...ctx.getStyles('panel', { className, classNames, style, styles })}\n      expanded={ctx.isItemActive(value)}\n      transitionDuration={ctx.transitionDuration ?? 200}\n      role=\"region\"\n      id={ctx.getRegionId(value)}\n      aria-labelledby={ctx.getControlId(value)}\n      keepMounted={keepMounted ?? ctx.keepMounted}\n      {...others}\n    >\n      <div {...ctx.getStyles('content', { classNames, styles })}>{children}</div>\n    </Collapse>\n  );\n});\n\nAccordionPanel.displayName = '@mantine/core/AccordionPanel';\nAccordionPanel.classes = classes;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AccordionPanel is a accordion panel UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AccordionPanel\nDescription: AccordionPanel is a accordion panel UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: animated\nTags: accordion, mantine, other, panel\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Accordion/AccordionPanel/AccordionPanel.tsx\nimport {\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { Collapse } from '../../Collapse';\nimport { useAccordionContext } from '../Accordion.context';\nimport { useAccordionItemContext } from '../AccordionItem.context';\nimport classes from '../Accordion.module.css';\n\nexport type AccordionPanelStylesNames = 'panel' | 'content';\n\nexport interf",
+  "prompt_version": 2,
+  "clean_id": "accordion-panel",
+  "display_name": "Accordion Panel",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-accordion-accordionpanel-accordionpanel.png"
+}

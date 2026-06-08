@@ -1,0 +1,31 @@
+{
+  "id": "src_components_PreviewCopy",
+  "name": "PreviewCopy",
+  "source_code": "// src/components/PreviewCopy.astro\n---\nimport { Clipboard } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-copy data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Copy HTML\"\n    aria-pressed=\"false\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md bg-black px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <Clipboard class=\"size-4\" />\n\n    <span data-text>Copy</span>\n  </button>\n\n  <span data-polite aria-live=\"polite\" class=\"sr-only\"> </span>\n</preview-copy>\n\n<script>\n  class PreviewCopy extends HTMLElement {\n    private isProcessing = false\n    private contentSrc: string | null = null\n    private timeoutId: ReturnType<typeof setTimeout> | null = null\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n      const politeEl = this.querySelector('span[data-polite]')\n\n      if (!buttonEl || !politeEl) {\n        return\n      }\n\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        if (this.isProcessing) {\n          return\n        }\n\n        this.isProcessing = true\n\n        if (this.timeoutId !== null) {\n          clearTimeout(this.timeoutId)\n        }\n\n        document.dispatchEvent(\n          new CustomEvent(`preview:copy:${this.contentSrc}`, {\n            bubbles: true,\n          }),\n        )\n\n        buttonText.textContent = 'Copied'\n        politeEl.textContent = 'Copied to clipboard.'\n\n        buttonEl.setAttribute('aria-pressed', 'true')\n\n        this.timeoutId = globalThis.setTimeout(() => {\n          if (this.isConnected) {\n            buttonText.textContent = 'Copy'\n            politeEl.textContent = ''\n\n            buttonEl.setAttribute('aria-pressed', 'false')\n          }\n\n          this.isProcessing = false\n        }, 1500)\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n\n      if (this.timeoutId !== null) {\n        clearTimeout(this.timeoutId)\n\n        this.timeoutId = null\n      }\n    }\n  }\n\n  customElements.define('preview-copy', PreviewCopy)\n</script>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewCopy",
+      "name": "PreviewCopy",
+      "path": "src/components/PreviewCopy.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewCopy",
+      "name": "PreviewCopy",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewCopy.astro",
+          "content": "---\nimport { Clipboard } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-copy data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Copy HTML\"\n    aria-pressed=\"false\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md bg-black px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <Clipboard class=\"size-4\" />\n\n    <span data-text>Copy</span>\n  </button>\n\n  <span data-polite aria-live=\"polite\" class=\"sr-only\"> </span>\n</preview-copy>\n\n<script>\n  class PreviewCopy extends HTMLElement {\n    private isProcessing = false\n    private contentSrc: string | null = null\n    private timeoutId: ReturnType<typeof setTimeout> | null = null\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n      const politeEl = this.querySelector('span[data-polite]')\n\n      if (!buttonEl || !politeEl) {\n        return\n      }\n\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        if (this.isProcessing) {\n          return\n        }\n\n        this.isProcessing = true\n\n        if (this.timeoutId !== null) {\n          clearTimeout(this.timeoutId)\n        }\n\n        document.dispatchEvent(\n          new CustomEvent(`preview:copy:${this.contentSrc}`, {\n            bubbles: true,\n          }),\n        )\n\n        buttonText.textContent = 'Copied'\n        politeEl.textContent = 'Copied to clipboard.'\n\n        buttonEl.setAttribute('aria-pressed', 'true')\n\n        this.timeoutId = globalThis.setTimeout(() => {\n          if (this.isConnected) {\n            buttonText.textContent = 'Copy'\n            politeEl.textContent = ''\n\n            buttonEl.setAttribute('aria-pressed', 'false')\n          }\n\n          this.isProcessing = false\n        }, 1500)\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n\n      if (this.timeoutId !== null) {\n        clearTimeout(this.timeoutId)\n\n        this.timeoutId = null\n      }\n    }\n  }\n\n  customElements.define('preview-copy', PreviewCopy)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

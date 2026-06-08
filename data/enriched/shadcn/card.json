@@ -1,0 +1,42 @@
+{
+  "id": "card",
+  "name": "card",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "display",
+    "content",
+    "summary",
+    "visual"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "card",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## card\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A card UI component is a rectangular block typically containing information, images, or both. It is often used to display content in a more visually appealing way. Developers would use a card component to summarize and highlight key information on websites, dashboards, or applications.",
+  "style_tags": [
+    "e.g. dark",
+    "flat",
+    "shadowed"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card\nDescription: A card UI component is a rectangular block typically containing information, images, or both. It is often used to display content in a more visually appealing way. Developers would use a card component to summarize and highlight key information on websites, dashboards, or applications.\nStyle: e.g. dark, flat, shadowed\nInteractions: e.g. hover, clickable, draggable\nTags: display, content, summary, visual\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/shadcn/card.png"
+}

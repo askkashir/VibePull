@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_CTA_index",
+  "name": "CTA",
+  "source_code": "// components/ui/CTA/index.tsx\nimport LinkItem from \"../LinkItem\";\n\nexport default () => (\n  <section className=\"mt-32 custom-screen\">\n    <div className=\"max-w-3xl mx-auto space-y-4 text-center\">\n      <h2 className=\"text-4xl heading\">\n        Make your ideas come to life with no time\n      </h2>\n      <p className=\"text-zinc-400 max-w-xl mx-auto\">\n        Copy and paste our ready to use components into your apps, and save\n        time, or use it in MarsX.\n      </p>\n      <div className=\"flex flex-wrap items-center justify-center gap-3\">\n        <LinkItem\n          href=\"/components\"\n          variant=\"shiny\"\n          className=\"inline-block w-full hover:bg-zinc-700 sm:w-auto\"\n        >\n          Get started\n        </LinkItem>\n        <LinkItem\n          href=\"https://marsx.dev/?ref=floatui\"\n          target=\"_blank\"\n          className=\"inline-block w-full sm:w-auto\"\n        >\n          Use in MarsX\n        </LinkItem>\n      </div>\n    </div>\n  </section>\n);\n",
+  "description": "",
+  "tags": [
+    "cta",
+    "floatui",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_CTA_index",
+      "name": "index",
+      "path": "components/ui/CTA/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_CTA_index",
+      "name": "CTA",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/CTA/index.tsx",
+          "content": "import LinkItem from \"../LinkItem\";\n\nexport default () => (\n  <section className=\"mt-32 custom-screen\">\n    <div className=\"max-w-3xl mx-auto space-y-4 text-center\">\n      <h2 className=\"text-4xl heading\">\n        Make your ideas come to life with no time\n      </h2>\n      <p className=\"text-zinc-400 max-w-xl mx-auto\">\n        Copy and paste our ready to use components into your apps, and save\n        time, or use it in MarsX.\n      </p>\n      <div className=\"flex flex-wrap items-center justify-center gap-3\">\n        <LinkItem\n          href=\"/components\"\n          variant=\"shiny\"\n          className=\"inline-block w-full hover:bg-zinc-700 sm:w-auto\"\n        >\n          Get started\n        </LinkItem>\n        <LinkItem\n          href=\"https://marsx.dev/?ref=floatui\"\n          target=\"_blank\"\n          className=\"inline-block w-full sm:w-auto\"\n        >\n          Use in MarsX\n        </LinkItem>\n      </div>\n    </div>\n  </section>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "CTA is a cta UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: CTA\nDescription: CTA is a cta UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: hover\nTags: cta, floatui, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/CTA/index.tsx\nimport LinkItem from \"../LinkItem\";\n\nexport default () => (\n  <section className=\"mt-32 custom-screen\">\n    <div className=\"max-w-3xl mx-auto space-y-4 text-center\">\n      <h2 className=\"text-4xl heading\">\n        Make your ideas come to life with no time\n      </h2>\n      <p className=\"text-zinc-400 max-w-xl mx-auto\">\n        Copy and paste our ready to use components into your apps, and save\n        time, or use it in MarsX.\n      </p>\n      <div className=\"flex ",
+  "prompt_version": 2,
+  "clean_id": "cta",
+  "display_name": "Cta",
+  "preview_url": "/previews/floatui/components-ui-cta-index.png"
+}

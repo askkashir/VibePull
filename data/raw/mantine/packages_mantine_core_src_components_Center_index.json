@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Center_index",
+  "name": "Center",
+  "source_code": "// packages/@mantine/core/src/components/Center/index.ts\nimport type { CenterFactory, CenterProps, CenterStylesNames } from './Center';\n\nexport { Center } from './Center';\n\nexport type { CenterProps, CenterFactory, CenterStylesNames };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Center_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Center/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Center_index",
+      "name": "Center",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Center/index.ts",
+          "content": "import type { CenterFactory, CenterProps, CenterStylesNames } from './Center';\n\nexport { Center } from './Center';\n\nexport type { CenterProps, CenterFactory, CenterStylesNames };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

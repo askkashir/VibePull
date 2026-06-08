@@ -1,0 +1,42 @@
+{
+  "id": "spinner-size",
+  "name": "spinner-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "UI component",
+    "loading",
+    "animation",
+    "circle",
+    "progress"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "This is a customizable spinner component, used to represent loading progress. It's a simple and circular indicator that can be easily integrated into various applications. When a developer would use this component, they want to display a loading animation without disrupting the user flow.",
+  "style_tags": [
+    "material design",
+    "flat",
+    "small"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner-size\nDescription: This is a customizable spinner component, used to represent loading progress. It's a simple and circular indicator that can be easily integrated into various applications. When a developer would use this component, they want to display a loading animation without disrupting the user flow.\nStyle: material design, flat, small\nInteractions: animated, clickable\nTags: UI component, loading, animation, circle, progress\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-size",
+  "display_name": "Spinner Size",
+  "preview_url": "/previews/shadcn/spinner-size.png"
+}

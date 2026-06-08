@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Input_Input.context",
+  "name": "Input.context",
+  "source_code": "// packages/@mantine/core/src/components/Input/Input.context.ts\nimport { createContext } from 'react';\nimport { MantineSize } from '../../core';\n\ninterface InputContextValue {\n  size: MantineSize | (string & {});\n}\n\nexport const InputContext = createContext<InputContextValue>({ size: 'sm' });\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_Input.context",
+      "name": "Input.context",
+      "path": "packages/@mantine/core/src/components/Input/Input.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_Input.context",
+      "name": "Input.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/Input.context.ts",
+          "content": "import { createContext } from 'react';\nimport { MantineSize } from '../../core';\n\ninterface InputContextValue {\n  size: MantineSize | (string & {});\n}\n\nexport const InputContext = createContext<InputContextValue>({ size: 'sm' });\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_OverflowList_get-row-position-data",
+  "name": "get-row-position-data",
+  "source_code": "// packages/@mantine/core/src/components/OverflowList/get-row-position-data.ts\nimport React from 'react';\n\ninterface NodePosition {\n  elements: Set<HTMLElement>;\n  bottom: number;\n  top: number;\n}\nfunction groupNodesByTopPosition(nodes: HTMLElement[]): Record<number, NodePosition> {\n  if (nodes.length === 0) {\n    return {};\n  }\n\n  const result: Record<number, NodePosition> = {};\n\n  nodes.forEach((node) => {\n    const rect = node.getBoundingClientRect();\n    const top = Math.round(rect.top);\n    const bottom = Math.round(rect.bottom);\n\n    if (!result[top]) {\n      result[top] = {\n        elements: new Set<HTMLElement>(),\n        bottom,\n        top,\n      };\n    } else {\n      result[top].bottom = Math.max(result[top].bottom, bottom);\n    }\n\n    result[top].elements.add(node);\n  });\n\n  return result;\n}\nexport function getRowPositionsData(\n  containerRef: React.RefObject<HTMLElement | null>,\n  overflowRef: React.RefObject<HTMLElement | null>\n): {\n  itemsSizesMap: Record<number, NodePosition>;\n  rowPositions: number[];\n  children: HTMLElement[];\n} | null {\n  if (!containerRef.current) {\n    return null;\n  }\n\n  const container = containerRef.current;\n  const children = Array.from(container.children).filter(\n    (child) => overflowRef.current !== child\n  ) as HTMLElement[];\n\n  if (children.length === 0) {\n    return null;\n  }\n\n  const itemsSizesMap = groupNodesByTopPosition(children);\n  const rowPositions = Object.keys(itemsSizesMap).map(Number);\n\n  return { itemsSizesMap, rowPositions, children };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "OverflowList_get-row-position-data",
+      "name": "get-row-position-data",
+      "path": "packages/@mantine/core/src/components/OverflowList/get-row-position-data.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_OverflowList_get-row-position-data",
+      "name": "get-row-position-data",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/OverflowList/get-row-position-data.ts",
+          "content": "import React from 'react';\n\ninterface NodePosition {\n  elements: Set<HTMLElement>;\n  bottom: number;\n  top: number;\n}\nfunction groupNodesByTopPosition(nodes: HTMLElement[]): Record<number, NodePosition> {\n  if (nodes.length === 0) {\n    return {};\n  }\n\n  const result: Record<number, NodePosition> = {};\n\n  nodes.forEach((node) => {\n    const rect = node.getBoundingClientRect();\n    const top = Math.round(rect.top);\n    const bottom = Math.round(rect.bottom);\n\n    if (!result[top]) {\n      result[top] = {\n        elements: new Set<HTMLElement>(),\n        bottom,\n        top,\n      };\n    } else {\n      result[top].bottom = Math.max(result[top].bottom, bottom);\n    }\n\n    result[top].elements.add(node);\n  });\n\n  return result;\n}\nexport function getRowPositionsData(\n  containerRef: React.RefObject<HTMLElement | null>,\n  overflowRef: React.RefObject<HTMLElement | null>\n): {\n  itemsSizesMap: Record<number, NodePosition>;\n  rowPositions: number[];\n  children: HTMLElement[];\n} | null {\n  if (!containerRef.current) {\n    return null;\n  }\n\n  const container = containerRef.current;\n  const children = Array.from(container.children).filter(\n    (child) => overflowRef.current !== child\n  ) as HTMLElement[];\n\n  if (children.length === 0) {\n    return null;\n  }\n\n  const itemsSizesMap = groupNodesByTopPosition(children);\n  const rowPositions = Object.keys(itemsSizesMap).map(Number);\n\n  return { itemsSizesMap, rowPositions, children };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

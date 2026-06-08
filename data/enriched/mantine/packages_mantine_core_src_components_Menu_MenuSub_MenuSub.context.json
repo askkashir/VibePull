@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuSub_MenuSub.context",
+  "name": "MenuSub.context",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx\nimport { createContext } from 'react';\nimport type { ReferenceType } from '@floating-ui/react';\n\nexport interface SubMenuContextValue {\n  opened: boolean;\n  close: () => void;\n  open: () => void;\n  focusFirstItem: () => void;\n  focusParentItem: () => void;\n  parentContext: SubMenuContextValue | null;\n  setReference: (node: ReferenceType | null) => void;\n  setFloating: (node: HTMLElement | null) => void;\n  getReferenceProps: (userProps?: React.HTMLProps<Element>) => Record<string, unknown>;\n  getFloatingProps: (userProps?: React.HTMLProps<HTMLElement>) => Record<string, unknown>;\n  registerOpenSub: (closeFn: () => void) => () => void;\n}\n\nexport const SubMenuContext = createContext<SubMenuContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "menu",
+    "navbar",
+    "sub"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuSub_MenuSub.context",
+      "name": "MenuSub.context",
+      "path": "packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuSub_MenuSub.context",
+      "name": "MenuSub.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx",
+          "content": "import { createContext } from 'react';\nimport type { ReferenceType } from '@floating-ui/react';\n\nexport interface SubMenuContextValue {\n  opened: boolean;\n  close: () => void;\n  open: () => void;\n  focusFirstItem: () => void;\n  focusParentItem: () => void;\n  parentContext: SubMenuContextValue | null;\n  setReference: (node: ReferenceType | null) => void;\n  setFloating: (node: HTMLElement | null) => void;\n  getReferenceProps: (userProps?: React.HTMLProps<Element>) => Record<string, unknown>;\n  getFloatingProps: (userProps?: React.HTMLProps<HTMLElement>) => Record<string, unknown>;\n  registerOpenSub: (closeFn: () => void) => () => void;\n}\n\nexport const SubMenuContext = createContext<SubMenuContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuSub.context is a menu sub context UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuSub.context\nDescription: MenuSub.context is a menu sub context UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: context, mantine, menu, navbar, sub\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuSub/MenuSub.context.tsx\nimport { createContext } from 'react';\nimport type { ReferenceType } from '@floating-ui/react';\n\nexport interface SubMenuContextValue {\n  opened: boolean;\n  close: () => void;\n  open: () => void;\n  focusFirstItem: () => void;\n  focusParentItem: () => void;\n  parentContext: SubMenuContextValue | null;\n  setReference: (node: ReferenceType | null) => void;\n  setFloating: (node: HTMLElement | null) => void;\n  getReferenceProps",
+  "prompt_version": 2,
+  "clean_id": "menu-sub",
+  "display_name": "Menu Sub",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menusub-menusub-context.png"
+}

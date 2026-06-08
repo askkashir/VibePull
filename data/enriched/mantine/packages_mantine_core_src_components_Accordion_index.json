@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_index",
+  "name": "Accordion",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/index.ts\nimport type {\n  AccordionCssVariables,\n  AccordionFactory,\n  AccordionProps,\n  AccordionStylesNames,\n  AccordionVariant,\n} from './Accordion';\nimport type { AccordionContextValue } from './Accordion.context';\nimport type { AccordionHeadingOrder, AccordionValue } from './Accordion.types';\nimport type { AccordionChevronProps } from './AccordionChevron';\nimport type { AccordionControlProps } from './AccordionControl/AccordionControl';\nimport type { AccordionItemContextValue } from './AccordionItem.context';\nimport type { AccordionItemProps } from './AccordionItem/AccordionItem';\nimport type { AccordionPanelProps } from './AccordionPanel/AccordionPanel';\n\nexport { Accordion } from './Accordion';\nexport { AccordionChevron } from './AccordionChevron';\nexport { AccordionItem } from './AccordionItem/AccordionItem';\nexport { AccordionPanel } from './AccordionPanel/AccordionPanel';\nexport { AccordionControl } from './AccordionControl/AccordionControl';\nexport { useAccordionContext } from './Accordion.context';\nexport { useAccordionItemContext } from './AccordionItem.context';\n\nexport type {\n  AccordionProps,\n  AccordionStylesNames,\n  AccordionCssVariables,\n  AccordionFactory,\n  AccordionVariant,\n  AccordionControlProps,\n  AccordionItemProps,\n  AccordionPanelProps,\n  AccordionChevronProps,\n  AccordionValue,\n  AccordionHeadingOrder,\n  AccordionContextValue,\n  AccordionItemContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "accordion",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Accordion/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_index",
+      "name": "Accordion",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/index.ts",
+          "content": "import type {\n  AccordionCssVariables,\n  AccordionFactory,\n  AccordionProps,\n  AccordionStylesNames,\n  AccordionVariant,\n} from './Accordion';\nimport type { AccordionContextValue } from './Accordion.context';\nimport type { AccordionHeadingOrder, AccordionValue } from './Accordion.types';\nimport type { AccordionChevronProps } from './AccordionChevron';\nimport type { AccordionControlProps } from './AccordionControl/AccordionControl';\nimport type { AccordionItemContextValue } from './AccordionItem.context';\nimport type { AccordionItemProps } from './AccordionItem/AccordionItem';\nimport type { AccordionPanelProps } from './AccordionPanel/AccordionPanel';\n\nexport { Accordion } from './Accordion';\nexport { AccordionChevron } from './AccordionChevron';\nexport { AccordionItem } from './AccordionItem/AccordionItem';\nexport { AccordionPanel } from './AccordionPanel/AccordionPanel';\nexport { AccordionControl } from './AccordionControl/AccordionControl';\nexport { useAccordionContext } from './Accordion.context';\nexport { useAccordionItemContext } from './AccordionItem.context';\n\nexport type {\n  AccordionProps,\n  AccordionStylesNames,\n  AccordionCssVariables,\n  AccordionFactory,\n  AccordionVariant,\n  AccordionControlProps,\n  AccordionItemProps,\n  AccordionPanelProps,\n  AccordionChevronProps,\n  AccordionValue,\n  AccordionHeadingOrder,\n  AccordionContextValue,\n  AccordionItemContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Accordion is a accordion UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Accordion\nDescription: Accordion is a accordion UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: accordion, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Accordion/index.ts\nimport type {\n  AccordionCssVariables,\n  AccordionFactory,\n  AccordionProps,\n  AccordionStylesNames,\n  AccordionVariant,\n} from './Accordion';\nimport type { AccordionContextValue } from './Accordion.context';\nimport type { AccordionHeadingOrder, AccordionValue } from './Accordion.types';\nimport type { AccordionChevronProps } from './AccordionChevron';\nimport type { AccordionControlProps } from './AccordionControl/AccordionControl';\nimpo",
+  "prompt_version": 2,
+  "clean_id": "accordion",
+  "display_name": "Accordion",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-accordion-index.png"
+}

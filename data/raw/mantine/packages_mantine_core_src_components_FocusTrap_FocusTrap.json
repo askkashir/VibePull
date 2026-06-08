@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_FocusTrap_FocusTrap",
+  "name": "FocusTrap",
+  "source_code": "// packages/@mantine/core/src/components/FocusTrap/FocusTrap.tsx\nimport { cloneElement } from 'react';\nimport { useFocusTrap, useMergedRef } from '@mantine/hooks';\nimport { getSingleElementChild } from '../../core';\nimport { VisuallyHidden } from '../VisuallyHidden';\n\nexport interface FocusTrapProps {\n  /** Element to trap focus at, must support ref prop */\n  children: any;\n\n  /** If set to `false`, disables focus trap */\n  active?: boolean;\n\n  /** Prop that is used to access element ref @default 'ref' */\n  refProp?: string;\n\n  /** Ref to combine with the focus trap ref */\n  innerRef?: React.Ref<any>;\n}\n\nexport function FocusTrap({\n  children,\n  active = true,\n  refProp = 'ref',\n  innerRef,\n}: FocusTrapProps): React.ReactElement {\n  const focusTrapRef = useFocusTrap(active);\n  const ref = useMergedRef(focusTrapRef, innerRef);\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    return children;\n  }\n\n  return cloneElement(child, { [refProp]: ref });\n}\n\nexport function FocusTrapInitialFocus(props: React.ComponentProps<'span'>) {\n  return <VisuallyHidden tabIndex={-1} data-autofocus {...props} />;\n}\n\nFocusTrap.displayName = '@mantine/core/FocusTrap';\nFocusTrapInitialFocus.displayName = '@mantine/core/FocusTrapInitialFocus';\nFocusTrap.InitialFocus = FocusTrapInitialFocus;\n\nexport namespace FocusTrap {\n  export type Props = FocusTrapProps;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FocusTrap_FocusTrap",
+      "name": "FocusTrap",
+      "path": "packages/@mantine/core/src/components/FocusTrap/FocusTrap.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FocusTrap_FocusTrap",
+      "name": "FocusTrap",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FocusTrap/FocusTrap.tsx",
+          "content": "import { cloneElement } from 'react';\nimport { useFocusTrap, useMergedRef } from '@mantine/hooks';\nimport { getSingleElementChild } from '../../core';\nimport { VisuallyHidden } from '../VisuallyHidden';\n\nexport interface FocusTrapProps {\n  /** Element to trap focus at, must support ref prop */\n  children: any;\n\n  /** If set to `false`, disables focus trap */\n  active?: boolean;\n\n  /** Prop that is used to access element ref @default 'ref' */\n  refProp?: string;\n\n  /** Ref to combine with the focus trap ref */\n  innerRef?: React.Ref<any>;\n}\n\nexport function FocusTrap({\n  children,\n  active = true,\n  refProp = 'ref',\n  innerRef,\n}: FocusTrapProps): React.ReactElement {\n  const focusTrapRef = useFocusTrap(active);\n  const ref = useMergedRef(focusTrapRef, innerRef);\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    return children;\n  }\n\n  return cloneElement(child, { [refProp]: ref });\n}\n\nexport function FocusTrapInitialFocus(props: React.ComponentProps<'span'>) {\n  return <VisuallyHidden tabIndex={-1} data-autofocus {...props} />;\n}\n\nFocusTrap.displayName = '@mantine/core/FocusTrap';\nFocusTrapInitialFocus.displayName = '@mantine/core/FocusTrapInitialFocus';\nFocusTrap.InitialFocus = FocusTrapInitialFocus;\n\nexport namespace FocusTrap {\n  export type Props = FocusTrapProps;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

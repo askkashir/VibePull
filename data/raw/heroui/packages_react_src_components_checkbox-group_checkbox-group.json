@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_checkbox-group_checkbox-group",
+  "name": "checkbox-group",
+  "source_code": "// packages/react/src/components/checkbox-group/checkbox-group.tsx\n\"use client\";\n\nimport type {CheckboxVariants} from \"../checkbox\";\nimport type {CheckboxGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {checkboxGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {CheckboxGroup as CheckboxGroupPrimitive} from \"react-aria-components/CheckboxGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * CheckboxGroup Context\n * -----------------------------------------------------------------------------------------------*/\ninterface CheckboxGroupContext {\n  variant?: CheckboxVariants[\"variant\"];\n}\n\nconst CheckboxGroupContext = createContext<CheckboxGroupContext>({});\n\ninterface CheckboxGroupProps\n  extends ComponentPropsWithRef<typeof CheckboxGroupPrimitive>, CheckboxGroupVariants {}\n\nconst CheckboxGroup = ({children, className, variant, ...props}: CheckboxGroupProps) => {\n  const styles = React.useMemo(() => checkboxGroupVariants({variant}), [variant]);\n\n  return (\n    <CheckboxGroupContext.Provider value={{variant}}>\n      <CheckboxGroupPrimitive\n        className={composeTwRenderProps(className, styles)}\n        data-slot=\"checkbox-group\"\n        {...props}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </CheckboxGroupPrimitive>\n    </CheckboxGroupContext.Provider>\n  );\n};\n\nexport {CheckboxGroup, CheckboxGroupContext};\nexport type {CheckboxGroupProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "checkbox-group_checkbox-group",
+      "name": "checkbox-group",
+      "path": "packages/react/src/components/checkbox-group/checkbox-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_checkbox-group_checkbox-group",
+      "name": "checkbox-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/checkbox-group/checkbox-group.tsx",
+          "content": "\"use client\";\n\nimport type {CheckboxVariants} from \"../checkbox\";\nimport type {CheckboxGroupVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {checkboxGroupVariants} from \"@heroui/styles\";\nimport React, {createContext} from \"react\";\nimport {CheckboxGroup as CheckboxGroupPrimitive} from \"react-aria-components/CheckboxGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * CheckboxGroup Context\n * -----------------------------------------------------------------------------------------------*/\ninterface CheckboxGroupContext {\n  variant?: CheckboxVariants[\"variant\"];\n}\n\nconst CheckboxGroupContext = createContext<CheckboxGroupContext>({});\n\ninterface CheckboxGroupProps\n  extends ComponentPropsWithRef<typeof CheckboxGroupPrimitive>, CheckboxGroupVariants {}\n\nconst CheckboxGroup = ({children, className, variant, ...props}: CheckboxGroupProps) => {\n  const styles = React.useMemo(() => checkboxGroupVariants({variant}), [variant]);\n\n  return (\n    <CheckboxGroupContext.Provider value={{variant}}>\n      <CheckboxGroupPrimitive\n        className={composeTwRenderProps(className, styles)}\n        data-slot=\"checkbox-group\"\n        {...props}\n      >\n        {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n      </CheckboxGroupPrimitive>\n    </CheckboxGroupContext.Provider>\n  );\n};\n\nexport {CheckboxGroup, CheckboxGroupContext};\nexport type {CheckboxGroupProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

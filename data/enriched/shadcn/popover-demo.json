@@ -1,0 +1,39 @@
+{
+  "id": "popover-demo",
+  "name": "popover-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "tooltip",
+    "hint",
+    "info"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "popover-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## popover-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Popover Demo component is a versatile, context-aware tooltip that provides extra information or actions when the user interacts with a trigger element. It's useful for displaying additional details without taking up too much space on the page. A developer might use this component to add a secondary level of interaction to their UI.",
+  "style_tags": [
+    "material",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: popover-demo\nDescription: The Popover Demo component is a versatile, context-aware tooltip that provides extra information or actions when the user interacts with a trigger element. It's useful for displaying additional details without taking up too much space on the page. A developer might use this component to add a secondary level of interaction to their UI.\nStyle: material, minimal\nInteractions: hover, clickable\nTags: tooltip, hint, info\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "popover-demo",
+  "display_name": "Popover Demo",
+  "preview_url": "/previews/shadcn/popover-demo.png"
+}

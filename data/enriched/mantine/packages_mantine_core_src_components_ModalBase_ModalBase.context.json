@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBase.context",
+  "name": "ModalBase.context",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts\nimport { createSafeContext } from '../../core';\nimport { TransitionOverride } from '../Transition';\n\ninterface ModalBaseContextValue {\n  unstyled: boolean | undefined;\n  titleMounted: boolean;\n  bodyMounted: boolean;\n  setTitleMounted: (value: boolean) => void;\n  setBodyMounted: (value: boolean) => void;\n  getTitleId: () => string;\n  getBodyId: () => string;\n  transitionProps: Partial<TransitionOverride> | undefined;\n  onExitTransitionEnd: (() => void) | undefined;\n  onEnterTransitionEnd: (() => void) | undefined;\n  zIndex: string | number | undefined;\n\n  opened: boolean;\n  onClose: () => void;\n\n  closeOnEscape: boolean | undefined;\n  trapFocus: boolean | undefined;\n  closeOnClickOutside: boolean | undefined;\n}\n\nexport const [ModalBaseProvider, useModalBaseContext] = createSafeContext<ModalBaseContextValue>(\n  'ModalBase component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "base",
+    "context",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBase.context",
+      "name": "ModalBase.context",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBase.context",
+      "name": "ModalBase.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts",
+          "content": "import { createSafeContext } from '../../core';\nimport { TransitionOverride } from '../Transition';\n\ninterface ModalBaseContextValue {\n  unstyled: boolean | undefined;\n  titleMounted: boolean;\n  bodyMounted: boolean;\n  setTitleMounted: (value: boolean) => void;\n  setBodyMounted: (value: boolean) => void;\n  getTitleId: () => string;\n  getBodyId: () => string;\n  transitionProps: Partial<TransitionOverride> | undefined;\n  onExitTransitionEnd: (() => void) | undefined;\n  onEnterTransitionEnd: (() => void) | undefined;\n  zIndex: string | number | undefined;\n\n  opened: boolean;\n  onClose: () => void;\n\n  closeOnEscape: boolean | undefined;\n  trapFocus: boolean | undefined;\n  closeOnClickOutside: boolean | undefined;\n}\n\nexport const [ModalBaseProvider, useModalBaseContext] = createSafeContext<ModalBaseContextValue>(\n  'ModalBase component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalBase.context is a modal base context UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated",
+    "interactive",
+    "keyboard-focus"
+  ],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalBase.context\nDescription: ModalBase.context is a modal base context UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated, interactive, keyboard-focus\nTags: base, context, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/ModalBase.context.ts\nimport { createSafeContext } from '../../core';\nimport { TransitionOverride } from '../Transition';\n\ninterface ModalBaseContextValue {\n  unstyled: boolean | undefined;\n  titleMounted: boolean;\n  bodyMounted: boolean;\n  setTitleMounted: (value: boolean) => void;\n  setBodyMounted: (value: boolean) => void;\n  getTitleId: () => string;\n  getBodyId: () => string;\n  transitionProps: Partial<TransitionOverride> | undefined;\n  onExi",
+  "prompt_version": 2,
+  "clean_id": "modal-base",
+  "display_name": "Modal Base",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-modalbase-context.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_NativeScrollArea",
+  "name": "NativeScrollArea",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx\ninterface NativeScrollAreaProps {\n  children: React.ReactNode;\n}\n\nexport function NativeScrollArea({ children }: NativeScrollAreaProps) {\n  return <>{children}</>;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_NativeScrollArea",
+      "name": "NativeScrollArea",
+      "path": "packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_NativeScrollArea",
+      "name": "NativeScrollArea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx",
+          "content": "interface NativeScrollAreaProps {\n  children: React.ReactNode;\n}\n\nexport function NativeScrollArea({ children }: NativeScrollAreaProps) {\n  return <>{children}</>;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

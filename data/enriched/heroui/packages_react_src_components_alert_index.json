@@ -1,0 +1,51 @@
+{
+  "id": "packages_react_src_components_alert_index",
+  "name": "alert",
+  "source_code": "// packages/react/src/components/alert/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {AlertContent, AlertDescription, AlertIndicator, AlertRoot, AlertTitle} from \"./alert\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Alert = Object.assign(AlertRoot, {\n  Root: AlertRoot,\n  Indicator: AlertIndicator,\n  Content: AlertContent,\n  Title: AlertTitle,\n  Description: AlertDescription,\n});\n\nexport type Alert = {\n  Props: ComponentProps<typeof AlertRoot>;\n  RootProps: ComponentProps<typeof AlertRoot>;\n  IndicatorProps: ComponentProps<typeof AlertIndicator>;\n  ContentProps: ComponentProps<typeof AlertContent>;\n  TitleProps: ComponentProps<typeof AlertTitle>;\n  DescriptionProps: ComponentProps<typeof AlertDescription>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {AlertRoot, AlertIndicator, AlertContent, AlertTitle, AlertDescription};\n\nexport type {\n  AlertRootProps,\n  AlertRootProps as AlertProps,\n  AlertIndicatorProps,\n  AlertContentProps,\n  AlertTitleProps,\n  AlertDescriptionProps,\n} from \"./alert\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {alertVariants} from \"@heroui/styles\";\n\nexport type {AlertVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "message",
+    "notification",
+    "warning"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "alert_index",
+      "name": "index",
+      "path": "packages/react/src/components/alert/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_alert_index",
+      "name": "alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/alert/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {AlertContent, AlertDescription, AlertIndicator, AlertRoot, AlertTitle} from \"./alert\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Alert = Object.assign(AlertRoot, {\n  Root: AlertRoot,\n  Indicator: AlertIndicator,\n  Content: AlertContent,\n  Title: AlertTitle,\n  Description: AlertDescription,\n});\n\nexport type Alert = {\n  Props: ComponentProps<typeof AlertRoot>;\n  RootProps: ComponentProps<typeof AlertRoot>;\n  IndicatorProps: ComponentProps<typeof AlertIndicator>;\n  ContentProps: ComponentProps<typeof AlertContent>;\n  TitleProps: ComponentProps<typeof AlertTitle>;\n  DescriptionProps: ComponentProps<typeof AlertDescription>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {AlertRoot, AlertIndicator, AlertContent, AlertTitle, AlertDescription};\n\nexport type {\n  AlertRootProps,\n  AlertRootProps as AlertProps,\n  AlertIndicatorProps,\n  AlertContentProps,\n  AlertTitleProps,\n  AlertDescriptionProps,\n} from \"./alert\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {alertVariants} from \"@heroui/styles\";\n\nexport type {AlertVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "An Alert component is a visual representation of messages that are important but not urgent. It can be used to inform, warn or even alert the user about some issue. Typically used for displaying messages to the user that require acknowledgment.",
+  "style_tags": [
+    "default",
+    "success",
+    "info",
+    "warning",
+    "error"
+  ],
+  "interaction_tags": [
+    "none",
+    "dismissable",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: alert\nDescription: An Alert component is a visual representation of messages that are important but not urgent. It can be used to inform, warn or even alert the user about some issue. Typically used for displaying messages to the user that require acknowledgment.\nStyle: default, success, info, warning, error\nInteractions: none, dismissable, clickable\nTags: message, notification, warning\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/alert/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {AlertContent, AlertDescription, AlertIndicator, AlertRoot, AlertTitle} from \"./alert\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Alert = Object.assign(AlertRoot, {\n  Root: AlertRoot,\n  Indicator: AlertInd",
+  "prompt_version": 2,
+  "clean_id": "alert",
+  "display_name": "Alert",
+  "preview_url": "/previews/heroui/packages-react-src-components-alert-index.png"
+}

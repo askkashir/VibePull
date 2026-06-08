@@ -1,0 +1,39 @@
+{
+  "id": "form-tanstack-input",
+  "name": "form-tanstack-input",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "form",
+    "tanstack"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-input",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-input\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "The Form Tanstack Input is a versatile input component that can be customized to suit various needs. It is ideal for collecting user data in registration, login, or subscription forms. Its adaptability and flexibility make it a go-to choice for developers.",
+  "style_tags": [
+    "material design",
+    "customizable colors"
+  ],
+  "interaction_tags": [
+    "fillable",
+    "onchange event"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-input\nDescription: The Form Tanstack Input is a versatile input component that can be customized to suit various needs. It is ideal for collecting user data in registration, login, or subscription forms. Its adaptability and flexibility make it a go-to choice for developers.\nStyle: material design, customizable colors\nInteractions: fillable, onchange event\nTags: input, form, tanstack\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-input",
+  "display_name": "Form Tanstack Input",
+  "preview_url": "/previews/shadcn/form-tanstack-input.png"
+}

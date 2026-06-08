@@ -1,0 +1,43 @@
+{
+  "id": "breadcrumb-dropdown",
+  "name": "breadcrumb-dropdown",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "dropdown",
+    "pagination",
+    "hierarchical structure",
+    "contextual information"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "breadcrumb-dropdown",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## breadcrumb-dropdown\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The breadcrumb-dropdown is a customizable navigation element that displays a series of linked pages in a hierarchical structure. It allows users to select specific pages and provides contextual information about their current location. This component is particularly useful for creating user-friendly and intuitive navigation systems in complex applications.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: breadcrumb-dropdown\nDescription: The breadcrumb-dropdown is a customizable navigation element that displays a series of linked pages in a hierarchical structure. It allows users to select specific pages and provides contextual information about their current location. This component is particularly useful for creating user-friendly and intuitive navigation systems in complex applications.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: navigation, dropdown, pagination, hierarchical structure, contextual information\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "breadcrumb-dropdown",
+  "display_name": "Breadcrumb Dropdown",
+  "preview_url": "/previews/shadcn/breadcrumb-dropdown.png"
+}

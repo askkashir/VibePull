@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_JsonInput_validate-json_validate-json",
+  "name": "validate-json",
+  "source_code": "// packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts\nexport function validateJson(value: string, deserialize: typeof JSON.parse) {\n  if (typeof value === 'string' && value.trim().length === 0) {\n    return true;\n  }\n\n  try {\n    deserialize(value);\n    return true;\n  } catch (e) {\n    return false;\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "JsonInput_validate-json_validate-json",
+      "name": "validate-json",
+      "path": "packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_JsonInput_validate-json_validate-json",
+      "name": "validate-json",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts",
+          "content": "export function validateJson(value: string, deserialize: typeof JSON.parse) {\n  if (typeof value === 'string' && value.trim().length === 0) {\n    return true;\n  }\n\n  try {\n    deserialize(value);\n    return true;\n  } catch (e) {\n    return false;\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

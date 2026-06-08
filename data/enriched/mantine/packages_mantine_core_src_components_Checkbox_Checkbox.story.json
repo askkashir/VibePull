@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Checkbox_Checkbox.story",
+  "name": "Checkbox.story",
+  "source_code": "// packages/@mantine/core/src/components/Checkbox/Checkbox.story.tsx\nimport { useState } from 'react';\nimport { Checkbox } from './Checkbox';\n\nexport default { title: 'Checkbox' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox label=\"Default\" value=\"hello\" />\n      <Checkbox label=\"Read only\" value=\"hello\" readOnly mt=\"sm\" />\n      <Checkbox label=\"Disabled\" checked disabled mt=\"sm\" />\n      <Checkbox label=\"Indeterminate\" indeterminate mt=\"sm\" />\n      <Checkbox\n        label=\"With error message\"\n        error=\"Error message\"\n        value=\"hello\"\n        mt=\"sm\"\n        withErrorStyles={false}\n      />\n      <Checkbox label=\"With boolean error\" error value=\"hello\" mt=\"sm\" />\n    </div>\n  );\n}\n\nexport function CheckboxGroup() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox.Group defaultValue={['react']} id=\"test-group\" label=\"Frameworks\">\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n    </div>\n  );\n}\n\nexport function CheckboxGroupPrimitiveGeneric() {\n  const [stringValue, setStringValue] = useState<('react' | 'ng')[]>(['react']);\n  const [numberValue, setNumberValue] = useState<(1 | 2 | 3)[]>([1]);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox.Group<'react' | 'ng'>\n        value={stringValue}\n        onChange={setStringValue}\n        label=\"String generic\"\n      >\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n\n      <Checkbox.Group<1 | 2 | 3>\n        value={numberValue}\n        onChange={setNumberValue}\n        label=\"Number generic\"\n        mt=\"md\"\n      >\n        <Checkbox label=\"One\" value=\"1\" />\n        <Checkbox label=\"Two\" value=\"2\" />\n        <Checkbox label=\"Three\" value=\"3\" />\n      </Checkbox.Group>\n\n      <div style={{ marginTop: 20 }}>\n        <div>String value: {JSON.stringify(stringValue)}</div>\n        <div>Number value: {JSON.stringify(numberValue)}</div>\n      </div>\n    </div>\n  );\n}\n\nexport function UncontrolledForm() {\n  return (\n    <form\n      onSubmit={(event) => {\n        event.preventDefault();\n        const formData = new FormData(event.currentTarget);\n        console.log('Checkbox group value:', formData.get('frameworks'));\n      }}\n    >\n      <Checkbox.Group label=\"Frameworks\" name=\"frameworks\" hiddenInputValuesSeparator=\"|\">\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n      <button type=\"submit\">Submit</button>\n    </form>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "input",
+    "mantine",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Checkbox_Checkbox.story",
+      "name": "Checkbox.story",
+      "path": "packages/@mantine/core/src/components/Checkbox/Checkbox.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Checkbox_Checkbox.story",
+      "name": "Checkbox.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Checkbox/Checkbox.story.tsx",
+          "content": "import { useState } from 'react';\nimport { Checkbox } from './Checkbox';\n\nexport default { title: 'Checkbox' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox label=\"Default\" value=\"hello\" />\n      <Checkbox label=\"Read only\" value=\"hello\" readOnly mt=\"sm\" />\n      <Checkbox label=\"Disabled\" checked disabled mt=\"sm\" />\n      <Checkbox label=\"Indeterminate\" indeterminate mt=\"sm\" />\n      <Checkbox\n        label=\"With error message\"\n        error=\"Error message\"\n        value=\"hello\"\n        mt=\"sm\"\n        withErrorStyles={false}\n      />\n      <Checkbox label=\"With boolean error\" error value=\"hello\" mt=\"sm\" />\n    </div>\n  );\n}\n\nexport function CheckboxGroup() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox.Group defaultValue={['react']} id=\"test-group\" label=\"Frameworks\">\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n    </div>\n  );\n}\n\nexport function CheckboxGroupPrimitiveGeneric() {\n  const [stringValue, setStringValue] = useState<('react' | 'ng')[]>(['react']);\n  const [numberValue, setNumberValue] = useState<(1 | 2 | 3)[]>([1]);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox.Group<'react' | 'ng'>\n        value={stringValue}\n        onChange={setStringValue}\n        label=\"String generic\"\n      >\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n\n      <Checkbox.Group<1 | 2 | 3>\n        value={numberValue}\n        onChange={setNumberValue}\n        label=\"Number generic\"\n        mt=\"md\"\n      >\n        <Checkbox label=\"One\" value=\"1\" />\n        <Checkbox label=\"Two\" value=\"2\" />\n        <Checkbox label=\"Three\" value=\"3\" />\n      </Checkbox.Group>\n\n      <div style={{ marginTop: 20 }}>\n        <div>String value: {JSON.stringify(stringValue)}</div>\n        <div>Number value: {JSON.stringify(numberValue)}</div>\n      </div>\n    </div>\n  );\n}\n\nexport function UncontrolledForm() {\n  return (\n    <form\n      onSubmit={(event) => {\n        event.preventDefault();\n        const formData = new FormData(event.currentTarget);\n        console.log('Checkbox group value:', formData.get('frameworks'));\n      }}\n    >\n      <Checkbox.Group label=\"Frameworks\" name=\"frameworks\" hiddenInputValuesSeparator=\"|\">\n        <Checkbox label=\"React\" value=\"react\" />\n        <Checkbox label=\"Angular\" value=\"ng\" />\n      </Checkbox.Group>\n      <button type=\"submit\">Submit</button>\n    </form>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Checkbox.story is a checkbox story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Checkbox.story\nDescription: Checkbox.story is a checkbox story UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: checkbox, input, mantine, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Checkbox/Checkbox.story.tsx\nimport { useState } from 'react';\nimport { Checkbox } from './Checkbox';\n\nexport default { title: 'Checkbox' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Checkbox label=\"Default\" value=\"hello\" />\n      <Checkbox label=\"Read only\" value=\"hello\" readOnly mt=\"sm\" />\n      <Checkbox label=\"Disabled\" checked disabled mt=\"sm\" />\n      <Checkbox label=\"Indeterminate\" indeterminate mt=\"sm\" />\n      ",
+  "prompt_version": 2,
+  "clean_id": "checkbox",
+  "display_name": "Checkbox",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-checkbox-checkbox-story.png"
+}

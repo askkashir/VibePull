@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_Drawer.context",
+  "name": "Drawer.context",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/Drawer.context.ts\nimport { createSafeContext, GetStylesApi, MantineRadius } from '../../core';\nimport type { DrawerRootFactory } from './DrawerRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface DrawerContextValue {\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<DrawerRootFactory>;\n  radius: MantineRadius | undefined;\n}\n\nexport const [DrawerProvider, useDrawerContext] = createSafeContext<DrawerContextValue>(\n  'Drawer component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_Drawer.context",
+      "name": "Drawer.context",
+      "path": "packages/@mantine/core/src/components/Drawer/Drawer.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_Drawer.context",
+      "name": "Drawer.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/Drawer.context.ts",
+          "content": "import { createSafeContext, GetStylesApi, MantineRadius } from '../../core';\nimport type { DrawerRootFactory } from './DrawerRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface DrawerContextValue {\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<DrawerRootFactory>;\n  radius: MantineRadius | undefined;\n}\n\nexport const [DrawerProvider, useDrawerContext] = createSafeContext<DrawerContextValue>(\n  'Drawer component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

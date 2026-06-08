@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Highlight_index",
+  "name": "Highlight",
+  "source_code": "// packages/@mantine/core/src/components/Highlight/index.ts\nimport type { HighlightFactory, HighlightProps, HighlightTerm } from './Highlight';\n\nexport { Highlight } from './Highlight';\n\nexport type { HighlightProps, HighlightFactory, HighlightTerm };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Highlight_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Highlight/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Highlight_index",
+      "name": "Highlight",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Highlight/index.ts",
+          "content": "import type { HighlightFactory, HighlightProps, HighlightTerm } from './Highlight';\n\nexport { Highlight } from './Highlight';\n\nexport type { HighlightProps, HighlightFactory, HighlightTerm };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

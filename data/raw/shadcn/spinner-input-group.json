@@ -1,0 +1,22 @@
+{
+  "id": "spinner-input-group",
+  "name": "spinner-input-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-input-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-input-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

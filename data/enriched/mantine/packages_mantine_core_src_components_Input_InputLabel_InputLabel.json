@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputLabel_InputLabel",
+  "name": "InputLabel",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputLabel/InputLabel.tsx\nimport { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputLabelStylesNames = 'label' | 'required';\nexport type InputLabelCssVariables = {\n  label: '--input-asterisk-color' | '--input-label-size';\n};\n\nexport interface InputLabelProps\n  extends BoxProps, StylesApiProps<InputLabelFactory>, ElementProps<'label'> {\n  __staticSelector?: string;\n\n  /** If set, the required asterisk is displayed next to the label */\n  required?: boolean;\n\n  /** Controls label `font-size` @default 'sm' */\n  size?: MantineFontSize;\n\n  /** Root element of the label @default 'label' */\n  labelElement?: 'label' | 'div';\n}\n\nexport type InputLabelFactory = Factory<{\n  props: InputLabelProps;\n  ref: HTMLLabelElement;\n  stylesNames: InputLabelStylesNames;\n  vars: InputLabelCssVariables;\n}>;\n\nconst defaultProps = {\n  labelElement: 'label',\n} satisfies Partial<InputLabelProps>;\n\nconst varsResolver = createVarsResolver<InputLabelFactory>((_, { size }) => ({\n  label: {\n    '--input-label-size': getFontSize(size),\n    '--input-asterisk-color': undefined,\n  },\n}));\n\nexport const InputLabel = factory<InputLabelFactory>((_props) => {\n  const props = useProps('InputLabel', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    labelElement,\n    required,\n    htmlFor,\n    onMouseDown,\n    children,\n    __staticSelector,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const _getStyles = useStyles<InputLabelFactory>({\n    name: ['InputWrapper', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'label',\n    vars,\n    varsResolver,\n  });\n\n  const ctx = use(InputWrapperContext);\n  const getStyles = ctx?.getStyles || _getStyles;\n\n  return (\n    <Box\n      {...getStyles('label', ctx?.getStyles ? { className, style } : undefined)}\n      component={labelElement as 'label'}\n      htmlFor={labelElement === 'label' ? htmlFor : undefined}\n      mod={[{ required }, mod]}\n      onMouseDown={(event) => {\n        onMouseDown?.(event);\n        if (!event.defaultPrevented && event.detail > 1) {\n          event.preventDefault();\n        }\n      }}\n      {...others}\n    >\n      {children}\n      {required && (\n        <span {...getStyles('required')} aria-hidden>\n          {' *'}\n        </span>\n      )}\n    </Box>\n  );\n});\n\nInputLabel.classes = classes;\nInputLabel.varsResolver = varsResolver;\nInputLabel.displayName = '@mantine/core/InputLabel';\n",
+  "description": "",
+  "tags": [
+    "input",
+    "label",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputLabel_InputLabel",
+      "name": "InputLabel",
+      "path": "packages/@mantine/core/src/components/Input/InputLabel/InputLabel.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputLabel_InputLabel",
+      "name": "InputLabel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputLabel/InputLabel.tsx",
+          "content": "import { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputLabelStylesNames = 'label' | 'required';\nexport type InputLabelCssVariables = {\n  label: '--input-asterisk-color' | '--input-label-size';\n};\n\nexport interface InputLabelProps\n  extends BoxProps, StylesApiProps<InputLabelFactory>, ElementProps<'label'> {\n  __staticSelector?: string;\n\n  /** If set, the required asterisk is displayed next to the label */\n  required?: boolean;\n\n  /** Controls label `font-size` @default 'sm' */\n  size?: MantineFontSize;\n\n  /** Root element of the label @default 'label' */\n  labelElement?: 'label' | 'div';\n}\n\nexport type InputLabelFactory = Factory<{\n  props: InputLabelProps;\n  ref: HTMLLabelElement;\n  stylesNames: InputLabelStylesNames;\n  vars: InputLabelCssVariables;\n}>;\n\nconst defaultProps = {\n  labelElement: 'label',\n} satisfies Partial<InputLabelProps>;\n\nconst varsResolver = createVarsResolver<InputLabelFactory>((_, { size }) => ({\n  label: {\n    '--input-label-size': getFontSize(size),\n    '--input-asterisk-color': undefined,\n  },\n}));\n\nexport const InputLabel = factory<InputLabelFactory>((_props) => {\n  const props = useProps('InputLabel', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    labelElement,\n    required,\n    htmlFor,\n    onMouseDown,\n    children,\n    __staticSelector,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const _getStyles = useStyles<InputLabelFactory>({\n    name: ['InputWrapper', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'label',\n    vars,\n    varsResolver,\n  });\n\n  const ctx = use(InputWrapperContext);\n  const getStyles = ctx?.getStyles || _getStyles;\n\n  return (\n    <Box\n      {...getStyles('label', ctx?.getStyles ? { className, style } : undefined)}\n      component={labelElement as 'label'}\n      htmlFor={labelElement === 'label' ? htmlFor : undefined}\n      mod={[{ required }, mod]}\n      onMouseDown={(event) => {\n        onMouseDown?.(event);\n        if (!event.defaultPrevented && event.detail > 1) {\n          event.preventDefault();\n        }\n      }}\n      {...others}\n    >\n      {children}\n      {required && (\n        <span {...getStyles('required')} aria-hidden>\n          {' *'}\n        </span>\n      )}\n    </Box>\n  );\n});\n\nInputLabel.classes = classes;\nInputLabel.varsResolver = varsResolver;\nInputLabel.displayName = '@mantine/core/InputLabel';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "InputLabel is a input label UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: InputLabel\nDescription: InputLabel is a input label UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: input, label, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/InputLabel/InputLabel.tsx\nimport { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputLabelStylesNames = 'label' | 'required';\nexport type InputLabelCssVariables = {\n  lab",
+  "prompt_version": 2,
+  "clean_id": "input-label",
+  "display_name": "Input Label",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-inputlabel-inputlabel.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "theme-slate",
+  "name": "theme-slate",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "theme",
+    "palette",
+    "color scheme",
+    "customization",
+    "design system"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-slate",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-slate\n**Type:** registry:theme"
+  },
+  "visual_summary": "The theme-slate component is a customizable color theme used to apply a cohesive visual style to an application.",
+  "style_tags": [
+    "monochromatic",
+    "dark",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "registry:theme",
+  "generation_prompt": "Create a production-ready registry:theme component with the following characteristics:\n\nName: theme-slate\nDescription: The theme-slate component is a customizable color theme used to apply a cohesive visual style to an application.\nStyle: monochromatic, dark, minimal\nInteractions: \nTags: theme, palette, color scheme, customization, design system\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "theme-slate",
+  "display_name": "Theme Slate",
+  "preview_url": "/previews/shadcn/theme-slate.png"
+}

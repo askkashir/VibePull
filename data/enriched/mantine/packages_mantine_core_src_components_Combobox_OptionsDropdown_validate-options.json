@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_validate-options",
+  "name": "validate-options",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/OptionsDropdown/validate-options.ts\nimport { isOptionsGroup } from './is-options-group';\n\nexport function validateOptions(options: any[], valuesSet = new Set()) {\n  if (!Array.isArray(options)) {\n    return;\n  }\n\n  for (const option of options) {\n    if (isOptionsGroup(option)) {\n      validateOptions(option.items, valuesSet);\n    } else {\n      if (typeof option.value === 'undefined') {\n        throw new Error('[@mantine/core] Each option must have value property');\n      }\n\n      if (valuesSet.has(option.value)) {\n        throw new Error(\n          `[@mantine/core] Duplicate options are not supported. Option with value \"${option.value}\" was provided more than once`\n        );\n      }\n\n      valuesSet.add(option.value);\n    }\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "options",
+    "other",
+    "validate"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_OptionsDropdown_validate-options",
+      "name": "validate-options",
+      "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/validate-options.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_validate-options",
+      "name": "validate-options",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/validate-options.ts",
+          "content": "import { isOptionsGroup } from './is-options-group';\n\nexport function validateOptions(options: any[], valuesSet = new Set()) {\n  if (!Array.isArray(options)) {\n    return;\n  }\n\n  for (const option of options) {\n    if (isOptionsGroup(option)) {\n      validateOptions(option.items, valuesSet);\n    } else {\n      if (typeof option.value === 'undefined') {\n        throw new Error('[@mantine/core] Each option must have value property');\n      }\n\n      if (valuesSet.has(option.value)) {\n        throw new Error(\n          `[@mantine/core] Duplicate options are not supported. Option with value \"${option.value}\" was provided more than once`\n        );\n      }\n\n      valuesSet.add(option.value);\n    }\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "validate-options is a validate options UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: validate-options\nDescription: validate-options is a validate options UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, options, other, validate\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/OptionsDropdown/validate-options.ts\nimport { isOptionsGroup } from './is-options-group';\n\nexport function validateOptions(options: any[], valuesSet = new Set()) {\n  if (!Array.isArray(options)) {\n    return;\n  }\n\n  for (const option of options) {\n    if (isOptionsGroup(option)) {\n      validateOptions(option.items, valuesSet);\n    } else {\n      if (typeof option.value === 'undefined') {\n        throw new Error('[@mantine/core] Each option must h",
+  "prompt_version": 2,
+  "clean_id": "validate-options",
+  "display_name": "Validate Options",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-optionsdropdown-validate-options.png"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "form-formisch-radiogroup",
+  "name": "form-formisch-radiogroup",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "radio",
+    "group"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-radiogroup",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-radiogroup\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "visual_summary": "A radio group is a form component that presents a selection of mutually exclusive options. It is used within a form to gather user input and can be used to collect user preferences or demographics. Radio groups can be simple or have more complex layouts, and are often accompanied by a heading or label.",
+  "style_tags": [
+    "flat",
+    "bordered",
+    "boxed"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "disabled",
+    "animated"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-formisch-radiogroup\nDescription: A radio group is a form component that presents a selection of mutually exclusive options. It is used within a form to gather user input and can be used to collect user preferences or demographics. Radio groups can be simple or have more complex layouts, and are often accompanied by a heading or label.\nStyle: flat, bordered, boxed\nInteractions: clickable, disabled, animated\nTags: form, input, radio, group\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-formisch-radiogroup",
+  "display_name": "Form Formisch Radiogroup",
+  "preview_url": "/previews/shadcn/form-formisch-radiogroup.png"
+}

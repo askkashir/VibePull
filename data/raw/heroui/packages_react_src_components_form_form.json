@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_form_form",
+  "name": "form",
+  "source_code": "// packages/react/src/components/form/form.tsx\n\"use client\";\n\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport React from \"react\";\nimport {Form as FormPrimitive} from \"react-aria-components/Form\";\n\n/* -------------------------------------------------------------------------------------------------\n * Form Root\n * -----------------------------------------------------------------------------------------------*/\ninterface FormRootProps extends ComponentPropsWithRef<typeof FormPrimitive> {}\n\nconst FormRoot = ({...props}: FormRootProps) => {\n  return <FormPrimitive {...props} />;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {FormRoot};\n\nexport type {FormRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "form_form",
+      "name": "form",
+      "path": "packages/react/src/components/form/form.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_form_form",
+      "name": "form",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/form/form.tsx",
+          "content": "\"use client\";\n\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport React from \"react\";\nimport {Form as FormPrimitive} from \"react-aria-components/Form\";\n\n/* -------------------------------------------------------------------------------------------------\n * Form Root\n * -----------------------------------------------------------------------------------------------*/\ninterface FormRootProps extends ComponentPropsWithRef<typeof FormPrimitive> {}\n\nconst FormRoot = ({...props}: FormRootProps) => {\n  return <FormPrimitive {...props} />;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {FormRoot};\n\nexport type {FormRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Container_index",
+  "name": "Container",
+  "source_code": "// packages/@mantine/core/src/components/Container/index.ts\nimport type {\n  ContainerCssVariables,\n  ContainerFactory,\n  ContainerProps,\n  ContainerStylesNames,\n} from './Container';\n\nexport { Container } from './Container';\n\nexport type { ContainerProps, ContainerStylesNames, ContainerCssVariables, ContainerFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Container_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Container/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Container_index",
+      "name": "Container",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Container/index.ts",
+          "content": "import type {\n  ContainerCssVariables,\n  ContainerFactory,\n  ContainerProps,\n  ContainerStylesNames,\n} from './Container';\n\nexport { Container } from './Container';\n\nexport type { ContainerProps, ContainerStylesNames, ContainerCssVariables, ContainerFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_time-field_time-field",
+  "name": "time-field",
+  "source_code": "// packages/react/src/components/time-field/time-field.tsx\n\"use client\";\n\nimport type {TimeFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TimeValue} from \"react-aria-components/TimeField\";\n\nimport {timeFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {TimeField as TimeFieldPrimitive} from \"react-aria-components/TimeField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TimeField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TimeFieldRootProps<T extends TimeValue>\n  extends ComponentPropsWithRef<typeof TimeFieldPrimitive<T>>, TimeFieldVariants {}\n\nfunction TimeFieldRoot<T extends TimeValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: TimeFieldRootProps<T>) {\n  const styles = React.useMemo(() => timeFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TimeFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"time-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </TimeFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TimeFieldRoot};\n\nexport type {TimeFieldRootProps};\n",
+  "description": "",
+  "tags": [
+    "field",
+    "heroui",
+    "other",
+    "time"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "time-field_time-field",
+      "name": "time-field",
+      "path": "packages/react/src/components/time-field/time-field.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_time-field_time-field",
+      "name": "time-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/time-field/time-field.tsx",
+          "content": "\"use client\";\n\nimport type {TimeFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TimeValue} from \"react-aria-components/TimeField\";\n\nimport {timeFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {TimeField as TimeFieldPrimitive} from \"react-aria-components/TimeField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TimeField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TimeFieldRootProps<T extends TimeValue>\n  extends ComponentPropsWithRef<typeof TimeFieldPrimitive<T>>, TimeFieldVariants {}\n\nfunction TimeFieldRoot<T extends TimeValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: TimeFieldRootProps<T>) {\n  const styles = React.useMemo(() => timeFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TimeFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"time-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </TimeFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TimeFieldRoot};\n\nexport type {TimeFieldRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "time-field is a time field UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: time-field\nDescription: time-field is a time field UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: field, heroui, other, time\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/time-field/time-field.tsx\n\"use client\";\n\nimport type {TimeFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TimeValue} from \"react-aria-components/TimeField\";\n\nimport {timeFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {TimeField as TimeFieldPrimitive} from \"react-aria-components/TimeField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/c",
+  "prompt_version": 2,
+  "clean_id": "time-field",
+  "display_name": "Time Field",
+  "preview_url": "/previews/heroui/packages-react-src-components-time-field-time-field.png"
+}

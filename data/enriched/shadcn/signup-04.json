@@ -1,0 +1,44 @@
+{
+  "id": "signup-04",
+  "name": "signup-04",
+  "source_code": "",
+  "description": "A signup page with form and image.",
+  "tags": [
+    "signup",
+    "form",
+    "landing page",
+    "block",
+    "image"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-04",
+      "type": "registry:block",
+      "description": "A signup page with form and image.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-04\n\nA signup page with form and image.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "signup-04 is a block-level component that displays a signup page with a form and an accompanying background image, suitable for landing pages and onboarding processes. It's ideal for scenarios where users need to sign up for an account or subscribe to a service.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "registry:block",
+  "generation_prompt": "Create a production-ready registry:block component with the following characteristics:\n\nName: signup-04\nDescription: signup-04 is a block-level component that displays a signup page with a form and an accompanying background image, suitable for landing pages and onboarding processes. It's ideal for scenarios where users need to sign up for an account or subscribe to a service.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: signup, form, landing page, block, image\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "signup-04",
+  "display_name": "Signup 04",
+  "preview_url": "/previews/shadcn/signup-04.png"
+}

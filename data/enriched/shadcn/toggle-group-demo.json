@@ -1,0 +1,43 @@
+{
+  "id": "toggle-group-demo",
+  "name": "toggle-group-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "settings",
+    "preferences",
+    "toggle-group",
+    "switches",
+    "selection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Toggle-group-demo is a reusable UI component used in settings, preferences, or feature toggles, allowing users to select multiple options from a list. It consists of a container for a collection of toggle switches and displays the selected options. This component can be used to simplify complex configurations by providing a user-friendly interface for users to toggle features on and off.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "material"
+  ],
+  "interaction_tags": [
+    "animated",
+    "onhover",
+    "enabledisable"
+  ],
+  "component_type": "toggle-group",
+  "generation_prompt": "Create a production-ready toggle-group component with the following characteristics:\n\nName: toggle-group-demo\nDescription: Toggle-group-demo is a reusable UI component used in settings, preferences, or feature toggles, allowing users to select multiple options from a list. It consists of a container for a collection of toggle switches and displays the selected options. This component can be used to simplify complex configurations by providing a user-friendly interface for users to toggle features on and off.\nStyle: modern, flat, material\nInteractions: animated, onhover, enabledisable\nTags: settings, preferences, toggle-group, switches, selection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-demo",
+  "display_name": "Toggle Group Demo",
+  "preview_url": "/previews/shadcn/toggle-group-demo.png"
+}

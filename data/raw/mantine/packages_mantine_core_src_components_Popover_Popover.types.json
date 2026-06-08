@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Popover_Popover.types",
+  "name": "Popover.types",
+  "source_code": "// packages/@mantine/core/src/components/Popover/Popover.types.ts\nimport type { FlipOptions, InlineOptions, ShiftOptions, SizeOptions } from '@floating-ui/react';\n\nexport type PopoverWidth = 'target' | React.CSSProperties['width'] | null;\n\nexport interface PopoverMiddlewares {\n  shift?: boolean | ShiftOptions;\n  flip?: boolean | FlipOptions;\n  inline?: boolean | InlineOptions;\n  size?: boolean | SizeOptions;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Popover_Popover.types",
+      "name": "Popover.types",
+      "path": "packages/@mantine/core/src/components/Popover/Popover.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Popover_Popover.types",
+      "name": "Popover.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Popover/Popover.types.ts",
+          "content": "import type { FlipOptions, InlineOptions, ShiftOptions, SizeOptions } from '@floating-ui/react';\n\nexport type PopoverWidth = 'target' | React.CSSProperties['width'] | null;\n\nexport interface PopoverMiddlewares {\n  shift?: boolean | ShiftOptions;\n  flip?: boolean | FlipOptions;\n  inline?: boolean | InlineOptions;\n  size?: boolean | SizeOptions;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

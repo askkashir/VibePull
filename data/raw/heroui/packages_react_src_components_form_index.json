@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_form_index",
+  "name": "form",
+  "source_code": "// packages/react/src/components/form/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {FormRoot} from \"./form\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Form = Object.assign(FormRoot, {\n  Root: FormRoot,\n});\n\nexport type Form = {\n  Props: ComponentProps<typeof FormRoot>;\n  RootProps: ComponentProps<typeof FormRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {FormRoot};\n\nexport type {FormRootProps, FormRootProps as FormProps} from \"./form\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "form_index",
+      "name": "index",
+      "path": "packages/react/src/components/form/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_form_index",
+      "name": "form",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/form/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {FormRoot} from \"./form\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Form = Object.assign(FormRoot, {\n  Root: FormRoot,\n});\n\nexport type Form = {\n  Props: ComponentProps<typeof FormRoot>;\n  RootProps: ComponentProps<typeof FormRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {FormRoot};\n\nexport type {FormRootProps, FormRootProps as FormProps} from \"./form\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

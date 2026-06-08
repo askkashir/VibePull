@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Fieldset_index",
+  "name": "Fieldset",
+  "source_code": "// packages/@mantine/core/src/components/Fieldset/index.ts\nimport type {\n  FieldsetFactory,\n  FieldsetProps,\n  FieldsetStylesNames,\n  FieldsetVariant,\n} from './Fieldset';\n\nexport { Fieldset } from './Fieldset';\n\nexport type { FieldsetProps, FieldsetStylesNames, FieldsetFactory, FieldsetVariant };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Fieldset_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Fieldset/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Fieldset_index",
+      "name": "Fieldset",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Fieldset/index.ts",
+          "content": "import type {\n  FieldsetFactory,\n  FieldsetProps,\n  FieldsetStylesNames,\n  FieldsetVariant,\n} from './Fieldset';\n\nexport { Fieldset } from './Fieldset';\n\nexport type { FieldsetProps, FieldsetStylesNames, FieldsetFactory, FieldsetVariant };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

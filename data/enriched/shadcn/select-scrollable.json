@@ -1,0 +1,42 @@
+{
+  "id": "select-scrollable",
+  "name": "select-scrollable",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "scrollable",
+    "select",
+    "list",
+    "options"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "select-scrollable",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## select-scrollable\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The select-scrollable component is a customizable dropdown list that allows users to select from a large number of items, often used in applications requiring a long list of options. It typically features a list of scrollable options with a clear label and a selection trigger button. Developers would use this component when they need to provide users with a vast number of choices.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: select-scrollable\nDescription: The select-scrollable component is a customizable dropdown list that allows users to select from a large number of items, often used in applications requiring a long list of options. It typically features a list of scrollable options with a clear label and a selection trigger button. Developers would use this component when they need to provide users with a vast number of choices.\nStyle: e.g. dark, minimal\nInteractions: e.g. animated, hover, clickable\nTags: dropdown, scrollable, select, list, options\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "select-scrollable",
+  "display_name": "Select Scrollable",
+  "preview_url": "/previews/shadcn/select-scrollable.png"
+}

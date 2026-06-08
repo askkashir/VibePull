@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Flex_flex-props",
+  "name": "flex-props",
+  "source_code": "// packages/@mantine/core/src/components/Flex/flex-props.ts\nimport { SystemPropData } from '../../core';\n\nexport const FLEX_STYLE_PROPS_DATA: Record<string, SystemPropData> = {\n  gap: { type: 'spacing', property: 'gap' },\n  rowGap: { type: 'spacing', property: 'rowGap' },\n  columnGap: { type: 'spacing', property: 'columnGap' },\n\n  align: { type: 'identity', property: 'alignItems' },\n  justify: { type: 'identity', property: 'justifyContent' },\n  wrap: { type: 'identity', property: 'flexWrap' },\n  direction: { type: 'identity', property: 'flexDirection' },\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Flex_flex-props",
+      "name": "flex-props",
+      "path": "packages/@mantine/core/src/components/Flex/flex-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Flex_flex-props",
+      "name": "flex-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Flex/flex-props.ts",
+          "content": "import { SystemPropData } from '../../core';\n\nexport const FLEX_STYLE_PROPS_DATA: Record<string, SystemPropData> = {\n  gap: { type: 'spacing', property: 'gap' },\n  rowGap: { type: 'spacing', property: 'rowGap' },\n  columnGap: { type: 'spacing', property: 'columnGap' },\n\n  align: { type: 'identity', property: 'alignItems' },\n  justify: { type: 'identity', property: 'justifyContent' },\n  wrap: { type: 'identity', property: 'flexWrap' },\n  direction: { type: 'identity', property: 'flexDirection' },\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

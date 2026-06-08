@@ -1,0 +1,49 @@
+{
+  "id": "src_components_DropdownMenu",
+  "name": "DropdownMenu",
+  "source_code": "// src/components/DropdownMenu.astro\n---\nimport { ExternalLink } from '@lucide/astro'\n\nimport HeaderLink from './HeaderLink.astro'\n---\n\n<dropdown-menu>\n  <div\n    data-dropdown=\"false\"\n    id=\"dropdown-menu\"\n    role=\"menu\"\n    class=\"absolute top-full right-0 z-50 mt-2 w-64 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg data-[dropdown=false]:hidden data-[dropdown=true]:block\"\n  >\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/application\">\n      Application\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/marketing\">\n      Marketing\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/neobrutalism\">\n      Neobrutalism\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/blog\"> Blog </HeaderLink>\n\n    <HeaderLink\n      href=\"https://js.hyperui.dev\"\n      class=\"flex items-center gap-1 border-t border-gray-200 bg-gray-50 px-4 py-2 focus:ring-inset\"\n      target=\"_blank\"\n      rel=\"noreferrer\"\n    >\n      HyperUX\n      <ExternalLink class=\"size-4 shrink-0\" />\n    </HeaderLink>\n  </div>\n</dropdown-menu>\n\n<script>\n  class DropdownMenu extends HTMLElement {\n    private toggleHandler: ((event: CustomEvent<{ open: boolean }>) => void) | null = null\n\n    connectedCallback() {\n      const dropdownEl = this.querySelector('[data-dropdown]')\n\n      if (!dropdownEl) {\n        return\n      }\n\n      this.toggleHandler = (toggleEvent) => {\n        dropdownEl.setAttribute('data-dropdown', toggleEvent.detail.open ? 'true' : 'false')\n      }\n\n      // @ts-expect-error -- CustomEvent handler is not assignable to EventListener\n      document.addEventListener('dropdown:toggle', this.toggleHandler)\n    }\n\n    disconnectedCallback() {\n      if (this.toggleHandler) {\n        // @ts-expect-error -- CustomEvent handler is not assignable to EventListener\n        document.removeEventListener('dropdown:toggle', this.toggleHandler)\n\n        this.toggleHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-menu', DropdownMenu)\n</script>\n",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "hyperui",
+    "menu",
+    "navbar"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "DropdownMenu",
+      "name": "DropdownMenu",
+      "path": "src/components/DropdownMenu.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_DropdownMenu",
+      "name": "DropdownMenu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/DropdownMenu.astro",
+          "content": "---\nimport { ExternalLink } from '@lucide/astro'\n\nimport HeaderLink from './HeaderLink.astro'\n---\n\n<dropdown-menu>\n  <div\n    data-dropdown=\"false\"\n    id=\"dropdown-menu\"\n    role=\"menu\"\n    class=\"absolute top-full right-0 z-50 mt-2 w-64 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg data-[dropdown=false]:hidden data-[dropdown=true]:block\"\n  >\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/application\">\n      Application\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/marketing\">\n      Marketing\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/neobrutalism\">\n      Neobrutalism\n    </HeaderLink>\n\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/blog\"> Blog </HeaderLink>\n\n    <HeaderLink\n      href=\"https://js.hyperui.dev\"\n      class=\"flex items-center gap-1 border-t border-gray-200 bg-gray-50 px-4 py-2 focus:ring-inset\"\n      target=\"_blank\"\n      rel=\"noreferrer\"\n    >\n      HyperUX\n      <ExternalLink class=\"size-4 shrink-0\" />\n    </HeaderLink>\n  </div>\n</dropdown-menu>\n\n<script>\n  class DropdownMenu extends HTMLElement {\n    private toggleHandler: ((event: CustomEvent<{ open: boolean }>) => void) | null = null\n\n    connectedCallback() {\n      const dropdownEl = this.querySelector('[data-dropdown]')\n\n      if (!dropdownEl) {\n        return\n      }\n\n      this.toggleHandler = (toggleEvent) => {\n        dropdownEl.setAttribute('data-dropdown', toggleEvent.detail.open ? 'true' : 'false')\n      }\n\n      // @ts-expect-error -- CustomEvent handler is not assignable to EventListener\n      document.addEventListener('dropdown:toggle', this.toggleHandler)\n    }\n\n    disconnectedCallback() {\n      if (this.toggleHandler) {\n        // @ts-expect-error -- CustomEvent handler is not assignable to EventListener\n        document.removeEventListener('dropdown:toggle', this.toggleHandler)\n\n        this.toggleHandler = null\n      }\n    }\n  }\n\n  customElements.define('dropdown-menu', DropdownMenu)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DropdownMenu is a dropdown menu UI component from the hyperui corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "keyboard-focus"
+  ],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: DropdownMenu\nDescription: DropdownMenu is a dropdown menu UI component from the hyperui corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: rounded, shadow, utility-styled\nInteractions: keyboard-focus\nTags: dropdown, hyperui, menu, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/DropdownMenu.astro\n---\nimport { ExternalLink } from '@lucide/astro'\n\nimport HeaderLink from './HeaderLink.astro'\n---\n\n<dropdown-menu>\n  <div\n    data-dropdown=\"false\"\n    id=\"dropdown-menu\"\n    role=\"menu\"\n    class=\"absolute top-full right-0 z-50 mt-2 w-64 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg data-[dropdown=false]:hidden data-[dropdown=true]:block\"\n  >\n    <HeaderLink class=\"block px-4 py-2 focus:ring-inset\" href=\"/components/application\">\n     ",
+  "prompt_version": 2,
+  "clean_id": "dropdown-menu",
+  "display_name": "Dropdown Menu",
+  "preview_url": "/previews/hyperui/src-components-dropdownmenu.png"
+}

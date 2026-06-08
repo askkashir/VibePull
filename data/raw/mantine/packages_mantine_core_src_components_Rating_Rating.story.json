@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Rating_Rating.story",
+  "name": "Rating.story",
+  "source_code": "// packages/@mantine/core/src/components/Rating/Rating.story.tsx\nimport { useState } from 'react';\nimport { MoonIcon } from '@phosphor-icons/react';\nimport { Stack } from '../Stack';\nimport { Rating } from './Rating';\n\nexport default { title: 'Rating' };\n\nexport function ReadOnlyWithDefaultValue() {\n  return <Rating defaultValue={2} readOnly />;\n}\n\nexport function Unstyled() {\n  return <Rating defaultValue={2} unstyled />;\n}\n\nexport function Sizes() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"xs\" defaultValue={1} />\n      <Rating defaultValue={2} size=\"sm\" />\n      <Rating size=\"md\" defaultValue={3} />\n      <Rating size=\"lg\" defaultValue={4} />\n      <Rating size=\"xl\" defaultValue={5} />\n    </Stack>\n  );\n}\n\nexport function Fractions() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"xl\" defaultValue={3} fractions={2} />\n      <Rating size=\"xl\" defaultValue={3} fractions={3} />\n      <Rating size=\"xl\" defaultValue={3} fractions={4} />\n    </Stack>\n  );\n}\n\nexport function WithCustomSymbol() {\n  const size = 18;\n  return (\n    <Stack p=\"md\">\n      <Rating\n        defaultValue={3}\n        emptySymbol={<MoonIcon size={20} />}\n        fullSymbol={<MoonIcon size={20} fill=\"gray\" />}\n      />\n\n      <Rating\n        fractions={2}\n        defaultValue={3}\n        emptySymbol={\n          <div style={{ width: size, height: size, backgroundColor: 'gray', borderRadius: 999 }} />\n        }\n        fullSymbol={\n          <div style={{ width: size, height: size, backgroundColor: 'red', borderRadius: 999 }} />\n        }\n      />\n\n      <Rating\n        defaultValue={3}\n        count={6}\n        highlightSelectedOnly\n        emptySymbol={\n          <div\n            style={{\n              width: size,\n              height: size,\n              backgroundColor: 'gray',\n              borderRadius: 999,\n            }}\n          />\n        }\n        fullSymbol={(value) => (\n          <div\n            style={{\n              width: size,\n              height: size,\n              backgroundColor: value < 4 ? 'red' : 'green',\n              borderRadius: 999,\n            }}\n          />\n        )}\n      />\n    </Stack>\n  );\n}\n\nexport function Readonly() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"lg\" fractions={2} readOnly defaultValue={3.5} />\n    </Stack>\n  );\n}\n\nexport function Controlled() {\n  const [value, setValue] = useState(0);\n\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"lg\" value={value} onChange={setValue} />\n      <div>Value: {value}</div>\n    </Stack>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Rating_Rating.story",
+      "name": "Rating.story",
+      "path": "packages/@mantine/core/src/components/Rating/Rating.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Rating_Rating.story",
+      "name": "Rating.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Rating/Rating.story.tsx",
+          "content": "import { useState } from 'react';\nimport { MoonIcon } from '@phosphor-icons/react';\nimport { Stack } from '../Stack';\nimport { Rating } from './Rating';\n\nexport default { title: 'Rating' };\n\nexport function ReadOnlyWithDefaultValue() {\n  return <Rating defaultValue={2} readOnly />;\n}\n\nexport function Unstyled() {\n  return <Rating defaultValue={2} unstyled />;\n}\n\nexport function Sizes() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"xs\" defaultValue={1} />\n      <Rating defaultValue={2} size=\"sm\" />\n      <Rating size=\"md\" defaultValue={3} />\n      <Rating size=\"lg\" defaultValue={4} />\n      <Rating size=\"xl\" defaultValue={5} />\n    </Stack>\n  );\n}\n\nexport function Fractions() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"xl\" defaultValue={3} fractions={2} />\n      <Rating size=\"xl\" defaultValue={3} fractions={3} />\n      <Rating size=\"xl\" defaultValue={3} fractions={4} />\n    </Stack>\n  );\n}\n\nexport function WithCustomSymbol() {\n  const size = 18;\n  return (\n    <Stack p=\"md\">\n      <Rating\n        defaultValue={3}\n        emptySymbol={<MoonIcon size={20} />}\n        fullSymbol={<MoonIcon size={20} fill=\"gray\" />}\n      />\n\n      <Rating\n        fractions={2}\n        defaultValue={3}\n        emptySymbol={\n          <div style={{ width: size, height: size, backgroundColor: 'gray', borderRadius: 999 }} />\n        }\n        fullSymbol={\n          <div style={{ width: size, height: size, backgroundColor: 'red', borderRadius: 999 }} />\n        }\n      />\n\n      <Rating\n        defaultValue={3}\n        count={6}\n        highlightSelectedOnly\n        emptySymbol={\n          <div\n            style={{\n              width: size,\n              height: size,\n              backgroundColor: 'gray',\n              borderRadius: 999,\n            }}\n          />\n        }\n        fullSymbol={(value) => (\n          <div\n            style={{\n              width: size,\n              height: size,\n              backgroundColor: value < 4 ? 'red' : 'green',\n              borderRadius: 999,\n            }}\n          />\n        )}\n      />\n    </Stack>\n  );\n}\n\nexport function Readonly() {\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"lg\" fractions={2} readOnly defaultValue={3.5} />\n    </Stack>\n  );\n}\n\nexport function Controlled() {\n  const [value, setValue] = useState(0);\n\n  return (\n    <Stack p=\"md\">\n      <Rating size=\"lg\" value={value} onChange={setValue} />\n      <div>Value: {value}</div>\n    </Stack>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

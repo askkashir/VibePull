@@ -1,0 +1,45 @@
+{
+  "id": "rainbow-button-demo-2",
+  "name": "Rainbow Button Demo 2",
+  "source_code": "import { RainbowButton } from \"@/registry/magicui/rainbow-button\"\n\nexport default function RainbowButtonDemo() {\n  return <RainbowButton variant=\"outline\">Get Unlimited Access</RainbowButton>\n}\n",
+  "description": "Example showing an animated button with rainbow effect.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "rainbow-button-demo-2",
+      "type": "registry:example",
+      "title": "Rainbow Button Demo 2",
+      "description": "Example showing an animated button with rainbow effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/rainbow-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/rainbow-button-demo-2.tsx",
+          "type": "registry:example",
+          "target": "components/rainbow-button-demo-2.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "rainbow-button-demo-2",
+      "type": "registry:example",
+      "title": "Rainbow Button Demo 2",
+      "description": "Example showing an animated button with rainbow effect.",
+      "registryDependencies": [
+        "@magicui/rainbow-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/rainbow-button-demo-2.tsx",
+          "content": "import { RainbowButton } from \"@/registry/magicui/rainbow-button\"\n\nexport default function RainbowButtonDemo() {\n  return <RainbowButton variant=\"outline\">Get Unlimited Access</RainbowButton>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

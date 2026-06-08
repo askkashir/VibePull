@@ -1,0 +1,50 @@
+{
+  "id": "icon-button",
+  "name": "icon-button",
+  "source_code": "// src/components/ui/icon-button.tsx\nimport { forwardRef } from 'react'\nimport { Button, type ButtonProps } from './button'\n\nexport interface IconButtonProps extends ButtonProps {}\n\nexport const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(\n  function IconButton(props, ref) {\n    return <Button px=\"0\" py=\"0\" ref={ref} {...props} />\n  },\n)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "icon-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/icon-button.tsx",
+          "type": "registry:ui",
+          "exports": "export { IconButton, type IconButtonProps } from './icon-button'",
+          "content": "import { forwardRef } from 'react'\nimport { Button, type ButtonProps } from './button'\n\nexport interface IconButtonProps extends ButtonProps {}\n\nexport const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(\n  function IconButton(props, ref) {\n    return <Button px=\"0\" py=\"0\" ref={ref} {...props} />\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    "registry_item": {
+      "name": "icon-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/icon-button.tsx",
+          "type": "registry:ui",
+          "exports": "export { IconButton, type IconButtonProps } from './icon-button'",
+          "content": "import { forwardRef } from 'react'\nimport { Button, type ButtonProps } from './button'\n\nexport interface IconButtonProps extends ButtonProps {}\n\nexport const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(\n  function IconButton(props, ref) {\n    return <Button px=\"0\" py=\"0\" ref={ref} {...props} />\n  },\n)\n"
+        }
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

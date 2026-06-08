@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_skeleton_skeleton",
+  "name": "skeleton",
+  "source_code": "// packages/react/src/components/skeleton/skeleton.tsx\n\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SkeletonVariants} from \"@heroui/styles\";\n\nimport {skeletonVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {useCSSVariable} from \"../../hooks/use-css-variable\";\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * Skeleton Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SkeletonRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  className?: string;\n  /** Animation type. */\n  animationType?: SkeletonVariants[\"animationType\"];\n}\n\nconst SkeletonRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  animationType,\n  className,\n  ...props\n}: SkeletonRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof SkeletonRootProps<E>>) => {\n  // Use the new hook to get CSS variable value with SSR support\n  const resolvedAnimationType = useCSSVariable(\"--skeleton-animation\", animationType);\n  const slots = React.useMemo(\n    () =>\n      skeletonVariants({\n        animationType: resolvedAnimationType as SkeletonVariants[\"animationType\"],\n      }),\n    [resolvedAnimationType],\n  );\n\n  return <dom.div className={slots.base({className})} {...(props as any)} />;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SkeletonRoot};\n\nexport type {SkeletonRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "skeleton_skeleton",
+      "name": "skeleton",
+      "path": "packages/react/src/components/skeleton/skeleton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_skeleton_skeleton",
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/skeleton/skeleton.tsx",
+          "content": "\"use client\";\n\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {SkeletonVariants} from \"@heroui/styles\";\n\nimport {skeletonVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {useCSSVariable} from \"../../hooks/use-css-variable\";\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * Skeleton Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SkeletonRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  className?: string;\n  /** Animation type. */\n  animationType?: SkeletonVariants[\"animationType\"];\n}\n\nconst SkeletonRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  animationType,\n  className,\n  ...props\n}: SkeletonRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof SkeletonRootProps<E>>) => {\n  // Use the new hook to get CSS variable value with SSR support\n  const resolvedAnimationType = useCSSVariable(\"--skeleton-animation\", animationType);\n  const slots = React.useMemo(\n    () =>\n      skeletonVariants({\n        animationType: resolvedAnimationType as SkeletonVariants[\"animationType\"],\n      }),\n    [resolvedAnimationType],\n  );\n\n  return <dom.div className={slots.base({className})} {...(props as any)} />;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SkeletonRoot};\n\nexport type {SkeletonRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

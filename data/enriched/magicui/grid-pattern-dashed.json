@@ -1,0 +1,60 @@
+{
+  "id": "grid-pattern-dashed",
+  "name": "Grid Pattern Dashed",
+  "source_code": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternDashed() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={30}\n        height={30}\n        x={-1}\n        y={-1}\n        strokeDasharray={\"4 2\"}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing a dashed grid pattern.",
+  "tags": [
+    "grid",
+    "pattern",
+    "background"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "grid-pattern-dashed",
+      "type": "registry:example",
+      "title": "Grid Pattern Dashed",
+      "description": "Example showing a dashed grid pattern.",
+      "registryDependencies": [
+        "https://magicui.design/r/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/grid-pattern-dashed.tsx",
+          "type": "registry:example",
+          "target": "components/grid-pattern-dashed.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "grid-pattern-dashed",
+      "type": "registry:example",
+      "title": "Grid Pattern Dashed",
+      "description": "Example showing a dashed grid pattern.",
+      "registryDependencies": [
+        "@magicui/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/grid-pattern-dashed.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternDashed() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={30}\n        height={30}\n        x={-1}\n        y={-1}\n        strokeDasharray={\"4 2\"}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A dashed grid pattern background, useful for creating visually appealing layouts or backgrounds.",
+  "style_tags": [
+    "dashed",
+    "grid",
+    "patterned"
+  ],
+  "interaction_tags": [],
+  "component_type": "background",
+  "generation_prompt": "Create a production-ready background component with the following characteristics:\n\nName: Grid Pattern Dashed\nDescription: A dashed grid pattern background, useful for creating visually appealing layouts or backgrounds.\nStyle: dashed, grid, patterned\nInteractions: \nTags: grid, pattern, background\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternDashed() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={30}\n        height={30}\n        x={-1}\n        y={-1}\n        strokeDasharray={\"4 2\"}\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,w",
+  "prompt_version": 2,
+  "clean_id": "grid-pattern-dashed",
+  "display_name": "Grid Pattern Dashed",
+  "preview_url": "/previews/magicui/grid-pattern-dashed.png"
+}

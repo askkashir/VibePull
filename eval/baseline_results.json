@@ -1,0 +1,3913 @@
+{
+  "systems": {
+    "BM25 only": {
+      "hit_at_1": 0.65,
+      "hit_at_5": 0.875,
+      "mrr": 0.7489583333333333,
+      "queries": [
+        {
+          "query": "animated loading spinner",
+          "expected_ids": [
+            "spinner-basic",
+            "spinner-button",
+            "spinner-color"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "spinner-custom",
+            "spinner-input-group",
+            "spinner-item",
+            "text-scramble"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "button with loading state",
+          "expected_ids": [
+            "button-loading",
+            "shimmer-button",
+            "spinner-button"
+          ],
+          "top_ids": [
+            "shimmer-button",
+            "packages_mantine_core_src_components_FloatingIndicator_index",
+            "shimmer-button-demo",
+            "packages_radix-ui-themes_src_components_spinner",
+            "skeleton-card"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dark glassmorphism card",
+          "expected_ids": [
+            "magic-card",
+            "magic-card-demo",
+            "neon-gradient-card"
+          ],
+          "top_ids": [
+            "hero-video-dialog-demo-top-in-bottom-out",
+            "packages_radix-ui-themes_src_components_theme-panel",
+            "card",
+            "components_ui_Features_Card",
+            "packages_mantine_core_src_components_Card_Card"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "glowing border card",
+          "expected_ids": [
+            "border-beam",
+            "neon-gradient-card",
+            "shine-border"
+          ],
+          "top_ids": [
+            "border-beam-demo-3",
+            "shine-border-demo-2",
+            "shine-border-demo",
+            "src_components_Card_Card",
+            "glowing-stars"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "sidebar navigation with icons",
+          "expected_ids": [
+            "sidebar-01",
+            "sidebar-demo",
+            "sidebar-menu"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "sidebar-08",
+            "packages_react_src_components_icons",
+            "sidebar-06",
+            "dock-demo-3"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "dashboard sidebar navigation",
+          "expected_ids": [
+            "sidebar-02",
+            "sidebar-05",
+            "sidebar-07"
+          ],
+          "top_ids": [
+            "sidebar-16",
+            "sidebar-01",
+            "sidebar-07",
+            "sidebar-08",
+            "sidebar-header"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "modal dialog component",
+          "expected_ids": [
+            "alert-dialog",
+            "dialog",
+            "dialog-demo"
+          ],
+          "top_ids": [
+            "dialog",
+            "packages_mantine_core_src_components_Dialog_Dialog",
+            "packages_mantine_core_src_components_Dialog_index",
+            "packages_mantine_core_src_components_Dialog_Dialog.story",
+            "src_components_Dialog_Dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confirmation alert dialog",
+          "expected_ids": [
+            "alert-dialog",
+            "alert-dialog-demo",
+            "dialog-close-button"
+          ],
+          "top_ids": [
+            "alert-dialog-demo",
+            "packages_react_src_components_alert-dialog_index",
+            "src_components_Dialog_Dialog",
+            "alert-dialog",
+            "dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "login form with inputs",
+          "expected_ids": [
+            "form-rhf-input",
+            "login-01",
+            "login-03"
+          ],
+          "top_ids": [
+            "border-beam-demo",
+            "login-03",
+            "field-group",
+            "login-01",
+            "border-beam-demo-3"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "signup form card",
+          "expected_ids": [
+            "card-with-form",
+            "signup-01",
+            "signup-02"
+          ],
+          "top_ids": [
+            "signup-05",
+            "signup-01",
+            "signup-04",
+            "popover-form-demo",
+            "signup-02"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "data table for dashboard",
+          "expected_ids": [
+            "data-table-demo",
+            "table",
+            "table-demo"
+          ],
+          "top_ids": [
+            "elements_table",
+            "src_components_Table_Table",
+            "packages_mantine_core_src_components_Table_TableDataRenderer",
+            "table",
+            "data-table-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "chart for analytics dashboard",
+          "expected_ids": [
+            "chart",
+            "chart-area-default",
+            "chart-bar-default"
+          ],
+          "top_ids": [
+            "chart-area-default",
+            "chart-radial-stacked",
+            "chart-tooltip-demo",
+            "chart-radar-label-custom",
+            "chart-line-dots-custom"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pie chart visualization",
+          "expected_ids": [
+            "chart-pie-donut",
+            "chart-pie-interactive",
+            "chart-pie-simple"
+          ],
+          "top_ids": [
+            "chart-pie-simple",
+            "chart-pie-donut-active",
+            "chart-pie-label-custom",
+            "chart-pie-label-list",
+            "chart-pie-interactive"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "bar chart with labels",
+          "expected_ids": [
+            "chart-bar-default",
+            "chart-bar-label",
+            "chart-bar-multiple"
+          ],
+          "top_ids": [
+            "chart-bar-label",
+            "chart-bar-multiple",
+            "chart-bar-demo-legend",
+            "chart-bar-interactive",
+            "chart-line-label-custom"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "line chart with dots",
+          "expected_ids": [
+            "chart-line-default",
+            "chart-line-dots",
+            "chart-line-multiple"
+          ],
+          "top_ids": [
+            "chart-line-dots-colors",
+            "chart-line-dots-custom",
+            "chart-line-label-custom",
+            "chart-line-dots",
+            "chart-line-step"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "badge status label",
+          "expected_ids": [
+            "badge",
+            "badge-demo",
+            "badge-secondary"
+          ],
+          "top_ids": [
+            "packages_react_src_components_badge_index",
+            "badge-outline",
+            "badge-demo",
+            "packages_react_src_components_badge_badge",
+            "src_components_Badge_Badge"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tooltip on hover",
+          "expected_ids": [
+            "input-group-tooltip",
+            "kbd-tooltip",
+            "tooltip-demo"
+          ],
+          "top_ids": [
+            "tooltip-demo",
+            "packages_react_src_components_tooltip_tooltip",
+            "elements_tooltip",
+            "animated-tooltip",
+            "src_components_Tracker_Tracker"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action list",
+          "expected_ids": [
+            "dropdown-menu-checkboxes",
+            "dropdown-menu-dialog",
+            "dropdown-menu-radio-group"
+          ],
+          "top_ids": [
+            "packages_react_src_components_dropdown_dropdown",
+            "elements_navigation-menu",
+            "src_components_DropdownMenu_DropdownMenu",
+            "elements_dropdown-menu",
+            "packages_radix-ui-themes_src_components_dropdown-menu"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "carousel for testimonials",
+          "expected_ids": [
+            "carousel-api",
+            "carousel-demo",
+            "marquee"
+          ],
+          "top_ids": [
+            "animated-testimonials",
+            "carousel",
+            "carousel",
+            "loading-carousel-demo",
+            "elements_quotes"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "calendar date picker",
+          "expected_ids": [
+            "calendar",
+            "calendar-demo",
+            "date-picker-demo"
+          ],
+          "top_ids": [
+            "packages_react_src_components_calendar-year-picker_index",
+            "calendar-hijri",
+            "packages_react_src_components_date-picker_date-picker",
+            "src_components_DatePicker_DatePicker",
+            "packages_react_src_components_date-range-picker_date-range-picker"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "progress bar indicator",
+          "expected_ids": [
+            "animated-circular-progress-bar",
+            "progress",
+            "progress-demo"
+          ],
+          "top_ids": [
+            "scroll-progress-demo",
+            "src_components_ProgressBar_ProgressBar",
+            "sonner",
+            "progress-demo",
+            "elements_progress"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hero section with animated background",
+          "expected_ids": [
+            "hero-video-dialog",
+            "particles",
+            "retro-grid"
+          ],
+          "top_ids": [
+            "hero-liquid-metal",
+            "hero-dithering-demo",
+            "hero-dithering",
+            "animated-grid-pattern-demo",
+            "hero-highlight"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "animated beam connection",
+          "expected_ids": [
+            "animated-beam",
+            "animated-beam-bidirectional",
+            "animated-beam-demo"
+          ],
+          "top_ids": [
+            "animated-beam-bidirectional",
+            "animated-beam-unidirectional",
+            "animated-beam",
+            "animated-beam-demo",
+            "animated-beam-multiple-outputs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "moving gradient text headline",
+          "expected_ids": [
+            "animated-gradient-text",
+            "aurora-text",
+            "sparkles-text"
+          ],
+          "top_ids": [
+            "animated-gradient-text",
+            "animated-gradient-text-demo-2",
+            "animated-gradient-text-demo",
+            "aurora-text",
+            "distorted-glass-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "typing text animation",
+          "expected_ids": [
+            "text-animate",
+            "typing-animation",
+            "typing-animation-demo"
+          ],
+          "top_ids": [
+            "typing-animation",
+            "typing-animation-demo",
+            "elements_typing-effect",
+            "typewriter-effect",
+            "typewriter"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "rotating words text effect",
+          "expected_ids": [
+            "morphing-text",
+            "word-rotate",
+            "word-rotate-demo"
+          ],
+          "top_ids": [
+            "text-generate-effect",
+            "container-text-flip",
+            "word-rotate-demo",
+            "layout-text-flip",
+            "flip-words"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "animated background particles",
+          "expected_ids": [
+            "meteors",
+            "particles",
+            "particles-demo"
+          ],
+          "top_ids": [
+            "particles-demo",
+            "meteors",
+            "particles",
+            "animated-background",
+            "shine-border"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "grid background pattern",
+          "expected_ids": [
+            "animated-grid-pattern",
+            "grid-pattern",
+            "interactive-grid-pattern"
+          ],
+          "top_ids": [
+            "grid-pattern-dashed",
+            "animated-grid-pattern-demo",
+            "animated-grid-pattern",
+            "interactive-grid-pattern-demo",
+            "interactive-grid-pattern-demo-2"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "retro grid landing background",
+          "expected_ids": [
+            "retro-grid",
+            "retro-grid-demo",
+            "warp-background"
+          ],
+          "top_ids": [
+            "retro-grid",
+            "retro-grid-demo",
+            "elements_retro-grid",
+            "grid-pattern-dashed",
+            "grid"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "glass frosted blur background",
+          "expected_ids": [
+            "blur-fade",
+            "magic-card",
+            "progressive-blur"
+          ],
+          "top_ids": [
+            "distorted-glass",
+            "components_BlurBackground",
+            "progressive-blur",
+            "distorted-glass-demo",
+            "blur-fade-demo"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "dock navigation menu",
+          "expected_ids": [
+            "dock",
+            "dock-demo",
+            "dock-demo-2"
+          ],
+          "top_ids": [
+            "floating-dock",
+            "dock-demo-3",
+            "dock-demo",
+            "dock",
+            "packages_react_src_components_menu_menu"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "navigation menu navbar",
+          "expected_ids": [
+            "menubar",
+            "navigation-menu",
+            "navigation-menu-demo"
+          ],
+          "top_ids": [
+            "navbar-menu",
+            "packages_react_src_components_menu_menu",
+            "floating-navbar",
+            "menu",
+            "packages_mantine_core_src_components_Menu_index"
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "query": "mobile android device mockup",
+          "expected_ids": [
+            "android",
+            "android-demo",
+            "safari"
+          ],
+          "top_ids": [
+            "android-demo",
+            "android-demo-2",
+            "android-demo-3",
+            "android",
+            "use-mobile"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "browser frame screenshot mockup",
+          "expected_ids": [
+            "safari",
+            "safari-demo",
+            "safari-demo-2"
+          ],
+          "top_ids": [
+            "safari-demo",
+            "safari-demo-3",
+            "safari-demo-4",
+            "mock-browser-window",
+            "safari-demo-2"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "avatar profile images",
+          "expected_ids": [
+            "avatar",
+            "avatar-circles",
+            "avatar-circles-demo"
+          ],
+          "top_ids": [
+            "avatar-circles",
+            "packages_react_src_components_avatar_index",
+            "packages_react_src_components_avatar_avatar",
+            "avatar",
+            "empty-avatar"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast component",
+          "expected_ids": [
+            "sonner",
+            "sonner-demo",
+            "sonner-types"
+          ],
+          "top_ids": [
+            "elements_toast",
+            "src_components_Toast_Toast",
+            "toast",
+            "packages_react_src_components_toast_index",
+            "packages_react_src_components_toast_toast"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "accordion faq collapsible",
+          "expected_ids": [
+            "accordion",
+            "accordion-demo",
+            "collapsible"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Accordion_Accordion.types",
+            "src_components_Accordion_Accordion",
+            "accordion",
+            "packages_mantine_core_src_components_Accordion_AccordionItem.context",
+            "expandable"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs switch content panels",
+          "expected_ids": [
+            "tabs",
+            "tabs-demo",
+            "toggle-group"
+          ],
+          "top_ids": [
+            "elements_tabs",
+            "tabs",
+            "tabs-demo",
+            "packages_radix-ui-themes_src_components_tabs",
+            "src_components_TabNavigation_TabNavigation"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "select dropdown input",
+          "expected_ids": [
+            "native-select",
+            "select",
+            "select-demo"
+          ],
+          "top_ids": [
+            "native-select-invalid",
+            "elements_combobox",
+            "src_components_Select_Select",
+            "form-rhf-select",
+            "combobox-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "textarea form field",
+          "expected_ids": [
+            "field-textarea",
+            "textarea",
+            "textarea-demo"
+          ],
+          "top_ids": [
+            "form-formisch-textarea",
+            "textarea-demo",
+            "elements_textarea",
+            "field",
+            "textarea-with-button"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox form control",
+          "expected_ids": [
+            "checkbox",
+            "checkbox-demo",
+            "field-checkbox"
+          ],
+          "top_ids": [
+            "src_components_Checkbox_Checkbox",
+            "packages_react_src_components_checkbox_checkbox",
+            "form-formisch-checkbox",
+            "checkbox-disabled",
+            "form-tanstack-checkbox"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio group options",
+          "expected_ids": [
+            "field-radio",
+            "form-rhf-radiogroup",
+            "radio-group-demo"
+          ],
+          "top_ids": [
+            "radio-group-demo",
+            "src_components_RadioCardGroup_RadioCardGroup",
+            "packages_radix-ui-themes_src_components_radio-group",
+            "form-formisch-radiogroup",
+            "elements_radio-group"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "slider range input",
+          "expected_ids": [
+            "field-slider",
+            "slider",
+            "slider-demo"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_Slider_Slider",
+            "packages_mantine_core_src_components_Slider_RangeSlider_RangeSlider",
+            "field-slider"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "toggle theme dark mode",
+          "expected_ids": [
+            "animated-theme-toggler",
+            "mode-toggle",
+            "switch"
+          ],
+          "top_ids": [
+            "animated-theme-toggler",
+            "packages_radix-ui-themes_src_components_theme-panel",
+            "hero-video-dialog-demo-top-in-bottom-out",
+            "shiny-button",
+            "toggle-sm"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "empty state placeholder",
+          "expected_ids": [
+            "empty",
+            "empty-demo",
+            "empty-icon"
+          ],
+          "top_ids": [
+            "empty",
+            "packages_react_src_components_empty-state_empty-state",
+            "empty-icon",
+            "packages_react_src_components_empty-state_index",
+            "toggle"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "file tree component",
+          "expected_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "item-group"
+          ],
+          "top_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "packages_mantine_core_src_components_Tree_index",
+            "packages_mantine_core_src_components_Tree_Tree",
+            "sidebar-11"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "terminal code block",
+          "expected_ids": [
+            "code-comparison",
+            "terminal",
+            "terminal-demo"
+          ],
+          "top_ids": [
+            "terminal",
+            "code-block",
+            "components_ui_CodeBlockContainer_index",
+            "packages_radix-ui-themes_src_components_code",
+            "code-block"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tweet social card",
+          "expected_ids": [
+            "client-tweet-card",
+            "tweet-card",
+            "tweet-card-demo"
+          ],
+          "top_ids": [
+            "tweet-card-demo",
+            "tweet-card",
+            "tweet-card-images",
+            "client-tweet-card",
+            "tweet-card-meta-preview"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confetti celebration animation",
+          "expected_ids": [
+            "confetti",
+            "confetti-demo",
+            "confetti-fireworks"
+          ],
+          "top_ids": [
+            "confetti",
+            "confetti-random-direction",
+            "confetti-side-cannons",
+            "confetti-basic-cannon",
+            "confetti-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pulsating call to action button",
+          "expected_ids": [
+            "pulsating-button",
+            "pulsating-button-demo",
+            "rainbow-button"
+          ],
+          "top_ids": [
+            "packages_react_src_components_button_index",
+            "pulsating-button-demo",
+            "pulsating-button",
+            "logo-carousel-demo",
+            "comic-text-demo"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "date picker with range selection",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "src_components_datepicker_datepicker"
+          ],
+          "top_ids": [
+            "date-picker-with-range",
+            "packages_react_src_components_date-range-picker_index",
+            "packages_react_src_components_calendar-year-picker_index",
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "calendar-hijri"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "data table with sorting and pagination",
+          "expected_ids": [
+            "packages_react_src_components_table_table",
+            "src_components_table_table",
+            "table"
+          ],
+          "top_ids": [
+            "table-demo",
+            "data-table-demo",
+            "src_components_Table_Table",
+            "packages_mantine_core_src_components_Table_TableDataRenderer",
+            "table"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast with progress",
+          "expected_ids": [
+            "elements_toast",
+            "packages_react_src_components_toast_toast",
+            "src_components_toast_toast",
+            "toast"
+          ],
+          "top_ids": [
+            "elements_toast",
+            "src_components_Toast_Toast",
+            "toast",
+            "packages_react_src_components_toast_index",
+            "packages_react_src_components_toast_toast"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "number input with increment decrement",
+          "expected_ids": [
+            "number-input",
+            "packages_mantine_core_src_components_numberinput_numberinput",
+            "packages_react_src_components_number-field_number-field"
+          ],
+          "top_ids": [
+            "number-input",
+            "packages_mantine_core_src_components_NumberInput_index",
+            "packages_mantine_core_src_components_NumberInput_NumberInput",
+            "number-input-recipe",
+            "packages_mantine_core_src_components_NumberInput_NumberInputChevron"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "accordion with animated expand",
+          "expected_ids": [
+            "accordion",
+            "elements_accordion",
+            "packages_mantine_core_src_components_accordion_accordion",
+            "src_components_accordion_accordion"
+          ],
+          "top_ids": [
+            "elements_accordion",
+            "accordion",
+            "packages_react_src_components_accordion_accordion",
+            "packages_react_src_components_accordion_index",
+            "packages_mantine_core_src_components_Accordion_Accordion"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "color picker input",
+          "expected_ids": [
+            "color-picker",
+            "packages_mantine_core_src_components_colorinput_colorinput",
+            "packages_mantine_core_src_components_colorpicker_colorpicker",
+            "packages_react_src_components_color-picker_color-picker"
+          ],
+          "top_ids": [
+            "packages_react_src_components_color-input-group_color-input-group",
+            "packages_mantine_core_src_components_ColorPicker_ColorPicker.context",
+            "color-picker",
+            "packages_mantine_core_src_components_ColorPicker_HueSlider_HueSlider.story",
+            "color-picker"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "file upload dropzone",
+          "expected_ids": [
+            "file-upload",
+            "packages_mantine_core_src_components_filebutton_filebutton",
+            "packages_mantine_core_src_components_fileinput_fileinput"
+          ],
+          "top_ids": [
+            "file-upload",
+            "cult/ui",
+            "file-upload",
+            "file-upload-recipe",
+            "packages_mantine_core_src_components_FileInput_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "stepper progress form",
+          "expected_ids": [
+            "packages_mantine_core_src_components_stepper_stepper",
+            "packages_mantine_core_src_components_stepper_stepperstep_stepperstep",
+            "progress"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Stepper_index",
+            "packages_mantine_core_src_components_Stepper_Stepper",
+            "packages_mantine_core_src_components_Stepper_Stepper.context",
+            "packages_mantine_core_src_components_Stepper_Stepper.story",
+            "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "rating stars component",
+          "expected_ids": [
+            "elements_rating",
+            "rating-group"
+          ],
+          "top_ids": [
+            "glowing-stars",
+            "packages_mantine_core_src_components_Rating_index",
+            "packages_mantine_core_src_components_Rating_Rating",
+            "packages_mantine_core_src_components_Rating_Rating.context",
+            "packages_mantine_core_src_components_Rating_Rating.story"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "tag input with chips",
+          "expected_ids": [
+            "packages_react_src_components_tag-group_tag-group",
+            "packages_react_src_components_tag_tag",
+            "tags-input"
+          ],
+          "top_ids": [
+            "packages_react_src_components_tag_index",
+            "packages_react_src_components_tag_tag",
+            "packages_react_src_components_kbd_index",
+            "packages_react_src_components_tag-group_tag-group",
+            "packages_radix-ui-themes_src_components_code"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "dashboard bar chart component",
+          "expected_ids": [
+            "src_components_barchart_barchart",
+            "src_components_barlist_barlist"
+          ],
+          "top_ids": [
+            "chart-bar-label",
+            "chart-bar-demo-tooltip",
+            "chart-area-default",
+            "chart-bar-label-custom",
+            "chart-bar-demo-legend"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "calendar component for selecting dates",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_range-calendar_range-calendar",
+            "src_components_calendar_calendar"
+          ],
+          "top_ids": [
+            "packages_react_src_components_calendar_index",
+            "packages_react_src_components_calendar_calendar",
+            "packages_react_src_components_calendar-year-picker_index",
+            "calendar",
+            "calendar-hijri"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "modal dialog with overlay and close button",
+          "expected_ids": [
+            "dialog",
+            "packages_mantine_core_src_components_modal_modal",
+            "packages_radix-ui-themes_src_components_dialog",
+            "packages_react_src_components_modal_modal"
+          ],
+          "top_ids": [
+            "elements_modal",
+            "alert-dialog",
+            "elements_full-screen-modal",
+            "packages_mantine_core_src_components_Modal_ModalCloseButton",
+            "packages_mantine_core_src_components_ModalBase_ModalBaseCloseButton"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "sidebar navigation links with icons",
+          "expected_ids": [
+            "components_ui_sidebar_index",
+            "components_ui_sidebar_navlink",
+            "packages_mantine_core_src_components_navlink_navlink"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "navigation-menu",
+            "sidebar",
+            "packages_react_src_components_header_header",
+            "sidebar-08"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "hero section with gradient background",
+          "expected_ids": [
+            "components_herobggradient",
+            "components_ui_hero_herobggradient.client",
+            "components_ui_hero_index",
+            "src_components_basehero"
+          ],
+          "top_ids": [
+            "hero-static-radial-gradient",
+            "hero-liquid-metal",
+            "hero-static-radial-gradient-demo",
+            "hero-dithering",
+            "aurora-background"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "loading spinner indicator",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "packages_react_src_components_spinner_spinner",
+            "spinner",
+            "src_components_progresscircle_progresscircle"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "spinner-custom",
+            "spinner-size",
+            "button-loading",
+            "packages_radix-ui-themes_src_components_skeleton"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "status badge label component",
+          "expected_ids": [
+            "badge",
+            "packages_mantine_core_src_components_badge_badge",
+            "packages_radix-ui-themes_src_components_badge",
+            "src_components_badge_badge"
+          ],
+          "top_ids": [
+            "badge-outline",
+            "packages_react_src_components_badge_index",
+            "badge-demo",
+            "packages_react_src_components_badge_badge",
+            "src_components_Badge_Badge"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hover card popover preview",
+          "expected_ids": [
+            "elements_hover-card",
+            "hover-card",
+            "packages_mantine_core_src_components_hovercard_hovercard",
+            "packages_radix-ui-themes_src_components_hover-card"
+          ],
+          "top_ids": [
+            "link-preview",
+            "components_ui_SupportedFrameworks_PreviewCard",
+            "tweet-card-meta-preview",
+            "card-hover-effect",
+            "shift-card"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "range slider input control",
+          "expected_ids": [
+            "elements_range-slider",
+            "packages_mantine_core_src_components_slider_slider_slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_slider_slider"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_Slider_Slider",
+            "packages_mantine_core_src_components_Slider_RangeSlider_RangeSlider",
+            "field-slider"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox card selection group",
+          "expected_ids": [
+            "checkbox",
+            "packages_mantine_core_src_components_checkbox_checkboxcard_checkboxcard",
+            "packages_radix-ui-themes_src_components_checkbox-cards",
+            "packages_react_src_components_checkbox_checkbox"
+          ],
+          "top_ids": [
+            "packages_react_src_components_checkbox-group_index",
+            "packages_radix-ui-themes_src_components_checkbox",
+            "packages_mantine_core_src_components_Checkbox_CheckboxCard_CheckboxCard",
+            "packages_mantine_core_src_components_Checkbox_CheckboxCard_CheckboxCard.story",
+            "packages_mantine_core_src_components_Menu_MenuCheckboxGroup_MenuCheckboxGroup.context"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio card group options",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_radio-cards",
+            "radio-card-group",
+            "src_components_radiocardgroup_radiocardgroup"
+          ],
+          "top_ids": [
+            "radio-card-group",
+            "radio-card-group-recipe",
+            "radio-group-demo",
+            "src_components_RadioCardGroup_RadioCardGroup",
+            "packages_radix-ui-themes_src_components_radio-group"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action items",
+          "expected_ids": [
+            "elements_dropdown-menu",
+            "packages_radix-ui-themes_src_components_dropdown-menu",
+            "packages_react_src_components_dropdown_dropdown",
+            "src_components_dropdownmenu_dropdownmenu"
+          ],
+          "top_ids": [
+            "dropdown-menu-checkboxes",
+            "packages_react_src_components_dropdown_dropdown",
+            "packages_react_src_components_menu-section_index",
+            "notch",
+            "elements_navigation-menu"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "popover floating content panel",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_popover",
+            "packages_react_src_components_popover_popover",
+            "popover",
+            "src_components_popover_popover"
+          ],
+          "top_ids": [
+            "floating-panel-demo",
+            "packages_radix-ui-themes_src_components_popover",
+            "floating-panel",
+            "elements_slide-over",
+            "side-panel"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "tooltip on hover helper text",
+          "expected_ids": [
+            "elements_tooltip",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "packages_react_src_components_tooltip_tooltip",
+            "tooltip"
+          ],
+          "top_ids": [
+            "packages_react_src_components_tooltip_tooltip",
+            "tooltip-demo",
+            "elements_tooltip",
+            "src_components_Tracker_Tracker",
+            "hyper-text-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs navigation content panels",
+          "expected_ids": [
+            "elements_tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "src_components_tabs_tabs",
+            "tabs"
+          ],
+          "top_ids": [
+            "elements_tabs",
+            "tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "tabs-demo",
+            "direction-aware-tabs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pagination controls for long table",
+          "expected_ids": [
+            "elements_pagination",
+            "packages_mantine_core_src_components_pagination_pagination",
+            "packages_react_src_components_pagination_pagination",
+            "pagination"
+          ],
+          "top_ids": [
+            "table-demo",
+            "pagination-demo",
+            "table",
+            "packages_react_src_components_table_index",
+            "packages_react_src_components_table_table"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "multi select dropdown input",
+          "expected_ids": [
+            "packages_mantine_core_src_components_multiselect_multiselect",
+            "packages_mantine_core_src_components_nativeselect_nativeselect",
+            "packages_react_src_components_select_select",
+            "select"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_MultiSelect_MultiSelect",
+            "packages_mantine_core_src_components_MultiSelect_MultiSelect.story",
+            "native-select-invalid",
+            "elements_combobox",
+            "src_components_Select_Select"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "avatar group profile stack",
+          "expected_ids": [
+            "avatar",
+            "packages_mantine_core_src_components_avatar_avatargroup_avatargroup",
+            "packages_radix-ui-themes_src_components_avatar"
+          ],
+          "top_ids": [
+            "packages_react_src_components_avatar_index",
+            "packages_react_src_components_avatar_avatar",
+            "avatar-circles",
+            "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+            "components_ui_TemplateTechStackGroup_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "drawer slide over panel",
+          "expected_ids": [
+            "drawer",
+            "elements_slide-over",
+            "packages_mantine_core_src_components_drawer_drawer",
+            "packages_react_src_components_drawer_drawer"
+          ],
+          "top_ids": [
+            "drawer",
+            "packages_react_src_components_drawer_drawer",
+            "packages_react_src_components_drawer_index",
+            "drawer",
+            "packages_mantine_core_src_components_Drawer_Drawer"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "search input field component",
+          "expected_ids": [
+            "components_ui_input",
+            "packages_mantine_core_src_components_input_input",
+            "packages_react_src_components_search-field_search-field",
+            "src_components_searchinput"
+          ],
+          "top_ids": [
+            "empty-input-group",
+            "src_components_SearchWrapper",
+            "packages_mantine_core_src_components_Autocomplete_index",
+            "input-group-custom",
+            "packages_react_src_components_input-group_index"
+          ],
+          "first_relevant_rank": null
+        }
+      ]
+    },
+    "FAISS only": {
+      "hit_at_1": 0.8,
+      "hit_at_5": 0.975,
+      "mrr": 0.8658333333333333,
+      "queries": [
+        {
+          "query": "animated loading spinner",
+          "expected_ids": [
+            "spinner-basic",
+            "spinner-button",
+            "spinner-color"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "spinner-basic",
+            "spinner-custom",
+            "spinner",
+            "spinner-size"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "button with loading state",
+          "expected_ids": [
+            "button-loading",
+            "shimmer-button",
+            "spinner-button"
+          ],
+          "top_ids": [
+            "button-loading",
+            "stateful-button",
+            "src_components_Button_Button",
+            "spinner-button",
+            "shimmer-button"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dark glassmorphism card",
+          "expected_ids": [
+            "magic-card",
+            "magic-card-demo",
+            "neon-gradient-card"
+          ],
+          "top_ids": [
+            "src_components_Card_Card",
+            "cutout-card",
+            "texture-card",
+            "packages_react_src_components_card_index",
+            "elements_card"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "glowing border card",
+          "expected_ids": [
+            "border-beam",
+            "neon-gradient-card",
+            "shine-border"
+          ],
+          "top_ids": [
+            "shine-border-demo-2",
+            "shine-border-demo",
+            "border-beam-button",
+            "magic-card-demo",
+            "badge-outline"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "sidebar navigation with icons",
+          "expected_ids": [
+            "sidebar-01",
+            "sidebar-demo",
+            "sidebar-menu"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "packages_react_src_components_icons",
+            "sidebar-01",
+            "sidebar-menu",
+            "sidebar-06"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "dashboard sidebar navigation",
+          "expected_ids": [
+            "sidebar-02",
+            "sidebar-05",
+            "sidebar-07"
+          ],
+          "top_ids": [
+            "sidebar-01",
+            "sidebar-menu",
+            "sidebar-02",
+            "sidebar-08",
+            "sidebar"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "modal dialog component",
+          "expected_ids": [
+            "alert-dialog",
+            "dialog",
+            "dialog-demo"
+          ],
+          "top_ids": [
+            "dialog-demo",
+            "dialog",
+            "dialog",
+            "src_components_Dialog_Dialog",
+            "dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confirmation alert dialog",
+          "expected_ids": [
+            "alert-dialog",
+            "alert-dialog-demo",
+            "dialog-close-button"
+          ],
+          "top_ids": [
+            "packages_react_src_components_alert-dialog_index",
+            "alert-dialog",
+            "packages_radix-ui-themes_src_components_alert-dialog",
+            "alert-dialog-demo",
+            "packages_react_src_components_alert-dialog_alert-dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "login form with inputs",
+          "expected_ids": [
+            "form-rhf-input",
+            "login-01",
+            "login-03"
+          ],
+          "top_ids": [
+            "login-01",
+            "packages_react_src_components_input_index",
+            "packages_mantine_core_src_components_PasswordInput_index",
+            "signup-01",
+            "form-formisch-input"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "signup form card",
+          "expected_ids": [
+            "card-with-form",
+            "signup-01",
+            "signup-02"
+          ],
+          "top_ids": [
+            "signup-04",
+            "signup-01",
+            "card-with-form",
+            "signup-02",
+            "signup-05"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "data table for dashboard",
+          "expected_ids": [
+            "data-table-demo",
+            "table",
+            "table-demo"
+          ],
+          "top_ids": [
+            "data-table-demo",
+            "elements_table",
+            "src_components_Table_Table",
+            "table",
+            "table-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "chart for analytics dashboard",
+          "expected_ids": [
+            "chart",
+            "chart-area-default",
+            "chart-bar-default"
+          ],
+          "top_ids": [
+            "chart-line-dots-custom",
+            "chart-area-default",
+            "chart-area-icons",
+            "chart",
+            "chart-radar-label-custom"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pie chart visualization",
+          "expected_ids": [
+            "chart-pie-donut",
+            "chart-pie-interactive",
+            "chart-pie-simple"
+          ],
+          "top_ids": [
+            "chart-pie-interactive",
+            "chart-pie-simple",
+            "chart-pie-legend",
+            "chart-pie-label-list",
+            "chart-pie-stacked"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "bar chart with labels",
+          "expected_ids": [
+            "chart-bar-default",
+            "chart-bar-label",
+            "chart-bar-multiple"
+          ],
+          "top_ids": [
+            "chart-bar-label",
+            "chart-bar-label-custom",
+            "chart-bar-demo",
+            "chart-bar-multiple",
+            "src_components_BarChart_BarChart"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "line chart with dots",
+          "expected_ids": [
+            "chart-line-default",
+            "chart-line-dots",
+            "chart-line-multiple"
+          ],
+          "top_ids": [
+            "chart-line-dots",
+            "chart-line-dots-colors",
+            "chart-line-dots-custom",
+            "chart-radar-dots",
+            "chart-line-default"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "badge status label",
+          "expected_ids": [
+            "badge",
+            "badge-demo",
+            "badge-secondary"
+          ],
+          "top_ids": [
+            "packages_react_src_components_badge_index",
+            "packages_mantine_core_src_components_Badge_index",
+            "badge-demo",
+            "badge",
+            "badge-outline"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tooltip on hover",
+          "expected_ids": [
+            "input-group-tooltip",
+            "kbd-tooltip",
+            "tooltip-demo"
+          ],
+          "top_ids": [
+            "packages_react_src_components_tooltip_tooltip",
+            "elements_tooltip",
+            "tooltip-demo",
+            "src_components_Tooltip_Tooltip",
+            "packages_radix-ui-themes_src_components_tooltip"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action list",
+          "expected_ids": [
+            "dropdown-menu-checkboxes",
+            "dropdown-menu-dialog",
+            "dropdown-menu-radio-group"
+          ],
+          "top_ids": [
+            "src_components_DropdownMenu_DropdownMenu",
+            "context-menu",
+            "elements_dropdown-menu",
+            "packages_radix-ui-themes_src_components_dropdown-menu",
+            "elements_navigation-menu"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "carousel for testimonials",
+          "expected_ids": [
+            "carousel-api",
+            "carousel-demo",
+            "marquee"
+          ],
+          "top_ids": [
+            "animated-testimonials",
+            "carousel",
+            "logo-carousel-demo",
+            "loading-carousel-demo",
+            "feature-carousel-demo"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "calendar date picker",
+          "expected_ids": [
+            "calendar",
+            "calendar-demo",
+            "date-picker-demo"
+          ],
+          "top_ids": [
+            "date-picker-demo",
+            "elements_date-picker",
+            "src_components_DatePicker_DatePicker",
+            "packages_react_src_components_date-picker_date-picker",
+            "calendar-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "progress bar indicator",
+          "expected_ids": [
+            "animated-circular-progress-bar",
+            "progress",
+            "progress-demo"
+          ],
+          "top_ids": [
+            "src_components_ProgressBar_ProgressBar",
+            "progress-demo",
+            "packages_react_src_components_progress-bar_progress-bar",
+            "progress",
+            "packages_react_src_components_progress-bar_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hero section with animated background",
+          "expected_ids": [
+            "hero-video-dialog",
+            "particles",
+            "retro-grid"
+          ],
+          "top_ids": [
+            "hero-highlight",
+            "hero-parallax",
+            "hero-video-dialog-demo-top-in-bottom-out",
+            "hero-liquid-metal",
+            "packages_mantine_core_src_components_BackgroundImage_BackgroundImage.story"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "animated beam connection",
+          "expected_ids": [
+            "animated-beam",
+            "animated-beam-bidirectional",
+            "animated-beam-demo"
+          ],
+          "top_ids": [
+            "animated-beam-bidirectional",
+            "animated-beam",
+            "animated-beam-demo",
+            "animated-beam-multiple-inputs",
+            "animated-beam-unidirectional"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "moving gradient text headline",
+          "expected_ids": [
+            "animated-gradient-text",
+            "aurora-text",
+            "sparkles-text"
+          ],
+          "top_ids": [
+            "gradient-heading",
+            "gradient-heading-demo",
+            "animated-gradient-text-demo-2",
+            "animated-gradient-text-demo",
+            "animated-gradient-text"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "typing text animation",
+          "expected_ids": [
+            "text-animate",
+            "typing-animation",
+            "typing-animation-demo"
+          ],
+          "top_ids": [
+            "typing-animation-demo",
+            "typing-animation",
+            "elements_typing-effect",
+            "text-animate-demo-3",
+            "text-animate-demo-2"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "rotating words text effect",
+          "expected_ids": [
+            "morphing-text",
+            "word-rotate",
+            "word-rotate-demo"
+          ],
+          "top_ids": [
+            "word-rotate",
+            "word-rotate-demo",
+            "spinning-text",
+            "flip-words",
+            "text-roll"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "animated background particles",
+          "expected_ids": [
+            "meteors",
+            "particles",
+            "particles-demo"
+          ],
+          "top_ids": [
+            "particles-demo",
+            "particles",
+            "animated-background",
+            "noise-background",
+            "background-beams-with-collision"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "grid background pattern",
+          "expected_ids": [
+            "animated-grid-pattern",
+            "grid-pattern",
+            "interactive-grid-pattern"
+          ],
+          "top_ids": [
+            "grid-pattern-demo",
+            "grid-pattern",
+            "interactive-grid-pattern-demo-2",
+            "animated-grid-pattern-demo",
+            "animated-grid-pattern"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "retro grid landing background",
+          "expected_ids": [
+            "retro-grid",
+            "retro-grid-demo",
+            "warp-background"
+          ],
+          "top_ids": [
+            "retro-grid-demo",
+            "elements_retro-grid",
+            "retro-grid",
+            "grid-pattern-demo",
+            "warp-background"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "glass frosted blur background",
+          "expected_ids": [
+            "blur-fade",
+            "magic-card",
+            "progressive-blur"
+          ],
+          "top_ids": [
+            "edge-blur-demo",
+            "edge-blur",
+            "components_BlurBackground",
+            "distorted-glass-demo",
+            "progressive-blur"
+          ],
+          "first_relevant_rank": 5
+        },
+        {
+          "query": "dock navigation menu",
+          "expected_ids": [
+            "dock",
+            "dock-demo",
+            "dock-demo-2"
+          ],
+          "top_ids": [
+            "floating-dock",
+            "navigation-menu-demo",
+            "dock-demo-3",
+            "navigation-menu",
+            "menu"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "navigation menu navbar",
+          "expected_ids": [
+            "menubar",
+            "navigation-menu",
+            "navigation-menu-demo"
+          ],
+          "top_ids": [
+            "navbar-menu",
+            "navigation-menu",
+            "navigation-menu-demo",
+            "packages_react_src_components_menu_menu",
+            "menu"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "mobile android device mockup",
+          "expected_ids": [
+            "android",
+            "android-demo",
+            "safari"
+          ],
+          "top_ids": [
+            "android-demo-2",
+            "android-demo-3",
+            "android-demo",
+            "android",
+            "mock-browser-window-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "browser frame screenshot mockup",
+          "expected_ids": [
+            "safari",
+            "safari-demo",
+            "safari-demo-2"
+          ],
+          "top_ids": [
+            "mock-browser-window",
+            "mock-browser-window-demo",
+            "safari-demo",
+            "safari-demo-2",
+            "safari-demo-3"
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "query": "avatar profile images",
+          "expected_ids": [
+            "avatar",
+            "avatar-circles",
+            "avatar-circles-demo"
+          ],
+          "top_ids": [
+            "packages_react_src_components_avatar_index",
+            "avatar",
+            "packages_radix-ui-themes_src_components_avatar",
+            "packages_react_src_components_avatar_avatar",
+            "packages_mantine_core_src_components_Avatar_Avatar"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast component",
+          "expected_ids": [
+            "sonner",
+            "sonner-demo",
+            "sonner-types"
+          ],
+          "top_ids": [
+            "elements_toast",
+            "src_components_Toast_Toaster",
+            "toast",
+            "packages_react_src_components_toast_toast",
+            "packages_react_src_components_toast_index"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "accordion faq collapsible",
+          "expected_ids": [
+            "accordion",
+            "accordion-demo",
+            "collapsible"
+          ],
+          "top_ids": [
+            "accordion-demo",
+            "elements_accordion",
+            "accordion",
+            "packages_mantine_core_src_components_Accordion_Accordion.types",
+            "src_components_Accordion_Accordion"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs switch content panels",
+          "expected_ids": [
+            "tabs",
+            "tabs-demo",
+            "toggle-group"
+          ],
+          "top_ids": [
+            "tabs-demo",
+            "tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "elements_tabs",
+            "tabs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "select dropdown input",
+          "expected_ids": [
+            "native-select",
+            "select",
+            "select-demo"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Select_index",
+            "packages_mantine_core_src_components_Select_Select",
+            "combobox-demo",
+            "select",
+            "packages_react_src_components_select_select"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "textarea form field",
+          "expected_ids": [
+            "field-textarea",
+            "textarea",
+            "textarea-demo"
+          ],
+          "top_ids": [
+            "elements_textarea",
+            "field-textarea",
+            "textarea",
+            "textarea-with-text",
+            "form-formisch-textarea"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox form control",
+          "expected_ids": [
+            "checkbox",
+            "checkbox-demo",
+            "field-checkbox"
+          ],
+          "top_ids": [
+            "packages_react_src_components_checkbox_index",
+            "src_components_Checkbox_Checkbox",
+            "packages_react_src_components_checkbox_checkbox",
+            "checkbox",
+            "checkbox-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio group options",
+          "expected_ids": [
+            "field-radio",
+            "form-rhf-radiogroup",
+            "radio-group-demo"
+          ],
+          "top_ids": [
+            "elements_radio-group",
+            "radio-group-demo",
+            "packages_radix-ui-themes_src_components_radio-group",
+            "dropdown-menu-radio-group",
+            "src_components_RadioGroup_RadioGroup"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "slider range input",
+          "expected_ids": [
+            "field-slider",
+            "slider",
+            "slider-demo"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "src_components_Slider_Slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "packages_mantine_core_src_components_Slider_RangeSlider_RangeSlider",
+            "slider-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "toggle theme dark mode",
+          "expected_ids": [
+            "animated-theme-toggler",
+            "mode-toggle",
+            "switch"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_theme-panel",
+            "animated-theme-toggler",
+            "mode-toggle",
+            "packages_radix-ui-themes_src_components_theme",
+            "animated-theme-toggler-demo"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "empty state placeholder",
+          "expected_ids": [
+            "empty",
+            "empty-demo",
+            "empty-icon"
+          ],
+          "top_ids": [
+            "packages_react_src_components_empty-state_empty-state",
+            "empty",
+            "packages_react_src_components_empty-state_index",
+            "empty-outline",
+            "placeholders-and-vanish-input"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "file tree component",
+          "expected_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "item-group"
+          ],
+          "top_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "packages_mantine_core_src_components_Tree_index",
+            "packages_mantine_core_src_components_Tree_Tree",
+            "packages_mantine_core_src_components_Tree_TreeNode"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "terminal code block",
+          "expected_ids": [
+            "code-comparison",
+            "terminal",
+            "terminal-demo"
+          ],
+          "top_ids": [
+            "code-block",
+            "terminal",
+            "code-block",
+            "code-block-demo",
+            "terminal-demo"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "tweet social card",
+          "expected_ids": [
+            "client-tweet-card",
+            "tweet-card",
+            "tweet-card-demo"
+          ],
+          "top_ids": [
+            "tweet-card",
+            "client-tweet-card",
+            "tweet-card-demo",
+            "tweet-card-images",
+            "tweet-grid"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confetti celebration animation",
+          "expected_ids": [
+            "confetti",
+            "confetti-demo",
+            "confetti-fireworks"
+          ],
+          "top_ids": [
+            "confetti",
+            "confetti-demo",
+            "confetti-stars",
+            "confetti-fireworks",
+            "confetti-side-cannons"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pulsating call to action button",
+          "expected_ids": [
+            "pulsating-button",
+            "pulsating-button-demo",
+            "rainbow-button"
+          ],
+          "top_ids": [
+            "packages_react_src_components_button_index",
+            "packages_react_src_components_button_button",
+            "pulsating-button",
+            "button-demo",
+            "button-ghost"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "date picker with range selection",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "src_components_datepicker_datepicker"
+          ],
+          "top_ids": [
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "date-picker-with-range",
+            "packages_react_src_components_date-range-picker_index",
+            "date-picker-demo",
+            "packages_react_src_components_date-picker_date-picker"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "data table with sorting and pagination",
+          "expected_ids": [
+            "packages_react_src_components_table_table",
+            "src_components_table_table",
+            "table"
+          ],
+          "top_ids": [
+            "table-demo",
+            "data-table-demo",
+            "table",
+            "pagination",
+            "pagination"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast with progress",
+          "expected_ids": [
+            "elements_toast",
+            "packages_react_src_components_toast_toast",
+            "src_components_toast_toast",
+            "toast"
+          ],
+          "top_ids": [
+            "elements_toast",
+            "src_components_Toast_Toaster",
+            "packages_react_src_components_toast_toast",
+            "packages_react_src_components_toast_toast-queue",
+            "toast"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "number input with increment decrement",
+          "expected_ids": [
+            "number-input",
+            "packages_mantine_core_src_components_numberinput_numberinput",
+            "packages_react_src_components_number-field_number-field"
+          ],
+          "top_ids": [
+            "number-input",
+            "packages_mantine_core_src_components_NumberInput_NumberInput",
+            "packages_mantine_core_src_components_NumberInput_index",
+            "number-ticker-demo-2",
+            "sliding-number"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "accordion with animated expand",
+          "expected_ids": [
+            "accordion",
+            "elements_accordion",
+            "packages_mantine_core_src_components_accordion_accordion",
+            "src_components_accordion_accordion"
+          ],
+          "top_ids": [
+            "elements_accordion",
+            "expandable",
+            "accordion",
+            "accordion",
+            "accordion-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "color picker input",
+          "expected_ids": [
+            "color-picker",
+            "packages_mantine_core_src_components_colorinput_colorinput",
+            "packages_mantine_core_src_components_colorpicker_colorpicker",
+            "packages_react_src_components_color-picker_color-picker"
+          ],
+          "top_ids": [
+            "color-picker",
+            "packages_react_src_components_color-picker_index",
+            "packages_mantine_core_src_components_ColorPicker_ColorPicker.types",
+            "color-picker",
+            "packages_mantine_core_src_components_ColorPicker_ColorPicker"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "file upload dropzone",
+          "expected_ids": [
+            "file-upload",
+            "packages_mantine_core_src_components_filebutton_filebutton",
+            "packages_mantine_core_src_components_fileinput_fileinput"
+          ],
+          "top_ids": [
+            "file-upload",
+            "file-upload",
+            "packages_mantine_core_src_components_FileInput_index",
+            "input-file",
+            "file-upload-recipe"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "stepper progress form",
+          "expected_ids": [
+            "packages_mantine_core_src_components_stepper_stepper",
+            "packages_mantine_core_src_components_stepper_stepperstep_stepperstep",
+            "progress"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted",
+            "packages_mantine_core_src_components_Stepper_index",
+            "packages_mantine_core_src_components_Stepper_Stepper",
+            "packages_mantine_core_src_components_Stepper_StepperStep_StepperStep",
+            "progress"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "rating stars component",
+          "expected_ids": [
+            "elements_rating",
+            "rating-group"
+          ],
+          "top_ids": [
+            "elements_rating",
+            "packages_mantine_core_src_components_Rating_Rating",
+            "packages_mantine_core_src_components_Rating_index",
+            "packages_mantine_core_src_components_Rating_RatingItem_RatingItem",
+            "glowing-stars"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tag input with chips",
+          "expected_ids": [
+            "packages_react_src_components_tag-group_tag-group",
+            "packages_react_src_components_tag_tag",
+            "tags-input"
+          ],
+          "top_ids": [
+            "packages_react_src_components_chip_index",
+            "packages_mantine_core_src_components_TagsInput_TagsInput",
+            "packages_mantine_core_src_components_TagsInput_index",
+            "tags-input",
+            "packages_mantine_core_src_components_Chip_Chip"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "dashboard bar chart component",
+          "expected_ids": [
+            "src_components_barchart_barchart",
+            "src_components_barlist_barlist"
+          ],
+          "top_ids": [
+            "chart-bar-label",
+            "chart-bar-label-custom",
+            "chart-bar-multiple",
+            "chart-bar-demo-legend",
+            "chart-bar-mixed"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "calendar component for selecting dates",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_range-calendar_range-calendar",
+            "src_components_calendar_calendar"
+          ],
+          "top_ids": [
+            "elements_date-picker",
+            "calendar-demo",
+            "calendar",
+            "src_components_Calendar_Calendar",
+            "packages_react_src_components_date-picker_date-picker"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "modal dialog with overlay and close button",
+          "expected_ids": [
+            "dialog",
+            "packages_mantine_core_src_components_modal_modal",
+            "packages_radix-ui-themes_src_components_dialog",
+            "packages_react_src_components_modal_modal"
+          ],
+          "top_ids": [
+            "elements_modal",
+            "dialog",
+            "dialog-close-button",
+            "dialog",
+            "dialog-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "sidebar navigation links with icons",
+          "expected_ids": [
+            "components_ui_sidebar_index",
+            "components_ui_sidebar_navlink",
+            "packages_mantine_core_src_components_navlink_navlink"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "packages_react_src_components_icons",
+            "sidebar-06",
+            "navigation-menu",
+            "sidebar"
+          ],
+          "first_relevant_rank": 5
+        },
+        {
+          "query": "hero section with gradient background",
+          "expected_ids": [
+            "components_herobggradient",
+            "components_ui_hero_herobggradient.client",
+            "components_ui_hero_index",
+            "src_components_basehero"
+          ],
+          "top_ids": [
+            "hero-static-radial-gradient-demo",
+            "hero-static-radial-gradient",
+            "hero-highlight",
+            "hero-liquid-metal",
+            "components_HeroBgGradient"
+          ],
+          "first_relevant_rank": 5
+        },
+        {
+          "query": "loading spinner indicator",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "packages_react_src_components_spinner_spinner",
+            "spinner",
+            "src_components_progresscircle_progresscircle"
+          ],
+          "top_ids": [
+            "spinner",
+            "spinner-badge",
+            "spinner-size",
+            "spinner-color",
+            "spinner-item"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "status badge label component",
+          "expected_ids": [
+            "badge",
+            "packages_mantine_core_src_components_badge_badge",
+            "packages_radix-ui-themes_src_components_badge",
+            "src_components_badge_badge"
+          ],
+          "top_ids": [
+            "badge-demo",
+            "packages_react_src_components_badge_index",
+            "packages_radix-ui-themes_src_components_badge",
+            "badge-outline",
+            "packages_react_src_components_badge_badge"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hover card popover preview",
+          "expected_ids": [
+            "elements_hover-card",
+            "hover-card",
+            "packages_mantine_core_src_components_hovercard_hovercard",
+            "packages_radix-ui-themes_src_components_hover-card"
+          ],
+          "top_ids": [
+            "elements_hover-card",
+            "components_ui_SupportedFrameworks_PreviewCard",
+            "card-hover-effect",
+            "hover-card",
+            "hover-card-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "range slider input control",
+          "expected_ids": [
+            "elements_range-slider",
+            "packages_mantine_core_src_components_slider_slider_slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_slider_slider"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "src_components_Slider_Slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "packages_mantine_core_src_components_Slider_RangeSlider_RangeSlider",
+            "slider-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox card selection group",
+          "expected_ids": [
+            "checkbox",
+            "packages_mantine_core_src_components_checkbox_checkboxcard_checkboxcard",
+            "packages_radix-ui-themes_src_components_checkbox-cards",
+            "packages_react_src_components_checkbox_checkbox"
+          ],
+          "top_ids": [
+            "packages_react_src_components_checkbox-group_checkbox-group",
+            "packages_radix-ui-themes_src_components_checkbox-cards",
+            "packages_radix-ui-themes_src_components_checkbox-group",
+            "src_components_RadioCardGroup_RadioCardGroup",
+            "packages_mantine_core_src_components_Checkbox_CheckboxCard_CheckboxCard"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio card group options",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_radio-cards",
+            "radio-card-group",
+            "src_components_radiocardgroup_radiocardgroup"
+          ],
+          "top_ids": [
+            "src_components_RadioCardGroup_RadioCardGroup",
+            "radio-card-group",
+            "elements_radio-group",
+            "radio-group-demo",
+            "packages_radix-ui-themes_src_components_radio-group"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action items",
+          "expected_ids": [
+            "elements_dropdown-menu",
+            "packages_radix-ui-themes_src_components_dropdown-menu",
+            "packages_react_src_components_dropdown_dropdown",
+            "src_components_dropdownmenu_dropdownmenu"
+          ],
+          "top_ids": [
+            "src_components_DropdownMenu_DropdownMenu",
+            "context-menu",
+            "item-dropdown",
+            "packages_radix-ui-themes_src_components_dropdown-menu",
+            "elements_dropdown-menu"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "popover floating content panel",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_popover",
+            "packages_react_src_components_popover_popover",
+            "popover",
+            "src_components_popover_popover"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_popover",
+            "floating-panel",
+            "elements_popover",
+            "popover",
+            "src_components_Popover_Popover"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tooltip on hover helper text",
+          "expected_ids": [
+            "elements_tooltip",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "packages_react_src_components_tooltip_tooltip",
+            "tooltip"
+          ],
+          "top_ids": [
+            "elements_tooltip",
+            "packages_react_src_components_tooltip_tooltip",
+            "src_components_TooltipWrapper",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "src_components_Tooltip_Tooltip"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs navigation content panels",
+          "expected_ids": [
+            "elements_tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "src_components_tabs_tabs",
+            "tabs"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_tabs",
+            "src_components_Tabs_Tabs",
+            "tabs-demo",
+            "tabs",
+            "tabs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pagination controls for long table",
+          "expected_ids": [
+            "elements_pagination",
+            "packages_mantine_core_src_components_pagination_pagination",
+            "packages_react_src_components_pagination_pagination",
+            "pagination"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Pagination_PaginationControl_PaginationControl",
+            "pagination",
+            "table-demo",
+            "packages_mantine_core_src_components_Pagination_index",
+            "packages_react_src_components_pagination_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "multi select dropdown input",
+          "expected_ids": [
+            "packages_mantine_core_src_components_multiselect_multiselect",
+            "packages_mantine_core_src_components_nativeselect_nativeselect",
+            "packages_react_src_components_select_select",
+            "select"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_MultiSelect_index",
+            "packages_mantine_core_src_components_MultiSelect_MultiSelect",
+            "packages_react_src_components_select_index",
+            "packages_react_src_components_dropdown_index",
+            "dropdown-menu-checkboxes"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "avatar group profile stack",
+          "expected_ids": [
+            "avatar",
+            "packages_mantine_core_src_components_avatar_avatargroup_avatargroup",
+            "packages_radix-ui-themes_src_components_avatar"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+            "empty-avatar-group",
+            "packages_react_src_components_avatar_index",
+            "avatar",
+            "packages_radix-ui-themes_src_components_avatar"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "drawer slide over panel",
+          "expected_ids": [
+            "drawer",
+            "elements_slide-over",
+            "packages_mantine_core_src_components_drawer_drawer",
+            "packages_react_src_components_drawer_drawer"
+          ],
+          "top_ids": [
+            "drawer",
+            "packages_react_src_components_drawer_drawer",
+            "drawer",
+            "packages_react_src_components_drawer_index",
+            "packages_mantine_core_src_components_Drawer_DrawerOverlay"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "search input field component",
+          "expected_ids": [
+            "components_ui_input",
+            "packages_mantine_core_src_components_input_input",
+            "packages_react_src_components_search-field_search-field",
+            "src_components_searchinput"
+          ],
+          "top_ids": [
+            "packages_react_src_components_search-field_index",
+            "packages_react_src_components_search-field_search-field",
+            "packages_react_src_components_input_input",
+            "input",
+            "input-group-custom"
+          ],
+          "first_relevant_rank": 1
+        }
+      ]
+    },
+    "VibePull full": {
+      "hit_at_1": 0.7875,
+      "hit_at_5": 0.9625,
+      "mrr": 0.85875,
+      "queries": [
+        {
+          "query": "animated loading spinner",
+          "expected_ids": [
+            "spinner-basic",
+            "spinner-button",
+            "spinner-color"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "spinner-input-group",
+            "spinner-basic",
+            "spinner-item",
+            "spinner-size"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "button with loading state",
+          "expected_ids": [
+            "button-loading",
+            "shimmer-button",
+            "spinner-button"
+          ],
+          "top_ids": [
+            "shimmer-button",
+            "stateful-button",
+            "src_components_Button_Button",
+            "button-loading",
+            "shimmer-button-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dark glassmorphism card",
+          "expected_ids": [
+            "magic-card",
+            "magic-card-demo",
+            "neon-gradient-card"
+          ],
+          "top_ids": [
+            "neon-gradient-card",
+            "magic-card",
+            "glare-card",
+            "packages_react_src_components_card_index",
+            "src_components_Card_Card"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "glowing border card",
+          "expected_ids": [
+            "border-beam",
+            "neon-gradient-card",
+            "shine-border"
+          ],
+          "top_ids": [
+            "shine-border-demo-2",
+            "shine-border-demo",
+            "border-beam-button",
+            "shine-border",
+            "magic-card"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "sidebar navigation with icons",
+          "expected_ids": [
+            "sidebar-01",
+            "sidebar-demo",
+            "sidebar-menu"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "sidebar-menu-collapsible",
+            "sidebar-01",
+            "sidebar-menu",
+            "sidebar"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "dashboard sidebar navigation",
+          "expected_ids": [
+            "sidebar-02",
+            "sidebar-05",
+            "sidebar-07"
+          ],
+          "top_ids": [
+            "sidebar-01",
+            "sidebar-16",
+            "sidebar-menu-collapsible",
+            "sidebar",
+            "sidebar-demo"
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "query": "modal dialog component",
+          "expected_ids": [
+            "alert-dialog",
+            "dialog",
+            "dialog-demo"
+          ],
+          "top_ids": [
+            "dialog-demo",
+            "packages_mantine_core_src_components_Dialog_index",
+            "packages_mantine_core_src_components_Dialog_Dialog",
+            "dropdown-menu-dialog",
+            "src_components_Dialog_Dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confirmation alert dialog",
+          "expected_ids": [
+            "alert-dialog",
+            "alert-dialog-demo",
+            "dialog-close-button"
+          ],
+          "top_ids": [
+            "packages_react_src_components_alert-dialog_index",
+            "packages_radix-ui-themes_src_components_alert-dialog",
+            "alert-dialog",
+            "alert-dialog-demo",
+            "dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "login form with inputs",
+          "expected_ids": [
+            "form-rhf-input",
+            "login-01",
+            "login-03"
+          ],
+          "top_ids": [
+            "login-01",
+            "form-formisch-input",
+            "field-group",
+            "packages_react_src_components_input_index",
+            "input-otp-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "signup form card",
+          "expected_ids": [
+            "card-with-form",
+            "signup-01",
+            "signup-02"
+          ],
+          "top_ids": [
+            "card-with-form",
+            "signup-05",
+            "signup-01",
+            "signup-04",
+            "popover-form-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "data table for dashboard",
+          "expected_ids": [
+            "data-table-demo",
+            "table",
+            "table-demo"
+          ],
+          "top_ids": [
+            "table",
+            "chart-area-icons",
+            "chart-line-multiple",
+            "data-table-demo",
+            "chart-radar-grid-custom"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "chart for analytics dashboard",
+          "expected_ids": [
+            "chart",
+            "chart-area-default",
+            "chart-bar-default"
+          ],
+          "top_ids": [
+            "chart-area-icons",
+            "chart-line-dots-custom",
+            "chart-area-default",
+            "chart-radar-label-custom",
+            "chart-radial-stacked"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pie chart visualization",
+          "expected_ids": [
+            "chart-pie-donut",
+            "chart-pie-interactive",
+            "chart-pie-simple"
+          ],
+          "top_ids": [
+            "chart-pie-simple",
+            "chart-pie-donut",
+            "src_components_DonutChart_DonutChart",
+            "chart-pie-donut-active",
+            "chart-pie-interactive"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "bar chart with labels",
+          "expected_ids": [
+            "chart-bar-default",
+            "chart-bar-label",
+            "chart-bar-multiple"
+          ],
+          "top_ids": [
+            "chart-bar-label",
+            "chart-bar-label-custom",
+            "chart-bar-multiple",
+            "sonner",
+            "chart-bar-demo-legend"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "line chart with dots",
+          "expected_ids": [
+            "chart-line-default",
+            "chart-line-dots",
+            "chart-line-multiple"
+          ],
+          "top_ids": [
+            "chart-line-dots",
+            "chart-line-dots-custom",
+            "chart-line-dots-colors",
+            "chart-radar-dots",
+            "chart-line-linear"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "badge status label",
+          "expected_ids": [
+            "badge",
+            "badge-demo",
+            "badge-secondary"
+          ],
+          "top_ids": [
+            "packages_react_src_components_badge_index",
+            "badge-demo",
+            "badge-outline",
+            "badge",
+            "packages_mantine_core_src_components_Badge_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tooltip on hover",
+          "expected_ids": [
+            "input-group-tooltip",
+            "kbd-tooltip",
+            "tooltip-demo"
+          ],
+          "top_ids": [
+            "elements_tooltip",
+            "packages_react_src_components_tooltip_tooltip",
+            "tooltip-demo",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "src_components_Tooltip_Tooltip"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action list",
+          "expected_ids": [
+            "dropdown-menu-checkboxes",
+            "dropdown-menu-dialog",
+            "dropdown-menu-radio-group"
+          ],
+          "top_ids": [
+            "context-menu",
+            "elements_dropdown-menu",
+            "src_components_DropdownMenu_DropdownMenu",
+            "combobox-dropdown-menu",
+            "dropdown-menu-dialog"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "carousel for testimonials",
+          "expected_ids": [
+            "carousel-api",
+            "carousel-demo",
+            "marquee"
+          ],
+          "top_ids": [
+            "animated-testimonials",
+            "carousel-demo",
+            "carousel",
+            "carousel-plugin",
+            "carousel-api"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "calendar date picker",
+          "expected_ids": [
+            "calendar",
+            "calendar-demo",
+            "date-picker-demo"
+          ],
+          "top_ids": [
+            "packages_react_src_components_calendar-year-picker_index",
+            "elements_date-picker",
+            "src_components_DatePicker_DatePicker",
+            "date-picker-with-presets",
+            "calendar-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "progress bar indicator",
+          "expected_ids": [
+            "animated-circular-progress-bar",
+            "progress",
+            "progress-demo"
+          ],
+          "top_ids": [
+            "src_components_ProgressBar_ProgressBar",
+            "progress-demo",
+            "packages_react_src_components_progress-bar_progress-bar",
+            "packages_react_src_components_progress-bar_index",
+            "sonner"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hero section with animated background",
+          "expected_ids": [
+            "hero-video-dialog",
+            "particles",
+            "retro-grid"
+          ],
+          "top_ids": [
+            "hero-liquid-metal",
+            "hero-heatmap-demo",
+            "hero-dithering-demo",
+            "hero-color-panel",
+            "hero-video-dialog-demo-top-in-bottom-out"
+          ],
+          "first_relevant_rank": 5
+        },
+        {
+          "query": "animated beam connection",
+          "expected_ids": [
+            "animated-beam",
+            "animated-beam-bidirectional",
+            "animated-beam-demo"
+          ],
+          "top_ids": [
+            "animated-beam-bidirectional",
+            "animated-beam",
+            "animated-beam-demo",
+            "animated-beam-multiple-inputs",
+            "animated-beam-multiple-outputs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "moving gradient text headline",
+          "expected_ids": [
+            "animated-gradient-text",
+            "aurora-text",
+            "sparkles-text"
+          ],
+          "top_ids": [
+            "animated-gradient-text-demo-2",
+            "animated-gradient-text",
+            "animated-gradient-text-demo",
+            "gradient-heading",
+            "aurora-text"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "typing text animation",
+          "expected_ids": [
+            "text-animate",
+            "typing-animation",
+            "typing-animation-demo"
+          ],
+          "top_ids": [
+            "typing-animation",
+            "typing-animation-demo",
+            "elements_typing-effect",
+            "typewriter",
+            "typewriter-effect"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "rotating words text effect",
+          "expected_ids": [
+            "morphing-text",
+            "word-rotate",
+            "word-rotate-demo"
+          ],
+          "top_ids": [
+            "word-rotate",
+            "container-text-flip",
+            "word-rotate-demo",
+            "spinning-text-demo-2",
+            "spinning-text"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "animated background particles",
+          "expected_ids": [
+            "meteors",
+            "particles",
+            "particles-demo"
+          ],
+          "top_ids": [
+            "particles-demo",
+            "sparkles",
+            "animated-background",
+            "meteors",
+            "background-beams-with-collision"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "grid background pattern",
+          "expected_ids": [
+            "animated-grid-pattern",
+            "grid-pattern",
+            "interactive-grid-pattern"
+          ],
+          "top_ids": [
+            "grid-pattern",
+            "animated-grid-pattern",
+            "grid-pattern-demo",
+            "grid-pattern-dashed",
+            "interactive-grid-pattern"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "retro grid landing background",
+          "expected_ids": [
+            "retro-grid",
+            "retro-grid-demo",
+            "warp-background"
+          ],
+          "top_ids": [
+            "elements_retro-grid",
+            "retro-grid-demo",
+            "retro-grid",
+            "warp-background",
+            "grid-pattern"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "glass frosted blur background",
+          "expected_ids": [
+            "blur-fade",
+            "magic-card",
+            "progressive-blur"
+          ],
+          "top_ids": [
+            "edge-blur",
+            "blur-fade",
+            "edge-blur-demo",
+            "wavy-background",
+            "distorted-glass"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "dock navigation menu",
+          "expected_ids": [
+            "dock",
+            "dock-demo",
+            "dock-demo-2"
+          ],
+          "top_ids": [
+            "floating-dock",
+            "dock-demo",
+            "navigation-menu",
+            "dock-demo-3",
+            "navigation-menu-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "navigation menu navbar",
+          "expected_ids": [
+            "menubar",
+            "navigation-menu",
+            "navigation-menu-demo"
+          ],
+          "top_ids": [
+            "navbar-menu",
+            "packages_react_src_components_menu_menu",
+            "elements_navigation-menu",
+            "navigation-menu-demo",
+            "navigation-menu"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "mobile android device mockup",
+          "expected_ids": [
+            "android",
+            "android-demo",
+            "safari"
+          ],
+          "top_ids": [
+            "android",
+            "android-demo-2",
+            "android-demo-3",
+            "android-demo",
+            "mock-browser-window"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "browser frame screenshot mockup",
+          "expected_ids": [
+            "safari",
+            "safari-demo",
+            "safari-demo-2"
+          ],
+          "top_ids": [
+            "mock-browser-window",
+            "safari-demo-2",
+            "safari",
+            "safari-demo-3",
+            "mock-browser-window-demo"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "avatar profile images",
+          "expected_ids": [
+            "avatar",
+            "avatar-circles",
+            "avatar-circles-demo"
+          ],
+          "top_ids": [
+            "avatar",
+            "packages_react_src_components_avatar_index",
+            "avatar-circles",
+            "packages_react_src_components_avatar_avatar",
+            "packages_radix-ui-themes_src_components_avatar"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast component",
+          "expected_ids": [
+            "sonner",
+            "sonner-demo",
+            "sonner-types"
+          ],
+          "top_ids": [
+            "elements_toast",
+            "src_components_Toast_Toaster",
+            "toast",
+            "packages_mantine_core_src_components_Notification_Notification",
+            "packages_react_src_components_toast_index"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "accordion faq collapsible",
+          "expected_ids": [
+            "accordion",
+            "accordion-demo",
+            "collapsible"
+          ],
+          "top_ids": [
+            "accordion-demo",
+            "collapsible",
+            "accordion",
+            "packages_mantine_core_src_components_Accordion_Accordion.types",
+            "src_components_Accordion_Accordion"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs switch content panels",
+          "expected_ids": [
+            "tabs",
+            "tabs-demo",
+            "toggle-group"
+          ],
+          "top_ids": [
+            "tabs-demo",
+            "elements_tabs",
+            "tabs",
+            "src_components_TabNavigation_TabNavigation",
+            "packages_radix-ui-themes_src_components_tabs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "select dropdown input",
+          "expected_ids": [
+            "native-select",
+            "select",
+            "select-demo"
+          ],
+          "top_ids": [
+            "form-rhf-select",
+            "native-select-invalid",
+            "native-select-disabled",
+            "input-group-dropdown",
+            "packages_radix-ui-themes_src_components_select"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "textarea form field",
+          "expected_ids": [
+            "field-textarea",
+            "textarea",
+            "textarea-demo"
+          ],
+          "top_ids": [
+            "form-formisch-textarea",
+            "field-textarea",
+            "form-rhf-textarea",
+            "elements_textarea",
+            "textarea"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox form control",
+          "expected_ids": [
+            "checkbox",
+            "checkbox-demo",
+            "field-checkbox"
+          ],
+          "top_ids": [
+            "packages_react_src_components_checkbox_checkbox",
+            "src_components_Checkbox_Checkbox",
+            "packages_react_src_components_checkbox_index",
+            "form-rhf-checkbox",
+            "checkbox-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio group options",
+          "expected_ids": [
+            "field-radio",
+            "form-rhf-radiogroup",
+            "radio-group-demo"
+          ],
+          "top_ids": [
+            "elements_radio-group",
+            "dropdown-menu-radio-group",
+            "radio-group-demo",
+            "packages_radix-ui-themes_src_components_radio-group",
+            "src_components_RadioGroup_RadioGroup"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "slider range input",
+          "expected_ids": [
+            "field-slider",
+            "slider",
+            "slider-demo"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "src_components_Slider_Slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "field-slider",
+            "slider-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "toggle theme dark mode",
+          "expected_ids": [
+            "animated-theme-toggler",
+            "mode-toggle",
+            "switch"
+          ],
+          "top_ids": [
+            "mode-toggle",
+            "packages_radix-ui-themes_src_components_theme-panel",
+            "animated-theme-toggler",
+            "toggle-sm",
+            "packages_react_src_components_toggle-button_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "empty state placeholder",
+          "expected_ids": [
+            "empty",
+            "empty-demo",
+            "empty-icon"
+          ],
+          "top_ids": [
+            "packages_react_src_components_empty-state_empty-state",
+            "empty",
+            "empty-outline",
+            "empty-demo",
+            "empty-icon"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "file tree component",
+          "expected_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "item-group"
+          ],
+          "top_ids": [
+            "file-tree",
+            "file-tree-demo",
+            "packages_mantine_core_src_components_Tree_index",
+            "packages_mantine_core_src_components_Tree_Tree",
+            "packages_mantine_core_src_components_Tree_use-tree"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "terminal code block",
+          "expected_ids": [
+            "code-comparison",
+            "terminal",
+            "terminal-demo"
+          ],
+          "top_ids": [
+            "components_ui_CodeBlockContainer_index",
+            "code-block",
+            "code-block-demo",
+            "terminal",
+            "packages_radix-ui-themes_src_components_code"
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "query": "tweet social card",
+          "expected_ids": [
+            "client-tweet-card",
+            "tweet-card",
+            "tweet-card-demo"
+          ],
+          "top_ids": [
+            "tweet-card",
+            "tweet-card-demo",
+            "client-tweet-card",
+            "tweet-card-images",
+            "tweet-grid"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "confetti celebration animation",
+          "expected_ids": [
+            "confetti",
+            "confetti-demo",
+            "confetti-fireworks"
+          ],
+          "top_ids": [
+            "confetti",
+            "confetti-demo",
+            "confetti-fireworks",
+            "confetti-stars",
+            "confetti-custom-shapes"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pulsating call to action button",
+          "expected_ids": [
+            "pulsating-button",
+            "pulsating-button-demo",
+            "rainbow-button"
+          ],
+          "top_ids": [
+            "pulsating-button-demo",
+            "pulsating-button",
+            "button-ghost",
+            "button-default",
+            "button-with-icon"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "date picker with range selection",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "src_components_datepicker_datepicker"
+          ],
+          "top_ids": [
+            "date-picker-with-range",
+            "packages_react_src_components_date-range-picker_index",
+            "packages_react_src_components_date-range-picker_date-range-picker",
+            "packages_react_src_components_calendar-year-picker_index",
+            "date-picker-with-presets"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "data table with sorting and pagination",
+          "expected_ids": [
+            "packages_react_src_components_table_table",
+            "src_components_table_table",
+            "table"
+          ],
+          "top_ids": [
+            "table-demo",
+            "table",
+            "data-table-demo",
+            "pagination",
+            "packages_react_src_components_pagination_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "notification toast with progress",
+          "expected_ids": [
+            "elements_toast",
+            "packages_react_src_components_toast_toast",
+            "src_components_toast_toast",
+            "toast"
+          ],
+          "top_ids": [
+            "src_components_Toast_Toaster",
+            "elements_toast",
+            "packages_mantine_core_src_components_Notification_Notification",
+            "packages_radix-ui-themes_src_components_progress",
+            "toast"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "number input with increment decrement",
+          "expected_ids": [
+            "number-input",
+            "packages_mantine_core_src_components_numberinput_numberinput",
+            "packages_react_src_components_number-field_number-field"
+          ],
+          "top_ids": [
+            "number-input",
+            "number-ticker-demo-2",
+            "packages_mantine_core_src_components_NumberInput_index",
+            "packages_mantine_core_src_components_NumberInput_NumberInput",
+            "packages_mantine_core_src_components_NumberInput_NumberInputChevron"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "accordion with animated expand",
+          "expected_ids": [
+            "accordion",
+            "elements_accordion",
+            "packages_mantine_core_src_components_accordion_accordion",
+            "src_components_accordion_accordion"
+          ],
+          "top_ids": [
+            "expandable",
+            "elements_accordion",
+            "accordion-demo",
+            "packages_mantine_core_src_components_Accordion_Accordion",
+            "packages_mantine_core_src_components_Accordion_AccordionPanel_AccordionPanel"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "color picker input",
+          "expected_ids": [
+            "color-picker",
+            "packages_mantine_core_src_components_colorinput_colorinput",
+            "packages_mantine_core_src_components_colorpicker_colorpicker",
+            "packages_react_src_components_color-picker_color-picker"
+          ],
+          "top_ids": [
+            "color-picker",
+            "packages_react_src_components_color-input-group_color-input-group",
+            "packages_react_src_components_color-picker_index",
+            "packages_react_src_components_color-picker_color-picker",
+            "packages_react_src_components_color-slider_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "file upload dropzone",
+          "expected_ids": [
+            "file-upload",
+            "packages_mantine_core_src_components_filebutton_filebutton",
+            "packages_mantine_core_src_components_fileinput_fileinput"
+          ],
+          "top_ids": [
+            "file-upload",
+            "file-upload-recipe",
+            "dither-image-demo-upload",
+            "cult/ui",
+            "input-file"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "stepper progress form",
+          "expected_ids": [
+            "packages_mantine_core_src_components_stepper_stepper",
+            "packages_mantine_core_src_components_stepper_stepperstep_stepperstep",
+            "progress"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Stepper_Stepper",
+            "packages_mantine_core_src_components_Stepper_StepperStep_StepperStep",
+            "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted",
+            "packages_mantine_core_src_components_Stepper_index",
+            "packages_mantine_core_src_components_Stepper_Stepper.story"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "rating stars component",
+          "expected_ids": [
+            "elements_rating",
+            "rating-group"
+          ],
+          "top_ids": [
+            "elements_rating",
+            "packages_mantine_core_src_components_Rating_index",
+            "packages_mantine_core_src_components_Rating_Rating",
+            "shooting-stars",
+            "rating-group"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tag input with chips",
+          "expected_ids": [
+            "packages_react_src_components_tag-group_tag-group",
+            "packages_react_src_components_tag_tag",
+            "tags-input"
+          ],
+          "top_ids": [
+            "packages_react_src_components_chip_index",
+            "tags-input",
+            "packages_mantine_core_src_components_TagsInput_index",
+            "packages_mantine_core_src_components_TagsInput_TagsInput",
+            "tags-input-recipe"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "dashboard bar chart component",
+          "expected_ids": [
+            "src_components_barchart_barchart",
+            "src_components_barlist_barlist"
+          ],
+          "top_ids": [
+            "chart-bar-label-custom",
+            "chart-bar-label",
+            "chart-bar-mixed",
+            "chart-bar-demo-legend",
+            "chart-bar-multiple"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "calendar component for selecting dates",
+          "expected_ids": [
+            "date-picker",
+            "packages_react_src_components_range-calendar_range-calendar",
+            "src_components_calendar_calendar"
+          ],
+          "top_ids": [
+            "calendar-demo",
+            "calendar",
+            "elements_date-picker",
+            "calendar-hijri",
+            "src_components_DatePicker_DatePicker"
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query": "modal dialog with overlay and close button",
+          "expected_ids": [
+            "dialog",
+            "packages_mantine_core_src_components_modal_modal",
+            "packages_radix-ui-themes_src_components_dialog",
+            "packages_react_src_components_modal_modal"
+          ],
+          "top_ids": [
+            "elements_modal",
+            "alert-dialog",
+            "dialog",
+            "packages_react_src_components_modal_index",
+            "packages_mantine_core_src_components_Modal_ModalCloseButton"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "sidebar navigation links with icons",
+          "expected_ids": [
+            "components_ui_sidebar_index",
+            "components_ui_sidebar_navlink",
+            "packages_mantine_core_src_components_navlink_navlink"
+          ],
+          "top_ids": [
+            "sidebar-07",
+            "navigation-menu",
+            "sidebar-menu-collapsible",
+            "sidebar",
+            "sidebar-menu"
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "query": "hero section with gradient background",
+          "expected_ids": [
+            "components_herobggradient",
+            "components_ui_hero_herobggradient.client",
+            "components_ui_hero_index",
+            "src_components_basehero"
+          ],
+          "top_ids": [
+            "hero-heatmap-demo",
+            "hero-static-radial-gradient-demo",
+            "aurora-background",
+            "hero-static-radial-gradient",
+            "hero-color-panel"
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query": "loading spinner indicator",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_spinner",
+            "packages_react_src_components_spinner_spinner",
+            "spinner",
+            "src_components_progresscircle_progresscircle"
+          ],
+          "top_ids": [
+            "spinner-color",
+            "spinner-badge",
+            "spinner-basic",
+            "spinner-size",
+            "button-loading"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "status badge label component",
+          "expected_ids": [
+            "badge",
+            "packages_mantine_core_src_components_badge_badge",
+            "packages_radix-ui-themes_src_components_badge",
+            "src_components_badge_badge"
+          ],
+          "top_ids": [
+            "badge-demo",
+            "badge-outline",
+            "packages_radix-ui-themes_src_components_badge",
+            "src_components_Badge_Badge",
+            "packages_react_src_components_badge_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "hover card popover preview",
+          "expected_ids": [
+            "elements_hover-card",
+            "hover-card",
+            "packages_mantine_core_src_components_hovercard_hovercard",
+            "packages_radix-ui-themes_src_components_hover-card"
+          ],
+          "top_ids": [
+            "components_ui_SupportedFrameworks_PreviewCard",
+            "popover-demo",
+            "link-preview",
+            "hover-card",
+            "hover-card-demo"
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "query": "range slider input control",
+          "expected_ids": [
+            "elements_range-slider",
+            "packages_mantine_core_src_components_slider_slider_slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_slider_slider"
+          ],
+          "top_ids": [
+            "elements_range-slider",
+            "packages_radix-ui-themes_src_components_slider",
+            "src_components_Slider_Slider",
+            "field-slider",
+            "slider-demo"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "checkbox card selection group",
+          "expected_ids": [
+            "checkbox",
+            "packages_mantine_core_src_components_checkbox_checkboxcard_checkboxcard",
+            "packages_radix-ui-themes_src_components_checkbox-cards",
+            "packages_react_src_components_checkbox_checkbox"
+          ],
+          "top_ids": [
+            "packages_react_src_components_checkbox-group_checkbox-group",
+            "packages_react_src_components_checkbox-group_index",
+            "packages_radix-ui-themes_src_components_checkbox-group",
+            "packages_radix-ui-themes_src_components_checkbox-group.primitive",
+            "src_components_RadioCardGroup_RadioCardGroup"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "radio card group options",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_radio-cards",
+            "radio-card-group",
+            "src_components_radiocardgroup_radiocardgroup"
+          ],
+          "top_ids": [
+            "src_components_RadioCardGroup_RadioCardGroup",
+            "elements_radio-group",
+            "packages_radix-ui-themes_src_components_radio-group",
+            "radio-group-demo",
+            "radio-card-group"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "dropdown menu action items",
+          "expected_ids": [
+            "elements_dropdown-menu",
+            "packages_radix-ui-themes_src_components_dropdown-menu",
+            "packages_react_src_components_dropdown_dropdown",
+            "src_components_dropdownmenu_dropdownmenu"
+          ],
+          "top_ids": [
+            "elements_dropdown-menu",
+            "src_components_DropdownMenu_DropdownMenu",
+            "context-menu",
+            "item-dropdown",
+            "dropdown-menu-dialog"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "popover floating content panel",
+          "expected_ids": [
+            "packages_radix-ui-themes_src_components_popover",
+            "packages_react_src_components_popover_popover",
+            "popover",
+            "src_components_popover_popover"
+          ],
+          "top_ids": [
+            "packages_radix-ui-themes_src_components_popover",
+            "src_components_Popover_Popover",
+            "elements_popover",
+            "popover",
+            "packages_react_src_components_popover_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tooltip on hover helper text",
+          "expected_ids": [
+            "elements_tooltip",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "packages_react_src_components_tooltip_tooltip",
+            "tooltip"
+          ],
+          "top_ids": [
+            "src_components_TooltipWrapper",
+            "packages_react_src_components_tooltip_tooltip",
+            "packages_radix-ui-themes_src_components_tooltip",
+            "elements_tooltip",
+            "src_components_Tooltip_Tooltip"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "tabs navigation content panels",
+          "expected_ids": [
+            "elements_tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "src_components_tabs_tabs",
+            "tabs"
+          ],
+          "top_ids": [
+            "elements_tabs",
+            "packages_radix-ui-themes_src_components_tabs",
+            "tabs",
+            "tabs-demo",
+            "direction-aware-tabs"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "pagination controls for long table",
+          "expected_ids": [
+            "elements_pagination",
+            "packages_mantine_core_src_components_pagination_pagination",
+            "packages_react_src_components_pagination_pagination",
+            "pagination"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Pagination_PaginationControl_PaginationControl",
+            "pagination-demo",
+            "pagination",
+            "table-demo",
+            "components_ui_Pagination"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "multi select dropdown input",
+          "expected_ids": [
+            "packages_mantine_core_src_components_multiselect_multiselect",
+            "packages_mantine_core_src_components_nativeselect_nativeselect",
+            "packages_react_src_components_select_select",
+            "select"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_MultiSelect_index",
+            "form-rhf-select",
+            "packages_react_src_components_dropdown_index",
+            "select",
+            "packages_mantine_core_src_components_MultiSelect_MultiSelect"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "avatar group profile stack",
+          "expected_ids": [
+            "avatar",
+            "packages_mantine_core_src_components_avatar_avatargroup_avatargroup",
+            "packages_radix-ui-themes_src_components_avatar"
+          ],
+          "top_ids": [
+            "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+            "empty-avatar-group",
+            "avatar",
+            "avatar-circles",
+            "packages_react_src_components_avatar_index"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "drawer slide over panel",
+          "expected_ids": [
+            "drawer",
+            "elements_slide-over",
+            "packages_mantine_core_src_components_drawer_drawer",
+            "packages_react_src_components_drawer_drawer"
+          ],
+          "top_ids": [
+            "drawer",
+            "packages_react_src_components_drawer_index",
+            "packages_react_src_components_drawer_drawer",
+            "elements_slide-over",
+            "packages_mantine_core_src_components_Drawer_DrawerOverlay"
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query": "search input field component",
+          "expected_ids": [
+            "components_ui_input",
+            "packages_mantine_core_src_components_input_input",
+            "packages_react_src_components_search-field_search-field",
+            "src_components_searchinput"
+          ],
+          "top_ids": [
+            "packages_react_src_components_search-field_index",
+            "packages_react_src_components_search-field_search-field",
+            "input-group-dropdown",
+            "input-group-custom",
+            "src_components_SearchWrapper"
+          ],
+          "first_relevant_rank": 1
+        }
+      ]
+    }
+  }
+}

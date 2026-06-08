@@ -1,0 +1,41 @@
+{
+  "id": "chart-tooltip-default",
+  "name": "chart-tooltip-default",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "tooltip",
+    "chart",
+    "info card",
+    "popup"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-default",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-default\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-tooltip-default is a small rectangular component that appears on hover over specific data points in a chart, providing additional information about the data. It is typically displayed at the bottom or top of the chart, and its position can be adjusted via props. This component is used to display more detailed information to the user without overwhelming them with data.",
+  "style_tags": [
+    "material design",
+    "light"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "dismissable"
+  ],
+  "component_type": "tooltip",
+  "generation_prompt": "Create a production-ready tooltip component with the following characteristics:\n\nName: chart-tooltip-default\nDescription: The chart-tooltip-default is a small rectangular component that appears on hover over specific data points in a chart, providing additional information about the data. It is typically displayed at the bottom or top of the chart, and its position can be adjusted via props. This component is used to display more detailed information to the user without overwhelming them with data.\nStyle: material design, light\nInteractions: animated, hover, dismissable\nTags: tooltip, chart, info card, popup\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-default",
+  "display_name": "Chart Tooltip Default",
+  "preview_url": "/previews/shadcn/chart-tooltip-default.png"
+}

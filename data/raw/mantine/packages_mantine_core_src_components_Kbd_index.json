@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Kbd_index",
+  "name": "Kbd",
+  "source_code": "// packages/@mantine/core/src/components/Kbd/index.ts\nimport type { KbdCssVariables, KbdFactory, KbdProps, KbdStylesNames } from './Kbd';\n\nexport { Kbd } from './Kbd';\n\nexport type { KbdProps, KbdStylesNames, KbdCssVariables, KbdFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Kbd_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Kbd/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Kbd_index",
+      "name": "Kbd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Kbd/index.ts",
+          "content": "import type { KbdCssVariables, KbdFactory, KbdProps, KbdStylesNames } from './Kbd';\n\nexport { Kbd } from './Kbd';\n\nexport type { KbdProps, KbdStylesNames, KbdCssVariables, KbdFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

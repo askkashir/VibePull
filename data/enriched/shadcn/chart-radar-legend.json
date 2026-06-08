@@ -1,0 +1,43 @@
+{
+  "id": "chart-radar-legend",
+  "name": "chart-radar-legend",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "legend",
+    "radar chart",
+    "dashboard",
+    "data visualization",
+    "chart"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-legend",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-legend\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A radar chart legend is a graphical representation of a radar chart component, displaying a legend with labels and markers to help users interpret the data. It is often used in dashboards and data visualization applications where multiple radar charts are displayed. Developers would use this component when creating complex data visualizations with radar charts.",
+  "style_tags": [
+    "e.g. light",
+    "flat",
+    "material"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "click to toggle",
+    "responsive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chart-radar-legend\nDescription: A radar chart legend is a graphical representation of a radar chart component, displaying a legend with labels and markers to help users interpret the data. It is often used in dashboards and data visualization applications where multiple radar charts are displayed. Developers would use this component when creating complex data visualizations with radar charts.\nStyle: e.g. light, flat, material\nInteractions: e.g. hover, click to toggle, responsive\nTags: legend, radar chart, dashboard, data visualization, chart\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-legend",
+  "display_name": "Chart Radar Legend",
+  "preview_url": "/previews/shadcn/chart-radar-legend.png"
+}

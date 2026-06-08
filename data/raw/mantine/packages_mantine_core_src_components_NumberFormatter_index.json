@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_NumberFormatter_index",
+  "name": "NumberFormatter",
+  "source_code": "// packages/@mantine/core/src/components/NumberFormatter/index.ts\nexport { NumberFormatter } from './NumberFormatter';\nexport type { NumberFormatterFactory, NumberFormatterProps } from './NumberFormatter';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NumberFormatter_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/NumberFormatter/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NumberFormatter_index",
+      "name": "NumberFormatter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NumberFormatter/index.ts",
+          "content": "export { NumberFormatter } from './NumberFormatter';\nexport type { NumberFormatterFactory, NumberFormatterProps } from './NumberFormatter';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

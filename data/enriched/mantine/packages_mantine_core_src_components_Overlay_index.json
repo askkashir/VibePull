@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Overlay_index",
+  "name": "Overlay",
+  "source_code": "// packages/@mantine/core/src/components/Overlay/index.ts\nimport type {\n  OverlayCssVariables,\n  OverlayFactory,\n  OverlayProps,\n  OverlayStylesNames,\n} from './Overlay';\n\nexport { Overlay } from './Overlay';\n\nexport type { OverlayProps, OverlayStylesNames, OverlayFactory, OverlayCssVariables };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "overlay"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Overlay_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Overlay/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Overlay_index",
+      "name": "Overlay",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Overlay/index.ts",
+          "content": "import type {\n  OverlayCssVariables,\n  OverlayFactory,\n  OverlayProps,\n  OverlayStylesNames,\n} from './Overlay';\n\nexport { Overlay } from './Overlay';\n\nexport type { OverlayProps, OverlayStylesNames, OverlayFactory, OverlayCssVariables };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Overlay is a overlay UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Overlay\nDescription: Overlay is a overlay UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, overlay\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Overlay/index.ts\nimport type {\n  OverlayCssVariables,\n  OverlayFactory,\n  OverlayProps,\n  OverlayStylesNames,\n} from './Overlay';\n\nexport { Overlay } from './Overlay';\n\nexport type { OverlayProps, OverlayStylesNames, OverlayFactory, OverlayCssVariables };\n",
+  "prompt_version": 2,
+  "clean_id": "overlay",
+  "display_name": "Overlay",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-overlay-index.png"
+}

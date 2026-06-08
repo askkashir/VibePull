@@ -1,0 +1,62 @@
+{
+  "id": "typewriter",
+  "name": "typewriter",
+  "source_code": "// registry/default/ui/typewriter.tsx\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { animate, motion, useMotionValue, useTransform } from \"motion/react\"\n\nexport interface ITypewriterProps {\n  delay: number\n  texts: string[]\n  baseText?: string\n}\n\nexport function Typewriter({ delay, texts, baseText = \"\" }: ITypewriterProps) {\n  const [animationComplete, setAnimationComplete] = useState(false)\n  const count = useMotionValue(0)\n  const rounded = useTransform(count, (latest) => Math.round(latest))\n  const displayText = useTransform(rounded, (latest) =>\n    baseText.slice(0, latest)\n  )\n\n  useEffect(() => {\n    const controls = animate(count, baseText.length, {\n      type: \"tween\",\n      delay,\n      duration: 1,\n      ease: [0.42, 0, 0.58, 1] as const,\n      onComplete: () => setAnimationComplete(true),\n    })\n    return () => {\n      controls.stop && controls.stop()\n    }\n  }, [count, baseText.length, delay])\n\n  return (\n    <span>\n      <motion.span>{displayText}</motion.span>\n      {animationComplete && (\n        <RepeatedTextAnimation texts={texts} delay={delay + 1} />\n      )}\n      <BlinkingCursor />\n    </span>\n  )\n}\n\nexport interface IRepeatedTextAnimationProps {\n  delay: number\n  texts: string[]\n}\n\nconst defaultTexts = [\n  \"quiz page with questions and answers\",\n  \"blog Article Details Page Layout\",\n  \"ecommerce dashboard with a sidebar\",\n  \"ui like platform.openai.com....\",\n  \"buttttton\",\n  \"aop that tracks non-standard split sleep cycles\",\n  \"transparent card to showcase achievements of a user\",\n]\nfunction RepeatedTextAnimation({\n  delay,\n  texts = defaultTexts,\n}: IRepeatedTextAnimationProps) {\n  const textIndex = useMotionValue(0)\n\n  const baseText = useTransform(textIndex, (latest) => texts[latest] || \"\")\n  const count = useMotionValue(0)\n  const rounded = useTransform(count, (latest) => Math.round(latest))\n  const displayText = useTransform(rounded, (latest) =>\n    baseText.get().slice(0, latest)\n  )\n  const updatedThisRound = useMotionValue(true)\n\n  useEffect(() => {\n    const animation = animate(count, 60, {\n      type: \"tween\",\n      delay,\n      duration: 1,\n      ease: [0.42, 0, 1, 1] as const,\n      repeat: Infinity,\n      repeatType: \"reverse\",\n      repeatDelay: 1,\n      onUpdate(latest) {\n        if (updatedThisRound.get() && latest > 0) {\n          updatedThisRound.set(false)\n        } else if (!updatedThisRound.get() && latest === 0) {\n          textIndex.set((textIndex.get() + 1) % texts.length)\n          updatedThisRound.set(true)\n        }\n      },\n    })\n    return () => {\n      animation.stop && animation.stop()\n    }\n  }, [count, delay, textIndex, texts, updatedThisRound])\n\n  return <motion.span className=\"inline\">{displayText}</motion.span>\n}\n\nconst cursorVariants = {\n  blinking: {\n    opacity: [0, 0, 1, 1],\n    transition: {\n      duration: 1,\n      repeat: Infinity,\n      repeatDelay: 0,\n      ease: [0, 0, 1, 1] as const,\n      times: [0, 0.5, 0.5, 1],\n    },\n  },\n}\n\nfunction BlinkingCursor() {\n  return (\n    <motion.div\n      variants={cursorVariants}\n      animate=\"blinking\"\n      className=\"inline-block h-5 w-[1px] translate-y-1 bg-neutral-900\"\n    />\n  )\n}\n",
+  "description": "Typewriter effect component with customizable typing speed and cursor animation",
+  "tags": [
+    "typewriter",
+    "text",
+    "animation"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "typewriter.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/typewriter.json",
+      "sha": "3ed7fa13aa206da0717bd35d45a623b29f806079",
+      "size": 3669,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/typewriter.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/typewriter.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/3ed7fa13aa206da0717bd35d45a623b29f806079",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/typewriter.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/typewriter.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/3ed7fa13aa206da0717bd35d45a623b29f806079",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/typewriter.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "typewriter",
+      "type": "registry:ui",
+      "description": "Typewriter effect component with customizable typing speed and cursor animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/typewriter.tsx",
+          "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { animate, motion, useMotionValue, useTransform } from \"motion/react\"\n\nexport interface ITypewriterProps {\n  delay: number\n  texts: string[]\n  baseText?: string\n}\n\nexport function Typewriter({ delay, texts, baseText = \"\" }: ITypewriterProps) {\n  const [animationComplete, setAnimationComplete] = useState(false)\n  const count = useMotionValue(0)\n  const rounded = useTransform(count, (latest) => Math.round(latest))\n  const displayText = useTransform(rounded, (latest) =>\n    baseText.slice(0, latest)\n  )\n\n  useEffect(() => {\n    const controls = animate(count, baseText.length, {\n      type: \"tween\",\n      delay,\n      duration: 1,\n      ease: [0.42, 0, 0.58, 1] as const,\n      onComplete: () => setAnimationComplete(true),\n    })\n    return () => {\n      controls.stop && controls.stop()\n    }\n  }, [count, baseText.length, delay])\n\n  return (\n    <span>\n      <motion.span>{displayText}</motion.span>\n      {animationComplete && (\n        <RepeatedTextAnimation texts={texts} delay={delay + 1} />\n      )}\n      <BlinkingCursor />\n    </span>\n  )\n}\n\nexport interface IRepeatedTextAnimationProps {\n  delay: number\n  texts: string[]\n}\n\nconst defaultTexts = [\n  \"quiz page with questions and answers\",\n  \"blog Article Details Page Layout\",\n  \"ecommerce dashboard with a sidebar\",\n  \"ui like platform.openai.com....\",\n  \"buttttton\",\n  \"aop that tracks non-standard split sleep cycles\",\n  \"transparent card to showcase achievements of a user\",\n]\nfunction RepeatedTextAnimation({\n  delay,\n  texts = defaultTexts,\n}: IRepeatedTextAnimationProps) {\n  const textIndex = useMotionValue(0)\n\n  const baseText = useTransform(textIndex, (latest) => texts[latest] || \"\")\n  const count = useMotionValue(0)\n  const rounded = useTransform(count, (latest) => Math.round(latest))\n  const displayText = useTransform(rounded, (latest) =>\n    baseText.get().slice(0, latest)\n  )\n  const updatedThisRound = useMotionValue(true)\n\n  useEffect(() => {\n    const animation = animate(count, 60, {\n      type: \"tween\",\n      delay,\n      duration: 1,\n      ease: [0.42, 0, 1, 1] as const,\n      repeat: Infinity,\n      repeatType: \"reverse\",\n      repeatDelay: 1,\n      onUpdate(latest) {\n        if (updatedThisRound.get() && latest > 0) {\n          updatedThisRound.set(false)\n        } else if (!updatedThisRound.get() && latest === 0) {\n          textIndex.set((textIndex.get() + 1) % texts.length)\n          updatedThisRound.set(true)\n        }\n      },\n    })\n    return () => {\n      animation.stop && animation.stop()\n    }\n  }, [count, delay, textIndex, texts, updatedThisRound])\n\n  return <motion.span className=\"inline\">{displayText}</motion.span>\n}\n\nconst cursorVariants = {\n  blinking: {\n    opacity: [0, 0, 1, 1],\n    transition: {\n      duration: 1,\n      repeat: Infinity,\n      repeatDelay: 0,\n      ease: [0, 0, 1, 1] as const,\n      times: [0, 0.5, 0.5, 1],\n    },\n  },\n}\n\nfunction BlinkingCursor() {\n  return (\n    <motion.div\n      variants={cursorVariants}\n      animate=\"blinking\"\n      className=\"inline-block h-5 w-[1px] translate-y-1 bg-neutral-900\"\n    />\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A typewriter UI component that displays a blinking cursor and types out text after a set delay. It is used for displaying text in a visual manner.",
+  "style_tags": [
+    "animated"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typewriter\nDescription: A typewriter UI component that displays a blinking cursor and types out text after a set delay. It is used for displaying text in a visual manner.\nStyle: animated\nInteractions: clickable, hover\nTags: typewriter, text, animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/typewriter.tsx\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { animate, motion, useMotionValue, useTransform } from \"motion/react\"\n\nexport interface ITypewriterProps {\n  delay: number\n  texts: string[]\n  baseText?: string\n}\n\nexport function Typewriter({ delay, texts, baseText = \"\" }: ITypewriterProps) {\n  const [animationComplete, setAnimationComplete] = useState(false)\n  const count = useMotionValue(0)\n  const rounded = useTransform(count, (latest) => M",
+  "prompt_version": 2,
+  "clean_id": "typewriter",
+  "display_name": "Typewriter",
+  "preview_url": "/previews/cultui/typewriter.png"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "theme-stone",
+  "name": "theme-stone",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "background",
+    "palette",
+    "color"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-stone",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-stone\n**Type:** registry:theme"
+  },
+  "visual_summary": "A palette of neutral and earthy tones that evoke a sense of balance and harmony. Theme Stone is ideal for backgrounds, typography, and accents. Use it to create a calming and natural visual identity for your application or website.",
+  "style_tags": [
+    "minimal",
+    "neutral"
+  ],
+  "interaction_tags": [],
+  "component_type": "registry:theme",
+  "generation_prompt": "Create a production-ready registry:theme component with the following characteristics:\n\nName: theme-stone\nDescription: A palette of neutral and earthy tones that evoke a sense of balance and harmony. Theme Stone is ideal for backgrounds, typography, and accents. Use it to create a calming and natural visual identity for your application or website.\nStyle: minimal, neutral\nInteractions: \nTags: background, palette, color\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "theme-stone",
+  "display_name": "Theme Stone",
+  "preview_url": "/previews/shadcn/theme-stone.png"
+}

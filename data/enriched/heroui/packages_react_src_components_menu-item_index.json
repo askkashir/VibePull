@@ -1,0 +1,43 @@
+{
+  "id": "packages_react_src_components_menu-item_index",
+  "name": "menu-item",
+  "source_code": "// packages/react/src/components/menu-item/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const MenuItem = Object.assign(MenuItemRoot, {\n  Root: MenuItemRoot,\n  Indicator: MenuItemIndicator,\n  SubmenuIndicator: MenuItemSubmenuIndicator,\n});\n\nexport type MenuItem = {\n  Props: ComponentProps<typeof MenuItemRoot>;\n  RootProps: ComponentProps<typeof MenuItemRoot>;\n  IndicatorProps: ComponentProps<typeof MenuItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof MenuItemSubmenuIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuItemRoot, MenuItemIndicator, MenuItemSubmenuIndicator};\n\nexport type {\n  MenuItemRootProps,\n  MenuItemRootProps as MenuItemProps,\n  MenuItemIndicatorProps,\n  MenuItemSubmenuIndicatorProps,\n} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {menuItemVariants} from \"@heroui/styles\";\nexport type {MenuItemVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "menu",
+    "item",
+    "navigation"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "menu-item_index",
+      "name": "index",
+      "path": "packages/react/src/components/menu-item/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_menu-item_index",
+      "name": "menu-item",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/menu-item/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const MenuItem = Object.assign(MenuItemRoot, {\n  Root: MenuItemRoot,\n  Indicator: MenuItemIndicator,\n  SubmenuIndicator: MenuItemSubmenuIndicator,\n});\n\nexport type MenuItem = {\n  Props: ComponentProps<typeof MenuItemRoot>;\n  RootProps: ComponentProps<typeof MenuItemRoot>;\n  IndicatorProps: ComponentProps<typeof MenuItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof MenuItemSubmenuIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuItemRoot, MenuItemIndicator, MenuItemSubmenuIndicator};\n\nexport type {\n  MenuItemRootProps,\n  MenuItemRootProps as MenuItemProps,\n  MenuItemIndicatorProps,\n  MenuItemSubmenuIndicatorProps,\n} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {menuItemVariants} from \"@heroui/styles\";\nexport type {MenuItemVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A menu item component that can be used to render a single item in a menu. Developers would use this component when building menus for applications that need to provide a clear and user-friendly navigation experience.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: menu-item\nDescription: A menu item component that can be used to render a single item in a menu. Developers would use this component when building menus for applications that need to provide a clear and user-friendly navigation experience.\nStyle: default\nInteractions: \nTags: menu, item, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/menu-item/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const MenuItem = Object.assign(MenuItemRoot, {\n  Root: MenuItemRoot,\n  Indicator: Men",
+  "prompt_version": 2,
+  "clean_id": "menu-item",
+  "display_name": "Menu Item",
+  "preview_url": "/previews/heroui/packages-react-src-components-menu-item-index.png"
+}

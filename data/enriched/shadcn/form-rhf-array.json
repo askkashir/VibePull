@@ -1,0 +1,36 @@
+{
+  "id": "form-rhf-array",
+  "name": "form-rhf-array",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "array",
+    "dynamic",
+    "react-hook-form"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-array",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-array\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "A dynamic form component based on React Hook Form's array feature, ideal for handling multiple form fields with dynamic addition and removal of items.",
+  "style_tags": [],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-array\nDescription: A dynamic form component based on React Hook Form's array feature, ideal for handling multiple form fields with dynamic addition and removal of items.\nStyle: \nInteractions: clickable\nTags: form, array, dynamic, react-hook-form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-array",
+  "display_name": "Form Rhf Array",
+  "preview_url": "/previews/shadcn/form-rhf-array.png"
+}

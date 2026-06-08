@@ -1,0 +1,59 @@
+{
+  "id": "retro-grid-demo",
+  "name": "Retro Grid Demo",
+  "source_code": "\"use client\"\n\nimport { RetroGrid } from \"@/registry/magicui/retro-grid\"\n\nexport default function RetroGridDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <span className=\"pointer-events-none z-10 bg-linear-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl leading-none font-bold tracking-tighter whitespace-pre-wrap text-transparent\">\n        Retro Grid\n      </span>\n\n      <RetroGrid />\n    </div>\n  )\n}\n",
+  "description": "Example showing an animated scrolling retro grid effect.",
+  "tags": [
+    "grid",
+    "layout",
+    "component"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "retro-grid-demo",
+      "type": "registry:example",
+      "title": "Retro Grid Demo",
+      "description": "Example showing an animated scrolling retro grid effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/retro-grid"
+      ],
+      "files": [
+        {
+          "path": "registry/example/retro-grid-demo.tsx",
+          "type": "registry:example",
+          "target": "components/retro-grid-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "retro-grid-demo",
+      "type": "registry:example",
+      "title": "Retro Grid Demo",
+      "description": "Example showing an animated scrolling retro grid effect.",
+      "registryDependencies": [
+        "@magicui/retro-grid"
+      ],
+      "files": [
+        {
+          "path": "registry/example/retro-grid-demo.tsx",
+          "content": "\"use client\"\n\nimport { RetroGrid } from \"@/registry/magicui/retro-grid\"\n\nexport default function RetroGridDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <span className=\"pointer-events-none z-10 bg-linear-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl leading-none font-bold tracking-tighter whitespace-pre-wrap text-transparent\">\n        Retro Grid\n      </span>\n\n      <RetroGrid />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A full screen grid component with a colorful, text-based background image. Use this component when you want to create a visually striking, grid-based layout for large areas of content. It's ideal for demo sections, hero areas, or other pages where you want to draw attention to a key concept or feature.",
+  "style_tags": [
+    "colorful",
+    "text-based background"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Retro Grid Demo\nDescription: A full screen grid component with a colorful, text-based background image. Use this component when you want to create a visually striking, grid-based layout for large areas of content. It's ideal for demo sections, hero areas, or other pages where you want to draw attention to a key concept or feature.\nStyle: colorful, text-based background\nInteractions: \nTags: grid, layout, component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { RetroGrid } from \"@/registry/magicui/retro-grid\"\n\nexport default function RetroGridDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <span className=\"pointer-events-none z-10 bg-linear-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl leading-none font-bold tracking-tighter whitespace-pre-wrap text-transparent\">\n        Retro Grid",
+  "prompt_version": 2,
+  "clean_id": "retro-grid-demo",
+  "display_name": "Retro Grid Demo",
+  "preview_url": "/previews/magicui/retro-grid-demo.png"
+}

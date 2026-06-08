@@ -1,0 +1,39 @@
+{
+  "id": "switch",
+  "name": "switch",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "switch",
+    "toggleable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "switch",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## switch\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A switch is a toggleable UI component that allows users to turn a feature on or off. It is often represented as a small switch or slider and is commonly used in settings and preferences.",
+  "style_tags": [
+    "minimal",
+    "compact"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "switch",
+  "generation_prompt": "Create a production-ready switch component with the following characteristics:\n\nName: switch\nDescription: A switch is a toggleable UI component that allows users to turn a feature on or off. It is often represented as a small switch or slider and is commonly used in settings and preferences.\nStyle: minimal, compact\nInteractions: clickable, draggable\nTags: toggle, switch, toggleable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "switch",
+  "display_name": "Switch",
+  "preview_url": "/previews/shadcn/switch.png"
+}

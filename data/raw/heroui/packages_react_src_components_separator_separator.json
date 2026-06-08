@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_separator_separator",
+  "name": "separator",
+  "source_code": "// packages/react/src/components/separator/separator.tsx\n\"use client\";\n\nimport type {SeparatorVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {separatorVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {SeparatorContext, Separator as SeparatorPrimitive} from \"react-aria-components/Separator\";\nimport {useSlottedContext} from \"react-aria-components/slots\";\n\n/* -------------------------------------------------------------------------------------------------\n * Separator Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SeparatorRootProps\n  extends ComponentPropsWithRef<typeof SeparatorPrimitive>, SeparatorVariants {}\n\nconst SeparatorRoot = ({className, orientation, variant, ...props}: SeparatorRootProps) => {\n  const context = useSlottedContext(SeparatorContext);\n  const resolvedOrientation = orientation ?? context?.orientation ?? \"horizontal\";\n\n  return (\n    <SeparatorPrimitive\n      data-orientation={resolvedOrientation}\n      data-slot=\"separator\"\n      orientation={resolvedOrientation}\n      className={separatorVariants({\n        orientation: resolvedOrientation,\n        variant,\n        className,\n      })}\n      {...props}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SeparatorRoot};\n\nexport type {SeparatorRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "separator_separator",
+      "name": "separator",
+      "path": "packages/react/src/components/separator/separator.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_separator_separator",
+      "name": "separator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/separator/separator.tsx",
+          "content": "\"use client\";\n\nimport type {SeparatorVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {separatorVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {SeparatorContext, Separator as SeparatorPrimitive} from \"react-aria-components/Separator\";\nimport {useSlottedContext} from \"react-aria-components/slots\";\n\n/* -------------------------------------------------------------------------------------------------\n * Separator Root\n * -----------------------------------------------------------------------------------------------*/\ninterface SeparatorRootProps\n  extends ComponentPropsWithRef<typeof SeparatorPrimitive>, SeparatorVariants {}\n\nconst SeparatorRoot = ({className, orientation, variant, ...props}: SeparatorRootProps) => {\n  const context = useSlottedContext(SeparatorContext);\n  const resolvedOrientation = orientation ?? context?.orientation ?? \"horizontal\";\n\n  return (\n    <SeparatorPrimitive\n      data-orientation={resolvedOrientation}\n      data-slot=\"separator\"\n      orientation={resolvedOrientation}\n      className={separatorVariants({\n        orientation: resolvedOrientation,\n        variant,\n        className,\n      })}\n      {...props}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {SeparatorRoot};\n\nexport type {SeparatorRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

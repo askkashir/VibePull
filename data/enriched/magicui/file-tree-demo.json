@@ -1,0 +1,62 @@
+{
+  "id": "file-tree-demo",
+  "name": "File Tree Demo",
+  "source_code": "import { Tree } from \"@/registry/magicui/file-tree\"\nimport type { TreeViewElement } from \"@/registry/magicui/file-tree\"\n\nexport default function FileTreeDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[300px] w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <Tree\n        className=\"bg-background overflow-hidden rounded-md p-2\"\n        initialSelectedId=\"button\"\n        initialExpandedItems={[\"src\", \"app\", \"components\", \"ui\", \"lib\"]}\n        elements={ELEMENTS}\n      />\n    </div>\n  )\n}\n\nconst ELEMENTS: TreeViewElement[] = [\n  {\n    id: \"src\",\n    type: \"folder\",\n    isSelectable: true,\n    name: \"src\",\n    children: [\n      {\n        id: \"lib\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"lib\",\n        children: [\n          {\n            id: \"utils\",\n            isSelectable: true,\n            name: \"utils.ts\",\n          },\n        ],\n      },\n      {\n        id: \"app\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"app\",\n        children: [\n          {\n            id: \"page\",\n            isSelectable: true,\n            name: \"page.tsx\",\n          },\n          {\n            id: \"layout\",\n            isSelectable: true,\n            name: \"layout.tsx\",\n          },\n        ],\n      },\n      {\n        id: \"components\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"components\",\n        children: [\n          {\n            id: \"header\",\n            isSelectable: true,\n            name: \"header.tsx\",\n          },\n          {\n            id: \"ui\",\n            type: \"folder\",\n            isSelectable: true,\n            name: \"ui\",\n            children: [\n              {\n                id: \"button\",\n                isSelectable: true,\n                name: \"button.tsx\",\n              },\n            ],\n          },\n          {\n            id: \"footer\",\n            isSelectable: true,\n            name: \"footer.tsx\",\n          },\n        ],\n      },\n    ],\n  },\n]\n",
+  "description": "Example showing a component that displays folder and file structure.",
+  "tags": [
+    "tree",
+    "directory",
+    "hierarchy"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "file-tree-demo",
+      "type": "registry:example",
+      "title": "File Tree Demo",
+      "description": "Example showing a component that displays folder and file structure.",
+      "registryDependencies": [
+        "https://magicui.design/r/file-tree"
+      ],
+      "files": [
+        {
+          "path": "registry/example/file-tree-demo.tsx",
+          "type": "registry:example",
+          "target": "components/file-tree-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "file-tree-demo",
+      "type": "registry:example",
+      "title": "File Tree Demo",
+      "description": "Example showing a component that displays folder and file structure.",
+      "registryDependencies": [
+        "@magicui/file-tree"
+      ],
+      "files": [
+        {
+          "path": "registry/example/file-tree-demo.tsx",
+          "content": "import { Tree } from \"@/registry/magicui/file-tree\"\nimport type { TreeViewElement } from \"@/registry/magicui/file-tree\"\n\nexport default function FileTreeDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[300px] w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <Tree\n        className=\"bg-background overflow-hidden rounded-md p-2\"\n        initialSelectedId=\"button\"\n        initialExpandedItems={[\"src\", \"app\", \"components\", \"ui\", \"lib\"]}\n        elements={ELEMENTS}\n      />\n    </div>\n  )\n}\n\nconst ELEMENTS: TreeViewElement[] = [\n  {\n    id: \"src\",\n    type: \"folder\",\n    isSelectable: true,\n    name: \"src\",\n    children: [\n      {\n        id: \"lib\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"lib\",\n        children: [\n          {\n            id: \"utils\",\n            isSelectable: true,\n            name: \"utils.ts\",\n          },\n        ],\n      },\n      {\n        id: \"app\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"app\",\n        children: [\n          {\n            id: \"page\",\n            isSelectable: true,\n            name: \"page.tsx\",\n          },\n          {\n            id: \"layout\",\n            isSelectable: true,\n            name: \"layout.tsx\",\n          },\n        ],\n      },\n      {\n        id: \"components\",\n        type: \"folder\",\n        isSelectable: true,\n        name: \"components\",\n        children: [\n          {\n            id: \"header\",\n            isSelectable: true,\n            name: \"header.tsx\",\n          },\n          {\n            id: \"ui\",\n            type: \"folder\",\n            isSelectable: true,\n            name: \"ui\",\n            children: [\n              {\n                id: \"button\",\n                isSelectable: true,\n                name: \"button.tsx\",\n              },\n            ],\n          },\n          {\n            id: \"footer\",\n            isSelectable: true,\n            name: \"footer.tsx\",\n          },\n        ],\n      },\n    ],\n  },\n]\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A collapsible tree view that displays a graphical representation of a directory structure. This component is useful when developers need to showcase or interact with a directory hierarchy, such as a file system or a project structure.",
+  "style_tags": [
+    "collapsible",
+    "graphical"
+  ],
+  "interaction_tags": [
+    "expandable",
+    "selectable"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: File Tree Demo\nDescription: A collapsible tree view that displays a graphical representation of a directory structure. This component is useful when developers need to showcase or interact with a directory hierarchy, such as a file system or a project structure.\nStyle: collapsible, graphical\nInteractions: expandable, selectable\nTags: tree, directory, hierarchy\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Tree } from \"@/registry/magicui/file-tree\"\nimport type { TreeViewElement } from \"@/registry/magicui/file-tree\"\n\nexport default function FileTreeDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[300px] w-full max-w-sm flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <Tree\n        className=\"bg-background overflow-hidden rounded-md p-2\"\n        initialSelectedId=\"button\"\n        initialExpandedItems={[\"src\", \"app\", \"components\", \"ui\", \"li",
+  "prompt_version": 2,
+  "clean_id": "file-tree-demo",
+  "display_name": "File Tree Demo",
+  "preview_url": "/previews/magicui/file-tree-demo.png"
+}

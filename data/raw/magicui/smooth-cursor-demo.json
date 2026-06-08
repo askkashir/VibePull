@@ -1,0 +1,43 @@
+{
+  "id": "smooth-cursor-demo",
+  "name": "smooth-cursor-demo",
+  "source_code": "import { SmoothCursor } from \"@/registry/magicui/smooth-cursor\"\n\nexport default function SmoothCursorDemo() {\n  return (\n    <>\n      <span className=\"hidden md:block\">Move your mouse around</span>\n      <span className=\"block md:hidden\">\n        SmoothCursor is disabled on touch devices\n      </span>\n      <SmoothCursor />\n    </>\n  )\n}\n",
+  "description": "Basic smooth cursor example",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "smooth-cursor-demo",
+      "type": "registry:example",
+      "description": "Basic smooth cursor example",
+      "registryDependencies": [
+        "https://magicui.design/r/smooth-cursor"
+      ],
+      "files": [
+        {
+          "path": "registry/example/smooth-cursor-demo.tsx",
+          "type": "registry:example",
+          "target": "components/smooth-cursor-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "smooth-cursor-demo",
+      "type": "registry:example",
+      "description": "Basic smooth cursor example",
+      "registryDependencies": [
+        "@magicui/smooth-cursor"
+      ],
+      "files": [
+        {
+          "path": "registry/example/smooth-cursor-demo.tsx",
+          "content": "import { SmoothCursor } from \"@/registry/magicui/smooth-cursor\"\n\nexport default function SmoothCursorDemo() {\n  return (\n    <>\n      <span className=\"hidden md:block\">Move your mouse around</span>\n      <span className=\"block md:hidden\">\n        SmoothCursor is disabled on touch devices\n      </span>\n      <SmoothCursor />\n    </>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

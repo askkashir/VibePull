@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-02",
+  "name": "sidebar-02",
+  "source_code": "",
+  "description": "A sidebar with collapsible sections.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-02",
+      "type": "registry:block",
+      "description": "A sidebar with collapsible sections.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-02\n\nA sidebar with collapsible sections.\n\n**Type:** registry:block\n**Files:** 4 file(s)"
+  }
+}

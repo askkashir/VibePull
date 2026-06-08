@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_CodeSwitchBar_index",
+  "name": "CodeSwitchBar",
+  "source_code": "// components/ui/CodeSwitchBar/index.tsx\nimport Button from \"components/ui/Button\";\nimport { TechStack, Component, Dir, CodeBlock } from \"types/types\";\n\ntype Props = {\n  labels: CodeBlock[];\n  setActivateBlock: (idx: number) => void;\n  activatedBlock: number;\n};\n\nexport default ({ labels, setActivateBlock, activatedBlock }: Props) => (\n  <div className=\"bg-gray-700 rounded-t-lg border-b border-gray-600 text-gray-200 text-sm\">\n    <ul className=\"flex items-center overflow-x-auto\">\n      {labels?.map(\n        (\n          item: {\n            label?: string;\n          },\n          idx\n        ) => (\n          <li\n            key={idx}\n            className={`flex items-center p-1 rounded-tl-lg ${\n              idx == activatedBlock ? \"bg-gray-800 text-teal-400\" : \"\"\n            }`}\n          >\n            <Button\n              onClick={() => setActivateBlock(idx)}\n              className=\"border-none focus:text-teal-400\"\n            >\n              {item.label}\n            </Button>\n          </li>\n        )\n      )}\n    </ul>\n  </div>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_CodeSwitchBar_index",
+      "name": "index",
+      "path": "components/ui/CodeSwitchBar/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_CodeSwitchBar_index",
+      "name": "CodeSwitchBar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/CodeSwitchBar/index.tsx",
+          "content": "import Button from \"components/ui/Button\";\nimport { TechStack, Component, Dir, CodeBlock } from \"types/types\";\n\ntype Props = {\n  labels: CodeBlock[];\n  setActivateBlock: (idx: number) => void;\n  activatedBlock: number;\n};\n\nexport default ({ labels, setActivateBlock, activatedBlock }: Props) => (\n  <div className=\"bg-gray-700 rounded-t-lg border-b border-gray-600 text-gray-200 text-sm\">\n    <ul className=\"flex items-center overflow-x-auto\">\n      {labels?.map(\n        (\n          item: {\n            label?: string;\n          },\n          idx\n        ) => (\n          <li\n            key={idx}\n            className={`flex items-center p-1 rounded-tl-lg ${\n              idx == activatedBlock ? \"bg-gray-800 text-teal-400\" : \"\"\n            }`}\n          >\n            <Button\n              onClick={() => setActivateBlock(idx)}\n              className=\"border-none focus:text-teal-400\"\n            >\n              {item.label}\n            </Button>\n          </li>\n        )\n      )}\n    </ul>\n  </div>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

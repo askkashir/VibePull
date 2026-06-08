@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_InputBase_index",
+  "name": "InputBase",
+  "source_code": "// packages/@mantine/core/src/components/InputBase/index.ts\nimport type { InputBaseFactory, InputBaseProps } from './InputBase';\n\nexport { InputBase } from './InputBase';\n\nexport type { InputBaseProps, InputBaseFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "InputBase_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/InputBase/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_InputBase_index",
+      "name": "InputBase",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/InputBase/index.ts",
+          "content": "import type { InputBaseFactory, InputBaseProps } from './InputBase';\n\nexport { InputBase } from './InputBase';\n\nexport type { InputBaseProps, InputBaseFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

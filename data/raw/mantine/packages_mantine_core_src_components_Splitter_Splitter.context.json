@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Splitter_Splitter.context",
+  "name": "Splitter.context",
+  "source_code": "// packages/@mantine/core/src/components/Splitter/Splitter.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { SplitterFactory } from './Splitter';\n\nexport interface SplitterContextValue {\n  getStyles: GetStylesApi<SplitterFactory>;\n  sizes: number[];\n  collapsed: boolean[];\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport const [SplitterProvider, useSplitterContext] = createSafeContext<SplitterContextValue>(\n  'Splitter component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Splitter_Splitter.context",
+      "name": "Splitter.context",
+      "path": "packages/@mantine/core/src/components/Splitter/Splitter.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Splitter_Splitter.context",
+      "name": "Splitter.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Splitter/Splitter.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { SplitterFactory } from './Splitter';\n\nexport interface SplitterContextValue {\n  getStyles: GetStylesApi<SplitterFactory>;\n  sizes: number[];\n  collapsed: boolean[];\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport const [SplitterProvider, useSplitterContext] = createSafeContext<SplitterContextValue>(\n  'Splitter component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

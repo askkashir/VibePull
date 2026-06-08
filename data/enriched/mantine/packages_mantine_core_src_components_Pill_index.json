@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Pill_index",
+  "name": "Pill",
+  "source_code": "// packages/@mantine/core/src/components/Pill/index.ts\nimport type {\n  PillCssVariables,\n  PillFactory,\n  PillProps,\n  PillStylesNames,\n  PillVariant,\n} from './Pill';\nimport type {\n  PillGroupCssVariables,\n  PillGroupFactory,\n  PillGroupProps,\n  PillGroupStylesNames,\n} from './PillGroup/PillGroup';\n\nexport { Pill } from './Pill';\nexport { PillGroup } from './PillGroup/PillGroup';\n\nexport type {\n  PillProps,\n  PillStylesNames,\n  PillCssVariables,\n  PillFactory,\n  PillVariant,\n  PillGroupProps,\n  PillGroupStylesNames,\n  PillGroupCssVariables,\n  PillGroupFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "pill",
+    "badge",
+    "marker"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pill_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Pill/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pill_index",
+      "name": "Pill",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pill/index.ts",
+          "content": "import type {\n  PillCssVariables,\n  PillFactory,\n  PillProps,\n  PillStylesNames,\n  PillVariant,\n} from './Pill';\nimport type {\n  PillGroupCssVariables,\n  PillGroupFactory,\n  PillGroupProps,\n  PillGroupStylesNames,\n} from './PillGroup/PillGroup';\n\nexport { Pill } from './Pill';\nexport { PillGroup } from './PillGroup/PillGroup';\n\nexport type {\n  PillProps,\n  PillStylesNames,\n  PillCssVariables,\n  PillFactory,\n  PillVariant,\n  PillGroupProps,\n  PillGroupStylesNames,\n  PillGroupCssVariables,\n  PillGroupFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A Pill component is a small circle or rectangle with a text label, often used to distinguish between different states or groups.",
+  "style_tags": [
+    "rounded",
+    "small"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: Pill\nDescription: A Pill component is a small circle or rectangle with a text label, often used to distinguish between different states or groups.\nStyle: rounded, small\nInteractions: \nTags: pill, badge, marker\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Pill/index.ts\nimport type {\n  PillCssVariables,\n  PillFactory,\n  PillProps,\n  PillStylesNames,\n  PillVariant,\n} from './Pill';\nimport type {\n  PillGroupCssVariables,\n  PillGroupFactory,\n  PillGroupProps,\n  PillGroupStylesNames,\n} from './PillGroup/PillGroup';\n\nexport { Pill } from './Pill';\nexport { PillGroup } from './PillGroup/PillGroup';\n\nexport type {\n  PillProps,\n  PillStylesNames,\n  PillCssVariables,\n  PillFactory,\n  PillVariant,\n  PillGroupProps,\n ",
+  "prompt_version": 2,
+  "clean_id": "pill",
+  "display_name": "Pill",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pill-index.png"
+}

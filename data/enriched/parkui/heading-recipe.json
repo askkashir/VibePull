@@ -1,0 +1,58 @@
+{
+  "id": "heading-recipe",
+  "name": "heading-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/heading.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "heading",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "heading-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/heading.ts",
+          "type": "registry:recipe",
+          "imports": "import { heading } from './heading'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "heading-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/heading.ts",
+          "type": "registry:recipe",
+          "imports": "import { heading } from './heading'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "heading-recipe is a heading recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: heading-recipe\nDescription: heading-recipe is a heading recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: heading, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/heading.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n",
+  "prompt_version": 2,
+  "clean_id": "heading-recipe",
+  "display_name": "Heading Recipe",
+  "preview_url": "/previews/parkui/heading-recipe.png"
+}

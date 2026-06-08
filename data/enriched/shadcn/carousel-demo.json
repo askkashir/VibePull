@@ -1,0 +1,45 @@
+{
+  "id": "carousel-demo",
+  "name": "carousel-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "carousel",
+    "slider",
+    "responsive",
+    "image",
+    "advertising",
+    "showcase",
+    "navigation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The carousel-demo is a responsive visual showcase that displays multiple items in a circular or slide style layout, typically used for advertising, showcasing a series of images or content, or providing easy navigation between multiple features or offers. It can be customized for various use cases and applications, making it a popular choice for developers. It is most suitable when multiple options need to be presented in an engaging and interactive manner.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: carousel-demo\nDescription: The carousel-demo is a responsive visual showcase that displays multiple items in a circular or slide style layout, typically used for advertising, showcasing a series of images or content, or providing easy navigation between multiple features or offers. It can be customized for various use cases and applications, making it a popular choice for developers. It is most suitable when multiple options need to be presented in an engaging and interactive manner.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. animated, hover, clickable\nTags: carousel, slider, responsive, image, advertising, showcase, navigation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "carousel-demo",
+  "display_name": "Carousel Demo",
+  "preview_url": "/previews/shadcn/carousel-demo.png"
+}

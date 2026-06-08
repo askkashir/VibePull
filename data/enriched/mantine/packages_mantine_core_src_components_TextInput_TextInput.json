@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_TextInput_TextInput",
+  "name": "TextInput",
+  "source_code": "// packages/@mantine/core/src/components/TextInput/TextInput.tsx\nimport { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps, __InputStylesNames, InputVariant } from '../Input';\nimport { InputBase } from '../InputBase';\n\nexport interface TextInputProps\n  extends\n    BoxProps,\n    __BaseInputProps,\n    StylesApiProps<TextInputFactory>,\n    ElementProps<'input', 'size'> {}\n\nexport type TextInputFactory = Factory<{\n  props: TextInputProps;\n  variant: InputVariant;\n  ref: HTMLInputElement;\n  stylesNames: __InputStylesNames;\n}>;\n\nexport const TextInput = factory<TextInputFactory>((props) => {\n  const _props = useProps(['Input', 'InputWrapper', 'TextInput'], null, props);\n  return <InputBase component=\"input\" {..._props} __staticSelector=\"TextInput\" />;\n});\n\nTextInput.classes = InputBase.classes;\nTextInput.displayName = '@mantine/core/TextInput';\n\nexport namespace TextInput {\n  export type Props = TextInputProps;\n  export type Factory = TextInputFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "text"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TextInput_TextInput",
+      "name": "TextInput",
+      "path": "packages/@mantine/core/src/components/TextInput/TextInput.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TextInput_TextInput",
+      "name": "TextInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TextInput/TextInput.tsx",
+          "content": "import { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps, __InputStylesNames, InputVariant } from '../Input';\nimport { InputBase } from '../InputBase';\n\nexport interface TextInputProps\n  extends\n    BoxProps,\n    __BaseInputProps,\n    StylesApiProps<TextInputFactory>,\n    ElementProps<'input', 'size'> {}\n\nexport type TextInputFactory = Factory<{\n  props: TextInputProps;\n  variant: InputVariant;\n  ref: HTMLInputElement;\n  stylesNames: __InputStylesNames;\n}>;\n\nexport const TextInput = factory<TextInputFactory>((props) => {\n  const _props = useProps(['Input', 'InputWrapper', 'TextInput'], null, props);\n  return <InputBase component=\"input\" {..._props} __staticSelector=\"TextInput\" />;\n});\n\nTextInput.classes = InputBase.classes;\nTextInput.displayName = '@mantine/core/TextInput';\n\nexport namespace TextInput {\n  export type Props = TextInputProps;\n  export type Factory = TextInputFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TextInput is a text input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: TextInput\nDescription: TextInput is a text input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: input, mantine, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/TextInput/TextInput.tsx\nimport { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps, __InputStylesNames, InputVariant } from '../Input';\nimport { InputBase } from '../InputBase';\n\nexport interface TextInputProps\n  extends\n    BoxProps,\n    __BaseInputProps,\n    StylesApiProps<TextInputFactory>,\n    ElementProps<'input', 'size'> {}\n\nexport type TextInputFactory = Factory<{\n  props: TextInputPro",
+  "prompt_version": 2,
+  "clean_id": "text-input",
+  "display_name": "Text Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-textinput-textinput.png"
+}

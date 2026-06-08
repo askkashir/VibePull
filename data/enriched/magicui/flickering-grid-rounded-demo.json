@@ -1,0 +1,64 @@
+{
+  "id": "flickering-grid-rounded-demo",
+  "name": "Flickering Grid Rounded Demo",
+  "source_code": "import { FlickeringGrid } from \"@/registry/magicui/flickering-grid\"\n\nexport default function FlickeringGridRoundedDemo() {\n  return (\n    <div className=\"bg-background relative size-[600px] w-full overflow-hidden rounded-lg border\">\n      <FlickeringGrid\n        className=\"relative inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]\"\n        squareSize={4}\n        gridGap={6}\n        color=\"#60A5FA\"\n        maxOpacity={0.5}\n        flickerChance={0.1}\n        height={800}\n        width={800}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing a flickering grid background with rounded corners.",
+  "tags": [
+    "grid",
+    "flickering",
+    "component",
+    "mask"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "flickering-grid-rounded-demo",
+      "type": "registry:example",
+      "title": "Flickering Grid Rounded Demo",
+      "description": "Example showing a flickering grid background with rounded corners.",
+      "registryDependencies": [
+        "https://magicui.design/r/flickering-grid"
+      ],
+      "files": [
+        {
+          "path": "registry/example/flickering-grid-rounded-demo.tsx",
+          "type": "registry:example",
+          "target": "components/flickering-grid-rounded-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flickering-grid-rounded-demo",
+      "type": "registry:example",
+      "title": "Flickering Grid Rounded Demo",
+      "description": "Example showing a flickering grid background with rounded corners.",
+      "registryDependencies": [
+        "@magicui/flickering-grid"
+      ],
+      "files": [
+        {
+          "path": "registry/example/flickering-grid-rounded-demo.tsx",
+          "content": "import { FlickeringGrid } from \"@/registry/magicui/flickering-grid\"\n\nexport default function FlickeringGridRoundedDemo() {\n  return (\n    <div className=\"bg-background relative size-[600px] w-full overflow-hidden rounded-lg border\">\n      <FlickeringGrid\n        className=\"relative inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]\"\n        squareSize={4}\n        gridGap={6}\n        color=\"#60A5FA\"\n        maxOpacity={0.5}\n        flickerChance={0.1}\n        height={800}\n        width={800}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Flickering grid component with a circular mask and rounded border, suitable for showcasing items that transition between visibility.",
+  "style_tags": [
+    "rounded",
+    "circular",
+    "mask"
+  ],
+  "interaction_tags": [
+    "animated",
+    "flickering"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Flickering Grid Rounded Demo\nDescription: Flickering grid component with a circular mask and rounded border, suitable for showcasing items that transition between visibility.\nStyle: rounded, circular, mask\nInteractions: animated, flickering\nTags: grid, flickering, component, mask\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { FlickeringGrid } from \"@/registry/magicui/flickering-grid\"\n\nexport default function FlickeringGridRoundedDemo() {\n  return (\n    <div className=\"bg-background relative size-[600px] w-full overflow-hidden rounded-lg border\">\n      <FlickeringGrid\n        className=\"relative inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]\"\n        squareSize={4}\n        gridGap={6}\n        color=\"#60A5FA\"\n        maxOpacity={0.5}\n        flickerChance={0.1}\n        heigh",
+  "prompt_version": 2,
+  "clean_id": "flickering-grid-rounded-demo",
+  "display_name": "Flickering Grid Rounded Demo",
+  "preview_url": "/previews/magicui/flickering-grid-rounded-demo.png"
+}

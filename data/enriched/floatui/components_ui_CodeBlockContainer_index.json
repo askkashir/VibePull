@@ -1,0 +1,49 @@
+{
+  "id": "components_ui_CodeBlockContainer_index",
+  "name": "CodeBlockContainer",
+  "source_code": "// components/ui/CodeBlockContainer/index.tsx\nimport SyntaxHeighlight from \"components/SyntaxHeighlight\";\nimport { ReactNode, useEffect, useRef, useState } from \"react\";\n\nexport default ({\n  code,\n  activatedBlock,\n  techStack,\n  slug,\n}: {\n  code: string;\n  activatedBlock: number;\n  techStack: string;\n  slug: string;\n}) => {\n  const [copied, setCopyed] = useState(false);\n  const codeBlockRef = useRef<HTMLDivElement>(null);\n\n  const copyCode = () => {\n    const textare = document.createElement(\"textarea\");\n    textare.textContent = (codeBlockRef.current as HTMLDivElement).textContent;\n    document.body.append(textare);\n    textare.select();\n    document.execCommand(\"copy\");\n    textare.remove();\n    setCopyed(true);\n  };\n\n  useEffect(() => {\n    if (copied) {\n      setTimeout(() => setCopyed(false), 2000);\n    }\n  }, [copied]);\n\n  return (\n    <div className=\"relative\">\n      <button\n        className=\"absolute top-3 right-6 p-1 flex items-center justify-center font-medium text-gray-300 text-sm bg-gray-600 rounded-md\"\n        onClick={copyCode}\n      >\n        {copied ? (\n          <>\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              className=\"h-6 w-6 mr-1\"\n              fill=\"none\"\n              viewBox=\"0 0 24 24\"\n              stroke=\"currentColor\"\n            >\n              <path\n                strokeLinecap=\"round\"\n                strokeLinejoin=\"round\"\n                strokeWidth={2}\n                d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01\"\n              />\n            </svg>\n            copied\n          </>\n        ) : (\n          <>\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              className=\"h-6 w-6 mr-1\"\n              fill=\"none\"\n              viewBox=\"0 0 24 24\"\n              stroke=\"currentColor\"\n            >\n              <path\n                strokeLinecap=\"round\"\n                strokeLinejoin=\"round\"\n                strokeWidth={2}\n                d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01\"\n              />\n            </svg>\n            copy\n          </>\n        )}\n      </button>\n      <div className=\"code-block\" ref={codeBlockRef}>\n        <SyntaxHeighlight\n          code={code}\n          //   dir={dir}\n          //   activatedBlock={activatedBlock}\n          //   techStack={techStack}\n          //   slug={slug}\n        />\n      </div>\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "block",
+    "code",
+    "container",
+    "floatui",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_CodeBlockContainer_index",
+      "name": "index",
+      "path": "components/ui/CodeBlockContainer/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_CodeBlockContainer_index",
+      "name": "CodeBlockContainer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/CodeBlockContainer/index.tsx",
+          "content": "import SyntaxHeighlight from \"components/SyntaxHeighlight\";\nimport { ReactNode, useEffect, useRef, useState } from \"react\";\n\nexport default ({\n  code,\n  activatedBlock,\n  techStack,\n  slug,\n}: {\n  code: string;\n  activatedBlock: number;\n  techStack: string;\n  slug: string;\n}) => {\n  const [copied, setCopyed] = useState(false);\n  const codeBlockRef = useRef<HTMLDivElement>(null);\n\n  const copyCode = () => {\n    const textare = document.createElement(\"textarea\");\n    textare.textContent = (codeBlockRef.current as HTMLDivElement).textContent;\n    document.body.append(textare);\n    textare.select();\n    document.execCommand(\"copy\");\n    textare.remove();\n    setCopyed(true);\n  };\n\n  useEffect(() => {\n    if (copied) {\n      setTimeout(() => setCopyed(false), 2000);\n    }\n  }, [copied]);\n\n  return (\n    <div className=\"relative\">\n      <button\n        className=\"absolute top-3 right-6 p-1 flex items-center justify-center font-medium text-gray-300 text-sm bg-gray-600 rounded-md\"\n        onClick={copyCode}\n      >\n        {copied ? (\n          <>\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              className=\"h-6 w-6 mr-1\"\n              fill=\"none\"\n              viewBox=\"0 0 24 24\"\n              stroke=\"currentColor\"\n            >\n              <path\n                strokeLinecap=\"round\"\n                strokeLinejoin=\"round\"\n                strokeWidth={2}\n                d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01\"\n              />\n            </svg>\n            copied\n          </>\n        ) : (\n          <>\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              className=\"h-6 w-6 mr-1\"\n              fill=\"none\"\n              viewBox=\"0 0 24 24\"\n              stroke=\"currentColor\"\n            >\n              <path\n                strokeLinecap=\"round\"\n                strokeLinejoin=\"round\"\n                strokeWidth={2}\n                d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01\"\n              />\n            </svg>\n            copy\n          </>\n        )}\n      </button>\n      <div className=\"code-block\" ref={codeBlockRef}>\n        <SyntaxHeighlight\n          code={code}\n          //   dir={dir}\n          //   activatedBlock={activatedBlock}\n          //   techStack={techStack}\n          //   slug={slug}\n        />\n      </div>\n    </div>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "CodeBlockContainer is a code block container UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: CodeBlockContainer\nDescription: CodeBlockContainer is a code block container UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: interactive\nTags: block, code, container, floatui, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/CodeBlockContainer/index.tsx\nimport SyntaxHeighlight from \"components/SyntaxHeighlight\";\nimport { ReactNode, useEffect, useRef, useState } from \"react\";\n\nexport default ({\n  code,\n  activatedBlock,\n  techStack,\n  slug,\n}: {\n  code: string;\n  activatedBlock: number;\n  techStack: string;\n  slug: string;\n}) => {\n  const [copied, setCopyed] = useState(false);\n  const codeBlockRef = useRef<HTMLDivElement>(null);\n\n  const copyCode = () => {\n    const textare = document.createElement(\"",
+  "prompt_version": 2,
+  "clean_id": "code-block-container",
+  "display_name": "Code Block Container",
+  "preview_url": "/previews/floatui/components-ui-codeblockcontainer-index.png"
+}

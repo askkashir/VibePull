@@ -1,0 +1,49 @@
+{
+  "id": "packages_react_src_components_color-area_color-area",
+  "name": "color-area",
+  "source_code": "// packages/react/src/components/color-area/color-area.tsx\n\"use client\";\n\nimport type {ColorAreaVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorAreaVariants} from \"@heroui/styles\";\nimport React, {createContext, useContext} from \"react\";\nimport {\n  ColorArea as ColorAreaPrimitive,\n  ColorThumb as ColorThumbPrimitive,\n} from \"react-aria-components/ColorArea\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Context\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaContext {\n  slots?: ReturnType<typeof colorAreaVariants>;\n}\n\nconst ColorAreaContext = createContext<ColorAreaContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaRootProps\n  extends ComponentPropsWithRef<typeof ColorAreaPrimitive>, ColorAreaVariants {}\n\nconst ColorAreaRoot = ({children, className, showDots, style, ...props}: ColorAreaRootProps) => {\n  const slots = React.useMemo(() => colorAreaVariants({showDots}), [showDots]);\n\n  return (\n    <ColorAreaContext value={{slots}}>\n      <ColorAreaPrimitive\n        {...props}\n        className={composeTwRenderProps(className, slots.base())}\n        data-slot=\"color-area\"\n        style={(renderProps) => {\n          const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n          return {\n            \"--color-area-background\": renderProps.defaultStyle.background,\n            ...userStyle,\n          } as CSSProperties;\n        }}\n      >\n        {children}\n      </ColorAreaPrimitive>\n    </ColorAreaContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Thumb\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaThumbProps extends ComponentPropsWithRef<typeof ColorThumbPrimitive> {}\n\nconst ColorAreaThumb = ({className, style, ...props}: ColorAreaThumbProps) => {\n  const {slots} = useContext(ColorAreaContext);\n\n  return (\n    <ColorThumbPrimitive\n      className={composeTwRenderProps(className, slots?.thumb())}\n      data-slot=\"color-area-thumb\"\n      style={(renderProps) => {\n        const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n        return {\n          \"--color-area-thumb-color\": renderProps.defaultStyle.backgroundColor,\n          ...userStyle,\n        } as CSSProperties;\n      }}\n      {...props}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorAreaRoot, ColorAreaThumb};\n\nexport type {ColorAreaRootProps, ColorAreaThumbProps};\n",
+  "description": "",
+  "tags": [
+    "color",
+    "input",
+    "swatch"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-area_color-area",
+      "name": "color-area",
+      "path": "packages/react/src/components/color-area/color-area.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-area_color-area",
+      "name": "color-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-area/color-area.tsx",
+          "content": "\"use client\";\n\nimport type {ColorAreaVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorAreaVariants} from \"@heroui/styles\";\nimport React, {createContext, useContext} from \"react\";\nimport {\n  ColorArea as ColorAreaPrimitive,\n  ColorThumb as ColorThumbPrimitive,\n} from \"react-aria-components/ColorArea\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Context\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaContext {\n  slots?: ReturnType<typeof colorAreaVariants>;\n}\n\nconst ColorAreaContext = createContext<ColorAreaContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaRootProps\n  extends ComponentPropsWithRef<typeof ColorAreaPrimitive>, ColorAreaVariants {}\n\nconst ColorAreaRoot = ({children, className, showDots, style, ...props}: ColorAreaRootProps) => {\n  const slots = React.useMemo(() => colorAreaVariants({showDots}), [showDots]);\n\n  return (\n    <ColorAreaContext value={{slots}}>\n      <ColorAreaPrimitive\n        {...props}\n        className={composeTwRenderProps(className, slots.base())}\n        data-slot=\"color-area\"\n        style={(renderProps) => {\n          const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n          return {\n            \"--color-area-background\": renderProps.defaultStyle.background,\n            ...userStyle,\n          } as CSSProperties;\n        }}\n      >\n        {children}\n      </ColorAreaPrimitive>\n    </ColorAreaContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * ColorArea Thumb\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorAreaThumbProps extends ComponentPropsWithRef<typeof ColorThumbPrimitive> {}\n\nconst ColorAreaThumb = ({className, style, ...props}: ColorAreaThumbProps) => {\n  const {slots} = useContext(ColorAreaContext);\n\n  return (\n    <ColorThumbPrimitive\n      className={composeTwRenderProps(className, slots?.thumb())}\n      data-slot=\"color-area-thumb\"\n      style={(renderProps) => {\n        const userStyle = typeof style === \"function\" ? style(renderProps) : style;\n\n        return {\n          \"--color-area-thumb-color\": renderProps.defaultStyle.backgroundColor,\n          ...userStyle,\n        } as CSSProperties;\n      }}\n      {...props}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorAreaRoot, ColorAreaThumb};\n\nexport type {ColorAreaRootProps, ColorAreaThumbProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ColorArea component is a colorful area for selecting and displaying colors. Developers use it for designing color palette or for displaying a color swatch. ColorArea provides a thumb to interactively choose colors.",
+  "style_tags": [
+    "e.g. colorful",
+    "minimal",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "e.g. draggable",
+    "selectable",
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: color-area\nDescription: ColorArea component is a colorful area for selecting and displaying colors. Developers use it for designing color palette or for displaying a color swatch. ColorArea provides a thumb to interactively choose colors.\nStyle: e.g. colorful, minimal, customizable\nInteractions: e.g. draggable, selectable, hover\nTags: color, input, swatch\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/color-area/color-area.tsx\n\"use client\";\n\nimport type {ColorAreaVariants} from \"@heroui/styles\";\nimport type {CSSProperties, ComponentPropsWithRef} from \"react\";\n\nimport {colorAreaVariants} from \"@heroui/styles\";\nimport React, {createContext, useContext} from \"react\";\nimport {\n  ColorArea as ColorAreaPrimitive,\n  ColorThumb as ColorThumbPrimitive,\n} from \"react-aria-components/ColorArea\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------",
+  "prompt_version": 2,
+  "clean_id": "color-area",
+  "display_name": "Color Area",
+  "preview_url": "/previews/heroui/packages-react-src-components-color-area-color-area.png"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "typography-demo",
+  "name": "typography-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "demo",
+    "design",
+    "ui-components",
+    "experimentation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Typography Demo component is a versatile tool for showcasing and experimenting with various typography styles and sizes. It can be used by UI/UX designers and front-end developers to test and implement custom typography settings across different applications, websites, or projects. This component is especially useful when exploring typography options for digital products or designing custom UI components.",
+  "style_tags": [
+    "e.g. modern",
+    "minimalist",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "no-interaction"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typography-demo\nDescription: The Typography Demo component is a versatile tool for showcasing and experimenting with various typography styles and sizes. It can be used by UI/UX designers and front-end developers to test and implement custom typography settings across different applications, websites, or projects. This component is especially useful when exploring typography options for digital products or designing custom UI components.\nStyle: e.g. modern, minimalist, responsive\nInteractions: no-interaction\nTags: typography, demo, design, ui-components, experimentation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-demo",
+  "display_name": "Typography Demo",
+  "preview_url": "/previews/shadcn/typography-demo.png"
+}

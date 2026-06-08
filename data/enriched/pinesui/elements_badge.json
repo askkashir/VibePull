@@ -1,0 +1,44 @@
+{
+  "id": "elements_badge",
+  "name": "badge",
+  "source_code": "// elements/badge.html\n<span class=\"rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black\">\n    Badge\n</span>",
+  "description": "",
+  "tags": [
+    "badge",
+    "pinesui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "badge",
+      "name": "badge",
+      "path": "elements/badge.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_badge",
+      "name": "badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/badge.html",
+          "content": "<span class=\"rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black\">\n    Badge\n</span>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "badge is a badge UI component from the pinesui corpus. It provides reusable badge behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: badge\nDescription: badge is a badge UI component from the pinesui corpus. It provides reusable badge behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: \nTags: badge, pinesui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/badge.html\n<span class=\"rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black\">\n    Badge\n</span>",
+  "prompt_version": 2,
+  "clean_id": "badge",
+  "display_name": "Badge",
+  "preview_url": "/previews/pinesui/elements-badge.png"
+}

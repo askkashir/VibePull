@@ -1,0 +1,61 @@
+{
+  "id": "animated-theme-toggler-demo",
+  "name": "Animated Theme Toggler Demo",
+  "source_code": "import { AnimatedThemeToggler } from \"@/registry/magicui/animated-theme-toggler\"\n\nexport default function AnimatedThemeTogglerDemo() {\n  return (\n    <div className=\"flex justify-center p-6\">\n      <AnimatedThemeToggler />\n    </div>\n  )\n}\n",
+  "description": "Example showing animation while changing the theme.",
+  "tags": [
+    "toggler",
+    "animated",
+    "theme"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-theme-toggler-demo",
+      "type": "registry:example",
+      "title": "Animated Theme Toggler Demo",
+      "description": "Example showing animation while changing the theme.",
+      "registryDependencies": [
+        "https://magicui.design/animated-theme-toggler"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-theme-toggler-demo.tsx",
+          "type": "registry:example",
+          "target": "components/animated-theme-toggler-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-theme-toggler-demo",
+      "type": "registry:example",
+      "title": "Animated Theme Toggler Demo",
+      "description": "Example showing animation while changing the theme.",
+      "registryDependencies": [
+        "@magicui/animated-theme-toggler"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-theme-toggler-demo.tsx",
+          "content": "import { AnimatedThemeToggler } from \"@/registry/magicui/animated-theme-toggler\"\n\nexport default function AnimatedThemeTogglerDemo() {\n  return (\n    <div className=\"flex justify-center p-6\">\n      <AnimatedThemeToggler />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A simple animated theming component displayed in the center of the screen when used for switching between different color themes or custom themes",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Animated Theme Toggler Demo\nDescription: A simple animated theming component displayed in the center of the screen when used for switching between different color themes or custom themes\nStyle: minimal\nInteractions: animated, hover\nTags: toggler, animated, theme\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { AnimatedThemeToggler } from \"@/registry/magicui/animated-theme-toggler\"\n\nexport default function AnimatedThemeTogglerDemo() {\n  return (\n    <div className=\"flex justify-center p-6\">\n      <AnimatedThemeToggler />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "animated-theme-toggler-demo",
+  "display_name": "Animated Theme Toggler Demo",
+  "preview_url": "/previews/magicui/animated-theme-toggler-demo.png"
+}

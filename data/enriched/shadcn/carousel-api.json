@@ -1,0 +1,40 @@
+{
+  "id": "carousel-api",
+  "name": "carousel-api",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "carousel",
+    "gallery",
+    "scrolling-content"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-api",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-api\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The carousel API component is a scrolling view of multiple items displayed in a continuous sequence. It is commonly used in applications where a user can navigate through a series of images or cards. This component enables users to scroll through a collection of content and can be applied to various use cases such as product showcases or image galleries.",
+  "style_tags": [
+    "responsive",
+    "adaptive"
+  ],
+  "interaction_tags": [
+    "animated",
+    "draggable",
+    "swipe-enabled"
+  ],
+  "component_type": "carousel",
+  "generation_prompt": "Create a production-ready carousel component with the following characteristics:\n\nName: carousel-api\nDescription: The carousel API component is a scrolling view of multiple items displayed in a continuous sequence. It is commonly used in applications where a user can navigate through a series of images or cards. This component enables users to scroll through a collection of content and can be applied to various use cases such as product showcases or image galleries.\nStyle: responsive, adaptive\nInteractions: animated, draggable, swipe-enabled\nTags: carousel, gallery, scrolling-content\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "carousel-api",
+  "display_name": "Carousel Api",
+  "preview_url": "/previews/shadcn/carousel-api.png"
+}

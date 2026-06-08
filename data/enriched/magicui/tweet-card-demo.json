@@ -1,0 +1,58 @@
+{
+  "id": "tweet-card-demo",
+  "name": "Tweet Card Demo",
+  "source_code": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\n/**\n * <TweetCard /> (Server Side Only)\n * <ClientTweetCard /> (Client Side Only)\n */\nexport default function TweetDemo() {\n  return <ClientTweetCard id=\"1668408059125702661\" />\n}\n",
+  "description": "Example showing a tweet card with author info.",
+  "tags": [
+    "card",
+    "tweet",
+    "social media",
+    "application"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "tweet-card-demo",
+      "type": "registry:example",
+      "title": "Tweet Card Demo",
+      "description": "Example showing a tweet card with author info.",
+      "registryDependencies": [
+        "https://magicui.design/r/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-demo.tsx",
+          "type": "registry:example",
+          "target": "components/tweet-card-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tweet-card-demo",
+      "type": "registry:example",
+      "title": "Tweet Card Demo",
+      "description": "Example showing a tweet card with author info.",
+      "registryDependencies": [
+        "@magicui/client-tweet-card",
+        "@magicui/tweet-card"
+      ],
+      "files": [
+        {
+          "path": "registry/example/tweet-card-demo.tsx",
+          "content": "import { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\n/**\n * <TweetCard /> (Server Side Only)\n * <ClientTweetCard /> (Client Side Only)\n */\nexport default function TweetDemo() {\n  return <ClientTweetCard id=\"1668408059125702661\" />\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Server-side or client-side rendered card displaying a tweet, typically used in social media applications to showcase individual tweets.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Tweet Card Demo\nDescription: Server-side or client-side rendered card displaying a tweet, typically used in social media applications to showcase individual tweets.\nStyle: \nInteractions: \nTags: card, tweet, social media, application\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ClientTweetCard } from \"@/registry/magicui/client-tweet-card\"\n\n/**\n * <TweetCard /> (Server Side Only)\n * <ClientTweetCard /> (Client Side Only)\n */\nexport default function TweetDemo() {\n  return <ClientTweetCard id=\"1668408059125702661\" />\n}\n",
+  "prompt_version": 2,
+  "clean_id": "tweet-card-demo",
+  "display_name": "Tweet Card Demo",
+  "preview_url": "/previews/magicui/tweet-card-demo.png"
+}

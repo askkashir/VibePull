@@ -1,0 +1,23 @@
+{
+  "id": "dashboard-01",
+  "name": "dashboard-01",
+  "source_code": "",
+  "description": "A dashboard with sidebar, charts and data table.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dashboard-01",
+      "type": "registry:block",
+      "description": "A dashboard with sidebar, charts and data table.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dashboard-01\n\nA dashboard with sidebar, charts and data table.\n\n**Type:** registry:block\n**Files:** 11 file(s)\n**Dependencies:** @dnd-kit/core, @dnd-kit/modifiers, @dnd-kit/sortable, @dnd-kit/utilities, @tabler/icons-react, @tanstack/react-table, zod"
+  }
+}

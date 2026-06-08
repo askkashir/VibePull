@@ -1,0 +1,42 @@
+{
+  "id": "packages_react_src_components_rac_index",
+  "name": "rac",
+  "source_code": "// packages/react/src/components/rac/index.ts\nexport {\n  isRTL,\n  useLocale,\n  useFilter,\n  Virtualizer,\n  TableLayout,\n  ListLayout,\n} from \"react-aria-components\";\nexport {getLocalizationScript} from \"react-aria-components/i18n\";\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"./components\";\nexport {parseColor} from \"./utils\";\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  TimeValue,\n  DateValue,\n  DateRange,\n  ValidationResult,\n  RangeValue,\n  RouterConfig,\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n  SortDescriptor,\n} from \"./types\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "rac"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "rac_index",
+      "name": "index",
+      "path": "packages/react/src/components/rac/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_rac_index",
+      "name": "rac",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/rac/index.ts",
+          "content": "export {\n  isRTL,\n  useLocale,\n  useFilter,\n  Virtualizer,\n  TableLayout,\n  ListLayout,\n} from \"react-aria-components\";\nexport {getLocalizationScript} from \"react-aria-components/i18n\";\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"./components\";\nexport {parseColor} from \"./utils\";\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  TimeValue,\n  DateValue,\n  DateRange,\n  ValidationResult,\n  RangeValue,\n  RouterConfig,\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n  SortDescriptor,\n} from \"./types\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "rac is a rac UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: rac\nDescription: rac is a rac UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heroui, other, rac\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/rac/index.ts\nexport {\n  isRTL,\n  useLocale,\n  useFilter,\n  Virtualizer,\n  TableLayout,\n  ListLayout,\n} from \"react-aria-components\";\nexport {getLocalizationScript} from \"react-aria-components/i18n\";\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"./components\";\nexport {parseColor} from \"./utils\";\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  TimeValue,\n  Dat",
+  "prompt_version": 2,
+  "clean_id": "rac",
+  "display_name": "Rac",
+  "preview_url": "/previews/heroui/packages-react-src-components-rac-index.png"
+}

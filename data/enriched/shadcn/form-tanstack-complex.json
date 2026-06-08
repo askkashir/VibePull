@@ -1,0 +1,35 @@
+{
+  "id": "form-tanstack-complex",
+  "name": "form-tanstack-complex",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "complex",
+    "dynamic",
+    "validation",
+    "conditional"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-complex",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-complex\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "The Form component from Tanstack is a complex form builder with multiple fields, perfect for creating dynamic user registration, login, or profile update forms in a React application. It can be used when you need to create a form with conditional logic, custom validation, and a wide range of input types. This component is ideal for developers who require a robust and customizable form solution.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-complex\nDescription: The Form component from Tanstack is a complex form builder with multiple fields, perfect for creating dynamic user registration, login, or profile update forms in a React application. It can be used when you need to create a form with conditional logic, custom validation, and a wide range of input types. This component is ideal for developers who require a robust and customizable form solution.\nStyle: \nInteractions: \nTags: form, complex, dynamic, validation, conditional\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-complex",
+  "display_name": "Form Tanstack Complex",
+  "preview_url": "/previews/shadcn/form-tanstack-complex.png"
+}

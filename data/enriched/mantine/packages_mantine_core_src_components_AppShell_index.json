@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_index",
+  "name": "AppShell",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/index.ts\nimport type {\n  AppShellCssVariables,\n  AppShellFactory,\n  AppShellProps,\n  AppShellStylesNames,\n} from './AppShell';\nimport type { AppShellContextValue } from './AppShell.context';\nimport type {\n  AppShellAsideConfiguration,\n  AppShellCompoundProps,\n  AppShellFooterConfiguration,\n  AppShellHeaderConfiguration,\n  AppShellNavbarConfiguration,\n  AppShellResponsiveSize,\n} from './AppShell.types';\nimport type { AppShellAsideProps } from './AppShellAside/AppShellAside';\nimport type { AppShellFooterProps } from './AppShellFooter/AppShellFooter';\nimport type { AppShellHeaderProps } from './AppShellHeader/AppShellHeader';\nimport type { AppShellMainProps } from './AppShellMain/AppShellMain';\nimport type { AppShellNavbarProps } from './AppShellNavbar/AppShellNavbar';\nimport type { AppShellSectionProps } from './AppShellSection/AppShellSection';\n\nexport { AppShell } from './AppShell';\nexport { AppShellAside } from './AppShellAside/AppShellAside';\nexport { AppShellFooter } from './AppShellFooter/AppShellFooter';\nexport { AppShellHeader } from './AppShellHeader/AppShellHeader';\nexport { AppShellNavbar } from './AppShellNavbar/AppShellNavbar';\nexport { AppShellSection } from './AppShellSection/AppShellSection';\nexport { AppShellMain } from './AppShellMain/AppShellMain';\nexport { useAppShellContext } from './AppShell.context';\n\nexport type {\n  AppShellProps,\n  AppShellStylesNames,\n  AppShellCssVariables,\n  AppShellFactory,\n  AppShellContextValue,\n  AppShellCompoundProps,\n  AppShellAsideConfiguration,\n  AppShellFooterConfiguration,\n  AppShellHeaderConfiguration,\n  AppShellNavbarConfiguration,\n  AppShellResponsiveSize,\n  AppShellAsideProps,\n  AppShellFooterProps,\n  AppShellHeaderProps,\n  AppShellMainProps,\n  AppShellNavbarProps,\n  AppShellSectionProps,\n};\n",
+  "description": "",
+  "tags": [
+    "app",
+    "mantine",
+    "other",
+    "shell"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/AppShell/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_index",
+      "name": "AppShell",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/index.ts",
+          "content": "import type {\n  AppShellCssVariables,\n  AppShellFactory,\n  AppShellProps,\n  AppShellStylesNames,\n} from './AppShell';\nimport type { AppShellContextValue } from './AppShell.context';\nimport type {\n  AppShellAsideConfiguration,\n  AppShellCompoundProps,\n  AppShellFooterConfiguration,\n  AppShellHeaderConfiguration,\n  AppShellNavbarConfiguration,\n  AppShellResponsiveSize,\n} from './AppShell.types';\nimport type { AppShellAsideProps } from './AppShellAside/AppShellAside';\nimport type { AppShellFooterProps } from './AppShellFooter/AppShellFooter';\nimport type { AppShellHeaderProps } from './AppShellHeader/AppShellHeader';\nimport type { AppShellMainProps } from './AppShellMain/AppShellMain';\nimport type { AppShellNavbarProps } from './AppShellNavbar/AppShellNavbar';\nimport type { AppShellSectionProps } from './AppShellSection/AppShellSection';\n\nexport { AppShell } from './AppShell';\nexport { AppShellAside } from './AppShellAside/AppShellAside';\nexport { AppShellFooter } from './AppShellFooter/AppShellFooter';\nexport { AppShellHeader } from './AppShellHeader/AppShellHeader';\nexport { AppShellNavbar } from './AppShellNavbar/AppShellNavbar';\nexport { AppShellSection } from './AppShellSection/AppShellSection';\nexport { AppShellMain } from './AppShellMain/AppShellMain';\nexport { useAppShellContext } from './AppShell.context';\n\nexport type {\n  AppShellProps,\n  AppShellStylesNames,\n  AppShellCssVariables,\n  AppShellFactory,\n  AppShellContextValue,\n  AppShellCompoundProps,\n  AppShellAsideConfiguration,\n  AppShellFooterConfiguration,\n  AppShellHeaderConfiguration,\n  AppShellNavbarConfiguration,\n  AppShellResponsiveSize,\n  AppShellAsideProps,\n  AppShellFooterProps,\n  AppShellHeaderProps,\n  AppShellMainProps,\n  AppShellNavbarProps,\n  AppShellSectionProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShell is a app shell UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShell\nDescription: AppShell is a app shell UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: app, mantine, other, shell\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/index.ts\nimport type {\n  AppShellCssVariables,\n  AppShellFactory,\n  AppShellProps,\n  AppShellStylesNames,\n} from './AppShell';\nimport type { AppShellContextValue } from './AppShell.context';\nimport type {\n  AppShellAsideConfiguration,\n  AppShellCompoundProps,\n  AppShellFooterConfiguration,\n  AppShellHeaderConfiguration,\n  AppShellNavbarConfiguration,\n  AppShellResponsiveSize,\n} from './AppShell.types';\nimport type { AppShellAsideProps } from './A",
+  "prompt_version": 2,
+  "clean_id": "app-shell",
+  "display_name": "App Shell",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-index.png"
+}

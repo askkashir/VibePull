@@ -1,0 +1,36 @@
+{
+  "id": "item",
+  "name": "item",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "item",
+    "list",
+    "grid"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A basic UI item component for displaying information, typically used within a list or grid.",
+  "style_tags": [
+    "e.g. flat",
+    "simple"
+  ],
+  "interaction_tags": [],
+  "component_type": "item",
+  "generation_prompt": "Create a production-ready item component with the following characteristics:\n\nName: item\nDescription: A basic UI item component for displaying information, typically used within a list or grid.\nStyle: e.g. flat, simple\nInteractions: \nTags: item, list, grid\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item",
+  "display_name": "Item",
+  "preview_url": "/previews/shadcn/item.png"
+}

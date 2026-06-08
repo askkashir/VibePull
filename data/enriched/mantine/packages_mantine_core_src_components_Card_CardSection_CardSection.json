@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Card_CardSection_CardSection",
+  "name": "CardSection",
+  "source_code": "// packages/@mantine/core/src/components/Card/CardSection/CardSection.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  polymorphicFactory,\n  PolymorphicFactory,\n  useProps,\n} from '../../../core';\nimport { useCardContext } from '../Card.context';\nimport classes from '../Card.module.css';\n\nexport type CardSectionStylesNames = 'section';\n\nexport interface CardSectionProps extends BoxProps, CompoundStylesApiProps<CardSectionFactory> {\n  /** Adds border to the root element */\n  withBorder?: boolean;\n\n  /** If set, the section inherits padding from the parent `Card` */\n  inheritPadding?: boolean;\n}\n\nexport type CardSectionFactory = PolymorphicFactory<{\n  props: CardSectionProps;\n  defaultRef: HTMLDivElement;\n  defaultComponent: 'div';\n  stylesNames: CardSectionStylesNames;\n  compound: true;\n}>;\n\nexport const CardSection = polymorphicFactory<CardSectionFactory>((_props) => {\n  const props = useProps('CardSection', null, _props);\n  const { classNames, className, style, styles, vars, withBorder, inheritPadding, mod, ...others } =\n    props;\n  const ctx = useCardContext();\n\n  return (\n    <Box\n      mod={[{ 'with-border': withBorder, 'inherit-padding': inheritPadding }, mod]}\n      {...ctx.getStyles('section', { className, style, styles, classNames })}\n      {...others}\n    />\n  );\n});\n\nCardSection.classes = classes;\nCardSection.displayName = '@mantine/core/CardSection';\n",
+  "description": "",
+  "tags": [
+    "card",
+    "mantine",
+    "section"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Card_CardSection_CardSection",
+      "name": "CardSection",
+      "path": "packages/@mantine/core/src/components/Card/CardSection/CardSection.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Card_CardSection_CardSection",
+      "name": "CardSection",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Card/CardSection/CardSection.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  polymorphicFactory,\n  PolymorphicFactory,\n  useProps,\n} from '../../../core';\nimport { useCardContext } from '../Card.context';\nimport classes from '../Card.module.css';\n\nexport type CardSectionStylesNames = 'section';\n\nexport interface CardSectionProps extends BoxProps, CompoundStylesApiProps<CardSectionFactory> {\n  /** Adds border to the root element */\n  withBorder?: boolean;\n\n  /** If set, the section inherits padding from the parent `Card` */\n  inheritPadding?: boolean;\n}\n\nexport type CardSectionFactory = PolymorphicFactory<{\n  props: CardSectionProps;\n  defaultRef: HTMLDivElement;\n  defaultComponent: 'div';\n  stylesNames: CardSectionStylesNames;\n  compound: true;\n}>;\n\nexport const CardSection = polymorphicFactory<CardSectionFactory>((_props) => {\n  const props = useProps('CardSection', null, _props);\n  const { classNames, className, style, styles, vars, withBorder, inheritPadding, mod, ...others } =\n    props;\n  const ctx = useCardContext();\n\n  return (\n    <Box\n      mod={[{ 'with-border': withBorder, 'inherit-padding': inheritPadding }, mod]}\n      {...ctx.getStyles('section', { className, style, styles, classNames })}\n      {...others}\n    />\n  );\n});\n\nCardSection.classes = classes;\nCardSection.displayName = '@mantine/core/CardSection';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "CardSection is a card section UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: CardSection\nDescription: CardSection is a card section UI component from the mantine corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: card, mantine, section\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Card/CardSection/CardSection.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  polymorphicFactory,\n  PolymorphicFactory,\n  useProps,\n} from '../../../core';\nimport { useCardContext } from '../Card.context';\nimport classes from '../Card.module.css';\n\nexport type CardSectionStylesNames = 'section';\n\nexport interface CardSectionProps extends BoxProps, CompoundStylesApiProps<CardSectionFactory> {\n  /** Adds border to the root element */\n  withBorder",
+  "prompt_version": 2,
+  "clean_id": "card-section",
+  "display_name": "Card Section",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-card-cardsection-cardsection.png"
+}

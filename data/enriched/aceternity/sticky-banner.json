@@ -1,0 +1,49 @@
+{
+  "id": "sticky-banner",
+  "name": "Sticky Banner",
+  "source_code": "\"use client\";\nimport React, { SVGProps, useState } from \"react\";\nimport { motion, useMotionValueEvent, useScroll } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const StickyBanner = ({\n  className,\n  children,\n  hideOnScroll = false,\n}: {\n  className?: string;\n  children: React.ReactNode;\n  hideOnScroll?: boolean;\n}) => {\n  const [open, setOpen] = useState(true);\n  const { scrollY } = useScroll();\n\n  useMotionValueEvent(scrollY, \"change\", (latest) => {\n    console.log(latest);\n    if (hideOnScroll && latest > 40) {\n      setOpen(false);\n    } else {\n      setOpen(true);\n    }\n  });\n\n  return (\n    <motion.div\n      className={cn(\n        \"sticky inset-x-0 top-0 z-40 flex min-h-14 w-full items-center justify-center bg-transparent px-4 py-1\",\n        className,\n      )}\n      initial={{\n        y: -100,\n        opacity: 0,\n      }}\n      animate={{\n        y: open ? 0 : -100,\n        opacity: open ? 1 : 0,\n      }}\n      transition={{\n        duration: 0.3,\n        ease: \"easeInOut\",\n      }}\n    >\n      {children}\n\n      <motion.button\n        initial={{\n          scale: 0,\n        }}\n        animate={{\n          scale: 1,\n        }}\n        className=\"absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer\"\n        onClick={() => setOpen(!open)}\n      >\n        <CloseIcon className=\"h-5 w-5 text-white\" />\n      </motion.button>\n    </motion.div>\n  );\n};\n\nconst CloseIcon = (props: SVGProps<SVGSVGElement>) => {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\" />\n      <path d=\"M18 6l-12 12\" />\n      <path d=\"M6 6l12 12\" />\n    </svg>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "sticky",
+    "banner",
+    "notification",
+    "alert",
+    "toggleable"
+  ],
+  "server": "aceternity",
+  "metadata": {
+    "listed_component": {
+      "name": "sticky-banner",
+      "source": "ai_catalog"
+    },
+    "registry_item": {
+      "name": "sticky-banner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/sticky-banner.tsx",
+          "content": "\"use client\";\nimport React, { SVGProps, useState } from \"react\";\nimport { motion, useMotionValueEvent, useScroll } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const StickyBanner = ({\n  className,\n  children,\n  hideOnScroll = false,\n}: {\n  className?: string;\n  children: React.ReactNode;\n  hideOnScroll?: boolean;\n}) => {\n  const [open, setOpen] = useState(true);\n  const { scrollY } = useScroll();\n\n  useMotionValueEvent(scrollY, \"change\", (latest) => {\n    console.log(latest);\n    if (hideOnScroll && latest > 40) {\n      setOpen(false);\n    } else {\n      setOpen(true);\n    }\n  });\n\n  return (\n    <motion.div\n      className={cn(\n        \"sticky inset-x-0 top-0 z-40 flex min-h-14 w-full items-center justify-center bg-transparent px-4 py-1\",\n        className,\n      )}\n      initial={{\n        y: -100,\n        opacity: 0,\n      }}\n      animate={{\n        y: open ? 0 : -100,\n        opacity: open ? 1 : 0,\n      }}\n      transition={{\n        duration: 0.3,\n        ease: \"easeInOut\",\n      }}\n    >\n      {children}\n\n      <motion.button\n        initial={{\n          scale: 0,\n        }}\n        animate={{\n          scale: 1,\n        }}\n        className=\"absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer\"\n        onClick={() => setOpen(!open)}\n      >\n        <CloseIcon className=\"h-5 w-5 text-white\" />\n      </motion.button>\n    </motion.div>\n  );\n};\n\nconst CloseIcon = (props: SVGProps<SVGSVGElement>) => {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width=\"24\"\n      height=\"24\"\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      {...props}\n    >\n      <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\" />\n      <path d=\"M18 6l-12 12\" />\n      <path d=\"M6 6l12 12\" />\n    </svg>\n  );\n};\n",
+          "type": "registry:ui",
+          "target": "components/ui/sticky-banner.tsx"
+        }
+      ],
+      "author": "Manu Arora <hi@manuarora.in>",
+      "title": "Sticky Banner"
+    }
+  },
+  "visual_summary": "A Sticky Banner is a component that sticks to the top of the viewport and can be toggled to show/hide. It's commonly used as a notification or alert system, allowing developers to inform users about important information. This component includes an animated close button to make it visually appealing and engaging.",
+  "style_tags": [
+    "animated",
+    "toggle"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "hero",
+  "generation_prompt": "Create a production-ready hero component with the following characteristics:\n\nName: Sticky Banner\nDescription: A Sticky Banner is a component that sticks to the top of the viewport and can be toggled to show/hide. It's commonly used as a notification or alert system, allowing developers to inform users about important information. This component includes an animated close button to make it visually appealing and engaging.\nStyle: animated, toggle\nInteractions: animated, clickable\nTags: sticky, banner, notification, alert, toggleable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\";\nimport React, { SVGProps, useState } from \"react\";\nimport { motion, useMotionValueEvent, useScroll } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const StickyBanner = ({\n  className,\n  children,\n  hideOnScroll = false,\n}: {\n  className?: string;\n  children: React.ReactNode;\n  hideOnScroll?: boolean;\n}) => {\n  const [open, setOpen] = useState(true);\n  const { scrollY } = useScroll();\n\n  useMotionValueEvent(scrollY, \"change\", (latest) => {\n    console.log(latest);\n ",
+  "prompt_version": 2,
+  "clean_id": "sticky-banner",
+  "display_name": "Sticky Banner",
+  "preview_url": "/previews/aceternity/sticky-banner.png"
+}

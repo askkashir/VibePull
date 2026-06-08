@@ -1,0 +1,42 @@
+{
+  "id": "spinner-item",
+  "name": "spinner-item",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "loading",
+    "progress",
+    "spinner",
+    "list",
+    "grid",
+    "animation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-item",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-item\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A spinner-item is a small circular or oval component used to show progress or loading animation in a list or grid. It's useful when you need to display multiple loading states simultaneously. Typically, it's used alongside a list of items.",
+  "style_tags": [
+    "e.g. small",
+    "thin",
+    "animated"
+  ],
+  "interaction_tags": [
+    "e.g. none"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner-item\nDescription: A spinner-item is a small circular or oval component used to show progress or loading animation in a list or grid. It's useful when you need to display multiple loading states simultaneously. Typically, it's used alongside a list of items.\nStyle: e.g. small, thin, animated\nInteractions: e.g. none\nTags: loading, progress, spinner, list, grid, animation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-item",
+  "display_name": "Spinner Item",
+  "preview_url": "/previews/shadcn/spinner-item.png"
+}

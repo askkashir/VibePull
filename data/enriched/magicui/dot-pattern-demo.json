@@ -1,0 +1,64 @@
+{
+  "id": "dot-pattern-demo",
+  "name": "Dot Pattern Demo",
+  "source_code": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <DotPattern\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing a background dot pattern made with SVGs.",
+  "tags": [
+    "demo",
+    "background",
+    "creative",
+    "component"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "dot-pattern-demo",
+      "type": "registry:example",
+      "title": "Dot Pattern Demo",
+      "description": "Example showing a background dot pattern made with SVGs.",
+      "registryDependencies": [
+        "https://magicui.design/r/dot-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/dot-pattern-demo.tsx",
+          "type": "registry:example",
+          "target": "components/dot-pattern-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dot-pattern-demo",
+      "type": "registry:example",
+      "title": "Dot Pattern Demo",
+      "description": "Example showing a background dot pattern made with SVGs.",
+      "registryDependencies": [
+        "@magicui/dot-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/dot-pattern-demo.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <DotPattern\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A demo component showcasing a dot pattern design, useful for designers or developers experimenting with creative backgrounds.",
+  "style_tags": [
+    "patterned",
+    "customizable",
+    "background"
+  ],
+  "interaction_tags": [
+    "static",
+    "view-only"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Dot Pattern Demo\nDescription: A demo component showcasing a dot pattern design, useful for designers or developers experimenting with creative backgrounds.\nStyle: patterned, customizable, background\nInteractions: static, view-only\nTags: demo, background, creative, component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { DotPattern } from \"@/registry/magicui/dot-pattern\"\n\nexport default function DotPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <DotPattern\n        className={cn(\n          \"[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "dot-pattern-demo",
+  "display_name": "Dot Pattern Demo",
+  "preview_url": "/previews/magicui/dot-pattern-demo.png"
+}

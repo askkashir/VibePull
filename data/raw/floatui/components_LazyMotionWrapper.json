@@ -1,0 +1,31 @@
+{
+  "id": "components_LazyMotionWrapper",
+  "name": "LazyMotionWrapper",
+  "source_code": "// components/LazyMotionWrapper.tsx\n\"use client\";\n\nimport { LazyMotion, domAnimation } from \"framer-motion\";\nimport { ReactNode } from \"react\";\n\nexport default ({ children }: { children: ReactNode }) => (\n  <LazyMotion features={domAnimation}>{children}</LazyMotion>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "LazyMotionWrapper",
+      "name": "LazyMotionWrapper",
+      "path": "components/LazyMotionWrapper.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_LazyMotionWrapper",
+      "name": "LazyMotionWrapper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/LazyMotionWrapper.tsx",
+          "content": "\"use client\";\n\nimport { LazyMotion, domAnimation } from \"framer-motion\";\nimport { ReactNode } from \"react\";\n\nexport default ({ children }: { children: ReactNode }) => (\n  <LazyMotion features={domAnimation}>{children}</LazyMotion>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

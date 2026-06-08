@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_list-box-item_index",
+  "name": "list-box-item",
+  "source_code": "// packages/react/src/components/list-box-item/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ListBoxItemIndicator, ListBoxItemRoot} from \"./list-box-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ListBoxItem = Object.assign(ListBoxItemRoot, {\n  Root: ListBoxItemRoot,\n  Indicator: ListBoxItemIndicator,\n});\n\nexport type ListBoxItem = {\n  Props: ComponentProps<typeof ListBoxItemRoot>;\n  RootProps: ComponentProps<typeof ListBoxItemRoot>;\n  IndicatorProps: ComponentProps<typeof ListBoxItemIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxItemRoot, ListBoxItemIndicator};\n\nexport type {\n  ListBoxItemRootProps,\n  ListBoxItemRootProps as ListBoxItemProps,\n  ListBoxItemIndicatorProps,\n} from \"./list-box-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {listboxItemVariants} from \"@heroui/styles\";\nexport type {ListBoxItemVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "list-box-item_index",
+      "name": "index",
+      "path": "packages/react/src/components/list-box-item/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_list-box-item_index",
+      "name": "list-box-item",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/list-box-item/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {ListBoxItemIndicator, ListBoxItemRoot} from \"./list-box-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ListBoxItem = Object.assign(ListBoxItemRoot, {\n  Root: ListBoxItemRoot,\n  Indicator: ListBoxItemIndicator,\n});\n\nexport type ListBoxItem = {\n  Props: ComponentProps<typeof ListBoxItemRoot>;\n  RootProps: ComponentProps<typeof ListBoxItemRoot>;\n  IndicatorProps: ComponentProps<typeof ListBoxItemIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ListBoxItemRoot, ListBoxItemIndicator};\n\nexport type {\n  ListBoxItemRootProps,\n  ListBoxItemRootProps as ListBoxItemProps,\n  ListBoxItemIndicatorProps,\n} from \"./list-box-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {listboxItemVariants} from \"@heroui/styles\";\nexport type {ListBoxItemVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

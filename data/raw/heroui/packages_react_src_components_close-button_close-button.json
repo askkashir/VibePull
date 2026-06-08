@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_close-button_close-button",
+  "name": "close-button",
+  "source_code": "// packages/react/src/components/close-button/close-button.tsx\n\"use client\";\n\nimport type {CloseButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {closeButtonVariants} from \"@heroui/styles\";\nimport {useMemo} from \"react\";\nimport {Button as ButtonPrimitive} from \"react-aria-components/Button\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {CloseIcon} from \"../icons\";\n\n/* -------------------------------------------------------------------------------------------------\n * Close Button Root\n * -----------------------------------------------------------------------------------------------*/\ninterface CloseButtonRootProps\n  extends ComponentPropsWithRef<typeof ButtonPrimitive>, CloseButtonVariants {}\n\nconst CloseButtonRoot = ({\n  children,\n  className,\n  slot,\n  style,\n  variant,\n  ...rest\n}: CloseButtonRootProps) => {\n  const styles = useMemo(() => closeButtonVariants({variant}), [variant]);\n\n  return (\n    <ButtonPrimitive\n      aria-label=\"Close\"\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"close-button\"\n      slot={slot}\n      style={style}\n      {...rest}\n    >\n      {(renderProps) =>\n        typeof children === \"function\"\n          ? children(renderProps)\n          : (children ?? <CloseIcon data-slot=\"close-button-icon\" />)\n      }\n    </ButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {CloseButtonRoot};\n\nexport type {CloseButtonRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "close-button_close-button",
+      "name": "close-button",
+      "path": "packages/react/src/components/close-button/close-button.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_close-button_close-button",
+      "name": "close-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/close-button/close-button.tsx",
+          "content": "\"use client\";\n\nimport type {CloseButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {closeButtonVariants} from \"@heroui/styles\";\nimport {useMemo} from \"react\";\nimport {Button as ButtonPrimitive} from \"react-aria-components/Button\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {CloseIcon} from \"../icons\";\n\n/* -------------------------------------------------------------------------------------------------\n * Close Button Root\n * -----------------------------------------------------------------------------------------------*/\ninterface CloseButtonRootProps\n  extends ComponentPropsWithRef<typeof ButtonPrimitive>, CloseButtonVariants {}\n\nconst CloseButtonRoot = ({\n  children,\n  className,\n  slot,\n  style,\n  variant,\n  ...rest\n}: CloseButtonRootProps) => {\n  const styles = useMemo(() => closeButtonVariants({variant}), [variant]);\n\n  return (\n    <ButtonPrimitive\n      aria-label=\"Close\"\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"close-button\"\n      slot={slot}\n      style={style}\n      {...rest}\n    >\n      {(renderProps) =>\n        typeof children === \"function\"\n          ? children(renderProps)\n          : (children ?? <CloseIcon data-slot=\"close-button-icon\" />)\n      }\n    </ButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {CloseButtonRoot};\n\nexport type {CloseButtonRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

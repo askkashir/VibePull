@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_Modal.context",
+  "name": "Modal.context",
+  "source_code": "// packages/@mantine/core/src/components/Modal/Modal.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ModalRootFactory } from './ModalRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface ModalContextValue {\n  fullScreen: boolean | undefined;\n  yOffset: string | number | undefined;\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<ModalRootFactory>;\n}\n\nexport const [ModalProvider, useModalContext] = createSafeContext<ModalContextValue>(\n  'Modal component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_Modal.context",
+      "name": "Modal.context",
+      "path": "packages/@mantine/core/src/components/Modal/Modal.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_Modal.context",
+      "name": "Modal.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/Modal.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ModalRootFactory } from './ModalRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface ModalContextValue {\n  fullScreen: boolean | undefined;\n  yOffset: string | number | undefined;\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<ModalRootFactory>;\n}\n\nexport const [ModalProvider, useModalContext] = createSafeContext<ModalContextValue>(\n  'Modal component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_compose-event-handlers",
+  "name": "compose-event-handlers",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/compose-event-handlers.ts\nexport function composeEventHandlers<E>(\n  originalEventHandler?: (event: E) => void,\n  ourEventHandler?: (event: E) => void,\n  { checkForDefaultPrevented = true } = {}\n) {\n  return (event: E) => {\n    originalEventHandler?.(event);\n\n    if (checkForDefaultPrevented === false || !(event as unknown as Event).defaultPrevented) {\n      ourEventHandler?.(event);\n    }\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_compose-event-handlers",
+      "name": "compose-event-handlers",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/compose-event-handlers.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_compose-event-handlers",
+      "name": "compose-event-handlers",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/compose-event-handlers.ts",
+          "content": "export function composeEventHandlers<E>(\n  originalEventHandler?: (event: E) => void,\n  ourEventHandler?: (event: E) => void,\n  { checkForDefaultPrevented = true } = {}\n) {\n  return (event: E) => {\n    originalEventHandler?.(event);\n\n    if (checkForDefaultPrevented === false || !(event as unknown as Event).defaultPrevented) {\n      ourEventHandler?.(event);\n    }\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

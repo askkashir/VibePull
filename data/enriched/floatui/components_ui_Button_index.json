@@ -1,0 +1,43 @@
+{
+  "id": "components_ui_Button_index",
+  "name": "Button",
+  "source_code": "// components/ui/Button/index.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends HTMLAttributes<HTMLButtonElement> {\n  children: ReactNode;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <button\n    {...props}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </button>\n);\n",
+  "description": "",
+  "tags": [
+    "button",
+    "floatui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Button_index",
+      "name": "index",
+      "path": "components/ui/Button/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Button_index",
+      "name": "Button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Button/index.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\nimport { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends HTMLAttributes<HTMLButtonElement> {\n  children: ReactNode;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <button\n    {...props}\n    className={mergeTW(`${buttonVariants[variant]} ${className}`)}\n  >\n    {children}\n  </button>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Button is a button UI component from the floatui corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Button\nDescription: Button is a button UI component from the floatui corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: button, floatui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Button/index.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from \"react\";\nimport { buttonVariants } from \"components/variants\";\n\ninterface Props extends HTMLAttributes<HTMLButtonElement> {\n  children: ReactNode;\n  className?: string;\n  variant?: \"default\" | \"shiny\";\n}\n\nexport default ({\n  children,\n  className = \"\",\n  variant = \"default\",\n  ...props\n}: Props) => (\n  <button\n    {...props}\n    className={mergeTW(`${buttonVarian",
+  "prompt_version": 2,
+  "clean_id": "button",
+  "display_name": "Button",
+  "preview_url": "/previews/floatui/components-ui-button-index.png"
+}

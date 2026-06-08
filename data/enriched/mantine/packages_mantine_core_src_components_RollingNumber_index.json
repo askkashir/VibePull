@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_RollingNumber_index",
+  "name": "RollingNumber",
+  "source_code": "// packages/@mantine/core/src/components/RollingNumber/index.ts\nimport type {\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n  RollingNumberProps,\n  RollingNumberStylesNames,\n} from './RollingNumber';\n\nexport { RollingNumber } from './RollingNumber';\n\nexport type {\n  RollingNumberProps,\n  RollingNumberStylesNames,\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n};\n\nexport namespace RollingNumber {\n  export type Props = RollingNumberProps;\n  export type StylesNames = RollingNumberStylesNames;\n  export type CssVariables = RollingNumberCssVariables;\n  export type Factory = RollingNumberFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "number",
+    "other",
+    "rolling"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RollingNumber_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/RollingNumber/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RollingNumber_index",
+      "name": "RollingNumber",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RollingNumber/index.ts",
+          "content": "import type {\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n  RollingNumberProps,\n  RollingNumberStylesNames,\n} from './RollingNumber';\n\nexport { RollingNumber } from './RollingNumber';\n\nexport type {\n  RollingNumberProps,\n  RollingNumberStylesNames,\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n};\n\nexport namespace RollingNumber {\n  export type Props = RollingNumberProps;\n  export type StylesNames = RollingNumberStylesNames;\n  export type CssVariables = RollingNumberCssVariables;\n  export type Factory = RollingNumberFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "RollingNumber is a rolling number UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: RollingNumber\nDescription: RollingNumber is a rolling number UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, number, other, rolling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/RollingNumber/index.ts\nimport type {\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n  RollingNumberProps,\n  RollingNumberStylesNames,\n} from './RollingNumber';\n\nexport { RollingNumber } from './RollingNumber';\n\nexport type {\n  RollingNumberProps,\n  RollingNumberStylesNames,\n  RollingNumberCssVariables,\n  RollingNumberFactory,\n};\n\nexport namespace RollingNumber {\n  export type Props = RollingNumberProps;\n  export type StylesNames = RollingNumberStyle",
+  "prompt_version": 2,
+  "clean_id": "rolling-number",
+  "display_name": "Rolling Number",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-rollingnumber-index.png"
+}

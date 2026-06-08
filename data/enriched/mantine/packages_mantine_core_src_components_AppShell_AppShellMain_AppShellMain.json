@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMain_AppShellMain",
+  "name": "AppShellMain",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMain/AppShellMain.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellMainStylesNames = 'main';\n\nexport interface AppShellMainProps\n  extends BoxProps, CompoundStylesApiProps<AppShellMainFactory>, ElementProps<'main'> {}\n\nexport type AppShellMainFactory = Factory<{\n  props: AppShellMainProps;\n  ref: HTMLElement;\n  stylesNames: AppShellMainStylesNames;\n  compound: true;\n}>;\n\nexport const AppShellMain = factory<AppShellMainFactory>((_props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'AppShellMain',\n    null,\n    _props\n  );\n\n  const ctx = useAppShellContext();\n\n  return (\n    <Box\n      component=\"main\"\n      {...ctx.getStyles('main', { className, style, classNames, styles })}\n      {...others}\n    />\n  );\n});\n\nAppShellMain.classes = classes;\nAppShellMain.displayName = '@mantine/core/AppShellMain';\n",
+  "description": "",
+  "tags": [
+    "app",
+    "main",
+    "mantine",
+    "other",
+    "shell"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMain_AppShellMain",
+      "name": "AppShellMain",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMain/AppShellMain.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMain_AppShellMain",
+      "name": "AppShellMain",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMain/AppShellMain.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellMainStylesNames = 'main';\n\nexport interface AppShellMainProps\n  extends BoxProps, CompoundStylesApiProps<AppShellMainFactory>, ElementProps<'main'> {}\n\nexport type AppShellMainFactory = Factory<{\n  props: AppShellMainProps;\n  ref: HTMLElement;\n  stylesNames: AppShellMainStylesNames;\n  compound: true;\n}>;\n\nexport const AppShellMain = factory<AppShellMainFactory>((_props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'AppShellMain',\n    null,\n    _props\n  );\n\n  const ctx = useAppShellContext();\n\n  return (\n    <Box\n      component=\"main\"\n      {...ctx.getStyles('main', { className, style, classNames, styles })}\n      {...others}\n    />\n  );\n});\n\nAppShellMain.classes = classes;\nAppShellMain.displayName = '@mantine/core/AppShellMain';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShellMain is a app shell main UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShellMain\nDescription: AppShellMain is a app shell main UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: app, main, mantine, other, shell\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellMain/AppShellMain.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellMainStylesNames = 'main';\n\nexport interface AppShellMainProps\n  extends BoxProps, CompoundStylesApiProps<AppShellMainFactory>, ElementProps<'main'> {}\n\nexport type App",
+  "prompt_version": 2,
+  "clean_id": "app-shell-main",
+  "display_name": "App Shell Main",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellmain-appshellmain.png"
+}

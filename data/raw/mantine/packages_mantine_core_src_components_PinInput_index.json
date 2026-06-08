@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_PinInput_index",
+  "name": "PinInput",
+  "source_code": "// packages/@mantine/core/src/components/PinInput/index.ts\nimport type { PinInputFactory, PinInputProps, PinInputStylesNames } from './PinInput';\n\nexport { PinInput } from './PinInput';\n\nexport type { PinInputProps, PinInputStylesNames, PinInputFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "PinInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/PinInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_PinInput_index",
+      "name": "PinInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/PinInput/index.ts",
+          "content": "import type { PinInputFactory, PinInputProps, PinInputStylesNames } from './PinInput';\n\nexport { PinInput } from './PinInput';\n\nexport type { PinInputProps, PinInputStylesNames, PinInputFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

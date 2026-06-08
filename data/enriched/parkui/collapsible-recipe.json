@@ -1,0 +1,60 @@
+{
+  "id": "collapsible-recipe",
+  "name": "collapsible-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/collapsible.ts\nimport { collapsibleAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const collapsible = defineSlotRecipe({\n  className: 'collapsible',\n  slots: collapsibleAnatomy.keys(),\n  base: {\n    content: {\n      overflow: 'hidden',\n      _open: {\n        animationName: 'expand-height, fade-in',\n        animationDuration: 'slow',\n      },\n      _closed: {\n        animationName: 'collapse-height, fade-out',\n        animationDuration: 'normal',\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "collapsible",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "collapsible-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/collapsible.ts",
+          "type": "registry:recipe",
+          "imports": "import { collapsible } from './collapsible'",
+          "content": "import { collapsibleAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const collapsible = defineSlotRecipe({\n  className: 'collapsible',\n  slots: collapsibleAnatomy.keys(),\n  base: {\n    content: {\n      overflow: 'hidden',\n      _open: {\n        animationName: 'expand-height, fade-in',\n        animationDuration: 'slow',\n      },\n      _closed: {\n        animationName: 'collapse-height, fade-out',\n        animationDuration: 'normal',\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "collapsible-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/collapsible.ts",
+          "type": "registry:recipe",
+          "imports": "import { collapsible } from './collapsible'",
+          "content": "import { collapsibleAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const collapsible = defineSlotRecipe({\n  className: 'collapsible',\n  slots: collapsibleAnatomy.keys(),\n  base: {\n    content: {\n      overflow: 'hidden',\n      _open: {\n        animationName: 'expand-height, fade-in',\n        animationDuration: 'slow',\n      },\n      _closed: {\n        animationName: 'collapse-height, fade-out',\n        animationDuration: 'normal',\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "collapsible-recipe is a collapsible recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: collapsible-recipe\nDescription: collapsible-recipe is a collapsible recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: collapsible, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/collapsible.ts\nimport { collapsibleAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const collapsible = defineSlotRecipe({\n  className: 'collapsible',\n  slots: collapsibleAnatomy.keys(),\n  base: {\n    content: {\n      overflow: 'hidden',\n      _open: {\n        animationName: 'expand-height, fade-in',\n        animationDuration: 'slow',\n      },\n      _closed: {\n        animationName: 'collapse-height, fade-out',\n ",
+  "prompt_version": 2,
+  "clean_id": "collapsible-recipe",
+  "display_name": "Collapsible Recipe",
+  "preview_url": "/previews/parkui/collapsible-recipe.png"
+}

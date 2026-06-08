@@ -1,0 +1,55 @@
+{
+  "id": "packages_radix-ui-themes_src_components_progress",
+  "name": "progress",
+  "source_code": "// packages/radix-ui-themes/src/components/progress.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Progress as ProgressPrimitive } from 'radix-ui';\n\nimport { progressPropDefs } from './progress.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { mergeStyles } from '../helpers/merge-styles.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype ProgressElement = React.ElementRef<typeof ProgressPrimitive.Root>;\ntype ProgressOwnProps = GetPropDefTypes<typeof progressPropDefs>;\ninterface ProgressProps\n  extends\n    ComponentPropsWithout<typeof ProgressPrimitive.Root, RemovedProps | 'children'>,\n    MarginProps,\n    ProgressOwnProps {\n  duration?: `${number}s` | `${number}ms`;\n}\nconst Progress = React.forwardRef<ProgressElement, ProgressProps>((props, forwardedRef) => {\n  const { className, style, color, radius, duration, ...progressProps } = extractProps(\n    props,\n    progressPropDefs,\n    marginPropDefs,\n  );\n\n  return (\n    <ProgressPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      ref={forwardedRef}\n      className={classNames('rt-ProgressRoot', className)}\n      style={mergeStyles(\n        {\n          '--progress-duration': 'value' in progressProps ? undefined : duration,\n          '--progress-value': 'value' in progressProps ? progressProps.value : undefined,\n          '--progress-max': 'max' in progressProps ? progressProps.max : undefined,\n        },\n        style,\n      )}\n      {...progressProps}\n      asChild={false}\n    >\n      <ProgressPrimitive.Indicator className=\"rt-ProgressIndicator\" />\n    </ProgressPrimitive.Root>\n  );\n});\nProgress.displayName = 'Progress';\n\nexport { Progress };\nexport type { ProgressProps };\n",
+  "description": "",
+  "tags": [
+    "status",
+    "indicator"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_progress",
+      "name": "progress.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/progress.tsx",
+      "sha": "da16e2095e2ec9bd6a16b1065d7ec14478e1c8cf",
+      "size": 1917,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/progress.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/progress.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/da16e2095e2ec9bd6a16b1065d7ec14478e1c8cf",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/progress.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/progress.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/da16e2095e2ec9bd6a16b1065d7ec14478e1c8cf",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/progress.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_progress",
+      "name": "progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/progress.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Progress as ProgressPrimitive } from 'radix-ui';\n\nimport { progressPropDefs } from './progress.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { mergeStyles } from '../helpers/merge-styles.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype ProgressElement = React.ElementRef<typeof ProgressPrimitive.Root>;\ntype ProgressOwnProps = GetPropDefTypes<typeof progressPropDefs>;\ninterface ProgressProps\n  extends\n    ComponentPropsWithout<typeof ProgressPrimitive.Root, RemovedProps | 'children'>,\n    MarginProps,\n    ProgressOwnProps {\n  duration?: `${number}s` | `${number}ms`;\n}\nconst Progress = React.forwardRef<ProgressElement, ProgressProps>((props, forwardedRef) => {\n  const { className, style, color, radius, duration, ...progressProps } = extractProps(\n    props,\n    progressPropDefs,\n    marginPropDefs,\n  );\n\n  return (\n    <ProgressPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      ref={forwardedRef}\n      className={classNames('rt-ProgressRoot', className)}\n      style={mergeStyles(\n        {\n          '--progress-duration': 'value' in progressProps ? undefined : duration,\n          '--progress-value': 'value' in progressProps ? progressProps.value : undefined,\n          '--progress-max': 'max' in progressProps ? progressProps.max : undefined,\n        },\n        style,\n      )}\n      {...progressProps}\n      asChild={false}\n    >\n      <ProgressPrimitive.Indicator className=\"rt-ProgressIndicator\" />\n    </ProgressPrimitive.Root>\n  );\n});\nProgress.displayName = 'Progress';\n\nexport { Progress };\nexport type { ProgressProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Progress component is a visual indicator showing the completion or status of a task. It can be used when a developer needs to display the progress of a task or status to the user.",
+  "style_tags": [
+    "default",
+    "compact"
+  ],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: progress\nDescription: The Progress component is a visual indicator showing the completion or status of a task. It can be used when a developer needs to display the progress of a task or status to the user.\nStyle: default, compact\nInteractions: \nTags: status, indicator\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/progress.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Progress as ProgressPrimitive } from 'radix-ui';\n\nimport { progressPropDefs } from './progress.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { mergeStyles } from '../helpers/merge-styles.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { Compone",
+  "prompt_version": 2,
+  "clean_id": "progress",
+  "display_name": "Progress",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-progress.png"
+}

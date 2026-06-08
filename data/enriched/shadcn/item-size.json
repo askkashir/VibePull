@@ -1,0 +1,37 @@
+{
+  "id": "item-size",
+  "name": "item-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "responsive",
+    "styling",
+    "utility",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The item-size component is a utility component used to style and adjust the size of individual items in a list or grid. It can be applied to elements like <img>, <div>, or <span> to modify their width or height. This component is useful for creating consistent and responsive layouts.",
+  "style_tags": [
+    "adjustable size",
+    "responsive design"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: item-size\nDescription: The item-size component is a utility component used to style and adjust the size of individual items in a list or grid. It can be applied to elements like <img>, <div>, or <span> to modify their width or height. This component is useful for creating consistent and responsive layouts.\nStyle: adjustable size, responsive design\nInteractions: \nTags: responsive, styling, utility, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-size",
+  "display_name": "Item Size",
+  "preview_url": "/previews/shadcn/item-size.png"
+}

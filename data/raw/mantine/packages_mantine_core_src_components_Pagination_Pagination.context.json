@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_Pagination.context",
+  "name": "Pagination.context",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/Pagination.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { PaginationRootFactory } from './PaginationRoot/PaginationRoot';\n\nexport interface PaginationContextValue {\n  total: number;\n  range: (number | 'dots')[];\n  active: number;\n  disabled: boolean | undefined;\n  layout?: 'default' | 'responsive';\n  getItemProps?: (page: number) => Record<string, any>;\n  onChange: (page: number) => void;\n  onNext: () => void;\n  onPrevious: () => void;\n  onFirst: () => void;\n  onLast: () => void;\n  getStyles: GetStylesApi<PaginationRootFactory>;\n}\n\nexport const [PaginationProvider, usePaginationContext] = createSafeContext<PaginationContextValue>(\n  'Pagination.Root component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_Pagination.context",
+      "name": "Pagination.context",
+      "path": "packages/@mantine/core/src/components/Pagination/Pagination.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_Pagination.context",
+      "name": "Pagination.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/Pagination.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { PaginationRootFactory } from './PaginationRoot/PaginationRoot';\n\nexport interface PaginationContextValue {\n  total: number;\n  range: (number | 'dots')[];\n  active: number;\n  disabled: boolean | undefined;\n  layout?: 'default' | 'responsive';\n  getItemProps?: (page: number) => Record<string, any>;\n  onChange: (page: number) => void;\n  onNext: () => void;\n  onPrevious: () => void;\n  onFirst: () => void;\n  onLast: () => void;\n  getStyles: GetStylesApi<PaginationRootFactory>;\n}\n\nexport const [PaginationProvider, usePaginationContext] = createSafeContext<PaginationContextValue>(\n  'Pagination.Root component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

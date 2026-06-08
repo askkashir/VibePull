@@ -1,0 +1,41 @@
+{
+  "id": "form-formisch-checkbox",
+  "name": "form-formisch-checkbox",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "checkbox",
+    "form",
+    "ui-component",
+    "customizable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-checkbox",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-checkbox\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "visual_summary": "The formisch-checkbox component is a customizable checkbox form element with a modern formisch design. It's used in forms where users need to make multiple selections, and developers want a sleek, web 2.0-inspired checkbox appearance. This component is ideal for registration forms or product preferences.",
+  "style_tags": [
+    "formisch",
+    "modern",
+    "web-2.0"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "interactive"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-formisch-checkbox\nDescription: The formisch-checkbox component is a customizable checkbox form element with a modern formisch design. It's used in forms where users need to make multiple selections, and developers want a sleek, web 2.0-inspired checkbox appearance. This component is ideal for registration forms or product preferences.\nStyle: formisch, modern, web-2.0\nInteractions: clickable, interactive\nTags: checkbox, form, ui-component, customizable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-formisch-checkbox",
+  "display_name": "Form Formisch Checkbox",
+  "preview_url": "/previews/shadcn/form-formisch-checkbox.png"
+}

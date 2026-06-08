@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Input_use-input-props",
+  "name": "use-input-props",
+  "source_code": "// packages/@mantine/core/src/components/Input/use-input-props.ts\nimport { BoxProps, extractStyleProps, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps } from './Input';\n\ninterface BaseProps\n  extends __BaseInputProps, BoxProps, StylesApiProps<{ props: any; stylesNames: string }> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n  id?: string;\n}\n\nexport function useInputProps<T extends BaseProps, U extends Partial<T> | null>(\n  component: string,\n  defaultProps: U,\n  _props: T\n) {\n  const props = useProps<T, U>(['Input', 'InputWrapper', component], defaultProps, _props);\n  const {\n    label,\n    description,\n    error,\n    required,\n    classNames,\n    styles,\n    className,\n    unstyled,\n    __staticSelector,\n    __stylesApiProps,\n    errorProps,\n    labelProps,\n    descriptionProps,\n    wrapperProps: _wrapperProps,\n    id,\n    size,\n    style,\n    inputContainer,\n    inputWrapperOrder,\n    withAsterisk,\n    variant,\n    vars,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const { styleProps, rest } = extractStyleProps(others);\n\n  const wrapperProps = {\n    label,\n    description,\n    error,\n    required,\n    classNames,\n    className,\n    __staticSelector,\n    __stylesApiProps: __stylesApiProps || props,\n    errorProps,\n    labelProps,\n    descriptionProps,\n    unstyled,\n    styles,\n    size,\n    style,\n    inputContainer,\n    inputWrapperOrder,\n    withAsterisk,\n    variant,\n    id,\n    mod,\n    attributes,\n    ..._wrapperProps,\n  };\n\n  return {\n    ...rest,\n    classNames,\n    styles,\n    unstyled,\n    wrapperProps: { ...wrapperProps, ...styleProps } as typeof wrapperProps & BoxProps,\n    inputProps: {\n      required,\n      classNames,\n      styles,\n      unstyled,\n      size,\n      __staticSelector,\n      __stylesApiProps: __stylesApiProps || props,\n      error,\n      variant,\n      id,\n      attributes,\n    },\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "props",
+    "use"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_use-input-props",
+      "name": "use-input-props",
+      "path": "packages/@mantine/core/src/components/Input/use-input-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_use-input-props",
+      "name": "use-input-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/use-input-props.ts",
+          "content": "import { BoxProps, extractStyleProps, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps } from './Input';\n\ninterface BaseProps\n  extends __BaseInputProps, BoxProps, StylesApiProps<{ props: any; stylesNames: string }> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n  id?: string;\n}\n\nexport function useInputProps<T extends BaseProps, U extends Partial<T> | null>(\n  component: string,\n  defaultProps: U,\n  _props: T\n) {\n  const props = useProps<T, U>(['Input', 'InputWrapper', component], defaultProps, _props);\n  const {\n    label,\n    description,\n    error,\n    required,\n    classNames,\n    styles,\n    className,\n    unstyled,\n    __staticSelector,\n    __stylesApiProps,\n    errorProps,\n    labelProps,\n    descriptionProps,\n    wrapperProps: _wrapperProps,\n    id,\n    size,\n    style,\n    inputContainer,\n    inputWrapperOrder,\n    withAsterisk,\n    variant,\n    vars,\n    mod,\n    attributes,\n    ...others\n  } = props;\n\n  const { styleProps, rest } = extractStyleProps(others);\n\n  const wrapperProps = {\n    label,\n    description,\n    error,\n    required,\n    classNames,\n    className,\n    __staticSelector,\n    __stylesApiProps: __stylesApiProps || props,\n    errorProps,\n    labelProps,\n    descriptionProps,\n    unstyled,\n    styles,\n    size,\n    style,\n    inputContainer,\n    inputWrapperOrder,\n    withAsterisk,\n    variant,\n    id,\n    mod,\n    attributes,\n    ..._wrapperProps,\n  };\n\n  return {\n    ...rest,\n    classNames,\n    styles,\n    unstyled,\n    wrapperProps: { ...wrapperProps, ...styleProps } as typeof wrapperProps & BoxProps,\n    inputProps: {\n      required,\n      classNames,\n      styles,\n      unstyled,\n      size,\n      __staticSelector,\n      __stylesApiProps: __stylesApiProps || props,\n      error,\n      variant,\n      id,\n      attributes,\n    },\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "use-input-props is a use input props UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: use-input-props\nDescription: use-input-props is a use input props UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: input, mantine, props, use\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/use-input-props.ts\nimport { BoxProps, extractStyleProps, StylesApiProps, useProps } from '../../core';\nimport { __BaseInputProps } from './Input';\n\ninterface BaseProps\n  extends __BaseInputProps, BoxProps, StylesApiProps<{ props: any; stylesNames: string }> {\n  __staticSelector?: string;\n  __stylesApiProps?: Record<string, any>;\n  id?: string;\n}\n\nexport function useInputProps<T extends BaseProps, U extends Partial<T> | null>(\n  component: string,\n  ",
+  "prompt_version": 2,
+  "clean_id": "use-input-props",
+  "display_name": "Use Input Props",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-use-input-props.png"
+}

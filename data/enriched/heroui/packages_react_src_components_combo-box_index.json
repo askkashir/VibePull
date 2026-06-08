@@ -1,0 +1,48 @@
+{
+  "id": "packages_react_src_components_combo-box_index",
+  "name": "combo-box",
+  "source_code": "// packages/react/src/components/combo-box/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ComboBoxInputGroup, ComboBoxPopover, ComboBoxRoot, ComboBoxTrigger} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ComboBox = Object.assign(ComboBoxRoot, {\n  Root: ComboBoxRoot,\n  InputGroup: ComboBoxInputGroup,\n  Trigger: ComboBoxTrigger,\n  Popover: ComboBoxPopover,\n});\n\nexport type ComboBox<T extends object = object> = {\n  Props: ComponentProps<typeof ComboBoxRoot<T>>;\n  RootProps: ComponentProps<typeof ComboBoxRoot<T>>;\n  InputGroupProps: ComponentProps<typeof ComboBoxInputGroup>;\n  TriggerProps: ComponentProps<typeof ComboBoxTrigger>;\n  PopoverProps: ComponentProps<typeof ComboBoxPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ComboBoxInputGroup, ComboBoxPopover, ComboBoxRoot, ComboBoxTrigger};\n\nexport type {\n  ComboBoxRootProps,\n  ComboBoxRootProps as ComboBoxProps,\n  ComboBoxInputGroupProps,\n  ComboBoxTriggerProps,\n  ComboBoxPopoverProps,\n} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Context\n * -----------------------------------------------------------------------------------------------*/\nexport {ComboBoxContext} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {comboBoxVariants} from \"@heroui/styles\";\n\nexport type {ComboBoxVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "select",
+    "menu",
+    "options"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "combo-box_index",
+      "name": "index",
+      "path": "packages/react/src/components/combo-box/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_combo-box_index",
+      "name": "combo-box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/combo-box/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {ComboBoxInputGroup, ComboBoxPopover, ComboBoxRoot, ComboBoxTrigger} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ComboBox = Object.assign(ComboBoxRoot, {\n  Root: ComboBoxRoot,\n  InputGroup: ComboBoxInputGroup,\n  Trigger: ComboBoxTrigger,\n  Popover: ComboBoxPopover,\n});\n\nexport type ComboBox<T extends object = object> = {\n  Props: ComponentProps<typeof ComboBoxRoot<T>>;\n  RootProps: ComponentProps<typeof ComboBoxRoot<T>>;\n  InputGroupProps: ComponentProps<typeof ComboBoxInputGroup>;\n  TriggerProps: ComponentProps<typeof ComboBoxTrigger>;\n  PopoverProps: ComponentProps<typeof ComboBoxPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ComboBoxInputGroup, ComboBoxPopover, ComboBoxRoot, ComboBoxTrigger};\n\nexport type {\n  ComboBoxRootProps,\n  ComboBoxRootProps as ComboBoxProps,\n  ComboBoxInputGroupProps,\n  ComboBoxTriggerProps,\n  ComboBoxPopoverProps,\n} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Context\n * -----------------------------------------------------------------------------------------------*/\nexport {ComboBoxContext} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {comboBoxVariants} from \"@heroui/styles\";\n\nexport type {ComboBoxVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The combo-box component is a dropdown menu that allows users to select one value from a list of options. It's commonly used in forms or when selecting settings. This component is ideal when you need to provide users with a list of options and require a single selection.",
+  "style_tags": [
+    "e.g. material",
+    "flat-design"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "scrollable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: combo-box\nDescription: The combo-box component is a dropdown menu that allows users to select one value from a list of options. It's commonly used in forms or when selecting settings. This component is ideal when you need to provide users with a list of options and require a single selection.\nStyle: e.g. material, flat-design\nInteractions: e.g. animated, scrollable\nTags: dropdown, select, menu, options\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/combo-box/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ComboBoxInputGroup, ComboBoxPopover, ComboBoxRoot, ComboBoxTrigger} from \"./combo-box\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ComboBox = Object.assign(ComboBoxRoot, {\n  Root: ComboBoxRoot,\n  Input",
+  "prompt_version": 2,
+  "clean_id": "combo-box",
+  "display_name": "Combo Box",
+  "preview_url": "/previews/heroui/packages-react-src-components-combo-box-index.png"
+}

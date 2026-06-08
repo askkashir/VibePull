@@ -1,0 +1,54 @@
+{
+  "id": "animated-number",
+  "name": "animated-number",
+  "source_code": "// components/core/animated-number.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, SpringOptions, useSpring, useTransform } from 'motion/react';\nimport { useEffect } from 'react';\n\nexport type AnimatedNumberProps = {\n  value: number;\n  className?: string;\n  springOptions?: SpringOptions;\n  as?: React.ElementType;\n};\n\nexport function AnimatedNumber({\n  value,\n  className,\n  springOptions,\n  as = 'span',\n}: AnimatedNumberProps) {\n  const MotionComponent = motion.create(as as keyof JSX.IntrinsicElements);\n\n  const spring = useSpring(value, springOptions);\n  const display = useTransform(spring, (current) =>\n    Math.round(current).toLocaleString()\n  );\n\n  useEffect(() => {\n    spring.set(value);\n  }, [spring, value]);\n\n  return (\n    <MotionComponent className={cn('tabular-nums', className)}>\n      {display}\n    </MotionComponent>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "animation",
+    "number",
+    "display"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-number.tsx",
+      "source": "github_contents",
+      "path": "components/core/animated-number.tsx",
+      "sha": "d962410dea49542e6668928469c62af4bebfd890",
+      "size": 828,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/animated-number.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/animated-number.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/d962410dea49542e6668928469c62af4bebfd890",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/animated-number.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/animated-number.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/d962410dea49542e6668928469c62af4bebfd890",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/animated-number.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "animated-number",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/animated-number.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, SpringOptions, useSpring, useTransform } from 'motion/react';\nimport { useEffect } from 'react';\n\nexport type AnimatedNumberProps = {\n  value: number;\n  className?: string;\n  springOptions?: SpringOptions;\n  as?: React.ElementType;\n};\n\nexport function AnimatedNumber({\n  value,\n  className,\n  springOptions,\n  as = 'span',\n}: AnimatedNumberProps) {\n  const MotionComponent = motion.create(as as keyof JSX.IntrinsicElements);\n\n  const spring = useSpring(value, springOptions);\n  const display = useTransform(spring, (current) =>\n    Math.round(current).toLocaleString()\n  );\n\n  useEffect(() => {\n    spring.set(value);\n  }, [spring, value]);\n\n  return (\n    <MotionComponent className={cn('tabular-nums', className)}>\n      {display}\n    </MotionComponent>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "AnimatedNumber is an animated display of a numerical value. It can be used to dynamically update and display large numbers.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: animated-number\nDescription: AnimatedNumber is an animated display of a numerical value. It can be used to dynamically update and display large numbers.\nStyle: \nInteractions: animated, hover\nTags: animation, number, display\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/animated-number.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, SpringOptions, useSpring, useTransform } from 'motion/react';\nimport { useEffect } from 'react';\n\nexport type AnimatedNumberProps = {\n  value: number;\n  className?: string;\n  springOptions?: SpringOptions;\n  as?: React.ElementType;\n};\n\nexport function AnimatedNumber({\n  value,\n  className,\n  springOptions,\n  as = 'span',\n}: AnimatedNumberProps) {\n  const MotionComponent = motion.create(as as k",
+  "prompt_version": 2,
+  "clean_id": "animated-number",
+  "display_name": "Animated Number",
+  "preview_url": "/previews/motionprimitives/animated-number.png"
+}

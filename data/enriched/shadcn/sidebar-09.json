@@ -1,0 +1,40 @@
+{
+  "id": "sidebar-09",
+  "name": "sidebar-09",
+  "source_code": "",
+  "description": "Collapsible nested sidebars.",
+  "tags": [
+    "sidebar",
+    "nested",
+    "collapsible"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-09",
+      "type": "registry:block",
+      "description": "Collapsible nested sidebars.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-09\n\nCollapsible nested sidebars.\n\n**Type:** registry:block\n**Files:** 3 file(s)"
+  },
+  "visual_summary": "A collapsible nested sidebar component, ideal for displaying secondary content in applications with limited screen space. Developers can use this component in scenarios where navigation or information needs to be folded away to declutter the main interface. It can be utilized when a user needs access to multiple features without overwhelming the main content area.",
+  "style_tags": [
+    "modern",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-09\nDescription: A collapsible nested sidebar component, ideal for displaying secondary content in applications with limited screen space. Developers can use this component in scenarios where navigation or information needs to be folded away to declutter the main interface. It can be utilized when a user needs access to multiple features without overwhelming the main content area.\nStyle: modern, minimal\nInteractions: animated, clickable\nTags: sidebar, nested, collapsible\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-09",
+  "display_name": "Sidebar 09",
+  "preview_url": "/previews/shadcn/sidebar-09.png"
+}

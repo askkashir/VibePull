@@ -1,0 +1,60 @@
+{
+  "id": "confetti-basic-cannon",
+  "name": "Confetti Basic Cannon",
+  "source_code": "import { ConfettiButton } from \"@/registry/magicui/confetti\"\n\nexport default function ConfettiButtonDemo() {\n  return (\n    <div className=\"relative\">\n      <ConfettiButton>Confetti 🎉</ConfettiButton>\n    </div>\n  )\n}\n",
+  "description": "Example showing basic confetti cannon animation.",
+  "tags": [
+    "button",
+    "confetti",
+    "basic"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "confetti-basic-cannon",
+      "type": "registry:example",
+      "title": "Confetti Basic Cannon",
+      "description": "Example showing basic confetti cannon animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-basic-cannon.tsx",
+          "type": "registry:example",
+          "target": "components/confetti-basic-cannon.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "confetti-basic-cannon",
+      "type": "registry:example",
+      "title": "Confetti Basic Cannon",
+      "description": "Example showing basic confetti cannon animation.",
+      "registryDependencies": [
+        "@magicui/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-basic-cannon.tsx",
+          "content": "import { ConfettiButton } from \"@/registry/magicui/confetti\"\n\nexport default function ConfettiButtonDemo() {\n  return (\n    <div className=\"relative\">\n      <ConfettiButton>Confetti 🎉</ConfettiButton>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Basic Confetti Button component displaying Confetti text. Used in a UI where user interaction is desired. It has the potential to add a celebratory feel to an application.",
+  "style_tags": [
+    "material"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Confetti Basic Cannon\nDescription: Basic Confetti Button component displaying Confetti text. Used in a UI where user interaction is desired. It has the potential to add a celebratory feel to an application.\nStyle: material\nInteractions: clickable\nTags: button, confetti, basic\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ConfettiButton } from \"@/registry/magicui/confetti\"\n\nexport default function ConfettiButtonDemo() {\n  return (\n    <div className=\"relative\">\n      <ConfettiButton>Confetti 🎉</ConfettiButton>\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "confetti-basic-cannon",
+  "display_name": "Confetti Basic Cannon",
+  "preview_url": "/previews/magicui/confetti-basic-cannon.png"
+}

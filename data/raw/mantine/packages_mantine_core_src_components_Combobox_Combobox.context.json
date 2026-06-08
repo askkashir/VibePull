@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_Combobox.context",
+  "name": "Combobox.context",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/Combobox.context.ts\nimport { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { ComboboxFactory } from './Combobox';\nimport type { ComboboxOptionProps } from './ComboboxOption/ComboboxOption';\nimport type { ComboboxStore } from './use-combobox/use-combobox';\n\nexport interface ComboboxContextValue {\n  getStyles: GetStylesApi<ComboboxFactory>;\n  store: ComboboxStore;\n  onOptionSubmit?: (value: string, optionProps: ComboboxOptionProps) => void;\n  size: MantineSize | (string & {});\n  resetSelectionOnOptionHover: boolean | undefined;\n  readOnly: boolean | undefined;\n  floatingHeight: 'viewport' | undefined;\n}\n\nexport const [ComboboxProvider, useComboboxContext] = createSafeContext<ComboboxContextValue>(\n  'Combobox component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_Combobox.context",
+      "name": "Combobox.context",
+      "path": "packages/@mantine/core/src/components/Combobox/Combobox.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_Combobox.context",
+      "name": "Combobox.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/Combobox.context.ts",
+          "content": "import { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { ComboboxFactory } from './Combobox';\nimport type { ComboboxOptionProps } from './ComboboxOption/ComboboxOption';\nimport type { ComboboxStore } from './use-combobox/use-combobox';\n\nexport interface ComboboxContextValue {\n  getStyles: GetStylesApi<ComboboxFactory>;\n  store: ComboboxStore;\n  onOptionSubmit?: (value: string, optionProps: ComboboxOptionProps) => void;\n  size: MantineSize | (string & {});\n  resetSelectionOnOptionHover: boolean | undefined;\n  readOnly: boolean | undefined;\n  floatingHeight: 'viewport' | undefined;\n}\n\nexport const [ComboboxProvider, useComboboxContext] = createSafeContext<ComboboxContextValue>(\n  'Combobox component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

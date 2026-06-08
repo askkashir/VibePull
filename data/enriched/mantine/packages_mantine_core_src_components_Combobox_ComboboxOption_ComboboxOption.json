@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxOption_ComboboxOption",
+  "name": "ComboboxOption",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxOption/ComboboxOption.tsx\nimport { useId } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  Primitive,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxOptionStylesNames = 'option';\n\nexport interface ComboboxOptionProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxOptionFactory>, ElementProps<'div'> {\n  /** Option value */\n  value: Primitive;\n\n  /** Current active state */\n  active?: boolean;\n\n  /** Disabled state */\n  disabled?: boolean;\n\n  /** Current selected state */\n  selected?: boolean;\n}\n\nexport type ComboboxOptionFactory = Factory<{\n  props: ComboboxOptionProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxOptionStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxOption = factory<ComboboxOptionFactory>((_props) => {\n  const props = useProps('ComboboxOption', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    vars,\n    onClick,\n    id,\n    active,\n    onMouseDown,\n    onMouseOver,\n    disabled,\n    selected,\n    mod,\n    ...others\n  } = props;\n\n  const ctx = useComboboxContext();\n  const uuid = useId();\n  const _id = id || uuid;\n\n  return (\n    // eslint-disable-next-line jsx-a11y/interactive-supports-focus -- Combobox uses aria-activedescendant pattern: focus stays on the target, options are highlighted via aria-activedescendant rather than DOM focus\n    <Box\n      {...ctx.getStyles('option', { className, classNames, styles, style })}\n      {...others}\n      id={_id}\n      mod={[\n        'combobox-option',\n        { 'combobox-active': active, 'combobox-disabled': disabled, 'combobox-selected': selected },\n        mod,\n      ]}\n      role=\"option\"\n      onClick={(event) => {\n        if (!disabled) {\n          ctx.onOptionSubmit?.(props.value as any, props);\n          onClick?.(event);\n        } else {\n          event.preventDefault();\n        }\n      }}\n      onMouseDown={(event) => {\n        event.preventDefault();\n        onMouseDown?.(event);\n      }}\n      onMouseOver={(event) => {\n        if (ctx.resetSelectionOnOptionHover) {\n          ctx.store.resetSelectedOption();\n        }\n        onMouseOver?.(event);\n      }}\n    />\n  );\n});\n\nComboboxOption.classes = classes;\nComboboxOption.displayName = '@mantine/core/ComboboxOption';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "mantine",
+    "option",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxOption_ComboboxOption",
+      "name": "ComboboxOption",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxOption/ComboboxOption.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxOption_ComboboxOption",
+      "name": "ComboboxOption",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxOption/ComboboxOption.tsx",
+          "content": "import { useId } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  Primitive,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxOptionStylesNames = 'option';\n\nexport interface ComboboxOptionProps\n  extends BoxProps, CompoundStylesApiProps<ComboboxOptionFactory>, ElementProps<'div'> {\n  /** Option value */\n  value: Primitive;\n\n  /** Current active state */\n  active?: boolean;\n\n  /** Disabled state */\n  disabled?: boolean;\n\n  /** Current selected state */\n  selected?: boolean;\n}\n\nexport type ComboboxOptionFactory = Factory<{\n  props: ComboboxOptionProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxOptionStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxOption = factory<ComboboxOptionFactory>((_props) => {\n  const props = useProps('ComboboxOption', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    vars,\n    onClick,\n    id,\n    active,\n    onMouseDown,\n    onMouseOver,\n    disabled,\n    selected,\n    mod,\n    ...others\n  } = props;\n\n  const ctx = useComboboxContext();\n  const uuid = useId();\n  const _id = id || uuid;\n\n  return (\n    // eslint-disable-next-line jsx-a11y/interactive-supports-focus -- Combobox uses aria-activedescendant pattern: focus stays on the target, options are highlighted via aria-activedescendant rather than DOM focus\n    <Box\n      {...ctx.getStyles('option', { className, classNames, styles, style })}\n      {...others}\n      id={_id}\n      mod={[\n        'combobox-option',\n        { 'combobox-active': active, 'combobox-disabled': disabled, 'combobox-selected': selected },\n        mod,\n      ]}\n      role=\"option\"\n      onClick={(event) => {\n        if (!disabled) {\n          ctx.onOptionSubmit?.(props.value as any, props);\n          onClick?.(event);\n        } else {\n          event.preventDefault();\n        }\n      }}\n      onMouseDown={(event) => {\n        event.preventDefault();\n        onMouseDown?.(event);\n      }}\n      onMouseOver={(event) => {\n        if (ctx.resetSelectionOnOptionHover) {\n          ctx.store.resetSelectedOption();\n        }\n        onMouseOver?.(event);\n      }}\n    />\n  );\n});\n\nComboboxOption.classes = classes;\nComboboxOption.displayName = '@mantine/core/ComboboxOption';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxOption is a combobox option UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ComboboxOption\nDescription: ComboboxOption is a combobox option UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: interactive\nTags: combobox, mantine, option, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxOption/ComboboxOption.tsx\nimport { useId } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  Primitive,\n  useProps,\n} from '../../../core';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxOptionStylesNames = 'option';\n\nexport interface ComboboxOptionProps\n  extends BoxProps, CompoundStylesApiProps<Combobox",
+  "prompt_version": 2,
+  "clean_id": "combobox-option",
+  "display_name": "Combobox Option",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxoption-comboboxoption.png"
+}

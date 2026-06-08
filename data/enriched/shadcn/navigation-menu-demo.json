@@ -1,0 +1,42 @@
+{
+  "id": "navigation-menu-demo",
+  "name": "navigation-menu-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "menu",
+    "responsive",
+    "collapsible",
+    "expandable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "navigation-menu-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## navigation-menu-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A navigation menu allows users to traverse and access multiple views or pages within an application. It typically consists of a collapsible or expandable list of menu items displayed as links or buttons. Developers would use this component to provide easy navigation for users and improve the user experience.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "compact"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: navigation-menu-demo\nDescription: A navigation menu allows users to traverse and access multiple views or pages within an application. It typically consists of a collapsible or expandable list of menu items displayed as links or buttons. Developers would use this component to provide easy navigation for users and improve the user experience.\nStyle: modern, flat, compact\nInteractions: clickable, hover\nTags: navigation, menu, responsive, collapsible, expandable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "navigation-menu-demo",
+  "display_name": "Navigation Menu Demo",
+  "preview_url": "/previews/shadcn/navigation-menu-demo.png"
+}

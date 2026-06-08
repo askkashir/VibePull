@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Fieldset_Fieldset.story",
+  "name": "Fieldset.story",
+  "source_code": "// packages/@mantine/core/src/components/Fieldset/Fieldset.story.tsx\nimport { TextInput } from '../TextInput';\nimport { Fieldset } from './Fieldset';\n\nexport default { title: 'Fieldset' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 500 }}>\n      <Fieldset legend=\"Unstyled fieldset\" variant=\"unstyled\" disabled>\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n\n      <Fieldset legend=\"Default fieldset\" variant=\"default\" mt=\"xl\">\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n\n      <Fieldset legend=\"Filled fieldset\" variant=\"filled\" mt=\"xl\">\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Fieldset_Fieldset.story",
+      "name": "Fieldset.story",
+      "path": "packages/@mantine/core/src/components/Fieldset/Fieldset.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Fieldset_Fieldset.story",
+      "name": "Fieldset.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Fieldset/Fieldset.story.tsx",
+          "content": "import { TextInput } from '../TextInput';\nimport { Fieldset } from './Fieldset';\n\nexport default { title: 'Fieldset' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40, maxWidth: 500 }}>\n      <Fieldset legend=\"Unstyled fieldset\" variant=\"unstyled\" disabled>\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n\n      <Fieldset legend=\"Default fieldset\" variant=\"default\" mt=\"xl\">\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n\n      <Fieldset legend=\"Filled fieldset\" variant=\"filled\" mt=\"xl\">\n        <TextInput label=\"Name\" placeholder=\"Name\" />\n        <TextInput label=\"Email\" placeholder=\"Email\" mt=\"md\" />\n      </Fieldset>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

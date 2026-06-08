@@ -1,0 +1,40 @@
+{
+  "id": "chart-bar-demo-legend",
+  "name": "chart-bar-demo-legend",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "legend",
+    "visualization",
+    "reporting",
+    "dashboard"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-demo-legend",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-demo-legend\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A bar chart legend component used to display key metrics in a visual format, typically used in reports and dashboards to provide clear labels and descriptions. This component can be used to explain the different data points in a bar chart, making it easier to understand for end-users. It's ideal for developers who need to provide context to their data.",
+  "style_tags": [
+    "modern",
+    "flat"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-bar-demo-legend\nDescription: A bar chart legend component used to display key metrics in a visual format, typically used in reports and dashboards to provide clear labels and descriptions. This component can be used to explain the different data points in a bar chart, making it easier to understand for end-users. It's ideal for developers who need to provide context to their data.\nStyle: modern, flat\nInteractions: static\nTags: chart, legend, visualization, reporting, dashboard\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-bar-demo-legend",
+  "display_name": "Chart Bar Demo Legend",
+  "preview_url": "/previews/shadcn/chart-bar-demo-legend.png"
+}

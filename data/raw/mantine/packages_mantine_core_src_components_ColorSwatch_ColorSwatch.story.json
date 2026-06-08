@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorSwatch_ColorSwatch.story",
+  "name": "ColorSwatch.story",
+  "source_code": "// packages/@mantine/core/src/components/ColorSwatch/ColorSwatch.story.tsx\nimport { ColorSwatch } from './ColorSwatch';\n\nexport default { title: 'ColorSwatch' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorSwatch color=\"#ff00ff\" />\n      <ColorSwatch color=\"#ff00ff\" unstyled />\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\" />\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\">$$</ColorSwatch>\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\" component=\"a\" href=\"/\">\n        $$\n      </ColorSwatch>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorSwatch_ColorSwatch.story",
+      "name": "ColorSwatch.story",
+      "path": "packages/@mantine/core/src/components/ColorSwatch/ColorSwatch.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorSwatch_ColorSwatch.story",
+      "name": "ColorSwatch.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorSwatch/ColorSwatch.story.tsx",
+          "content": "import { ColorSwatch } from './ColorSwatch';\n\nexport default { title: 'ColorSwatch' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <ColorSwatch color=\"#ff00ff\" />\n      <ColorSwatch color=\"#ff00ff\" unstyled />\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\" />\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\">$$</ColorSwatch>\n      <ColorSwatch color=\"rgba(0, 56, 13, 0.2)\" component=\"a\" href=\"/\">\n        $$\n      </ColorSwatch>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

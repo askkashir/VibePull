@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+  "name": "AvatarGroup",
+  "source_code": "// packages/@mantine/core/src/components/Avatar/AvatarGroup/AvatarGroup.tsx\nimport { createContext } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getSpacing,\n  MantineSpacing,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Avatar.module.css';\n\nexport interface AvatarGroupContextValue {\n  withinGroup: boolean;\n}\n\nexport const AvatarGroupContext = createContext<AvatarGroupContextValue>({ withinGroup: false });\n\nexport type AvatarGroupStylesNames = 'group';\nexport type AvatarGroupCssVariables = {\n  group: '--ag-spacing';\n};\n\nexport interface AvatarGroupProps\n  extends BoxProps, StylesApiProps<AvatarGroupFactory>, ElementProps<'div'> {\n  /** Negative space between Avatar components @default 'sm' */\n  spacing?: MantineSpacing;\n}\n\nexport type AvatarGroupFactory = Factory<{\n  props: AvatarGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: AvatarGroupStylesNames;\n  vars: AvatarGroupCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<AvatarGroupFactory>((_, { spacing }) => ({\n  group: {\n    '--ag-spacing': getSpacing(spacing),\n  },\n}));\n\nexport const AvatarGroup = factory<AvatarGroupFactory>((_props) => {\n  const props = useProps('AvatarGroup', null, _props);\n  const { classNames, className, style, styles, unstyled, vars, spacing, attributes, ...others } =\n    props;\n\n  const getStyles = useStyles<AvatarGroupFactory>({\n    name: 'AvatarGroup',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <AvatarGroupContext value={{ withinGroup: true }}>\n      <Box {...getStyles('group')} {...others} />\n    </AvatarGroupContext>\n  );\n});\n\nAvatarGroup.classes = classes;\nAvatarGroup.varsResolver = varsResolver;\nAvatarGroup.displayName = '@mantine/core/AvatarGroup';\n",
+  "description": "",
+  "tags": [
+    "avatar",
+    "group",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Avatar_AvatarGroup_AvatarGroup",
+      "name": "AvatarGroup",
+      "path": "packages/@mantine/core/src/components/Avatar/AvatarGroup/AvatarGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Avatar_AvatarGroup_AvatarGroup",
+      "name": "AvatarGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Avatar/AvatarGroup/AvatarGroup.tsx",
+          "content": "import { createContext } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getSpacing,\n  MantineSpacing,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Avatar.module.css';\n\nexport interface AvatarGroupContextValue {\n  withinGroup: boolean;\n}\n\nexport const AvatarGroupContext = createContext<AvatarGroupContextValue>({ withinGroup: false });\n\nexport type AvatarGroupStylesNames = 'group';\nexport type AvatarGroupCssVariables = {\n  group: '--ag-spacing';\n};\n\nexport interface AvatarGroupProps\n  extends BoxProps, StylesApiProps<AvatarGroupFactory>, ElementProps<'div'> {\n  /** Negative space between Avatar components @default 'sm' */\n  spacing?: MantineSpacing;\n}\n\nexport type AvatarGroupFactory = Factory<{\n  props: AvatarGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: AvatarGroupStylesNames;\n  vars: AvatarGroupCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<AvatarGroupFactory>((_, { spacing }) => ({\n  group: {\n    '--ag-spacing': getSpacing(spacing),\n  },\n}));\n\nexport const AvatarGroup = factory<AvatarGroupFactory>((_props) => {\n  const props = useProps('AvatarGroup', null, _props);\n  const { classNames, className, style, styles, unstyled, vars, spacing, attributes, ...others } =\n    props;\n\n  const getStyles = useStyles<AvatarGroupFactory>({\n    name: 'AvatarGroup',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <AvatarGroupContext value={{ withinGroup: true }}>\n      <Box {...getStyles('group')} {...others} />\n    </AvatarGroupContext>\n  );\n});\n\nAvatarGroup.classes = classes;\nAvatarGroup.varsResolver = varsResolver;\nAvatarGroup.displayName = '@mantine/core/AvatarGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AvatarGroup is a avatar group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AvatarGroup\nDescription: AvatarGroup is a avatar group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: avatar, group, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Avatar/AvatarGroup/AvatarGroup.tsx\nimport { createContext } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getSpacing,\n  MantineSpacing,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../Avatar.module.css';\n\nexport interface AvatarGroupContextValue {\n  withinGroup: boolean;\n}\n\nexport const AvatarGroupContext = createContext<AvatarGroupContextValue>({ withinGr",
+  "prompt_version": 2,
+  "clean_id": "avatar-group",
+  "display_name": "Avatar Group",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-avatar-avatargroup-avatargroup.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "edge-blur",
+  "name": "edge-blur",
+  "source_code": "// registry/default/ui/edge-blur.tsx\n\"use client\"\n\ninterface EdgeBlurProps {\n  position?: \"top\" | \"bottom\"\n  height?: number\n}\n\nexport function EdgeBlur({ position = \"bottom\", height = 75 }: EdgeBlurProps) {\n  const blurLayers = [1, 2, 3, 6, 12]\n\n  const isTop = position === \"top\"\n\n  return (\n    <div\n      className={`fixed inset-x-0 isolate z-40 pointer-events-none ${isTop ? \"top-0\" : \"bottom-0\"}`}\n      style={{ height }}\n    >\n      {blurLayers.map((blur) => (\n        <div\n          key={blur}\n          className=\"absolute inset-0\"\n          style={{\n            backdropFilter: `blur(${blur}px)`,\n            WebkitBackdropFilter: `blur(${blur}px)`,\n            maskImage: `linear-gradient(to ${isTop ? \"bottom\" : \"top\"}, black, transparent)`,\n            WebkitMaskImage: `linear-gradient(to ${isTop ? \"bottom\" : \"top\"}, black, transparent)`,\n          }}\n        />\n      ))}\n    </div>\n  )\n}\n\n// Convenience exports for specific positions\nexport function TopBlur({ height = 75 }: { height?: number }) {\n  return <EdgeBlur position=\"top\" height={height} />\n}\n\nexport function BottomBlur({ height = 75 }: { height?: number }) {\n  return <EdgeBlur position=\"bottom\" height={height} />\n}\n",
+  "description": "Stacked backdrop-blur layers with a gradient mask for soft top or bottom screen edges",
+  "tags": [
+    "cultui",
+    "file",
+    "registry:ui"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "edge-blur.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/edge-blur.json",
+      "sha": "cc0c32c7c1b4e3b3a035434ed26249a31f8a945a",
+      "size": 1580,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/edge-blur.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/edge-blur.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/cc0c32c7c1b4e3b3a035434ed26249a31f8a945a",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/edge-blur.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/edge-blur.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/cc0c32c7c1b4e3b3a035434ed26249a31f8a945a",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/edge-blur.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "edge-blur",
+      "type": "registry:ui",
+      "description": "Stacked backdrop-blur layers with a gradient mask for soft top or bottom screen edges",
+      "files": [
+        {
+          "path": "registry/default/ui/edge-blur.tsx",
+          "content": "\"use client\"\n\ninterface EdgeBlurProps {\n  position?: \"top\" | \"bottom\"\n  height?: number\n}\n\nexport function EdgeBlur({ position = \"bottom\", height = 75 }: EdgeBlurProps) {\n  const blurLayers = [1, 2, 3, 6, 12]\n\n  const isTop = position === \"top\"\n\n  return (\n    <div\n      className={`fixed inset-x-0 isolate z-40 pointer-events-none ${isTop ? \"top-0\" : \"bottom-0\"}`}\n      style={{ height }}\n    >\n      {blurLayers.map((blur) => (\n        <div\n          key={blur}\n          className=\"absolute inset-0\"\n          style={{\n            backdropFilter: `blur(${blur}px)`,\n            WebkitBackdropFilter: `blur(${blur}px)`,\n            maskImage: `linear-gradient(to ${isTop ? \"bottom\" : \"top\"}, black, transparent)`,\n            WebkitMaskImage: `linear-gradient(to ${isTop ? \"bottom\" : \"top\"}, black, transparent)`,\n          }}\n        />\n      ))}\n    </div>\n  )\n}\n\n// Convenience exports for specific positions\nexport function TopBlur({ height = 75 }: { height?: number }) {\n  return <EdgeBlur position=\"top\" height={height} />\n}\n\nexport function BottomBlur({ height = 75 }: { height?: number }) {\n  return <EdgeBlur position=\"bottom\" height={height} />\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "confetti-fireworks",
+  "name": "Confetti Fireworks",
+  "source_code": "\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiFireworks() {\n  const handleClick = () => {\n    const duration = 5 * 1000\n    const animationEnd = Date.now() + duration\n    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 }\n\n    const randomInRange = (min: number, max: number) =>\n      Math.random() * (max - min) + min\n\n    const interval = window.setInterval(() => {\n      const timeLeft = animationEnd - Date.now()\n\n      if (timeLeft <= 0) {\n        return clearInterval(interval)\n      }\n\n      const particleCount = 50 * (timeLeft / duration)\n      confetti({\n        ...defaults,\n        particleCount,\n        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },\n      })\n      confetti({\n        ...defaults,\n        particleCount,\n        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },\n      })\n    }, 250)\n  }\n\n  return (\n    <div className=\"relative\">\n      <Button onClick={handleClick}>Trigger Fireworks</Button>\n    </div>\n  )\n}\n",
+  "description": "Example showing fireworks-style confetti animation.",
+  "tags": [
+    "fireworks",
+    "confetti",
+    "button",
+    "celebratory",
+    "attention-grabbing"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "confetti-fireworks",
+      "type": "registry:example",
+      "title": "Confetti Fireworks",
+      "description": "Example showing fireworks-style confetti animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-fireworks.tsx",
+          "type": "registry:example",
+          "target": "components/confetti-fireworks.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "confetti-fireworks",
+      "type": "registry:example",
+      "title": "Confetti Fireworks",
+      "description": "Example showing fireworks-style confetti animation.",
+      "registryDependencies": [
+        "@magicui/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-fireworks.tsx",
+          "content": "\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiFireworks() {\n  const handleClick = () => {\n    const duration = 5 * 1000\n    const animationEnd = Date.now() + duration\n    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 }\n\n    const randomInRange = (min: number, max: number) =>\n      Math.random() * (max - min) + min\n\n    const interval = window.setInterval(() => {\n      const timeLeft = animationEnd - Date.now()\n\n      if (timeLeft <= 0) {\n        return clearInterval(interval)\n      }\n\n      const particleCount = 50 * (timeLeft / duration)\n      confetti({\n        ...defaults,\n        particleCount,\n        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },\n      })\n      confetti({\n        ...defaults,\n        particleCount,\n        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },\n      })\n    }, 250)\n  }\n\n  return (\n    <div className=\"relative\">\n      <Button onClick={handleClick}>Trigger Fireworks</Button>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A button that triggers confetti fireworks when clicked, creating a celebratory effect. Typically used to add a touch of festivity to an application. Can be applied to elements that require a celebratory or attention-grabbing UI element.",
+  "style_tags": [
+    "dynamic",
+    "animated"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Confetti Fireworks\nDescription: A button that triggers confetti fireworks when clicked, creating a celebratory effect. Typically used to add a touch of festivity to an application. Can be applied to elements that require a celebratory or attention-grabbing UI element.\nStyle: dynamic, animated\nInteractions: clickable\nTags: fireworks, confetti, button, celebratory, attention-grabbing\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiFireworks() {\n  const handleClick = () => {\n    const duration = 5 * 1000\n    const animationEnd = Date.now() + duration\n    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 }\n\n    const randomInRange = (min: number, max: number) =>\n      Math.random() * (max - min) + min\n\n    const interval = window.setInterval(() => {\n      const timeLeft",
+  "prompt_version": 2,
+  "clean_id": "confetti-fireworks",
+  "display_name": "Confetti Fireworks",
+  "preview_url": "/previews/magicui/confetti-fireworks.png"
+}

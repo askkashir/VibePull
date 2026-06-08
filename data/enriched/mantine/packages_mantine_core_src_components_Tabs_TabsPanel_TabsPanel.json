@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Tabs_TabsPanel_TabsPanel",
+  "name": "TabsPanel",
+  "source_code": "// packages/@mantine/core/src/components/Tabs/TabsPanel/TabsPanel.tsx\nimport { Activity } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useMantineEnv,\n  useProps,\n} from '../../../core';\nimport { useTabsContext } from '../Tabs.context';\nimport classes from '../Tabs.module.css';\n\nexport type TabsPanelStylesNames = 'panel';\n\nexport interface TabsPanelProps\n  extends BoxProps, CompoundStylesApiProps<TabsPanelFactory>, ElementProps<'div'> {\n  /** Panel content */\n  children: React.ReactNode;\n\n  /** If set, the content is kept mounted, even if `keepMounted` is set `false` in the parent `Tabs` component */\n  keepMounted?: boolean;\n\n  /** Value of associated control */\n  value: string;\n}\n\nexport type TabsPanelFactory = Factory<{\n  props: TabsPanelProps;\n  ref: HTMLDivElement;\n  stylesNames: TabsPanelStylesNames;\n  compound: true;\n}>;\n\nexport const TabsPanel = factory<TabsPanelFactory>((_props) => {\n  const props = useProps('TabsPanel', null, _props);\n  const { children, className, value, classNames, styles, style, mod, keepMounted, ...others } =\n    props;\n\n  const env = useMantineEnv();\n  const ctx = useTabsContext();\n\n  const active = ctx.value === value;\n  const shouldKeepMounted = ctx.keepMounted || keepMounted;\n  const useActivity = ctx.keepMountedMode !== 'display-none';\n  const content =\n    shouldKeepMounted && useActivity && env !== 'test' ? (\n      <Activity mode={active ? 'visible' : 'hidden'}>{children}</Activity>\n    ) : shouldKeepMounted ? (\n      children\n    ) : active ? (\n      children\n    ) : null;\n\n  return (\n    <Box\n      {...ctx.getStyles('panel', {\n        className,\n        classNames,\n        styles,\n        style: [style, !active ? { display: 'none' } : undefined],\n        props,\n      })}\n      mod={[{ orientation: ctx.orientation }, mod]}\n      role=\"tabpanel\"\n      id={ctx.getPanelId(value)}\n      aria-labelledby={ctx.getTabId(value)}\n      {...others}\n    >\n      {content}\n    </Box>\n  );\n});\n\nTabsPanel.classes = classes;\nTabsPanel.displayName = '@mantine/core/TabsPanel';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "panel",
+    "tabs"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tabs_TabsPanel_TabsPanel",
+      "name": "TabsPanel",
+      "path": "packages/@mantine/core/src/components/Tabs/TabsPanel/TabsPanel.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tabs_TabsPanel_TabsPanel",
+      "name": "TabsPanel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tabs/TabsPanel/TabsPanel.tsx",
+          "content": "import { Activity } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useMantineEnv,\n  useProps,\n} from '../../../core';\nimport { useTabsContext } from '../Tabs.context';\nimport classes from '../Tabs.module.css';\n\nexport type TabsPanelStylesNames = 'panel';\n\nexport interface TabsPanelProps\n  extends BoxProps, CompoundStylesApiProps<TabsPanelFactory>, ElementProps<'div'> {\n  /** Panel content */\n  children: React.ReactNode;\n\n  /** If set, the content is kept mounted, even if `keepMounted` is set `false` in the parent `Tabs` component */\n  keepMounted?: boolean;\n\n  /** Value of associated control */\n  value: string;\n}\n\nexport type TabsPanelFactory = Factory<{\n  props: TabsPanelProps;\n  ref: HTMLDivElement;\n  stylesNames: TabsPanelStylesNames;\n  compound: true;\n}>;\n\nexport const TabsPanel = factory<TabsPanelFactory>((_props) => {\n  const props = useProps('TabsPanel', null, _props);\n  const { children, className, value, classNames, styles, style, mod, keepMounted, ...others } =\n    props;\n\n  const env = useMantineEnv();\n  const ctx = useTabsContext();\n\n  const active = ctx.value === value;\n  const shouldKeepMounted = ctx.keepMounted || keepMounted;\n  const useActivity = ctx.keepMountedMode !== 'display-none';\n  const content =\n    shouldKeepMounted && useActivity && env !== 'test' ? (\n      <Activity mode={active ? 'visible' : 'hidden'}>{children}</Activity>\n    ) : shouldKeepMounted ? (\n      children\n    ) : active ? (\n      children\n    ) : null;\n\n  return (\n    <Box\n      {...ctx.getStyles('panel', {\n        className,\n        classNames,\n        styles,\n        style: [style, !active ? { display: 'none' } : undefined],\n        props,\n      })}\n      mod={[{ orientation: ctx.orientation }, mod]}\n      role=\"tabpanel\"\n      id={ctx.getPanelId(value)}\n      aria-labelledby={ctx.getTabId(value)}\n      {...others}\n    >\n      {content}\n    </Box>\n  );\n});\n\nTabsPanel.classes = classes;\nTabsPanel.displayName = '@mantine/core/TabsPanel';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TabsPanel is a tabs panel UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: TabsPanel\nDescription: TabsPanel is a tabs panel UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: mantine, other, panel, tabs\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Tabs/TabsPanel/TabsPanel.tsx\nimport { Activity } from 'react';\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useMantineEnv,\n  useProps,\n} from '../../../core';\nimport { useTabsContext } from '../Tabs.context';\nimport classes from '../Tabs.module.css';\n\nexport type TabsPanelStylesNames = 'panel';\n\nexport interface TabsPanelProps\n  extends BoxProps, CompoundStylesApiProps<TabsPanelFactory>, ElementProps<'div'>",
+  "prompt_version": 2,
+  "clean_id": "tabs-panel",
+  "display_name": "Tabs Panel",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tabs-tabspanel-tabspanel.png"
+}

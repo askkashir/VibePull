@@ -1,0 +1,42 @@
+{
+  "id": "sidebar-01",
+  "name": "sidebar-01",
+  "source_code": "",
+  "description": "A simple sidebar with navigation grouped by section.",
+  "tags": [
+    "navigation",
+    "sidepanel",
+    "dashboard",
+    "application",
+    "feature-groups"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-01",
+      "type": "registry:block",
+      "description": "A simple sidebar with navigation grouped by section.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-01\n\nA simple sidebar with navigation grouped by section.\n\n**Type:** registry:block\n**Files:** 4 file(s)"
+  },
+  "visual_summary": "A simple, collapsible sidebar that displays navigation grouped by sections, ideal for dashboards and applications with multiple features. It can be used within applications to provide easy access to main features, settings, or other important sections. The layout is clean and minimal, making it perfect for a variety of layouts.",
+  "style_tags": [
+    "minimal",
+    "material"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: sidebar-01\nDescription: A simple, collapsible sidebar that displays navigation grouped by sections, ideal for dashboards and applications with multiple features. It can be used within applications to provide easy access to main features, settings, or other important sections. The layout is clean and minimal, making it perfect for a variety of layouts.\nStyle: minimal, material\nInteractions: hover, clickable\nTags: navigation, sidepanel, dashboard, application, feature-groups\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-01",
+  "display_name": "Sidebar 01",
+  "preview_url": "/previews/shadcn/sidebar-01.png"
+}

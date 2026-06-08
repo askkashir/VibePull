@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_time-field_time-field",
+  "name": "time-field",
+  "source_code": "// packages/react/src/components/time-field/time-field.tsx\n\"use client\";\n\nimport type {TimeFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TimeValue} from \"react-aria-components/TimeField\";\n\nimport {timeFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {TimeField as TimeFieldPrimitive} from \"react-aria-components/TimeField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TimeField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TimeFieldRootProps<T extends TimeValue>\n  extends ComponentPropsWithRef<typeof TimeFieldPrimitive<T>>, TimeFieldVariants {}\n\nfunction TimeFieldRoot<T extends TimeValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: TimeFieldRootProps<T>) {\n  const styles = React.useMemo(() => timeFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TimeFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"time-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </TimeFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TimeFieldRoot};\n\nexport type {TimeFieldRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "time-field_time-field",
+      "name": "time-field",
+      "path": "packages/react/src/components/time-field/time-field.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_time-field_time-field",
+      "name": "time-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/time-field/time-field.tsx",
+          "content": "\"use client\";\n\nimport type {TimeFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TimeValue} from \"react-aria-components/TimeField\";\n\nimport {timeFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {TimeField as TimeFieldPrimitive} from \"react-aria-components/TimeField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TimeField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface TimeFieldRootProps<T extends TimeValue>\n  extends ComponentPropsWithRef<typeof TimeFieldPrimitive<T>>, TimeFieldVariants {}\n\nfunction TimeFieldRoot<T extends TimeValue>({\n  children,\n  className,\n  fullWidth,\n  ...props\n}: TimeFieldRootProps<T>) {\n  const styles = React.useMemo(() => timeFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <TimeFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"time-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </TimeFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TimeFieldRoot};\n\nexport type {TimeFieldRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

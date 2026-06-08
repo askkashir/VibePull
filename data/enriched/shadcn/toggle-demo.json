@@ -1,0 +1,42 @@
+{
+  "id": "toggle-demo",
+  "name": "toggle-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "switch",
+    "preferences",
+    "settings"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A toggle switch component that can be used to enable or disable a feature on/off state. Developers can use this component when they need to provide users with an easy toggling mechanism. It is commonly used in preference settings or to manage feature toggles.",
+  "style_tags": [
+    "default",
+    "rounded",
+    "filled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-demo\nDescription: A toggle switch component that can be used to enable or disable a feature on/off state. Developers can use this component when they need to provide users with an easy toggling mechanism. It is commonly used in preference settings or to manage feature toggles.\nStyle: default, rounded, filled\nInteractions: animated, clickable, hover\nTags: toggle, switch, preferences, settings\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-demo",
+  "display_name": "Toggle Demo",
+  "preview_url": "/previews/shadcn/toggle-demo.png"
+}

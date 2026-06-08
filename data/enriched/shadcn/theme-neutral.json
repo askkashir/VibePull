@@ -1,0 +1,37 @@
+{
+  "id": "theme-neutral",
+  "name": "theme-neutral",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "neutral",
+    "container",
+    "base"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "theme-neutral",
+      "type": "registry:theme",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:theme"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## theme-neutral\n**Type:** registry:theme"
+  },
+  "visual_summary": "The theme-neutral component is a versatile container that can be applied to any element to remove distracting background color and emphasize the component's content, suitable for backgrounds where the base color is already sufficient.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [
+    "non-animated"
+  ],
+  "component_type": "container",
+  "generation_prompt": "Create a production-ready container component with the following characteristics:\n\nName: theme-neutral\nDescription: The theme-neutral component is a versatile container that can be applied to any element to remove distracting background color and emphasize the component's content, suitable for backgrounds where the base color is already sufficient.\nStyle: e.g. minimal\nInteractions: non-animated\nTags: neutral, container, base\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "theme-neutral",
+  "display_name": "Theme Neutral",
+  "preview_url": "/previews/shadcn/theme-neutral.png"
+}

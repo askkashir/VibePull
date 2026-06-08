@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_label_label",
+  "name": "label",
+  "source_code": "// packages/react/src/components/label/label.tsx\n\"use client\";\n\nimport type {LabelVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {labelVariants} from \"@heroui/styles\";\nimport {Label as LabelPrimitive} from \"react-aria-components/Label\";\n\n/* -------------------------------------------------------------------------------------------------\n * Label Root\n * -----------------------------------------------------------------------------------------------*/\ninterface LabelRootProps extends ComponentPropsWithRef<typeof LabelPrimitive>, LabelVariants {}\n\nconst LabelRoot = ({\n  children,\n  className,\n  isDisabled,\n  isInvalid,\n  isRequired,\n  ...rest\n}: LabelRootProps) => {\n  return (\n    <LabelPrimitive\n      className={labelVariants({isRequired, isDisabled, isInvalid, className})}\n      data-slot=\"label\"\n      {...rest}\n    >\n      {children}\n    </LabelPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {LabelRoot};\n\nexport type {LabelRootProps};\n",
+  "description": "",
+  "tags": [
+    "form",
+    "accessibility",
+    "styling"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "label_label",
+      "name": "label",
+      "path": "packages/react/src/components/label/label.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_label_label",
+      "name": "label",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/label/label.tsx",
+          "content": "\"use client\";\n\nimport type {LabelVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {labelVariants} from \"@heroui/styles\";\nimport {Label as LabelPrimitive} from \"react-aria-components/Label\";\n\n/* -------------------------------------------------------------------------------------------------\n * Label Root\n * -----------------------------------------------------------------------------------------------*/\ninterface LabelRootProps extends ComponentPropsWithRef<typeof LabelPrimitive>, LabelVariants {}\n\nconst LabelRoot = ({\n  children,\n  className,\n  isDisabled,\n  isInvalid,\n  isRequired,\n  ...rest\n}: LabelRootProps) => {\n  return (\n    <LabelPrimitive\n      className={labelVariants({isRequired, isDisabled, isInvalid, className})}\n      data-slot=\"label\"\n      {...rest}\n    >\n      {children}\n    </LabelPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {LabelRoot};\n\nexport type {LabelRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Label component displays its children content and supports various styling and accessibility options. Developers use it when needing a label for elements such as form inputs or icons. It's used in a static context as a visual cue.",
+  "style_tags": [
+    "neutral",
+    "simple",
+    "accessible"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: label\nDescription: The Label component displays its children content and supports various styling and accessibility options. Developers use it when needing a label for elements such as form inputs or icons. It's used in a static context as a visual cue.\nStyle: neutral, simple, accessible\nInteractions: \nTags: form, accessibility, styling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/label/label.tsx\n\"use client\";\n\nimport type {LabelVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {labelVariants} from \"@heroui/styles\";\nimport {Label as LabelPrimitive} from \"react-aria-components/Label\";\n\n/* -------------------------------------------------------------------------------------------------\n * Label Root\n * -----------------------------------------------------------------------------------------------*/\nin",
+  "prompt_version": 2,
+  "clean_id": "label",
+  "display_name": "Label",
+  "preview_url": "/previews/heroui/packages-react-src-components-label-label.png"
+}

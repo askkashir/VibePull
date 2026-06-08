@@ -1,0 +1,50 @@
+{
+  "id": "text",
+  "name": "text",
+  "source_code": "// src/components/ui/text.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "text",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/text.tsx",
+          "type": "registry:ui",
+          "exports": "export { Text, type TextProps } from './text'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "text-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "text",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/text.tsx",
+          "type": "registry:ui",
+          "exports": "export { Text, type TextProps } from './text'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { type TextVariantProps, text } from 'styled-system/recipes'\nimport type { StyledComponent } from 'styled-system/types'\n\ntype Props = TextVariantProps & { as?: React.ElementType }\n\nexport type TextProps = ComponentProps<typeof Text>\nexport const Text = styled('p', text) as StyledComponent<'p', Props>\n"
+        }
+      ],
+      "registryDependencies": [
+        "text-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

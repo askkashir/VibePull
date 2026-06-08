@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_NativeScrollArea",
+  "name": "NativeScrollArea",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx\ninterface NativeScrollAreaProps {\n  children: React.ReactNode;\n}\n\nexport function NativeScrollArea({ children }: NativeScrollAreaProps) {\n  return <>{children}</>;\n}\n",
+  "description": "",
+  "tags": [
+    "scroll",
+    "native",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_NativeScrollArea",
+      "name": "NativeScrollArea",
+      "path": "packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_NativeScrollArea",
+      "name": "NativeScrollArea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx",
+          "content": "interface NativeScrollAreaProps {\n  children: React.ReactNode;\n}\n\nexport function NativeScrollArea({ children }: NativeScrollAreaProps) {\n  return <>{children}</>;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A native scroll area component. This component can be used as a wrapper for any content to provide native scrolling functionality, often used within modals or other containers to manage overflow content.",
+  "style_tags": [
+    "native",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: NativeScrollArea\nDescription: A native scroll area component. This component can be used as a wrapper for any content to provide native scrolling functionality, often used within modals or other containers to manage overflow content.\nStyle: native, minimal\nInteractions: \nTags: scroll, native, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/NativeScrollArea.tsx\ninterface NativeScrollAreaProps {\n  children: React.ReactNode;\n}\n\nexport function NativeScrollArea({ children }: NativeScrollAreaProps) {\n  return <>{children}</>;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "native-scroll-area",
+  "display_name": "Native Scroll Area",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-nativescrollarea.png"
+}

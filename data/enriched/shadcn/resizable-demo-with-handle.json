@@ -1,0 +1,40 @@
+{
+  "id": "resizable-demo-with-handle",
+  "name": "resizable-demo-with-handle",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "demo",
+    "resize",
+    "container",
+    "flexible",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "resizable-demo-with-handle",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## resizable-demo-with-handle\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Resizable demo with handle is a container component that allows users to resize its content by dragging a handle. It is typically used when showcasing or demonstrating the resizing feature on a webpage. This component can be used in various applications that require flexible content or layout adjustments.",
+  "style_tags": [
+    "modern",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "draggable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: resizable-demo-with-handle\nDescription: Resizable demo with handle is a container component that allows users to resize its content by dragging a handle. It is typically used when showcasing or demonstrating the resizing feature on a webpage. This component can be used in various applications that require flexible content or layout adjustments.\nStyle: modern, customizable\nInteractions: draggable\nTags: demo, resize, container, flexible, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "resizable-demo-with-handle",
+  "display_name": "Resizable Demo With Handle",
+  "preview_url": "/previews/shadcn/resizable-demo-with-handle.png"
+}

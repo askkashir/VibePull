@@ -1,0 +1,61 @@
+{
+  "id": "feature-carousel-demo",
+  "name": "feature-carousel-demo",
+  "source_code": "// registry/default/example/feature-carousel-demo.tsx\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { FeatureCarousel } from \"../ui/feature-carousel\"\n\nexport default function FeatureCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-5xl mx-auto\">\n      <div className=\"rounded-[34px] bg-neutral-700 p-2\">\n        <div className=\"relative z-10 grid w-full gap-8 rounded-[28px] bg-neutral-950 p-2\">\n          <FeatureCarousel\n            title=\"Interactive Feature Demo\"\n            description=\"Showcase your features with smooth animations and transitions\"\n            // Example classes for responsive layout\n            step1img1Class={cn(\n              \"pointer-events-none w-[50%] border border-stone-100/10 transition-all duration-500 dark:border-stone-700/50\",\n              \"max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[25%] top-[57%] md:left-[35px] md:top-[29%]\",\n              \"md:group-hover:translate-y-2\"\n            )}\n            step1img2Class={cn(\n              \"pointer-events-none w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden\",\n              \"max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[21%] md:left-[calc(50%+35px+1rem)]\",\n              \"md:group-hover:-translate-y-6\"\n            )}\n            step2img1Class={cn(\n              \"pointer-events-none w-[50%] rounded-t-[24px] overflow-hidden border border-stone-100/10 transition-all duration-500 dark:border-stone-700\",\n              \"max-md:scale-[160%] left-[25%] top-[69%] md:left-[35px] md:top-[30%]\",\n              \"md:group-hover:translate-y-2\"\n            )}\n            step2img2Class={cn(\n              \"pointer-events-none w-[40%] rounded-t-[24px] border border-stone-100/10 dark:border-stone-700 transition-all duration-500 rounded-2xl overflow-hidden\",\n              \"max-md:scale-[140%] left-[70%] top-[53%] md:top-[25%] md:left-[calc(50%+27px+1rem)]\",\n              \"md:group-hover:-translate-y-6\"\n            )}\n            step3imgClass={cn(\n              \"pointer-events-none w-[90%] border border-stone-100/10 dark:border-stone-700 rounded-t-[24px] transition-all duration-500 overflow-hidden\",\n              \"left-[5%] top-[50%] md:top-[30%] md:left-[68px]\"\n            )}\n            step4imgClass={cn(\n              \"pointer-events-none w-[90%] border border-stone-100/10 dark:border-stone-700 rounded-t-[24px] transition-all duration-500 overflow-hidden\",\n              \"left-[5%] top-[50%] md:top-[30%] md:left-[68px]\"\n            )}\n            // Example images\n            image={{\n              step1light1: \"/feature-1.png\",\n              step1light2: \"/feature-2.png\",\n              step2light1: \"/feature-3.png\",\n              step2light2: \"/feature-4.png\",\n              step3light: \"/feature-2.png\",\n              step4light: \"/feature-5.png\",\n              alt: \"Feature demonstration\",\n            }}\n            // Card styling\n            bgClass=\"bg-gradient-to-tr from-neutral-900/90 to-neutral-800/90\"\n          />\n        </div>\n      </div>\n    </div>\n  )\n}\n\n// Add metadata for the registry\n// export const metadata = {\n//   title: \"Feature Carousel\",\n//   description:\n//     \"An animated carousel component that showcases features with smooth transitions and interactive elements.\",\n//   component: FeatureCarouselDemo,\n//   source: \"https://github.com/your-repo/components/animate/feature-card.tsx\",\n// }\n",
+  "description": "",
+  "tags": [
+    "feature",
+    "carousel",
+    "demo"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "feature-carousel-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/feature-carousel-demo.json",
+      "sha": "fb22de5a3274ea0c98edb10320bf3deba0dd788e",
+      "size": 3884,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/feature-carousel-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/feature-carousel-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/fb22de5a3274ea0c98edb10320bf3deba0dd788e",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/feature-carousel-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/feature-carousel-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/fb22de5a3274ea0c98edb10320bf3deba0dd788e",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/feature-carousel-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "feature-carousel-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "feature-carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/feature-carousel-demo.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { FeatureCarousel } from \"../ui/feature-carousel\"\n\nexport default function FeatureCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-5xl mx-auto\">\n      <div className=\"rounded-[34px] bg-neutral-700 p-2\">\n        <div className=\"relative z-10 grid w-full gap-8 rounded-[28px] bg-neutral-950 p-2\">\n          <FeatureCarousel\n            title=\"Interactive Feature Demo\"\n            description=\"Showcase your features with smooth animations and transitions\"\n            // Example classes for responsive layout\n            step1img1Class={cn(\n              \"pointer-events-none w-[50%] border border-stone-100/10 transition-all duration-500 dark:border-stone-700/50\",\n              \"max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[25%] top-[57%] md:left-[35px] md:top-[29%]\",\n              \"md:group-hover:translate-y-2\"\n            )}\n            step1img2Class={cn(\n              \"pointer-events-none w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden\",\n              \"max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[21%] md:left-[calc(50%+35px+1rem)]\",\n              \"md:group-hover:-translate-y-6\"\n            )}\n            step2img1Class={cn(\n              \"pointer-events-none w-[50%] rounded-t-[24px] overflow-hidden border border-stone-100/10 transition-all duration-500 dark:border-stone-700\",\n              \"max-md:scale-[160%] left-[25%] top-[69%] md:left-[35px] md:top-[30%]\",\n              \"md:group-hover:translate-y-2\"\n            )}\n            step2img2Class={cn(\n              \"pointer-events-none w-[40%] rounded-t-[24px] border border-stone-100/10 dark:border-stone-700 transition-all duration-500 rounded-2xl overflow-hidden\",\n              \"max-md:scale-[140%] left-[70%] top-[53%] md:top-[25%] md:left-[calc(50%+27px+1rem)]\",\n              \"md:group-hover:-translate-y-6\"\n            )}\n            step3imgClass={cn(\n              \"pointer-events-none w-[90%] border border-stone-100/10 dark:border-stone-700 rounded-t-[24px] transition-all duration-500 overflow-hidden\",\n              \"left-[5%] top-[50%] md:top-[30%] md:left-[68px]\"\n            )}\n            step4imgClass={cn(\n              \"pointer-events-none w-[90%] border border-stone-100/10 dark:border-stone-700 rounded-t-[24px] transition-all duration-500 overflow-hidden\",\n              \"left-[5%] top-[50%] md:top-[30%] md:left-[68px]\"\n            )}\n            // Example images\n            image={{\n              step1light1: \"/feature-1.png\",\n              step1light2: \"/feature-2.png\",\n              step2light1: \"/feature-3.png\",\n              step2light2: \"/feature-4.png\",\n              step3light: \"/feature-2.png\",\n              step4light: \"/feature-5.png\",\n              alt: \"Feature demonstration\",\n            }}\n            // Card styling\n            bgClass=\"bg-gradient-to-tr from-neutral-900/90 to-neutral-800/90\"\n          />\n        </div>\n      </div>\n    </div>\n  )\n}\n\n// Add metadata for the registry\n// export const metadata = {\n//   title: \"Feature Carousel\",\n//   description:\n//     \"An animated carousel component that showcases features with smooth transitions and interactive elements.\",\n//   component: FeatureCarouselDemo,\n//   source: \"https://github.com/your-repo/components/animate/feature-card.tsx\",\n// }\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A feature carousel demo with image transitions and animations, intended to showcase features on a webpage with smooth user experience",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [
+    "animated",
+    "responsive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: feature-carousel-demo\nDescription: A feature carousel demo with image transitions and animations, intended to showcase features on a webpage with smooth user experience\nStyle: modern\nInteractions: animated, responsive\nTags: feature, carousel, demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/feature-carousel-demo.tsx\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { FeatureCarousel } from \"../ui/feature-carousel\"\n\nexport default function FeatureCarouselDemo() {\n  return (\n    <div className=\"w-full max-w-5xl mx-auto\">\n      <div className=\"rounded-[34px] bg-neutral-700 p-2\">\n        <div className=\"relative z-10 grid w-full gap-8 rounded-[28px] bg-neutral-950 p-2\">\n          <FeatureCarousel\n            title=\"Interactive Feature Demo\"\n            ",
+  "prompt_version": 2,
+  "clean_id": "feature-carousel-demo",
+  "display_name": "Feature Carousel Demo",
+  "preview_url": "/previews/cultui/feature-carousel-demo.png"
+}

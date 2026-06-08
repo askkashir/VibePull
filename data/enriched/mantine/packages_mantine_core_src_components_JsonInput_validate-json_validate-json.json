@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_JsonInput_validate-json_validate-json",
+  "name": "validate-json",
+  "source_code": "// packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts\nexport function validateJson(value: string, deserialize: typeof JSON.parse) {\n  if (typeof value === 'string' && value.trim().length === 0) {\n    return true;\n  }\n\n  try {\n    deserialize(value);\n    return true;\n  } catch (e) {\n    return false;\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "validation",
+    "utility"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "JsonInput_validate-json_validate-json",
+      "name": "validate-json",
+      "path": "packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_JsonInput_validate-json_validate-json",
+      "name": "validate-json",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts",
+          "content": "export function validateJson(value: string, deserialize: typeof JSON.parse) {\n  if (typeof value === 'string' && value.trim().length === 0) {\n    return true;\n  }\n\n  try {\n    deserialize(value);\n    return true;\n  } catch (e) {\n    return false;\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A utility function to check if a JSON string is valid. It returns true if the input string is empty or valid JSON, false otherwise.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "utility",
+  "generation_prompt": "Create a production-ready utility component with the following characteristics:\n\nName: validate-json\nDescription: A utility function to check if a JSON string is valid. It returns true if the input string is empty or valid JSON, false otherwise.\nStyle: \nInteractions: \nTags: input, validation, utility\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/JsonInput/validate-json/validate-json.ts\nexport function validateJson(value: string, deserialize: typeof JSON.parse) {\n  if (typeof value === 'string' && value.trim().length === 0) {\n    return true;\n  }\n\n  try {\n    deserialize(value);\n    return true;\n  } catch (e) {\n    return false;\n  }\n}\n",
+  "prompt_version": 2,
+  "clean_id": "validate-json",
+  "display_name": "Validate Json",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-jsoninput-validate-json-validate-json.png"
+}

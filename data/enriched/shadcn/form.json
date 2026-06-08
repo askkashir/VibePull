@@ -1,0 +1,26 @@
+{
+  "id": "form",
+  "name": "form",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:ui"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui, @hookform/resolvers, zod, react-hook-form"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called form. It should be: . Component type: registry:ui. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "form",
+  "display_name": "Form"
+}

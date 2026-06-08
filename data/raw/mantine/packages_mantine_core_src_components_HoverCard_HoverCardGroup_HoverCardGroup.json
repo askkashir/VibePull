@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_HoverCard_HoverCardGroup_HoverCardGroup",
+  "name": "HoverCardGroup",
+  "source_code": "// packages/@mantine/core/src/components/HoverCard/HoverCardGroup/HoverCardGroup.tsx\nimport { createContext } from 'react';\nimport { FloatingDelayGroup } from '@floating-ui/react';\nimport { ExtendComponent, Factory, MantineThemeComponent, useProps } from '../../../core';\n\nexport interface HoverCardGroupContextValue {\n  withinGroup: boolean;\n}\n\nexport const HoverCardGroupContext = createContext<HoverCardGroupContextValue>({\n  withinGroup: false,\n});\n\nexport interface HoverCardGroupProps {\n  /** `HoverCard` components */\n  children: React.ReactNode;\n\n  /** Open delay in ms */\n  openDelay?: number;\n\n  /** Close delay in ms */\n  closeDelay?: number;\n}\n\nconst defaultProps = {\n  openDelay: 0,\n  closeDelay: 0,\n} satisfies Partial<HoverCardGroupProps>;\n\nexport function HoverCardGroup(props: HoverCardGroupProps) {\n  const { openDelay, closeDelay, children } = useProps('HoverCardGroup', defaultProps, props);\n\n  return (\n    <HoverCardGroupContext value={{ withinGroup: true }}>\n      <FloatingDelayGroup delay={{ open: openDelay, close: closeDelay }}>\n        {children}\n      </FloatingDelayGroup>\n    </HoverCardGroupContext>\n  );\n}\n\nexport type HoverCardGroupFactory = Factory<{\n  props: HoverCardGroupProps;\n}>;\n\nHoverCardGroup.displayName = '@mantine/core/HoverCardGroup';\nHoverCardGroup.extend = (c: ExtendComponent<HoverCardGroupFactory>): MantineThemeComponent => c;\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "HoverCard_HoverCardGroup_HoverCardGroup",
+      "name": "HoverCardGroup",
+      "path": "packages/@mantine/core/src/components/HoverCard/HoverCardGroup/HoverCardGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_HoverCard_HoverCardGroup_HoverCardGroup",
+      "name": "HoverCardGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/HoverCard/HoverCardGroup/HoverCardGroup.tsx",
+          "content": "import { createContext } from 'react';\nimport { FloatingDelayGroup } from '@floating-ui/react';\nimport { ExtendComponent, Factory, MantineThemeComponent, useProps } from '../../../core';\n\nexport interface HoverCardGroupContextValue {\n  withinGroup: boolean;\n}\n\nexport const HoverCardGroupContext = createContext<HoverCardGroupContextValue>({\n  withinGroup: false,\n});\n\nexport interface HoverCardGroupProps {\n  /** `HoverCard` components */\n  children: React.ReactNode;\n\n  /** Open delay in ms */\n  openDelay?: number;\n\n  /** Close delay in ms */\n  closeDelay?: number;\n}\n\nconst defaultProps = {\n  openDelay: 0,\n  closeDelay: 0,\n} satisfies Partial<HoverCardGroupProps>;\n\nexport function HoverCardGroup(props: HoverCardGroupProps) {\n  const { openDelay, closeDelay, children } = useProps('HoverCardGroup', defaultProps, props);\n\n  return (\n    <HoverCardGroupContext value={{ withinGroup: true }}>\n      <FloatingDelayGroup delay={{ open: openDelay, close: closeDelay }}>\n        {children}\n      </FloatingDelayGroup>\n    </HoverCardGroupContext>\n  );\n}\n\nexport type HoverCardGroupFactory = Factory<{\n  props: HoverCardGroupProps;\n}>;\n\nHoverCardGroup.displayName = '@mantine/core/HoverCardGroup';\nHoverCardGroup.extend = (c: ExtendComponent<HoverCardGroupFactory>): MantineThemeComponent => c;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

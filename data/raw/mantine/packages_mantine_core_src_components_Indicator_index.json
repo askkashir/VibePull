@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Indicator_index",
+  "name": "Indicator",
+  "source_code": "// packages/@mantine/core/src/components/Indicator/index.ts\nimport type {\n  IndicatorCssVariables,\n  IndicatorFactory,\n  IndicatorPositionVariables,\n  IndicatorProps,\n  IndicatorStylesNames,\n} from './Indicator';\n\nexport { Indicator } from './Indicator';\n\nexport type {\n  IndicatorProps,\n  IndicatorStylesNames,\n  IndicatorCssVariables,\n  IndicatorFactory,\n  IndicatorPositionVariables,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Indicator_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Indicator/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Indicator_index",
+      "name": "Indicator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Indicator/index.ts",
+          "content": "import type {\n  IndicatorCssVariables,\n  IndicatorFactory,\n  IndicatorPositionVariables,\n  IndicatorProps,\n  IndicatorStylesNames,\n} from './Indicator';\n\nexport { Indicator } from './Indicator';\n\nexport type {\n  IndicatorProps,\n  IndicatorStylesNames,\n  IndicatorCssVariables,\n  IndicatorFactory,\n  IndicatorPositionVariables,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

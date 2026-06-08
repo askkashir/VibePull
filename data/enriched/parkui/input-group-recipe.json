@@ -1,0 +1,58 @@
+{
+  "id": "input-group-recipe",
+  "name": "input-group-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/input-group.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const inputGroup = defineSlotRecipe({\n  className: 'input-group',\n  slots: ['root', 'element'],\n  base: {\n    root: {\n      position: 'relative',\n      width: 'full',\n    },\n    element: {\n      alignItems: 'center',\n      color: 'fg.muted',\n      display: 'flex',\n      height: 'full',\n      justifyContent: 'center',\n      position: 'absolute',\n      zIndex: '2',\n      _icon: {\n        color: 'fg.subtle',\n      },\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    size: {\n      xs: {\n        element: { minW: '8', _icon: { boxSize: '4' } },\n        root: {\n          '& > input:not(:first-child)': { ps: '7!' },\n          '& > input:not(:last-child)': { pe: '7!' },\n        },\n      },\n      sm: {\n        root: {\n          '& > input:not(:first-child)': { ps: '8!' },\n          '& > input:not(:last-child)': { pe: '8!' },\n        },\n        element: { minW: '9', _icon: { boxSize: '4.5' } },\n      },\n      md: {\n        root: {\n          '& > input:not(:first-child)': { ps: '9!' },\n          '& > input:not(:last-child)': { pe: '9!' },\n        },\n        element: { minW: '10', _icon: { boxSize: '5' } },\n      },\n      lg: {\n        root: {\n          '& > input:not(:first-child)': { ps: '10!' },\n          '& > input:not(:last-child)': { pe: '10!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5' } },\n      },\n      xl: {\n        root: {\n          '& > input:not(:first-child)': { ps: '11!' },\n          '& > input:not(:last-child)': { pe: '11!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5.5' } },\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "group",
+    "input",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/input-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { inputGroup } from './input-group'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const inputGroup = defineSlotRecipe({\n  className: 'input-group',\n  slots: ['root', 'element'],\n  base: {\n    root: {\n      position: 'relative',\n      width: 'full',\n    },\n    element: {\n      alignItems: 'center',\n      color: 'fg.muted',\n      display: 'flex',\n      height: 'full',\n      justifyContent: 'center',\n      position: 'absolute',\n      zIndex: '2',\n      _icon: {\n        color: 'fg.subtle',\n      },\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    size: {\n      xs: {\n        element: { minW: '8', _icon: { boxSize: '4' } },\n        root: {\n          '& > input:not(:first-child)': { ps: '7!' },\n          '& > input:not(:last-child)': { pe: '7!' },\n        },\n      },\n      sm: {\n        root: {\n          '& > input:not(:first-child)': { ps: '8!' },\n          '& > input:not(:last-child)': { pe: '8!' },\n        },\n        element: { minW: '9', _icon: { boxSize: '4.5' } },\n      },\n      md: {\n        root: {\n          '& > input:not(:first-child)': { ps: '9!' },\n          '& > input:not(:last-child)': { pe: '9!' },\n        },\n        element: { minW: '10', _icon: { boxSize: '5' } },\n      },\n      lg: {\n        root: {\n          '& > input:not(:first-child)': { ps: '10!' },\n          '& > input:not(:last-child)': { pe: '10!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5' } },\n      },\n      xl: {\n        root: {\n          '& > input:not(:first-child)': { ps: '11!' },\n          '& > input:not(:last-child)': { pe: '11!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5.5' } },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "input-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/input-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { inputGroup } from './input-group'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const inputGroup = defineSlotRecipe({\n  className: 'input-group',\n  slots: ['root', 'element'],\n  base: {\n    root: {\n      position: 'relative',\n      width: 'full',\n    },\n    element: {\n      alignItems: 'center',\n      color: 'fg.muted',\n      display: 'flex',\n      height: 'full',\n      justifyContent: 'center',\n      position: 'absolute',\n      zIndex: '2',\n      _icon: {\n        color: 'fg.subtle',\n      },\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    size: {\n      xs: {\n        element: { minW: '8', _icon: { boxSize: '4' } },\n        root: {\n          '& > input:not(:first-child)': { ps: '7!' },\n          '& > input:not(:last-child)': { pe: '7!' },\n        },\n      },\n      sm: {\n        root: {\n          '& > input:not(:first-child)': { ps: '8!' },\n          '& > input:not(:last-child)': { pe: '8!' },\n        },\n        element: { minW: '9', _icon: { boxSize: '4.5' } },\n      },\n      md: {\n        root: {\n          '& > input:not(:first-child)': { ps: '9!' },\n          '& > input:not(:last-child)': { pe: '9!' },\n        },\n        element: { minW: '10', _icon: { boxSize: '5' } },\n      },\n      lg: {\n        root: {\n          '& > input:not(:first-child)': { ps: '10!' },\n          '& > input:not(:last-child)': { pe: '10!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5' } },\n      },\n      xl: {\n        root: {\n          '& > input:not(:first-child)': { ps: '11!' },\n          '& > input:not(:last-child)': { pe: '11!' },\n        },\n        element: { minW: '11', _icon: { boxSize: '5.5' } },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "input-group-recipe is a input group recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-group-recipe\nDescription: input-group-recipe is a input group recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: group, input, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/input-group.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const inputGroup = defineSlotRecipe({\n  className: 'input-group',\n  slots: ['root', 'element'],\n  base: {\n    root: {\n      position: 'relative',\n      width: 'full',\n    },\n    element: {\n      alignItems: 'center',\n      color: 'fg.muted',\n      display: 'flex',\n      height: 'full',\n      justifyContent: 'center',\n      position: 'absolute',\n      zIndex: '2',\n      _icon: {\n        co",
+  "prompt_version": 2,
+  "clean_id": "input-group-recipe",
+  "display_name": "Input Group Recipe",
+  "preview_url": "/previews/parkui/input-group-recipe.png"
+}

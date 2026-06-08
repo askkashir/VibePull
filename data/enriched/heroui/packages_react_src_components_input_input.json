@@ -1,0 +1,50 @@
+{
+  "id": "packages_react_src_components_input_input",
+  "name": "input",
+  "source_code": "// packages/react/src/components/input/input.tsx\n\"use client\";\n\nimport type {InputVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {inputVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {Input as InputPrimitive} from \"react-aria-components/Input\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {ComboBoxContext} from \"../combo-box\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* -------------------------------------------------------------------------------------------------\n * Input Root\n * -----------------------------------------------------------------------------------------------*/\ninterface InputRootProps extends ComponentPropsWithRef<typeof InputPrimitive>, InputVariants {}\n\nconst InputRoot = ({className, fullWidth, variant: variantProp, ...rest}: InputRootProps) => {\n  const textFieldContext = useContext(TextFieldContext);\n  const comboBoxContext = useContext(ComboBoxContext);\n\n  // Use variant from context if not explicitly provided\n  const variant = variantProp ?? textFieldContext.variant ?? comboBoxContext.variant;\n\n  return (\n    <InputPrimitive\n      className={composeTwRenderProps(className, inputVariants({fullWidth, variant}))}\n      data-slot=\"input\"\n      {...rest}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {InputRoot};\n\nexport type {InputRootProps};\n",
+  "description": "",
+  "tags": [
+    "input",
+    "text",
+    "field",
+    "form",
+    "data",
+    "collection"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "input_input",
+      "name": "input",
+      "path": "packages/react/src/components/input/input.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_input_input",
+      "name": "input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/input/input.tsx",
+          "content": "\"use client\";\n\nimport type {InputVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {inputVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {Input as InputPrimitive} from \"react-aria-components/Input\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {ComboBoxContext} from \"../combo-box\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* -------------------------------------------------------------------------------------------------\n * Input Root\n * -----------------------------------------------------------------------------------------------*/\ninterface InputRootProps extends ComponentPropsWithRef<typeof InputPrimitive>, InputVariants {}\n\nconst InputRoot = ({className, fullWidth, variant: variantProp, ...rest}: InputRootProps) => {\n  const textFieldContext = useContext(TextFieldContext);\n  const comboBoxContext = useContext(ComboBoxContext);\n\n  // Use variant from context if not explicitly provided\n  const variant = variantProp ?? textFieldContext.variant ?? comboBoxContext.variant;\n\n  return (\n    <InputPrimitive\n      className={composeTwRenderProps(className, inputVariants({fullWidth, variant}))}\n      data-slot=\"input\"\n      {...rest}\n    />\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {InputRoot};\n\nexport type {InputRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The input component is a text field that accepts user input. It is commonly used in forms to gather information from users. A developer would use this component when they need to collect data from users.",
+  "style_tags": [
+    "default",
+    "outline",
+    "filled"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input\nDescription: The input component is a text field that accepts user input. It is commonly used in forms to gather information from users. A developer would use this component when they need to collect data from users.\nStyle: default, outline, filled\nInteractions: clickable\nTags: input, text, field, form, data, collection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/input/input.tsx\n\"use client\";\n\nimport type {InputVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {inputVariants} from \"@heroui/styles\";\nimport React, {useContext} from \"react\";\nimport {Input as InputPrimitive} from \"react-aria-components/Input\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {ComboBoxContext} from \"../combo-box\";\nimport {TextFieldContext} from \"../textfield\";\n\n/* ------------------------------",
+  "prompt_version": 2,
+  "clean_id": "input",
+  "display_name": "Input",
+  "preview_url": "/previews/heroui/packages-react-src-components-input-input.png"
+}

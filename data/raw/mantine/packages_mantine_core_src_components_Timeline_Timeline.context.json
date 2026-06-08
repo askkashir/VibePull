@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Timeline_Timeline.context",
+  "name": "Timeline.context",
+  "source_code": "// packages/@mantine/core/src/components/Timeline/Timeline.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { TimelineFactory } from './Timeline';\n\ninterface TimelineContextValue {\n  getStyles: GetStylesApi<TimelineFactory>;\n}\n\nexport const [TimelineProvider, useTimelineContext] = createSafeContext<TimelineContextValue>(\n  'Timeline component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Timeline_Timeline.context",
+      "name": "Timeline.context",
+      "path": "packages/@mantine/core/src/components/Timeline/Timeline.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Timeline_Timeline.context",
+      "name": "Timeline.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Timeline/Timeline.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { TimelineFactory } from './Timeline';\n\ninterface TimelineContextValue {\n  getStyles: GetStylesApi<TimelineFactory>;\n}\n\nexport const [TimelineProvider, useTimelineContext] = createSafeContext<TimelineContextValue>(\n  'Timeline component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

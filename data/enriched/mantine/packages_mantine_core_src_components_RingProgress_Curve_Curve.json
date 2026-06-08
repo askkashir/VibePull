@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_RingProgress_Curve_Curve",
+  "name": "Curve",
+  "source_code": "// packages/@mantine/core/src/components/RingProgress/Curve/Curve.tsx\nimport { Box, GetStylesApi, getThemeColor, MantineColor, useMantineTheme } from '../../../core';\nimport { Tooltip } from '../../Tooltip';\nimport type { RingProgressFactory } from '../RingProgress';\nimport { getCurveProps } from './get-curve-props';\n\ninterface CurveProps extends React.ComponentProps<'circle'> {\n  value?: number;\n  size: number;\n  offset: number;\n  sum: number;\n  thickness: number;\n  lineRoundCaps: boolean | undefined;\n  root?: boolean;\n  color?: MantineColor;\n  tooltip?: React.ReactNode;\n  getStyles: GetStylesApi<RingProgressFactory>;\n}\n\nexport function Curve({\n  size,\n  value,\n  offset,\n  sum,\n  thickness,\n  root,\n  color,\n  lineRoundCaps,\n  tooltip,\n  getStyles,\n  display,\n  ...others\n}: CurveProps) {\n  const theme = useMantineTheme();\n\n  return (\n    <Tooltip.Floating disabled={!tooltip} label={tooltip}>\n      <Box\n        component=\"circle\"\n        {...others}\n        {...getStyles('curve')}\n        __vars={{ '--curve-color': color ? getThemeColor(color, theme) : undefined }}\n        fill=\"none\"\n        strokeLinecap={lineRoundCaps ? 'round' : 'butt'}\n        {...getCurveProps({ sum, size, thickness, value, offset, root })}\n      />\n    </Tooltip.Floating>\n  );\n}\n\nCurve.displayName = '@mantine/core/Curve';\n",
+  "description": "",
+  "tags": [
+    "curve",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RingProgress_Curve_Curve",
+      "name": "Curve",
+      "path": "packages/@mantine/core/src/components/RingProgress/Curve/Curve.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RingProgress_Curve_Curve",
+      "name": "Curve",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RingProgress/Curve/Curve.tsx",
+          "content": "import { Box, GetStylesApi, getThemeColor, MantineColor, useMantineTheme } from '../../../core';\nimport { Tooltip } from '../../Tooltip';\nimport type { RingProgressFactory } from '../RingProgress';\nimport { getCurveProps } from './get-curve-props';\n\ninterface CurveProps extends React.ComponentProps<'circle'> {\n  value?: number;\n  size: number;\n  offset: number;\n  sum: number;\n  thickness: number;\n  lineRoundCaps: boolean | undefined;\n  root?: boolean;\n  color?: MantineColor;\n  tooltip?: React.ReactNode;\n  getStyles: GetStylesApi<RingProgressFactory>;\n}\n\nexport function Curve({\n  size,\n  value,\n  offset,\n  sum,\n  thickness,\n  root,\n  color,\n  lineRoundCaps,\n  tooltip,\n  getStyles,\n  display,\n  ...others\n}: CurveProps) {\n  const theme = useMantineTheme();\n\n  return (\n    <Tooltip.Floating disabled={!tooltip} label={tooltip}>\n      <Box\n        component=\"circle\"\n        {...others}\n        {...getStyles('curve')}\n        __vars={{ '--curve-color': color ? getThemeColor(color, theme) : undefined }}\n        fill=\"none\"\n        strokeLinecap={lineRoundCaps ? 'round' : 'butt'}\n        {...getCurveProps({ sum, size, thickness, value, offset, root })}\n      />\n    </Tooltip.Floating>\n  );\n}\n\nCurve.displayName = '@mantine/core/Curve';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Curve is a curve UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Curve\nDescription: Curve is a curve UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable\nInteractions: \nTags: curve, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/RingProgress/Curve/Curve.tsx\nimport { Box, GetStylesApi, getThemeColor, MantineColor, useMantineTheme } from '../../../core';\nimport { Tooltip } from '../../Tooltip';\nimport type { RingProgressFactory } from '../RingProgress';\nimport { getCurveProps } from './get-curve-props';\n\ninterface CurveProps extends React.ComponentProps<'circle'> {\n  value?: number;\n  size: number;\n  offset: number;\n  sum: number;\n  thickness: number;\n  lineRoundCaps: boolean | und",
+  "prompt_version": 2,
+  "clean_id": "curve",
+  "display_name": "Curve",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-ringprogress-curve-curve.png"
+}

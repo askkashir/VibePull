@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_switch",
+  "name": "switch",
+  "source_code": "// packages/radix-ui-themes/src/components/switch.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Switch as SwitchPrimitive } from 'radix-ui';\n\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { switchPropDefs } from './switch.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\n\ntype SwitchElement = React.ElementRef<typeof SwitchPrimitive.Root>;\ntype SwitchOwnProps = GetPropDefTypes<typeof switchPropDefs>;\ninterface SwitchProps\n  extends\n    ComponentPropsWithout<\n      typeof SwitchPrimitive.Root,\n      'asChild' | 'color' | 'defaultValue' | 'children'\n    >,\n    MarginProps,\n    SwitchOwnProps {}\nconst Switch = React.forwardRef<SwitchElement, SwitchProps>((props, forwardedRef) => {\n  const { className, color, radius, ...switchProps } = extractProps(\n    props,\n    switchPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <SwitchPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      {...switchProps}\n      asChild={false}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-SwitchRoot', className)}\n    >\n      <SwitchPrimitive.Thumb\n        className={classNames('rt-SwitchThumb', { 'rt-high-contrast': props.highContrast })}\n      />\n    </SwitchPrimitive.Root>\n  );\n});\nSwitch.displayName = 'Switch';\n\nexport { Switch };\nexport type { SwitchProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_switch",
+      "name": "switch.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/switch.tsx",
+      "sha": "490a9eec2bc8bbc228c3fde4bc6a82da857bb40d",
+      "size": 1522,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/switch.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/switch.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/490a9eec2bc8bbc228c3fde4bc6a82da857bb40d",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/switch.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/switch.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/490a9eec2bc8bbc228c3fde4bc6a82da857bb40d",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/switch.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_switch",
+      "name": "switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/switch.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Switch as SwitchPrimitive } from 'radix-ui';\n\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { switchPropDefs } from './switch.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\n\ntype SwitchElement = React.ElementRef<typeof SwitchPrimitive.Root>;\ntype SwitchOwnProps = GetPropDefTypes<typeof switchPropDefs>;\ninterface SwitchProps\n  extends\n    ComponentPropsWithout<\n      typeof SwitchPrimitive.Root,\n      'asChild' | 'color' | 'defaultValue' | 'children'\n    >,\n    MarginProps,\n    SwitchOwnProps {}\nconst Switch = React.forwardRef<SwitchElement, SwitchProps>((props, forwardedRef) => {\n  const { className, color, radius, ...switchProps } = extractProps(\n    props,\n    switchPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <SwitchPrimitive.Root\n      data-accent-color={color}\n      data-radius={radius}\n      {...switchProps}\n      asChild={false}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-SwitchRoot', className)}\n    >\n      <SwitchPrimitive.Thumb\n        className={classNames('rt-SwitchThumb', { 'rt-high-contrast': props.highContrast })}\n      />\n    </SwitchPrimitive.Root>\n  );\n});\nSwitch.displayName = 'Switch';\n\nexport { Switch };\nexport type { SwitchProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "cosmic-button-demo",
+  "name": "cosmic-button-demo",
+  "source_code": "// registry/default/example/cosmic-button-demo.tsx\n\"use client\"\n\nimport { CosmicButton } from \"@/registry/default/ui/cosmic-button\"\n\nexport default function CosmicButtonDemo() {\n  return (\n    <div className=\" p-6 rounded-3xl flex justify-center\">\n      <div>\n        <div className=\"grid place-items-center\">\n          <CosmicButton as=\"button\" type=\"button\">\n            Cosmic button goes brrr\n          </CosmicButton>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "cultui",
+    "file",
+    "registry:component"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "cosmic-button-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/cosmic-button-demo.json",
+      "sha": "1faa3b9191a264c787ceddae5835b4cc45b919e6",
+      "size": 780,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/cosmic-button-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/cosmic-button-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/1faa3b9191a264c787ceddae5835b4cc45b919e6",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/cosmic-button-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/cosmic-button-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/1faa3b9191a264c787ceddae5835b4cc45b919e6",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/cosmic-button-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cosmic-button-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "cosmic-button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/cosmic-button-demo.tsx",
+          "content": "\"use client\"\n\nimport { CosmicButton } from \"@/registry/default/ui/cosmic-button\"\n\nexport default function CosmicButtonDemo() {\n  return (\n    <div className=\" p-6 rounded-3xl flex justify-center\">\n      <div>\n        <div className=\"grid place-items-center\">\n          <CosmicButton as=\"button\" type=\"button\">\n            Cosmic button goes brrr\n          </CosmicButton>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

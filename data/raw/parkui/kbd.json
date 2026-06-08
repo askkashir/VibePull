@@ -1,0 +1,50 @@
+{
+  "id": "kbd",
+  "name": "kbd",
+  "source_code": "// src/components/ui/kbd.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport { styled } from 'styled-system/jsx'\nimport { kbd } from 'styled-system/recipes'\nimport type { ComponentProps } from 'styled-system/types'\n\nexport type KbdProps = ComponentProps<typeof Kbd>\nexport const Kbd = styled(ark.kbd, kbd)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/kbd.tsx",
+          "type": "registry:ui",
+          "exports": "export { Kbd, type KbdProps } from './kbd'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport { styled } from 'styled-system/jsx'\nimport { kbd } from 'styled-system/recipes'\nimport type { ComponentProps } from 'styled-system/types'\n\nexport type KbdProps = ComponentProps<typeof Kbd>\nexport const Kbd = styled(ark.kbd, kbd)\n"
+        }
+      ],
+      "registryDependencies": [
+        "kbd-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "kbd",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/kbd.tsx",
+          "type": "registry:ui",
+          "exports": "export { Kbd, type KbdProps } from './kbd'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport { styled } from 'styled-system/jsx'\nimport { kbd } from 'styled-system/recipes'\nimport type { ComponentProps } from 'styled-system/types'\n\nexport type KbdProps = ComponentProps<typeof Kbd>\nexport const Kbd = styled(ark.kbd, kbd)\n"
+        }
+      ],
+      "registryDependencies": [
+        "kbd-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

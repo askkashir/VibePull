@@ -1,0 +1,62 @@
+{
+  "id": "scroll-based-velocity-demo",
+  "name": "Scroll Based Velocity Demo",
+  "source_code": "import {\n  ScrollVelocityContainer,\n  ScrollVelocityRow,\n} from \"@/registry/magicui/scroll-based-velocity\"\n\nexport default function ScrollBasedVelocityDemo() {\n  return (\n    <div className=\"relative flex w-full flex-col items-center justify-center overflow-hidden\">\n      <ScrollVelocityContainer className=\"text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-20\">\n        <ScrollVelocityRow baseVelocity={20} direction={1}>\n          Velocity Scroll\n        </ScrollVelocityRow>\n        <ScrollVelocityRow baseVelocity={20} direction={-1}>\n          Velocity Scroll\n        </ScrollVelocityRow>\n      </ScrollVelocityContainer>\n      <div className=\"from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r\"></div>\n      <div className=\"from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l\"></div>\n    </div>\n  )\n}\n",
+  "description": "Example showing text speed changes based on scroll velocity.",
+  "tags": [
+    "scroll",
+    "velocity",
+    "animation",
+    "demo"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-based-velocity-demo",
+      "type": "registry:example",
+      "title": "Scroll Based Velocity Demo",
+      "description": "Example showing text speed changes based on scroll velocity.",
+      "registryDependencies": [
+        "https://magicui.design/r/scroll-based-velocity"
+      ],
+      "files": [
+        {
+          "path": "registry/example/scroll-based-velocity-demo.tsx",
+          "type": "registry:example",
+          "target": "components/scroll-based-velocity-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "scroll-based-velocity-demo",
+      "type": "registry:example",
+      "title": "Scroll Based Velocity Demo",
+      "description": "Example showing text speed changes based on scroll velocity.",
+      "registryDependencies": [
+        "@magicui/scroll-based-velocity"
+      ],
+      "files": [
+        {
+          "path": "registry/example/scroll-based-velocity-demo.tsx",
+          "content": "import {\n  ScrollVelocityContainer,\n  ScrollVelocityRow,\n} from \"@/registry/magicui/scroll-based-velocity\"\n\nexport default function ScrollBasedVelocityDemo() {\n  return (\n    <div className=\"relative flex w-full flex-col items-center justify-center overflow-hidden\">\n      <ScrollVelocityContainer className=\"text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-20\">\n        <ScrollVelocityRow baseVelocity={20} direction={1}>\n          Velocity Scroll\n        </ScrollVelocityRow>\n        <ScrollVelocityRow baseVelocity={20} direction={-1}>\n          Velocity Scroll\n        </ScrollVelocityRow>\n      </ScrollVelocityContainer>\n      <div className=\"from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r\"></div>\n      <div className=\"from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l\"></div>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A demo component showcasing scroll-based velocity effects, typically used for testing or showcasing interactive scrolling behaviors.",
+  "style_tags": [
+    "modern"
+  ],
+  "interaction_tags": [
+    "animated",
+    "interactive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Scroll Based Velocity Demo\nDescription: A demo component showcasing scroll-based velocity effects, typically used for testing or showcasing interactive scrolling behaviors.\nStyle: modern\nInteractions: animated, interactive\nTags: scroll, velocity, animation, demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport {\n  ScrollVelocityContainer,\n  ScrollVelocityRow,\n} from \"@/registry/magicui/scroll-based-velocity\"\n\nexport default function ScrollBasedVelocityDemo() {\n  return (\n    <div className=\"relative flex w-full flex-col items-center justify-center overflow-hidden\">\n      <ScrollVelocityContainer className=\"text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-20\">\n        <ScrollVelocityRow baseVelocity={20} direction={1}>\n          Velocity Scroll\n        </ScrollVelocityRow>\n        <S",
+  "prompt_version": 2,
+  "clean_id": "scroll-based-velocity-demo",
+  "display_name": "Scroll Based Velocity Demo",
+  "preview_url": "/previews/magicui/scroll-based-velocity-demo.png"
+}

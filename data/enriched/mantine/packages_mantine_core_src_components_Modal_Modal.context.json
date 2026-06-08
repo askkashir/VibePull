@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_Modal.context",
+  "name": "Modal.context",
+  "source_code": "// packages/@mantine/core/src/components/Modal/Modal.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ModalRootFactory } from './ModalRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface ModalContextValue {\n  fullScreen: boolean | undefined;\n  yOffset: string | number | undefined;\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<ModalRootFactory>;\n}\n\nexport const [ModalProvider, useModalContext] = createSafeContext<ModalContextValue>(\n  'Modal component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "modal",
+    "context",
+    "provider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_Modal.context",
+      "name": "Modal.context",
+      "path": "packages/@mantine/core/src/components/Modal/Modal.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_Modal.context",
+      "name": "Modal.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/Modal.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ModalRootFactory } from './ModalRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface ModalContextValue {\n  fullScreen: boolean | undefined;\n  yOffset: string | number | undefined;\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<ModalRootFactory>;\n}\n\nexport const [ModalProvider, useModalContext] = createSafeContext<ModalContextValue>(\n  'Modal component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "The Modal.context component is a context provider for modal functionality. It is used when a developer wants to create a modal that can be used throughout an application.",
+  "style_tags": [
+    "native"
+  ],
+  "interaction_tags": [
+    "dynamic"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: Modal.context\nDescription: The Modal.context component is a context provider for modal functionality. It is used when a developer wants to create a modal that can be used throughout an application.\nStyle: native\nInteractions: dynamic\nTags: modal, context, provider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/Modal.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ModalRootFactory } from './ModalRoot';\n\nexport type ScrollAreaComponent = React.FC<any>;\n\nexport interface ModalContextValue {\n  fullScreen: boolean | undefined;\n  yOffset: string | number | undefined;\n  scrollAreaComponent: ScrollAreaComponent | undefined;\n  getStyles: GetStylesApi<ModalRootFactory>;\n}\n\nexport const [ModalProvider, useModalContext] = create",
+  "prompt_version": 2,
+  "clean_id": "modal",
+  "display_name": "Modal",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modal-context.png"
+}

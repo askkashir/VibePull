@@ -1,0 +1,41 @@
+{
+  "id": "form-rhf-switch",
+  "name": "form-rhf-switch",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "forms",
+    "toggle",
+    "boolean",
+    "switch",
+    "form-control"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-switch",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-switch\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "An on/off toggle switch component suitable for boolean fields, this switch provides visual feedback and can be customized for various use cases.",
+  "style_tags": [
+    "material",
+    "native"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-switch\nDescription: An on/off toggle switch component suitable for boolean fields, this switch provides visual feedback and can be customized for various use cases.\nStyle: material, native\nInteractions: clickable, toggable\nTags: forms, toggle, boolean, switch, form-control\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-switch",
+  "display_name": "Form Rhf Switch",
+  "preview_url": "/previews/shadcn/form-rhf-switch.png"
+}

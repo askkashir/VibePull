@@ -1,0 +1,61 @@
+{
+  "id": "popover-recipe",
+  "name": "popover-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/popover.ts\nimport { popoverAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const popover = defineSlotRecipe({\n  className: 'popover',\n  slots: popoverAnatomy.extendWith('header', 'body', 'footer').keys(),\n  base: {\n    content: {\n      '--popover-bg': 'colors.gray.surface.bg',\n      '--popover-padding': 'spacing.4',\n\n      background: 'var(--popover-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxHeight: 'var(--available-height)',\n      outline: '0',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      width: 'xs',\n      zIndex: 'calc(var(--z-index-popover) + var(--layer-index, 0))',\n      _open: {\n        animationStyle: 'scale-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'scale-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'md',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '1',\n      right: '1',\n    },\n    header: {\n      display: 'flex',\n      flexDirection: 'column',\n      pt: 'var(--popover-padding)',\n      px: 'var(--popover-padding)',\n    },\n    body: { p: 'var(--popover-padding)', display: 'flex', flex: '1', flexDirection: 'column' },\n    footer: {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'flex-end',\n      gap: '3',\n      paddingInline: 'var(--popover-padding)',\n      paddingBottom: 'var(--popover-padding)',\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--popover-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "modal",
+    "parkui",
+    "popover",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "popover-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/popover.ts",
+          "type": "registry:recipe",
+          "imports": "import { popover } from './popover'",
+          "content": "import { popoverAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const popover = defineSlotRecipe({\n  className: 'popover',\n  slots: popoverAnatomy.extendWith('header', 'body', 'footer').keys(),\n  base: {\n    content: {\n      '--popover-bg': 'colors.gray.surface.bg',\n      '--popover-padding': 'spacing.4',\n\n      background: 'var(--popover-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxHeight: 'var(--available-height)',\n      outline: '0',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      width: 'xs',\n      zIndex: 'calc(var(--z-index-popover) + var(--layer-index, 0))',\n      _open: {\n        animationStyle: 'scale-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'scale-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'md',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '1',\n      right: '1',\n    },\n    header: {\n      display: 'flex',\n      flexDirection: 'column',\n      pt: 'var(--popover-padding)',\n      px: 'var(--popover-padding)',\n    },\n    body: { p: 'var(--popover-padding)', display: 'flex', flex: '1', flexDirection: 'column' },\n    footer: {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'flex-end',\n      gap: '3',\n      paddingInline: 'var(--popover-padding)',\n      paddingBottom: 'var(--popover-padding)',\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--popover-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "popover-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/popover.ts",
+          "type": "registry:recipe",
+          "imports": "import { popover } from './popover'",
+          "content": "import { popoverAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const popover = defineSlotRecipe({\n  className: 'popover',\n  slots: popoverAnatomy.extendWith('header', 'body', 'footer').keys(),\n  base: {\n    content: {\n      '--popover-bg': 'colors.gray.surface.bg',\n      '--popover-padding': 'spacing.4',\n\n      background: 'var(--popover-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxHeight: 'var(--available-height)',\n      outline: '0',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      width: 'xs',\n      zIndex: 'calc(var(--z-index-popover) + var(--layer-index, 0))',\n      _open: {\n        animationStyle: 'scale-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'scale-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    title: {\n      color: 'fg.default',\n      fontWeight: 'medium',\n      textStyle: 'md',\n    },\n    description: {\n      color: 'fg.muted',\n      textStyle: 'sm',\n    },\n    closeTrigger: {\n      position: 'absolute',\n      top: '1',\n      right: '1',\n    },\n    header: {\n      display: 'flex',\n      flexDirection: 'column',\n      pt: 'var(--popover-padding)',\n      px: 'var(--popover-padding)',\n    },\n    body: { p: 'var(--popover-padding)', display: 'flex', flex: '1', flexDirection: 'column' },\n    footer: {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'flex-end',\n      gap: '3',\n      paddingInline: 'var(--popover-padding)',\n      paddingBottom: 'var(--popover-padding)',\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--popover-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "popover-recipe is a popover recipe UI component from the parkui corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: popover-recipe\nDescription: popover-recipe is a popover recipe UI component from the parkui corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: \nTags: modal, parkui, popover, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/popover.ts\nimport { popoverAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const popover = defineSlotRecipe({\n  className: 'popover',\n  slots: popoverAnatomy.extendWith('header', 'body', 'footer').keys(),\n  base: {\n    content: {\n      '--popover-bg': 'colors.gray.surface.bg',\n      '--popover-padding': 'spacing.4',\n\n      background: 'var(--popover-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      di",
+  "prompt_version": 2,
+  "clean_id": "popover-recipe",
+  "display_name": "Popover Recipe",
+  "preview_url": "/previews/parkui/popover-recipe.png"
+}

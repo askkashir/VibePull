@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShell.context",
+  "name": "AppShell.context",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShell.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { AppShellFactory } from './AppShell';\n\nexport interface AppShellContextValue {\n  getStyles: GetStylesApi<AppShellFactory>;\n  withBorder: boolean | undefined;\n  zIndex: string | number | undefined;\n  disabled: boolean | undefined;\n  offsetScrollbars: boolean | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport const [AppShellProvider, useAppShellContext] = createSafeContext<AppShellContextValue>(\n  'AppShell was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShell.context",
+      "name": "AppShell.context",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShell.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShell.context",
+      "name": "AppShell.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShell.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { AppShellFactory } from './AppShell';\n\nexport interface AppShellContextValue {\n  getStyles: GetStylesApi<AppShellFactory>;\n  withBorder: boolean | undefined;\n  zIndex: string | number | undefined;\n  disabled: boolean | undefined;\n  offsetScrollbars: boolean | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport const [AppShellProvider, useAppShellContext] = createSafeContext<AppShellContextValue>(\n  'AppShell was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

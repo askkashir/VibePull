@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_add-unlinked-scroll-listener",
+  "name": "add-unlinked-scroll-listener",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/add-unlinked-scroll-listener.tsx\nexport function addUnlinkedScrollListener(node: HTMLElement, handler = () => {}) {\n  let prevPosition = { left: node.scrollLeft, top: node.scrollTop };\n  let rAF = 0;\n  (function loop() {\n    const position = { left: node.scrollLeft, top: node.scrollTop };\n    const isHorizontalScroll = prevPosition.left !== position.left;\n    const isVerticalScroll = prevPosition.top !== position.top;\n    if (isHorizontalScroll || isVerticalScroll) {\n      handler();\n    }\n    prevPosition = position;\n    rAF = window.requestAnimationFrame(loop);\n  })();\n  return () => window.cancelAnimationFrame(rAF);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_add-unlinked-scroll-listener",
+      "name": "add-unlinked-scroll-listener",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/add-unlinked-scroll-listener.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_add-unlinked-scroll-listener",
+      "name": "add-unlinked-scroll-listener",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/add-unlinked-scroll-listener.tsx",
+          "content": "export function addUnlinkedScrollListener(node: HTMLElement, handler = () => {}) {\n  let prevPosition = { left: node.scrollLeft, top: node.scrollTop };\n  let rAF = 0;\n  (function loop() {\n    const position = { left: node.scrollLeft, top: node.scrollTop };\n    const isHorizontalScroll = prevPosition.left !== position.left;\n    const isVerticalScroll = prevPosition.top !== position.top;\n    if (isHorizontalScroll || isVerticalScroll) {\n      handler();\n    }\n    prevPosition = position;\n    rAF = window.requestAnimationFrame(loop);\n  })();\n  return () => window.cancelAnimationFrame(rAF);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

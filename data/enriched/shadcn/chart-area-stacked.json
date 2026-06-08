@@ -1,0 +1,44 @@
+{
+  "id": "chart-area-stacked",
+  "name": "chart-area-stacked",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "stacked",
+    "area",
+    "data visualization",
+    "reporting",
+    "analytics"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-stacked",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-stacked\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A responsive stacked-area chart that visualizes multiple data series stacked on top of each other, ideal for displaying quantitative changes over time or across categories. Typically used in data-driven applications to provide insights into trends and correlations. Perfect for use in reporting, analytics, or business intelligence dashboards.",
+  "style_tags": [
+    "high contrast",
+    "gradient",
+    "legend"
+  ],
+  "interaction_tags": [
+    "hover",
+    "animated",
+    "responsive"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-stacked\nDescription: A responsive stacked-area chart that visualizes multiple data series stacked on top of each other, ideal for displaying quantitative changes over time or across categories. Typically used in data-driven applications to provide insights into trends and correlations. Perfect for use in reporting, analytics, or business intelligence dashboards.\nStyle: high contrast, gradient, legend\nInteractions: hover, animated, responsive\nTags: chart, stacked, area, data visualization, reporting, analytics\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-stacked",
+  "display_name": "Chart Area Stacked",
+  "preview_url": "/previews/shadcn/chart-area-stacked.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_OverflowList_index",
+  "name": "OverflowList",
+  "source_code": "// packages/@mantine/core/src/components/OverflowList/index.ts\nimport type {\n  OverflowListCssVariables,\n  OverflowListFactory,\n  OverflowListProps,\n  OverflowListStylesNames,\n} from './OverflowList';\n\nexport { OverflowList } from './OverflowList';\n\nexport type {\n  OverflowListProps,\n  OverflowListFactory,\n  OverflowListStylesNames,\n  OverflowListCssVariables,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "OverflowList_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/OverflowList/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_OverflowList_index",
+      "name": "OverflowList",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/OverflowList/index.ts",
+          "content": "import type {\n  OverflowListCssVariables,\n  OverflowListFactory,\n  OverflowListProps,\n  OverflowListStylesNames,\n} from './OverflowList';\n\nexport { OverflowList } from './OverflowList';\n\nexport type {\n  OverflowListProps,\n  OverflowListFactory,\n  OverflowListStylesNames,\n  OverflowListCssVariables,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

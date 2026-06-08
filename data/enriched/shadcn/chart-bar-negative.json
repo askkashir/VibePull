@@ -1,0 +1,26 @@
+{
+  "id": "chart-bar-negative",
+  "name": "chart-bar-negative",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-negative",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-negative\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called chart-bar-negative. It should be: . Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "chart-bar-negative",
+  "display_name": "Chart Bar Negative"
+}

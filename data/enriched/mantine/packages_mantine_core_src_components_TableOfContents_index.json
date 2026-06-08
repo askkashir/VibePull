@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_TableOfContents_index",
+  "name": "TableOfContents",
+  "source_code": "// packages/@mantine/core/src/components/TableOfContents/index.ts\nimport type {\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsVariant,\n} from './TableOfContents';\n\nexport { TableOfContents } from './TableOfContents';\n\nexport type {\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "contents",
+    "mantine",
+    "of",
+    "table"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TableOfContents_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/TableOfContents/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TableOfContents_index",
+      "name": "TableOfContents",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TableOfContents/index.ts",
+          "content": "import type {\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsVariant,\n} from './TableOfContents';\n\nexport { TableOfContents } from './TableOfContents';\n\nexport type {\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "TableOfContents is a table of contents UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "table",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: TableOfContents\nDescription: TableOfContents is a table of contents UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: contents, mantine, of, table\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/TableOfContents/index.ts\nimport type {\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsVariant,\n} from './TableOfContents';\n\nexport { TableOfContents } from './TableOfContents';\n\nexport type {\n  TableOfContentsProps,\n  TableOfContentsStylesNames,\n  TableOfContentsCssVariables,\n  TableOfContentsFactory,\n  TableOfContentsVariant,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "table-of-contents",
+  "display_name": "Table Of Contents",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tableofcontents-index.png"
+}

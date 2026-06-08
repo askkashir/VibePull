@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_NavLink_index",
+  "name": "NavLink",
+  "source_code": "// packages/@mantine/core/src/components/NavLink/index.ts\nimport type {\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkVariant,\n} from './NavLink';\n\nexport { NavLink } from './NavLink';\n\nexport type {\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NavLink_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/NavLink/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NavLink_index",
+      "name": "NavLink",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NavLink/index.ts",
+          "content": "import type {\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkVariant,\n} from './NavLink';\n\nexport { NavLink } from './NavLink';\n\nexport type {\n  NavLinkProps,\n  NavLinkStylesNames,\n  NavLinkCssVariables,\n  NavLinkFactory,\n  NavLinkVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

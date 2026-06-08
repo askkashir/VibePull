@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Spoiler_index",
+  "name": "Spoiler",
+  "source_code": "// packages/@mantine/core/src/components/Spoiler/index.ts\nimport type {\n  SpoilerCssVariables,\n  SpoilerFactory,\n  SpoilerProps,\n  SpoilerStylesNames,\n} from './Spoiler';\n\nexport { Spoiler } from './Spoiler';\n\nexport type { SpoilerProps, SpoilerStylesNames, SpoilerCssVariables, SpoilerFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Spoiler_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Spoiler/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Spoiler_index",
+      "name": "Spoiler",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Spoiler/index.ts",
+          "content": "import type {\n  SpoilerCssVariables,\n  SpoilerFactory,\n  SpoilerProps,\n  SpoilerStylesNames,\n} from './Spoiler';\n\nexport { Spoiler } from './Spoiler';\n\nexport type { SpoilerProps, SpoilerStylesNames, SpoilerCssVariables, SpoilerFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

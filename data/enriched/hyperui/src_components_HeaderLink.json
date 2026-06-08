@@ -1,0 +1,48 @@
+{
+  "id": "src_components_HeaderLink",
+  "name": "HeaderLink",
+  "source_code": "// src/components/HeaderLink.astro\n---\nimport type { HTMLAttributes } from 'astro/types'\n\ntype Props = HTMLAttributes<'a'>\n\nconst { href, class: className = '', ...props } = Astro.props\n---\n\n<a\n  {href}\n  class:list={[\n    'text-sm font-medium text-gray-600 transition-colors hover:text-gray-900',\n    className,\n  ]}\n  {...props}\n>\n  <slot />\n</a>\n",
+  "description": "",
+  "tags": [
+    "header",
+    "link",
+    "anchor"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "HeaderLink",
+      "name": "HeaderLink",
+      "path": "src/components/HeaderLink.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_HeaderLink",
+      "name": "HeaderLink",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/HeaderLink.astro",
+          "content": "---\nimport type { HTMLAttributes } from 'astro/types'\n\ntype Props = HTMLAttributes<'a'>\n\nconst { href, class: className = '', ...props } = Astro.props\n---\n\n<a\n  {href}\n  class:list={[\n    'text-sm font-medium text-gray-600 transition-colors hover:text-gray-900',\n    className,\n  ]}\n  {...props}\n>\n  <slot />\n</a>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A link component that is visually represented as a styled <a> tag, used in a header where a developer would want to link to another page or website.",
+  "style_tags": [
+    "material",
+    "minimal",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: HeaderLink\nDescription: A link component that is visually represented as a styled <a> tag, used in a header where a developer would want to link to another page or website.\nStyle: material, minimal, responsive\nInteractions: clickable, hover\nTags: header, link, anchor\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/HeaderLink.astro\n---\nimport type { HTMLAttributes } from 'astro/types'\n\ntype Props = HTMLAttributes<'a'>\n\nconst { href, class: className = '', ...props } = Astro.props\n---\n\n<a\n  {href}\n  class:list={[\n    'text-sm font-medium text-gray-600 transition-colors hover:text-gray-900',\n    className,\n  ]}\n  {...props}\n>\n  <slot />\n</a>\n",
+  "prompt_version": 2,
+  "clean_id": "header-link",
+  "display_name": "Header Link",
+  "preview_url": "/previews/hyperui/src-components-headerlink.png"
+}

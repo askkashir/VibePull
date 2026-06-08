@@ -1,0 +1,40 @@
+{
+  "id": "empty-outline",
+  "name": "empty-outline",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry",
+    "placeholder",
+    "card"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "empty-outline",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## empty-outline\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "empty-outline is a UI component used to provide a placeholder or a temporary container for content that will be added in the future. It is typically used when a developer wants to visually indicate a section or block of content is empty but reserved for something else. The component usually appears as a bordered container with or without a default text.",
+  "style_tags": [
+    "modern",
+    "material",
+    "neutral"
+  ],
+  "interaction_tags": [
+    "none",
+    "disabled"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: empty-outline\nDescription: empty-outline is a UI component used to provide a placeholder or a temporary container for content that will be added in the future. It is typically used when a developer wants to visually indicate a section or block of content is empty but reserved for something else. The component usually appears as a bordered container with or without a default text.\nStyle: modern, material, neutral\nInteractions: none, disabled\nTags: registry, placeholder, card\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "empty-outline",
+  "display_name": "Empty Outline",
+  "preview_url": "/previews/shadcn/empty-outline.png"
+}

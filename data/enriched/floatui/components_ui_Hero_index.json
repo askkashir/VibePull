@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_Hero_index",
+  "name": "Hero",
+  "source_code": "// components/ui/Hero/index.tsx\nimport LinkItem from \"../LinkItem\";\nimport { IconGithub } from \"components/icons\";\nimport HeroBgGradientClient from \"./HeroBgGradient.Client\";\n\nexport default () => {\n  return (\n    <section className=\"custom-screen mt-20\">\n      <div className=\"relative z-10 max-w-2xl mx-auto space-y-4 text-center\">\n        <h1 className=\"text-5xl heading\">\n          Build and ship fast with Tailwind CSS UI components\n        </h1>\n        <p className=\"text-zinc-400\">\n          Move faster with beautiful, responsive UI components and website\n          templates with modern design, 100% free and open-source.\n        </p>\n        <div className=\"flex flex-wrap items-center justify-center gap-3\">\n          <LinkItem\n            href=\"/components\"\n            variant=\"shiny\"\n            className=\"inline-block w-full hover:bg-zinc-700 sm:w-auto\"\n          >\n            Get started\n          </LinkItem>\n          <LinkItem\n            href=\"https://github.com/MarsX-dev/floatui\"\n            variant=\"shiny\"\n            className=\"inline-flex w-full justify-center items-center gap-x-2 border border-zinc-800 hover:border-zinc-600 bg-zinc-950 hover:text-zinc-100 duration-200 sm:w-auto\"\n            target=\"_blank\"\n          >\n            <IconGithub className=\"w-5 h-5\" />\n            Star on GitHub\n          </LinkItem>\n        </div>\n      </div>\n      <HeroBgGradientClient />\n    </section>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "hero"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Hero_index",
+      "name": "index",
+      "path": "components/ui/Hero/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Hero_index",
+      "name": "Hero",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Hero/index.tsx",
+          "content": "import LinkItem from \"../LinkItem\";\nimport { IconGithub } from \"components/icons\";\nimport HeroBgGradientClient from \"./HeroBgGradient.Client\";\n\nexport default () => {\n  return (\n    <section className=\"custom-screen mt-20\">\n      <div className=\"relative z-10 max-w-2xl mx-auto space-y-4 text-center\">\n        <h1 className=\"text-5xl heading\">\n          Build and ship fast with Tailwind CSS UI components\n        </h1>\n        <p className=\"text-zinc-400\">\n          Move faster with beautiful, responsive UI components and website\n          templates with modern design, 100% free and open-source.\n        </p>\n        <div className=\"flex flex-wrap items-center justify-center gap-3\">\n          <LinkItem\n            href=\"/components\"\n            variant=\"shiny\"\n            className=\"inline-block w-full hover:bg-zinc-700 sm:w-auto\"\n          >\n            Get started\n          </LinkItem>\n          <LinkItem\n            href=\"https://github.com/MarsX-dev/floatui\"\n            variant=\"shiny\"\n            className=\"inline-flex w-full justify-center items-center gap-x-2 border border-zinc-800 hover:border-zinc-600 bg-zinc-950 hover:text-zinc-100 duration-200 sm:w-auto\"\n            target=\"_blank\"\n          >\n            <IconGithub className=\"w-5 h-5\" />\n            Star on GitHub\n          </LinkItem>\n        </div>\n      </div>\n      <HeroBgGradientClient />\n    </section>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Hero is a hero UI component from the floatui corpus. It provides reusable hero behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "hero",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready hero component with the following characteristics:\n\nName: Hero\nDescription: Hero is a hero UI component from the floatui corpus. It provides reusable hero behavior and styling for React or web UI screens.\nStyle: gradient, utility-styled\nInteractions: hover\nTags: floatui, hero\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Hero/index.tsx\nimport LinkItem from \"../LinkItem\";\nimport { IconGithub } from \"components/icons\";\nimport HeroBgGradientClient from \"./HeroBgGradient.Client\";\n\nexport default () => {\n  return (\n    <section className=\"custom-screen mt-20\">\n      <div className=\"relative z-10 max-w-2xl mx-auto space-y-4 text-center\">\n        <h1 className=\"text-5xl heading\">\n          Build and ship fast with Tailwind CSS UI components\n        </h1>\n        <p className=\"text-zinc-400\">\n          ",
+  "prompt_version": 2,
+  "clean_id": "hero",
+  "display_name": "Hero",
+  "preview_url": "/previews/floatui/components-ui-hero-index.png"
+}

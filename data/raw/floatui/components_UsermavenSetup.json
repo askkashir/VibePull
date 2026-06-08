@@ -1,0 +1,31 @@
+{
+  "id": "components_UsermavenSetup",
+  "name": "UsermavenSetup",
+  "source_code": "// components/UsermavenSetup.tsx\n\"use client\";\n\nimport { usermavenClient, UsermavenClient } from \"@usermaven/sdk-js\";\nimport { useEffect } from \"react\";\n\nexport default () => {\n  useEffect(() => {\n    // Init Usermaven\n    const usermaven: UsermavenClient = usermavenClient({\n      key: process.env.ANALYTICS_KEY as string,\n      tracking_host: \"https://events.usermaven.com\",\n    });\n  }, []);\n\n  return <></>;\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "UsermavenSetup",
+      "name": "UsermavenSetup",
+      "path": "components/UsermavenSetup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_UsermavenSetup",
+      "name": "UsermavenSetup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/UsermavenSetup.tsx",
+          "content": "\"use client\";\n\nimport { usermavenClient, UsermavenClient } from \"@usermaven/sdk-js\";\nimport { useEffect } from \"react\";\n\nexport default () => {\n  useEffect(() => {\n    // Init Usermaven\n    const usermaven: UsermavenClient = usermavenClient({\n      key: process.env.ANALYTICS_KEY as string,\n      tracking_host: \"https://events.usermaven.com\",\n    });\n  }, []);\n\n  return <></>;\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "kbd",
+  "name": "kbd",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "keyboard",
+    "tutorial"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "kbd",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## kbd\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The kbd component is a visually distinct, interactive text block used to highlight keyboard input or shortcuts. It is a rectangular box with a clear background color, displaying text in a neutral color. Typically used in documentation or tutorials to indicate keyboard commands.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: kbd\nDescription: The kbd component is a visually distinct, interactive text block used to highlight keyboard input or shortcuts. It is a rectangular box with a clear background color, displaying text in a neutral color. Typically used in documentation or tutorials to indicate keyboard commands.\nStyle: minimal\nInteractions: clickable\nTags: input, keyboard, tutorial\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "kbd",
+  "display_name": "Kbd",
+  "preview_url": "/previews/shadcn/kbd.png"
+}

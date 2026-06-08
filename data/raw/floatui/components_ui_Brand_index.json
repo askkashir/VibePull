@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_Brand_index",
+  "name": "Brand",
+  "source_code": "// components/ui/Brand/index.tsx\nimport Image from \"next/image\";\nimport logoDark from \"public/logo-dark.svg\";\n\nexport default () => (\n  <>\n    <div>\n      <Image src={logoDark} alt=\"Float UI logo\" />\n    </div>\n  </>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Brand_index",
+      "name": "index",
+      "path": "components/ui/Brand/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Brand_index",
+      "name": "Brand",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Brand/index.tsx",
+          "content": "import Image from \"next/image\";\nimport logoDark from \"public/logo-dark.svg\";\n\nexport default () => (\n  <>\n    <div>\n      <Image src={logoDark} alt=\"Float UI logo\" />\n    </div>\n  </>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

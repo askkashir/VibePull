@@ -1,0 +1,31 @@
+{
+  "id": "src_components_ComponentCard",
+  "name": "ComponentCard",
+  "source_code": "// src/components/ComponentCard.astro\n---\nimport type { CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\ninterface Props {\n  component:\n    | CollectionEntry<'application'>['data']\n    | CollectionEntry<'marketing'>['data']\n    | CollectionEntry<'neobrutalism'>['data']\n}\n\nconst { component } = Astro.props\n\nconst { category, components, slug, title, updated } = component\n\nconst componentCount = components.length + components.filter(({ dark }) => !!dark).length\n\nconst recentUpdateThresholdDate = new Date()\n\nrecentUpdateThresholdDate.setHours(0, 0, 0, 0)\nrecentUpdateThresholdDate.setDate(recentUpdateThresholdDate.getDate() - 30)\n\nconst isRecentlyUpdated = updated?.date\n  ? new Date(updated.date) >= recentUpdateThresholdDate\n  : false\n---\n\n<li>\n  <a\n    href={`/components/${category}/${slug}`}\n    class=\"group relative block rounded-lg border border-gray-200 bg-white p-6 transition hover:-translate-y-1 hover:border-gray-300 hover:shadow-lg\"\n  >\n    <h3 class=\"text-xl font-medium text-gray-900\">\n      {title}\n    </h3>\n\n    <div class=\"mt-2 flex items-center justify-between\">\n      <p class=\"text-sm text-gray-600\">\n        {componentCount} components\n      </p>\n\n      <ArrowRight\n        class=\"size-5 text-gray-400 opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100\"\n      />\n    </div>\n\n    {\n      isRecentlyUpdated && (\n        <span class=\"absolute top-3 right-3 inline-flex shrink-0 items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs font-medium text-gray-600\">\n          <span class=\"size-1 rounded-full bg-green-600\" aria-hidden=\"true\" />\n          Updated\n        </span>\n      )\n    }\n  </a>\n</li>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "ComponentCard",
+      "name": "ComponentCard",
+      "path": "src/components/ComponentCard.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_ComponentCard",
+      "name": "ComponentCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/ComponentCard.astro",
+          "content": "---\nimport type { CollectionEntry } from 'astro:content'\n\nimport { ArrowRight } from '@lucide/astro'\n\ninterface Props {\n  component:\n    | CollectionEntry<'application'>['data']\n    | CollectionEntry<'marketing'>['data']\n    | CollectionEntry<'neobrutalism'>['data']\n}\n\nconst { component } = Astro.props\n\nconst { category, components, slug, title, updated } = component\n\nconst componentCount = components.length + components.filter(({ dark }) => !!dark).length\n\nconst recentUpdateThresholdDate = new Date()\n\nrecentUpdateThresholdDate.setHours(0, 0, 0, 0)\nrecentUpdateThresholdDate.setDate(recentUpdateThresholdDate.getDate() - 30)\n\nconst isRecentlyUpdated = updated?.date\n  ? new Date(updated.date) >= recentUpdateThresholdDate\n  : false\n---\n\n<li>\n  <a\n    href={`/components/${category}/${slug}`}\n    class=\"group relative block rounded-lg border border-gray-200 bg-white p-6 transition hover:-translate-y-1 hover:border-gray-300 hover:shadow-lg\"\n  >\n    <h3 class=\"text-xl font-medium text-gray-900\">\n      {title}\n    </h3>\n\n    <div class=\"mt-2 flex items-center justify-between\">\n      <p class=\"text-sm text-gray-600\">\n        {componentCount} components\n      </p>\n\n      <ArrowRight\n        class=\"size-5 text-gray-400 opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100\"\n      />\n    </div>\n\n    {\n      isRecentlyUpdated && (\n        <span class=\"absolute top-3 right-3 inline-flex shrink-0 items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs font-medium text-gray-600\">\n          <span class=\"size-1 rounded-full bg-green-600\" aria-hidden=\"true\" />\n          Updated\n        </span>\n      )\n    }\n  </a>\n</li>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

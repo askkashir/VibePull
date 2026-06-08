@@ -1,0 +1,44 @@
+{
+  "id": "text-recipe",
+  "name": "text-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/text.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const text = defineRecipe({\n  className: 'text',\n  variants: {},\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "text-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/text.ts",
+          "type": "registry:recipe",
+          "imports": "import { text } from './text'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const text = defineRecipe({\n  className: 'text',\n  variants: {},\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "text-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/text.ts",
+          "type": "registry:recipe",
+          "imports": "import { text } from './text'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const text = defineRecipe({\n  className: 'text',\n  variants: {},\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

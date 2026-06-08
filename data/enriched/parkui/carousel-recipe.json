@@ -1,0 +1,63 @@
+{
+  "id": "carousel-recipe",
+  "name": "carousel-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/carousel.ts\nimport { carouselAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const carousel = defineSlotRecipe({\n  className: 'carousel',\n  slots: carouselAnatomy.keys(),\n  base: {\n    root: {\n      position: 'relative',\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '2',\n      _vertical: {\n        flexDirection: 'row',\n      },\n    },\n    control: {\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      borderRadius: 'l2',\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    itemGroup: {\n      flex: '1',\n    },\n    indicatorGroup: {\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    indicator: {\n      borderRadius: 'full',\n      background: 'gray.subtle.bg',\n      cursor: 'pointer',\n      _current: {\n        background: 'colorPalette.solid.bg',\n      },\n      focusVisibleRing: 'outside',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    inline: {\n      true: {\n        control: {\n          background: { _light: 'white.a11', _dark: 'black.a11' },\n          bottom: '3',\n          left: '50%',\n          p: '1',\n          position: 'absolute',\n          transform: 'translateX(-50%)',\n        },\n      },\n    },\n    size: {\n      md: {\n        control: {\n          gap: '3',\n        },\n        indicatorGroup: {\n          gap: '3',\n        },\n        indicator: {\n          boxSize: '2.5',\n        },\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "carousel",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/carousel.ts",
+          "type": "registry:recipe",
+          "imports": "import { carousel } from './carousel'",
+          "content": "import { carouselAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const carousel = defineSlotRecipe({\n  className: 'carousel',\n  slots: carouselAnatomy.keys(),\n  base: {\n    root: {\n      position: 'relative',\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '2',\n      _vertical: {\n        flexDirection: 'row',\n      },\n    },\n    control: {\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      borderRadius: 'l2',\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    itemGroup: {\n      flex: '1',\n    },\n    indicatorGroup: {\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    indicator: {\n      borderRadius: 'full',\n      background: 'gray.subtle.bg',\n      cursor: 'pointer',\n      _current: {\n        background: 'colorPalette.solid.bg',\n      },\n      focusVisibleRing: 'outside',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    inline: {\n      true: {\n        control: {\n          background: { _light: 'white.a11', _dark: 'black.a11' },\n          bottom: '3',\n          left: '50%',\n          p: '1',\n          position: 'absolute',\n          transform: 'translateX(-50%)',\n        },\n      },\n    },\n    size: {\n      md: {\n        control: {\n          gap: '3',\n        },\n        indicatorGroup: {\n          gap: '3',\n        },\n        indicator: {\n          boxSize: '2.5',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "carousel-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/carousel.ts",
+          "type": "registry:recipe",
+          "imports": "import { carousel } from './carousel'",
+          "content": "import { carouselAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const carousel = defineSlotRecipe({\n  className: 'carousel',\n  slots: carouselAnatomy.keys(),\n  base: {\n    root: {\n      position: 'relative',\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '2',\n      _vertical: {\n        flexDirection: 'row',\n      },\n    },\n    control: {\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      borderRadius: 'l2',\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    itemGroup: {\n      flex: '1',\n    },\n    indicatorGroup: {\n      display: 'flex',\n      _vertical: {\n        flexDirection: 'column',\n      },\n    },\n    indicator: {\n      borderRadius: 'full',\n      background: 'gray.subtle.bg',\n      cursor: 'pointer',\n      _current: {\n        background: 'colorPalette.solid.bg',\n      },\n      focusVisibleRing: 'outside',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n  },\n  variants: {\n    inline: {\n      true: {\n        control: {\n          background: { _light: 'white.a11', _dark: 'black.a11' },\n          bottom: '3',\n          left: '50%',\n          p: '1',\n          position: 'absolute',\n          transform: 'translateX(-50%)',\n        },\n      },\n    },\n    size: {\n      md: {\n        control: {\n          gap: '3',\n        },\n        indicatorGroup: {\n          gap: '3',\n        },\n        indicator: {\n          boxSize: '2.5',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "carousel-recipe is a carousel recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "keyboard-focus"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: carousel-recipe\nDescription: carousel-recipe is a carousel recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable, utility-styled\nInteractions: keyboard-focus\nTags: carousel, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/carousel.ts\nimport { carouselAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const carousel = defineSlotRecipe({\n  className: 'carousel',\n  slots: carouselAnatomy.keys(),\n  base: {\n    root: {\n      position: 'relative',\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '2',\n      _vertical: {\n        flexDirection: 'row',\n      },\n    },\n    control: {\n      alignItems: 'center',\n      justifyCon",
+  "prompt_version": 2,
+  "clean_id": "carousel-recipe",
+  "display_name": "Carousel Recipe",
+  "preview_url": "/previews/parkui/carousel-recipe.png"
+}

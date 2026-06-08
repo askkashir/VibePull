@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_Input",
+  "name": "Input",
+  "source_code": "// components/ui/Input.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { HTMLAttributes } from \"react\";\n\ninterface Props extends HTMLAttributes<HTMLInputElement> {\n  className?: string;\n  value?: string;\n  type?: \"text\" | \"email\" | \"password\";\n  name?: string;\n  validate?: {};\n  required?: boolean;\n  disabled?: boolean;\n  autoFocus?: boolean;\n}\n\nexport default ({ className, required, validate, ...props }: Props) => (\n  <input\n    {...props}\n    className={mergeTW(\n      `px-3 py-2 bg-zinc-800/70 hover:bg-zinc-800/40 focus:bg-zinc-800/40 text-sm text-zinc-300 placeholder-zinc-500 outline-none border border-zinc-800 focus:border-zinc-600 shadow-sm rounded-lg duration-200 ${className}`\n    )}\n  ></input>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Input",
+      "name": "Input",
+      "path": "components/ui/Input.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Input",
+      "name": "Input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Input.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\nimport { HTMLAttributes } from \"react\";\n\ninterface Props extends HTMLAttributes<HTMLInputElement> {\n  className?: string;\n  value?: string;\n  type?: \"text\" | \"email\" | \"password\";\n  name?: string;\n  validate?: {};\n  required?: boolean;\n  disabled?: boolean;\n  autoFocus?: boolean;\n}\n\nexport default ({ className, required, validate, ...props }: Props) => (\n  <input\n    {...props}\n    className={mergeTW(\n      `px-3 py-2 bg-zinc-800/70 hover:bg-zinc-800/40 focus:bg-zinc-800/40 text-sm text-zinc-300 placeholder-zinc-500 outline-none border border-zinc-800 focus:border-zinc-600 shadow-sm rounded-lg duration-200 ${className}`\n    )}\n  ></input>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

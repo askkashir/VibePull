@@ -1,0 +1,45 @@
+{
+  "id": "number-ticker-demo",
+  "name": "Number Ticker Demo",
+  "source_code": "import { NumberTicker } from \"@/registry/magicui/number-ticker\"\n\nexport default function NumberTickerDemo() {\n  return (\n    <NumberTicker\n      value={100}\n      className=\"text-8xl font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white\"\n    />\n  )\n}\n",
+  "description": "Example showing animated counting numbers.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "number-ticker-demo",
+      "type": "registry:example",
+      "title": "Number Ticker Demo",
+      "description": "Example showing animated counting numbers.",
+      "registryDependencies": [
+        "https://magicui.design/r/number-ticker"
+      ],
+      "files": [
+        {
+          "path": "registry/example/number-ticker-demo.tsx",
+          "type": "registry:example",
+          "target": "components/number-ticker-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "number-ticker-demo",
+      "type": "registry:example",
+      "title": "Number Ticker Demo",
+      "description": "Example showing animated counting numbers.",
+      "registryDependencies": [
+        "@magicui/number-ticker"
+      ],
+      "files": [
+        {
+          "path": "registry/example/number-ticker-demo.tsx",
+          "content": "import { NumberTicker } from \"@/registry/magicui/number-ticker\"\n\nexport default function NumberTickerDemo() {\n  return (\n    <NumberTicker\n      value={100}\n      className=\"text-8xl font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white\"\n    />\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

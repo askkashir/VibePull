@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Kbd_Kbd",
+  "name": "Kbd",
+  "source_code": "// packages/@mantine/core/src/components/Kbd/Kbd.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getSize,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Kbd.module.css';\n\nexport type KbdStylesNames = 'root';\nexport type KbdCssVariables = {\n  root: '--kbd-fz';\n};\n\nexport interface KbdProps extends BoxProps, StylesApiProps<KbdFactory>, ElementProps<'kbd'> {\n  /** Controls `font-size` and `padding` @default 'sm' */\n  size?: MantineSize | number | (string & {});\n}\n\nexport type KbdFactory = Factory<{\n  props: KbdProps;\n  ref: HTMLElement;\n  stylesNames: KbdStylesNames;\n  vars: KbdCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<KbdFactory>((_, { size }) => ({\n  root: { '--kbd-fz': getSize(size, 'kbd-fz') },\n}));\n\nexport const Kbd = factory<KbdFactory>((_props) => {\n  const props = useProps('Kbd', null, _props);\n  const { classNames, className, style, styles, unstyled, vars, attributes, ...others } = props;\n\n  const getStyles = useStyles<KbdFactory>({\n    name: 'Kbd',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return <Box component=\"kbd\" {...getStyles('root')} {...others} />;\n});\n\nKbd.classes = classes;\nKbd.varsResolver = varsResolver;\nKbd.displayName = '@mantine/core/Kbd';\n\nexport namespace Kbd {\n  export type Props = KbdProps;\n  export type StylesNames = KbdStylesNames;\n  export type CssVariables = KbdCssVariables;\n  export type Factory = KbdFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Kbd_Kbd",
+      "name": "Kbd",
+      "path": "packages/@mantine/core/src/components/Kbd/Kbd.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Kbd_Kbd",
+      "name": "Kbd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Kbd/Kbd.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getSize,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Kbd.module.css';\n\nexport type KbdStylesNames = 'root';\nexport type KbdCssVariables = {\n  root: '--kbd-fz';\n};\n\nexport interface KbdProps extends BoxProps, StylesApiProps<KbdFactory>, ElementProps<'kbd'> {\n  /** Controls `font-size` and `padding` @default 'sm' */\n  size?: MantineSize | number | (string & {});\n}\n\nexport type KbdFactory = Factory<{\n  props: KbdProps;\n  ref: HTMLElement;\n  stylesNames: KbdStylesNames;\n  vars: KbdCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<KbdFactory>((_, { size }) => ({\n  root: { '--kbd-fz': getSize(size, 'kbd-fz') },\n}));\n\nexport const Kbd = factory<KbdFactory>((_props) => {\n  const props = useProps('Kbd', null, _props);\n  const { classNames, className, style, styles, unstyled, vars, attributes, ...others } = props;\n\n  const getStyles = useStyles<KbdFactory>({\n    name: 'Kbd',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return <Box component=\"kbd\" {...getStyles('root')} {...others} />;\n});\n\nKbd.classes = classes;\nKbd.varsResolver = varsResolver;\nKbd.displayName = '@mantine/core/Kbd';\n\nexport namespace Kbd {\n  export type Props = KbdProps;\n  export type StylesNames = KbdStylesNames;\n  export type CssVariables = KbdCssVariables;\n  export type Factory = KbdFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

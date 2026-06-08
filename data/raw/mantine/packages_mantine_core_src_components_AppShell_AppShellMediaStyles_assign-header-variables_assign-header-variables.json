@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_assign-header-variables_assign-header-variables",
+  "name": "assign-header-variables",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-header-variables/assign-header-variables.ts\nimport { keys, rem } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { getBaseSize } from '../get-base-size/get-base-size';\nimport type { CSSVariables, MediaQueryVariables } from '../get-variables/get-variables';\nimport { isPrimitiveSize } from '../is-primitive-size/is-primitive-size';\nimport { isResponsiveSize } from '../is-responsive-size/is-responsive-size';\n\ninterface AssignHeaderVariablesInput {\n  baseStyles: CSSVariables;\n  minMediaStyles: MediaQueryVariables;\n  header: AppShellProps['header'] | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport function assignHeaderVariables({\n  baseStyles,\n  minMediaStyles,\n  header,\n  mode,\n}: AssignHeaderVariablesInput) {\n  const headerHeight = header?.height;\n  const collapsedHeaderTransform = 'translateY(calc(var(--app-shell-header-height) * -1))';\n  const shouldOffset = mode === 'static' ? true : (header?.offset ?? true);\n\n  if (mode === 'static' && header) {\n    baseStyles['--app-shell-header-position'] = 'sticky';\n    baseStyles['--app-shell-header-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-header-grid-row'] = '1';\n  }\n\n  if (isPrimitiveSize(headerHeight)) {\n    const baseSize = rem(getBaseSize(headerHeight));\n    baseStyles['--app-shell-header-height'] = baseSize;\n    if (shouldOffset) {\n      baseStyles['--app-shell-header-offset'] = baseSize;\n    }\n  }\n\n  if (isResponsiveSize(headerHeight)) {\n    if (typeof headerHeight.base !== 'undefined') {\n      baseStyles['--app-shell-header-height'] = rem(headerHeight.base);\n\n      if (shouldOffset) {\n        baseStyles['--app-shell-header-offset'] = rem(headerHeight.base);\n      }\n    }\n\n    keys(headerHeight).forEach((key) => {\n      if (key !== 'base') {\n        minMediaStyles[key] = minMediaStyles[key] || {};\n        minMediaStyles[key]['--app-shell-header-height'] = rem(headerHeight[key]);\n\n        if (shouldOffset) {\n          minMediaStyles[key]['--app-shell-header-offset'] = rem(headerHeight[key]);\n        }\n      }\n    });\n  }\n\n  if (header?.collapsed) {\n    baseStyles['--app-shell-header-transform'] = collapsedHeaderTransform;\n    if (mode === 'fixed') {\n      baseStyles['--app-shell-header-offset'] = '0px !important';\n    }\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_assign-header-variables_assign-header-variables",
+      "name": "assign-header-variables",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-header-variables/assign-header-variables.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_assign-header-variables_assign-header-variables",
+      "name": "assign-header-variables",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/assign-header-variables/assign-header-variables.ts",
+          "content": "import { keys, rem } from '../../../../core';\nimport type { AppShellProps } from '../../AppShell';\nimport { getBaseSize } from '../get-base-size/get-base-size';\nimport type { CSSVariables, MediaQueryVariables } from '../get-variables/get-variables';\nimport { isPrimitiveSize } from '../is-primitive-size/is-primitive-size';\nimport { isResponsiveSize } from '../is-responsive-size/is-responsive-size';\n\ninterface AssignHeaderVariablesInput {\n  baseStyles: CSSVariables;\n  minMediaStyles: MediaQueryVariables;\n  header: AppShellProps['header'] | undefined;\n  mode: 'fixed' | 'static';\n}\n\nexport function assignHeaderVariables({\n  baseStyles,\n  minMediaStyles,\n  header,\n  mode,\n}: AssignHeaderVariablesInput) {\n  const headerHeight = header?.height;\n  const collapsedHeaderTransform = 'translateY(calc(var(--app-shell-header-height) * -1))';\n  const shouldOffset = mode === 'static' ? true : (header?.offset ?? true);\n\n  if (mode === 'static' && header) {\n    baseStyles['--app-shell-header-position'] = 'sticky';\n    baseStyles['--app-shell-header-grid-column'] = '1 / -1';\n    baseStyles['--app-shell-header-grid-row'] = '1';\n  }\n\n  if (isPrimitiveSize(headerHeight)) {\n    const baseSize = rem(getBaseSize(headerHeight));\n    baseStyles['--app-shell-header-height'] = baseSize;\n    if (shouldOffset) {\n      baseStyles['--app-shell-header-offset'] = baseSize;\n    }\n  }\n\n  if (isResponsiveSize(headerHeight)) {\n    if (typeof headerHeight.base !== 'undefined') {\n      baseStyles['--app-shell-header-height'] = rem(headerHeight.base);\n\n      if (shouldOffset) {\n        baseStyles['--app-shell-header-offset'] = rem(headerHeight.base);\n      }\n    }\n\n    keys(headerHeight).forEach((key) => {\n      if (key !== 'base') {\n        minMediaStyles[key] = minMediaStyles[key] || {};\n        minMediaStyles[key]['--app-shell-header-height'] = rem(headerHeight[key]);\n\n        if (shouldOffset) {\n          minMediaStyles[key]['--app-shell-header-offset'] = rem(headerHeight[key]);\n        }\n      }\n    });\n  }\n\n  if (header?.collapsed) {\n    baseStyles['--app-shell-header-transform'] = collapsedHeaderTransform;\n    if (mode === 'fixed') {\n      baseStyles['--app-shell-header-offset'] = '0px !important';\n    }\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

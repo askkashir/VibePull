@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Stepper_Stepper.context",
+  "name": "Stepper.context",
+  "source_code": "// packages/@mantine/core/src/components/Stepper/Stepper.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { StepperFactory } from './Stepper';\n\nexport interface StepperContextValue {\n  getStyles: GetStylesApi<StepperFactory>;\n  orientation: 'horizontal' | 'vertical' | undefined;\n  iconPosition: 'left' | 'right' | undefined;\n}\n\nexport const [StepperProvider, useStepperContext] = createSafeContext<StepperContextValue>(\n  'Stepper component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Stepper_Stepper.context",
+      "name": "Stepper.context",
+      "path": "packages/@mantine/core/src/components/Stepper/Stepper.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Stepper_Stepper.context",
+      "name": "Stepper.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Stepper/Stepper.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { StepperFactory } from './Stepper';\n\nexport interface StepperContextValue {\n  getStyles: GetStylesApi<StepperFactory>;\n  orientation: 'horizontal' | 'vertical' | undefined;\n  iconPosition: 'left' | 'right' | undefined;\n}\n\nexport const [StepperProvider, useStepperContext] = createSafeContext<StepperContextValue>(\n  'Stepper component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

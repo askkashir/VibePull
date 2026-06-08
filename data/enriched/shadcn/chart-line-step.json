@@ -1,0 +1,42 @@
+{
+  "id": "chart-line-step",
+  "name": "chart-line-step",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "line",
+    "step",
+    "progression",
+    "growth"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-step",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-step\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A line chart that displays progression toward a goal. Developers would use this component to show steady growth, increases, or decreases over time.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-line-step\nDescription: A line chart that displays progression toward a goal. Developers would use this component to show steady growth, increases, or decreases over time.\nStyle: e.g. dark, minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: chart, line, step, progression, growth\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-line-step",
+  "display_name": "Chart Line Step",
+  "preview_url": "/previews/shadcn/chart-line-step.png"
+}

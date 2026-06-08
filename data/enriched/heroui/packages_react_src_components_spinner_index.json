@@ -1,0 +1,42 @@
+{
+  "id": "packages_react_src_components_spinner_index",
+  "name": "spinner",
+  "source_code": "// packages/react/src/components/spinner/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {SpinnerRoot} from \"./spinner\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Spinner = Object.assign(SpinnerRoot, {\n  Root: SpinnerRoot,\n});\n\nexport type Spinner = {\n  Props: ComponentProps<typeof SpinnerRoot>;\n  RootProps: ComponentProps<typeof SpinnerRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {SpinnerRoot};\n\nexport type {SpinnerRootProps, SpinnerRootProps as SpinnerProps} from \"./spinner\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {spinnerVariants} from \"@heroui/styles\";\n\nexport type {SpinnerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "loader",
+    "spinner"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "spinner_index",
+      "name": "index",
+      "path": "packages/react/src/components/spinner/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_spinner_index",
+      "name": "spinner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/spinner/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {SpinnerRoot} from \"./spinner\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Spinner = Object.assign(SpinnerRoot, {\n  Root: SpinnerRoot,\n});\n\nexport type Spinner = {\n  Props: ComponentProps<typeof SpinnerRoot>;\n  RootProps: ComponentProps<typeof SpinnerRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {SpinnerRoot};\n\nexport type {SpinnerRootProps, SpinnerRootProps as SpinnerProps} from \"./spinner\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {spinnerVariants} from \"@heroui/styles\";\n\nexport type {SpinnerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "spinner is a spinner UI component from the heroui corpus. It provides reusable loader behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: spinner\nDescription: spinner is a spinner UI component from the heroui corpus. It provides reusable loader behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: heroui, loader, spinner\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/spinner/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {SpinnerRoot} from \"./spinner\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Spinner = Object.assign(SpinnerRoot, {\n  Root: SpinnerRoot,\n});\n\nexport type Spinner = {\n  Props: ComponentProps<typeof SpinnerRo",
+  "prompt_version": 2,
+  "clean_id": "spinner",
+  "display_name": "Spinner",
+  "preview_url": "/previews/heroui/packages-react-src-components-spinner-index.png"
+}

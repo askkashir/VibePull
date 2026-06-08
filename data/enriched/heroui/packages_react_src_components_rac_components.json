@@ -1,0 +1,41 @@
+{
+  "id": "packages_react_src_components_rac_components",
+  "name": "components",
+  "source_code": "// packages/react/src/components/rac/components.tsx\n\"use client\";\n\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"react-aria-components\";\n",
+  "description": "",
+  "tags": [
+    "import",
+    "export",
+    "react-aria-components"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "rac_components",
+      "name": "components",
+      "path": "packages/react/src/components/rac/components.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_rac_components",
+      "name": "components",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/rac/components.tsx",
+          "content": "\"use client\";\n\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"react-aria-components\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Imports and exports components from 'react-aria-components'. Use this component when working with ARIA-compliant UI components in your React application.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: components\nDescription: Imports and exports components from 'react-aria-components'. Use this component when working with ARIA-compliant UI components in your React application.\nStyle: \nInteractions: \nTags: import, export, react-aria-components\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/rac/components.tsx\n\"use client\";\n\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"react-aria-components\";\n",
+  "prompt_version": 2,
+  "clean_id": "rac",
+  "display_name": "Rac",
+  "preview_url": "/previews/heroui/packages-react-src-components-rac-components.png"
+}

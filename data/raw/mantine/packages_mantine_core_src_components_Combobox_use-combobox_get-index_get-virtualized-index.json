@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_use-combobox_get-index_get-virtualized-index",
+  "name": "get-virtualized-index",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-virtualized-index.ts\ninterface GetIndexProps {\n  currentIndex: number;\n  isOptionDisabled: (index: number) => boolean;\n  totalOptionsCount: number;\n  loop: boolean;\n}\n\nexport function getPreviousIndex({\n  currentIndex,\n  isOptionDisabled,\n  totalOptionsCount,\n  loop,\n}: GetIndexProps) {\n  for (let i = currentIndex - 1; i >= 0; i -= 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = totalOptionsCount - 1; i > -1; i -= 1) {\n      if (!isOptionDisabled(i)) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getNextIndex({\n  currentIndex,\n  isOptionDisabled,\n  totalOptionsCount,\n  loop,\n}: GetIndexProps) {\n  for (let i = currentIndex + 1; i < totalOptionsCount; i += 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = 0; i < totalOptionsCount; i += 1) {\n      if (!isOptionDisabled(i)) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\ninterface GetFirstIndexOptions {\n  totalOptionsCount: number;\n  isOptionDisabled: (index: number) => boolean;\n}\n\nexport function getFirstIndex({ totalOptionsCount, isOptionDisabled }: GetFirstIndexOptions) {\n  for (let i = 0; i < totalOptionsCount; i += 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  return -1;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_use-combobox_get-index_get-virtualized-index",
+      "name": "get-virtualized-index",
+      "path": "packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-virtualized-index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_use-combobox_get-index_get-virtualized-index",
+      "name": "get-virtualized-index",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/use-combobox/get-index/get-virtualized-index.ts",
+          "content": "interface GetIndexProps {\n  currentIndex: number;\n  isOptionDisabled: (index: number) => boolean;\n  totalOptionsCount: number;\n  loop: boolean;\n}\n\nexport function getPreviousIndex({\n  currentIndex,\n  isOptionDisabled,\n  totalOptionsCount,\n  loop,\n}: GetIndexProps) {\n  for (let i = currentIndex - 1; i >= 0; i -= 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = totalOptionsCount - 1; i > -1; i -= 1) {\n      if (!isOptionDisabled(i)) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\nexport function getNextIndex({\n  currentIndex,\n  isOptionDisabled,\n  totalOptionsCount,\n  loop,\n}: GetIndexProps) {\n  for (let i = currentIndex + 1; i < totalOptionsCount; i += 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  if (loop) {\n    for (let i = 0; i < totalOptionsCount; i += 1) {\n      if (!isOptionDisabled(i)) {\n        return i;\n      }\n    }\n  }\n\n  return currentIndex;\n}\n\ninterface GetFirstIndexOptions {\n  totalOptionsCount: number;\n  isOptionDisabled: (index: number) => boolean;\n}\n\nexport function getFirstIndex({ totalOptionsCount, isOptionDisabled }: GetFirstIndexOptions) {\n  for (let i = 0; i < totalOptionsCount; i += 1) {\n    if (!isOptionDisabled(i)) {\n      return i;\n    }\n  }\n\n  return -1;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

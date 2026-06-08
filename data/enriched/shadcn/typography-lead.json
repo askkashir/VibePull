@@ -1,0 +1,42 @@
+{
+  "id": "typography-lead",
+  "name": "typography-lead",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "heading",
+    "lead",
+    "hero",
+    "text-component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-lead",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-lead\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Typography Lead is a versatile, registry-based typography component used for highlighting crucial information. It showcases an enhanced font style and layout, making it ideal for use in hero sections, landing pages, and key messaging areas. Developers will choose this component when requiring an attention-grabbing text element.",
+  "style_tags": [
+    "clean",
+    "modern",
+    "high-contrast"
+  ],
+  "interaction_tags": [
+    "static",
+    "hover-state"
+  ],
+  "component_type": "typography",
+  "generation_prompt": "Create a production-ready typography component with the following characteristics:\n\nName: typography-lead\nDescription: Typography Lead is a versatile, registry-based typography component used for highlighting crucial information. It showcases an enhanced font style and layout, making it ideal for use in hero sections, landing pages, and key messaging areas. Developers will choose this component when requiring an attention-grabbing text element.\nStyle: clean, modern, high-contrast\nInteractions: static, hover-state\nTags: typography, heading, lead, hero, text-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-lead",
+  "display_name": "Typography Lead",
+  "preview_url": "/previews/shadcn/typography-lead.png"
+}

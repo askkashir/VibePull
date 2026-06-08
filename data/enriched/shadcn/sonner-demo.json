@@ -1,0 +1,36 @@
+{
+  "id": "sonner-demo",
+  "name": "sonner-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry",
+    "example",
+    "container",
+    "demonstration"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sonner-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sonner-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sonner-demo component is a registry-based example component, visually represented as a simple container with a title and content. It is commonly used when demonstrating registry capabilities. Developers would use this component when building applications that utilize registry integration.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "container",
+  "generation_prompt": "Create a production-ready container component with the following characteristics:\n\nName: sonner-demo\nDescription: The sonner-demo component is a registry-based example component, visually represented as a simple container with a title and content. It is commonly used when demonstrating registry capabilities. Developers would use this component when building applications that utilize registry integration.\nStyle: minimal\nInteractions: \nTags: registry, example, container, demonstration\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sonner-demo",
+  "display_name": "Sonner Demo",
+  "preview_url": "/previews/shadcn/sonner-demo.png"
+}

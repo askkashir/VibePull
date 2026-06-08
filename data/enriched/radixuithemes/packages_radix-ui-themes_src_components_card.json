@@ -1,0 +1,57 @@
+{
+  "id": "packages_radix-ui-themes_src_components_card",
+  "name": "card",
+  "source_code": "// packages/radix-ui-themes/src/components/card.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { cardPropDefs } from './card.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CardElement = React.ElementRef<'div'>;\ntype CardOwnProps = GetPropDefTypes<typeof cardPropDefs>;\ninterface CardProps extends ComponentPropsWithout<'div', RemovedProps>, MarginProps, CardOwnProps {}\nconst Card = React.forwardRef<CardElement, CardProps>((props, forwardedRef) => {\n  const { asChild, className, ...cardProps } = extractProps(props, cardPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot.Root : 'div';\n  return (\n    <Comp\n      ref={forwardedRef}\n      {...cardProps}\n      className={classNames('rt-reset', 'rt-BaseCard', 'rt-Card', className)}\n    />\n  );\n});\nCard.displayName = 'Card';\n\nexport { Card };\nexport type { CardProps };\n",
+  "description": "",
+  "tags": [
+    "ui element",
+    "layout",
+    "content",
+    "collection"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_card",
+      "name": "card.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/card.tsx",
+      "sha": "0cfd9183a9d555f8bf8344f66d6cd8f30a9cb6ba",
+      "size": 1143,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/card.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/card.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/0cfd9183a9d555f8bf8344f66d6cd8f30a9cb6ba",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/card.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/card.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/0cfd9183a9d555f8bf8344f66d6cd8f30a9cb6ba",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/card.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_card",
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/card.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { cardPropDefs } from './card.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype CardElement = React.ElementRef<'div'>;\ntype CardOwnProps = GetPropDefTypes<typeof cardPropDefs>;\ninterface CardProps extends ComponentPropsWithout<'div', RemovedProps>, MarginProps, CardOwnProps {}\nconst Card = React.forwardRef<CardElement, CardProps>((props, forwardedRef) => {\n  const { asChild, className, ...cardProps } = extractProps(props, cardPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot.Root : 'div';\n  return (\n    <Comp\n      ref={forwardedRef}\n      {...cardProps}\n      className={classNames('rt-reset', 'rt-BaseCard', 'rt-Card', className)}\n    />\n  );\n});\nCard.displayName = 'Card';\n\nexport { Card };\nexport type { CardProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A card is a self-contained block of content, similar to a UI element in the Material Design specification. A developer would use a card to display information, provide navigation or action, and to visually organize content. Cards are often used to represent individual items in a collection, or as a standalone element.",
+  "style_tags": [
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card\nDescription: A card is a self-contained block of content, similar to a UI element in the Material Design specification. A developer would use a card to display information, provide navigation or action, and to visually organize content. Cards are often used to represent individual items in a collection, or as a standalone element.\nStyle: minimal, glassmorphism\nInteractions: \nTags: ui element, layout, content, collection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/card.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { cardPropDefs } from './card.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTy",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-card.png"
+}

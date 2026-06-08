@@ -1,0 +1,31 @@
+{
+  "id": "src_components_DropdownWrapper",
+  "name": "DropdownWrapper",
+  "source_code": "// src/components/DropdownWrapper.astro\n---\nimport DropdownMenu from './DropdownMenu.astro'\nimport DropdownToggle from './DropdownToggle.astro'\n---\n\n<div class=\"relative block lg:hidden\">\n  <DropdownToggle />\n  <DropdownMenu />\n</div>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "DropdownWrapper",
+      "name": "DropdownWrapper",
+      "path": "src/components/DropdownWrapper.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_DropdownWrapper",
+      "name": "DropdownWrapper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/DropdownWrapper.astro",
+          "content": "---\nimport DropdownMenu from './DropdownMenu.astro'\nimport DropdownToggle from './DropdownToggle.astro'\n---\n\n<div class=\"relative block lg:hidden\">\n  <DropdownToggle />\n  <DropdownMenu />\n</div>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

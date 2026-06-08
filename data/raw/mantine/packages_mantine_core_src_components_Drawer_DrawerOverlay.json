@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerOverlay",
+  "name": "DrawerOverlay",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerOverlay.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseOverlay, ModalBaseOverlayProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerOverlayStylesNames = 'overlay';\n\nexport interface DrawerOverlayProps\n  extends ModalBaseOverlayProps, CompoundStylesApiProps<DrawerOverlayFactory> {}\n\nexport type DrawerOverlayFactory = Factory<{\n  props: DrawerOverlayProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerOverlayStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerOverlay = factory<DrawerOverlayFactory>((_props) => {\n  const props = useProps('DrawerOverlay', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseOverlay\n      {...ctx.getStyles('overlay', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerOverlay.classes = classes;\nDrawerOverlay.displayName = '@mantine/core/DrawerOverlay';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerOverlay",
+      "name": "DrawerOverlay",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerOverlay.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerOverlay",
+      "name": "DrawerOverlay",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerOverlay.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseOverlay, ModalBaseOverlayProps } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerOverlayStylesNames = 'overlay';\n\nexport interface DrawerOverlayProps\n  extends ModalBaseOverlayProps, CompoundStylesApiProps<DrawerOverlayFactory> {}\n\nexport type DrawerOverlayFactory = Factory<{\n  props: DrawerOverlayProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerOverlayStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerOverlay = factory<DrawerOverlayFactory>((_props) => {\n  const props = useProps('DrawerOverlay', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useDrawerContext();\n\n  return (\n    <ModalBaseOverlay\n      {...ctx.getStyles('overlay', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nDrawerOverlay.classes = classes;\nDrawerOverlay.displayName = '@mantine/core/DrawerOverlay';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

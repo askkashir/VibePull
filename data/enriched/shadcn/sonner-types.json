@@ -1,0 +1,40 @@
+{
+  "id": "sonner-types",
+  "name": "sonner-types",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry",
+    "example",
+    "types",
+    "catalog",
+    "filtering"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sonner-types",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sonner-types\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "SonnerTypes is a utility component used to display and manage a list of types. It is typically used within a registry or catalog context to allow users to filter and explore different types. A developer would use this component when needing to showcase various types in a clear and organized manner.",
+  "style_tags": [
+    "e.g. minimal",
+    "light"
+  ],
+  "interaction_tags": [
+    "e.g. static"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: sonner-types\nDescription: SonnerTypes is a utility component used to display and manage a list of types. It is typically used within a registry or catalog context to allow users to filter and explore different types. A developer would use this component when needing to showcase various types in a clear and organized manner.\nStyle: e.g. minimal, light\nInteractions: e.g. static\nTags: registry, example, types, catalog, filtering\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sonner-types",
+  "display_name": "Sonner Types",
+  "preview_url": "/previews/shadcn/sonner-types.png"
+}

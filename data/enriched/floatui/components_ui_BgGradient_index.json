@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_BgGradient_index",
+  "name": "BgGradient",
+  "source_code": "// components/ui/BgGradient/index.tsx\nexport default () => (\n  <div\n    className='absolute inset-0 max-w-lg m-auto h-[27rem] sm:h-64 sm:max-w-7xl'\n    style={{\n      background:\n        \"linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)\",\n      filter: \"blur(118px)\",\n    }}></div>\n);\n",
+  "description": "",
+  "tags": [
+    "bg",
+    "floatui",
+    "gradient",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_BgGradient_index",
+      "name": "index",
+      "path": "components/ui/BgGradient/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_BgGradient_index",
+      "name": "BgGradient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/BgGradient/index.tsx",
+          "content": "export default () => (\n  <div\n    className='absolute inset-0 max-w-lg m-auto h-[27rem] sm:h-64 sm:max-w-7xl'\n    style={{\n      background:\n        \"linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)\",\n      filter: \"blur(118px)\",\n    }}></div>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BgGradient is a bg gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BgGradient\nDescription: BgGradient is a bg gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, utility-styled\nInteractions: \nTags: bg, floatui, gradient, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/BgGradient/index.tsx\nexport default () => (\n  <div\n    className='absolute inset-0 max-w-lg m-auto h-[27rem] sm:h-64 sm:max-w-7xl'\n    style={{\n      background:\n        \"linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)\",\n      filter: \"blur(118px)\",\n    }}></div>\n);\n",
+  "prompt_version": 2,
+  "clean_id": "bg-gradient",
+  "display_name": "Bg Gradient",
+  "preview_url": "/previews/floatui/components-ui-bggradient-index.png"
+}

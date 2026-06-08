@@ -1,0 +1,45 @@
+{
+  "id": "components_ui_Modal",
+  "name": "Modal",
+  "source_code": "// components/ui/Modal.tsx\nimport { ReactNode } from \"react\";\nimport BlurBackground from \"../BlurBackground\";\nimport mergeTW from \"utils/mergeTW\";\n\ntype Props = {\n  title?: string;\n  description?: string;\n  icon?: ReactNode;\n  children: ReactNode;\n  isActive: boolean;\n  variant?: \"default\" | \"custom\";\n  className?: string;\n  classNameContainer?: string;\n  onCancel?: () => void;\n};\n\nexport default ({\n  children,\n  title,\n  description,\n  icon,\n  isActive,\n  variant = \"default\",\n  className = \"\",\n  classNameContainer,\n  onCancel,\n}: Props) => {\n  return isActive ? (\n    <div className=\"fixed w-full h-full inset-0 z-40 overflow-y-auto\">\n      <BlurBackground isActive={true} setActive={onCancel} />\n      <div\n        className={mergeTW(\n          `flex items-center min-h-screen px-4 py-8 ${classNameContainer}`\n        )}\n      >\n        <div\n          className={mergeTW(\n            `relative z-10 w-full max-w-lg p-4 mx-auto bg-zinc-900 rounded-xl shadow-xl ${className}`\n          )}\n        >\n          {variant == \"default\" ? (\n            <div className=\"py-3 sm:flex\">\n              <div className=\"flex items-center justify-center flex-none w-12 h-12 mx-auto bg-zinc-800 rounded-full\">\n                {icon}\n              </div>\n              <div className=\"mt-2 text-center sm:ml-4 sm:text-left\">\n                <h4 className=\"font-medium text-zinc-50 text-lg\">{title}</h4>\n                <p className=\"mt-2 text-sm leading-relaxed text-zinc-300\">\n                  {description}\n                </p>\n                <div className=\"items-center gap-2 mt-3 sm:flex\">\n                  {children}\n                </div>\n              </div>\n            </div>\n          ) : (\n            \"\"\n          )}\n          {variant == \"custom\" ? children : \"\"}\n        </div>\n      </div>\n    </div>\n  ) : (\n    <></>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "modal"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Modal",
+      "name": "Modal",
+      "path": "components/ui/Modal.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Modal",
+      "name": "Modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Modal.tsx",
+          "content": "import { ReactNode } from \"react\";\nimport BlurBackground from \"../BlurBackground\";\nimport mergeTW from \"utils/mergeTW\";\n\ntype Props = {\n  title?: string;\n  description?: string;\n  icon?: ReactNode;\n  children: ReactNode;\n  isActive: boolean;\n  variant?: \"default\" | \"custom\";\n  className?: string;\n  classNameContainer?: string;\n  onCancel?: () => void;\n};\n\nexport default ({\n  children,\n  title,\n  description,\n  icon,\n  isActive,\n  variant = \"default\",\n  className = \"\",\n  classNameContainer,\n  onCancel,\n}: Props) => {\n  return isActive ? (\n    <div className=\"fixed w-full h-full inset-0 z-40 overflow-y-auto\">\n      <BlurBackground isActive={true} setActive={onCancel} />\n      <div\n        className={mergeTW(\n          `flex items-center min-h-screen px-4 py-8 ${classNameContainer}`\n        )}\n      >\n        <div\n          className={mergeTW(\n            `relative z-10 w-full max-w-lg p-4 mx-auto bg-zinc-900 rounded-xl shadow-xl ${className}`\n          )}\n        >\n          {variant == \"default\" ? (\n            <div className=\"py-3 sm:flex\">\n              <div className=\"flex items-center justify-center flex-none w-12 h-12 mx-auto bg-zinc-800 rounded-full\">\n                {icon}\n              </div>\n              <div className=\"mt-2 text-center sm:ml-4 sm:text-left\">\n                <h4 className=\"font-medium text-zinc-50 text-lg\">{title}</h4>\n                <p className=\"mt-2 text-sm leading-relaxed text-zinc-300\">\n                  {description}\n                </p>\n                <div className=\"items-center gap-2 mt-3 sm:flex\">\n                  {children}\n                </div>\n              </div>\n            </div>\n          ) : (\n            \"\"\n          )}\n          {variant == \"custom\" ? children : \"\"}\n        </div>\n      </div>\n    </div>\n  ) : (\n    <></>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Modal is a modal UI component from the floatui corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: Modal\nDescription: Modal is a modal UI component from the floatui corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: rounded, shadow, utility-styled\nInteractions: \nTags: floatui, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Modal.tsx\nimport { ReactNode } from \"react\";\nimport BlurBackground from \"../BlurBackground\";\nimport mergeTW from \"utils/mergeTW\";\n\ntype Props = {\n  title?: string;\n  description?: string;\n  icon?: ReactNode;\n  children: ReactNode;\n  isActive: boolean;\n  variant?: \"default\" | \"custom\";\n  className?: string;\n  classNameContainer?: string;\n  onCancel?: () => void;\n};\n\nexport default ({\n  children,\n  title,\n  description,\n  icon,\n  isActive,\n  variant = \"default\",\n  className = \"\",\n",
+  "prompt_version": 2,
+  "clean_id": "modal",
+  "display_name": "Modal",
+  "preview_url": "/previews/floatui/components-ui-modal.png"
+}

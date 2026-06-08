@@ -1,0 +1,52 @@
+{
+  "id": "icon",
+  "name": "icon",
+  "source_code": "// src/components/ui/icon.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { icon } from 'styled-system/recipes'\n\nexport type IconProps = ComponentProps<typeof Icon>\nexport const Icon = styled(ark.svg, icon, {\n  defaultProps: { asChild: true },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "icon",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/icon.tsx",
+          "type": "registry:ui",
+          "exports": "export { Icon, type IconProps } from './icon'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { icon } from 'styled-system/recipes'\n\nexport type IconProps = ComponentProps<typeof Icon>\nexport const Icon = styled(ark.svg, icon, {\n  defaultProps: { asChild: true },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "icon",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/icon.tsx",
+          "type": "registry:ui",
+          "exports": "export { Icon, type IconProps } from './icon'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { icon } from 'styled-system/recipes'\n\nexport type IconProps = ComponentProps<typeof Icon>\nexport const Icon = styled(ark.svg, icon, {\n  defaultProps: { asChild: true },\n})\n"
+        }
+      ],
+      "registryDependencies": [
+        "icon-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

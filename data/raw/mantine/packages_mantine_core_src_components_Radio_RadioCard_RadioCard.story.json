@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Radio_RadioCard_RadioCard.story",
+  "name": "RadioCard.story",
+  "source_code": "// packages/@mantine/core/src/components/Radio/RadioCard/RadioCard.story.tsx\nimport { useState } from 'react';\nimport { RadioGroup } from '../RadioGroup/RadioGroup';\nimport { RadioIndicator } from '../RadioIndicator/RadioIndicator';\nimport { RadioCard } from './RadioCard';\n\nexport default { title: 'RadioCard' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioCard p=\"md\" checked={checked} onClick={() => setChecked((c) => !c)}>\n        <RadioIndicator />\n        Some label\n      </RadioCard>\n    </div>\n  );\n}\n\nexport function WithinGroup() {\n  const [value, setValue] = useState<string | null>(null);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioGroup value={value} onChange={setValue} name=\"test-name\">\n        <RadioCard value=\"1\">\n          <RadioIndicator />\n          Option 1\n        </RadioCard>\n\n        <RadioCard value=\"2\">\n          <RadioIndicator />\n          Option 2\n        </RadioCard>\n      </RadioGroup>\n\n      <div>{JSON.stringify(value)}</div>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Radio_RadioCard_RadioCard.story",
+      "name": "RadioCard.story",
+      "path": "packages/@mantine/core/src/components/Radio/RadioCard/RadioCard.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Radio_RadioCard_RadioCard.story",
+      "name": "RadioCard.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Radio/RadioCard/RadioCard.story.tsx",
+          "content": "import { useState } from 'react';\nimport { RadioGroup } from '../RadioGroup/RadioGroup';\nimport { RadioIndicator } from '../RadioIndicator/RadioIndicator';\nimport { RadioCard } from './RadioCard';\n\nexport default { title: 'RadioCard' };\n\nexport function Usage() {\n  const [checked, setChecked] = useState(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioCard p=\"md\" checked={checked} onClick={() => setChecked((c) => !c)}>\n        <RadioIndicator />\n        Some label\n      </RadioCard>\n    </div>\n  );\n}\n\nexport function WithinGroup() {\n  const [value, setValue] = useState<string | null>(null);\n\n  return (\n    <div style={{ padding: 40 }}>\n      <RadioGroup value={value} onChange={setValue} name=\"test-name\">\n        <RadioCard value=\"1\">\n          <RadioIndicator />\n          Option 1\n        </RadioCard>\n\n        <RadioCard value=\"2\">\n          <RadioIndicator />\n          Option 2\n        </RadioCard>\n      </RadioGroup>\n\n      <div>{JSON.stringify(value)}</div>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_rac_components",
+  "name": "components",
+  "source_code": "// packages/react/src/components/rac/components.tsx\n\"use client\";\n\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"react-aria-components\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "rac_components",
+      "name": "components",
+      "path": "packages/react/src/components/rac/components.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_rac_components",
+      "name": "components",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/rac/components.tsx",
+          "content": "\"use client\";\n\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"react-aria-components\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

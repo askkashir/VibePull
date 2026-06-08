@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_DrawerContent",
+  "name": "DrawerContent",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/DrawerContent.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerContentStylesNames = 'content' | 'inner';\n\nexport interface DrawerContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<DrawerContentFactory> {\n  __hidden?: boolean;\n}\n\nexport type DrawerContentFactory = Factory<{\n  props: DrawerContentProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerContentStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerContent = factory<DrawerContentFactory>((_props) => {\n  const props = useProps('DrawerContent', null, _props);\n  const { classNames, className, style, styles, vars, children, radius, __hidden, ...others } =\n    props;\n\n  const ctx = useDrawerContext();\n  const Scroll: React.FC<any> = ctx.scrollAreaComponent || NativeScrollArea;\n\n  return (\n    <ModalBaseContent\n      {...ctx.getStyles('content', { className, style, styles, classNames })}\n      innerProps={ctx.getStyles('inner', { className, style, styles, classNames })}\n      {...others}\n      radius={radius || ctx.radius || 0}\n      data-hidden={__hidden || undefined}\n    >\n      <Scroll style={{ height: 'calc(100vh - var(--drawer-offset) * 2)' }}>{children}</Scroll>\n    </ModalBaseContent>\n  );\n});\n\nDrawerContent.classes = classes;\nDrawerContent.displayName = '@mantine/core/DrawerContent';\n",
+  "description": "",
+  "tags": [
+    "content",
+    "drawer",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_DrawerContent",
+      "name": "DrawerContent",
+      "path": "packages/@mantine/core/src/components/Drawer/DrawerContent.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_DrawerContent",
+      "name": "DrawerContent",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/DrawerContent.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerContentStylesNames = 'content' | 'inner';\n\nexport interface DrawerContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<DrawerContentFactory> {\n  __hidden?: boolean;\n}\n\nexport type DrawerContentFactory = Factory<{\n  props: DrawerContentProps;\n  ref: HTMLDivElement;\n  stylesNames: DrawerContentStylesNames;\n  compound: true;\n}>;\n\nexport const DrawerContent = factory<DrawerContentFactory>((_props) => {\n  const props = useProps('DrawerContent', null, _props);\n  const { classNames, className, style, styles, vars, children, radius, __hidden, ...others } =\n    props;\n\n  const ctx = useDrawerContext();\n  const Scroll: React.FC<any> = ctx.scrollAreaComponent || NativeScrollArea;\n\n  return (\n    <ModalBaseContent\n      {...ctx.getStyles('content', { className, style, styles, classNames })}\n      innerProps={ctx.getStyles('inner', { className, style, styles, classNames })}\n      {...others}\n      radius={radius || ctx.radius || 0}\n      data-hidden={__hidden || undefined}\n    >\n      <Scroll style={{ height: 'calc(100vh - var(--drawer-offset) * 2)' }}>{children}</Scroll>\n    </ModalBaseContent>\n  );\n});\n\nDrawerContent.classes = classes;\nDrawerContent.displayName = '@mantine/core/DrawerContent';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DrawerContent is a drawer content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: DrawerContent\nDescription: DrawerContent is a drawer content UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: content, drawer, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Drawer/DrawerContent.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseContent, ModalBaseContentProps, NativeScrollArea } from '../ModalBase';\nimport { useDrawerContext } from './Drawer.context';\nimport classes from './Drawer.module.css';\n\nexport type DrawerContentStylesNames = 'content' | 'inner';\n\nexport interface DrawerContentProps\n  extends ModalBaseContentProps, CompoundStylesApiProps<DrawerContent",
+  "prompt_version": 2,
+  "clean_id": "drawer-content",
+  "display_name": "Drawer Content",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-drawer-drawercontent.png"
+}

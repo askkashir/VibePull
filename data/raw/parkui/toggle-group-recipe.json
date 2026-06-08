@@ -1,0 +1,46 @@
+{
+  "id": "toggle-group-recipe",
+  "name": "toggle-group-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/toggle-group.ts\nimport { toggleGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toggleGroup = defineSlotRecipe({\n  className: 'toggle-group',\n  slots: toggleGroupAnatomy.keys(),\n  base: {\n    root: {},\n  },\n  variants: {\n    variant: {\n      outline: {\n        root: {\n          borderRadius: 'l3',\n          borderWidth: '1px',\n          gap: '1',\n          p: '1',\n        },\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/toggle-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { toggleGroup } from './toggle-group'",
+          "content": "import { toggleGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toggleGroup = defineSlotRecipe({\n  className: 'toggle-group',\n  slots: toggleGroupAnatomy.keys(),\n  base: {\n    root: {},\n  },\n  variants: {\n    variant: {\n      outline: {\n        root: {\n          borderRadius: 'l3',\n          borderWidth: '1px',\n          gap: '1',\n          p: '1',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "toggle-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/toggle-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { toggleGroup } from './toggle-group'",
+          "content": "import { toggleGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const toggleGroup = defineSlotRecipe({\n  className: 'toggle-group',\n  slots: toggleGroupAnatomy.keys(),\n  base: {\n    root: {},\n  },\n  variants: {\n    variant: {\n      outline: {\n        root: {\n          borderRadius: 'l3',\n          borderWidth: '1px',\n          gap: '1',\n          p: '1',\n        },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

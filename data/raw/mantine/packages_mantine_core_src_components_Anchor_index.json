@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Anchor_index",
+  "name": "Anchor",
+  "source_code": "// packages/@mantine/core/src/components/Anchor/index.ts\nexport { Anchor } from './Anchor';\n\nexport type {\n  AnchorProps,\n  AnchorStylesNames,\n  AnchorCssVariables,\n  AnchorFactory,\n  AnchorVariant,\n} from './Anchor';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Anchor_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Anchor/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Anchor_index",
+      "name": "Anchor",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Anchor/index.ts",
+          "content": "export { Anchor } from './Anchor';\n\nexport type {\n  AnchorProps,\n  AnchorStylesNames,\n  AnchorCssVariables,\n  AnchorFactory,\n  AnchorVariant,\n} from './Anchor';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

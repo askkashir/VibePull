@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Badge_index",
+  "name": "Badge",
+  "source_code": "// packages/@mantine/core/src/components/Badge/index.ts\nimport type {\n  BadgeCssVariables,\n  BadgeFactory,\n  BadgeProps,\n  BadgeStylesNames,\n  BadgeVariant,\n} from './Badge';\n\nexport { Badge } from './Badge';\n\nexport type { BadgeProps, BadgeStylesNames, BadgeCssVariables, BadgeVariant, BadgeFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Badge_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Badge/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Badge_index",
+      "name": "Badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Badge/index.ts",
+          "content": "import type {\n  BadgeCssVariables,\n  BadgeFactory,\n  BadgeProps,\n  BadgeStylesNames,\n  BadgeVariant,\n} from './Badge';\n\nexport { Badge } from './Badge';\n\nexport type { BadgeProps, BadgeStylesNames, BadgeCssVariables, BadgeVariant, BadgeFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

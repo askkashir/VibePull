@@ -1,0 +1,48 @@
+{
+  "id": "packages_react_src_components_date-picker_index",
+  "name": "date-picker",
+  "source_code": "// packages/react/src/components/date-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DatePickerPopover,\n  DatePickerRoot,\n  DatePickerTrigger,\n  DatePickerTriggerIndicator,\n} from \"./date-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DatePicker = Object.assign(DatePickerRoot, {\n  Root: DatePickerRoot,\n  Trigger: DatePickerTrigger,\n  TriggerIndicator: DatePickerTriggerIndicator,\n  Popover: DatePickerPopover,\n});\n\nexport type DatePicker = {\n  Props: ComponentProps<typeof DatePickerRoot>;\n  RootProps: ComponentProps<typeof DatePickerRoot>;\n  TriggerProps: ComponentProps<typeof DatePickerTrigger>;\n  TriggerIndicatorProps: ComponentProps<typeof DatePickerTriggerIndicator>;\n  PopoverProps: ComponentProps<typeof DatePickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {DatePickerRoot, DatePickerTrigger, DatePickerTriggerIndicator, DatePickerPopover};\n\nexport type {\n  DatePickerRootProps,\n  DatePickerRootProps as DatePickerProps,\n  DatePickerTriggerProps,\n  DatePickerTriggerIndicatorProps,\n  DatePickerPopoverProps,\n} from \"./date-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {datePickerVariants} from \"@heroui/styles\";\n\nexport type {DatePickerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "date",
+    "input",
+    "ui",
+    "react"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "date-picker_index",
+      "name": "index",
+      "path": "packages/react/src/components/date-picker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_date-picker_index",
+      "name": "date-picker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/date-picker/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  DatePickerPopover,\n  DatePickerRoot,\n  DatePickerTrigger,\n  DatePickerTriggerIndicator,\n} from \"./date-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DatePicker = Object.assign(DatePickerRoot, {\n  Root: DatePickerRoot,\n  Trigger: DatePickerTrigger,\n  TriggerIndicator: DatePickerTriggerIndicator,\n  Popover: DatePickerPopover,\n});\n\nexport type DatePicker = {\n  Props: ComponentProps<typeof DatePickerRoot>;\n  RootProps: ComponentProps<typeof DatePickerRoot>;\n  TriggerProps: ComponentProps<typeof DatePickerTrigger>;\n  TriggerIndicatorProps: ComponentProps<typeof DatePickerTriggerIndicator>;\n  PopoverProps: ComponentProps<typeof DatePickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {DatePickerRoot, DatePickerTrigger, DatePickerTriggerIndicator, DatePickerPopover};\n\nexport type {\n  DatePickerRootProps,\n  DatePickerRootProps as DatePickerProps,\n  DatePickerTriggerProps,\n  DatePickerTriggerIndicatorProps,\n  DatePickerPopoverProps,\n} from \"./date-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {datePickerVariants} from \"@heroui/styles\";\n\nexport type {DatePickerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "DatePicker is a component used to select a date. It consists of a trigger and a popover and is suitable for cases where a user needs to enter or select a date, such as booking a flight or a hotel room.",
+  "style_tags": [
+    "material",
+    "native"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: date-picker\nDescription: DatePicker is a component used to select a date. It consists of a trigger and a popover and is suitable for cases where a user needs to enter or select a date, such as booking a flight or a hotel room.\nStyle: material, native\nInteractions: clickable, hover\nTags: date, input, ui, react\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/date-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DatePickerPopover,\n  DatePickerRoot,\n  DatePickerTrigger,\n  DatePickerTriggerIndicator,\n} from \"./date-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DatePicker = Object.assign(DatePickerRoot",
+  "prompt_version": 2,
+  "clean_id": "date-picker",
+  "display_name": "Date Picker",
+  "preview_url": "/previews/heroui/packages-react-src-components-date-picker-index.png"
+}

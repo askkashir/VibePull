@@ -1,0 +1,51 @@
+{
+  "id": "elements_modal",
+  "name": "modal",
+  "source_code": "// elements/modal.html\n<div x-data=\"{ modalOpen: false }\"\n    @keydown.escape.window=\"modalOpen = false\"\n    class=\"relative z-50 w-auto h-auto\">\n    <button @click=\"modalOpen=true\" class=\"inline-flex justify-center items-center px-4 py-2 h-10 text-sm font-medium bg-white rounded-md border transition-colors hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none\">Open</button>\n    <template x-teleport=\"body\">\n        <div x-show=\"modalOpen\" class=\"fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen\" x-cloak>\n            <div x-show=\"modalOpen\" \n                x-transition:enter=\"ease-out duration-300\"\n                x-transition:enter-start=\"opacity-0\"\n                x-transition:enter-end=\"opacity-100\"\n                x-transition:leave=\"ease-in duration-300\"\n                x-transition:leave-start=\"opacity-100\"\n                x-transition:leave-end=\"opacity-0\"\n                @click=\"modalOpen=false\" class=\"absolute inset-0 w-full h-full bg-black/40\"></div>\n            <div x-show=\"modalOpen\"\n                x-trap.inert.noscroll=\"modalOpen\"\n                x-transition:enter=\"ease-out duration-300\"\n                x-transition:enter-start=\"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95\"\n                x-transition:enter-end=\"opacity-100 translate-y-0 sm:scale-100\"\n                x-transition:leave=\"ease-in duration-200\"\n                x-transition:leave-start=\"opacity-100 translate-y-0 sm:scale-100\"\n                x-transition:leave-end=\"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95\"\n                class=\"relative px-7 py-6 w-full bg-white sm:max-w-lg sm:rounded-lg\">\n                <div class=\"flex justify-between items-center pb-2\">\n                    <h3 class=\"text-lg font-semibold\">Modal Title</h3>\n                    <button @click=\"modalOpen=false\" class=\"flex absolute top-0 right-0 justify-center items-center mt-5 mr-5 w-8 h-8 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50\">\n                        <svg class=\"w-5 h-5\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6 18L18 6M6 6l12 12\" /></svg>  \n                    </button>\n                </div>\n                <div class=\"relative w-auto\">\n                    <p>This is placeholder text. Replace it with your own content.</p>\n                </div>\n            </div>\n        </div>\n    </template>\n</div>",
+  "description": "",
+  "tags": [
+    "modal",
+    "popup",
+    "overlay",
+    "alert",
+    "dialog"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "modal",
+      "name": "modal",
+      "path": "elements/modal.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_modal",
+      "name": "modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/modal.html",
+          "content": "<div x-data=\"{ modalOpen: false }\"\n    @keydown.escape.window=\"modalOpen = false\"\n    class=\"relative z-50 w-auto h-auto\">\n    <button @click=\"modalOpen=true\" class=\"inline-flex justify-center items-center px-4 py-2 h-10 text-sm font-medium bg-white rounded-md border transition-colors hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none\">Open</button>\n    <template x-teleport=\"body\">\n        <div x-show=\"modalOpen\" class=\"fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen\" x-cloak>\n            <div x-show=\"modalOpen\" \n                x-transition:enter=\"ease-out duration-300\"\n                x-transition:enter-start=\"opacity-0\"\n                x-transition:enter-end=\"opacity-100\"\n                x-transition:leave=\"ease-in duration-300\"\n                x-transition:leave-start=\"opacity-100\"\n                x-transition:leave-end=\"opacity-0\"\n                @click=\"modalOpen=false\" class=\"absolute inset-0 w-full h-full bg-black/40\"></div>\n            <div x-show=\"modalOpen\"\n                x-trap.inert.noscroll=\"modalOpen\"\n                x-transition:enter=\"ease-out duration-300\"\n                x-transition:enter-start=\"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95\"\n                x-transition:enter-end=\"opacity-100 translate-y-0 sm:scale-100\"\n                x-transition:leave=\"ease-in duration-200\"\n                x-transition:leave-start=\"opacity-100 translate-y-0 sm:scale-100\"\n                x-transition:leave-end=\"opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95\"\n                class=\"relative px-7 py-6 w-full bg-white sm:max-w-lg sm:rounded-lg\">\n                <div class=\"flex justify-between items-center pb-2\">\n                    <h3 class=\"text-lg font-semibold\">Modal Title</h3>\n                    <button @click=\"modalOpen=false\" class=\"flex absolute top-0 right-0 justify-center items-center mt-5 mr-5 w-8 h-8 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50\">\n                        <svg class=\"w-5 h-5\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6 18L18 6M6 6l12 12\" /></svg>  \n                    </button>\n                </div>\n                <div class=\"relative w-auto\">\n                    <p>This is placeholder text. Replace it with your own content.</p>\n                </div>\n            </div>\n        </div>\n    </template>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A modal window with a close button and a dismissable background, typically displayed on top of the main content. Developers would use it to display important information or request input from the user. It's a modal that can be opened and closed via the provided open/close button and the background click.",
+  "style_tags": [
+    "white",
+    "modal",
+    "overlay"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated",
+    "closable"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: modal\nDescription: A modal window with a close button and a dismissable background, typically displayed on top of the main content. Developers would use it to display important information or request input from the user. It's a modal that can be opened and closed via the provided open/close button and the background click.\nStyle: white, modal, overlay\nInteractions: clickable, animated, closable\nTags: modal, popup, overlay, alert, dialog\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/modal.html\n<div x-data=\"{ modalOpen: false }\"\n    @keydown.escape.window=\"modalOpen = false\"\n    class=\"relative z-50 w-auto h-auto\">\n    <button @click=\"modalOpen=true\" class=\"inline-flex justify-center items-center px-4 py-2 h-10 text-sm font-medium bg-white rounded-md border transition-colors hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none\">Open</butto",
+  "prompt_version": 2,
+  "clean_id": "modal",
+  "display_name": "Modal",
+  "preview_url": "/previews/pinesui/elements-modal.png"
+}

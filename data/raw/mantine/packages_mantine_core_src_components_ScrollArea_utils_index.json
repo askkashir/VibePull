@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_index",
+  "name": "utils",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/index.ts\nexport { isScrollingWithinScrollbarBounds } from './is-scrolling-within-scrollbar-bounds';\nexport { getThumbRatio } from './get-thumb-ratio';\nexport { getThumbSize } from './get-thumb-size';\nexport { composeEventHandlers } from './compose-event-handlers';\nexport { toInt } from './to-int';\nexport { getThumbOffsetFromScroll } from './get-thumb-offset-from-scroll';\nexport { getScrollPositionFromPointer } from './get-scroll-position-from-pointer';\nexport { addUnlinkedScrollListener } from './add-unlinked-scroll-listener';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_index",
+      "name": "utils",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/index.ts",
+          "content": "export { isScrollingWithinScrollbarBounds } from './is-scrolling-within-scrollbar-bounds';\nexport { getThumbRatio } from './get-thumb-ratio';\nexport { getThumbSize } from './get-thumb-size';\nexport { composeEventHandlers } from './compose-event-handlers';\nexport { toInt } from './to-int';\nexport { getThumbOffsetFromScroll } from './get-thumb-offset-from-scroll';\nexport { getScrollPositionFromPointer } from './get-scroll-position-from-pointer';\nexport { addUnlinkedScrollListener } from './add-unlinked-scroll-listener';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

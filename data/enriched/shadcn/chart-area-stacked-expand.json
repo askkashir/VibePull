@@ -1,0 +1,43 @@
+{
+  "id": "chart-area-stacked-expand",
+  "name": "chart-area-stacked-expand",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "data-visualizer",
+    "stacked-chart",
+    "expandable",
+    "complex-data"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-stacked-expand",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-stacked-expand\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart-area-stacked-expand component is a graphical representation of stackable data, ideal for showing complex trends and relationships. It is typically used in data-heavy applications where users need to compare multiple metrics. This component can be used when the data is layered or hierarchical in nature.",
+  "style_tags": [
+    "modern",
+    "flat",
+    "clean"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-stacked-expand\nDescription: A chart-area-stacked-expand component is a graphical representation of stackable data, ideal for showing complex trends and relationships. It is typically used in data-heavy applications where users need to compare multiple metrics. This component can be used when the data is layered or hierarchical in nature.\nStyle: modern, flat, clean\nInteractions: hover, clickable, draggable\nTags: chart, data-visualizer, stacked-chart, expandable, complex-data\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-stacked-expand",
+  "display_name": "Chart Area Stacked Expand",
+  "preview_url": "/previews/shadcn/chart-area-stacked-expand.png"
+}

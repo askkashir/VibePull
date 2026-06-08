@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Blockquote_index",
+  "name": "Blockquote",
+  "source_code": "// packages/@mantine/core/src/components/Blockquote/index.ts\nimport type {\n  BlockquoteCssVariables,\n  BlockquoteFactory,\n  BlockquoteProps,\n  BlockquoteStylesNames,\n} from './Blockquote';\n\nexport { Blockquote } from './Blockquote';\n\nexport type { BlockquoteProps, BlockquoteStylesNames, BlockquoteCssVariables, BlockquoteFactory };\n",
+  "description": "",
+  "tags": [
+    "citation",
+    "quote",
+    "emphasis",
+    "text"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Blockquote_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Blockquote/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Blockquote_index",
+      "name": "Blockquote",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Blockquote/index.ts",
+          "content": "import type {\n  BlockquoteCssVariables,\n  BlockquoteFactory,\n  BlockquoteProps,\n  BlockquoteStylesNames,\n} from './Blockquote';\n\nexport { Blockquote } from './Blockquote';\n\nexport type { BlockquoteProps, BlockquoteStylesNames, BlockquoteCssVariables, BlockquoteFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A blockquote is a visually styled quote which can be used for citing sources or highlighting important text. It's often used to add emphasis or context to a piece of information. Developers would use a blockquote to visually separate a quote from the rest of the content.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Blockquote\nDescription: A blockquote is a visually styled quote which can be used for citing sources or highlighting important text. It's often used to add emphasis or context to a piece of information. Developers would use a blockquote to visually separate a quote from the rest of the content.\nStyle: minimal\nInteractions: \nTags: citation, quote, emphasis, text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Blockquote/index.ts\nimport type {\n  BlockquoteCssVariables,\n  BlockquoteFactory,\n  BlockquoteProps,\n  BlockquoteStylesNames,\n} from './Blockquote';\n\nexport { Blockquote } from './Blockquote';\n\nexport type { BlockquoteProps, BlockquoteStylesNames, BlockquoteCssVariables, BlockquoteFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "blockquote",
+  "display_name": "Blockquote",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-blockquote-index.png"
+}

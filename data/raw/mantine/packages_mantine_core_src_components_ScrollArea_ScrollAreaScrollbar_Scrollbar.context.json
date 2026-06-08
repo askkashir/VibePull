@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+  "name": "Scrollbar.context",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts\nimport { createSafeContext } from '../../../core';\n\nexport interface ScrollbarContextValue {\n  hasThumb: boolean;\n  scrollbar: HTMLDivElement | null;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerUp: () => void;\n  onThumbPointerDown: (pointerPos: { x: number; y: number }) => void;\n  onThumbPositionChange: () => void;\n}\n\nexport const [ScrollbarProvider, useScrollbarContext] = createSafeContext<ScrollbarContextValue>(\n  'ScrollAreaScrollbar was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+      "name": "Scrollbar.context",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+      "name": "Scrollbar.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts",
+          "content": "import { createSafeContext } from '../../../core';\n\nexport interface ScrollbarContextValue {\n  hasThumb: boolean;\n  scrollbar: HTMLDivElement | null;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerUp: () => void;\n  onThumbPointerDown: (pointerPos: { x: number; y: number }) => void;\n  onThumbPositionChange: () => void;\n}\n\nexport const [ScrollbarProvider, useScrollbarContext] = createSafeContext<ScrollbarContextValue>(\n  'ScrollAreaScrollbar was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

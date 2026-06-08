@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_AlphaSlider_AlphaSlider",
+  "name": "AlphaSlider",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.tsx\nimport { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\nimport { round } from '../converters/parsers';\n\nexport interface AlphaSliderProps extends ColorSliderOptions {\n  color: string;\n}\n\nexport type AlphaSliderFactory = Factory<{\n  props: AlphaSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorSliderStylesNames;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'AlphaSlider',\n} satisfies Partial<AlphaSliderProps>;\n\nexport const AlphaSlider = factory<AlphaSliderFactory>((props: AlphaSliderProps) => {\n  const { value, onChange, onChangeEnd, color, ...others } = useProps(\n    'AlphaSlider',\n    defaultProps,\n    props\n  );\n\n  return (\n    <ColorSlider\n      {...others}\n      value={value}\n      onChange={(val) => onChange?.(round(val, 2))}\n      onChangeEnd={(val) => onChangeEnd?.(round(val, 2))}\n      maxValue={1}\n      round={false}\n      data-alpha\n      overlays={[\n        {\n          backgroundImage:\n            'linear-gradient(45deg, var(--slider-checkers) 25%, transparent 25%), linear-gradient(-45deg, var(--slider-checkers) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--slider-checkers) 75%), linear-gradient(-45deg, var(--mantine-color-body) 75%, var(--slider-checkers) 75%)',\n          backgroundSize: `${rem(8)} ${rem(8)}`,\n          backgroundPosition: `0 0, 0 ${rem(4)}, ${rem(4)} ${rem(-4)}, ${rem(-4)} 0`,\n        },\n        {\n          backgroundImage: `linear-gradient(90deg, transparent, ${color})`,\n        },\n        {\n          boxShadow: `rgba(0, 0, 0, .1) 0 0 0 ${rem(1)} inset, rgb(0, 0, 0, .15) 0 0 ${rem(\n            4\n          )} inset`,\n        },\n      ]}\n    />\n  );\n});\n\nAlphaSlider.displayName = '@mantine/core/AlphaSlider';\nAlphaSlider.classes = ColorSlider.classes;\n\nexport namespace AlphaSlider {\n  export type Props = AlphaSliderProps;\n  export type Factory = AlphaSliderFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "alpha",
+    "mantine",
+    "other",
+    "slider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_AlphaSlider_AlphaSlider",
+      "name": "AlphaSlider",
+      "path": "packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_AlphaSlider_AlphaSlider",
+      "name": "AlphaSlider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.tsx",
+          "content": "import { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\nimport { round } from '../converters/parsers';\n\nexport interface AlphaSliderProps extends ColorSliderOptions {\n  color: string;\n}\n\nexport type AlphaSliderFactory = Factory<{\n  props: AlphaSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorSliderStylesNames;\n}>;\n\nconst defaultProps = {\n  __staticSelector: 'AlphaSlider',\n} satisfies Partial<AlphaSliderProps>;\n\nexport const AlphaSlider = factory<AlphaSliderFactory>((props: AlphaSliderProps) => {\n  const { value, onChange, onChangeEnd, color, ...others } = useProps(\n    'AlphaSlider',\n    defaultProps,\n    props\n  );\n\n  return (\n    <ColorSlider\n      {...others}\n      value={value}\n      onChange={(val) => onChange?.(round(val, 2))}\n      onChangeEnd={(val) => onChangeEnd?.(round(val, 2))}\n      maxValue={1}\n      round={false}\n      data-alpha\n      overlays={[\n        {\n          backgroundImage:\n            'linear-gradient(45deg, var(--slider-checkers) 25%, transparent 25%), linear-gradient(-45deg, var(--slider-checkers) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--slider-checkers) 75%), linear-gradient(-45deg, var(--mantine-color-body) 75%, var(--slider-checkers) 75%)',\n          backgroundSize: `${rem(8)} ${rem(8)}`,\n          backgroundPosition: `0 0, 0 ${rem(4)}, ${rem(4)} ${rem(-4)}, ${rem(-4)} 0`,\n        },\n        {\n          backgroundImage: `linear-gradient(90deg, transparent, ${color})`,\n        },\n        {\n          boxShadow: `rgba(0, 0, 0, .1) 0 0 0 ${rem(1)} inset, rgb(0, 0, 0, .15) 0 0 ${rem(\n            4\n          )} inset`,\n        },\n      ]}\n    />\n  );\n});\n\nAlphaSlider.displayName = '@mantine/core/AlphaSlider';\nAlphaSlider.classes = ColorSlider.classes;\n\nexport namespace AlphaSlider {\n  export type Props = AlphaSliderProps;\n  export type Factory = AlphaSliderFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AlphaSlider is a alpha slider UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AlphaSlider\nDescription: AlphaSlider is a alpha slider UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, shadow, utility-styled\nInteractions: interactive\nTags: alpha, mantine, other, slider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.tsx\nimport { Factory, factory, rem, useProps } from '../../../core';\nimport {\n  ColorSlider,\n  ColorSliderOptions,\n  ColorSliderStylesNames,\n} from '../ColorSlider/ColorSlider';\nimport { round } from '../converters/parsers';\n\nexport interface AlphaSliderProps extends ColorSliderOptions {\n  color: string;\n}\n\nexport type AlphaSliderFactory = Factory<{\n  props: AlphaSliderProps;\n  ref: HTMLDivElement;\n  stylesNames: ColorS",
+  "prompt_version": 2,
+  "clean_id": "alpha-slider",
+  "display_name": "Alpha Slider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-colorpicker-alphaslider-alphaslider.png"
+}

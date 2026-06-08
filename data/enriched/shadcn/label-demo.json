@@ -1,0 +1,37 @@
+{
+  "id": "label-demo",
+  "name": "label-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "label",
+    "hint",
+    "description",
+    "form-field",
+    "ui-element"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "label-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## label-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Label Demo is a basic interactive label. It would be used to provide a brief description or hint about the purpose of a form field, button, or other UI element. This component is commonly used to guide the user's attention to the correct input field when there are multiple options.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "label",
+  "generation_prompt": "Create a production-ready label component with the following characteristics:\n\nName: label-demo\nDescription: Label Demo is a basic interactive label. It would be used to provide a brief description or hint about the purpose of a form field, button, or other UI element. This component is commonly used to guide the user's attention to the correct input field when there are multiple options.\nStyle: minimal\nInteractions: \nTags: label, hint, description, form-field, ui-element\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "label-demo",
+  "display_name": "Label Demo",
+  "preview_url": "/previews/shadcn/label-demo.png"
+}

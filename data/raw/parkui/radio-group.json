@@ -1,0 +1,52 @@
+{
+  "id": "radio-group",
+  "name": "radio-group",
+  "source_code": "// src/components/ui/radio-group.tsx\n'use client'\nimport { RadioGroup } from '@ark-ui/react/radio-group'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { radioGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(radioGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ItemProps = ComponentProps<typeof Item>\n\nexport const Root = withProvider(RadioGroup.Root, 'root')\nexport const RootProvider = withProvider(RadioGroup.RootProvider, 'root')\nexport const Indicator = withContext(RadioGroup.Indicator, 'indicator')\nexport const Item = withContext(RadioGroup.Item, 'item')\nexport const ItemControl = withContext(RadioGroup.ItemControl, 'itemControl')\nexport const ItemText = withContext(RadioGroup.ItemText, 'itemText')\nexport const Label = withContext(RadioGroup.Label, 'label')\nexport const ItemHiddenInput = RadioGroup.ItemHiddenInput\n\nexport { RadioGroupContext as Context } from '@ark-ui/react/radio-group'\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "type": "registry:ui",
+          "exports": "export * as RadioGroup from './radio-group'",
+          "content": "'use client'\nimport { RadioGroup } from '@ark-ui/react/radio-group'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { radioGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(radioGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ItemProps = ComponentProps<typeof Item>\n\nexport const Root = withProvider(RadioGroup.Root, 'root')\nexport const RootProvider = withProvider(RadioGroup.RootProvider, 'root')\nexport const Indicator = withContext(RadioGroup.Indicator, 'indicator')\nexport const Item = withContext(RadioGroup.Item, 'item')\nexport const ItemControl = withContext(RadioGroup.ItemControl, 'itemControl')\nexport const ItemText = withContext(RadioGroup.ItemText, 'itemText')\nexport const Label = withContext(RadioGroup.Label, 'label')\nexport const ItemHiddenInput = RadioGroup.ItemHiddenInput\n\nexport { RadioGroupContext as Context } from '@ark-ui/react/radio-group'\n"
+        }
+      ],
+      "registryDependencies": [
+        "radio-group-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "type": "registry:ui",
+          "exports": "export * as RadioGroup from './radio-group'",
+          "content": "'use client'\nimport { RadioGroup } from '@ark-ui/react/radio-group'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { radioGroup } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(radioGroup)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ItemProps = ComponentProps<typeof Item>\n\nexport const Root = withProvider(RadioGroup.Root, 'root')\nexport const RootProvider = withProvider(RadioGroup.RootProvider, 'root')\nexport const Indicator = withContext(RadioGroup.Indicator, 'indicator')\nexport const Item = withContext(RadioGroup.Item, 'item')\nexport const ItemControl = withContext(RadioGroup.ItemControl, 'itemControl')\nexport const ItemText = withContext(RadioGroup.ItemText, 'itemText')\nexport const Label = withContext(RadioGroup.Label, 'label')\nexport const ItemHiddenInput = RadioGroup.ItemHiddenInput\n\nexport { RadioGroupContext as Context } from '@ark-ui/react/radio-group'\n"
+        }
+      ],
+      "registryDependencies": [
+        "radio-group-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

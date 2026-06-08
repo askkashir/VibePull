@@ -1,0 +1,63 @@
+{
+  "id": "hover-video-player-demo",
+  "name": "hover-video-player-demo",
+  "source_code": "// registry/default/example/hover-video-player-demo.tsx\n\"use client\"\n\nimport { motion, useReducedMotion } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { GradientHeading } from \"../ui/gradient-heading\"\nimport { HoverVideoPlayer } from \"../ui/hover-video-player\"\n\nexport default function HoverVideoPlayerDemo() {\n  const shouldReduceMotion = useReducedMotion()\n\n  return (\n    <div className=\"flex flex-col gap-12 py-12 w-full h-full items-center justify-center\">\n      <div className=\"text-center\">\n        <GradientHeading>Hover video player</GradientHeading>\n      </div>\n      <div className=\"w-full max-w-4xl\">\n        <motion.div\n          style={{\n            clipPath: shouldReduceMotion\n              ? \"inset(0 0 0 0 round 0.5rem)\"\n              : \"inset(12% 25% 12% 25% round 0.5rem)\",\n          }}\n          whileHover={\n            shouldReduceMotion\n              ? undefined\n              : { clipPath: \"inset(0% 0% 0% 0% round 0.5rem)\" }\n          }\n          transition={{\n            type: \"spring\",\n            duration: 0.42,\n            bounce: 0,\n          }}\n          className={cn(\n            \"group relative flex flex-col overflow-hidden rounded-lg w-full h-full transform-gpu\",\n            \"bg-white shadow-sm ring-1 ring-black/5\",\n            \"data-dark:bg-stone-800 data-dark:ring-white/15\"\n          )}\n        >\n          <HoverVideoPlayer\n            videoSrc=\"https://player.vimeo.com/video/1037289858\"\n            thumbnailSrc=\"/placeholders/newcopy-thumbnail.png\"\n            enableControls\n            style={{\n              width: \"100%\",\n              maxWidth: \"100vw\",\n              aspectRatio: \"16/9\",\n            }}\n          />\n        </motion.div>\n      </div>\n\n      <a href=\"https://www.newcult.co\" target=\"_blank\" rel=\"noreferrer\">\n        newcopy.ai\n      </a>\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "video",
+    "player",
+    "hover",
+    "animation",
+    "effect"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "hover-video-player-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/hover-video-player-demo.json",
+      "sha": "aa657c38496c3ad03ad11eb77eacd516d42d44a0",
+      "size": 2242,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hover-video-player-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hover-video-player-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/aa657c38496c3ad03ad11eb77eacd516d42d44a0",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/hover-video-player-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/hover-video-player-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/aa657c38496c3ad03ad11eb77eacd516d42d44a0",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/hover-video-player-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hover-video-player-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "hover-video-player"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/hover-video-player-demo.tsx",
+          "content": "\"use client\"\n\nimport { motion, useReducedMotion } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { GradientHeading } from \"../ui/gradient-heading\"\nimport { HoverVideoPlayer } from \"../ui/hover-video-player\"\n\nexport default function HoverVideoPlayerDemo() {\n  const shouldReduceMotion = useReducedMotion()\n\n  return (\n    <div className=\"flex flex-col gap-12 py-12 w-full h-full items-center justify-center\">\n      <div className=\"text-center\">\n        <GradientHeading>Hover video player</GradientHeading>\n      </div>\n      <div className=\"w-full max-w-4xl\">\n        <motion.div\n          style={{\n            clipPath: shouldReduceMotion\n              ? \"inset(0 0 0 0 round 0.5rem)\"\n              : \"inset(12% 25% 12% 25% round 0.5rem)\",\n          }}\n          whileHover={\n            shouldReduceMotion\n              ? undefined\n              : { clipPath: \"inset(0% 0% 0% 0% round 0.5rem)\" }\n          }\n          transition={{\n            type: \"spring\",\n            duration: 0.42,\n            bounce: 0,\n          }}\n          className={cn(\n            \"group relative flex flex-col overflow-hidden rounded-lg w-full h-full transform-gpu\",\n            \"bg-white shadow-sm ring-1 ring-black/5\",\n            \"data-dark:bg-stone-800 data-dark:ring-white/15\"\n          )}\n        >\n          <HoverVideoPlayer\n            videoSrc=\"https://player.vimeo.com/video/1037289858\"\n            thumbnailSrc=\"/placeholders/newcopy-thumbnail.png\"\n            enableControls\n            style={{\n              width: \"100%\",\n              maxWidth: \"100vw\",\n              aspectRatio: \"16/9\",\n            }}\n          />\n        </motion.div>\n      </div>\n\n      <a href=\"https://www.newcult.co\" target=\"_blank\" rel=\"noreferrer\">\n        newcopy.ai\n      </a>\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A hover video player demo with an animated clip path effect when hovered.",
+  "style_tags": [
+    "modern",
+    "animated"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: hover-video-player-demo\nDescription: A hover video player demo with an animated clip path effect when hovered.\nStyle: modern, animated\nInteractions: hover\nTags: video, player, hover, animation, effect\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/hover-video-player-demo.tsx\n\"use client\"\n\nimport { motion, useReducedMotion } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\nimport { GradientHeading } from \"../ui/gradient-heading\"\nimport { HoverVideoPlayer } from \"../ui/hover-video-player\"\n\nexport default function HoverVideoPlayerDemo() {\n  const shouldReduceMotion = useReducedMotion()\n\n  return (\n    <div className=\"flex flex-col gap-12 py-12 w-full h-full items-center justify-center\">\n      <div className=",
+  "prompt_version": 2,
+  "clean_id": "hover-video-player-demo",
+  "display_name": "Hover Video Player Demo",
+  "preview_url": "/previews/cultui/hover-video-player-demo.png"
+}

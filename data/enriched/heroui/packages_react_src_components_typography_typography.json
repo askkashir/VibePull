@@ -1,0 +1,44 @@
+{
+  "id": "packages_react_src_components_typography_typography",
+  "name": "typography",
+  "source_code": "// packages/react/src/components/typography/typography.tsx\n\"use client\";\n\nimport type {TypographyVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef, ReactNode} from \"react\";\n\nimport {typographyVariants} from \"@heroui/styles\";\nimport {Text as TextPrimitive} from \"react-aria-components/Text\";\n\nimport {composeSlotClassName} from \"../../utils/compose\";\n\ntype TypographyType = NonNullable<TypographyVariants[\"type\"]>;\ntype TypographyAlign = NonNullable<TypographyVariants[\"align\"]>;\ntype TypographyColor = NonNullable<TypographyVariants[\"color\"]>;\ntype TypographyWeight = NonNullable<TypographyVariants[\"weight\"]>;\n\nconst defaultElementByType: Record<TypographyType, string> = {\n  body: \"p\",\n  \"body-sm\": \"p\",\n  \"body-xs\": \"p\",\n  code: \"code\",\n  h1: \"h1\",\n  h2: \"h2\",\n  h3: \"h3\",\n  h4: \"h4\",\n  h5: \"h5\",\n  h6: \"h6\",\n};\n\ninterface TypographyRootProps extends Omit<\n  ComponentPropsWithRef<typeof TextPrimitive>,\n  \"className\" | \"elementType\"\n> {\n  align?: TypographyAlign;\n  children?: ReactNode;\n  className?: string;\n  color?: TypographyColor;\n  type?: TypographyType;\n  truncate?: boolean;\n  weight?: TypographyWeight;\n}\n\nconst TypographyRoot = ({\n  align = \"start\",\n  children,\n  className,\n  color = \"default\",\n  truncate,\n  type = \"body\",\n  weight,\n  ...props\n}: TypographyRootProps) => {\n  const slots = typographyVariants({align, color, truncate, type, weight});\n\n  return (\n    <TextPrimitive\n      className={composeSlotClassName(slots.base, className)}\n      data-slot=\"typography\"\n      data-type={type}\n      elementType={defaultElementByType[type]}\n      {...props}\n    >\n      {children}\n    </TextPrimitive>\n  );\n};\n\ninterface HeadingProps extends Omit<TypographyRootProps, \"type\"> {\n  level?: 1 | 2 | 3 | 4 | 5 | 6;\n}\n\nconst Heading = ({level = 1, ...props}: HeadingProps) => {\n  return <TypographyRoot type={`h${level}` as TypographyType} {...props} />;\n};\n\ninterface ParagraphProps extends Omit<TypographyRootProps, \"type\"> {\n  size?: \"base\" | \"sm\" | \"xs\";\n}\n\nconst Paragraph = ({size = \"base\", ...props}: ParagraphProps) => {\n  const type = size === \"base\" ? \"body\" : (`body-${size}` as TypographyType);\n\n  return <TypographyRoot type={type} {...props} />;\n};\n\ninterface CodeProps extends Omit<TypographyRootProps, \"type\"> {}\n\nconst Code = (props: CodeProps) => {\n  return <TypographyRoot type=\"code\" {...props} />;\n};\n\ninterface ProseProps extends Omit<ComponentPropsWithRef<\"div\">, \"color\"> {\n  children: ReactNode;\n}\n\nconst Prose = ({children, className, ...props}: ProseProps) => {\n  const slots = typographyVariants();\n\n  return (\n    <div className={composeSlotClassName(slots.prose, className)} data-slot=\"prose\" {...props}>\n      {children}\n    </div>\n  );\n};\n\nexport {Code, Heading, Paragraph, Prose, TypographyRoot};\n\nexport type {CodeProps, HeadingProps, ParagraphProps, ProseProps, TypographyRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "typography"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "typography_typography",
+      "name": "typography",
+      "path": "packages/react/src/components/typography/typography.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_typography_typography",
+      "name": "typography",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/typography/typography.tsx",
+          "content": "\"use client\";\n\nimport type {TypographyVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef, ReactNode} from \"react\";\n\nimport {typographyVariants} from \"@heroui/styles\";\nimport {Text as TextPrimitive} from \"react-aria-components/Text\";\n\nimport {composeSlotClassName} from \"../../utils/compose\";\n\ntype TypographyType = NonNullable<TypographyVariants[\"type\"]>;\ntype TypographyAlign = NonNullable<TypographyVariants[\"align\"]>;\ntype TypographyColor = NonNullable<TypographyVariants[\"color\"]>;\ntype TypographyWeight = NonNullable<TypographyVariants[\"weight\"]>;\n\nconst defaultElementByType: Record<TypographyType, string> = {\n  body: \"p\",\n  \"body-sm\": \"p\",\n  \"body-xs\": \"p\",\n  code: \"code\",\n  h1: \"h1\",\n  h2: \"h2\",\n  h3: \"h3\",\n  h4: \"h4\",\n  h5: \"h5\",\n  h6: \"h6\",\n};\n\ninterface TypographyRootProps extends Omit<\n  ComponentPropsWithRef<typeof TextPrimitive>,\n  \"className\" | \"elementType\"\n> {\n  align?: TypographyAlign;\n  children?: ReactNode;\n  className?: string;\n  color?: TypographyColor;\n  type?: TypographyType;\n  truncate?: boolean;\n  weight?: TypographyWeight;\n}\n\nconst TypographyRoot = ({\n  align = \"start\",\n  children,\n  className,\n  color = \"default\",\n  truncate,\n  type = \"body\",\n  weight,\n  ...props\n}: TypographyRootProps) => {\n  const slots = typographyVariants({align, color, truncate, type, weight});\n\n  return (\n    <TextPrimitive\n      className={composeSlotClassName(slots.base, className)}\n      data-slot=\"typography\"\n      data-type={type}\n      elementType={defaultElementByType[type]}\n      {...props}\n    >\n      {children}\n    </TextPrimitive>\n  );\n};\n\ninterface HeadingProps extends Omit<TypographyRootProps, \"type\"> {\n  level?: 1 | 2 | 3 | 4 | 5 | 6;\n}\n\nconst Heading = ({level = 1, ...props}: HeadingProps) => {\n  return <TypographyRoot type={`h${level}` as TypographyType} {...props} />;\n};\n\ninterface ParagraphProps extends Omit<TypographyRootProps, \"type\"> {\n  size?: \"base\" | \"sm\" | \"xs\";\n}\n\nconst Paragraph = ({size = \"base\", ...props}: ParagraphProps) => {\n  const type = size === \"base\" ? \"body\" : (`body-${size}` as TypographyType);\n\n  return <TypographyRoot type={type} {...props} />;\n};\n\ninterface CodeProps extends Omit<TypographyRootProps, \"type\"> {}\n\nconst Code = (props: CodeProps) => {\n  return <TypographyRoot type=\"code\" {...props} />;\n};\n\ninterface ProseProps extends Omit<ComponentPropsWithRef<\"div\">, \"color\"> {\n  children: ReactNode;\n}\n\nconst Prose = ({children, className, ...props}: ProseProps) => {\n  const slots = typographyVariants();\n\n  return (\n    <div className={composeSlotClassName(slots.prose, className)} data-slot=\"prose\" {...props}>\n      {children}\n    </div>\n  );\n};\n\nexport {Code, Heading, Paragraph, Prose, TypographyRoot};\n\nexport type {CodeProps, HeadingProps, ParagraphProps, ProseProps, TypographyRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "typography is a typography UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: typography\nDescription: typography is a typography UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: heroui, other, typography\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/typography/typography.tsx\n\"use client\";\n\nimport type {TypographyVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef, ReactNode} from \"react\";\n\nimport {typographyVariants} from \"@heroui/styles\";\nimport {Text as TextPrimitive} from \"react-aria-components/Text\";\n\nimport {composeSlotClassName} from \"../../utils/compose\";\n\ntype TypographyType = NonNullable<TypographyVariants[\"type\"]>;\ntype TypographyAlign = NonNullable<TypographyVariants[\"align\"]>;\ntyp",
+  "prompt_version": 2,
+  "clean_id": "typography",
+  "display_name": "Typography",
+  "preview_url": "/previews/heroui/packages-react-src-components-typography-typography.png"
+}

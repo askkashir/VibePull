@@ -1,0 +1,41 @@
+{
+  "id": "input-disabled",
+  "name": "input-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "disabled",
+    "input",
+    "form",
+    "stateful"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The input-disabled component is a visual representation of a disabled input field, often displayed in a grayed out state with a faint text. It is typically used to provide visual feedback to users when a form element cannot be interacted with. A developer would use this component when creating forms or registration pages with input fields that are disabled by either a system or by a certain set of conditions.",
+  "style_tags": [
+    "e.g. material",
+    "e.g. ios",
+    "e.g. dark"
+  ],
+  "interaction_tags": [
+    "e.g., does not react to onClick events",
+    "e.g. does not change on hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-disabled\nDescription: The input-disabled component is a visual representation of a disabled input field, often displayed in a grayed out state with a faint text. It is typically used to provide visual feedback to users when a form element cannot be interacted with. A developer would use this component when creating forms or registration pages with input fields that are disabled by either a system or by a certain set of conditions.\nStyle: e.g. material, e.g. ios, e.g. dark\nInteractions: e.g., does not react to onClick events, e.g. does not change on hover\nTags: disabled, input, form, stateful\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-disabled",
+  "display_name": "Input Disabled",
+  "preview_url": "/previews/shadcn/input-disabled.png"
+}

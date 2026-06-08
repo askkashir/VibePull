@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_is-responsive-size_is-responsive-size",
+  "name": "is-responsive-size",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/is-responsive-size/is-responsive-size.ts\nimport type { AppShellResponsiveSize, AppShellSize } from '../../AppShell.types';\n\nexport function isResponsiveSize(\n  size: AppShellSize | AppShellResponsiveSize | undefined\n): size is AppShellResponsiveSize {\n  if (typeof size !== 'object' || size === null) {\n    return false;\n  }\n\n  if (Object.keys(size as object).length === 1 && 'base' in (size as object)) {\n    return false;\n  }\n\n  return true;\n}\n",
+  "description": "",
+  "tags": [
+    "is",
+    "mantine",
+    "other",
+    "responsive",
+    "size"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_is-responsive-size_is-responsive-size",
+      "name": "is-responsive-size",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/is-responsive-size/is-responsive-size.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_is-responsive-size_is-responsive-size",
+      "name": "is-responsive-size",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/is-responsive-size/is-responsive-size.ts",
+          "content": "import type { AppShellResponsiveSize, AppShellSize } from '../../AppShell.types';\n\nexport function isResponsiveSize(\n  size: AppShellSize | AppShellResponsiveSize | undefined\n): size is AppShellResponsiveSize {\n  if (typeof size !== 'object' || size === null) {\n    return false;\n  }\n\n  if (Object.keys(size as object).length === 1 && 'base' in (size as object)) {\n    return false;\n  }\n\n  return true;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "is-responsive-size is a is responsive size UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: is-responsive-size\nDescription: is-responsive-size is a is responsive size UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: is, mantine, other, responsive, size\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/is-responsive-size/is-responsive-size.ts\nimport type { AppShellResponsiveSize, AppShellSize } from '../../AppShell.types';\n\nexport function isResponsiveSize(\n  size: AppShellSize | AppShellResponsiveSize | undefined\n): size is AppShellResponsiveSize {\n  if (typeof size !== 'object' || size === null) {\n    return false;\n  }\n\n  if (Object.keys(size as object).length === 1 && 'base' in (size as object)) {\n    return false;\n  }\n\n ",
+  "prompt_version": 2,
+  "clean_id": "is-responsive-size",
+  "display_name": "Is Responsive Size",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellmediastyles-is-responsive-size-is-responsive-size.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Tooltip_index",
+  "name": "Tooltip",
+  "source_code": "// packages/@mantine/core/src/components/Tooltip/index.ts\nimport type { TooltipFactory, TooltipProps } from './Tooltip';\nimport type { TooltipCssVariables, TooltipStylesNames } from './Tooltip.types';\nimport type { TooltipFloatingProps } from './TooltipFloating/TooltipFloating';\nimport type { TooltipGroupContextValue, TooltipGroupProps } from './TooltipGroup/TooltipGroup';\n\nexport { Tooltip } from './Tooltip';\nexport { TooltipGroup, TooltipGroupContext } from './TooltipGroup/TooltipGroup';\nexport { TooltipFloating } from './TooltipFloating/TooltipFloating';\n\nexport type {\n  TooltipProps,\n  TooltipFactory,\n  TooltipCssVariables,\n  TooltipStylesNames,\n  TooltipGroupProps,\n  TooltipGroupContextValue,\n  TooltipFloatingProps,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tooltip_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Tooltip/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tooltip_index",
+      "name": "Tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tooltip/index.ts",
+          "content": "import type { TooltipFactory, TooltipProps } from './Tooltip';\nimport type { TooltipCssVariables, TooltipStylesNames } from './Tooltip.types';\nimport type { TooltipFloatingProps } from './TooltipFloating/TooltipFloating';\nimport type { TooltipGroupContextValue, TooltipGroupProps } from './TooltipGroup/TooltipGroup';\n\nexport { Tooltip } from './Tooltip';\nexport { TooltipGroup, TooltipGroupContext } from './TooltipGroup/TooltipGroup';\nexport { TooltipFloating } from './TooltipFloating/TooltipFloating';\n\nexport type {\n  TooltipProps,\n  TooltipFactory,\n  TooltipCssVariables,\n  TooltipStylesNames,\n  TooltipGroupProps,\n  TooltipGroupContextValue,\n  TooltipFloatingProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

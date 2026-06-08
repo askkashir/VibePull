@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Skeleton_Skeleton.story",
+  "name": "Skeleton.story",
+  "source_code": "// packages/@mantine/core/src/components/Skeleton/Skeleton.story.tsx\nimport { Skeleton } from './Skeleton';\n\nexport default { title: 'Skeleton' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} />\n    </div>\n  );\n}\n\nexport function Circle() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} circle />\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "skeleton",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Skeleton_Skeleton.story",
+      "name": "Skeleton.story",
+      "path": "packages/@mantine/core/src/components/Skeleton/Skeleton.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Skeleton_Skeleton.story",
+      "name": "Skeleton.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Skeleton/Skeleton.story.tsx",
+          "content": "import { Skeleton } from './Skeleton';\n\nexport default { title: 'Skeleton' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} />\n    </div>\n  );\n}\n\nexport function Circle() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} circle />\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Skeleton.story is a skeleton story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Skeleton.story\nDescription: Skeleton.story is a skeleton story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: mantine, other, skeleton, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Skeleton/Skeleton.story.tsx\nimport { Skeleton } from './Skeleton';\n\nexport default { title: 'Skeleton' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} />\n    </div>\n  );\n}\n\nexport function Circle() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Skeleton height={200} circle />\n    </div>\n  );\n}\n",
+  "prompt_version": 2,
+  "clean_id": "skeleton",
+  "display_name": "Skeleton",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-skeleton-skeleton-story.png"
+}

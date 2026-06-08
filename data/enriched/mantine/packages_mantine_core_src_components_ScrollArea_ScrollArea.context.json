@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.context",
+  "name": "ScrollArea.context",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ScrollAreaFactory } from './ScrollArea';\n\nexport interface ScrollAreaContextValue {\n  type: 'auto' | 'always' | 'scroll' | 'hover' | 'never';\n  scrollHideDelay: number;\n  scrollArea: HTMLDivElement | null;\n  viewport: HTMLDivElement | null;\n  onViewportChange: (viewport: HTMLDivElement | null) => void;\n  content: HTMLDivElement | null;\n  onContentChange: (content: HTMLDivElement) => void;\n  scrollbarX: HTMLDivElement | null;\n  onScrollbarXChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarXEnabled: boolean;\n  onScrollbarXEnabledChange: (rendered: boolean) => void;\n  scrollbarY: HTMLDivElement | null;\n  onScrollbarYChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarYEnabled: boolean;\n  onScrollbarYEnabledChange: (rendered: boolean) => void;\n  onCornerWidthChange: (width: number) => void;\n  onCornerHeightChange: (height: number) => void;\n  getStyles: GetStylesApi<ScrollAreaFactory>;\n}\n\nexport const [ScrollAreaProvider, useScrollAreaContext] = createSafeContext<ScrollAreaContextValue>(\n  'ScrollArea.Root component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "area",
+    "context",
+    "mantine",
+    "other",
+    "scroll"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollArea.context",
+      "name": "ScrollArea.context",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.context",
+      "name": "ScrollArea.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ScrollAreaFactory } from './ScrollArea';\n\nexport interface ScrollAreaContextValue {\n  type: 'auto' | 'always' | 'scroll' | 'hover' | 'never';\n  scrollHideDelay: number;\n  scrollArea: HTMLDivElement | null;\n  viewport: HTMLDivElement | null;\n  onViewportChange: (viewport: HTMLDivElement | null) => void;\n  content: HTMLDivElement | null;\n  onContentChange: (content: HTMLDivElement) => void;\n  scrollbarX: HTMLDivElement | null;\n  onScrollbarXChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarXEnabled: boolean;\n  onScrollbarXEnabledChange: (rendered: boolean) => void;\n  scrollbarY: HTMLDivElement | null;\n  onScrollbarYChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarYEnabled: boolean;\n  onScrollbarYEnabledChange: (rendered: boolean) => void;\n  onCornerWidthChange: (width: number) => void;\n  onCornerHeightChange: (height: number) => void;\n  getStyles: GetStylesApi<ScrollAreaFactory>;\n}\n\nexport const [ScrollAreaProvider, useScrollAreaContext] = createSafeContext<ScrollAreaContextValue>(\n  'ScrollArea.Root component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ScrollArea.context is a scroll area context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ScrollArea.context\nDescription: ScrollArea.context is a scroll area context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: area, context, mantine, other, scroll\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ScrollAreaFactory } from './ScrollArea';\n\nexport interface ScrollAreaContextValue {\n  type: 'auto' | 'always' | 'scroll' | 'hover' | 'never';\n  scrollHideDelay: number;\n  scrollArea: HTMLDivElement | null;\n  viewport: HTMLDivElement | null;\n  onViewportChange: (viewport: HTMLDivElement | null) => void;\n  content: HTMLDivElement | null;\n  onContentC",
+  "prompt_version": 2,
+  "clean_id": "scroll-area",
+  "display_name": "Scroll Area",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-scrollarea-context.png"
+}

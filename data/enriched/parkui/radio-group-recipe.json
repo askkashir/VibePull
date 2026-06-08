@@ -1,0 +1,64 @@
+{
+  "id": "radio-group-recipe",
+  "name": "radio-group-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/radio-group.ts\nimport { radioGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const radioGroup = defineSlotRecipe({\n  className: 'radio-group',\n  slots: radioGroupAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '3',\n    },\n    itemControl: {\n      alignItems: 'center',\n      borderRadius: 'full',\n      display: 'inline-flex',\n      flexShrink: 0,\n      justifyContent: 'center',\n      verticalAlign: 'top',\n      _after: {\n        content: '\"\"',\n        display: 'block',\n        borderRadius: 'full',\n        boxSize: '40%',\n      },\n      _focusVisible: {\n        focusVisibleRing: 'outside',\n      },\n    },\n    item: {\n      alignItems: 'center',\n      cursor: 'pointer',\n      display: 'flex',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    itemText: {\n      fontWeight: 'medium',\n      userSelect: 'none',\n    },\n  },\n  defaultVariants: {\n    variant: 'solid',\n    size: 'md',\n  },\n  variants: {\n    variant: {\n      solid: {\n        itemControl: {\n          boxShadow: 'inset 0 0 0 1px var(--shadow-color)',\n          boxShadowColor: 'gray.surface.border',\n          _checked: {\n            bg: 'colorPalette.solid.bg',\n            color: 'colorPalette.solid.fg',\n            boxShadowColor: 'colorPalette.solid.bg',\n            _after: {\n              background: 'colorPalette.solid.fg',\n            },\n          },\n        },\n      },\n    },\n    size: {\n      sm: {\n        item: { gap: '2' },\n        itemControl: { boxSize: '4.5' },\n        itemText: { textStyle: 'sm' },\n      },\n      md: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5' },\n        itemText: { textStyle: 'md' },\n      },\n      lg: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5.5' },\n        itemText: { textStyle: 'lg' },\n      },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "group",
+    "input",
+    "parkui",
+    "radio",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "radio-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/radio-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { radioGroup } from './radio-group'",
+          "content": "import { radioGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const radioGroup = defineSlotRecipe({\n  className: 'radio-group',\n  slots: radioGroupAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '3',\n    },\n    itemControl: {\n      alignItems: 'center',\n      borderRadius: 'full',\n      display: 'inline-flex',\n      flexShrink: 0,\n      justifyContent: 'center',\n      verticalAlign: 'top',\n      _after: {\n        content: '\"\"',\n        display: 'block',\n        borderRadius: 'full',\n        boxSize: '40%',\n      },\n      _focusVisible: {\n        focusVisibleRing: 'outside',\n      },\n    },\n    item: {\n      alignItems: 'center',\n      cursor: 'pointer',\n      display: 'flex',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    itemText: {\n      fontWeight: 'medium',\n      userSelect: 'none',\n    },\n  },\n  defaultVariants: {\n    variant: 'solid',\n    size: 'md',\n  },\n  variants: {\n    variant: {\n      solid: {\n        itemControl: {\n          boxShadow: 'inset 0 0 0 1px var(--shadow-color)',\n          boxShadowColor: 'gray.surface.border',\n          _checked: {\n            bg: 'colorPalette.solid.bg',\n            color: 'colorPalette.solid.fg',\n            boxShadowColor: 'colorPalette.solid.bg',\n            _after: {\n              background: 'colorPalette.solid.fg',\n            },\n          },\n        },\n      },\n    },\n    size: {\n      sm: {\n        item: { gap: '2' },\n        itemControl: { boxSize: '4.5' },\n        itemText: { textStyle: 'sm' },\n      },\n      md: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5' },\n        itemText: { textStyle: 'md' },\n      },\n      lg: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5.5' },\n        itemText: { textStyle: 'lg' },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "radio-group-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/radio-group.ts",
+          "type": "registry:recipe",
+          "imports": "import { radioGroup } from './radio-group'",
+          "content": "import { radioGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const radioGroup = defineSlotRecipe({\n  className: 'radio-group',\n  slots: radioGroupAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '3',\n    },\n    itemControl: {\n      alignItems: 'center',\n      borderRadius: 'full',\n      display: 'inline-flex',\n      flexShrink: 0,\n      justifyContent: 'center',\n      verticalAlign: 'top',\n      _after: {\n        content: '\"\"',\n        display: 'block',\n        borderRadius: 'full',\n        boxSize: '40%',\n      },\n      _focusVisible: {\n        focusVisibleRing: 'outside',\n      },\n    },\n    item: {\n      alignItems: 'center',\n      cursor: 'pointer',\n      display: 'flex',\n      _disabled: {\n        layerStyle: 'disabled',\n      },\n    },\n    itemText: {\n      fontWeight: 'medium',\n      userSelect: 'none',\n    },\n  },\n  defaultVariants: {\n    variant: 'solid',\n    size: 'md',\n  },\n  variants: {\n    variant: {\n      solid: {\n        itemControl: {\n          boxShadow: 'inset 0 0 0 1px var(--shadow-color)',\n          boxShadowColor: 'gray.surface.border',\n          _checked: {\n            bg: 'colorPalette.solid.bg',\n            color: 'colorPalette.solid.fg',\n            boxShadowColor: 'colorPalette.solid.bg',\n            _after: {\n              background: 'colorPalette.solid.fg',\n            },\n          },\n        },\n      },\n    },\n    size: {\n      sm: {\n        item: { gap: '2' },\n        itemControl: { boxSize: '4.5' },\n        itemText: { textStyle: 'sm' },\n      },\n      md: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5' },\n        itemText: { textStyle: 'md' },\n      },\n      lg: {\n        item: { gap: '3' },\n        itemControl: { boxSize: '5.5' },\n        itemText: { textStyle: 'lg' },\n      },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "radio-group-recipe is a radio group recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "keyboard-focus"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: radio-group-recipe\nDescription: radio-group-recipe is a radio group recipe UI component from the parkui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: keyboard-focus\nTags: group, input, parkui, radio, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/radio-group.ts\nimport { radioGroupAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const radioGroup = defineSlotRecipe({\n  className: 'radio-group',\n  slots: radioGroupAnatomy.keys(),\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      gap: '3',\n    },\n    itemControl: {\n      alignItems: 'center',\n      borderRadius: 'full',\n      display: 'inline-flex',\n      flexShrink: 0,\n      j",
+  "prompt_version": 2,
+  "clean_id": "radio-group-recipe",
+  "display_name": "Radio Group Recipe",
+  "preview_url": "/previews/parkui/radio-group-recipe.png"
+}

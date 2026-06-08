@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_is-options-group",
+  "name": "is-options-group",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-options-group.ts\nimport { Primitive } from '../../../core';\nimport { ComboboxParsedItem, ComboboxParsedItemGroup } from '../Combobox.types';\n\nexport function isOptionsGroup(\n  item: ComboboxParsedItem<Primitive>\n): item is ComboboxParsedItemGroup<Primitive> {\n  return 'group' in item;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_OptionsDropdown_is-options-group",
+      "name": "is-options-group",
+      "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-options-group.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_is-options-group",
+      "name": "is-options-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-options-group.ts",
+          "content": "import { Primitive } from '../../../core';\nimport { ComboboxParsedItem, ComboboxParsedItemGroup } from '../Combobox.types';\n\nexport function isOptionsGroup(\n  item: ComboboxParsedItem<Primitive>\n): item is ComboboxParsedItemGroup<Primitive> {\n  return 'group' in item;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

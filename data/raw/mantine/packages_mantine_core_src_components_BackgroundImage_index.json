@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_BackgroundImage_index",
+  "name": "BackgroundImage",
+  "source_code": "// packages/@mantine/core/src/components/BackgroundImage/index.ts\nimport type {\n  BackgroundImageCssVariables,\n  BackgroundImageFactory,\n  BackgroundImageProps,\n  BackgroundImageStylesNames,\n} from './BackgroundImage';\n\nexport { BackgroundImage } from './BackgroundImage';\n\nexport type {\n  BackgroundImageProps,\n  BackgroundImageCssVariables,\n  BackgroundImageFactory,\n  BackgroundImageStylesNames,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "BackgroundImage_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/BackgroundImage/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_BackgroundImage_index",
+      "name": "BackgroundImage",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/BackgroundImage/index.ts",
+          "content": "import type {\n  BackgroundImageCssVariables,\n  BackgroundImageFactory,\n  BackgroundImageProps,\n  BackgroundImageStylesNames,\n} from './BackgroundImage';\n\nexport { BackgroundImage } from './BackgroundImage';\n\nexport type {\n  BackgroundImageProps,\n  BackgroundImageCssVariables,\n  BackgroundImageFactory,\n  BackgroundImageStylesNames,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

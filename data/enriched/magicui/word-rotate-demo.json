@@ -1,0 +1,59 @@
+{
+  "id": "word-rotate-demo",
+  "name": "Word Rotate Demo",
+  "source_code": "import { WordRotate } from \"@/registry/magicui/word-rotate\"\n\nexport default function WordRotateDemo() {\n  return (\n    <WordRotate\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      words={[\"Word\", \"Rotate\"]}\n    />\n  )\n}\n",
+  "description": "Example showing vertical word rotation animation.",
+  "tags": [
+    "demo",
+    "magicui",
+    "example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "word-rotate-demo",
+      "type": "registry:example",
+      "title": "Word Rotate Demo",
+      "description": "Example showing vertical word rotation animation.",
+      "registryDependencies": [
+        "https://magicui.design/r/word-rotate"
+      ],
+      "files": [
+        {
+          "path": "registry/example/word-rotate-demo.tsx",
+          "type": "registry:example",
+          "target": "components/word-rotate-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "word-rotate-demo",
+      "type": "registry:example",
+      "title": "Word Rotate Demo",
+      "description": "Example showing vertical word rotation animation.",
+      "registryDependencies": [
+        "@magicui/word-rotate"
+      ],
+      "files": [
+        {
+          "path": "registry/example/word-rotate-demo.tsx",
+          "content": "import { WordRotate } from \"@/registry/magicui/word-rotate\"\n\nexport default function WordRotateDemo() {\n  return (\n    <WordRotate\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      words={[\"Word\", \"Rotate\"]}\n    />\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A rotating word component showcasing two words, suitable for creative and dynamic UI elements.",
+  "style_tags": [
+    "dark",
+    "light"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Word Rotate Demo\nDescription: A rotating word component showcasing two words, suitable for creative and dynamic UI elements.\nStyle: dark, light\nInteractions: \nTags: demo, magicui, example\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { WordRotate } from \"@/registry/magicui/word-rotate\"\n\nexport default function WordRotateDemo() {\n  return (\n    <WordRotate\n      className=\"text-4xl font-bold text-black dark:text-white\"\n      words={[\"Word\", \"Rotate\"]}\n    />\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "word-rotate-demo",
+  "display_name": "Word Rotate Demo",
+  "preview_url": "/previews/magicui/word-rotate-demo.png"
+}

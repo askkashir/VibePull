@@ -1,0 +1,26 @@
+{
+  "id": "chart-area-legend",
+  "name": "chart-area-legend",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-legend",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-legend\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called chart-area-legend. It should be: . Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "chart-area-legend",
+  "display_name": "Chart Area Legend"
+}

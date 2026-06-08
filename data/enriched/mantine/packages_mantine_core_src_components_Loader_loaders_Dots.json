@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_loaders_Dots",
+  "name": "Dots",
+  "source_code": "// packages/@mantine/core/src/components/Loader/loaders/Dots.tsx\nimport cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Dots: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.dotsLoader, className)} {...others}>\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n  </Box>\n);\n\nDots.displayName = '@mantine/core/Dots';\n",
+  "description": "",
+  "tags": [
+    "dots",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_loaders_Dots",
+      "name": "Dots",
+      "path": "packages/@mantine/core/src/components/Loader/loaders/Dots.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_loaders_Dots",
+      "name": "Dots",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/loaders/Dots.tsx",
+          "content": "import cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Dots: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.dotsLoader, className)} {...others}>\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n  </Box>\n);\n\nDots.displayName = '@mantine/core/Dots';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Dots is a dots UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Dots\nDescription: Dots is a dots UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: dots, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Loader/loaders/Dots.tsx\nimport cx from 'clsx';\nimport { Box } from '../../../core';\nimport { MantineLoaderComponent } from '../Loader.types';\nimport classes from '../Loader.module.css';\n\nexport const Dots: MantineLoaderComponent = ({ className, ...others }) => (\n  <Box component=\"span\" className={cx(classes.dotsLoader, className)} {...others}>\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n    <span className={classes.dot} />\n  ",
+  "prompt_version": 2,
+  "clean_id": "dots",
+  "display_name": "Dots",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-loader-loaders-dots.png"
+}

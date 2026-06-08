@@ -1,0 +1,43 @@
+{
+  "id": "components_icons_IconRadix",
+  "name": "IconRadix",
+  "source_code": "// components/icons/IconRadix.tsx\nexport default () => (\n  <svg\n    width=\"20\"\n    height=\"30\"\n    viewBox=\"0 0 22 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_1302_665)\">\n      <path\n        d=\"M10.24 32C4.58463 32 2.00272e-05 27.4154 2.00272e-05 21.76C2.00272e-05 16.1046 4.58463 11.52 10.24 11.52V32Z\"\n        fill=\"#FCFCFD\"\n      />\n      <path d=\"M10.24 0H0V10.24H10.24V0Z\" fill=\"#FCFCFD\" />\n      <path\n        d=\"M16.64 10.24C19.4677 10.24 21.76 7.9477 21.76 5.12C21.76 2.2923 19.4677 0 16.64 0C13.8124 0 11.52 2.2923 11.52 5.12C11.52 7.9477 13.8124 10.24 16.64 10.24Z\"\n        fill=\"#FCFCFD\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"clip0_1302_665\">\n        <rect width=\"21.76\" height=\"32\" fill=\"white\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "icon",
+    "other",
+    "radix"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_IconRadix",
+      "name": "IconRadix",
+      "path": "components/icons/IconRadix.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_IconRadix",
+      "name": "IconRadix",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/IconRadix.tsx",
+          "content": "export default () => (\n  <svg\n    width=\"20\"\n    height=\"30\"\n    viewBox=\"0 0 22 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_1302_665)\">\n      <path\n        d=\"M10.24 32C4.58463 32 2.00272e-05 27.4154 2.00272e-05 21.76C2.00272e-05 16.1046 4.58463 11.52 10.24 11.52V32Z\"\n        fill=\"#FCFCFD\"\n      />\n      <path d=\"M10.24 0H0V10.24H10.24V0Z\" fill=\"#FCFCFD\" />\n      <path\n        d=\"M16.64 10.24C19.4677 10.24 21.76 7.9477 21.76 5.12C21.76 2.2923 19.4677 0 16.64 0C13.8124 0 11.52 2.2923 11.52 5.12C11.52 7.9477 13.8124 10.24 16.64 10.24Z\"\n        fill=\"#FCFCFD\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"clip0_1302_665\">\n        <rect width=\"21.76\" height=\"32\" fill=\"white\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "IconRadix is a icon radix UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: IconRadix\nDescription: IconRadix is a icon radix UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: floatui, icon, other, radix\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/icons/IconRadix.tsx\nexport default () => (\n  <svg\n    width=\"20\"\n    height=\"30\"\n    viewBox=\"0 0 22 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_1302_665)\">\n      <path\n        d=\"M10.24 32C4.58463 32 2.00272e-05 27.4154 2.00272e-05 21.76C2.00272e-05 16.1046 4.58463 11.52 10.24 11.52V32Z\"\n        fill=\"#FCFCFD\"\n      />\n      <path d=\"M10.24 0H0V10.24H10.24V0Z\" fill=\"#FCFCFD\" />\n      <path\n        d=\"M16.64 10.24C19.4677 10.24 21.76 ",
+  "prompt_version": 2,
+  "clean_id": "icon-radix",
+  "display_name": "Icon Radix",
+  "preview_url": "/previews/floatui/components-icons-iconradix.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuLabel_MenuLabel",
+  "name": "MenuLabel",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuLabel/MenuLabel.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuLabelStylesNames = 'label';\n\nexport interface MenuLabelProps\n  extends BoxProps, CompoundStylesApiProps<MenuLabelFactory>, ElementProps<'div'> {}\n\nexport type MenuLabelFactory = Factory<{\n  props: MenuLabelProps;\n  ref: HTMLDivElement;\n  stylesNames: MenuLabelStylesNames;\n  compound: true;\n}>;\n\nexport const MenuLabel = factory<MenuLabelFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'MenuLabel',\n    null,\n    props\n  );\n  const ctx = useMenuContext();\n\n  return <Box {...ctx.getStyles('label', { className, style, styles, classNames })} {...others} />;\n});\n\nMenuLabel.classes = classes;\nMenuLabel.displayName = '@mantine/core/MenuLabel';\n",
+  "description": "",
+  "tags": [
+    "label",
+    "mantine",
+    "menu",
+    "navbar"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuLabel_MenuLabel",
+      "name": "MenuLabel",
+      "path": "packages/@mantine/core/src/components/Menu/MenuLabel/MenuLabel.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuLabel_MenuLabel",
+      "name": "MenuLabel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuLabel/MenuLabel.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuLabelStylesNames = 'label';\n\nexport interface MenuLabelProps\n  extends BoxProps, CompoundStylesApiProps<MenuLabelFactory>, ElementProps<'div'> {}\n\nexport type MenuLabelFactory = Factory<{\n  props: MenuLabelProps;\n  ref: HTMLDivElement;\n  stylesNames: MenuLabelStylesNames;\n  compound: true;\n}>;\n\nexport const MenuLabel = factory<MenuLabelFactory>((props) => {\n  const { classNames, className, style, styles, vars, ...others } = useProps(\n    'MenuLabel',\n    null,\n    props\n  );\n  const ctx = useMenuContext();\n\n  return <Box {...ctx.getStyles('label', { className, style, styles, classNames })} {...others} />;\n});\n\nMenuLabel.classes = classes;\nMenuLabel.displayName = '@mantine/core/MenuLabel';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "MenuLabel is a menu label UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: MenuLabel\nDescription: MenuLabel is a menu label UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: label, mantine, menu, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Menu/MenuLabel/MenuLabel.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useMenuContext } from '../Menu.context';\nimport classes from '../Menu.module.css';\n\nexport type MenuLabelStylesNames = 'label';\n\nexport interface MenuLabelProps\n  extends BoxProps, CompoundStylesApiProps<MenuLabelFactory>, ElementProps<'div'> {}\n\nexport type MenuLabelFactory = Factory<{\n  pro",
+  "prompt_version": 2,
+  "clean_id": "menu-label",
+  "display_name": "Menu Label",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-menu-menulabel-menulabel.png"
+}

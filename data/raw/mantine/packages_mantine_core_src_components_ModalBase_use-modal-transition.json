@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal-transition",
+  "name": "use-modal-transition",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts\nimport { TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\n\nconst DEFAULT_TRANSITION: TransitionOverride = {\n  duration: 200,\n  timingFunction: 'ease',\n  transition: 'fade',\n};\n\nexport function useModalTransition(\n  transitionOverride: TransitionOverride | undefined\n): TransitionOverride {\n  const ctx = useModalBaseContext();\n  return { ...DEFAULT_TRANSITION, ...ctx.transitionProps, ...transitionOverride };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal-transition",
+      "name": "use-modal-transition",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal-transition",
+      "name": "use-modal-transition",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts",
+          "content": "import { TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\n\nconst DEFAULT_TRANSITION: TransitionOverride = {\n  duration: 200,\n  timingFunction: 'ease',\n  transition: 'fade',\n};\n\nexport function useModalTransition(\n  transitionOverride: TransitionOverride | undefined\n): TransitionOverride {\n  const ctx = useModalBaseContext();\n  return { ...DEFAULT_TRANSITION, ...ctx.transitionProps, ...transitionOverride };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

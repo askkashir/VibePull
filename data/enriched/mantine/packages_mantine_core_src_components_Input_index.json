@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Input_index",
+  "name": "Input",
+  "source_code": "// packages/@mantine/core/src/components/Input/index.ts\nimport type {\n  __BaseInputProps,\n  __InputProps,\n  __InputStylesNames,\n  InputCssVariables,\n  InputFactory,\n  InputProps,\n  InputStylesNames,\n  InputVariant,\n} from './Input';\nimport type {\n  InputClearButtonFactory,\n  InputClearButtonProps,\n} from './InputClearButton/InputClearButton';\nimport type {\n  ClearSectionMode,\n  InputClearSectionProps,\n} from './InputClearSection/InputClearSection';\nimport type {\n  InputDescriptionCssVariables,\n  InputDescriptionFactory,\n  InputDescriptionProps,\n  InputDescriptionStylesNames,\n} from './InputDescription/InputDescription';\nimport type {\n  InputErrorCssVariables,\n  InputErrorFactory,\n  InputErrorProps,\n  InputErrorStylesNames,\n} from './InputError/InputError';\nimport type {\n  InputLabelCssVariables,\n  InputLabelFactory,\n  InputLabelProps,\n  InputLabelStylesNames,\n} from './InputLabel/InputLabel';\nimport type {\n  InputPlaceholderFactory,\n  InputPlaceholderProps,\n  InputPlaceholderStylesNames,\n} from './InputPlaceholder/InputPlaceholder';\nimport type {\n  __InputWrapperProps,\n  InputWrapperFactory,\n  InputWrapperProps,\n  InputWrapperStylesNames,\n} from './InputWrapper/InputWrapper';\n\nexport { Input } from './Input';\nexport { InputWrapper } from './InputWrapper/InputWrapper';\nexport { InputDescription } from './InputDescription/InputDescription';\nexport { InputError } from './InputError/InputError';\nexport { InputLabel } from './InputLabel/InputLabel';\nexport { InputPlaceholder } from './InputPlaceholder/InputPlaceholder';\nexport { InputClearButton } from './InputClearButton/InputClearButton';\nexport { InputClearSection } from './InputClearSection/InputClearSection';\nexport { useInputProps } from './use-input-props';\nexport { InputWrapperContext } from './InputWrapper.context';\n\nexport type {\n  InputProps,\n  __InputProps,\n  __BaseInputProps,\n  InputStylesNames,\n  __InputStylesNames,\n  InputVariant,\n  InputCssVariables,\n  InputFactory,\n  InputWrapperProps,\n  __InputWrapperProps,\n  InputWrapperStylesNames,\n  InputWrapperFactory,\n  InputDescriptionProps,\n  InputDescriptionCssVariables,\n  InputDescriptionStylesNames,\n  InputDescriptionFactory,\n  InputErrorProps,\n  InputErrorCssVariables,\n  InputErrorStylesNames,\n  InputErrorFactory,\n  InputLabelProps,\n  InputLabelCssVariables,\n  InputLabelStylesNames,\n  InputLabelFactory,\n  InputPlaceholderProps,\n  InputPlaceholderStylesNames,\n  InputPlaceholderFactory,\n  InputClearButtonProps,\n  InputClearButtonFactory,\n  InputClearSectionProps,\n  ClearSectionMode,\n};\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Input/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_index",
+      "name": "Input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/index.ts",
+          "content": "import type {\n  __BaseInputProps,\n  __InputProps,\n  __InputStylesNames,\n  InputCssVariables,\n  InputFactory,\n  InputProps,\n  InputStylesNames,\n  InputVariant,\n} from './Input';\nimport type {\n  InputClearButtonFactory,\n  InputClearButtonProps,\n} from './InputClearButton/InputClearButton';\nimport type {\n  ClearSectionMode,\n  InputClearSectionProps,\n} from './InputClearSection/InputClearSection';\nimport type {\n  InputDescriptionCssVariables,\n  InputDescriptionFactory,\n  InputDescriptionProps,\n  InputDescriptionStylesNames,\n} from './InputDescription/InputDescription';\nimport type {\n  InputErrorCssVariables,\n  InputErrorFactory,\n  InputErrorProps,\n  InputErrorStylesNames,\n} from './InputError/InputError';\nimport type {\n  InputLabelCssVariables,\n  InputLabelFactory,\n  InputLabelProps,\n  InputLabelStylesNames,\n} from './InputLabel/InputLabel';\nimport type {\n  InputPlaceholderFactory,\n  InputPlaceholderProps,\n  InputPlaceholderStylesNames,\n} from './InputPlaceholder/InputPlaceholder';\nimport type {\n  __InputWrapperProps,\n  InputWrapperFactory,\n  InputWrapperProps,\n  InputWrapperStylesNames,\n} from './InputWrapper/InputWrapper';\n\nexport { Input } from './Input';\nexport { InputWrapper } from './InputWrapper/InputWrapper';\nexport { InputDescription } from './InputDescription/InputDescription';\nexport { InputError } from './InputError/InputError';\nexport { InputLabel } from './InputLabel/InputLabel';\nexport { InputPlaceholder } from './InputPlaceholder/InputPlaceholder';\nexport { InputClearButton } from './InputClearButton/InputClearButton';\nexport { InputClearSection } from './InputClearSection/InputClearSection';\nexport { useInputProps } from './use-input-props';\nexport { InputWrapperContext } from './InputWrapper.context';\n\nexport type {\n  InputProps,\n  __InputProps,\n  __BaseInputProps,\n  InputStylesNames,\n  __InputStylesNames,\n  InputVariant,\n  InputCssVariables,\n  InputFactory,\n  InputWrapperProps,\n  __InputWrapperProps,\n  InputWrapperStylesNames,\n  InputWrapperFactory,\n  InputDescriptionProps,\n  InputDescriptionCssVariables,\n  InputDescriptionStylesNames,\n  InputDescriptionFactory,\n  InputErrorProps,\n  InputErrorCssVariables,\n  InputErrorStylesNames,\n  InputErrorFactory,\n  InputLabelProps,\n  InputLabelCssVariables,\n  InputLabelStylesNames,\n  InputLabelFactory,\n  InputPlaceholderProps,\n  InputPlaceholderStylesNames,\n  InputPlaceholderFactory,\n  InputClearButtonProps,\n  InputClearButtonFactory,\n  InputClearSectionProps,\n  ClearSectionMode,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Input is a input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Input\nDescription: Input is a input UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/index.ts\nimport type {\n  __BaseInputProps,\n  __InputProps,\n  __InputStylesNames,\n  InputCssVariables,\n  InputFactory,\n  InputProps,\n  InputStylesNames,\n  InputVariant,\n} from './Input';\nimport type {\n  InputClearButtonFactory,\n  InputClearButtonProps,\n} from './InputClearButton/InputClearButton';\nimport type {\n  ClearSectionMode,\n  InputClearSectionProps,\n} from './InputClearSection/InputClearSection';\nimport type {\n  InputDescriptionCssVariables,\n ",
+  "prompt_version": 2,
+  "clean_id": "input",
+  "display_name": "Input",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-index.png"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "scroll-area-recipe",
+  "name": "scroll-area-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/scroll-area.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const scrollArea = defineSlotRecipe({\n  className: 'scroll-area',\n  slots: ['root', 'viewport', 'content', 'scrollbar', 'thumb', 'corner'],\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      width: '100%',\n      height: '100%',\n      position: 'relative',\n      overflow: 'hidden',\n      '--scrollbar-margin': '0px',\n      '--scrollbar-size': 'calc(var(--thumb-size) + calc(var(--scrollbar-margin) * 2))',\n    },\n    viewport: {\n      display: 'flex',\n      flexDirection: 'column',\n      height: '100%',\n      width: '100%',\n      WebkitOverflowScrolling: 'touch',\n      scrollbarWidth: 'none',\n      '&::-webkit-scrollbar': {\n        display: 'none',\n      },\n      '&[data-overflow-x] [data-pinned]': {\n        _after: {\n          content: '\"\"',\n          position: 'absolute',\n          pointerEvents: 'none',\n          top: '0',\n          bottom: '-1px',\n          width: '32px',\n        },\n      },\n      '&[data-overflow-x]:not([data-at-left]) [data-pinned=\"left\"]': {\n        _after: {\n          insetInlineEnd: '0',\n          translate: '100% 0',\n          boxShadow: 'inset',\n        },\n      },\n    },\n    scrollbar: {\n      alignItems: 'center',\n      display: 'flex',\n      position: 'relative',\n      touchAction: 'none',\n      userSelect: 'none',\n      zIndex: 'overlay',\n      _vertical: {\n        flexDirection: 'column',\n        width: 'var(--scrollbar-size)',\n        py: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-y])': {\n          display: 'none',\n        },\n      },\n      _horizontal: {\n        flexDirection: 'row',\n        height: 'var(--scrollbar-size)',\n        px: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-x])': {\n          display: 'none',\n        },\n      },\n    },\n    thumb: {\n      borderRadius: 'full',\n      bg: 'var(--thumb-bg)',\n      transitionDuration: 'normal',\n      transitionProperty: 'background, color, box-shadow',\n      transitionTimingFunction: 'default',\n      _vertical: { width: 'var(--thumb-size)' },\n      _horizontal: { height: 'var(--thumb-size)' },\n    },\n    corner: {},\n  },\n  defaultVariants: {\n    size: 'md',\n    scrollbar: 'auto',\n  },\n  variants: {\n    scrollbar: {\n      auto: {\n        scrollbar: {\n          '&[data-scrolling], &[data-hover]': {\n            '--thumb-bg': '{colors.gray.subtle.bg.active}',\n          },\n        },\n      },\n      visible: {\n        content: {\n          '&[data-overflow-y]': {\n            pe: 'var(--scrollbar-size)',\n          },\n          '&[data-overflow-x]': {\n            pb: 'var(--scrollbar-size)',\n          },\n        },\n        scrollbar: {\n          bg: 'gray.subtle.bg',\n          borderRadius: 'full',\n        },\n        thumb: {\n          '--thumb-bg': '{colors.gray.subtle.bg.active}',\n        },\n      },\n    },\n    size: {\n      xs: { root: { '--thumb-size': 'sizes.1' } },\n      sm: { root: { '--thumb-size': 'sizes.1.5' } },\n      md: { root: { '--thumb-size': 'sizes.2' } },\n      lg: { root: { '--thumb-size': 'sizes.2.5' } },\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "area",
+    "other",
+    "parkui",
+    "recipe",
+    "scroll"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/scroll-area.ts",
+          "type": "registry:recipe",
+          "imports": "import { scrollArea } from './scroll-area'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const scrollArea = defineSlotRecipe({\n  className: 'scroll-area',\n  slots: ['root', 'viewport', 'content', 'scrollbar', 'thumb', 'corner'],\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      width: '100%',\n      height: '100%',\n      position: 'relative',\n      overflow: 'hidden',\n      '--scrollbar-margin': '0px',\n      '--scrollbar-size': 'calc(var(--thumb-size) + calc(var(--scrollbar-margin) * 2))',\n    },\n    viewport: {\n      display: 'flex',\n      flexDirection: 'column',\n      height: '100%',\n      width: '100%',\n      WebkitOverflowScrolling: 'touch',\n      scrollbarWidth: 'none',\n      '&::-webkit-scrollbar': {\n        display: 'none',\n      },\n      '&[data-overflow-x] [data-pinned]': {\n        _after: {\n          content: '\"\"',\n          position: 'absolute',\n          pointerEvents: 'none',\n          top: '0',\n          bottom: '-1px',\n          width: '32px',\n        },\n      },\n      '&[data-overflow-x]:not([data-at-left]) [data-pinned=\"left\"]': {\n        _after: {\n          insetInlineEnd: '0',\n          translate: '100% 0',\n          boxShadow: 'inset',\n        },\n      },\n    },\n    scrollbar: {\n      alignItems: 'center',\n      display: 'flex',\n      position: 'relative',\n      touchAction: 'none',\n      userSelect: 'none',\n      zIndex: 'overlay',\n      _vertical: {\n        flexDirection: 'column',\n        width: 'var(--scrollbar-size)',\n        py: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-y])': {\n          display: 'none',\n        },\n      },\n      _horizontal: {\n        flexDirection: 'row',\n        height: 'var(--scrollbar-size)',\n        px: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-x])': {\n          display: 'none',\n        },\n      },\n    },\n    thumb: {\n      borderRadius: 'full',\n      bg: 'var(--thumb-bg)',\n      transitionDuration: 'normal',\n      transitionProperty: 'background, color, box-shadow',\n      transitionTimingFunction: 'default',\n      _vertical: { width: 'var(--thumb-size)' },\n      _horizontal: { height: 'var(--thumb-size)' },\n    },\n    corner: {},\n  },\n  defaultVariants: {\n    size: 'md',\n    scrollbar: 'auto',\n  },\n  variants: {\n    scrollbar: {\n      auto: {\n        scrollbar: {\n          '&[data-scrolling], &[data-hover]': {\n            '--thumb-bg': '{colors.gray.subtle.bg.active}',\n          },\n        },\n      },\n      visible: {\n        content: {\n          '&[data-overflow-y]': {\n            pe: 'var(--scrollbar-size)',\n          },\n          '&[data-overflow-x]': {\n            pb: 'var(--scrollbar-size)',\n          },\n        },\n        scrollbar: {\n          bg: 'gray.subtle.bg',\n          borderRadius: 'full',\n        },\n        thumb: {\n          '--thumb-bg': '{colors.gray.subtle.bg.active}',\n        },\n      },\n    },\n    size: {\n      xs: { root: { '--thumb-size': 'sizes.1' } },\n      sm: { root: { '--thumb-size': 'sizes.1.5' } },\n      md: { root: { '--thumb-size': 'sizes.2' } },\n      lg: { root: { '--thumb-size': 'sizes.2.5' } },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "scroll-area-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/scroll-area.ts",
+          "type": "registry:recipe",
+          "imports": "import { scrollArea } from './scroll-area'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const scrollArea = defineSlotRecipe({\n  className: 'scroll-area',\n  slots: ['root', 'viewport', 'content', 'scrollbar', 'thumb', 'corner'],\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      width: '100%',\n      height: '100%',\n      position: 'relative',\n      overflow: 'hidden',\n      '--scrollbar-margin': '0px',\n      '--scrollbar-size': 'calc(var(--thumb-size) + calc(var(--scrollbar-margin) * 2))',\n    },\n    viewport: {\n      display: 'flex',\n      flexDirection: 'column',\n      height: '100%',\n      width: '100%',\n      WebkitOverflowScrolling: 'touch',\n      scrollbarWidth: 'none',\n      '&::-webkit-scrollbar': {\n        display: 'none',\n      },\n      '&[data-overflow-x] [data-pinned]': {\n        _after: {\n          content: '\"\"',\n          position: 'absolute',\n          pointerEvents: 'none',\n          top: '0',\n          bottom: '-1px',\n          width: '32px',\n        },\n      },\n      '&[data-overflow-x]:not([data-at-left]) [data-pinned=\"left\"]': {\n        _after: {\n          insetInlineEnd: '0',\n          translate: '100% 0',\n          boxShadow: 'inset',\n        },\n      },\n    },\n    scrollbar: {\n      alignItems: 'center',\n      display: 'flex',\n      position: 'relative',\n      touchAction: 'none',\n      userSelect: 'none',\n      zIndex: 'overlay',\n      _vertical: {\n        flexDirection: 'column',\n        width: 'var(--scrollbar-size)',\n        py: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-y])': {\n          display: 'none',\n        },\n      },\n      _horizontal: {\n        flexDirection: 'row',\n        height: 'var(--scrollbar-size)',\n        px: 'var(--scrollbar-margin)',\n        '&:not([data-overflow-x])': {\n          display: 'none',\n        },\n      },\n    },\n    thumb: {\n      borderRadius: 'full',\n      bg: 'var(--thumb-bg)',\n      transitionDuration: 'normal',\n      transitionProperty: 'background, color, box-shadow',\n      transitionTimingFunction: 'default',\n      _vertical: { width: 'var(--thumb-size)' },\n      _horizontal: { height: 'var(--thumb-size)' },\n    },\n    corner: {},\n  },\n  defaultVariants: {\n    size: 'md',\n    scrollbar: 'auto',\n  },\n  variants: {\n    scrollbar: {\n      auto: {\n        scrollbar: {\n          '&[data-scrolling], &[data-hover]': {\n            '--thumb-bg': '{colors.gray.subtle.bg.active}',\n          },\n        },\n      },\n      visible: {\n        content: {\n          '&[data-overflow-y]': {\n            pe: 'var(--scrollbar-size)',\n          },\n          '&[data-overflow-x]': {\n            pb: 'var(--scrollbar-size)',\n          },\n        },\n        scrollbar: {\n          bg: 'gray.subtle.bg',\n          borderRadius: 'full',\n        },\n        thumb: {\n          '--thumb-bg': '{colors.gray.subtle.bg.active}',\n        },\n      },\n    },\n    size: {\n      xs: { root: { '--thumb-size': 'sizes.1' } },\n      sm: { root: { '--thumb-size': 'sizes.1.5' } },\n      md: { root: { '--thumb-size': 'sizes.2' } },\n      lg: { root: { '--thumb-size': 'sizes.2.5' } },\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "scroll-area-recipe is a scroll area recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: scroll-area-recipe\nDescription: scroll-area-recipe is a scroll area recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: animated, hover\nTags: area, other, parkui, recipe, scroll\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/scroll-area.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const scrollArea = defineSlotRecipe({\n  className: 'scroll-area',\n  slots: ['root', 'viewport', 'content', 'scrollbar', 'thumb', 'corner'],\n  base: {\n    root: {\n      display: 'flex',\n      flexDirection: 'column',\n      width: '100%',\n      height: '100%',\n      position: 'relative',\n      overflow: 'hidden',\n      '--scrollbar-margin': '0px',\n      '--scrollbar-size': 'calc(var(--thumb",
+  "prompt_version": 2,
+  "clean_id": "scroll-area-recipe",
+  "display_name": "Scroll Area Recipe",
+  "preview_url": "/previews/parkui/scroll-area-recipe.png"
+}

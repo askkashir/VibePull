@@ -1,0 +1,44 @@
+{
+  "id": "heading-recipe",
+  "name": "heading-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/heading.ts\nimport { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "heading-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/heading.ts",
+          "type": "registry:recipe",
+          "imports": "import { heading } from './heading'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "heading-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/heading.ts",
+          "type": "registry:recipe",
+          "imports": "import { heading } from './heading'",
+          "content": "import { defineRecipe } from '@pandacss/dev'\n\nexport const heading = defineRecipe({\n  className: 'heading',\n  base: {\n    fontWeight: 'semibold',\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

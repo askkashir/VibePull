@@ -1,0 +1,22 @@
+{
+  "id": "native-select-disabled",
+  "name": "native-select-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "native-select-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## native-select-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

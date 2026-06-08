@@ -1,0 +1,56 @@
+{
+  "id": "src_components_Badge_Badge",
+  "name": "Badge",
+  "source_code": "// src/components/Badge/Badge.tsx\n// Tremor Badge [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\n\nconst badgeVariants = tv({\n  base: cx(\n    \"inline-flex items-center gap-x-1 whitespace-nowrap rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset\",\n  ),\n  variants: {\n    variant: {\n      default: [\n        \"bg-blue-50 text-blue-900 ring-blue-500/30\",\n        \"dark:bg-blue-400/10 dark:text-blue-400 dark:ring-blue-400/30\",\n      ],\n      neutral: [\n        \"bg-gray-50 text-gray-900 ring-gray-500/30\",\n        \"dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20\",\n      ],\n      success: [\n        \"bg-emerald-50 text-emerald-900 ring-emerald-600/30\",\n        \"dark:bg-emerald-400/10 dark:text-emerald-400 dark:ring-emerald-400/20\",\n      ],\n      error: [\n        \"bg-red-50 text-red-900 ring-red-600/20\",\n        \"dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20\",\n      ],\n      warning: [\n        \"bg-yellow-50 text-yellow-900 ring-yellow-600/30\",\n        \"dark:bg-yellow-400/10 dark:text-yellow-500 dark:ring-yellow-400/20\",\n      ],\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n})\n\ninterface BadgeProps\n  extends React.ComponentPropsWithoutRef<\"span\">,\n  VariantProps<typeof badgeVariants> { }\n\nconst Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(\n  ({ className, variant, ...props }: BadgeProps, forwardedRef) => {\n    return (\n      <span\n        ref={forwardedRef}\n        className={cx(badgeVariants({ variant }), className)}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nBadge.displayName = \"Badge\"\n\nexport { Badge, badgeVariants, type BadgeProps }\n",
+  "description": "",
+  "tags": [
+    "icon",
+    "notification",
+    "indicator"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "src_components_Badge_Badge",
+      "name": "Badge.tsx",
+      "source": "github_contents",
+      "path": "src/components/Badge/Badge.tsx",
+      "sha": "e3d4e4a2b7daee67157d5a1c117049b2ebd246cb",
+      "size": 1688,
+      "url": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Badge/Badge.tsx?ref=main",
+      "html_url": "https://github.com/tremorlabs/tremor/blob/main/src/components/Badge/Badge.tsx",
+      "git_url": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/e3d4e4a2b7daee67157d5a1c117049b2ebd246cb",
+      "download_url": "https://raw.githubusercontent.com/tremorlabs/tremor/main/src/components/Badge/Badge.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Badge/Badge.tsx?ref=main",
+        "git": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/e3d4e4a2b7daee67157d5a1c117049b2ebd246cb",
+        "html": "https://github.com/tremorlabs/tremor/blob/main/src/components/Badge/Badge.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "src_components_Badge_Badge",
+      "name": "Badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Badge/Badge.tsx",
+          "content": "// Tremor Badge [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\n\nconst badgeVariants = tv({\n  base: cx(\n    \"inline-flex items-center gap-x-1 whitespace-nowrap rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset\",\n  ),\n  variants: {\n    variant: {\n      default: [\n        \"bg-blue-50 text-blue-900 ring-blue-500/30\",\n        \"dark:bg-blue-400/10 dark:text-blue-400 dark:ring-blue-400/30\",\n      ],\n      neutral: [\n        \"bg-gray-50 text-gray-900 ring-gray-500/30\",\n        \"dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20\",\n      ],\n      success: [\n        \"bg-emerald-50 text-emerald-900 ring-emerald-600/30\",\n        \"dark:bg-emerald-400/10 dark:text-emerald-400 dark:ring-emerald-400/20\",\n      ],\n      error: [\n        \"bg-red-50 text-red-900 ring-red-600/20\",\n        \"dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20\",\n      ],\n      warning: [\n        \"bg-yellow-50 text-yellow-900 ring-yellow-600/30\",\n        \"dark:bg-yellow-400/10 dark:text-yellow-500 dark:ring-yellow-400/20\",\n      ],\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n})\n\ninterface BadgeProps\n  extends React.ComponentPropsWithoutRef<\"span\">,\n  VariantProps<typeof badgeVariants> { }\n\nconst Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(\n  ({ className, variant, ...props }: BadgeProps, forwardedRef) => {\n    return (\n      <span\n        ref={forwardedRef}\n        className={cx(badgeVariants({ variant }), className)}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nBadge.displayName = \"Badge\"\n\nexport { Badge, badgeVariants, type BadgeProps }\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A small component used to display a badge or notification. It is typically used to display additional information or context related to a specific action or state. A developer would use the Badge component to indicate a change in status or to draw attention to a specific piece of information.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "component",
+  "generation_prompt": "Create a production-ready component component with the following characteristics:\n\nName: Badge\nDescription: A small component used to display a badge or notification. It is typically used to display additional information or context related to a specific action or state. A developer would use the Badge component to indicate a change in status or to draw attention to a specific piece of information.\nStyle: e.g. dark, minimal\nInteractions: \nTags: icon, notification, indicator\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/Badge/Badge.tsx\n// Tremor Badge [v1.0.0]\n\nimport React from \"react\"\nimport { tv, type VariantProps } from \"tailwind-variants\"\n\nimport { cx } from \"../../utils/cx\"\n\nconst badgeVariants = tv({\n  base: cx(\n    \"inline-flex items-center gap-x-1 whitespace-nowrap rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset\",\n  ),\n  variants: {\n    variant: {\n      default: [\n        \"bg-blue-50 text-blue-900 ring-blue-500/30\",\n        \"dark:bg-blue-400/10 dark:text-blue-400 dark:ring-",
+  "prompt_version": 2,
+  "clean_id": "badge",
+  "display_name": "Badge",
+  "preview_url": "/previews/tremor/src-components-badge-badge.png"
+}

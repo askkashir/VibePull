@@ -1,0 +1,49 @@
+{
+  "id": "components_ui_Sidebar_NavLink",
+  "name": "NavLink",
+  "source_code": "// components/ui/Sidebar/NavLink.tsx\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\nimport { ReactNode } from \"react\";\nimport mergeTW from \"utils/mergeTW\";\n\nconst NavLink = ({ ...props }) => {\n  const {\n    children,\n    href = \"\",\n    className = \"\",\n    active = \"\",\n  }: {\n    children?: ReactNode;\n    href?: string;\n    className?: string;\n    active?: string;\n  } = props;\n\n  const pathname = usePathname();\n\n  const isActive: boolean = pathname == href;\n  const activeClass = isActive ? active : \"\";\n\n  return (\n    <Link\n      href={href}\n      {...props}\n      className={mergeTW(\n        \"block relative z-10 rounded-lg px-3 py-2 transition-colors duration-150 group\",\n        activeClass,\n        className\n      )}\n    >\n      <span\n        className={`pl-6 py-0.5 border-l group-hover:border-indigo-500 duration-150 ${\n          isActive ? \"border-indigo-500\" : \"border-transparent\"\n        }`}\n      >\n        {children}\n      </span>\n    </Link>\n  );\n};\n\nexport default NavLink;\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "link",
+    "nav",
+    "navbar"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Sidebar_NavLink",
+      "name": "NavLink",
+      "path": "components/ui/Sidebar/NavLink.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Sidebar_NavLink",
+      "name": "NavLink",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Sidebar/NavLink.tsx",
+          "content": "import Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\nimport { ReactNode } from \"react\";\nimport mergeTW from \"utils/mergeTW\";\n\nconst NavLink = ({ ...props }) => {\n  const {\n    children,\n    href = \"\",\n    className = \"\",\n    active = \"\",\n  }: {\n    children?: ReactNode;\n    href?: string;\n    className?: string;\n    active?: string;\n  } = props;\n\n  const pathname = usePathname();\n\n  const isActive: boolean = pathname == href;\n  const activeClass = isActive ? active : \"\";\n\n  return (\n    <Link\n      href={href}\n      {...props}\n      className={mergeTW(\n        \"block relative z-10 rounded-lg px-3 py-2 transition-colors duration-150 group\",\n        activeClass,\n        className\n      )}\n    >\n      <span\n        className={`pl-6 py-0.5 border-l group-hover:border-indigo-500 duration-150 ${\n          isActive ? \"border-indigo-500\" : \"border-transparent\"\n        }`}\n      >\n        {children}\n      </span>\n    </Link>\n  );\n};\n\nexport default NavLink;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "NavLink is a nav link UI component from the floatui corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover"
+  ],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: NavLink\nDescription: NavLink is a nav link UI component from the floatui corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: rounded, utility-styled\nInteractions: animated, hover\nTags: floatui, link, nav, navbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Sidebar/NavLink.tsx\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\nimport { ReactNode } from \"react\";\nimport mergeTW from \"utils/mergeTW\";\n\nconst NavLink = ({ ...props }) => {\n  const {\n    children,\n    href = \"\",\n    className = \"\",\n    active = \"\",\n  }: {\n    children?: ReactNode;\n    href?: string;\n    className?: string;\n    active?: string;\n  } = props;\n\n  const pathname = usePathname();\n\n  const isActive: boolean = pathname == href;\n  const a",
+  "prompt_version": 2,
+  "clean_id": "nav-link",
+  "display_name": "Nav Link",
+  "preview_url": "/previews/floatui/components-ui-sidebar-navlink.png"
+}

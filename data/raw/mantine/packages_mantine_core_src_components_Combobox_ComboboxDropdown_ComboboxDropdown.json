@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxDropdown_ComboboxDropdown",
+  "name": "ComboboxDropdown",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxDropdown/ComboboxDropdown.tsx\nimport { factory, Factory, useProps } from '../../../core';\nimport { Popover, PopoverDropdownProps } from '../../Popover';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxDropdownStylesNames = 'dropdown';\n\nexport interface ComboboxDropdownProps extends PopoverDropdownProps {\n  /** Determines whether the dropdown should be hidden, for example, when there are no options to display */\n  hidden?: boolean;\n}\n\nexport type ComboboxDropdownFactory = Factory<{\n  props: ComboboxDropdownProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxDropdownStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxDropdown = factory<ComboboxDropdownFactory>((props) => {\n  const { classNames, styles, className, style, hidden, ...others } = useProps(\n    'ComboboxDropdown',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return (\n    <Popover.Dropdown\n      {...others}\n      role=\"presentation\"\n      data-hidden={hidden || undefined}\n      data-floating-height={ctx.floatingHeight || undefined}\n      {...ctx.getStyles('dropdown', { className, style, classNames, styles })}\n    />\n  );\n});\n\nComboboxDropdown.classes = classes;\nComboboxDropdown.displayName = '@mantine/core/ComboboxDropdown';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxDropdown_ComboboxDropdown",
+      "name": "ComboboxDropdown",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxDropdown/ComboboxDropdown.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxDropdown_ComboboxDropdown",
+      "name": "ComboboxDropdown",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxDropdown/ComboboxDropdown.tsx",
+          "content": "import { factory, Factory, useProps } from '../../../core';\nimport { Popover, PopoverDropdownProps } from '../../Popover';\nimport { useComboboxContext } from '../Combobox.context';\nimport classes from '../Combobox.module.css';\n\nexport type ComboboxDropdownStylesNames = 'dropdown';\n\nexport interface ComboboxDropdownProps extends PopoverDropdownProps {\n  /** Determines whether the dropdown should be hidden, for example, when there are no options to display */\n  hidden?: boolean;\n}\n\nexport type ComboboxDropdownFactory = Factory<{\n  props: ComboboxDropdownProps;\n  ref: HTMLDivElement;\n  stylesNames: ComboboxDropdownStylesNames;\n  compound: true;\n}>;\n\nexport const ComboboxDropdown = factory<ComboboxDropdownFactory>((props) => {\n  const { classNames, styles, className, style, hidden, ...others } = useProps(\n    'ComboboxDropdown',\n    null,\n    props\n  );\n\n  const ctx = useComboboxContext();\n\n  return (\n    <Popover.Dropdown\n      {...others}\n      role=\"presentation\"\n      data-hidden={hidden || undefined}\n      data-floating-height={ctx.floatingHeight || undefined}\n      {...ctx.getStyles('dropdown', { className, style, classNames, styles })}\n    />\n  );\n});\n\nComboboxDropdown.classes = classes;\nComboboxDropdown.displayName = '@mantine/core/ComboboxDropdown';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

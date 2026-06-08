@@ -1,0 +1,55 @@
+{
+  "id": "word-rotate",
+  "name": "Word Rotate",
+  "source_code": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { AnimatePresence, motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface WordRotateProps {\n  words: string[]\n  duration?: number\n  motionProps?: MotionProps\n  className?: string\n}\n\nexport function WordRotate({\n  words,\n  duration = 2500,\n  motionProps = {\n    initial: { opacity: 0, y: -50 },\n    animate: { opacity: 1, y: 0 },\n    exit: { opacity: 0, y: 50 },\n    transition: { duration: 0.25, ease: \"easeOut\" },\n  },\n  className,\n}: WordRotateProps) {\n  const [index, setIndex] = useState(0)\n\n  useEffect(() => {\n    const interval = setInterval(() => {\n      setIndex((prevIndex) => (prevIndex + 1) % words.length)\n    }, duration)\n\n    // Clean up interval on unmount\n    return () => clearInterval(interval)\n  }, [words, duration])\n\n  return (\n    <div className=\"overflow-hidden py-2\">\n      <AnimatePresence mode=\"wait\">\n        <motion.h1\n          key={words[index]}\n          className={cn(className)}\n          {...motionProps}\n        >\n          {words[index]}\n        </motion.h1>\n      </AnimatePresence>\n    </div>\n  )\n}\n",
+  "description": "A vertical rotation of words",
+  "tags": [
+    "animation",
+    "typography"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "word-rotate",
+      "type": "registry:ui",
+      "title": "Word Rotate",
+      "description": "A vertical rotation of words",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/word-rotate.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/word-rotate.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "word-rotate",
+      "type": "registry:ui",
+      "title": "Word Rotate",
+      "description": "A vertical rotation of words",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/word-rotate.tsx",
+          "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { AnimatePresence, motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface WordRotateProps {\n  words: string[]\n  duration?: number\n  motionProps?: MotionProps\n  className?: string\n}\n\nexport function WordRotate({\n  words,\n  duration = 2500,\n  motionProps = {\n    initial: { opacity: 0, y: -50 },\n    animate: { opacity: 1, y: 0 },\n    exit: { opacity: 0, y: 50 },\n    transition: { duration: 0.25, ease: \"easeOut\" },\n  },\n  className,\n}: WordRotateProps) {\n  const [index, setIndex] = useState(0)\n\n  useEffect(() => {\n    const interval = setInterval(() => {\n      setIndex((prevIndex) => (prevIndex + 1) % words.length)\n    }, duration)\n\n    // Clean up interval on unmount\n    return () => clearInterval(interval)\n  }, [words, duration])\n\n  return (\n    <div className=\"overflow-hidden py-2\">\n      <AnimatePresence mode=\"wait\">\n        <motion.h1\n          key={words[index]}\n          className={cn(className)}\n          {...motionProps}\n        >\n          {words[index]}\n        </motion.h1>\n      </AnimatePresence>\n    </div>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Displays a single text element that rotates through an array of words. Typically used for displaying a quote or a title that changes over time.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Word Rotate\nDescription: Displays a single text element that rotates through an array of words. Typically used for displaying a quote or a title that changes over time.\nStyle: \nInteractions: \nTags: animation, typography\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { useEffect, useState } from \"react\"\nimport { AnimatePresence, motion, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface WordRotateProps {\n  words: string[]\n  duration?: number\n  motionProps?: MotionProps\n  className?: string\n}\n\nexport function WordRotate({\n  words,\n  duration = 2500,\n  motionProps = {\n    initial: { opacity: 0, y: -50 },\n    animate: { opacity: 1, y: 0 },\n    exit: { opacity: 0, y: 50 },\n    transition: { duration: 0.25, ea",
+  "prompt_version": 2,
+  "clean_id": "word-rotate",
+  "display_name": "Word Rotate",
+  "preview_url": "/previews/magicui/word-rotate.png"
+}

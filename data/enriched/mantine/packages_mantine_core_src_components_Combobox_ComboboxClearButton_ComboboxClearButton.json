@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxClearButton_ComboboxClearButton",
+  "name": "ComboboxClearButton",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxClearButton/ComboboxClearButton.tsx\nimport { ElementProps } from '../../../core';\nimport { Input, InputClearButtonProps } from '../../Input';\n\nexport interface ComboboxClearButtonProps extends InputClearButtonProps, ElementProps<'button'> {\n  onClear: () => void;\n}\n\nexport function ComboboxClearButton({\n  onMouseDown,\n  onClick,\n  onClear,\n  ...others\n}: ComboboxClearButtonProps) {\n  return (\n    <Input.ClearButton\n      tabIndex={-1}\n      aria-hidden\n      {...others}\n      onMouseDown={(event) => {\n        event.preventDefault();\n        onMouseDown?.(event);\n      }}\n      onClick={(event) => {\n        onClear();\n        onClick?.(event);\n      }}\n    />\n  );\n}\n\nComboboxClearButton.displayName = '@mantine/core/ComboboxClearButton';\n",
+  "description": "",
+  "tags": [
+    "button",
+    "clear",
+    "combobox",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxClearButton_ComboboxClearButton",
+      "name": "ComboboxClearButton",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxClearButton/ComboboxClearButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxClearButton_ComboboxClearButton",
+      "name": "ComboboxClearButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxClearButton/ComboboxClearButton.tsx",
+          "content": "import { ElementProps } from '../../../core';\nimport { Input, InputClearButtonProps } from '../../Input';\n\nexport interface ComboboxClearButtonProps extends InputClearButtonProps, ElementProps<'button'> {\n  onClear: () => void;\n}\n\nexport function ComboboxClearButton({\n  onMouseDown,\n  onClick,\n  onClear,\n  ...others\n}: ComboboxClearButtonProps) {\n  return (\n    <Input.ClearButton\n      tabIndex={-1}\n      aria-hidden\n      {...others}\n      onMouseDown={(event) => {\n        event.preventDefault();\n        onMouseDown?.(event);\n      }}\n      onClick={(event) => {\n        onClear();\n        onClick?.(event);\n      }}\n    />\n  );\n}\n\nComboboxClearButton.displayName = '@mantine/core/ComboboxClearButton';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxClearButton is a combobox clear button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: ComboboxClearButton\nDescription: ComboboxClearButton is a combobox clear button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: button, clear, combobox, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxClearButton/ComboboxClearButton.tsx\nimport { ElementProps } from '../../../core';\nimport { Input, InputClearButtonProps } from '../../Input';\n\nexport interface ComboboxClearButtonProps extends InputClearButtonProps, ElementProps<'button'> {\n  onClear: () => void;\n}\n\nexport function ComboboxClearButton({\n  onMouseDown,\n  onClick,\n  onClear,\n  ...others\n}: ComboboxClearButtonProps) {\n  return (\n    <Input.ClearButton\n      tabIndex={-1}\n   ",
+  "prompt_version": 2,
+  "clean_id": "combobox-clear-button",
+  "display_name": "Combobox Clear Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxclearbutton-comboboxclearbutton.png"
+}

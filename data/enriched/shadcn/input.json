@@ -1,0 +1,44 @@
+{
+  "id": "input",
+  "name": "input",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "field",
+    "text field",
+    "form element",
+    "user input"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input\n**Type:** registry:ui\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A text input component is a field where users can enter information. It typically consists of a rectangular box, an input cursor, and a placeholder text that suggests what information should be entered. Developers would use this component to collect user data in a variety of applications.",
+  "style_tags": [
+    "text box",
+    "form field",
+    "rounded corners",
+    "box shadow"
+  ],
+  "interaction_tags": [
+    "on change event",
+    "placeholder text",
+    "auto focus"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input\nDescription: A text input component is a field where users can enter information. It typically consists of a rectangular box, an input cursor, and a placeholder text that suggests what information should be entered. Developers would use this component to collect user data in a variety of applications.\nStyle: text box, form field, rounded corners, box shadow\nInteractions: on change event, placeholder text, auto focus\nTags: input, field, text field, form element, user input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input",
+  "display_name": "Input",
+  "preview_url": "/previews/shadcn/input.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "elements_badge",
+  "name": "badge",
+  "source_code": "// elements/badge.html\n<span class=\"rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black\">\n    Badge\n</span>",
+  "description": "",
+  "tags": [
+    "pinesui",
+    "registry:ui"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "badge",
+      "name": "badge",
+      "path": "elements/badge.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_badge",
+      "name": "badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/badge.html",
+          "content": "<span class=\"rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black\">\n    Badge\n</span>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

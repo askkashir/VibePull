@@ -1,0 +1,42 @@
+{
+  "id": "chart-radar-dots",
+  "name": "chart-radar-dots",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "radar",
+    "metric",
+    "comparison",
+    "data visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-radar-dots",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-radar-dots\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A radar chart displaying dot markers to represent data points, ideal for comparing multiple metrics across different categories in a clear and concise manner.",
+  "style_tags": [
+    "bright",
+    "modern",
+    "chart-focused"
+  ],
+  "interaction_tags": [
+    "clickable dots",
+    "hover effect"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-radar-dots\nDescription: A radar chart displaying dot markers to represent data points, ideal for comparing multiple metrics across different categories in a clear and concise manner.\nStyle: bright, modern, chart-focused\nInteractions: clickable dots, hover effect\nTags: chart, radar, metric, comparison, data visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-radar-dots",
+  "display_name": "Chart Radar Dots",
+  "preview_url": "/previews/shadcn/chart-radar-dots.png"
+}

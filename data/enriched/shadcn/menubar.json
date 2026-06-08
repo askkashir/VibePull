@@ -1,0 +1,41 @@
+{
+  "id": "menubar",
+  "name": "menubar",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "menu",
+    "toolbar"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "menubar",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## menubar\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** radix-ui"
+  },
+  "visual_summary": "A horizontal navigation bar typically located at the top of a screen, providing an accessible and organized way to present a set of options or menus. It's often used in desktop applications, web applications, and mobile apps to facilitate user navigation. Its design can vary, but it usually includes a series of menu items, separators, or sub-menus.",
+  "style_tags": [
+    "e.g. light",
+    "compact",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "draggable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: menubar\nDescription: A horizontal navigation bar typically located at the top of a screen, providing an accessible and organized way to present a set of options or menus. It's often used in desktop applications, web applications, and mobile apps to facilitate user navigation. Its design can vary, but it usually includes a series of menu items, separators, or sub-menus.\nStyle: e.g. light, compact, flat\nInteractions: e.g. hover, clickable, draggable\nTags: navigation, menu, toolbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "menubar",
+  "display_name": "Menubar",
+  "preview_url": "/previews/shadcn/menubar.png"
+}

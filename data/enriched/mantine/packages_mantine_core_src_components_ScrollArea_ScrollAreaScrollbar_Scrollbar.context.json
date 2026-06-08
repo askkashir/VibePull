@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+  "name": "Scrollbar.context",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts\nimport { createSafeContext } from '../../../core';\n\nexport interface ScrollbarContextValue {\n  hasThumb: boolean;\n  scrollbar: HTMLDivElement | null;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerUp: () => void;\n  onThumbPointerDown: (pointerPos: { x: number; y: number }) => void;\n  onThumbPositionChange: () => void;\n}\n\nexport const [ScrollbarProvider, useScrollbarContext] = createSafeContext<ScrollbarContextValue>(\n  'ScrollAreaScrollbar was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "other",
+    "scrollbar"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+      "name": "Scrollbar.context",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaScrollbar_Scrollbar.context",
+      "name": "Scrollbar.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts",
+          "content": "import { createSafeContext } from '../../../core';\n\nexport interface ScrollbarContextValue {\n  hasThumb: boolean;\n  scrollbar: HTMLDivElement | null;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerUp: () => void;\n  onThumbPointerDown: (pointerPos: { x: number; y: number }) => void;\n  onThumbPositionChange: () => void;\n}\n\nexport const [ScrollbarProvider, useScrollbarContext] = createSafeContext<ScrollbarContextValue>(\n  'ScrollAreaScrollbar was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Scrollbar.context is a scrollbar context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Scrollbar.context\nDescription: Scrollbar.context is a scrollbar context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: context, mantine, other, scrollbar\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/ScrollAreaScrollbar/Scrollbar.context.ts\nimport { createSafeContext } from '../../../core';\n\nexport interface ScrollbarContextValue {\n  hasThumb: boolean;\n  scrollbar: HTMLDivElement | null;\n  onThumbChange: (thumb: HTMLDivElement | null) => void;\n  onThumbPointerUp: () => void;\n  onThumbPointerDown: (pointerPos: { x: number; y: number }) => void;\n  onThumbPositionChange: () => void;\n}\n\nexport const [ScrollbarProvider, useScrollbarContext] = cr",
+  "prompt_version": 2,
+  "clean_id": "scrollbar",
+  "display_name": "Scrollbar",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-scrollareascrollbar-scrollbar-context.png"
+}

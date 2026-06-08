@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-10",
+  "name": "sidebar-10",
+  "source_code": "",
+  "description": "A sidebar in a popover.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-10",
+      "type": "registry:block",
+      "description": "A sidebar in a popover.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-10\n\nA sidebar in a popover.\n\n**Type:** registry:block\n**Files:** 8 file(s)"
+  }
+}

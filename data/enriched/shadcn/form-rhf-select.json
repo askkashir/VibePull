@@ -1,0 +1,44 @@
+{
+  "id": "form-rhf-select",
+  "name": "form-rhf-select",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "select",
+    "input",
+    "form",
+    "options",
+    "registration",
+    "order"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-select",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-select\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "The form-rhf-select component is a customizable dropdown select form input. It displays a list of options and allows users to select one or multiple items. Typically used within forms to provide users with choices for a specific field, often found within registration forms or order forms.",
+  "style_tags": [
+    "material",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "expandable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-select\nDescription: The form-rhf-select component is a customizable dropdown select form input. It displays a list of options and allows users to select one or multiple items. Typically used within forms to provide users with choices for a specific field, often found within registration forms or order forms.\nStyle: material, customizable\nInteractions: clickable, hover, expandable\nTags: dropdown, select, input, form, options, registration, order\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-select",
+  "display_name": "Form Rhf Select",
+  "preview_url": "/previews/shadcn/form-rhf-select.png"
+}

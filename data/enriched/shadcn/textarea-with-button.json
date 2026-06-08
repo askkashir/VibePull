@@ -1,0 +1,41 @@
+{
+  "id": "textarea-with-button",
+  "name": "textarea-with-button",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form component",
+    "data entry",
+    "submit button"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-with-button",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-with-button\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A textarea component accompanied by a submit button, typically used in forms or data entry scenarios. It's a straightforward combination of a text input field and a call-to-action button, making it easy for users to input information and save it.",
+  "style_tags": [
+    "standard",
+    "clean",
+    "simple"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "submit",
+    "interactive"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: textarea-with-button\nDescription: A textarea component accompanied by a submit button, typically used in forms or data entry scenarios. It's a straightforward combination of a text input field and a call-to-action button, making it easy for users to input information and save it.\nStyle: standard, clean, simple\nInteractions: clickable, submit, interactive\nTags: form component, data entry, submit button\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "textarea-with-button",
+  "display_name": "Textarea With Button",
+  "preview_url": "/previews/shadcn/textarea-with-button.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "checkbox-demo",
+  "name": "checkbox-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form component",
+    "selection",
+    "survey",
+    "filtering",
+    "checkbox"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "checkbox-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## checkbox-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "CheckboxDemo is a customizable form component used to allow users to select single or multiple items from a list. It is commonly used in surveys, filtering options, and data selection. This component can be easily integrated into various forms and applications.",
+  "style_tags": [
+    "default",
+    "dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "disabled",
+    "highlighted",
+    "focused"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: checkbox-demo\nDescription: CheckboxDemo is a customizable form component used to allow users to select single or multiple items from a list. It is commonly used in surveys, filtering options, and data selection. This component can be easily integrated into various forms and applications.\nStyle: default, dark, minimal\nInteractions: disabled, highlighted, focused\nTags: form component, selection, survey, filtering, checkbox\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "checkbox-demo",
+  "display_name": "Checkbox Demo",
+  "preview_url": "/previews/shadcn/checkbox-demo.png"
+}

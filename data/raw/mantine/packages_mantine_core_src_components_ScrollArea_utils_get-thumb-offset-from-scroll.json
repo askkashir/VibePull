@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-offset-from-scroll",
+  "name": "get-thumb-offset-from-scroll",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-offset-from-scroll.ts\nimport type { Sizes } from '../ScrollArea.types';\nimport { getThumbSize } from './get-thumb-size';\nimport { linearScale } from './linear-scale';\n\nfunction clamp(value: number, [min, max]: [number, number]): number {\n  return Math.min(max, Math.max(min, value));\n}\n\nexport function getThumbOffsetFromScroll(\n  scrollPos: number,\n  sizes: Sizes,\n  dir: 'rtl' | 'ltr' = 'ltr'\n) {\n  const thumbSizePx = getThumbSize(sizes);\n  const scrollbarPadding = sizes.scrollbar.paddingStart + sizes.scrollbar.paddingEnd;\n  const scrollbar = sizes.scrollbar.size - scrollbarPadding;\n  const maxScrollPos = sizes.content - sizes.viewport;\n  const maxThumbPos = scrollbar - thumbSizePx;\n  const scrollClampRange = dir === 'ltr' ? [0, maxScrollPos] : [maxScrollPos * -1, 0];\n  const scrollWithoutMomentum = clamp(scrollPos, scrollClampRange as [number, number]);\n  const interpolate = linearScale([0, maxScrollPos], [0, maxThumbPos]);\n  return interpolate(scrollWithoutMomentum);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_utils_get-thumb-offset-from-scroll",
+      "name": "get-thumb-offset-from-scroll",
+      "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-offset-from-scroll.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_utils_get-thumb-offset-from-scroll",
+      "name": "get-thumb-offset-from-scroll",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/utils/get-thumb-offset-from-scroll.ts",
+          "content": "import type { Sizes } from '../ScrollArea.types';\nimport { getThumbSize } from './get-thumb-size';\nimport { linearScale } from './linear-scale';\n\nfunction clamp(value: number, [min, max]: [number, number]): number {\n  return Math.min(max, Math.max(min, value));\n}\n\nexport function getThumbOffsetFromScroll(\n  scrollPos: number,\n  sizes: Sizes,\n  dir: 'rtl' | 'ltr' = 'ltr'\n) {\n  const thumbSizePx = getThumbSize(sizes);\n  const scrollbarPadding = sizes.scrollbar.paddingStart + sizes.scrollbar.paddingEnd;\n  const scrollbar = sizes.scrollbar.size - scrollbarPadding;\n  const maxScrollPos = sizes.content - sizes.viewport;\n  const maxThumbPos = scrollbar - thumbSizePx;\n  const scrollClampRange = dir === 'ltr' ? [0, maxScrollPos] : [maxScrollPos * -1, 0];\n  const scrollWithoutMomentum = clamp(scrollPos, scrollClampRange as [number, number]);\n  const interpolate = linearScale([0, maxScrollPos], [0, maxThumbPos]);\n  return interpolate(scrollWithoutMomentum);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

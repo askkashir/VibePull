@@ -1,0 +1,45 @@
+{
+  "id": "packages_react_src_components_color-field_color-field",
+  "name": "color-field",
+  "source_code": "// packages/react/src/components/color-field/color-field.tsx\n\"use client\";\n\nimport type {ColorFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {Color} from \"react-aria-components/ColorArea\";\n\nimport {colorFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ColorField as ColorFieldPrimitive} from \"react-aria-components/ColorField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorFieldRootProps\n  extends ComponentPropsWithRef<typeof ColorFieldPrimitive>, ColorFieldVariants {}\n\nfunction ColorFieldRoot({children, className, fullWidth, ...props}: ColorFieldRootProps) {\n  const styles = React.useMemo(() => colorFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <ColorFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"color-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </ColorFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorFieldRoot};\n\nexport type {ColorFieldRootProps, Color as ColorValue};\n",
+  "description": "",
+  "tags": [
+    "input",
+    "color",
+    "field"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-field_color-field",
+      "name": "color-field",
+      "path": "packages/react/src/components/color-field/color-field.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-field_color-field",
+      "name": "color-field",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-field/color-field.tsx",
+          "content": "\"use client\";\n\nimport type {ColorFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {Color} from \"react-aria-components/ColorArea\";\n\nimport {colorFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ColorField as ColorFieldPrimitive} from \"react-aria-components/ColorField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * ColorField Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ColorFieldRootProps\n  extends ComponentPropsWithRef<typeof ColorFieldPrimitive>, ColorFieldVariants {}\n\nfunction ColorFieldRoot({children, className, fullWidth, ...props}: ColorFieldRootProps) {\n  const styles = React.useMemo(() => colorFieldVariants({fullWidth}), [fullWidth]);\n\n  return (\n    <ColorFieldPrimitive\n      data-required={dataAttr(props.isRequired)}\n      data-slot=\"color-field\"\n      {...props}\n      className={composeTwRenderProps(className, styles)}\n    >\n      {(values) => <>{typeof children === \"function\" ? children(values) : children}</>}\n    </ColorFieldPrimitive>\n  );\n}\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorFieldRoot};\n\nexport type {ColorFieldRootProps, Color as ColorValue};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Color field is a UI component that allows developers to input a color value. It is used when you need to input a color code for a background, text, or border. Typically used within forms or as a standalone field.",
+  "style_tags": [
+    "responsive"
+  ],
+  "interaction_tags": [
+    "editable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: color-field\nDescription: Color field is a UI component that allows developers to input a color value. It is used when you need to input a color code for a background, text, or border. Typically used within forms or as a standalone field.\nStyle: responsive\nInteractions: editable\nTags: input, color, field\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/color-field/color-field.tsx\n\"use client\";\n\nimport type {ColorFieldVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {Color} from \"react-aria-components/ColorArea\";\n\nimport {colorFieldVariants} from \"@heroui/styles\";\nimport React from \"react\";\nimport {ColorField as ColorFieldPrimitive} from \"react-aria-components/ColorField\";\n\nimport {dataAttr} from \"../../utils/assertion\";\nimport {composeTwRenderProps} from \"../../util",
+  "prompt_version": 2,
+  "clean_id": "color-field",
+  "display_name": "Color Field",
+  "preview_url": "/previews/heroui/packages-react-src-components-color-field-color-field.png"
+}

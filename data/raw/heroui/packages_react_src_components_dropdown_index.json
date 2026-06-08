@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_dropdown_index",
+  "name": "dropdown",
+  "source_code": "// packages/react/src/components/dropdown/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DropdownItem,\n  DropdownItemIndicator,\n  DropdownMenu,\n  DropdownPopover,\n  DropdownRoot,\n  DropdownSection,\n  DropdownSubmenuIndicator,\n  DropdownSubmenuTrigger,\n  DropdownTrigger,\n} from \"./dropdown\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Dropdown = Object.assign(DropdownRoot, {\n  Root: DropdownRoot,\n  Trigger: DropdownTrigger,\n  Popover: DropdownPopover,\n  Menu: DropdownMenu,\n  Section: DropdownSection,\n  Item: DropdownItem,\n  ItemIndicator: DropdownItemIndicator,\n  SubmenuIndicator: DropdownSubmenuIndicator,\n  SubmenuTrigger: DropdownSubmenuTrigger,\n});\n\nexport type Dropdown<T extends object = object> = {\n  Props: ComponentProps<typeof DropdownRoot>;\n  RootProps: ComponentProps<typeof DropdownRoot>;\n  TriggerProps: ComponentProps<typeof DropdownTrigger>;\n  PopoverProps: ComponentProps<typeof DropdownPopover>;\n  MenuProps: ComponentProps<typeof DropdownMenu<T>>;\n  SectionProps: ComponentProps<typeof DropdownSection>;\n  ItemProps: ComponentProps<typeof DropdownItem>;\n  ItemIndicatorProps: ComponentProps<typeof DropdownItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof DropdownSubmenuIndicator>;\n  SubmenuTriggerProps: ComponentProps<typeof DropdownSubmenuTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DropdownItem,\n  DropdownItemIndicator,\n  DropdownMenu,\n  DropdownPopover,\n  DropdownRoot,\n  DropdownSection,\n  DropdownSubmenuIndicator,\n  DropdownSubmenuTrigger,\n  DropdownTrigger,\n};\n\nexport type {\n  DropdownItemIndicatorProps,\n  DropdownItemProps,\n  DropdownMenuProps,\n  DropdownPopoverProps,\n  DropdownRootProps,\n  DropdownRootProps as DropdownProps,\n  DropdownSectionProps,\n  DropdownSubmenuIndicatorProps,\n  DropdownSubmenuTriggerProps,\n  DropdownTriggerProps,\n} from \"./dropdown\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dropdownVariants} from \"@heroui/styles\";\n\nexport type {DropdownVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "dropdown_index",
+      "name": "index",
+      "path": "packages/react/src/components/dropdown/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_dropdown_index",
+      "name": "dropdown",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/dropdown/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  DropdownItem,\n  DropdownItemIndicator,\n  DropdownMenu,\n  DropdownPopover,\n  DropdownRoot,\n  DropdownSection,\n  DropdownSubmenuIndicator,\n  DropdownSubmenuTrigger,\n  DropdownTrigger,\n} from \"./dropdown\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Dropdown = Object.assign(DropdownRoot, {\n  Root: DropdownRoot,\n  Trigger: DropdownTrigger,\n  Popover: DropdownPopover,\n  Menu: DropdownMenu,\n  Section: DropdownSection,\n  Item: DropdownItem,\n  ItemIndicator: DropdownItemIndicator,\n  SubmenuIndicator: DropdownSubmenuIndicator,\n  SubmenuTrigger: DropdownSubmenuTrigger,\n});\n\nexport type Dropdown<T extends object = object> = {\n  Props: ComponentProps<typeof DropdownRoot>;\n  RootProps: ComponentProps<typeof DropdownRoot>;\n  TriggerProps: ComponentProps<typeof DropdownTrigger>;\n  PopoverProps: ComponentProps<typeof DropdownPopover>;\n  MenuProps: ComponentProps<typeof DropdownMenu<T>>;\n  SectionProps: ComponentProps<typeof DropdownSection>;\n  ItemProps: ComponentProps<typeof DropdownItem>;\n  ItemIndicatorProps: ComponentProps<typeof DropdownItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof DropdownSubmenuIndicator>;\n  SubmenuTriggerProps: ComponentProps<typeof DropdownSubmenuTrigger>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DropdownItem,\n  DropdownItemIndicator,\n  DropdownMenu,\n  DropdownPopover,\n  DropdownRoot,\n  DropdownSection,\n  DropdownSubmenuIndicator,\n  DropdownSubmenuTrigger,\n  DropdownTrigger,\n};\n\nexport type {\n  DropdownItemIndicatorProps,\n  DropdownItemProps,\n  DropdownMenuProps,\n  DropdownPopoverProps,\n  DropdownRootProps,\n  DropdownRootProps as DropdownProps,\n  DropdownSectionProps,\n  DropdownSubmenuIndicatorProps,\n  DropdownSubmenuTriggerProps,\n  DropdownTriggerProps,\n} from \"./dropdown\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dropdownVariants} from \"@heroui/styles\";\n\nexport type {DropdownVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

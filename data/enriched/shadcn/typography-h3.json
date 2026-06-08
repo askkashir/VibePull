@@ -1,0 +1,37 @@
+{
+  "id": "typography-h3",
+  "name": "typography-h3",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "typography",
+    "heading",
+    "font size 3"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-h3",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-h3\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The typography-h3 component is a basic heading element that displays text in a font size 3 style. It is often used for headings in articles and stories on the website. A developer would use this component to add hierarchy to content.",
+  "style_tags": [
+    "e.g. minimal"
+  ],
+  "interaction_tags": [
+    "e.g. static"
+  ],
+  "component_type": "heading",
+  "generation_prompt": "Create a production-ready heading component with the following characteristics:\n\nName: typography-h3\nDescription: The typography-h3 component is a basic heading element that displays text in a font size 3 style. It is often used for headings in articles and stories on the website. A developer would use this component to add hierarchy to content.\nStyle: e.g. minimal\nInteractions: e.g. static\nTags: typography, heading, font size 3\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-h3",
+  "display_name": "Typography H3",
+  "preview_url": "/previews/shadcn/typography-h3.png"
+}

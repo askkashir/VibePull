@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_converters_converters",
+  "name": "converters",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/converters/converters.ts\nimport { ColorFormat, HsvaColor, RgbaColor } from '../ColorPicker.types';\nimport { round } from './parsers';\n\nexport function hsvaToRgbaObject({ h, s, v, a }: HsvaColor): RgbaColor {\n  const _h = (h / 360) * 6;\n  const _s = s / 100;\n  const _v = v / 100;\n\n  const hh = Math.floor(_h);\n  const l = _v * (1 - _s);\n  const c = _v * (1 - (_h - hh) * _s);\n  const d = _v * (1 - (1 - _h + hh) * _s);\n  const module = hh % 6;\n\n  return {\n    r: round([_v, c, l, l, d, _v][module] * 255),\n    g: round([d, _v, _v, c, l, l][module] * 255),\n    b: round([l, l, d, _v, _v, c][module] * 255),\n    a: round(a, 2),\n  };\n}\n\nexport function hsvaToRgba(color: HsvaColor, includeAlpha: boolean) {\n  const { r, g, b, a } = hsvaToRgbaObject(color);\n\n  if (!includeAlpha) {\n    return `rgb(${r}, ${g}, ${b})`;\n  }\n\n  return `rgba(${r}, ${g}, ${b}, ${round(a, 2)})`;\n}\n\nexport function hsvaToHsl({ h, s, v, a }: HsvaColor, includeAlpha: boolean) {\n  const hh = ((200 - s) * v) / 100;\n\n  const result = {\n    h: Math.round(h),\n    s: Math.round(hh > 0 && hh < 200 ? ((s * v) / 100 / (hh <= 100 ? hh : 200 - hh)) * 100 : 0),\n    l: Math.round(hh / 2),\n  };\n\n  if (!includeAlpha) {\n    return `hsl(${result.h}, ${result.s}%, ${result.l}%)`;\n  }\n\n  return `hsla(${result.h}, ${result.s}%, ${result.l}%, ${round(a, 2)})`;\n}\n\nfunction formatHexPart(number: number) {\n  const hex = number.toString(16);\n  return hex.length < 2 ? `0${hex}` : hex;\n}\n\nexport function hsvaToHex(color: HsvaColor) {\n  const { r, g, b } = hsvaToRgbaObject(color);\n  return `#${formatHexPart(r)}${formatHexPart(g)}${formatHexPart(b)}`;\n}\n\nexport function hsvaToHexa(color: HsvaColor) {\n  const a = Math.round(color.a * 255);\n\n  return `${hsvaToHex(color)}${formatHexPart(a)}`;\n}\n\nconst CONVERTERS: Record<ColorFormat, (color: HsvaColor) => string> = {\n  hex: hsvaToHex,\n  hexa: (color) => hsvaToHexa(color),\n  rgb: (color) => hsvaToRgba(color, false),\n  rgba: (color) => hsvaToRgba(color, true),\n  hsl: (color) => hsvaToHsl(color, false),\n  hsla: (color) => hsvaToHsl(color, true),\n};\n\nexport function convertHsvaTo(format: ColorFormat, color: HsvaColor) {\n  if (!color) {\n    return '#000000';\n  }\n\n  if (!(format in CONVERTERS)) {\n    return CONVERTERS.hex(color);\n  }\n\n  return CONVERTERS[format](color);\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_converters_converters",
+      "name": "converters",
+      "path": "packages/@mantine/core/src/components/ColorPicker/converters/converters.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_converters_converters",
+      "name": "converters",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/converters/converters.ts",
+          "content": "import { ColorFormat, HsvaColor, RgbaColor } from '../ColorPicker.types';\nimport { round } from './parsers';\n\nexport function hsvaToRgbaObject({ h, s, v, a }: HsvaColor): RgbaColor {\n  const _h = (h / 360) * 6;\n  const _s = s / 100;\n  const _v = v / 100;\n\n  const hh = Math.floor(_h);\n  const l = _v * (1 - _s);\n  const c = _v * (1 - (_h - hh) * _s);\n  const d = _v * (1 - (1 - _h + hh) * _s);\n  const module = hh % 6;\n\n  return {\n    r: round([_v, c, l, l, d, _v][module] * 255),\n    g: round([d, _v, _v, c, l, l][module] * 255),\n    b: round([l, l, d, _v, _v, c][module] * 255),\n    a: round(a, 2),\n  };\n}\n\nexport function hsvaToRgba(color: HsvaColor, includeAlpha: boolean) {\n  const { r, g, b, a } = hsvaToRgbaObject(color);\n\n  if (!includeAlpha) {\n    return `rgb(${r}, ${g}, ${b})`;\n  }\n\n  return `rgba(${r}, ${g}, ${b}, ${round(a, 2)})`;\n}\n\nexport function hsvaToHsl({ h, s, v, a }: HsvaColor, includeAlpha: boolean) {\n  const hh = ((200 - s) * v) / 100;\n\n  const result = {\n    h: Math.round(h),\n    s: Math.round(hh > 0 && hh < 200 ? ((s * v) / 100 / (hh <= 100 ? hh : 200 - hh)) * 100 : 0),\n    l: Math.round(hh / 2),\n  };\n\n  if (!includeAlpha) {\n    return `hsl(${result.h}, ${result.s}%, ${result.l}%)`;\n  }\n\n  return `hsla(${result.h}, ${result.s}%, ${result.l}%, ${round(a, 2)})`;\n}\n\nfunction formatHexPart(number: number) {\n  const hex = number.toString(16);\n  return hex.length < 2 ? `0${hex}` : hex;\n}\n\nexport function hsvaToHex(color: HsvaColor) {\n  const { r, g, b } = hsvaToRgbaObject(color);\n  return `#${formatHexPart(r)}${formatHexPart(g)}${formatHexPart(b)}`;\n}\n\nexport function hsvaToHexa(color: HsvaColor) {\n  const a = Math.round(color.a * 255);\n\n  return `${hsvaToHex(color)}${formatHexPart(a)}`;\n}\n\nconst CONVERTERS: Record<ColorFormat, (color: HsvaColor) => string> = {\n  hex: hsvaToHex,\n  hexa: (color) => hsvaToHexa(color),\n  rgb: (color) => hsvaToRgba(color, false),\n  rgba: (color) => hsvaToRgba(color, true),\n  hsl: (color) => hsvaToHsl(color, false),\n  hsla: (color) => hsvaToHsl(color, true),\n};\n\nexport function convertHsvaTo(format: ColorFormat, color: HsvaColor) {\n  if (!color) {\n    return '#000000';\n  }\n\n  if (!(format in CONVERTERS)) {\n    return CONVERTERS.hex(color);\n  }\n\n  return CONVERTERS[format](color);\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "components_icons_IconVue",
+  "name": "IconVue",
+  "source_code": "// components/icons/IconVue.tsx\nexport const IconVue = () => (\n  <svg\n    width=\"20\"\n    height=\"20\"\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_3280_7897)\">\n      <path\n        d=\"M2.76337 2.5L10 15L17.2367 2.5H19.1667L10 18.3333L0.833374 2.5H2.76337ZM6.38171 2.5L10 8.75L13.6184 2.5H15.5484L10 12.0833L4.45171 2.5H6.38171Z\"\n        fill=\"#A1A1AA\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"clip0_3280_7897\">\n        <rect width=\"20\" height=\"20\" fill=\"white\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "icon",
+    "other",
+    "vue"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "icons_IconVue",
+      "name": "IconVue",
+      "path": "components/icons/IconVue.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_icons_IconVue",
+      "name": "IconVue",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/icons/IconVue.tsx",
+          "content": "export const IconVue = () => (\n  <svg\n    width=\"20\"\n    height=\"20\"\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_3280_7897)\">\n      <path\n        d=\"M2.76337 2.5L10 15L17.2367 2.5H19.1667L10 18.3333L0.833374 2.5H2.76337ZM6.38171 2.5L10 8.75L13.6184 2.5H15.5484L10 12.0833L4.45171 2.5H6.38171Z\"\n        fill=\"#A1A1AA\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"clip0_3280_7897\">\n        <rect width=\"20\" height=\"20\" fill=\"white\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "IconVue is a icon vue UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: IconVue\nDescription: IconVue is a icon vue UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: floatui, icon, other, vue\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/icons/IconVue.tsx\nexport const IconVue = () => (\n  <svg\n    width=\"20\"\n    height=\"20\"\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <g clip-path=\"url(#clip0_3280_7897)\">\n      <path\n        d=\"M2.76337 2.5L10 15L17.2367 2.5H19.1667L10 18.3333L0.833374 2.5H2.76337ZM6.38171 2.5L10 8.75L13.6184 2.5H15.5484L10 12.0833L4.45171 2.5H6.38171Z\"\n        fill=\"#A1A1AA\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"clip0_3280_7897\">\n        <rect wi",
+  "prompt_version": 2,
+  "clean_id": "icon-vue",
+  "display_name": "Icon Vue",
+  "preview_url": "/previews/floatui/components-icons-iconvue.png"
+}

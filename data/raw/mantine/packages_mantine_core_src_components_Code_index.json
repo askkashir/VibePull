@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Code_index",
+  "name": "Code",
+  "source_code": "// packages/@mantine/core/src/components/Code/index.ts\nimport type { CodeCssVariables, CodeFactory, CodeProps, CodeStylesNames } from './Code';\n\nexport { Code } from './Code';\n\nexport type { CodeProps, CodeCssVariables, CodeFactory, CodeStylesNames };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Code_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Code/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Code_index",
+      "name": "Code",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Code/index.ts",
+          "content": "import type { CodeCssVariables, CodeFactory, CodeProps, CodeStylesNames } from './Code';\n\nexport { Code } from './Code';\n\nexport type { CodeProps, CodeCssVariables, CodeFactory, CodeStylesNames };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

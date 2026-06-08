@@ -1,0 +1,58 @@
+{
+  "id": "alert-recipe",
+  "name": "alert-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/alert.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const alert = defineSlotRecipe({\n  className: 'alert',\n  slots: ['root', 'content', 'description', 'indicator', 'title'],\n  base: {\n    root: {\n      alignItems: 'flex-start',\n      borderRadius: 'l3',\n      display: 'flex',\n      position: 'relative',\n      width: 'full',\n    },\n    content: {\n      display: 'flex',\n      flex: '1',\n      flexDirection: 'column',\n      gap: '1',\n    },\n    description: {\n      display: 'inline',\n    },\n    indicator: {\n      display: 'inline-flex',\n      alignItems: 'center',\n      justifyContent: 'center',\n      flexShrink: '0',\n    },\n    title: {\n      fontWeight: 'semibold',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    status: 'info',\n    variant: 'subtle',\n  },\n  variants: {\n    size: {\n      md: {\n        root: {\n          gap: '3',\n          p: '4',\n          textStyle: 'sm',\n        },\n        indicator: {\n          _icon: {\n            width: '5',\n            height: '5',\n          },\n        },\n      },\n      lg: {\n        root: {\n          gap: '4',\n          p: '4',\n          textStyle: 'md',\n        },\n        indicator: {\n          _icon: {\n            width: '6',\n            height: '6',\n          },\n        },\n      },\n    },\n    variant: {\n      solid: {\n        root: {\n          bg: 'colorPalette.solid.bg',\n          color: 'colorPalette.solid.fg',\n        },\n      },\n      surface: {\n        root: {\n          bg: 'colorPalette.surface.bg',\n          borderWidth: '1px',\n          borderColor: 'colorPalette.surface.border',\n          color: 'colorPalette.surface.fg',\n        },\n      },\n      subtle: {\n        root: {\n          bg: 'colorPalette.subtle.bg',\n          color: 'colorPalette.subtle.fg',\n        },\n      },\n      outline: {\n        root: {\n          borderWidth: '1px',\n          borderColor: 'colorPalette.outline.border',\n          color: 'colorPalette.outline.fg',\n        },\n      },\n    },\n    status: {\n      info: {\n        root: { colorPalette: 'blue' },\n      },\n      warning: {\n        root: { colorPalette: 'orange' },\n      },\n      success: {\n        root: { colorPalette: 'green' },\n      },\n      error: {\n        root: { colorPalette: 'red' },\n      },\n      neutral: {},\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "alert",
+    "other",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "alert-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/alert.ts",
+          "type": "registry:recipe",
+          "imports": "import { alert } from './alert'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const alert = defineSlotRecipe({\n  className: 'alert',\n  slots: ['root', 'content', 'description', 'indicator', 'title'],\n  base: {\n    root: {\n      alignItems: 'flex-start',\n      borderRadius: 'l3',\n      display: 'flex',\n      position: 'relative',\n      width: 'full',\n    },\n    content: {\n      display: 'flex',\n      flex: '1',\n      flexDirection: 'column',\n      gap: '1',\n    },\n    description: {\n      display: 'inline',\n    },\n    indicator: {\n      display: 'inline-flex',\n      alignItems: 'center',\n      justifyContent: 'center',\n      flexShrink: '0',\n    },\n    title: {\n      fontWeight: 'semibold',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    status: 'info',\n    variant: 'subtle',\n  },\n  variants: {\n    size: {\n      md: {\n        root: {\n          gap: '3',\n          p: '4',\n          textStyle: 'sm',\n        },\n        indicator: {\n          _icon: {\n            width: '5',\n            height: '5',\n          },\n        },\n      },\n      lg: {\n        root: {\n          gap: '4',\n          p: '4',\n          textStyle: 'md',\n        },\n        indicator: {\n          _icon: {\n            width: '6',\n            height: '6',\n          },\n        },\n      },\n    },\n    variant: {\n      solid: {\n        root: {\n          bg: 'colorPalette.solid.bg',\n          color: 'colorPalette.solid.fg',\n        },\n      },\n      surface: {\n        root: {\n          bg: 'colorPalette.surface.bg',\n          borderWidth: '1px',\n          borderColor: 'colorPalette.surface.border',\n          color: 'colorPalette.surface.fg',\n        },\n      },\n      subtle: {\n        root: {\n          bg: 'colorPalette.subtle.bg',\n          color: 'colorPalette.subtle.fg',\n        },\n      },\n      outline: {\n        root: {\n          borderWidth: '1px',\n          borderColor: 'colorPalette.outline.border',\n          color: 'colorPalette.outline.fg',\n        },\n      },\n    },\n    status: {\n      info: {\n        root: { colorPalette: 'blue' },\n      },\n      warning: {\n        root: { colorPalette: 'orange' },\n      },\n      success: {\n        root: { colorPalette: 'green' },\n      },\n      error: {\n        root: { colorPalette: 'red' },\n      },\n      neutral: {},\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "alert-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/alert.ts",
+          "type": "registry:recipe",
+          "imports": "import { alert } from './alert'",
+          "content": "import { defineSlotRecipe } from '@pandacss/dev'\n\nexport const alert = defineSlotRecipe({\n  className: 'alert',\n  slots: ['root', 'content', 'description', 'indicator', 'title'],\n  base: {\n    root: {\n      alignItems: 'flex-start',\n      borderRadius: 'l3',\n      display: 'flex',\n      position: 'relative',\n      width: 'full',\n    },\n    content: {\n      display: 'flex',\n      flex: '1',\n      flexDirection: 'column',\n      gap: '1',\n    },\n    description: {\n      display: 'inline',\n    },\n    indicator: {\n      display: 'inline-flex',\n      alignItems: 'center',\n      justifyContent: 'center',\n      flexShrink: '0',\n    },\n    title: {\n      fontWeight: 'semibold',\n    },\n  },\n  defaultVariants: {\n    size: 'md',\n    status: 'info',\n    variant: 'subtle',\n  },\n  variants: {\n    size: {\n      md: {\n        root: {\n          gap: '3',\n          p: '4',\n          textStyle: 'sm',\n        },\n        indicator: {\n          _icon: {\n            width: '5',\n            height: '5',\n          },\n        },\n      },\n      lg: {\n        root: {\n          gap: '4',\n          p: '4',\n          textStyle: 'md',\n        },\n        indicator: {\n          _icon: {\n            width: '6',\n            height: '6',\n          },\n        },\n      },\n    },\n    variant: {\n      solid: {\n        root: {\n          bg: 'colorPalette.solid.bg',\n          color: 'colorPalette.solid.fg',\n        },\n      },\n      surface: {\n        root: {\n          bg: 'colorPalette.surface.bg',\n          borderWidth: '1px',\n          borderColor: 'colorPalette.surface.border',\n          color: 'colorPalette.surface.fg',\n        },\n      },\n      subtle: {\n        root: {\n          bg: 'colorPalette.subtle.bg',\n          color: 'colorPalette.subtle.fg',\n        },\n      },\n      outline: {\n        root: {\n          borderWidth: '1px',\n          borderColor: 'colorPalette.outline.border',\n          color: 'colorPalette.outline.fg',\n        },\n      },\n    },\n    status: {\n      info: {\n        root: { colorPalette: 'blue' },\n      },\n      warning: {\n        root: { colorPalette: 'orange' },\n      },\n      success: {\n        root: { colorPalette: 'green' },\n      },\n      error: {\n        root: { colorPalette: 'red' },\n      },\n      neutral: {},\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "alert-recipe is a alert recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: alert-recipe\nDescription: alert-recipe is a alert recipe UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: alert, other, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/alert.ts\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const alert = defineSlotRecipe({\n  className: 'alert',\n  slots: ['root', 'content', 'description', 'indicator', 'title'],\n  base: {\n    root: {\n      alignItems: 'flex-start',\n      borderRadius: 'l3',\n      display: 'flex',\n      position: 'relative',\n      width: 'full',\n    },\n    content: {\n      display: 'flex',\n      flex: '1',\n      flexDirection: 'column',\n      gap: '1',\n    },\n    des",
+  "prompt_version": 2,
+  "clean_id": "alert-recipe",
+  "display_name": "Alert Recipe",
+  "preview_url": "/previews/parkui/alert-recipe.png"
+}

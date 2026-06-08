@@ -1,0 +1,43 @@
+{
+  "id": "empty-input-group",
+  "name": "empty-input-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "field",
+    "search",
+    "user-input",
+    "form"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "empty-input-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## empty-input-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "An empty input group is a container that wraps around an input field, often used for search or user input functionality. It typically consists of an input field, a search icon, or other relevant visual aids. A developer might use this component when creating a search bar or login form.",
+  "style_tags": [
+    "e.g. modern",
+    "flat",
+    "material-ui"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable",
+    "animated"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: empty-input-group\nDescription: An empty input group is a container that wraps around an input field, often used for search or user input functionality. It typically consists of an input field, a search icon, or other relevant visual aids. A developer might use this component when creating a search bar or login form.\nStyle: e.g. modern, flat, material-ui\nInteractions: e.g. hover, clickable, animated\nTags: input, field, search, user-input, form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "empty-input-group",
+  "display_name": "Empty Input Group",
+  "preview_url": "/previews/shadcn/empty-input-group.png"
+}

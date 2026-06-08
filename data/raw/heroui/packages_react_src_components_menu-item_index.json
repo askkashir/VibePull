@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_menu-item_index",
+  "name": "menu-item",
+  "source_code": "// packages/react/src/components/menu-item/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const MenuItem = Object.assign(MenuItemRoot, {\n  Root: MenuItemRoot,\n  Indicator: MenuItemIndicator,\n  SubmenuIndicator: MenuItemSubmenuIndicator,\n});\n\nexport type MenuItem = {\n  Props: ComponentProps<typeof MenuItemRoot>;\n  RootProps: ComponentProps<typeof MenuItemRoot>;\n  IndicatorProps: ComponentProps<typeof MenuItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof MenuItemSubmenuIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuItemRoot, MenuItemIndicator, MenuItemSubmenuIndicator};\n\nexport type {\n  MenuItemRootProps,\n  MenuItemRootProps as MenuItemProps,\n  MenuItemIndicatorProps,\n  MenuItemSubmenuIndicatorProps,\n} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {menuItemVariants} from \"@heroui/styles\";\nexport type {MenuItemVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "menu-item_index",
+      "name": "index",
+      "path": "packages/react/src/components/menu-item/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_menu-item_index",
+      "name": "menu-item",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/menu-item/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const MenuItem = Object.assign(MenuItemRoot, {\n  Root: MenuItemRoot,\n  Indicator: MenuItemIndicator,\n  SubmenuIndicator: MenuItemSubmenuIndicator,\n});\n\nexport type MenuItem = {\n  Props: ComponentProps<typeof MenuItemRoot>;\n  RootProps: ComponentProps<typeof MenuItemRoot>;\n  IndicatorProps: ComponentProps<typeof MenuItemIndicator>;\n  SubmenuIndicatorProps: ComponentProps<typeof MenuItemSubmenuIndicator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {MenuItemRoot, MenuItemIndicator, MenuItemSubmenuIndicator};\n\nexport type {\n  MenuItemRootProps,\n  MenuItemRootProps as MenuItemProps,\n  MenuItemIndicatorProps,\n  MenuItemSubmenuIndicatorProps,\n} from \"./menu-item\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {menuItemVariants} from \"@heroui/styles\";\nexport type {MenuItemVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

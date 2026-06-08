@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_index",
+  "name": "ColorPicker",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/index.ts\nimport type { AlphaSliderFactory, AlphaSliderProps } from './AlphaSlider/AlphaSlider';\nimport type {\n  __ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerProps,\n  ColorPickerStylesNames,\n} from './ColorPicker';\nimport type { ColorSliderFactory } from './ColorSlider/ColorSlider';\nimport type { HueSliderFactory, HueSliderProps } from './HueSlider/HueSlider';\n\nexport { ColorPicker } from './ColorPicker';\nexport { AlphaSlider } from './AlphaSlider/AlphaSlider';\nexport { HueSlider } from './HueSlider/HueSlider';\nexport * from './converters';\n\nexport type {\n  ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerStylesNames,\n  __ColorPickerProps,\n  ColorSliderFactory,\n  HueSliderFactory,\n  HueSliderProps,\n  AlphaSliderFactory,\n  AlphaSliderProps,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ColorPicker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_index",
+      "name": "ColorPicker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/index.ts",
+          "content": "import type { AlphaSliderFactory, AlphaSliderProps } from './AlphaSlider/AlphaSlider';\nimport type {\n  __ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerProps,\n  ColorPickerStylesNames,\n} from './ColorPicker';\nimport type { ColorSliderFactory } from './ColorSlider/ColorSlider';\nimport type { HueSliderFactory, HueSliderProps } from './HueSlider/HueSlider';\n\nexport { ColorPicker } from './ColorPicker';\nexport { AlphaSlider } from './AlphaSlider/AlphaSlider';\nexport { HueSlider } from './HueSlider/HueSlider';\nexport * from './converters';\n\nexport type {\n  ColorPickerProps,\n  ColorPickerCssVariables,\n  ColorPickerFactory,\n  ColorPickerStylesNames,\n  __ColorPickerProps,\n  ColorSliderFactory,\n  HueSliderFactory,\n  HueSliderProps,\n  AlphaSliderFactory,\n  AlphaSliderProps,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

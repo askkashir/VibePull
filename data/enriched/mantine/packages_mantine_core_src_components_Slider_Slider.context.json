@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_Slider.context",
+  "name": "Slider.context",
+  "source_code": "// packages/@mantine/core/src/components/Slider/Slider.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\n\nexport type SliderStylesNames =\n  | 'root'\n  | 'label'\n  | 'thumb'\n  | 'trackContainer'\n  | 'track'\n  | 'bar'\n  | 'markWrapper'\n  | 'mark'\n  | 'markLabel';\n\nexport type SliderCssVariables = {\n  root: '--slider-size' | '--slider-color' | '--slider-thumb-size' | '--slider-radius';\n};\n\ninterface SliderContextValue {\n  getStyles: GetStylesApi<{\n    stylesNames: SliderStylesNames;\n    props: any;\n    ref: any;\n    vars: any;\n    variant: any;\n  }>;\n}\n\nexport const [SliderProvider, useSliderContext] = createSafeContext<SliderContextValue>(\n  'SliderProvider was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "other",
+    "slider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_Slider.context",
+      "name": "Slider.context",
+      "path": "packages/@mantine/core/src/components/Slider/Slider.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_Slider.context",
+      "name": "Slider.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/Slider.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\n\nexport type SliderStylesNames =\n  | 'root'\n  | 'label'\n  | 'thumb'\n  | 'trackContainer'\n  | 'track'\n  | 'bar'\n  | 'markWrapper'\n  | 'mark'\n  | 'markLabel';\n\nexport type SliderCssVariables = {\n  root: '--slider-size' | '--slider-color' | '--slider-thumb-size' | '--slider-radius';\n};\n\ninterface SliderContextValue {\n  getStyles: GetStylesApi<{\n    stylesNames: SliderStylesNames;\n    props: any;\n    ref: any;\n    vars: any;\n    variant: any;\n  }>;\n}\n\nexport const [SliderProvider, useSliderContext] = createSafeContext<SliderContextValue>(\n  'SliderProvider was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Slider.context is a slider context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Slider.context\nDescription: Slider.context is a slider context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: context, mantine, other, slider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/Slider.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\n\nexport type SliderStylesNames =\n  | 'root'\n  | 'label'\n  | 'thumb'\n  | 'trackContainer'\n  | 'track'\n  | 'bar'\n  | 'markWrapper'\n  | 'mark'\n  | 'markLabel';\n\nexport type SliderCssVariables = {\n  root: '--slider-size' | '--slider-color' | '--slider-thumb-size' | '--slider-radius';\n};\n\ninterface SliderContextValue {\n  getStyles: GetStylesApi<{\n    stylesNames: SliderStyle",
+  "prompt_version": 2,
+  "clean_id": "slider",
+  "display_name": "Slider",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-slider-context.png"
+}

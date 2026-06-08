@@ -1,0 +1,39 @@
+{
+  "id": "chart-tooltip-indicator-none",
+  "name": "chart-tooltip-indicator-none",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "graph",
+    "data visualization",
+    "block component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-indicator-none",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-indicator-none\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-tooltip-indicator-none component is a block element that displays a chart or graph. It is a part of a larger charting system and provides a clear visual representation of data. Developers use this component in data-driven dashboards and applications to display complex information in an easily digestible format.",
+  "style_tags": [
+    "default",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "block",
+  "generation_prompt": "Create a production-ready block component with the following characteristics:\n\nName: chart-tooltip-indicator-none\nDescription: The chart-tooltip-indicator-none component is a block element that displays a chart or graph. It is a part of a larger charting system and provides a clear visual representation of data. Developers use this component in data-driven dashboards and applications to display complex information in an easily digestible format.\nStyle: default, responsive\nInteractions: static\nTags: chart, graph, data visualization, block component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-indicator-none",
+  "display_name": "Chart Tooltip Indicator None",
+  "preview_url": "/previews/shadcn/chart-tooltip-indicator-none.png"
+}

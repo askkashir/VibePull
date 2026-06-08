@@ -1,0 +1,22 @@
+{
+  "id": "textarea-with-text",
+  "name": "textarea-with-text",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-with-text",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-with-text\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

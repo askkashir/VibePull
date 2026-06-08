@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_Popover_PopoverTarget_PopoverTarget",
+  "name": "PopoverTarget",
+  "source_code": "// packages/@mantine/core/src/components/Popover/PopoverTarget/PopoverTarget.tsx\nimport { cloneElement } from 'react';\nimport cx from 'clsx';\nimport { useMergedRef } from '@mantine/hooks';\nimport { factory, Factory, getRefProp, getSingleElementChild, useProps } from '../../../core';\nimport { usePopoverContext } from '../Popover.context';\n\nexport interface PopoverTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n  refProp?: string;\n\n  /** Popup accessible type @default 'dialog' */\n  popupType?: string;\n}\n\nconst defaultProps = {\n  refProp: 'ref',\n  popupType: 'dialog',\n} satisfies Partial<PopoverTargetProps>;\n\nexport type PopoverTargetFactory = Factory<{\n  props: PopoverTargetProps;\n  ref: HTMLElement;\n  compound: true;\n}>;\n\nexport const PopoverTarget = factory<PopoverTargetFactory>((props) => {\n  const { children, refProp, popupType, ref, ...others } = useProps(\n    'PopoverTarget',\n    defaultProps,\n    props\n  );\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    throw new Error(\n      'Popover.Target component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  const forwardedProps: any = others;\n  const ctx = usePopoverContext();\n  const targetRef = useMergedRef(ctx.reference, getRefProp(child), ref);\n\n  const accessibleProps = ctx.withRoles\n    ? {\n        'aria-haspopup': popupType,\n        'aria-expanded': ctx.opened,\n        'aria-controls': ctx.opened ? ctx.getDropdownId() : undefined,\n        id: ctx.getTargetId(),\n      }\n    : {};\n\n  const childProps = child.props as any;\n  return cloneElement(child, {\n    ...forwardedProps,\n    ...accessibleProps,\n    ...ctx.targetProps,\n    className: cx(ctx.targetProps.className, forwardedProps.className, childProps.className),\n    [refProp]: targetRef,\n    ...(!ctx.controlled\n      ? {\n          onClick: (event: React.MouseEvent<HTMLElement>) => {\n            ctx.onToggle();\n            childProps.onClick?.(event);\n          },\n        }\n      : null),\n  });\n});\n\nPopoverTarget.displayName = '@mantine/core/PopoverTarget';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "popover",
+    "target"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Popover_PopoverTarget_PopoverTarget",
+      "name": "PopoverTarget",
+      "path": "packages/@mantine/core/src/components/Popover/PopoverTarget/PopoverTarget.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Popover_PopoverTarget_PopoverTarget",
+      "name": "PopoverTarget",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Popover/PopoverTarget/PopoverTarget.tsx",
+          "content": "import { cloneElement } from 'react';\nimport cx from 'clsx';\nimport { useMergedRef } from '@mantine/hooks';\nimport { factory, Factory, getRefProp, getSingleElementChild, useProps } from '../../../core';\nimport { usePopoverContext } from '../Popover.context';\n\nexport interface PopoverTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n  refProp?: string;\n\n  /** Popup accessible type @default 'dialog' */\n  popupType?: string;\n}\n\nconst defaultProps = {\n  refProp: 'ref',\n  popupType: 'dialog',\n} satisfies Partial<PopoverTargetProps>;\n\nexport type PopoverTargetFactory = Factory<{\n  props: PopoverTargetProps;\n  ref: HTMLElement;\n  compound: true;\n}>;\n\nexport const PopoverTarget = factory<PopoverTargetFactory>((props) => {\n  const { children, refProp, popupType, ref, ...others } = useProps(\n    'PopoverTarget',\n    defaultProps,\n    props\n  );\n\n  const child = getSingleElementChild(children);\n  if (!child) {\n    throw new Error(\n      'Popover.Target component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  const forwardedProps: any = others;\n  const ctx = usePopoverContext();\n  const targetRef = useMergedRef(ctx.reference, getRefProp(child), ref);\n\n  const accessibleProps = ctx.withRoles\n    ? {\n        'aria-haspopup': popupType,\n        'aria-expanded': ctx.opened,\n        'aria-controls': ctx.opened ? ctx.getDropdownId() : undefined,\n        id: ctx.getTargetId(),\n      }\n    : {};\n\n  const childProps = child.props as any;\n  return cloneElement(child, {\n    ...forwardedProps,\n    ...accessibleProps,\n    ...ctx.targetProps,\n    className: cx(ctx.targetProps.className, forwardedProps.className, childProps.className),\n    [refProp]: targetRef,\n    ...(!ctx.controlled\n      ? {\n          onClick: (event: React.MouseEvent<HTMLElement>) => {\n            ctx.onToggle();\n            childProps.onClick?.(event);\n          },\n        }\n      : null),\n  });\n});\n\nPopoverTarget.displayName = '@mantine/core/PopoverTarget';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "PopoverTarget is a popover target UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: PopoverTarget\nDescription: PopoverTarget is a popover target UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: interactive\nTags: mantine, modal, popover, target\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Popover/PopoverTarget/PopoverTarget.tsx\nimport { cloneElement } from 'react';\nimport cx from 'clsx';\nimport { useMergedRef } from '@mantine/hooks';\nimport { factory, Factory, getRefProp, getSingleElementChild, useProps } from '../../../core';\nimport { usePopoverContext } from '../Popover.context';\n\nexport interface PopoverTargetProps {\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n",
+  "prompt_version": 2,
+  "clean_id": "popover-target",
+  "display_name": "Popover Target",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-popover-popovertarget-popovertarget.png"
+}

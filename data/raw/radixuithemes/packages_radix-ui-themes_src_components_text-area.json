@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_text-area",
+  "name": "text-area",
+  "source_code": "// packages/radix-ui-themes/src/components/text-area.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { textAreaPropDefs } from './text-area.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TextAreaElement = React.ElementRef<'textarea'>;\ntype TextAreaOwnProps = GetPropDefTypes<typeof textAreaPropDefs> & {\n  defaultValue?: string;\n  value?: string;\n};\ninterface TextAreaProps\n  extends\n    ComponentPropsWithout<'textarea', RemovedProps | 'size' | 'value'>,\n    MarginProps,\n    TextAreaOwnProps {}\nconst TextArea = React.forwardRef<TextAreaElement, TextAreaProps>((props, forwardedRef) => {\n  const { className, color, radius, style, ...textAreaProps } = extractProps(\n    props,\n    textAreaPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <div\n      data-accent-color={color}\n      data-radius={radius}\n      className={classNames('rt-TextAreaRoot', className)}\n      style={style}\n    >\n      <textarea className=\"rt-reset rt-TextAreaInput\" ref={forwardedRef} {...textAreaProps} />\n    </div>\n  );\n});\nTextArea.displayName = 'TextArea';\n\nexport { TextArea };\nexport type { TextAreaProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_text-area",
+      "name": "text-area.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/text-area.tsx",
+      "sha": "6e5ffea7b9102b1be735df9aa898a6ee7400c57c",
+      "size": 1371,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/text-area.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/text-area.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/6e5ffea7b9102b1be735df9aa898a6ee7400c57c",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/text-area.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/text-area.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/6e5ffea7b9102b1be735df9aa898a6ee7400c57c",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/text-area.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_text-area",
+      "name": "text-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/text-area.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { textAreaPropDefs } from './text-area.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype TextAreaElement = React.ElementRef<'textarea'>;\ntype TextAreaOwnProps = GetPropDefTypes<typeof textAreaPropDefs> & {\n  defaultValue?: string;\n  value?: string;\n};\ninterface TextAreaProps\n  extends\n    ComponentPropsWithout<'textarea', RemovedProps | 'size' | 'value'>,\n    MarginProps,\n    TextAreaOwnProps {}\nconst TextArea = React.forwardRef<TextAreaElement, TextAreaProps>((props, forwardedRef) => {\n  const { className, color, radius, style, ...textAreaProps } = extractProps(\n    props,\n    textAreaPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <div\n      data-accent-color={color}\n      data-radius={radius}\n      className={classNames('rt-TextAreaRoot', className)}\n      style={style}\n    >\n      <textarea className=\"rt-reset rt-TextAreaInput\" ref={forwardedRef} {...textAreaProps} />\n    </div>\n  );\n});\nTextArea.displayName = 'TextArea';\n\nexport { TextArea };\nexport type { TextAreaProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "chart-line-label",
+  "name": "chart-line-label",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-line-label",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-line-label\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

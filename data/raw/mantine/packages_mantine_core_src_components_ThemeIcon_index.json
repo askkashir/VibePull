@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ThemeIcon_index",
+  "name": "ThemeIcon",
+  "source_code": "// packages/@mantine/core/src/components/ThemeIcon/index.ts\nimport type {\n  ThemeIconCssVariables,\n  ThemeIconFactory,\n  ThemeIconProps,\n  ThemeIconStylesNames,\n  ThemeIconVariant,\n} from './ThemeIcon';\n\nexport { ThemeIcon } from './ThemeIcon';\n\nexport type {\n  ThemeIconProps,\n  ThemeIconStylesNames,\n  ThemeIconFactory,\n  ThemeIconVariant,\n  ThemeIconCssVariables,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ThemeIcon_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ThemeIcon/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ThemeIcon_index",
+      "name": "ThemeIcon",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ThemeIcon/index.ts",
+          "content": "import type {\n  ThemeIconCssVariables,\n  ThemeIconFactory,\n  ThemeIconProps,\n  ThemeIconStylesNames,\n  ThemeIconVariant,\n} from './ThemeIcon';\n\nexport { ThemeIcon } from './ThemeIcon';\n\nexport type {\n  ThemeIconProps,\n  ThemeIconStylesNames,\n  ThemeIconFactory,\n  ThemeIconVariant,\n  ThemeIconCssVariables,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

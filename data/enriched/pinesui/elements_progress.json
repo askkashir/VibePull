@@ -1,0 +1,47 @@
+{
+  "id": "elements_progress",
+  "name": "progress",
+  "source_code": "// elements/progress.html\n<div x-data=\"{\n        progress: 0,\n        progressInterval: null,\n    }\"\n    x-init=\"\n        progressInterval = setInterval(() => {\n            progress = progress + 1;\n            if (progress >= 100) {\n                clearInterval(progressInterval);\n            }\n        }, 100);\n    \"\n    class=\"relative w-full h-3 overflow-hidden rounded-full bg-neutral-100\">\n    <span :style=\"'width:' + progress + '%'\" class=\"absolute w-24 h-full duration-300 ease-linear bg-neutral-900\" x-cloak></span>\n</div>",
+  "description": "",
+  "tags": [
+    "progress",
+    "animation",
+    "ui-component",
+    "circular-progress"
+  ],
+  "server": "pinesui",
+  "metadata": {
+    "listed_component": {
+      "id": "progress",
+      "name": "progress",
+      "path": "elements/progress.html",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "elements_progress",
+      "name": "progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "elements/progress.html",
+          "content": "<div x-data=\"{\n        progress: 0,\n        progressInterval: null,\n    }\"\n    x-init=\"\n        progressInterval = setInterval(() => {\n            progress = progress + 1;\n            if (progress >= 100) {\n                clearInterval(progressInterval);\n            }\n        }, 100);\n    \"\n    class=\"relative w-full h-3 overflow-hidden rounded-full bg-neutral-100\">\n    <span :style=\"'width:' + progress + '%'\" class=\"absolute w-24 h-full duration-300 ease-linear bg-neutral-900\" x-cloak></span>\n</div>"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A circular progress bar that visually shows progress from 0 to 100%.",
+  "style_tags": [
+    "rounded",
+    "circular"
+  ],
+  "interaction_tags": [
+    "animate"
+  ],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: progress\nDescription: A circular progress bar that visually shows progress from 0 to 100%.\nStyle: rounded, circular\nInteractions: animate\nTags: progress, animation, ui-component, circular-progress\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// elements/progress.html\n<div x-data=\"{\n        progress: 0,\n        progressInterval: null,\n    }\"\n    x-init=\"\n        progressInterval = setInterval(() => {\n            progress = progress + 1;\n            if (progress >= 100) {\n                clearInterval(progressInterval);\n            }\n        }, 100);\n    \"\n    class=\"relative w-full h-3 overflow-hidden rounded-full bg-neutral-100\">\n    <span :style=\"'width:' + progress + '%'\" class=\"absolute w-24 h-full duration-300 ease-linear bg-neu",
+  "prompt_version": 2,
+  "clean_id": "progress",
+  "display_name": "Progress",
+  "preview_url": "/previews/pinesui/elements-progress.png"
+}

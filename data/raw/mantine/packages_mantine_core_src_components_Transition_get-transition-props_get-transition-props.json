@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Transition_get-transition-props_get-transition-props",
+  "name": "get-transition-props",
+  "source_code": "// packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts\nimport type { SetRequired } from 'type-fest';\nimport type { TransitionOverride } from '../Transition';\n\ntype MinimalTransitionOverride = SetRequired<TransitionOverride, 'duration' | 'transition'>;\n\nconst defaultTransition: MinimalTransitionOverride = {\n  duration: 100,\n  transition: 'fade',\n};\n\nexport function getTransitionProps(\n  transitionProps: TransitionOverride | undefined,\n  componentTransition: TransitionOverride | undefined\n): MinimalTransitionOverride {\n  return { ...defaultTransition, ...componentTransition, ...transitionProps };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Transition_get-transition-props_get-transition-props",
+      "name": "get-transition-props",
+      "path": "packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Transition_get-transition-props_get-transition-props",
+      "name": "get-transition-props",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Transition/get-transition-props/get-transition-props.ts",
+          "content": "import type { SetRequired } from 'type-fest';\nimport type { TransitionOverride } from '../Transition';\n\ntype MinimalTransitionOverride = SetRequired<TransitionOverride, 'duration' | 'transition'>;\n\nconst defaultTransition: MinimalTransitionOverride = {\n  duration: 100,\n  transition: 'fade',\n};\n\nexport function getTransitionProps(\n  transitionProps: TransitionOverride | undefined,\n  componentTransition: TransitionOverride | undefined\n): MinimalTransitionOverride {\n  return { ...defaultTransition, ...componentTransition, ...transitionProps };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

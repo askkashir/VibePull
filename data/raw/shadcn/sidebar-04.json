@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-04",
+  "name": "sidebar-04",
+  "source_code": "",
+  "description": "A floating sidebar with submenus.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-04",
+      "type": "registry:block",
+      "description": "A floating sidebar with submenus.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-04\n\nA floating sidebar with submenus.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

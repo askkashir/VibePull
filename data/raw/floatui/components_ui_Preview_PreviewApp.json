@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_Preview_PreviewApp",
+  "name": "PreviewApp",
+  "source_code": "// components/ui/Preview/PreviewApp.tsx\n\"use client\";\nimport { MDXRemoteSerializeResult } from \"next-mdx-remote\";\nimport { usePathname } from \"next/navigation\";\nimport { useState } from \"react\";\nimport {\n  CodeBlock,\n  Component,\n  ComponentCards,\n  ComponentDetails,\n} from \"types/types\";\nimport Preview from \".\";\n\ninterface ComponentData extends Component, ComponentDetails, CodeBlock {\n  mdxSource: MDXRemoteSerializeResult;\n}\n\ninterface Props {\n  components: ComponentData[];\n}\n\nexport default ({ components }: Props) => {\n  const pathname = usePathname();\n\n  return (\n    <>\n      {components?.map((item: ComponentData, idx: number) =>\n        item.isActive ? (\n          <div key={idx}>\n            <Preview item={item} mdxSource={item.mdxSource} slug={pathname} />\n          </div>\n        ) : (\n          \"\"\n        )\n      )}\n    </>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Preview_PreviewApp",
+      "name": "PreviewApp",
+      "path": "components/ui/Preview/PreviewApp.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Preview_PreviewApp",
+      "name": "PreviewApp",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Preview/PreviewApp.tsx",
+          "content": "\"use client\";\nimport { MDXRemoteSerializeResult } from \"next-mdx-remote\";\nimport { usePathname } from \"next/navigation\";\nimport { useState } from \"react\";\nimport {\n  CodeBlock,\n  Component,\n  ComponentCards,\n  ComponentDetails,\n} from \"types/types\";\nimport Preview from \".\";\n\ninterface ComponentData extends Component, ComponentDetails, CodeBlock {\n  mdxSource: MDXRemoteSerializeResult;\n}\n\ninterface Props {\n  components: ComponentData[];\n}\n\nexport default ({ components }: Props) => {\n  const pathname = usePathname();\n\n  return (\n    <>\n      {components?.map((item: ComponentData, idx: number) =>\n        item.isActive ? (\n          <div key={idx}>\n            <Preview item={item} mdxSource={item.mdxSource} slug={pathname} />\n          </div>\n        ) : (\n          \"\"\n        )\n      )}\n    </>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

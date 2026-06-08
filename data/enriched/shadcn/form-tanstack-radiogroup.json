@@ -1,0 +1,43 @@
+{
+  "id": "form-tanstack-radiogroup",
+  "name": "form-tanstack-radiogroup",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "radio",
+    "button",
+    "group",
+    "form",
+    "component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-tanstack-radiogroup",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-tanstack-radiogroup\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @tanstack/react-form, zod"
+  },
+  "visual_summary": "FormTanstackRadioGroup is a customizable radio button group form component. Use it when you need users to select one option from a set of provided choices. This component is suitable for desktop and tablet layouts, and can be modified for mobile use cases when more space is available.",
+  "style_tags": [
+    "material",
+    "flat",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "keyboard",
+    "accessible"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-tanstack-radiogroup\nDescription: FormTanstackRadioGroup is a customizable radio button group form component. Use it when you need users to select one option from a set of provided choices. This component is suitable for desktop and tablet layouts, and can be modified for mobile use cases when more space is available.\nStyle: material, flat, responsive\nInteractions: clickable, keyboard, accessible\nTags: radio, button, group, form, component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-tanstack-radiogroup",
+  "display_name": "Form Tanstack Radiogroup",
+  "preview_url": "/previews/shadcn/form-tanstack-radiogroup.png"
+}

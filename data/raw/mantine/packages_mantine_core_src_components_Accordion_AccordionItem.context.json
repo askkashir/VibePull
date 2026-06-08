@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_AccordionItem.context",
+  "name": "AccordionItem.context",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/AccordionItem.context.ts\nimport { createSafeContext } from '../../core';\n\nexport interface AccordionItemContextValue {\n  value: string;\n}\n\nexport const [AccordionItemProvider, useAccordionItemContext] =\n  createSafeContext<AccordionItemContextValue>(\n    'Accordion.Item component was not found in the tree'\n  );\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_AccordionItem.context",
+      "name": "AccordionItem.context",
+      "path": "packages/@mantine/core/src/components/Accordion/AccordionItem.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_AccordionItem.context",
+      "name": "AccordionItem.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/AccordionItem.context.ts",
+          "content": "import { createSafeContext } from '../../core';\n\nexport interface AccordionItemContextValue {\n  value: string;\n}\n\nexport const [AccordionItemProvider, useAccordionItemContext] =\n  createSafeContext<AccordionItemContextValue>(\n    'Accordion.Item component was not found in the tree'\n  );\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

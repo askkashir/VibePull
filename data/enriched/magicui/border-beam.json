@@ -1,0 +1,63 @@
+{
+  "id": "border-beam",
+  "name": "Border Beam",
+  "source_code": "\"use client\"\n\nimport { motion, MotionStyle, Transition } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface BorderBeamProps {\n  /**\n   * The size of the border beam.\n   */\n  size?: number\n  /**\n   * The duration of the border beam.\n   */\n  duration?: number\n  /**\n   * The delay of the border beam.\n   */\n  delay?: number\n  /**\n   * The color of the border beam from.\n   */\n  colorFrom?: string\n  /**\n   * The color of the border beam to.\n   */\n  colorTo?: string\n  /**\n   * The motion transition of the border beam.\n   */\n  transition?: Transition\n  /**\n   * The class name of the border beam.\n   */\n  className?: string\n  /**\n   * The style of the border beam.\n   */\n  style?: React.CSSProperties\n  /**\n   * Whether to reverse the animation direction.\n   */\n  reverse?: boolean\n  /**\n   * The initial offset position (0-100).\n   */\n  initialOffset?: number\n  /**\n   * The border width of the beam.\n   */\n  borderWidth?: number\n}\n\nexport const BorderBeam = ({\n  className,\n  size = 50,\n  delay = 0,\n  duration = 6,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  transition,\n  style,\n  reverse = false,\n  initialOffset = 0,\n  borderWidth = 1,\n}: BorderBeamProps) => {\n  return (\n    <div\n      className=\"pointer-events-none absolute inset-0 rounded-[inherit] border-(length:--border-beam-width) border-transparent mask-[linear-gradient(transparent,transparent),linear-gradient(#000,#000)] mask-intersect [mask-clip:padding-box,border-box]\"\n      style={\n        {\n          \"--border-beam-width\": `${borderWidth}px`,\n        } as React.CSSProperties\n      }\n    >\n      <motion.div\n        className={cn(\n          \"absolute aspect-square\",\n          \"bg-linear-to-l from-(--color-from) via-(--color-to) to-transparent\",\n          className\n        )}\n        style={\n          {\n            width: size,\n            offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n            \"--color-from\": colorFrom,\n            \"--color-to\": colorTo,\n            ...style,\n          } as MotionStyle\n        }\n        initial={{ offsetDistance: `${initialOffset}%` }}\n        animate={{\n          offsetDistance: reverse\n            ? [`${100 - initialOffset}%`, `${-initialOffset}%`]\n            : [`${initialOffset}%`, `${100 + initialOffset}%`],\n        }}\n        transition={{\n          repeat: Infinity,\n          ease: \"linear\",\n          duration,\n          delay: -delay,\n          ...transition,\n        }}\n      />\n    </div>\n  )\n}\n",
+  "description": "An animated beam of light which travels along the border of its container.",
+  "tags": [
+    "animation",
+    "interactive",
+    "ui-component"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "border-beam",
+      "type": "registry:ui",
+      "title": "Border Beam",
+      "description": "An animated beam of light which travels along the border of its container.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/border-beam.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/border-beam.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "border-beam",
+      "type": "registry:ui",
+      "title": "Border Beam",
+      "description": "An animated beam of light which travels along the border of its container.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/magicui/border-beam.tsx",
+          "content": "\"use client\"\n\nimport { motion, MotionStyle, Transition } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface BorderBeamProps {\n  /**\n   * The size of the border beam.\n   */\n  size?: number\n  /**\n   * The duration of the border beam.\n   */\n  duration?: number\n  /**\n   * The delay of the border beam.\n   */\n  delay?: number\n  /**\n   * The color of the border beam from.\n   */\n  colorFrom?: string\n  /**\n   * The color of the border beam to.\n   */\n  colorTo?: string\n  /**\n   * The motion transition of the border beam.\n   */\n  transition?: Transition\n  /**\n   * The class name of the border beam.\n   */\n  className?: string\n  /**\n   * The style of the border beam.\n   */\n  style?: React.CSSProperties\n  /**\n   * Whether to reverse the animation direction.\n   */\n  reverse?: boolean\n  /**\n   * The initial offset position (0-100).\n   */\n  initialOffset?: number\n  /**\n   * The border width of the beam.\n   */\n  borderWidth?: number\n}\n\nexport const BorderBeam = ({\n  className,\n  size = 50,\n  delay = 0,\n  duration = 6,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  transition,\n  style,\n  reverse = false,\n  initialOffset = 0,\n  borderWidth = 1,\n}: BorderBeamProps) => {\n  return (\n    <div\n      className=\"pointer-events-none absolute inset-0 rounded-[inherit] border-(length:--border-beam-width) border-transparent mask-[linear-gradient(transparent,transparent),linear-gradient(#000,#000)] mask-intersect [mask-clip:padding-box,border-box]\"\n      style={\n        {\n          \"--border-beam-width\": `${borderWidth}px`,\n        } as React.CSSProperties\n      }\n    >\n      <motion.div\n        className={cn(\n          \"absolute aspect-square\",\n          \"bg-linear-to-l from-(--color-from) via-(--color-to) to-transparent\",\n          className\n        )}\n        style={\n          {\n            width: size,\n            offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n            \"--color-from\": colorFrom,\n            \"--color-to\": colorTo,\n            ...style,\n          } as MotionStyle\n        }\n        initial={{ offsetDistance: `${initialOffset}%` }}\n        animate={{\n          offsetDistance: reverse\n            ? [`${100 - initialOffset}%`, `${-initialOffset}%`]\n            : [`${initialOffset}%`, `${100 + initialOffset}%`],\n        }}\n        transition={{\n          repeat: Infinity,\n          ease: \"linear\",\n          duration,\n          delay: -delay,\n          ...transition,\n        }}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Border Beam is an animation component that displays a moving border beam with customizable size, color, and animation duration. It's suitable for adding a visual effect to any part of the application. Developers can use it to create engaging and interactive user interfaces.",
+  "style_tags": [
+    "modern",
+    "elegant",
+    "dynamic"
+  ],
+  "interaction_tags": [
+    "animated",
+    "responsive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Border Beam\nDescription: Border Beam is an animation component that displays a moving border beam with customizable size, color, and animation duration. It's suitable for adding a visual effect to any part of the application. Developers can use it to create engaging and interactive user interfaces.\nStyle: modern, elegant, dynamic\nInteractions: animated, responsive\nTags: animation, interactive, ui-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { motion, MotionStyle, Transition } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface BorderBeamProps {\n  /**\n   * The size of the border beam.\n   */\n  size?: number\n  /**\n   * The duration of the border beam.\n   */\n  duration?: number\n  /**\n   * The delay of the border beam.\n   */\n  delay?: number\n  /**\n   * The color of the border beam from.\n   */\n  colorFrom?: string\n  /**\n   * The color of the border beam to.\n   */\n  colorTo?: string\n  /**\n   * The motion ",
+  "prompt_version": 2,
+  "clean_id": "border-beam",
+  "display_name": "Border Beam",
+  "preview_url": "/previews/magicui/border-beam.png"
+}

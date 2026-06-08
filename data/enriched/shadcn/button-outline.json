@@ -1,0 +1,41 @@
+{
+  "id": "button-outline",
+  "name": "button-outline",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "utility button",
+    "secondary action",
+    "minimal design"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-outline",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-outline\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "An outline button with a simple design, used for secondary actions, navigation, or emphasis on a UI. Suitable for applications with a minimal aesthetic. Can be used on desktop or mobile devices to provide an alternative to a standard button.",
+  "style_tags": [
+    "e.g. minimal",
+    "simple",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. focus",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-outline\nDescription: An outline button with a simple design, used for secondary actions, navigation, or emphasis on a UI. Suitable for applications with a minimal aesthetic. Can be used on desktop or mobile devices to provide an alternative to a standard button.\nStyle: e.g. minimal, simple, flat\nInteractions: e.g. focus, hover, clickable\nTags: utility button, secondary action, minimal design\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-outline",
+  "display_name": "Button Outline",
+  "preview_url": "/previews/shadcn/button-outline.png"
+}

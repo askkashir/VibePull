@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_color-area_index",
+  "name": "color-area",
+  "source_code": "// packages/react/src/components/color-area/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ColorAreaRoot, ColorAreaThumb} from \"./color-area\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ColorArea = Object.assign(ColorAreaRoot, {\n  Root: ColorAreaRoot,\n  Thumb: ColorAreaThumb,\n});\n\nexport type ColorArea = {\n  Props: ComponentProps<typeof ColorAreaRoot>;\n  RootProps: ComponentProps<typeof ColorAreaRoot>;\n  ThumbProps: ComponentProps<typeof ColorAreaThumb>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorAreaRoot, ColorAreaThumb};\n\nexport type {\n  ColorAreaRootProps,\n  ColorAreaRootProps as ColorAreaProps,\n  ColorAreaThumbProps,\n} from \"./color-area\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {colorAreaVariants} from \"@heroui/styles\";\n\nexport type {ColorAreaVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-area_index",
+      "name": "index",
+      "path": "packages/react/src/components/color-area/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-area_index",
+      "name": "color-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-area/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {ColorAreaRoot, ColorAreaThumb} from \"./color-area\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ColorArea = Object.assign(ColorAreaRoot, {\n  Root: ColorAreaRoot,\n  Thumb: ColorAreaThumb,\n});\n\nexport type ColorArea = {\n  Props: ComponentProps<typeof ColorAreaRoot>;\n  RootProps: ComponentProps<typeof ColorAreaRoot>;\n  ThumbProps: ComponentProps<typeof ColorAreaThumb>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorAreaRoot, ColorAreaThumb};\n\nexport type {\n  ColorAreaRootProps,\n  ColorAreaRootProps as ColorAreaProps,\n  ColorAreaThumbProps,\n} from \"./color-area\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {colorAreaVariants} from \"@heroui/styles\";\n\nexport type {ColorAreaVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_NumberFormatter_NumberFormatter",
+  "name": "NumberFormatter",
+  "source_code": "// packages/@mantine/core/src/components/NumberFormatter/NumberFormatter.tsx\nimport { NumericFormat } from 'react-number-format';\nimport { ExtendComponent, Factory, MantineThemeComponent, useProps } from '../../core';\n\nexport interface NumberFormatterProps extends React.ComponentProps<'span'> {\n  /** Value to format */\n  value?: number | string;\n\n  /** If set, negative values are allowed @default true */\n  allowNegative?: boolean;\n\n  /** Limits the number of digits that are displayed after the decimal point @default Infinity */\n  decimalScale?: number;\n\n  /** Character used as a decimal separator, `'.'` by default */\n  decimalSeparator?: string;\n\n  /** If set, zeros are added after `decimalSeparator` to match given `decimalScale`. @default false */\n  fixedDecimalScale?: boolean;\n\n  /** Prefix added before the value */\n  prefix?: string;\n\n  /** Suffix added after the value */\n  suffix?: string;\n\n  /** Defines the thousand grouping style */\n  thousandsGroupStyle?: 'thousand' | 'lakh' | 'wan' | 'none';\n\n  /** A character used to separate thousands @default  ',' */\n  thousandSeparator?: string | boolean;\n}\n\nexport type NumberFormatterFactory = Factory<{\n  props: NumberFormatterProps;\n  ref: HTMLDivElement;\n}>;\n\nexport function NumberFormatter(_props: NumberFormatterProps) {\n  const { value, defaultValue, ...others } = useProps('NumberFormatter', null, _props);\n\n  if (value === undefined) {\n    return null;\n  }\n\n  return <NumericFormat displayType=\"text\" value={value} {...others} />;\n}\n\nconst extendNumberFormatter = (c: ExtendComponent<NumberFormatterFactory>): MantineThemeComponent =>\n  c;\n\nNumberFormatter.extend = extendNumberFormatter;\nNumberFormatter.displayName = '@mantine/core/NumberFormatter';\n\nexport namespace NumberFormatter {\n  export type Props = NumberFormatterProps;\n  export type Factory = NumberFormatterFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "form",
+    "formatter",
+    "mantine",
+    "number"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NumberFormatter_NumberFormatter",
+      "name": "NumberFormatter",
+      "path": "packages/@mantine/core/src/components/NumberFormatter/NumberFormatter.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NumberFormatter_NumberFormatter",
+      "name": "NumberFormatter",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NumberFormatter/NumberFormatter.tsx",
+          "content": "import { NumericFormat } from 'react-number-format';\nimport { ExtendComponent, Factory, MantineThemeComponent, useProps } from '../../core';\n\nexport interface NumberFormatterProps extends React.ComponentProps<'span'> {\n  /** Value to format */\n  value?: number | string;\n\n  /** If set, negative values are allowed @default true */\n  allowNegative?: boolean;\n\n  /** Limits the number of digits that are displayed after the decimal point @default Infinity */\n  decimalScale?: number;\n\n  /** Character used as a decimal separator, `'.'` by default */\n  decimalSeparator?: string;\n\n  /** If set, zeros are added after `decimalSeparator` to match given `decimalScale`. @default false */\n  fixedDecimalScale?: boolean;\n\n  /** Prefix added before the value */\n  prefix?: string;\n\n  /** Suffix added after the value */\n  suffix?: string;\n\n  /** Defines the thousand grouping style */\n  thousandsGroupStyle?: 'thousand' | 'lakh' | 'wan' | 'none';\n\n  /** A character used to separate thousands @default  ',' */\n  thousandSeparator?: string | boolean;\n}\n\nexport type NumberFormatterFactory = Factory<{\n  props: NumberFormatterProps;\n  ref: HTMLDivElement;\n}>;\n\nexport function NumberFormatter(_props: NumberFormatterProps) {\n  const { value, defaultValue, ...others } = useProps('NumberFormatter', null, _props);\n\n  if (value === undefined) {\n    return null;\n  }\n\n  return <NumericFormat displayType=\"text\" value={value} {...others} />;\n}\n\nconst extendNumberFormatter = (c: ExtendComponent<NumberFormatterFactory>): MantineThemeComponent =>\n  c;\n\nNumberFormatter.extend = extendNumberFormatter;\nNumberFormatter.displayName = '@mantine/core/NumberFormatter';\n\nexport namespace NumberFormatter {\n  export type Props = NumberFormatterProps;\n  export type Factory = NumberFormatterFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "NumberFormatter is a number formatter UI component from the mantine corpus. It provides reusable form behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "form",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: NumberFormatter\nDescription: NumberFormatter is a number formatter UI component from the mantine corpus. It provides reusable form behavior and styling for React or web UI screens.\nStyle: themeable\nInteractions: \nTags: form, formatter, mantine, number\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/NumberFormatter/NumberFormatter.tsx\nimport { NumericFormat } from 'react-number-format';\nimport { ExtendComponent, Factory, MantineThemeComponent, useProps } from '../../core';\n\nexport interface NumberFormatterProps extends React.ComponentProps<'span'> {\n  /** Value to format */\n  value?: number | string;\n\n  /** If set, negative values are allowed @default true */\n  allowNegative?: boolean;\n\n  /** Limits the number of digits that are displayed after the d",
+  "prompt_version": 2,
+  "clean_id": "number-formatter",
+  "display_name": "Number Formatter",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-numberformatter-numberformatter.png"
+}

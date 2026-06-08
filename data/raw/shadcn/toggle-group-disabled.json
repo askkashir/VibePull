@@ -1,0 +1,22 @@
+{
+  "id": "toggle-group-disabled",
+  "name": "toggle-group-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Radio_RadioIcon",
+  "name": "RadioIcon",
+  "source_code": "// packages/@mantine/core/src/components/Radio/RadioIcon.tsx\nimport { rem } from '../../core';\n\nexport interface RadioIconProps extends React.ComponentProps<'svg'> {\n  size?: string | number;\n}\n\nexport function RadioIcon({ size, style, ...others }: RadioIconProps) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      fill=\"none\"\n      viewBox=\"0 0 5 5\"\n      style={{ width: rem(size), height: rem(size), ...style }}\n      aria-hidden\n      {...others}\n    >\n      <circle cx=\"2.5\" cy=\"2.5\" r=\"2.5\" fill=\"currentColor\" />\n    </svg>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Radio_RadioIcon",
+      "name": "RadioIcon",
+      "path": "packages/@mantine/core/src/components/Radio/RadioIcon.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Radio_RadioIcon",
+      "name": "RadioIcon",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Radio/RadioIcon.tsx",
+          "content": "import { rem } from '../../core';\n\nexport interface RadioIconProps extends React.ComponentProps<'svg'> {\n  size?: string | number;\n}\n\nexport function RadioIcon({ size, style, ...others }: RadioIconProps) {\n  return (\n    <svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      fill=\"none\"\n      viewBox=\"0 0 5 5\"\n      style={{ width: rem(size), height: rem(size), ...style }}\n      aria-hidden\n      {...others}\n    >\n      <circle cx=\"2.5\" cy=\"2.5\" r=\"2.5\" fill=\"currentColor\" />\n    </svg>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

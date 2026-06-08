@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_FileButton_index",
+  "name": "FileButton",
+  "source_code": "// packages/@mantine/core/src/components/FileButton/index.ts\nimport type { FileButtonFactory, FileButtonProps } from './FileButton';\n\nexport { FileButton } from './FileButton';\n\nexport type { FileButtonProps, FileButtonFactory };\n",
+  "description": "",
+  "tags": [
+    "button",
+    "file",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FileButton_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/FileButton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FileButton_index",
+      "name": "FileButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FileButton/index.ts",
+          "content": "import type { FileButtonFactory, FileButtonProps } from './FileButton';\n\nexport { FileButton } from './FileButton';\n\nexport type { FileButtonProps, FileButtonFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "FileButton is a file button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "button",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: FileButton\nDescription: FileButton is a file button UI component from the mantine corpus. It provides reusable button behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: button, file, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/FileButton/index.ts\nimport type { FileButtonFactory, FileButtonProps } from './FileButton';\n\nexport { FileButton } from './FileButton';\n\nexport type { FileButtonProps, FileButtonFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "file-button",
+  "display_name": "File Button",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-filebutton-index.png"
+}

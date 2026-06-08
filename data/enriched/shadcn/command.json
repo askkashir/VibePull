@@ -1,0 +1,41 @@
+{
+  "id": "command",
+  "name": "command",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "action",
+    "control",
+    "toggle"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "command",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## command\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cmdk"
+  },
+  "visual_summary": "The Command component is a customizable element that represents a command, typically used in interfaces for actions, navigation, or control. It can vary in complexity and can include icons, text, and colors. A developer would use it to provide users with a clear and actionable way to engage with the application.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: command\nDescription: The Command component is a customizable element that represents a command, typically used in interfaces for actions, navigation, or control. It can vary in complexity and can include icons, text, and colors. A developer would use it to provide users with a clear and actionable way to engage with the application.\nStyle: e.g. dark, minimal, flat\nInteractions: e.g. clickable, hover\nTags: button, action, control, toggle\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "command",
+  "display_name": "Command",
+  "preview_url": "/previews/shadcn/command.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_MultiSelect_filter-picked-values",
+  "name": "filter-picked-values",
+  "source_code": "// packages/@mantine/core/src/components/MultiSelect/filter-picked-values.ts\nimport { Primitive } from '../../core';\nimport { ComboboxParsedItem, isOptionsGroup } from '../Combobox';\n\ninterface FilterPickedTagsInput {\n  data: ComboboxParsedItem<Primitive>[];\n  value: Primitive[];\n}\n\nfunction normalizeValue(value: Primitive) {\n  return typeof value === 'string' ? value.trim().toLowerCase() : value;\n}\n\nexport function filterPickedValues({ data, value }: FilterPickedTagsInput) {\n  const normalizedValue = value.map(normalizeValue);\n\n  const filtered = data.reduce<ComboboxParsedItem<Primitive>[]>((acc, item) => {\n    if (isOptionsGroup(item)) {\n      acc.push({\n        group: item.group,\n        items: item.items.filter(\n          (option) => normalizedValue.indexOf(normalizeValue(option.value)) === -1\n        ),\n      });\n    } else if (normalizedValue.indexOf(normalizeValue(item.value)) === -1) {\n      acc.push(item);\n    }\n\n    return acc;\n  }, []);\n\n  return filtered;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "MultiSelect_filter-picked-values",
+      "name": "filter-picked-values",
+      "path": "packages/@mantine/core/src/components/MultiSelect/filter-picked-values.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_MultiSelect_filter-picked-values",
+      "name": "filter-picked-values",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/MultiSelect/filter-picked-values.ts",
+          "content": "import { Primitive } from '../../core';\nimport { ComboboxParsedItem, isOptionsGroup } from '../Combobox';\n\ninterface FilterPickedTagsInput {\n  data: ComboboxParsedItem<Primitive>[];\n  value: Primitive[];\n}\n\nfunction normalizeValue(value: Primitive) {\n  return typeof value === 'string' ? value.trim().toLowerCase() : value;\n}\n\nexport function filterPickedValues({ data, value }: FilterPickedTagsInput) {\n  const normalizedValue = value.map(normalizeValue);\n\n  const filtered = data.reduce<ComboboxParsedItem<Primitive>[]>((acc, item) => {\n    if (isOptionsGroup(item)) {\n      acc.push({\n        group: item.group,\n        items: item.items.filter(\n          (option) => normalizedValue.indexOf(normalizeValue(option.value)) === -1\n        ),\n      });\n    } else if (normalizedValue.indexOf(normalizeValue(item.value)) === -1) {\n      acc.push(item);\n    }\n\n    return acc;\n  }, []);\n\n  return filtered;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_TemplateCTA_index",
+  "name": "TemplateCTA",
+  "source_code": "// components/ui/TemplateCTA/index.tsx\nimport BgGradient from \"./BgGradient\";\nimport TemplateScoresCard from \"./TemplateScoresCard\";\nimport TemplatesOverview from \"./TemplatesOverview\";\n\nexport default () => (\n  <section className=\"mt-32 border-t border-zinc-800 pt-24 relative\">\n    <BgGradient className=\"absolute inset-x-0 mx-auto duration-500 top-0\" />\n    <div className=\"custom-screen relative z-10\">\n      <div className=\"max-w-xl mx-auto space-y-4 text-center\">\n        <h2 className=\"text-4xl heading\">Professional website templates</h2>\n        <p className=\"text-zinc-400\">\n          A collection of professional and beautifully designed website\n          templates, built on top of React, Next.js with Tailwind CSS.\n        </p>\n      </div>\n\n      <div className=\"gap-x-6 mt-10 space-y-6 md:flex md:space-y-0\">\n        <TemplatesOverview />\n        <TemplateScoresCard />\n      </div>\n    </div>\n  </section>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_TemplateCTA_index",
+      "name": "index",
+      "path": "components/ui/TemplateCTA/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_TemplateCTA_index",
+      "name": "TemplateCTA",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/TemplateCTA/index.tsx",
+          "content": "import BgGradient from \"./BgGradient\";\nimport TemplateScoresCard from \"./TemplateScoresCard\";\nimport TemplatesOverview from \"./TemplatesOverview\";\n\nexport default () => (\n  <section className=\"mt-32 border-t border-zinc-800 pt-24 relative\">\n    <BgGradient className=\"absolute inset-x-0 mx-auto duration-500 top-0\" />\n    <div className=\"custom-screen relative z-10\">\n      <div className=\"max-w-xl mx-auto space-y-4 text-center\">\n        <h2 className=\"text-4xl heading\">Professional website templates</h2>\n        <p className=\"text-zinc-400\">\n          A collection of professional and beautifully designed website\n          templates, built on top of React, Next.js with Tailwind CSS.\n        </p>\n      </div>\n\n      <div className=\"gap-x-6 mt-10 space-y-6 md:flex md:space-y-0\">\n        <TemplatesOverview />\n        <TemplateScoresCard />\n      </div>\n    </div>\n  </section>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

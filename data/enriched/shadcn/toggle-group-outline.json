@@ -1,0 +1,41 @@
+{
+  "id": "toggle-group-outline",
+  "name": "toggle-group-outline",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "group",
+    "configuration",
+    "settings",
+    "preferences"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-outline",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-outline\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The toggle-group-outline component is a collection of toggle buttons that display text labels and toggleable states. It's primarily used in settings, preferences, or configuration panels where users need to select from multiple options. This component is often used in navigation, configuration, or customization sections of an application.",
+  "style_tags": [
+    "material-design"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "animatable"
+  ],
+  "component_type": "group",
+  "generation_prompt": "Create a production-ready group component with the following characteristics:\n\nName: toggle-group-outline\nDescription: The toggle-group-outline component is a collection of toggle buttons that display text labels and toggleable states. It's primarily used in settings, preferences, or configuration panels where users need to select from multiple options. This component is often used in navigation, configuration, or customization sections of an application.\nStyle: material-design\nInteractions: clickable, hover, animatable\nTags: toggle, group, configuration, settings, preferences\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-outline",
+  "display_name": "Toggle Group Outline",
+  "preview_url": "/previews/shadcn/toggle-group-outline.png"
+}

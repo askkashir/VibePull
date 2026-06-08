@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Mark_get-mark-color",
+  "name": "get-mark-color",
+  "source_code": "// packages/@mantine/core/src/components/Mark/get-mark-color.ts\nimport { MantineColor, MantineTheme, parseThemeColor } from '../../core';\n\ninterface GetMarkColorInput {\n  color: MantineColor | string | undefined;\n  theme: MantineTheme;\n  defaultShade: number;\n}\n\nexport function getMarkColor({ color, theme, defaultShade }: GetMarkColorInput) {\n  const parsed = parseThemeColor({ color, theme });\n\n  if (!parsed.isThemeColor) {\n    return color;\n  }\n\n  if (parsed.shade === undefined) {\n    return `var(--mantine-color-${parsed.color}-${defaultShade})`;\n  }\n\n  return `var(${parsed.variable})`;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Mark_get-mark-color",
+      "name": "get-mark-color",
+      "path": "packages/@mantine/core/src/components/Mark/get-mark-color.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Mark_get-mark-color",
+      "name": "get-mark-color",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Mark/get-mark-color.ts",
+          "content": "import { MantineColor, MantineTheme, parseThemeColor } from '../../core';\n\ninterface GetMarkColorInput {\n  color: MantineColor | string | undefined;\n  theme: MantineTheme;\n  defaultShade: number;\n}\n\nexport function getMarkColor({ color, theme, defaultShade }: GetMarkColorInput) {\n  const parsed = parseThemeColor({ color, theme });\n\n  if (!parsed.isThemeColor) {\n    return color;\n  }\n\n  if (parsed.shade === undefined) {\n    return `var(--mantine-color-${parsed.color}-${defaultShade})`;\n  }\n\n  return `var(${parsed.variable})`;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

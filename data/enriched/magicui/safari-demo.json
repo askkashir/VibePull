@@ -1,0 +1,52 @@
+{
+  "id": "safari-demo",
+  "name": "Safari Demo",
+  "source_code": "import { Safari } from \"@/registry/magicui/safari\"\n\nexport default function SafariDemo() {\n  return (\n    <div className=\"w-[1203px]\">\n      <Safari url=\"magicui.design\" />\n    </div>\n  )\n}\n",
+  "description": "Example showing a Safari browser mockup.",
+  "tags": [],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "safari-demo",
+      "type": "registry:example",
+      "title": "Safari Demo",
+      "description": "Example showing a Safari browser mockup.",
+      "registryDependencies": [
+        "https://magicui.design/r/safari"
+      ],
+      "files": [
+        {
+          "path": "registry/example/safari-demo.tsx",
+          "type": "registry:example",
+          "target": "components/safari-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "safari-demo",
+      "type": "registry:example",
+      "title": "Safari Demo",
+      "description": "Example showing a Safari browser mockup.",
+      "registryDependencies": [
+        "@magicui/safari"
+      ],
+      "files": [
+        {
+          "path": "registry/example/safari-demo.tsx",
+          "content": "import { Safari } from \"@/registry/magicui/safari\"\n\nexport default function SafariDemo() {\n  return (\n    <div className=\"w-[1203px]\">\n      <Safari url=\"magicui.design\" />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A Safari browser component, likely displaying a webpage. When a developer would use it: to embed third-party web pages within their application.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: Safari Demo\nDescription: A Safari browser component, likely displaying a webpage. When a developer would use it: to embed third-party web pages within their application.\nStyle: \nInteractions: \nTags: \n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Safari } from \"@/registry/magicui/safari\"\n\nexport default function SafariDemo() {\n  return (\n    <div className=\"w-[1203px]\">\n      <Safari url=\"magicui.design\" />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "safari-demo",
+  "display_name": "Safari Demo",
+  "preview_url": "/previews/magicui/safari-demo.png"
+}

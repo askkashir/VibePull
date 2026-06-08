@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Grid_Grid.context",
+  "name": "Grid.context",
+  "source_code": "// packages/@mantine/core/src/components/Grid/Grid.context.ts\nimport { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { GridFactory } from './Grid';\n\nexport type GridBreakpoints = Record<MantineSize, string>;\n\nexport interface GridContextValue {\n  getStyles: GetStylesApi<GridFactory>;\n  grow: boolean | undefined;\n  columns: number;\n  breakpoints: GridBreakpoints | undefined;\n  type: 'container' | 'media' | undefined;\n}\n\nexport const [GridProvider, useGridContext] = createSafeContext<GridContextValue>(\n  'Grid component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "grid",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Grid_Grid.context",
+      "name": "Grid.context",
+      "path": "packages/@mantine/core/src/components/Grid/Grid.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Grid_Grid.context",
+      "name": "Grid.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Grid/Grid.context.ts",
+          "content": "import { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { GridFactory } from './Grid';\n\nexport type GridBreakpoints = Record<MantineSize, string>;\n\nexport interface GridContextValue {\n  getStyles: GetStylesApi<GridFactory>;\n  grow: boolean | undefined;\n  columns: number;\n  breakpoints: GridBreakpoints | undefined;\n  type: 'container' | 'media' | undefined;\n}\n\nexport const [GridProvider, useGridContext] = createSafeContext<GridContextValue>(\n  'Grid component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Grid.context is a grid context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Grid.context\nDescription: Grid.context is a grid context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: context, grid, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Grid/Grid.context.ts\nimport { createSafeContext, GetStylesApi, MantineSize } from '../../core';\nimport type { GridFactory } from './Grid';\n\nexport type GridBreakpoints = Record<MantineSize, string>;\n\nexport interface GridContextValue {\n  getStyles: GetStylesApi<GridFactory>;\n  grow: boolean | undefined;\n  columns: number;\n  breakpoints: GridBreakpoints | undefined;\n  type: 'container' | 'media' | undefined;\n}\n\nexport const [GridProvider, useGridContext] =",
+  "prompt_version": 2,
+  "clean_id": "grid",
+  "display_name": "Grid",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-grid-grid-context.png"
+}

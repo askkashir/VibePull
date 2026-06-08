@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Progress_Progress.context",
+  "name": "Progress.context",
+  "source_code": "// packages/@mantine/core/src/components/Progress/Progress.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ProgressRootFactory } from './ProgressRoot/ProgressRoot';\n\nexport interface ProgressContextValue {\n  getStyles: GetStylesApi<ProgressRootFactory>;\n  autoContrast: boolean | undefined;\n}\n\nexport const [ProgressProvider, useProgressContext] = createSafeContext<ProgressContextValue>(\n  'Progress.Root component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Progress_Progress.context",
+      "name": "Progress.context",
+      "path": "packages/@mantine/core/src/components/Progress/Progress.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Progress_Progress.context",
+      "name": "Progress.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Progress/Progress.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ProgressRootFactory } from './ProgressRoot/ProgressRoot';\n\nexport interface ProgressContextValue {\n  getStyles: GetStylesApi<ProgressRootFactory>;\n  autoContrast: boolean | undefined;\n}\n\nexport const [ProgressProvider, useProgressContext] = createSafeContext<ProgressContextValue>(\n  'Progress.Root component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

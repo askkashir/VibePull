@@ -1,0 +1,41 @@
+{
+  "id": "button-destructive",
+  "name": "button-destructive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "destructive",
+    "warning",
+    "critical"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-destructive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-destructive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A destructive button component is a visual representation of a button that, when clicked, indicates a deletion, cancellation, or removal of data. It is often displayed in critical or alerting scenarios to emphasize the finality of the action. A developer would use this component for any application that needs to warn users of actions that cannot be undone.",
+  "style_tags": [
+    "minimal",
+    "material"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "disabled-on-click",
+    "animation"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-destructive\nDescription: A destructive button component is a visual representation of a button that, when clicked, indicates a deletion, cancellation, or removal of data. It is often displayed in critical or alerting scenarios to emphasize the finality of the action. A developer would use this component for any application that needs to warn users of actions that cannot be undone.\nStyle: minimal, material\nInteractions: clickable, disabled-on-click, animation\nTags: button, destructive, warning, critical\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-destructive",
+  "display_name": "Button Destructive",
+  "preview_url": "/previews/shadcn/button-destructive.png"
+}

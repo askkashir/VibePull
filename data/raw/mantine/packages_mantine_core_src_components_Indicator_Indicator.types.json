@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Indicator_Indicator.types",
+  "name": "Indicator.types",
+  "source_code": "// packages/@mantine/core/src/components/Indicator/Indicator.types.ts\ntype Position = 'top' | 'middle' | 'bottom';\ntype Placement = 'start' | 'center' | 'end';\n\nexport type IndicatorPosition = `${Position}-${Placement}`;\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Indicator_Indicator.types",
+      "name": "Indicator.types",
+      "path": "packages/@mantine/core/src/components/Indicator/Indicator.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Indicator_Indicator.types",
+      "name": "Indicator.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Indicator/Indicator.types.ts",
+          "content": "type Position = 'top' | 'middle' | 'bottom';\ntype Placement = 'start' | 'center' | 'end';\n\nexport type IndicatorPosition = `${Position}-${Placement}`;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

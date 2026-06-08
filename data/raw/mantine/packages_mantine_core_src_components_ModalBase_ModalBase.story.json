@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_ModalBase.story",
+  "name": "ModalBase.story",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/ModalBase.story.tsx\nimport { useDisclosure } from '@mantine/hooks';\nimport { Button } from '../Button';\nimport { ModalBase } from './ModalBase';\nimport { ModalBaseBody } from './ModalBaseBody';\nimport { ModalBaseCloseButton } from './ModalBaseCloseButton';\nimport { ModalBaseContent } from './ModalBaseContent';\nimport { ModalBaseHeader } from './ModalBaseHeader';\nimport { ModalBaseOverlay } from './ModalBaseOverlay';\nimport { ModalBaseTitle } from './ModalBaseTitle';\n\nexport default { title: 'ModalBase' };\n\nconst lorem =\n  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur, atque animi ducimus tempora iste distinctio harum nostrum eos tempore voluptatem, voluptas dolorem eveniet fugiat pariatur! Repellendus minus nulla non?';\nconst content = Array(20)\n  .fill(0)\n  .map((_, index) => <p key={index}>{lorem}</p>);\n\nexport function Usage2() {\n  const [opened, { open, close }] = useDisclosure(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <ModalBase\n        opened={opened}\n        onClose={close}\n        transitionProps={{ keepMounted: true }}\n        closeOnEscape\n        closeOnClickOutside\n        zIndex={100}\n        padding=\"md\"\n      >\n        <ModalBaseContent innerProps={{}}>\n          <ModalBaseHeader>\n            <ModalBaseTitle>Modal title</ModalBaseTitle>\n            <ModalBaseCloseButton />\n          </ModalBaseHeader>\n          <ModalBaseBody>Modal content</ModalBaseBody>\n        </ModalBaseContent>\n        <ModalBaseOverlay />\n      </ModalBase>\n\n      <Button onClick={open}>Open modal</Button>\n      {content}\n      <Button onClick={open}>Open modal</Button>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_ModalBase.story",
+      "name": "ModalBase.story",
+      "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_ModalBase.story",
+      "name": "ModalBase.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/ModalBase.story.tsx",
+          "content": "import { useDisclosure } from '@mantine/hooks';\nimport { Button } from '../Button';\nimport { ModalBase } from './ModalBase';\nimport { ModalBaseBody } from './ModalBaseBody';\nimport { ModalBaseCloseButton } from './ModalBaseCloseButton';\nimport { ModalBaseContent } from './ModalBaseContent';\nimport { ModalBaseHeader } from './ModalBaseHeader';\nimport { ModalBaseOverlay } from './ModalBaseOverlay';\nimport { ModalBaseTitle } from './ModalBaseTitle';\n\nexport default { title: 'ModalBase' };\n\nconst lorem =\n  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur, atque animi ducimus tempora iste distinctio harum nostrum eos tempore voluptatem, voluptas dolorem eveniet fugiat pariatur! Repellendus minus nulla non?';\nconst content = Array(20)\n  .fill(0)\n  .map((_, index) => <p key={index}>{lorem}</p>);\n\nexport function Usage2() {\n  const [opened, { open, close }] = useDisclosure(false);\n  return (\n    <div style={{ padding: 40 }}>\n      <ModalBase\n        opened={opened}\n        onClose={close}\n        transitionProps={{ keepMounted: true }}\n        closeOnEscape\n        closeOnClickOutside\n        zIndex={100}\n        padding=\"md\"\n      >\n        <ModalBaseContent innerProps={{}}>\n          <ModalBaseHeader>\n            <ModalBaseTitle>Modal title</ModalBaseTitle>\n            <ModalBaseCloseButton />\n          </ModalBaseHeader>\n          <ModalBaseBody>Modal content</ModalBaseBody>\n        </ModalBaseContent>\n        <ModalBaseOverlay />\n      </ModalBase>\n\n      <Button onClick={open}>Open modal</Button>\n      {content}\n      <Button onClick={open}>Open modal</Button>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "animated-shiny-text",
+  "name": "Animated Shiny Text",
+  "source_code": "import {\n  type ComponentPropsWithoutRef,\n  type CSSProperties,\n  type FC,\n} from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\"span\"> {\n  shimmerWidth?: number\n}\n\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\n  children,\n  className,\n  shimmerWidth = 100,\n  ...props\n}) => {\n  return (\n    <span\n      style={\n        {\n          \"--shiny-width\": `${shimmerWidth}px`,\n        } as CSSProperties\n      }\n      className={cn(\n        \"mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70\",\n\n        // Shine effect\n        \"animate-shiny-text bg-size-[var(--shiny-width)_100%] bg-clip-text bg-position-[0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]\",\n\n        // Shine gradient\n        \"bg-linear-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80\",\n\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  )\n}\n",
+  "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+  "tags": [
+    "Animated Shiny Text",
+    "UI Component",
+    "Text"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-shiny-text",
+      "type": "registry:ui",
+      "title": "Animated Shiny Text",
+      "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+      "files": [
+        {
+          "path": "registry/magicui/animated-shiny-text.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/animated-shiny-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-shiny-text": "shiny-text 8s infinite"
+        }
+      },
+      "css": {
+        "@keyframes shiny-text": {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shiny-width)) 0"
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shiny-width)) 0"
+          }
+        }
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-shiny-text",
+      "type": "registry:ui",
+      "title": "Animated Shiny Text",
+      "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+      "files": [
+        {
+          "path": "registry/magicui/animated-shiny-text.tsx",
+          "content": "import {\n  type ComponentPropsWithoutRef,\n  type CSSProperties,\n  type FC,\n} from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\"span\"> {\n  shimmerWidth?: number\n}\n\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\n  children,\n  className,\n  shimmerWidth = 100,\n  ...props\n}) => {\n  return (\n    <span\n      style={\n        {\n          \"--shiny-width\": `${shimmerWidth}px`,\n        } as CSSProperties\n      }\n      className={cn(\n        \"mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70\",\n\n        // Shine effect\n        \"animate-shiny-text bg-size-[var(--shiny-width)_100%] bg-clip-text bg-position-[0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]\",\n\n        // Shine gradient\n        \"bg-linear-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80\",\n\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-shiny-text": "shiny-text 8s infinite"
+        }
+      },
+      "css": {
+        "@keyframes shiny-text": {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shiny-width)) 0"
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shiny-width)) 0"
+          }
+        }
+      }
+    }
+  },
+  "visual_summary": "Animated Shiny Text is a UI component that displays animated text with a shimmering effect. It is used for highlighting important information or creating visually appealing UI elements. A developer would use this component when they need to add a dynamic and attention-grabbing text element to their application.",
+  "style_tags": [
+    "glassmorphism",
+    "animated",
+    "shimmering"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Animated Shiny Text\nDescription: Animated Shiny Text is a UI component that displays animated text with a shimmering effect. It is used for highlighting important information or creating visually appealing UI elements. A developer would use this component when they need to add a dynamic and attention-grabbing text element to their application.\nStyle: glassmorphism, animated, shimmering\nInteractions: hover\nTags: Animated Shiny Text, UI Component, Text\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport {\n  type ComponentPropsWithoutRef,\n  type CSSProperties,\n  type FC,\n} from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\"span\"> {\n  shimmerWidth?: number\n}\n\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\n  children,\n  className,\n  shimmerWidth = 100,\n  ...props\n}) => {\n  return (\n    <span\n      style={\n        {\n          \"--shiny-width\": `${shimmerWidth}px`,\n        } as CSSProperties\n      }\n      c",
+  "prompt_version": 2,
+  "clean_id": "animated-shiny-text",
+  "display_name": "Animated Shiny Text",
+  "preview_url": "/previews/magicui/animated-shiny-text.png"
+}

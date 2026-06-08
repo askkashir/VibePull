@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Drawer_index",
+  "name": "Drawer",
+  "source_code": "// packages/@mantine/core/src/components/Drawer/index.ts\nimport type { DrawerCssVariables, DrawerFactory, DrawerProps, DrawerStylesNames } from './Drawer';\nimport type { DrawerContextValue } from './Drawer.context';\nimport type { DrawerBodyProps } from './DrawerBody';\nimport type { DrawerCloseButtonProps } from './DrawerCloseButton';\nimport type { DrawerContentProps } from './DrawerContent';\nimport type { DrawerHeaderProps } from './DrawerHeader';\nimport type { DrawerOverlayProps } from './DrawerOverlay';\nimport type { DrawerRootProps } from './DrawerRoot';\nimport type { DrawerStackProps } from './DrawerStack';\nimport type { DrawerTitleProps } from './DrawerTitle';\n\nexport { Drawer } from './Drawer';\nexport { DrawerRoot } from './DrawerRoot';\nexport { DrawerBody } from './DrawerBody';\nexport { DrawerCloseButton } from './DrawerCloseButton';\nexport { DrawerContent } from './DrawerContent';\nexport { DrawerHeader } from './DrawerHeader';\nexport { DrawerOverlay } from './DrawerOverlay';\nexport { DrawerTitle } from './DrawerTitle';\nexport { DrawerStack, DrawerStackContext } from './DrawerStack';\nexport { useDrawerContext } from './Drawer.context';\n\nexport type {\n  DrawerProps,\n  DrawerStylesNames,\n  DrawerCssVariables,\n  DrawerFactory,\n  DrawerRootProps,\n  DrawerBodyProps,\n  DrawerCloseButtonProps,\n  DrawerContentProps,\n  DrawerHeaderProps,\n  DrawerOverlayProps,\n  DrawerTitleProps,\n  DrawerStackProps,\n  DrawerContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "drawer",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Drawer_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Drawer/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Drawer_index",
+      "name": "Drawer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Drawer/index.ts",
+          "content": "import type { DrawerCssVariables, DrawerFactory, DrawerProps, DrawerStylesNames } from './Drawer';\nimport type { DrawerContextValue } from './Drawer.context';\nimport type { DrawerBodyProps } from './DrawerBody';\nimport type { DrawerCloseButtonProps } from './DrawerCloseButton';\nimport type { DrawerContentProps } from './DrawerContent';\nimport type { DrawerHeaderProps } from './DrawerHeader';\nimport type { DrawerOverlayProps } from './DrawerOverlay';\nimport type { DrawerRootProps } from './DrawerRoot';\nimport type { DrawerStackProps } from './DrawerStack';\nimport type { DrawerTitleProps } from './DrawerTitle';\n\nexport { Drawer } from './Drawer';\nexport { DrawerRoot } from './DrawerRoot';\nexport { DrawerBody } from './DrawerBody';\nexport { DrawerCloseButton } from './DrawerCloseButton';\nexport { DrawerContent } from './DrawerContent';\nexport { DrawerHeader } from './DrawerHeader';\nexport { DrawerOverlay } from './DrawerOverlay';\nexport { DrawerTitle } from './DrawerTitle';\nexport { DrawerStack, DrawerStackContext } from './DrawerStack';\nexport { useDrawerContext } from './Drawer.context';\n\nexport type {\n  DrawerProps,\n  DrawerStylesNames,\n  DrawerCssVariables,\n  DrawerFactory,\n  DrawerRootProps,\n  DrawerBodyProps,\n  DrawerCloseButtonProps,\n  DrawerContentProps,\n  DrawerHeaderProps,\n  DrawerOverlayProps,\n  DrawerTitleProps,\n  DrawerStackProps,\n  DrawerContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Drawer is a drawer UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: Drawer\nDescription: Drawer is a drawer UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: drawer, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Drawer/index.ts\nimport type { DrawerCssVariables, DrawerFactory, DrawerProps, DrawerStylesNames } from './Drawer';\nimport type { DrawerContextValue } from './Drawer.context';\nimport type { DrawerBodyProps } from './DrawerBody';\nimport type { DrawerCloseButtonProps } from './DrawerCloseButton';\nimport type { DrawerContentProps } from './DrawerContent';\nimport type { DrawerHeaderProps } from './DrawerHeader';\nimport type { DrawerOverlayProps } from './Drawe",
+  "prompt_version": 2,
+  "clean_id": "drawer",
+  "display_name": "Drawer",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-drawer-index.png"
+}

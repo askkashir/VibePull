@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Select_index",
+  "name": "Select",
+  "source_code": "// packages/@mantine/core/src/components/Select/index.ts\nimport type { SelectFactory, SelectProps, SelectStylesNames } from './Select';\n\nexport { Select } from './Select';\n\nexport type { SelectProps, SelectStylesNames, SelectFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Select_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Select/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Select_index",
+      "name": "Select",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Select/index.ts",
+          "content": "import type { SelectFactory, SelectProps, SelectStylesNames } from './Select';\n\nexport { Select } from './Select';\n\nexport type { SelectProps, SelectStylesNames, SelectFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

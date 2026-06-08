@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Fieldset_Fieldset",
+  "name": "Fieldset",
+  "source_code": "// packages/@mantine/core/src/components/Fieldset/Fieldset.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getRadius,\n  MantineRadius,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Fieldset.module.css';\n\nexport type FieldsetStylesNames = 'root' | 'legend';\nexport type FieldsetVariant = 'default' | 'filled' | 'unstyled';\nexport type FieldsetCSSVariables = {\n  root: '--fieldset-radius';\n};\n\nexport interface FieldsetProps\n  extends BoxProps, StylesApiProps<FieldsetFactory>, ElementProps<'fieldset'> {\n  /** Fieldset legend */\n  legend?: React.ReactNode;\n\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default theme.defaultRadius */\n  radius?: MantineRadius;\n}\n\nexport type FieldsetFactory = Factory<{\n  props: FieldsetProps;\n  ref: HTMLFieldSetElement;\n  stylesNames: FieldsetStylesNames;\n  vars: FieldsetCSSVariables;\n  variant: FieldsetVariant;\n}>;\n\nconst defaultProps = {\n  variant: 'default',\n} satisfies Partial<FieldsetProps>;\n\nconst varsResolver = createVarsResolver<FieldsetFactory>((_, { radius }) => ({\n  root: {\n    '--fieldset-radius': radius === undefined ? undefined : getRadius(radius),\n  },\n}));\n\nexport const Fieldset = factory<FieldsetFactory>((_props) => {\n  const props = useProps('Fieldset', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    legend,\n    variant,\n    children,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<FieldsetFactory>({\n    name: 'Fieldset',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <Box component=\"fieldset\" variant={variant} {...getStyles('root', { variant })} {...others}>\n      {legend && <legend {...getStyles('legend', { variant })}>{legend}</legend>}\n      {children}\n    </Box>\n  );\n});\n\nFieldset.classes = classes;\nFieldset.varsResolver = varsResolver;\nFieldset.displayName = '@mantine/core/Fieldset';\n\nexport namespace Fieldset {\n  export type Props = FieldsetProps;\n  export type StylesNames = FieldsetStylesNames;\n  export type Factory = FieldsetFactory;\n  export type Variant = FieldsetVariant;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Fieldset_Fieldset",
+      "name": "Fieldset",
+      "path": "packages/@mantine/core/src/components/Fieldset/Fieldset.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Fieldset_Fieldset",
+      "name": "Fieldset",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Fieldset/Fieldset.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getRadius,\n  MantineRadius,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Fieldset.module.css';\n\nexport type FieldsetStylesNames = 'root' | 'legend';\nexport type FieldsetVariant = 'default' | 'filled' | 'unstyled';\nexport type FieldsetCSSVariables = {\n  root: '--fieldset-radius';\n};\n\nexport interface FieldsetProps\n  extends BoxProps, StylesApiProps<FieldsetFactory>, ElementProps<'fieldset'> {\n  /** Fieldset legend */\n  legend?: React.ReactNode;\n\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default theme.defaultRadius */\n  radius?: MantineRadius;\n}\n\nexport type FieldsetFactory = Factory<{\n  props: FieldsetProps;\n  ref: HTMLFieldSetElement;\n  stylesNames: FieldsetStylesNames;\n  vars: FieldsetCSSVariables;\n  variant: FieldsetVariant;\n}>;\n\nconst defaultProps = {\n  variant: 'default',\n} satisfies Partial<FieldsetProps>;\n\nconst varsResolver = createVarsResolver<FieldsetFactory>((_, { radius }) => ({\n  root: {\n    '--fieldset-radius': radius === undefined ? undefined : getRadius(radius),\n  },\n}));\n\nexport const Fieldset = factory<FieldsetFactory>((_props) => {\n  const props = useProps('Fieldset', defaultProps, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    legend,\n    variant,\n    children,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<FieldsetFactory>({\n    name: 'Fieldset',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n  });\n\n  return (\n    <Box component=\"fieldset\" variant={variant} {...getStyles('root', { variant })} {...others}>\n      {legend && <legend {...getStyles('legend', { variant })}>{legend}</legend>}\n      {children}\n    </Box>\n  );\n});\n\nFieldset.classes = classes;\nFieldset.varsResolver = varsResolver;\nFieldset.displayName = '@mantine/core/Fieldset';\n\nexport namespace Fieldset {\n  export type Props = FieldsetProps;\n  export type StylesNames = FieldsetStylesNames;\n  export type Factory = FieldsetFactory;\n  export type Variant = FieldsetVariant;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

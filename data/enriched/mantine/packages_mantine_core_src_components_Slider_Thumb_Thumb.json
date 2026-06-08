@@ -1,0 +1,48 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_Thumb_Thumb",
+  "name": "Thumb",
+  "source_code": "// packages/@mantine/core/src/components/Slider/Thumb/Thumb.tsx\nimport { useState } from 'react';\nimport { Box } from '../../../core';\nimport { Transition, TransitionOverride } from '../../Transition';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface ThumbProps extends Omit<React.ComponentProps<'div'>, 'value'> {\n  max: number;\n  min: number;\n  value: number;\n  position: number;\n  dragging: boolean;\n  label: React.ReactNode;\n  thumbValueText?: string | ((value: number) => string);\n  onKeyDownCapture?: (event: React.KeyboardEvent<HTMLDivElement>) => void;\n  onMouseDown?: (event: any) => void;\n  labelTransitionProps: TransitionOverride | undefined;\n  labelAlwaysOn: boolean | undefined;\n  thumbLabel: string | undefined;\n  showLabelOnHover: boolean | undefined;\n  isHovered?: boolean;\n  children?: React.ReactNode;\n  disabled: boolean | undefined;\n  orientation?: 'horizontal' | 'vertical';\n  className?: string;\n  style?: React.CSSProperties;\n}\n\nexport function Thumb({\n  max,\n  min,\n  value,\n  position,\n  label,\n  dragging,\n  onMouseDown,\n  onKeyDownCapture,\n  labelTransitionProps,\n  labelAlwaysOn,\n  thumbLabel,\n  thumbValueText,\n  onFocus,\n  onBlur,\n  showLabelOnHover,\n  isHovered,\n  children = null,\n  disabled,\n  orientation = 'horizontal',\n  ref,\n}: ThumbProps) {\n  const { getStyles } = useSliderContext();\n\n  const [focused, setFocused] = useState(false);\n\n  const isVisible = labelAlwaysOn || dragging || focused || (showLabelOnHover && isHovered);\n  const valueText = typeof thumbValueText === 'function' ? thumbValueText(value) : thumbValueText;\n\n  return (\n    <Box<'div'>\n      tabIndex={disabled ? -1 : 0}\n      role=\"slider\"\n      aria-label={thumbLabel}\n      aria-valuemax={max}\n      aria-valuemin={min}\n      aria-valuenow={value}\n      aria-valuetext={valueText}\n      aria-disabled={disabled}\n      aria-orientation={orientation}\n      ref={ref}\n      __vars={{ '--slider-thumb-offset': `${position}%` }}\n      {...getStyles('thumb', { focusable: true })}\n      mod={{ dragging, disabled }}\n      onFocus={(event) => {\n        setFocused(true);\n        typeof onFocus === 'function' && onFocus(event);\n      }}\n      onBlur={(event) => {\n        setFocused(false);\n        typeof onBlur === 'function' && onBlur(event);\n      }}\n      onTouchStart={onMouseDown}\n      onMouseDown={onMouseDown}\n      onKeyDownCapture={onKeyDownCapture}\n      onClick={(event) => event.stopPropagation()}\n    >\n      {children}\n      <Transition\n        mounted={label != null && !!isVisible}\n        transition=\"fade\"\n        duration={0}\n        {...labelTransitionProps}\n      >\n        {(transitionStyles) => (\n          <div {...getStyles('label', { style: transitionStyles })}>{label}</div>\n        )}\n      </Transition>\n    </Box>\n  );\n}\n\nThumb.displayName = '@mantine/core/SliderThumb';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "thumb"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_Thumb_Thumb",
+      "name": "Thumb",
+      "path": "packages/@mantine/core/src/components/Slider/Thumb/Thumb.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_Thumb_Thumb",
+      "name": "Thumb",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/Thumb/Thumb.tsx",
+          "content": "import { useState } from 'react';\nimport { Box } from '../../../core';\nimport { Transition, TransitionOverride } from '../../Transition';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface ThumbProps extends Omit<React.ComponentProps<'div'>, 'value'> {\n  max: number;\n  min: number;\n  value: number;\n  position: number;\n  dragging: boolean;\n  label: React.ReactNode;\n  thumbValueText?: string | ((value: number) => string);\n  onKeyDownCapture?: (event: React.KeyboardEvent<HTMLDivElement>) => void;\n  onMouseDown?: (event: any) => void;\n  labelTransitionProps: TransitionOverride | undefined;\n  labelAlwaysOn: boolean | undefined;\n  thumbLabel: string | undefined;\n  showLabelOnHover: boolean | undefined;\n  isHovered?: boolean;\n  children?: React.ReactNode;\n  disabled: boolean | undefined;\n  orientation?: 'horizontal' | 'vertical';\n  className?: string;\n  style?: React.CSSProperties;\n}\n\nexport function Thumb({\n  max,\n  min,\n  value,\n  position,\n  label,\n  dragging,\n  onMouseDown,\n  onKeyDownCapture,\n  labelTransitionProps,\n  labelAlwaysOn,\n  thumbLabel,\n  thumbValueText,\n  onFocus,\n  onBlur,\n  showLabelOnHover,\n  isHovered,\n  children = null,\n  disabled,\n  orientation = 'horizontal',\n  ref,\n}: ThumbProps) {\n  const { getStyles } = useSliderContext();\n\n  const [focused, setFocused] = useState(false);\n\n  const isVisible = labelAlwaysOn || dragging || focused || (showLabelOnHover && isHovered);\n  const valueText = typeof thumbValueText === 'function' ? thumbValueText(value) : thumbValueText;\n\n  return (\n    <Box<'div'>\n      tabIndex={disabled ? -1 : 0}\n      role=\"slider\"\n      aria-label={thumbLabel}\n      aria-valuemax={max}\n      aria-valuemin={min}\n      aria-valuenow={value}\n      aria-valuetext={valueText}\n      aria-disabled={disabled}\n      aria-orientation={orientation}\n      ref={ref}\n      __vars={{ '--slider-thumb-offset': `${position}%` }}\n      {...getStyles('thumb', { focusable: true })}\n      mod={{ dragging, disabled }}\n      onFocus={(event) => {\n        setFocused(true);\n        typeof onFocus === 'function' && onFocus(event);\n      }}\n      onBlur={(event) => {\n        setFocused(false);\n        typeof onBlur === 'function' && onBlur(event);\n      }}\n      onTouchStart={onMouseDown}\n      onMouseDown={onMouseDown}\n      onKeyDownCapture={onKeyDownCapture}\n      onClick={(event) => event.stopPropagation()}\n    >\n      {children}\n      <Transition\n        mounted={label != null && !!isVisible}\n        transition=\"fade\"\n        duration={0}\n        {...labelTransitionProps}\n      >\n        {(transitionStyles) => (\n          <div {...getStyles('label', { style: transitionStyles })}>{label}</div>\n        )}\n      </Transition>\n    </Box>\n  );\n}\n\nThumb.displayName = '@mantine/core/SliderThumb';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Thumb is a thumb UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Thumb\nDescription: Thumb is a thumb UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: animated, hover, interactive\nTags: mantine, other, thumb\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Slider/Thumb/Thumb.tsx\nimport { useState } from 'react';\nimport { Box } from '../../../core';\nimport { Transition, TransitionOverride } from '../../Transition';\nimport { useSliderContext } from '../Slider.context';\n\nexport interface ThumbProps extends Omit<React.ComponentProps<'div'>, 'value'> {\n  max: number;\n  min: number;\n  value: number;\n  position: number;\n  dragging: boolean;\n  label: React.ReactNode;\n  thumbValueText?: string | ((value: number) => ",
+  "prompt_version": 2,
+  "clean_id": "thumb",
+  "display_name": "Thumb",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-slider-thumb-thumb.png"
+}

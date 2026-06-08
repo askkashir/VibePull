@@ -1,0 +1,38 @@
+{
+  "id": "badge-destructive",
+  "name": "badge-destructive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "badge",
+    "destructive",
+    "alert",
+    "notification"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "badge-destructive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## badge-destructive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The 'badge-destructive' component is a red, circular badge that indicates a critical or irreversible action. It should be used when a user needs to confirm that they want to delete or discard something. Place it next to the element that needs deletion.",
+  "style_tags": [
+    "material design"
+  ],
+  "interaction_tags": [
+    "single tap or click to confirm"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: badge-destructive\nDescription: The 'badge-destructive' component is a red, circular badge that indicates a critical or irreversible action. It should be used when a user needs to confirm that they want to delete or discard something. Place it next to the element that needs deletion.\nStyle: material design\nInteractions: single tap or click to confirm\nTags: badge, destructive, alert, notification\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "badge-destructive",
+  "display_name": "Badge Destructive",
+  "preview_url": "/previews/shadcn/badge-destructive.png"
+}

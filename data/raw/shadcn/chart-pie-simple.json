@@ -1,0 +1,22 @@
+{
+  "id": "chart-pie-simple",
+  "name": "chart-pie-simple",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-simple",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-simple\n**Type:** registry:block\n**Files:** 1 file(s)"
+  }
+}

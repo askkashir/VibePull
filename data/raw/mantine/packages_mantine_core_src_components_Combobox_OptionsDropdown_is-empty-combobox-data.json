@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_is-empty-combobox-data",
+  "name": "is-empty-combobox-data",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-empty-combobox-data.ts\nimport { Primitive } from '../../..';\nimport { ComboboxParsedItem, ComboboxParsedItemGroup } from '../Combobox.types';\n\nexport function isEmptyComboboxData(data: ComboboxParsedItem<Primitive>[]) {\n  if (data.length === 0) {\n    return true;\n  }\n\n  for (const item of data) {\n    if (!('group' in item)) {\n      return false;\n    }\n\n    if ((item as ComboboxParsedItemGroup).items.length > 0) {\n      return false;\n    }\n  }\n\n  return true;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_OptionsDropdown_is-empty-combobox-data",
+      "name": "is-empty-combobox-data",
+      "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-empty-combobox-data.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_OptionsDropdown_is-empty-combobox-data",
+      "name": "is-empty-combobox-data",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/OptionsDropdown/is-empty-combobox-data.ts",
+          "content": "import { Primitive } from '../../..';\nimport { ComboboxParsedItem, ComboboxParsedItemGroup } from '../Combobox.types';\n\nexport function isEmptyComboboxData(data: ComboboxParsedItem<Primitive>[]) {\n  if (data.length === 0) {\n    return true;\n  }\n\n  for (const item of data) {\n    if (!('group' in item)) {\n      return false;\n    }\n\n    if ((item as ComboboxParsedItemGroup).items.length > 0) {\n      return false;\n    }\n  }\n\n  return true;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

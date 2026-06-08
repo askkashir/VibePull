@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ActionIcon_index",
+  "name": "ActionIcon",
+  "source_code": "// packages/@mantine/core/src/components/ActionIcon/index.ts\nimport type {\n  ActionIconCssVariables,\n  ActionIconFactory,\n  ActionIconProps,\n  ActionIconStylesNames,\n  ActionIconVariant,\n} from './ActionIcon';\nimport type {\n  ActionIconGroupCssVariables,\n  ActionIconGroupFactory,\n  ActionIconGroupProps,\n  ActionIconGroupStylesNames,\n} from './ActionIconGroup/ActionIconGroup';\nimport type {\n  ActionIconGroupSectionCssVariables,\n  ActionIconGroupSectionFactory,\n  ActionIconGroupSectionProps,\n  ActionIconGroupSectionStylesNames,\n} from './ActionIconGroupSection/ActionIconGroupSection';\n\nexport { ActionIcon } from './ActionIcon';\nexport { ActionIconGroup } from './ActionIconGroup/ActionIconGroup';\nexport { ActionIconGroupSection } from './ActionIconGroupSection/ActionIconGroupSection';\n\nexport type {\n  ActionIconProps,\n  ActionIconStylesNames,\n  ActionIconFactory,\n  ActionIconCssVariables,\n  ActionIconVariant,\n  ActionIconGroupProps,\n  ActionIconGroupCssVariables,\n  ActionIconGroupStylesNames,\n  ActionIconGroupFactory,\n  ActionIconGroupSectionProps,\n  ActionIconGroupSectionCssVariables,\n  ActionIconGroupSectionStylesNames,\n  ActionIconGroupSectionFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ActionIcon_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ActionIcon/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ActionIcon_index",
+      "name": "ActionIcon",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ActionIcon/index.ts",
+          "content": "import type {\n  ActionIconCssVariables,\n  ActionIconFactory,\n  ActionIconProps,\n  ActionIconStylesNames,\n  ActionIconVariant,\n} from './ActionIcon';\nimport type {\n  ActionIconGroupCssVariables,\n  ActionIconGroupFactory,\n  ActionIconGroupProps,\n  ActionIconGroupStylesNames,\n} from './ActionIconGroup/ActionIconGroup';\nimport type {\n  ActionIconGroupSectionCssVariables,\n  ActionIconGroupSectionFactory,\n  ActionIconGroupSectionProps,\n  ActionIconGroupSectionStylesNames,\n} from './ActionIconGroupSection/ActionIconGroupSection';\n\nexport { ActionIcon } from './ActionIcon';\nexport { ActionIconGroup } from './ActionIconGroup/ActionIconGroup';\nexport { ActionIconGroupSection } from './ActionIconGroupSection/ActionIconGroupSection';\n\nexport type {\n  ActionIconProps,\n  ActionIconStylesNames,\n  ActionIconFactory,\n  ActionIconCssVariables,\n  ActionIconVariant,\n  ActionIconGroupProps,\n  ActionIconGroupCssVariables,\n  ActionIconGroupStylesNames,\n  ActionIconGroupFactory,\n  ActionIconGroupSectionProps,\n  ActionIconGroupSectionCssVariables,\n  ActionIconGroupSectionStylesNames,\n  ActionIconGroupSectionFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

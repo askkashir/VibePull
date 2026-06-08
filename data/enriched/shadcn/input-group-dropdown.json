@@ -1,0 +1,44 @@
+{
+  "id": "input-group-dropdown",
+  "name": "input-group-dropdown",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "ui-component",
+    "search",
+    "filter",
+    "dropdown",
+    "input-group"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "input-group-dropdown",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## input-group-dropdown\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The input-group-dropdown is a versatile UI component that combines a search input field with a dropdown menu, allowing users to filter and select options from a list. It is commonly used in applications with search functionality, such as product filters or user profiles. This component is essential for building interactive and user-friendly interfaces.",
+  "style_tags": [
+    "e.g. light",
+    "rounded",
+    "boxed"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "hover",
+    "clickable",
+    "on-select"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: input-group-dropdown\nDescription: The input-group-dropdown is a versatile UI component that combines a search input field with a dropdown menu, allowing users to filter and select options from a list. It is commonly used in applications with search functionality, such as product filters or user profiles. This component is essential for building interactive and user-friendly interfaces.\nStyle: e.g. light, rounded, boxed\nInteractions: e.g. animated, hover, clickable, on-select\nTags: ui-component, search, filter, dropdown, input-group\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "input-group-dropdown",
+  "display_name": "Input Group Dropdown",
+  "preview_url": "/previews/shadcn/input-group-dropdown.png"
+}

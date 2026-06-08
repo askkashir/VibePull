@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_PinInput_create-pin-array_create-pin-array",
+  "name": "create-pin-array",
+  "source_code": "// packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts\nexport function createPinArray(length: number, value: string): string[] {\n  if (length < 1) {\n    return [];\n  }\n\n  const values = new Array<string>(length).fill('');\n\n  if (value) {\n    const splitted = value.trim().split('');\n    for (let i = 0; i < Math.min(length, splitted.length); i += 1) {\n      values[i] = splitted[i] === ' ' ? '' : splitted[i];\n    }\n  }\n\n  return values;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "PinInput_create-pin-array_create-pin-array",
+      "name": "create-pin-array",
+      "path": "packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_PinInput_create-pin-array_create-pin-array",
+      "name": "create-pin-array",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/PinInput/create-pin-array/create-pin-array.ts",
+          "content": "export function createPinArray(length: number, value: string): string[] {\n  if (length < 1) {\n    return [];\n  }\n\n  const values = new Array<string>(length).fill('');\n\n  if (value) {\n    const splitted = value.trim().split('');\n    for (let i = 0; i < Math.min(length, splitted.length); i += 1) {\n      values[i] = splitted[i] === ' ' ? '' : splitted[i];\n    }\n  }\n\n  return values;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

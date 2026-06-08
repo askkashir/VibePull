@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_AspectRatio_AspectRatio.story",
+  "name": "AspectRatio.story",
+  "source_code": "// packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx\nimport { AspectRatio } from './AspectRatio';\n\nexport default { title: 'AspectRatio' };\n\nconst WithProps = AspectRatio.withProps({ ratio: 112 / 9 });\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <WithProps>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </WithProps>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AspectRatio ratio={1} unstyled>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n\nexport function WithinFlexContainer() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 20 }}>\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AspectRatio_AspectRatio.story",
+      "name": "AspectRatio.story",
+      "path": "packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AspectRatio_AspectRatio.story",
+      "name": "AspectRatio.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AspectRatio/AspectRatio.story.tsx",
+          "content": "import { AspectRatio } from './AspectRatio';\n\nexport default { title: 'AspectRatio' };\n\nconst WithProps = AspectRatio.withProps({ ratio: 112 / 9 });\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <WithProps>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </WithProps>\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <AspectRatio ratio={1} unstyled>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n\nexport function WithinFlexContainer() {\n  return (\n    <div style={{ padding: 40, display: 'flex', gap: 20 }}>\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n\n      <AspectRatio ratio={16 / 9} style={{ flex: 1 }}>\n        <img\n          src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          alt=\"img\"\n        />\n      </AspectRatio>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

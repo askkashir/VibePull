@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_RollingNumber_build-value",
+  "name": "build-value",
+  "source_code": "// packages/@mantine/core/src/components/RollingNumber/build-value.ts\nimport { getDigitParts } from './get-digit-parts';\n\nexport interface BuildValueInput {\n  value: number;\n  prefix?: string;\n  suffix?: string;\n  decimalSeparator?: string;\n  thousandSeparator?: string | boolean;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nexport function buildValue({\n  value,\n  prefix,\n  suffix,\n  decimalSeparator = '.',\n  thousandSeparator,\n  decimalScale,\n  fixedDecimalScale,\n}: BuildValueInput): string {\n  const parts = getDigitParts({ value, decimalScale, fixedDecimalScale });\n  let intStr = parts.intDigits.join('');\n\n  if (thousandSeparator) {\n    const sep = typeof thousandSeparator === 'string' ? thousandSeparator : ',';\n    intStr = intStr.replace(/\\B(?=(\\d{3})+(?!\\d))/g, sep);\n  }\n\n  let result = parts.negative ? `-${intStr}` : intStr;\n  if (parts.fracDigits.length > 0) {\n    result += `${decimalSeparator}${parts.fracDigits.join('')}`;\n  }\n\n  return `${prefix || ''}${result}${suffix || ''}`;\n}\n",
+  "description": "",
+  "tags": [
+    "build",
+    "mantine",
+    "other",
+    "value"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "RollingNumber_build-value",
+      "name": "build-value",
+      "path": "packages/@mantine/core/src/components/RollingNumber/build-value.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_RollingNumber_build-value",
+      "name": "build-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/RollingNumber/build-value.ts",
+          "content": "import { getDigitParts } from './get-digit-parts';\n\nexport interface BuildValueInput {\n  value: number;\n  prefix?: string;\n  suffix?: string;\n  decimalSeparator?: string;\n  thousandSeparator?: string | boolean;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nexport function buildValue({\n  value,\n  prefix,\n  suffix,\n  decimalSeparator = '.',\n  thousandSeparator,\n  decimalScale,\n  fixedDecimalScale,\n}: BuildValueInput): string {\n  const parts = getDigitParts({ value, decimalScale, fixedDecimalScale });\n  let intStr = parts.intDigits.join('');\n\n  if (thousandSeparator) {\n    const sep = typeof thousandSeparator === 'string' ? thousandSeparator : ',';\n    intStr = intStr.replace(/\\B(?=(\\d{3})+(?!\\d))/g, sep);\n  }\n\n  let result = parts.negative ? `-${intStr}` : intStr;\n  if (parts.fracDigits.length > 0) {\n    result += `${decimalSeparator}${parts.fracDigits.join('')}`;\n  }\n\n  return `${prefix || ''}${result}${suffix || ''}`;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "build-value is a build value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: build-value\nDescription: build-value is a build value UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: build, mantine, other, value\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/RollingNumber/build-value.ts\nimport { getDigitParts } from './get-digit-parts';\n\nexport interface BuildValueInput {\n  value: number;\n  prefix?: string;\n  suffix?: string;\n  decimalSeparator?: string;\n  thousandSeparator?: string | boolean;\n  decimalScale?: number;\n  fixedDecimalScale?: boolean;\n}\n\nexport function buildValue({\n  value,\n  prefix,\n  suffix,\n  decimalSeparator = '.',\n  thousandSeparator,\n  decimalScale,\n  fixedDecimalScale,\n}: BuildValueInput",
+  "prompt_version": 2,
+  "clean_id": "build-value",
+  "display_name": "Build Value",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-rollingnumber-build-value.png"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "src_components_Card_Card",
+  "name": "Card",
+  "source_code": "// src/components/Card/Card.tsx\n// Tremor Card [v1.0.0]\n\nimport React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface CardProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  asChild?: boolean\n}\n\nconst Card = React.forwardRef<HTMLDivElement, CardProps>(\n  ({ className, asChild, ...props }, forwardedRef) => {\n    const Component = asChild ? Slot : \"div\"\n    return (\n      <Component\n        ref={forwardedRef}\n        className={cx(\n          // base\n          \"relative w-full rounded-lg border p-6 text-left shadow-xs\",\n          // background color\n          \"bg-white dark:bg-[#090E1A]\",\n          // border color\n          \"border-gray-200 dark:border-gray-900\",\n          className,\n        )}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nCard.displayName = \"Card\"\n\nexport { Card, type CardProps }\n",
+  "description": "",
+  "tags": [
+    "cards",
+    "ui components",
+    "information display"
+  ],
+  "server": "tremor",
+  "metadata": {
+    "listed_component": {
+      "id": "src_components_Card_Card",
+      "name": "Card.tsx",
+      "source": "github_contents",
+      "path": "src/components/Card/Card.tsx",
+      "sha": "248528ecd1c17b39586faa317f6c2c4cf8c6c5bd",
+      "size": 862,
+      "url": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Card/Card.tsx?ref=main",
+      "html_url": "https://github.com/tremorlabs/tremor/blob/main/src/components/Card/Card.tsx",
+      "git_url": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/248528ecd1c17b39586faa317f6c2c4cf8c6c5bd",
+      "download_url": "https://raw.githubusercontent.com/tremorlabs/tremor/main/src/components/Card/Card.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/tremorlabs/tremor/contents/src/components/Card/Card.tsx?ref=main",
+        "git": "https://api.github.com/repos/tremorlabs/tremor/git/blobs/248528ecd1c17b39586faa317f6c2c4cf8c6c5bd",
+        "html": "https://github.com/tremorlabs/tremor/blob/main/src/components/Card/Card.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "src_components_Card_Card",
+      "name": "Card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/Card/Card.tsx",
+          "content": "// Tremor Card [v1.0.0]\n\nimport React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface CardProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  asChild?: boolean\n}\n\nconst Card = React.forwardRef<HTMLDivElement, CardProps>(\n  ({ className, asChild, ...props }, forwardedRef) => {\n    const Component = asChild ? Slot : \"div\"\n    return (\n      <Component\n        ref={forwardedRef}\n        className={cx(\n          // base\n          \"relative w-full rounded-lg border p-6 text-left shadow-xs\",\n          // background color\n          \"bg-white dark:bg-[#090E1A]\",\n          // border color\n          \"border-gray-200 dark:border-gray-900\",\n          className,\n        )}\n        tremor-id=\"tremor-raw\"\n        {...props}\n      />\n    )\n  },\n)\n\nCard.displayName = \"Card\"\n\nexport { Card, type CardProps }\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A basic card component which can be used to represent information in a visually distinct way. It can be customized with different background and border colors.",
+  "style_tags": [
+    "dark",
+    "light"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Card\nDescription: A basic card component which can be used to represent information in a visually distinct way. It can be customized with different background and border colors.\nStyle: dark, light\nInteractions: \nTags: cards, ui components, information display\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/Card/Card.tsx\n// Tremor Card [v1.0.0]\n\nimport React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\n\nimport { cx } from \"../../utils/cx\"\n\ninterface CardProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  asChild?: boolean\n}\n\nconst Card = React.forwardRef<HTMLDivElement, CardProps>(\n  ({ className, asChild, ...props }, forwardedRef) => {\n    const Component = asChild ? Slot : \"div\"\n    return (\n      <Component\n        ref={forwardedRef}\n        className={cx(\n     ",
+  "prompt_version": 2,
+  "clean_id": "card",
+  "display_name": "Card",
+  "preview_url": "/previews/tremor/src-components-card-card.png"
+}

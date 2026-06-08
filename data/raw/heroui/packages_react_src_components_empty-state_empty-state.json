@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_empty-state_empty-state",
+  "name": "empty-state",
+  "source_code": "// packages/react/src/components/empty-state/empty-state.tsx\nimport type {DOMRenderProps} from \"../../utils/dom\";\nimport type {ReactNode} from \"react\";\n\nimport {emptyStateVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * EmptyState Root\n * -----------------------------------------------------------------------------------------------*/\ninterface EmptyStateRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children?: ReactNode;\n  className?: string;\n}\n\nconst EmptyStateRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  ...rest\n}: EmptyStateRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof EmptyStateRootProps<E>>) => {\n  return (\n    <dom.div className={emptyStateVariants({className})} data-slot=\"empty-state\" {...(rest as any)}>\n      {children || \"No results found\"}\n    </dom.div>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {EmptyStateRoot};\n\nexport type {EmptyStateRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "empty-state_empty-state",
+      "name": "empty-state",
+      "path": "packages/react/src/components/empty-state/empty-state.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_empty-state_empty-state",
+      "name": "empty-state",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/empty-state/empty-state.tsx",
+          "content": "import type {DOMRenderProps} from \"../../utils/dom\";\nimport type {ReactNode} from \"react\";\n\nimport {emptyStateVariants} from \"@heroui/styles\";\nimport React from \"react\";\n\nimport {dom} from \"../../utils/dom\";\n\n/* -------------------------------------------------------------------------------------------------\n * EmptyState Root\n * -----------------------------------------------------------------------------------------------*/\ninterface EmptyStateRootProps<\n  E extends keyof React.JSX.IntrinsicElements = \"div\",\n> extends DOMRenderProps<E, undefined> {\n  children?: ReactNode;\n  className?: string;\n}\n\nconst EmptyStateRoot = <E extends keyof React.JSX.IntrinsicElements = \"div\">({\n  children,\n  className,\n  ...rest\n}: EmptyStateRootProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof EmptyStateRootProps<E>>) => {\n  return (\n    <dom.div className={emptyStateVariants({className})} data-slot=\"empty-state\" {...(rest as any)}>\n      {children || \"No results found\"}\n    </dom.div>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {EmptyStateRoot};\n\nexport type {EmptyStateRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

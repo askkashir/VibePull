@@ -1,0 +1,56 @@
+{
+  "id": "progressive-blur",
+  "name": "progressive-blur",
+  "source_code": "// components/core/progressive-blur.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { HTMLMotionProps, motion } from 'motion/react';\n\nexport const GRADIENT_ANGLES = {\n  top: 0,\n  right: 90,\n  bottom: 180,\n  left: 270,\n};\n\nexport type ProgressiveBlurProps = {\n  direction?: keyof typeof GRADIENT_ANGLES;\n  blurLayers?: number;\n  className?: string;\n  blurIntensity?: number;\n} & HTMLMotionProps<'div'>;\n\nexport function ProgressiveBlur({\n  direction = 'bottom',\n  blurLayers = 8,\n  className,\n  blurIntensity = 0.25,\n  ...props\n}: ProgressiveBlurProps) {\n  const layers = Math.max(blurLayers, 2);\n  const segmentSize = 1 / (blurLayers + 1);\n\n  return (\n    <div className={cn('relative', className)}>\n      {Array.from({ length: layers }).map((_, index) => {\n        const angle = GRADIENT_ANGLES[direction];\n        const gradientStops = [\n          index * segmentSize,\n          (index + 1) * segmentSize,\n          (index + 2) * segmentSize,\n          (index + 3) * segmentSize,\n        ].map(\n          (pos, posIndex) =>\n            `rgba(255, 255, 255, ${posIndex === 1 || posIndex === 2 ? 1 : 0}) ${pos * 100}%`\n        );\n\n        const gradient = `linear-gradient(${angle}deg, ${gradientStops.join(\n          ', '\n        )})`;\n\n        return (\n          <motion.div\n            key={index}\n            className='pointer-events-none absolute inset-0 rounded-[inherit]'\n            style={{\n              maskImage: gradient,\n              WebkitMaskImage: gradient,\n              backdropFilter: `blur(${index * blurIntensity}px)`,\n              WebkitBackdropFilter: `blur(${index * blurIntensity}px)`,\n            }}\n            {...props}\n          />\n        );\n      })}\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "background",
+    "overlay",
+    "blur"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "progressive-blur.tsx",
+      "source": "github_contents",
+      "path": "components/core/progressive-blur.tsx",
+      "sha": "760c001ffcf20d90480fa4a2a0d736cb046b6a88",
+      "size": 1676,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/progressive-blur.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/progressive-blur.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/760c001ffcf20d90480fa4a2a0d736cb046b6a88",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/progressive-blur.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/progressive-blur.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/760c001ffcf20d90480fa4a2a0d736cb046b6a88",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/progressive-blur.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "progressive-blur",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/progressive-blur.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport { HTMLMotionProps, motion } from 'motion/react';\n\nexport const GRADIENT_ANGLES = {\n  top: 0,\n  right: 90,\n  bottom: 180,\n  left: 270,\n};\n\nexport type ProgressiveBlurProps = {\n  direction?: keyof typeof GRADIENT_ANGLES;\n  blurLayers?: number;\n  className?: string;\n  blurIntensity?: number;\n} & HTMLMotionProps<'div'>;\n\nexport function ProgressiveBlur({\n  direction = 'bottom',\n  blurLayers = 8,\n  className,\n  blurIntensity = 0.25,\n  ...props\n}: ProgressiveBlurProps) {\n  const layers = Math.max(blurLayers, 2);\n  const segmentSize = 1 / (blurLayers + 1);\n\n  return (\n    <div className={cn('relative', className)}>\n      {Array.from({ length: layers }).map((_, index) => {\n        const angle = GRADIENT_ANGLES[direction];\n        const gradientStops = [\n          index * segmentSize,\n          (index + 1) * segmentSize,\n          (index + 2) * segmentSize,\n          (index + 3) * segmentSize,\n        ].map(\n          (pos, posIndex) =>\n            `rgba(255, 255, 255, ${posIndex === 1 || posIndex === 2 ? 1 : 0}) ${pos * 100}%`\n        );\n\n        const gradient = `linear-gradient(${angle}deg, ${gradientStops.join(\n          ', '\n        )})`;\n\n        return (\n          <motion.div\n            key={index}\n            className='pointer-events-none absolute inset-0 rounded-[inherit]'\n            style={{\n              maskImage: gradient,\n              WebkitMaskImage: gradient,\n              backdropFilter: `blur(${index * blurIntensity}px)`,\n              WebkitBackdropFilter: `blur(${index * blurIntensity}px)`,\n            }}\n            {...props}\n          />\n        );\n      })}\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A progressive-blur is a component that creates a blurred effect behind an element. It's used for backgrounds or overlay layers. Developers can use it to create a sense of depth or visual hierarchy in their layouts.",
+  "style_tags": [
+    "gradient",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: progressive-blur\nDescription: A progressive-blur is a component that creates a blurred effect behind an element. It's used for backgrounds or overlay layers. Developers can use it to create a sense of depth or visual hierarchy in their layouts.\nStyle: gradient, customizable\nInteractions: static\nTags: background, overlay, blur\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/progressive-blur.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport { HTMLMotionProps, motion } from 'motion/react';\n\nexport const GRADIENT_ANGLES = {\n  top: 0,\n  right: 90,\n  bottom: 180,\n  left: 270,\n};\n\nexport type ProgressiveBlurProps = {\n  direction?: keyof typeof GRADIENT_ANGLES;\n  blurLayers?: number;\n  className?: string;\n  blurIntensity?: number;\n} & HTMLMotionProps<'div'>;\n\nexport function ProgressiveBlur({\n  direction = 'bottom',\n  blurLayers = 8,\n  classNam",
+  "prompt_version": 2,
+  "clean_id": "progressive-blur",
+  "display_name": "Progressive Blur",
+  "preview_url": "/previews/motionprimitives/progressive-blur.png"
+}

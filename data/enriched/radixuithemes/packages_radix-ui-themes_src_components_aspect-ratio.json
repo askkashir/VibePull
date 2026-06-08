@@ -1,0 +1,56 @@
+{
+  "id": "packages_radix-ui-themes_src_components_aspect-ratio",
+  "name": "aspect-ratio",
+  "source_code": "// packages/radix-ui-themes/src/components/aspect-ratio.tsx\nimport { AspectRatio as AspectRatioPrimitive } from 'radix-ui';\nexport const AspectRatio = AspectRatioPrimitive.Root;\nexport type AspectRatioProps = AspectRatioPrimitive.AspectRatioProps;\n",
+  "description": "",
+  "tags": [
+    "container",
+    "layout"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_aspect-ratio",
+      "name": "aspect-ratio.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/aspect-ratio.tsx",
+      "sha": "2f82a4fc5750d44ea03a8467f6bb410dcd567193",
+      "size": 188,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/aspect-ratio.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/aspect-ratio.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/2f82a4fc5750d44ea03a8467f6bb410dcd567193",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/aspect-ratio.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/aspect-ratio.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/2f82a4fc5750d44ea03a8467f6bb410dcd567193",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/aspect-ratio.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_aspect-ratio",
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/aspect-ratio.tsx",
+          "content": "import { AspectRatio as AspectRatioPrimitive } from 'radix-ui';\nexport const AspectRatio = AspectRatioPrimitive.Root;\nexport type AspectRatioProps = AspectRatioPrimitive.AspectRatioProps;\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A container with an aspect ratio, useful for displaying images, videos or other content.",
+  "style_tags": [
+    "responsive"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: aspect-ratio\nDescription: A container with an aspect ratio, useful for displaying images, videos or other content.\nStyle: responsive\nInteractions: static\nTags: container, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/aspect-ratio.tsx\nimport { AspectRatio as AspectRatioPrimitive } from 'radix-ui';\nexport const AspectRatio = AspectRatioPrimitive.Root;\nexport type AspectRatioProps = AspectRatioPrimitive.AspectRatioProps;\n",
+  "prompt_version": 2,
+  "clean_id": "aspect-ratio",
+  "display_name": "Aspect Ratio",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-aspect-ratio.png"
+}

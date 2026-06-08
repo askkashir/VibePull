@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_SegmentedControl_index",
+  "name": "SegmentedControl",
+  "source_code": "// packages/@mantine/core/src/components/SegmentedControl/index.ts\nimport type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n} from './SegmentedControl';\n\nexport { SegmentedControl } from './SegmentedControl';\n\nexport type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n};\n",
+  "description": "",
+  "tags": [
+    "control",
+    "mantine",
+    "other",
+    "segmented"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "SegmentedControl_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/SegmentedControl/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_SegmentedControl_index",
+      "name": "SegmentedControl",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/SegmentedControl/index.ts",
+          "content": "import type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n} from './SegmentedControl';\n\nexport { SegmentedControl } from './SegmentedControl';\n\nexport type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "SegmentedControl is a segmented control UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SegmentedControl\nDescription: SegmentedControl is a segmented control UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: control, mantine, other, segmented\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/SegmentedControl/index.ts\nimport type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n} from './SegmentedControl';\n\nexport { SegmentedControl } from './SegmentedControl';\n\nexport type {\n  SegmentedControlCssVariables,\n  SegmentedControlFactory,\n  SegmentedControlItem,\n  SegmentedControlProps,\n  SegmentedControlStylesNames,\n};\n",
+  "prompt_version": 2,
+  "clean_id": "segmented-control",
+  "display_name": "Segmented Control",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-segmentedcontrol-index.png"
+}

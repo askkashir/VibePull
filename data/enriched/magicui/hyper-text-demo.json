@@ -1,0 +1,63 @@
+{
+  "id": "hyper-text-demo",
+  "name": "Hyper Text Demo",
+  "source_code": "import { HyperText } from \"@/registry/magicui/hyper-text\"\n\nexport default function HyperTextDemo() {\n  return <HyperText>Hover Me!</HyperText>\n}\n",
+  "description": "Example showing text with scrambling letter animations.",
+  "tags": [
+    "text-component",
+    "interactive",
+    "button",
+    "hover-effect"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "hyper-text-demo",
+      "type": "registry:example",
+      "title": "Hyper Text Demo",
+      "description": "Example showing text with scrambling letter animations.",
+      "registryDependencies": [
+        "https://magicui.design/r/hyper-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/hyper-text-demo.tsx",
+          "type": "registry:example",
+          "target": "components/hyper-text-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hyper-text-demo",
+      "type": "registry:example",
+      "title": "Hyper Text Demo",
+      "description": "Example showing text with scrambling letter animations.",
+      "registryDependencies": [
+        "@magicui/hyper-text"
+      ],
+      "files": [
+        {
+          "path": "registry/example/hyper-text-demo.tsx",
+          "content": "import { HyperText } from \"@/registry/magicui/hyper-text\"\n\nexport default function HyperTextDemo() {\n  return <HyperText>Hover Me!</HyperText>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A text component that displays text on a button-style design with hover effect. Typically used as a simple interactive text element. Hover over it to see animation.",
+  "style_tags": [
+    "button",
+    "animated"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Hyper Text Demo\nDescription: A text component that displays text on a button-style design with hover effect. Typically used as a simple interactive text element. Hover over it to see animation.\nStyle: button, animated\nInteractions: hover, clickable\nTags: text-component, interactive, button, hover-effect\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { HyperText } from \"@/registry/magicui/hyper-text\"\n\nexport default function HyperTextDemo() {\n  return <HyperText>Hover Me!</HyperText>\n}\n",
+  "prompt_version": 2,
+  "clean_id": "hyper-text-demo",
+  "display_name": "Hyper Text Demo",
+  "preview_url": "/previews/magicui/hyper-text-demo.png"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "packages_mantine_core_src_components_ModalBase_use-modal-transition",
+  "name": "use-modal-transition",
+  "source_code": "// packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts\nimport { TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\n\nconst DEFAULT_TRANSITION: TransitionOverride = {\n  duration: 200,\n  timingFunction: 'ease',\n  transition: 'fade',\n};\n\nexport function useModalTransition(\n  transitionOverride: TransitionOverride | undefined\n): TransitionOverride {\n  const ctx = useModalBaseContext();\n  return { ...DEFAULT_TRANSITION, ...ctx.transitionProps, ...transitionOverride };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "transition",
+    "hook"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ModalBase_use-modal-transition",
+      "name": "use-modal-transition",
+      "path": "packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ModalBase_use-modal-transition",
+      "name": "use-modal-transition",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts",
+          "content": "import { TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\n\nconst DEFAULT_TRANSITION: TransitionOverride = {\n  duration: 200,\n  timingFunction: 'ease',\n  transition: 'fade',\n};\n\nexport function useModalTransition(\n  transitionOverride: TransitionOverride | undefined\n): TransitionOverride {\n  const ctx = useModalBaseContext();\n  return { ...DEFAULT_TRANSITION, ...ctx.transitionProps, ...transitionOverride };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A React hook to customize the transition animation of a modal in Mantine's Modal component. It can be used when you need a custom animation for modal opening and closing. It allows overriding the default transition duration, timing function, and type.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "glassmorphism",
+    "customizable"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "interactive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: use-modal-transition\nDescription: A React hook to customize the transition animation of a modal in Mantine's Modal component. It can be used when you need a custom animation for modal opening and closing. It allows overriding the default transition duration, timing function, and type.\nStyle: e.g. dark, minimal, glassmorphism, customizable\nInteractions: e.g. animated, interactive\nTags: mantine, modal, transition, hook\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ModalBase/use-modal-transition.ts\nimport { TransitionOverride } from '../Transition';\nimport { useModalBaseContext } from './ModalBase.context';\n\nconst DEFAULT_TRANSITION: TransitionOverride = {\n  duration: 200,\n  timingFunction: 'ease',\n  transition: 'fade',\n};\n\nexport function useModalTransition(\n  transitionOverride: TransitionOverride | undefined\n): TransitionOverride {\n  const ctx = useModalBaseContext();\n  return { ...DEFAULT_TRANSITION, ...ctx.tran",
+  "prompt_version": 2,
+  "clean_id": "use-modal-transition",
+  "display_name": "Use Modal Transition",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modalbase-use-modal-transition.png"
+}

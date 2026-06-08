@@ -1,0 +1,52 @@
+{
+  "id": "card",
+  "name": "card",
+  "source_code": "// src/components/ui/card.tsx\n'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "card",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Card from './card'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n"
+        }
+      ],
+      "registryDependencies": [
+        "card-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "card",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Card from './card'",
+          "content": "'use client'\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { card } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(card)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(ark.div, 'root')\nexport const Header = withContext(ark.div, 'header')\nexport const Body = withContext(ark.div, 'body')\nexport const Footer = withContext(ark.h3, 'footer')\nexport const Title = withContext(ark.h3, 'title')\nexport const Description = withContext(ark.div, 'description')\n"
+        }
+      ],
+      "registryDependencies": [
+        "card-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

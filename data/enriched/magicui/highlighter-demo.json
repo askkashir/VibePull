@@ -1,0 +1,76 @@
+{
+  "id": "highlighter-demo",
+  "name": "Highlighter Demo",
+  "source_code": "import { Highlighter } from \"@/registry/magicui/highlighter\"\n\nexport default function HighlighterDemo() {\n  return (\n    <div className=\"text-center\">\n      <p className=\"leading-relaxed\">\n        The{\" \"}\n        <Highlighter action=\"underline\" color=\"#FF9800\">\n          Magic UI Highlighter\n        </Highlighter>{\" \"}\n        makes important{\" \"}\n        <Highlighter action=\"highlight\" color=\"#87CEFA\">\n          text stand out\n        </Highlighter>{\" \"}\n        effortlessly.\n      </p>\n    </div>\n  )\n}\n",
+  "description": "Example showing the demo of a Highlighter",
+  "tags": [
+    "text",
+    "highlight",
+    "magicui"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "highlighter-demo",
+      "type": "registry:example",
+      "title": "Highlighter Demo",
+      "description": "Example showing the demo of a Highlighter",
+      "dependencies": [
+        "rough-notation"
+      ],
+      "registryDependencies": [
+        "https://magicui.design/r/highlighter"
+      ],
+      "files": [
+        {
+          "path": "registry/example/highlighter-demo.tsx",
+          "type": "registry:example",
+          "target": "components/highlighter-demo.tsx"
+        },
+        {
+          "path": "registry/magicui/highlighter.tsx",
+          "type": "registry:ui",
+          "target": "components/magicui/highlighter.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "highlighter-demo",
+      "type": "registry:example",
+      "title": "Highlighter Demo",
+      "description": "Example showing the demo of a Highlighter",
+      "dependencies": [
+        "motion",
+        "rough-notation"
+      ],
+      "registryDependencies": [
+        "@magicui/highlighter"
+      ],
+      "files": [
+        {
+          "path": "registry/example/highlighter-demo.tsx",
+          "content": "import { Highlighter } from \"@/registry/magicui/highlighter\"\n\nexport default function HighlighterDemo() {\n  return (\n    <div className=\"text-center\">\n      <p className=\"leading-relaxed\">\n        The{\" \"}\n        <Highlighter action=\"underline\" color=\"#FF9800\">\n          Magic UI Highlighter\n        </Highlighter>{\" \"}\n        makes important{\" \"}\n        <Highlighter action=\"highlight\" color=\"#87CEFA\">\n          text stand out\n        </Highlighter>{\" \"}\n        effortlessly.\n      </p>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        },
+        {
+          "path": "registry/magicui/highlighter.tsx",
+          "content": "\"use client\"\n\nimport { useLayoutEffect, useRef } from \"react\"\nimport type React from \"react\"\nimport { useInView } from \"motion/react\"\nimport { annotate } from \"rough-notation\"\nimport { type RoughAnnotation } from \"rough-notation/lib/model\"\n\ntype AnnotationAction =\n  | \"highlight\"\n  | \"underline\"\n  | \"box\"\n  | \"circle\"\n  | \"strike-through\"\n  | \"crossed-off\"\n  | \"bracket\"\n\ninterface HighlighterProps {\n  children: React.ReactNode\n  action?: AnnotationAction\n  color?: string\n  strokeWidth?: number\n  animationDuration?: number\n  iterations?: number\n  padding?: number\n  multiline?: boolean\n  isView?: boolean\n}\n\nexport function Highlighter({\n  children,\n  action = \"highlight\",\n  color = \"#ffd1dc\",\n  strokeWidth = 1.5,\n  animationDuration = 600,\n  iterations = 2,\n  padding = 2,\n  multiline = true,\n  isView = false,\n}: HighlighterProps) {\n  const elementRef = useRef<HTMLSpanElement>(null)\n\n  const isInView = useInView(elementRef, {\n    once: true,\n    margin: \"-10%\",\n  })\n\n  // If isView is false, always show. If isView is true, wait for inView\n  const shouldShow = !isView || isInView\n\n  useLayoutEffect(() => {\n    const element = elementRef.current\n    let annotation: RoughAnnotation | null = null\n    let resizeObserver: ResizeObserver | null = null\n\n    if (shouldShow && element) {\n      const annotationConfig = {\n        type: action,\n        color,\n        strokeWidth,\n        animationDuration,\n        iterations,\n        padding,\n        multiline,\n      }\n\n      const currentAnnotation = annotate(element, annotationConfig)\n      annotation = currentAnnotation\n      currentAnnotation.show()\n\n      resizeObserver = new ResizeObserver(() => {\n        currentAnnotation.hide()\n        currentAnnotation.show()\n      })\n\n      resizeObserver.observe(element)\n      resizeObserver.observe(document.body)\n    }\n\n    return () => {\n      annotation?.remove()\n      if (resizeObserver) {\n        resizeObserver.disconnect()\n      }\n    }\n  }, [\n    shouldShow,\n    action,\n    color,\n    strokeWidth,\n    animationDuration,\n    iterations,\n    padding,\n    multiline,\n  ])\n\n  return (\n    <span ref={elementRef} className=\"relative inline-block bg-transparent\">\n      {children}\n    </span>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A text component that makes important text stand out with customizable colors and styles. Suitable for highlighting key information on a page. Can be used to draw attention to specific text in an article or tutorial.",
+  "style_tags": [
+    "customizable",
+    "colorful"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: Highlighter Demo\nDescription: A text component that makes important text stand out with customizable colors and styles. Suitable for highlighting key information on a page. Can be used to draw attention to specific text in an article or tutorial.\nStyle: customizable, colorful\nInteractions: \nTags: text, highlight, magicui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Highlighter } from \"@/registry/magicui/highlighter\"\n\nexport default function HighlighterDemo() {\n  return (\n    <div className=\"text-center\">\n      <p className=\"leading-relaxed\">\n        The{\" \"}\n        <Highlighter action=\"underline\" color=\"#FF9800\">\n          Magic UI Highlighter\n        </Highlighter>{\" \"}\n        makes important{\" \"}\n        <Highlighter action=\"highlight\" color=\"#87CEFA\">\n          text stand out\n        </Highlighter>{\" \"}\n        effortlessly.\n      </p>\n    </",
+  "prompt_version": 2,
+  "clean_id": "highlighter-demo",
+  "display_name": "Highlighter Demo",
+  "preview_url": "/previews/magicui/highlighter-demo.png"
+}

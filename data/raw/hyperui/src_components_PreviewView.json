@@ -1,0 +1,31 @@
+{
+  "id": "src_components_PreviewView",
+  "name": "PreviewView",
+  "source_code": "// src/components/PreviewView.astro\n---\nimport { Eye, Code } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-view data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Toggle preview mode\"\n    aria-pressed=\"true\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <Eye class=\"size-4\" data-preview />\n\n    <Code class=\"hidden size-4\" data-code />\n\n    <span data-text>Preview</span>\n  </button>\n</preview-view>\n\n<script>\n  class PreviewView extends HTMLElement {\n    private contentSrc: string | null = null\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const previewIcon = buttonEl.querySelector('svg[data-preview]')\n      const codeIcon = buttonEl.querySelector('svg[data-code]')\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!previewIcon || !codeIcon || !buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        const isPreviewing = buttonEl.getAttribute('aria-pressed') === 'true'\n        const newState = !isPreviewing\n\n        buttonEl.setAttribute('aria-pressed', String(newState))\n\n        if (newState) {\n          previewIcon.classList.remove('hidden')\n          codeIcon.classList.add('hidden')\n          buttonText.textContent = 'Preview'\n        } else {\n          previewIcon.classList.add('hidden')\n          codeIcon.classList.remove('hidden')\n          buttonText.textContent = 'HTML'\n        }\n\n        document.dispatchEvent(\n          new CustomEvent(`preview:view:${this.contentSrc}`, {\n            bubbles: true,\n            detail: { previewing: newState },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('preview-view', PreviewView)\n</script>\n",
+  "description": "",
+  "tags": [
+    "hyperui",
+    "registry:ui"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "PreviewView",
+      "name": "PreviewView",
+      "path": "src/components/PreviewView.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_PreviewView",
+      "name": "PreviewView",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/PreviewView.astro",
+          "content": "---\nimport { Eye, Code } from '@lucide/astro'\n\ninterface Props {\n  src: string\n}\n\nconst { src } = Astro.props\n---\n\n<preview-view data-src={src}>\n  <button\n    type=\"button\"\n    aria-label=\"Toggle preview mode\"\n    aria-pressed=\"true\"\n    class=\"inline-flex items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50\"\n  >\n    <Eye class=\"size-4\" data-preview />\n\n    <Code class=\"hidden size-4\" data-code />\n\n    <span data-text>Preview</span>\n  </button>\n</preview-view>\n\n<script>\n  class PreviewView extends HTMLElement {\n    private contentSrc: string | null = null\n\n    private clickHandler: (() => void) | null = null\n\n    connectedCallback() {\n      this.contentSrc = this.dataset.src || null\n\n      if (!this.contentSrc) {\n        return\n      }\n\n      const buttonEl = this.querySelector('button')\n\n      if (!buttonEl) {\n        return\n      }\n\n      const previewIcon = buttonEl.querySelector('svg[data-preview]')\n      const codeIcon = buttonEl.querySelector('svg[data-code]')\n      const buttonText = buttonEl.querySelector('span[data-text]')\n\n      if (!previewIcon || !codeIcon || !buttonText) {\n        return\n      }\n\n      this.clickHandler = () => {\n        const isPreviewing = buttonEl.getAttribute('aria-pressed') === 'true'\n        const newState = !isPreviewing\n\n        buttonEl.setAttribute('aria-pressed', String(newState))\n\n        if (newState) {\n          previewIcon.classList.remove('hidden')\n          codeIcon.classList.add('hidden')\n          buttonText.textContent = 'Preview'\n        } else {\n          previewIcon.classList.add('hidden')\n          codeIcon.classList.remove('hidden')\n          buttonText.textContent = 'HTML'\n        }\n\n        document.dispatchEvent(\n          new CustomEvent(`preview:view:${this.contentSrc}`, {\n            bubbles: true,\n            detail: { previewing: newState },\n          }),\n        )\n      }\n\n      buttonEl.addEventListener('click', this.clickHandler)\n    }\n\n    disconnectedCallback() {\n      const buttonEl = this.querySelector('button')\n\n      if (buttonEl && this.clickHandler) {\n        buttonEl.removeEventListener('click', this.clickHandler)\n\n        this.clickHandler = null\n      }\n    }\n  }\n\n  customElements.define('preview-view', PreviewView)\n</script>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

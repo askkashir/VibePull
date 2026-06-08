@@ -1,0 +1,44 @@
+{
+  "id": "chart-tooltip-label-formatter",
+  "name": "chart-tooltip-label-formatter",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "tooltip",
+    "formatter",
+    "text",
+    "formatting",
+    "data-visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-label-formatter",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-label-formatter\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A chart tooltip label formatter is a flexible text formatting component used to customize the appearance and content of chart tooltips. It is typically used in data visualization contexts, such as when developing interactive charts, to provide more detailed information to users. When choosing this component, consider situations where custom tooltip labels are necessary to enhance user understanding.",
+  "style_tags": [
+    "e.g., dark",
+    "minimal",
+    "modern"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "responsive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chart-tooltip-label-formatter\nDescription: A chart tooltip label formatter is a flexible text formatting component used to customize the appearance and content of chart tooltips. It is typically used in data visualization contexts, such as when developing interactive charts, to provide more detailed information to users. When choosing this component, consider situations where custom tooltip labels are necessary to enhance user understanding.\nStyle: e.g., dark, minimal, modern\nInteractions: animated, hover, responsive\nTags: chart, tooltip, formatter, text, formatting, data-visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-label-formatter",
+  "display_name": "Chart Tooltip Label Formatter",
+  "preview_url": "/previews/shadcn/chart-tooltip-label-formatter.png"
+}

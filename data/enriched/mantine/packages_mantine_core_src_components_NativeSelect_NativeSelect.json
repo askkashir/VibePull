@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_NativeSelect_NativeSelect",
+  "name": "NativeSelect",
+  "source_code": "// packages/@mantine/core/src/components/NativeSelect/NativeSelect.tsx\nimport { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { ComboboxChevron, ComboboxData, getParsedComboboxData } from '../Combobox';\nimport { __BaseInputProps, __InputStylesNames } from '../Input';\nimport { InputBase } from '../InputBase';\nimport { NativeSelectOption } from './NativeSelectOption';\n\nexport interface NativeSelectProps\n  extends\n    BoxProps,\n    Omit<__BaseInputProps, 'pointer'>,\n    StylesApiProps<NativeSelectFactory>,\n    ElementProps<'select', 'size'> {\n  /**\n   * Data used to render options. Accepts strings, objects with label/value,\n   * or grouped options. If `children` prop is provided, `data` will be ignored.\n   */\n  data?: ComboboxData;\n}\n\nexport type NativeSelectFactory = Factory<{\n  props: NativeSelectProps;\n  ref: HTMLSelectElement;\n  stylesNames: __InputStylesNames;\n}>;\n\nconst defaultProps = {\n  size: 'sm',\n  rightSectionPointerEvents: 'none',\n} satisfies Partial<NativeSelectProps>;\n\nexport const NativeSelect = factory<NativeSelectFactory>((props) => {\n  const { data, children, size, error, rightSection, unstyled, ...others } = useProps(\n    ['Input', 'InputWrapper', 'NativeSelect'],\n    defaultProps,\n    props\n  );\n\n  const options = getParsedComboboxData<string>(data).map((item, index) => (\n    <NativeSelectOption key={index} data={item} />\n  ));\n\n  return (\n    <InputBase\n      component=\"select\"\n      {...others}\n      __staticSelector=\"NativeSelect\"\n      size={size}\n      pointer\n      error={error}\n      unstyled={unstyled}\n      rightSection={\n        rightSection || <ComboboxChevron size={size} error={error} unstyled={unstyled} />\n      }\n    >\n      {children || options}\n    </InputBase>\n  );\n});\n\nNativeSelect.classes = InputBase.classes;\nNativeSelect.displayName = '@mantine/core/NativeSelect';\n\nexport namespace NativeSelect {\n  export type Props = NativeSelectProps;\n  export type Factory = NativeSelectFactory;\n  export type StylesNames = __InputStylesNames;\n}\n",
+  "description": "",
+  "tags": [
+    "input",
+    "mantine",
+    "native",
+    "select"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "NativeSelect_NativeSelect",
+      "name": "NativeSelect",
+      "path": "packages/@mantine/core/src/components/NativeSelect/NativeSelect.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_NativeSelect_NativeSelect",
+      "name": "NativeSelect",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/NativeSelect/NativeSelect.tsx",
+          "content": "import { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { ComboboxChevron, ComboboxData, getParsedComboboxData } from '../Combobox';\nimport { __BaseInputProps, __InputStylesNames } from '../Input';\nimport { InputBase } from '../InputBase';\nimport { NativeSelectOption } from './NativeSelectOption';\n\nexport interface NativeSelectProps\n  extends\n    BoxProps,\n    Omit<__BaseInputProps, 'pointer'>,\n    StylesApiProps<NativeSelectFactory>,\n    ElementProps<'select', 'size'> {\n  /**\n   * Data used to render options. Accepts strings, objects with label/value,\n   * or grouped options. If `children` prop is provided, `data` will be ignored.\n   */\n  data?: ComboboxData;\n}\n\nexport type NativeSelectFactory = Factory<{\n  props: NativeSelectProps;\n  ref: HTMLSelectElement;\n  stylesNames: __InputStylesNames;\n}>;\n\nconst defaultProps = {\n  size: 'sm',\n  rightSectionPointerEvents: 'none',\n} satisfies Partial<NativeSelectProps>;\n\nexport const NativeSelect = factory<NativeSelectFactory>((props) => {\n  const { data, children, size, error, rightSection, unstyled, ...others } = useProps(\n    ['Input', 'InputWrapper', 'NativeSelect'],\n    defaultProps,\n    props\n  );\n\n  const options = getParsedComboboxData<string>(data).map((item, index) => (\n    <NativeSelectOption key={index} data={item} />\n  ));\n\n  return (\n    <InputBase\n      component=\"select\"\n      {...others}\n      __staticSelector=\"NativeSelect\"\n      size={size}\n      pointer\n      error={error}\n      unstyled={unstyled}\n      rightSection={\n        rightSection || <ComboboxChevron size={size} error={error} unstyled={unstyled} />\n      }\n    >\n      {children || options}\n    </InputBase>\n  );\n});\n\nNativeSelect.classes = InputBase.classes;\nNativeSelect.displayName = '@mantine/core/NativeSelect';\n\nexport namespace NativeSelect {\n  export type Props = NativeSelectProps;\n  export type Factory = NativeSelectFactory;\n  export type StylesNames = __InputStylesNames;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "NativeSelect is a native select UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: NativeSelect\nDescription: NativeSelect is a native select UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: input, mantine, native, select\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/NativeSelect/NativeSelect.tsx\nimport { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '../../core';\nimport { ComboboxChevron, ComboboxData, getParsedComboboxData } from '../Combobox';\nimport { __BaseInputProps, __InputStylesNames } from '../Input';\nimport { InputBase } from '../InputBase';\nimport { NativeSelectOption } from './NativeSelectOption';\n\nexport interface NativeSelectProps\n  extends\n    BoxProps,\n    Omit<__BaseInputPr",
+  "prompt_version": 2,
+  "clean_id": "native-select",
+  "display_name": "Native Select",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-nativeselect-nativeselect.png"
+}

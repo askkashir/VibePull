@@ -1,0 +1,61 @@
+{
+  "id": "hover-card-recipe",
+  "name": "hover-card-recipe",
+  "source_code": "// ../../packages/preset/src/recipes/hover-card.ts\nimport { hoverCardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const hoverCard = defineSlotRecipe({\n  className: 'hover-card',\n  slots: hoverCardAnatomy.keys(),\n  base: {\n    content: {\n      '--hovercard-bg': 'colors.gray.surface.bg',\n\n      bg: 'var(--hovercard-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxWidth: '80',\n      outline: '0',\n      padding: '4',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      zIndex: 'popover',\n      _open: {\n        animationStyle: 'slide-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'slide-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--hovercard-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n",
+  "description": "",
+  "tags": [
+    "card",
+    "hover",
+    "parkui",
+    "recipe"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "hover-card-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/hover-card.ts",
+          "type": "registry:recipe",
+          "imports": "import { hoverCard } from './hover-card'",
+          "content": "import { hoverCardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const hoverCard = defineSlotRecipe({\n  className: 'hover-card',\n  slots: hoverCardAnatomy.keys(),\n  base: {\n    content: {\n      '--hovercard-bg': 'colors.gray.surface.bg',\n\n      bg: 'var(--hovercard-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxWidth: '80',\n      outline: '0',\n      padding: '4',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      zIndex: 'popover',\n      _open: {\n        animationStyle: 'slide-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'slide-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--hovercard-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "hover-card-recipe",
+      "type": "registry:recipe",
+      "dependencies": [
+        "@pandacss/dev",
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "../../packages/preset/src/recipes/hover-card.ts",
+          "type": "registry:recipe",
+          "imports": "import { hoverCard } from './hover-card'",
+          "content": "import { hoverCardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const hoverCard = defineSlotRecipe({\n  className: 'hover-card',\n  slots: hoverCardAnatomy.keys(),\n  base: {\n    content: {\n      '--hovercard-bg': 'colors.gray.surface.bg',\n\n      bg: 'var(--hovercard-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxWidth: '80',\n      outline: '0',\n      padding: '4',\n      position: 'relative',\n      textStyle: 'sm',\n      transformOrigin: 'var(--transform-origin)',\n      zIndex: 'popover',\n      _open: {\n        animationStyle: 'slide-fade-in',\n        animationDuration: 'fast',\n      },\n      _closed: {\n        animationStyle: 'slide-fade-out',\n        animationDuration: 'faster',\n      },\n    },\n    arrow: {\n      '--arrow-size': 'sizes.3',\n      '--arrow-background': 'var(--hovercard-bg)',\n    },\n    arrowTip: {\n      borderTopWidth: '0.5px',\n      borderInlineStartWidth: '0.5px',\n    },\n  },\n})\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "hover-card-recipe is a hover card recipe UI component from the parkui corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: hover-card-recipe\nDescription: hover-card-recipe is a hover card recipe UI component from the parkui corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: \nTags: card, hover, parkui, recipe\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// ../../packages/preset/src/recipes/hover-card.ts\nimport { hoverCardAnatomy } from '@ark-ui/react/anatomy'\nimport { defineSlotRecipe } from '@pandacss/dev'\n\nexport const hoverCard = defineSlotRecipe({\n  className: 'hover-card',\n  slots: hoverCardAnatomy.keys(),\n  base: {\n    content: {\n      '--hovercard-bg': 'colors.gray.surface.bg',\n\n      bg: 'var(--hovercard-bg)',\n      borderRadius: 'l3',\n      boxShadow: 'lg',\n      display: 'flex',\n      flexDirection: 'column',\n      maxWidth: '80',\n   ",
+  "prompt_version": 2,
+  "clean_id": "hover-card-recipe",
+  "display_name": "Hover Card Recipe",
+  "preview_url": "/previews/parkui/hover-card-recipe.png"
+}

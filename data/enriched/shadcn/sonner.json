@@ -1,0 +1,41 @@
+{
+  "id": "sonner",
+  "name": "sonner",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "bar chart",
+    "progress indicator",
+    "range value"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sonner",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sonner\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** sonner, next-themes"
+  },
+  "visual_summary": "The Sonner component is a rectangular bar chart used to display numerical progress or a range of values. It typically consists of a horizontal bar with a progress indicator, a title, and a value label. Developers use this component to show incremental progress towards a goal or to display a value within a range.",
+  "style_tags": [
+    "modern",
+    "minimalist",
+    "colorful"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: sonner\nDescription: The Sonner component is a rectangular bar chart used to display numerical progress or a range of values. It typically consists of a horizontal bar with a progress indicator, a title, and a value label. Developers use this component to show incremental progress towards a goal or to display a value within a range.\nStyle: modern, minimalist, colorful\nInteractions: animated, hover, clickable\nTags: bar chart, progress indicator, range value\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sonner",
+  "display_name": "Sonner",
+  "preview_url": "/previews/shadcn/sonner.png"
+}

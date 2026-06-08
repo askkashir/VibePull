@@ -1,0 +1,42 @@
+{
+  "id": "packages_mantine_core_src_components_Dialog_index",
+  "name": "Dialog",
+  "source_code": "// packages/@mantine/core/src/components/Dialog/index.ts\nimport type { DialogCssVariables, DialogFactory, DialogProps, DialogStylesNames } from './Dialog';\n\nexport { Dialog } from './Dialog';\n\nexport type { DialogProps, DialogStylesNames, DialogCssVariables, DialogFactory };\n",
+  "description": "",
+  "tags": [
+    "dialog",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Dialog_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Dialog/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Dialog_index",
+      "name": "Dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Dialog/index.ts",
+          "content": "import type { DialogCssVariables, DialogFactory, DialogProps, DialogStylesNames } from './Dialog';\n\nexport { Dialog } from './Dialog';\n\nexport type { DialogProps, DialogStylesNames, DialogCssVariables, DialogFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Dialog is a dialog UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: Dialog\nDescription: Dialog is a dialog UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: dialog, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Dialog/index.ts\nimport type { DialogCssVariables, DialogFactory, DialogProps, DialogStylesNames } from './Dialog';\n\nexport { Dialog } from './Dialog';\n\nexport type { DialogProps, DialogStylesNames, DialogCssVariables, DialogFactory };\n",
+  "prompt_version": 2,
+  "clean_id": "dialog",
+  "display_name": "Dialog",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-dialog-index.png"
+}

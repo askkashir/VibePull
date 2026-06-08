@@ -1,0 +1,37 @@
+{
+  "id": "button-as-child",
+  "name": "button-as-child",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "inline-action",
+    "child-component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-as-child",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-as-child\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button component rendered as a child element for inline actions. It is typically used in a list or a card to provide a primary or secondary call-to-action. The component can be customized with different colors and styles.",
+  "style_tags": [
+    "e.g. rounded",
+    "square",
+    "flat"
+  ],
+  "interaction_tags": [],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-as-child\nDescription: A button component rendered as a child element for inline actions. It is typically used in a list or a card to provide a primary or secondary call-to-action. The component can be customized with different colors and styles.\nStyle: e.g. rounded, square, flat\nInteractions: \nTags: button, inline-action, child-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-as-child",
+  "display_name": "Button As Child",
+  "preview_url": "/previews/shadcn/button-as-child.png"
+}

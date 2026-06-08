@@ -1,0 +1,52 @@
+{
+  "id": "scroll-area",
+  "name": "scroll-area",
+  "source_code": "// src/components/ui/scroll-area.tsx\n'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ScrollArea from './scroll-area'",
+          "content": "'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n"
+        }
+      ],
+      "registryDependencies": [
+        "scroll-area-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "exports": "export * as ScrollArea from './scroll-area'",
+          "content": "'use client'\nimport { ScrollArea } from '@ark-ui/react/scroll-area'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { scrollArea } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(scrollArea)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport type ContentProps = ComponentProps<typeof Content>\n\nexport const Root = withProvider(ScrollArea.Root, 'root')\nexport const RootProvider = withProvider(ScrollArea.Root, 'root')\nexport const Content = withContext(ScrollArea.Content, 'content')\nexport const Corner = withContext(ScrollArea.Corner, 'corner')\nexport const Thumb = withContext(ScrollArea.Thumb, 'thumb')\nexport const Scrollbar = withContext(ScrollArea.Scrollbar, 'scrollbar', {\n  defaultProps: { children: <Thumb /> },\n})\nexport const Viewport = withContext(ScrollArea.Viewport, 'viewport')\n\nexport { ScrollAreaContext as Context } from '@ark-ui/react/scroll-area'\n"
+        }
+      ],
+      "registryDependencies": [
+        "scroll-area-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

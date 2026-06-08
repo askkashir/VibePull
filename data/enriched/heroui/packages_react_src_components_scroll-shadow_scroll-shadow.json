@@ -1,0 +1,46 @@
+{
+  "id": "packages_react_src_components_scroll-shadow_scroll-shadow",
+  "name": "scroll-shadow",
+  "source_code": "// packages/react/src/components/scroll-shadow/scroll-shadow.tsx\n\"use client\";\n\nimport type {ScrollShadowVariants} from \"@heroui/styles\";\nimport type {RefObject} from \"react\";\n\nimport {scrollShadowVariants} from \"@heroui/styles\";\nimport {mergeRefs} from \"@react-aria/utils\";\nimport {useMemo, useRef} from \"react\";\n\nimport {useSafeLayoutEffect} from \"../../hooks/use-safe-layout-effect\";\n\nimport {useScrollShadow} from \"./use-scroll-shadow\";\n\nexport type ScrollShadowVisibility = \"auto\" | \"both\" | \"top\" | \"bottom\" | \"left\" | \"right\" | \"none\";\n\nexport interface ScrollShadowRootProps\n  extends Omit<React.ComponentProps<\"div\">, \"size\">, ScrollShadowVariants {\n  /**\n   * The shadow size in pixels\n   * @default 40\n   */\n  size?: number;\n\n  /**\n   * The scroll offset before showing shadows (in pixels)\n   * @default 0\n   */\n  offset?: number;\n\n  /**\n   * Controlled shadow visibility state\n   * @default \"auto\"\n   */\n  visibility?: ScrollShadowVisibility;\n\n  /**\n   * Whether scroll shadow detection is enabled\n   * @default true\n   */\n  isEnabled?: boolean;\n\n  /**\n   * Callback invoked when shadow visibility changes\n   */\n  onVisibilityChange?: (visibility: ScrollShadowVisibility) => void;\n}\n\nexport const ScrollShadowRoot = ({\n  children,\n  className,\n  hideScrollBar = false,\n  isEnabled = true,\n  offset = 0,\n  onVisibilityChange,\n  orientation = \"vertical\",\n  ref,\n  size = 40,\n  variant = \"fade\",\n  visibility = \"auto\",\n  ...props\n}: ScrollShadowRootProps) => {\n  const internalRef = useRef<HTMLDivElement | null>(null);\n\n  useScrollShadow({\n    containerRef: internalRef as RefObject<HTMLElement>,\n    isEnabled,\n    offset,\n    onVisibilityChange,\n    orientation,\n    visibility,\n  });\n\n  // Handle controlled visibility mode\n  useSafeLayoutEffect(() => {\n    const el = internalRef.current;\n\n    if (!el || visibility === \"auto\") return;\n\n    // Clear all data attributes\n    delete el.dataset[\"topScroll\"];\n    delete el.dataset[\"bottomScroll\"];\n    delete el.dataset[\"topBottomScroll\"];\n    delete el.dataset[\"leftScroll\"];\n    delete el.dataset[\"rightScroll\"];\n    delete el.dataset[\"leftRightScroll\"];\n\n    // Set controlled visibility\n    if (visibility === \"both\") {\n      el.dataset[orientation === \"vertical\" ? \"topBottomScroll\" : \"leftRightScroll\"] = \"true\";\n    } else if (visibility !== \"none\") {\n      el.dataset[`${visibility}Scroll`] = \"true\";\n    }\n  }, [visibility, orientation]);\n\n  const slots = useMemo(\n    () =>\n      scrollShadowVariants({\n        hideScrollBar,\n        orientation,\n        variant,\n      }),\n    [orientation, hideScrollBar, variant],\n  );\n\n  return (\n    <div\n      ref={mergeRefs(internalRef, ref)}\n      className={slots.base({className})}\n      data-orientation={orientation}\n      data-scroll-shadow-size={size}\n      data-slot=\"scroll-shadow\"\n      style={{\n        // @ts-expect-error - CSS variables are not typed\n        \"--scroll-shadow-size\": `${size}px`,\n        ...props.style,\n      }}\n      {...props}\n    >\n      {children}\n    </div>\n  );\n};\n\nScrollShadowRoot.displayName = \"HeroUI.ScrollShadow\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "other",
+    "scroll",
+    "shadow"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "scroll-shadow_scroll-shadow",
+      "name": "scroll-shadow",
+      "path": "packages/react/src/components/scroll-shadow/scroll-shadow.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_scroll-shadow_scroll-shadow",
+      "name": "scroll-shadow",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/scroll-shadow/scroll-shadow.tsx",
+          "content": "\"use client\";\n\nimport type {ScrollShadowVariants} from \"@heroui/styles\";\nimport type {RefObject} from \"react\";\n\nimport {scrollShadowVariants} from \"@heroui/styles\";\nimport {mergeRefs} from \"@react-aria/utils\";\nimport {useMemo, useRef} from \"react\";\n\nimport {useSafeLayoutEffect} from \"../../hooks/use-safe-layout-effect\";\n\nimport {useScrollShadow} from \"./use-scroll-shadow\";\n\nexport type ScrollShadowVisibility = \"auto\" | \"both\" | \"top\" | \"bottom\" | \"left\" | \"right\" | \"none\";\n\nexport interface ScrollShadowRootProps\n  extends Omit<React.ComponentProps<\"div\">, \"size\">, ScrollShadowVariants {\n  /**\n   * The shadow size in pixels\n   * @default 40\n   */\n  size?: number;\n\n  /**\n   * The scroll offset before showing shadows (in pixels)\n   * @default 0\n   */\n  offset?: number;\n\n  /**\n   * Controlled shadow visibility state\n   * @default \"auto\"\n   */\n  visibility?: ScrollShadowVisibility;\n\n  /**\n   * Whether scroll shadow detection is enabled\n   * @default true\n   */\n  isEnabled?: boolean;\n\n  /**\n   * Callback invoked when shadow visibility changes\n   */\n  onVisibilityChange?: (visibility: ScrollShadowVisibility) => void;\n}\n\nexport const ScrollShadowRoot = ({\n  children,\n  className,\n  hideScrollBar = false,\n  isEnabled = true,\n  offset = 0,\n  onVisibilityChange,\n  orientation = \"vertical\",\n  ref,\n  size = 40,\n  variant = \"fade\",\n  visibility = \"auto\",\n  ...props\n}: ScrollShadowRootProps) => {\n  const internalRef = useRef<HTMLDivElement | null>(null);\n\n  useScrollShadow({\n    containerRef: internalRef as RefObject<HTMLElement>,\n    isEnabled,\n    offset,\n    onVisibilityChange,\n    orientation,\n    visibility,\n  });\n\n  // Handle controlled visibility mode\n  useSafeLayoutEffect(() => {\n    const el = internalRef.current;\n\n    if (!el || visibility === \"auto\") return;\n\n    // Clear all data attributes\n    delete el.dataset[\"topScroll\"];\n    delete el.dataset[\"bottomScroll\"];\n    delete el.dataset[\"topBottomScroll\"];\n    delete el.dataset[\"leftScroll\"];\n    delete el.dataset[\"rightScroll\"];\n    delete el.dataset[\"leftRightScroll\"];\n\n    // Set controlled visibility\n    if (visibility === \"both\") {\n      el.dataset[orientation === \"vertical\" ? \"topBottomScroll\" : \"leftRightScroll\"] = \"true\";\n    } else if (visibility !== \"none\") {\n      el.dataset[`${visibility}Scroll`] = \"true\";\n    }\n  }, [visibility, orientation]);\n\n  const slots = useMemo(\n    () =>\n      scrollShadowVariants({\n        hideScrollBar,\n        orientation,\n        variant,\n      }),\n    [orientation, hideScrollBar, variant],\n  );\n\n  return (\n    <div\n      ref={mergeRefs(internalRef, ref)}\n      className={slots.base({className})}\n      data-orientation={orientation}\n      data-scroll-shadow-size={size}\n      data-slot=\"scroll-shadow\"\n      style={{\n        // @ts-expect-error - CSS variables are not typed\n        \"--scroll-shadow-size\": `${size}px`,\n        ...props.style,\n      }}\n      {...props}\n    >\n      {children}\n    </div>\n  );\n};\n\nScrollShadowRoot.displayName = \"HeroUI.ScrollShadow\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "scroll-shadow is a scroll shadow UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: scroll-shadow\nDescription: scroll-shadow is a scroll shadow UI component from the heroui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: shadow, utility-styled\nInteractions: \nTags: heroui, other, scroll, shadow\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/scroll-shadow/scroll-shadow.tsx\n\"use client\";\n\nimport type {ScrollShadowVariants} from \"@heroui/styles\";\nimport type {RefObject} from \"react\";\n\nimport {scrollShadowVariants} from \"@heroui/styles\";\nimport {mergeRefs} from \"@react-aria/utils\";\nimport {useMemo, useRef} from \"react\";\n\nimport {useSafeLayoutEffect} from \"../../hooks/use-safe-layout-effect\";\n\nimport {useScrollShadow} from \"./use-scroll-shadow\";\n\nexport type ScrollShadowVisibility = \"auto\" | \"both\" | \"to",
+  "prompt_version": 2,
+  "clean_id": "scroll-shadow",
+  "display_name": "Scroll Shadow",
+  "preview_url": "/previews/heroui/packages-react-src-components-scroll-shadow-scroll-shadow.png"
+}

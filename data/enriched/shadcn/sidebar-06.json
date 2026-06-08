@@ -1,0 +1,42 @@
+{
+  "id": "sidebar-06",
+  "name": "sidebar-06",
+  "source_code": "",
+  "description": "A sidebar with submenus as dropdowns.",
+  "tags": [
+    "sidebar",
+    "submenu",
+    "dropdown",
+    "navigation",
+    "categories",
+    "menus"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-06",
+      "type": "registry:block",
+      "description": "A sidebar with submenus as dropdowns.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-06\n\nA sidebar with submenus as dropdowns.\n\n**Type:** registry:block\n**Files:** 4 file(s)"
+  },
+  "visual_summary": "A sidebar component with submenus implemented as dropdowns, useful for navigation menus in larger applications where users need easy access to multiple categories.",
+  "style_tags": [
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "dropdown"
+  ],
+  "component_type": "sidebar",
+  "generation_prompt": "Create a production-ready sidebar component with the following characteristics:\n\nName: sidebar-06\nDescription: A sidebar component with submenus implemented as dropdowns, useful for navigation menus in larger applications where users need easy access to multiple categories.\nStyle: glassmorphism\nInteractions: clickable, dropdown\nTags: sidebar, submenu, dropdown, navigation, categories, menus\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-06",
+  "display_name": "Sidebar 06",
+  "preview_url": "/previews/shadcn/sidebar-06.png"
+}

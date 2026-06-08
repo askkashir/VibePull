@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_error-message_error-message",
+  "name": "error-message",
+  "source_code": "// packages/react/src/components/error-message/error-message.tsx\n\"use client\";\n\nimport type {ErrorMessageVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TextProps} from \"react-aria-components/Text\";\n\nimport {errorMessageVariants} from \"@heroui/styles\";\nimport {Text} from \"react-aria-components/Text\";\n\n/* -------------------------------------------------------------------------------------------------\n * Error Message Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ErrorMessageRootProps\n  extends ComponentPropsWithRef<typeof Text>, TextProps, ErrorMessageVariants {}\n\nconst ErrorMessageRoot = ({children, className, ...rest}: ErrorMessageRootProps) => {\n  return (\n    <Text\n      className={errorMessageVariants({className})}\n      data-slot=\"error-message\"\n      slot=\"errorMessage\"\n      {...rest}\n    >\n      {children}\n    </Text>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ErrorMessageRoot};\n\nexport type {ErrorMessageRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "error-message_error-message",
+      "name": "error-message",
+      "path": "packages/react/src/components/error-message/error-message.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_error-message_error-message",
+      "name": "error-message",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/error-message/error-message.tsx",
+          "content": "\"use client\";\n\nimport type {ErrorMessageVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\nimport type {TextProps} from \"react-aria-components/Text\";\n\nimport {errorMessageVariants} from \"@heroui/styles\";\nimport {Text} from \"react-aria-components/Text\";\n\n/* -------------------------------------------------------------------------------------------------\n * Error Message Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ErrorMessageRootProps\n  extends ComponentPropsWithRef<typeof Text>, TextProps, ErrorMessageVariants {}\n\nconst ErrorMessageRoot = ({children, className, ...rest}: ErrorMessageRootProps) => {\n  return (\n    <Text\n      className={errorMessageVariants({className})}\n      data-slot=\"error-message\"\n      slot=\"errorMessage\"\n      {...rest}\n    >\n      {children}\n    </Text>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ErrorMessageRoot};\n\nexport type {ErrorMessageRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

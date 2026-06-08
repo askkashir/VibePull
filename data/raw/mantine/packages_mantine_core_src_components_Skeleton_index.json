@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Skeleton_index",
+  "name": "Skeleton",
+  "source_code": "// packages/@mantine/core/src/components/Skeleton/index.ts\nimport type {\n  SkeletonCssVariables,\n  SkeletonFactory,\n  SkeletonProps,\n  SkeletonStylesNames,\n} from './Skeleton';\n\nexport { Skeleton } from './Skeleton';\n\nexport type { SkeletonProps, SkeletonStylesNames, SkeletonCssVariables, SkeletonFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Skeleton_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Skeleton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Skeleton_index",
+      "name": "Skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Skeleton/index.ts",
+          "content": "import type {\n  SkeletonCssVariables,\n  SkeletonFactory,\n  SkeletonProps,\n  SkeletonStylesNames,\n} from './Skeleton';\n\nexport { Skeleton } from './Skeleton';\n\nexport type { SkeletonProps, SkeletonStylesNames, SkeletonCssVariables, SkeletonFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

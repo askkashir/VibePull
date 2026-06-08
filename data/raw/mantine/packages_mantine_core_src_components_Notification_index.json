@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Notification_index",
+  "name": "Notification",
+  "source_code": "// packages/@mantine/core/src/components/Notification/index.ts\nimport type {\n  NotificationCssVariables,\n  NotificationFactory,\n  NotificationProps,\n  NotificationStylesNames,\n} from './Notification';\n\nexport { Notification } from './Notification';\n\nexport type {\n  NotificationProps,\n  NotificationStylesNames,\n  NotificationFactory,\n  NotificationCssVariables,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Notification_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Notification/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Notification_index",
+      "name": "Notification",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Notification/index.ts",
+          "content": "import type {\n  NotificationCssVariables,\n  NotificationFactory,\n  NotificationProps,\n  NotificationStylesNames,\n} from './Notification';\n\nexport { Notification } from './Notification';\n\nexport type {\n  NotificationProps,\n  NotificationStylesNames,\n  NotificationFactory,\n  NotificationCssVariables,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

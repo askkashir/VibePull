@@ -1,0 +1,38 @@
+{
+  "id": "chart-pie-label-list",
+  "name": "chart-pie-label-list",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "pie chart",
+    "data visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-label-list",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-label-list\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A list of labels for a pie chart, often used in data visualizations to display categorical data. It's a great solution when you need to present multiple categories on a chart. Easy to integrate and customize for different chart types.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: chart-pie-label-list\nDescription: A list of labels for a pie chart, often used in data visualizations to display categorical data. It's a great solution when you need to present multiple categories on a chart. Easy to integrate and customize for different chart types.\nStyle: e.g. dark, minimal\nInteractions: e.g. hover, clickable\nTags: pie chart, data visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-pie-label-list",
+  "display_name": "Chart Pie Label List",
+  "preview_url": "/previews/shadcn/chart-pie-label-list.png"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-01",
+  "name": "sidebar-01",
+  "source_code": "",
+  "description": "A simple sidebar with navigation grouped by section.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-01",
+      "type": "registry:block",
+      "description": "A simple sidebar with navigation grouped by section.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-01\n\nA simple sidebar with navigation grouped by section.\n\n**Type:** registry:block\n**Files:** 4 file(s)"
+  }
+}

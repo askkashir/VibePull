@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Breadcrumbs_index",
+  "name": "Breadcrumbs",
+  "source_code": "// packages/@mantine/core/src/components/Breadcrumbs/index.ts\nexport { Breadcrumbs } from './Breadcrumbs';\nexport type {\n  BreadcrumbsCssVariables,\n  BreadcrumbsFactory,\n  BreadcrumbsProps,\n  BreadcrumbsStylesNames,\n} from './Breadcrumbs';\n",
+  "description": "",
+  "tags": [
+    "breadcrumbs",
+    "navigation",
+    "hierarchy"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Breadcrumbs_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Breadcrumbs/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Breadcrumbs_index",
+      "name": "Breadcrumbs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Breadcrumbs/index.ts",
+          "content": "export { Breadcrumbs } from './Breadcrumbs';\nexport type {\n  BreadcrumbsCssVariables,\n  BreadcrumbsFactory,\n  BreadcrumbsProps,\n  BreadcrumbsStylesNames,\n} from './Breadcrumbs';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Breadcrumb component, typically used to show the user's current location within a hierarchy. It's commonly used in navigation and file systems. A developer would use this component to improve user experience.",
+  "style_tags": [
+    "default",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: Breadcrumbs\nDescription: Breadcrumb component, typically used to show the user's current location within a hierarchy. It's commonly used in navigation and file systems. A developer would use this component to improve user experience.\nStyle: default, minimal\nInteractions: \nTags: breadcrumbs, navigation, hierarchy\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Breadcrumbs/index.ts\nexport { Breadcrumbs } from './Breadcrumbs';\nexport type {\n  BreadcrumbsCssVariables,\n  BreadcrumbsFactory,\n  BreadcrumbsProps,\n  BreadcrumbsStylesNames,\n} from './Breadcrumbs';\n",
+  "prompt_version": 2,
+  "clean_id": "breadcrumbs",
+  "display_name": "Breadcrumbs",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-breadcrumbs-index.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "button-group-split",
+  "name": "button-group-split",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "group",
+    "split",
+    "layout",
+    "navigation",
+    "form"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-split",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-split\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A customizable group of buttons that can be split across multiple rows or columns, useful in scenarios where a lot of buttons need to be displayed without overwhelming the user. This component is ideal for navigation menus, product filtering options, or action buttons. You can adjust the layout and appearance to fit your specific use case.",
+  "style_tags": [
+    "flat",
+    "3d",
+    "rounded",
+    "square"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover",
+    "disabled"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-split\nDescription: A customizable group of buttons that can be split across multiple rows or columns, useful in scenarios where a lot of buttons need to be displayed without overwhelming the user. This component is ideal for navigation menus, product filtering options, or action buttons. You can adjust the layout and appearance to fit your specific use case.\nStyle: flat, 3d, rounded, square\nInteractions: clickable, hover, disabled\nTags: button, group, split, layout, navigation, form\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-split",
+  "display_name": "Button Group Split",
+  "preview_url": "/previews/shadcn/button-group-split.png"
+}

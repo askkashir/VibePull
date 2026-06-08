@@ -1,0 +1,40 @@
+{
+  "id": "badge-demo",
+  "name": "badge-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "status indicator",
+    "notification",
+    "informational element"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "badge-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## badge-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A badge component is a small icon or label placed on top of another component to provide additional context or information. It can be used for notification counts, status updates, or simply to add visual interest. Examples include displaying the number of new messages, the current user's status, or the number of items in a cart.",
+  "style_tags": [
+    "e.g. flat",
+    "minimal",
+    "inline"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: badge-demo\nDescription: A badge component is a small icon or label placed on top of another component to provide additional context or information. It can be used for notification counts, status updates, or simply to add visual interest. Examples include displaying the number of new messages, the current user's status, or the number of items in a cart.\nStyle: e.g. flat, minimal, inline\nInteractions: e.g. hover, clickable\nTags: status indicator, notification, informational element\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "badge-demo",
+  "display_name": "Badge Demo",
+  "preview_url": "/previews/shadcn/badge-demo.png"
+}

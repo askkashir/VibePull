@@ -1,0 +1,41 @@
+{
+  "id": "carousel-size",
+  "name": "carousel-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "responsive",
+    "dynamic",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A carousel-size component is a container that adapts to its children's widths, allowing for a dynamic layout. It is typically used in scenarios where the content needs to adjust based on screen size or device. A developer would use it to create responsive and scalable UI elements.",
+  "style_tags": [
+    "e.g. light",
+    "boxed",
+    "gradient"
+  ],
+  "interaction_tags": [
+    "e.g. swipe",
+    "drag",
+    "responsive"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: carousel-size\nDescription: A carousel-size component is a container that adapts to its children's widths, allowing for a dynamic layout. It is typically used in scenarios where the content needs to adjust based on screen size or device. A developer would use it to create responsive and scalable UI elements.\nStyle: e.g. light, boxed, gradient\nInteractions: e.g. swipe, drag, responsive\nTags: responsive, dynamic, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "carousel-size",
+  "display_name": "Carousel Size",
+  "preview_url": "/previews/shadcn/carousel-size.png"
+}

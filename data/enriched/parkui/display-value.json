@@ -1,0 +1,62 @@
+{
+  "id": "display-value",
+  "name": "display-value",
+  "source_code": "// src/components/ui/display-value.tsx\n'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n",
+  "description": "",
+  "tags": [
+    "display",
+    "other",
+    "parkui",
+    "value"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "display-value",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/display-value.tsx",
+          "type": "registry:ui",
+          "exports": "export { DisplayValue, type DisplayValueProps } from './display-value'",
+          "content": "'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "span"
+      ]
+    },
+    "registry_item": {
+      "name": "display-value",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/display-value.tsx",
+          "type": "registry:ui",
+          "exports": "export { DisplayValue, type DisplayValueProps } from './display-value'",
+          "content": "'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValue = isNotEmpty(value) ? (formatValue?.(value) ?? String(value)) : null\n\n  if (formattedValue) {\n    return formattedValue\n  }\n\n  return (\n    <>\n      <Span color=\"fg.subtle\" aria-hidden>\n        —\n      </Span>\n      <VisuallyHidden>No value available</VisuallyHidden>\n    </>\n  )\n}\n\nconst isString = (value: unknown): value is string => typeof value === 'string'\n\nconst isNotEmpty = <T,>(value: T | null | undefined): value is NonNullable<T> => {\n  if (value == null) return false\n  if (isString(value) || Array.isArray(value)) return value.length > 0\n  return true\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "span"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "display-value is a display value UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: display-value\nDescription: display-value is a display value UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: display, other, parkui, value\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/display-value.tsx\n'use client'\nimport { VisuallyHidden } from 'styled-system/jsx'\nimport { Span } from './span'\n\nexport interface DisplayValueProps<T> {\n  /** The value to display */\n  value?: T | null | undefined\n  /** Optional function to format the value before displaying */\n  formatValue?: (value: NonNullable<T>) => string | null | undefined\n}\n\nexport const DisplayValue = <T,>(props: DisplayValueProps<T>) => {\n  const { value, formatValue } = props\n\n  const formattedValu",
+  "prompt_version": 2,
+  "clean_id": "display-value",
+  "display_name": "Display Value",
+  "preview_url": "/previews/parkui/display-value.png"
+}

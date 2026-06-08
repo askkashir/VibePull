@@ -1,0 +1,39 @@
+{
+  "id": "field-slider",
+  "name": "field-slider",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "range",
+    "configurable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-slider",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-slider\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "field-slider is a versatile UI component that allows users to select a value from a range of options. It's commonly used in cases where a precise numerical value needs to be input, such as configuring image brightness or text font size. The component features a slider bar and numerical input field, enabling users to seamlessly switch between manual input and dragging the slider.",
+  "style_tags": [
+    "e.g. modern",
+    "compact"
+  ],
+  "interaction_tags": [
+    "e.g. draggable",
+    "fillable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: field-slider\nDescription: field-slider is a versatile UI component that allows users to select a value from a range of options. It's commonly used in cases where a precise numerical value needs to be input, such as configuring image brightness or text font size. The component features a slider bar and numerical input field, enabling users to seamlessly switch between manual input and dragging the slider.\nStyle: e.g. modern, compact\nInteractions: e.g. draggable, fillable\nTags: input, range, configurable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-slider",
+  "display_name": "Field Slider",
+  "preview_url": "/previews/shadcn/field-slider.png"
+}

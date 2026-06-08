@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellNavbar_AppShellNavbar",
+  "name": "AppShellNavbar",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellNavbar/AppShellNavbar.tsx\nimport React from 'react';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport type { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellNavbarStylesNames = 'navbar';\n\nexport interface AppShellNavbarProps\n  extends\n    BoxProps,\n    AppShellCompoundProps,\n    StylesApiProps<AppShellNavbarFactory>,\n    ElementProps<'div'> {}\n\nexport type AppShellNavbarFactory = Factory<{\n  props: AppShellNavbarProps;\n  ref: HTMLElement;\n  stylesNames: AppShellNavbarStylesNames;\n}>;\n\nexport const AppShellNavbar = factory<AppShellNavbarFactory>((_props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    withBorder,\n    zIndex,\n    mod,\n    ...others\n  } = useProps('AppShellNavbar', null, _props);\n\n  const ctx = useAppShellContext();\n\n  if (ctx.disabled) {\n    return null;\n  }\n\n  return (\n    <Box\n      component=\"nav\"\n      mod={[{ 'with-border': withBorder ?? ctx.withBorder }, mod]}\n      {...ctx.getStyles('navbar', { className, classNames, styles, style })}\n      {...others}\n      __vars={{ '--app-shell-navbar-z-index': `calc(${zIndex ?? ctx.zIndex} + 1)` }}\n    />\n  );\n});\n\nAppShellNavbar.classes = classes;\nAppShellNavbar.displayName = '@mantine/core/AppShellNavbar';\n",
+  "description": "",
+  "tags": [
+    "app",
+    "mantine",
+    "navbar",
+    "shell"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellNavbar_AppShellNavbar",
+      "name": "AppShellNavbar",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellNavbar/AppShellNavbar.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellNavbar_AppShellNavbar",
+      "name": "AppShellNavbar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellNavbar/AppShellNavbar.tsx",
+          "content": "import React from 'react';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport type { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellNavbarStylesNames = 'navbar';\n\nexport interface AppShellNavbarProps\n  extends\n    BoxProps,\n    AppShellCompoundProps,\n    StylesApiProps<AppShellNavbarFactory>,\n    ElementProps<'div'> {}\n\nexport type AppShellNavbarFactory = Factory<{\n  props: AppShellNavbarProps;\n  ref: HTMLElement;\n  stylesNames: AppShellNavbarStylesNames;\n}>;\n\nexport const AppShellNavbar = factory<AppShellNavbarFactory>((_props) => {\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    withBorder,\n    zIndex,\n    mod,\n    ...others\n  } = useProps('AppShellNavbar', null, _props);\n\n  const ctx = useAppShellContext();\n\n  if (ctx.disabled) {\n    return null;\n  }\n\n  return (\n    <Box\n      component=\"nav\"\n      mod={[{ 'with-border': withBorder ?? ctx.withBorder }, mod]}\n      {...ctx.getStyles('navbar', { className, classNames, styles, style })}\n      {...others}\n      __vars={{ '--app-shell-navbar-z-index': `calc(${zIndex ?? ctx.zIndex} + 1)` }}\n    />\n  );\n});\n\nAppShellNavbar.classes = classes;\nAppShellNavbar.displayName = '@mantine/core/AppShellNavbar';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShellNavbar is a app shell navbar UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: AppShellNavbar\nDescription: AppShellNavbar is a app shell navbar UI component from the mantine corpus. It provides reusable navbar behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: app, mantine, navbar, shell\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellNavbar/AppShellNavbar.tsx\nimport React from 'react';\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n} from '../../../core';\nimport { useAppShellContext } from '../AppShell.context';\nimport type { AppShellCompoundProps } from '../AppShell.types';\nimport classes from '../AppShell.module.css';\n\nexport type AppShellNavbarStylesNames = 'navbar';\n\nexport interface AppShellNavbarProps\n  extends\n  ",
+  "prompt_version": 2,
+  "clean_id": "app-shell-navbar",
+  "display_name": "App Shell Navbar",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellnavbar-appshellnavbar.png"
+}

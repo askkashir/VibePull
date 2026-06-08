@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalOverlay",
+  "name": "ModalOverlay",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalOverlay.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseOverlay, ModalBaseOverlayProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalOverlayStylesNames = 'overlay';\n\nexport interface ModalOverlayProps\n  extends ModalBaseOverlayProps, CompoundStylesApiProps<ModalOverlayFactory> {}\n\nexport type ModalOverlayFactory = Factory<{\n  props: ModalOverlayProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalOverlayStylesNames;\n  compound: true;\n}>;\n\nexport const ModalOverlay = factory<ModalOverlayFactory>((_props) => {\n  const props = useProps('ModalOverlay', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseOverlay\n      {...ctx.getStyles('overlay', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalOverlay.classes = classes;\nModalOverlay.displayName = '@mantine/core/ModalOverlay';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "modal",
+    "overlay"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalOverlay",
+      "name": "ModalOverlay",
+      "path": "packages/@mantine/core/src/components/Modal/ModalOverlay.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalOverlay",
+      "name": "ModalOverlay",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalOverlay.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseOverlay, ModalBaseOverlayProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalOverlayStylesNames = 'overlay';\n\nexport interface ModalOverlayProps\n  extends ModalBaseOverlayProps, CompoundStylesApiProps<ModalOverlayFactory> {}\n\nexport type ModalOverlayFactory = Factory<{\n  props: ModalOverlayProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalOverlayStylesNames;\n  compound: true;\n}>;\n\nexport const ModalOverlay = factory<ModalOverlayFactory>((_props) => {\n  const props = useProps('ModalOverlay', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseOverlay\n      {...ctx.getStyles('overlay', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalOverlay.classes = classes;\nModalOverlay.displayName = '@mantine/core/ModalOverlay';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalOverlay is a modal overlay UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalOverlay\nDescription: ModalOverlay is a modal overlay UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: mantine, modal, overlay\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/ModalOverlay.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseOverlay, ModalBaseOverlayProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalOverlayStylesNames = 'overlay';\n\nexport interface ModalOverlayProps\n  extends ModalBaseOverlayProps, CompoundStylesApiProps<ModalOverlayFactory> {}\n\nexport type ModalOverla",
+  "prompt_version": 2,
+  "clean_id": "modal-overlay",
+  "display_name": "Modal Overlay",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modaloverlay.png"
+}

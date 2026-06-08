@@ -1,0 +1,22 @@
+{
+  "id": "card-with-form",
+  "name": "card-with-form",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "card-with-form",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## card-with-form\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

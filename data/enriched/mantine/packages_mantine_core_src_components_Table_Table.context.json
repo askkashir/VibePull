@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Table_Table.context",
+  "name": "Table.context",
+  "source_code": "// packages/@mantine/core/src/components/Table/Table.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { TableFactory } from './Table';\n\nexport interface TableContextValue {\n  getStyles: GetStylesApi<TableFactory>;\n  stickyHeader: boolean | undefined;\n  striped: 'odd' | 'even' | undefined;\n  highlightOnHover: boolean | undefined;\n  withColumnBorders: boolean | undefined;\n  withRowBorders: boolean | undefined;\n  captionSide: 'top' | 'bottom';\n}\n\nexport const [TableProvider, useTableContext] = createSafeContext<TableContextValue>(\n  'Table component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "table"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Table_Table.context",
+      "name": "Table.context",
+      "path": "packages/@mantine/core/src/components/Table/Table.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Table_Table.context",
+      "name": "Table.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Table/Table.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { TableFactory } from './Table';\n\nexport interface TableContextValue {\n  getStyles: GetStylesApi<TableFactory>;\n  stickyHeader: boolean | undefined;\n  striped: 'odd' | 'even' | undefined;\n  highlightOnHover: boolean | undefined;\n  withColumnBorders: boolean | undefined;\n  withRowBorders: boolean | undefined;\n  captionSide: 'top' | 'bottom';\n}\n\nexport const [TableProvider, useTableContext] = createSafeContext<TableContextValue>(\n  'Table component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Table.context is a table context UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "table",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: Table.context\nDescription: Table.context is a table context UI component from the mantine corpus. It provides reusable table behavior and styling for React or web UI screens.\nStyle: \nInteractions: hover\nTags: context, mantine, table\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Table/Table.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { TableFactory } from './Table';\n\nexport interface TableContextValue {\n  getStyles: GetStylesApi<TableFactory>;\n  stickyHeader: boolean | undefined;\n  striped: 'odd' | 'even' | undefined;\n  highlightOnHover: boolean | undefined;\n  withColumnBorders: boolean | undefined;\n  withRowBorders: boolean | undefined;\n  captionSide: 'top' | 'bottom';\n}\n\nexport const [Ta",
+  "prompt_version": 2,
+  "clean_id": "table",
+  "display_name": "Table",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-table-table-context.png"
+}

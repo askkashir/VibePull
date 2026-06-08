@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputDescription_InputDescription",
+  "name": "InputDescription",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputDescription/InputDescription.tsx\nimport { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputDescriptionStylesNames = 'description';\nexport type InputDescriptionCssVariables = {\n  description: '--input-description-size';\n};\n\nexport interface InputDescriptionProps\n  extends BoxProps, StylesApiProps<InputDescriptionFactory>, ElementProps<'div'> {\n  __staticSelector?: string;\n  __inheritStyles?: boolean;\n\n  /** Controls description `font-size` @default 'sm' */\n  size?: MantineFontSize;\n}\n\nexport type InputDescriptionFactory = Factory<{\n  props: InputDescriptionProps;\n  ref: HTMLParagraphElement;\n  stylesNames: InputDescriptionStylesNames;\n  vars: InputDescriptionCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<InputDescriptionFactory>((_, { size }) => ({\n  description: {\n    '--input-description-size':\n      size === undefined ? undefined : `calc(${getFontSize(size)} - ${rem(2)})`,\n  },\n}));\n\nexport const InputDescription = factory<InputDescriptionFactory>((_props) => {\n  const props = useProps('InputDescription', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    __staticSelector,\n    __inheritStyles = true,\n    attributes,\n    ...others\n  } = useProps('InputDescription', null, props);\n  const ctx = use(InputWrapperContext);\n\n  const _getStyles = useStyles<InputDescriptionFactory>({\n    name: ['InputWrapper', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'description',\n    vars,\n    varsResolver,\n  });\n\n  const getStyles = (__inheritStyles && ctx?.getStyles) || _getStyles;\n\n  return (\n    <Box\n      component=\"p\"\n      {...getStyles('description', ctx?.getStyles ? { className, style } : undefined)}\n      {...others}\n    />\n  );\n});\n\nInputDescription.classes = classes;\nInputDescription.varsResolver = varsResolver;\nInputDescription.displayName = '@mantine/core/InputDescription';\n",
+  "description": "",
+  "tags": [
+    "description",
+    "input",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputDescription_InputDescription",
+      "name": "InputDescription",
+      "path": "packages/@mantine/core/src/components/Input/InputDescription/InputDescription.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputDescription_InputDescription",
+      "name": "InputDescription",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputDescription/InputDescription.tsx",
+          "content": "import { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputDescriptionStylesNames = 'description';\nexport type InputDescriptionCssVariables = {\n  description: '--input-description-size';\n};\n\nexport interface InputDescriptionProps\n  extends BoxProps, StylesApiProps<InputDescriptionFactory>, ElementProps<'div'> {\n  __staticSelector?: string;\n  __inheritStyles?: boolean;\n\n  /** Controls description `font-size` @default 'sm' */\n  size?: MantineFontSize;\n}\n\nexport type InputDescriptionFactory = Factory<{\n  props: InputDescriptionProps;\n  ref: HTMLParagraphElement;\n  stylesNames: InputDescriptionStylesNames;\n  vars: InputDescriptionCssVariables;\n}>;\n\nconst varsResolver = createVarsResolver<InputDescriptionFactory>((_, { size }) => ({\n  description: {\n    '--input-description-size':\n      size === undefined ? undefined : `calc(${getFontSize(size)} - ${rem(2)})`,\n  },\n}));\n\nexport const InputDescription = factory<InputDescriptionFactory>((_props) => {\n  const props = useProps('InputDescription', null, _props);\n  const {\n    classNames,\n    className,\n    style,\n    styles,\n    unstyled,\n    vars,\n    __staticSelector,\n    __inheritStyles = true,\n    attributes,\n    ...others\n  } = useProps('InputDescription', null, props);\n  const ctx = use(InputWrapperContext);\n\n  const _getStyles = useStyles<InputDescriptionFactory>({\n    name: ['InputWrapper', __staticSelector],\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    rootSelector: 'description',\n    vars,\n    varsResolver,\n  });\n\n  const getStyles = (__inheritStyles && ctx?.getStyles) || _getStyles;\n\n  return (\n    <Box\n      component=\"p\"\n      {...getStyles('description', ctx?.getStyles ? { className, style } : undefined)}\n      {...others}\n    />\n  );\n});\n\nInputDescription.classes = classes;\nInputDescription.varsResolver = varsResolver;\nInputDescription.displayName = '@mantine/core/InputDescription';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "InputDescription is a input description UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: InputDescription\nDescription: InputDescription is a input description UI component from the mantine corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: description, input, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/InputDescription/InputDescription.tsx\nimport { use } from 'react';\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  MantineFontSize,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport { InputWrapperContext } from '../InputWrapper.context';\nimport classes from '../Input.module.css';\n\nexport type InputDescriptionStylesNames = 'description';\nexport type InputDescripti",
+  "prompt_version": 2,
+  "clean_id": "input-description",
+  "display_name": "Input Description",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-inputdescription-inputdescription.png"
+}

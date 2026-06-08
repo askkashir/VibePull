@@ -1,0 +1,43 @@
+{
+  "id": "chart-pie-legend",
+  "name": "chart-pie-legend",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "data visualization",
+    "analytics",
+    "legend",
+    "charting",
+    "graph"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-pie-legend",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-pie-legend\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The chart-pie-legend is a graphical component used to display a legend for pie charts, typically used when a chart has multiple data series to distinguish between them. It is commonly used in data visualization and analytics applications. It provides a concise way to convey complex data insights by highlighting the meaning behind the colors used in the chart.",
+  "style_tags": [
+    "e.g. modern",
+    "flat",
+    "white"
+  ],
+  "interaction_tags": [
+    "e.g. static",
+    "draggable",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chart-pie-legend\nDescription: The chart-pie-legend is a graphical component used to display a legend for pie charts, typically used when a chart has multiple data series to distinguish between them. It is commonly used in data visualization and analytics applications. It provides a concise way to convey complex data insights by highlighting the meaning behind the colors used in the chart.\nStyle: e.g. modern, flat, white\nInteractions: e.g. static, draggable, clickable\nTags: data visualization, analytics, legend, charting, graph\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-pie-legend",
+  "display_name": "Chart Pie Legend",
+  "preview_url": "/previews/shadcn/chart-pie-legend.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_TreeSelect_index",
+  "name": "TreeSelect",
+  "source_code": "// packages/@mantine/core/src/components/TreeSelect/index.ts\nimport type {\n  TreeSelectFactory,\n  TreeSelectMode,\n  TreeSelectProps,\n  TreeSelectStylesNames,\n  TreeSelectValue,\n} from './TreeSelect';\n\nexport { TreeSelect } from './TreeSelect';\nexport { TreeSelectOption } from './TreeSelectOption';\nexport type { TreeSelectChevronAriaLabels, TreeSelectRenderNodePayload } from './TreeSelectOption';\nexport type { CheckedStrategy } from './get-checked-values-by-strategy';\nexport type {\n  TreeSelectProps,\n  TreeSelectStylesNames,\n  TreeSelectFactory,\n  TreeSelectMode,\n  TreeSelectValue,\n};\n\nexport namespace TreeSelect {\n  export type Props = TreeSelectProps;\n  export type StylesNames = TreeSelectStylesNames;\n  export type Factory = TreeSelectFactory;\n  export type Mode = TreeSelectMode;\n  export type Value<Mode extends TreeSelectMode> = TreeSelectValue<Mode>;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TreeSelect_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/TreeSelect/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TreeSelect_index",
+      "name": "TreeSelect",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TreeSelect/index.ts",
+          "content": "import type {\n  TreeSelectFactory,\n  TreeSelectMode,\n  TreeSelectProps,\n  TreeSelectStylesNames,\n  TreeSelectValue,\n} from './TreeSelect';\n\nexport { TreeSelect } from './TreeSelect';\nexport { TreeSelectOption } from './TreeSelectOption';\nexport type { TreeSelectChevronAriaLabels, TreeSelectRenderNodePayload } from './TreeSelectOption';\nexport type { CheckedStrategy } from './get-checked-values-by-strategy';\nexport type {\n  TreeSelectProps,\n  TreeSelectStylesNames,\n  TreeSelectFactory,\n  TreeSelectMode,\n  TreeSelectValue,\n};\n\nexport namespace TreeSelect {\n  export type Props = TreeSelectProps;\n  export type StylesNames = TreeSelectStylesNames;\n  export type Factory = TreeSelectFactory;\n  export type Mode = TreeSelectMode;\n  export type Value<Mode extends TreeSelectMode> = TreeSelectValue<Mode>;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

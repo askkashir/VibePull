@@ -1,0 +1,34 @@
+{
+  "id": "item-header",
+  "name": "item-header",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "list",
+    "title",
+    "informational",
+    "compact"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "item-header",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## item-header\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The item header component is a compact title section typically used at the top of an individual item or item list. It contains a title and optional secondary information such as a badge or description. Developers would use this component to provide a clear and concise overview of each item.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "header",
+  "generation_prompt": "Create a production-ready header component with the following characteristics:\n\nName: item-header\nDescription: The item header component is a compact title section typically used at the top of an individual item or item list. It contains a title and optional secondary information such as a badge or description. Developers would use this component to provide a clear and concise overview of each item.\nStyle: \nInteractions: \nTags: list, title, informational, compact\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "item-header",
+  "display_name": "Item Header",
+  "preview_url": "/previews/shadcn/item-header.png"
+}

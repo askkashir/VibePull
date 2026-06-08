@@ -1,0 +1,22 @@
+{
+  "id": "context-menu-demo",
+  "name": "context-menu-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "context-menu-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## context-menu-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

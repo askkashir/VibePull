@@ -1,0 +1,43 @@
+{
+  "id": "packages_mantine_core_src_components_Input_InputWrapper.context",
+  "name": "InputWrapper.context",
+  "source_code": "// packages/@mantine/core/src/components/Input/InputWrapper.context.ts\nimport { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { InputWrapperFactory } from './InputWrapper/InputWrapper';\n\ninterface InputWrapperContextValue {\n  offsetTop: boolean;\n  offsetBottom: boolean;\n  describedBy: string | undefined;\n  inputId: string | undefined;\n  labelId: string | undefined;\n  getStyles: GetStylesApi<InputWrapperFactory> | null;\n}\n\nexport const InputWrapperContext = createContext<InputWrapperContextValue>({\n  offsetBottom: false,\n  offsetTop: false,\n  describedBy: undefined,\n  getStyles: null,\n  inputId: undefined,\n  labelId: undefined,\n});\n",
+  "description": "",
+  "tags": [
+    "input",
+    "context",
+    "provider"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Input_InputWrapper.context",
+      "name": "InputWrapper.context",
+      "path": "packages/@mantine/core/src/components/Input/InputWrapper.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Input_InputWrapper.context",
+      "name": "InputWrapper.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Input/InputWrapper.context.ts",
+          "content": "import { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { InputWrapperFactory } from './InputWrapper/InputWrapper';\n\ninterface InputWrapperContextValue {\n  offsetTop: boolean;\n  offsetBottom: boolean;\n  describedBy: string | undefined;\n  inputId: string | undefined;\n  labelId: string | undefined;\n  getStyles: GetStylesApi<InputWrapperFactory> | null;\n}\n\nexport const InputWrapperContext = createContext<InputWrapperContextValue>({\n  offsetBottom: false,\n  offsetTop: false,\n  describedBy: undefined,\n  getStyles: null,\n  inputId: undefined,\n  labelId: undefined,\n});\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A context provider for InputWrapper, used to manage styles and accessibility attributes for input fields. Developers use this when creating complex input elements that require styling and accessibility modifications. It provides a way to apply consistent styles and attributes across different input fields in their application.",
+  "style_tags": [
+    "customizable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: InputWrapper.context\nDescription: A context provider for InputWrapper, used to manage styles and accessibility attributes for input fields. Developers use this when creating complex input elements that require styling and accessibility modifications. It provides a way to apply consistent styles and attributes across different input fields in their application.\nStyle: customizable\nInteractions: \nTags: input, context, provider\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Input/InputWrapper.context.ts\nimport { createContext } from 'react';\nimport { GetStylesApi } from '../../core';\nimport type { InputWrapperFactory } from './InputWrapper/InputWrapper';\n\ninterface InputWrapperContextValue {\n  offsetTop: boolean;\n  offsetBottom: boolean;\n  describedBy: string | undefined;\n  inputId: string | undefined;\n  labelId: string | undefined;\n  getStyles: GetStylesApi<InputWrapperFactory> | null;\n}\n\nexport const InputWrapperContext = ",
+  "prompt_version": 2,
+  "clean_id": "input-wrapper",
+  "display_name": "Input Wrapper",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-input-inputwrapper-context.png"
+}

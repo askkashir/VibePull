@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_rac_index",
+  "name": "rac",
+  "source_code": "// packages/react/src/components/rac/index.ts\nexport {\n  isRTL,\n  useLocale,\n  useFilter,\n  Virtualizer,\n  TableLayout,\n  ListLayout,\n} from \"react-aria-components\";\nexport {getLocalizationScript} from \"react-aria-components/i18n\";\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"./components\";\nexport {parseColor} from \"./utils\";\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  TimeValue,\n  DateValue,\n  DateRange,\n  ValidationResult,\n  RangeValue,\n  RouterConfig,\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n  SortDescriptor,\n} from \"./types\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "rac_index",
+      "name": "index",
+      "path": "packages/react/src/components/rac/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_rac_index",
+      "name": "rac",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/rac/index.ts",
+          "content": "export {\n  isRTL,\n  useLocale,\n  useFilter,\n  Virtualizer,\n  TableLayout,\n  ListLayout,\n} from \"react-aria-components\";\nexport {getLocalizationScript} from \"react-aria-components/i18n\";\nexport {Collection, ListBoxLoadMoreItem, RouterProvider, I18nProvider} from \"./components\";\nexport {parseColor} from \"./utils\";\nexport type {\n  Key,\n  Direction,\n  Orientation,\n  PressEvent,\n  PointerType,\n  KeyboardEvent,\n  HoverEvent,\n  Selection,\n  TimeValue,\n  DateValue,\n  DateRange,\n  ValidationResult,\n  RangeValue,\n  RouterConfig,\n  Color,\n  ColorFormat,\n  ColorSpace,\n  ColorChannel,\n  ColorChannelRange,\n  ColorAxes,\n  SortDescriptor,\n} from \"./types\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

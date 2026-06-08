@@ -1,0 +1,56 @@
+{
+  "id": "text-roll",
+  "name": "text-roll",
+  "source_code": "// components/core/text-roll.tsx\n'use client';\nimport {\n  motion,\n  VariantLabels,\n  Target,\n  TargetAndTransition,\n  Transition,\n} from 'motion/react';\n\nexport type TextRollProps = {\n  children: string;\n  duration?: number;\n  getEnterDelay?: (index: number) => number;\n  getExitDelay?: (index: number) => number;\n  className?: string;\n  transition?: Transition;\n  variants?: {\n    enter: {\n      initial: Target | VariantLabels | boolean;\n      animate: TargetAndTransition | VariantLabels;\n    };\n    exit: {\n      initial: Target | VariantLabels | boolean;\n      animate: TargetAndTransition | VariantLabels;\n    };\n  };\n  onAnimationComplete?: () => void;\n};\n\nexport function TextRoll({\n  children,\n  duration = 0.5,\n  getEnterDelay = (i) => i * 0.1,\n  getExitDelay = (i) => i * 0.1 + 0.2,\n  className,\n  transition = { ease: 'easeIn' },\n  variants,\n  onAnimationComplete,\n}: TextRollProps) {\n  const defaultVariants = {\n    enter: {\n      initial: { rotateX: 0 },\n      animate: { rotateX: 90 },\n    },\n    exit: {\n      initial: { rotateX: 90 },\n      animate: { rotateX: 0 },\n    },\n  } as const;\n\n  const letters = children.split('');\n\n  return (\n    <span className={className}>\n      {letters.map((letter, i) => {\n        return (\n          <span\n            key={i}\n            className='relative inline-block [perspective:10000px] [transform-style:preserve-3d] [width:auto]'\n            aria-hidden='true'\n          >\n            <motion.span\n              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_25%]'\n              initial={\n                variants?.enter?.initial ?? defaultVariants.enter.initial\n              }\n              animate={\n                variants?.enter?.animate ?? defaultVariants.enter.animate\n              }\n              transition={{\n                ...transition,\n                duration,\n                delay: getEnterDelay(i),\n              }}\n            >\n              {letter === ' ' ? '\\u00A0' : letter}\n            </motion.span>\n            <motion.span\n              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_100%]'\n              initial={variants?.exit?.initial ?? defaultVariants.exit.initial}\n              animate={variants?.exit?.animate ?? defaultVariants.exit.animate}\n              transition={{\n                ...transition,\n                duration,\n                delay: getExitDelay(i),\n              }}\n              onAnimationComplete={\n                letters.length === i + 1 ? onAnimationComplete : undefined\n              }\n            >\n              {letter === ' ' ? '\\u00A0' : letter}\n            </motion.span>\n            <span className='invisible'>\n              {letter === ' ' ? '\\u00A0' : letter}\n            </span>\n          </span>\n        );\n      })}\n      <span className='sr-only'>{children}</span>\n    </span>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "text",
+    "dynamic",
+    "motion"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-roll.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-roll.tsx",
+      "sha": "b4718536d6c2f6fd1545e11478fd7ca0e01dd7f7",
+      "size": 2861,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-roll.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-roll.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/b4718536d6c2f6fd1545e11478fd7ca0e01dd7f7",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-roll.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-roll.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/b4718536d6c2f6fd1545e11478fd7ca0e01dd7f7",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-roll.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-roll",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-roll.tsx",
+          "content": "'use client';\nimport {\n  motion,\n  VariantLabels,\n  Target,\n  TargetAndTransition,\n  Transition,\n} from 'motion/react';\n\nexport type TextRollProps = {\n  children: string;\n  duration?: number;\n  getEnterDelay?: (index: number) => number;\n  getExitDelay?: (index: number) => number;\n  className?: string;\n  transition?: Transition;\n  variants?: {\n    enter: {\n      initial: Target | VariantLabels | boolean;\n      animate: TargetAndTransition | VariantLabels;\n    };\n    exit: {\n      initial: Target | VariantLabels | boolean;\n      animate: TargetAndTransition | VariantLabels;\n    };\n  };\n  onAnimationComplete?: () => void;\n};\n\nexport function TextRoll({\n  children,\n  duration = 0.5,\n  getEnterDelay = (i) => i * 0.1,\n  getExitDelay = (i) => i * 0.1 + 0.2,\n  className,\n  transition = { ease: 'easeIn' },\n  variants,\n  onAnimationComplete,\n}: TextRollProps) {\n  const defaultVariants = {\n    enter: {\n      initial: { rotateX: 0 },\n      animate: { rotateX: 90 },\n    },\n    exit: {\n      initial: { rotateX: 90 },\n      animate: { rotateX: 0 },\n    },\n  } as const;\n\n  const letters = children.split('');\n\n  return (\n    <span className={className}>\n      {letters.map((letter, i) => {\n        return (\n          <span\n            key={i}\n            className='relative inline-block [perspective:10000px] [transform-style:preserve-3d] [width:auto]'\n            aria-hidden='true'\n          >\n            <motion.span\n              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_25%]'\n              initial={\n                variants?.enter?.initial ?? defaultVariants.enter.initial\n              }\n              animate={\n                variants?.enter?.animate ?? defaultVariants.enter.animate\n              }\n              transition={{\n                ...transition,\n                duration,\n                delay: getEnterDelay(i),\n              }}\n            >\n              {letter === ' ' ? '\\u00A0' : letter}\n            </motion.span>\n            <motion.span\n              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_100%]'\n              initial={variants?.exit?.initial ?? defaultVariants.exit.initial}\n              animate={variants?.exit?.animate ?? defaultVariants.exit.animate}\n              transition={{\n                ...transition,\n                duration,\n                delay: getExitDelay(i),\n              }}\n              onAnimationComplete={\n                letters.length === i + 1 ? onAnimationComplete : undefined\n              }\n            >\n              {letter === ' ' ? '\\u00A0' : letter}\n            </motion.span>\n            <span className='invisible'>\n              {letter === ' ' ? '\\u00A0' : letter}\n            </span>\n          </span>\n        );\n      })}\n      <span className='sr-only'>{children}</span>\n    </span>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "TextRoll is a dynamic text component that uses Motion to create a rollover effect. It displays text by moving each letter individually, creating a 3D animation. Developers would use it to add a visually appealing and interactive text presentation.",
+  "style_tags": [
+    "3D"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: text-roll\nDescription: TextRoll is a dynamic text component that uses Motion to create a rollover effect. It displays text by moving each letter individually, creating a 3D animation. Developers would use it to add a visually appealing and interactive text presentation.\nStyle: 3D\nInteractions: animated, clickable\nTags: text, dynamic, motion\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/core/text-roll.tsx\n'use client';\nimport {\n  motion,\n  VariantLabels,\n  Target,\n  TargetAndTransition,\n  Transition,\n} from 'motion/react';\n\nexport type TextRollProps = {\n  children: string;\n  duration?: number;\n  getEnterDelay?: (index: number) => number;\n  getExitDelay?: (index: number) => number;\n  className?: string;\n  transition?: Transition;\n  variants?: {\n    enter: {\n      initial: Target | VariantLabels | boolean;\n      animate: TargetAndTransition | VariantLabels;\n    };\n ",
+  "prompt_version": 2,
+  "clean_id": "text-roll",
+  "display_name": "Text Roll",
+  "preview_url": "/previews/motionprimitives/text-roll.png"
+}

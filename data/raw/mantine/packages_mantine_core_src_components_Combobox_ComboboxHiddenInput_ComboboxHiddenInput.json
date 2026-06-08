@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+  "name": "ComboboxHiddenInput",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx\nimport { Primitive } from '../../../core';\n\nexport interface ComboboxHiddenInputProps extends Omit<React.ComponentProps<'input'>, 'value'> {\n  /** Input value */\n  value: Primitive | Primitive[] | null;\n\n  /** Divider character to join array values into string @default ',' */\n  valuesDivider?: string;\n}\n\nexport function ComboboxHiddenInput({\n  value,\n  valuesDivider = ',',\n  ...others\n}: ComboboxHiddenInputProps) {\n  return (\n    <input\n      type=\"hidden\"\n      value={Array.isArray(value) ? value.join(valuesDivider) : value ? `${value}` : ''}\n      {...others}\n    />\n  );\n}\n\nComboboxHiddenInput.displayName = '@mantine/core/ComboboxHiddenInput';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+      "name": "ComboboxHiddenInput",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxHiddenInput_ComboboxHiddenInput",
+      "name": "ComboboxHiddenInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxHiddenInput/ComboboxHiddenInput.tsx",
+          "content": "import { Primitive } from '../../../core';\n\nexport interface ComboboxHiddenInputProps extends Omit<React.ComponentProps<'input'>, 'value'> {\n  /** Input value */\n  value: Primitive | Primitive[] | null;\n\n  /** Divider character to join array values into string @default ',' */\n  valuesDivider?: string;\n}\n\nexport function ComboboxHiddenInput({\n  value,\n  valuesDivider = ',',\n  ...others\n}: ComboboxHiddenInputProps) {\n  return (\n    <input\n      type=\"hidden\"\n      value={Array.isArray(value) ? value.join(valuesDivider) : value ? `${value}` : ''}\n      {...others}\n    />\n  );\n}\n\nComboboxHiddenInput.displayName = '@mantine/core/ComboboxHiddenInput';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

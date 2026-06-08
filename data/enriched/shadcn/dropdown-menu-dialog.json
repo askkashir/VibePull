@@ -1,0 +1,38 @@
+{
+  "id": "dropdown-menu-dialog",
+  "name": "dropdown-menu-dialog",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dropdown",
+    "dialog",
+    "multi-option",
+    "modals"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dropdown-menu-dialog",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dropdown-menu-dialog\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The dropdown-menu-dialog component is a modal container that displays a list of options or items in response to user interaction, typically initiated by a dropdown button or icon. It serves as a way to present multiple choices to the user without overwhelming the primary content area. This component is suitable for complex, multi-option scenarios where the user's choice may have significant consequences or require careful consideration.",
+  "style_tags": [
+    "e.g. modern"
+  ],
+  "interaction_tags": [
+    "e.g. hover"
+  ],
+  "component_type": "modal",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: dropdown-menu-dialog\nDescription: The dropdown-menu-dialog component is a modal container that displays a list of options or items in response to user interaction, typically initiated by a dropdown button or icon. It serves as a way to present multiple choices to the user without overwhelming the primary content area. This component is suitable for complex, multi-option scenarios where the user's choice may have significant consequences or require careful consideration.\nStyle: e.g. modern\nInteractions: e.g. hover\nTags: dropdown, dialog, multi-option, modals\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "dropdown-menu-dialog",
+  "display_name": "Dropdown Menu Dialog",
+  "preview_url": "/previews/shadcn/dropdown-menu-dialog.png"
+}

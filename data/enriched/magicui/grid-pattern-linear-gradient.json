@@ -1,0 +1,61 @@
+{
+  "id": "grid-pattern-linear-gradient",
+  "name": "Grid Pattern Linear Gradient",
+  "source_code": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternLinearGradient() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={20}\n        height={20}\n        x={-1}\n        y={-1}\n        className={cn(\n          \"[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing a grid pattern with linear gradient effects.",
+  "tags": [
+    "background",
+    "loading-screen",
+    "ui-effect"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "grid-pattern-linear-gradient",
+      "type": "registry:example",
+      "title": "Grid Pattern Linear Gradient",
+      "description": "Example showing a grid pattern with linear gradient effects.",
+      "registryDependencies": [
+        "https://magicui.design/r/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/grid-pattern-linear-gradient.tsx",
+          "type": "registry:example",
+          "target": "components/grid-pattern-linear-gradient.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "grid-pattern-linear-gradient",
+      "type": "registry:example",
+      "title": "Grid Pattern Linear Gradient",
+      "description": "Example showing a grid pattern with linear gradient effects.",
+      "registryDependencies": [
+        "@magicui/grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/grid-pattern-linear-gradient.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternLinearGradient() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={20}\n        height={20}\n        x={-1}\n        y={-1}\n        className={cn(\n          \"[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]\"\n        )}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A component that displays a linear gradient grid pattern, typically used for backgrounds, loading screens, or UI elements that require a dynamic visual effect.",
+  "style_tags": [
+    "gradient",
+    "dynamic"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Grid Pattern Linear Gradient\nDescription: A component that displays a linear gradient grid pattern, typically used for backgrounds, loading screens, or UI elements that require a dynamic visual effect.\nStyle: gradient, dynamic\nInteractions: none\nTags: background, loading-screen, ui-effect\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { GridPattern } from \"@/registry/magicui/grid-pattern\"\n\nexport default function GridPatternLinearGradient() {\n  return (\n    <div className=\"bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <GridPattern\n        width={20}\n        height={20}\n        x={-1}\n        y={-1}\n        className={cn(\n          \"[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]\"",
+  "prompt_version": 2,
+  "clean_id": "grid-pattern-linear-gradient",
+  "display_name": "Grid Pattern Linear Gradient",
+  "preview_url": "/previews/magicui/grid-pattern-linear-gradient.png"
+}

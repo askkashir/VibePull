@@ -1,0 +1,38 @@
+{
+  "id": "dialog-close-button",
+  "name": "dialog-close-button",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "dialog",
+    "dismiss",
+    "button"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "dialog-close-button",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## dialog-close-button\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A small, typically circular or square icon that closes a dialog. A developer would use this component when they need to provide a clear way to dismiss a dialog box, allowing users to interact with the main UI. It is usually used in situations where multiple dialogues are open and the user needs to switch between them.",
+  "style_tags": [
+    "e.g. dark",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. clickable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: dialog-close-button\nDescription: A small, typically circular or square icon that closes a dialog. A developer would use this component when they need to provide a clear way to dismiss a dialog box, allowing users to interact with the main UI. It is usually used in situations where multiple dialogues are open and the user needs to switch between them.\nStyle: e.g. dark, glassmorphism\nInteractions: e.g. clickable\nTags: dialog, dismiss, button\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "dialog-close-button",
+  "display_name": "Dialog Close Button",
+  "preview_url": "/previews/shadcn/dialog-close-button.png"
+}

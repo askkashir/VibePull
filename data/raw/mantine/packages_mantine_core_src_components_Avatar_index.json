@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Avatar_index",
+  "name": "Avatar",
+  "source_code": "// packages/@mantine/core/src/components/Avatar/index.ts\nimport type {\n  AvatarCssVariables,\n  AvatarFactory,\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarVariant,\n} from './Avatar';\nimport type {\n  AvatarGroupContextValue,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n} from './AvatarGroup/AvatarGroup';\n\nexport { Avatar } from './Avatar';\nexport { AvatarGroup, AvatarGroupContext } from './AvatarGroup/AvatarGroup';\n\nexport type {\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarCssVariables,\n  AvatarVariant,\n  AvatarFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Avatar_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Avatar/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Avatar_index",
+      "name": "Avatar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Avatar/index.ts",
+          "content": "import type {\n  AvatarCssVariables,\n  AvatarFactory,\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarVariant,\n} from './Avatar';\nimport type {\n  AvatarGroupContextValue,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n} from './AvatarGroup/AvatarGroup';\n\nexport { Avatar } from './Avatar';\nexport { AvatarGroup, AvatarGroupContext } from './AvatarGroup/AvatarGroup';\n\nexport type {\n  AvatarProps,\n  AvatarStylesNames,\n  AvatarCssVariables,\n  AvatarVariant,\n  AvatarFactory,\n  AvatarGroupProps,\n  AvatarGroupStylesNames,\n  AvatarGroupCssVariables,\n  AvatarGroupFactory,\n  AvatarGroupContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

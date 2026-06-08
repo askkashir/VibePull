@@ -1,0 +1,22 @@
+{
+  "id": "textarea-with-button",
+  "name": "textarea-with-button",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "textarea-with-button",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## textarea-with-button\n**Type:** registry:example\n**Files:** 1 file(s)"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Progress_Progress.story",
+  "name": "Progress.story",
+  "source_code": "// packages/@mantine/core/src/components/Progress/Progress.story.tsx\nimport { Progress } from './Progress';\n\nexport default { title: 'Progress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} />\n    </div>\n  );\n}\n\nexport function Vertical() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} orientation=\"vertical\" h={400} animated />\n    </div>\n  );\n}\n\nexport function Striped() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={56} size=\"xl\" animated />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={56} size=\"xl\" unstyled h=\"400\" />\n    </div>\n  );\n}\n\nexport function Compound() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress.Root size=\"xl\" autoContrast orientation=\"vertical\" h={200}>\n        <Progress.Section value={40} color=\"lime.4\">\n          <Progress.Label>Documents</Progress.Label>\n        </Progress.Section>\n        <Progress.Section value={20} color=\"yellow.4\">\n          <Progress.Label>Apps</Progress.Label>\n        </Progress.Section>\n        <Progress.Section value={20} color=\"cyan.7\">\n          <Progress.Label>Other</Progress.Label>\n        </Progress.Section>\n      </Progress.Root>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "progress",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Progress_Progress.story",
+      "name": "Progress.story",
+      "path": "packages/@mantine/core/src/components/Progress/Progress.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Progress_Progress.story",
+      "name": "Progress.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Progress/Progress.story.tsx",
+          "content": "import { Progress } from './Progress';\n\nexport default { title: 'Progress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} />\n    </div>\n  );\n}\n\nexport function Vertical() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} orientation=\"vertical\" h={400} animated />\n    </div>\n  );\n}\n\nexport function Striped() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={56} size=\"xl\" animated />\n    </div>\n  );\n}\n\nexport function Unstyled() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={56} size=\"xl\" unstyled h=\"400\" />\n    </div>\n  );\n}\n\nexport function Compound() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress.Root size=\"xl\" autoContrast orientation=\"vertical\" h={200}>\n        <Progress.Section value={40} color=\"lime.4\">\n          <Progress.Label>Documents</Progress.Label>\n        </Progress.Section>\n        <Progress.Section value={20} color=\"yellow.4\">\n          <Progress.Label>Apps</Progress.Label>\n        </Progress.Section>\n        <Progress.Section value={20} color=\"cyan.7\">\n          <Progress.Label>Other</Progress.Label>\n        </Progress.Section>\n      </Progress.Root>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Progress.story is a progress story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Progress.story\nDescription: Progress.story is a progress story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: animated\nTags: mantine, other, progress, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Progress/Progress.story.tsx\nimport { Progress } from './Progress';\n\nexport default { title: 'Progress' };\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} />\n    </div>\n  );\n}\n\nexport function Vertical() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Progress value={20} orientation=\"vertical\" h={400} animated />\n    </div>\n  );\n}\n\nexport function Striped() {\n  return (\n    <div style={{ padding: 40 ",
+  "prompt_version": 2,
+  "clean_id": "progress",
+  "display_name": "Progress",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-progress-progress-story.png"
+}

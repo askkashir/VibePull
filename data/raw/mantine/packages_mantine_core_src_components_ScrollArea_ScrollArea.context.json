@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.context",
+  "name": "ScrollArea.context",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ScrollAreaFactory } from './ScrollArea';\n\nexport interface ScrollAreaContextValue {\n  type: 'auto' | 'always' | 'scroll' | 'hover' | 'never';\n  scrollHideDelay: number;\n  scrollArea: HTMLDivElement | null;\n  viewport: HTMLDivElement | null;\n  onViewportChange: (viewport: HTMLDivElement | null) => void;\n  content: HTMLDivElement | null;\n  onContentChange: (content: HTMLDivElement) => void;\n  scrollbarX: HTMLDivElement | null;\n  onScrollbarXChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarXEnabled: boolean;\n  onScrollbarXEnabledChange: (rendered: boolean) => void;\n  scrollbarY: HTMLDivElement | null;\n  onScrollbarYChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarYEnabled: boolean;\n  onScrollbarYEnabledChange: (rendered: boolean) => void;\n  onCornerWidthChange: (width: number) => void;\n  onCornerHeightChange: (height: number) => void;\n  getStyles: GetStylesApi<ScrollAreaFactory>;\n}\n\nexport const [ScrollAreaProvider, useScrollAreaContext] = createSafeContext<ScrollAreaContextValue>(\n  'ScrollArea.Root component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollArea.context",
+      "name": "ScrollArea.context",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollArea.context",
+      "name": "ScrollArea.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollArea.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ScrollAreaFactory } from './ScrollArea';\n\nexport interface ScrollAreaContextValue {\n  type: 'auto' | 'always' | 'scroll' | 'hover' | 'never';\n  scrollHideDelay: number;\n  scrollArea: HTMLDivElement | null;\n  viewport: HTMLDivElement | null;\n  onViewportChange: (viewport: HTMLDivElement | null) => void;\n  content: HTMLDivElement | null;\n  onContentChange: (content: HTMLDivElement) => void;\n  scrollbarX: HTMLDivElement | null;\n  onScrollbarXChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarXEnabled: boolean;\n  onScrollbarXEnabledChange: (rendered: boolean) => void;\n  scrollbarY: HTMLDivElement | null;\n  onScrollbarYChange: (scrollbar: HTMLDivElement | null) => void;\n  scrollbarYEnabled: boolean;\n  onScrollbarYEnabledChange: (rendered: boolean) => void;\n  onCornerWidthChange: (width: number) => void;\n  onCornerHeightChange: (height: number) => void;\n  getStyles: GetStylesApi<ScrollAreaFactory>;\n}\n\nexport const [ScrollAreaProvider, useScrollAreaContext] = createSafeContext<ScrollAreaContextValue>(\n  'ScrollArea.Root component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

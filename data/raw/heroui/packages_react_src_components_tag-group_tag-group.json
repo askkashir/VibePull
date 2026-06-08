@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_tag-group_tag-group",
+  "name": "tag-group",
+  "source_code": "// packages/react/src/components/tag-group/tag-group.tsx\n\"use client\";\n\nimport type {TagVariants} from \"../tag\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {tagGroupVariants} from \"@heroui/styles\";\nimport React, {createContext, useContext, useMemo} from \"react\";\nimport {\n  TagGroup as TagGroupPrimitive,\n  TagList as TagListPrimitive,\n} from \"react-aria-components/TagGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup Context\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupContext = {\n  slots?: ReturnType<typeof tagGroupVariants>;\n  size?: TagVariants[\"size\"];\n  variant?: TagVariants[\"variant\"];\n};\n\nconst TagGroupContext = createContext<TagGroupContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup Root\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupRootProps = ComponentPropsWithRef<typeof TagGroupPrimitive> & {\n  size?: TagVariants[\"size\"];\n  variant?: TagVariants[\"variant\"];\n};\n\nconst TagGroupRoot = ({children, className, size, variant, ...restProps}: TagGroupRootProps) => {\n  const slots = useMemo(() => tagGroupVariants(), []);\n\n  return (\n    <TagGroupContext\n      value={{\n        slots,\n        size,\n        variant,\n      }}\n    >\n      <TagGroupPrimitive className={slots.base({className})} data-slot=\"tag-group\" {...restProps}>\n        {children}\n      </TagGroupPrimitive>\n    </TagGroupContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup List\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupListProps<T extends object> = ComponentPropsWithRef<typeof TagListPrimitive<T>> & {};\n\nconst TagGroupList = <T extends object>({\n  children,\n  className,\n  ...restProps\n}: TagGroupListProps<T>) => {\n  const {slots} = useContext(TagGroupContext);\n\n  return (\n    <TagListPrimitive\n      className={composeTwRenderProps(className, slots?.list())}\n      data-slot=\"tag-group-list\"\n      {...restProps}\n    >\n      {children}\n    </TagListPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TagGroupRoot, TagGroupList, TagGroupContext};\n\nexport type {TagGroupRootProps, TagGroupListProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "tag-group_tag-group",
+      "name": "tag-group",
+      "path": "packages/react/src/components/tag-group/tag-group.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_tag-group_tag-group",
+      "name": "tag-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/tag-group/tag-group.tsx",
+          "content": "\"use client\";\n\nimport type {TagVariants} from \"../tag\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {tagGroupVariants} from \"@heroui/styles\";\nimport React, {createContext, useContext, useMemo} from \"react\";\nimport {\n  TagGroup as TagGroupPrimitive,\n  TagList as TagListPrimitive,\n} from \"react-aria-components/TagGroup\";\n\nimport {composeTwRenderProps} from \"../../utils/compose\";\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup Context\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupContext = {\n  slots?: ReturnType<typeof tagGroupVariants>;\n  size?: TagVariants[\"size\"];\n  variant?: TagVariants[\"variant\"];\n};\n\nconst TagGroupContext = createContext<TagGroupContext>({});\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup Root\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupRootProps = ComponentPropsWithRef<typeof TagGroupPrimitive> & {\n  size?: TagVariants[\"size\"];\n  variant?: TagVariants[\"variant\"];\n};\n\nconst TagGroupRoot = ({children, className, size, variant, ...restProps}: TagGroupRootProps) => {\n  const slots = useMemo(() => tagGroupVariants(), []);\n\n  return (\n    <TagGroupContext\n      value={{\n        slots,\n        size,\n        variant,\n      }}\n    >\n      <TagGroupPrimitive className={slots.base({className})} data-slot=\"tag-group\" {...restProps}>\n        {children}\n      </TagGroupPrimitive>\n    </TagGroupContext>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * TagGroup List\n * -----------------------------------------------------------------------------------------------*/\ntype TagGroupListProps<T extends object> = ComponentPropsWithRef<typeof TagListPrimitive<T>> & {};\n\nconst TagGroupList = <T extends object>({\n  children,\n  className,\n  ...restProps\n}: TagGroupListProps<T>) => {\n  const {slots} = useContext(TagGroupContext);\n\n  return (\n    <TagListPrimitive\n      className={composeTwRenderProps(className, slots?.list())}\n      data-slot=\"tag-group-list\"\n      {...restProps}\n    >\n      {children}\n    </TagListPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {TagGroupRoot, TagGroupList, TagGroupContext};\n\nexport type {TagGroupRootProps, TagGroupListProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

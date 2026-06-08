@@ -1,0 +1,43 @@
+{
+  "id": "login-03",
+  "name": "login-03",
+  "source_code": "",
+  "description": "A login page with a muted background color.",
+  "tags": [
+    "login",
+    "authentication",
+    "form",
+    "background",
+    "muted"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-03",
+      "type": "registry:block",
+      "description": "A login page with a muted background color.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-03\n\nA login page with a muted background color.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "visual_summary": "A login page UI component with a muted background color, suitable for displaying a login or registration form.",
+  "style_tags": [
+    "dark mode ready",
+    "muted background",
+    "neutral colors"
+  ],
+  "interaction_tags": [
+    "fillable",
+    "clickable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: login-03\nDescription: A login page UI component with a muted background color, suitable for displaying a login or registration form.\nStyle: dark mode ready, muted background, neutral colors\nInteractions: fillable, clickable\nTags: login, authentication, form, background, muted\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "login-03",
+  "display_name": "Login 03",
+  "preview_url": "/previews/shadcn/login-03.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_toggle-button_toggle-button",
+  "name": "toggle-button",
+  "source_code": "// packages/react/src/components/toggle-button/toggle-button.tsx\n\"use client\";\n\nimport type {ToggleButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {toggleButtonVariants} from \"@heroui/styles\";\nimport {useContext} from \"react\";\nimport {ToggleButton as ToggleButtonPrimitive} from \"react-aria-components/ToggleButton\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {ToggleButtonGroupContext} from \"../toggle-button-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * ToggleButton Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ToggleButtonRootProps\n  extends ComponentPropsWithRef<typeof ToggleButtonPrimitive>, ToggleButtonVariants {}\n\nconst ToggleButtonRoot = ({\n  children,\n  className,\n  isIconOnly,\n  size,\n  style,\n  variant,\n  ...rest\n}: ToggleButtonRootProps) => {\n  const groupContext = useContext(ToggleButtonGroupContext);\n\n  // Merge props with precedence: direct props > context props\n  const finalSize = size ?? groupContext?.size;\n\n  const styles = toggleButtonVariants({\n    isIconOnly,\n    size: finalSize,\n    variant,\n  });\n\n  return (\n    <ToggleButtonPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"toggle-button\"\n      style={style}\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </ToggleButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ToggleButtonRoot};\n\nexport type {ToggleButtonRootProps};\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "toggle-button_toggle-button",
+      "name": "toggle-button",
+      "path": "packages/react/src/components/toggle-button/toggle-button.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_toggle-button_toggle-button",
+      "name": "toggle-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/toggle-button/toggle-button.tsx",
+          "content": "\"use client\";\n\nimport type {ToggleButtonVariants} from \"@heroui/styles\";\nimport type {ComponentPropsWithRef} from \"react\";\n\nimport {toggleButtonVariants} from \"@heroui/styles\";\nimport {useContext} from \"react\";\nimport {ToggleButton as ToggleButtonPrimitive} from \"react-aria-components/ToggleButton\";\n\nimport {composeTwRenderProps} from \"../../utils\";\nimport {ToggleButtonGroupContext} from \"../toggle-button-group\";\n\n/* -------------------------------------------------------------------------------------------------\n * ToggleButton Root\n * -----------------------------------------------------------------------------------------------*/\ninterface ToggleButtonRootProps\n  extends ComponentPropsWithRef<typeof ToggleButtonPrimitive>, ToggleButtonVariants {}\n\nconst ToggleButtonRoot = ({\n  children,\n  className,\n  isIconOnly,\n  size,\n  style,\n  variant,\n  ...rest\n}: ToggleButtonRootProps) => {\n  const groupContext = useContext(ToggleButtonGroupContext);\n\n  // Merge props with precedence: direct props > context props\n  const finalSize = size ?? groupContext?.size;\n\n  const styles = toggleButtonVariants({\n    isIconOnly,\n    size: finalSize,\n    variant,\n  });\n\n  return (\n    <ToggleButtonPrimitive\n      className={composeTwRenderProps(className, styles)}\n      data-slot=\"toggle-button\"\n      style={style}\n      {...rest}\n    >\n      {(renderProps) => (typeof children === \"function\" ? children(renderProps) : children)}\n    </ToggleButtonPrimitive>\n  );\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Exports\n * -----------------------------------------------------------------------------------------------*/\nexport {ToggleButtonRoot};\n\nexport type {ToggleButtonRootProps};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

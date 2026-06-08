@@ -1,0 +1,37 @@
+{
+  "id": "field-responsive",
+  "name": "field-responsive",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "input",
+    "responsive",
+    "registration",
+    "subscription"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "field-responsive",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## field-responsive\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The field-responsive component is a flexible form field that adapts to different screen sizes and devices. It provides a clean and minimalistic input area with optional labels and placeholder text. This component is ideal for use in forms, registration, and subscription processes.",
+  "style_tags": [
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: field-responsive\nDescription: The field-responsive component is a flexible form field that adapts to different screen sizes and devices. It provides a clean and minimalistic input area with optional labels and placeholder text. This component is ideal for use in forms, registration, and subscription processes.\nStyle: minimal\nInteractions: \nTags: form, input, responsive, registration, subscription\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "field-responsive",
+  "display_name": "Field Responsive",
+  "preview_url": "/previews/shadcn/field-responsive.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Pagination_Pagination.context",
+  "name": "Pagination.context",
+  "source_code": "// packages/@mantine/core/src/components/Pagination/Pagination.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { PaginationRootFactory } from './PaginationRoot/PaginationRoot';\n\nexport interface PaginationContextValue {\n  total: number;\n  range: (number | 'dots')[];\n  active: number;\n  disabled: boolean | undefined;\n  layout?: 'default' | 'responsive';\n  getItemProps?: (page: number) => Record<string, any>;\n  onChange: (page: number) => void;\n  onNext: () => void;\n  onPrevious: () => void;\n  onFirst: () => void;\n  onLast: () => void;\n  getStyles: GetStylesApi<PaginationRootFactory>;\n}\n\nexport const [PaginationProvider, usePaginationContext] = createSafeContext<PaginationContextValue>(\n  'Pagination.Root component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "other",
+    "pagination"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Pagination_Pagination.context",
+      "name": "Pagination.context",
+      "path": "packages/@mantine/core/src/components/Pagination/Pagination.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Pagination_Pagination.context",
+      "name": "Pagination.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Pagination/Pagination.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { PaginationRootFactory } from './PaginationRoot/PaginationRoot';\n\nexport interface PaginationContextValue {\n  total: number;\n  range: (number | 'dots')[];\n  active: number;\n  disabled: boolean | undefined;\n  layout?: 'default' | 'responsive';\n  getItemProps?: (page: number) => Record<string, any>;\n  onChange: (page: number) => void;\n  onNext: () => void;\n  onPrevious: () => void;\n  onFirst: () => void;\n  onLast: () => void;\n  getStyles: GetStylesApi<PaginationRootFactory>;\n}\n\nexport const [PaginationProvider, usePaginationContext] = createSafeContext<PaginationContextValue>(\n  'Pagination.Root component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Pagination.context is a pagination context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Pagination.context\nDescription: Pagination.context is a pagination context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: context, mantine, other, pagination\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Pagination/Pagination.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { PaginationRootFactory } from './PaginationRoot/PaginationRoot';\n\nexport interface PaginationContextValue {\n  total: number;\n  range: (number | 'dots')[];\n  active: number;\n  disabled: boolean | undefined;\n  layout?: 'default' | 'responsive';\n  getItemProps?: (page: number) => Record<string, any>;\n  onChange: (page: number) => void;\n  onNext: () => ",
+  "prompt_version": 2,
+  "clean_id": "pagination",
+  "display_name": "Pagination",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-pagination-pagination-context.png"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Splitter_SplitterPane_SplitterPane",
+  "name": "SplitterPane",
+  "source_code": "// packages/@mantine/core/src/components/Splitter/SplitterPane/SplitterPane.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useSplitterContext } from '../Splitter.context';\nimport classes from '../Splitter.module.css';\n\nexport type SplitterPaneStylesNames = 'pane';\n\nexport interface SplitterPaneProps\n  extends BoxProps, CompoundStylesApiProps<SplitterPaneFactory>, ElementProps<'div'> {\n  /** Initial size as percentage (0-100). All panes must sum to 100. */\n  defaultSize: number;\n\n  /** Minimum size percentage @default 0 */\n  min?: number;\n\n  /** Maximum size percentage @default 100 */\n  max?: number;\n\n  /** Whether this pane can be collapsed @default false */\n  collapsible?: boolean;\n\n  /** Size below which the pane snaps to collapsed (percentage), defaults to `min` */\n  collapseThreshold?: number;\n\n  /** Pane content */\n  children?: React.ReactNode;\n\n  /** @internal Index set by parent */\n  __index?: number;\n}\n\nexport type SplitterPaneFactory = Factory<{\n  props: SplitterPaneProps;\n  ref: HTMLDivElement;\n  stylesNames: SplitterPaneStylesNames;\n  compound: true;\n}>;\n\nexport const SplitterPane = factory<SplitterPaneFactory>((_props) => {\n  const props = useProps('SplitterPane', null, _props);\n  const {\n    className,\n    classNames,\n    style,\n    styles,\n    vars,\n    children,\n    defaultSize,\n    min,\n    max,\n    collapsible,\n    collapseThreshold,\n    __index,\n    mod,\n    ...others\n  } = props;\n\n  const ctx = useSplitterContext();\n  const size = ctx.sizes[__index!];\n  const isCollapsed = ctx.collapsed[__index!];\n\n  const sizeStyle = { flexBasis: `${size}%` };\n\n  return (\n    <Box\n      {...ctx.getStyles('pane', {\n        className,\n        classNames,\n        style: [sizeStyle, style],\n        styles,\n        props,\n      })}\n      mod={[{ collapsed: isCollapsed || undefined }, mod]}\n      {...others}\n    >\n      {children}\n    </Box>\n  );\n});\n\nSplitterPane.classes = classes;\nSplitterPane.displayName = '@mantine/core/SplitterPane';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "other",
+    "pane",
+    "splitter"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Splitter_SplitterPane_SplitterPane",
+      "name": "SplitterPane",
+      "path": "packages/@mantine/core/src/components/Splitter/SplitterPane/SplitterPane.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Splitter_SplitterPane_SplitterPane",
+      "name": "SplitterPane",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Splitter/SplitterPane/SplitterPane.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useSplitterContext } from '../Splitter.context';\nimport classes from '../Splitter.module.css';\n\nexport type SplitterPaneStylesNames = 'pane';\n\nexport interface SplitterPaneProps\n  extends BoxProps, CompoundStylesApiProps<SplitterPaneFactory>, ElementProps<'div'> {\n  /** Initial size as percentage (0-100). All panes must sum to 100. */\n  defaultSize: number;\n\n  /** Minimum size percentage @default 0 */\n  min?: number;\n\n  /** Maximum size percentage @default 100 */\n  max?: number;\n\n  /** Whether this pane can be collapsed @default false */\n  collapsible?: boolean;\n\n  /** Size below which the pane snaps to collapsed (percentage), defaults to `min` */\n  collapseThreshold?: number;\n\n  /** Pane content */\n  children?: React.ReactNode;\n\n  /** @internal Index set by parent */\n  __index?: number;\n}\n\nexport type SplitterPaneFactory = Factory<{\n  props: SplitterPaneProps;\n  ref: HTMLDivElement;\n  stylesNames: SplitterPaneStylesNames;\n  compound: true;\n}>;\n\nexport const SplitterPane = factory<SplitterPaneFactory>((_props) => {\n  const props = useProps('SplitterPane', null, _props);\n  const {\n    className,\n    classNames,\n    style,\n    styles,\n    vars,\n    children,\n    defaultSize,\n    min,\n    max,\n    collapsible,\n    collapseThreshold,\n    __index,\n    mod,\n    ...others\n  } = props;\n\n  const ctx = useSplitterContext();\n  const size = ctx.sizes[__index!];\n  const isCollapsed = ctx.collapsed[__index!];\n\n  const sizeStyle = { flexBasis: `${size}%` };\n\n  return (\n    <Box\n      {...ctx.getStyles('pane', {\n        className,\n        classNames,\n        style: [sizeStyle, style],\n        styles,\n        props,\n      })}\n      mod={[{ collapsed: isCollapsed || undefined }, mod]}\n      {...others}\n    >\n      {children}\n    </Box>\n  );\n});\n\nSplitterPane.classes = classes;\nSplitterPane.displayName = '@mantine/core/SplitterPane';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "SplitterPane is a splitter pane UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: SplitterPane\nDescription: SplitterPane is a splitter pane UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: mantine, other, pane, splitter\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Splitter/SplitterPane/SplitterPane.tsx\nimport {\n  Box,\n  BoxProps,\n  CompoundStylesApiProps,\n  ElementProps,\n  factory,\n  Factory,\n  useProps,\n} from '../../../core';\nimport { useSplitterContext } from '../Splitter.context';\nimport classes from '../Splitter.module.css';\n\nexport type SplitterPaneStylesNames = 'pane';\n\nexport interface SplitterPaneProps\n  extends BoxProps, CompoundStylesApiProps<SplitterPaneFactory>, ElementProps<'div'> {\n  /** Initial size",
+  "prompt_version": 2,
+  "clean_id": "splitter-pane",
+  "display_name": "Splitter Pane",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-splitter-splitterpane-splitterpane.png"
+}

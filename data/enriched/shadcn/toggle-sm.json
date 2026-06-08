@@ -1,0 +1,44 @@
+{
+  "id": "toggle-sm",
+  "name": "toggle-sm",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "button",
+    "settings",
+    "switcher",
+    "user-preference",
+    "state-change"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-sm",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-sm\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The toggle-sm React component is a small, clickable toggle button often used in preference settings, allowing users to quickly switch between two states (e.g., light/dark mode, public/private). It is frequently placed next to other toggle buttons, and its small size makes it suitable for applications on smaller screens or in tight layouts. Developers can use this component to add a simple, user-friendly toggle functionality to their React applications.",
+  "style_tags": [
+    "minimal",
+    "inline",
+    "inline-block"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "toggling",
+    "animate-options"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-sm\nDescription: The toggle-sm React component is a small, clickable toggle button often used in preference settings, allowing users to quickly switch between two states (e.g., light/dark mode, public/private). It is frequently placed next to other toggle buttons, and its small size makes it suitable for applications on smaller screens or in tight layouts. Developers can use this component to add a simple, user-friendly toggle functionality to their React applications.\nStyle: minimal, inline, inline-block\nInteractions: clickable, toggling, animate-options\nTags: toggle, button, settings, switcher, user-preference, state-change\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-sm",
+  "display_name": "Toggle Sm",
+  "preview_url": "/previews/shadcn/toggle-sm.png"
+}

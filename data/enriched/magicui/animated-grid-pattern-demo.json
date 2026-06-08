@@ -1,0 +1,60 @@
+{
+  "id": "animated-grid-pattern-demo",
+  "name": "Animated Grid Pattern Demo",
+  "source_code": "import { cn } from \"@/lib/utils\"\nimport { AnimatedGridPattern } from \"@/registry/magicui/animated-grid-pattern\"\n\nexport default function AnimatedGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <AnimatedGridPattern\n        numSquares={30}\n        maxOpacity={0.1}\n        duration={3}\n        repeatDelay={1}\n        className={cn(\n          \"mask-[radial-gradient(500px_circle_at_center,white,transparent)]\",\n          \"inset-x-0 inset-y-[-30%] h-[200%] skew-y-12\"\n        )}\n      />\n    </div>\n  )\n}\n",
+  "description": "Example showing an animated grid pattern background.",
+  "tags": [
+    "animation",
+    "grid",
+    "pattern"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "animated-grid-pattern-demo",
+      "type": "registry:example",
+      "title": "Animated Grid Pattern Demo",
+      "description": "Example showing an animated grid pattern background.",
+      "registryDependencies": [
+        "https://magicui.design/r/animated-grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-grid-pattern-demo.tsx",
+          "type": "registry:example",
+          "target": "components/animated-grid-pattern-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-grid-pattern-demo",
+      "type": "registry:example",
+      "title": "Animated Grid Pattern Demo",
+      "description": "Example showing an animated grid pattern background.",
+      "registryDependencies": [
+        "@magicui/animated-grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/animated-grid-pattern-demo.tsx",
+          "content": "import { cn } from \"@/lib/utils\"\nimport { AnimatedGridPattern } from \"@/registry/magicui/animated-grid-pattern\"\n\nexport default function AnimatedGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <AnimatedGridPattern\n        numSquares={30}\n        maxOpacity={0.1}\n        duration={3}\n        repeatDelay={1}\n        className={cn(\n          \"mask-[radial-gradient(500px_circle_at_center,white,transparent)]\",\n          \"inset-x-0 inset-y-[-30%] h-[200%] skew-y-12\"\n        )}\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A colorful grid pattern animation, suitable for a hero component, background or decoration.",
+  "style_tags": [
+    "colorful"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Animated Grid Pattern Demo\nDescription: A colorful grid pattern animation, suitable for a hero component, background or decoration.\nStyle: colorful\nInteractions: animated\nTags: animation, grid, pattern\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { cn } from \"@/lib/utils\"\nimport { AnimatedGridPattern } from \"@/registry/magicui/animated-grid-pattern\"\n\nexport default function AnimatedGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border p-20\">\n      <AnimatedGridPattern\n        numSquares={30}\n        maxOpacity={0.1}\n        duration={3}\n        repeatDelay={1}\n        className={cn(\n          \"mask-[radial-gradient(500px_circle_",
+  "prompt_version": 2,
+  "clean_id": "animated-grid-pattern-demo",
+  "display_name": "Animated Grid Pattern Demo",
+  "preview_url": "/previews/magicui/animated-grid-pattern-demo.png"
+}

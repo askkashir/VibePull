@@ -1,0 +1,41 @@
+{
+  "id": "form-rhf-textarea",
+  "name": "form-rhf-textarea",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "textarea",
+    "rich text editor",
+    "content creation"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-rhf-textarea",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-rhf-textarea\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** react-hook-form, @hookform/resolvers, zod"
+  },
+  "visual_summary": "The form-rhf-textarea component is a visually unobtrusive form field that displays a rich text editor, commonly used in blogging and content creation applications. It is typically employed when a developer needs to collect user-provided text content, such as articles or comments, from a user. It can be integrated into various applications, providing an efficient and user-friendly experience.",
+  "style_tags": [
+    "e.g. minimal",
+    "e.g. compact"
+  ],
+  "interaction_tags": [
+    "e.g. focusable",
+    "e.g. placeholder",
+    "e.g. resizable"
+  ],
+  "component_type": "form",
+  "generation_prompt": "Create a production-ready form component with the following characteristics:\n\nName: form-rhf-textarea\nDescription: The form-rhf-textarea component is a visually unobtrusive form field that displays a rich text editor, commonly used in blogging and content creation applications. It is typically employed when a developer needs to collect user-provided text content, such as articles or comments, from a user. It can be integrated into various applications, providing an efficient and user-friendly experience.\nStyle: e.g. minimal, e.g. compact\nInteractions: e.g. focusable, e.g. placeholder, e.g. resizable\nTags: form, textarea, rich text editor, content creation\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-rhf-textarea",
+  "display_name": "Form Rhf Textarea",
+  "preview_url": "/previews/shadcn/form-rhf-textarea.png"
+}

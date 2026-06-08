@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup",
+  "name": "MenuRadioGroup",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx\nimport { useUncontrolled } from '@mantine/hooks';\nimport { useProps } from '../../../core';\nimport { MenuRadioGroupContext } from './MenuRadioGroup.context';\n\nexport interface MenuRadioGroupProps {\n  /** Controlled selected value */\n  value?: string | null;\n\n  /** Uncontrolled default selected value */\n  defaultValue?: string | null;\n\n  /** Called with the new value when a `Menu.RadioItem` is selected */\n  onChange?: (value: string) => void;\n\n  /** `Menu.RadioItem` components and other elements */\n  children?: React.ReactNode;\n}\n\nexport function MenuRadioGroup(_props: MenuRadioGroupProps) {\n  const props = useProps('MenuRadioGroup', null, _props);\n  const { value, defaultValue, onChange, children } = props;\n\n  const [_value, setValue] = useUncontrolled<string | null>({\n    value,\n    defaultValue,\n    finalValue: null,\n    onChange: onChange as (value: string | null) => void,\n  });\n\n  return (\n    <MenuRadioGroupContext value={{ value: _value, onChange: (next) => setValue(next) }}>\n      {children}\n    </MenuRadioGroupContext>\n  );\n}\n\nMenuRadioGroup.displayName = '@mantine/core/MenuRadioGroup';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuRadioGroup_MenuRadioGroup",
+      "name": "MenuRadioGroup",
+      "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup",
+      "name": "MenuRadioGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.tsx",
+          "content": "import { useUncontrolled } from '@mantine/hooks';\nimport { useProps } from '../../../core';\nimport { MenuRadioGroupContext } from './MenuRadioGroup.context';\n\nexport interface MenuRadioGroupProps {\n  /** Controlled selected value */\n  value?: string | null;\n\n  /** Uncontrolled default selected value */\n  defaultValue?: string | null;\n\n  /** Called with the new value when a `Menu.RadioItem` is selected */\n  onChange?: (value: string) => void;\n\n  /** `Menu.RadioItem` components and other elements */\n  children?: React.ReactNode;\n}\n\nexport function MenuRadioGroup(_props: MenuRadioGroupProps) {\n  const props = useProps('MenuRadioGroup', null, _props);\n  const { value, defaultValue, onChange, children } = props;\n\n  const [_value, setValue] = useUncontrolled<string | null>({\n    value,\n    defaultValue,\n    finalValue: null,\n    onChange: onChange as (value: string | null) => void,\n  });\n\n  return (\n    <MenuRadioGroupContext value={{ value: _value, onChange: (next) => setValue(next) }}>\n      {children}\n    </MenuRadioGroupContext>\n  );\n}\n\nMenuRadioGroup.displayName = '@mantine/core/MenuRadioGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

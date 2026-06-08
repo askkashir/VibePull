@@ -1,0 +1,41 @@
+{
+  "id": "chart-bar-demo-grid",
+  "name": "chart-bar-demo-grid",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "bar",
+    "grid",
+    "data visualization"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-demo-grid",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-demo-grid\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A reusable chart component that showcases bar graph data in a grid layout, ideal for displaying financial or categorical data. It features dynamic resizing, customizable colors, and easy integration with other registry:example components.",
+  "style_tags": [
+    "modern",
+    "colorful",
+    "animated"
+  ],
+  "interaction_tags": [
+    "resizeable",
+    "draggable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-bar-demo-grid\nDescription: A reusable chart component that showcases bar graph data in a grid layout, ideal for displaying financial or categorical data. It features dynamic resizing, customizable colors, and easy integration with other registry:example components.\nStyle: modern, colorful, animated\nInteractions: resizeable, draggable\nTags: chart, bar, grid, data visualization\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-bar-demo-grid",
+  "display_name": "Chart Bar Demo Grid",
+  "preview_url": "/previews/shadcn/chart-bar-demo-grid.png"
+}

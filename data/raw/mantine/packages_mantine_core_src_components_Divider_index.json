@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Divider_index",
+  "name": "Divider",
+  "source_code": "// packages/@mantine/core/src/components/Divider/index.ts\nimport type {\n  DividerCssVariables,\n  DividerFactory,\n  DividerProps,\n  DividerStylesNames,\n  DividerVariant,\n} from './Divider';\n\nexport { Divider } from './Divider';\n\nexport type {\n  DividerProps,\n  DividerStylesNames,\n  DividerCssVariables,\n  DividerFactory,\n  DividerVariant,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Divider_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Divider/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Divider_index",
+      "name": "Divider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Divider/index.ts",
+          "content": "import type {\n  DividerCssVariables,\n  DividerFactory,\n  DividerProps,\n  DividerStylesNames,\n  DividerVariant,\n} from './Divider';\n\nexport { Divider } from './Divider';\n\nexport type {\n  DividerProps,\n  DividerStylesNames,\n  DividerCssVariables,\n  DividerFactory,\n  DividerVariant,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

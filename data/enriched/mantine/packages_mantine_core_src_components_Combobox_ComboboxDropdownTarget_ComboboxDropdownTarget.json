@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Combobox_ComboboxDropdownTarget_ComboboxDropdownTarget",
+  "name": "ComboboxDropdownTarget",
+  "source_code": "// packages/@mantine/core/src/components/Combobox/ComboboxDropdownTarget/ComboboxDropdownTarget.tsx\nimport { factory, Factory, isElement, useProps } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useComboboxContext } from '../Combobox.context';\n\nexport interface ComboboxDropdownTargetProps {\n  ref?: React.RefObject<HTMLElement>;\n\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n  refProp?: string;\n}\n\nconst defaultProps = {\n  refProp: 'ref',\n} satisfies Partial<ComboboxDropdownTargetProps>;\n\nexport type ComboboxDropdownTargetFactory = Factory<{\n  props: ComboboxDropdownTargetProps;\n  ref: HTMLElement;\n  compound: true;\n}>;\n\nexport const ComboboxDropdownTarget = factory<ComboboxDropdownTargetFactory>((props) => {\n  const { children, refProp, ref } = useProps('ComboboxDropdownTarget', defaultProps, props);\n\n  // Context not used, just to throw error if used outside of Combobox\n  useComboboxContext();\n\n  if (!isElement(children)) {\n    throw new Error(\n      'Combobox.DropdownTarget component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  return (\n    <Popover.Target ref={ref} refProp={refProp}>\n      {children}\n    </Popover.Target>\n  );\n});\n\nComboboxDropdownTarget.displayName = '@mantine/core/ComboboxDropdownTarget';\n",
+  "description": "",
+  "tags": [
+    "combobox",
+    "dropdown",
+    "mantine",
+    "other",
+    "target"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Combobox_ComboboxDropdownTarget_ComboboxDropdownTarget",
+      "name": "ComboboxDropdownTarget",
+      "path": "packages/@mantine/core/src/components/Combobox/ComboboxDropdownTarget/ComboboxDropdownTarget.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Combobox_ComboboxDropdownTarget_ComboboxDropdownTarget",
+      "name": "ComboboxDropdownTarget",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Combobox/ComboboxDropdownTarget/ComboboxDropdownTarget.tsx",
+          "content": "import { factory, Factory, isElement, useProps } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useComboboxContext } from '../Combobox.context';\n\nexport interface ComboboxDropdownTargetProps {\n  ref?: React.RefObject<HTMLElement>;\n\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n  refProp?: string;\n}\n\nconst defaultProps = {\n  refProp: 'ref',\n} satisfies Partial<ComboboxDropdownTargetProps>;\n\nexport type ComboboxDropdownTargetFactory = Factory<{\n  props: ComboboxDropdownTargetProps;\n  ref: HTMLElement;\n  compound: true;\n}>;\n\nexport const ComboboxDropdownTarget = factory<ComboboxDropdownTargetFactory>((props) => {\n  const { children, refProp, ref } = useProps('ComboboxDropdownTarget', defaultProps, props);\n\n  // Context not used, just to throw error if used outside of Combobox\n  useComboboxContext();\n\n  if (!isElement(children)) {\n    throw new Error(\n      'Combobox.DropdownTarget component children should be an element or a component that accepts ref. Fragments, strings, numbers and other primitive values are not supported'\n    );\n  }\n\n  return (\n    <Popover.Target ref={ref} refProp={refProp}>\n      {children}\n    </Popover.Target>\n  );\n});\n\nComboboxDropdownTarget.displayName = '@mantine/core/ComboboxDropdownTarget';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ComboboxDropdownTarget is a combobox dropdown target UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ComboboxDropdownTarget\nDescription: ComboboxDropdownTarget is a combobox dropdown target UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: combobox, dropdown, mantine, other, target\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Combobox/ComboboxDropdownTarget/ComboboxDropdownTarget.tsx\nimport { factory, Factory, isElement, useProps } from '../../../core';\nimport { Popover } from '../../Popover';\nimport { useComboboxContext } from '../Combobox.context';\n\nexport interface ComboboxDropdownTargetProps {\n  ref?: React.RefObject<HTMLElement>;\n\n  /** Target element */\n  children: React.ReactNode;\n\n  /** Key of the prop that should be used to access element ref */\n  refProp?: string;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "combobox-dropdown-target",
+  "display_name": "Combobox Dropdown Target",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-combobox-comboboxdropdowntarget-comboboxdropdowntarget.png"
+}

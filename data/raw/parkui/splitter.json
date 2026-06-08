@@ -1,0 +1,52 @@
+{
+  "id": "splitter",
+  "name": "splitter",
+  "source_code": "// src/components/ui/splitter.tsx\n'use client'\nimport { Splitter } from '@ark-ui/react/splitter'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { splitter } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(splitter)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Splitter.Root, 'root')\nexport const RootProvider = withProvider(Splitter.RootProvider, 'root')\nexport const Panel = withContext(Splitter.Panel, 'panel')\nexport const ResizeTrigger = withContext(Splitter.ResizeTrigger, 'resizeTrigger')\n\nexport { SplitterContext as Context } from '@ark-ui/react/splitter'\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "splitter",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/splitter.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Splitter from './splitter'",
+          "content": "'use client'\nimport { Splitter } from '@ark-ui/react/splitter'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { splitter } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(splitter)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Splitter.Root, 'root')\nexport const RootProvider = withProvider(Splitter.RootProvider, 'root')\nexport const Panel = withContext(Splitter.Panel, 'panel')\nexport const ResizeTrigger = withContext(Splitter.ResizeTrigger, 'resizeTrigger')\n\nexport { SplitterContext as Context } from '@ark-ui/react/splitter'\n"
+        }
+      ],
+      "registryDependencies": [
+        "splitter-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "splitter",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/splitter.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Splitter from './splitter'",
+          "content": "'use client'\nimport { Splitter } from '@ark-ui/react/splitter'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { splitter } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(splitter)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Splitter.Root, 'root')\nexport const RootProvider = withProvider(Splitter.RootProvider, 'root')\nexport const Panel = withContext(Splitter.Panel, 'panel')\nexport const ResizeTrigger = withContext(Splitter.ResizeTrigger, 'resizeTrigger')\n\nexport { SplitterContext as Context } from '@ark-ui/react/splitter'\n"
+        }
+      ],
+      "registryDependencies": [
+        "splitter-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

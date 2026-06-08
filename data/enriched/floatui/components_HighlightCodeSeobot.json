@@ -1,0 +1,44 @@
+{
+  "id": "components_HighlightCodeSeobot",
+  "name": "HighlightCodeSeobot",
+  "source_code": "// components/HighlightCodeSeobot.tsx\n\"use client\";\n\nimport { useEffect } from \"react\";\nimport hljs from \"highlight.js\";\nimport \"highlight.js/styles/vs2015.min.css\";\n\nexport default function HighlightCodeSeobot() {\n  useEffect(() => {\n    hljs.highlightAll();\n  }, []);\n  return null;\n}\n",
+  "description": "",
+  "tags": [
+    "code",
+    "floatui",
+    "highlight",
+    "other",
+    "seobot"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "HighlightCodeSeobot",
+      "name": "HighlightCodeSeobot",
+      "path": "components/HighlightCodeSeobot.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_HighlightCodeSeobot",
+      "name": "HighlightCodeSeobot",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/HighlightCodeSeobot.tsx",
+          "content": "\"use client\";\n\nimport { useEffect } from \"react\";\nimport hljs from \"highlight.js\";\nimport \"highlight.js/styles/vs2015.min.css\";\n\nexport default function HighlightCodeSeobot() {\n  useEffect(() => {\n    hljs.highlightAll();\n  }, []);\n  return null;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "HighlightCodeSeobot is a highlight code seobot UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: HighlightCodeSeobot\nDescription: HighlightCodeSeobot is a highlight code seobot UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: code, floatui, highlight, other, seobot\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/HighlightCodeSeobot.tsx\n\"use client\";\n\nimport { useEffect } from \"react\";\nimport hljs from \"highlight.js\";\nimport \"highlight.js/styles/vs2015.min.css\";\n\nexport default function HighlightCodeSeobot() {\n  useEffect(() => {\n    hljs.highlightAll();\n  }, []);\n  return null;\n}\n",
+  "prompt_version": 2,
+  "clean_id": "highlight-code-seobot",
+  "display_name": "Highlight Code Seobot",
+  "preview_url": "/previews/floatui/components-highlightcodeseobot.png"
+}

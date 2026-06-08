@@ -1,0 +1,55 @@
+{
+  "id": "index",
+  "name": "index",
+  "source_code": "// packages/react/src/index.tsx\nimport * as React from 'react'\nimport {\n\tprefersReducedMotion as _prefersReducedMotion,\n\tcanAnimate as _canAnimate\n} from 'number-flow/lite'\nimport { buildStyles } from 'number-flow/csp'\nexport const styles = buildStyles('-react')\nexport * from 'number-flow/plugins'\nexport { default } from './NumberFlow'\nexport * from './NumberFlow'\nexport type { Value, Format, Trend, NumberPartType } from 'number-flow/lite'\n\nexport const useIsSupported = () =>\n\tReact.useSyncExternalStore(\n\t\t() => () => {}, // this value doesn't change, but it's useful to specify a different SSR value:\n\t\t() => _canAnimate,\n\t\t() => false\n\t)\nexport const usePrefersReducedMotion = () =>\n\tReact.useSyncExternalStore(\n\t\t(cb) => {\n\t\t\t_prefersReducedMotion?.addEventListener('change', cb)\n\t\t\treturn () => _prefersReducedMotion?.removeEventListener('change', cb)\n\t\t},\n\t\t() => _prefersReducedMotion!.matches,\n\t\t() => false\n\t)\n\nexport function useCanAnimate({ respectMotionPreference = true } = {}) {\n\tconst isSupported = useIsSupported()\n\tconst reducedMotion = usePrefersReducedMotion()\n\n\treturn isSupported && (!respectMotionPreference || !reducedMotion)\n}\n",
+  "description": "",
+  "tags": [
+    "utility",
+    "animation",
+    "number-flow"
+  ],
+  "server": "numberflow",
+  "metadata": {
+    "listed_component": {
+      "name": "index.tsx",
+      "source": "github_contents",
+      "path": "packages/react/src/index.tsx",
+      "sha": "ce3a6983f138206b677953d920affbfef2a29206",
+      "size": 1124,
+      "url": "https://api.github.com/repos/barvian/number-flow/contents/packages/react/src/index.tsx?ref=main",
+      "html_url": "https://github.com/barvian/number-flow/blob/main/packages/react/src/index.tsx",
+      "git_url": "https://api.github.com/repos/barvian/number-flow/git/blobs/ce3a6983f138206b677953d920affbfef2a29206",
+      "download_url": "https://raw.githubusercontent.com/barvian/number-flow/main/packages/react/src/index.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/barvian/number-flow/contents/packages/react/src/index.tsx?ref=main",
+        "git": "https://api.github.com/repos/barvian/number-flow/git/blobs/ce3a6983f138206b677953d920affbfef2a29206",
+        "html": "https://github.com/barvian/number-flow/blob/main/packages/react/src/index.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "index",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/index.tsx",
+          "content": "import * as React from 'react'\nimport {\n\tprefersReducedMotion as _prefersReducedMotion,\n\tcanAnimate as _canAnimate\n} from 'number-flow/lite'\nimport { buildStyles } from 'number-flow/csp'\nexport const styles = buildStyles('-react')\nexport * from 'number-flow/plugins'\nexport { default } from './NumberFlow'\nexport * from './NumberFlow'\nexport type { Value, Format, Trend, NumberPartType } from 'number-flow/lite'\n\nexport const useIsSupported = () =>\n\tReact.useSyncExternalStore(\n\t\t() => () => {}, // this value doesn't change, but it's useful to specify a different SSR value:\n\t\t() => _canAnimate,\n\t\t() => false\n\t)\nexport const usePrefersReducedMotion = () =>\n\tReact.useSyncExternalStore(\n\t\t(cb) => {\n\t\t\t_prefersReducedMotion?.addEventListener('change', cb)\n\t\t\treturn () => _prefersReducedMotion?.removeEventListener('change', cb)\n\t\t},\n\t\t() => _prefersReducedMotion!.matches,\n\t\t() => false\n\t)\n\nexport function useCanAnimate({ respectMotionPreference = true } = {}) {\n\tconst isSupported = useIsSupported()\n\tconst reducedMotion = usePrefersReducedMotion()\n\n\treturn isSupported && (!respectMotionPreference || !reducedMotion)\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A utility component providing various NumberFlow functionality including animation support checking.",
+  "style_tags": [
+    "standard"
+  ],
+  "interaction_tags": [
+    "animated"
+  ],
+  "component_type": "utility",
+  "generation_prompt": "Create a production-ready utility component with the following characteristics:\n\nName: index\nDescription: A utility component providing various NumberFlow functionality including animation support checking.\nStyle: standard\nInteractions: animated\nTags: utility, animation, number-flow\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/index.tsx\nimport * as React from 'react'\nimport {\n\tprefersReducedMotion as _prefersReducedMotion,\n\tcanAnimate as _canAnimate\n} from 'number-flow/lite'\nimport { buildStyles } from 'number-flow/csp'\nexport const styles = buildStyles('-react')\nexport * from 'number-flow/plugins'\nexport { default } from './NumberFlow'\nexport * from './NumberFlow'\nexport type { Value, Format, Trend, NumberPartType } from 'number-flow/lite'\n\nexport const useIsSupported = () =>\n\tReact.useSyncExter",
+  "prompt_version": 2,
+  "clean_id": "index",
+  "display_name": "Index",
+  "preview_url": "/previews/numberflow/index.png"
+}

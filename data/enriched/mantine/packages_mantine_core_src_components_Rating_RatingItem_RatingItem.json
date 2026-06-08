@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Rating_RatingItem_RatingItem",
+  "name": "RatingItem",
+  "source_code": "// packages/@mantine/core/src/components/Rating/RatingItem/RatingItem.tsx\nimport { Box, BoxProps, ElementProps, useDirection } from '../../../core';\nimport { useRatingContext } from '../Rating.context';\nimport { StarSymbol } from '../StarSymbol/StarSymbol';\n\nexport interface RatingItemProps extends BoxProps, ElementProps<'input', 'value' | 'size'> {\n  getSymbolLabel: ((value: number) => string) | undefined;\n  emptyIcon?: React.ReactNode | ((value: number) => React.ReactNode);\n  fullIcon?: React.ReactNode | ((value: number) => React.ReactNode);\n  full: boolean;\n  active: boolean;\n  fractionValue: number;\n  value: number;\n  id: string;\n  onChange: (event: React.ChangeEvent<HTMLInputElement> | number) => void;\n  onInputChange: (event: React.ChangeEvent<HTMLInputElement> | number) => void;\n}\n\nexport function RatingItem({\n  getSymbolLabel,\n  emptyIcon,\n  fullIcon,\n  full,\n  active,\n  value,\n  readOnly,\n  fractionValue,\n  color,\n  id,\n  onBlur,\n  onChange,\n  onInputChange,\n  style,\n  ...others\n}: RatingItemProps) {\n  const ctx = useRatingContext();\n  const _fullIcon = typeof fullIcon === 'function' ? fullIcon(value) : fullIcon;\n  const _emptyIcon = typeof emptyIcon === 'function' ? emptyIcon(value) : emptyIcon;\n  const { dir } = useDirection();\n\n  return (\n    <>\n      {!readOnly && (\n        <input\n          {...ctx.getStyles('input')}\n          onKeyDown={(event) => (event.key === ' ' || event.key === 'Enter') && onChange(value)}\n          id={id}\n          type=\"radio\"\n          data-active={active || undefined}\n          aria-label={getSymbolLabel?.(value)}\n          value={value}\n          onBlur={onBlur}\n          onChange={onInputChange}\n          {...others}\n        />\n      )}\n\n      <Box\n        component={readOnly ? 'div' : 'label'}\n        {...ctx.getStyles('label')}\n        data-read-only={readOnly || undefined}\n        htmlFor={id}\n        onClick={readOnly ? undefined : () => onChange(value)}\n        __vars={{\n          '--rating-item-z-index': (fractionValue === 1 ? undefined : active ? 2 : 0)?.toString(),\n        }}\n      >\n        <Box\n          {...ctx.getStyles('symbolBody')}\n          __vars={{\n            '--rating-symbol-clip-path':\n              fractionValue === 1\n                ? undefined\n                : dir === 'ltr'\n                  ? `inset(0 ${active ? 100 - fractionValue * 100 : 100}% 0 0)`\n                  : `inset(0 0 0 ${active ? 100 - fractionValue * 100 : 100}% )`,\n          }}\n        >\n          {full\n            ? _fullIcon || <StarSymbol type=\"full\" />\n            : _emptyIcon || <StarSymbol type=\"empty\" />}\n        </Box>\n      </Box>\n    </>\n  );\n}\n\nRatingItem.displayName = '@mantine/core/RatingItem';\n",
+  "description": "",
+  "tags": [
+    "item",
+    "mantine",
+    "other",
+    "rating"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Rating_RatingItem_RatingItem",
+      "name": "RatingItem",
+      "path": "packages/@mantine/core/src/components/Rating/RatingItem/RatingItem.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Rating_RatingItem_RatingItem",
+      "name": "RatingItem",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Rating/RatingItem/RatingItem.tsx",
+          "content": "import { Box, BoxProps, ElementProps, useDirection } from '../../../core';\nimport { useRatingContext } from '../Rating.context';\nimport { StarSymbol } from '../StarSymbol/StarSymbol';\n\nexport interface RatingItemProps extends BoxProps, ElementProps<'input', 'value' | 'size'> {\n  getSymbolLabel: ((value: number) => string) | undefined;\n  emptyIcon?: React.ReactNode | ((value: number) => React.ReactNode);\n  fullIcon?: React.ReactNode | ((value: number) => React.ReactNode);\n  full: boolean;\n  active: boolean;\n  fractionValue: number;\n  value: number;\n  id: string;\n  onChange: (event: React.ChangeEvent<HTMLInputElement> | number) => void;\n  onInputChange: (event: React.ChangeEvent<HTMLInputElement> | number) => void;\n}\n\nexport function RatingItem({\n  getSymbolLabel,\n  emptyIcon,\n  fullIcon,\n  full,\n  active,\n  value,\n  readOnly,\n  fractionValue,\n  color,\n  id,\n  onBlur,\n  onChange,\n  onInputChange,\n  style,\n  ...others\n}: RatingItemProps) {\n  const ctx = useRatingContext();\n  const _fullIcon = typeof fullIcon === 'function' ? fullIcon(value) : fullIcon;\n  const _emptyIcon = typeof emptyIcon === 'function' ? emptyIcon(value) : emptyIcon;\n  const { dir } = useDirection();\n\n  return (\n    <>\n      {!readOnly && (\n        <input\n          {...ctx.getStyles('input')}\n          onKeyDown={(event) => (event.key === ' ' || event.key === 'Enter') && onChange(value)}\n          id={id}\n          type=\"radio\"\n          data-active={active || undefined}\n          aria-label={getSymbolLabel?.(value)}\n          value={value}\n          onBlur={onBlur}\n          onChange={onInputChange}\n          {...others}\n        />\n      )}\n\n      <Box\n        component={readOnly ? 'div' : 'label'}\n        {...ctx.getStyles('label')}\n        data-read-only={readOnly || undefined}\n        htmlFor={id}\n        onClick={readOnly ? undefined : () => onChange(value)}\n        __vars={{\n          '--rating-item-z-index': (fractionValue === 1 ? undefined : active ? 2 : 0)?.toString(),\n        }}\n      >\n        <Box\n          {...ctx.getStyles('symbolBody')}\n          __vars={{\n            '--rating-symbol-clip-path':\n              fractionValue === 1\n                ? undefined\n                : dir === 'ltr'\n                  ? `inset(0 ${active ? 100 - fractionValue * 100 : 100}% 0 0)`\n                  : `inset(0 0 0 ${active ? 100 - fractionValue * 100 : 100}% )`,\n          }}\n        >\n          {full\n            ? _fullIcon || <StarSymbol type=\"full\" />\n            : _emptyIcon || <StarSymbol type=\"empty\" />}\n        </Box>\n      </Box>\n    </>\n  );\n}\n\nRatingItem.displayName = '@mantine/core/RatingItem';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "RatingItem is a rating item UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: RatingItem\nDescription: RatingItem is a rating item UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: item, mantine, other, rating\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Rating/RatingItem/RatingItem.tsx\nimport { Box, BoxProps, ElementProps, useDirection } from '../../../core';\nimport { useRatingContext } from '../Rating.context';\nimport { StarSymbol } from '../StarSymbol/StarSymbol';\n\nexport interface RatingItemProps extends BoxProps, ElementProps<'input', 'value' | 'size'> {\n  getSymbolLabel: ((value: number) => string) | undefined;\n  emptyIcon?: React.ReactNode | ((value: number) => React.ReactNode);\n  fullIcon?: React.",
+  "prompt_version": 2,
+  "clean_id": "rating-item",
+  "display_name": "Rating Item",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-rating-ratingitem-ratingitem.png"
+}

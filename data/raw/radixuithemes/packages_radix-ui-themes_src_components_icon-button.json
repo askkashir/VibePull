@@ -1,0 +1,44 @@
+{
+  "id": "packages_radix-ui-themes_src_components_icon-button",
+  "name": "icon-button",
+  "source_code": "// packages/radix-ui-themes/src/components/icon-button.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { BaseButton } from './_internal/base-button.js';\n\ntype IconButtonElement = React.ElementRef<typeof BaseButton>;\ninterface IconButtonProps extends React.ComponentPropsWithoutRef<typeof BaseButton> {}\nconst IconButton = React.forwardRef<IconButtonElement, IconButtonProps>(\n  ({ className, ...props }, forwardedRef) => (\n    <BaseButton {...props} ref={forwardedRef} className={classNames('rt-IconButton', className)} />\n  ),\n);\nIconButton.displayName = 'IconButton';\n\nexport { IconButton };\nexport type { IconButtonProps };\n",
+  "description": "",
+  "tags": [
+    "file",
+    "radixuithemes",
+    "registry:ui"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_icon-button",
+      "name": "icon-button.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/icon-button.tsx",
+      "sha": "ebd419564487cd483711e8bbe34cbc59f9f58de3",
+      "size": 601,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/icon-button.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/icon-button.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/ebd419564487cd483711e8bbe34cbc59f9f58de3",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/icon-button.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/icon-button.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/ebd419564487cd483711e8bbe34cbc59f9f58de3",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/icon-button.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_icon-button",
+      "name": "icon-button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/icon-button.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { BaseButton } from './_internal/base-button.js';\n\ntype IconButtonElement = React.ElementRef<typeof BaseButton>;\ninterface IconButtonProps extends React.ComponentPropsWithoutRef<typeof BaseButton> {}\nconst IconButton = React.forwardRef<IconButtonElement, IconButtonProps>(\n  ({ className, ...props }, forwardedRef) => (\n    <BaseButton {...props} ref={forwardedRef} className={classNames('rt-IconButton', className)} />\n  ),\n);\nIconButton.displayName = 'IconButton';\n\nexport { IconButton };\nexport type { IconButtonProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

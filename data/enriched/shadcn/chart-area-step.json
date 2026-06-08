@@ -1,0 +1,39 @@
+{
+  "id": "chart-area-step",
+  "name": "chart-area-step",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "progress",
+    "jorney",
+    "dashboard",
+    "product-tour"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-area-step",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-area-step\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "ChartAreaStep is a chart component that displays progress through multiple steps with varying sizes. It's used to visualize multi-step journey or process and would be suitable for dashboard, product tour, and tutorial pages. This component is particularly useful when showcasing the progress towards a goal or milestones.",
+  "style_tags": [
+    "e.g. material",
+    "light",
+    "modern"
+  ],
+  "interaction_tags": [],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-area-step\nDescription: ChartAreaStep is a chart component that displays progress through multiple steps with varying sizes. It's used to visualize multi-step journey or process and would be suitable for dashboard, product tour, and tutorial pages. This component is particularly useful when showcasing the progress towards a goal or milestones.\nStyle: e.g. material, light, modern\nInteractions: \nTags: chart, progress, jorney, dashboard, product-tour\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-area-step",
+  "display_name": "Chart Area Step",
+  "preview_url": "/previews/shadcn/chart-area-step.png"
+}

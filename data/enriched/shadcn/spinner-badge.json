@@ -1,0 +1,37 @@
+{
+  "id": "spinner-badge",
+  "name": "spinner-badge",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "status",
+    "loading",
+    "indicator",
+    "data"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-badge",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-badge\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Spinner Badge is an animated circular indicator that displays a numeric or alphabetical value, often used in real-time data or progress tracking. Typically placed in a compact area, it visually communicates data that is being loaded, calculated, or updated. Suitable for displaying brief information or status updates.",
+  "style_tags": [
+    "compact",
+    "minimal"
+  ],
+  "interaction_tags": [],
+  "component_type": "badge",
+  "generation_prompt": "Create a production-ready badge component with the following characteristics:\n\nName: spinner-badge\nDescription: The Spinner Badge is an animated circular indicator that displays a numeric or alphabetical value, often used in real-time data or progress tracking. Typically placed in a compact area, it visually communicates data that is being loaded, calculated, or updated. Suitable for displaying brief information or status updates.\nStyle: compact, minimal\nInteractions: \nTags: status, loading, indicator, data\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-badge",
+  "display_name": "Spinner Badge",
+  "preview_url": "/previews/shadcn/spinner-badge.png"
+}

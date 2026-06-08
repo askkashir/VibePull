@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_toast_constants",
+  "name": "constants",
+  "source_code": "// packages/react/src/components/toast/constants.ts\n// Default gap between toasts\nexport const DEFAULT_GAP = 12;\n// The default maximum number of visible toasts (visual only).\nexport const DEFAULT_MAX_VISIBLE_TOAST = 3;\n// The maximum number of toasts to render in the RAC queue.\nexport const DEFAULT_RAC_MAX_VISIBLE_TOAST = Number.MAX_SAFE_INTEGER;\n// The default scale factor for toasts.\nexport const DEFAULT_SCALE_FACTOR = 0.05;\n// The default width of the toast.\nexport const DEFAULT_TOAST_WIDTH = 460;\n// The default timeout for toasts in milliseconds (matches sonner's default).\nexport const DEFAULT_TOAST_TIMEOUT = 4000;\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "toast_constants",
+      "name": "constants",
+      "path": "packages/react/src/components/toast/constants.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_toast_constants",
+      "name": "constants",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/toast/constants.ts",
+          "content": "// Default gap between toasts\nexport const DEFAULT_GAP = 12;\n// The default maximum number of visible toasts (visual only).\nexport const DEFAULT_MAX_VISIBLE_TOAST = 3;\n// The maximum number of toasts to render in the RAC queue.\nexport const DEFAULT_RAC_MAX_VISIBLE_TOAST = Number.MAX_SAFE_INTEGER;\n// The default scale factor for toasts.\nexport const DEFAULT_SCALE_FACTOR = 0.05;\n// The default width of the toast.\nexport const DEFAULT_TOAST_WIDTH = 460;\n// The default timeout for toasts in milliseconds (matches sonner's default).\nexport const DEFAULT_TOAST_TIMEOUT = 4000;\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

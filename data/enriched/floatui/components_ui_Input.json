@@ -1,0 +1,48 @@
+{
+  "id": "components_ui_Input",
+  "name": "Input",
+  "source_code": "// components/ui/Input.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { HTMLAttributes } from \"react\";\n\ninterface Props extends HTMLAttributes<HTMLInputElement> {\n  className?: string;\n  value?: string;\n  type?: \"text\" | \"email\" | \"password\";\n  name?: string;\n  validate?: {};\n  required?: boolean;\n  disabled?: boolean;\n  autoFocus?: boolean;\n}\n\nexport default ({ className, required, validate, ...props }: Props) => (\n  <input\n    {...props}\n    className={mergeTW(\n      `px-3 py-2 bg-zinc-800/70 hover:bg-zinc-800/40 focus:bg-zinc-800/40 text-sm text-zinc-300 placeholder-zinc-500 outline-none border border-zinc-800 focus:border-zinc-600 shadow-sm rounded-lg duration-200 ${className}`\n    )}\n  ></input>\n);\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "input"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Input",
+      "name": "Input",
+      "path": "components/ui/Input.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Input",
+      "name": "Input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Input.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\nimport { HTMLAttributes } from \"react\";\n\ninterface Props extends HTMLAttributes<HTMLInputElement> {\n  className?: string;\n  value?: string;\n  type?: \"text\" | \"email\" | \"password\";\n  name?: string;\n  validate?: {};\n  required?: boolean;\n  disabled?: boolean;\n  autoFocus?: boolean;\n}\n\nexport default ({ className, required, validate, ...props }: Props) => (\n  <input\n    {...props}\n    className={mergeTW(\n      `px-3 py-2 bg-zinc-800/70 hover:bg-zinc-800/40 focus:bg-zinc-800/40 text-sm text-zinc-300 placeholder-zinc-500 outline-none border border-zinc-800 focus:border-zinc-600 shadow-sm rounded-lg duration-200 ${className}`\n    )}\n  ></input>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Input is a input UI component from the floatui corpus. It provides reusable input behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "rounded",
+    "shadow",
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover",
+    "keyboard-focus"
+  ],
+  "component_type": "input",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: Input\nDescription: Input is a input UI component from the floatui corpus. It provides reusable input behavior and styling for React or web UI screens.\nStyle: rounded, shadow, utility-styled\nInteractions: hover, keyboard-focus\nTags: floatui, input\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Input.tsx\nimport mergeTW from \"utils/mergeTW\";\nimport { HTMLAttributes } from \"react\";\n\ninterface Props extends HTMLAttributes<HTMLInputElement> {\n  className?: string;\n  value?: string;\n  type?: \"text\" | \"email\" | \"password\";\n  name?: string;\n  validate?: {};\n  required?: boolean;\n  disabled?: boolean;\n  autoFocus?: boolean;\n}\n\nexport default ({ className, required, validate, ...props }: Props) => (\n  <input\n    {...props}\n    className={mergeTW(\n      `px-3 py-2 bg-zinc-800/70",
+  "prompt_version": 2,
+  "clean_id": "input",
+  "display_name": "Input",
+  "preview_url": "/previews/floatui/components-ui-input.png"
+}

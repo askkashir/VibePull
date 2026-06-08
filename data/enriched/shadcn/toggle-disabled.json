@@ -1,0 +1,43 @@
+{
+  "id": "toggle-disabled",
+  "name": "toggle-disabled",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "button",
+    "disabled",
+    "stateful",
+    "ux"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-disabled",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-disabled\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A toggle button with a disabled state, used to indicate an action is unavailable or unable to be performed. Typically used for situations where an action requires a user action to become available, making it accessible and usable again. This component can be a crucial element in UX/UI design to provide a clear and intuitive user experience.",
+  "style_tags": [
+    "light",
+    "flat",
+    "standard"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable",
+    "disabled"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-disabled\nDescription: A toggle button with a disabled state, used to indicate an action is unavailable or unable to be performed. Typically used for situations where an action requires a user action to become available, making it accessible and usable again. This component can be a crucial element in UX/UI design to provide a clear and intuitive user experience.\nStyle: light, flat, standard\nInteractions: clickable, tappable, disabled\nTags: toggle, button, disabled, stateful, ux\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-disabled",
+  "display_name": "Toggle Disabled",
+  "preview_url": "/previews/shadcn/toggle-disabled.png"
+}

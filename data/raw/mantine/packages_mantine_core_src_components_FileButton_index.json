@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_FileButton_index",
+  "name": "FileButton",
+  "source_code": "// packages/@mantine/core/src/components/FileButton/index.ts\nimport type { FileButtonFactory, FileButtonProps } from './FileButton';\n\nexport { FileButton } from './FileButton';\n\nexport type { FileButtonProps, FileButtonFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FileButton_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/FileButton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FileButton_index",
+      "name": "FileButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FileButton/index.ts",
+          "content": "import type { FileButtonFactory, FileButtonProps } from './FileButton';\n\nexport { FileButton } from './FileButton';\n\nexport type { FileButtonProps, FileButtonFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

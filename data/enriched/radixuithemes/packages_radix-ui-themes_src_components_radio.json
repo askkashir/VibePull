@@ -1,0 +1,59 @@
+{
+  "id": "packages_radix-ui-themes_src_components_radio",
+  "name": "radio",
+  "source_code": "// packages/radix-ui-themes/src/components/radio.tsx\n'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { composeEventHandlers } from 'radix-ui/internal';\n\nimport { radioPropDefs } from './radio.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\nimport type { NotInputRadioAttributes } from '../helpers/input-attributes.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype RadioElement = React.ElementRef<'input'>;\ntype RadioOwnProps = GetPropDefTypes<typeof radioPropDefs> & {\n  value: string;\n  onValueChange?: (value: string) => void;\n};\ntype RadioInputProps = ComponentPropsWithout<\n  'input',\n  NotInputRadioAttributes | 'color' | 'defaultValue' | 'value'\n>;\ninterface RadioProps extends RadioInputProps, MarginProps, RadioOwnProps {}\n\nconst Radio = React.forwardRef<RadioElement, RadioProps>((props, forwardedRef) => {\n  const { className, color, onChange, onValueChange, ...radioProps } = extractProps(\n    props,\n    radioPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <input\n      type=\"radio\"\n      data-accent-color={color}\n      {...radioProps}\n      onChange={composeEventHandlers(onChange, (event) =>\n        onValueChange?.(event.currentTarget.value),\n      )}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-BaseRadioRoot', 'rt-RadioRoot', className)}\n    />\n  );\n});\nRadio.displayName = 'Radio';\n\nexport { Radio };\nexport type { RadioProps };\n",
+  "description": "",
+  "tags": [
+    "button",
+    "toggle",
+    "option"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_radio",
+      "name": "radio.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/radio.tsx",
+      "sha": "b5f59b854ef7b7feedb20c260acdd5fc512aac2b",
+      "size": 1607,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/radio.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/radio.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/b5f59b854ef7b7feedb20c260acdd5fc512aac2b",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/radio.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/radio.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/b5f59b854ef7b7feedb20c260acdd5fc512aac2b",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/radio.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_radio",
+      "name": "radio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/radio.tsx",
+          "content": "'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { composeEventHandlers } from 'radix-ui/internal';\n\nimport { radioPropDefs } from './radio.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js';\nimport type { NotInputRadioAttributes } from '../helpers/input-attributes.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype RadioElement = React.ElementRef<'input'>;\ntype RadioOwnProps = GetPropDefTypes<typeof radioPropDefs> & {\n  value: string;\n  onValueChange?: (value: string) => void;\n};\ntype RadioInputProps = ComponentPropsWithout<\n  'input',\n  NotInputRadioAttributes | 'color' | 'defaultValue' | 'value'\n>;\ninterface RadioProps extends RadioInputProps, MarginProps, RadioOwnProps {}\n\nconst Radio = React.forwardRef<RadioElement, RadioProps>((props, forwardedRef) => {\n  const { className, color, onChange, onValueChange, ...radioProps } = extractProps(\n    props,\n    radioPropDefs,\n    marginPropDefs,\n  );\n  return (\n    <input\n      type=\"radio\"\n      data-accent-color={color}\n      {...radioProps}\n      onChange={composeEventHandlers(onChange, (event) =>\n        onValueChange?.(event.currentTarget.value),\n      )}\n      ref={forwardedRef}\n      className={classNames('rt-reset', 'rt-BaseRadioRoot', 'rt-RadioRoot', className)}\n    />\n  );\n});\nRadio.displayName = 'Radio';\n\nexport { Radio };\nexport type { RadioProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A radio button component that displays a toggleable button for a single choice option.",
+  "style_tags": [
+    "material",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "animated"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: radio\nDescription: A radio button component that displays a toggleable button for a single choice option.\nStyle: material, minimal\nInteractions: clickable, animated\nTags: button, toggle, option\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/radio.tsx\n'use client';\n\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { composeEventHandlers } from 'radix-ui/internal';\n\nimport { radioPropDefs } from './radio.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { ComponentPropsWithout } from '../helpers/component-props.js",
+  "prompt_version": 2,
+  "clean_id": "radio",
+  "display_name": "Radio",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-radio.png"
+}

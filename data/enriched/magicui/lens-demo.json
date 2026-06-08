@@ -1,0 +1,66 @@
+{
+  "id": "lens-demo",
+  "name": "Lens Demo",
+  "source_code": "\"use client\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Lens } from \"@/registry/magicui/lens\"\n\nexport default function LensDemo() {\n  return (\n    <Card className=\"relative max-w-md shadow-none\">\n      <CardHeader>\n        <Lens\n          zoomFactor={2}\n          lensSize={150}\n          isStatic={false}\n          ariaLabel=\"Zoom Area\"\n        >\n          <img\n            src=\"https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            alt=\"image placeholder\"\n            width={500}\n            height={500}\n          />\n        </Lens>\n      </CardHeader>\n      <CardContent>\n        <CardTitle className=\"text-2xl\">Your next camp</CardTitle>\n        <CardDescription>\n          See our latest and best camp destinations all across the five\n          continents of the globe.\n        </CardDescription>\n      </CardContent>\n      <CardFooter className=\"space-x-4\">\n        <Button>Let&apos;s go</Button>\n        <Button variant=\"secondary\">Another time</Button>\n      </CardFooter>\n    </Card>\n  )\n}\n",
+  "description": "Example showing a lens effect component",
+  "tags": [
+    "image",
+    "gallery",
+    "zoom"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "lens-demo",
+      "type": "registry:example",
+      "title": "Lens Demo",
+      "description": "Example showing a lens effect component",
+      "registryDependencies": [
+        "button",
+        "card",
+        "https://magicui.design/r/lens"
+      ],
+      "files": [
+        {
+          "path": "registry/example/lens-demo.tsx",
+          "type": "registry:example",
+          "target": "components/lens-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lens-demo",
+      "type": "registry:example",
+      "title": "Lens Demo",
+      "description": "Example showing a lens effect component",
+      "registryDependencies": [
+        "button",
+        "card",
+        "@magicui/lens"
+      ],
+      "files": [
+        {
+          "path": "registry/example/lens-demo.tsx",
+          "content": "\"use client\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Lens } from \"@/registry/magicui/lens\"\n\nexport default function LensDemo() {\n  return (\n    <Card className=\"relative max-w-md shadow-none\">\n      <CardHeader>\n        <Lens\n          zoomFactor={2}\n          lensSize={150}\n          isStatic={false}\n          ariaLabel=\"Zoom Area\"\n        >\n          <img\n            src=\"https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            alt=\"image placeholder\"\n            width={500}\n            height={500}\n          />\n        </Lens>\n      </CardHeader>\n      <CardContent>\n        <CardTitle className=\"text-2xl\">Your next camp</CardTitle>\n        <CardDescription>\n          See our latest and best camp destinations all across the five\n          continents of the globe.\n        </CardDescription>\n      </CardContent>\n      <CardFooter className=\"space-x-4\">\n        <Button>Let&apos;s go</Button>\n        <Button variant=\"secondary\">Another time</Button>\n      </CardFooter>\n    </Card>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "Lens demo component is a zoomable image viewer, typically used when a developer wants to show off an image with a high zoom level. It can be used in a hero section or a product showcase page. The component has a lens that focuses on a specific area of an image, allowing users to zoom in and out of the image.",
+  "style_tags": [
+    "dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Lens Demo\nDescription: Lens demo component is a zoomable image viewer, typically used when a developer wants to show off an image with a high zoom level. It can be used in a hero section or a product showcase page. The component has a lens that focuses on a specific area of an image, allowing users to zoom in and out of the image.\nStyle: dark, minimal\nInteractions: hover, clickable\nTags: image, gallery, zoom\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Lens } from \"@/registry/magicui/lens\"\n\nexport default function LensDemo() {\n  return (\n    <Card className=\"relative max-w-md shadow-none\">\n      <CardHeader>\n        <Lens\n          zoomFactor={2}\n          lensSize={150}\n          isStatic={false}\n          ariaLabel=\"Zoom Area\"\n        >\n          <img\n",
+  "prompt_version": 2,
+  "clean_id": "lens-demo",
+  "display_name": "Lens Demo",
+  "preview_url": "/previews/magicui/lens-demo.png"
+}

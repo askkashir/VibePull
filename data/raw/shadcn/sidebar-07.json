@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-07",
+  "name": "sidebar-07",
+  "source_code": "",
+  "description": "A sidebar that collapses to icons.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-07",
+      "type": "registry:block",
+      "description": "A sidebar that collapses to icons.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-07\n\nA sidebar that collapses to icons.\n\n**Type:** registry:block\n**Files:** 6 file(s)"
+  }
+}

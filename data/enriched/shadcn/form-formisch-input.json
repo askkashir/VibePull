@@ -1,0 +1,40 @@
+{
+  "id": "form-formisch-input",
+  "name": "form-formisch-input",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "input",
+    "form",
+    "formisch",
+    "stylish",
+    "react"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "form-formisch-input",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## form-formisch-input\n**Type:** registry:example\n**Files:** 1 file(s)\n**Dependencies:** @formisch/react, valibot"
+  },
+  "visual_summary": "Formisch-Input is a visually appealing form input component. It is designed to blend seamlessly with other formisch components, providing a uniform user experience. It can be used in various forms, such as login forms, registration forms, or contact forms.",
+  "style_tags": [
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "hover",
+    "clickable"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: form-formisch-input\nDescription: Formisch-Input is a visually appealing form input component. It is designed to blend seamlessly with other formisch components, providing a uniform user experience. It can be used in various forms, such as login forms, registration forms, or contact forms.\nStyle: glassmorphism\nInteractions: hover, clickable\nTags: input, form, formisch, stylish, react\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "form-formisch-input",
+  "display_name": "Form Formisch Input",
+  "preview_url": "/previews/shadcn/form-formisch-input.png"
+}

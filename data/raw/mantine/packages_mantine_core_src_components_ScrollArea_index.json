@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_index",
+  "name": "ScrollArea",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/index.ts\nimport type {\n  ScrollAreaAutosizeProps,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n  ScrollAreaProps,\n  ScrollAreaStylesNames,\n} from './ScrollArea';\n\nexport { ScrollArea, ScrollAreaAutosize } from './ScrollArea';\nexport { useScrollAreaContext } from './ScrollArea.context';\n\nexport type {\n  ScrollAreaProps,\n  ScrollAreaAutosizeProps,\n  ScrollAreaStylesNames,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/ScrollArea/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_index",
+      "name": "ScrollArea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/index.ts",
+          "content": "import type {\n  ScrollAreaAutosizeProps,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n  ScrollAreaProps,\n  ScrollAreaStylesNames,\n} from './ScrollArea';\n\nexport { ScrollArea, ScrollAreaAutosize } from './ScrollArea';\nexport { useScrollAreaContext } from './ScrollArea.context';\n\nexport type {\n  ScrollAreaProps,\n  ScrollAreaAutosizeProps,\n  ScrollAreaStylesNames,\n  ScrollAreaCssVariables,\n  ScrollAreaFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

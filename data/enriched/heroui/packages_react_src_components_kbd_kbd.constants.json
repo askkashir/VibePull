@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_kbd_kbd.constants",
+  "name": "kbd.constants",
+  "source_code": "// packages/react/src/components/kbd/kbd.constants.ts\nexport type KbdKey =\n  | \"command\"\n  | \"shift\"\n  | \"ctrl\"\n  | \"option\"\n  | \"enter\"\n  | \"delete\"\n  | \"escape\"\n  | \"tab\"\n  | \"capslock\"\n  | \"up\"\n  | \"right\"\n  | \"down\"\n  | \"left\"\n  | \"pageup\"\n  | \"pagedown\"\n  | \"home\"\n  | \"end\"\n  | \"help\"\n  | \"space\"\n  | \"fn\"\n  | \"win\"\n  | \"alt\";\n\nexport const kbdKeysMap: Record<KbdKey, string> = {\n  command: \"⌘\",\n  shift: \"⇧\",\n  ctrl: \"⌃\",\n  option: \"⌥\",\n  enter: \"↵\",\n  delete: \"⌫\",\n  escape: \"⎋\",\n  tab: \"⇥\",\n  capslock: \"⇪\",\n  up: \"↑\",\n  right: \"→\",\n  down: \"↓\",\n  left: \"←\",\n  pageup: \"⇞\",\n  pagedown: \"⇟\",\n  home: \"↖\",\n  end: \"↘\",\n  help: \"?\",\n  space: \"␣\",\n  fn: \"Fn\",\n  win: \"⌘\",\n  alt: \"⌥\",\n};\n\nexport const kbdKeysLabelMap: Record<KbdKey, string> = {\n  command: \"Command\",\n  shift: \"Shift\",\n  ctrl: \"Control\",\n  option: \"Option\",\n  enter: \"Enter\",\n  delete: \"Delete\",\n  escape: \"Escape\",\n  tab: \"Tab\",\n  capslock: \"Caps Lock\",\n  up: \"Up\",\n  right: \"Right\",\n  down: \"Down\",\n  left: \"Left\",\n  pageup: \"Page Up\",\n  pagedown: \"Page Down\",\n  home: \"Home\",\n  end: \"End\",\n  help: \"Help\",\n  space: \"Space\",\n  fn: \"Fn\",\n  win: \"Win\",\n  alt: \"Alt\",\n};\n",
+  "description": "",
+  "tags": [
+    "constants",
+    "kbd",
+    "keyboard"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "kbd_kbd.constants",
+      "name": "kbd.constants",
+      "path": "packages/react/src/components/kbd/kbd.constants.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_kbd_kbd.constants",
+      "name": "kbd.constants",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/kbd/kbd.constants.ts",
+          "content": "export type KbdKey =\n  | \"command\"\n  | \"shift\"\n  | \"ctrl\"\n  | \"option\"\n  | \"enter\"\n  | \"delete\"\n  | \"escape\"\n  | \"tab\"\n  | \"capslock\"\n  | \"up\"\n  | \"right\"\n  | \"down\"\n  | \"left\"\n  | \"pageup\"\n  | \"pagedown\"\n  | \"home\"\n  | \"end\"\n  | \"help\"\n  | \"space\"\n  | \"fn\"\n  | \"win\"\n  | \"alt\";\n\nexport const kbdKeysMap: Record<KbdKey, string> = {\n  command: \"⌘\",\n  shift: \"⇧\",\n  ctrl: \"⌃\",\n  option: \"⌥\",\n  enter: \"↵\",\n  delete: \"⌫\",\n  escape: \"⎋\",\n  tab: \"⇥\",\n  capslock: \"⇪\",\n  up: \"↑\",\n  right: \"→\",\n  down: \"↓\",\n  left: \"←\",\n  pageup: \"⇞\",\n  pagedown: \"⇟\",\n  home: \"↖\",\n  end: \"↘\",\n  help: \"?\",\n  space: \"␣\",\n  fn: \"Fn\",\n  win: \"⌘\",\n  alt: \"⌥\",\n};\n\nexport const kbdKeysLabelMap: Record<KbdKey, string> = {\n  command: \"Command\",\n  shift: \"Shift\",\n  ctrl: \"Control\",\n  option: \"Option\",\n  enter: \"Enter\",\n  delete: \"Delete\",\n  escape: \"Escape\",\n  tab: \"Tab\",\n  capslock: \"Caps Lock\",\n  up: \"Up\",\n  right: \"Right\",\n  down: \"Down\",\n  left: \"Left\",\n  pageup: \"Page Up\",\n  pagedown: \"Page Down\",\n  home: \"Home\",\n  end: \"End\",\n  help: \"Help\",\n  space: \"Space\",\n  fn: \"Fn\",\n  win: \"Win\",\n  alt: \"Alt\",\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A constants component containing keyboard keys and their corresponding symbols and labels in a Kebab (kbd) style. Developers would use this when displaying keyboard shortcuts in their application.",
+  "style_tags": [
+    "monotone",
+    "text-based"
+  ],
+  "interaction_tags": [
+    "static",
+    "read-only"
+  ],
+  "component_type": "constants",
+  "generation_prompt": "Create a production-ready constants component with the following characteristics:\n\nName: kbd.constants\nDescription: A constants component containing keyboard keys and their corresponding symbols and labels in a Kebab (kbd) style. Developers would use this when displaying keyboard shortcuts in their application.\nStyle: monotone, text-based\nInteractions: static, read-only\nTags: constants, kbd, keyboard\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/kbd/kbd.constants.ts\nexport type KbdKey =\n  | \"command\"\n  | \"shift\"\n  | \"ctrl\"\n  | \"option\"\n  | \"enter\"\n  | \"delete\"\n  | \"escape\"\n  | \"tab\"\n  | \"capslock\"\n  | \"up\"\n  | \"right\"\n  | \"down\"\n  | \"left\"\n  | \"pageup\"\n  | \"pagedown\"\n  | \"home\"\n  | \"end\"\n  | \"help\"\n  | \"space\"\n  | \"fn\"\n  | \"win\"\n  | \"alt\";\n\nexport const kbdKeysMap: Record<KbdKey, string> = {\n  command: \"⌘\",\n  shift: \"⇧\",\n  ctrl: \"⌃\",\n  option: \"⌥\",\n  enter: \"↵\",\n  delete: \"⌫\",\n  escape: \"⎋\",\n  tab: \"⇥\",\n",
+  "prompt_version": 2,
+  "clean_id": "kbd-constants",
+  "display_name": "Kbd Constants",
+  "preview_url": "/previews/heroui/packages-react-src-components-kbd-kbd-constants.png"
+}

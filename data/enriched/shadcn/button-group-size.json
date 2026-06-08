@@ -1,0 +1,44 @@
+{
+  "id": "button-group-size",
+  "name": "button-group-size",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "button",
+    "group",
+    "size",
+    "configuration",
+    "customizable",
+    "interface",
+    "navigation",
+    "forms"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-group-size",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-group-size\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A button group of varying sizes can be used in a wide array of contexts, such as navigation menus, action bars, or as a form of content aggregation. This component is ideal for developers who require a versatile button group that can be customized based on size and arrangement. Utilize this component to add a touch of sophistication and functionality to any interface.",
+  "style_tags": [
+    "flat",
+    "minimal",
+    "responsive"
+  ],
+  "interaction_tags": [
+    "onClick"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-group-size\nDescription: A button group of varying sizes can be used in a wide array of contexts, such as navigation menus, action bars, or as a form of content aggregation. This component is ideal for developers who require a versatile button group that can be customized based on size and arrangement. Utilize this component to add a touch of sophistication and functionality to any interface.\nStyle: flat, minimal, responsive\nInteractions: onClick\nTags: button, group, size, configuration, customizable, interface, navigation, forms\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-group-size",
+  "display_name": "Button Group Size",
+  "preview_url": "/previews/shadcn/button-group-size.png"
+}

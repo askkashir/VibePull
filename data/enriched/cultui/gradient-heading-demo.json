@@ -1,0 +1,60 @@
+{
+  "id": "gradient-heading-demo",
+  "name": "gradient-heading-demo",
+  "source_code": "// registry/default/example/gradient-heading-demo.tsx\n\"use client\"\n\nimport * as React from \"react\"\n\nimport { GradientHeading, Size, Variant, Weight } from \"../ui/gradient-heading\"\n\nexport default function GradientHeadingDemo() {\n  const variants: Variant[] = [\"default\", \"pink\", \"light\"]\n  const sizes: Size[] = [\"lg\", \"xl\", \"xxl\", \"xxxl\"]\n  const weights: Weight[] = [\"thin\", \"base\", \"semi\", \"bold\", \"black\"]\n\n  return (\n    <div className=\"space-y-8 p-4\">\n      {variants.map((variant) => (\n        <div key={variant}>\n          <h2 className=\"text-xl font-semibold mb-4\">Variant: {variant}</h2>\n          {sizes.map((size) => (\n            <div key={size} className=\"mb-2\">\n              {weights.map((weight) => (\n                <GradientHeading\n                  key={`${variant}-${size}-${weight}`}\n                  variant={variant}\n                  size={size}\n                  weight={weight}\n                  className=\"mb-2\"\n                >\n                  {`Heading - ${size}`}\n                </GradientHeading>\n              ))}\n            </div>\n          ))}\n        </div>\n      ))}\n    </div>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "gradient",
+    "heading",
+    "demo",
+    "ui-component"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "gradient-heading-demo.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/gradient-heading-demo.json",
+      "sha": "536659385310c59128e893e7168682422ca165c8",
+      "size": 1490,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/gradient-heading-demo.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/gradient-heading-demo.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/536659385310c59128e893e7168682422ca165c8",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/gradient-heading-demo.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/gradient-heading-demo.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/536659385310c59128e893e7168682422ca165c8",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/gradient-heading-demo.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gradient-heading-demo",
+      "type": "registry:component",
+      "registryDependencies": [
+        "gradient-heading"
+      ],
+      "files": [
+        {
+          "path": "registry/default/example/gradient-heading-demo.tsx",
+          "content": "\"use client\"\n\nimport * as React from \"react\"\n\nimport { GradientHeading, Size, Variant, Weight } from \"../ui/gradient-heading\"\n\nexport default function GradientHeadingDemo() {\n  const variants: Variant[] = [\"default\", \"pink\", \"light\"]\n  const sizes: Size[] = [\"lg\", \"xl\", \"xxl\", \"xxxl\"]\n  const weights: Weight[] = [\"thin\", \"base\", \"semi\", \"bold\", \"black\"]\n\n  return (\n    <div className=\"space-y-8 p-4\">\n      {variants.map((variant) => (\n        <div key={variant}>\n          <h2 className=\"text-xl font-semibold mb-4\">Variant: {variant}</h2>\n          {sizes.map((size) => (\n            <div key={size} className=\"mb-2\">\n              {weights.map((weight) => (\n                <GradientHeading\n                  key={`${variant}-${size}-${weight}`}\n                  variant={variant}\n                  size={size}\n                  weight={weight}\n                  className=\"mb-2\"\n                >\n                  {`Heading - ${size}`}\n                </GradientHeading>\n              ))}\n            </div>\n          ))}\n        </div>\n      ))}\n    </div>\n  )\n}\n",
+          "type": "registry:component"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A component showcasing various configurations of a gradient heading, including different variants, sizes, and weights. It allows developers to visualize how these styling options affect the appearance of the heading. Would be used when customizing the design of a heading component in various parts of an application.",
+  "style_tags": [
+    "gradient-effect",
+    "customizable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: gradient-heading-demo\nDescription: A component showcasing various configurations of a gradient heading, including different variants, sizes, and weights. It allows developers to visualize how these styling options affect the appearance of the heading. Would be used when customizing the design of a heading component in various parts of an application.\nStyle: gradient-effect, customizable\nInteractions: \nTags: gradient, heading, demo, ui-component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/example/gradient-heading-demo.tsx\n\"use client\"\n\nimport * as React from \"react\"\n\nimport { GradientHeading, Size, Variant, Weight } from \"../ui/gradient-heading\"\n\nexport default function GradientHeadingDemo() {\n  const variants: Variant[] = [\"default\", \"pink\", \"light\"]\n  const sizes: Size[] = [\"lg\", \"xl\", \"xxl\", \"xxxl\"]\n  const weights: Weight[] = [\"thin\", \"base\", \"semi\", \"bold\", \"black\"]\n\n  return (\n    <div className=\"space-y-8 p-4\">\n      {variants.map((variant) => (\n       ",
+  "prompt_version": 2,
+  "clean_id": "gradient-heading-demo",
+  "display_name": "Gradient Heading Demo",
+  "preview_url": "/previews/cultui/gradient-heading-demo.png"
+}

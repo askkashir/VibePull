@@ -1,0 +1,41 @@
+{
+  "id": "sidebar-menu-sub",
+  "name": "sidebar-menu-sub",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "ui",
+    "submenu",
+    "nested-menu",
+    "sidebar",
+    "layout"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-menu-sub",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-menu-sub\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Sidebar Menu Sub component is a nested menu element that can be utilized within a sidebar to display a hierarchical list of items. It is often used in conjunction with a sidebar or navigation bar to provide users with a way to explore and access various features of an application. This component is suitable for use cases where a nested menu is necessary for navigation or organizational purposes.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "e.g. clickable",
+    "hover"
+  ],
+  "component_type": "nav",
+  "generation_prompt": "Create a production-ready nav component with the following characteristics:\n\nName: sidebar-menu-sub\nDescription: The Sidebar Menu Sub component is a nested menu element that can be utilized within a sidebar to display a hierarchical list of items. It is often used in conjunction with a sidebar or navigation bar to provide users with a way to explore and access various features of an application. This component is suitable for use cases where a nested menu is necessary for navigation or organizational purposes.\nStyle: e.g. dark, minimal\nInteractions: e.g. clickable, hover\nTags: ui, submenu, nested-menu, sidebar, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-menu-sub",
+  "display_name": "Sidebar Menu Sub",
+  "preview_url": "/previews/shadcn/sidebar-menu-sub.png"
+}

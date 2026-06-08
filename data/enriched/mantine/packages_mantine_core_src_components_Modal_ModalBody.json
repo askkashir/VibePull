@@ -1,0 +1,44 @@
+{
+  "id": "packages_mantine_core_src_components_Modal_ModalBody",
+  "name": "ModalBody",
+  "source_code": "// packages/@mantine/core/src/components/Modal/ModalBody.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseBody, ModalBaseBodyProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalBodyStylesNames = 'body';\n\nexport interface ModalBodyProps\n  extends ModalBaseBodyProps, CompoundStylesApiProps<ModalBodyFactory> {}\n\nexport type ModalBodyFactory = Factory<{\n  props: ModalBodyProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalBodyStylesNames;\n  compound: true;\n}>;\n\nexport const ModalBody = factory<ModalBodyFactory>((_props) => {\n  const props = useProps('ModalBody', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseBody\n      {...ctx.getStyles('body', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalBody.classes = classes;\nModalBody.displayName = '@mantine/core/ModalBody';\n",
+  "description": "",
+  "tags": [
+    "body",
+    "mantine",
+    "modal"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Modal_ModalBody",
+      "name": "ModalBody",
+      "path": "packages/@mantine/core/src/components/Modal/ModalBody.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Modal_ModalBody",
+      "name": "ModalBody",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Modal/ModalBody.tsx",
+          "content": "import { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseBody, ModalBaseBodyProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalBodyStylesNames = 'body';\n\nexport interface ModalBodyProps\n  extends ModalBaseBodyProps, CompoundStylesApiProps<ModalBodyFactory> {}\n\nexport type ModalBodyFactory = Factory<{\n  props: ModalBodyProps;\n  ref: HTMLDivElement;\n  stylesNames: ModalBodyStylesNames;\n  compound: true;\n}>;\n\nexport const ModalBody = factory<ModalBodyFactory>((_props) => {\n  const props = useProps('ModalBody', null, _props);\n  const { classNames, className, style, styles, vars, ...others } = props;\n\n  const ctx = useModalContext();\n\n  return (\n    <ModalBaseBody\n      {...ctx.getStyles('body', { classNames, style, styles, className })}\n      {...others}\n    />\n  );\n});\n\nModalBody.classes = classes;\nModalBody.displayName = '@mantine/core/ModalBody';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ModalBody is a modal body UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "modal",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready modal component with the following characteristics:\n\nName: ModalBody\nDescription: ModalBody is a modal body UI component from the mantine corpus. It provides reusable modal behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: body, mantine, modal\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Modal/ModalBody.tsx\nimport { CompoundStylesApiProps, factory, Factory, useProps } from '../../core';\nimport { ModalBaseBody, ModalBaseBodyProps } from '../ModalBase';\nimport { useModalContext } from './Modal.context';\nimport classes from './Modal.module.css';\n\nexport type ModalBodyStylesNames = 'body';\n\nexport interface ModalBodyProps\n  extends ModalBaseBodyProps, CompoundStylesApiProps<ModalBodyFactory> {}\n\nexport type ModalBodyFactory = Factory<{\n  prop",
+  "prompt_version": 2,
+  "clean_id": "modal-body",
+  "display_name": "Modal Body",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-modal-modalbody.png"
+}

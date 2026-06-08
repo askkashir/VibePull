@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_AlphaSlider_AlphaSlider.story",
+  "name": "AlphaSlider.story",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.story.tsx\nimport { useState } from 'react';\nimport { AlphaSlider } from './AlphaSlider';\n\nexport default { title: 'AlphaSlider' };\n\nexport function Usage() {\n  const [value, onChange] = useState(0.55);\n\n  return (\n    <>\n      <div>Alpha value: {value}</div>\n      <AlphaSlider\n        color=\"#ff0\"\n        value={value}\n        onChange={onChange}\n        styles={{ thumb: { border: '1px solid red' } }}\n      />\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_AlphaSlider_AlphaSlider.story",
+      "name": "AlphaSlider.story",
+      "path": "packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_AlphaSlider_AlphaSlider.story",
+      "name": "AlphaSlider.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/AlphaSlider/AlphaSlider.story.tsx",
+          "content": "import { useState } from 'react';\nimport { AlphaSlider } from './AlphaSlider';\n\nexport default { title: 'AlphaSlider' };\n\nexport function Usage() {\n  const [value, onChange] = useState(0.55);\n\n  return (\n    <>\n      <div>Alpha value: {value}</div>\n      <AlphaSlider\n        color=\"#ff0\"\n        value={value}\n        onChange={onChange}\n        styles={{ thumb: { border: '1px solid red' } }}\n      />\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

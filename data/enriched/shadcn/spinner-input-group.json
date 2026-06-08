@@ -1,0 +1,45 @@
+{
+  "id": "spinner-input-group",
+  "name": "spinner-input-group",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "interactive",
+    "animated",
+    "input",
+    "loader",
+    "slow server response",
+    "long loading time",
+    "forms",
+    "text fields"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "spinner-input-group",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## spinner-input-group\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Spinner Input Group is a visually appealing input field that includes an animated spinning icon, used when the user is waiting for a response from the server, such as while loading data into a text field to make the UI more interactive and engaging. It is commonly used to enhance the user experience of long loading times or slow server responses. A Spinner Input Group is typically applied to forms or text fields that require user input before submitting a request.",
+  "style_tags": [
+    "e.g. minimal",
+    "light"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "click",
+    "animate on load"
+  ],
+  "component_type": "input",
+  "generation_prompt": "Create a production-ready input component with the following characteristics:\n\nName: spinner-input-group\nDescription: The Spinner Input Group is a visually appealing input field that includes an animated spinning icon, used when the user is waiting for a response from the server, such as while loading data into a text field to make the UI more interactive and engaging. It is commonly used to enhance the user experience of long loading times or slow server responses. A Spinner Input Group is typically applied to forms or text fields that require user input before submitting a request.\nStyle: e.g. minimal, light\nInteractions: e.g. hover, click, animate on load\nTags: interactive, animated, input, loader, slow server response, long loading time, forms, text fields\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "spinner-input-group",
+  "display_name": "Spinner Input Group",
+  "preview_url": "/previews/shadcn/spinner-input-group.png"
+}

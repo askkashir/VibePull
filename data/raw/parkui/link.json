@@ -1,0 +1,52 @@
+{
+  "id": "link",
+  "name": "link",
+  "source_code": "// src/components/ui/link.tsx\nimport { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { link } from 'styled-system/recipes'\n\nexport type LinkProps = ComponentProps<typeof Link>\nexport const Link = styled(ark.a, link)\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "link",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/link.tsx",
+          "type": "registry:ui",
+          "exports": "export { Link, type LinkProps } from './link'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { link } from 'styled-system/recipes'\n\nexport type LinkProps = ComponentProps<typeof Link>\nexport const Link = styled(ark.a, link)\n"
+        }
+      ],
+      "registryDependencies": [
+        "link-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "link",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/link.tsx",
+          "type": "registry:ui",
+          "exports": "export { Link, type LinkProps } from './link'",
+          "content": "import { ark } from '@ark-ui/react/factory'\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\nimport { link } from 'styled-system/recipes'\n\nexport type LinkProps = ComponentProps<typeof Link>\nexport const Link = styled(ark.a, link)\n"
+        }
+      ],
+      "registryDependencies": [
+        "link-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

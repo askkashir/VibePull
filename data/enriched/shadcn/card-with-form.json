@@ -1,0 +1,41 @@
+{
+  "id": "card-with-form",
+  "name": "card-with-form",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "form",
+    "card",
+    "input",
+    "data-collection"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "card-with-form",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## card-with-form\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The card-with-form component is a rectangular container that displays a form within a card layout. It is typically used on a web page to collect user information or to present a questionnaire. Developers would use this component when they need to incorporate a form within a visual context.",
+  "style_tags": [
+    "e.g. material",
+    "neumorphic",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card-with-form\nDescription: The card-with-form component is a rectangular container that displays a form within a card layout. It is typically used on a web page to collect user information or to present a questionnaire. Developers would use this component when they need to incorporate a form within a visual context.\nStyle: e.g. material, neumorphic, flat\nInteractions: e.g. hover, clickable\nTags: form, card, input, data-collection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "card-with-form",
+  "display_name": "Card With Form",
+  "preview_url": "/previews/shadcn/card-with-form.png"
+}

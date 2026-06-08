@@ -1,0 +1,63 @@
+{
+  "id": "editable",
+  "name": "editable",
+  "source_code": "// src/components/ui/editable.tsx\n'use client'\nimport { Editable } from '@ark-ui/react/editable'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { editable } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(editable)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Editable.Root, 'root')\nexport const RootProvider = withProvider(Editable.RootProvider, 'root')\nexport const Area = withContext(Editable.Area, 'area')\nexport const CancelTrigger = withContext(Editable.CancelTrigger, 'cancelTrigger')\nexport const Control = withContext(Editable.Control, 'control')\nexport const EditTrigger = withContext(Editable.EditTrigger, 'editTrigger')\nexport const Input = withContext(Editable.Input, 'input')\nexport const Label = withContext(Editable.Label, 'label')\nexport const Preview = withContext(Editable.Preview, 'preview')\nexport const SubmitTrigger = withContext(Editable.SubmitTrigger, 'submitTrigger')\n\nexport { EditableContext as Context } from '@ark-ui/react/editable'\n",
+  "description": "",
+  "tags": [
+    "editable",
+    "parkui",
+    "table"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "editable",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/editable.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Editable from './editable'",
+          "content": "'use client'\nimport { Editable } from '@ark-ui/react/editable'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { editable } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(editable)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Editable.Root, 'root')\nexport const RootProvider = withProvider(Editable.RootProvider, 'root')\nexport const Area = withContext(Editable.Area, 'area')\nexport const CancelTrigger = withContext(Editable.CancelTrigger, 'cancelTrigger')\nexport const Control = withContext(Editable.Control, 'control')\nexport const EditTrigger = withContext(Editable.EditTrigger, 'editTrigger')\nexport const Input = withContext(Editable.Input, 'input')\nexport const Label = withContext(Editable.Label, 'label')\nexport const Preview = withContext(Editable.Preview, 'preview')\nexport const SubmitTrigger = withContext(Editable.SubmitTrigger, 'submitTrigger')\n\nexport { EditableContext as Context } from '@ark-ui/react/editable'\n"
+        }
+      ],
+      "registryDependencies": [
+        "editable-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "editable",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/editable.tsx",
+          "type": "registry:ui",
+          "exports": "export * as Editable from './editable'",
+          "content": "'use client'\nimport { Editable } from '@ark-ui/react/editable'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { editable } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(editable)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Editable.Root, 'root')\nexport const RootProvider = withProvider(Editable.RootProvider, 'root')\nexport const Area = withContext(Editable.Area, 'area')\nexport const CancelTrigger = withContext(Editable.CancelTrigger, 'cancelTrigger')\nexport const Control = withContext(Editable.Control, 'control')\nexport const EditTrigger = withContext(Editable.EditTrigger, 'editTrigger')\nexport const Input = withContext(Editable.Input, 'input')\nexport const Label = withContext(Editable.Label, 'label')\nexport const Preview = withContext(Editable.Preview, 'preview')\nexport const SubmitTrigger = withContext(Editable.SubmitTrigger, 'submitTrigger')\n\nexport { EditableContext as Context } from '@ark-ui/react/editable'\n"
+        }
+      ],
+      "registryDependencies": [
+        "editable-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "editable is a editable UI component from the parkui corpus. It provides reusable table behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "table",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: editable\nDescription: editable is a editable UI component from the parkui corpus. It provides reusable table behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: editable, parkui, table\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/editable.tsx\n'use client'\nimport { Editable } from '@ark-ui/react/editable'\nimport type { ComponentProps } from 'react'\nimport { createStyleContext } from 'styled-system/jsx'\nimport { editable } from 'styled-system/recipes'\n\nconst { withProvider, withContext } = createStyleContext(editable)\n\nexport type RootProps = ComponentProps<typeof Root>\nexport const Root = withProvider(Editable.Root, 'root')\nexport const RootProvider = withProvider(Editable.RootProvider, 'root')\nexport",
+  "prompt_version": 2,
+  "clean_id": "editable",
+  "display_name": "Editable",
+  "preview_url": "/previews/parkui/editable.png"
+}

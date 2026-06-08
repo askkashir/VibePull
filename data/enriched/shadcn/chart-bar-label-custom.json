@@ -1,0 +1,42 @@
+{
+  "id": "chart-bar-label-custom",
+  "name": "chart-bar-label-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "bar-chart",
+    "dashboard",
+    "data-visualization",
+    "customizable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-bar-label-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-bar-label-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "A customizable bar chart component for visualizing categorical data. Developers use it to create interactive and informative dashboards. Customize the label styles and colors to fit the theme.",
+  "style_tags": [
+    "e.g. dark",
+    "material",
+    "modern"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "chart",
+  "generation_prompt": "Create a production-ready chart component with the following characteristics:\n\nName: chart-bar-label-custom\nDescription: A customizable bar chart component for visualizing categorical data. Developers use it to create interactive and informative dashboards. Customize the label styles and colors to fit the theme.\nStyle: e.g. dark, material, modern\nInteractions: e.g. hover, clickable\nTags: chart, bar-chart, dashboard, data-visualization, customizable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-bar-label-custom",
+  "display_name": "Chart Bar Label Custom",
+  "preview_url": "/previews/shadcn/chart-bar-label-custom.png"
+}

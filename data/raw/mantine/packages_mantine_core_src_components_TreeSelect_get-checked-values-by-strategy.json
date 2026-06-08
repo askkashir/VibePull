@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_TreeSelect_get-checked-values-by-strategy",
+  "name": "get-checked-values-by-strategy",
+  "source_code": "// packages/@mantine/core/src/components/TreeSelect/get-checked-values-by-strategy.ts\nimport type { TreeNodeData } from '../Tree';\nimport { getAllCheckedNodes } from '../Tree/get-all-checked-nodes/get-all-checked-nodes';\nimport { getChildrenNodesValues } from '../Tree/get-children-nodes-values/get-children-nodes-values';\nimport { isNodeChecked } from '../Tree/is-node-checked/is-node-checked';\n\nexport type CheckedStrategy = 'all' | 'parent' | 'child';\n\nexport function expandToLeafChecked(value: string[], data: TreeNodeData[]): string[] {\n  const leaves = new Set<string>();\n  for (const v of value) {\n    for (const leaf of getChildrenNodesValues(v, data)) {\n      leaves.add(leaf);\n    }\n  }\n  return Array.from(leaves);\n}\n\nfunction getTopmostCheckedParents(data: TreeNodeData[], checkedState: string[]): string[] {\n  const result: string[] = [];\n  for (const node of data) {\n    if (isNodeChecked(node.value, data, checkedState)) {\n      result.push(node.value);\n    } else if (Array.isArray(node.children) && node.children.length > 0) {\n      result.push(...getTopmostCheckedParents(node.children, checkedState));\n    }\n  }\n  return result;\n}\n\nexport function checkedToValue(\n  checkedState: string[],\n  data: TreeNodeData[],\n  strategy: CheckedStrategy\n): string[] {\n  if (checkedState.length === 0) {\n    return [];\n  }\n\n  switch (strategy) {\n    case 'child':\n      return checkedState;\n    case 'all':\n      return getAllCheckedNodes(data, checkedState)\n        .result.filter((n) => n.checked)\n        .map((n) => n.value);\n    case 'parent':\n      return getTopmostCheckedParents(data, checkedState);\n    default:\n      return checkedState;\n  }\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "TreeSelect_get-checked-values-by-strategy",
+      "name": "get-checked-values-by-strategy",
+      "path": "packages/@mantine/core/src/components/TreeSelect/get-checked-values-by-strategy.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_TreeSelect_get-checked-values-by-strategy",
+      "name": "get-checked-values-by-strategy",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/TreeSelect/get-checked-values-by-strategy.ts",
+          "content": "import type { TreeNodeData } from '../Tree';\nimport { getAllCheckedNodes } from '../Tree/get-all-checked-nodes/get-all-checked-nodes';\nimport { getChildrenNodesValues } from '../Tree/get-children-nodes-values/get-children-nodes-values';\nimport { isNodeChecked } from '../Tree/is-node-checked/is-node-checked';\n\nexport type CheckedStrategy = 'all' | 'parent' | 'child';\n\nexport function expandToLeafChecked(value: string[], data: TreeNodeData[]): string[] {\n  const leaves = new Set<string>();\n  for (const v of value) {\n    for (const leaf of getChildrenNodesValues(v, data)) {\n      leaves.add(leaf);\n    }\n  }\n  return Array.from(leaves);\n}\n\nfunction getTopmostCheckedParents(data: TreeNodeData[], checkedState: string[]): string[] {\n  const result: string[] = [];\n  for (const node of data) {\n    if (isNodeChecked(node.value, data, checkedState)) {\n      result.push(node.value);\n    } else if (Array.isArray(node.children) && node.children.length > 0) {\n      result.push(...getTopmostCheckedParents(node.children, checkedState));\n    }\n  }\n  return result;\n}\n\nexport function checkedToValue(\n  checkedState: string[],\n  data: TreeNodeData[],\n  strategy: CheckedStrategy\n): string[] {\n  if (checkedState.length === 0) {\n    return [];\n  }\n\n  switch (strategy) {\n    case 'child':\n      return checkedState;\n    case 'all':\n      return getAllCheckedNodes(data, checkedState)\n        .result.filter((n) => n.checked)\n        .map((n) => n.value);\n    case 'parent':\n      return getTopmostCheckedParents(data, checkedState);\n    default:\n      return checkedState;\n  }\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

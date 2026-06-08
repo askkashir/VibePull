@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_date-range-picker_index",
+  "name": "date-range-picker",
+  "source_code": "// packages/react/src/components/date-range-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {\n  DateRangePickerPopover,\n  DateRangePickerRangeSeparator,\n  DateRangePickerRoot,\n  DateRangePickerTrigger,\n  DateRangePickerTriggerIndicator,\n} from \"./date-range-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DateRangePicker = Object.assign(DateRangePickerRoot, {\n  Root: DateRangePickerRoot,\n  Trigger: DateRangePickerTrigger,\n  TriggerIndicator: DateRangePickerTriggerIndicator,\n  RangeSeparator: DateRangePickerRangeSeparator,\n  Popover: DateRangePickerPopover,\n});\n\nexport type DateRangePicker = {\n  Props: ComponentProps<typeof DateRangePickerRoot>;\n  RootProps: ComponentProps<typeof DateRangePickerRoot>;\n  TriggerProps: ComponentProps<typeof DateRangePickerTrigger>;\n  TriggerIndicatorProps: ComponentProps<typeof DateRangePickerTriggerIndicator>;\n  RangeSeparatorProps: ComponentProps<typeof DateRangePickerRangeSeparator>;\n  PopoverProps: ComponentProps<typeof DateRangePickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DateRangePickerRoot,\n  DateRangePickerTrigger,\n  DateRangePickerTriggerIndicator,\n  DateRangePickerRangeSeparator,\n  DateRangePickerPopover,\n};\n\nexport type {\n  DateRangePickerRootProps,\n  DateRangePickerRootProps as DateRangePickerProps,\n  DateRangePickerTriggerProps,\n  DateRangePickerTriggerIndicatorProps,\n  DateRangePickerRangeSeparatorProps,\n  DateRangePickerPopoverProps,\n} from \"./date-range-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dateRangePickerVariants} from \"@heroui/styles\";\n\nexport type {DateRangePickerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "date-range-picker_index",
+      "name": "index",
+      "path": "packages/react/src/components/date-range-picker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_date-range-picker_index",
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/date-range-picker/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {\n  DateRangePickerPopover,\n  DateRangePickerRangeSeparator,\n  DateRangePickerRoot,\n  DateRangePickerTrigger,\n  DateRangePickerTriggerIndicator,\n} from \"./date-range-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const DateRangePicker = Object.assign(DateRangePickerRoot, {\n  Root: DateRangePickerRoot,\n  Trigger: DateRangePickerTrigger,\n  TriggerIndicator: DateRangePickerTriggerIndicator,\n  RangeSeparator: DateRangePickerRangeSeparator,\n  Popover: DateRangePickerPopover,\n});\n\nexport type DateRangePicker = {\n  Props: ComponentProps<typeof DateRangePickerRoot>;\n  RootProps: ComponentProps<typeof DateRangePickerRoot>;\n  TriggerProps: ComponentProps<typeof DateRangePickerTrigger>;\n  TriggerIndicatorProps: ComponentProps<typeof DateRangePickerTriggerIndicator>;\n  RangeSeparatorProps: ComponentProps<typeof DateRangePickerRangeSeparator>;\n  PopoverProps: ComponentProps<typeof DateRangePickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {\n  DateRangePickerRoot,\n  DateRangePickerTrigger,\n  DateRangePickerTriggerIndicator,\n  DateRangePickerRangeSeparator,\n  DateRangePickerPopover,\n};\n\nexport type {\n  DateRangePickerRootProps,\n  DateRangePickerRootProps as DateRangePickerProps,\n  DateRangePickerTriggerProps,\n  DateRangePickerTriggerIndicatorProps,\n  DateRangePickerRangeSeparatorProps,\n  DateRangePickerPopoverProps,\n} from \"./date-range-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {dateRangePickerVariants} from \"@heroui/styles\";\n\nexport type {DateRangePickerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

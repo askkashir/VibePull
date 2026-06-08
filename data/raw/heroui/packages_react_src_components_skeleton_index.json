@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_skeleton_index",
+  "name": "skeleton",
+  "source_code": "// packages/react/src/components/skeleton/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {SkeletonRoot} from \"./skeleton\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Skeleton = Object.assign(SkeletonRoot, {\n  Root: SkeletonRoot,\n});\n\nexport type Skeleton = {\n  Props: ComponentProps<typeof SkeletonRoot>;\n  RootProps: ComponentProps<typeof SkeletonRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {SkeletonRoot};\n\nexport type {SkeletonRootProps, SkeletonRootProps as SkeletonProps} from \"./skeleton\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {skeletonVariants} from \"@heroui/styles\";\n\nexport type {SkeletonVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "skeleton_index",
+      "name": "index",
+      "path": "packages/react/src/components/skeleton/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_skeleton_index",
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/skeleton/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {SkeletonRoot} from \"./skeleton\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const Skeleton = Object.assign(SkeletonRoot, {\n  Root: SkeletonRoot,\n});\n\nexport type Skeleton = {\n  Props: ComponentProps<typeof SkeletonRoot>;\n  RootProps: ComponentProps<typeof SkeletonRoot>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {SkeletonRoot};\n\nexport type {SkeletonRootProps, SkeletonRootProps as SkeletonProps} from \"./skeleton\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {skeletonVariants} from \"@heroui/styles\";\n\nexport type {SkeletonVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

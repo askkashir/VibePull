@@ -1,0 +1,38 @@
+{
+  "id": "typography-table",
+  "name": "typography-table",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:example",
+    "typography",
+    "table",
+    "data display"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "typography-table",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## typography-table\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The typography-table component is a customizable table used to display data in a clean and readable format. It's ideal for when a developer wants to showcase large quantities of text-based data, and its versatility allows for easy styling and customization to fit any project's needs. This component is perfect for documentation, data analysis, or any use case requiring a high amount of text visibility.",
+  "style_tags": [
+    "responsive",
+    "customizable",
+    "accessible"
+  ],
+  "interaction_tags": [],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: typography-table\nDescription: The typography-table component is a customizable table used to display data in a clean and readable format. It's ideal for when a developer wants to showcase large quantities of text-based data, and its versatility allows for easy styling and customization to fit any project's needs. This component is perfect for documentation, data analysis, or any use case requiring a high amount of text visibility.\nStyle: responsive, customizable, accessible\nInteractions: \nTags: registry:example, typography, table, data display\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "typography-table",
+  "display_name": "Typography Table",
+  "preview_url": "/previews/shadcn/typography-table.png"
+}

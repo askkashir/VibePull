@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_UnstyledButton_UnstyledButton",
+  "name": "UnstyledButton",
+  "source_code": "// packages/@mantine/core/src/components/UnstyledButton/UnstyledButton.tsx\nimport {\n  Box,\n  BoxComponentProps,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './UnstyledButton.module.css';\n\nexport type UnstyledButtonStylesNames = 'root';\n\nexport interface UnstyledButtonProps\n  extends Omit<BoxComponentProps, 'vars' | 'variant'>, StylesApiProps<UnstyledButtonFactory> {\n  __staticSelector?: string;\n}\n\nconst defaultProps = {\n  __staticSelector: 'UnstyledButton',\n} satisfies Partial<UnstyledButtonProps>;\n\nexport type UnstyledButtonFactory = PolymorphicFactory<{\n  props: UnstyledButtonProps;\n  stylesNames: UnstyledButtonStylesNames;\n  defaultComponent: 'button';\n  defaultRef: HTMLButtonElement;\n}>;\n\nexport const UnstyledButton = polymorphicFactory<UnstyledButtonFactory>(\n  (_props: UnstyledButtonProps & { component?: any }) => {\n    const props = useProps('UnstyledButton', defaultProps, _props);\n    const {\n      className,\n      component = 'button',\n      __staticSelector,\n      unstyled,\n      classNames,\n      styles,\n      style,\n      attributes,\n      ...others\n    } = props;\n\n    const getStyles = useStyles<UnstyledButtonFactory>({\n      name: __staticSelector,\n      props,\n      classes,\n      className,\n      style,\n      classNames,\n      styles,\n      unstyled,\n      attributes,\n    });\n\n    return (\n      <Box\n        {...getStyles('root', { focusable: true })}\n        component={component}\n        type={component === 'button' ? 'button' : undefined}\n        {...others}\n      />\n    );\n  }\n);\n\nUnstyledButton.classes = classes;\nUnstyledButton.displayName = '@mantine/core/UnstyledButton';\n\nexport namespace UnstyledButton {\n  export type Props = UnstyledButtonProps;\n  export type StylesNames = UnstyledButtonStylesNames;\n  export type Factory = UnstyledButtonFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "UnstyledButton_UnstyledButton",
+      "name": "UnstyledButton",
+      "path": "packages/@mantine/core/src/components/UnstyledButton/UnstyledButton.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_UnstyledButton_UnstyledButton",
+      "name": "UnstyledButton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/UnstyledButton/UnstyledButton.tsx",
+          "content": "import {\n  Box,\n  BoxComponentProps,\n  polymorphicFactory,\n  PolymorphicFactory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './UnstyledButton.module.css';\n\nexport type UnstyledButtonStylesNames = 'root';\n\nexport interface UnstyledButtonProps\n  extends Omit<BoxComponentProps, 'vars' | 'variant'>, StylesApiProps<UnstyledButtonFactory> {\n  __staticSelector?: string;\n}\n\nconst defaultProps = {\n  __staticSelector: 'UnstyledButton',\n} satisfies Partial<UnstyledButtonProps>;\n\nexport type UnstyledButtonFactory = PolymorphicFactory<{\n  props: UnstyledButtonProps;\n  stylesNames: UnstyledButtonStylesNames;\n  defaultComponent: 'button';\n  defaultRef: HTMLButtonElement;\n}>;\n\nexport const UnstyledButton = polymorphicFactory<UnstyledButtonFactory>(\n  (_props: UnstyledButtonProps & { component?: any }) => {\n    const props = useProps('UnstyledButton', defaultProps, _props);\n    const {\n      className,\n      component = 'button',\n      __staticSelector,\n      unstyled,\n      classNames,\n      styles,\n      style,\n      attributes,\n      ...others\n    } = props;\n\n    const getStyles = useStyles<UnstyledButtonFactory>({\n      name: __staticSelector,\n      props,\n      classes,\n      className,\n      style,\n      classNames,\n      styles,\n      unstyled,\n      attributes,\n    });\n\n    return (\n      <Box\n        {...getStyles('root', { focusable: true })}\n        component={component}\n        type={component === 'button' ? 'button' : undefined}\n        {...others}\n      />\n    );\n  }\n);\n\nUnstyledButton.classes = classes;\nUnstyledButton.displayName = '@mantine/core/UnstyledButton';\n\nexport namespace UnstyledButton {\n  export type Props = UnstyledButtonProps;\n  export type StylesNames = UnstyledButtonStylesNames;\n  export type Factory = UnstyledButtonFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

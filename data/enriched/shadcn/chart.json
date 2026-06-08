@@ -1,0 +1,37 @@
+{
+  "id": "chart",
+  "name": "chart",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "data visualization",
+    "graph"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart",
+      "type": "registry:ui",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:ui"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** recharts@3.8.0, lucide-react"
+  },
+  "visual_summary": "The chart component is a graphical representation of data, often used for data visualization and analysis. It can be displayed as a bar chart, line chart, or pie chart, and is suitable for applications that require a visual summary of numerical data. Developers would use this component to showcase trends, patterns, and statistics in their application.",
+  "style_tags": [
+    "flat",
+    "material",
+    "3d"
+  ],
+  "interaction_tags": [],
+  "component_type": "table",
+  "generation_prompt": "Create a production-ready table component with the following characteristics:\n\nName: chart\nDescription: The chart component is a graphical representation of data, often used for data visualization and analysis. It can be displayed as a bar chart, line chart, or pie chart, and is suitable for applications that require a visual summary of numerical data. Developers would use this component to showcase trends, patterns, and statistics in their application.\nStyle: flat, material, 3d\nInteractions: \nTags: chart, data visualization, graph\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart",
+  "display_name": "Chart",
+  "preview_url": "/previews/shadcn/chart.png"
+}

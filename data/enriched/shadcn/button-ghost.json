@@ -1,0 +1,39 @@
+{
+  "id": "button-ghost",
+  "name": "button-ghost",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "utility",
+    "button",
+    "call-to-action"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "button-ghost",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## button-ghost\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Ghost Button is a minimal, transparent UI component used for calls-to-action that don't require high visibility. It's ideal for simple navigation buttons, such as cancel or continue actions. This button blends seamlessly with its background, making it suitable for clean and modern designs.",
+  "style_tags": [
+    "minimal",
+    "transparent"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "tappable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: button-ghost\nDescription: The Ghost Button is a minimal, transparent UI component used for calls-to-action that don't require high visibility. It's ideal for simple navigation buttons, such as cancel or continue actions. This button blends seamlessly with its background, making it suitable for clean and modern designs.\nStyle: minimal, transparent\nInteractions: clickable, tappable\nTags: utility, button, call-to-action\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "button-ghost",
+  "display_name": "Button Ghost",
+  "preview_url": "/previews/shadcn/button-ghost.png"
+}

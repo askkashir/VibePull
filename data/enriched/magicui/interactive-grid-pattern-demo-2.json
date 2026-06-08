@@ -1,0 +1,62 @@
+{
+  "id": "interactive-grid-pattern-demo-2",
+  "name": "Interactive Grid Pattern Demo 2",
+  "source_code": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { InteractiveGridPattern } from \"@/registry/magicui/interactive-grid-pattern\"\n\nexport default function InteractiveGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <InteractiveGridPattern\n        className={cn(\n          \"[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]\"\n        )}\n        width={20}\n        height={20}\n        squares={[80, 80]}\n        squaresClassName=\"hover:fill-blue-500\"\n      />\n    </div>\n  )\n}\n",
+  "description": "Second example showing an interactive grid pattern background.",
+  "tags": [
+    "grid",
+    "interactive",
+    "pattern",
+    "demo"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "interactive-grid-pattern-demo-2",
+      "type": "registry:example",
+      "title": "Interactive Grid Pattern Demo 2",
+      "description": "Second example showing an interactive grid pattern background.",
+      "registryDependencies": [
+        "https://magicui.design/r/interactive-grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-grid-pattern-demo-2.tsx",
+          "type": "registry:example",
+          "target": "components/interactive-grid-pattern-demo-2.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "interactive-grid-pattern-demo-2",
+      "type": "registry:example",
+      "title": "Interactive Grid Pattern Demo 2",
+      "description": "Second example showing an interactive grid pattern background.",
+      "registryDependencies": [
+        "@magicui/interactive-grid-pattern"
+      ],
+      "files": [
+        {
+          "path": "registry/example/interactive-grid-pattern-demo-2.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { InteractiveGridPattern } from \"@/registry/magicui/interactive-grid-pattern\"\n\nexport default function InteractiveGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <InteractiveGridPattern\n        className={cn(\n          \"[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]\"\n        )}\n        width={20}\n        height={20}\n        squares={[80, 80]}\n        squaresClassName=\"hover:fill-blue-500\"\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A 500px high grid, divided into 20x20 squares, with a radial gradient mask and blue fill on hover.",
+  "style_tags": [
+    "gradient",
+    "rounded"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Interactive Grid Pattern Demo 2\nDescription: A 500px high grid, divided into 20x20 squares, with a radial gradient mask and blue fill on hover.\nStyle: gradient, rounded\nInteractions: hover\nTags: grid, interactive, pattern, demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\nimport { InteractiveGridPattern } from \"@/registry/magicui/interactive-grid-pattern\"\n\nexport default function InteractiveGridPatternDemo() {\n  return (\n    <div className=\"bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border\">\n      <InteractiveGridPattern\n        className={cn(\n          \"[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]\"\n        )}\n        width={2",
+  "prompt_version": 2,
+  "clean_id": "interactive-grid-pattern-demo-2",
+  "display_name": "Interactive Grid Pattern Demo 2",
+  "preview_url": "/previews/magicui/interactive-grid-pattern-demo-2.png"
+}

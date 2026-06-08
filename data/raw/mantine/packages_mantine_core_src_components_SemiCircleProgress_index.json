@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_SemiCircleProgress_index",
+  "name": "SemiCircleProgress",
+  "source_code": "// packages/@mantine/core/src/components/SemiCircleProgress/index.ts\nimport type {\n  SemiCircleProgressCssVariables,\n  SemiCircleProgressFactory,\n  SemiCircleProgressProps,\n  SemiCircleProgressStylesNames,\n} from './SemiCircleProgress';\n\nexport { SemiCircleProgress } from './SemiCircleProgress';\n\nexport type {\n  SemiCircleProgressProps,\n  SemiCircleProgressStylesNames,\n  SemiCircleProgressCssVariables,\n  SemiCircleProgressFactory,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "SemiCircleProgress_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/SemiCircleProgress/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_SemiCircleProgress_index",
+      "name": "SemiCircleProgress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/SemiCircleProgress/index.ts",
+          "content": "import type {\n  SemiCircleProgressCssVariables,\n  SemiCircleProgressFactory,\n  SemiCircleProgressProps,\n  SemiCircleProgressStylesNames,\n} from './SemiCircleProgress';\n\nexport { SemiCircleProgress } from './SemiCircleProgress';\n\nexport type {\n  SemiCircleProgressProps,\n  SemiCircleProgressStylesNames,\n  SemiCircleProgressCssVariables,\n  SemiCircleProgressFactory,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

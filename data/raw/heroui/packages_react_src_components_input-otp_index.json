@@ -1,0 +1,31 @@
+{
+  "id": "packages_react_src_components_input-otp_index",
+  "name": "input-otp",
+  "source_code": "// packages/react/src/components/input-otp/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {InputOTPGroup, InputOTPRoot, InputOTPSeparator, InputOTPSlot} from \"./input-otp\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const InputOTP = Object.assign(InputOTPRoot, {\n  Root: InputOTPRoot,\n  Group: InputOTPGroup,\n  Slot: InputOTPSlot,\n  Separator: InputOTPSeparator,\n});\n\nexport type InputOTP = {\n  Props: ComponentProps<typeof InputOTPRoot>;\n  RootProps: ComponentProps<typeof InputOTPRoot>;\n  GroupProps: ComponentProps<typeof InputOTPGroup>;\n  SlotProps: ComponentProps<typeof InputOTPSlot>;\n  SeparatorProps: ComponentProps<typeof InputOTPSeparator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {InputOTPRoot, InputOTPGroup, InputOTPSlot, InputOTPSeparator};\n\nexport type {\n  InputOTPRootProps,\n  InputOTPRootProps as InputOTPProps,\n  InputOTPGroupProps,\n  InputOTPSlotProps,\n  InputOTPSeparatorProps,\n} from \"./input-otp\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {inputOTPVariants} from \"@heroui/styles\";\n\nexport type {InputOTPVariants} from \"@heroui/styles\";\n\n//  ===================================\n// Regular Expressions\n//  ===================================\nexport const REGEXP_ONLY_DIGITS = \"^\\\\d+$\";\nexport const REGEXP_ONLY_CHARS = \"^[a-zA-Z]+$\";\nexport const REGEXP_ONLY_DIGITS_AND_CHARS = \"^[a-zA-Z0-9]+$\";\n",
+  "description": "",
+  "tags": [
+    "heroui",
+    "registry:ui"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "input-otp_index",
+      "name": "index",
+      "path": "packages/react/src/components/input-otp/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_input-otp_index",
+      "name": "input-otp",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/input-otp/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {InputOTPGroup, InputOTPRoot, InputOTPSeparator, InputOTPSlot} from \"./input-otp\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const InputOTP = Object.assign(InputOTPRoot, {\n  Root: InputOTPRoot,\n  Group: InputOTPGroup,\n  Slot: InputOTPSlot,\n  Separator: InputOTPSeparator,\n});\n\nexport type InputOTP = {\n  Props: ComponentProps<typeof InputOTPRoot>;\n  RootProps: ComponentProps<typeof InputOTPRoot>;\n  GroupProps: ComponentProps<typeof InputOTPGroup>;\n  SlotProps: ComponentProps<typeof InputOTPSlot>;\n  SeparatorProps: ComponentProps<typeof InputOTPSeparator>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {InputOTPRoot, InputOTPGroup, InputOTPSlot, InputOTPSeparator};\n\nexport type {\n  InputOTPRootProps,\n  InputOTPRootProps as InputOTPProps,\n  InputOTPGroupProps,\n  InputOTPSlotProps,\n  InputOTPSeparatorProps,\n} from \"./input-otp\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {inputOTPVariants} from \"@heroui/styles\";\n\nexport type {InputOTPVariants} from \"@heroui/styles\";\n\n//  ===================================\n// Regular Expressions\n//  ===================================\nexport const REGEXP_ONLY_DIGITS = \"^\\\\d+$\";\nexport const REGEXP_ONLY_CHARS = \"^[a-zA-Z]+$\";\nexport const REGEXP_ONLY_DIGITS_AND_CHARS = \"^[a-zA-Z0-9]+$\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

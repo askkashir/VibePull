@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_JsonInput_index",
+  "name": "JsonInput",
+  "source_code": "// packages/@mantine/core/src/components/JsonInput/index.ts\nimport type { JsonInputFactory, JsonInputProps } from './JsonInput';\n\nexport { JsonInput } from './JsonInput';\n\nexport type { JsonInputProps, JsonInputFactory };\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "JsonInput_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/JsonInput/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_JsonInput_index",
+      "name": "JsonInput",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/JsonInput/index.ts",
+          "content": "import type { JsonInputFactory, JsonInputProps } from './JsonInput';\n\nexport { JsonInput } from './JsonInput';\n\nexport type { JsonInputProps, JsonInputFactory };\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

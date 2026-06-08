@@ -1,0 +1,47 @@
+{
+  "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_AppShellMediaStyles",
+  "name": "AppShellMediaStyles",
+  "source_code": "// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/AppShellMediaStyles.tsx\nimport { InlineStyles, useMantineContext, useMantineTheme } from '../../../core';\nimport type { AppShellProps } from '../AppShell';\nimport { getVariables } from './get-variables/get-variables';\n\ninterface AppShellMediaStylesProps {\n  navbar: AppShellProps['navbar'] | undefined;\n  header: AppShellProps['header'] | undefined;\n  aside: AppShellProps['aside'] | undefined;\n  footer: AppShellProps['footer'] | undefined;\n  padding: AppShellProps['padding'] | undefined;\n  mode: 'fixed' | 'static';\n  selector?: string;\n}\n\nexport function AppShellMediaStyles({\n  navbar,\n  header,\n  aside,\n  footer,\n  padding,\n  mode,\n  selector,\n}: AppShellMediaStylesProps) {\n  const theme = useMantineTheme();\n  const ctx = useMantineContext();\n  const { media, baseStyles } = getVariables({\n    navbar,\n    header,\n    footer,\n    aside,\n    padding,\n    theme,\n    mode,\n  });\n  return (\n    <InlineStyles\n      media={media}\n      styles={baseStyles}\n      selector={selector || ctx.cssVariablesSelector}\n    />\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "app",
+    "mantine",
+    "media",
+    "other",
+    "shell",
+    "styles"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "AppShell_AppShellMediaStyles_AppShellMediaStyles",
+      "name": "AppShellMediaStyles",
+      "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/AppShellMediaStyles.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_AppShell_AppShellMediaStyles_AppShellMediaStyles",
+      "name": "AppShellMediaStyles",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/AppShellMediaStyles.tsx",
+          "content": "import { InlineStyles, useMantineContext, useMantineTheme } from '../../../core';\nimport type { AppShellProps } from '../AppShell';\nimport { getVariables } from './get-variables/get-variables';\n\ninterface AppShellMediaStylesProps {\n  navbar: AppShellProps['navbar'] | undefined;\n  header: AppShellProps['header'] | undefined;\n  aside: AppShellProps['aside'] | undefined;\n  footer: AppShellProps['footer'] | undefined;\n  padding: AppShellProps['padding'] | undefined;\n  mode: 'fixed' | 'static';\n  selector?: string;\n}\n\nexport function AppShellMediaStyles({\n  navbar,\n  header,\n  aside,\n  footer,\n  padding,\n  mode,\n  selector,\n}: AppShellMediaStylesProps) {\n  const theme = useMantineTheme();\n  const ctx = useMantineContext();\n  const { media, baseStyles } = getVariables({\n    navbar,\n    header,\n    footer,\n    aside,\n    padding,\n    theme,\n    mode,\n  });\n  return (\n    <InlineStyles\n      media={media}\n      styles={baseStyles}\n      selector={selector || ctx.cssVariablesSelector}\n    />\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "AppShellMediaStyles is a app shell media styles UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: AppShellMediaStyles\nDescription: AppShellMediaStyles is a app shell media styles UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable\nInteractions: \nTags: app, mantine, media, other, shell, styles\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/AppShell/AppShellMediaStyles/AppShellMediaStyles.tsx\nimport { InlineStyles, useMantineContext, useMantineTheme } from '../../../core';\nimport type { AppShellProps } from '../AppShell';\nimport { getVariables } from './get-variables/get-variables';\n\ninterface AppShellMediaStylesProps {\n  navbar: AppShellProps['navbar'] | undefined;\n  header: AppShellProps['header'] | undefined;\n  aside: AppShellProps['aside'] | undefined;\n  footer: AppShellProps['footer'] |",
+  "prompt_version": 2,
+  "clean_id": "app-shell-media-styles",
+  "display_name": "App Shell Media Styles",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-appshell-appshellmediastyles-appshellmediastyles.png"
+}

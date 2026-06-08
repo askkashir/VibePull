@@ -1,0 +1,71 @@
+{
+  "id": "toast",
+  "name": "toast",
+  "source_code": "// src/components/ui/toast.tsx\n'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Toaster as ArkToaster, createToaster, Toast, useToastContext } from '@ark-ui/react/toast'\nimport { CheckCircleIcon, CircleAlertIcon, CircleXIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { createStyleContext, Stack, styled } from 'styled-system/jsx'\nimport { toast } from 'styled-system/recipes'\nimport { CloseButton } from './close-button'\nimport { Icon, type IconProps } from './icon'\nimport { Spinner } from './spinner'\n\nconst { withProvider, withContext } = createStyleContext(toast)\n\nconst Root = withProvider(Toast.Root, 'root')\nconst Title = withContext(Toast.Title, 'title')\nconst Description = withContext(Toast.Description, 'description')\nconst ActionTrigger = withContext(Toast.ActionTrigger, 'actionTrigger')\nconst CloseTrigger = withContext(Toast.CloseTrigger, 'closeTrigger')\nconst StyledToaster = styled(ArkToaster)\n\nconst iconMap: Record<string, React.ElementType> = {\n  warning: CircleAlertIcon,\n  success: CheckCircleIcon,\n  error: CircleXIcon,\n}\n\nconst Indicator = forwardRef<SVGSVGElement, IconProps>((props, ref) => {\n  const toast = useToastContext()\n\n  const StatusIcon = iconMap[toast.type]\n  if (!StatusIcon) return null\n\n  return (\n    <Icon ref={ref} data-type={toast.type} {...props}>\n      <StatusIcon />\n    </Icon>\n  )\n})\n\nexport const toaster = createToaster({\n  placement: 'bottom-end',\n  pauseOnPageIdle: true,\n  overlap: true,\n  max: 5,\n})\n\nexport const Toaster = () => {\n  return (\n    <Portal>\n      <StyledToaster toaster={toaster} insetInline={{ mdDown: '4' }}>\n        {(toast) => (\n          <Root>\n            {toast.type === 'loading' ? <Spinner color=\"colorPalette.plain.fg\" /> : <Indicator />}\n\n            <Stack gap=\"3\" alignItems=\"start\">\n              <Stack gap=\"1\">\n                {toast.title && <Title>{toast.title}</Title>}\n                {toast.description && <Description>{toast.description}</Description>}\n              </Stack>\n              {toast.action && <ActionTrigger>{toast.action.label}</ActionTrigger>}\n            </Stack>\n            {toast.closable && (\n              <CloseTrigger asChild>\n                <CloseButton size=\"sm\" />\n              </CloseTrigger>\n            )}\n          </Root>\n        )}\n      </StyledToaster>\n    </Portal>\n  )\n}\n",
+  "description": "",
+  "tags": [
+    "other",
+    "parkui",
+    "toast"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "toast",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/toast.tsx",
+          "type": "registry:ui",
+          "exports": "export { Toaster, toaster } from './toast'",
+          "content": "'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Toaster as ArkToaster, createToaster, Toast, useToastContext } from '@ark-ui/react/toast'\nimport { CheckCircleIcon, CircleAlertIcon, CircleXIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { createStyleContext, Stack, styled } from 'styled-system/jsx'\nimport { toast } from 'styled-system/recipes'\nimport { CloseButton } from './close-button'\nimport { Icon, type IconProps } from './icon'\nimport { Spinner } from './spinner'\n\nconst { withProvider, withContext } = createStyleContext(toast)\n\nconst Root = withProvider(Toast.Root, 'root')\nconst Title = withContext(Toast.Title, 'title')\nconst Description = withContext(Toast.Description, 'description')\nconst ActionTrigger = withContext(Toast.ActionTrigger, 'actionTrigger')\nconst CloseTrigger = withContext(Toast.CloseTrigger, 'closeTrigger')\nconst StyledToaster = styled(ArkToaster)\n\nconst iconMap: Record<string, React.ElementType> = {\n  warning: CircleAlertIcon,\n  success: CheckCircleIcon,\n  error: CircleXIcon,\n}\n\nconst Indicator = forwardRef<SVGSVGElement, IconProps>((props, ref) => {\n  const toast = useToastContext()\n\n  const StatusIcon = iconMap[toast.type]\n  if (!StatusIcon) return null\n\n  return (\n    <Icon ref={ref} data-type={toast.type} {...props}>\n      <StatusIcon />\n    </Icon>\n  )\n})\n\nexport const toaster = createToaster({\n  placement: 'bottom-end',\n  pauseOnPageIdle: true,\n  overlap: true,\n  max: 5,\n})\n\nexport const Toaster = () => {\n  return (\n    <Portal>\n      <StyledToaster toaster={toaster} insetInline={{ mdDown: '4' }}>\n        {(toast) => (\n          <Root>\n            {toast.type === 'loading' ? <Spinner color=\"colorPalette.plain.fg\" /> : <Indicator />}\n\n            <Stack gap=\"3\" alignItems=\"start\">\n              <Stack gap=\"1\">\n                {toast.title && <Title>{toast.title}</Title>}\n                {toast.description && <Description>{toast.description}</Description>}\n              </Stack>\n              {toast.action && <ActionTrigger>{toast.action.label}</ActionTrigger>}\n            </Stack>\n            {toast.closable && (\n              <CloseTrigger asChild>\n                <CloseButton size=\"sm\" />\n              </CloseTrigger>\n            )}\n          </Root>\n        )}\n      </StyledToaster>\n    </Portal>\n  )\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "close-button",
+        "icon",
+        "spinner",
+        "toast-recipe"
+      ]
+    },
+    "registry_item": {
+      "name": "toast",
+      "type": "registry:ui",
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/toast.tsx",
+          "type": "registry:ui",
+          "exports": "export { Toaster, toaster } from './toast'",
+          "content": "'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Toaster as ArkToaster, createToaster, Toast, useToastContext } from '@ark-ui/react/toast'\nimport { CheckCircleIcon, CircleAlertIcon, CircleXIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { createStyleContext, Stack, styled } from 'styled-system/jsx'\nimport { toast } from 'styled-system/recipes'\nimport { CloseButton } from './close-button'\nimport { Icon, type IconProps } from './icon'\nimport { Spinner } from './spinner'\n\nconst { withProvider, withContext } = createStyleContext(toast)\n\nconst Root = withProvider(Toast.Root, 'root')\nconst Title = withContext(Toast.Title, 'title')\nconst Description = withContext(Toast.Description, 'description')\nconst ActionTrigger = withContext(Toast.ActionTrigger, 'actionTrigger')\nconst CloseTrigger = withContext(Toast.CloseTrigger, 'closeTrigger')\nconst StyledToaster = styled(ArkToaster)\n\nconst iconMap: Record<string, React.ElementType> = {\n  warning: CircleAlertIcon,\n  success: CheckCircleIcon,\n  error: CircleXIcon,\n}\n\nconst Indicator = forwardRef<SVGSVGElement, IconProps>((props, ref) => {\n  const toast = useToastContext()\n\n  const StatusIcon = iconMap[toast.type]\n  if (!StatusIcon) return null\n\n  return (\n    <Icon ref={ref} data-type={toast.type} {...props}>\n      <StatusIcon />\n    </Icon>\n  )\n})\n\nexport const toaster = createToaster({\n  placement: 'bottom-end',\n  pauseOnPageIdle: true,\n  overlap: true,\n  max: 5,\n})\n\nexport const Toaster = () => {\n  return (\n    <Portal>\n      <StyledToaster toaster={toaster} insetInline={{ mdDown: '4' }}>\n        {(toast) => (\n          <Root>\n            {toast.type === 'loading' ? <Spinner color=\"colorPalette.plain.fg\" /> : <Indicator />}\n\n            <Stack gap=\"3\" alignItems=\"start\">\n              <Stack gap=\"1\">\n                {toast.title && <Title>{toast.title}</Title>}\n                {toast.description && <Description>{toast.description}</Description>}\n              </Stack>\n              {toast.action && <ActionTrigger>{toast.action.label}</ActionTrigger>}\n            </Stack>\n            {toast.closable && (\n              <CloseTrigger asChild>\n                <CloseButton size=\"sm\" />\n              </CloseTrigger>\n            )}\n          </Root>\n        )}\n      </StyledToaster>\n    </Portal>\n  )\n}\n"
+        }
+      ],
+      "registryDependencies": [
+        "close-button",
+        "icon",
+        "spinner",
+        "toast-recipe"
+      ]
+    },
+    "ingest_method": "primary"
+  },
+  "visual_summary": "toast is a toast UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: toast\nDescription: toast is a toast UI component from the parkui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: other, parkui, toast\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/ui/toast.tsx\n'use client'\nimport { Portal } from '@ark-ui/react/portal'\nimport { Toaster as ArkToaster, createToaster, Toast, useToastContext } from '@ark-ui/react/toast'\nimport { CheckCircleIcon, CircleAlertIcon, CircleXIcon } from 'lucide-react'\nimport { forwardRef } from 'react'\nimport { createStyleContext, Stack, styled } from 'styled-system/jsx'\nimport { toast } from 'styled-system/recipes'\nimport { CloseButton } from './close-button'\nimport { Icon, type IconProps } from '",
+  "prompt_version": 2,
+  "clean_id": "toast",
+  "display_name": "Toast",
+  "preview_url": "/previews/parkui/toast.png"
+}

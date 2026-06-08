@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Indicator_Indicator.story",
+  "name": "Indicator.story",
+  "source_code": "// packages/@mantine/core/src/components/Indicator/Indicator.story.tsx\nimport { Box } from '../../core';\nimport { Avatar } from '../Avatar';\nimport { Group } from '../Group';\nimport { Text } from '../Text';\nimport { Indicator } from './Indicator';\n\nexport default { title: 'Indicator' };\n\nconst positions = ['top', 'middle', 'bottom'] as const;\nconst placements = ['start', 'center', 'end'] as const;\n\nexport const Positions = () => {\n  const items = positions.map((position) => {\n    const _items = placements.map((placement) => (\n      <Indicator position={`${position}-${placement}`} key={placement}>\n        <Avatar radius={0} />\n      </Indicator>\n    ));\n\n    return (\n      <Group mt=\"md\" key={position}>\n        {_items}\n      </Group>\n    );\n  });\n\n  return <Box p={40}>{items}</Box>;\n};\n\nexport const Inline = () => (\n  <Box p={40}>\n    <Indicator inline withBorder>\n      <Avatar radius={0} />\n    </Indicator>\n  </Box>\n);\n\nexport const AutoContrast = () => (\n  <Box p={40}>\n    <Indicator inline autoContrast withBorder color=\"lime.4\" label=\"New\" size={20}>\n      <Avatar\n        radius=\"xl\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      />\n    </Indicator>\n  </Box>\n);\n\nexport const WithRadius = () => (\n  <Box p={40}>\n    <Indicator inline offset={12} size={20} position=\"bottom-end\" withBorder color=\"red\">\n      <Avatar\n        radius={50000}\n        size=\"xl\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      />\n    </Indicator>\n  </Box>\n);\n\nexport const WithLabel = () => (\n  <Box p={40}>\n    <Indicator inline label=\"New\" size={18}>\n      <Avatar radius={0} />\n    </Indicator>\n  </Box>\n);\n\nexport const Processing = () => (\n  <Box p={40}>\n    <Group justify=\"center\">\n      <Box>\n        <Text>Enabled</Text>\n        <Indicator inline processing size={12}>\n          <Avatar\n            size=\"lg\"\n            src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          />\n        </Indicator>\n      </Box>\n\n      <Box>\n        <Text>Disabled</Text>\n        <Indicator inline processing disabled size={12}>\n          <Avatar\n            size=\"lg\"\n            src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          />\n        </Indicator>\n      </Box>\n    </Group>\n  </Box>\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Indicator_Indicator.story",
+      "name": "Indicator.story",
+      "path": "packages/@mantine/core/src/components/Indicator/Indicator.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Indicator_Indicator.story",
+      "name": "Indicator.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Indicator/Indicator.story.tsx",
+          "content": "import { Box } from '../../core';\nimport { Avatar } from '../Avatar';\nimport { Group } from '../Group';\nimport { Text } from '../Text';\nimport { Indicator } from './Indicator';\n\nexport default { title: 'Indicator' };\n\nconst positions = ['top', 'middle', 'bottom'] as const;\nconst placements = ['start', 'center', 'end'] as const;\n\nexport const Positions = () => {\n  const items = positions.map((position) => {\n    const _items = placements.map((placement) => (\n      <Indicator position={`${position}-${placement}`} key={placement}>\n        <Avatar radius={0} />\n      </Indicator>\n    ));\n\n    return (\n      <Group mt=\"md\" key={position}>\n        {_items}\n      </Group>\n    );\n  });\n\n  return <Box p={40}>{items}</Box>;\n};\n\nexport const Inline = () => (\n  <Box p={40}>\n    <Indicator inline withBorder>\n      <Avatar radius={0} />\n    </Indicator>\n  </Box>\n);\n\nexport const AutoContrast = () => (\n  <Box p={40}>\n    <Indicator inline autoContrast withBorder color=\"lime.4\" label=\"New\" size={20}>\n      <Avatar\n        radius=\"xl\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      />\n    </Indicator>\n  </Box>\n);\n\nexport const WithRadius = () => (\n  <Box p={40}>\n    <Indicator inline offset={12} size={20} position=\"bottom-end\" withBorder color=\"red\">\n      <Avatar\n        radius={50000}\n        size=\"xl\"\n        src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n      />\n    </Indicator>\n  </Box>\n);\n\nexport const WithLabel = () => (\n  <Box p={40}>\n    <Indicator inline label=\"New\" size={18}>\n      <Avatar radius={0} />\n    </Indicator>\n  </Box>\n);\n\nexport const Processing = () => (\n  <Box p={40}>\n    <Group justify=\"center\">\n      <Box>\n        <Text>Enabled</Text>\n        <Indicator inline processing size={12}>\n          <Avatar\n            size=\"lg\"\n            src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          />\n        </Indicator>\n      </Box>\n\n      <Box>\n        <Text>Disabled</Text>\n        <Indicator inline processing disabled size={12}>\n          <Avatar\n            size=\"lg\"\n            src=\"https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png\"\n          />\n        </Indicator>\n      </Box>\n    </Group>\n  </Box>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

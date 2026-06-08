@@ -1,0 +1,58 @@
+{
+  "id": "distorted-glass",
+  "name": "distorted-glass",
+  "source_code": "// registry/default/ui/distorted-glass.tsx\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport const DistortedGlass = ({ className }: { className?: string }) => {\n  return (\n    <>\n      <div\n        className={cn(\n          \"relative hidden h-[50px] w-[360px] overflow-hidden rounded-b-2xl lg:w-[600px]  xl:block xl:w-full\",\n          className\n        )}\n      >\n        <div className=\"pointer-events-none absolute bottom-0  z-10 size-full overflow-hidden rounded-b-2xl  border border-[#f5f5f51a]\">\n          <div className=\"glass-effect size-full\"></div>\n        </div>\n        <svg>\n          <title>Distorted Glass</title>\n          <defs>\n            <filter id=\"fractal-noise-glass\">\n              <feTurbulence\n                type=\"fractalNoise\"\n                baseFrequency=\"0.12 0.12\"\n                numOctaves=\"1\"\n                result=\"warp\"\n              ></feTurbulence>\n              <feDisplacementMap\n                xChannelSelector=\"R\"\n                yChannelSelector=\"G\"\n                scale=\"30\"\n                in=\"SourceGraphic\"\n                in2=\"warp\"\n              />\n            </filter>\n          </defs>\n        </svg>\n      </div>\n\n      <style jsx>{`\n        .glass-effect {\n          background: rgba(0, 0, 0, 0.2);\n          background: repeating-radial-gradient(\n            circle at 50%50%,\n            rgb(255 255 255 / 0),\n            rgba(255, 255, 255, 0.2) 10px,\n            rgb(255 255 255) 31px\n          );\n          filter: url(#fractal-noise-glass);\n          background-size: 6px 6px;\n          backdrop-filter: blur(0px);\n        }\n      `}</style>\n    </>\n  )\n}\n",
+  "description": "A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections",
+  "tags": [
+    "glass-effect",
+    "fractal-noise",
+    "background"
+  ],
+  "server": "cultui",
+  "metadata": {
+    "listed_component": {
+      "name": "distorted-glass.json",
+      "source": "github_contents",
+      "path": "apps/www/public/r/distorted-glass.json",
+      "sha": "af62c14c1ec26558523c3397e532ae487e1d55f5",
+      "size": 2059,
+      "url": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/distorted-glass.json?ref=main",
+      "html_url": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/distorted-glass.json",
+      "git_url": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/af62c14c1ec26558523c3397e532ae487e1d55f5",
+      "download_url": "https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/r/distorted-glass.json",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/nolly-studio/cult-ui/contents/apps/www/public/r/distorted-glass.json?ref=main",
+        "git": "https://api.github.com/repos/nolly-studio/cult-ui/git/blobs/af62c14c1ec26558523c3397e532ae487e1d55f5",
+        "html": "https://github.com/nolly-studio/cult-ui/blob/main/apps/www/public/r/distorted-glass.json"
+      }
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "distorted-glass",
+      "type": "registry:ui",
+      "description": "A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections",
+      "files": [
+        {
+          "path": "registry/default/ui/distorted-glass.tsx",
+          "content": "\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport const DistortedGlass = ({ className }: { className?: string }) => {\n  return (\n    <>\n      <div\n        className={cn(\n          \"relative hidden h-[50px] w-[360px] overflow-hidden rounded-b-2xl lg:w-[600px]  xl:block xl:w-full\",\n          className\n        )}\n      >\n        <div className=\"pointer-events-none absolute bottom-0  z-10 size-full overflow-hidden rounded-b-2xl  border border-[#f5f5f51a]\">\n          <div className=\"glass-effect size-full\"></div>\n        </div>\n        <svg>\n          <title>Distorted Glass</title>\n          <defs>\n            <filter id=\"fractal-noise-glass\">\n              <feTurbulence\n                type=\"fractalNoise\"\n                baseFrequency=\"0.12 0.12\"\n                numOctaves=\"1\"\n                result=\"warp\"\n              ></feTurbulence>\n              <feDisplacementMap\n                xChannelSelector=\"R\"\n                yChannelSelector=\"G\"\n                scale=\"30\"\n                in=\"SourceGraphic\"\n                in2=\"warp\"\n              />\n            </filter>\n          </defs>\n        </svg>\n      </div>\n\n      <style jsx>{`\n        .glass-effect {\n          background: rgba(0, 0, 0, 0.2);\n          background: repeating-radial-gradient(\n            circle at 50%50%,\n            rgb(255 255 255 / 0),\n            rgba(255, 255, 255, 0.2) 10px,\n            rgb(255 255 255) 31px\n          );\n          filter: url(#fractal-noise-glass);\n          background-size: 6px 6px;\n          backdrop-filter: blur(0px);\n        }\n      `}</style>\n    </>\n  )\n}\n",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "A component that renders a distorted glass effect with a fractal noise. It can be used to add a dynamic and visually appealing background to applications. ",
+  "style_tags": [
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "static"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: distorted-glass\nDescription: A component that renders a distorted glass effect with a fractal noise. It can be used to add a dynamic and visually appealing background to applications. \nStyle: glassmorphism\nInteractions: static\nTags: glass-effect, fractal-noise, background\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// registry/default/ui/distorted-glass.tsx\n\"use client\"\n\nimport { cn } from \"@/lib/utils\"\n\nexport const DistortedGlass = ({ className }: { className?: string }) => {\n  return (\n    <>\n      <div\n        className={cn(\n          \"relative hidden h-[50px] w-[360px] overflow-hidden rounded-b-2xl lg:w-[600px]  xl:block xl:w-full\",\n          className\n        )}\n      >\n        <div className=\"pointer-events-none absolute bottom-0  z-10 size-full overflow-hidden rounded-b-2xl  border border-[#f5f5f51",
+  "prompt_version": 2,
+  "clean_id": "distorted-glass",
+  "display_name": "Distorted Glass",
+  "preview_url": "/previews/cultui/distorted-glass.png"
+}

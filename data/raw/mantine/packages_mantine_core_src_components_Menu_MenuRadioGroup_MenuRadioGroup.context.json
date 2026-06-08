@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup.context",
+  "name": "MenuRadioGroup.context",
+  "source_code": "// packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.context.tsx\nimport { createContext } from 'react';\n\nexport interface MenuRadioGroupContextValue {\n  value: string | null;\n  onChange: (value: string) => void;\n}\n\nexport const MenuRadioGroupContext = createContext<MenuRadioGroupContextValue | null>(null);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Menu_MenuRadioGroup_MenuRadioGroup.context",
+      "name": "MenuRadioGroup.context",
+      "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.context.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Menu_MenuRadioGroup_MenuRadioGroup.context",
+      "name": "MenuRadioGroup.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Menu/MenuRadioGroup/MenuRadioGroup.context.tsx",
+          "content": "import { createContext } from 'react';\n\nexport interface MenuRadioGroupContextValue {\n  value: string | null;\n  onChange: (value: string) => void;\n}\n\nexport const MenuRadioGroupContext = createContext<MenuRadioGroupContextValue | null>(null);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

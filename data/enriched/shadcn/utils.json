@@ -1,0 +1,33 @@
+{
+  "id": "utils",
+  "name": "utils",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "utility",
+    "functions",
+    "global"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "utils",
+      "type": "registry:lib",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:lib"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## utils\n**Type:** registry:lib\n**Files:** 1 file(s)\n**Dependencies:** clsx, tailwind-merge"
+  },
+  "visual_summary": "The utils component is a collection of reusable utility functions that can be used throughout an application. It's essential for developers to integrate this component when needing to perform multiple utility tasks. The component is typically used in the root of an application to provide global functionality.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: utils\nDescription: The utils component is a collection of reusable utility functions that can be used throughout an application. It's essential for developers to integrate this component when needing to perform multiple utility tasks. The component is typically used in the root of an application to provide global functionality.\nStyle: \nInteractions: \nTags: utility, functions, global\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "utils",
+  "display_name": "Utils",
+  "preview_url": "/previews/shadcn/utils.png"
+}

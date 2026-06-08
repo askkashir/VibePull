@@ -1,0 +1,40 @@
+{
+  "id": "card-demo",
+  "name": "card-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "UI component",
+    "card",
+    "interactive"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "card-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## card-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Card-Demo is a customizable card component with various styles and layouts. It is suitable for displaying information in a concise and visually appealing manner, making it ideal for dashboard widgets, product showcases, or profile summaries.",
+  "style_tags": [
+    "e.g. dark",
+    "minimal",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: card-demo\nDescription: Card-Demo is a customizable card component with various styles and layouts. It is suitable for displaying information in a concise and visually appealing manner, making it ideal for dashboard widgets, product showcases, or profile summaries.\nStyle: e.g. dark, minimal, flat\nInteractions: e.g. hover, clickable\nTags: UI component, card, interactive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "card-demo",
+  "display_name": "Card Demo",
+  "preview_url": "/previews/shadcn/card-demo.png"
+}

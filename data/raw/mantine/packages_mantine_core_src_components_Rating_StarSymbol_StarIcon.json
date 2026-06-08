@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Rating_StarSymbol_StarIcon",
+  "name": "StarIcon",
+  "source_code": "// packages/@mantine/core/src/components/Rating/StarSymbol/StarIcon.tsx\nexport function StarIcon(props: React.ComponentProps<'svg'>) {\n  const { width, height, style, ...others } = props;\n  return (\n    <svg\n      viewBox=\"0 0 24 24\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      style={{ width, height, ...style }}\n      {...others}\n    >\n      <path d=\"M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z\" />\n    </svg>\n  );\n}\n\nStarIcon.displayName = '@mantine/core/StarIcon';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Rating_StarSymbol_StarIcon",
+      "name": "StarIcon",
+      "path": "packages/@mantine/core/src/components/Rating/StarSymbol/StarIcon.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Rating_StarSymbol_StarIcon",
+      "name": "StarIcon",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Rating/StarSymbol/StarIcon.tsx",
+          "content": "export function StarIcon(props: React.ComponentProps<'svg'>) {\n  const { width, height, style, ...others } = props;\n  return (\n    <svg\n      viewBox=\"0 0 24 24\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      style={{ width, height, ...style }}\n      {...others}\n    >\n      <path d=\"M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z\" />\n    </svg>\n  );\n}\n\nStarIcon.displayName = '@mantine/core/StarIcon';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "components_ui_SupportedFrameworks_FrameworksTabs",
+  "name": "FrameworksTabs",
+  "source_code": "// components/ui/SupportedFrameworks/FrameworksTabs.tsx\n\"use client\";\n\nimport * as Tabs from \"@radix-ui/react-tabs\";\nimport { IconHTML, IconReact, IconSvelte, IconVue } from \"components/icons\";\nimport SyntaxHeighlight from \"components/SyntaxHeighlight\";\nimport supportedFrameworksJSON from \"utils/supportedFrameworksJSON\";\nimport { m } from \"framer-motion\";\nimport { useState } from \"react\";\nimport TabsTrigger from \"../Tabs/TabsTrigger\";\nimport LazyMotionWrapper from \"components/LazyMotionWrapper\";\n\nexport default () => {\n  const [selectedTab, setSelectedTab] = useState(\"html\");\n\n  const tabs = [\n    {\n      name: \"HTML\",\n      icon: <IconHTML />,\n      value: \"html\",\n    },\n    {\n      name: \"React.js\",\n      icon: <IconReact />,\n      value: \"react\",\n    },\n    {\n      name: \"Vue.js\",\n      icon: <IconVue />,\n      value: \"vue\",\n    },\n    {\n      name: \"Svelte.js\",\n      icon: <IconSvelte />,\n      value: \"svelte\",\n    },\n  ];\n\n  return (\n    <Tabs.Root\n      className=\"flex-1 overflow-hidden rounded-2xl border border-zinc-800\"\n      defaultValue={selectedTab}\n      onValueChange={(value) => setSelectedTab(value)}\n    >\n      <Tabs.List\n        className=\"flex items-center px-4 py-2 border-b border-b-zinc-800 overflow-auto bg-[linear-gradient(175deg,_rgba(24,_24,_27,_0.80)_3.95%,_rgba(24,_24,_27,_0.00)_140.01%)]\"\n        aria-label=\"Switch between supported frameworks\"\n      >\n        {tabs.map((item, idx) => (\n          <TabsTrigger key={idx} value={item.value} selectedTab={selectedTab}>\n            <div className=\"flex items-center gap-x-2 relative z-10\">\n              {item.icon}\n              {item.name}\n            </div>\n          </TabsTrigger>\n        ))}\n      </Tabs.List>\n      {supportedFrameworksJSON.map((item, idx) => (\n        <Tabs.Content\n          key={idx}\n          className=\"h-[640px] overflow-auto p-4 delay-1000 duration-1000 data-[state=inactive]:opacity-0 data-[state=active]:opacity-1\"\n          value={item.value}\n        >\n          <LazyMotionWrapper>\n            <m.div\n              className=\"opacity-0\"\n              animate={{ opacity: 1 }}\n              transition={{ duration: 0.9 }}\n            >\n              <SyntaxHeighlight code={item.code} />\n            </m.div>\n          </LazyMotionWrapper>\n        </Tabs.Content>\n      ))}\n    </Tabs.Root>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "floatui",
+    "registry:ui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_SupportedFrameworks_FrameworksTabs",
+      "name": "FrameworksTabs",
+      "path": "components/ui/SupportedFrameworks/FrameworksTabs.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_SupportedFrameworks_FrameworksTabs",
+      "name": "FrameworksTabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/SupportedFrameworks/FrameworksTabs.tsx",
+          "content": "\"use client\";\n\nimport * as Tabs from \"@radix-ui/react-tabs\";\nimport { IconHTML, IconReact, IconSvelte, IconVue } from \"components/icons\";\nimport SyntaxHeighlight from \"components/SyntaxHeighlight\";\nimport supportedFrameworksJSON from \"utils/supportedFrameworksJSON\";\nimport { m } from \"framer-motion\";\nimport { useState } from \"react\";\nimport TabsTrigger from \"../Tabs/TabsTrigger\";\nimport LazyMotionWrapper from \"components/LazyMotionWrapper\";\n\nexport default () => {\n  const [selectedTab, setSelectedTab] = useState(\"html\");\n\n  const tabs = [\n    {\n      name: \"HTML\",\n      icon: <IconHTML />,\n      value: \"html\",\n    },\n    {\n      name: \"React.js\",\n      icon: <IconReact />,\n      value: \"react\",\n    },\n    {\n      name: \"Vue.js\",\n      icon: <IconVue />,\n      value: \"vue\",\n    },\n    {\n      name: \"Svelte.js\",\n      icon: <IconSvelte />,\n      value: \"svelte\",\n    },\n  ];\n\n  return (\n    <Tabs.Root\n      className=\"flex-1 overflow-hidden rounded-2xl border border-zinc-800\"\n      defaultValue={selectedTab}\n      onValueChange={(value) => setSelectedTab(value)}\n    >\n      <Tabs.List\n        className=\"flex items-center px-4 py-2 border-b border-b-zinc-800 overflow-auto bg-[linear-gradient(175deg,_rgba(24,_24,_27,_0.80)_3.95%,_rgba(24,_24,_27,_0.00)_140.01%)]\"\n        aria-label=\"Switch between supported frameworks\"\n      >\n        {tabs.map((item, idx) => (\n          <TabsTrigger key={idx} value={item.value} selectedTab={selectedTab}>\n            <div className=\"flex items-center gap-x-2 relative z-10\">\n              {item.icon}\n              {item.name}\n            </div>\n          </TabsTrigger>\n        ))}\n      </Tabs.List>\n      {supportedFrameworksJSON.map((item, idx) => (\n        <Tabs.Content\n          key={idx}\n          className=\"h-[640px] overflow-auto p-4 delay-1000 duration-1000 data-[state=inactive]:opacity-0 data-[state=active]:opacity-1\"\n          value={item.value}\n        >\n          <LazyMotionWrapper>\n            <m.div\n              className=\"opacity-0\"\n              animate={{ opacity: 1 }}\n              transition={{ duration: 0.9 }}\n            >\n              <SyntaxHeighlight code={item.code} />\n            </m.div>\n          </LazyMotionWrapper>\n        </Tabs.Content>\n      ))}\n    </Tabs.Root>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

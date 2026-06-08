@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Table_index",
+  "name": "Table",
+  "source_code": "// packages/@mantine/core/src/components/Table/index.ts\nimport type {\n  TableCssVariables,\n  TableData,\n  TableFactory,\n  TableProps,\n  TableStylesNames,\n} from './Table';\nimport type {\n  TableCaptionProps,\n  TableTbodyProps,\n  TableTdProps,\n  TableTfootProps,\n  TableTheadProps,\n  TableThProps,\n  TableTrProps,\n} from './Table.components';\nimport type { TableContextValue } from './Table.context';\nimport type { TableScrollContainerProps } from './TableScrollContainer';\n\nexport { Table } from './Table';\nexport {\n  TableCaption,\n  TableTbody,\n  TableTd,\n  TableTfoot,\n  TableTr,\n  TableTh,\n  TableThead,\n} from './Table.components';\nexport { TableScrollContainer } from './TableScrollContainer';\nexport { useTableContext } from './Table.context';\n\nexport type {\n  TableProps,\n  TableStylesNames,\n  TableCssVariables,\n  TableFactory,\n  TableData,\n  TableTbodyProps,\n  TableTdProps,\n  TableThProps,\n  TableTrProps,\n  TableCaptionProps,\n  TableTfootProps,\n  TableTheadProps,\n  TableScrollContainerProps,\n  TableContextValue,\n};\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Table_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Table/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Table_index",
+      "name": "Table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Table/index.ts",
+          "content": "import type {\n  TableCssVariables,\n  TableData,\n  TableFactory,\n  TableProps,\n  TableStylesNames,\n} from './Table';\nimport type {\n  TableCaptionProps,\n  TableTbodyProps,\n  TableTdProps,\n  TableTfootProps,\n  TableTheadProps,\n  TableThProps,\n  TableTrProps,\n} from './Table.components';\nimport type { TableContextValue } from './Table.context';\nimport type { TableScrollContainerProps } from './TableScrollContainer';\n\nexport { Table } from './Table';\nexport {\n  TableCaption,\n  TableTbody,\n  TableTd,\n  TableTfoot,\n  TableTr,\n  TableTh,\n  TableThead,\n} from './Table.components';\nexport { TableScrollContainer } from './TableScrollContainer';\nexport { useTableContext } from './Table.context';\n\nexport type {\n  TableProps,\n  TableStylesNames,\n  TableCssVariables,\n  TableFactory,\n  TableData,\n  TableTbodyProps,\n  TableTdProps,\n  TableThProps,\n  TableTrProps,\n  TableCaptionProps,\n  TableTfootProps,\n  TableTheadProps,\n  TableScrollContainerProps,\n  TableContextValue,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

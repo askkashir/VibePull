@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Accordion_Accordion.types",
+  "name": "Accordion.types",
+  "source_code": "// packages/@mantine/core/src/components/Accordion/Accordion.types.ts\nexport type AccordionValue<Multiple extends boolean> = Multiple extends true\n  ? string[]\n  : string | null;\n\nexport type AccordionHeadingOrder = 2 | 3 | 4 | 5 | 6;\nexport type AccordionChevronPosition = 'left' | 'right';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Accordion_Accordion.types",
+      "name": "Accordion.types",
+      "path": "packages/@mantine/core/src/components/Accordion/Accordion.types.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Accordion_Accordion.types",
+      "name": "Accordion.types",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Accordion/Accordion.types.ts",
+          "content": "export type AccordionValue<Multiple extends boolean> = Multiple extends true\n  ? string[]\n  : string | null;\n\nexport type AccordionHeadingOrder = 2 | 3 | 4 | 5 | 6;\nexport type AccordionChevronPosition = 'left' | 'right';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

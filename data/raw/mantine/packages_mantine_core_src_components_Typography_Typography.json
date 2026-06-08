@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Typography_Typography",
+  "name": "Typography",
+  "source_code": "// packages/@mantine/core/src/components/Typography/Typography.tsx\nimport {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Typography.module.css';\n\nexport type TypographyStylesNames = 'root';\n\nexport interface TypographyProps\n  extends BoxProps, StylesApiProps<TypographyFactory>, ElementProps<'div'> {}\n\nexport type TypographyFactory = Factory<{\n  props: TypographyProps;\n  ref: HTMLDivElement;\n  stylesNames: TypographyStylesNames;\n}>;\n\nexport const Typography = factory<TypographyFactory>((_props) => {\n  const props = useProps('Typography', null, _props);\n  const { classNames, className, style, styles, unstyled, attributes, ...others } = props;\n\n  const getStyles = useStyles<TypographyFactory>({\n    name: 'Typography',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n  });\n\n  return <Box {...getStyles('root')} {...others} />;\n});\n\nTypography.classes = classes;\nTypography.displayName = '@mantine/core/Typography';\n\nexport namespace Typography {\n  export type Props = TypographyProps;\n  export type StylesNames = TypographyStylesNames;\n  export type Factory = TypographyFactory;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Typography_Typography",
+      "name": "Typography",
+      "path": "packages/@mantine/core/src/components/Typography/Typography.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Typography_Typography",
+      "name": "Typography",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Typography/Typography.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  ElementProps,\n  factory,\n  Factory,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../core';\nimport classes from './Typography.module.css';\n\nexport type TypographyStylesNames = 'root';\n\nexport interface TypographyProps\n  extends BoxProps, StylesApiProps<TypographyFactory>, ElementProps<'div'> {}\n\nexport type TypographyFactory = Factory<{\n  props: TypographyProps;\n  ref: HTMLDivElement;\n  stylesNames: TypographyStylesNames;\n}>;\n\nexport const Typography = factory<TypographyFactory>((_props) => {\n  const props = useProps('Typography', null, _props);\n  const { classNames, className, style, styles, unstyled, attributes, ...others } = props;\n\n  const getStyles = useStyles<TypographyFactory>({\n    name: 'Typography',\n    classes,\n    props,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n  });\n\n  return <Box {...getStyles('root')} {...others} />;\n});\n\nTypography.classes = classes;\nTypography.displayName = '@mantine/core/Typography';\n\nexport namespace Typography {\n  export type Props = TypographyProps;\n  export type StylesNames = TypographyStylesNames;\n  export type Factory = TypographyFactory;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

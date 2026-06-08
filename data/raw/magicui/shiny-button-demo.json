@@ -1,0 +1,45 @@
+{
+  "id": "shiny-button-demo",
+  "name": "Shiny Button Demo",
+  "source_code": "import { ShinyButton } from \"@/registry/magicui/shiny-button\"\n\nexport default function ShinyButtonDemo() {\n  return <ShinyButton>Shiny Button</ShinyButton>\n}\n",
+  "description": "Example showing a shiny button with dynamic styles.",
+  "tags": [
+    "registry:example"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "shiny-button-demo",
+      "type": "registry:example",
+      "title": "Shiny Button Demo",
+      "description": "Example showing a shiny button with dynamic styles.",
+      "registryDependencies": [
+        "https://magicui.design/r/shiny-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/shiny-button-demo.tsx",
+          "type": "registry:example",
+          "target": "components/shiny-button-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shiny-button-demo",
+      "type": "registry:example",
+      "title": "Shiny Button Demo",
+      "description": "Example showing a shiny button with dynamic styles.",
+      "registryDependencies": [
+        "@magicui/shiny-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/shiny-button-demo.tsx",
+          "content": "import { ShinyButton } from \"@/registry/magicui/shiny-button\"\n\nexport default function ShinyButtonDemo() {\n  return <ShinyButton>Shiny Button</ShinyButton>\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  }
+}

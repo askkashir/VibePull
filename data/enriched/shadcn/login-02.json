@@ -1,0 +1,27 @@
+{
+  "id": "login-02",
+  "name": "login-02",
+  "source_code": "",
+  "description": "A two column login page with a cover image.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "login-02",
+      "type": "registry:block",
+      "description": "A two column login page with a cover image.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## login-02\n\nA two column login page with a cover image.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  },
+  "enrichment_failed": true,
+  "generation_prompt": "Generate a production-ready React + Tailwind CSS component called login-02. It should be: A two column login page with a cover image.. Component type: registry:block. Style: . Interactions: . Return only the complete component code.",
+  "clean_id": "login-02",
+  "display_name": "Login 02"
+}

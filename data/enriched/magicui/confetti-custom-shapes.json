@@ -1,0 +1,64 @@
+{
+  "id": "confetti-custom-shapes",
+  "name": "Confetti Custom Shapes",
+  "source_code": "\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiCustomShapes() {\n  const handleClick = () => {\n    const scalar = 2\n    const triangle = confetti.shapeFromPath({\n      path: \"M0 10 L5 0 L10 10z\",\n    })\n    const square = confetti.shapeFromPath({\n      path: \"M0 0 L10 0 L10 10 L0 10 Z\",\n    })\n    const coin = confetti.shapeFromPath({\n      path: \"M5 0 A5 5 0 1 0 5 10 A5 5 0 1 0 5 0 Z\",\n    })\n    const tree = confetti.shapeFromPath({\n      path: \"M5 0 L10 10 L0 10 Z\",\n    })\n\n    const defaults = {\n      spread: 360,\n      ticks: 60,\n      gravity: 0,\n      decay: 0.96,\n      startVelocity: 20,\n      shapes: [triangle, square, coin, tree],\n      scalar,\n    }\n\n    const shoot = () => {\n      confetti({\n        ...defaults,\n        particleCount: 30,\n      })\n\n      confetti({\n        ...defaults,\n        particleCount: 5,\n      })\n\n      confetti({\n        ...defaults,\n        particleCount: 15,\n        scalar: scalar / 2,\n        shapes: [\"circle\"],\n      })\n    }\n\n    setTimeout(shoot, 0)\n    setTimeout(shoot, 100)\n    setTimeout(shoot, 200)\n  }\n\n  return (\n    <div className=\"relative flex items-center justify-center\">\n      <Button onClick={handleClick}>Trigger Shapes</Button>\n    </div>\n  )\n}\n",
+  "description": "Example showing confetti with custom shape particles.",
+  "tags": [
+    "confetti",
+    "custom shapes",
+    "animation",
+    "button"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "confetti-custom-shapes",
+      "type": "registry:example",
+      "title": "Confetti Custom Shapes",
+      "description": "Example showing confetti with custom shape particles.",
+      "registryDependencies": [
+        "https://magicui.design/r/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-custom-shapes.tsx",
+          "type": "registry:example",
+          "target": "components/confetti-custom-shapes.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "confetti-custom-shapes",
+      "type": "registry:example",
+      "title": "Confetti Custom Shapes",
+      "description": "Example showing confetti with custom shape particles.",
+      "registryDependencies": [
+        "@magicui/confetti"
+      ],
+      "files": [
+        {
+          "path": "registry/example/confetti-custom-shapes.tsx",
+          "content": "\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiCustomShapes() {\n  const handleClick = () => {\n    const scalar = 2\n    const triangle = confetti.shapeFromPath({\n      path: \"M0 10 L5 0 L10 10z\",\n    })\n    const square = confetti.shapeFromPath({\n      path: \"M0 0 L10 0 L10 10 L0 10 Z\",\n    })\n    const coin = confetti.shapeFromPath({\n      path: \"M5 0 A5 5 0 1 0 5 10 A5 5 0 1 0 5 0 Z\",\n    })\n    const tree = confetti.shapeFromPath({\n      path: \"M5 0 L10 10 L0 10 Z\",\n    })\n\n    const defaults = {\n      spread: 360,\n      ticks: 60,\n      gravity: 0,\n      decay: 0.96,\n      startVelocity: 20,\n      shapes: [triangle, square, coin, tree],\n      scalar,\n    }\n\n    const shoot = () => {\n      confetti({\n        ...defaults,\n        particleCount: 30,\n      })\n\n      confetti({\n        ...defaults,\n        particleCount: 5,\n      })\n\n      confetti({\n        ...defaults,\n        particleCount: 15,\n        scalar: scalar / 2,\n        shapes: [\"circle\"],\n      })\n    }\n\n    setTimeout(shoot, 0)\n    setTimeout(shoot, 100)\n    setTimeout(shoot, 200)\n  }\n\n  return (\n    <div className=\"relative flex items-center justify-center\">\n      <Button onClick={handleClick}>Trigger Shapes</Button>\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A ConfettiCustomShapes component is a button that, when clicked, triggers the random creation and animation of various custom shapes in a sparkler effect, similar to confetti. It can be used in celebratory contexts or to add visual flair to a user interface. Developers can use this component to create a fun and engaging experience for their users.",
+  "style_tags": [
+    "flat",
+    "default",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "onClick",
+    "triggered animation"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Confetti Custom Shapes\nDescription: A ConfettiCustomShapes component is a button that, when clicked, triggers the random creation and animation of various custom shapes in a sparkler effect, similar to confetti. It can be used in celebratory contexts or to add visual flair to a user interface. Developers can use this component to create a fun and engaging experience for their users.\nStyle: flat, default, minimal\nInteractions: onClick, triggered animation\nTags: confetti, custom shapes, animation, button\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\"\n\nimport confetti from \"canvas-confetti\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function ConfettiCustomShapes() {\n  const handleClick = () => {\n    const scalar = 2\n    const triangle = confetti.shapeFromPath({\n      path: \"M0 10 L5 0 L10 10z\",\n    })\n    const square = confetti.shapeFromPath({\n      path: \"M0 0 L10 0 L10 10 L0 10 Z\",\n    })\n    const coin = confetti.shapeFromPath({\n      path: \"M5 0 A5 5 0 1 0 5 10 A5 5 0 1 0 5 0 Z\",\n    })\n    const tree =",
+  "prompt_version": 2,
+  "clean_id": "confetti-custom-shapes",
+  "display_name": "Confetti Custom Shapes",
+  "preview_url": "/previews/magicui/confetti-custom-shapes.png"
+}

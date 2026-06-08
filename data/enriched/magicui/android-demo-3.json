@@ -1,0 +1,56 @@
+{
+  "id": "android-demo-3",
+  "name": "Android Demo 3",
+  "source_code": "import { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android\n        className=\"size-full\"\n        videoSrc=\"https://videos.pexels.com/video-files/14993748/14993748-uhd_1296_2304_30fps.mp4\"\n      />\n    </div>\n  )\n}\n",
+  "description": "Third example showing a mockup of an Android device.",
+  "tags": [
+    "android",
+    "video",
+    "demo"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "android-demo-3",
+      "type": "registry:example",
+      "title": "Android Demo 3",
+      "description": "Third example showing a mockup of an Android device.",
+      "registryDependencies": [
+        "https://magicui.design/r/android"
+      ],
+      "files": [
+        {
+          "path": "registry/example/android-demo-3.tsx",
+          "type": "registry:example",
+          "target": "components/android-demo-3.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "android-demo-3",
+      "type": "registry:example",
+      "title": "Android Demo 3",
+      "description": "Third example showing a mockup of an Android device.",
+      "registryDependencies": [
+        "@magicui/android"
+      ],
+      "files": [
+        {
+          "path": "registry/example/android-demo-3.tsx",
+          "content": "import { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android\n        className=\"size-full\"\n        videoSrc=\"https://videos.pexels.com/video-files/14993748/14993748-uhd_1296_2304_30fps.mp4\"\n      />\n    </div>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A full-screen video component used for displaying Android-style interface video demos.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: Android Demo 3\nDescription: A full-screen video component used for displaying Android-style interface video demos.\nStyle: \nInteractions: \nTags: android, video, demo\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Android } from \"@/registry/magicui/android\"\n\nexport default function AndroidDemo() {\n  return (\n    <div className=\"relative\">\n      <Android\n        className=\"size-full\"\n        videoSrc=\"https://videos.pexels.com/video-files/14993748/14993748-uhd_1296_2304_30fps.mp4\"\n      />\n    </div>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "android-demo-3",
+  "display_name": "Android Demo 3",
+  "preview_url": "/previews/magicui/android-demo-3.png"
+}

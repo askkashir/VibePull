@@ -1,0 +1,42 @@
+{
+  "id": "text-loop",
+  "name": "text-loop",
+  "source_code": "// components/core/text-loop.tsx\n'use client';\nimport { cn } from '@/lib/utils';\nimport {\n  motion,\n  AnimatePresence,\n  Transition,\n  Variants,\n  AnimatePresenceProps,\n} from 'motion/react';\nimport { useState, useEffect, Children } from 'react';\n\nexport type TextLoopProps = {\n  children: React.ReactNode[];\n  className?: string;\n  interval?: number;\n  transition?: Transition;\n  variants?: Variants;\n  onIndexChange?: (index: number) => void;\n  trigger?: boolean;\n  mode?: AnimatePresenceProps['mode'];\n};\n\nexport function TextLoop({\n  children,\n  className,\n  interval = 2,\n  transition = { duration: 0.3 },\n  variants,\n  onIndexChange,\n  trigger = true,\n  mode = 'popLayout',\n}: TextLoopProps) {\n  const [currentIndex, setCurrentIndex] = useState(0);\n  const items = Children.toArray(children);\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    const intervalMs = interval * 1000;\n    const timer = setInterval(() => {\n      setCurrentIndex((current) => {\n        const next = (current + 1) % items.length;\n        onIndexChange?.(next);\n        return next;\n      });\n    }, intervalMs);\n    return () => clearInterval(timer);\n  }, [items.length, interval, onIndexChange, trigger]);\n\n  const motionVariants: Variants = {\n    initial: { y: 20, opacity: 0 },\n    animate: { y: 0, opacity: 1 },\n    exit: { y: -20, opacity: 0 },\n  };\n\n  return (\n    <div className={cn('relative inline-block whitespace-nowrap', className)}>\n      <AnimatePresence mode={mode} initial={false}>\n        <motion.div\n          key={currentIndex}\n          initial='initial'\n          animate='animate'\n          exit='exit'\n          transition={transition}\n          variants={variants || motionVariants}\n        >\n          {items[currentIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "file",
+    "motionprimitives",
+    "registry:ui"
+  ],
+  "server": "motionprimitives",
+  "metadata": {
+    "listed_component": {
+      "name": "text-loop.tsx",
+      "source": "github_contents",
+      "path": "components/core/text-loop.tsx",
+      "sha": "0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+      "size": 1764,
+      "url": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-loop.tsx?ref=main",
+      "html_url": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-loop.tsx",
+      "git_url": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+      "download_url": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-loop.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/ibelick/motion-primitives/contents/components/core/text-loop.tsx?ref=main",
+        "git": "https://api.github.com/repos/ibelick/motion-primitives/git/blobs/0f3c7e0c48d4b5a8c773163145ac2806654f9dd0",
+        "html": "https://github.com/ibelick/motion-primitives/blob/main/components/core/text-loop.tsx"
+      }
+    },
+    "registry_item": {
+      "name": "text-loop",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/core/text-loop.tsx",
+          "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport {\n  motion,\n  AnimatePresence,\n  Transition,\n  Variants,\n  AnimatePresenceProps,\n} from 'motion/react';\nimport { useState, useEffect, Children } from 'react';\n\nexport type TextLoopProps = {\n  children: React.ReactNode[];\n  className?: string;\n  interval?: number;\n  transition?: Transition;\n  variants?: Variants;\n  onIndexChange?: (index: number) => void;\n  trigger?: boolean;\n  mode?: AnimatePresenceProps['mode'];\n};\n\nexport function TextLoop({\n  children,\n  className,\n  interval = 2,\n  transition = { duration: 0.3 },\n  variants,\n  onIndexChange,\n  trigger = true,\n  mode = 'popLayout',\n}: TextLoopProps) {\n  const [currentIndex, setCurrentIndex] = useState(0);\n  const items = Children.toArray(children);\n\n  useEffect(() => {\n    if (!trigger) return;\n\n    const intervalMs = interval * 1000;\n    const timer = setInterval(() => {\n      setCurrentIndex((current) => {\n        const next = (current + 1) % items.length;\n        onIndexChange?.(next);\n        return next;\n      });\n    }, intervalMs);\n    return () => clearInterval(timer);\n  }, [items.length, interval, onIndexChange, trigger]);\n\n  const motionVariants: Variants = {\n    initial: { y: 20, opacity: 0 },\n    animate: { y: 0, opacity: 1 },\n    exit: { y: -20, opacity: 0 },\n  };\n\n  return (\n    <div className={cn('relative inline-block whitespace-nowrap', className)}>\n      <AnimatePresence mode={mode} initial={false}>\n        <motion.div\n          key={currentIndex}\n          initial='initial'\n          animate='animate'\n          exit='exit'\n          transition={transition}\n          variants={variants || motionVariants}\n        >\n          {items[currentIndex]}\n        </motion.div>\n      </AnimatePresence>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  }
+}

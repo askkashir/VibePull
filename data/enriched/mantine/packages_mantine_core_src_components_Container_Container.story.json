@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Container_Container.story",
+  "name": "Container.story",
+  "source_code": "// packages/@mantine/core/src/components/Container/Container.story.tsx\nimport { createTheme, MantineThemeProvider, rem } from '../../core';\nimport { Container } from './Container';\n\nconst CONTAINER_SIZES: Record<string, string> = {\n  xxs: rem(200),\n  xs: rem(300),\n  sm: rem(400),\n  md: rem(500),\n  lg: rem(600),\n  xl: rem(700),\n  xxl: rem(800),\n};\n\nconst theme = createTheme({\n  components: {\n    Container: Container.extend({\n      vars: (_, { size }) => ({\n        root: {\n          '--container-size':\n            size !== undefined && size in CONTAINER_SIZES ? CONTAINER_SIZES[size] : rem(size),\n        },\n      }),\n    }),\n  },\n});\n\nexport default { title: 'Container' };\n\nexport function Usage() {\n  return (\n    <MantineThemeProvider theme={theme}>\n      <Container size=\"md\" bg=\"gray.1\" strategy=\"grid\">\n        <div style={{ background: 'orange' }}>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quasi asperiores!\n          Adipisci dolorem cumque sunt maiores ullam alias rerum architecto voluptatibus reiciendis.\n          Nulla, maxime alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor sit amet\n          consectetur adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem cumque sunt\n          maiores ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit\n          dolore voluptatibus ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo\n          facilis quasi asperiores! Adipisci dolorem cumque sunt maiores ullam alias rerum\n          architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit dolore voluptatibus\n          ducimus?\n        </div>\n        <div data-breakout style={{ background: 'silver' }}>\n          <div>Breakout</div>\n          <div data-container style={{ background: 'cyan' }}>\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quasi asperiores!\n            Adipisci dolorem cumque sunt maiores ullam alias rerum architecto voluptatibus\n            reiciendis. Nulla, maxime alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor\n            sit amet consectetur adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem\n            cumque sunt maiores ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime\n            alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor sit amet consectetur\n            adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem cumque sunt maiores\n            ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit\n            dolore voluptatibus ducimus?\n          </div>\n        </div>\n      </Container>\n    </MantineThemeProvider>\n  );\n}\n\nexport function NonFluidWithinFluid() {\n  return (\n    <Container fluid h={50} bg=\"blue\">\n      <Container h={50} bg=\"red\">\n        Child container\n      </Container>\n    </Container>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "container",
+    "mantine",
+    "other",
+    "story"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Container_Container.story",
+      "name": "Container.story",
+      "path": "packages/@mantine/core/src/components/Container/Container.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Container_Container.story",
+      "name": "Container.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Container/Container.story.tsx",
+          "content": "import { createTheme, MantineThemeProvider, rem } from '../../core';\nimport { Container } from './Container';\n\nconst CONTAINER_SIZES: Record<string, string> = {\n  xxs: rem(200),\n  xs: rem(300),\n  sm: rem(400),\n  md: rem(500),\n  lg: rem(600),\n  xl: rem(700),\n  xxl: rem(800),\n};\n\nconst theme = createTheme({\n  components: {\n    Container: Container.extend({\n      vars: (_, { size }) => ({\n        root: {\n          '--container-size':\n            size !== undefined && size in CONTAINER_SIZES ? CONTAINER_SIZES[size] : rem(size),\n        },\n      }),\n    }),\n  },\n});\n\nexport default { title: 'Container' };\n\nexport function Usage() {\n  return (\n    <MantineThemeProvider theme={theme}>\n      <Container size=\"md\" bg=\"gray.1\" strategy=\"grid\">\n        <div style={{ background: 'orange' }}>\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quasi asperiores!\n          Adipisci dolorem cumque sunt maiores ullam alias rerum architecto voluptatibus reiciendis.\n          Nulla, maxime alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor sit amet\n          consectetur adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem cumque sunt\n          maiores ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit\n          dolore voluptatibus ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo\n          facilis quasi asperiores! Adipisci dolorem cumque sunt maiores ullam alias rerum\n          architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit dolore voluptatibus\n          ducimus?\n        </div>\n        <div data-breakout style={{ background: 'silver' }}>\n          <div>Breakout</div>\n          <div data-container style={{ background: 'cyan' }}>\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quasi asperiores!\n            Adipisci dolorem cumque sunt maiores ullam alias rerum architecto voluptatibus\n            reiciendis. Nulla, maxime alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor\n            sit amet consectetur adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem\n            cumque sunt maiores ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime\n            alias? Impedit dolore voluptatibus ducimus? Lorem ipsum dolor sit amet consectetur\n            adipisicing elit. Quo facilis quasi asperiores! Adipisci dolorem cumque sunt maiores\n            ullam alias rerum architecto voluptatibus reiciendis. Nulla, maxime alias? Impedit\n            dolore voluptatibus ducimus?\n          </div>\n        </div>\n      </Container>\n    </MantineThemeProvider>\n  );\n}\n\nexport function NonFluidWithinFluid() {\n  return (\n    <Container fluid h={50} bg=\"blue\">\n      <Container h={50} bg=\"red\">\n        Child container\n      </Container>\n    </Container>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Container.story is a container story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "themeable"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Container.story\nDescription: Container.story is a container story UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: themeable\nInteractions: \nTags: container, mantine, other, story\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Container/Container.story.tsx\nimport { createTheme, MantineThemeProvider, rem } from '../../core';\nimport { Container } from './Container';\n\nconst CONTAINER_SIZES: Record<string, string> = {\n  xxs: rem(200),\n  xs: rem(300),\n  sm: rem(400),\n  md: rem(500),\n  lg: rem(600),\n  xl: rem(700),\n  xxl: rem(800),\n};\n\nconst theme = createTheme({\n  components: {\n    Container: Container.extend({\n      vars: (_, { size }) => ({\n        root: {\n          '--container-s",
+  "prompt_version": 2,
+  "clean_id": "container",
+  "display_name": "Container",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-container-container-story.png"
+}

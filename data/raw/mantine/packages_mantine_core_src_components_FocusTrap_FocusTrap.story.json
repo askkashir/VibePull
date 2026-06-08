@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_FocusTrap_FocusTrap.story",
+  "name": "FocusTrap.story",
+  "source_code": "// packages/@mantine/core/src/components/FocusTrap/FocusTrap.story.tsx\nimport { useDisclosure } from '@mantine/hooks';\nimport { FocusTrap } from './FocusTrap';\n\nexport default { title: 'FocusTrap' };\n\nexport function Usage() {\n  const [active, handlers] = useDisclosure(false);\n  return (\n    <>\n      <button type=\"button\" onClick={handlers.toggle}>\n        Toggle\n      </button>\n      <FocusTrap active={active}>\n        <div>\n          <input />\n          <input />\n          <input />\n        </div>\n      </FocusTrap>\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FocusTrap_FocusTrap.story",
+      "name": "FocusTrap.story",
+      "path": "packages/@mantine/core/src/components/FocusTrap/FocusTrap.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FocusTrap_FocusTrap.story",
+      "name": "FocusTrap.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FocusTrap/FocusTrap.story.tsx",
+          "content": "import { useDisclosure } from '@mantine/hooks';\nimport { FocusTrap } from './FocusTrap';\n\nexport default { title: 'FocusTrap' };\n\nexport function Usage() {\n  const [active, handlers] = useDisclosure(false);\n  return (\n    <>\n      <button type=\"button\" onClick={handlers.toggle}>\n        Toggle\n      </button>\n      <FocusTrap active={active}>\n        <div>\n          <input />\n          <input />\n          <input />\n        </div>\n      </FocusTrap>\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

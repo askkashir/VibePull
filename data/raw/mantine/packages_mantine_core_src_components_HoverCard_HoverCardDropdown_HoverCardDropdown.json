@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_HoverCard_HoverCardDropdown_HoverCardDropdown",
+  "name": "HoverCardDropdown",
+  "source_code": "// packages/@mantine/core/src/components/HoverCard/HoverCardDropdown/HoverCardDropdown.tsx\nimport { use } from 'react';\nimport { createEventHandler, useProps } from '../../../core';\nimport { Popover, PopoverDropdownProps } from '../../Popover';\nimport { useHoverCardContext } from '../HoverCard.context';\nimport { HoverCardGroupContext } from '../HoverCardGroup/HoverCardGroup';\n\nexport interface HoverCardDropdownProps extends PopoverDropdownProps {\n  /** Dropdown content */\n  children?: React.ReactNode;\n}\n\nexport function HoverCardDropdown(props: HoverCardDropdownProps) {\n  const { children, onMouseEnter, onMouseLeave, ...others } = useProps(\n    'HoverCardDropdown',\n    null,\n    props\n  );\n\n  const ctx = useHoverCardContext();\n  const groupCtx = use(HoverCardGroupContext);\n\n  if (groupCtx.withinGroup && ctx.getFloatingProps && ctx.floating) {\n    const floatingProps = ctx.getFloatingProps();\n\n    return (\n      <Popover.Dropdown\n        ref={ctx.floating}\n        {...floatingProps}\n        onMouseEnter={createEventHandler<any>(onMouseEnter, floatingProps.onMouseEnter)}\n        onMouseLeave={createEventHandler<any>(onMouseLeave, floatingProps.onMouseLeave)}\n        {...others}\n      >\n        {children}\n      </Popover.Dropdown>\n    );\n  }\n\n  const handleMouseEnter = createEventHandler<any>(onMouseEnter, ctx.openDropdown);\n  const handleMouseLeave = createEventHandler<any>(onMouseLeave!, ctx.closeDropdown);\n\n  return (\n    <Popover.Dropdown onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} {...others}>\n      {children}\n    </Popover.Dropdown>\n  );\n}\n\nHoverCardDropdown.displayName = '@mantine/core/HoverCardDropdown';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "HoverCard_HoverCardDropdown_HoverCardDropdown",
+      "name": "HoverCardDropdown",
+      "path": "packages/@mantine/core/src/components/HoverCard/HoverCardDropdown/HoverCardDropdown.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_HoverCard_HoverCardDropdown_HoverCardDropdown",
+      "name": "HoverCardDropdown",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/HoverCard/HoverCardDropdown/HoverCardDropdown.tsx",
+          "content": "import { use } from 'react';\nimport { createEventHandler, useProps } from '../../../core';\nimport { Popover, PopoverDropdownProps } from '../../Popover';\nimport { useHoverCardContext } from '../HoverCard.context';\nimport { HoverCardGroupContext } from '../HoverCardGroup/HoverCardGroup';\n\nexport interface HoverCardDropdownProps extends PopoverDropdownProps {\n  /** Dropdown content */\n  children?: React.ReactNode;\n}\n\nexport function HoverCardDropdown(props: HoverCardDropdownProps) {\n  const { children, onMouseEnter, onMouseLeave, ...others } = useProps(\n    'HoverCardDropdown',\n    null,\n    props\n  );\n\n  const ctx = useHoverCardContext();\n  const groupCtx = use(HoverCardGroupContext);\n\n  if (groupCtx.withinGroup && ctx.getFloatingProps && ctx.floating) {\n    const floatingProps = ctx.getFloatingProps();\n\n    return (\n      <Popover.Dropdown\n        ref={ctx.floating}\n        {...floatingProps}\n        onMouseEnter={createEventHandler<any>(onMouseEnter, floatingProps.onMouseEnter)}\n        onMouseLeave={createEventHandler<any>(onMouseLeave, floatingProps.onMouseLeave)}\n        {...others}\n      >\n        {children}\n      </Popover.Dropdown>\n    );\n  }\n\n  const handleMouseEnter = createEventHandler<any>(onMouseEnter, ctx.openDropdown);\n  const handleMouseLeave = createEventHandler<any>(onMouseLeave!, ctx.closeDropdown);\n\n  return (\n    <Popover.Dropdown onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} {...others}>\n      {children}\n    </Popover.Dropdown>\n  );\n}\n\nHoverCardDropdown.displayName = '@mantine/core/HoverCardDropdown';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

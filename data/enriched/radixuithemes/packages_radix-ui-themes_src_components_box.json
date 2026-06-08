@@ -1,0 +1,58 @@
+{
+  "id": "packages_radix-ui-themes_src_components_box",
+  "name": "box",
+  "source_code": "// packages/radix-ui-themes/src/components/box.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { boxPropDefs } from './box.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { BoxOwnProps } from './box.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype BoxElement = React.ElementRef<'div'>;\ninterface CommonBoxProps extends MarginProps, LayoutProps, BoxOwnProps {}\ntype BoxDivProps = { as?: 'div' } & ComponentPropsWithout<'div', RemovedProps>;\ntype BoxSpanProps = { as: 'span' } & ComponentPropsWithout<'span', RemovedProps>;\ntype BoxProps = CommonBoxProps & (BoxSpanProps | BoxDivProps);\n\nconst Box = React.forwardRef<BoxElement, BoxProps>((props, forwardedRef) => {\n  const {\n    className,\n    asChild,\n    as: Tag = 'div',\n    ...boxProps\n  } = extractProps(props, boxPropDefs, layoutPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot : Tag;\n  return <Comp {...boxProps} ref={forwardedRef} className={classNames('rt-Box', className)} />;\n});\nBox.displayName = 'Box';\n\nexport { Box };\nexport type { BoxProps };\n",
+  "description": "",
+  "tags": [
+    "container",
+    "element",
+    "wrapper"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_box",
+      "name": "box.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/box.tsx",
+      "sha": "7747f7a2e6ebbfabb96a3517f861e6cc791bc1ba",
+      "size": 1366,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/box.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/box.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/7747f7a2e6ebbfabb96a3517f861e6cc791bc1ba",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/box.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/box.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/7747f7a2e6ebbfabb96a3517f861e6cc791bc1ba",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/box.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_box",
+      "name": "box",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/box.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { boxPropDefs } from './box.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js';\nimport type { BoxOwnProps } from './box.props.js';\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\n\ntype BoxElement = React.ElementRef<'div'>;\ninterface CommonBoxProps extends MarginProps, LayoutProps, BoxOwnProps {}\ntype BoxDivProps = { as?: 'div' } & ComponentPropsWithout<'div', RemovedProps>;\ntype BoxSpanProps = { as: 'span' } & ComponentPropsWithout<'span', RemovedProps>;\ntype BoxProps = CommonBoxProps & (BoxSpanProps | BoxDivProps);\n\nconst Box = React.forwardRef<BoxElement, BoxProps>((props, forwardedRef) => {\n  const {\n    className,\n    asChild,\n    as: Tag = 'div',\n    ...boxProps\n  } = extractProps(props, boxPropDefs, layoutPropDefs, marginPropDefs);\n  const Comp = asChild ? Slot : Tag;\n  return <Comp {...boxProps} ref={forwardedRef} className={classNames('rt-Box', className)} />;\n});\nBox.displayName = 'Box';\n\nexport { Box };\nexport type { BoxProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Box component is a versatile container element that can be used to wrap other components or elements. It can be customized with layout and margin props, and can also be used as a span element for inline wrapping. It is useful when you need a simple container that can be styled and layouted flexibly.",
+  "style_tags": [
+    "minimal",
+    "flexible"
+  ],
+  "interaction_tags": [
+    "none"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: box\nDescription: The Box component is a versatile container element that can be used to wrap other components or elements. It can be customized with layout and margin props, and can also be used as a span element for inline wrapping. It is useful when you need a simple container that can be styled and layouted flexibly.\nStyle: minimal, flexible\nInteractions: none\nTags: container, element, wrapper\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/box.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\n\nimport { Slot } from './slot.js';\nimport { boxPropDefs } from './box.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\nimport { layoutPropDefs } from '../props/layout.props.js';\nimport { marginPropDefs } from '../props/margin.props.js';\n\nimport type { LayoutProps } from '../props/layout.props.js';\nimport type { MarginProps } from '../props/margin.props.js'",
+  "prompt_version": 2,
+  "clean_id": "box",
+  "display_name": "Box",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-box.png"
+}

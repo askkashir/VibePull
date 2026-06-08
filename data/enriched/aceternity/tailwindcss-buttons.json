@@ -1,0 +1,53 @@
+{
+  "id": "tailwindcss-buttons",
+  "name": "Tailwindcss Buttons",
+  "source_code": "\"use client\";\nimport React from \"react\";\nimport { IconClipboard } from \"@tabler/icons-react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const ButtonsCard = ({\n  children,\n  className,\n  onClick,\n}: {\n  children?: React.ReactNode;\n  className?: string;\n  onClick?: () => void;\n}) => {\n  return (\n    <div\n      onClick={onClick}\n      className={cn(\n        \"h-60 w-full bg-white rounded-xl border border-neutral-100 dark:bg-black dark:border-white/[0.2] hover:border-neutral-200 group/btn overflow-hidden relative flex items-center justify-center\",\n        className\n      )}\n    >\n      <div className=\"absolute inset-0 dark:bg-dot-white/[0.1] bg-dot-black/[0.1]\" />\n      <IconClipboard className=\"absolute top-2 right-2 text-neutral-300 group-hover/btn:block hidden h-4 w-4 transition duration-200\" />\n      <div className=\"relative z-40\">{children}</div>\n    </div>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "button",
+    "card",
+    "clickable",
+    "animated",
+    "responsive"
+  ],
+  "server": "aceternity",
+  "metadata": {
+    "listed_component": {
+      "name": "tailwindcss-buttons",
+      "source": "ai_catalog"
+    },
+    "registry_item": {
+      "name": "tailwindcss-buttons",
+      "type": "registry:ui",
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tailwindcss-buttons.tsx",
+          "content": "\"use client\";\nimport React from \"react\";\nimport { IconClipboard } from \"@tabler/icons-react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const ButtonsCard = ({\n  children,\n  className,\n  onClick,\n}: {\n  children?: React.ReactNode;\n  className?: string;\n  onClick?: () => void;\n}) => {\n  return (\n    <div\n      onClick={onClick}\n      className={cn(\n        \"h-60 w-full bg-white rounded-xl border border-neutral-100 dark:bg-black dark:border-white/[0.2] hover:border-neutral-200 group/btn overflow-hidden relative flex items-center justify-center\",\n        className\n      )}\n    >\n      <div className=\"absolute inset-0 dark:bg-dot-white/[0.1] bg-dot-black/[0.1]\" />\n      <IconClipboard className=\"absolute top-2 right-2 text-neutral-300 group-hover/btn:block hidden h-4 w-4 transition duration-200\" />\n      <div className=\"relative z-40\">{children}</div>\n    </div>\n  );\n};\n",
+          "type": "registry:ui",
+          "target": "components/ui/tailwindcss-buttons.tsx"
+        }
+      ],
+      "author": "Manu Arora <hi@manuarora.in>",
+      "title": "Tailwindcss Buttons"
+    }
+  },
+  "visual_summary": "A customizable button component that can be used to create variety of button types. It can be used wherever a simple button click interaction is needed, such as navigation or interactive elements.",
+  "style_tags": [
+    "dark",
+    "minimal"
+  ],
+  "interaction_tags": [
+    "animated",
+    "clickable",
+    "hover"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Tailwindcss Buttons\nDescription: A customizable button component that can be used to create variety of button types. It can be used wherever a simple button click interaction is needed, such as navigation or interactive elements.\nStyle: dark, minimal\nInteractions: animated, clickable, hover\nTags: button, card, clickable, animated, responsive\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\";\nimport React from \"react\";\nimport { IconClipboard } from \"@tabler/icons-react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const ButtonsCard = ({\n  children,\n  className,\n  onClick,\n}: {\n  children?: React.ReactNode;\n  className?: string;\n  onClick?: () => void;\n}) => {\n  return (\n    <div\n      onClick={onClick}\n      className={cn(\n        \"h-60 w-full bg-white rounded-xl border border-neutral-100 dark:bg-black dark:border-white/[0.2] hover:border-neutral-200 group/btn overflow-hi",
+  "prompt_version": 2,
+  "clean_id": "tailwindcss-buttons",
+  "display_name": "Tailwindcss Buttons",
+  "preview_url": "/previews/aceternity/tailwindcss-buttons.png"
+}

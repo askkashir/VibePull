@@ -1,0 +1,45 @@
+{
+  "id": "src_components_BaseHead",
+  "name": "BaseHead",
+  "source_code": "// src/components/BaseHead.astro\n---\nimport '../styles/global.css'\n\nimport { Font } from 'astro:assets'\n\nimport OgImage from '../assets/og.jpg'\n\nimport { SITE_TITLE } from '../consts'\n\nimport type { ImageMetadata } from 'astro'\n\ninterface Props {\n  description: string\n  title: string\n  image?: ImageMetadata\n}\n\nconst canonicalURL = new URL(Astro.url.pathname, Astro.site)\n\nconst { description, title, image = OgImage } = Astro.props\n\nconst pageTitle = `${title} | ${SITE_TITLE}`\n\nconst websiteSchema = {\n  '@context': 'https://schema.org',\n  '@type': 'WebSite',\n  name: SITE_TITLE,\n  url: Astro.site,\n}\n\nconst webpageSchema = {\n  '@context': 'https://schema.org',\n  '@type': 'WebPage',\n  name: pageTitle,\n  description,\n  url: canonicalURL,\n  isPartOf: {\n    '@type': 'WebSite',\n    name: SITE_TITLE,\n    url: Astro.site,\n  },\n}\n---\n\n<meta charset=\"utf-8\" />\n<meta name=\"generator\" content={Astro.generator} />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n<link rel=\"preconnect\" href=\"https://media.ethicalads.io\" />\n\n<link rel=\"canonical\" href={canonicalURL} />\n<link rel=\"sitemap\" href=\"/sitemap-index.xml\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"HyperUI RSS\" href=\"/rss.xml\" />\n<link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\" />\n\n<title>{pageTitle}</title>\n<meta name=\"title\" content={pageTitle} />\n<meta name=\"description\" content={description} />\n\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:url\" content={Astro.url} />\n<meta property=\"og:title\" content={pageTitle} />\n<meta property=\"og:description\" content={description} />\n<meta property=\"og:image\" content={new URL(image.src, Astro.url)} />\n<meta property=\"og:site_name\" content={SITE_TITLE} />\n\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"twitter:url\" content={Astro.url} />\n<meta property=\"twitter:title\" content={pageTitle} />\n<meta property=\"twitter:description\" content={description} />\n<meta property=\"twitter:image\" content={new URL(image.src, Astro.url)} />\n\n<Font cssVariable=\"--font-google-sans-flex\" preload />\n\n<script is:inline defer src=\"https://media.ethicalads.io/media/client/ethicalads.min.js\"></script>\n\n<script type=\"application/ld+json\" is:inline set:html={JSON.stringify(websiteSchema)} />\n<script type=\"application/ld+json\" is:inline set:html={JSON.stringify(webpageSchema)} />\n",
+  "description": "",
+  "tags": [
+    "seo",
+    "metadata",
+    "title",
+    "description",
+    "image"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "BaseHead",
+      "name": "BaseHead",
+      "path": "src/components/BaseHead.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_BaseHead",
+      "name": "BaseHead",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/BaseHead.astro",
+          "content": "---\nimport '../styles/global.css'\n\nimport { Font } from 'astro:assets'\n\nimport OgImage from '../assets/og.jpg'\n\nimport { SITE_TITLE } from '../consts'\n\nimport type { ImageMetadata } from 'astro'\n\ninterface Props {\n  description: string\n  title: string\n  image?: ImageMetadata\n}\n\nconst canonicalURL = new URL(Astro.url.pathname, Astro.site)\n\nconst { description, title, image = OgImage } = Astro.props\n\nconst pageTitle = `${title} | ${SITE_TITLE}`\n\nconst websiteSchema = {\n  '@context': 'https://schema.org',\n  '@type': 'WebSite',\n  name: SITE_TITLE,\n  url: Astro.site,\n}\n\nconst webpageSchema = {\n  '@context': 'https://schema.org',\n  '@type': 'WebPage',\n  name: pageTitle,\n  description,\n  url: canonicalURL,\n  isPartOf: {\n    '@type': 'WebSite',\n    name: SITE_TITLE,\n    url: Astro.site,\n  },\n}\n---\n\n<meta charset=\"utf-8\" />\n<meta name=\"generator\" content={Astro.generator} />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n<link rel=\"preconnect\" href=\"https://media.ethicalads.io\" />\n\n<link rel=\"canonical\" href={canonicalURL} />\n<link rel=\"sitemap\" href=\"/sitemap-index.xml\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"HyperUI RSS\" href=\"/rss.xml\" />\n<link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\" />\n\n<title>{pageTitle}</title>\n<meta name=\"title\" content={pageTitle} />\n<meta name=\"description\" content={description} />\n\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:url\" content={Astro.url} />\n<meta property=\"og:title\" content={pageTitle} />\n<meta property=\"og:description\" content={description} />\n<meta property=\"og:image\" content={new URL(image.src, Astro.url)} />\n<meta property=\"og:site_name\" content={SITE_TITLE} />\n\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"twitter:url\" content={Astro.url} />\n<meta property=\"twitter:title\" content={pageTitle} />\n<meta property=\"twitter:description\" content={description} />\n<meta property=\"twitter:image\" content={new URL(image.src, Astro.url)} />\n\n<Font cssVariable=\"--font-google-sans-flex\" preload />\n\n<script is:inline defer src=\"https://media.ethicalads.io/media/client/ethicalads.min.js\"></script>\n\n<script type=\"application/ld+json\" is:inline set:html={JSON.stringify(websiteSchema)} />\n<script type=\"application/ld+json\" is:inline set:html={JSON.stringify(webpageSchema)} />\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A BaseHead component is used for setting the title, description, and image of a webpage, along with metadata for schema.org and Open Graph.",
+  "style_tags": [
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: BaseHead\nDescription: A BaseHead component is used for setting the title, description, and image of a webpage, along with metadata for schema.org and Open Graph.\nStyle: default\nInteractions: \nTags: seo, metadata, title, description, image\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/BaseHead.astro\n---\nimport '../styles/global.css'\n\nimport { Font } from 'astro:assets'\n\nimport OgImage from '../assets/og.jpg'\n\nimport { SITE_TITLE } from '../consts'\n\nimport type { ImageMetadata } from 'astro'\n\ninterface Props {\n  description: string\n  title: string\n  image?: ImageMetadata\n}\n\nconst canonicalURL = new URL(Astro.url.pathname, Astro.site)\n\nconst { description, title, image = OgImage } = Astro.props\n\nconst pageTitle = `${title} | ${SITE_TITLE}`\n\nconst websiteSchema",
+  "prompt_version": 2,
+  "clean_id": "base-head",
+  "display_name": "Base Head",
+  "preview_url": "/previews/hyperui/src-components-basehead.png"
+}

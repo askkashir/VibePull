@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_List_List.context",
+  "name": "List.context",
+  "source_code": "// packages/@mantine/core/src/components/List/List.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { ListFactory } from './List';\n\nexport interface ListContextValue {\n  getStyles: GetStylesApi<ListFactory>;\n  center: boolean | undefined;\n  icon: React.ReactNode | undefined;\n}\n\nexport const [ListProvider, useListContext] = createSafeContext<ListContextValue>(\n  'List component was not found in tree'\n);\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "List_List.context",
+      "name": "List.context",
+      "path": "packages/@mantine/core/src/components/List/List.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_List_List.context",
+      "name": "List.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/List/List.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { ListFactory } from './List';\n\nexport interface ListContextValue {\n  getStyles: GetStylesApi<ListFactory>;\n  center: boolean | undefined;\n  icon: React.ReactNode | undefined;\n}\n\nexport const [ListProvider, useListContext] = createSafeContext<ListContextValue>(\n  'List component was not found in tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

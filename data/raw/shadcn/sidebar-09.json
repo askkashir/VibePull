@@ -1,0 +1,23 @@
+{
+  "id": "sidebar-09",
+  "name": "sidebar-09",
+  "source_code": "",
+  "description": "Collapsible nested sidebars.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-09",
+      "type": "registry:block",
+      "description": "Collapsible nested sidebars.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-09\n\nCollapsible nested sidebars.\n\n**Type:** registry:block\n**Files:** 3 file(s)"
+  }
+}

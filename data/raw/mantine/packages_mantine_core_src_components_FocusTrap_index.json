@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_FocusTrap_index",
+  "name": "FocusTrap",
+  "source_code": "// packages/@mantine/core/src/components/FocusTrap/index.ts\nexport { FocusTrap, FocusTrapInitialFocus } from './FocusTrap';\nexport type { FocusTrapProps } from './FocusTrap';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "FocusTrap_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/FocusTrap/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_FocusTrap_index",
+      "name": "FocusTrap",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/FocusTrap/index.ts",
+          "content": "export { FocusTrap, FocusTrapInitialFocus } from './FocusTrap';\nexport type { FocusTrapProps } from './FocusTrap';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

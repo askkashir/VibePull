@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted",
+  "name": "StepperCompleted",
+  "source_code": "// packages/@mantine/core/src/components/Stepper/StepperCompleted/StepperCompleted.tsx\nexport interface StepperCompletedProps {\n  /** Label content */\n  children: React.ReactNode;\n}\n\nexport const StepperCompleted: React.FC<StepperCompletedProps> = () => null;\nStepperCompleted.displayName = '@mantine/core/StepperCompleted';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Stepper_StepperCompleted_StepperCompleted",
+      "name": "StepperCompleted",
+      "path": "packages/@mantine/core/src/components/Stepper/StepperCompleted/StepperCompleted.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Stepper_StepperCompleted_StepperCompleted",
+      "name": "StepperCompleted",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Stepper/StepperCompleted/StepperCompleted.tsx",
+          "content": "export interface StepperCompletedProps {\n  /** Label content */\n  children: React.ReactNode;\n}\n\nexport const StepperCompleted: React.FC<StepperCompletedProps> = () => null;\nStepperCompleted.displayName = '@mantine/core/StepperCompleted';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

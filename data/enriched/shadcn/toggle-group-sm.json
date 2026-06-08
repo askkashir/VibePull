@@ -1,0 +1,43 @@
+{
+  "id": "toggle-group-sm",
+  "name": "toggle-group-sm",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "toggle",
+    "group",
+    "settings",
+    "navigation",
+    "mobile"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "toggle-group-sm",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## toggle-group-sm\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The toggle-group-sm component is a compact variant of a toggle group, displaying a small selection of toggle buttons. It is used when a user needs to switch between a few options, typically in a navigation or settings context. Suitable for mobile applications where space is limited.",
+  "style_tags": [
+    "e.g. material",
+    "flat",
+    "compact"
+  ],
+  "interaction_tags": [
+    "e.g. animated",
+    "clickable",
+    "toggleable"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: toggle-group-sm\nDescription: The toggle-group-sm component is a compact variant of a toggle group, displaying a small selection of toggle buttons. It is used when a user needs to switch between a few options, typically in a navigation or settings context. Suitable for mobile applications where space is limited.\nStyle: e.g. material, flat, compact\nInteractions: e.g. animated, clickable, toggleable\nTags: toggle, group, settings, navigation, mobile\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "toggle-group-sm",
+  "display_name": "Toggle Group Sm",
+  "preview_url": "/previews/shadcn/toggle-group-sm.png"
+}

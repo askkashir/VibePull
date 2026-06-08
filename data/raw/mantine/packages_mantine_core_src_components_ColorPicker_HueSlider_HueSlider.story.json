@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_ColorPicker_HueSlider_HueSlider.story",
+  "name": "HueSlider.story",
+  "source_code": "// packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.story.tsx\nimport { useState } from 'react';\nimport { HueSlider } from './HueSlider';\n\nexport default { title: 'HueSlider' };\n\nexport function Usage() {\n  const [value, onChange] = useState(250);\n\n  return (\n    <>\n      <div>Hue value: {value}</div>\n      <HueSlider value={value} onChange={onChange} />\n    </>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ColorPicker_HueSlider_HueSlider.story",
+      "name": "HueSlider.story",
+      "path": "packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ColorPicker_HueSlider_HueSlider.story",
+      "name": "HueSlider.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ColorPicker/HueSlider/HueSlider.story.tsx",
+          "content": "import { useState } from 'react';\nimport { HueSlider } from './HueSlider';\n\nexport default { title: 'HueSlider' };\n\nexport function Usage() {\n  const [value, onChange] = useState(250);\n\n  return (\n    <>\n      <div>Hue value: {value}</div>\n      <HueSlider value={value} onChange={onChange} />\n    </>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

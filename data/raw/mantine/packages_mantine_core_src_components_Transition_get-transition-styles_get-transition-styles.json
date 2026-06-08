@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Transition_get-transition-styles_get-transition-styles",
+  "name": "get-transition-styles",
+  "source_code": "// packages/@mantine/core/src/components/Transition/get-transition-styles/get-transition-styles.ts\nimport { MantineTransition, transitions } from '../transitions';\n\nconst transitionStatuses = {\n  entering: 'in',\n  entered: 'in',\n  exiting: 'out',\n  exited: 'out',\n  'pre-exiting': 'out',\n  'pre-entering': 'out',\n} as const;\n\nexport function getTransitionStyles({\n  transition,\n  state,\n  duration,\n  timingFunction,\n}: {\n  transition: MantineTransition;\n  state: keyof typeof transitionStatuses;\n  duration: number;\n  timingFunction: React.CSSProperties['transitionTimingFunction'];\n}): React.CSSProperties {\n  const shared: React.CSSProperties = {\n    WebkitBackfaceVisibility: 'hidden',\n    transitionDuration: `${duration}ms`,\n    transitionTimingFunction: timingFunction,\n  };\n\n  if (typeof transition === 'string') {\n    if (!(transition in transitions)) {\n      return {};\n    }\n\n    return {\n      transitionProperty: transitions[transition].transitionProperty,\n      ...shared,\n      ...transitions[transition].common,\n      ...transitions[transition][transitionStatuses[state]],\n    };\n  }\n\n  return {\n    transitionProperty: transition.transitionProperty,\n    ...shared,\n    ...transition.common,\n    ...transition[transitionStatuses[state]],\n  };\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Transition_get-transition-styles_get-transition-styles",
+      "name": "get-transition-styles",
+      "path": "packages/@mantine/core/src/components/Transition/get-transition-styles/get-transition-styles.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Transition_get-transition-styles_get-transition-styles",
+      "name": "get-transition-styles",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Transition/get-transition-styles/get-transition-styles.ts",
+          "content": "import { MantineTransition, transitions } from '../transitions';\n\nconst transitionStatuses = {\n  entering: 'in',\n  entered: 'in',\n  exiting: 'out',\n  exited: 'out',\n  'pre-exiting': 'out',\n  'pre-entering': 'out',\n} as const;\n\nexport function getTransitionStyles({\n  transition,\n  state,\n  duration,\n  timingFunction,\n}: {\n  transition: MantineTransition;\n  state: keyof typeof transitionStatuses;\n  duration: number;\n  timingFunction: React.CSSProperties['transitionTimingFunction'];\n}): React.CSSProperties {\n  const shared: React.CSSProperties = {\n    WebkitBackfaceVisibility: 'hidden',\n    transitionDuration: `${duration}ms`,\n    transitionTimingFunction: timingFunction,\n  };\n\n  if (typeof transition === 'string') {\n    if (!(transition in transitions)) {\n      return {};\n    }\n\n    return {\n      transitionProperty: transitions[transition].transitionProperty,\n      ...shared,\n      ...transitions[transition].common,\n      ...transitions[transition][transitionStatuses[state]],\n    };\n  }\n\n  return {\n    transitionProperty: transition.transitionProperty,\n    ...shared,\n    ...transition.common,\n    ...transition[transitionStatuses[state]],\n  };\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "border-beam-demo-2",
+  "name": "Border Beam Demo",
+  "source_code": "import { Play, SkipBack, SkipForward } from \"lucide-react\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function MusicPlayer() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Now Playing</CardTitle>\n        <CardDescription>Stairway to Heaven - Led Zeppelin</CardDescription>\n      </CardHeader>\n      <CardContent>\n        <div className=\"flex flex-col items-center gap-4\">\n          <div className=\"h-48 w-48 rounded-lg bg-linear-to-br from-purple-500 to-pink-500\" />\n          <div className=\"bg-secondary h-1 w-full rounded-full\">\n            <div className=\"bg-primary h-full w-1/3 rounded-full\" />\n          </div>\n          <div className=\"text-muted-foreground flex w-full justify-between text-sm\">\n            <span>2:45</span>\n            <span>8:02</span>\n          </div>\n        </div>\n      </CardContent>\n      <CardFooter className=\"flex justify-center gap-4\">\n        <Button variant=\"outline\" size=\"icon\" className=\"rounded-full\">\n          <SkipBack className=\"size-4\" />\n        </Button>\n        <Button size=\"icon\" className=\"rounded-full\">\n          <Play className=\"size-4\" />\n        </Button>\n        <Button variant=\"outline\" size=\"icon\" className=\"rounded-full\">\n          <SkipForward className=\"size-4\" />\n        </Button>\n      </CardFooter>\n      <BorderBeam\n        duration={6}\n        size={400}\n        className=\"from-transparent via-red-500 to-transparent\"\n      />\n      <BorderBeam\n        duration={6}\n        delay={3}\n        size={400}\n        borderWidth={2}\n        className=\"from-transparent via-blue-500 to-transparent\"\n      />\n    </Card>\n  )\n}\n",
+  "description": "Example showing an animated border beam effect.",
+  "tags": [
+    "music-player",
+    "animation",
+    "progress-bar",
+    "ui-control",
+    "card"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "border-beam-demo-2",
+      "type": "registry:example",
+      "title": "Border Beam Demo",
+      "description": "Example showing an animated border beam effect.",
+      "registryDependencies": [
+        "button",
+        "card",
+        "https://magicui.design/r/border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/example/border-beam-demo-2.tsx",
+          "type": "registry:example",
+          "target": "components/border-beam-demo-2.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "border-beam-demo-2",
+      "type": "registry:example",
+      "title": "Border Beam Demo",
+      "description": "Example showing an animated border beam effect.",
+      "registryDependencies": [
+        "button",
+        "card",
+        "@magicui/border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/example/border-beam-demo-2.tsx",
+          "content": "import { Play, SkipBack, SkipForward } from \"lucide-react\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function MusicPlayer() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Now Playing</CardTitle>\n        <CardDescription>Stairway to Heaven - Led Zeppelin</CardDescription>\n      </CardHeader>\n      <CardContent>\n        <div className=\"flex flex-col items-center gap-4\">\n          <div className=\"h-48 w-48 rounded-lg bg-linear-to-br from-purple-500 to-pink-500\" />\n          <div className=\"bg-secondary h-1 w-full rounded-full\">\n            <div className=\"bg-primary h-full w-1/3 rounded-full\" />\n          </div>\n          <div className=\"text-muted-foreground flex w-full justify-between text-sm\">\n            <span>2:45</span>\n            <span>8:02</span>\n          </div>\n        </div>\n      </CardContent>\n      <CardFooter className=\"flex justify-center gap-4\">\n        <Button variant=\"outline\" size=\"icon\" className=\"rounded-full\">\n          <SkipBack className=\"size-4\" />\n        </Button>\n        <Button size=\"icon\" className=\"rounded-full\">\n          <Play className=\"size-4\" />\n        </Button>\n        <Button variant=\"outline\" size=\"icon\" className=\"rounded-full\">\n          <SkipForward className=\"size-4\" />\n        </Button>\n      </CardFooter>\n      <BorderBeam\n        duration={6}\n        size={400}\n        className=\"from-transparent via-red-500 to-transparent\"\n      />\n      <BorderBeam\n        duration={6}\n        delay={3}\n        size={400}\n        borderWidth={2}\n        className=\"from-transparent via-blue-500 to-transparent\"\n      />\n    </Card>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "This component is a music player interface, typically used when creating applications with a focus on media and soundtracks. It consists of a card with a header displaying the current song, a progress bar-like layout featuring colorful animation, and buttons for playback control. A developer would use this when needing a visually appealing and functional music player within their application.",
+  "style_tags": [
+    "minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "animated",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "card",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: Border Beam Demo\nDescription: This component is a music player interface, typically used when creating applications with a focus on media and soundtracks. It consists of a card with a header displaying the current song, a progress bar-like layout featuring colorful animation, and buttons for playback control. A developer would use this when needing a visually appealing and functional music player within their application.\nStyle: minimal, glassmorphism\nInteractions: animated, hover, clickable\nTags: music-player, animation, progress-bar, ui-control, card\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { Play, SkipBack, SkipForward } from \"lucide-react\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { BorderBeam } from \"@/registry/magicui/border-beam\"\n\nexport default function MusicPlayer() {\n  return (\n    <Card className=\"relative w-[350px] overflow-hidden\">\n      <CardHeader>\n        <CardTitle>Now Playing</CardTitle>\n        <CardDescription>Stairway to H",
+  "prompt_version": 2,
+  "clean_id": "border-beam-demo-2",
+  "display_name": "Border Beam Demo 2",
+  "preview_url": "/previews/magicui/border-beam-demo-2.png"
+}

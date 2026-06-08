@@ -1,0 +1,41 @@
+{
+  "id": "carousel-spacing",
+  "name": "carousel-spacing",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "layout",
+    "horizontal",
+    "spacing",
+    "component"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "carousel-spacing",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## carousel-spacing\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Carousel Spacing component is a flexible horizontal layout that allows you to display multiple items on a single line, with adjustable spacing between them. It's suitable for use in hero sections, product showcases, or any place where you want to make a visually appealing list of items. Developers can use it for a variety of use cases where flexible spacing and layout customization is necessary.",
+  "style_tags": [
+    "e.g. responsive",
+    "e.g. customizable"
+  ],
+  "interaction_tags": [
+    "e.g. no interaction",
+    "e.g. hover",
+    "e.g. click"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: carousel-spacing\nDescription: The Carousel Spacing component is a flexible horizontal layout that allows you to display multiple items on a single line, with adjustable spacing between them. It's suitable for use in hero sections, product showcases, or any place where you want to make a visually appealing list of items. Developers can use it for a variety of use cases where flexible spacing and layout customization is necessary.\nStyle: e.g. responsive, e.g. customizable\nInteractions: e.g. no interaction, e.g. hover, e.g. click\nTags: layout, horizontal, spacing, component\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "carousel-spacing",
+  "display_name": "Carousel Spacing",
+  "preview_url": "/previews/shadcn/carousel-spacing.png"
+}

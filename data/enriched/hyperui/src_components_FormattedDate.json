@@ -1,0 +1,44 @@
+{
+  "id": "src_components_FormattedDate",
+  "name": "FormattedDate",
+  "source_code": "// src/components/FormattedDate.astro\n---\ninterface Props {\n  date: Date\n  class?: string\n}\n\nconst { date, class: className = '' } = Astro.props\n---\n\n<time datetime={date.toISOString()} class={className}>\n  {\n    date.toLocaleDateString('en-us', {\n      day: 'numeric',\n      month: 'short',\n      year: 'numeric',\n    })\n  }\n</time>\n",
+  "description": "",
+  "tags": [
+    "date",
+    "time",
+    "formatted"
+  ],
+  "server": "hyperui",
+  "metadata": {
+    "listed_component": {
+      "id": "FormattedDate",
+      "name": "FormattedDate",
+      "path": "src/components/FormattedDate.astro",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "src_components_FormattedDate",
+      "name": "FormattedDate",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/FormattedDate.astro",
+          "content": "---\ninterface Props {\n  date: Date\n  class?: string\n}\n\nconst { date, class: className = '' } = Astro.props\n---\n\n<time datetime={date.toISOString()} class={className}>\n  {\n    date.toLocaleDateString('en-us', {\n      day: 'numeric',\n      month: 'short',\n      year: 'numeric',\n    })\n  }\n</time>\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A FormattedDate component displays a date in a formatted way, useful when you need to show a date to the user without requiring them to read the full date object.",
+  "style_tags": [
+    "plain",
+    "default"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: FormattedDate\nDescription: A FormattedDate component displays a date in a formatted way, useful when you need to show a date to the user without requiring them to read the full date object.\nStyle: plain, default\nInteractions: \nTags: date, time, formatted\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// src/components/FormattedDate.astro\n---\ninterface Props {\n  date: Date\n  class?: string\n}\n\nconst { date, class: className = '' } = Astro.props\n---\n\n<time datetime={date.toISOString()} class={className}>\n  {\n    date.toLocaleDateString('en-us', {\n      day: 'numeric',\n      month: 'short',\n      year: 'numeric',\n    })\n  }\n</time>\n",
+  "prompt_version": 2,
+  "clean_id": "formatted-date",
+  "display_name": "Formatted Date",
+  "preview_url": "/previews/hyperui/src-components-formatteddate.png"
+}

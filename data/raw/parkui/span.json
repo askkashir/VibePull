@@ -1,0 +1,44 @@
+{
+  "id": "span",
+  "name": "span",
+  "source_code": "// src/components/ui/span.tsx\nimport type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\n\nexport type SpanProps = ComponentProps<typeof Span>\nexport const Span = styled('span')\n",
+  "description": "",
+  "tags": [
+    "parkui",
+    "registry:ui"
+  ],
+  "server": "parkui",
+  "metadata": {
+    "listed_component": {
+      "name": "span",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/span.tsx",
+          "type": "registry:ui",
+          "exports": "export { Span, type SpanProps } from './span'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\n\nexport type SpanProps = ComponentProps<typeof Span>\nexport const Span = styled('span')\n"
+        }
+      ]
+    },
+    "registry_item": {
+      "name": "span",
+      "type": "registry:ui",
+      "dependencies": [
+        "react"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/span.tsx",
+          "type": "registry:ui",
+          "exports": "export { Span, type SpanProps } from './span'",
+          "content": "import type { ComponentProps } from 'react'\nimport { styled } from 'styled-system/jsx'\n\nexport type SpanProps = ComponentProps<typeof Span>\nexport const Span = styled('span')\n"
+        }
+      ]
+    },
+    "ingest_method": "primary"
+  }
+}

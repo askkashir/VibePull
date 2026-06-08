@@ -1,0 +1,49 @@
+{
+  "id": "packages_mantine_core_src_components_ActionIcon_ActionIconGroupSection_ActionIconGroupSection",
+  "name": "ActionIconGroupSection",
+  "source_code": "// packages/@mantine/core/src/components/ActionIcon/ActionIconGroupSection/ActionIconGroupSection.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  getRadius,\n  getSize,\n  MantineGradient,\n  MantineRadius,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport type { ActionIconVariant } from '../ActionIcon';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupSectionStylesNames = 'groupSection';\nexport type ActionIconGroupSectionCssVariables = {\n  groupSection:\n    | '--section-radius'\n    | '--section-bg'\n    | '--section-color'\n    | '--section-bd'\n    | '--section-height'\n    | '--section-padding-x'\n    | '--section-fz';\n};\n\nexport interface ActionIconGroupSectionProps\n  extends BoxProps, StylesApiProps<ActionIconGroupSectionFactory>, ElementProps<'div'> {\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default theme.defaultRadius */\n  radius?: MantineRadius;\n\n  /** Gradient values used with `variant=\"gradient\"`. @default theme.defaultGradient */\n  gradient?: MantineGradient;\n\n  /** If set, adjusts text color based on background color for `filled` variant */\n  autoContrast?: boolean;\n\n  /** Controls section `height`, `font-size` and horizontal `padding` @default 'sm' */\n  size?: MantineSize | (string & {}) | number;\n}\n\nexport type ActionIconGroupSectionFactory = Factory<{\n  props: ActionIconGroupSectionProps;\n  ref: HTMLDivElement;\n  stylesNames: ActionIconGroupSectionStylesNames;\n  vars: ActionIconGroupSectionCssVariables;\n  variant: ActionIconVariant;\n}>;\n\nconst varsResolver = createVarsResolver<ActionIconGroupSectionFactory>(\n  (theme, { radius, color, gradient, variant, autoContrast, size }) => {\n    const colors = theme.variantColorResolver({\n      color: color || theme.primaryColor,\n      theme,\n      gradient,\n      variant: variant || 'filled',\n      autoContrast,\n    });\n\n    return {\n      groupSection: {\n        '--section-height': getSize(size, 'section-height'),\n        '--section-padding-x': getSize(size, 'section-padding-x'),\n        '--section-fz': getFontSize(size),\n        '--section-radius': radius === undefined ? undefined : getRadius(radius),\n        '--section-bg': color || variant ? colors.background : undefined,\n        '--section-color': colors.color,\n        '--section-bd': color || variant ? colors.border : undefined,\n      },\n    };\n  }\n);\n\nexport const ActionIconGroupSection = factory<ActionIconGroupSectionFactory>((_props) => {\n  const props = useProps('ActionIconGroupSection', null, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    vars,\n    variant,\n    gradient,\n    radius,\n    autoContrast,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<ActionIconGroupSectionFactory>({\n    name: 'ActionIconGroupSection',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'groupSection',\n  });\n\n  return <Box {...getStyles('groupSection')} variant={variant} {...others} />;\n});\n\nActionIconGroupSection.classes = classes;\nActionIconGroupSection.varsResolver = varsResolver;\nActionIconGroupSection.displayName = '@mantine/core/ActionIconGroupSection';\n",
+  "description": "",
+  "tags": [
+    "action",
+    "group",
+    "icon",
+    "mantine",
+    "other",
+    "section"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ActionIcon_ActionIconGroupSection_ActionIconGroupSection",
+      "name": "ActionIconGroupSection",
+      "path": "packages/@mantine/core/src/components/ActionIcon/ActionIconGroupSection/ActionIconGroupSection.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ActionIcon_ActionIconGroupSection_ActionIconGroupSection",
+      "name": "ActionIconGroupSection",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ActionIcon/ActionIconGroupSection/ActionIconGroupSection.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  getRadius,\n  getSize,\n  MantineGradient,\n  MantineRadius,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport type { ActionIconVariant } from '../ActionIcon';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupSectionStylesNames = 'groupSection';\nexport type ActionIconGroupSectionCssVariables = {\n  groupSection:\n    | '--section-radius'\n    | '--section-bg'\n    | '--section-color'\n    | '--section-bd'\n    | '--section-height'\n    | '--section-padding-x'\n    | '--section-fz';\n};\n\nexport interface ActionIconGroupSectionProps\n  extends BoxProps, StylesApiProps<ActionIconGroupSectionFactory>, ElementProps<'div'> {\n  /** Key of `theme.radius` or any valid CSS value to set `border-radius` @default theme.defaultRadius */\n  radius?: MantineRadius;\n\n  /** Gradient values used with `variant=\"gradient\"`. @default theme.defaultGradient */\n  gradient?: MantineGradient;\n\n  /** If set, adjusts text color based on background color for `filled` variant */\n  autoContrast?: boolean;\n\n  /** Controls section `height`, `font-size` and horizontal `padding` @default 'sm' */\n  size?: MantineSize | (string & {}) | number;\n}\n\nexport type ActionIconGroupSectionFactory = Factory<{\n  props: ActionIconGroupSectionProps;\n  ref: HTMLDivElement;\n  stylesNames: ActionIconGroupSectionStylesNames;\n  vars: ActionIconGroupSectionCssVariables;\n  variant: ActionIconVariant;\n}>;\n\nconst varsResolver = createVarsResolver<ActionIconGroupSectionFactory>(\n  (theme, { radius, color, gradient, variant, autoContrast, size }) => {\n    const colors = theme.variantColorResolver({\n      color: color || theme.primaryColor,\n      theme,\n      gradient,\n      variant: variant || 'filled',\n      autoContrast,\n    });\n\n    return {\n      groupSection: {\n        '--section-height': getSize(size, 'section-height'),\n        '--section-padding-x': getSize(size, 'section-padding-x'),\n        '--section-fz': getFontSize(size),\n        '--section-radius': radius === undefined ? undefined : getRadius(radius),\n        '--section-bg': color || variant ? colors.background : undefined,\n        '--section-color': colors.color,\n        '--section-bd': color || variant ? colors.border : undefined,\n      },\n    };\n  }\n);\n\nexport const ActionIconGroupSection = factory<ActionIconGroupSectionFactory>((_props) => {\n  const props = useProps('ActionIconGroupSection', null, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    vars,\n    variant,\n    gradient,\n    radius,\n    autoContrast,\n    attributes,\n    ...others\n  } = props;\n\n  const getStyles = useStyles<ActionIconGroupSectionFactory>({\n    name: 'ActionIconGroupSection',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'groupSection',\n  });\n\n  return <Box {...getStyles('groupSection')} variant={variant} {...others} />;\n});\n\nActionIconGroupSection.classes = classes;\nActionIconGroupSection.varsResolver = varsResolver;\nActionIconGroupSection.displayName = '@mantine/core/ActionIconGroupSection';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ActionIconGroupSection is a action icon group section UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "themeable",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ActionIconGroupSection\nDescription: ActionIconGroupSection is a action icon group section UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, themeable, utility-styled\nInteractions: \nTags: action, group, icon, mantine, other, section\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ActionIcon/ActionIconGroupSection/ActionIconGroupSection.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  getFontSize,\n  getRadius,\n  getSize,\n  MantineGradient,\n  MantineRadius,\n  MantineSize,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport type { ActionIconVariant } from '../ActionIcon';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupSectionStylesNames = ",
+  "prompt_version": 2,
+  "clean_id": "action-icon-group-section",
+  "display_name": "Action Icon Group Section",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-actionicon-actionicongroupsection-actionicongroupsection.png"
+}

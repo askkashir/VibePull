@@ -1,0 +1,45 @@
+{
+  "id": "packages_mantine_core_src_components_Tabs_Tabs.context",
+  "name": "Tabs.context",
+  "source_code": "// packages/@mantine/core/src/components/Tabs/Tabs.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { TabsFactory } from './Tabs';\n\nexport interface TabsContextValue {\n  id: string;\n  value: string | null;\n  orientation: 'horizontal' | 'vertical' | undefined;\n  loop: boolean | undefined;\n  activateTabWithKeyboard: boolean | undefined;\n  allowTabDeactivation: boolean | undefined;\n  onChange: (value: string | null) => void;\n  getTabId: (value: string) => string;\n  getPanelId: (value: string) => string;\n  variant: string | undefined;\n  color: string | undefined;\n  radius: string | number | undefined;\n  inverted: boolean | undefined;\n  keepMounted: boolean | undefined;\n  keepMountedMode: 'activity' | 'display-none' | undefined;\n  placement: 'right' | 'left' | undefined;\n  unstyled: boolean | undefined;\n  getStyles: GetStylesApi<TabsFactory>;\n}\n\nexport const [TabsProvider, useTabsContext] = createSafeContext<TabsContextValue>(\n  'Tabs component was not found in the tree'\n);\n",
+  "description": "",
+  "tags": [
+    "context",
+    "mantine",
+    "other",
+    "tabs"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Tabs_Tabs.context",
+      "name": "Tabs.context",
+      "path": "packages/@mantine/core/src/components/Tabs/Tabs.context.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Tabs_Tabs.context",
+      "name": "Tabs.context",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Tabs/Tabs.context.ts",
+          "content": "import { createSafeContext, GetStylesApi } from '../../core';\nimport type { TabsFactory } from './Tabs';\n\nexport interface TabsContextValue {\n  id: string;\n  value: string | null;\n  orientation: 'horizontal' | 'vertical' | undefined;\n  loop: boolean | undefined;\n  activateTabWithKeyboard: boolean | undefined;\n  allowTabDeactivation: boolean | undefined;\n  onChange: (value: string | null) => void;\n  getTabId: (value: string) => string;\n  getPanelId: (value: string) => string;\n  variant: string | undefined;\n  color: string | undefined;\n  radius: string | number | undefined;\n  inverted: boolean | undefined;\n  keepMounted: boolean | undefined;\n  keepMountedMode: 'activity' | 'display-none' | undefined;\n  placement: 'right' | 'left' | undefined;\n  unstyled: boolean | undefined;\n  getStyles: GetStylesApi<TabsFactory>;\n}\n\nexport const [TabsProvider, useTabsContext] = createSafeContext<TabsContextValue>(\n  'Tabs component was not found in the tree'\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Tabs.context is a tabs context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Tabs.context\nDescription: Tabs.context is a tabs context UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: context, mantine, other, tabs\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Tabs/Tabs.context.ts\nimport { createSafeContext, GetStylesApi } from '../../core';\nimport type { TabsFactory } from './Tabs';\n\nexport interface TabsContextValue {\n  id: string;\n  value: string | null;\n  orientation: 'horizontal' | 'vertical' | undefined;\n  loop: boolean | undefined;\n  activateTabWithKeyboard: boolean | undefined;\n  allowTabDeactivation: boolean | undefined;\n  onChange: (value: string | null) => void;\n  getTabId: (value: string) => string;",
+  "prompt_version": 2,
+  "clean_id": "tabs",
+  "display_name": "Tabs",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-tabs-tabs-context.png"
+}

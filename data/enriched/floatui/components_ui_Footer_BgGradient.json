@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_Footer_BgGradient",
+  "name": "BgGradient",
+  "source_code": "// components/ui/Footer/BgGradient.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"675\"\n    height=\"251\"\n    viewBox=\"0 0 675 251\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <g filter=\"url(#filter0_f_3324_13395)\">\n      <path\n        d=\"M440 -139.746L577.136 154L106.517 56.1495L97.9305 19.9494L440 -139.746Z\"\n        fill=\"url(#paint0_linear_3324_13395)\"\n        fill-opacity=\"0.15\"\n      />\n    </g>\n    <defs>\n      <filter\n        id=\"filter0_f_3324_13395\"\n        x=\"0.930542\"\n        y=\"-236.746\"\n        width=\"673.205\"\n        height=\"487.746\"\n        filterUnits=\"userSpaceOnUse\"\n        color-interpolation-filters=\"sRGB\"\n      >\n        <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n        <feBlend\n          mode=\"normal\"\n          in=\"SourceGraphic\"\n          in2=\"BackgroundImageFix\"\n          result=\"shape\"\n        />\n        <feGaussianBlur\n          stdDeviation=\"48.5\"\n          result=\"effect1_foregroundBlur_3324_13395\"\n        />\n      </filter>\n      <linearGradient\n        id=\"paint0_linear_3324_13395\"\n        x1=\"508.568\"\n        y1=\"7.12694\"\n        x2=\"159.672\"\n        y2=\"170.009\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F4F4F5\" />\n        <stop offset=\"1\" stop-color=\"#F4F4F5\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n",
+  "description": "",
+  "tags": [
+    "bg",
+    "floatui",
+    "gradient",
+    "other"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_Footer_BgGradient",
+      "name": "BgGradient",
+      "path": "components/ui/Footer/BgGradient.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_Footer_BgGradient",
+      "name": "BgGradient",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/Footer/BgGradient.tsx",
+          "content": "import mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"675\"\n    height=\"251\"\n    viewBox=\"0 0 675 251\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <g filter=\"url(#filter0_f_3324_13395)\">\n      <path\n        d=\"M440 -139.746L577.136 154L106.517 56.1495L97.9305 19.9494L440 -139.746Z\"\n        fill=\"url(#paint0_linear_3324_13395)\"\n        fill-opacity=\"0.15\"\n      />\n    </g>\n    <defs>\n      <filter\n        id=\"filter0_f_3324_13395\"\n        x=\"0.930542\"\n        y=\"-236.746\"\n        width=\"673.205\"\n        height=\"487.746\"\n        filterUnits=\"userSpaceOnUse\"\n        color-interpolation-filters=\"sRGB\"\n      >\n        <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n        <feBlend\n          mode=\"normal\"\n          in=\"SourceGraphic\"\n          in2=\"BackgroundImageFix\"\n          result=\"shape\"\n        />\n        <feGaussianBlur\n          stdDeviation=\"48.5\"\n          result=\"effect1_foregroundBlur_3324_13395\"\n        />\n      </filter>\n      <linearGradient\n        id=\"paint0_linear_3324_13395\"\n        x1=\"508.568\"\n        y1=\"7.12694\"\n        x2=\"159.672\"\n        y2=\"170.009\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stop-color=\"#F4F4F5\" />\n        <stop offset=\"1\" stop-color=\"#F4F4F5\" stop-opacity=\"0\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BgGradient is a bg gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "gradient",
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: BgGradient\nDescription: BgGradient is a bg gradient UI component from the floatui corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: gradient, utility-styled\nInteractions: \nTags: bg, floatui, gradient, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/Footer/BgGradient.tsx\nimport mergeTW from \"utils/mergeTW\";\n\nexport default ({ className = \"\" }: { className: string }) => (\n  <svg\n    width=\"675\"\n    height=\"251\"\n    viewBox=\"0 0 675 251\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={mergeTW(className)}\n  >\n    <g filter=\"url(#filter0_f_3324_13395)\">\n      <path\n        d=\"M440 -139.746L577.136 154L106.517 56.1495L97.9305 19.9494L440 -139.746Z\"\n        fill=\"url(#paint0_linear_3324_13395)\"\n        fill-",
+  "prompt_version": 2,
+  "clean_id": "bg-gradient",
+  "display_name": "Bg Gradient",
+  "preview_url": "/previews/floatui/components-ui-footer-bggradient.png"
+}

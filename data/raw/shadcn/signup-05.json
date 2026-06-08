@@ -1,0 +1,23 @@
+{
+  "id": "signup-05",
+  "name": "signup-05",
+  "source_code": "",
+  "description": "A simple signup form with social providers.",
+  "tags": [
+    "registry:block"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "signup-05",
+      "type": "registry:block",
+      "description": "A simple signup form with social providers.",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## signup-05\n\nA simple signup form with social providers.\n\n**Type:** registry:block\n**Files:** 2 file(s)"
+  }
+}

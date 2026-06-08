@@ -1,0 +1,46 @@
+{
+  "id": "components_ui_BlogCard_index",
+  "name": "BlogCard",
+  "source_code": "// components/ui/BlogCard/index.tsx\nimport { ArrowLongRightIcon } from \"@heroicons/react/24/solid\";\nimport moment from \"moment\";\nimport Link from \"next/link\";\n\nexport default ({\n  href,\n  date,\n  title,\n  desc,\n}: {\n  href: string;\n  date: string;\n  title: string;\n  desc: string;\n}) => {\n  return (\n    <li className=\"mt-5 pt-12\">\n      <Link href={\"/blog/\" + href}>\n        <span className=\"block text-zinc-400 text-sm\">\n          {moment(date).format(\"dddd, MMMM D, YYYY\")}\n        </span>\n        <div className=\"mt-2\">\n          <h3 className=\"inline-block text-lg text-zinc-100 font-semibold hover:underline sm:text-xl\">\n            {title}\n          </h3>\n          <p className=\"text-zinc-500 mt-2 leading-relaxed line-clamp-2\">\n            {desc}\n          </p>\n        </div>\n        <button className=\"mt-2 outline-none flex items-center text-[14px] text-indigo-400 decoration-indigo-600 hover:underline\">\n          READ MORE\n          <ArrowLongRightIcon className=\"w-4 h-4 ml-2\" />\n        </button>\n      </Link>\n    </li>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "blog",
+    "card",
+    "floatui"
+  ],
+  "server": "floatui",
+  "metadata": {
+    "listed_component": {
+      "id": "ui_BlogCard_index",
+      "name": "index",
+      "path": "components/ui/BlogCard/index.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "components_ui_BlogCard_index",
+      "name": "BlogCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "components/ui/BlogCard/index.tsx",
+          "content": "import { ArrowLongRightIcon } from \"@heroicons/react/24/solid\";\nimport moment from \"moment\";\nimport Link from \"next/link\";\n\nexport default ({\n  href,\n  date,\n  title,\n  desc,\n}: {\n  href: string;\n  date: string;\n  title: string;\n  desc: string;\n}) => {\n  return (\n    <li className=\"mt-5 pt-12\">\n      <Link href={\"/blog/\" + href}>\n        <span className=\"block text-zinc-400 text-sm\">\n          {moment(date).format(\"dddd, MMMM D, YYYY\")}\n        </span>\n        <div className=\"mt-2\">\n          <h3 className=\"inline-block text-lg text-zinc-100 font-semibold hover:underline sm:text-xl\">\n            {title}\n          </h3>\n          <p className=\"text-zinc-500 mt-2 leading-relaxed line-clamp-2\">\n            {desc}\n          </p>\n        </div>\n        <button className=\"mt-2 outline-none flex items-center text-[14px] text-indigo-400 decoration-indigo-600 hover:underline\">\n          READ MORE\n          <ArrowLongRightIcon className=\"w-4 h-4 ml-2\" />\n        </button>\n      </Link>\n    </li>\n  );\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "BlogCard is a blog card UI component from the floatui corpus. It provides reusable card behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [
+    "hover"
+  ],
+  "component_type": "card",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready card component with the following characteristics:\n\nName: BlogCard\nDescription: BlogCard is a blog card UI component from the floatui corpus. It provides reusable card behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: hover\nTags: blog, card, floatui\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// components/ui/BlogCard/index.tsx\nimport { ArrowLongRightIcon } from \"@heroicons/react/24/solid\";\nimport moment from \"moment\";\nimport Link from \"next/link\";\n\nexport default ({\n  href,\n  date,\n  title,\n  desc,\n}: {\n  href: string;\n  date: string;\n  title: string;\n  desc: string;\n}) => {\n  return (\n    <li className=\"mt-5 pt-12\">\n      <Link href={\"/blog/\" + href}>\n        <span className=\"block text-zinc-400 text-sm\">\n          {moment(date).format(\"dddd, MMMM D, YYYY\")}\n        </span>\n       ",
+  "prompt_version": 2,
+  "clean_id": "blog-card",
+  "display_name": "Blog Card",
+  "preview_url": "/previews/floatui/components-ui-blogcard-index.png"
+}

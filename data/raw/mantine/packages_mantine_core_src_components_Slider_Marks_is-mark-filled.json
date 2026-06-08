@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Slider_Marks_is-mark-filled",
+  "name": "is-mark-filled",
+  "source_code": "// packages/@mantine/core/src/components/Slider/Marks/is-mark-filled.ts\ninterface IsMarkFilled {\n  mark: { value: number; label?: any };\n  offset?: number;\n  value: number;\n  inverted?: boolean;\n  startPointValue?: number;\n}\n\nexport function isMarkFilled({\n  mark,\n  offset,\n  value,\n  inverted = false,\n  startPointValue,\n}: IsMarkFilled) {\n  if (typeof startPointValue === 'number' && !inverted) {\n    return (\n      (mark.value >= startPointValue && mark.value <= value) ||\n      (mark.value <= startPointValue && mark.value >= value)\n    );\n  }\n\n  return inverted\n    ? typeof offset === 'number'\n      ? mark.value <= offset || mark.value >= value\n      : mark.value >= value\n    : typeof offset === 'number'\n      ? mark.value >= offset && mark.value <= value\n      : mark.value <= value;\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Slider_Marks_is-mark-filled",
+      "name": "is-mark-filled",
+      "path": "packages/@mantine/core/src/components/Slider/Marks/is-mark-filled.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Slider_Marks_is-mark-filled",
+      "name": "is-mark-filled",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Slider/Marks/is-mark-filled.ts",
+          "content": "interface IsMarkFilled {\n  mark: { value: number; label?: any };\n  offset?: number;\n  value: number;\n  inverted?: boolean;\n  startPointValue?: number;\n}\n\nexport function isMarkFilled({\n  mark,\n  offset,\n  value,\n  inverted = false,\n  startPointValue,\n}: IsMarkFilled) {\n  if (typeof startPointValue === 'number' && !inverted) {\n    return (\n      (mark.value >= startPointValue && mark.value <= value) ||\n      (mark.value <= startPointValue && mark.value >= value)\n    );\n  }\n\n  return inverted\n    ? typeof offset === 'number'\n      ? mark.value <= offset || mark.value >= value\n      : mark.value >= value\n    : typeof offset === 'number'\n      ? mark.value >= offset && mark.value <= value\n      : mark.value <= value;\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

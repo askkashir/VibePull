@@ -1,0 +1,49 @@
+{
+  "id": "layout-text-flip",
+  "name": "Layout Text Flip",
+  "source_code": "\"use client\";\nimport React, { useState, useEffect } from \"react\";\nimport { motion, AnimatePresence } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const LayoutTextFlip = ({\n  text = \"Build Amazing\",\n  words = [\"Landing Pages\", \"Component Blocks\", \"Page Sections\", \"3D Shaders\"],\n  duration = 3000,\n}: {\n  text: string;\n  words: string[];\n  duration?: number;\n}) => {\n  const [currentIndex, setCurrentIndex] = useState(0);\n\n  useEffect(() => {\n    const interval = setInterval(() => {\n      setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);\n    }, duration);\n\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <>\n      <motion.span\n        layoutId=\"subtext\"\n        className=\"text-2xl font-bold tracking-tight drop-shadow-lg md:text-4xl\"\n      >\n        {text}\n      </motion.span>\n\n      <motion.span\n        layout\n        className=\"relative w-fit overflow-hidden rounded-md border border-transparent bg-white px-4 py-2 font-sans text-2xl font-bold tracking-tight text-black shadow-sm ring shadow-black/10 ring-black/10 drop-shadow-lg md:text-4xl dark:bg-neutral-900 dark:text-white dark:shadow-sm dark:ring-1 dark:shadow-white/10 dark:ring-white/10\"\n      >\n        <AnimatePresence mode=\"popLayout\">\n          <motion.span\n            key={currentIndex}\n            initial={{ y: -40, filter: \"blur(10px)\" }}\n            animate={{\n              y: 0,\n              filter: \"blur(0px)\",\n            }}\n            exit={{ y: 50, filter: \"blur(10px)\", opacity: 0 }}\n            transition={{\n              duration: 0.5,\n            }}\n            className={cn(\"inline-block whitespace-nowrap\")}\n          >\n            {words[currentIndex]}\n          </motion.span>\n        </AnimatePresence>\n      </motion.span>\n    </>\n  );\n};\n",
+  "description": "",
+  "tags": [
+    "animation",
+    "text",
+    "layout"
+  ],
+  "server": "aceternity",
+  "metadata": {
+    "listed_component": {
+      "name": "layout-text-flip",
+      "source": "ai_catalog"
+    },
+    "registry_item": {
+      "name": "layout-text-flip",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "components/ui/layout-text-flip.tsx",
+          "content": "\"use client\";\nimport React, { useState, useEffect } from \"react\";\nimport { motion, AnimatePresence } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const LayoutTextFlip = ({\n  text = \"Build Amazing\",\n  words = [\"Landing Pages\", \"Component Blocks\", \"Page Sections\", \"3D Shaders\"],\n  duration = 3000,\n}: {\n  text: string;\n  words: string[];\n  duration?: number;\n}) => {\n  const [currentIndex, setCurrentIndex] = useState(0);\n\n  useEffect(() => {\n    const interval = setInterval(() => {\n      setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);\n    }, duration);\n\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <>\n      <motion.span\n        layoutId=\"subtext\"\n        className=\"text-2xl font-bold tracking-tight drop-shadow-lg md:text-4xl\"\n      >\n        {text}\n      </motion.span>\n\n      <motion.span\n        layout\n        className=\"relative w-fit overflow-hidden rounded-md border border-transparent bg-white px-4 py-2 font-sans text-2xl font-bold tracking-tight text-black shadow-sm ring shadow-black/10 ring-black/10 drop-shadow-lg md:text-4xl dark:bg-neutral-900 dark:text-white dark:shadow-sm dark:ring-1 dark:shadow-white/10 dark:ring-white/10\"\n      >\n        <AnimatePresence mode=\"popLayout\">\n          <motion.span\n            key={currentIndex}\n            initial={{ y: -40, filter: \"blur(10px)\" }}\n            animate={{\n              y: 0,\n              filter: \"blur(0px)\",\n            }}\n            exit={{ y: 50, filter: \"blur(10px)\", opacity: 0 }}\n            transition={{\n              duration: 0.5,\n            }}\n            className={cn(\"inline-block whitespace-nowrap\")}\n          >\n            {words[currentIndex]}\n          </motion.span>\n        </AnimatePresence>\n      </motion.span>\n    </>\n  );\n};\n",
+          "type": "registry:ui",
+          "target": "components/ui/layout-text-flip.tsx"
+        }
+      ],
+      "author": "Manu Arora <hi@manuarora.in>",
+      "title": "Layout Text Flip"
+    }
+  },
+  "visual_summary": "LayoutTextFlip displays a main text and a list of words that flip and animate with a fading effect. It's used when needing to highlight multiple keywords or features on a webpage.",
+  "style_tags": [
+    "material"
+  ],
+  "interaction_tags": [
+    "animated",
+    "fading"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: Layout Text Flip\nDescription: LayoutTextFlip displays a main text and a list of words that flip and animate with a fading effect. It's used when needing to highlight multiple keywords or features on a webpage.\nStyle: material\nInteractions: animated, fading\nTags: animation, text, layout\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n\"use client\";\nimport React, { useState, useEffect } from \"react\";\nimport { motion, AnimatePresence } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\nexport const LayoutTextFlip = ({\n  text = \"Build Amazing\",\n  words = [\"Landing Pages\", \"Component Blocks\", \"Page Sections\", \"3D Shaders\"],\n  duration = 3000,\n}: {\n  text: string;\n  words: string[];\n  duration?: number;\n}) => {\n  const [currentIndex, setCurrentIndex] = useState(0);\n\n  useEffect(() => {\n    const interval = setInterval(() => {",
+  "prompt_version": 2,
+  "clean_id": "layout-text-flip",
+  "display_name": "Layout Text Flip",
+  "preview_url": "/previews/aceternity/layout-text-flip.png"
+}

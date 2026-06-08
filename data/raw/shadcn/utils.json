@@ -1,0 +1,22 @@
+{
+  "id": "utils",
+  "name": "utils",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "registry:lib"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "utils",
+      "type": "registry:lib",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:lib"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## utils\n**Type:** registry:lib\n**Files:** 1 file(s)\n**Dependencies:** clsx, tailwind-merge"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "shimmer-button-demo",
+  "name": "Shimmer Button Demo",
+  "source_code": "import { ShimmerButton } from \"@/registry/magicui/shimmer-button\"\n\nexport default function ShimmerButtonDemo() {\n  return (\n    <ShimmerButton className=\"shadow-2xl\">\n      <span className=\"text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10\">\n        Shimmer Button\n      </span>\n    </ShimmerButton>\n  )\n}\n",
+  "description": "Example showing a button with a shimmering light effect.",
+  "tags": [
+    "button",
+    "animation",
+    "loading"
+  ],
+  "server": "magicui",
+  "metadata": {
+    "listed_component": {
+      "name": "shimmer-button-demo",
+      "type": "registry:example",
+      "title": "Shimmer Button Demo",
+      "description": "Example showing a button with a shimmering light effect.",
+      "registryDependencies": [
+        "https://magicui.design/r/shimmer-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/shimmer-button-demo.tsx",
+          "type": "registry:example",
+          "target": "components/shimmer-button-demo.tsx"
+        }
+      ]
+    },
+    "registry_item": {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shimmer-button-demo",
+      "type": "registry:example",
+      "title": "Shimmer Button Demo",
+      "description": "Example showing a button with a shimmering light effect.",
+      "registryDependencies": [
+        "@magicui/shimmer-button"
+      ],
+      "files": [
+        {
+          "path": "registry/example/shimmer-button-demo.tsx",
+          "content": "import { ShimmerButton } from \"@/registry/magicui/shimmer-button\"\n\nexport default function ShimmerButtonDemo() {\n  return (\n    <ShimmerButton className=\"shadow-2xl\">\n      <span className=\"text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10\">\n        Shimmer Button\n      </span>\n    </ShimmerButton>\n  )\n}\n",
+          "type": "registry:example"
+        }
+      ]
+    }
+  },
+  "visual_summary": "A shimmer button with an animated effect, suitable for use when loading or hiding data. Use when needing to add visual feedback for loading states or animation effects.",
+  "style_tags": [
+    "animated",
+    "loading"
+  ],
+  "interaction_tags": [
+    "clickable",
+    "hover"
+  ],
+  "component_type": "button",
+  "generation_prompt": "Create a production-ready button component with the following characteristics:\n\nName: Shimmer Button Demo\nDescription: A shimmer button with an animated effect, suitable for use when loading or hiding data. Use when needing to add visual feedback for loading states or animation effects.\nStyle: animated, loading\nInteractions: clickable, hover\nTags: button, animation, loading\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\nimport { ShimmerButton } from \"@/registry/magicui/shimmer-button\"\n\nexport default function ShimmerButtonDemo() {\n  return (\n    <ShimmerButton className=\"shadow-2xl\">\n      <span className=\"text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10\">\n        Shimmer Button\n      </span>\n    </ShimmerButton>\n  )\n}\n",
+  "prompt_version": 2,
+  "clean_id": "shimmer-button-demo",
+  "display_name": "Shimmer Button Demo",
+  "preview_url": "/previews/magicui/shimmer-button-demo.png"
+}

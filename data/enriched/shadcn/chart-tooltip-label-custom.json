@@ -1,0 +1,41 @@
+{
+  "id": "chart-tooltip-label-custom",
+  "name": "chart-tooltip-label-custom",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "chart",
+    "tooltip",
+    "label",
+    "customizable"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "chart-tooltip-label-custom",
+      "type": "registry:block",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:block"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## chart-tooltip-label-custom\n**Type:** registry:block\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "Chart Tooltip Label Custom is a customizable label component used for dynamic chart data labels. It can be used when you need to display complex data information in a chart. This component is particularly useful in dashboard applications where data visualization is crucial.",
+  "style_tags": [
+    "e.g. compact",
+    "material",
+    "flat"
+  ],
+  "interaction_tags": [
+    "e.g. no-interaction",
+    "dynamic"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: chart-tooltip-label-custom\nDescription: Chart Tooltip Label Custom is a customizable label component used for dynamic chart data labels. It can be used when you need to display complex data information in a chart. This component is particularly useful in dashboard applications where data visualization is crucial.\nStyle: e.g. compact, material, flat\nInteractions: e.g. no-interaction, dynamic\nTags: chart, tooltip, label, customizable\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "chart-tooltip-label-custom",
+  "display_name": "Chart Tooltip Label Custom",
+  "preview_url": "/previews/shadcn/chart-tooltip-label-custom.png"
+}

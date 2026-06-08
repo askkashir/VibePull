@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaThumb_ScrollAreaThumb",
+  "name": "ScrollAreaThumb",
+  "source_code": "// packages/@mantine/core/src/components/ScrollArea/ScrollAreaThumb/ScrollAreaThumb.tsx\nimport { useEffect, useRef } from 'react';\nimport { useDebouncedCallback, useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { useScrollbarContext } from '../ScrollAreaScrollbar/Scrollbar.context';\nimport { addUnlinkedScrollListener, composeEventHandlers } from '../utils';\n\ninterface ThumbProps extends React.ComponentProps<'div'> {}\n\nexport function Thumb(props: ThumbProps) {\n  const { style, ref: forwardedRef, ...others } = props;\n  const scrollAreaContext = useScrollAreaContext();\n  const scrollbarContext = useScrollbarContext();\n  const { onThumbPositionChange } = scrollbarContext;\n  const composedRef = useMergedRef(forwardedRef, scrollbarContext.onThumbChange);\n  const removeUnlinkedScrollListenerRef = useRef<(() => void) | undefined>(undefined);\n  const debounceScrollEnd = useDebouncedCallback(() => {\n    if (removeUnlinkedScrollListenerRef.current) {\n      removeUnlinkedScrollListenerRef.current();\n      removeUnlinkedScrollListenerRef.current = undefined;\n    }\n  }, 100);\n\n  useEffect(() => {\n    const { viewport } = scrollAreaContext;\n    if (viewport) {\n      const handleScroll = () => {\n        debounceScrollEnd();\n        if (!removeUnlinkedScrollListenerRef.current) {\n          const listener = addUnlinkedScrollListener(viewport, onThumbPositionChange);\n          removeUnlinkedScrollListenerRef.current = listener;\n          onThumbPositionChange();\n        }\n      };\n      onThumbPositionChange();\n      viewport.addEventListener('scroll', handleScroll);\n      return () => viewport.removeEventListener('scroll', handleScroll);\n    }\n\n    return undefined;\n  }, [scrollAreaContext.viewport, debounceScrollEnd, onThumbPositionChange]);\n\n  return (\n    <div\n      data-state={scrollbarContext.hasThumb ? 'visible' : 'hidden'}\n      {...others}\n      ref={composedRef}\n      style={{\n        width: 'var(--sa-thumb-width)',\n        height: 'var(--sa-thumb-height)',\n        ...style,\n      }}\n      onPointerDownCapture={composeEventHandlers(props.onPointerDownCapture, (event) => {\n        const thumb = event.target as HTMLElement;\n        const thumbRect = thumb.getBoundingClientRect();\n        const x = event.clientX - thumbRect.left;\n        const y = event.clientY - thumbRect.top;\n        scrollbarContext.onThumbPointerDown({ x, y });\n      })}\n      onPointerUp={composeEventHandlers(props.onPointerUp, scrollbarContext.onThumbPointerUp)}\n    />\n  );\n}\n\nThumb.displayName = '@mantine/core/ScrollAreaThumb';\n\ninterface ScrollAreaThumbProps extends ThumbProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaThumb(props: ScrollAreaThumbProps) {\n  const { forceMount, ...thumbProps } = props;\n  const scrollbarContext = useScrollbarContext();\n\n  if (forceMount || scrollbarContext.hasThumb) {\n    return <Thumb {...thumbProps} />;\n  }\n\n  return null;\n}\n\nScrollAreaThumb.displayName = '@mantine/core/ScrollAreaThumb';\n",
+  "description": "",
+  "tags": [
+    "area",
+    "mantine",
+    "other",
+    "scroll",
+    "thumb"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ScrollArea_ScrollAreaThumb_ScrollAreaThumb",
+      "name": "ScrollAreaThumb",
+      "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaThumb/ScrollAreaThumb.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ScrollArea_ScrollAreaThumb_ScrollAreaThumb",
+      "name": "ScrollAreaThumb",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ScrollArea/ScrollAreaThumb/ScrollAreaThumb.tsx",
+          "content": "import { useEffect, useRef } from 'react';\nimport { useDebouncedCallback, useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { useScrollbarContext } from '../ScrollAreaScrollbar/Scrollbar.context';\nimport { addUnlinkedScrollListener, composeEventHandlers } from '../utils';\n\ninterface ThumbProps extends React.ComponentProps<'div'> {}\n\nexport function Thumb(props: ThumbProps) {\n  const { style, ref: forwardedRef, ...others } = props;\n  const scrollAreaContext = useScrollAreaContext();\n  const scrollbarContext = useScrollbarContext();\n  const { onThumbPositionChange } = scrollbarContext;\n  const composedRef = useMergedRef(forwardedRef, scrollbarContext.onThumbChange);\n  const removeUnlinkedScrollListenerRef = useRef<(() => void) | undefined>(undefined);\n  const debounceScrollEnd = useDebouncedCallback(() => {\n    if (removeUnlinkedScrollListenerRef.current) {\n      removeUnlinkedScrollListenerRef.current();\n      removeUnlinkedScrollListenerRef.current = undefined;\n    }\n  }, 100);\n\n  useEffect(() => {\n    const { viewport } = scrollAreaContext;\n    if (viewport) {\n      const handleScroll = () => {\n        debounceScrollEnd();\n        if (!removeUnlinkedScrollListenerRef.current) {\n          const listener = addUnlinkedScrollListener(viewport, onThumbPositionChange);\n          removeUnlinkedScrollListenerRef.current = listener;\n          onThumbPositionChange();\n        }\n      };\n      onThumbPositionChange();\n      viewport.addEventListener('scroll', handleScroll);\n      return () => viewport.removeEventListener('scroll', handleScroll);\n    }\n\n    return undefined;\n  }, [scrollAreaContext.viewport, debounceScrollEnd, onThumbPositionChange]);\n\n  return (\n    <div\n      data-state={scrollbarContext.hasThumb ? 'visible' : 'hidden'}\n      {...others}\n      ref={composedRef}\n      style={{\n        width: 'var(--sa-thumb-width)',\n        height: 'var(--sa-thumb-height)',\n        ...style,\n      }}\n      onPointerDownCapture={composeEventHandlers(props.onPointerDownCapture, (event) => {\n        const thumb = event.target as HTMLElement;\n        const thumbRect = thumb.getBoundingClientRect();\n        const x = event.clientX - thumbRect.left;\n        const y = event.clientY - thumbRect.top;\n        scrollbarContext.onThumbPointerDown({ x, y });\n      })}\n      onPointerUp={composeEventHandlers(props.onPointerUp, scrollbarContext.onThumbPointerUp)}\n    />\n  );\n}\n\nThumb.displayName = '@mantine/core/ScrollAreaThumb';\n\ninterface ScrollAreaThumbProps extends ThumbProps {\n  forceMount?: true;\n}\n\nexport function ScrollAreaThumb(props: ScrollAreaThumbProps) {\n  const { forceMount, ...thumbProps } = props;\n  const scrollbarContext = useScrollbarContext();\n\n  if (forceMount || scrollbarContext.hasThumb) {\n    return <Thumb {...thumbProps} />;\n  }\n\n  return null;\n}\n\nScrollAreaThumb.displayName = '@mantine/core/ScrollAreaThumb';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ScrollAreaThumb is a scroll area thumb UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [
+    "interactive"
+  ],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ScrollAreaThumb\nDescription: ScrollAreaThumb is a scroll area thumb UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: \nInteractions: interactive\nTags: area, mantine, other, scroll, thumb\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ScrollArea/ScrollAreaThumb/ScrollAreaThumb.tsx\nimport { useEffect, useRef } from 'react';\nimport { useDebouncedCallback, useMergedRef } from '@mantine/hooks';\nimport { useScrollAreaContext } from '../ScrollArea.context';\nimport { useScrollbarContext } from '../ScrollAreaScrollbar/Scrollbar.context';\nimport { addUnlinkedScrollListener, composeEventHandlers } from '../utils';\n\ninterface ThumbProps extends React.ComponentProps<'div'> {}\n\nexport function Thum",
+  "prompt_version": 2,
+  "clean_id": "scroll-area-thumb",
+  "display_name": "Scroll Area Thumb",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-scrollarea-scrollareathumb-scrollareathumb.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "scroll-area-demo",
+  "name": "scroll-area-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "scrollable",
+    "container",
+    "overflow",
+    "long-content",
+    "scrolling"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "scroll-area-demo",
+      "type": "registry:example",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:example"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## scroll-area-demo\n**Type:** registry:example\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The Scroll Area Demo component is a scrollable container element used to display long or overflowing content, allowing end-users to scroll through it when needed. It is often used in applications where there is a need to display large amounts of text or data, such as documentation, chat logs, or long blocks of text. This component can be used with other elements like headers, lists, or images to create a visually appealing layout.",
+  "style_tags": [
+    "e.g. material",
+    "flat",
+    "bordered"
+  ],
+  "interaction_tags": [
+    "e.g. draggable",
+    "mousewheel",
+    "smooth-scroll"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: scroll-area-demo\nDescription: The Scroll Area Demo component is a scrollable container element used to display long or overflowing content, allowing end-users to scroll through it when needed. It is often used in applications where there is a need to display large amounts of text or data, such as documentation, chat logs, or long blocks of text. This component can be used with other elements like headers, lists, or images to create a visually appealing layout.\nStyle: e.g. material, flat, bordered\nInteractions: e.g. draggable, mousewheel, smooth-scroll\nTags: scrollable, container, overflow, long-content, scrolling\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "scroll-area-demo",
+  "display_name": "Scroll Area Demo",
+  "preview_url": "/previews/shadcn/scroll-area-demo.png"
+}

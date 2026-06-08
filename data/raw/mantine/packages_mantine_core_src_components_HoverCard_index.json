@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_HoverCard_index",
+  "name": "HoverCard",
+  "source_code": "// packages/@mantine/core/src/components/HoverCard/index.ts\nexport { HoverCard } from './HoverCard';\nexport { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';\nexport { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';\nexport { HoverCardGroup, HoverCardGroupContext } from './HoverCardGroup/HoverCardGroup';\nexport { useHoverCardContext } from './HoverCard.context';\n\nexport type { HoverCardContextValue } from './HoverCard.context';\nexport type { HoverCardProps } from './HoverCard';\nexport type { HoverCardDropdownProps } from './HoverCardDropdown/HoverCardDropdown';\nexport type { HoverCardTargetProps } from './HoverCardTarget/HoverCardTarget';\nexport type {\n  HoverCardGroupProps,\n  HoverCardGroupContextValue,\n} from './HoverCardGroup/HoverCardGroup';\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "HoverCard_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/HoverCard/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_HoverCard_index",
+      "name": "HoverCard",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/HoverCard/index.ts",
+          "content": "export { HoverCard } from './HoverCard';\nexport { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';\nexport { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';\nexport { HoverCardGroup, HoverCardGroupContext } from './HoverCardGroup/HoverCardGroup';\nexport { useHoverCardContext } from './HoverCard.context';\n\nexport type { HoverCardContextValue } from './HoverCard.context';\nexport type { HoverCardProps } from './HoverCard';\nexport type { HoverCardDropdownProps } from './HoverCardDropdown/HoverCardDropdown';\nexport type { HoverCardTargetProps } from './HoverCardTarget/HoverCardTarget';\nexport type {\n  HoverCardGroupProps,\n  HoverCardGroupContextValue,\n} from './HoverCardGroup/HoverCardGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

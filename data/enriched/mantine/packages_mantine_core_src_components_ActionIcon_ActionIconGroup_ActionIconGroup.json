@@ -1,0 +1,46 @@
+{
+  "id": "packages_mantine_core_src_components_ActionIcon_ActionIconGroup_ActionIconGroup",
+  "name": "ActionIconGroup",
+  "source_code": "// packages/@mantine/core/src/components/ActionIcon/ActionIconGroup/ActionIconGroup.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupStylesNames = 'group';\nexport type ActionIconGroupCssVariables = {\n  group: '--ai-border-width';\n};\n\nexport interface ActionIconGroupProps\n  extends BoxProps, StylesApiProps<ActionIconGroupFactory>, ElementProps<'div'> {\n  /** `ActionIcon` and `ActionIcon.GroupSection` components only */\n  children?: React.ReactNode;\n\n  /** Group orientation @default 'horizontal' */\n  orientation?: 'horizontal' | 'vertical';\n\n  /** `border-width` of the child components. @default 1 */\n  borderWidth?: number | string;\n}\n\nexport type ActionIconGroupFactory = Factory<{\n  props: ActionIconGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ActionIconGroupStylesNames;\n  vars: ActionIconGroupCssVariables;\n}>;\n\nconst defaultProps = {\n  orientation: 'horizontal',\n} satisfies Partial<ActionIconGroupProps>;\n\nconst varsResolver = createVarsResolver<ActionIconGroupFactory>((_, { borderWidth }) => ({\n  group: { '--ai-border-width': rem(borderWidth) },\n}));\n\nexport const ActionIconGroup = factory<ActionIconGroupFactory>((_props) => {\n  const props = useProps('ActionIconGroup', defaultProps, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    orientation,\n    vars,\n    borderWidth,\n    variant,\n    mod,\n    attributes,\n    ...others\n  } = useProps('ActionIconGroup', defaultProps, _props);\n\n  const getStyles = useStyles<ActionIconGroupFactory>({\n    name: 'ActionIconGroup',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <Box\n      {...getStyles('group')}\n      variant={variant}\n      mod={[{ 'data-orientation': orientation }, mod]}\n      role=\"group\"\n      {...others}\n    />\n  );\n});\n\nActionIconGroup.classes = classes;\nActionIconGroup.varsResolver = varsResolver;\nActionIconGroup.displayName = '@mantine/core/ActionIconGroup';\n",
+  "description": "",
+  "tags": [
+    "action",
+    "group",
+    "icon",
+    "mantine",
+    "other"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "ActionIcon_ActionIconGroup_ActionIconGroup",
+      "name": "ActionIconGroup",
+      "path": "packages/@mantine/core/src/components/ActionIcon/ActionIconGroup/ActionIconGroup.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_ActionIcon_ActionIconGroup_ActionIconGroup",
+      "name": "ActionIconGroup",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/ActionIcon/ActionIconGroup/ActionIconGroup.tsx",
+          "content": "import {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupStylesNames = 'group';\nexport type ActionIconGroupCssVariables = {\n  group: '--ai-border-width';\n};\n\nexport interface ActionIconGroupProps\n  extends BoxProps, StylesApiProps<ActionIconGroupFactory>, ElementProps<'div'> {\n  /** `ActionIcon` and `ActionIcon.GroupSection` components only */\n  children?: React.ReactNode;\n\n  /** Group orientation @default 'horizontal' */\n  orientation?: 'horizontal' | 'vertical';\n\n  /** `border-width` of the child components. @default 1 */\n  borderWidth?: number | string;\n}\n\nexport type ActionIconGroupFactory = Factory<{\n  props: ActionIconGroupProps;\n  ref: HTMLDivElement;\n  stylesNames: ActionIconGroupStylesNames;\n  vars: ActionIconGroupCssVariables;\n}>;\n\nconst defaultProps = {\n  orientation: 'horizontal',\n} satisfies Partial<ActionIconGroupProps>;\n\nconst varsResolver = createVarsResolver<ActionIconGroupFactory>((_, { borderWidth }) => ({\n  group: { '--ai-border-width': rem(borderWidth) },\n}));\n\nexport const ActionIconGroup = factory<ActionIconGroupFactory>((_props) => {\n  const props = useProps('ActionIconGroup', defaultProps, _props);\n  const {\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    orientation,\n    vars,\n    borderWidth,\n    variant,\n    mod,\n    attributes,\n    ...others\n  } = useProps('ActionIconGroup', defaultProps, _props);\n\n  const getStyles = useStyles<ActionIconGroupFactory>({\n    name: 'ActionIconGroup',\n    props,\n    classes,\n    className,\n    style,\n    classNames,\n    styles,\n    unstyled,\n    attributes,\n    vars,\n    varsResolver,\n    rootSelector: 'group',\n  });\n\n  return (\n    <Box\n      {...getStyles('group')}\n      variant={variant}\n      mod={[{ 'data-orientation': orientation }, mod]}\n      role=\"group\"\n      {...others}\n    />\n  );\n});\n\nActionIconGroup.classes = classes;\nActionIconGroup.varsResolver = varsResolver;\nActionIconGroup.displayName = '@mantine/core/ActionIconGroup';\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "ActionIconGroup is a action icon group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.",
+  "style_tags": [
+    "utility-styled"
+  ],
+  "interaction_tags": [],
+  "component_type": "other",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: ActionIconGroup\nDescription: ActionIconGroup is a action icon group UI component from the mantine corpus. It provides reusable other behavior and styling for React or web UI screens.\nStyle: utility-styled\nInteractions: \nTags: action, group, icon, mantine, other\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/ActionIcon/ActionIconGroup/ActionIconGroup.tsx\nimport {\n  Box,\n  BoxProps,\n  createVarsResolver,\n  ElementProps,\n  factory,\n  Factory,\n  rem,\n  StylesApiProps,\n  useProps,\n  useStyles,\n} from '../../../core';\nimport classes from '../ActionIcon.module.css';\n\nexport type ActionIconGroupStylesNames = 'group';\nexport type ActionIconGroupCssVariables = {\n  group: '--ai-border-width';\n};\n\nexport interface ActionIconGroupProps\n  extends BoxProps, StylesApiProps<",
+  "prompt_version": 2,
+  "clean_id": "action-icon-group",
+  "display_name": "Action Icon Group",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-actionicon-actionicongroup-actionicongroup.png"
+}

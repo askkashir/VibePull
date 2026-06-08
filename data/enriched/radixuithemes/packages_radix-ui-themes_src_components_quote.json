@@ -1,0 +1,57 @@
+{
+  "id": "packages_radix-ui-themes_src_components_quote",
+  "name": "quote",
+  "source_code": "// packages/radix-ui-themes/src/components/quote.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { quotePropDefs } from './quote.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype QuoteElement = React.ElementRef<'q'>;\ntype QuoteOwnProps = GetPropDefTypes<typeof quotePropDefs>;\ninterface QuoteProps extends ComponentPropsWithout<'q', RemovedProps>, QuoteOwnProps {}\nconst Quote = React.forwardRef<QuoteElement, QuoteProps>((props, forwardedRef) => {\n  const { asChild, className, ...quoteProps } = extractProps(props, quotePropDefs);\n  const Comp = asChild ? Slot.Root : 'q';\n  return <Comp {...quoteProps} ref={forwardedRef} className={classNames('rt-Quote', className)} />;\n});\nQuote.displayName = 'Quote';\n\nexport { Quote };\nexport type { QuoteProps };\n",
+  "description": "",
+  "tags": [
+    "block",
+    "text",
+    "display"
+  ],
+  "server": "radixuithemes",
+  "metadata": {
+    "listed_component": {
+      "id": "packages_radix-ui-themes_src_components_quote",
+      "name": "quote.tsx",
+      "source": "github_contents",
+      "path": "packages/radix-ui-themes/src/components/quote.tsx",
+      "sha": "7610b2b169b9588d9fdf36b9cee0fb68fc50e5d7",
+      "size": 947,
+      "url": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/quote.tsx?ref=main",
+      "html_url": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/quote.tsx",
+      "git_url": "https://api.github.com/repos/radix-ui/themes/git/blobs/7610b2b169b9588d9fdf36b9cee0fb68fc50e5d7",
+      "download_url": "https://raw.githubusercontent.com/radix-ui/themes/main/packages/radix-ui-themes/src/components/quote.tsx",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/radix-ui/themes/contents/packages/radix-ui-themes/src/components/quote.tsx?ref=main",
+        "git": "https://api.github.com/repos/radix-ui/themes/git/blobs/7610b2b169b9588d9fdf36b9cee0fb68fc50e5d7",
+        "html": "https://github.com/radix-ui/themes/blob/main/packages/radix-ui-themes/src/components/quote.tsx"
+      }
+    },
+    "registry_item": {
+      "id": "packages_radix-ui-themes_src_components_quote",
+      "name": "quote",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/radix-ui-themes/src/components/quote.tsx",
+          "content": "import * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { quotePropDefs } from './quote.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype QuoteElement = React.ElementRef<'q'>;\ntype QuoteOwnProps = GetPropDefTypes<typeof quotePropDefs>;\ninterface QuoteProps extends ComponentPropsWithout<'q', RemovedProps>, QuoteOwnProps {}\nconst Quote = React.forwardRef<QuoteElement, QuoteProps>((props, forwardedRef) => {\n  const { asChild, className, ...quoteProps } = extractProps(props, quotePropDefs);\n  const Comp = asChild ? Slot.Root : 'q';\n  return <Comp {...quoteProps} ref={forwardedRef} className={classNames('rt-Quote', className)} />;\n});\nQuote.displayName = 'Quote';\n\nexport { Quote };\nexport type { QuoteProps };\n"
+        }
+      ]
+    },
+    "ingest_method": "github_contents_fallback"
+  },
+  "visual_summary": "The Quote component is a display block element used to quote a text. It can be used in various contexts, such as displaying a quote, a text, or a piece of information that doesn't fit in the main flow.",
+  "style_tags": [
+    "standard"
+  ],
+  "interaction_tags": [
+    "no"
+  ],
+  "component_type": "display",
+  "generation_prompt": "Create a production-ready display component with the following characteristics:\n\nName: quote\nDescription: The Quote component is a display block element used to quote a text. It can be used in various contexts, such as displaying a quote, a text, or a piece of information that doesn't fit in the main flow.\nStyle: standard\nInteractions: no\nTags: block, text, display\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/radix-ui-themes/src/components/quote.tsx\nimport * as React from 'react';\nimport classNames from 'classnames';\nimport { Slot } from 'radix-ui';\n\nimport { quotePropDefs } from './quote.props.js';\nimport { extractProps } from '../helpers/extract-props.js';\n\nimport type { ComponentPropsWithout, RemovedProps } from '../helpers/component-props.js';\nimport type { GetPropDefTypes } from '../props/prop-def.js';\n\ntype QuoteElement = React.ElementRef<'q'>;\ntype QuoteOwnProps = GetPropDefTypes<t",
+  "prompt_version": 2,
+  "clean_id": "quote",
+  "display_name": "Quote",
+  "preview_url": "/previews/radixuithemes/packages-radix-ui-themes-src-components-quote.png"
+}

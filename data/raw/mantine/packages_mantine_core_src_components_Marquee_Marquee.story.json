@@ -1,0 +1,31 @@
+{
+  "id": "packages_mantine_core_src_components_Marquee_Marquee.story",
+  "name": "Marquee.story",
+  "source_code": "// packages/@mantine/core/src/components/Marquee/Marquee.story.tsx\nimport { Box } from '../../core';\nimport { Marquee } from './Marquee';\n\nexport default { title: 'Marquee' };\n\nconst colors = ['blue', 'cyan', 'teal', 'green', 'lime', 'yellow', 'orange', 'red'];\n\nfunction ColorBoxes() {\n  return colors.map((color) => (\n    <Box\n      key={color}\n      w={40}\n      h={40}\n      style={{ backgroundColor: `var(--mantine-color-${color}-6)`, borderRadius: 4 }}\n    />\n  ));\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function Reverse() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee reverse>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function PauseOnHover() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee pauseOnHover>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function Vertical() {\n  return (\n    <div style={{ padding: 40, height: 300 }}>\n      <Marquee orientation=\"vertical\">\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function VerticalReverse() {\n  return (\n    <div style={{ padding: 40, height: 300 }}>\n      <Marquee orientation=\"vertical\" reverse>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function FastAnimation() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee duration={10000}>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function CustomGap() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee gap=\"xl\">\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function CustomRepeat() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee repeat={2}>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function MultipleRows() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n      <Marquee reverse>\n        <ColorBoxes />\n      </Marquee>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n",
+  "description": "",
+  "tags": [
+    "mantine",
+    "registry:ui"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Marquee_Marquee.story",
+      "name": "Marquee.story",
+      "path": "packages/@mantine/core/src/components/Marquee/Marquee.story.tsx",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Marquee_Marquee.story",
+      "name": "Marquee.story",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Marquee/Marquee.story.tsx",
+          "content": "import { Box } from '../../core';\nimport { Marquee } from './Marquee';\n\nexport default { title: 'Marquee' };\n\nconst colors = ['blue', 'cyan', 'teal', 'green', 'lime', 'yellow', 'orange', 'red'];\n\nfunction ColorBoxes() {\n  return colors.map((color) => (\n    <Box\n      key={color}\n      w={40}\n      h={40}\n      style={{ backgroundColor: `var(--mantine-color-${color}-6)`, borderRadius: 4 }}\n    />\n  ));\n}\n\nexport function Usage() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function Reverse() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee reverse>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function PauseOnHover() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee pauseOnHover>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function Vertical() {\n  return (\n    <div style={{ padding: 40, height: 300 }}>\n      <Marquee orientation=\"vertical\">\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function VerticalReverse() {\n  return (\n    <div style={{ padding: 40, height: 300 }}>\n      <Marquee orientation=\"vertical\" reverse>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function FastAnimation() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee duration={10000}>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function CustomGap() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee gap=\"xl\">\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function CustomRepeat() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee repeat={2}>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n\nexport function MultipleRows() {\n  return (\n    <div style={{ padding: 40 }}>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n      <Marquee reverse>\n        <ColorBoxes />\n      </Marquee>\n      <Marquee>\n        <ColorBoxes />\n      </Marquee>\n    </div>\n  );\n}\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  }
+}

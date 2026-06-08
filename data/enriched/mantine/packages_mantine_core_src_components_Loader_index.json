@@ -1,0 +1,41 @@
+{
+  "id": "packages_mantine_core_src_components_Loader_index",
+  "name": "Loader",
+  "source_code": "// packages/@mantine/core/src/components/Loader/index.ts\nimport type { LoaderCssVariables, LoaderFactory, LoaderProps, LoaderStylesNames } from './Loader';\nimport type {\n  MantineLoader,\n  MantineLoaderComponent,\n  MantineLoadersRecord,\n  SvgLoaderProps,\n} from './Loader.types';\n\nexport { Loader, defaultLoaders } from './Loader';\n\nexport type {\n  LoaderProps,\n  LoaderStylesNames,\n  LoaderCssVariables,\n  LoaderFactory,\n  MantineLoader,\n  SvgLoaderProps,\n  MantineLoadersRecord,\n  MantineLoaderComponent,\n};\n",
+  "description": "",
+  "tags": [
+    "loader",
+    "mantine"
+  ],
+  "server": "mantine",
+  "metadata": {
+    "listed_component": {
+      "id": "Loader_index",
+      "name": "index",
+      "path": "packages/@mantine/core/src/components/Loader/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_mantine_core_src_components_Loader_index",
+      "name": "Loader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/@mantine/core/src/components/Loader/index.ts",
+          "content": "import type { LoaderCssVariables, LoaderFactory, LoaderProps, LoaderStylesNames } from './Loader';\nimport type {\n  MantineLoader,\n  MantineLoaderComponent,\n  MantineLoadersRecord,\n  SvgLoaderProps,\n} from './Loader.types';\n\nexport { Loader, defaultLoaders } from './Loader';\n\nexport type {\n  LoaderProps,\n  LoaderStylesNames,\n  LoaderCssVariables,\n  LoaderFactory,\n  MantineLoader,\n  SvgLoaderProps,\n  MantineLoadersRecord,\n  MantineLoaderComponent,\n};\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "Loader is a loader UI component from the mantine corpus. It provides reusable loader behavior and styling for React or web UI screens.",
+  "style_tags": [],
+  "interaction_tags": [],
+  "component_type": "loader",
+  "enrichment_method": "local_fallback",
+  "generation_prompt": "Create a production-ready loader component with the following characteristics:\n\nName: Loader\nDescription: Loader is a loader UI component from the mantine corpus. It provides reusable loader behavior and styling for React or web UI screens.\nStyle: \nInteractions: \nTags: loader, mantine\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/@mantine/core/src/components/Loader/index.ts\nimport type { LoaderCssVariables, LoaderFactory, LoaderProps, LoaderStylesNames } from './Loader';\nimport type {\n  MantineLoader,\n  MantineLoaderComponent,\n  MantineLoadersRecord,\n  SvgLoaderProps,\n} from './Loader.types';\n\nexport { Loader, defaultLoaders } from './Loader';\n\nexport type {\n  LoaderProps,\n  LoaderStylesNames,\n  LoaderCssVariables,\n  LoaderFactory,\n  MantineLoader,\n  SvgLoaderProps,\n  MantineLoadersRecord,\n  MantineLoaderComp",
+  "prompt_version": 2,
+  "clean_id": "loader",
+  "display_name": "Loader",
+  "preview_url": "/previews/mantine/packages-mantine-core-src-components-loader-index.png"
+}

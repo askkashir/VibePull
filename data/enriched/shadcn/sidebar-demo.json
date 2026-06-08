@@ -1,0 +1,40 @@
+{
+  "id": "sidebar-demo",
+  "name": "sidebar-demo",
+  "source_code": "",
+  "description": "",
+  "tags": [
+    "navigation",
+    "sidebar",
+    "menu"
+  ],
+  "server": "shadcn",
+  "metadata": {
+    "listed_component": {
+      "name": "sidebar-demo",
+      "type": "registry:internal",
+      "registry": "@shadcn",
+      "tags": [
+        "registry:internal"
+      ]
+    },
+    "fetch_tool": "view_items_in_registries",
+    "response": "Item Details:\n\n## sidebar-demo\n**Type:** registry:internal\n**Files:** 1 file(s)"
+  },
+  "visual_summary": "The sidebar-demo component is a side navigation element that helps organize content and reduce clutter. It is ideal for complex applications with multiple sections. It can be used in various scenarios where a compact navigation menu is required.",
+  "style_tags": [
+    "minimal",
+    "compact"
+  ],
+  "interaction_tags": [
+    "responsive",
+    "hover",
+    "clickable"
+  ],
+  "component_type": "navbar",
+  "generation_prompt": "Create a production-ready navbar component with the following characteristics:\n\nName: sidebar-demo\nDescription: The sidebar-demo component is a side navigation element that helps organize content and reduce clutter. It is ideal for complex applications with multiple sections. It can be used in various scenarios where a compact navigation menu is required.\nStyle: minimal, compact\nInteractions: responsive, hover, clickable\nTags: navigation, sidebar, menu\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.",
+  "prompt_version": 2,
+  "clean_id": "sidebar-demo",
+  "display_name": "Sidebar Demo",
+  "preview_url": "/previews/shadcn/sidebar-demo.png"
+}

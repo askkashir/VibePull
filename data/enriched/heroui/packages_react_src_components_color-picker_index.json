@@ -1,0 +1,47 @@
+{
+  "id": "packages_react_src_components_color-picker_index",
+  "name": "color-picker",
+  "source_code": "// packages/react/src/components/color-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ColorPickerPopover, ColorPickerRoot, ColorPickerTrigger} from \"./color-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ColorPicker = Object.assign(ColorPickerRoot, {\n  Root: ColorPickerRoot,\n  Trigger: ColorPickerTrigger,\n  Popover: ColorPickerPopover,\n});\n\nexport type ColorPicker = {\n  Props: ComponentProps<typeof ColorPickerRoot>;\n  RootProps: ComponentProps<typeof ColorPickerRoot>;\n  TriggerProps: ComponentProps<typeof ColorPickerTrigger>;\n  PopoverProps: ComponentProps<typeof ColorPickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorPickerPopover, ColorPickerRoot, ColorPickerTrigger};\n\nexport type {\n  ColorPickerRootProps,\n  ColorPickerRootProps as ColorPickerProps,\n  ColorPickerTriggerProps,\n  ColorPickerPopoverProps,\n} from \"./color-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {colorPickerVariants} from \"@heroui/styles\";\n\nexport type {ColorPickerVariants} from \"@heroui/styles\";\n",
+  "description": "",
+  "tags": [
+    "color",
+    "picker",
+    "selection"
+  ],
+  "server": "heroui",
+  "metadata": {
+    "listed_component": {
+      "id": "color-picker_index",
+      "name": "index",
+      "path": "packages/react/src/components/color-picker/index.ts",
+      "source": "zip_archive"
+    },
+    "registry_item": {
+      "id": "packages_react_src_components_color-picker_index",
+      "name": "color-picker",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "packages/react/src/components/color-picker/index.ts",
+          "content": "import type {ComponentProps} from \"react\";\n\nimport {ColorPickerPopover, ColorPickerRoot, ColorPickerTrigger} from \"./color-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ColorPicker = Object.assign(ColorPickerRoot, {\n  Root: ColorPickerRoot,\n  Trigger: ColorPickerTrigger,\n  Popover: ColorPickerPopover,\n});\n\nexport type ColorPicker = {\n  Props: ComponentProps<typeof ColorPickerRoot>;\n  RootProps: ComponentProps<typeof ColorPickerRoot>;\n  TriggerProps: ComponentProps<typeof ColorPickerTrigger>;\n  PopoverProps: ComponentProps<typeof ColorPickerPopover>;\n};\n\n/* -------------------------------------------------------------------------------------------------\n * Named Component\n * -----------------------------------------------------------------------------------------------*/\nexport {ColorPickerPopover, ColorPickerRoot, ColorPickerTrigger};\n\nexport type {\n  ColorPickerRootProps,\n  ColorPickerRootProps as ColorPickerProps,\n  ColorPickerTriggerProps,\n  ColorPickerPopoverProps,\n} from \"./color-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Variants\n * -----------------------------------------------------------------------------------------------*/\nexport {colorPickerVariants} from \"@heroui/styles\";\n\nexport type {ColorPickerVariants} from \"@heroui/styles\";\n"
+        }
+      ]
+    },
+    "ingest_method": "zip_fallback"
+  },
+  "visual_summary": "A color-picker is a component used for selecting and inputting a color value. It's commonly used when a user needs to pick a color for a design project, website theme or for other visual applications.",
+  "style_tags": [
+    "e.g. minimal",
+    "glassmorphism"
+  ],
+  "interaction_tags": [
+    "e.g. hover",
+    "clickable"
+  ],
+  "component_type": "other",
+  "generation_prompt": "Create a production-ready other component with the following characteristics:\n\nName: color-picker\nDescription: A color-picker is a component used for selecting and inputting a color value. It's commonly used when a user needs to pick a color for a design project, website theme or for other visual applications.\nStyle: e.g. minimal, glassmorphism\nInteractions: e.g. hover, clickable\nTags: color, picker, selection\n\nRequirements:\n- Works in React with TypeScript by default but adaptable to Vue, Svelte, or plain HTML/CSS\n- Uses Tailwind CSS for styling\n- Fully accessible with ARIA labels and keyboard navigation\n- Responsive and mobile-friendly\n- No external dependencies beyond React and Tailwind unless necessary\n- Include all necessary imports\n- Export as default with sensible prop types\n\nGenerate clean production-ready code only. No explanations.\nReference implementation (adapt don't copy):\n// packages/react/src/components/color-picker/index.ts\nimport type {ComponentProps} from \"react\";\n\nimport {ColorPickerPopover, ColorPickerRoot, ColorPickerTrigger} from \"./color-picker\";\n\n/* -------------------------------------------------------------------------------------------------\n * Compound Component\n * -----------------------------------------------------------------------------------------------*/\nexport const ColorPicker = Object.assign(ColorPickerRoot, {\n  Root: ColorPickerRoot,\n  T",
+  "prompt_version": 2,
+  "clean_id": "color-picker",
+  "display_name": "Color Picker",
+  "preview_url": "/previews/heroui/packages-react-src-components-color-picker-index.png"
+}
